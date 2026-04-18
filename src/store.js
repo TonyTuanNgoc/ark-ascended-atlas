@@ -1,7 +1,7 @@
 import { defaultData } from "./data.js";
 
 const STORAGE_KEY = "ark-ascended-atlas-state-v1";
-const STORAGE_SCHEMA_VERSION = 2;
+const STORAGE_SCHEMA_VERSION = 3;
 const STORAGE_SCHEMA_KEY = "__schemaVersion";
 
 const clone = (value) => JSON.parse(JSON.stringify(value));
@@ -145,6 +145,8 @@ function mergeWithDefaults(saved, base) {
         output[key] = Array.isArray(source[key]) ? source[key] : clone(value);
       } else if (value && typeof value === "object") {
         output[key] = mergeWithDefaults(source[key], value);
+      } else if (key === "src") {
+        output[key] = source[key] || value;
       } else {
         output[key] = source[key] ?? value;
       }
