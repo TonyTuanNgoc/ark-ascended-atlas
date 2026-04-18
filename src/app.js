@@ -1072,7 +1072,7 @@ function resolveMapSectionEntities(map, sectionDef, includeAll = false) {
       .filter(Boolean)
       .map((entry) => ({
         ...entry,
-        __isLinked: includeAll ? linkedIds.has(entry.id) : linkedIds.has(entry.id),
+        __isLinked: linkedIds.has(entry.id),
       }))
       .filter((entry) => (includeAll ? true : entry.__isLinked));
   }
@@ -1204,7 +1204,6 @@ function renderMapSectionToolbar(sectionDef, sectionState) {
             data-action="map-section-filter"
             data-section="${escapeHtml(sectionDef.key)}"
             data-filter="stage"
-            value="${escapeHtml(sectionState.filters.stage || "")}"
           >
             <option value="">All stages</option>
             ${CREATURE_STAGE_FILTERS
@@ -1223,7 +1222,6 @@ function renderMapSectionToolbar(sectionDef, sectionState) {
             data-action="map-section-filter"
             data-section="${escapeHtml(sectionDef.key)}"
             data-filter="role"
-            value="${escapeHtml(sectionState.filters.role || "")}"
           >
             <option value="">All roles</option>
             ${CREATURE_ROLE_FILTERS
@@ -1242,7 +1240,6 @@ function renderMapSectionToolbar(sectionDef, sectionState) {
             data-action="map-section-filter"
             data-section="${escapeHtml(sectionDef.key)}"
             data-filter="difficulty"
-            value="${escapeHtml(sectionState.filters.difficulty || "")}"
           >
             <option value="">All difficulties</option>
             ${CREATURE_DIFFICULTY_FILTERS
@@ -2647,9 +2644,20 @@ function renderMediaSlot(collectionKey, entity, options = {}) {
   const placeholderLabel = escapeHtml(options.placeholderLabel || entity.media?.alt || title);
   const emptyLabel = escapeHtml(options.emptyLabel || "No image bound yet");
   const showImageTools = options.showActions ?? ui.editMode;
+  const clickableUpload = showImageTools && collectionKey && entity.id;
+  const slotAction = clickableUpload
+    ? `data-action="image-upload" data-collection="${escapeHtml(
+        collectionKey
+      )}" data-entity-id="${escapeHtml(entity.id)}" aria-label="Upload image for ${title}"`
+    : "";
 
   return `
-    <div class="media-slot ${options.className || ""} ${aspectClass} ${toneClass}">
+    <div
+      class="media-slot ${options.className || ""} ${aspectClass} ${toneClass} ${
+        clickableUpload ? "media-slot--uploadable" : ""
+      }"
+      ${slotAction}
+    >
       ${
         hasImage
           ? `<img src="${escapeAttribute(entity.media.src)}" alt="${title}" loading="lazy" />`
@@ -3304,6 +3312,14 @@ function renderAdminExtraFields(collectionKey, entity) {
 function renderModal() {
   if (ui.imageModal) {
     return renderImageUrlModal();
+  }
+
+  if (ui.activeMapEntity) {
+    return renderMapEntityModal();
+  }
+
+  if (ui.activeMapSection) {
+    return renderMapSectionModal();
   }
 
   if (ui.activeMapLinkPicker) {
@@ -4076,6 +4092,8 @@ function closeModal() {
   ui.activeBossId = null;
   ui.imageModal = null;
   ui.activeMapLinkPicker = null;
+  ui.activeMapSection = null;
+  ui.activeMapEntity = null;
   render();
 }
 
@@ -4502,6 +4520,33 @@ document.addEventListener("click", (event) => {
     return;
   }
 
+  if (action === "open-map-section") {
+    ui.activeMapSection = {
+      mapId: actionTarget.dataset.mapId,
+      section: actionTarget.dataset.section,
+      mode: actionTarget.dataset.mode || "open",
+    };
+    ui.activeMapEntity = null;
+    ui.activeMapLinkPicker = null;
+    ui.activeBossId = null;
+    ui.imageModal = null;
+    render();
+    return;
+  }
+
+  if (action === "open-map-entity") {
+    ui.activeMapEntity = {
+      collection: actionTarget.dataset.collection,
+      entityId: actionTarget.dataset.entityId,
+    };
+    ui.activeMapSection = null;
+    ui.activeMapLinkPicker = null;
+    ui.activeBossId = null;
+    ui.imageModal = null;
+    render();
+    return;
+  }
+
   if (action === "close-modal") {
     if (event.target === actionTarget) {
       closeModal();
@@ -4595,11 +4640,27 @@ document.addEventListener("click", (event) => {
     state = resetState();
     ui.activeBossId = null;
     ui.imageModal = null;
+    ui.activeMapSection = null;
+    ui.activeMapEntity = null;
+    ui.activeMapLinkPicker = null;
     render();
   }
 });
 
 document.addEventListener("change", (event) => {
+  const mapFilterAction = event.target.dataset.action;
+  if (mapFilterAction === "map-section-filter") {
+    const sectionKey = event.target.dataset.section;
+    const filterKey = event.target.dataset.filter;
+    if (sectionKey && filterKey) {
+      const sectionState = getMapSectionState(sectionKey);
+      sectionState.filters = sectionState.filters || {};
+      sectionState.filters[filterKey] = event.target.value || "";
+      render();
+    }
+    return;
+  }
+
   if (event.target.id === "adminEntitySelect") {
     ui.admin.entityId = event.target.value;
     render();
@@ -4614,6 +4675,17 @@ document.addEventListener("change", (event) => {
 });
 
 document.addEventListener("input", (event) => {
+  const mapSectionAction = event.target.dataset.action;
+  if (mapSectionAction === "map-section-search") {
+    const sectionKey = event.target.dataset.section;
+    if (sectionKey) {
+      const sectionState = getMapSectionState(sectionKey);
+      sectionState.search = event.target.value || "";
+      render();
+    }
+    return;
+  }
+
   if (event.target.id === "imageUrlInput") {
     syncImagePreview();
   }
