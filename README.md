@@ -50,6 +50,20 @@ FIREBASE_PROJECT_ID=<your-firebase-project-id> \
 ./scripts/link-and-deploy.sh
 ```
 
+### 2c) Tạo repo GitHub từ terminal bằng token (nếu chưa có sẵn repo)
+
+```bash
+cd "/Users/admin/ARK Ascended"
+chmod +x scripts/create-github-repo.sh
+
+GITHUB_TOKEN=<your_github_personal_access_token> \
+GITHUB_OWNER=<your-username> \
+REPO_NAME=ark-ascended-atlas \
+./scripts/create-github-repo.sh
+```
+
+Token cần quyền `repo` (Full control of private repositories).
+
 ### 3) Deploy thủ công (optional)
 
 ```bash
