@@ -15,18 +15,97 @@ const modalRoot = document.querySelector("#modalRoot");
 const adminToggleButton = document.querySelector("#adminToggle");
 const filePicker = document.querySelector("#imageFilePicker");
 
+const MAP_LINK_FIELDS = {
+  bosses: "bossIds",
+  dinos: "tameIds",
+  resources: "resourceIds",
+  artifacts: "artifactIds",
+  tributeItems: "tributeIds",
+  baseSpots: "baseSpotIds",
+  galleryMedia: "galleryIds",
+  references: "sourceIds",
+  knowledgeArticles: "knowledgeArticleIds",
+};
+
+const KNOWLEDGE_SECTIONS = [
+  { id: "summary", title: "Summary" },
+  { id: "features", title: "Features" },
+  {
+    id: "gameplay-changes",
+    title: "Gameplay Changes from Survival Evolved",
+    subSections: [
+      "General",
+      "Inventory / UI",
+      "Structures",
+      "Items",
+      "Creatures",
+      "TLC",
+    ],
+  },
+  {
+    id: "new-additions",
+    title: "New Additions",
+    subSections: [
+      "Creatures",
+      "Resources",
+      "Consumables",
+      "Trophies and Tributes",
+      "Weapons, Armor, and Tools",
+      "Structures",
+      "Saddles",
+      "Cosmetics",
+      "Other",
+    ],
+  },
+  {
+    id: "roadmap",
+    title: "Roadmap",
+    subSections: ["Released", "Upcoming", "TBA"],
+  },
+  {
+    id: "dlc",
+    title: "DLC",
+    subSections: [
+      "Expansion Pack",
+      "Expansion Maps",
+      "Bob's Tall Tales",
+      "Bob's True Tales",
+      "Legacy of Santiago",
+      "Skin Packs",
+      "Collaborations",
+      "Total Conversions",
+    ],
+  },
+  { id: "history", title: "History" },
+  { id: "gallery", title: "Gallery" },
+  { id: "external-links", title: "External Links" },
+  { id: "references", title: "References" },
+  { id: "data-maps", title: "Data Maps" },
+  { id: "ptr", title: "Public Test Realm" },
+  { id: "spotlight", title: "Spotlight" },
+  { id: "notes", title: "Notes" },
+];
+
+const MAP_GROUP_DEFINITIONS = [
+  { title: "Core Story Route", badge: "Story", ids: ["the-island", "scorched-earth", "aberration", "extinction"] },
+  { title: "Canon Expansion", badge: "Canon Expansion", ids: ["lost-colony"] },
+  { title: "Non-Canon / Explore Maps", badge: "Non-Canon", ids: ["the-center", "ragnarok", "valguero", "astraeos"] },
+];
+
 const collectionLabels = Object.fromEntries(
   ENTITY_TYPES.map((entry) => [entry.key, entry.label])
 );
 
 let state = loadState();
+normalizeAtlasState();
 
 const ui = {
   editMode: false,
   editMapCards: false,
   activeBossId: null,
-  mapTabs: {},
   route: parseRoute(),
+  activeMapLinkPicker: null,
+  mapLinkPending: null,
   admin: {
     collectionKey: "maps",
     entityId: "the-island",
@@ -51,6 +130,7 @@ function parseRoute() {
     "tames",
     "resources",
     "settings",
+    "knowledge",
     "lore",
     "rankings",
   ];
@@ -84,56 +164,22 @@ function render() {
 }
 
 function renderHomePage(section) {
+  const sectionContent =
+    section === "home" || !section
+      ? ""
+      : renderHomeSection(section);
+
   return `
-    <div class="page-shell page-shell--hero-only">
+    <div class="page-shell">
       ${renderHero()}
+      ${renderHomeQuickNav(section || "home")}
+      ${sectionContent}
     </div>
   `;
 }
 
 function renderHero() {
-  const maps = (state.maps || []).filter(Boolean);
-  const coreStoryIds = [
-    "the-island",
-    "scorched-earth",
-    "aberration",
-    "extinction",
-  ];
-  const canonExpansionIds = ["lost-colony"];
-  const nonCanonIds = [
-    "the-center",
-    "ragnarok",
-    "valguero",
-    "astraeos",
-  ];
-
-  const groupedMaps = {
-    coreStory: [],
-    canonExpansion: [],
-    nonCanon: [],
-  };
-
-  const lookup = new Map(maps.map((map) => [map.id, map]));
-
-  const assignOrdered = (ids, bucket) => {
-    ids.forEach((id) => {
-      if (lookup.has(id)) {
-        groupedMaps[bucket].push(lookup.get(id));
-      }
-    });
-  };
-
-  assignOrdered(coreStoryIds, "coreStory");
-  assignOrdered(canonExpansionIds, "canonExpansion");
-  assignOrdered(nonCanonIds, "nonCanon");
-
-  const allOrderedIds = new Set([
-    ...coreStoryIds,
-    ...canonExpansionIds,
-    ...nonCanonIds,
-  ]);
-  const extraMaps = maps.filter((map) => !allOrderedIds.has(map.id));
-  groupedMaps.nonCanon = groupedMaps.nonCanon.concat(extraMaps);
+  const groupedMaps = getAtlasMapGroups();
 
 
   return `
@@ -166,24 +212,20 @@ function renderHero() {
           </button>
         </div>
         <div class="hero-map-groups">
-          <div class="hero-map-group">
-            <div class="hero-map-group__title">Core Story Route</div>
-            <div class="hero-map-grid">
-              ${renderHeroMapCards(groupedMaps.coreStory, "Story")}
-            </div>
-          </div>
-          <div class="hero-map-group">
-            <div class="hero-map-group__title">Canon Expansion</div>
-            <div class="hero-map-grid">
-              ${renderHeroMapCards(groupedMaps.canonExpansion, "Canon Expansion")}
-            </div>
-          </div>
-          <div class="hero-map-group">
-            <div class="hero-map-group__title">Non-Canon / Explore Maps</div>
-            <div class="hero-map-grid">
-              ${renderHeroMapCards(groupedMaps.nonCanon, "Non-Canon")}
-            </div>
-          </div>
+          ${groupedMaps
+            .map(
+              (group) => `
+                <div class="hero-map-group">
+                  <div class="hero-map-group__title">${escapeHtml(
+                    group.title
+                  )}</div>
+                  <div class="hero-map-grid">
+                    ${renderHeroMapCards(group.maps, group.badge)}
+                  </div>
+                </div>
+              `
+            )
+            .join("")}
         </div>
       </div>
     </section>
@@ -230,7 +272,7 @@ function renderHomeQuickNav(activeSection) {
     { id: "tames", label: "Tame Planner" },
     { id: "resources", label: "Resources" },
     { id: "settings", label: "Server Settings" },
-    { id: "lore", label: "Lore" },
+    { id: "knowledge", label: "Ancient Records" },
     { id: "rankings", label: "Rankings" },
   ];
 
@@ -248,6 +290,216 @@ function renderHomeQuickNav(activeSection) {
         )
         .join("")}
     </section>
+  `;
+}
+
+function renderHomeSection(section) {
+  const sectionRenderers = {
+    story: renderStoryRoute,
+    maps: renderExploreMaps,
+    route: renderFastestRoute,
+    bosses: renderBossPlanner,
+    tames: renderGlobalTamePlanner,
+    resources: renderResourcesHub,
+    settings: renderServerSettings,
+    lore: renderKnowledgeArchives,
+    knowledge: renderKnowledgeArchives,
+    rankings: renderRankings,
+  };
+
+  const hasRenderer = Object.prototype.hasOwnProperty.call(
+    sectionRenderers,
+    section
+  );
+
+  const content = hasRenderer
+    ? sectionRenderers[section]()
+    : renderLoreRecords();
+
+  const titles = {
+    story: { title: "Story Route", description: "Core progression checkpoints and continuity checks." },
+    maps: { title: "Explore Maps", description: "Atlas cards for every map profile." },
+    route: { title: "Fastest Clear Route", description: "Phased progression from economy to boss execution." },
+    bosses: { title: "Boss Planner", description: "Boss capsules that stay execution-ready." },
+    tames: { title: "Tame Planner", description: "Dino lineup by role and planning stage." },
+    resources: { title: "Resources", description: "Artifact, tribute and utility resources connected through links." },
+    settings: { title: "Server Settings", description: "Route modifiers and server strategy defaults." },
+    knowledge: {
+      title: "Ancient Records",
+      description: "Structured ARK encyclopedia: gameplay changes, additions, roadmap and lore notes.",
+    },
+    lore: {
+      title: "Ancient Records",
+      description: "Structured ARK encyclopedia: gameplay changes, additions, roadmap and lore notes.",
+    },
+    rankings: { title: "Rankings", description: "Map ranking and progression suitability." },
+  };
+
+  const { title, description } = titles[section] || {
+    title: "Atlas Module",
+    description: "",
+  };
+
+  return renderSectionShell(section, title, description, content);
+}
+
+function getAtlasMapGroups() {
+  const maps = (state.maps || []).filter(Boolean);
+  const lookup = new Map(maps.map((map) => [map.id, map]));
+  const grouped = MAP_GROUP_DEFINITIONS.map((group) => ({
+    ...group,
+    maps: group.ids
+      .map((id) => lookup.get(id))
+      .filter(Boolean),
+  }));
+
+  const orderedIds = new Set(MAP_GROUP_DEFINITIONS.flatMap((group) => group.ids));
+  const extras = maps.filter((entry) => !orderedIds.has(entry.id));
+  if (extras.length) {
+    grouped.push({
+      title: "Non-Canon / Explore Maps",
+      badge: "Non-Canon",
+      maps: extras,
+    });
+  }
+
+  return grouped.filter((group) => group.maps.length > 0);
+}
+
+function renderKnowledgeArchives() {
+  const sections = getKnowledgeSectionDefs();
+  const hasKnowledgeEntries = sections.some(
+    (section) => getKnowledgeBySection(section.id).length > 0
+  );
+  if (!hasKnowledgeEntries) {
+    return `
+      <div class="inline-empty">
+        No knowledge entries yet. Add them from edit mode under
+        <strong>Knowledge Articles</strong>.
+      </div>
+    `;
+  }
+
+  return `
+      <div class="knowledge-archive">
+      ${sections
+        .map((section) => {
+          const plainEntries = section.subSections?.length
+            ? []
+            : getKnowledgeBySection(section.id);
+          const groupedSubSections = section.subSections?.length
+            ? section.subSections
+                .map((subSection) => ({
+                  id: subSection,
+                  entries: getKnowledgeBySection(section.id, subSection),
+                }))
+                .filter((entry) => entry.entries.length > 0)
+            : [];
+
+          const hasContent =
+            plainEntries.length > 0 || groupedSubSections.length > 0;
+          if (!hasContent) return "";
+
+          return `
+            <article class="detail-card">
+              <h3>${escapeHtml(section.title)}</h3>
+              ${section.subtitle ? `<p>${escapeHtml(section.subtitle)}</p>` : ""}
+              ${plainEntries.length
+                ? `
+                  <div class="mini-card-grid knowledge-archive__cards">
+                    ${plainEntries.map(renderKnowledgeArticleCard).join("")}
+                  </div>
+                `
+                : ""}
+              ${groupedSubSections.length
+                ? `
+                  <div class="knowledge-subsection-grid">
+                    ${groupedSubSections
+                      .map(
+                        (block) => `
+                          <div class="knowledge-archive__group">
+                            <h4>${escapeHtml(block.id)}</h4>
+                            <div class="mini-card-grid knowledge-archive__cards">
+                              ${block.entries.map(renderKnowledgeArticleCard).join("")}
+                            </div>
+                          </div>
+                        `
+                      )
+                      .join("")}
+                  </div>
+                `
+                : ""}
+            </article>
+          `;
+        })
+        .join("")}
+      </div>
+  `;
+}
+
+function getKnowledgeSectionDefs() {
+  return KNOWLEDGE_SECTIONS;
+}
+
+function getKnowledgeBySection(sectionId, subSection) {
+  const sectionArticles = (state.knowledgeArticles || []).filter(
+    (article) => article.section === sectionId
+  );
+
+  if (!subSection) {
+    return sectionArticles
+      .filter((article) => !article.subSection)
+      .sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
+  }
+
+  return sectionArticles
+    .filter((article) => article.subSection === subSection)
+    .sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
+}
+
+function renderKnowledgeArticleCard(article) {
+  const linkedMaps = (article.mapIds || []).map((id) => getMap(id)).filter(Boolean);
+  const linkedReferences = (article.referenceIds || [])
+    .map((id) => getReference(id))
+    .filter(Boolean);
+  const linkedCreatures = (article.creatureIds || [])
+    .map((id) => getDino(id))
+    .filter(Boolean);
+  const linkedItems = (article.itemIds || [])
+    .map((id) => getItem(id))
+    .filter(Boolean);
+  const linkedPatches = (article.patchIds || [])
+    .map((id) => getPatchHistory(id))
+    .filter(Boolean);
+  const linkedDlcs = (article.dlcIds || [])
+    .map((id) => getDlc(id))
+    .filter(Boolean);
+  const linkedGallery = (article.galleryIds || [])
+    .map((id) => getGalleryMedia(id))
+    .filter(Boolean);
+
+  return `
+    <article class="detail-card">
+      <div class="knowledge-article__heading">
+        <p class="eyebrow">${escapeHtml(article.section || "Knowledge")}</p>
+        <h3>${escapeHtml(article.title || "Knowledge Item")}</h3>
+      </div>
+      <p>${escapeHtml(article.summary || article.content || "")}</p>
+      ${article.subSection ? `<span class="chip-row__label">${escapeHtml(article.subSection)}</span>` : ""}
+      ${(article.bullets || [])
+        .map((entry) => `<p>• ${escapeHtml(entry)}</p>`)
+        .join("")}
+      ${linkedMaps.length ? `<div class="knowledge-article__links">${linkedMaps.map((entry) => `<a class="chip chip--button" href="#/map/${escapeHtml(entry.id)}">Map: ${escapeHtml(entry.name)}</a>`).join("")}</div>` : ""}
+      ${linkedCreatures.length ? `<div class="knowledge-article__links"><span class="knowledge-article__link-label">Creatures:</span>${linkedCreatures.map((creature) => `<a class="chip chip--button" href="#/maps">${escapeHtml(creature.name)}</a>`).join("")}</div>` : ""}
+      ${linkedItems.length ? `<div class="knowledge-article__links"><span class="knowledge-article__link-label">Items:</span>${linkedItems.map((item) => `<a class="chip chip--button" href="#/tames">${escapeHtml(item.name || item.title)}</a>`).join("")}</div>` : ""}
+      ${linkedPatches.length ? `<div class="knowledge-article__links"><span class="knowledge-article__link-label">Patch:</span>${linkedPatches.map((patch) => `<span class="chip">${escapeHtml(patch.version || patch.title || "Patch")}</span>`).join("")}</div>` : ""}
+      ${linkedDlcs.length ? `<div class="knowledge-article__links"><span class="knowledge-article__link-label">DLC:</span>${linkedDlcs.map((entry) => `<span class="chip">${escapeHtml(entry.title || entry.name)}</span>`).join("")}</div>` : ""}
+      ${linkedGallery.length ? `<div class="knowledge-article__links"><span class="knowledge-article__link-label">Gallery:</span>${linkedGallery.map((mediaItem) => `<span class="chip">${escapeHtml(mediaItem.name || mediaItem.title || mediaItem.type)}</span>`).join("")}</div>` : ""}
+      ${linkedReferences.length ? `<div class="knowledge-article__links"><span class="knowledge-article__link-label">References:</span>${linkedReferences.map((ref) => `<a class="chip chip--button" href="${escapeAttribute(ref.url || "#")}" target="${ref.url ? "_blank" : ""}" rel="noopener noreferrer">${escapeHtml(ref.title || ref.url || "Reference")}</a>`).join("")}</div>` : ""}
+      <div class="knowledge-article__actions">
+        ${ui.editMode ? `<button class="ghost-button ghost-button--small" type="button" data-action="quick-edit" data-collection="knowledgeArticles" data-entity-id="${escapeHtml(article.id)}">Quick Edit</button>` : ""}
+      </div>
+    </article>
   `;
 }
 
@@ -299,9 +551,27 @@ function renderStoryRoute() {
 }
 
 function renderExploreMaps() {
+  const mapGroups = getAtlasMapGroups();
+
   return `
-    <div class="poster-grid">
-      ${state.maps.map((map) => renderMapPosterCard(map)).join("")}
+    <div class="map-group-stack">
+      ${mapGroups
+        .map(
+          (group) => `
+              <section class="map-group-shell">
+              <div class="section-heading section-heading--compact">
+                <div>
+                  <p class="eyebrow">Map Path</p>
+                  <h3>${escapeHtml(group.title)}</h3>
+                </div>
+              </div>
+              <div class="poster-grid">
+                ${group.maps.map((map) => renderMapPosterCard(map)).join("")}
+              </div>
+            </section>
+          `
+        )
+        .join("")}
     </div>
   `;
 }
@@ -532,19 +802,6 @@ function renderMapPage(mapId) {
     `;
   }
 
-  const tabs = [
-    ["overview", "Overview"],
-    ["story", "Story / Lore"],
-    ["progression", "Fastest Progression"],
-    ["tames", "Tame Planner"],
-    ["resources", "Resource Route"],
-    ["bases", "Base Spots"],
-    ["artifacts", "Artifacts & Caves"],
-    ["bosses", "Boss Prep"],
-    ["transfer", "Transfer-Out Point"],
-  ];
-  const activeTab = ui.mapTabs[mapId] || "overview";
-
   return `
     <div class="page-shell page-shell--map">
       <section class="map-hero">
@@ -569,135 +826,409 @@ function renderMapPage(mapId) {
         </div>
       </section>
 
-      <section class="tab-strip">
-        ${tabs
-          .map(
-            ([key, label]) => `
-              <button
-                type="button"
-                class="tab-button ${activeTab === key ? "is-active" : ""}"
-                data-action="map-tab"
-                data-map-id="${map.id}"
-                data-tab="${key}"
-              >
-                ${escapeHtml(label)}
-              </button>
-            `
-          )
-          .join("")}
-      </section>
-
-      <section class="content-section content-section--tabbed">
-        ${renderMapTab(map, activeTab)}
+      <section class="content-section content-section--panels">
+        <div class="map-panel-grid">
+          ${renderMapSummaryPanel(map)}
+          ${renderMapFeaturesPanel(map)}
+          ${renderLinkedEntityPanel({
+            map,
+            title: "Bosses",
+            collectionKey: "bosses",
+            linkField: "bossIds",
+            emptyTitle: "No bosses linked",
+            emptyText:
+              "Attach bosses that are relevant to this map through boss planner or quick links.",
+            renderCard: (boss) => renderBossCard(boss, true),
+          })}
+          ${renderMapKeyCreaturesPanel(map)}
+          ${renderMapResourcePanel(map)}
+          ${renderMapArtifactsPanel(map)}
+          ${renderMapTributePanel(map)}
+          ${renderLinkedEntityPanel({
+            map,
+            title: "Base Spots",
+            collectionKey: "baseSpots",
+            linkField: "baseSpotIds",
+            emptyTitle: "No base spots yet",
+            emptyText:
+              "Use the map operations layer to link base spots for main, crafting, forward, breeding, and staging roles.",
+            renderCard: (spot) => renderBaseSpotCard(spot),
+            cardClass: "mini-card-grid",
+          })}
+          ${renderMapProgressionPanel(map)}
+          ${renderMapGalleryPanel(map)}
+          ${renderMapSourcesPanel(map)}
+        </div>
       </section>
     </div>
   `;
 }
 
-function renderMapTab(map, tab) {
-  switch (tab) {
-    case "overview":
-      return `
-        <div class="overview-layout">
-          <article class="focus-card">
-            <p class="eyebrow">Map Role</p>
-            <h2>${escapeHtml(map.role)}</h2>
-            <p>${escapeHtml(map.whyPlay)}</p>
-          </article>
-          <article class="focus-card">
-            <p class="eyebrow">Vibe</p>
-            <h2>${escapeHtml(map.vibe)}</h2>
-            <p>${escapeHtml(map.shortDescription)}</p>
-          </article>
-          <article class="focus-card">
-            <p class="eyebrow">Why This Map Matters</p>
-            <div class="chip-row">${renderTagList(map.tags)}</div>
-            <p>${escapeHtml(map.whyPlay)}</p>
-          </article>
+function renderMapSummaryPanel(map) {
+  return `
+    <article class="stack-panel map-panel">
+      <div class="section-heading section-heading--compact">
+        <div>
+          <h3>Summary</h3>
+          <p>Operational summary tied to this map only.</p>
         </div>
-      `;
-    case "story":
-      return `
-        <div class="record-grid">
-          <article class="record-card">
-            <h3>Where You Are</h3>
-            <p>${escapeHtml(map.story.place)}</p>
-          </article>
-          <article class="record-card">
-            <h3>What You Are Doing</h3>
-            <p>${escapeHtml(map.story.objective)}</p>
-          </article>
-          <article class="record-card">
-            <h3>What Happens Next</h3>
-            <p>${escapeHtml(map.story.next)}</p>
-          </article>
+      </div>
+      <div class="focus-card-grid">
+        <article class="focus-card">
+          <p class="eyebrow">Map role</p>
+          <h3>${escapeHtml(map.role || "Undefined")}</h3>
+          <p>${escapeHtml(map.whyPlay || map.shortDescription || "")}</p>
+        </article>
+        <article class="focus-card">
+          <p class="eyebrow">Story location</p>
+          <h3>${escapeHtml(map.story?.place || "Operational progression map")}</h3>
+          <p>${escapeHtml(map.story?.objective || "")}</p>
+        </article>
+        <article class="focus-card">
+          <p class="eyebrow">Move forward to</p>
+          <h3>${escapeHtml(map.story?.next || "Next map in progression")}</h3>
+          <p>${escapeHtml(map.transferOut?.leaveWhen || "Follow your transfer signal.")}</p>
+        </article>
+      </div>
+    </article>
+  `;
+}
+
+function renderMapFeaturesPanel(map) {
+  const features = [
+    ...(map.features || []),
+    `Access: ${escapeHtml(map.classification?.access || "Unknown")}`,
+    `Type: ${escapeHtml(map.classification?.type || "Unknown")}`,
+    ...(map.tags || []),
+  ];
+
+  return `
+    <article class="stack-panel map-panel">
+      <div class="section-heading section-heading--compact">
+        <div>
+          <h3>Features</h3>
+          <p>Short operational notes. Keep concise and map-specific.</p>
         </div>
-      `;
-    case "progression":
+      </div>
+      <div class="focus-card-grid">
+        <article class="focus-card">
+          <p class="eyebrow">Vibe</p>
+          <h3>${escapeHtml(map.vibe || "")}</h3>
+          <p>${escapeHtml(map.shortDescription || "")}</p>
+        </article>
+        <article class="focus-card">
+          <p class="eyebrow">Feature flags</p>
+          <div class="chip-row">${renderTagList(features.filter(Boolean))}</div>
+        </article>
+      </div>
+    </article>
+  `;
+}
+
+function renderMapKeyCreaturesPanel(map) {
+  return renderLinkedEntityPanel({
+    map,
+    title: "Key Creatures",
+    collectionKey: "dinos",
+    linkField: "tameIds",
+    emptyTitle: "No linked creatures yet",
+    emptyText: "Link key dinos required for this map's tame stack and boss support.",
+    renderCard: (dino) => renderDinoCard(dino, true),
+  });
+}
+
+function renderMapResourcePanel(map) {
+  return renderLinkedEntityPanel({
+    map,
+    title: "Resources",
+    collectionKey: "resources",
+    linkField: "resourceIds",
+    emptyTitle: "No linked resources yet",
+    emptyText:
+      "Link resources and then keep route + risk + tool notes in the shared resource library.",
+    renderCard: (resource) => renderResourceCard(resource),
+  });
+}
+
+function renderMapArtifactsPanel(map) {
+  return renderLinkedEntityPanel({
+    map,
+    title: "Artifacts & Caves",
+    collectionKey: "artifacts",
+    linkField: "artifactIds",
+    emptyTitle: "No artifacts linked",
+    emptyText:
+      "Attach artifact library entries and update cave metadata from local operations notes.",
+    renderCard: (artifact) => {
+      const caveInfo =
+        (map.caveRuns || []).find((run) => run.artifactId === artifact.id) || {};
+      const bossIds = [
+        ...(caveInfo.bossIds || artifact.bosses || []),
+      ];
       return `
-        <div class="phase-grid">
-          ${map.progression
-            .map(
-              (phase) => `
-                <article class="phase-card">
-                  <p class="eyebrow">${escapeHtml(phase.stage)}</p>
-                  <h3>${escapeHtml(phase.focus)}</h3>
-                  <div class="chip-row">${renderTagList(phase.bullets)}</div>
-                </article>
-              `
-            )
-            .join("")}
-        </div>
+        <article class="detail-card detail-card--artifact">
+          ${renderMediaSlot("artifacts", artifact, {
+            className: "detail-card__media",
+            label: "Artifact Image",
+            aspect: "square",
+          })}
+          <span class="detail-card__label">${escapeHtml(
+            caveInfo.cave || artifact.cave || ""
+          )}</span>
+          <h3>${escapeHtml(artifact.name)}</h3>
+          <p>${escapeHtml(
+            caveInfo.danger || artifact.quickRoute || artifact.difficulty || ""
+          )}</p>
+          <div class="chip-row">
+            ${(bossIds || []).map(renderBossChip).join("")}
+          </div>
+        </article>
       `;
-    case "tames":
-      return renderMapTamePlanner(map);
-    case "resources":
-      return `
-        <div class="mini-card-grid">
-          ${map.resourceRoutes
-            .map(
-              (route) => `
-                <article class="detail-card">
-                  <span class="detail-card__label">${escapeHtml(route.resource)}</span>
-                  <h3>${escapeHtml(route.tool)}</h3>
-                  <p>${escapeHtml(route.route)}</p>
-                  <div class="chip-row">${renderTagList([`Risk ${route.risk}`])}</div>
-                </article>
-              `
-            )
-            .join("")}
+    },
+  });
+}
+
+function renderMapTributePanel(map) {
+  return renderLinkedEntityPanel({
+    map,
+    title: "Tribute Items",
+    collectionKey: "tributeItems",
+    linkField: "tributeIds",
+    emptyTitle: "No tribute lines linked",
+    emptyText:
+      "Attach tribute items your bosses and transfer plan requires on this map.",
+    renderCard: renderTributeCard,
+    cardClass: "mini-card-grid",
+  });
+}
+
+function renderMapProgressionPanel(map) {
+  const stages = map.progression || [];
+  if (!stages.length) {
+    return `
+      <article class="stack-panel map-panel">
+        <div class="section-heading section-heading--compact">
+          <div>
+            <h3>Progression</h3>
+            <p>No progression blocks yet.</p>
+          </div>
         </div>
-      `;
-    case "bases":
-      return renderBaseSpots(map.baseSpotIds);
-    case "artifacts":
-      return renderMapArtifacts(map);
-    case "bosses":
-      return renderMapBossPrep(map);
-    case "transfer":
-      return `
-        <div class="transfer-grid">
-          <article class="focus-card">
-            <p class="eyebrow">Leave When</p>
-            <p>${escapeHtml(map.transferOut.leaveWhen)}</p>
-          </article>
-          <article class="focus-card">
-            <p class="eyebrow">Carry Forward</p>
-            <div class="chip-row">${renderTagList(map.transferOut.carry)}</div>
-          </article>
-          <article class="focus-card">
-            <p class="eyebrow">Keep Blueprints</p>
-            <div class="chip-row">${renderTagList(map.transferOut.blueprints)}</div>
-          </article>
-          <article class="focus-card">
-            <p class="eyebrow">Keep Bloodlines</p>
-            <div class="chip-row">${renderTagList(map.transferOut.bloodline)}</div>
-          </article>
-        </div>
-      `;
-    default:
-      return "";
+      </article>
+    `;
   }
+
+  return `
+    <article class="stack-panel map-panel">
+      <div class="section-heading section-heading--compact">
+        <div>
+          <h3>Progression</h3>
+          <p>Phase-by-phase execution plan for this map.</p>
+        </div>
+      </div>
+      <div class="phase-grid">
+        ${stages
+          .map(
+            (phase) => `
+              <article class="phase-card">
+                <p class="eyebrow">${escapeHtml(phase.stage)}</p>
+                <h3>${escapeHtml(phase.focus)}</h3>
+                <div class="chip-row">${renderTagList(phase.bullets || [])}</div>
+              </article>
+            `
+          )
+          .join("")}
+      </div>
+    </article>
+  `;
+}
+
+function renderMapGalleryPanel(map) {
+  return renderLinkedEntityPanel({
+    map,
+    title: "Gallery",
+    collectionKey: "galleryMedia",
+    linkField: "galleryIds",
+    emptyTitle: "No gallery media yet",
+    emptyText: "Attach photos/screenshots to enrich the operational atlas for this map.",
+    renderCard: renderGalleryCard,
+  });
+}
+
+function renderMapSourcesPanel(map) {
+  return renderLinkedEntityPanel({
+    map,
+    title: "Sources",
+    collectionKey: "references",
+    linkField: "sourceIds",
+    emptyTitle: "No source references yet",
+    emptyText: "Link references that validate route logic, lore details, or timing notes.",
+    renderCard: renderReferenceCard,
+  });
+}
+
+function renderMapBossPrepPanel(map) {
+  const bosses = getMapLinkIds(map, "bosses")
+    .map((id) => getBoss(id))
+    .filter(Boolean);
+  if (!bosses.length) {
+    return renderMapEmptyLinkedPanel(
+      "Bosses",
+      "No bosses linked",
+      "Attach bosses from the boss planner and keep each boss prep ready."
+    );
+  }
+
+  return renderLinkedEntityPanel({
+    map,
+    title: "Bosses",
+    collectionKey: "bosses",
+    linkField: "bossIds",
+    emptyTitle: "No bosses linked",
+    emptyText: "Attach bosses from the boss planner and keep each boss prep ready.",
+    renderCard: (boss) => {
+      const map = getMap(boss.mapId);
+      return `
+        <article class="boss-prep-card">
+          <div class="boss-prep-card__head">
+            <div>
+              <p class="eyebrow">${escapeHtml(map?.name || "Unknown map")}</p>
+              <h3>${escapeHtml(boss.name)}</h3>
+            </div>
+            ${ui.editMode ? `<button class="ghost-button ghost-button--small" type="button" data-action="open-boss" data-boss-id="${boss.id}">Open</button>` : ""}
+          </div>
+          <p>${escapeHtml(boss.mainDanger)}</p>
+          <div class="chip-row">${renderTagList(boss.tags || [])}</div>
+          <div class="stat-stack">
+            ${(boss.stats || [])
+              .slice(0, 3)
+              .map(
+                (stat) =>
+                  `<span><strong>${escapeHtml(stat.label)}</strong> ${escapeHtml(stat.value)}</span>`
+              )
+              .join("")}
+          </div>
+          ${ui.editMode ? `<button class=\"ghost-button ghost-button--small\" type=\"button\" data-action=\"open-boss\" data-boss-id=\"${escapeHtml(boss.id)}\">Open</button>` : ""}
+        </article>
+      `;
+    },
+  });
+}
+
+function renderMapEmptyLinkedPanel(title, header, text) {
+  return `
+    <article class="stack-panel map-panel">
+      <div class="section-heading section-heading--compact">
+        <div>
+          <h3>${escapeHtml(title)}</h3>
+          <p>${escapeHtml(text)}</p>
+        </div>
+      </div>
+      <div class="empty-state">${escapeHtml(header)}</div>
+    </article>
+  `;
+}
+
+function renderLinkedEntityPanel({
+  map,
+  title,
+  collectionKey,
+  linkField,
+  emptyTitle,
+  emptyText,
+  renderCard,
+  cardClass = "mini-card-grid",
+}) {
+  const ids = getMapLinkIds(map, collectionKey, linkField);
+  const items = ids.map((id) => findEntity(state, collectionKey, id)).filter(Boolean);
+
+  return `
+    <article class="stack-panel map-panel">
+      <div class="section-heading section-heading--compact map-panel-heading">
+        <div>
+          <h3>${escapeHtml(title)}</h3>
+          <p>${escapeHtml(emptyText)}</p>
+        </div>
+        <div class="map-panel-actions">
+          ${renderMapLinkActions({ map, collectionKey, linkField })}
+        </div>
+      </div>
+      ${
+        !items.length
+          ? `<div class="inline-empty">${escapeHtml(emptyTitle)}</div>`
+          : `<div class="${escapeHtml(cardClass)}">
+              ${items
+                .map((item) => renderLinkedCardShell(item, renderCard(item), map, collectionKey))
+                .join("")}
+            </div>`
+      }
+    </article>
+  `;
+}
+
+function renderLinkedCardShell(item, cardHtml, map, collectionKey) {
+  const editButton = ui.editMode
+    ? `<button
+        class="ghost-button ghost-button--small"
+        type="button"
+        data-action="quick-edit"
+        data-collection="${collectionKey}"
+        data-entity-id="${escapeHtml(item.id)}"
+      >
+        Quick Edit
+      </button>`
+    : "";
+  const removeButton = ui.editMode
+    ? `<button
+        class="ghost-button ghost-button--small"
+        type="button"
+        data-action="unlink-map-entity"
+        data-map-id="${escapeHtml(map.id)}"
+        data-collection="${collectionKey}"
+        data-entity-id="${escapeHtml(item.id)}"
+      >
+        Remove Link
+      </button>`
+    : "";
+
+  return cardHtml.includes("map-panel__card-actions")
+    ? cardHtml
+    : `
+      <div class="map-linked-card">
+        ${cardHtml}
+        ${editButton || removeButton ? `<div class="map-linked-card__actions">${editButton}${removeButton}</div>` : ""}
+      </div>
+    `;
+}
+
+function renderMapLinkActions({ map, collectionKey, linkField }) {
+  const actions = [];
+  if (ui.editMode) {
+    actions.push(
+      `<button
+        class="ghost-button ghost-button--small"
+        type="button"
+        data-action="open-map-link-picker"
+        data-map-id="${escapeHtml(map.id)}"
+        data-collection="${collectionKey}"
+        data-link-field="${escapeHtml(linkField)}"
+      >
+        Add Existing
+      </button>`
+    );
+    actions.push(
+      `<button
+        class="ghost-button ghost-button--small"
+        type="button"
+        data-action="create-map-link-entity"
+        data-map-id="${escapeHtml(map.id)}"
+        data-collection="${collectionKey}"
+        data-link-field="${escapeHtml(linkField)}"
+      >
+        Create New
+      </button>`
+    );
+  }
+  return actions.join("");
 }
 
 function renderMapTamePlanner(map) {
@@ -906,6 +1437,65 @@ function renderTributeCard(tribute) {
   `;
 }
 
+function renderResourceCard(resource) {
+  const routeMap = getMap(resource.mapId);
+  return `
+    <article class="detail-card">
+      ${renderMediaSlot("resources", resource, {
+        className: "detail-card__media",
+        label: "Resource Route",
+        aspect: "square",
+      })}
+      <span class="detail-card__label">${escapeHtml(routeMap?.name || resource.mapId || "Resource route")}</span>
+      <h3>${escapeHtml(resource.name || resource.title || "Resource")}</h3>
+      <p>${escapeHtml(resource.route || resource.shortDescription || "")}</p>
+      <div class="chip-row">
+        ${renderTagList([
+          resource.tool,
+          resource.risk,
+          ...(resource.tags || []),
+        ])}
+      </div>
+    </article>
+  `;
+}
+
+function renderGalleryCard(mediaItem) {
+  const map = getMap(mediaItem.mapId);
+  return `
+    <article class="detail-card">
+      ${renderMediaSlot("galleryMedia", mediaItem, {
+        className: "detail-card__media",
+        label: "Gallery Item",
+        aspect: "poster",
+      })}
+      <span class="detail-card__label">${escapeHtml(
+        mediaItem.type || mediaItem.location || "Gallery"
+      )}</span>
+      <h3>${escapeHtml(mediaItem.name || mediaItem.title || "Gallery asset")}</h3>
+      <p>${escapeHtml(mediaItem.caption || mediaItem.shortDescription || "")}</p>
+      <div class="chip-row">
+        ${renderTagList([mediaItem.location, map?.name || mediaItem.mapId || ""]) }
+      </div>
+    </article>
+  `;
+}
+
+function renderReferenceCard(reference) {
+  const mapNames = (reference.mapIds || []).map((mapId) => getMap(mapId)?.name).filter(Boolean);
+  const href = reference.url || "";
+  const isSafeUrl = /^https?:\/\//i.test(href);
+  return `
+    <article class="detail-card">
+      <span class="detail-card__label">${escapeHtml(reference.type || "Reference")}</span>
+      <h3>${escapeHtml(reference.title || reference.url || "Reference")}</h3>
+      <p>${escapeHtml(reference.citation || reference.shortDescription || "")}</p>
+      ${isSafeUrl ? `<a class="text-link" href="${escapeAttribute(href)}" target="_blank" rel="noopener noreferrer">Open source</a>` : ""}
+      ${mapNames.length ? `<div class="chip-row">${mapNames.map((name) => `<span class="chip">${escapeHtml(name)}</span>`).join("")}</div>` : ""}
+    </article>
+  `;
+}
+
 function renderItemCard(item) {
   return `
     <article class="detail-card">
@@ -1035,6 +1625,8 @@ function renderAdminDrawer() {
     "";
   const tagsValue = (entity.tags || entity.roleTags || []).join(", ");
   const relatedValue = (entity.relatedIds || entity.artifacts || entity.tributeItems || []).join(", ");
+  const extraFields = renderAdminExtraFields(collectionKey, entity);
+  const suppressAux = !!extraFields;
   const auxA =
     entity.mapId ||
     entity.type ||
@@ -1124,22 +1716,25 @@ function renderAdminDrawer() {
             relatedValue
           )}" placeholder="boss-id, artifact-id, dino-id" />
         </label>
-        <label>
-          Auxiliary Field A
-          <input
-            name="auxA"
-            value="${escapeHtml(auxA)}"
-            placeholder="${escapeHtml(getAuxPlaceholderA(collectionKey))}"
-          />
-        </label>
-        <label>
-          Auxiliary Field B
-          <input
-            name="auxB"
-            value="${escapeHtml(auxB)}"
-            placeholder="${escapeHtml(getAuxPlaceholderB(collectionKey))}"
-          />
-        </label>
+        ${!suppressAux ? `
+          <label>
+            Auxiliary Field A
+            <input
+              name="auxA"
+              value="${escapeHtml(auxA)}"
+              placeholder="${escapeHtml(getAuxPlaceholderA(collectionKey))}"
+            />
+          </label>
+          <label>
+            Auxiliary Field B
+            <input
+              name="auxB"
+              value="${escapeHtml(auxB)}"
+              placeholder="${escapeHtml(getAuxPlaceholderB(collectionKey))}"
+            />
+          </label>
+        ` : ""}
+        ${extraFields}
         <div class="admin-form__media-tools">
           <span class="admin-form__media-label">Image Tools</span>
           ${
@@ -1185,9 +1780,437 @@ function renderAdminDrawer() {
   `;
 }
 
+function renderAdminExtraFields(collectionKey, entity) {
+  if (collectionKey === "maps") {
+    return `
+      <label>
+        Map Role
+        <input name="auxA" value="${escapeHtml(entity.role || "")}" placeholder="Foundation ARK, Explorer Spine..." />
+      </label>
+      <label>
+        Classification Type
+        <input
+          name="classificationType"
+          value="${escapeHtml(entity.classification?.type || "")}"
+          placeholder="Story / Side"
+        />
+      </label>
+      <label>
+        Classification Access
+        <input
+          name="classificationAccess"
+          value="${escapeHtml(entity.classification?.access || "")}"
+          placeholder="Free / Paid"
+        />
+      </label>
+      <label>
+        Story Place
+        <input name="storyPlace" value="${escapeHtml(entity.story?.place || "")}" placeholder="Story placement note" />
+      </label>
+      <label>
+        Story Objective
+        <textarea name="storyObjective" rows="2" placeholder="Why clear this map in sequence?">${escapeHtml(
+          entity.story?.objective || ""
+        )}</textarea>
+      </label>
+      <label>
+        Story Next
+        <input name="storyNext" value="${escapeHtml(entity.story?.next || "")}" placeholder="Where the atlas turns next" />
+      </label>
+      <label>
+        Boss IDs
+        <textarea name="bossIds" rows="2" placeholder="broodmother, megapithecus">${escapeHtml(
+          (entity.bossIds || []).join(", ")
+        )}</textarea>
+      </label>
+      <label>
+        Tame IDs
+        <textarea name="tameIds" rows="2" placeholder="argy, anky, rex">${escapeHtml(
+          (entity.tameIds || []).join(", ")
+        )}</textarea>
+      </label>
+      <label>
+        Artifact IDs
+        <textarea name="artifactIds" rows="2" placeholder="artifact-clever, artifact-hunter">${escapeHtml(
+          (entity.artifactIds || []).join(", ")
+        )}</textarea>
+      </label>
+      <label>
+        Resource IDs
+        <textarea name="resourceIds" rows="2" placeholder="the-island-berry-farm">${escapeHtml(
+          (entity.resourceIds || []).join(", ")
+        )}</textarea>
+      </label>
+      <label>
+        Base Spot IDs
+        <textarea name="baseSpotIds" rows="2" placeholder="island-hidden-lake">${escapeHtml(
+          (entity.baseSpotIds || []).join(", ")
+        )}</textarea>
+      </label>
+      <label>
+        Gallery IDs
+        <textarea name="galleryIds" rows="2" placeholder="gallery-id-1, gallery-id-2">${escapeHtml(
+          (entity.galleryIds || []).join(", ")
+        )}</textarea>
+      </label>
+      <label>
+        Source IDs
+        <textarea name="sourceIds" rows="2" placeholder="reference-id">${escapeHtml(
+          (entity.sourceIds || []).join(", ")
+        )}</textarea>
+      </label>
+      <label>
+        Transfer Carry Tags
+        <textarea name="transferCarry" rows="2" placeholder="best bloodline, artifact stack">${escapeHtml(
+          (entity.transferOut?.carry || []).join(", ")
+        )}</textarea>
+      </label>
+    `;
+  }
+
+  if (collectionKey === "bosses") {
+    return `
+      <label>
+        Arena
+        <input name="auxB" value="${escapeHtml(entity.arena || "")}" placeholder="Tek cave / Desert arena" />
+      </label>
+      <label>
+        Artifact IDs
+        <textarea name="artifactIds" rows="2" placeholder="artifact-clever, artifact-strong">${escapeHtml(
+          (entity.artifacts || []).join(", ")
+        )}</textarea>
+      </label>
+      <label>
+        Tribute IDs
+        <textarea name="tributeIds" rows="2" placeholder="tribute-argy-talon">${escapeHtml(
+          (entity.tributeItems || []).join(", ")
+        )}</textarea>
+      </label>
+      <label>
+        Lineup JSON
+        <textarea name="lineup" rows="4" placeholder='[{"role":"Main damage dealer","creatureId":"rex","quantity":"18","note":"Core plan"}]'>${escapeHtml(
+          JSON.stringify(entity.lineup || [], null, 2)
+        )}</textarea>
+      </label>
+      <label>
+        Stats JSON
+        <textarea name="stats" rows="4" placeholder='[{"label":"HP","value":"22000"}]'>${escapeHtml(
+          JSON.stringify(entity.stats || [], null, 2)
+        )}</textarea>
+      </label>
+      <label>
+        Strategy Lines
+        <textarea name="strategy" rows="3" placeholder="Open on cooldown, stay centered">${escapeHtml(
+          (entity.strategy || []).join(", ")
+        )}</textarea>
+      </label>
+    `;
+  }
+
+  if (collectionKey === "dinos") {
+    return `
+      <label>
+        Map ID
+        <input name="auxA" value="${escapeHtml(entity.mapId || "")}" placeholder="the-island" />
+      </label>
+      <label>
+        Role Tags
+        <input name="tags" value="${escapeHtml((entity.roleTags || []).join(", "))}" placeholder="Boss DPS, Tank" />
+      </label>
+      <label>
+        Stages
+        <input name="auxB" value="${escapeHtml((entity.stages || []).join(", "))}" placeholder="early, mid, endgame" />
+      </label>
+      <label>
+        Tame Difficulty / ROI
+        <textarea name="dinoStats" rows="2" placeholder="tame difficulty, transfer value, boss relevance">${escapeHtml(
+          `${entity.tameDifficulty || ""} / ${entity.timeToValue || ""} / ${
+            entity.costPayoff || ""
+          } / ${entity.transferValue || ""} / ${entity.bossRelevance || ""}`
+        )}</textarea>
+      </label>
+      <label>
+        Notes
+        <textarea name="notes" rows="3" placeholder="Operational note for this creature">${escapeHtml(
+          entity.notes || ""
+        )}</textarea>
+      </label>
+    `;
+  }
+
+  if (collectionKey === "artifacts") {
+    return `
+      <label>
+        Map ID
+        <input name="auxA" value="${escapeHtml(entity.mapId || "")}" placeholder="the-island" />
+      </label>
+      <label>
+        Cave
+        <input name="auxB" value="${escapeHtml(entity.cave || "")}" placeholder="South cave, Lost cave" />
+      </label>
+      <label>
+        Boss IDs
+        <textarea name="bossIds" rows="2" placeholder="broodmother, dragon">${escapeHtml(
+          (entity.bosses || []).join(", ")
+        )}</textarea>
+      </label>
+      <label>
+        Quick Route
+        <textarea name="route" rows="2" placeholder="Route note you keep using">${escapeHtml(
+          entity.quickRoute || ""
+        )}</textarea>
+      </label>
+      <label>
+        Difficulty
+        <input name="difficulty" value="${escapeHtml(entity.difficulty || "")}" placeholder="Moderate / Extreme" />
+      </label>
+    `;
+  }
+
+  if (collectionKey === "tributeItems") {
+    return `
+      <label>
+        Source Creature
+        <input name="auxA" value="${escapeHtml(entity.sourceCreature || "")}" placeholder="Argentavis" />
+      </label>
+      <label>
+        Source Method
+        <input name="sourceMethod" value="${escapeHtml(entity.sourceMethod || "")}" placeholder="Kill and gather" />
+      </label>
+      <label>
+        Source Zone
+        <input name="where" value="${escapeHtml(entity.where || "")}" placeholder="The Island / mountains" />
+      </label>
+      <label>
+        Quantity Estimate
+        <input name="estimate" value="${escapeHtml(entity.estimate || "")}" placeholder="Low / Rare / Batch" />
+      </label>
+    `;
+  }
+
+  if (collectionKey === "baseSpots") {
+    return `
+      <label>
+        Map ID
+        <input name="auxA" value="${escapeHtml(entity.mapId || "")}" placeholder="the-island" />
+      </label>
+      <label>
+        Base Type
+        <input name="auxB" value="${escapeHtml(entity.type || "")}" placeholder="Main Base / Crafting Base" />
+      </label>
+      <label>
+        Transfer Notes
+        <textarea name="baseNotes" rows="2" placeholder="Core notes for this base placement">${escapeHtml(
+          entity.shortDescription || ""
+        )}</textarea>
+      </label>
+    `;
+  }
+
+  if (collectionKey === "resources") {
+    return `
+      <label>
+        Map ID
+        <input name="auxA" value="${escapeHtml(entity.mapId || "")}" placeholder="the-island" />
+      </label>
+      <label>
+        Route Path
+        <input name="route" value="${escapeHtml(entity.route || "")}" placeholder="Core run path" />
+      </label>
+      <label>
+        Tool
+        <input name="tool" value="${escapeHtml(entity.tool || "")}" placeholder="Doedicurus / flyer" />
+      </label>
+      <label>
+        Risk
+        <input name="auxB" value="${escapeHtml(entity.risk || "")}" placeholder="Medium / High / Extreme" />
+      </label>
+      <label>
+        Map IDs
+        <input name="mapIds" value="${escapeHtml((entity.mapIds || []).join(", "))}" placeholder="the-island, scorched-earth" />
+      </label>
+    `;
+  }
+
+  if (collectionKey === "knowledgeArticles") {
+    return `
+      <label>
+        Section
+        <input
+          name="auxA"
+          value="${escapeHtml(entity.section || "summary")}"
+          placeholder="summary"
+        />
+      </label>
+      <label>
+        Sub-section
+        <input name="auxB" value="${escapeHtml(entity.subSection || "")}" placeholder="General / Titans" />
+      </label>
+      <label>
+        Summary
+        <textarea name="summary" rows="3" placeholder="Compact article summary">${escapeHtml(
+          entity.summary || ""
+        )}</textarea>
+      </label>
+      <label>
+        Content
+        <textarea name="content" rows="4" placeholder="Optional long-form paragraph">${escapeHtml(
+          entity.content || ""
+        )}</textarea>
+      </label>
+      <label>
+        Bullets
+        <textarea name="bullets" rows="3" placeholder="Item 1, Item 2, Item 3">${escapeHtml(
+          (entity.bullets || []).join(", ")
+        )}</textarea>
+      </label>
+      <label>
+        Map IDs
+        <input name="mapIds" value="${escapeHtml((entity.mapIds || []).join(", "))}" placeholder="the-island, extinction" />
+      </label>
+      <label>
+        Reference IDs
+        <input name="referenceIds" value="${escapeHtml((entity.referenceIds || []).join(", "))}" placeholder="ref-1, ref-2" />
+      </label>
+      <label>
+        Patch IDs
+        <input name="patchIds" value="${escapeHtml((entity.patchIds || []).join(", "))}" placeholder="v1.0, v1.1" />
+      </label>
+      <label>
+        Creature IDs
+        <input name="creatureIds" value="${escapeHtml((entity.creatureIds || []).join(", "))}" placeholder="argy, anky, theri" />
+      </label>
+      <label>
+        Item IDs
+        <input name="itemIds" value="${escapeHtml((entity.itemIds || []).join(", "))}" placeholder="item-shotgun, item-medbrew" />
+      </label>
+      <label>
+        Gallery IDs
+        <input name="galleryIds" value="${escapeHtml((entity.galleryIds || []).join(", "))}" placeholder="gallery-id-1" />
+      </label>
+      <label>
+        DLC IDs
+        <input name="dlcIds" value="${escapeHtml((entity.dlcIds || []).join(", "))}" placeholder="dlc-expansion-pack" />
+      </label>
+    `;
+  }
+
+  if (collectionKey === "references") {
+    return `
+      <label>
+        Reference URL
+        <input name="auxA" value="${escapeHtml(entity.url || "")}" placeholder="https://..." />
+      </label>
+      <label>
+        Reference Type
+        <input name="auxB" value="${escapeHtml(entity.type || "Reference")}" placeholder="Reference / Patch / Video" />
+      </label>
+      <label>
+        Citation
+        <textarea name="citation" rows="2" placeholder="Short citation or proof note">${escapeHtml(
+          entity.citation || ""
+        )}</textarea>
+      </label>
+      <label>
+        Map IDs
+        <input name="mapIds" value="${escapeHtml((entity.mapIds || []).join(", "))}" placeholder="the-island" />
+      </label>
+    `;
+  }
+
+  if (collectionKey === "galleryMedia") {
+    return `
+      <label>
+        Map ID
+        <input name="auxA" value="${escapeHtml(entity.mapId || "")}" placeholder="the-island" />
+      </label>
+      <label>
+        Location
+        <input name="auxB" value="${escapeHtml(entity.location || "")}" placeholder="South shore, cave mouth" />
+      </label>
+      <label>
+        Caption
+        <textarea name="caption" rows="2" placeholder="Short caption on this image">${escapeHtml(
+          entity.caption || ""
+        )}</textarea>
+      </label>
+      <label>
+        Media Type
+        <input name="type" value="${escapeHtml(entity.type || "Screenshot")}" placeholder="Screenshot / Art / Event" />
+      </label>
+    `;
+  }
+
+  if (collectionKey === "dlc") {
+    return `
+      <label>
+        DLC Type
+        <input name="auxA" value="${escapeHtml(entity.type || "Expansion Pack")}" placeholder="Expansion Pack" />
+      </label>
+      <label>
+        Subtitle
+        <textarea name="subtitle" rows="2" placeholder="Primary note for this DLC">${escapeHtml(
+          entity.subtitle || ""
+        )}</textarea>
+      </label>
+      <label>
+        Map IDs
+        <input name="mapIds" value="${escapeHtml((entity.mapIds || []).join(", "))}" placeholder="the-island" />
+      </label>
+      <label>
+        Patch IDs
+        <input name="patchIds" value="${escapeHtml((entity.patchIds || []).join(", "))}" placeholder="v1.0" />
+      </label>
+      <label>
+        Related Map IDs
+        <input name="notes" value="${escapeHtml(entity.notes || "")}" placeholder="Optional extra notes" />
+      </label>
+    `;
+  }
+
+  if (collectionKey === "patchHistory") {
+    return `
+      <label>
+        Version
+        <input name="auxA" value="${escapeHtml(entity.version || "")}" placeholder="0.310.0" />
+      </label>
+      <label>
+        Status
+        <input
+          name="auxB"
+          value="${escapeHtml(entity.status || "TBA")}"
+          placeholder="Released / Upcoming / TBA"
+        />
+      </label>
+      <label>
+        Notes
+        <textarea name="notes" rows="3" placeholder="Patch notes or entry summary">${escapeHtml(
+          entity.notes || ""
+        )}</textarea>
+      </label>
+      <label>
+        Map IDs
+        <input name="mapIds" value="${escapeHtml((entity.mapIds || []).join(", "))}" placeholder="the-island, extinction" />
+      </label>
+      <label>
+        Note Bullets
+        <textarea name="noteBullets" rows="3" placeholder="Bullet 1, Bullet 2">${escapeHtml(
+          (entity.noteBullets || []).join(", ")
+        )}</textarea>
+      </label>
+    `;
+  }
+
+  return "";
+}
+
 function renderModal() {
   if (ui.imageModal) {
     return renderImageUrlModal();
+  }
+
+  if (ui.activeMapLinkPicker) {
+    return renderMapLinkPickerModal();
   }
 
   if (ui.activeBossId) {
@@ -1195,6 +2218,104 @@ function renderModal() {
   }
 
   return "";
+}
+
+function renderMapLinkPickerModal() {
+  const picker = ui.activeMapLinkPicker;
+  if (!picker) return "";
+
+  const map = getMap(picker.mapId);
+  const collection = state[picker.collectionKey] || [];
+  const linkedIds = new Set(
+    getMapLinkIds(map || {}, picker.collectionKey, picker.linkField)
+  );
+  const unlinked = collection.filter(
+    (entry) => entry && entry.id && !linkedIds.has(entry.id)
+  );
+  const emptyState = `
+    <div class="inline-empty">
+      No eligible entries remain. Create one to continue linking.
+    </div>
+  `;
+
+  const mapName = map?.name || "Selected map";
+
+  return `
+    <div class="modal-backdrop" data-action="close-modal">
+      <div class="modal-panel modal-panel--boss" role="dialog" aria-modal="true">
+        <div class="modal-panel__header">
+          <div>
+            <p class="eyebrow">Map Link Picker</p>
+            <h2>${escapeHtml(mapName)}</h2>
+            <p>Select existing ${escapeHtml(
+              collectionLabels[picker.collectionKey] || picker.collectionKey
+            )} to link.</p>
+          </div>
+          <button
+            class="ghost-button"
+            type="button"
+            data-action="close-modal"
+          >
+            Close
+          </button>
+        </div>
+        <div class="modal-panel__body">
+          <div class="modal-panel__actions">
+            <button
+              class="ghost-button ghost-button--small"
+              type="button"
+              data-action="create-map-link-entity"
+              data-map-id="${escapeHtml(picker.mapId)}"
+              data-collection="${escapeHtml(picker.collectionKey)}"
+              data-link-field="${escapeHtml(picker.linkField)}"
+            >
+              Create New
+            </button>
+          </div>
+          ${
+            unlinked.length
+              ? `<div class="stack-grid map-link-picker-grid">
+                  ${unlinked
+                    .map((entry) => renderEntityPickerCard(entry, picker))
+                    .join("")}
+                </div>`
+              : emptyState
+          }
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function renderEntityPickerCard(entity, picker) {
+  return `
+    <article class="detail-card">
+      <h3>${escapeHtml(entity.name || entity.title || entity.id)}</h3>
+      <p>${escapeHtml(entity.shortDescription || "")}</p>
+      <div class="modal-link-actions">
+        <button
+          class="hero-button hero-button--primary"
+          type="button"
+          data-action="confirm-map-link"
+          data-map-id="${escapeHtml(picker.mapId)}"
+          data-collection="${escapeHtml(picker.collectionKey)}"
+          data-link-field="${escapeHtml(picker.linkField)}"
+          data-entity-id="${escapeHtml(entity.id)}"
+        >
+          Link
+        </button>
+        <button
+          class="ghost-button ghost-button--small"
+          type="button"
+          data-action="quick-edit"
+          data-collection="${escapeHtml(picker.collectionKey)}"
+          data-entity-id="${escapeHtml(entity.id)}"
+        >
+          Quick Edit
+        </button>
+      </div>
+    </article>
+  `;
 }
 
 function renderImageUrlModal() {
@@ -1406,6 +2527,92 @@ function getBaseSpot(id) {
   return state.baseSpots.find((entry) => entry.id === id);
 }
 
+function getResource(id) {
+  return state.resources.find((entry) => entry.id === id);
+}
+
+function getReference(id) {
+  return state.references.find((entry) => entry.id === id);
+}
+
+function getGalleryMedia(id) {
+  return state.galleryMedia.find((entry) => entry.id === id);
+}
+
+function getItem(id) {
+  return state.items.find((entry) => entry.id === id);
+}
+
+function getPatchHistory(id) {
+  return state.patchHistory.find((entry) => entry.id === id);
+}
+
+function getDlc(id) {
+  return state.dlc.find((entry) => entry.id === id);
+}
+
+function getMapLinkField(collectionKey, linkField) {
+  if (linkField) return linkField;
+  return MAP_LINK_FIELDS[collectionKey] || "relatedIds";
+}
+
+function getMapLinkIds(map, collectionKey, linkField) {
+  if (!map) return [];
+  const target = map[getMapLinkField(collectionKey, linkField)];
+
+  if (Array.isArray(target)) {
+    return target
+      .map((id) => String(id || "").trim())
+      .filter((id) => id);
+  }
+
+  if (collectionKey === "artifacts" && Array.isArray(map.caveRuns)) {
+    return map.caveRuns
+      .map((entry) => entry?.artifactId)
+      .filter((value) => value);
+  }
+
+  if (collectionKey === "resources" && Array.isArray(map.resourceRoutes)) {
+    return map.resourceRoutes.map((entry) => entry?.id).filter(Boolean);
+  }
+
+  if (Array.isArray(map.relatedIds) && collectionKey === "knowledgeArticles") {
+    return map.relatedIds;
+  }
+
+  return [];
+}
+
+function setMapLinkIds(map, collectionKey, linkField, ids) {
+  if (!map?.id) return;
+  const normalized = Array.from(
+    new Set(
+      (Array.isArray(ids) ? ids : [])
+        .map((entry) => String(entry || "").trim())
+        .filter((entry) => entry)
+    )
+  );
+  const field = getMapLinkField(collectionKey, linkField);
+  updateEntity(state, "maps", map.id, (entry) => ({ ...entry, [field]: normalized }));
+}
+
+function linkEntityToMap(mapId, collectionKey, linkField, entityId) {
+  const map = getMap(mapId);
+  if (!map || !entityId) return;
+  const current = getMapLinkIds(map, collectionKey, linkField);
+  if (current.includes(entityId)) return;
+  setMapLinkIds(map, collectionKey, linkField, [...current, entityId]);
+}
+
+function unlinkEntityFromMap(mapId, collectionKey, entityId, linkField) {
+  const map = getMap(mapId);
+  if (!map || !entityId) return;
+  const current = getMapLinkIds(map, collectionKey, linkField);
+  const next = current.filter((entry) => entry !== entityId);
+  if (next.length === current.length) return;
+  setMapLinkIds(map, collectionKey, linkField || getMapLinkField(collectionKey), next);
+}
+
 function createBlankEntity(collectionKey) {
   const base = {
     id: "",
@@ -1497,6 +2704,79 @@ function createBlankEntity(collectionKey) {
     };
   }
 
+  if (collectionKey === "resources") {
+    return {
+      ...base,
+      mapId: "",
+      route: "",
+      tool: "",
+      risk: "",
+      tags: [],
+    };
+  }
+
+  if (collectionKey === "knowledgeArticles") {
+    return {
+      ...base,
+      section: "summary",
+      subSection: "",
+      content: "",
+      summary: "",
+      bullets: [],
+      mapIds: [],
+      creatureIds: [],
+      itemIds: [],
+      referenceIds: [],
+      patchIds: [],
+      galleryIds: [],
+      dlcIds: [],
+    };
+  }
+
+  if (collectionKey === "references") {
+    return {
+      ...base,
+      title: "",
+      url: "",
+      citation: "",
+      type: "Reference",
+      mapIds: [],
+    };
+  }
+
+  if (collectionKey === "galleryMedia") {
+    return {
+      ...base,
+      mapId: "",
+      location: "",
+      caption: "",
+      type: "Screenshot",
+    };
+  }
+
+  if (collectionKey === "dlc") {
+    return {
+      ...base,
+      title: "",
+      type: "Expansion Pack",
+      subtitle: "",
+      mapIds: [],
+      patchIds: [],
+    };
+  }
+
+  if (collectionKey === "patchHistory") {
+    return {
+      ...base,
+      title: "",
+      version: "",
+      status: "TBA",
+      notes: "",
+      mapIds: [],
+      noteBullets: [],
+    };
+  }
+
   return base;
 }
 
@@ -1509,6 +2789,12 @@ function getAuxPlaceholderA(collectionKey) {
     artifacts: "Map ID or cave",
     tributeItems: "Source creature",
     baseSpots: "Map ID or base type",
+    resources: "Map ID",
+    knowledgeArticles: "Section",
+    references: "Reference URL",
+    galleryMedia: "Map ID",
+    dlc: "DLC category",
+    patchHistory: "Version",
   };
   return map[collectionKey] || "Aux field A";
 }
@@ -1522,6 +2808,12 @@ function getAuxPlaceholderB(collectionKey) {
     artifacts: "Difficulty or route note",
     tributeItems: "Where to farm",
     baseSpots: "Tags or travel note",
+    resources: "Tool / risk note",
+    knowledgeArticles: "Sub-section",
+    references: "Reference type",
+    galleryMedia: "Location",
+    dlc: "Primary map ID",
+    patchHistory: "Status (Released/Upcoming/TBA)",
   };
   return map[collectionKey] || "Aux field B";
 }
@@ -1558,9 +2850,135 @@ function openImageUrlModal(collectionKey, entityId) {
   render();
 }
 
+function normalizeAtlasState() {
+  if (!state.resources) {
+    state.resources = [];
+  }
+
+  if (!state.knowledgeArticles) {
+    state.knowledgeArticles = [];
+  }
+
+  if (!state.references) {
+    state.references = [];
+  }
+
+  if (!state.galleryMedia) {
+    state.galleryMedia = [];
+  }
+
+  if (!state.dlc) {
+    state.dlc = [];
+  }
+
+  if (!state.patchHistory) {
+    state.patchHistory = [];
+  }
+
+  let changed = false;
+
+  state.maps = (state.maps || []).map((map) => {
+    const next = { ...map };
+
+    if (!Array.isArray(next.tameIds)) {
+      next.tameIds = next.tameIds
+        ? toList(next.tameIds)
+        : [];
+    }
+
+    if (!Array.isArray(next.bossIds)) {
+      next.bossIds = next.bossIds ? toList(next.bossIds) : [];
+    }
+
+    const legacyResourceIds = (next.resourceRoutes || [])
+      .map((route) => {
+        if (!route) return null;
+        if (route.id) return route.id;
+        const routeId = `${next.id}-${slugify(route.resource || route.name || "resource")}`;
+        return routeId;
+      })
+      .filter(Boolean);
+    const resourceIds = Array.isArray(next.resourceIds)
+      ? next.resourceIds
+      : legacyResourceIds;
+    if (!Array.isArray(next.resourceIds)) {
+      next.resourceIds = resourceIds;
+      changed = true;
+    }
+
+    const artifactIds = Array.isArray(next.artifactIds)
+      ? next.artifactIds
+      : Array.isArray(next.caveRuns)
+      ? next.caveRuns.map((run) => run?.artifactId).filter(Boolean)
+      : [];
+    next.artifactIds = artifactIds;
+
+    if (!Array.isArray(next.baseSpotIds)) {
+      next.baseSpotIds = toList(next.baseSpotIds);
+      changed = true;
+    }
+
+    if (!Array.isArray(next.galleryIds)) {
+      next.galleryIds = [];
+    }
+
+    if (!Array.isArray(next.sourceIds)) {
+      next.sourceIds = [];
+    }
+
+    next.galleryIds = next.galleryIds || [];
+    next.sourceIds = next.sourceIds || [];
+
+    return next;
+  });
+
+  (state.maps || []).forEach((map) => {
+    (map.resourceRoutes || []).forEach((route) => {
+      if (!route || !route.resource) return;
+      const resourceId =
+        route.id || `${map.id}-${slugify(route.resource || route.name || "resource")}`;
+      if (!state.resources.find((entry) => entry.id === resourceId)) {
+        state.resources.push({
+          id: resourceId,
+          name: route.resource || route.name || "Resource Route",
+          shortDescription: route.route || route.quickRoute || "",
+          route: route.route || route.quickRoute || route.note || "",
+          tool: route.tool || "",
+          risk: route.risk || "",
+          tags: [
+            route.resource,
+            route.tool || map.classification?.type || "",
+            route.risk ? `Risk: ${route.risk}` : "",
+          ].filter(Boolean),
+          media: {
+            src: "",
+            type: "empty",
+            alt: `${route.resource} route`,
+            tone: "bronze",
+          },
+          mapIds: [map.id],
+        });
+        changed = true;
+      }
+      map.resourceIds = map.resourceIds || [];
+      if (!map.resourceIds.includes(resourceId)) {
+        map.resourceIds.push(resourceId);
+        changed = true;
+      }
+    });
+  });
+
+  if (changed) {
+    saveState(state);
+  }
+
+  return state;
+}
+
 function closeModal() {
   ui.activeBossId = null;
   ui.imageModal = null;
+  ui.activeMapLinkPicker = null;
   render();
 }
 
@@ -1625,6 +3043,15 @@ function buildEntityFromForm(formData) {
 
   switch (collectionKey) {
     case "maps":
+      const storyPlace = String(formData.get("storyPlace") || existing.story?.place || "");
+      const storyObjective = String(formData.get("storyObjective") || existing.story?.objective || "");
+      const storyNext = String(formData.get("storyNext") || existing.story?.next || "");
+      const classificationType = String(formData.get("classificationType") || existing.classification?.type || auxA || "Side");
+      const classificationAccess = String(formData.get("classificationAccess") || existing.classification?.access || auxB || "Free");
+      const transferCarry = toList(formData.get("transferCarry") || []);
+      const transferBlueprints = toList(formData.get("transferBlueprints") || []);
+      const transferBloodline = toList(formData.get("transferBloodline") || []);
+      const baseTransferOut = existing.transferOut || {};
       return {
         ...shared,
         name: title,
@@ -1632,21 +3059,45 @@ function buildEntityFromForm(formData) {
         whyPlay: existing.whyPlay || shortDescription || "",
         role: auxA || existing.role || "",
         classification: {
-          type:
-            existing.classification?.type ||
-            (tags.includes("Story") ? "Story" : "Side"),
-          access: auxB || existing.classification?.access || "Free",
+          type: classificationType || existing.classification?.type || (tags.includes("Story") ? "Story" : "Side"),
+          access: classificationAccess || existing.classification?.access || "Free",
+        },
+        story: {
+          place: storyPlace || existing.story?.place || "",
+          objective: storyObjective || existing.story?.objective || "",
+          next: storyNext || existing.story?.next || "",
+        },
+        tameIds: parseListFromForm(formData.get("tameIds"), existing.tameIds),
+        bossIds: parseListFromForm(formData.get("bossIds"), existing.bossIds),
+        artifactIds: parseListFromForm(formData.get("artifactIds"), existing.artifactIds),
+        resourceIds: parseListFromForm(formData.get("resourceIds"), existing.resourceIds),
+        baseSpotIds: parseListFromForm(formData.get("baseSpotIds"), existing.baseSpotIds),
+        galleryIds: parseListFromForm(formData.get("galleryIds"), existing.galleryIds),
+        sourceIds: parseListFromForm(formData.get("sourceIds"), existing.sourceIds),
+        transferOut: {
+          leaveWhen: existing.transferOut?.leaveWhen || "Follow your transfer rule.",
+          carry: transferCarry.length ? transferCarry : baseTransferOut.carry || [],
+          blueprints: transferBlueprints.length ? transferBlueprints : baseTransferOut.blueprints || [],
+          bloodline: transferBloodline.length ? transferBloodline : baseTransferOut.bloodline || [],
         },
       };
-    case "bosses":
+  case "bosses":
       return {
         ...shared,
         name: title,
         mapId: auxA || existing.mapId || "",
         arena: auxB || existing.arena || "Arena",
         difficultyFeel: shortDescription || existing.difficultyFeel || "",
+        artifacts: parseEntityListOrFallback(formData.get("artifactIds"), existing.artifacts),
+        tributeItems: parseEntityListOrFallback(formData.get("tributeIds"), existing.tributeItems),
+        lineup: parseEntityListOrFallback(formData.get("lineup"), existing.lineup, true),
+        stats: parseEntityListOrFallback(formData.get("stats"), existing.stats, true),
+        gear: toList(formData.get("gear") || existing.gear),
+        strategy: toList(formData.get("strategy") || existing.strategy),
+        mistakes: toList(formData.get("mistakes") || existing.mistakes),
       };
     case "dinos":
+      const dinoStats = parseDinoStats(formData.get("dinoStats"), existing);
       return {
         ...shared,
         name: title,
@@ -1654,6 +3105,11 @@ function buildEntityFromForm(formData) {
         stages: toList(auxB || existing.stages?.join(", ")),
         notes: shortDescription || existing.notes || "",
         mapId: auxA || existing.mapId || "",
+        tameDifficulty: dinoStats.tameDifficulty,
+        timeToValue: dinoStats.timeToValue,
+        costPayoff: dinoStats.costPayoff,
+        transferValue: dinoStats.transferValue,
+        bossRelevance: dinoStats.bossRelevance,
       };
     case "artifacts":
       return {
@@ -1662,6 +3118,8 @@ function buildEntityFromForm(formData) {
         mapId: auxA || existing.mapId || "",
         cave: auxB || existing.cave || "",
         quickRoute: shortDescription || existing.quickRoute || "",
+        difficulty: String(formData.get("difficulty") || existing.difficulty || ""),
+        bosses: parseListFromForm(formData.get("bossIds"), existing.bosses),
       };
     case "tributeItems":
       return {
@@ -1670,6 +3128,7 @@ function buildEntityFromForm(formData) {
         sourceCreature: auxA || existing.sourceCreature || "",
         where: auxB || existing.where || "",
         sourceMethod: shortDescription || existing.sourceMethod || "",
+        estimate: String(formData.get("estimate") || existing.estimate || ""),
       };
     case "baseSpots":
       return {
@@ -1677,6 +3136,83 @@ function buildEntityFromForm(formData) {
         title,
         mapId: auxA || existing.mapId || "",
         type: auxB || existing.type || "",
+        shortDescription: String(formData.get("baseNotes") || shortDescription || existing.shortDescription || ""),
+      };
+    case "resources":
+      return {
+        ...shared,
+        name: title,
+        mapId: auxA || existing.mapId || "",
+        route: String(formData.get("route") || shortDescription || existing.route || ""),
+        tool: String(formData.get("tool") || existing.tool || ""),
+        risk: String(formData.get("auxB") || formData.get("risk") || existing.risk || "Medium"),
+        mapIds: parseListFromForm(formData.get("mapIds"), existing.mapIds),
+      };
+    case "knowledgeArticles":
+      const bulletList = toList(formData.get("bullets") || []);
+      const mapIds = parseListFromForm(formData.get("mapIds"), existing.mapIds);
+      const creatureIds = parseListFromForm(formData.get("creatureIds"), existing.creatureIds);
+      const itemIds = parseListFromForm(formData.get("itemIds"), existing.itemIds);
+      const referenceIds = parseListFromForm(formData.get("referenceIds"), existing.referenceIds);
+      const patchIds = parseListFromForm(formData.get("patchIds"), existing.patchIds);
+      const galleryIds = parseListFromForm(formData.get("galleryIds"), existing.galleryIds);
+      const dlcIds = parseListFromForm(formData.get("dlcIds"), existing.dlcIds);
+      return {
+        ...shared,
+        title,
+        section: auxA || existing.section || "summary",
+        subSection: auxB || existing.subSection || "",
+        summary: String(formData.get("summary") || shortDescription || existing.summary || ""),
+        content: formData.get("content") || existing.content || "",
+        bullets: bulletList.length ? bulletList : existing.bullets || [],
+        mapIds,
+        creatureIds,
+        itemIds,
+        referenceIds,
+        patchIds,
+        galleryIds,
+        dlcIds,
+      };
+    case "references":
+      const citation = String(formData.get("citation") || shortDescription || existing.citation || "");
+      return {
+        ...shared,
+        title,
+        url: auxA || existing.url || "",
+        citation,
+        type: auxB || existing.type || "Reference",
+        mapIds: toList(formData.get("mapIds") || existing.mapIds || []),
+      };
+    case "galleryMedia":
+      return {
+        ...shared,
+        name: title,
+        mapId: auxA || existing.mapId || "",
+        location: auxB || existing.location || "",
+        caption: String(formData.get("caption") || shortDescription || existing.caption || ""),
+        type: String(formData.get("type") || existing.type || "Screenshot"),
+      };
+    case "dlc":
+      return {
+        ...shared,
+        name: title,
+        title,
+        type: auxA || existing.type || "Expansion Pack",
+        subtitle: String(formData.get("subtitle") || shortDescription || existing.subtitle || ""),
+        mapIds: parseListFromForm(formData.get("mapIds"), existing.mapIds),
+        patchIds: parseListFromForm(formData.get("patchIds"), existing.patchIds),
+      };
+    case "patchHistory":
+      const patchNotes = String(formData.get("notes") || shortDescription || existing.notes || "");
+      const noteBullets = toList(formData.get("noteBullets") || []);
+      return {
+        ...shared,
+        title,
+        version: auxA || existing.version || "",
+        status: auxB || existing.status || "TBA",
+        notes: patchNotes,
+        mapIds: parseListFromForm(formData.get("mapIds"), existing.mapIds),
+        noteBullets: noteBullets.length ? noteBullets : existing.noteBullets || [],
       };
     case "items":
     default:
@@ -1700,6 +3236,121 @@ function toList(value) {
     .split(",")
     .map((entry) => entry.trim())
     .filter(Boolean);
+}
+
+function safeParseJson(value) {
+  if (typeof value !== "string") return undefined;
+  const trimmed = value.trim();
+  if (!trimmed) return undefined;
+  try {
+    return JSON.parse(trimmed);
+  } catch {
+    return undefined;
+  }
+}
+
+function parseListFromForm(rawValue, fallback = []) {
+  const fallbackList = Array.isArray(fallback) ? fallback : [];
+  const parsed = safeParseJson(rawValue);
+
+  if (Array.isArray(parsed)) {
+    const next = parsed
+      .map((entry) =>
+        typeof entry === "string"
+          ? entry.trim()
+          : entry?.id != null
+            ? String(entry.id).trim()
+            : entry == null
+              ? ""
+              : String(entry).trim()
+      )
+      .filter(Boolean);
+    return next.length ? Array.from(new Set(next)) : fallbackList;
+  }
+
+  const asList = toList(rawValue);
+  return asList.length ? Array.from(new Set(asList)) : fallbackList;
+}
+
+function parseEntityListOrFallback(rawValue, fallback = [], expectObject = false) {
+  const fallbackList = Array.isArray(fallback) ? fallback : [];
+  const parsed = safeParseJson(rawValue);
+
+  if (Array.isArray(parsed)) {
+    const next = parsed.filter(Boolean);
+    if (next.length) {
+      if (expectObject) {
+        return next.map((entry) =>
+          typeof entry === "string" ? { role: "", name: entry, creatureId: entry, quantity: "", note: "" } : entry
+        );
+      }
+      return next
+        .map((entry) =>
+          typeof entry === "string"
+            ? entry.trim()
+            : entry?.id != null
+              ? String(entry.id).trim()
+              : ""
+        )
+        .filter(Boolean);
+    }
+  }
+
+  const asList = toList(rawValue);
+  if (asList.length) {
+    return expectObject ? fallbackList : asList;
+  }
+
+  return fallbackList;
+}
+
+function parseDinoStats(rawValue, existing = {}) {
+  const raw = String(rawValue || "").trim();
+  if (!raw && existing) {
+    return {
+      tameDifficulty: existing.tameDifficulty || "",
+      timeToValue: existing.timeToValue || "",
+      costPayoff: existing.costPayoff || "",
+      transferValue: existing.transferValue || "",
+      bossRelevance: existing.bossRelevance || "",
+    };
+  }
+
+  const parsed = safeParseJson(raw);
+  if (Array.isArray(parsed)) {
+    const first = parsed[0];
+    if (first && typeof first === "object") {
+      return {
+        tameDifficulty: String(first.tameDifficulty || ""),
+        timeToValue: String(first.timeToValue || ""),
+        costPayoff: String(first.costPayoff || ""),
+        transferValue: String(first.transferValue || ""),
+        bossRelevance: String(first.bossRelevance || ""),
+      };
+    }
+  }
+
+  const parts = raw
+    .split("/")
+    .map((entry) => entry.trim())
+    .filter(Boolean);
+  if (parts.length >= 5) {
+    return {
+      tameDifficulty: parts[0],
+      timeToValue: parts[1],
+      costPayoff: parts[2],
+      transferValue: parts[3],
+      bossRelevance: parts[4],
+    };
+  }
+
+  return {
+    tameDifficulty: existing.tameDifficulty || "",
+    timeToValue: existing.timeToValue || "",
+    costPayoff: existing.costPayoff || "",
+    transferValue: existing.transferValue || "",
+    bossRelevance: existing.bossRelevance || "",
+  };
 }
 
 function syncImagePreview() {
@@ -1761,9 +3412,56 @@ document.addEventListener("click", (event) => {
     return;
   }
 
-  if (action === "map-tab") {
-    ui.mapTabs[actionTarget.dataset.mapId] = actionTarget.dataset.tab;
+  if (action === "quick-edit") {
+    ui.editMode = true;
+    ui.admin.collectionKey = actionTarget.dataset.collection;
+    ui.admin.entityId = actionTarget.dataset.entityId;
     render();
+    return;
+  }
+
+  if (action === "open-map-link-picker") {
+    ui.activeMapLinkPicker = {
+      mapId: actionTarget.dataset.mapId,
+      collectionKey: actionTarget.dataset.collection,
+      linkField: actionTarget.dataset.linkField,
+    };
+    render();
+    return;
+  }
+
+  if (action === "create-map-link-entity") {
+    ui.mapLinkPending = {
+      mapId: actionTarget.dataset.mapId,
+      collectionKey: actionTarget.dataset.collection,
+      linkField: actionTarget.dataset.linkField,
+    };
+    ui.admin.collectionKey = actionTarget.dataset.collection;
+    ui.admin.entityId = "__new__";
+    ui.editMode = true;
+    render();
+    return;
+  }
+
+  if (action === "confirm-map-link") {
+    linkEntityToMap(
+      actionTarget.dataset.mapId,
+      actionTarget.dataset.collection,
+      actionTarget.dataset.linkField,
+      actionTarget.dataset.entityId
+    );
+    ui.activeMapLinkPicker = null;
+    persist();
+    return;
+  }
+
+  if (action === "unlink-map-entity") {
+    unlinkEntityFromMap(
+      actionTarget.dataset.mapId,
+      actionTarget.dataset.collection,
+      actionTarget.dataset.entityId
+    );
+    persist();
     return;
   }
 
@@ -1836,8 +3534,24 @@ document.addEventListener("submit", async (event) => {
     const formData = new FormData(event.target);
     const collectionKey = formData.get("collectionKey");
     const entity = buildEntityFromForm(formData);
+    const pending = ui.mapLinkPending;
     upsertEntity(state, collectionKey, entity);
     ui.admin.entityId = entity.id;
+    if (
+      pending &&
+      pending.collectionKey === collectionKey &&
+      pending.mapId
+    ) {
+      linkEntityToMap(
+        pending.mapId,
+        pending.collectionKey,
+        pending.linkField,
+        entity.id
+      );
+      ui.mapLinkPending = null;
+      ui.activeMapLinkPicker = null;
+      ui.admin.collectionKey = "maps";
+    }
     persist();
     return;
   }

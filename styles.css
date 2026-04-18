@@ -417,6 +417,14 @@ textarea {
   gap: 1rem;
 }
 
+.map-group-shell {
+  margin-bottom: 1rem;
+}
+
+.map-group-stack > .map-group-shell:last-child {
+  margin-bottom: 0;
+}
+
 .hero-map-group__title {
   font-size: 0.78rem;
   text-transform: uppercase;
@@ -541,6 +549,15 @@ textarea {
   box-shadow: inset 0 1px 0 rgba(255, 231, 187, 0.04), 0 18px 60px rgba(0, 0, 0, 0.24);
 }
 
+.map-panel,
+.map-linked-card {
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background:
+    linear-gradient(180deg, rgba(19, 21, 29, 0.94), rgba(10, 11, 16, 0.92));
+  box-shadow: inset 0 1px 0 rgba(255, 231, 187, 0.04), 0 18px 60px rgba(0, 0, 0, 0.24);
+}
+
 .overview-card {
   border-radius: 18px;
   padding: 1.1rem 1rem;
@@ -628,10 +645,95 @@ textarea {
 .focus-card h3,
 .boss-prep-card h3,
 .stack-panel h3,
+.map-panel h3,
 .modal-panel h3 {
   margin: 0;
   font-family: var(--display);
   font-size: 1.35rem;
+}
+
+.map-panel {
+  padding: 1.25rem;
+}
+
+.map-panel-heading,
+.map-linked-card {
+  display: flex;
+}
+
+.map-panel-heading {
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.map-panel-actions {
+  display: flex;
+  gap: 0.55rem;
+  flex-wrap: wrap;
+}
+
+.map-linked-card {
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+.map-linked-card__actions {
+  margin-top: 0.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  justify-content: flex-end;
+}
+
+.knowledge-archive__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.knowledge-archive__group {
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 1rem;
+  background:
+    linear-gradient(180deg, rgba(19, 21, 29, 0.9), rgba(10, 11, 16, 0.9));
+}
+
+.knowledge-article__heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.knowledge-article__actions {
+  margin-top: 0.75rem;
+}
+
+.knowledge-article__link-label {
+  display: inline-flex;
+  margin-right: 0.45rem;
+  color: rgba(240, 230, 212, 0.72);
+  font-size: 0.82rem;
+}
+
+.modal-link-actions {
+  margin-top: 0.85rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.knowledge-article__links {
+  align-items: flex-start;
+  margin-top: 0.7rem;
+}
+
+.knowledge-article__links .chip {
+  margin: 0.1rem;
 }
 
 .section-heading p {
@@ -650,6 +752,20 @@ textarea {
 .boss-prep-grid,
 .transfer-grid,
 .overview-layout {
+  display: grid;
+  gap: 1rem;
+}
+
+.map-panel-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.knowledge-archive,
+.knowledge-subsection-grid,
+.knowledge-article__links,
+.map-link-picker-grid {
   display: grid;
   gap: 1rem;
 }
@@ -1041,6 +1157,30 @@ textarea {
   background:
     linear-gradient(180deg, rgba(12, 14, 19, 0.1), rgba(7, 8, 12, 0.92)),
     radial-gradient(circle at 22% 20%, rgba(173, 199, 229, 0.22), transparent 26%);
+}
+
+.tone-amber {
+  background:
+    linear-gradient(180deg, rgba(12, 14, 19, 0.1), rgba(7, 8, 12, 0.92)),
+    radial-gradient(circle at 22% 20%, rgba(255, 191, 92, 0.22), transparent 26%);
+}
+
+.tone-forest {
+  background:
+    linear-gradient(180deg, rgba(12, 14, 19, 0.1), rgba(7, 8, 12, 0.92)),
+    radial-gradient(circle at 22% 20%, rgba(73, 121, 84, 0.22), transparent 26%);
+}
+
+.tone-stone {
+  background:
+    linear-gradient(180deg, rgba(12, 14, 19, 0.1), rgba(7, 8, 12, 0.92)),
+    radial-gradient(circle at 22% 20%, rgba(144, 138, 128, 0.22), transparent 26%);
+}
+
+.tone-silver {
+  background:
+    linear-gradient(180deg, rgba(12, 14, 19, 0.1), rgba(7, 8, 12, 0.92)),
+    radial-gradient(circle at 22% 20%, rgba(192, 193, 197, 0.22), transparent 26%);
 }
 
 .admin-drawer {
