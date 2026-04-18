@@ -4,6 +4,60 @@ const STORAGE_KEY = "ark-ascended-atlas-state-v1";
 
 const clone = (value) => JSON.parse(JSON.stringify(value));
 
+const getEntityId = (entry) => {
+  if (!entry || typeof entry !== "object") return null;
+  if (entry.id) return entry.id;
+  if (entry.key) return entry.key;
+  return null;
+};
+
+function mergeArrays(base, saved) {
+  if (!Array.isArray(base) || !Array.isArray(saved)) {
+    return Array.isArray(saved) ? saved : clone(base);
+  }
+
+  const baseEntries = new Map();
+  const ids = [];
+  const allSavable = base.every((entry) => getEntityId(entry));
+  if (!allSavable) {
+    return saved;
+  }
+
+  for (const baseEntry of base) {
+    const id = getEntityId(baseEntry);
+    if (!ids.includes(id)) {
+      ids.push(id);
+    }
+    baseEntries.set(id, baseEntry);
+  }
+
+  const used = new Set();
+  const merged = [];
+
+  for (const savedEntry of saved) {
+    const id = getEntityId(savedEntry);
+    if (!id) {
+      merged.push(savedEntry);
+      continue;
+    }
+
+    if (baseEntries.has(id)) {
+      merged.push(mergeWithDefaults(savedEntry, baseEntries.get(id)));
+    } else {
+      merged.push(savedEntry);
+    }
+    used.add(id);
+  }
+
+  for (const id of ids) {
+    if (!used.has(id)) {
+      merged.push(clone(baseEntries.get(id)));
+    }
+  }
+
+  return merged;
+}
+
 export const loadState = () => {
   try {
     const raw = window.localStorage.getItem(STORAGE_KEY);
@@ -57,7 +111,7 @@ export const updateSetting = (state, key, value) => {
 
 function mergeWithDefaults(saved, base) {
   if (Array.isArray(base)) {
-    return Array.isArray(saved) ? saved : clone(base);
+    return mergeArrays(base, saved);
   }
 
   if (base && typeof base === "object") {
