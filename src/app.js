@@ -93,26 +93,48 @@ function renderHomePage(section) {
 
 function renderHero() {
   const maps = (state.maps || []).filter(Boolean);
-  const storyIds = [
+  const coreStoryIds = [
     "the-island",
     "scorched-earth",
     "aberration",
     "extinction",
-    "lost-colony",
+  ];
+  const canonExpansionIds = ["lost-colony"];
+  const nonCanonIds = [
+    "the-center",
+    "ragnarok",
+    "valguero",
+    "astraeos",
   ];
 
   const groupedMaps = {
-    story: [],
-    side: [],
+    coreStory: [],
+    canonExpansion: [],
+    nonCanon: [],
   };
 
   const lookup = new Map(maps.map((map) => [map.id, map]));
 
-  storyIds.forEach((id) => {
-    if (lookup.has(id)) groupedMaps.story.push(lookup.get(id));
-  });
+  const assignOrdered = (ids, bucket) => {
+    ids.forEach((id) => {
+      if (lookup.has(id)) {
+        groupedMaps[bucket].push(lookup.get(id));
+      }
+    });
+  };
 
-  groupedMaps.side = maps.filter((map) => !storyIds.includes(map.id));
+  assignOrdered(coreStoryIds, "coreStory");
+  assignOrdered(canonExpansionIds, "canonExpansion");
+  assignOrdered(nonCanonIds, "nonCanon");
+
+  const allOrderedIds = new Set([
+    ...coreStoryIds,
+    ...canonExpansionIds,
+    ...nonCanonIds,
+  ]);
+  const extraMaps = maps.filter((map) => !allOrderedIds.has(map.id));
+  groupedMaps.nonCanon = groupedMaps.nonCanon.concat(extraMaps);
+
 
   return `
     <section class="hero-panel">
@@ -145,15 +167,21 @@ function renderHero() {
         </div>
         <div class="hero-map-groups">
           <div class="hero-map-group">
-            <div class="hero-map-group__title">Cốt truyện</div>
+            <div class="hero-map-group__title">Core Story Route</div>
             <div class="hero-map-grid">
-              ${renderHeroMapCards(groupedMaps.story)}
+              ${renderHeroMapCards(groupedMaps.coreStory, "Story")}
             </div>
           </div>
           <div class="hero-map-group">
-            <div class="hero-map-group__title">Bản đồ khác</div>
+            <div class="hero-map-group__title">Canon Expansion</div>
             <div class="hero-map-grid">
-              ${renderHeroMapCards(groupedMaps.side)}
+              ${renderHeroMapCards(groupedMaps.canonExpansion, "Canon Expansion")}
+            </div>
+          </div>
+          <div class="hero-map-group">
+            <div class="hero-map-group__title">Non-Canon / Explore Maps</div>
+            <div class="hero-map-grid">
+              ${renderHeroMapCards(groupedMaps.nonCanon, "Non-Canon")}
             </div>
           </div>
         </div>
@@ -162,12 +190,19 @@ function renderHero() {
   `;
 }
 
-function renderHeroMapCards(maps) {
+function renderHeroMapCards(maps, badgeLabel = "") {
   return (maps || [])
     .map(
       (map) => `
         <a class="hero-map-tile" href="#/map/${escapeHtml(map.id)}">
           ${renderHeroMapCardMedia(map)}
+          ${
+            badgeLabel
+              ? `<span class="hero-map-tile__badge">${escapeHtml(
+                  badgeLabel
+                )}</span>`
+              : ""
+          }
           <span class="hero-map-tile__name">${escapeHtml(map.name)}</span>
         </a>
       `
