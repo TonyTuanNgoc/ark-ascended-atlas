@@ -1,6 +1,8 @@
 import { defaultData } from "./data.js";
 
 const STORAGE_KEY = "ark-ascended-atlas-state-v1";
+const STORAGE_SCHEMA_VERSION = 2;
+const STORAGE_SCHEMA_KEY = "__schemaVersion";
 
 const clone = (value) => JSON.parse(JSON.stringify(value));
 
@@ -61,21 +63,41 @@ function mergeArrays(base, saved) {
 export const loadState = () => {
   try {
     const raw = window.localStorage.getItem(STORAGE_KEY);
-    if (!raw) return clone(defaultData);
+    if (!raw) {
+      const fresh = clone(defaultData);
+      fresh[STORAGE_SCHEMA_KEY] = STORAGE_SCHEMA_VERSION;
+      return fresh;
+    }
+
     const parsed = JSON.parse(raw);
-    return mergeWithDefaults(parsed, defaultData);
+    const migrated = mergeWithDefaults(parsed, defaultData);
+    if (
+      !(STORAGE_SCHEMA_KEY in parsed) ||
+      parsed[STORAGE_SCHEMA_KEY] !== STORAGE_SCHEMA_VERSION
+    ) {
+      migrated[STORAGE_SCHEMA_KEY] = STORAGE_SCHEMA_VERSION;
+      saveState(migrated);
+    }
+    return migrated;
   } catch (error) {
     console.warn("Failed to load atlas state:", error);
-    return clone(defaultData);
+    const fallback = clone(defaultData);
+    fallback[STORAGE_SCHEMA_KEY] = STORAGE_SCHEMA_VERSION;
+    return fallback;
   }
 };
 
 export const saveState = (state) => {
-  window.localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+  const payload = {
+    ...state,
+    [STORAGE_SCHEMA_KEY]: STORAGE_SCHEMA_VERSION,
+  };
+  window.localStorage.setItem(STORAGE_KEY, JSON.stringify(payload));
 };
 
 export const resetState = () => {
   const fresh = clone(defaultData);
+  fresh[STORAGE_SCHEMA_KEY] = STORAGE_SCHEMA_VERSION;
   saveState(fresh);
   return fresh;
 };

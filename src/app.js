@@ -27,6 +27,131 @@ const MAP_LINK_FIELDS = {
   knowledgeArticles: "knowledgeArticleIds",
 };
 
+const MAP_SECTION_DEFS = {
+  bosses: {
+    key: "bosses",
+    title: "Bosses",
+    subtitle: "Map-critical battle and prep entries.",
+    description: "Open map-linked bosses with dedicated planning tools and direct actions.",
+    collectionKey: "bosses",
+    linkField: "bossIds",
+    supportsFilters: false,
+    supportsSearch: false,
+    previewLabel: "Bosses",
+  },
+  dinos: {
+    key: "dinos",
+    title: "Key Creatures",
+    subtitle: "Library-style creature matrix tied to this map.",
+    description: "Review, link, and tune the creature stack used for this map.",
+    collectionKey: "dinos",
+    linkField: "tameIds",
+    supportsFilters: true,
+    supportsSearch: true,
+    supportsLibrary: true,
+    previewLabel: "Creatures",
+  },
+  resources: {
+    key: "resources",
+    title: "Resources",
+    subtitle: "Efficient movement routes and utility resources.",
+    description: "Operational route notes and risk markers for map logistics.",
+    collectionKey: "resources",
+    linkField: "resourceIds",
+    supportsFilters: false,
+    supportsSearch: true,
+    previewLabel: "Resources",
+  },
+  artifacts: {
+    key: "artifacts",
+    title: "Artifacts & Caves",
+    subtitle: "Artifact routing and cave pressure map.",
+    description: "Track cave complexity, artifact pull, and boss relevance.",
+    collectionKey: "artifacts",
+    linkField: "artifactIds",
+    supportsFilters: false,
+    supportsSearch: true,
+    previewLabel: "Artifacts",
+  },
+  tributeItems: {
+    key: "tributeItems",
+    title: "Tribute Items",
+    subtitle: "Tribute capture targets for map fights.",
+    description: "Source and quantity expectations for tribute execution.",
+    collectionKey: "tributeItems",
+    linkField: "tributeIds",
+    supportsFilters: false,
+    supportsSearch: true,
+    previewLabel: "Tributes",
+  },
+  baseSpots: {
+    key: "baseSpots",
+    title: "Base Spots",
+    subtitle: "Operational base nodes and stationing options.",
+    description: "Manage strong and safe base positions across this map.",
+    collectionKey: "baseSpots",
+    linkField: "baseSpotIds",
+    supportsFilters: false,
+    supportsSearch: true,
+    previewLabel: "Base spots",
+  },
+  progression: {
+    key: "progression",
+    title: "Progression",
+    subtitle: "Phase board for map sequencing and readiness gates.",
+    description: "Map-driven progression timeline and transition checkpoints.",
+    supportsFilters: false,
+    supportsSearch: false,
+    previewLabel: "Phases",
+  },
+  galleryMedia: {
+    key: "galleryMedia",
+    title: "Gallery",
+    subtitle: "Visual references and terrain capture for planning.",
+    description: "Open a focused media board without leaving map workflow.",
+    collectionKey: "galleryMedia",
+    linkField: "galleryIds",
+    supportsFilters: false,
+    supportsSearch: false,
+    previewLabel: "Gallery assets",
+  },
+  references: {
+    key: "references",
+    title: "Sources",
+    subtitle: "Validated external references and notes.",
+    description: "Source list for route logic, timing, and lore confirmations.",
+    collectionKey: "references",
+    linkField: "sourceIds",
+    supportsFilters: false,
+    supportsSearch: true,
+    previewLabel: "Sources",
+  },
+};
+
+const MAP_SECTION_ORDER = [
+  "bosses",
+  "dinos",
+  "resources",
+  "artifacts",
+  "tributeItems",
+  "baseSpots",
+  "progression",
+  "galleryMedia",
+  "references",
+];
+
+const MAP_PROGRESS_PHASES = [
+  "Early Game",
+  "Mid Game",
+  "Industrial / Tech Transition",
+  "Boss Prep",
+  "Endgame / Ascension",
+];
+
+const CREATURE_STAGE_FILTERS = ["early", "mid", "endgame"];
+const CREATURE_ROLE_FILTERS = ["utility", "boss", "cave", "flyer", "transport", "breeder"];
+const CREATURE_DIFFICULTY_FILTERS = ["low", "medium", "high"];
+
 const KNOWLEDGE_SECTIONS = [
   { id: "summary", title: "Summary" },
   { id: "features", title: "Features" },
@@ -104,6 +229,9 @@ const ui = {
   editMapCards: false,
   activeBossId: null,
   route: parseRoute(),
+  activeMapSection: null,
+  activeMapEntity: null,
+  mapSectionState: {},
   activeMapLinkPicker: null,
   mapLinkPending: null,
   admin: {
@@ -800,7 +928,7 @@ function renderMapPage(mapId) {
           </div>
         </section>
       </div>
-    `;
+  `;
   }
 
   return `
@@ -824,43 +952,1007 @@ function renderMapPage(mapId) {
             <span><strong>Type</strong> ${escapeHtml(map.classification.type)}</span>
             <span><strong>Access</strong> ${escapeHtml(map.classification.access)}</span>
           </div>
+          ${ui.editMode ? `
+            <div class="map-page-actions">
+              <button
+                class="ghost-button ghost-button--small"
+                type="button"
+                data-action="open-map-entity"
+                data-collection="maps"
+                data-entity-id="${escapeHtml(map.id)}"
+              >
+                Edit map metadata
+              </button>
+            </div>
+          ` : ""}
         </div>
       </section>
 
-      <section class="content-section content-section--panels">
-        <div class="map-panel-grid">
-          ${renderMapSummaryPanel(map)}
-          ${renderMapFeaturesPanel(map)}
-          ${renderLinkedEntityPanel({
-            map,
-            title: "Bosses",
-            collectionKey: "bosses",
-            linkField: "bossIds",
-            emptyTitle: "No bosses linked",
-            emptyText:
-              "Attach bosses that are relevant to this map through boss planner or quick links.",
-            renderCard: (boss) => renderBossCard(boss, true),
-          })}
-          ${renderMapKeyCreaturesPanel(map)}
-          ${renderMapResourcePanel(map)}
-          ${renderMapArtifactsPanel(map)}
-          ${renderMapTributePanel(map)}
-          ${renderLinkedEntityPanel({
-            map,
-            title: "Base Spots",
-            collectionKey: "baseSpots",
-            linkField: "baseSpotIds",
-            emptyTitle: "No base spots yet",
-            emptyText:
-              "Use the map operations layer to link base spots for main, crafting, forward, breeding, and staging roles.",
-            renderCard: (spot) => renderBaseSpotCard(spot),
-            cardClass: "mini-card-grid",
-          })}
-          ${renderMapProgressionPanel(map)}
-          ${renderMapGalleryPanel(map)}
-          ${renderMapSourcesPanel(map)}
+      <section class="content-section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Map Operations</p>
+            <h2>Section Hub</h2>
+            <p>Open each section as a dedicated workspace instead of scrolling a full article.</p>
+          </div>
+        </div>
+        <div class="map-section-grid">
+          ${MAP_SECTION_ORDER
+            .map((sectionKey) => renderMapSectionCard(map, sectionKey))
+            .join("")}
         </div>
       </section>
+    </div>
+  `;
+}
+
+function renderMapSectionCard(map, sectionKey) {
+  const section = MAP_SECTION_DEFS[sectionKey];
+  if (!section) return "";
+
+  const entries = resolveMapSectionEntities(map, section, false);
+  const linkedCount = entries.length;
+  const hasCollection = Boolean(section.collectionKey);
+  const previewEntries = section.key === "progression"
+    ? getProgressionPreviewRows(map.progression || [])
+    : entries.slice(0, 3);
+  const preview = previewEntries.map(
+    (entry) => `<span class="chip">${escapeHtml(getMapSectionEntryLabel(section, entry))}</span>`
+  ).join("");
+
+  return `
+    <article class="map-section-card">
+      <div class="map-section-card__header">
+        <h3>${escapeHtml(section.title)}</h3>
+        <span class="map-section-card__count">${linkedCount} entries</span>
+      </div>
+      <p>${escapeHtml(section.subtitle)}</p>
+      <p class="map-section-card__summary">${escapeHtml(section.description || "")}</p>
+      <div class="map-section-card__preview">
+        ${preview || `<span class="map-section-card__empty-preview">No linked content yet</span>`}
+      </div>
+      <div class="map-section-card__actions">
+        <button
+          class="hero-button hero-button--primary"
+          type="button"
+          data-action="open-map-section"
+          data-map-id="${escapeHtml(map.id)}"
+          data-section="${escapeHtml(section.key)}"
+          data-mode="open"
+        >
+          Open
+        </button>
+        <button
+          class="ghost-button ghost-button--small"
+          type="button"
+          data-action="open-map-section"
+          data-map-id="${escapeHtml(map.id)}"
+          data-section="${escapeHtml(section.key)}"
+          data-mode="manage"
+        >
+          Manage
+        </button>
+        ${hasCollection && ui.editMode && section.linkField ? `
+          <button
+            class="ghost-button ghost-button--small"
+            type="button"
+            data-action="open-map-link-picker"
+            data-map-id="${escapeHtml(map.id)}"
+            data-collection="${escapeHtml(section.collectionKey)}"
+            data-link-field="${escapeHtml(section.linkField)}"
+          >
+            Add Existing
+          </button>
+        ` : ""}
+      </div>
+    </article>
+  `;
+}
+
+function resolveMapSectionEntities(map, sectionDef, includeAll = false) {
+  if (!sectionDef) return [];
+
+  if (sectionDef.key === "progression") {
+    return (map.progression || []).map((entry, index) => ({
+      ...entry,
+      id: `${map.id}-phase-${index}`,
+      __isLinked: true,
+    }));
+  }
+
+  if (!sectionDef.collectionKey) return [];
+
+  const collection = state[sectionDef.collectionKey] || [];
+  const linkedIds = new Set(
+    getMapLinkIds(map, sectionDef.collectionKey, sectionDef.linkField)
+  );
+
+  if (sectionDef.collectionKey === "dinos") {
+    return collection
+      .filter(Boolean)
+      .map((entry) => ({
+        ...entry,
+        __isLinked: includeAll ? linkedIds.has(entry.id) : linkedIds.has(entry.id),
+      }))
+      .filter((entry) => (includeAll ? true : entry.__isLinked));
+  }
+
+  const list = includeAll
+    ? collection.filter(Boolean)
+    : collection.filter((entry) => linkedIds.has(entry.id));
+
+  return list
+    .filter(Boolean)
+    .map((entry) => ({
+      ...entry,
+      __isLinked: true,
+    }));
+}
+
+function getMapSectionState(sectionKey) {
+  if (!ui.mapSectionState[sectionKey]) {
+    ui.mapSectionState[sectionKey] = {
+      search: "",
+      filters: {},
+    };
+  }
+  return ui.mapSectionState[sectionKey];
+}
+
+function getMapSectionEntryLabel(sectionDef, entry) {
+  if (sectionDef.key === "progression") {
+    return String(entry.stage || "Phase");
+  }
+  return (
+    entry.name ||
+    entry.title ||
+    entry.route ||
+    entry.stage ||
+    entry.focus ||
+    entry.cave ||
+    entry.type ||
+    entry.id ||
+    "Entry"
+  );
+}
+
+function getProgressionPreviewRows(phases = []) {
+  return phases.slice(0, 2).map((entry) => ({
+    ...entry,
+    id: slugify(`${entry.stage || "phase"}-${entry.focus || ""}`),
+    __isLinked: true,
+  }));
+}
+
+function renderMapSectionModal() {
+  const active = ui.activeMapSection;
+  if (!active?.mapId || !active.section) return "";
+
+  const map = getMap(active.mapId);
+  const sectionDef = MAP_SECTION_DEFS[active.section];
+  if (!map || !sectionDef) return "";
+
+  const sectionState = getMapSectionState(active.section);
+  const query = String(sectionState.search || "").trim().toLowerCase();
+  const linkedCount = resolveMapSectionEntities(map, sectionDef, false).length;
+  const sectionMode = active.mode || "open";
+  const modeLabel = sectionMode === "manage" ? "Manage" : "Open";
+
+  const contentMap = {
+    bosses: renderMapSectionBossesModal,
+    dinos: renderMapSectionCreaturesModal,
+    resources: renderMapSectionResourcesModal,
+    artifacts: renderMapSectionArtifactsModal,
+    tributeItems: renderMapSectionTributeModal,
+    baseSpots: renderMapSectionBaseSpotsModal,
+    progression: renderMapSectionProgressionModal,
+    galleryMedia: renderMapSectionGalleryModal,
+    references: renderMapSectionSourcesModal,
+  };
+
+  const contentRenderer = contentMap[active.section];
+  if (!contentRenderer) return "";
+
+  return `
+    <div class="modal-backdrop" data-action="close-modal">
+      <div class="modal-panel modal-panel--map-section" role="dialog" aria-modal="true">
+        <div class="modal-panel__header map-section-modal__header">
+          <div>
+            <p class="eyebrow">${escapeHtml(modeLabel)} module</p>
+            <h2>${escapeHtml(sectionDef.title)}</h2>
+            <p>${escapeHtml(sectionDef.description || "")}</p>
+            <p class="map-section-modal__meta">${linkedCount} linked entries</p>
+          </div>
+          <button class="ghost-button" type="button" data-action="close-modal">
+            Close
+          </button>
+        </div>
+        <div class="map-section-modal__toolbar">
+          ${renderMapSectionToolbar(sectionDef, sectionState)}
+        </div>
+        <div class="modal-panel__body map-section-modal__body">
+          ${contentRenderer(map, sectionDef, query, sectionState)}
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function renderMapSectionToolbar(sectionDef, sectionState) {
+  const isCreatureModule = sectionDef.key === "dinos";
+  const canSearch =
+    sectionDef.supportsSearch || isCreatureModule || sectionDef.key === "references";
+
+  return `
+    <div class="map-section-toolbar__group">
+      ${canSearch ? `
+        <label class="map-section-toolbar__field">
+          Search
+          <input
+            type="search"
+            data-action="map-section-search"
+            data-section="${escapeHtml(sectionDef.key)}"
+            value="${escapeHtml(sectionState.search)}"
+            placeholder="Search ${escapeHtml(sectionDef.previewLabel || sectionDef.title)}..."
+          />
+        </label>
+      ` : ""}
+      ${sectionDef.key === "dinos" ? `
+        <label class="map-section-toolbar__field">
+          Stage
+          <select
+            data-action="map-section-filter"
+            data-section="${escapeHtml(sectionDef.key)}"
+            data-filter="stage"
+            value="${escapeHtml(sectionState.filters.stage || "")}"
+          >
+            <option value="">All stages</option>
+            ${CREATURE_STAGE_FILTERS
+              .map(
+                (stage) =>
+                  `<option value="${stage}" ${
+                    sectionState.filters.stage === stage ? "selected" : ""
+                  }>${escapeHtml(capitalize(stage))}</option>`
+              )
+              .join("")}
+          </select>
+        </label>
+        <label class="map-section-toolbar__field">
+          Role
+          <select
+            data-action="map-section-filter"
+            data-section="${escapeHtml(sectionDef.key)}"
+            data-filter="role"
+            value="${escapeHtml(sectionState.filters.role || "")}"
+          >
+            <option value="">All roles</option>
+            ${CREATURE_ROLE_FILTERS
+              .map(
+                (role) =>
+                  `<option value="${role}" ${
+                    sectionState.filters.role === role ? "selected" : ""
+                  }>${escapeHtml(capitalize(role))}</option>`
+              )
+              .join("")}
+          </select>
+        </label>
+        <label class="map-section-toolbar__field">
+          Difficulty
+          <select
+            data-action="map-section-filter"
+            data-section="${escapeHtml(sectionDef.key)}"
+            data-filter="difficulty"
+            value="${escapeHtml(sectionState.filters.difficulty || "")}"
+          >
+            <option value="">All difficulties</option>
+            ${CREATURE_DIFFICULTY_FILTERS
+              .map(
+                (difficulty) =>
+                  `<option value="${difficulty}" ${
+                    sectionState.filters.difficulty === difficulty
+                      ? "selected"
+                      : ""
+                  }>${escapeHtml(capitalize(difficulty))}</option>`
+              )
+              .join("")}
+          </select>
+        </label>
+      ` : ""}
+      ${sectionDef.linkField && ui.editMode ? `
+        <div class="map-section-toolbar__actions">
+          <button
+            class="ghost-button ghost-button--small"
+            type="button"
+            data-action="open-map-link-picker"
+            data-map-id="${escapeHtml(ui.activeMapSection.mapId)}"
+            data-collection="${escapeHtml(sectionDef.collectionKey)}"
+            data-link-field="${escapeHtml(sectionDef.linkField)}"
+          >
+            Add Existing
+          </button>
+          <button
+            class="ghost-button ghost-button--small"
+            type="button"
+            data-action="create-map-link-entity"
+            data-map-id="${escapeHtml(ui.activeMapSection.mapId)}"
+            data-collection="${escapeHtml(sectionDef.collectionKey)}"
+            data-link-field="${escapeHtml(sectionDef.linkField)}"
+          >
+            Create New
+          </button>
+        </div>
+      ` : ""}
+    </div>
+  `;
+}
+
+function renderMapSectionEmptyState(title, text) {
+  return `
+    <div class="inline-empty">
+      <strong>${escapeHtml(title)}</strong>
+      <p>${escapeHtml(text)}</p>
+    </div>
+  `;
+}
+
+function renderMapSectionBossesModal(map, sectionDef) {
+  const entries = resolveMapSectionEntities(map, sectionDef, false);
+  if (!entries.length) {
+    return renderMapSectionEmptyState(
+      "No bosses linked",
+      "Attach at least one boss in edit mode to start planning this map dossier."
+    );
+  }
+
+  return `
+    <div class="map-section-card-grid">
+      ${entries
+        .map((boss) =>
+          renderMapSectionBossCard(map, boss, sectionDef.collectionKey, sectionDef.linkField)
+        )
+        .join("")}
+    </div>
+  `;
+}
+
+function renderMapSectionBossCard(map, boss, collectionKey, linkField) {
+  const bossMap = getMap(boss.mapId);
+  const linkedTags = renderTagList((boss.tags || []).slice(0, 4));
+  const isLinked = boss.__isLinked;
+
+  return `
+    <article class="map-section-item-card">
+      <div class="map-section-item-card__media">
+        ${renderMediaSlot("bosses", boss, {
+          className: "detail-card__media",
+          label: "Boss image",
+          aspect: "square",
+        })}
+      </div>
+      <div class="map-section-item-card__body">
+        <h3>${escapeHtml(boss.name)}</h3>
+        <p>${escapeHtml(boss.mainDanger || boss.difficultyFeel || "")}</p>
+        <p><strong>Arena:</strong> ${escapeHtml(boss.arena || "—")}</p>
+        <p><strong>Map:</strong> ${escapeHtml(bossMap?.name || "Unassigned")}</p>
+        <div class="chip-row">${linkedTags}</div>
+        <div class="map-section-actions">
+          <button
+            class="ghost-button ghost-button--small"
+            type="button"
+            data-action="open-boss"
+            data-boss-id="${escapeHtml(boss.id)}"
+          >
+            View
+          </button>
+          ${ui.editMode
+            ? `<button
+                class="ghost-button ghost-button--small"
+                type="button"
+                data-action="${isLinked ? "unlink-map-entity" : "confirm-map-link"}"
+                data-map-id="${escapeHtml(map.id)}"
+                data-collection="${escapeHtml(collectionKey)}"
+                data-entity-id="${escapeHtml(boss.id)}"
+                ${!isLinked ? `data-link-field="${escapeHtml(linkField)}"` : ""}
+              >
+                ${isLinked ? "Unlink" : "Link"}
+              </button>
+              <button
+                class="ghost-button ghost-button--small"
+                type="button"
+                data-action="quick-edit"
+                data-collection="${escapeHtml(collectionKey)}"
+                data-entity-id="${escapeHtml(boss.id)}"
+              >
+                Edit
+              </button>`
+            : ""}
+        </div>
+      </div>
+    </article>
+  `;
+}
+
+function renderMapSectionCreaturesModal(map, sectionDef, searchQuery) {
+  const allEntries = resolveMapSectionEntities(map, sectionDef, true);
+  const sectionState = getMapSectionState(sectionDef.key);
+  const query = searchQuery || "";
+
+  const filteredEntries = allEntries.filter((entry) => {
+    const searchable = [
+      entry.name,
+      entry.shortDescription,
+      entry.roleTags,
+      entry.stages,
+      entry.tameDifficulty,
+      entry.costPayoff,
+      entry.transferValue,
+      entry.bossRelevance,
+      entry.timeToValue,
+      entry.notes,
+    ]
+      .flat()
+      .filter(Boolean)
+      .join(" ")
+      .toLowerCase();
+
+    if (query && !searchable.includes(query)) return false;
+
+    if (sectionState.filters.stage) {
+      const stages = (entry.stages || []).map((item) => item.toLowerCase());
+      if (!stages.includes(sectionState.filters.stage.toLowerCase())) return false;
+    }
+    if (sectionState.filters.role) {
+      const roles = (entry.roleTags || []).map((item) => item.toLowerCase());
+      if (!roles.includes(sectionState.filters.role.toLowerCase())) return false;
+    }
+    if (sectionState.filters.difficulty) {
+      const value = String(entry.tameDifficulty || "").toLowerCase();
+      if (!value.includes(sectionState.filters.difficulty.toLowerCase()))
+        return false;
+    }
+
+    return true;
+  });
+
+  if (!filteredEntries.length) {
+    return renderMapSectionEmptyState(
+      "No creatures found",
+      "Adjust filters or search terms, or add creatures and link them to this map."
+    );
+  }
+
+  return `
+    <div class="map-data-table-wrap">
+      <table class="map-data-table">
+        <thead>
+          <tr>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Role</th>
+            <th>Tame Difficulty</th>
+            <th>Time to Value</th>
+            <th>Cost vs Payoff</th>
+            <th>Transfer Value</th>
+            <th>BOSS Relevance</th>
+            <th>Tags</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${filteredEntries
+            .map((dino) => {
+              const isLinked = dino.__isLinked;
+              const tags = [
+                ...(dino.roleTags || []),
+                ...(dino.stages || []).map(capitalize),
+              ].filter(Boolean);
+              return `
+                <tr>
+                  <td>${renderMediaSlot("dinos", dino, {
+                    className: "map-data-table__thumb",
+                    label: "Creature image",
+                    aspect: "square",
+                    showActions: false,
+                  })}</td>
+                  <td>${escapeHtml(dino.name)}</td>
+                  <td>${escapeHtml((dino.roleTags || []).join(", ") || "—")}</td>
+                  <td>${escapeHtml(dino.tameDifficulty || "—")}</td>
+                  <td>${escapeHtml(dino.timeToValue || "—")}</td>
+                  <td>${escapeHtml(dino.costPayoff || "—")}</td>
+                  <td>${escapeHtml(dino.transferValue || "—")}</td>
+                  <td>${escapeHtml(dino.bossRelevance || "—")}</td>
+                  <td>${escapeHtml(tags.join(", ") || "—")}</td>
+                  <td class="map-data-table__actions">
+                    <button
+                      class="ghost-button ghost-button--small"
+                      type="button"
+                      data-action="open-map-entity"
+                      data-collection="dinos"
+                      data-entity-id="${escapeHtml(dino.id)}"
+                    >
+                      View
+                    </button>
+                    ${ui.editMode
+                      ? `<button
+                          class="ghost-button ghost-button--small"
+                          type="button"
+                          data-action="${isLinked ? "unlink-map-entity" : "confirm-map-link"}"
+                          data-map-id="${escapeHtml(map.id)}"
+                          data-collection="dinos"
+                          data-entity-id="${escapeHtml(dino.id)}"
+                          data-link-field="tameIds"
+                        >
+                          ${isLinked ? "Unlink" : "Link"}
+                        </button>`
+                      : ""}
+                    ${ui.editMode
+                      ? `<button
+                          class="ghost-button ghost-button--small"
+                          type="button"
+                          data-action="quick-edit"
+                          data-collection="dinos"
+                          data-entity-id="${escapeHtml(dino.id)}"
+                        >
+                          Edit
+                        </button>`
+                      : ""}
+                  </td>
+                </tr>
+              `;
+            })
+            .join("")}
+        </tbody>
+      </table>
+    </div>
+  `;
+}
+
+function renderMapSectionResourcesModal(map, sectionDef) {
+  const entries = resolveMapSectionEntities(map, sectionDef, false);
+  if (!entries.length) {
+    return renderMapSectionEmptyState(
+      "No resources linked",
+      "Link resource routes to map operations and track route risk."
+    );
+  }
+
+  return `
+    <div class="map-section-card-grid">
+      ${entries
+        .map((resource) => renderMapSectionResourceCard(map, resource, sectionDef))
+        .join("")}
+    </div>
+  `;
+}
+
+function renderMapSectionResourceCard(map, resource, sectionDef) {
+  const mapName = getMap(resource.mapId)?.name || map.name || "Map";
+  return `
+    <article class="map-section-item-card">
+      <h3>${escapeHtml(resource.name || resource.title || "Resource route")}</h3>
+      <p><strong>Type:</strong> ${escapeHtml(resource.route || resource.resource || "Route")}</p>
+      <p><strong>Tool:</strong> ${escapeHtml(resource.tool || "—")}</p>
+      <p><strong>Risk:</strong> ${escapeHtml(resource.risk || "—")}</p>
+      <p>${escapeHtml(resource.shortDescription || resource.route || "")}</p>
+      <div class="chip-row">${renderTagList(resource.tags || [mapName])}</div>
+      <div class="map-section-item-card__meta">${escapeHtml(mapName)}</div>
+      <div class="map-section-actions">
+        <button
+          class="ghost-button ghost-button--small"
+          type="button"
+          data-action="open-map-entity"
+          data-collection="resources"
+          data-entity-id="${escapeHtml(resource.id)}"
+        >
+          View
+        </button>
+        ${ui.editMode
+          ? `<button
+              class="ghost-button ghost-button--small"
+              type="button"
+              data-action="quick-edit"
+              data-collection="resources"
+              data-entity-id="${escapeHtml(resource.id)}"
+            >
+              Edit
+            </button>`
+          : ""}
+      </div>
+    </article>
+  `;
+}
+
+function renderMapSectionArtifactsModal(map, sectionDef) {
+  const entries = resolveMapSectionEntities(map, sectionDef, false);
+  if (!entries.length) {
+    return renderMapSectionEmptyState(
+      "No artifacts linked",
+      "Link artifact routes and cave entries to keep this map's progression path efficient."
+    );
+  }
+
+  return `
+    <div class="map-data-table-wrap">
+      <table class="map-data-table">
+        <thead>
+          <tr>
+            <th>Artifact</th>
+            <th>Cave</th>
+            <th>Difficulty</th>
+            <th>Boss Usage</th>
+            <th>Hazard notes</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${entries
+            .map((artifact) => {
+              const bossUsages = getBossesForEntity("bosses", artifact.id, "bosses");
+              return `
+                <tr>
+                  <td>${escapeHtml(artifact.name || artifact.id)}</td>
+                  <td>${escapeHtml(artifact.cave || "—")}</td>
+                  <td>${escapeHtml(artifact.difficulty || "—")}</td>
+                  <td>${bossUsages.length ? bossUsages.map((boss) => renderBossChip(boss.id)).join("") : "—"}</td>
+                  <td>${escapeHtml(artifact.quickRoute || artifact.danger || "—")}</td>
+                  <td class="map-data-table__actions">
+                    <button
+                      class="ghost-button ghost-button--small"
+                      type="button"
+                      data-action="open-map-entity"
+                      data-collection="artifacts"
+                      data-entity-id="${escapeHtml(artifact.id)}"
+                    >
+                      View
+                    </button>
+                    ${ui.editMode
+                      ? `<button
+                          class="ghost-button ghost-button--small"
+                          type="button"
+                          data-action="quick-edit"
+                          data-collection="artifacts"
+                          data-entity-id="${escapeHtml(artifact.id)}"
+                        >
+                          Edit
+                        </button>`
+                      : ""}
+                  </td>
+                </tr>
+              `;
+            })
+            .join("")}
+        </tbody>
+      </table>
+    </div>
+  `;
+}
+
+function renderMapSectionTributeModal(map, sectionDef) {
+  const entries = resolveMapSectionEntities(map, sectionDef, false);
+  if (!entries.length) {
+    return renderMapSectionEmptyState(
+      "No tribute items linked",
+      "Attach tribute entities used by map bosses or your route plan."
+    );
+  }
+
+  return `
+    <div class="map-data-table-wrap">
+      <table class="map-data-table">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Quantity</th>
+            <th>Source</th>
+            <th>Linked boss usage</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${entries
+            .map((tribute) => {
+              const bossUsages = getBossesForEntity("tributeItems", tribute.id, "tributeItems");
+              return `
+                <tr>
+                  <td>${escapeHtml(tribute.name || tribute.id)}</td>
+                  <td>${escapeHtml(tribute.estimate || tribute.quantity || "—")}</td>
+                  <td>${escapeHtml(tribute.sourceCreature || tribute.sourceMethod || "—")}</td>
+                  <td>${bossUsages.length ? bossUsages.map((boss) => renderBossChip(boss.id)).join("") : "—"}</td>
+                  <td class="map-data-table__actions">
+                    <button
+                      class="ghost-button ghost-button--small"
+                      type="button"
+                      data-action="open-map-entity"
+                      data-collection="tributeItems"
+                      data-entity-id="${escapeHtml(tribute.id)}"
+                    >
+                      View
+                    </button>
+                    ${ui.editMode
+                      ? `<button
+                          class="ghost-button ghost-button--small"
+                          type="button"
+                          data-action="quick-edit"
+                          data-collection="tributeItems"
+                          data-entity-id="${escapeHtml(tribute.id)}"
+                        >
+                          Edit
+                        </button>`
+                      : ""}
+                  </td>
+                </tr>
+              `;
+            })
+            .join("")}
+        </tbody>
+      </table>
+    </div>
+  `;
+}
+
+function renderMapSectionBaseSpotsModal(map, sectionDef) {
+  const entries = resolveMapSectionEntities(map, sectionDef, false);
+  if (!entries.length) {
+    return renderMapSectionEmptyState(
+      "No base spots linked",
+      "Add base infrastructure positions as base spots and link them to this map."
+    );
+  }
+
+  return `
+    <div class="map-section-card-grid">
+      ${entries
+        .map((spot) => {
+          const labels = [spot.type, ...(spot.tags || [])].filter(Boolean);
+          return `
+            <article class="map-section-item-card">
+              <h3>${escapeHtml(spot.title || spot.name || "Base spot")}</h3>
+              <p><strong>Type:</strong> ${escapeHtml(spot.type || "—")}</p>
+              <p><strong>Strengths:</strong> ${escapeHtml((spot.strengths || "").trim() || "—")}</p>
+              <p><strong>Weaknesses:</strong> ${escapeHtml((spot.weaknesses || "").trim() || "—")}</p>
+              <div class="chip-row">${renderTagList(labels)}</div>
+              <div class="map-section-actions">
+                <button
+                  class="ghost-button ghost-button--small"
+                  type="button"
+                  data-action="open-map-entity"
+                  data-collection="baseSpots"
+                  data-entity-id="${escapeHtml(spot.id)}"
+                >
+                  View
+                </button>
+                ${ui.editMode
+                  ? `<button
+                      class="ghost-button ghost-button--small"
+                      type="button"
+                      data-action="quick-edit"
+                      data-collection="baseSpots"
+                      data-entity-id="${escapeHtml(spot.id)}"
+                    >
+                      Edit
+                    </button>`
+                  : ""}
+              </div>
+            </article>
+          `;
+        })
+        .join("")}
+    </div>
+  `;
+}
+
+function renderMapSectionProgressionModal(map) {
+  const entries = Array.isArray(map.progression) ? map.progression : [];
+  const phaseLookup = new Map(
+    entries.map((entry) => [entry.stage, entry])
+  );
+
+  if (!entries.length) {
+    return renderMapSectionEmptyState(
+      "No progression set",
+      "Populate progression phases in edit mode through the map model."
+    );
+  }
+
+  return `
+    <div class="map-progression-board">
+      ${MAP_PROGRESS_PHASES.map((phase) => {
+        const phaseData = phaseLookup.get(phase) || {};
+        return `
+          <article class="map-phase-card">
+            <p class="eyebrow">${escapeHtml(phase)}</p>
+            <h3>${escapeHtml(phaseData.focus || "Unset focus")}</h3>
+            <div class="chip-row">${renderTagList(phaseData.bullets || ["No action points yet"])}</div>
+          </article>
+        `;
+      }).join("")}
+    </div>
+  `;
+}
+
+function renderMapSectionGalleryModal(map, sectionDef) {
+  const entries = resolveMapSectionEntities(map, sectionDef, false);
+  if (!entries.length) {
+    return renderMapSectionEmptyState(
+      "No gallery assets",
+      "Attach gallery items to this map so composition and terrain notes stay visual."
+    );
+  }
+
+  return `
+    <div class="map-section-gallery-grid">
+      ${entries
+        .map((asset) => {
+          return `
+            <article class="map-section-item-card">
+              ${renderMediaSlot("galleryMedia", asset, {
+                className: "detail-card__media",
+                label: "Gallery item",
+                aspect: "poster",
+              })}
+              <h3>${escapeHtml(asset.name || asset.title || "Gallery asset")}</h3>
+              <p>${escapeHtml(asset.caption || asset.shortDescription || "")}</p>
+              <div class="map-section-item-card__meta">
+                <span>${escapeHtml(asset.type || "Reference")}</span>
+                <span>${escapeHtml(asset.location || map.name || "Map")}</span>
+              </div>
+              <div class="map-section-actions">
+                <button
+                  class="ghost-button ghost-button--small"
+                  type="button"
+                  data-action="open-map-entity"
+                  data-collection="galleryMedia"
+                  data-entity-id="${escapeHtml(asset.id)}"
+                >
+                  View
+                </button>
+                ${ui.editMode
+                  ? `<button
+                      class="ghost-button ghost-button--small"
+                      type="button"
+                      data-action="quick-edit"
+                      data-collection="galleryMedia"
+                      data-entity-id="${escapeHtml(asset.id)}"
+                    >
+                      Edit
+                    </button>`
+                  : ""}
+              </div>
+            </article>
+          `;
+        })
+        .join("")}
+    </div>
+  `;
+}
+
+function renderMapSectionSourcesModal(map, sectionDef) {
+  const entries = resolveMapSectionEntities(map, sectionDef, false);
+  if (!entries.length) {
+    return renderMapSectionEmptyState(
+      "No source links",
+      "Link references to validate this map route and progression logic."
+    );
+  }
+
+  return `
+    <div class="map-data-table-wrap">
+      <table class="map-data-table">
+        <thead>
+          <tr>
+            <th>Source</th>
+            <th>Type</th>
+            <th>URL</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${entries
+            .map((source) => {
+              const sourceUrl = source.url ? `<a class="text-link" href="${escapeAttribute(
+                source.url
+              )}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.url)}</a>` : "";
+              return `
+                <tr>
+                  <td>${escapeHtml(source.title || "Reference")}</td>
+                  <td>${escapeHtml(source.type || "Reference")}</td>
+                  <td>${sourceUrl || "—"}</td>
+                  <td class="map-data-table__actions">
+                    <button
+                      class="ghost-button ghost-button--small"
+                      type="button"
+                      data-action="open-map-entity"
+                      data-collection="references"
+                      data-entity-id="${escapeHtml(source.id)}"
+                    >
+                      View
+                    </button>
+                    ${ui.editMode
+                      ? `<button
+                          class="ghost-button ghost-button--small"
+                          type="button"
+                          data-action="quick-edit"
+                          data-collection="references"
+                          data-entity-id="${escapeHtml(source.id)}"
+                        >
+                          Edit
+                        </button>`
+                      : ""}
+                  </td>
+                </tr>
+              `;
+            })
+            .join("")}
+        </tbody>
+      </table>
+    </div>
+  `;
+}
+
+function getBossesForEntity(collection, entityId, arrayField = "bosses") {
+  return (state.bosses || [])
+    .filter((boss) => Array.isArray(boss?.[arrayField]) && boss[arrayField].includes(entityId))
+    .slice(0, 3);
+}
+
+function renderMapEntityModal() {
+  const active = ui.activeMapEntity;
+  if (!active?.collection || !active.entityId) return "";
+
+  const entity = findEntity(state, active.collection, active.entityId);
+  if (!entity) {
+    ui.activeMapEntity = null;
+    return "";
+  }
+
+  const rows = Object.entries(entity)
+    .filter(([key, value]) =>
+      !["id", "media", "relatedIds", "tags"].includes(key) &&
+      value !== "" &&
+      value != null
+    )
+    .map(([key, value]) => `
+      <tr>
+        <td><strong>${escapeHtml(key)}</strong></td>
+        <td>${escapeHtml(Array.isArray(value) ? value.join(", ") : String(value))}</td>
+      </tr>
+    `)
+    .join("");
+
+  return `
+    <div class="modal-backdrop" data-action="close-modal">
+      <div class="modal-panel modal-panel--map-section modal-panel--compact" role="dialog" aria-modal="true">
+        <div class="modal-panel__header">
+          <div>
+            <p class="eyebrow">Map Section Entry</p>
+            <h2>${escapeHtml(entity.name || entity.title || active.entityId)}</h2>
+            <p>${escapeHtml(entity.shortDescription || entity.difficultyFeel || entity.citation || "")}</p>
+          </div>
+          <button class="ghost-button" type="button" data-action="close-modal">Close</button>
+        </div>
+        <div class="modal-panel__body">
+          <div class="map-entity-meta">
+            ${renderTagList(entity.tags || [])}
+            ${entity.media?.src ? `<img class="map-entity-image" src="${escapeAttribute(entity.media.src)}" alt="${escapeHtml(entity.name || entity.title || "entity image")}" />` : ""}
+          </div>
+          <div class="map-data-table-wrap">
+            <table class="map-data-table">
+              <tbody>${rows || ""}</tbody>
+            </table>
+          </div>
+          <div class="admin-form__actions">
+            <button
+              class="hero-button hero-button--primary"
+              type="button"
+              data-action="quick-edit"
+              data-collection="${escapeHtml(active.collection)}"
+              data-entity-id="${escapeHtml(active.entityId)}"
+            >
+              Edit
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   `;
 }
