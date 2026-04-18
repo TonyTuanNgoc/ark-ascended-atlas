@@ -29,6 +29,27 @@ Sau đó:
 - Push vào `main`/`master` sẽ auto deploy production.
 - Mở PR vào `main`/`master` sẽ tự tạo preview channel trên Firebase cho PR đó.
 
+### 2b) Chạy nhanh tự động hóa toàn bộ
+
+```bash
+cd "/Users/admin/ARK Ascended"
+chmod +x scripts/link-and-deploy.sh
+./scripts/link-and-deploy.sh
+```
+
+Script sẽ:
+- thêm remote GitHub
+- đẩy mã lên `main`
+- cập nhật `/.firebaserc` theo project id bạn nhập
+
+Nếu muốn dùng biến môi trường không phải nhập tay:
+
+```bash
+REPO_URL=https://github.com/<your-username>/<your-repo>.git \
+FIREBASE_PROJECT_ID=<your-firebase-project-id> \
+./scripts/link-and-deploy.sh
+```
+
 ### 3) Deploy thủ công (optional)
 
 ```bash
