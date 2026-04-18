@@ -659,27 +659,28 @@ function renderBossCard(boss, compact = false) {
 }
 
 function renderGlobalTamePlanner() {
-  const stageBuckets = ["early", "mid", "industrial", "boss prep", "endgame"];
+  const creatures = [...(state.dinos || [])].sort((a, b) =>
+    (a.name || "").localeCompare(b.name || "")
+  );
+
+  if (!creatures.length) {
+    return renderEmptyState(
+      "No creatures yet",
+      "Add creature entries and upload images in edit mode."
+    );
+  }
+
   return `
-    <div class="stack-grid">
-      ${stageBuckets
-        .map((stage) => {
-          const dinos = state.dinos.filter((dino) => dino.stages.includes(stage));
-          return `
-            <article class="stack-panel">
-              <div class="section-heading section-heading--compact">
-                <div>
-                  <h3>${escapeHtml(capitalize(stage))}</h3>
-                  <p>${dinos.length} dino picks that pay off in this stage.</p>
-                </div>
-              </div>
-              <div class="mini-card-grid">
-                ${dinos.slice(0, 4).map((dino) => renderDinoCard(dino, true)).join("")}
-              </div>
-            </article>
-          `;
-        })
-        .join("")}
+    <div class="dino-gallery-shell">
+      <div class="section-heading section-heading--compact">
+        <div>
+          <h3>Creature Gallery</h3>
+          <p>${creatures.length} registered creatures.</p>
+        </div>
+      </div>
+      <div class="dino-gallery-grid">
+        ${creatures.map((dino) => renderDinoCard(dino, true)).join("")}
+      </div>
     </div>
   `;
 }
@@ -933,6 +934,7 @@ function renderMapKeyCreaturesPanel(map) {
     linkField: "tameIds",
     emptyTitle: "No linked creatures yet",
     emptyText: "Link key dinos required for this map's tame stack and boss support.",
+    cardClass: "dino-gallery-grid",
     renderCard: (dino) => renderDinoCard(dino, true),
   });
 }
@@ -1240,36 +1242,11 @@ function renderMapTamePlanner(map) {
     );
   }
 
-  const stageLegend = ["early", "mid", "industrial", "boss prep", "endgame"];
-  const roleLegend = [
-    "Berry",
-    "Wood",
-    "Stone",
-    "Metal",
-    "Weight",
-    "Flyer",
-    "Cave",
-    "Water",
-    "Boss DPS",
-    "Tank",
-    "Support",
-    "Breeder",
-    "Utility",
-  ];
-
   return `
-    <div class="legend-shell">
-      <article class="legend-card">
-        <p class="eyebrow">Role Filters</p>
-        <div class="chip-row">${renderTagList(roleLegend)}</div>
-      </article>
-      <article class="legend-card">
-        <p class="eyebrow">Stage Filters</p>
-        <div class="chip-row">${renderTagList(stageLegend.map(capitalize))}</div>
-      </article>
-    </div>
-    <div class="mini-card-grid">
-      ${dinos.map((dino) => renderDinoCard(dino)).join("")}
+    <div class="dino-gallery-shell">
+      <div class="dino-gallery-grid">
+        ${dinos.map((dino) => renderDinoCard(dino, true)).join("")}
+      </div>
     </div>
   `;
 }
@@ -1381,6 +1358,34 @@ function renderBaseSpots(baseSpotIds) {
 }
 
 function renderDinoCard(dino, compact = false) {
+  const roleTags = Array.isArray(dino.roleTags) ? dino.roleTags : [];
+  const stages = Array.isArray(dino.stages) ? dino.stages : [];
+  const hasLongForm =
+    roleTags.length ||
+    stages.length ||
+    String(dino.tameDifficulty || "").trim() ||
+    String(dino.timeToValue || "").trim() ||
+    String(dino.costPayoff || "").trim() ||
+    String(dino.transferValue || "").trim() ||
+    String(dino.bossRelevance || "").trim() ||
+    String(dino.shortDescription || "").trim() ||
+    String(dino.notes || "").trim();
+
+  if (compact || !hasLongForm) {
+    return `
+      <article class="dino-card dino-card--name-only ${compact ? "dino-card--compact" : ""}">
+        ${renderMediaSlot("dinos", dino, {
+          className: "dino-card__media",
+          label: "Creature Image",
+          aspect: "square",
+        })}
+        <div class="dino-card__body">
+          <h3>${escapeHtml(dino.name)}</h3>
+        </div>
+      </article>
+    `;
+  }
+
   return `
     <article class="dino-card ${compact ? "dino-card--compact" : ""}">
       ${renderMediaSlot("dinos", dino, {

@@ -872,9 +872,33 @@ textarea {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.dino-gallery-shell {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.dino-gallery-grid {
+  display: grid;
+  gap: 0.8rem;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+}
+
 .detail-card {
   overflow: hidden;
   border-radius: 24px;
+}
+
+.dino-card--compact {
+  min-height: 100%;
+}
+
+.dino-card--name-only .dino-card__body {
+  padding: 0.85rem 0.9rem 0.95rem;
+}
+
+.dino-card--name-only .dino-card__body h3 {
+  font-size: 0.96rem;
+  line-height: 1.3;
 }
 
 .detail-card__media {
@@ -1418,6 +1442,7 @@ textarea {
   .stack-grid,
   .boss-modal-grid__section--split,
   .legend-shell,
+  .dino-gallery-grid,
   .mini-card-grid {
     grid-template-columns: 1fr;
   }
