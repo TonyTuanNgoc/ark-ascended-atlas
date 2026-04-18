@@ -152,6 +152,54 @@ const CREATURE_STAGE_FILTERS = ["early", "mid", "endgame"];
 const CREATURE_ROLE_FILTERS = ["utility", "boss", "cave", "flyer", "transport", "breeder"];
 const CREATURE_DIFFICULTY_FILTERS = ["low", "medium", "high"];
 
+const CREATURE_META = {
+  "argy":          { role: "flyer",      stage: "early",   taming: "Kibble / Raw Meat",          note: "Primary transport across all maps. First tame priority on any map." },
+  "anky":          { role: "harvester",  stage: "early",   taming: "Kibble / Mejoberries",        note: "Metal and flint backbone. Pair with Argy for ore runs." },
+  "doedic":        { role: "harvester",  stage: "early",   taming: "Kibble / Mejoberries",        note: "Stone harvesting. Roll ability clears rock nodes fast." },
+  "rex":           { role: "boss",       stage: "mid",     taming: "Kibble / Raw Meat",           note: "Core boss fighter. Breed and saddle before every major arena." },
+  "theri":         { role: "boss",       stage: "mid",     taming: "Kibble / Crops",              note: "Versatile boss pick. High DPS, better sustain than Rex in most fights." },
+  "yuty":          { role: "boss",       stage: "mid",     taming: "Kibble / Prime Meat",         note: "Boss support. Courage roar buff is mandatory for serious arena runs." },
+  "baryonyx":      { role: "cave",       stage: "early",   taming: "Kibble / Raw Fish Meat",      note: "Best cave mount for water sections. Tail spin stuns swarm enemies." },
+  "otter":         { role: "utility",    stage: "early",   taming: "Raw Fish (passive)",          note: "Insulation and silica pearl carry. Essential in hot and cold biomes." },
+  "thorny-dragon": { role: "harvester",  stage: "early",   taming: "Kibble / Raw Meat",           note: "Scorched Earth specialist. Harvests cactus sap and wood efficiently." },
+  "wyvern":        { role: "flyer",      stage: "endgame", taming: "Wyvern Egg (steal + milk)",   note: "Powerful elemental breath flyer. Requires egg theft and milk feeding." },
+  "ravager":       { role: "transport",  stage: "early",   taming: "Raw Meat / Kibble",           note: "Aberration main mount. No fall damage and syncs with zip line network." },
+  "spino":         { role: "utility",    stage: "mid",     taming: "Kibble / Raw Fish Meat",      note: "Semi-aquatic high DPS fighter. Outperforms Rex in water zones." },
+  "rock-drake":    { role: "flyer",      stage: "mid",     taming: "Rock Drake Egg (steal)",      note: "Aberration endgame mount. Climbs walls, glides, camouflages." },
+  "megalo":        { role: "cave",       stage: "mid",     taming: "Kibble / Raw Meat",           note: "Aberration underground brawler. Attacks sleeping players silently." },
+  "megatherium":   { role: "boss",       stage: "mid",     taming: "Kibble / Crops",              note: "Broodmother specialist. Massive insect kill buff makes it the top pick." },
+  "giga":          { role: "boss",       stage: "endgame", taming: "Kibble / Raw Meat",           note: "Highest base DPS in the game. Hard to control but devastating in arenas." },
+  "managarmr":     { role: "flyer",      stage: "endgame", taming: "Kibble / Raw Fish Meat",      note: "Extinction signature mount. Dash and ice breath for speed and crowd control." },
+  "shadowmane":    { role: "utility",    stage: "mid",     taming: "Cosmo fish (passive sleep)",  note: "Stealth and pack buff. Strong area fighter with built-in invisibility." },
+  "basilo":        { role: "utility",    stage: "mid",     taming: "Kibble / Blubber (passive)",  note: "Ocean staple. Immune to jellyfish damage; clears sea threats safely." },
+  "daeodon":       { role: "utility",    stage: "mid",     taming: "Kibble / Prime Meat",         note: "Passive healing aura in boss arena. Essential to sustain Rex/Theri stacks." },
+  "achatina":      { role: "utility",    stage: "early",   taming: "Rare Mushroom (passive)",     note: "Generates organic polymer passively. Tame a few and pen them at base." },
+  "allosaurus":    { role: "boss",       stage: "mid",     taming: "Kibble / Raw Meat",           note: "Pack bonus increases DPS. Mid-tier boss alternative to Rex." },
+  "dung-beetle":   { role: "utility",    stage: "early",   taming: "Feces (passive)",             note: "Generates fertilizer and oil passively. Keep penned in base." },
+  "dire-bear":     { role: "cave",       stage: "mid",     taming: "Kibble / Berries",            note: "Strong cave and forest fighter. Immune to bees; good for honey farms." },
+  "equus":         { role: "transport",  stage: "early",   taming: "Rockarrot (passive)",         note: "Fast land scout. Produces Rare Mushrooms via its lasso mechanic." },
+  "carnotaurus":   { role: "utility",    stage: "early",   taming: "Kibble / Raw Meat",           note: "Fast scout and early hunter. Good DPS for its taming cost." },
+  "mantis":        { role: "harvester",  stage: "mid",     taming: "Deathworm Horn (passive)",    note: "Scorched Earth tool mount. Equip pickaxe or hatchet for efficient farming." },
+  "basilisk":      { role: "utility",    stage: "mid",     taming: "Fertile Rock Drake Egg",      note: "Ambush predator that buries underground. Strong force multiplier." },
+  "bulbdog":       { role: "utility",    stage: "early",   taming: "Aquatic Mushroom (passive)",  note: "Charge light pet for Aberration. Essential for surface and red zone traversal." },
+  "featherlight":  { role: "utility",    stage: "early",   taming: "Aggeravic Mushroom (passive)","note": "Aerial charge light pet. Wider light radius than Bulbdog." },
+  "karkinos":      { role: "transport",  stage: "mid",     taming: "Kibble / Raw Meat",           note: "Aberration heavy carrier. Grabs creatures and climbs rock faces easily." },
+  "gacha":         { role: "utility",    stage: "mid",     taming: "Stone / Berries (passive)",   note: "Passive loot generator. Produces diverse resources including element dust." },
+  "gasbags":       { role: "transport",  stage: "early",   taming: "Kibble / Crops",              note: "Extinction balloon mount. Inflates to float slowly or deflates to sprint." },
+  "velonasaur":    { role: "utility",    stage: "early",   taming: "Kibble / Raw Meat",           note: "Extinction ranged fighter. Spine volley for crowd control at distance." },
+  "snow-owl":      { role: "utility",    stage: "mid",     taming: "Kibble / Raw Meat",           note: "Freeze dive and heal ability. Valuable for taming and boss sustain." },
+  "enforcer":      { role: "utility",    stage: "mid",     taming: "Crafted from Extinction City", note: "Craftable Tek mount. Fast and deals bonus damage vs Corrupted creatures." },
+  "desmodus":      { role: "flyer",      stage: "mid",     taming: "Blood Pack (passive)",        note: "Stealthy bat flyer. Stealth flight, blood drain for healing." },
+  "deinonychus":   { role: "cave",       stage: "early",   taming: "Deinonychus Egg (nest)",      note: "Valguero pack raptor. Jump-latch attack; devastating in packs." },
+  "mammoth":       { role: "harvester",  stage: "early",   taming: "Kibble / Crops",              note: "Wood and thatch harvester. Strong knockback for crowd control." },
+  "andrewsarchus": { role: "transport",  stage: "early",   taming: "Honey (passive)",             note: "Rideable turret platform. Player can fire weapons while mounted." },
+  "astrocetus":    { role: "boss",       stage: "endgame", taming: "Kibble / Element Dust",       note: "Lost Colony space whale. Tek platform saddle serves as a mobile base." },
+  "astrodelphis":  { role: "flyer",      stage: "mid",     taming: "Element Dust (passive)",      note: "Space dolphin with extreme speed and Tek boost abilities in space." },
+  "direwolf":      { role: "cave",       stage: "early",   taming: "Kibble / Raw Meat",           note: "Pack debuff and strong early cave mount. Excellent cold biome scout." },
+  "glowtail":      { role: "utility",    stage: "early",   taming: "Plant Species Z (passive)",   note: "Passive charge light pet. Smallest light pet, easiest to carry." },
+  "megalania":     { role: "cave",       stage: "mid",     taming: "Kibble / Raw Meat",           note: "Wall-climbing cave mount. Provides poison bite debuff on targets." },
+};
+
 const KNOWLEDGE_SECTIONS = [
   { id: "summary", title: "Summary" },
   { id: "features", title: "Features" },
@@ -256,6 +304,7 @@ function parseRoute() {
     "route",
     "bosses",
     "tames",
+    "creatures",
     "resources",
     "settings",
     "knowledge",
@@ -398,6 +447,7 @@ function renderHomeQuickNav(activeSection) {
     { id: "route", label: "Fastest Clear" },
     { id: "bosses", label: "Boss Planner" },
     { id: "tames", label: "Tame Planner" },
+    { id: "creatures", label: "Creatures" },
     { id: "resources", label: "Resources" },
     { id: "settings", label: "Server Settings" },
     { id: "knowledge", label: "Ancient Records" },
@@ -428,6 +478,7 @@ function renderHomeSection(section) {
     route: renderFastestRoute,
     bosses: renderBossPlanner,
     tames: renderGlobalTamePlanner,
+    creatures: renderCreatureGallery,
     resources: renderResourcesHub,
     settings: renderServerSettings,
     lore: renderKnowledgeArchives,
@@ -450,6 +501,7 @@ function renderHomeSection(section) {
     route: { title: "Fastest Clear Route", description: "Phased progression from economy to boss execution." },
     bosses: { title: "Boss Planner", description: "Boss capsules that stay execution-ready." },
     tames: { title: "Tame Planner", description: "Dino lineup by role and planning stage." },
+    creatures: { title: "Creatures", description: "All key tameable creatures organized by map — role, stage, taming method, and strategic notes." },
     resources: { title: "Resources", description: "Artifact, tribute and utility resources connected through links." },
     settings: { title: "Server Settings", description: "Route modifiers and server strategy defaults." },
     knowledge: {
@@ -813,42 +865,123 @@ function renderGlobalTamePlanner() {
   `;
 }
 
-function renderResourcesHub() {
-  const artifactCards = state.artifacts.slice(0, 8).map(renderArtifactCard).join("");
-  const tributeCards = state.tributeItems.slice(0, 8).map(renderTributeCard).join("");
-  const itemCards = state.items.slice(0, 6).map(renderItemCard).join("");
+function renderCreatureGallery() {
+  const maps = (state.maps || []).filter(Boolean);
+  const hasAny = maps.some((m) => (m.tameIds || []).length > 0);
+  if (!hasAny) {
+    return renderEmptyState("No creatures linked", "Link creatures to maps via the map editor.");
+  }
 
   return `
-    <div class="resource-shell">
-      <div class="resource-column">
-        <div class="section-heading section-heading--compact">
-          <div>
-            <h3>Artifacts</h3>
-            <p>Quick route cards that stay linked to boss prep.</p>
+    <div class="creature-atlas">
+      ${maps.map((map) => {
+        const creatures = (map.tameIds || []).map((id) => getDino(id)).filter(Boolean);
+        if (!creatures.length) return "";
+        return `
+          <div class="creature-map-block">
+            <div class="creature-map-block__header">
+              <h3>${escapeHtml(map.name)}</h3>
+              <span class="chip">${creatures.length} creatures</span>
+            </div>
+            <div class="map-data-table-wrap">
+              <table class="map-data-table creature-table">
+                <thead>
+                  <tr>
+                    <th style="width:52px"></th>
+                    <th>Creature</th>
+                    <th>Role</th>
+                    <th>Stage</th>
+                    <th>Taming</th>
+                    <th>Notes</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  ${creatures.map((dino) => {
+                    const meta = CREATURE_META[dino.id] || {};
+                    const hasImg = dino.media?.src && dino.media.src !== "";
+                    const roleColor = {
+                      boss: "ember", flyer: "frost", harvester: "stone",
+                      cave: "teal", transport: "violet", utility: "sand",
+                    }[meta.role] || "amber";
+                    const stageColor = { early: "forest", mid: "gold", endgame: "ember" }[meta.stage] || "amber";
+                    return `
+                      <tr>
+                        <td>
+                          <div class="creature-table__avatar">
+                            ${hasImg
+                              ? `<img src="${escapeHtml(dino.media.src)}" alt="${escapeHtml(dino.name)}" loading="lazy" />`
+                              : `<span class="creature-table__avatar-placeholder">${escapeHtml(dino.name.slice(0, 2))}</span>`}
+                          </div>
+                        </td>
+                        <td class="creature-table__name">${escapeHtml(dino.name)}</td>
+                        <td>${meta.role ? `<span class="chip chip--tone-${roleColor}">${escapeHtml(meta.role)}</span>` : "—"}</td>
+                        <td>${meta.stage ? `<span class="chip chip--tone-${stageColor}">${escapeHtml(meta.stage)}</span>` : "—"}</td>
+                        <td class="creature-table__taming">${meta.taming ? escapeHtml(meta.taming) : "—"}</td>
+                        <td class="creature-table__note">${meta.note ? escapeHtml(meta.note) : "—"}</td>
+                      </tr>
+                    `;
+                  }).join("")}
+                </tbody>
+              </table>
+            </div>
           </div>
-        </div>
-        <div class="mini-card-grid">${artifactCards}</div>
-      </div>
-      <div class="resource-column">
-        <div class="section-heading section-heading--compact">
-          <div>
-            <h3>Tribute Items</h3>
-            <p>Where each item drops and how to batch it cleanly.</p>
-          </div>
-        </div>
-        <div class="mini-card-grid">${tributeCards}</div>
-      </div>
-      <div class="resource-column">
-        <div class="section-heading section-heading--compact">
-          <div>
-            <h3>Core Gear Chain</h3>
-            <p>Only the gear that changes whether the run feels rich or fragile.</p>
-          </div>
-        </div>
-        <div class="mini-card-grid">${itemCards}</div>
-      </div>
+        `;
+      }).join("")}
     </div>
   `;
+}
+
+function renderResourcesHub() {
+  const maps = (state.maps || []).filter(Boolean);
+  const hasAny = maps.some((m) => (m.resourceRoutes || []).length > 0);
+
+  const riskColor = { Low: "forest", Medium: "gold", High: "ember", Extreme: "violet" };
+
+  const routeTable = hasAny
+    ? `
+      <div class="creature-atlas">
+        ${maps.map((map) => {
+          const routes = map.resourceRoutes || [];
+          if (!routes.length) return "";
+          return `
+            <div class="creature-map-block">
+              <div class="creature-map-block__header">
+                <h3>${escapeHtml(map.name)}</h3>
+                <span class="chip">${routes.length} routes</span>
+              </div>
+              <div class="map-data-table-wrap">
+                <table class="map-data-table creature-table">
+                  <thead>
+                    <tr>
+                      <th>Resource</th>
+                      <th>Route</th>
+                      <th>Tool / Mount</th>
+                      <th>Risk</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    ${routes.map((r) => {
+                      const tone = riskColor[r.risk] || "amber";
+                      return `
+                        <tr>
+                          <td class="creature-table__name">${escapeHtml(r.resource || "")}</td>
+                          <td class="creature-table__note">${escapeHtml(r.route || "")}</td>
+                          <td class="creature-table__taming">${escapeHtml(r.tool || "")}</td>
+                          <td><span class="chip chip--tone-${tone}">${escapeHtml(r.risk || "")}</span></td>
+                        </tr>
+                      `;
+                    }).join("")}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          `;
+        }).join("")}
+      </div>
+    `
+    : renderEmptyState("No resource routes yet", "Add resource routes via the map editor.");
+
+  return routeTable;
 }
 
 function renderServerSettings() {
