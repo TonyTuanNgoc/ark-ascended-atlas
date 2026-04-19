@@ -653,6 +653,12 @@ async function hydrateCloudState() {
   if (remoteItemsNeedRepair) {
     updateCloudUi("ready", "Items library repaired locally");
     render();
+    void syncCollectionToCloud(
+      "items",
+      state.items,
+      "Repairing item cloud",
+      "Items cloud repaired"
+    );
   }
   return true;
 }
@@ -742,6 +748,32 @@ async function syncServerSettingToCloud(settingKey) {
     "Settings synced",
     () => saveAtlasEntityToCloud("serverSettings", setting)
   );
+}
+
+async function syncCollectionToCloud(
+  collectionKey,
+  collection = state[collectionKey],
+  startMessage = "Syncing collection",
+  successMessage = "Collection synced"
+) {
+  if (!collectionKey) return false;
+
+  return runCloudTask(startMessage, successMessage, async () => {
+    let failures = 0;
+    const entries = Array.isArray(collection) ? collection : [];
+
+    for (const entity of entries) {
+      const entityId = getCloudEntityId(entity);
+      if (!entityId) continue;
+
+      const ok = await saveAtlasEntityToCloud(collectionKey, entity);
+      if (!ok) {
+        failures += 1;
+      }
+    }
+
+    return failures === 0;
+  });
 }
 
 async function syncAllStateToCloud() {
