@@ -1226,6 +1226,8 @@ function renderHero() {
                       module.state
                     )}"
                     href="${escapeHtml(module.href || "#")}"
+                    data-action="hero-module-route"
+                    data-href="${escapeAttribute(module.href || "#/")}"
                     aria-label="${escapeHtml(module.label)}"
                   >
                     <span>${escapeHtml(module.label)}</span>
@@ -6178,6 +6180,20 @@ document.addEventListener("click", async (event) => {
     ui.activeBossId = actionTarget.dataset.bossId;
     ui.imageModal = null;
     render();
+    return;
+  }
+
+  if (action === "hero-module-route") {
+    const href = String(actionTarget.dataset.href || actionTarget.getAttribute("href") || "#/").trim();
+    if (href.startsWith("#")) {
+      event.preventDefault();
+      if (window.location.hash !== href) {
+        window.location.hash = href;
+      } else {
+        ui.route = parseRoute();
+        render();
+      }
+    }
     return;
   }
 
