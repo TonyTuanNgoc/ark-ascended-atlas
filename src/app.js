@@ -154,6 +154,42 @@ const CREATURE_STAGE_FILTERS = ["early", "mid", "endgame"];
 const CREATURE_ROLE_FILTERS = ["utility", "boss", "cave", "flyer", "transport", "breeder"];
 const CREATURE_DIFFICULTY_FILTERS = ["low", "medium", "high"];
 
+const toArray = (value) => (Array.isArray(value) ? value : []);
+const toArrayByObject = (value) =>
+  toArray(value).filter((entry) => entry && typeof entry === "object");
+
+const toTextArray = (value) => {
+  if (Array.isArray(value)) {
+    return value
+      .map((entry) =>
+        entry == null ? "" :
+          typeof entry === "string"
+            ? entry
+            : typeof entry === "number" || typeof entry === "boolean"
+            ? String(entry)
+            : typeof entry === "object" && entry.label
+            ? String(entry.label)
+            : String(entry).trim()
+      )
+      .map((entry) => entry.trim())
+      .filter(Boolean);
+  }
+
+  if (typeof value === "string") {
+    return value
+      .split(",")
+      .map((entry) => entry.trim())
+      .filter(Boolean);
+  }
+
+  return [];
+};
+
+const toTextList = (value, separator = ", ", fallback = "") => {
+  const items = toTextArray(value);
+  return items.length ? items.join(separator) : fallback;
+};
+
 const CREATURE_META = {
   "argy":          { role: "flyer",      stage: "early",   taming: "Kibble / Raw Meat",          note: "Primary transport across all maps. First tame priority on any map." },
   "anky":          { role: "harvester",  stage: "early",   taming: "Kibble / Mejoberries",        note: "Metal and flint backbone. Pair with Argy for ore runs." },
@@ -352,29 +388,52 @@ function parseRoute() {
 }
 
 function render() {
-  ui.route = parseRoute();
-  appRoot.innerHTML =
-    ui.route.type === "map"
-      ? renderMapPage(ui.route.id)
-      : renderHomePage(ui.route.section);
-  adminDrawer.innerHTML = renderAdminDrawer();
-  adminDrawer.classList.toggle("is-open", ui.editMode);
-  adminDrawer.setAttribute("aria-hidden", String(!ui.editMode));
-  modalRoot.innerHTML = renderModal();
-  adminToggleButton.classList.toggle("is-active", ui.editMode);
-
-  requestAnimationFrame(() => {
-    if (ui.route.type === "home" && ui.route.section !== "home") {
-      document
-        .querySelector(`#section-${ui.route.section}`)
-        ?.scrollIntoView({ behavior: "smooth", block: "start" });
-
-      if (ui.route.anchor) {
-        const anchor = document.querySelector(`#${CSS.escape(ui.route.anchor)}`);
-        anchor?.scrollIntoView({ behavior: "smooth", block: "start" });
-      }
+  try {
+    ui.route = parseRoute();
+    appRoot.innerHTML =
+      ui.route.type === "map"
+        ? renderMapPage(ui.route.id)
+        : renderHomePage(ui.route.section);
+    adminDrawer.innerHTML = renderAdminDrawer();
+    if (adminDrawer) {
+      adminDrawer.classList.toggle("is-open", ui.editMode);
+      adminDrawer.setAttribute("aria-hidden", String(!ui.editMode));
     }
-  });
+    modalRoot.innerHTML = renderModal();
+    adminToggleButton.classList.toggle("is-active", ui.editMode);
+
+    requestAnimationFrame(() => {
+      if (ui.route.type === "home" && ui.route.section !== "home") {
+        document
+          .querySelector(`#section-${ui.route.section}`)
+          ?.scrollIntoView({ behavior: "smooth", block: "start" });
+
+        if (ui.route.anchor) {
+          const anchor = document.querySelector(`#${CSS.escape(ui.route.anchor)}`);
+          anchor?.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }
+    });
+  } catch (error) {
+    console.error("Atlas render failed:", error);
+    if (appRoot) {
+      appRoot.innerHTML = `
+        <div class="empty-state">
+          <h2>Render error</h2>
+          <p>Ứng dụng gặp lỗi runtime khi dựng giao diện. Vui lòng mở console để xem chi tiết.</p>
+          <p class="inline">${escapeHtml(error?.message || "Unknown error")}</p>
+        </div>
+      `;
+    }
+    if (adminDrawer) {
+      adminDrawer.innerHTML = "";
+      adminDrawer.classList.remove("is-open");
+      adminDrawer.setAttribute("aria-hidden", "true");
+    }
+    if (modalRoot) {
+      modalRoot.innerHTML = "";
+    }
+  }
 }
 
 function renderHomePage(section) {
@@ -560,7 +619,7 @@ function renderHomeSection(section) {
 }
 
 function getAtlasMapGroups() {
-  const maps = (state.maps || []).filter(Boolean);
+  const maps = toArray(state.maps).filter(Boolean);
   const lookup = new Map(maps.map((map) => [map.id, map]));
   const grouped = MAP_GROUP_DEFINITIONS.map((group) => ({
     ...group,
@@ -658,7 +717,7 @@ function getKnowledgeSectionDefs() {
 }
 
 function getKnowledgeBySection(sectionId, subSection) {
-  const sectionArticles = (state.knowledgeArticles || []).filter(
+  const sectionArticles = toArray(state.knowledgeArticles).filter(
     (article) => article.section === sectionId
   );
 
@@ -674,23 +733,23 @@ function getKnowledgeBySection(sectionId, subSection) {
 }
 
 function renderKnowledgeArticleCard(article) {
-  const linkedMaps = (article.mapIds || []).map((id) => getMap(id)).filter(Boolean);
-  const linkedReferences = (article.referenceIds || [])
+  const linkedMaps = toTextArray(article.mapIds).map((id) => getMap(id)).filter(Boolean);
+  const linkedReferences = toTextArray(article.referenceIds)
     .map((id) => getReference(id))
     .filter(Boolean);
-  const linkedCreatures = (article.creatureIds || [])
+  const linkedCreatures = toTextArray(article.creatureIds)
     .map((id) => getDino(id))
     .filter(Boolean);
-  const linkedItems = (article.itemIds || [])
+  const linkedItems = toTextArray(article.itemIds)
     .map((id) => getItem(id))
     .filter(Boolean);
-  const linkedPatches = (article.patchIds || [])
+  const linkedPatches = toTextArray(article.patchIds)
     .map((id) => getPatchHistory(id))
     .filter(Boolean);
-  const linkedDlcs = (article.dlcIds || [])
+  const linkedDlcs = toTextArray(article.dlcIds)
     .map((id) => getDlc(id))
     .filter(Boolean);
-  const linkedGallery = (article.galleryIds || [])
+  const linkedGallery = toTextArray(article.galleryIds)
     .map((id) => getGalleryMedia(id))
     .filter(Boolean);
 
@@ -702,7 +761,7 @@ function renderKnowledgeArticleCard(article) {
       </div>
       <p>${escapeHtml(article.summary || article.content || "")}</p>
       ${article.subSection ? `<span class="chip-row__label">${escapeHtml(article.subSection)}</span>` : ""}
-      ${(article.bullets || [])
+      ${toTextArray(article.bullets)
         .map((entry) => `<p>• ${escapeHtml(entry)}</p>`)
         .join("")}
       ${linkedMaps.length ? `<div class="knowledge-article__links">${linkedMaps.map((entry) => `<a class="chip chip--button" href="#/map/${escapeHtml(entry.id)}">Map: ${escapeHtml(entry.name)}</a>`).join("")}</div>` : ""}
@@ -769,20 +828,19 @@ function getResourceRowsFromState(maps) {
   const resources = Array.isArray(state.resources) ? state.resources : [];
   const rows = [];
   const seen = new Set();
+  const normalizedMaps = toArray(maps);
 
-  if (!maps.length) return rows;
+  if (!normalizedMaps.length) return rows;
 
   const resourceById = new Map(resources.map((resource) => [resource.id, resource]));
 
-  maps.forEach((map) => {
+  normalizedMaps.forEach((map) => {
+    const routeResources = toArray(map.resourceRoutes).map(
+      (route) =>
+        route?.id || `${map.id}-${slugify(route?.resource || route?.name || "resource")}`
+    );
     const resourceIds =
-      Array.isArray(map.resourceIds) && map.resourceIds.length
-        ? map.resourceIds
-        : (Array.isArray(map.resourceRoutes)
-            ? map.resourceRoutes.map((route) =>
-                route.id || `${map.id}-${slugify(route.resource || route.name || "resource")}`
-              )
-            : []);
+      toArray(map.resourceIds).length ? toArray(map.resourceIds) : routeResources;
 
     resourceIds.forEach((resourceId) => {
       const sourceResource = resourceById.get(resourceId);
@@ -811,16 +869,16 @@ function getResourceRowsFromState(maps) {
 
 function getFoodRowsFromDinos() {
   const foodRows = [];
-  const mapById = new Map((state.maps || []).map((map) => [map.id, map]));
+  const mapById = new Map(toArray(state.maps).map((map) => [map.id, map]));
 
-  (state.dinos || []).forEach((dino) => {
+  toArray(state.dinos).forEach((dino) => {
     const foods = getTopTameFoodItems(dino.tameFood, 3);
     if (!foods.length) return;
 
-    const linkedMapNames = Array.isArray(dino.linkedMaps)
-      ? dino.linkedMaps
-      : (state.maps || [])
-          .filter((map) => (map.tameIds || []).includes(dino.id))
+    const linkedMapNames = toArray(dino.linkedMaps).length
+      ? toArray(dino.linkedMaps)
+      : toArray(state.maps)
+          .filter((map) => toArray(map.tameIds).includes(dino.id))
           .map((map) => map.name)
           .filter(Boolean);
 
@@ -977,7 +1035,7 @@ function renderBossCard(boss, compact = false) {
         aspect: "poster",
       })}
       <div class="boss-card__body">
-        <div class="chip-row">${renderTagList(boss.tags || [])}</div>
+        <div class="chip-row">${renderTagList(toTextArray(boss.tags))}</div>
         <h3>${escapeHtml(boss.name)}</h3>
         <p>${escapeHtml(boss.shortDescription || boss.difficultyFeel || "")}</p>
         <div class="stat-inline">
@@ -998,7 +1056,7 @@ function renderBossCard(boss, compact = false) {
 }
 
 function renderGlobalTamePlanner() {
-  const creatures = [...(state.dinos || [])].sort((a, b) =>
+  const creatures = [...toArray(state.dinos)].sort((a, b) =>
     (a.name || "").localeCompare(b.name || "")
   );
 
@@ -1025,8 +1083,8 @@ function renderGlobalTamePlanner() {
 }
 
 function renderCreatureGallery() {
-  const maps = (state.maps || []).filter(Boolean);
-  const hasAny = maps.some((m) => (m.tameIds || []).length > 0);
+  const maps = toArray(state.maps).filter(Boolean);
+  const hasAny = maps.some((m) => toArray(m.tameIds).length > 0);
   if (!hasAny) {
     return renderEmptyState("No creatures linked", "Link creatures to maps via the map editor.");
   }
@@ -1034,7 +1092,7 @@ function renderCreatureGallery() {
   return `
     <div class="creature-atlas">
       ${maps.map((map) => {
-        const creatures = (map.tameIds || []).map((id) => getDino(id)).filter(Boolean);
+        const creatures = toArray(map.tameIds).map((id) => getDino(id)).filter(Boolean);
         if (!creatures.length) return "";
         return `
           <div class="creature-map-block">
@@ -1093,7 +1151,7 @@ function renderCreatureGallery() {
 }
 
 function renderResourcesHub() {
-  const maps = (state.maps || []).filter(Boolean);
+  const maps = toArray(state.maps).filter(Boolean);
   const resourceRows = [
     ...getResourceRowsFromState(maps),
     ...getFoodRowsFromDinos(),
@@ -1294,7 +1352,7 @@ function renderMapSectionCard(map, sectionKey) {
   const linkedCount = entries.length;
   const hasCollection = Boolean(section.collectionKey);
   const previewEntries = section.key === "progression"
-    ? getProgressionPreviewRows(map.progression || [])
+    ? getProgressionPreviewRows(toArray(map.progression))
     : entries.slice(0, 3);
   const preview = previewEntries.map(
     (entry) => `<span class="chip">${escapeHtml(getMapSectionEntryLabel(section, entry))}</span>`
@@ -1353,7 +1411,7 @@ function resolveMapSectionEntities(map, sectionDef, includeAll = false) {
   if (!sectionDef) return [];
 
   if (sectionDef.key === "progression") {
-    return (map.progression || []).map((entry, index) => ({
+    return toArray(map.progression).map((entry, index) => ({
       ...entry,
       id: `${map.id}-phase-${index}`,
       __isLinked: true,
@@ -1417,7 +1475,7 @@ function getMapSectionEntryLabel(sectionDef, entry) {
 }
 
 function getProgressionPreviewRows(phases = []) {
-  return phases.slice(0, 2).map((entry) => ({
+  return toArray(phases).slice(0, 2).map((entry) => ({
     ...entry,
     id: slugify(`${entry.stage || "phase"}-${entry.focus || ""}`),
     __isLinked: true,
@@ -1614,7 +1672,7 @@ function renderMapSectionBossesModal(map, sectionDef) {
 
 function renderMapSectionBossCard(map, boss, collectionKey, linkField) {
   const bossMap = getMap(boss.mapId);
-  const linkedTags = renderTagList((boss.tags || []).slice(0, 4));
+  const linkedTags = renderTagList(toTextArray(boss.tags).slice(0, 4));
   const isLinked = boss.__isLinked;
 
   return `
@@ -1678,8 +1736,8 @@ function renderMapSectionCreaturesModal(map, sectionDef, searchQuery) {
     const searchable = [
       entry.name,
       entry.shortDescription,
-      entry.roleTags,
-      entry.stages,
+      toArray(entry.roleTags),
+      toTextArray(entry.stages),
       entry.tameDifficulty,
       entry.tameFood,
       entry.costPayoff,
@@ -1696,11 +1754,15 @@ function renderMapSectionCreaturesModal(map, sectionDef, searchQuery) {
     if (query && !searchable.includes(query)) return false;
 
     if (sectionState.filters.stage) {
-      const stages = (entry.stages || []).map((item) => item.toLowerCase());
+      const stages = toTextArray(entry.stages).map((item) =>
+        String(item || "").toLowerCase()
+      );
       if (!stages.includes(sectionState.filters.stage.toLowerCase())) return false;
     }
     if (sectionState.filters.role) {
-      const roles = (entry.roleTags || []).map((item) => item.toLowerCase());
+      const roles = toTextArray(entry.roleTags).map((item) =>
+        String(item || "").toLowerCase()
+      );
       if (!roles.includes(sectionState.filters.role.toLowerCase())) return false;
     }
     if (sectionState.filters.difficulty) {
@@ -1737,13 +1799,13 @@ function renderMapSectionCreaturesModal(map, sectionDef, searchQuery) {
         </thead>
         <tbody>
           ${filteredEntries
-            .map((dino) => {
-              const isLinked = dino.__isLinked;
-              const tags = [
-                ...(dino.roleTags || []),
-                ...(dino.stages || []).map(capitalize),
-              ].filter(Boolean);
-              return `
+                .map((dino) => {
+          const isLinked = dino.__isLinked;
+                  const tags = [
+                    ...toArray(dino.roleTags),
+                    ...toArray(dino.stages).map(capitalize),
+                  ].filter(Boolean);
+                  return `
                 <tr>
                   <td>${renderMediaSlot("dinos", dino, {
                     className: "map-data-table__thumb",
@@ -1752,7 +1814,7 @@ function renderMapSectionCreaturesModal(map, sectionDef, searchQuery) {
                     showActions: false,
                   })}</td>
                   <td>${escapeHtml(dino.name)}</td>
-                  <td>${escapeHtml((dino.roleTags || []).join(", ") || "—")}</td>
+                  <td>${escapeHtml(toTextList(dino.roleTags) || "—")}</td>
                         <td>${escapeHtml(dino.tameDifficulty || "—")}</td>
                         <td>${formatTopTameFood(dino.tameFood, 3)}</td>
                   <td>${escapeHtml(dino.tameMethod || "—")}</td>
@@ -1999,7 +2061,7 @@ function renderMapSectionBaseSpotsModal(map, sectionDef) {
     <div class="map-section-card-grid">
       ${entries
         .map((spot) => {
-          const labels = [spot.type, ...(spot.tags || [])].filter(Boolean);
+          const labels = [spot.type, ...toArray(spot.tags)].filter(Boolean);
           return `
             <article class="map-section-item-card">
               <h3>${escapeHtml(spot.title || spot.name || "Base spot")}</h3>
@@ -2038,7 +2100,7 @@ function renderMapSectionBaseSpotsModal(map, sectionDef) {
 }
 
 function renderMapSectionProgressionModal(map) {
-  const entries = Array.isArray(map.progression) ? map.progression : [];
+  const entries = toArray(map.progression);
   const phaseLookup = new Map(
     entries.map((entry) => [entry.stage, entry])
   );
@@ -2187,7 +2249,7 @@ function renderMapSectionSourcesModal(map, sectionDef) {
 
 function getBossesForEntity(collection, entityId, arrayField = "bosses") {
   return (state.bosses || [])
-    .filter((boss) => Array.isArray(boss?.[arrayField]) && boss[arrayField].includes(entityId))
+    .filter((boss) => toTextArray(boss?.[arrayField]).includes(entityId))
     .slice(0, 3);
 }
 
@@ -2210,7 +2272,9 @@ function renderMapEntityModal() {
     .map(([key, value]) => `
       <tr>
         <td><strong>${escapeHtml(key)}</strong></td>
-        <td>${escapeHtml(Array.isArray(value) ? value.join(", ") : String(value))}</td>
+        <td>${escapeHtml(
+          Array.isArray(value) ? value.map((entry) => String(entry)).join(", ") : toTextList(value)
+        )}</td>
       </tr>
     `)
     .join("");
@@ -2350,11 +2414,8 @@ function renderMapArtifactsPanel(map) {
     emptyText:
       "Attach artifact library entries and update cave metadata from local operations notes.",
     renderCard: (artifact) => {
-      const caveInfo =
-        (map.caveRuns || []).find((run) => run.artifactId === artifact.id) || {};
-      const bossIds = [
-        ...(caveInfo.bossIds || artifact.bosses || []),
-      ];
+      const caveInfo = toArray(map.caveRuns).find((run) => run.artifactId === artifact.id) || {};
+      const bossIds = [...toArray(caveInfo.bossIds), ...toArray(artifact.bosses)];
       return `
         <article class="detail-card detail-card--artifact">
           ${renderMediaSlot("artifacts", artifact, {
@@ -2393,7 +2454,7 @@ function renderMapTributePanel(map) {
 }
 
 function renderMapProgressionPanel(map) {
-  const stages = map.progression || [];
+  const stages = toArray(map.progression);
   if (!stages.length) {
     return `
       <article class="stack-panel map-panel">
@@ -2622,7 +2683,9 @@ function renderMapLinkActions({ map, collectionKey, linkField }) {
 }
 
 function renderMapTamePlanner(map) {
-  const dinos = map.tameIds.map((id) => getDino(id)).filter(Boolean);
+  const dinos = toArray(map?.tameIds)
+    .map((id) => getDino(id))
+    .filter(Boolean);
   if (!dinos.length) {
     return renderEmptyState(
       "No tame notes yet",
@@ -2640,7 +2703,9 @@ function renderMapTamePlanner(map) {
 }
 
 function renderMapArtifacts(map) {
-  if (!map.caveRuns.length) {
+  const caveRuns = toArray(map?.caveRuns);
+
+  if (!caveRuns.length) {
     return renderEmptyState(
       "Field notes pending",
       "This map can hold artifact and cave routes here when you are ready to document them."
@@ -2649,7 +2714,7 @@ function renderMapArtifacts(map) {
 
   return `
     <div class="mini-card-grid">
-      ${map.caveRuns
+      ${caveRuns
         .map((run) => {
           const artifact = getArtifact(run.artifactId);
           return `
@@ -2670,7 +2735,9 @@ function renderMapArtifacts(map) {
                 <span><strong>Difficulty</strong> ${escapeHtml(run.difficulty)}</span>
               </div>
               <div class="chip-row">
-                ${run.bossIds.map((bossId) => renderBossChip(bossId)).join("")}
+                ${toArray(run?.bossIds)
+                  .map((bossId) => renderBossChip(bossId))
+                  .join("")}
               </div>
             </article>
           `;
@@ -2681,7 +2748,9 @@ function renderMapArtifacts(map) {
 }
 
 function renderMapBossPrep(map) {
-  const bosses = map.bossIds.map((id) => getBoss(id)).filter(Boolean);
+  const bosses = toArray(map?.bossIds)
+    .map((id) => getBoss(id))
+    .filter(Boolean);
   if (!bosses.length) {
     return renderEmptyState(
       "Boss dossier not filled yet",
@@ -2730,7 +2799,9 @@ function renderMapBossPrep(map) {
 }
 
 function renderBaseSpots(baseSpotIds) {
-  const spots = baseSpotIds.map((id) => getBaseSpot(id)).filter(Boolean);
+  const spots = toArray(baseSpotIds)
+    .map((id) => getBaseSpot(id))
+    .filter(Boolean);
   if (!spots.length) {
     return renderEmptyState(
       "Base spots not documented yet",
@@ -2784,7 +2855,7 @@ function renderDinoCard(dino, compact = false) {
       <div class="dino-card__body">
         <h3>${escapeHtml(dino.name)}</h3>
         <div class="chip-row">${renderTagList(dino.roleTags)}</div>
-        <div class="chip-row chip-row--subtle">${renderTagList(dino.stages.map(capitalize))}</div>
+        <div class="chip-row chip-row--subtle">${renderTagList(toArray(dino?.stages).map(capitalize))}</div>
         <div class="stat-stack">
           <span><strong>Tame Difficulty</strong> ${escapeHtml(dino.tameDifficulty)}</span>
           <span><strong>Time to Value</strong> ${escapeHtml(dino.timeToValue)}</span>
@@ -3027,8 +3098,10 @@ function renderAdminDrawer() {
     entity.vibe ||
     entity.notes ||
     "";
-  const tagsValue = (entity.tags || entity.roleTags || []).join(", ");
-  const relatedValue = (entity.relatedIds || entity.artifacts || entity.tributeItems || []).join(", ");
+  const tagsValue = toTextList(entity.tags || entity.roleTags);
+  const relatedValue = toTextList(
+    entity.relatedIds || entity.artifacts || entity.tributeItems
+  );
   const extraFields = renderAdminExtraFields(collectionKey, entity);
   const suppressAux = !!extraFields;
   const auxA =
@@ -3039,7 +3112,7 @@ function renderAdminDrawer() {
     entity.classification?.type ||
     "";
   const auxB =
-    entity.stages?.join(", ") ||
+    toTextList(entity.stages) ||
     entity.access ||
     entity.classification?.access ||
     entity.where ||
@@ -3226,49 +3299,49 @@ function renderAdminExtraFields(collectionKey, entity) {
       <label>
         Boss IDs
         <textarea name="bossIds" rows="2" placeholder="broodmother, megapithecus">${escapeHtml(
-          (entity.bossIds || []).join(", ")
+          toTextList(entity.bossIds)
         )}</textarea>
       </label>
       <label>
         Tame IDs
         <textarea name="tameIds" rows="2" placeholder="argy, anky, rex">${escapeHtml(
-          (entity.tameIds || []).join(", ")
+          toTextList(entity.tameIds)
         )}</textarea>
       </label>
       <label>
         Artifact IDs
         <textarea name="artifactIds" rows="2" placeholder="artifact-clever, artifact-hunter">${escapeHtml(
-          (entity.artifactIds || []).join(", ")
+          toTextList(entity.artifactIds)
         )}</textarea>
       </label>
       <label>
         Resource IDs
         <textarea name="resourceIds" rows="2" placeholder="the-island-berry-farm">${escapeHtml(
-          (entity.resourceIds || []).join(", ")
+          toTextList(entity.resourceIds)
         )}</textarea>
       </label>
       <label>
         Base Spot IDs
         <textarea name="baseSpotIds" rows="2" placeholder="island-hidden-lake">${escapeHtml(
-          (entity.baseSpotIds || []).join(", ")
+          toTextList(entity.baseSpotIds)
         )}</textarea>
       </label>
       <label>
         Gallery IDs
         <textarea name="galleryIds" rows="2" placeholder="gallery-id-1, gallery-id-2">${escapeHtml(
-          (entity.galleryIds || []).join(", ")
+          toTextList(entity.galleryIds)
         )}</textarea>
       </label>
       <label>
         Source IDs
         <textarea name="sourceIds" rows="2" placeholder="reference-id">${escapeHtml(
-          (entity.sourceIds || []).join(", ")
+          toTextList(entity.sourceIds)
         )}</textarea>
       </label>
       <label>
         Transfer Carry Tags
         <textarea name="transferCarry" rows="2" placeholder="best bloodline, artifact stack">${escapeHtml(
-          (entity.transferOut?.carry || []).join(", ")
+          toTextList(entity.transferOut?.carry)
         )}</textarea>
       </label>
     `;
@@ -3283,13 +3356,13 @@ function renderAdminExtraFields(collectionKey, entity) {
       <label>
         Artifact IDs
         <textarea name="artifactIds" rows="2" placeholder="artifact-clever, artifact-strong">${escapeHtml(
-          (entity.artifacts || []).join(", ")
+          toTextList(entity.artifacts)
         )}</textarea>
       </label>
       <label>
         Tribute IDs
         <textarea name="tributeIds" rows="2" placeholder="tribute-argy-talon">${escapeHtml(
-          (entity.tributeItems || []).join(", ")
+          toTextList(entity.tributeItems)
         )}</textarea>
       </label>
       <label>
@@ -3307,7 +3380,7 @@ function renderAdminExtraFields(collectionKey, entity) {
       <label>
         Strategy Lines
         <textarea name="strategy" rows="3" placeholder="Open on cooldown, stay centered">${escapeHtml(
-          (entity.strategy || []).join(", ")
+          toTextList(entity.strategy)
         )}</textarea>
       </label>
     `;
@@ -3321,11 +3394,11 @@ function renderAdminExtraFields(collectionKey, entity) {
       </label>
       <label>
         Role Tags
-        <input name="tags" value="${escapeHtml((entity.roleTags || []).join(", "))}" placeholder="Boss DPS, Tank" />
+        <input name="tags" value="${escapeHtml(toTextList(entity.roleTags))}" placeholder="Boss DPS, Tank" />
       </label>
       <label>
         Stages
-        <input name="auxB" value="${escapeHtml((entity.stages || []).join(", "))}" placeholder="early, mid, endgame" />
+        <input name="auxB" value="${escapeHtml(toTextList(entity.stages))}" placeholder="early, mid, endgame" />
       </label>
       <label>
         Tame Food
@@ -3363,7 +3436,7 @@ function renderAdminExtraFields(collectionKey, entity) {
       <label>
         Boss IDs
         <textarea name="bossIds" rows="2" placeholder="broodmother, dragon">${escapeHtml(
-          (entity.bosses || []).join(", ")
+          toTextList(entity.bosses)
         )}</textarea>
       </label>
       <label>
@@ -3439,7 +3512,7 @@ function renderAdminExtraFields(collectionKey, entity) {
       </label>
       <label>
         Map IDs
-        <input name="mapIds" value="${escapeHtml((entity.mapIds || []).join(", "))}" placeholder="the-island, scorched-earth" />
+        <input name="mapIds" value="${escapeHtml(toTextList(entity.mapIds))}" placeholder="the-island, scorched-earth" />
       </label>
     `;
   }
@@ -3473,36 +3546,36 @@ function renderAdminExtraFields(collectionKey, entity) {
       <label>
         Bullets
         <textarea name="bullets" rows="3" placeholder="Item 1, Item 2, Item 3">${escapeHtml(
-          (entity.bullets || []).join(", ")
+          toTextList(entity.bullets)
         )}</textarea>
       </label>
       <label>
         Map IDs
-        <input name="mapIds" value="${escapeHtml((entity.mapIds || []).join(", "))}" placeholder="the-island, extinction" />
+        <input name="mapIds" value="${escapeHtml(toTextList(entity.mapIds))}" placeholder="the-island, extinction" />
       </label>
       <label>
         Reference IDs
-        <input name="referenceIds" value="${escapeHtml((entity.referenceIds || []).join(", "))}" placeholder="ref-1, ref-2" />
+        <input name="referenceIds" value="${escapeHtml(toTextList(entity.referenceIds))}" placeholder="ref-1, ref-2" />
       </label>
       <label>
         Patch IDs
-        <input name="patchIds" value="${escapeHtml((entity.patchIds || []).join(", "))}" placeholder="v1.0, v1.1" />
+        <input name="patchIds" value="${escapeHtml(toTextList(entity.patchIds))}" placeholder="v1.0, v1.1" />
       </label>
       <label>
         Creature IDs
-        <input name="creatureIds" value="${escapeHtml((entity.creatureIds || []).join(", "))}" placeholder="argy, anky, theri" />
+        <input name="creatureIds" value="${escapeHtml(toTextList(entity.creatureIds))}" placeholder="argy, anky, theri" />
       </label>
       <label>
         Item IDs
-        <input name="itemIds" value="${escapeHtml((entity.itemIds || []).join(", "))}" placeholder="item-shotgun, item-medbrew" />
+        <input name="itemIds" value="${escapeHtml(toTextList(entity.itemIds))}" placeholder="item-shotgun, item-medbrew" />
       </label>
       <label>
         Gallery IDs
-        <input name="galleryIds" value="${escapeHtml((entity.galleryIds || []).join(", "))}" placeholder="gallery-id-1" />
+        <input name="galleryIds" value="${escapeHtml(toTextList(entity.galleryIds))}" placeholder="gallery-id-1" />
       </label>
       <label>
         DLC IDs
-        <input name="dlcIds" value="${escapeHtml((entity.dlcIds || []).join(", "))}" placeholder="dlc-expansion-pack" />
+        <input name="dlcIds" value="${escapeHtml(toTextList(entity.dlcIds))}" placeholder="dlc-expansion-pack" />
       </label>
     `;
   }
@@ -3525,7 +3598,7 @@ function renderAdminExtraFields(collectionKey, entity) {
       </label>
       <label>
         Map IDs
-        <input name="mapIds" value="${escapeHtml((entity.mapIds || []).join(", "))}" placeholder="the-island" />
+        <input name="mapIds" value="${escapeHtml(toTextList(entity.mapIds))}" placeholder="the-island" />
       </label>
     `;
   }
@@ -3567,11 +3640,11 @@ function renderAdminExtraFields(collectionKey, entity) {
       </label>
       <label>
         Map IDs
-        <input name="mapIds" value="${escapeHtml((entity.mapIds || []).join(", "))}" placeholder="the-island" />
+        <input name="mapIds" value="${escapeHtml(toTextList(entity.mapIds))}" placeholder="the-island" />
       </label>
       <label>
         Patch IDs
-        <input name="patchIds" value="${escapeHtml((entity.patchIds || []).join(", "))}" placeholder="v1.0" />
+        <input name="patchIds" value="${escapeHtml(toTextList(entity.patchIds))}" placeholder="v1.0" />
       </label>
       <label>
         Related Map IDs
@@ -3602,12 +3675,12 @@ function renderAdminExtraFields(collectionKey, entity) {
       </label>
       <label>
         Map IDs
-        <input name="mapIds" value="${escapeHtml((entity.mapIds || []).join(", "))}" placeholder="the-island, extinction" />
+        <input name="mapIds" value="${escapeHtml(toTextList(entity.mapIds))}" placeholder="the-island, extinction" />
       </label>
       <label>
         Note Bullets
         <textarea name="noteBullets" rows="3" placeholder="Bullet 1, Bullet 2">${escapeHtml(
-          (entity.noteBullets || []).join(", ")
+          toTextList(entity.noteBullets)
         )}</textarea>
       </label>
     `;
@@ -3791,10 +3864,10 @@ function renderBossModal(bossId) {
   const boss = getBoss(bossId);
   if (!boss) return "";
   const map = getMap(boss.mapId);
-  const artifactCards = (boss.artifacts || [])
+  const artifactCards = toArray(boss?.artifacts)
     .map((id) => getArtifact(id))
     .filter(Boolean);
-  const tributeCards = (boss.tributeItems || [])
+  const tributeCards = toArray(boss?.tributeItems)
     .map((id) => getTribute(id))
     .filter(Boolean);
 
@@ -3819,7 +3892,7 @@ function renderBossModal(bossId) {
             <div class="stat-ribbon">
               <span><strong>Arena</strong> ${escapeHtml(boss.arena)}</span>
               <span><strong>Main Danger</strong> ${escapeHtml(boss.mainDanger)}</span>
-              <span><strong>Difficulties</strong> ${escapeHtml((boss.tags || []).join(" / "))}</span>
+              <span><strong>Difficulties</strong> ${escapeHtml(toTextList(boss.tags, " / "))}</span>
             </div>
           </div>
 
@@ -3849,15 +3922,18 @@ function renderBossModal(bossId) {
             <article class="focus-card">
               <p class="eyebrow">Dino Lineup</p>
               <div class="stat-stack">
-                ${(boss.lineup || [])
+                ${toArray(boss?.lineup)
                   .map((entry) => {
                     const creature =
-                      getDino(entry.creatureId)?.name || capitalize(entry.creatureId.replace(/-/g, " "));
+                      getDino(entry?.creatureId)?.name ||
+                      (entry?.creatureId
+                        ? capitalize(entry.creatureId.replace(/-/g, " "))
+                        : "Unknown");
                     return `
                       <span>
-                        <strong>${escapeHtml(entry.role)}</strong>
+                        <strong>${escapeHtml(entry.role || "Support")}</strong>
                         ${escapeHtml(creature)} x ${escapeHtml(entry.quantity)}
-                        <small>${escapeHtml(entry.note)}</small>
+                        <small>${escapeHtml(entry.note || "")}</small>
                       </span>
                     `;
                   })
@@ -3867,7 +3943,7 @@ function renderBossModal(bossId) {
             <article class="focus-card">
               <p class="eyebrow">Stats</p>
               <div class="stat-stack">
-                ${(boss.stats || [])
+                ${toArray(boss?.stats)
                   .map(
                     (stat) => `
                       <span><strong>${escapeHtml(stat.label)}</strong> ${escapeHtml(stat.value)}</span>
@@ -3891,10 +3967,10 @@ function renderBossModal(bossId) {
 
           <div class="boss-modal-grid__section">
             <h3>Strategy</h3>
-            <div class="strategy-list">
-              ${(boss.strategy || [])
-                .map(
-                  (line, index) => `
+              <div class="strategy-list">
+                ${toArray(boss?.strategy)
+                  .map(
+                    (line, index) => `
                     <article class="strategy-step">
                       <span>0${index + 1}</span>
                       <p>${escapeHtml(line)}</p>
@@ -3992,10 +4068,10 @@ function getMapLinkField(collectionKey, linkField) {
 
 function getMapLinkIds(map, collectionKey, linkField) {
   if (!map) return [];
-  const target = map[getMapLinkField(collectionKey, linkField)];
+  const direct = toTextArray(map[getMapLinkField(collectionKey, linkField)]);
 
-  if (Array.isArray(target)) {
-    return target
+  if (direct.length) {
+    return direct
       .map((id) => String(id || "").trim())
       .filter((id) => id);
   }
@@ -4010,8 +4086,8 @@ function getMapLinkIds(map, collectionKey, linkField) {
     return map.resourceRoutes.map((entry) => entry?.id).filter(Boolean);
   }
 
-  if (Array.isArray(map.relatedIds) && collectionKey === "knowledgeArticles") {
-    return map.relatedIds;
+  if (collectionKey === "knowledgeArticles") {
+    return toTextArray(map.relatedIds);
   }
 
   return [];
@@ -4021,7 +4097,7 @@ function setMapLinkIds(map, collectionKey, linkField, ids) {
   if (!map?.id) return;
   const normalized = Array.from(
     new Set(
-      (Array.isArray(ids) ? ids : [])
+      toList(ids)
         .map((entry) => String(entry || "").trim())
         .filter((entry) => entry)
     )
@@ -4255,7 +4331,7 @@ function getAuxPlaceholderB(collectionKey) {
 }
 
 function renderTagList(tags) {
-  return (tags || [])
+  return toTextArray(tags)
     .filter(Boolean)
     .map((tag) => `<span class="chip">${escapeHtml(tag)}</span>`)
     .join("");
@@ -4344,20 +4420,30 @@ function normalizeRuntimeAtlasState(payload) {
         return routeId;
       })
       .filter(Boolean);
-    const resourceIds = Array.isArray(next.resourceIds)
-      ? next.resourceIds
-      : legacyResourceIds;
+    const resourceIds = toList(next.resourceIds);
+    const finalResourceIds = resourceIds.length ? resourceIds : legacyResourceIds;
     if (!Array.isArray(next.resourceIds)) {
-      next.resourceIds = resourceIds;
+      next.resourceIds = finalResourceIds;
       changed = true;
     }
 
-    const artifactIds = Array.isArray(next.artifactIds)
-      ? next.artifactIds
+    const storedArtifactIds = toList(next.artifactIds);
+    const fallbackArtifactIds = storedArtifactIds.length
+      ? storedArtifactIds
       : Array.isArray(next.caveRuns)
       ? next.caveRuns.map((run) => run?.artifactId).filter(Boolean)
       : [];
-    next.artifactIds = artifactIds;
+    const normalizedArtifactIds = toTextArray(next.artifactIds);
+    const finalArtifactIds = fallbackArtifactIds.length
+      ? fallbackArtifactIds
+      : [];
+    if (
+      !Array.isArray(next.artifactIds) ||
+      JSON.stringify(normalizedArtifactIds) !== JSON.stringify(finalArtifactIds)
+    ) {
+      next.artifactIds = finalArtifactIds;
+      changed = true;
+    }
 
     if (!Array.isArray(next.baseSpotIds)) {
       next.baseSpotIds = toList(next.baseSpotIds);
@@ -4365,11 +4451,13 @@ function normalizeRuntimeAtlasState(payload) {
     }
 
     if (!Array.isArray(next.galleryIds)) {
-      next.galleryIds = [];
+      next.galleryIds = toList(next.galleryIds);
+      changed = true;
     }
 
     if (!Array.isArray(next.sourceIds)) {
-      next.sourceIds = [];
+      next.sourceIds = toList(next.sourceIds);
+      changed = true;
     }
 
     next.galleryIds = next.galleryIds || [];
@@ -4583,7 +4671,7 @@ function buildEntityFromForm(formData) {
         ...shared,
         name: title,
         roleTags: tags,
-        stages: toList(auxB || existing.stages?.join(", ")),
+        stages: toList(auxB || toTextList(existing.stages)),
         tameFood: String(formData.get("tameFood") || existing.tameFood || ""),
         notes: shortDescription || existing.notes || "",
         mapId: auxA || existing.mapId || "",
@@ -4714,10 +4802,22 @@ function slugify(value) {
 }
 
 function toList(value) {
-  return String(value || "")
-    .split(",")
-    .map((entry) => entry.trim())
-    .filter(Boolean);
+  if (Array.isArray(value)) {
+    return value.map((entry) => String(entry || "").trim()).filter(Boolean);
+  }
+
+  if (typeof value === "string") {
+    return value
+      .split(",")
+      .map((entry) => entry.trim())
+      .filter(Boolean);
+  }
+
+  if (value == null) {
+    return [];
+  }
+
+  return [];
 }
 
 function safeParseJson(value) {
@@ -4732,7 +4832,9 @@ function safeParseJson(value) {
 }
 
 function parseListFromForm(rawValue, fallback = []) {
-  const fallbackList = Array.isArray(fallback) ? fallback : [];
+  const fallbackList = Array.isArray(fallback)
+    ? fallback
+    : toTextArray(fallback);
   const parsed = safeParseJson(rawValue);
 
   if (Array.isArray(parsed)) {
@@ -4755,7 +4857,9 @@ function parseListFromForm(rawValue, fallback = []) {
 }
 
 function parseEntityListOrFallback(rawValue, fallback = [], expectObject = false) {
-  const fallbackList = Array.isArray(fallback) ? fallback : [];
+  const fallbackList = Array.isArray(fallback)
+    ? fallback
+    : toTextArray(fallback);
   const parsed = safeParseJson(rawValue);
 
   if (Array.isArray(parsed)) {
