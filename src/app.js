@@ -397,8 +397,11 @@ function syncImportedItemRoster(targetState) {
 }
 
 function hasImportedItemRosterGap(items = []) {
+  const knownItems = toArray(items);
+  if (knownItems.length !== ASA_IMPORTED_ITEMS.length) return true;
+
   const knownIds = new Set(
-    toArray(items)
+    knownItems
       .map((entry) => String(entry?.id || "").trim())
       .filter(Boolean)
   );
