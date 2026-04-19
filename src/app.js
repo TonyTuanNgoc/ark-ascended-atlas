@@ -1177,25 +1177,28 @@ function renderHomePage(section) {
 }
 
 function renderSectionRail(activeSection) {
-  const links =
-    activeSection === "creatures" || activeSection === "resources"
-      ? LIBRARY_SECTION_LINKS
-      : HOME_SECTION_LINKS;
+  const isLibraryRail = activeSection === "creatures" || activeSection === "resources";
+  const links = isLibraryRail ? LIBRARY_SECTION_LINKS : HOME_SECTION_LINKS;
 
   return `
-    <nav class="section-rail" aria-label="Atlas navigation">
+    <nav class="section-rail ${isLibraryRail ? "section-rail--library" : ""}" aria-label="Atlas navigation">
       ${links.map(
         (link) => `
           <a
             class="section-rail__link ${
               link.id === activeSection ? "is-active" : ""
             } ${
-              (activeSection === "creatures" || activeSection === "resources") &&
+              isLibraryRail
+                ? "section-rail__link--library"
+                : ""
+            } ${
+              isLibraryRail &&
               link.id === "home"
                 ? "section-rail__link--back"
                 : ""
             }"
             href="${escapeAttribute(link.href)}"
+            ${isLibraryRail ? `data-action="section-rail-route" data-href="${escapeAttribute(link.href)}"` : ""}
           >
             ${escapeHtml(link.label)}
           </a>
@@ -6205,6 +6208,20 @@ document.addEventListener("click", async (event) => {
   }
 
   if (action === "hero-map-route") {
+    const href = String(actionTarget.dataset.href || actionTarget.getAttribute("href") || "#/").trim();
+    if (href.startsWith("#")) {
+      event.preventDefault();
+      if (window.location.hash !== href) {
+        window.location.hash = href;
+      } else {
+        ui.route = parseRoute();
+        render();
+      }
+    }
+    return;
+  }
+
+  if (action === "section-rail-route") {
     const href = String(actionTarget.dataset.href || actionTarget.getAttribute("href") || "#/").trim();
     if (href.startsWith("#")) {
       event.preventDefault();

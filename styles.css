@@ -159,15 +159,10 @@ textarea {
 }
 
 .section-rail__link--back {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 2.6rem;
-  padding: 0.62rem 1rem;
-  border-radius: 999px;
-  border: 1px solid rgba(149, 191, 248, 0.24);
-  background: rgba(15, 24, 42, 0.8);
-  color: #ecf3ff;
+  border-color: rgba(149, 191, 248, 0.26);
+  background: linear-gradient(180deg, rgba(17, 31, 51, 0.92), rgba(14, 23, 38, 0.82));
+  color: #f3f8ff;
+  padding-inline: 1.55rem;
 }
 
 .section-rail__link--back::after {
@@ -728,6 +723,54 @@ textarea {
 .section-rail__link {
   white-space: nowrap;
   font-size: 0.92rem;
+}
+
+.section-rail--library {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.55rem;
+  margin-bottom: 1.8rem;
+  border: 1px solid rgba(149, 191, 248, 0.12);
+  border-radius: 999px;
+  background: linear-gradient(180deg, rgba(8, 12, 19, 0.7), rgba(8, 12, 19, 0.48));
+  backdrop-filter: blur(14px);
+  box-shadow: 0 22px 48px rgba(4, 10, 20, 0.28);
+}
+
+.section-rail__link--library {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3.15rem;
+  padding: 0.78rem 1.35rem;
+  border-radius: 999px;
+  border: 1px solid rgba(149, 191, 248, 0.14);
+  background: rgba(12, 18, 29, 0.28);
+  color: rgba(234, 243, 255, 0.88);
+  text-decoration: none;
+  font-family: var(--display);
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  transition:
+    transform var(--transition),
+    border-color var(--transition),
+    background var(--transition),
+    box-shadow var(--transition),
+    color var(--transition);
+}
+
+.section-rail__link--library::after {
+  display: none;
+}
+
+.section-rail__link--library:hover,
+.section-rail__link--library.is-active {
+  transform: translateY(-2px);
+  color: #ffffff;
+  border-color: rgba(186, 224, 255, 0.32);
+  background: linear-gradient(180deg, rgba(18, 27, 40, 0.94), rgba(12, 18, 28, 0.84));
+  box-shadow: 0 16px 30px rgba(5, 14, 30, 0.28);
 }
 
 .content-section {
@@ -2062,6 +2105,20 @@ textarea {
     gap: 0.55rem;
   }
 
+  .section-rail--library {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border-radius: 24px;
+  }
+
+  .section-rail__link--library {
+    flex: 1 1 10rem;
+    min-height: 2.9rem;
+    padding: 0.72rem 1rem;
+    font-size: 0.94rem;
+  }
+
   .creature-library-shell__header {
     align-items: stretch;
   }
@@ -2125,6 +2182,10 @@ textarea {
 }
 
 @media (max-width: 560px) {
+  .section-rail__link--library {
+    flex-basis: 100%;
+  }
+
   .cloud-dock {
     align-items: stretch;
     flex-direction: column;
