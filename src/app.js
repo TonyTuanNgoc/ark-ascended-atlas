@@ -1,6 +1,7 @@
 import { ENTITY_TYPES } from "./data.js";
 import {
   findEntity,
+  normalizeAtlasState,
   loadState,
   resetState,
   saveState,
@@ -14,6 +15,7 @@ const adminDrawer = document.querySelector("#adminDrawer");
 const modalRoot = document.querySelector("#modalRoot");
 const adminToggleButton = document.querySelector("#adminToggle");
 const filePicker = document.querySelector("#imageFilePicker");
+const stateFilePicker = document.querySelector("#atlasStateFilePicker");
 
 const MAP_LINK_FIELDS = {
   bosses: "bossIds",
@@ -3162,6 +3164,8 @@ function renderAdminDrawer() {
         </div>
         <div class="admin-form__actions">
           <button class="hero-button hero-button--primary" type="submit">Save Entry</button>
+          <button class="ghost-button" type="button" data-action="export-state">Export Atlas Data</button>
+          <button class="ghost-button" type="button" data-action="import-state">Import Atlas Data</button>
           <button class="ghost-button" type="button" data-action="reset-data">Reset Local Data</button>
         </div>
       </form>
@@ -4389,6 +4393,35 @@ function closeModal() {
   render();
 }
 
+function exportAtlasState() {
+  const backup = normalizeAtlasState(state);
+  const payload = JSON.stringify(backup, null, 2);
+  const file = new Blob([payload], { type: "application/json;charset=utf-8" });
+  const url = URL.createObjectURL(file);
+  const anchor = document.createElement("a");
+  const dateStamp = new Date().toISOString().replace(/[:.]/g, "-");
+  anchor.href = url;
+  anchor.download = `ark-ascended-atlas-backup-${dateStamp}.json`;
+  document.body.appendChild(anchor);
+  anchor.click();
+  anchor.remove();
+  URL.revokeObjectURL(url);
+}
+
+async function importAtlasStateFromFile(file) {
+  if (!file) return;
+  try {
+    const content = await file.text();
+    const payload = JSON.parse(content);
+    const imported = normalizeAtlasState(payload);
+    state = imported;
+    persist();
+  } catch (error) {
+    window.alert("Import failed. Please use a valid atlas backup JSON.");
+    console.warn("Failed to import atlas state:", error);
+  }
+}
+
 function persist() {
   saveState(state);
   render();
@@ -4929,6 +4962,18 @@ document.addEventListener("click", (event) => {
     return;
   }
 
+  if (action === "export-state") {
+    exportAtlasState();
+    return;
+  }
+
+  if (action === "import-state") {
+    if (stateFilePicker) {
+      stateFilePicker.click();
+    }
+    return;
+  }
+
   if (action === "reset-data") {
     state = resetState();
     ui.activeBossId = null;
@@ -5042,6 +5087,15 @@ filePicker.addEventListener("change", async (event) => {
   setEntityImage(collectionKey, entityId, dataUrl, "local");
   filePicker.value = "";
 });
+
+if (stateFilePicker) {
+  stateFilePicker.addEventListener("change", async (event) => {
+    const file = event.target.files?.[0];
+    if (!file) return;
+    await importAtlasStateFromFile(file);
+    stateFilePicker.value = "";
+  });
+}
 
 function readFileAsDataUrl(file) {
   return new Promise((resolve, reject) => {

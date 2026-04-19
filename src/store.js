@@ -6,6 +6,22 @@ const STORAGE_SCHEMA_KEY = "__schemaVersion";
 
 const clone = (value) => JSON.parse(JSON.stringify(value));
 
+function unwrapPersistedPayload(payload) {
+  if (!payload || typeof payload !== "object") return null;
+  if (Object.prototype.hasOwnProperty.call(payload, STORAGE_SCHEMA_KEY)) {
+    return payload;
+  }
+  if (payload.state && typeof payload.state === "object") return payload.state;
+  return null;
+}
+
+export const normalizeAtlasState = (payload = {}) => {
+  const source = unwrapPersistedPayload(payload) || payload || {};
+  const normalized = mergeWithDefaults(source, defaultData);
+  normalized[STORAGE_SCHEMA_KEY] = STORAGE_SCHEMA_VERSION;
+  return normalized;
+};
+
 const getEntityId = (entry) => {
   if (!entry || typeof entry !== "object") return null;
   if (entry.id) return entry.id;
@@ -64,9 +80,7 @@ export const loadState = () => {
   try {
     const raw = window.localStorage.getItem(STORAGE_KEY);
     if (!raw) {
-      const fresh = clone(defaultData);
-      fresh[STORAGE_SCHEMA_KEY] = STORAGE_SCHEMA_VERSION;
-      return fresh;
+      return normalizeAtlasState();
     }
 
     const parsed = JSON.parse(raw);
@@ -91,17 +105,14 @@ export const loadState = () => {
       });
     }
 
-    const migrated = mergeWithDefaults(parsed, defaultData);
+    const migrated = normalizeAtlasState(parsed);
     if (needsMigration) {
-      migrated[STORAGE_SCHEMA_KEY] = STORAGE_SCHEMA_VERSION;
       saveState(migrated);
     }
     return migrated;
   } catch (error) {
     console.warn("Failed to load atlas state:", error);
-    const fallback = clone(defaultData);
-    fallback[STORAGE_SCHEMA_KEY] = STORAGE_SCHEMA_VERSION;
-    return fallback;
+    return normalizeAtlasState();
   }
 };
 
