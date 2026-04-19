@@ -1,5 +1,11 @@
 import { ENTITY_TYPES } from "./data.js";
 import {
+  loadCloudAtlasData,
+  removeAtlasEntityMediaFromCloud,
+  saveAtlasEntityMediaToCloud,
+  saveAtlasEntityToCloud,
+} from "./cloud-atlas.js";
+import {
   findEntity,
   normalizeAtlasState as normalizeAtlasStateFromStore,
   loadState,
@@ -337,6 +343,100 @@ const collectionLabels = Object.fromEntries(
 
 let state = loadState();
 state = normalizeRuntimeAtlasState(state);
+
+function getCloudEntityId(entry) {
+  if (!entry || typeof entry !== "object") return null;
+  return entry.id || entry.key || null;
+}
+
+function mergeCloudCollection(localCollection = [], remoteCollection = []) {
+  const remoteById = new Map(
+    remoteCollection
+      .map((entry) => [getCloudEntityId(entry), entry])
+      .filter(([id]) => Boolean(id))
+  );
+
+  const merged = localCollection.map((entry) => {
+    const entityId = getCloudEntityId(entry);
+    if (!entityId || !remoteById.has(entityId)) {
+      return entry;
+    }
+
+    const remoteEntry = remoteById.get(entityId);
+    remoteById.delete(entityId);
+    return { ...entry, ...remoteEntry };
+  });
+
+  remoteById.forEach((entry) => {
+    merged.push(entry);
+  });
+
+  return merged;
+}
+
+function mergeCloudPayloadIntoState(localState, remotePayload) {
+  const next = { ...localState };
+
+  Object.entries(remotePayload || {}).forEach(([key, value]) => {
+    if (Array.isArray(value) && Array.isArray(next[key])) {
+      next[key] = mergeCloudCollection(next[key], value);
+      return;
+    }
+
+    if (
+      value &&
+      typeof value === "object" &&
+      !Array.isArray(value) &&
+      next[key] &&
+      typeof next[key] === "object" &&
+      !Array.isArray(next[key])
+    ) {
+      next[key] = { ...next[key], ...value };
+      return;
+    }
+
+    next[key] = value;
+  });
+
+  return next;
+}
+
+async function hydrateCloudState() {
+  const remotePayload = await loadCloudAtlasData();
+  if (!remotePayload) return;
+
+  const mergedState = mergeCloudPayloadIntoState(state, remotePayload);
+  state = normalizeRuntimeAtlasState(
+    normalizeAtlasStateFromStore(mergedState)
+  );
+  saveState(state);
+  render();
+}
+
+function getStateEntity(collectionKey, entityId) {
+  if (!collectionKey || !entityId) return null;
+  return findEntity(state, collectionKey, entityId);
+}
+
+async function syncEntityToCloud(collectionKey, entityId) {
+  const entity = getStateEntity(collectionKey, entityId);
+  if (!entity) return false;
+  return saveAtlasEntityToCloud(collectionKey, entity);
+}
+
+async function syncMapToCloud(mapId) {
+  if (!mapId) return false;
+  return syncEntityToCloud("maps", mapId);
+}
+
+async function syncServerSettingToCloud(settingKey) {
+  if (!settingKey) return false;
+  const setting = (state.serverSettings || []).find(
+    (entry) => (entry.id || entry.key) === settingKey
+  );
+  if (!setting) return false;
+  return saveAtlasEntityToCloud("serverSettings", setting);
+}
 
 const ui = {
   editMode: false,
@@ -4440,7 +4540,10 @@ function persist() {
   render();
 }
 
-function setEntityImage(collectionKey, entityId, src, type = "url") {
+async function setEntityImage(collectionKey, entityId, src, type = "url") {
+  const existingEntity = getStateEntity(collectionKey, entityId);
+  if (!existingEntity) return;
+
   updateEntity(state, collectionKey, entityId, (entity) => ({
     ...entity,
     media: {
@@ -4453,18 +4556,47 @@ function setEntityImage(collectionKey, entityId, src, type = "url") {
     },
   }));
   persist();
+
+  const latestEntity = getStateEntity(collectionKey, entityId);
+  if (!latestEntity) return;
+
+  const syncedEntity = await saveAtlasEntityMediaToCloud(
+    collectionKey,
+    latestEntity,
+    src,
+    type
+  );
+  if (!syncedEntity) return;
+
+  upsertEntity(state, collectionKey, syncedEntity);
+  saveState(state);
+  render();
 }
 
-function removeEntityImage(collectionKey, entityId) {
+async function removeEntityImage(collectionKey, entityId) {
+  const existingEntity = getStateEntity(collectionKey, entityId);
+  if (!existingEntity) return;
+
   updateEntity(state, collectionKey, entityId, (entity) => ({
     ...entity,
     media: {
       ...(entity.media || {}),
       src: "",
       type: "empty",
+      storagePath: "",
     },
   }));
   persist();
+
+  const syncedEntity = await removeAtlasEntityMediaFromCloud(
+    collectionKey,
+    existingEntity
+  );
+  if (!syncedEntity) return;
+
+  upsertEntity(state, collectionKey, syncedEntity);
+  saveState(state);
+  render();
 }
 
 function buildEntityFromForm(formData) {
@@ -4844,7 +4976,7 @@ function syncImagePreview() {
 
 window.addEventListener("hashchange", render);
 
-document.addEventListener("click", (event) => {
+document.addEventListener("click", async (event) => {
   const actionTarget = event.target.closest("[data-action]");
   if (!actionTarget) return;
 
@@ -4941,24 +5073,28 @@ document.addEventListener("click", (event) => {
   }
 
   if (action === "confirm-map-link") {
+    const mapId = actionTarget.dataset.mapId;
     linkEntityToMap(
-      actionTarget.dataset.mapId,
+      mapId,
       actionTarget.dataset.collection,
       actionTarget.dataset.linkField,
       actionTarget.dataset.entityId
     );
     ui.activeMapLinkPicker = null;
     persist();
+    await syncMapToCloud(mapId);
     return;
   }
 
   if (action === "unlink-map-entity") {
+    const mapId = actionTarget.dataset.mapId;
     unlinkEntityFromMap(
-      actionTarget.dataset.mapId,
+      mapId,
       actionTarget.dataset.collection,
       actionTarget.dataset.entityId
     );
     persist();
+    await syncMapToCloud(mapId);
     return;
   }
 
@@ -4984,7 +5120,7 @@ document.addEventListener("click", (event) => {
   }
 
   if (action === "image-remove") {
-    removeEntityImage(
+    await removeEntityImage(
       actionTarget.dataset.collection,
       actionTarget.dataset.entityId
     );
@@ -5014,7 +5150,7 @@ document.addEventListener("click", (event) => {
   }
 });
 
-document.addEventListener("change", (event) => {
+document.addEventListener("change", async (event) => {
   const mapFilterAction = event.target.dataset.action;
   if (mapFilterAction === "map-section-filter") {
     const sectionKey = event.target.dataset.section;
@@ -5038,6 +5174,7 @@ document.addEventListener("change", (event) => {
   if (settingKey) {
     updateSetting(state, settingKey, event.target.value);
     saveState(state);
+    await syncServerSettingToCloud(settingKey);
   }
 });
 
@@ -5078,8 +5215,9 @@ document.addEventListener("submit", async (event) => {
       pending.collectionKey === collectionKey &&
       pending.mapId
     ) {
+      const pendingMapId = pending.mapId;
       linkEntityToMap(
-        pending.mapId,
+        pendingMapId,
         pending.collectionKey,
         pending.linkField,
         entity.id
@@ -5087,22 +5225,30 @@ document.addEventListener("submit", async (event) => {
       ui.mapLinkPending = null;
       ui.activeMapLinkPicker = null;
       ui.admin.collectionKey = "maps";
+      persist();
+      await syncEntityToCloud(collectionKey, entity.id);
+      await syncMapToCloud(pendingMapId);
+      return;
     }
     persist();
+    await syncEntityToCloud(collectionKey, entity.id);
     return;
   }
 
   if (event.target.id === "imageUrlForm") {
     event.preventDefault();
     const formData = new FormData(event.target);
-    setEntityImage(
-      formData.get("collectionKey"),
-      formData.get("entityId"),
-      String(formData.get("url") || "").trim(),
-      "url"
-    );
+    const collectionKey = formData.get("collectionKey");
+    const entityId = formData.get("entityId");
+    const url = String(formData.get("url") || "").trim();
     ui.imageModal = null;
     render();
+    await setEntityImage(
+      collectionKey,
+      entityId,
+      url,
+      "url"
+    );
   }
 });
 
@@ -5113,7 +5259,7 @@ filePicker.addEventListener("change", async (event) => {
   if (!file || !collectionKey || !entityId) return;
 
   const dataUrl = await readFileAsDataUrl(file);
-  setEntityImage(collectionKey, entityId, dataUrl, "local");
+  await setEntityImage(collectionKey, entityId, dataUrl, "local");
   filePicker.value = "";
 });
 
@@ -5136,3 +5282,4 @@ function readFileAsDataUrl(file) {
 }
 
 render();
+void hydrateCloudState();
