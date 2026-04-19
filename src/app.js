@@ -5,6 +5,7 @@ import {
   ENTITY_TYPES,
   ITEM_FIELD_DEFAULTS,
   ITEM_IMPORT_NAME_ALIASES,
+  shouldRefreshCreatureMedia,
 } from "./data.js";
 import {
   ASA_CREATURE_IMPORT_VERSION,
@@ -332,19 +333,20 @@ function syncImportedCreatureRoster(targetState) {
   targetState.dinos = ASA_IMPORTED_CREATURES.map((entry) => {
     const existing = getImportedCreatureLegacyEntry(entry, existingById, existingByName) || {};
     const practical = normalizeDinoPracticalFields(existing);
+    const existingMedia =
+      existing.media && typeof existing.media === "object" ? existing.media : null;
+    const keepExistingMedia =
+      existingMedia &&
+      typeof existingMedia.src === "string" &&
+      existingMedia.src.trim() &&
+      !shouldRefreshCreatureMedia(existingMedia);
 
     return {
       ...existing,
       id: entry.id,
       name: entry.name,
       mapIds: Array.isArray(entry.mapIds) ? [...entry.mapIds] : [],
-      media:
-        existing.media &&
-        typeof existing.media === "object" &&
-        typeof existing.media.src === "string" &&
-        existing.media.src.trim()
-          ? existing.media
-          : buildImportedCreatureMedia(entry, "amber"),
+      media: keepExistingMedia ? existingMedia : buildImportedCreatureMedia(entry, "amber"),
       tameFood: practical.tameFood,
       tameMethod: practical.tameMethod,
       tameMethodType: practical.tameMethodType,
@@ -1830,7 +1832,9 @@ function renderCreatureGallery() {
                                 hasImage
                                   ? `<img src="${escapeAttribute(dino.media.src)}" alt="${escapeHtml(
                                       dino.name
-                                    )}" loading="lazy" />`
+                                    )}" loading="lazy" data-avatar-fallback="${escapeAttribute(
+                                      String(dino.name || "??").slice(0, 2)
+                                    )}" />`
                                   : `<span class="creature-table__avatar-placeholder">${escapeHtml(
                                       String(dino.name || "??").slice(0, 2)
                                     )}</span>`
@@ -5346,7 +5350,8 @@ function normalizeRuntimeAtlasState(payload) {
     const needsMediaBackfill =
       !existingMedia ||
       typeof existingMedia.src !== "string" ||
-      !existingMedia.src.trim();
+      !existingMedia.src.trim() ||
+      shouldRefreshCreatureMedia(existingMedia);
     const next = {
       ...dino,
       ...practical,
@@ -6055,6 +6060,26 @@ window.addEventListener("storage", (event) => {
   state = normalizeRuntimeAtlasState(state);
   render();
 });
+
+document.addEventListener(
+  "error",
+  (event) => {
+    const image = event.target;
+    if (!(image instanceof HTMLImageElement)) return;
+
+    const fallbackText = image.dataset.avatarFallback;
+    if (!fallbackText) return;
+
+    const frame = image.closest(".creature-table__avatar");
+    if (!frame) return;
+
+    const placeholder = document.createElement("span");
+    placeholder.className = "creature-table__avatar-placeholder";
+    placeholder.textContent = fallbackText;
+    frame.replaceChildren(placeholder);
+  },
+  true
+);
 
 document.addEventListener("click", async (event) => {
   const actionTarget = event.target.closest("[data-action]");

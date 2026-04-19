@@ -15,8 +15,23 @@ const blankMedia = (label, tone) => ({
   tone,
 });
 
+const normalizeCreatureIconLabel = (value) =>
+  String(value || "Creature")
+    .replace(/\s+icon$/i, "")
+    .trim();
+
+const toCreatureIconFileName = (value) => {
+  const baseName = normalizeCreatureIconLabel(value).replace(/\s+/g, "_");
+  return `${baseName || "Creature"}.png`;
+};
+
+const buildArkWikiThumbUrl = (fileName, size = 96) => {
+  const encodedFileName = encodeURIComponent(fileName);
+  return `https://ark.wiki.gg/images/thumb/${encodedFileName}/${size}px-${encodedFileName}`;
+};
+
 const wikiMedia = (slug, label, tone) => ({
-  src: `https://r2.wikily.gg/images/ark/dossiers/${slug}.webp`,
+  src: buildArkWikiThumbUrl(toCreatureIconFileName(label || slug), 96),
   type: "image",
   alt: label,
   tone,
@@ -25,9 +40,31 @@ const wikiMedia = (slug, label, tone) => ({
 const hasMediaSource = (media) =>
   Boolean(media && typeof media === "object" && typeof media.src === "string" && media.src.trim());
 
+export const shouldRefreshCreatureMedia = (media) => {
+  const src =
+    media && typeof media === "object" && typeof media.src === "string"
+      ? media.src.trim()
+      : "";
+  if (!src) return true;
+
+  let normalizedSrc = src.toLowerCase();
+  try {
+    normalizedSrc = decodeURIComponent(src).toLowerCase();
+  } catch {
+    normalizedSrc = src.toLowerCase();
+  }
+
+  return (
+    normalizedSrc.includes("r2.wikily.gg/images/ark/dossiers/") ||
+    normalizedSrc.includes("/file:render_") ||
+    normalizedSrc.includes("/images/thumb/render_") ||
+    normalizedSrc.includes("/images/render_")
+  );
+};
+
 export const buildImportedCreatureMedia = (entry, tone = "amber") => {
   const importedMedia = entry && typeof entry === "object" ? entry.media : null;
-  if (hasMediaSource(importedMedia)) {
+  if (hasMediaSource(importedMedia) && !shouldRefreshCreatureMedia(importedMedia)) {
     return {
       src: importedMedia.src,
       type: importedMedia.type || "image",
@@ -37,7 +74,7 @@ export const buildImportedCreatureMedia = (entry, tone = "amber") => {
   }
 
   return wikiMedia(
-    entry?.id || "creature",
+    entry?.name || entry?.id || "Creature",
     `${entry?.name || "Creature"} icon`,
     tone
   );
