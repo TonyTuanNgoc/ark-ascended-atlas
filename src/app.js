@@ -631,6 +631,9 @@ async function initializeCloudAtlas() {
   }
   render();
 
+  if (!hydrated) {
+    void syncAllStateToCloud();
+  }
   void normalizePendingLocalMedia();
 }
 
@@ -4594,6 +4597,14 @@ function normalizeRuntimeAtlasState(payload) {
   state.meta.heroActions = Array.isArray(state.meta.heroActions)
     ? state.meta.heroActions
     : [];
+  state.meta.cloud = {
+    ...(defaultState.meta?.cloud || {}),
+    ...(state.meta.cloud || {}),
+  };
+  state.meta.cloud.syncLock = {
+    ...(defaultState.meta?.cloud?.syncLock || {}),
+    ...(state.meta.cloud.syncLock || {}),
+  };
 
   const asArray = (value) => (Array.isArray(value) ? value : []);
 
@@ -4763,6 +4774,7 @@ async function importAtlasStateFromFile(file) {
     state = imported;
     state = normalizeRuntimeAtlasState(state);
     persist();
+    void syncAllStateToCloud();
   } catch (error) {
     window.alert("Import failed. Please use a valid atlas backup JSON.");
     console.warn("Failed to import atlas state:", error);
@@ -5404,6 +5416,7 @@ document.addEventListener("click", async (event) => {
     ui.activeMapEntity = null;
     ui.activeMapLinkPicker = null;
     render();
+    void syncAllStateToCloud();
   }
 });
 

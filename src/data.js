@@ -33,6 +33,15 @@ export const defaultData = {
     title: "The Solo Ascension Route",
     subtitle: "",
     heroQuote: "",
+    cloud: {
+      schemaVersion: 1,
+      persistenceMode: "cloud-first",
+      defaultClient: "gpt-atlas",
+      syncLock: {
+        mode: "authenticated-open",
+        ownerUid: "",
+      },
+    },
     heroActions: [
       { label: "Khám phá thế giới", href: "#/maps" },
       { label: "Story Route", href: "#/story" },

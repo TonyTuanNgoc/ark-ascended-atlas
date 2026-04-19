@@ -12,6 +12,16 @@ const META_DOC = {
   collection: "atlasMeta",
   id: "default",
 };
+const ATLAS_CLOUD_SCHEMA_VERSION = 1;
+const CLOUD_META_DEFAULTS = {
+  schemaVersion: ATLAS_CLOUD_SCHEMA_VERSION,
+  persistenceMode: "cloud-first",
+  defaultClient: "gpt-atlas",
+  syncLock: {
+    mode: "authenticated-open",
+    ownerUid: "",
+  },
+};
 
 function getEntityId(entry) {
   if (!entry || typeof entry !== "object") return null;
@@ -51,6 +61,49 @@ function sanitizeForCloud(value) {
   }
 
   return undefined;
+}
+
+function normalizeCloudMeta(meta = {}) {
+  const base = sanitizeForCloud(meta) || {};
+  const cloud = base.cloud && typeof base.cloud === "object" ? base.cloud : {};
+  const syncLock =
+    cloud.syncLock && typeof cloud.syncLock === "object"
+      ? cloud.syncLock
+      : {};
+
+  return {
+    ...base,
+    cloud: {
+      ...CLOUD_META_DEFAULTS,
+      ...cloud,
+      schemaVersion: ATLAS_CLOUD_SCHEMA_VERSION,
+      syncLock: {
+        ...CLOUD_META_DEFAULTS.syncLock,
+        ...syncLock,
+      },
+    },
+  };
+}
+
+function normalizeEntityForCloud(collectionKey, entity) {
+  const base = sanitizeForCloud(entity) || {};
+  const entityId = getEntityId(base);
+  const label = base.name || base.title || base.label || entityId || collectionKey;
+  const media = base.media && typeof base.media === "object" ? base.media : {};
+
+  return {
+    ...base,
+    entityType: collectionKey,
+    schemaVersion: ATLAS_CLOUD_SCHEMA_VERSION,
+    media: {
+      src: typeof media.src === "string" ? media.src : "",
+      type: typeof media.type === "string" ? media.type : "empty",
+      alt: typeof media.alt === "string" && media.alt ? media.alt : label,
+      tone: typeof media.tone === "string" && media.tone ? media.tone : "bronze",
+      storagePath: typeof media.storagePath === "string" ? media.storagePath : "",
+      assetHash: typeof media.assetHash === "string" ? media.assetHash : "",
+    },
+  };
 }
 
 function getCollectionPath(collectionKey) {
@@ -113,11 +166,13 @@ export async function loadCloudAtlasData() {
     const payload = {};
 
     if (metaSnapshot.exists()) {
-      payload.meta = sanitizeForCloud(metaSnapshot.data());
+      payload.meta = normalizeCloudMeta(metaSnapshot.data());
     }
 
     CLOUD_COLLECTION_KEYS.forEach((key, index) => {
-      const docs = collectionSnapshots[index].docs.map((doc) => sanitizeForCloud(doc.data()));
+      const docs = collectionSnapshots[index].docs.map((doc) =>
+        normalizeEntityForCloud(key, doc.data())
+      );
       if (docs.length) {
         payload[key] = docs;
       }
@@ -141,7 +196,7 @@ export async function saveAtlasMetaToCloud(meta) {
     await services.firestoreApi.setDoc(
       services.firestoreApi.doc(services.db, META_DOC.collection, META_DOC.id),
       {
-        ...sanitizeForCloud(meta),
+        ...normalizeCloudMeta(meta),
         updatedAt: new Date().toISOString(),
       },
       { merge: true }
@@ -167,7 +222,7 @@ export async function saveAtlasEntityToCloud(collectionKey, entity) {
     await services.firestoreApi.setDoc(
       services.firestoreApi.doc(services.db, getCollectionPath(collectionKey), entityId),
       {
-        ...sanitizeForCloud(entity),
+        ...normalizeEntityForCloud(collectionKey, entity),
         updatedAt: new Date().toISOString(),
       },
       { merge: true }
