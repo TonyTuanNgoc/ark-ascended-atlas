@@ -28,36 +28,15 @@
     <div class="site-shell">
       <div class="atmosphere-layer atmosphere-layer-a"></div>
       <div class="atmosphere-layer atmosphere-layer-b"></div>
-      <header class="site-header">
-        <a class="brand-mark" href="#/">
-          <span class="brand-mark__crest">A</span>
-          <span class="brand-mark__text">
-            <strong>Ascended Atlas</strong>
-            <small>ARK: Survival Ascended Solo Hub</small>
-          </span>
-        </a>
-
-        <nav class="site-nav" aria-label="Primary">
-          <a href="#/story">Story Route</a>
-          <a href="#/maps">Explore Maps</a>
-          <a href="#/route">Fastest Clear Route</a>
-          <a href="#/bosses">Boss Planner</a>
-          <a href="#/lore">Ancient Records</a>
-        </nav>
-
-        <div class="header-actions">
-          <button
-            class="ghost-button"
-            id="adminToggle"
-            type="button"
-            data-action="toggle-admin"
-          >
-            Edit Mode
-          </button>
-        </div>
-      </header>
-
       <main id="app" class="app-root" tabindex="-1"></main>
+      <button
+        class="ghost-button floating-admin-toggle"
+        id="adminToggle"
+        type="button"
+        data-action="toggle-admin"
+      >
+        Edit Mode
+      </button>
     </div>
 
     <aside id="adminDrawer" class="admin-drawer" aria-hidden="true"></aside>

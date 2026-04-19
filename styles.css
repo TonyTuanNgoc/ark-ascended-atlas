@@ -21,7 +21,7 @@
   --radius-md: 20px;
   --radius-sm: 14px;
   --transition: 220ms ease;
-  --hero-bg: url("https://cdn.fastly.steamstatic.com/steamcommunity/public/images/apps/2399830/41921448fa6818fe2cd52cd5c8d05718346d101c.jpg");
+  --atlas-bg: url("https://images.hdqwalls.com/download/ark-survival-ascended-5k-r4-5120x2880.jpg");
 }
 
 * {
@@ -36,11 +36,7 @@ body {
   margin: 0;
   min-height: 100vh;
   font-family: var(--body);
-  background:
-    radial-gradient(circle at 20% 20%, rgba(37, 78, 141, 0.24), transparent 26%),
-    radial-gradient(circle at 80% 10%, rgba(53, 97, 156, 0.22), transparent 22%),
-    radial-gradient(circle at 50% 100%, rgba(24, 56, 114, 0.18), transparent 28%),
-    linear-gradient(180deg, #08132a 0%, #040910 45%, #030712 100%);
+  background: #02060c;
   color: #dcecff;
 }
 
@@ -82,6 +78,32 @@ textarea {
   overflow: hidden;
 }
 
+.site-shell::before,
+.site-shell::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+}
+
+.site-shell::before {
+  z-index: 0;
+  background-image: var(--atlas-bg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  filter: saturate(1.08) contrast(1.04) brightness(0.72);
+  transform: scale(1.03);
+}
+
+.site-shell::after {
+  z-index: 0;
+  background:
+    radial-gradient(circle at 50% 18%, rgba(88, 140, 222, 0.16), transparent 24%),
+    radial-gradient(circle at 50% 100%, rgba(0, 0, 0, 0.08), transparent 36%),
+    linear-gradient(180deg, rgba(2, 4, 8, 0.42), rgba(2, 4, 8, 0.74) 42%, rgba(2, 4, 8, 0.9) 100%);
+}
+
 .atmosphere-layer {
   position: fixed;
   inset: 0;
@@ -91,8 +113,8 @@ textarea {
 
 .atmosphere-layer-a {
   background:
-    linear-gradient(180deg, rgba(2, 4, 8, 0.2), rgba(2, 4, 8, 0.8)),
-    radial-gradient(circle at 50% 25%, rgba(223, 182, 101, 0.08), transparent 33%);
+    linear-gradient(180deg, rgba(2, 4, 8, 0.08), rgba(2, 4, 8, 0.48)),
+    radial-gradient(circle at 50% 24%, rgba(223, 182, 101, 0.07), transparent 28%);
   mix-blend-mode: screen;
 }
 
@@ -104,65 +126,6 @@ textarea {
   mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.35), transparent 85%);
 }
 
-.site-header {
-  position: sticky;
-  top: 0;
-  z-index: 20;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  padding: 1rem 1.5rem;
-  backdrop-filter: blur(18px);
-  background: linear-gradient(180deg, rgba(8, 10, 15, 0.85), rgba(8, 10, 15, 0.35));
-  border-bottom: 1px solid rgba(103, 162, 231, 0.12);
-}
-
-.brand-mark {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.9rem;
-}
-
-.brand-mark__crest {
-  display: grid;
-  place-items: center;
-  width: 2.7rem;
-  height: 2.7rem;
-  border-radius: 50%;
-  border: 1px solid rgba(122, 171, 232, 0.3);
-  background:
-    radial-gradient(circle at 50% 40%, rgba(122, 171, 232, 0.32), transparent 60%),
-    rgba(12, 13, 18, 0.94);
-  font-family: var(--display);
-  font-size: 1.2rem;
-}
-
-.brand-mark__text {
-  display: flex;
-  flex-direction: column;
-}
-
-.brand-mark__text strong {
-  font-family: var(--display);
-  letter-spacing: 0.08em;
-  font-size: 0.95rem;
-  text-transform: uppercase;
-}
-
-.brand-mark__text small {
-  color: rgba(211, 230, 255, 0.7);
-  font-size: 0.76rem;
-}
-
-.site-nav {
-  display: flex;
-  gap: 1.2rem;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.site-nav a,
 .section-rail__link,
 .text-link {
   position: relative;
@@ -170,7 +133,6 @@ textarea {
   transition: color var(--transition);
 }
 
-.site-nav a::after,
 .section-rail__link::after,
 .text-link::after {
   content: "";
@@ -190,15 +152,12 @@ textarea {
   transition: transform var(--transition);
 }
 
-.site-nav a:hover,
 .section-rail__link:hover,
 .text-link:hover,
-.site-nav a.is-active,
 .section-rail__link.is-active {
   color: #ffffff;
 }
 
-.site-nav a:hover::after,
 .section-rail__link:hover::after,
 .text-link:hover::after,
 .section-rail__link.is-active::after {
@@ -273,6 +232,17 @@ textarea {
   z-index: 1;
 }
 
+.floating-admin-toggle {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 25;
+  min-width: 7.75rem;
+  backdrop-filter: blur(18px);
+  background: linear-gradient(180deg, rgba(8, 12, 19, 0.84), rgba(8, 12, 19, 0.68));
+  border-color: rgba(157, 205, 255, 0.26);
+}
+
 .page-shell {
   width: min(100%, var(--max-width));
   margin: 0 auto;
@@ -289,9 +259,13 @@ textarea {
   padding: 0;
 }
 
+.page-shell--home-immersive {
+  min-height: 100vh;
+}
+
 .hero-panel {
   position: relative;
-  min-height: calc(100svh - 88px);
+  min-height: 100svh;
   display: flex;
   align-items: flex-end;
   overflow: hidden;
@@ -309,33 +283,8 @@ textarea {
 
 .hero-panel__veil {
   background:
-    linear-gradient(180deg, rgba(5, 7, 10, 0.14), rgba(5, 7, 10, 0.9)),
-    radial-gradient(circle at 80% 25%, rgba(227, 187, 114, 0.1), transparent 16%);
-}
-
-.hero-panel__atlas {
-  background-image: var(--hero-bg);
-  background-size: cover;
-  background-position: 50% 35%;
-  filter: saturate(1.09) contrast(1.08) brightness(0.85);
-}
-
-.hero-panel__atlas::before,
-.hero-panel__atlas::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  filter: blur(0.3px);
-}
-
-.hero-panel__atlas::before {
-  background: linear-gradient(130deg, rgba(4, 5, 9, 0.72), rgba(7, 11, 16, 0.16) 35%, rgba(0, 0, 0, 0.82));
-}
-
-.hero-panel__atlas::after {
-  background:
-    radial-gradient(circle at 60% 30%, rgba(88, 145, 220, 0.16), transparent 48%),
-    linear-gradient(10deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.15));
+    linear-gradient(180deg, rgba(2, 4, 8, 0.04), rgba(2, 4, 8, 0.18) 35%, rgba(2, 4, 8, 0.76) 100%),
+    radial-gradient(circle at 50% 86%, rgba(4, 7, 12, 0.06), rgba(4, 7, 12, 0.84) 62%);
 }
 
 .hero-panel__content {
@@ -346,6 +295,15 @@ textarea {
   max-width: var(--max-width);
   padding: clamp(2rem, 6vw, 5rem);
   padding-bottom: clamp(2.2rem, 6vw, 5.3rem);
+}
+
+.hero-panel__content--maps-only {
+  display: grid;
+  align-content: end;
+  min-height: 100svh;
+  width: min(100%, 1540px);
+  max-width: 1540px;
+  padding: clamp(1rem, 3vw, 2rem) clamp(1rem, 3.8vw, 3rem) clamp(1.6rem, 5vw, 3rem);
 }
 
 .eyebrow {
@@ -394,10 +352,9 @@ textarea {
 
 .hero-map-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 0.72rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
   margin-top: 0.6rem;
-  max-width: 980px;
 }
 
 .hero-map-toolbar {
@@ -406,7 +363,11 @@ textarea {
   align-items: center;
   justify-content: space-between;
   gap: 0.85rem;
-  max-width: 980px;
+}
+
+.hero-map-toolbar--solo {
+  margin: 0 0 1rem;
+  justify-content: flex-end;
 }
 
 .hero-map-toolbar__label {
@@ -417,9 +378,17 @@ textarea {
 }
 
 .hero-map-groups {
-  margin-top: 1rem;
+  margin-top: 0;
   display: grid;
-  gap: 1rem;
+  gap: 1.15rem;
+}
+
+.hero-map-group {
+  padding: 1rem;
+  border: 1px solid rgba(148, 195, 251, 0.12);
+  border-radius: 24px;
+  background: linear-gradient(180deg, rgba(8, 12, 19, 0.48), rgba(8, 12, 19, 0.3));
+  backdrop-filter: blur(10px);
 }
 
 .map-group-shell {
@@ -434,7 +403,7 @@ textarea {
   font-size: 0.78rem;
   text-transform: uppercase;
   letter-spacing: 0.26em;
-  color: rgba(183, 213, 255, 0.82);
+  color: rgba(226, 239, 255, 0.92);
 }
 
 .hero-map-tile {
@@ -442,19 +411,20 @@ textarea {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  min-height: 12rem;
+  min-height: 15rem;
   text-align: left;
   padding: 0;
-  border-radius: 14px;
-  border: 1px solid rgba(122, 171, 232, 0.3);
-  background: linear-gradient(165deg, rgba(12, 14, 19, 0.74), rgba(8, 10, 14, 0.64));
+  border-radius: 20px;
+  border: 1px solid rgba(188, 225, 255, 0.16);
+  background: linear-gradient(165deg, rgba(7, 10, 16, 0.7), rgba(7, 10, 16, 0.42));
   color: #dbe9ff;
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(12px);
   font-family: var(--display);
   transition:
     transform var(--transition),
     border-color var(--transition),
-    background var(--transition);
+    background var(--transition),
+    box-shadow var(--transition);
 }
 
 .hero-map-tile__badge {
@@ -476,7 +446,7 @@ textarea {
 
 .hero-map-tile__media {
   position: relative;
-  height: 8.5rem;
+  height: 11.2rem;
 }
 
 .hero-map-tile__media--empty {
@@ -514,15 +484,16 @@ textarea {
 }
 
 .hero-map-tile__name {
-  padding: 0.72rem 0.85rem 0.85rem;
-  font-size: 0.9rem;
+  padding: 0.9rem 1rem 1rem;
+  font-size: 1rem;
   line-height: 1.15;
 }
 
 .hero-map-tile:hover {
-  transform: translateY(-2px);
-  border-color: rgba(165, 205, 250, 0.52);
-  background: linear-gradient(165deg, rgba(26, 20, 7, 0.9), rgba(12, 13, 18, 0.87));
+  transform: translateY(-4px);
+  border-color: rgba(198, 228, 255, 0.34);
+  background: linear-gradient(165deg, rgba(14, 18, 27, 0.82), rgba(9, 11, 18, 0.56));
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.34);
 }
 
 .overview-strip {
@@ -1728,11 +1699,6 @@ textarea {
 }
 
 @media (max-width: 840px) {
-  .site-header {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
   .hero-panel {
     min-height: auto;
   }
@@ -1741,8 +1707,27 @@ textarea {
     padding: 2rem 1.2rem 1.4rem;
   }
 
+  .hero-panel__content--maps-only {
+    min-height: 100svh;
+    padding: 1rem 1rem 1.4rem;
+  }
+
   .hero-panel h1 {
     font-size: clamp(2.8rem, 16vw, 4.8rem);
+  }
+
+  .hero-map-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-map-group {
+    padding: 0.9rem;
+  }
+
+  .floating-admin-toggle {
+    right: 0.75rem;
+    bottom: 0.75rem;
+    min-width: auto;
   }
 
   .timeline-grid,

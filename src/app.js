@@ -437,15 +437,15 @@ function render() {
 }
 
 function renderHomePage(section) {
+  const isHome = section === "home" || !section;
   const sectionContent =
-    section === "home" || !section
+    isHome
       ? ""
       : renderHomeSection(section);
 
   return `
-    <div class="page-shell">
+    <div class="page-shell ${isHome ? "page-shell--hero-only page-shell--home-immersive" : ""}">
       ${renderHero()}
-      ${renderHomeQuickNav(section || "home")}
       ${sectionContent}
     </div>
   `;
@@ -454,28 +454,11 @@ function renderHomePage(section) {
 function renderHero() {
   const groupedMaps = getAtlasMapGroups();
 
-
   return `
-    <section class="hero-panel">
+    <section class="hero-panel hero-panel--maps-only">
       <div class="hero-panel__veil"></div>
-      <div class="hero-panel__atlas"></div>
-      <div class="hero-panel__content">
-        <h1>${escapeHtml(state.meta.title)}</h1>
-        <div class="hero-panel__actions">
-          ${state.meta.heroActions
-            .map(
-              (action, index) => `
-                <a class="${
-                  index === 0 ? "hero-button hero-button--primary" : "hero-button"
-                }" href="${escapeHtml(action.href)}">
-                  ${escapeHtml(action.label)}
-                </a>
-              `
-            )
-            .join("")}
-        </div>
-        <div class="hero-map-toolbar">
-          <span class="hero-map-toolbar__label">Map card media controls</span>
+      <div class="hero-panel__content hero-panel__content--maps-only">
+        <div class="hero-map-toolbar hero-map-toolbar--solo">
           <button
             class="ghost-button"
             type="button"
@@ -534,36 +517,6 @@ function renderHeroMapCardMedia(map) {
     emptyLabel: "Add image",
     showActions: ui.editMapCards,
   });
-}
-
-function renderHomeQuickNav(activeSection) {
-  const items = [
-    { id: "story", label: "Story Route" },
-    { id: "maps", label: "Explore Maps" },
-    { id: "route", label: "Fastest Clear" },
-    { id: "bosses", label: "Boss Planner" },
-    { id: "tames", label: "Tame Planner" },
-    { id: "resources", label: "Resources" },
-    { id: "settings", label: "Server Settings" },
-    { id: "knowledge", label: "Ancient Records" },
-    { id: "rankings", label: "Rankings" },
-  ];
-
-  return `
-    <section class="section-rail">
-      ${items
-        .map(
-          (item) => `
-            <a class="section-rail__link ${
-              activeSection === item.id ? "is-active" : ""
-            }" href="#/${item.id}">
-              ${escapeHtml(item.label)}
-            </a>
-          `
-        )
-        .join("")}
-    </section>
-  `;
 }
 
 function renderHomeSection(section) {
