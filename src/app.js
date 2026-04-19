@@ -3,8 +3,10 @@ import {
   loadCloudAtlasData,
   removeAtlasEntityMediaFromCloud,
   saveAtlasEntityMediaToCloud,
+  saveAtlasMetaToCloud,
   saveAtlasEntityToCloud,
 } from "./cloud-atlas.js";
+import { getFirebaseServices } from "./firebase-client.js";
 import {
   findEntity,
   normalizeAtlasState as normalizeAtlasStateFromStore,
@@ -340,9 +342,21 @@ const MAP_GROUP_DEFINITIONS = [
 const collectionLabels = Object.fromEntries(
   ENTITY_TYPES.map((entry) => [entry.key, entry.label])
 );
+const CLOUD_SYNC_COLLECTION_KEYS = [
+  ...ENTITY_TYPES.map((entry) => entry.key),
+  "rankings",
+  "serverSettings",
+];
 
 let state = loadState();
 state = normalizeRuntimeAtlasState(state);
+const cloudUi = {
+  available: null,
+  phase: "checking",
+  message: "Connecting cloud",
+  activeJobs: 0,
+  lastSyncedAt: "",
+};
 
 function getCloudEntityId(entry) {
   if (!entry || typeof entry !== "object") return null;
@@ -403,7 +417,7 @@ function mergeCloudPayloadIntoState(localState, remotePayload) {
 
 async function hydrateCloudState() {
   const remotePayload = await loadCloudAtlasData();
-  if (!remotePayload) return;
+  if (!remotePayload) return false;
 
   const mergedState = mergeCloudPayloadIntoState(state, remotePayload);
   state = normalizeRuntimeAtlasState(
@@ -411,6 +425,7 @@ async function hydrateCloudState() {
   );
   saveState(state);
   render();
+  return true;
 }
 
 function getStateEntity(collectionKey, entityId) {
@@ -418,10 +433,68 @@ function getStateEntity(collectionKey, entityId) {
   return findEntity(state, collectionKey, entityId);
 }
 
+function formatCloudTime(timestamp) {
+  if (!timestamp) return "";
+  try {
+    const date = new Date(timestamp);
+    return date.toLocaleTimeString("en-GB", {
+      hour: "2-digit",
+      minute: "2-digit",
+    });
+  } catch {
+    return "";
+  }
+}
+
+function updateCloudUi(phase, message) {
+  cloudUi.phase = phase;
+  cloudUi.message = message;
+}
+
+function beginCloudWork(message) {
+  cloudUi.activeJobs += 1;
+  updateCloudUi("syncing", message || "Syncing cloud");
+  render();
+}
+
+function finishCloudWork(ok, message) {
+  cloudUi.activeJobs = Math.max(0, cloudUi.activeJobs - 1);
+  if (ok) {
+    cloudUi.lastSyncedAt = new Date().toISOString();
+    updateCloudUi("synced", message || "Cloud synced");
+  } else {
+    updateCloudUi("error", message || "Cloud sync failed");
+  }
+  render();
+}
+
+async function runCloudTask(startMessage, successMessage, task) {
+  if (cloudUi.available === false) {
+    updateCloudUi("offline", "Cloud unavailable");
+    render();
+    return null;
+  }
+
+  beginCloudWork(startMessage);
+  try {
+    const result = await task();
+    finishCloudWork(Boolean(result), Boolean(result) ? successMessage : "Cloud sync failed");
+    return result;
+  } catch (error) {
+    console.warn("Cloud task failed.", error);
+    finishCloudWork(false, "Cloud sync failed");
+    return null;
+  }
+}
+
 async function syncEntityToCloud(collectionKey, entityId) {
   const entity = getStateEntity(collectionKey, entityId);
   if (!entity) return false;
-  return saveAtlasEntityToCloud(collectionKey, entity);
+  return runCloudTask(
+    "Saving to cloud",
+    "Saved to cloud",
+    () => saveAtlasEntityToCloud(collectionKey, entity)
+  );
 }
 
 async function syncMapToCloud(mapId) {
@@ -435,7 +508,81 @@ async function syncServerSettingToCloud(settingKey) {
     (entry) => (entry.id || entry.key) === settingKey
   );
   if (!setting) return false;
-  return saveAtlasEntityToCloud("serverSettings", setting);
+  return runCloudTask(
+    "Syncing settings",
+    "Settings synced",
+    () => saveAtlasEntityToCloud("serverSettings", setting)
+  );
+}
+
+async function syncAllStateToCloud() {
+  return runCloudTask("Syncing atlas", "Atlas synced", async () => {
+    let failures = 0;
+
+    const metaSaved = await saveAtlasMetaToCloud(state.meta || {});
+    if (!metaSaved) {
+      failures += 1;
+    }
+
+    for (const collectionKey of CLOUD_SYNC_COLLECTION_KEYS) {
+      const collection = Array.isArray(state[collectionKey]) ? state[collectionKey] : [];
+      for (const entity of collection) {
+        if (!entity || (!entity.id && !entity.key)) continue;
+
+        const mediaSrc = entity.media?.src || "";
+        const isLocalImage =
+          entity.media?.type === "local" ||
+          (typeof mediaSrc === "string" && mediaSrc.startsWith("data:image/"));
+
+        let savedEntity = null;
+        if (isLocalImage) {
+          savedEntity = await saveAtlasEntityMediaToCloud(
+            collectionKey,
+            entity,
+            mediaSrc,
+            "local"
+          );
+        } else {
+          const ok = await saveAtlasEntityToCloud(collectionKey, entity);
+          savedEntity = ok ? entity : null;
+        }
+
+        if (!savedEntity) {
+          failures += 1;
+          continue;
+        }
+
+        upsertEntity(state, collectionKey, savedEntity);
+      }
+    }
+
+    saveState(state);
+    render();
+    return failures === 0;
+  });
+}
+
+async function initializeCloudAtlas() {
+  const services = await getFirebaseServices();
+  cloudUi.available = Boolean(services);
+
+  if (!services) {
+    updateCloudUi("offline", "Cloud unavailable");
+    render();
+    return;
+  }
+
+  updateCloudUi("ready", "Cloud ready");
+  render();
+
+  const hydrated = await hydrateCloudState();
+  if (hydrated) {
+    cloudUi.lastSyncedAt = new Date().toISOString();
+    updateCloudUi("synced", "Cloud synced");
+  } else {
+    updateCloudUi("ready", "Cloud ready");
+  }
+  render();
 }
 
 const ui = {
@@ -490,10 +637,11 @@ function parseRoute() {
 function render() {
   try {
     ui.route = parseRoute();
-    appRoot.innerHTML =
+    const pageMarkup =
       ui.route.type === "map"
         ? renderMapPage(ui.route.id)
         : renderHomePage(ui.route.section);
+    appRoot.innerHTML = `${pageMarkup}${renderCloudDock()}`;
     adminDrawer.innerHTML = renderAdminDrawer();
     if (adminDrawer) {
       adminDrawer.classList.toggle("is-open", ui.editMode);
@@ -536,6 +684,43 @@ function render() {
       modalRoot.innerHTML = "";
     }
   }
+}
+
+function renderCloudDock() {
+  const phaseText = {
+    checking: "Connecting",
+    ready: "Cloud Ready",
+    syncing: "Syncing",
+    synced: "Cloud Synced",
+    error: "Sync Error",
+    offline: "Cloud Offline",
+  };
+  const statusLabel = phaseText[cloudUi.phase] || "Cloud";
+  const buttonLabel = cloudUi.phase === "syncing" ? "Syncing" : "Sync";
+  const note =
+    cloudUi.phase === "synced" && cloudUi.lastSyncedAt
+      ? `Updated ${formatCloudTime(cloudUi.lastSyncedAt)}`
+      : cloudUi.message;
+
+  return `
+    <div class="cloud-dock cloud-dock--${escapeHtml(cloudUi.phase)}">
+      <div class="cloud-dock__status">
+        <span class="cloud-dock__dot" aria-hidden="true"></span>
+        <div class="cloud-dock__copy">
+          <strong>${escapeHtml(statusLabel)}</strong>
+          <span>${escapeHtml(note || "")}</span>
+        </div>
+      </div>
+      <button
+        class="ghost-button ghost-button--small cloud-dock__button"
+        type="button"
+        data-action="force-cloud-sync"
+        ${cloudUi.phase === "syncing" ? "disabled" : ""}
+      >
+        ${escapeHtml(buttonLabel)}
+      </button>
+    </div>
+  `;
 }
 
 function renderHomePage(section) {
@@ -4560,11 +4745,16 @@ async function setEntityImage(collectionKey, entityId, src, type = "url") {
   const latestEntity = getStateEntity(collectionKey, entityId);
   if (!latestEntity) return;
 
-  const syncedEntity = await saveAtlasEntityMediaToCloud(
-    collectionKey,
-    latestEntity,
-    src,
-    type
+  const syncedEntity = await runCloudTask(
+    "Uploading media",
+    "Media synced",
+    () =>
+      saveAtlasEntityMediaToCloud(
+        collectionKey,
+        latestEntity,
+        src,
+        type
+      )
   );
   if (!syncedEntity) return;
 
@@ -4588,9 +4778,14 @@ async function removeEntityImage(collectionKey, entityId) {
   }));
   persist();
 
-  const syncedEntity = await removeAtlasEntityMediaFromCloud(
-    collectionKey,
-    existingEntity
+  const syncedEntity = await runCloudTask(
+    "Removing media",
+    "Media removed",
+    () =>
+      removeAtlasEntityMediaFromCloud(
+        collectionKey,
+        existingEntity
+      )
   );
   if (!syncedEntity) return;
 
@@ -5127,6 +5322,11 @@ document.addEventListener("click", async (event) => {
     return;
   }
 
+  if (action === "force-cloud-sync") {
+    await syncAllStateToCloud();
+    return;
+  }
+
   if (action === "export-state") {
     exportAtlasState();
     return;
@@ -5282,4 +5482,4 @@ function readFileAsDataUrl(file) {
 }
 
 render();
-void hydrateCloudState();
+void initializeCloudAtlas();
