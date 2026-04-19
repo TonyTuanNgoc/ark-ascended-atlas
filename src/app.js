@@ -40,6 +40,7 @@ const modalRoot = document.querySelector("#modalRoot");
 const adminToggleButton = document.querySelector("#adminToggle");
 const filePicker = document.querySelector("#imageFilePicker");
 const stateFilePicker = document.querySelector("#atlasStateFilePicker");
+let lastSectionRouteScrollKey = "";
 
 const MAP_LINK_FIELDS = {
   bosses: "bossIds",
@@ -974,6 +975,7 @@ function parseRoute() {
 function render() {
   try {
     ui.route = parseRoute();
+    const routeScrollKey = `${ui.route.type}::${ui.route.section || ""}::${ui.route.anchor || ""}::${ui.route.id || ""}`;
     const pageMarkup =
       ui.route.type === "map"
         ? renderMapPage(ui.route.id)
@@ -990,7 +992,11 @@ function render() {
     }
 
     requestAnimationFrame(() => {
-      if (ui.route.type === "home" && ui.route.section !== "home") {
+      if (
+        ui.route.type === "home" &&
+        ui.route.section !== "home" &&
+        routeScrollKey !== lastSectionRouteScrollKey
+      ) {
         document
           .querySelector(`#section-${ui.route.section}`)
           ?.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -999,6 +1005,7 @@ function render() {
           const anchor = document.querySelector(`#${CSS.escape(ui.route.anchor)}`);
           anchor?.scrollIntoView({ behavior: "smooth", block: "start" });
         }
+        lastSectionRouteScrollKey = routeScrollKey;
       }
 
       if (ui.creatureEditorFocus) {
