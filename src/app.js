@@ -400,7 +400,9 @@ function render() {
       adminDrawer.setAttribute("aria-hidden", String(!ui.editMode));
     }
     modalRoot.innerHTML = renderModal();
-    adminToggleButton.classList.toggle("is-active", ui.editMode);
+    if (adminToggleButton) {
+      adminToggleButton.classList.toggle("is-active", ui.editMode);
+    }
 
     requestAnimationFrame(() => {
       if (ui.route.type === "home" && ui.route.section !== "home") {
@@ -458,15 +460,6 @@ function renderHero() {
     <section class="hero-panel hero-panel--maps-only">
       <div class="hero-panel__veil"></div>
       <div class="hero-panel__content hero-panel__content--maps-only">
-        <div class="hero-map-toolbar hero-map-toolbar--solo">
-          <button
-            class="ghost-button"
-            type="button"
-            data-action="toggle-map-card-edit"
-          >
-            ${ui.editMapCards ? "Finish editing cards" : "Edit map cards"}
-          </button>
-        </div>
         <div class="hero-map-groups">
           ${groupedMaps
             .map(
@@ -514,8 +507,8 @@ function renderHeroMapCardMedia(map) {
     className: "hero-map-tile__media",
     label: String(map.name || "Map"),
     placeholderLabel: shortName,
-    emptyLabel: "Add image",
-    showActions: ui.editMapCards,
+    emptyLabel: "",
+    showActions: false,
   });
 }
 
@@ -735,10 +728,8 @@ function renderSectionShell(id, title, description, content) {
   return `
     <section id="section-${id}" class="content-section">
       <div class="section-heading">
-        <p class="eyebrow">Atlas Module</p>
         <div>
           <h2>${escapeHtml(title)}</h2>
-          <p>${escapeHtml(description)}</p>
         </div>
       </div>
       ${content}
@@ -1234,7 +1225,7 @@ function renderMapPage(mapId) {
         <section class="content-section">
           <div class="empty-state">
             <h2>Map record not found</h2>
-            <p>This dossier does not exist yet. Use edit mode to create it or return to the atlas.</p>
+            <p>This dossier does not exist yet.</p>
             <a class="hero-button hero-button--primary" href="#/maps">Back to maps</a>
           </div>
         </section>
@@ -1250,43 +1241,15 @@ function renderMapPage(mapId) {
             className: "map-hero__media",
             label: "Map Poster",
             aspect: "hero",
+            emptyLabel: "",
           })}
         </div>
         <div class="map-hero__content">
-          <a class="text-link" href="#/maps">Back to atlas</a>
-          <div class="chip-row">${renderTagList(map.tags)}</div>
           <h1>${escapeHtml(map.name)}</h1>
-          <p class="map-hero__vibe">${escapeHtml(map.vibe)}</p>
-          <p>${escapeHtml(map.shortDescription)}</p>
-          <div class="stat-ribbon">
-            <span><strong>Role</strong> ${escapeHtml(map.role || "—")}</span>
-            <span><strong>Type</strong> ${escapeHtml(map.classification?.type || "Unknown")}</span>
-            <span><strong>Access</strong> ${escapeHtml(map.classification?.access || "Unknown")}</span>
-          </div>
-          ${ui.editMode ? `
-            <div class="map-page-actions">
-              <button
-                class="ghost-button ghost-button--small"
-                type="button"
-                data-action="open-map-entity"
-                data-collection="maps"
-                data-entity-id="${escapeHtml(map.id)}"
-              >
-                Edit map metadata
-              </button>
-            </div>
-          ` : ""}
         </div>
       </section>
 
-      <section class="content-section">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Map Operations</p>
-            <h2>Section Hub</h2>
-            <p>Open each section as a dedicated workspace instead of scrolling a full article.</p>
-          </div>
-        </div>
+      <section class="content-section content-section--hub-only">
         <div class="map-section-grid">
           ${MAP_SECTION_ORDER
             .map((sectionKey) => renderMapSectionCard(map, sectionKey))
@@ -1302,62 +1265,52 @@ function renderMapSectionCard(map, sectionKey) {
   if (!section) return "";
 
   const entries = resolveMapSectionEntities(map, section, false);
-  const linkedCount = entries.length;
-  const hasCollection = Boolean(section.collectionKey);
-  const previewEntries = section.key === "progression"
-    ? getProgressionPreviewRows(toArray(map.progression))
-    : entries.slice(0, 3);
-  const preview = previewEntries.map(
-    (entry) => `<span class="chip">${escapeHtml(getMapSectionEntryLabel(section, entry))}</span>`
-  ).join("");
+  const avatar = getMapSectionAvatar(section, entries, map);
+  const shortName = (section.title || "S").slice(0, 2);
 
   return `
-    <article class="map-section-card">
-      <div class="map-section-card__header">
+    <button
+      class="map-section-card map-section-card--link"
+      type="button"
+      data-action="open-map-section"
+      data-map-id="${escapeHtml(map.id)}"
+      data-section="${escapeHtml(section.key)}"
+      data-mode="open"
+      aria-label="Open ${escapeHtml(section.title)}"
+    >
+      ${renderMediaSlot("", avatar, {
+        className: "map-section-card__media",
+        label: section.title,
+        placeholderLabel: shortName,
+        emptyLabel: "",
+        aspect: "poster",
+        showActions: false,
+      })}
+      <div class="map-section-card__header map-section-card__header--solo">
         <h3>${escapeHtml(section.title)}</h3>
-        <span class="map-section-card__count">${linkedCount} entries</span>
       </div>
-      <p>${escapeHtml(section.subtitle)}</p>
-      <p class="map-section-card__summary">${escapeHtml(section.description || "")}</p>
-      <div class="map-section-card__preview">
-        ${preview || `<span class="map-section-card__empty-preview">No linked content yet</span>`}
-      </div>
-      <div class="map-section-card__actions">
-        <button
-          class="hero-button hero-button--primary"
-          type="button"
-          data-action="open-map-section"
-          data-map-id="${escapeHtml(map.id)}"
-          data-section="${escapeHtml(section.key)}"
-          data-mode="open"
-        >
-          Open
-        </button>
-        <button
-          class="ghost-button ghost-button--small"
-          type="button"
-          data-action="open-map-section"
-          data-map-id="${escapeHtml(map.id)}"
-          data-section="${escapeHtml(section.key)}"
-          data-mode="manage"
-        >
-          Manage
-        </button>
-        ${hasCollection && ui.editMode && section.linkField ? `
-          <button
-            class="ghost-button ghost-button--small"
-            type="button"
-            data-action="open-map-link-picker"
-            data-map-id="${escapeHtml(map.id)}"
-            data-collection="${escapeHtml(section.collectionKey)}"
-            data-link-field="${escapeHtml(section.linkField)}"
-          >
-            Add Existing
-          </button>
-        ` : ""}
-      </div>
-    </article>
+    </button>
   `;
+}
+
+function getMapSectionAvatar(sectionDef, entries, map) {
+  const source =
+    entries.find((entry) => entry?.media?.src) ||
+    entries[0];
+  const baseTitle = sectionDef.title || source?.name || source?.title || "Section";
+
+  return {
+    ...(source || {}),
+    id: `${map.id}-${sectionDef.key}-hub`,
+    name: baseTitle,
+    title: baseTitle,
+    media: {
+      src: source?.media?.src || "",
+      type: source?.media?.type || "empty",
+      alt: baseTitle,
+      tone: source?.media?.tone || "bronze",
+    },
+  };
 }
 
 function resolveMapSectionEntities(map, sectionDef, includeAll = false) {
@@ -1445,9 +1398,6 @@ function renderMapSectionModal() {
 
   const sectionState = getMapSectionState(active.section);
   const query = String(sectionState.search || "").trim().toLowerCase();
-  const linkedCount = resolveMapSectionEntities(map, sectionDef, false).length;
-  const sectionMode = active.mode || "open";
-  const modeLabel = sectionMode === "manage" ? "Manage" : "Open";
 
   const contentMap = {
     bosses: renderMapSectionBossesModal,
@@ -1469,10 +1419,7 @@ function renderMapSectionModal() {
       <div class="modal-panel modal-panel--map-section" role="dialog" aria-modal="true">
         <div class="modal-panel__header map-section-modal__header">
           <div>
-            <p class="eyebrow">${escapeHtml(modeLabel)} module</p>
             <h2>${escapeHtml(sectionDef.title)}</h2>
-            <p>${escapeHtml(sectionDef.description || "")}</p>
-            <p class="map-section-modal__meta">${linkedCount} linked entries</p>
           </div>
           <button class="ghost-button" type="button" data-action="close-modal">
             Close
@@ -2965,7 +2912,7 @@ function renderMediaSlot(collectionKey, entity, options = {}) {
   const hasImage = Boolean(entity.media?.src);
   const title = escapeHtml(entity.name || entity.title || options.label || "Image");
   const placeholderLabel = escapeHtml(options.placeholderLabel || entity.media?.alt || title);
-  const emptyLabel = escapeHtml(options.emptyLabel || "No image bound yet");
+  const emptyLabel = escapeHtml(options.emptyLabel ?? "No image bound yet");
   const showImageTools = options.showActions ?? ui.editMode;
   const clickableUpload = showImageTools && collectionKey && entity.id;
   const slotAction = clickableUpload
@@ -2987,7 +2934,7 @@ function renderMediaSlot(collectionKey, entity, options = {}) {
           : `
             <div class="media-slot__placeholder">
               <span>${placeholderLabel}</span>
-              <small>${emptyLabel}</small>
+              ${emptyLabel ? `<small>${emptyLabel}</small>` : ""}
             </div>
           `
       }
