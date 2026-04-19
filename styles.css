@@ -1135,15 +1135,15 @@ textarea {
 }
 
 .creature-table__avatar {
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
   overflow: hidden;
-  background: linear-gradient(180deg, rgba(252, 253, 255, 0.98), rgba(240, 245, 252, 0.96));
-  border: 1px solid rgba(188, 208, 235, 0.56);
+  background: linear-gradient(180deg, rgba(230, 238, 249, 0.9), rgba(213, 225, 240, 0.82));
+  border: 1px solid rgba(168, 190, 220, 0.44);
   box-shadow:
-    inset 0 0 0 1px rgba(14, 24, 38, 0.06),
-    0 8px 18px rgba(3, 8, 18, 0.12);
+    inset 0 0 0 1px rgba(14, 24, 38, 0.04),
+    0 10px 20px rgba(3, 8, 18, 0.12);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1153,7 +1153,7 @@ textarea {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  padding: 0.24rem;
+  padding: 0.28rem;
 }
 
 .items-library-table td {
@@ -1161,8 +1161,16 @@ textarea {
 }
 
 .items-library-table__thumb {
-  width: 40px;
-  height: 40px;
+  width: 46px;
+  height: 46px;
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.items-library-table__thumb img {
+  padding: 0;
 }
 
 .items-library-table__name-cell {
@@ -1214,15 +1222,13 @@ textarea {
 }
 
 .creature-table__food-chip-media {
-  width: 1.4rem;
-  height: 1.4rem;
-  border-radius: 0.45rem;
+  width: 1.55rem;
+  height: 1.55rem;
+  border-radius: 0;
   overflow: hidden;
-  background: linear-gradient(180deg, rgba(252, 253, 255, 0.98), rgba(240, 245, 252, 0.96));
-  border: 1px solid rgba(188, 208, 235, 0.56);
-  box-shadow:
-    inset 0 0 0 1px rgba(14, 24, 38, 0.06),
-    0 6px 14px rgba(3, 8, 18, 0.12);
+  background: transparent;
+  border: none;
+  box-shadow: none;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1233,13 +1239,13 @@ textarea {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  padding: 0.18rem;
+  padding: 0;
 }
 
 .creature-table__food-chip-media-placeholder {
   font-size: 0.58rem;
   font-weight: 700;
-  color: rgba(31, 52, 79, 0.62);
+  color: rgba(160, 187, 221, 0.68);
   text-transform: uppercase;
   letter-spacing: 0.03em;
 }
