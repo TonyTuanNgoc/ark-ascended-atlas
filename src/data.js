@@ -22,6 +22,27 @@ const wikiMedia = (slug, label, tone) => ({
   tone,
 });
 
+const hasMediaSource = (media) =>
+  Boolean(media && typeof media === "object" && typeof media.src === "string" && media.src.trim());
+
+export const buildImportedCreatureMedia = (entry, tone = "amber") => {
+  const importedMedia = entry && typeof entry === "object" ? entry.media : null;
+  if (hasMediaSource(importedMedia)) {
+    return {
+      src: importedMedia.src,
+      type: importedMedia.type || "image",
+      alt: importedMedia.alt || `${entry.name || "Creature"} icon`,
+      tone: importedMedia.tone || tone,
+    };
+  }
+
+  return wikiMedia(
+    entry?.id || "creature",
+    `${entry?.name || "Creature"} icon`,
+    tone
+  );
+};
+
 export const ENTITY_TYPES = [
   { key: "maps", label: "Map" },
   { key: "bosses", label: "Boss" },
@@ -95,9 +116,9 @@ function applyImportedCreatureRoster(data) {
       id: entry.id,
       name: entry.name,
       media:
-        existing.media && typeof existing.media === "object"
+        hasMediaSource(existing.media)
           ? existing.media
-          : blankMedia(`${entry.name} icon`, "amber"),
+          : buildImportedCreatureMedia(entry, "amber"),
       tameFood: typeof existing.tameFood === "string" ? existing.tameFood : "",
       tameMethod:
         typeof existing.tameMethod === "string"

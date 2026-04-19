@@ -1,4 +1,5 @@
 import {
+  buildImportedCreatureMedia,
   DINO_IMPORT_NAME_ALIASES,
   DINO_PRACTICAL_DEFAULTS,
   ENTITY_TYPES,
@@ -338,14 +339,12 @@ function syncImportedCreatureRoster(targetState) {
       name: entry.name,
       mapIds: Array.isArray(entry.mapIds) ? [...entry.mapIds] : [],
       media:
-        existing.media && typeof existing.media === "object"
+        existing.media &&
+        typeof existing.media === "object" &&
+        typeof existing.media.src === "string" &&
+        existing.media.src.trim()
           ? existing.media
-          : {
-              src: "",
-              type: "empty",
-              alt: `${entry.name} icon`,
-              tone: "amber",
-            },
+          : buildImportedCreatureMedia(entry, "amber"),
       tameFood: practical.tameFood,
       tameMethod: practical.tameMethod,
       tameMethodType: practical.tameMethodType,
@@ -5338,9 +5337,16 @@ function normalizeRuntimeAtlasState(payload) {
 
   state.dinos = (state.dinos || []).map((dino) => {
     const practical = normalizeDinoPracticalFields(dino);
+    const existingMedia =
+      dino.media && typeof dino.media === "object" ? dino.media : null;
+    const needsMediaBackfill =
+      !existingMedia ||
+      typeof existingMedia.src !== "string" ||
+      !existingMedia.src.trim();
     const next = {
       ...dino,
       ...practical,
+      media: needsMediaBackfill ? buildImportedCreatureMedia(dino, "amber") : existingMedia,
     };
 
     if (
@@ -5348,7 +5354,8 @@ function normalizeRuntimeAtlasState(payload) {
       dino.tameMethod !== next.tameMethod ||
       dino.tameMethodType !== next.tameMethodType ||
       dino.tameMethodDetail !== next.tameMethodDetail ||
-      dino.loot !== next.loot
+      dino.loot !== next.loot ||
+      needsMediaBackfill
     ) {
       changed = true;
     }
