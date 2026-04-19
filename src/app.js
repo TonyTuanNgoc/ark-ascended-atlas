@@ -186,6 +186,14 @@ const ITEM_LIBRARY_SORT_OPTIONS = [
   { value: "subcategory", label: "Official Subcategory" },
   { value: "dlc", label: "DLC" },
 ];
+const HOME_SECTION_LINKS = [
+  { id: "home", label: "Home", href: "#/" },
+  { id: "maps", label: "Maps", href: "#/maps" },
+  { id: "creatures", label: "Creatures", href: "#/creatures" },
+  { id: "resources", label: "Items", href: "#/resources" },
+  { id: "bosses", label: "Bosses", href: "#/bosses" },
+  { id: "tames", label: "Tames", href: "#/tames" },
+];
 
 const toArray = (value) => (Array.isArray(value) ? value : []);
 const toArrayByObject = (value) =>
@@ -994,17 +1002,12 @@ function render() {
     requestAnimationFrame(() => {
       if (
         ui.route.type === "home" &&
-        ui.route.section !== "home" &&
+        ui.route.section === "home" &&
+        ui.route.anchor &&
         routeScrollKey !== lastSectionRouteScrollKey
       ) {
-        document
-          .querySelector(`#section-${ui.route.section}`)
-          ?.scrollIntoView({ behavior: "smooth", block: "start" });
-
-        if (ui.route.anchor) {
-          const anchor = document.querySelector(`#${CSS.escape(ui.route.anchor)}`);
-          anchor?.scrollIntoView({ behavior: "smooth", block: "start" });
-        }
+        const anchor = document.querySelector(`#${CSS.escape(ui.route.anchor)}`);
+        anchor?.scrollIntoView({ behavior: "auto", block: "start" });
         lastSectionRouteScrollKey = routeScrollKey;
       }
 
@@ -1082,16 +1085,36 @@ function renderCloudDock() {
 
 function renderHomePage(section) {
   const isHome = section === "home" || !section;
-  const sectionContent =
-    isHome
-      ? ""
-      : renderHomeSection(section);
+  if (isHome) {
+    return `
+      <div class="page-shell page-shell--hero-only page-shell--home-immersive">
+        ${renderHero()}
+      </div>
+    `;
+  }
 
   return `
-    <div class="page-shell ${isHome ? "page-shell--hero-only page-shell--home-immersive" : ""}">
-      ${renderHero()}
-      ${sectionContent}
+    <div class="page-shell">
+      ${renderSectionRail(section)}
+      ${renderHomeSection(section)}
     </div>
+  `;
+}
+
+function renderSectionRail(activeSection) {
+  return `
+    <nav class="section-rail" aria-label="Atlas navigation">
+      ${HOME_SECTION_LINKS.map(
+        (link) => `
+          <a
+            class="section-rail__link ${link.id === activeSection ? "is-active" : ""}"
+            href="${escapeAttribute(link.href)}"
+          >
+            ${escapeHtml(link.label)}
+          </a>
+        `
+      ).join("")}
+    </nav>
   `;
 }
 
@@ -2046,17 +2069,22 @@ function renderResourcesHub() {
             ${
               filtered.length
                 ? filtered
-                    .map(
-                      (item) => `
+                    .map((item) => {
+                      const hasImage = Boolean(item.media?.src);
+                      return `
                         <tr>
                           <td>
-                            ${renderMediaSlot("items", item, {
-                              className: "map-data-table__thumb items-library-table__thumb",
-                              label: "Item Icon",
-                              placeholderLabel: String(item.name || "IT").slice(0, 2),
-                              emptyLabel: "",
-                              showActions: false,
-                            })}
+                            <div class="creature-table__avatar items-library-table__thumb">
+                              ${
+                                hasImage
+                                  ? `<img src="${escapeAttribute(item.media.src)}" alt="${escapeHtml(
+                                      item.name
+                                    )}" loading="lazy" />`
+                                  : `<span class="creature-table__avatar-placeholder">${escapeHtml(
+                                      String(item.name || "IT").slice(0, 2)
+                                    )}</span>`
+                              }
+                            </div>
                           </td>
                           <td class="items-library-table__name-cell">
                             <span class="creature-table__name">${escapeHtml(item.name)}</span>
@@ -2067,8 +2095,8 @@ function renderResourcesHub() {
                           <td>${escapeHtml(item.dlc || "—")}</td>
                           <td class="creature-table__note">${escapeHtml(item.practicalNote || "—")}</td>
                         </tr>
-                      `
-                    )
+                      `;
+                    })
                     .join("")
                 : `
                   <tr>

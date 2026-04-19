@@ -76,7 +76,6 @@ textarea {
   position: relative;
   min-height: 100vh;
   overflow-x: hidden;
-  overflow-y: auto;
 }
 
 .site-shell::before,
