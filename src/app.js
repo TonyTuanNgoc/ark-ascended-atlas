@@ -3923,52 +3923,66 @@ function renderInlineEmpty(text) {
   return `<div class="inline-empty">${escapeHtml(text)}</div>`;
 }
 
+function findById(collection, targetId) {
+  if (!Array.isArray(collection) || !targetId) return undefined;
+
+  const direct = collection.find((entry) => entry?.id === targetId);
+  if (direct) return direct;
+
+  const normalized = slugify(targetId);
+  if (!normalized) return undefined;
+
+  return collection.find(
+    (entry) => slugify(entry?.id || entry?.name || "") === normalized
+  );
+}
+
 function getMap(id) {
-  return state.maps.find((entry) => entry.id === id);
+  return findById(state.maps, id);
 }
 
 function getBoss(id) {
-  return state.bosses.find((entry) => entry.id === id);
+  return findById(state.bosses, id);
 }
 
 function getDino(id) {
-  return state.dinos.find((entry) => entry.id === id);
+  return findById(state.dinos, id);
 }
 
 function getArtifact(id) {
-  return state.artifacts.find((entry) => entry.id === id);
+  return findById(state.artifacts, id);
 }
 
 function getTribute(id) {
-  return state.tributeItems.find((entry) => entry.id === id);
+  return findById(state.tributeItems, id);
 }
 
 function getBaseSpot(id) {
-  return state.baseSpots.find((entry) => entry.id === id);
+  return findById(state.baseSpots, id);
 }
 
 function getResource(id) {
-  return state.resources.find((entry) => entry.id === id);
+  return findById(state.resources, id);
 }
 
 function getReference(id) {
-  return state.references.find((entry) => entry.id === id);
+  return findById(state.references, id);
 }
 
 function getGalleryMedia(id) {
-  return state.galleryMedia.find((entry) => entry.id === id);
+  return findById(state.galleryMedia, id);
 }
 
 function getItem(id) {
-  return state.items.find((entry) => entry.id === id);
+  return findById(state.items, id);
 }
 
 function getPatchHistory(id) {
-  return state.patchHistory.find((entry) => entry.id === id);
+  return findById(state.patchHistory, id);
 }
 
 function getDlc(id) {
-  return state.dlc.find((entry) => entry.id === id);
+  return findById(state.dlc, id);
 }
 
 function getMapLinkField(collectionKey, linkField) {
@@ -4273,33 +4287,39 @@ function openImageUrlModal(collectionKey, entityId) {
 }
 
 function normalizeRuntimeAtlasState(payload) {
-  if (payload) {
-    state = payload;
-  }
+  const normalizedPayload = payload || state;
+  state = normalizeAtlasStateFromStore(normalizedPayload);
+  const defaultState = normalizeAtlasStateFromStore();
+  const rawMeta = state && typeof state.meta === "object" ? state.meta : {};
 
-  if (!state.resources) {
-    state.resources = [];
-  }
+  state.meta = {
+    ...(defaultState.meta || {}),
+    ...(rawMeta || {}),
+  };
+  state.meta.title = String(state.meta.title || defaultState.meta?.title || "ARK Atlas");
+  state.meta.heroActions = Array.isArray(state.meta.heroActions)
+    ? state.meta.heroActions
+    : [];
 
-  if (!state.knowledgeArticles) {
-    state.knowledgeArticles = [];
-  }
+  const asArray = (value) => (Array.isArray(value) ? value : []);
 
-  if (!state.references) {
-    state.references = [];
-  }
-
-  if (!state.galleryMedia) {
-    state.galleryMedia = [];
-  }
-
-  if (!state.dlc) {
-    state.dlc = [];
-  }
-
-  if (!state.patchHistory) {
-    state.patchHistory = [];
-  }
+  state.maps = asArray(state.maps);
+  state.bosses = asArray(state.bosses);
+  state.dinos = asArray(state.dinos);
+  state.artifacts = asArray(state.artifacts);
+  state.items = asArray(state.items);
+  state.tributeItems = asArray(state.tributeItems);
+  state.baseSpots = asArray(state.baseSpots);
+  state.resources = asArray(state.resources);
+  state.knowledgeArticles = asArray(state.knowledgeArticles);
+  state.references = asArray(state.references);
+  state.galleryMedia = asArray(state.galleryMedia);
+  state.dlc = asArray(state.dlc);
+  state.patchHistory = asArray(state.patchHistory);
+  state.fastestRoute = asArray(state.fastestRoute);
+  state.loreRecords = asArray(state.loreRecords);
+  state.rankings = asArray(state.rankings);
+  state.serverSettings = asArray(state.serverSettings);
 
   let changed = false;
 
