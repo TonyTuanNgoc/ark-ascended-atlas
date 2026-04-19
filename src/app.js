@@ -411,6 +411,23 @@ function hasImportedItemRosterGap(items = []) {
   return ASA_IMPORTED_ITEMS.some((entry) => !knownIds.has(entry.id));
 }
 
+function ensureItemRosterForRender() {
+  if (!hasImportedItemRosterGap(state.items)) {
+    return false;
+  }
+
+  syncImportedItemRoster(state);
+  saveState(state);
+  void syncCollectionToCloud(
+    "items",
+    state.items,
+    "Repairing item roster",
+    "Item roster repaired"
+  );
+
+  return true;
+}
+
 function getCreatureMethodSummary(dino = {}) {
   const practical = normalizeDinoPracticalFields(dino);
 
@@ -1916,6 +1933,8 @@ function compareLibraryText(a, b) {
 }
 
 function renderResourcesHub() {
+  ensureItemRosterForRender();
+
   const items = toArray(state.items)
     .filter(Boolean)
     .map((item) => ({
