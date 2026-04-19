@@ -505,7 +505,7 @@ textarea {
 
 .hero-map-grid--single {
   grid-template-columns: minmax(250px, 320px);
-  justify-content: start;
+  justify-content: center;
 }
 
 .hero-map-groups {
@@ -522,6 +522,11 @@ textarea {
   backdrop-filter: blur(8px);
 }
 
+.hero-map-group--single {
+  width: min(100%, 24rem);
+  justify-self: center;
+}
+
 .map-group-shell {
   margin-bottom: 1rem;
 }
@@ -535,6 +540,10 @@ textarea {
   text-transform: uppercase;
   letter-spacing: 0.26em;
   color: rgba(226, 239, 255, 0.92);
+}
+
+.hero-map-group--single .hero-map-group__title {
+  text-align: center;
 }
 
 .hero-map-tile {

@@ -1385,7 +1385,9 @@ function renderHero() {
                 ${groupedMaps
                   .map(
                     (group) => `
-                      <div class="hero-map-group">
+                      <div class="hero-map-group ${
+                        (group.maps || []).length === 1 ? "hero-map-group--single" : ""
+                      }">
                         <div class="hero-map-group__title">${escapeHtml(
                           group.title
                         )}</div>
