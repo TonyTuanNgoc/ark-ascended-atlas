@@ -396,6 +396,18 @@ function syncImportedItemRoster(targetState) {
   };
 }
 
+function hasImportedItemRosterGap(items = []) {
+  const knownIds = new Set(
+    toArray(items)
+      .map((entry) => String(entry?.id || "").trim())
+      .filter(Boolean)
+  );
+
+  if (!knownIds.size) return true;
+
+  return ASA_IMPORTED_ITEMS.some((entry) => !knownIds.has(entry.id));
+}
+
 function getCreatureMethodSummary(dino = {}) {
   const practical = normalizeDinoPracticalFields(dino);
 
@@ -631,12 +643,17 @@ async function hydrateCloudState() {
   const remotePayload = await loadCloudAtlasData();
   if (!remotePayload) return false;
 
+  const remoteItemsNeedRepair = hasImportedItemRosterGap(remotePayload.items);
   const mergedState = mergeCloudPayloadIntoState(state, remotePayload);
   state = normalizeRuntimeAtlasState(
     normalizeAtlasStateFromStore(mergedState)
   );
   saveState(state);
   render();
+  if (remoteItemsNeedRepair) {
+    updateCloudUi("ready", "Items library repaired locally");
+    render();
+  }
   return true;
 }
 
@@ -5143,7 +5160,10 @@ function normalizeRuntimeAtlasState(payload) {
     changed = true;
   }
 
-  if (state.meta.itemImportVersion !== ASA_ITEM_IMPORT_VERSION) {
+  if (
+    state.meta.itemImportVersion !== ASA_ITEM_IMPORT_VERSION ||
+    hasImportedItemRosterGap(state.items)
+  ) {
     syncImportedItemRoster(state);
     changed = true;
   }

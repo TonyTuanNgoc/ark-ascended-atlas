@@ -1,4 +1,4 @@
-export const ASA_ITEM_IMPORT_VERSION = "2026-04-20";
+export const ASA_ITEM_IMPORT_VERSION = "2026-04-20-hotfix-1";
 export const ASA_IMPORTED_ITEMS = [
   {
     "id": "aberrant-helmet-skin",
