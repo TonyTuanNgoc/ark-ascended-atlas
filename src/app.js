@@ -1,7 +1,7 @@
 import { ENTITY_TYPES } from "./data.js";
 import {
   findEntity,
-  normalizeAtlasState,
+  normalizeAtlasState as normalizeAtlasStateFromStore,
   loadState,
   resetState,
   saveState,
@@ -300,7 +300,7 @@ const collectionLabels = Object.fromEntries(
 );
 
 let state = loadState();
-normalizeAtlasState();
+state = normalizeRuntimeAtlasState(state);
 
 const ui = {
   editMode: false,
@@ -858,14 +858,27 @@ function renderStoryRoute() {
       ${canonicalOrder
         .map((mapId, index) => {
           const map = getMap(mapId);
+          if (!map) {
+            return `
+              <article class="timeline-card timeline-card--missing">
+                <span class="timeline-card__step">0${index + 1}</span>
+                <h3>${escapeHtml(mapId)}</h3>
+                <p>Missing map record in current data.</p>
+                <div class="timeline-card__micro">
+                  <span>Reset data or import an atlas backup to restore.</span>
+                </div>
+              </article>
+            `;
+          }
+          const mapStory = map.story || {};
           return `
             <article class="timeline-card">
               <span class="timeline-card__step">0${index + 1}</span>
               <h3>${escapeHtml(map.name)}</h3>
-              <p>${escapeHtml(map.story.place)}</p>
+              <p>${escapeHtml(mapStory.place || "Story location pending.")}</p>
               <div class="timeline-card__micro">
-                <span>${escapeHtml(map.story.objective)}</span>
-                <span>${escapeHtml(map.story.next)}</span>
+                <span>${escapeHtml(mapStory.objective || "Objective pending.")}</span>
+                <span>${escapeHtml(mapStory.next || "Next step pending.")}</span>
               </div>
               <a class="text-link" href="#/map/${map.id}">Open map dossier</a>
             </article>
@@ -916,8 +929,8 @@ function renderMapPosterCard(map) {
         <h3>${escapeHtml(map.name)}</h3>
         <p>${escapeHtml(map.vibe)}</p>
         <div class="poster-card__meta">
-          <span>${escapeHtml(map.classification.type)}</span>
-          <span>${escapeHtml(map.classification.access)}</span>
+          <span>${escapeHtml(map.classification?.type || "Unknown")}</span>
+          <span>${escapeHtml(map.classification?.access || "Unknown")}</span>
           <span>${escapeHtml(map.role)}</span>
         </div>
         <a class="text-link" href="#/map/${map.id}">Open map dossier</a>
@@ -1235,9 +1248,9 @@ function renderMapPage(mapId) {
           <p class="map-hero__vibe">${escapeHtml(map.vibe)}</p>
           <p>${escapeHtml(map.shortDescription)}</p>
           <div class="stat-ribbon">
-            <span><strong>Role</strong> ${escapeHtml(map.role)}</span>
-            <span><strong>Type</strong> ${escapeHtml(map.classification.type)}</span>
-            <span><strong>Access</strong> ${escapeHtml(map.classification.access)}</span>
+            <span><strong>Role</strong> ${escapeHtml(map.role || "—")}</span>
+            <span><strong>Type</strong> ${escapeHtml(map.classification?.type || "Unknown")}</span>
+            <span><strong>Access</strong> ${escapeHtml(map.classification?.access || "Unknown")}</span>
           </div>
           ${ui.editMode ? `
             <div class="map-page-actions">
@@ -4259,7 +4272,11 @@ function openImageUrlModal(collectionKey, entityId) {
   render();
 }
 
-function normalizeAtlasState() {
+function normalizeRuntimeAtlasState(payload) {
+  if (payload) {
+    state = payload;
+  }
+
   if (!state.resources) {
     state.resources = [];
   }
@@ -4394,7 +4411,7 @@ function closeModal() {
 }
 
 function exportAtlasState() {
-  const backup = normalizeAtlasState(state);
+  const backup = normalizeAtlasStateFromStore(state);
   const payload = JSON.stringify(backup, null, 2);
   const file = new Blob([payload], { type: "application/json;charset=utf-8" });
   const url = URL.createObjectURL(file);
@@ -4413,8 +4430,12 @@ async function importAtlasStateFromFile(file) {
   try {
     const content = await file.text();
     const payload = JSON.parse(content);
-    const imported = normalizeAtlasState(payload);
+    const imported = normalizeAtlasStateFromStore(payload);
+    if (!imported || typeof imported !== "object") {
+      throw new Error("Invalid atlas backup payload.");
+    }
     state = imported;
+    state = normalizeRuntimeAtlasState(state);
     persist();
   } catch (error) {
     window.alert("Import failed. Please use a valid atlas backup JSON.");
