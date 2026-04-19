@@ -1246,7 +1246,9 @@ function renderHero() {
                         <div class="hero-map-group__title">${escapeHtml(
                           group.title
                         )}</div>
-                        <div class="hero-map-grid">
+                        <div class="hero-map-grid ${
+                          (group.maps || []).length === 1 ? "hero-map-grid--single" : ""
+                        }">
                           ${renderHeroMapCards(group.maps, group.badge)}
                         </div>
                       </div>

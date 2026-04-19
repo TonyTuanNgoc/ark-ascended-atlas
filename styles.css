@@ -508,6 +508,11 @@ textarea {
   margin-top: 0.7rem;
 }
 
+.hero-map-grid--single {
+  grid-template-columns: minmax(250px, 320px);
+  justify-content: start;
+}
+
 .hero-map-groups {
   margin-top: 0;
   display: grid;
