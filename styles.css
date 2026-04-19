@@ -1456,20 +1456,20 @@ textarea {
 
 .map-section-grid {
   display: grid;
-  gap: 0.8rem;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.72rem;
+  grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
 }
 
 .map-section-card {
   display: grid;
-  gap: 0.65rem;
-  border-radius: 20px;
+  gap: 0.5rem;
+  border-radius: 18px;
   border: 1px solid var(--line);
-  padding: 0.75rem;
+  padding: 0.6rem;
   background:
     linear-gradient(180deg, rgba(10, 14, 21, 0.92), rgba(8, 11, 18, 0.9));
   color: #e8f1ff;
-  box-shadow: 0 18px 50px rgba(5, 18, 36, 0.28);
+  box-shadow: 0 14px 38px rgba(5, 18, 36, 0.22);
 }
 
 .map-section-card--link {
@@ -1492,9 +1492,13 @@ textarea {
 }
 
 .map-section-card__media {
-  min-height: 8.6rem;
-  border-radius: 16px;
+  min-height: 6.35rem;
+  border-radius: 14px;
   overflow: hidden;
+}
+
+.map-section-card__media.media-slot--poster {
+  aspect-ratio: 1 / 1;
 }
 
 .map-section-card__header {
@@ -1512,20 +1516,26 @@ textarea {
 .map-section-card__header--solo {
   justify-content: center;
   align-items: center;
-  min-height: 1.7rem;
-  padding: 0.05rem 0.1rem 0.1rem;
+  min-height: 1.35rem;
+  padding: 0.02rem 0.05rem 0.04rem;
   text-align: center;
 }
 
 .map-section-card__header--solo h3 {
   width: 100%;
-  font-size: 0.95rem;
-  line-height: 1.1;
+  font-size: 0.84rem;
+  line-height: 1.16;
   text-align: center;
 }
 
 .content-section--hub-only {
   padding-top: 0;
+}
+
+@media (min-width: 1380px) {
+  .map-section-grid {
+    grid-template-columns: repeat(9, minmax(0, 1fr));
+  }
 }
 
 .map-section-card-grid {
