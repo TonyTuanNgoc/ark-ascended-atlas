@@ -12,36 +12,23 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const outputFile = path.join(__dirname, "..", "src", "asa-creature-tame-foods.js");
 
-const IMPORT_VERSION = "2026-04-20";
-const HUB_URL = "https://arkstatus.com/taming/";
-const PAGE_PREFIX = "https://arkstatus.com/taming/";
+const IMPORT_VERSION = "2026-04-20-v2";
+const CALCULATOR_URL = "https://arkstatus.com/taming-calculator?creature=";
 const execFileAsync = promisify(execFile);
 const IMPORTED_ITEM_ROSTER = [...ASA_IMPORTED_ITEMS, ...ASA_IMPORTED_ITEM_SUPPLEMENTS];
 
-const HIDDEN_SLUG_ALIASES = new Map([
-  ["parasaur", ["parasaurolophus"]],
-  ["quetzal", ["quetzalcoatlus"]],
-  ["sarco", ["sarcosuchus"]],
-  ["pachy", ["pachycephalosaurus"]],
-  ["dire-bear", ["direbear"]],
-  ["dilophosaur", ["dilophosaurus"]],
-  ["spino", ["spinosaurus"]],
-  ["therizinosaur", ["therizinosaurus"]],
-  ["rock-drake", ["rock-drake"]],
-  ["bison", ["bison"]],
-  ["carcharodontosaurus", ["carcharodontosaurus"]],
-  ["ceratosaurus", ["ceratosaurus"]],
-  ["pyromane", ["pyromane"]],
-  ["desmodus", ["desmodus"]],
-  ["deinosuchus", ["deinosuchus"]],
-  ["deinonychus", ["deinonychus"]],
-  ["dreadnoughtus", ["dreadnoughtus"]],
-  ["cat", ["cat"]],
-  ["armadoggo", ["armadoggo"]],
-  ["veilwyn", ["veilwyn"]],
-  ["xiphactinus", ["xiphactinus"]],
-  ["yi-ling", ["yi-ling"]],
-  ["shastasaurus", ["shastasaurus"]],
+const QUERY_NAME_ALIASES = new Map([
+  ["anglerfish", ["Anglerfish"]],
+  ["dire-bear", ["Dire Bear", "Direbear"]],
+  ["parasaur", ["Parasaur", "Parasaurolophus"]],
+  ["quetzal", ["Quetzal", "Quetzalcoatlus"]],
+  ["sarco", ["Sarco", "Sarcosuchus"]],
+  ["pachy", ["Pachy", "Pachycephalosaurus"]],
+  ["dilophosaur", ["Dilophosaur", "Dilophosaurus"]],
+  ["spino", ["Spino", "Spinosaurus"]],
+  ["theri", ["Therizinosaur", "Therizinosaurus"]],
+  ["therizinosaur", ["Therizinosaur", "Therizinosaurus"]],
+  ["rock-drake", ["Rock Drake"]],
 ]);
 
 const MANUAL_OVERRIDES = {
@@ -190,25 +177,6 @@ async function fetchText(url) {
   }
 }
 
-function extractHubEntries(html) {
-  const scripts = [
-    ...String(html || "").matchAll(
-      /<script[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g
-    ),
-  ];
-
-  for (const match of scripts) {
-    const blob = String(match[1] || "").trim();
-    if (!blob.includes('"itemListElement"')) continue;
-    const parsed = JSON.parse(blob);
-    if (Array.isArray(parsed.itemListElement)) {
-      return parsed.itemListElement;
-    }
-  }
-
-  return [];
-}
-
 function extractPageFoods(html) {
   const foods = [];
   const seen = new Set();
@@ -223,6 +191,65 @@ function extractPageFoods(html) {
   }
 
   return foods;
+}
+
+function extractResolvedCreatureName(html) {
+  const match = String(html || "").match(
+    /<input id="tc-creature"[^>]*value="([^"]*)"/i
+  );
+  return String(match?.[1] || "").trim();
+}
+
+function extractPageMethod(html) {
+  const normalizedHtml = String(html || "");
+  const methodCardMatch = normalizedHtml.match(
+    /<div class="text-sm opacity-70">Method<\/div>\s*<div class="text-xl font-semibold">([^<]+)<\/div>\s*<div class="mt-2 text-sm opacity-70">([^<]*)<\/div>/i
+  );
+
+  if (methodCardMatch) {
+    const label = String(methodCardMatch[1] || "").trim();
+    if (/passive/i.test(label)) {
+      return {
+        tameMethod: "Passive",
+        tameMethodType: "simple",
+        tameMethodDetail: "",
+      };
+    }
+
+    if (/special/i.test(label)) {
+      return {
+        tameMethod: "Special Method",
+        tameMethodType: "special",
+        tameMethodDetail: "",
+      };
+    }
+  }
+
+  if (
+    /Special tame/i.test(normalizedHtml) ||
+    /This taming method isn't supported yet\./i.test(normalizedHtml) ||
+    /View taming method on ARK Wiki/i.test(normalizedHtml)
+  ) {
+    return {
+      tameMethod: "Special Method",
+      tameMethodType: "special",
+      tameMethodDetail: "",
+    };
+  }
+
+  if (/Knockout \(Estimate\)/i.test(normalizedHtml) && /data-food="/i.test(normalizedHtml)) {
+    return {
+      tameMethod: "Knockout",
+      tameMethodType: "simple",
+      tameMethodDetail: "",
+    };
+  }
+
+  return {
+    tameMethod: "",
+    tameMethodType: "empty",
+    tameMethodDetail: "",
+  };
 }
 
 function buildItemLookup(items) {
@@ -296,48 +323,22 @@ function toRecordEntry(foodLabels, itemLookup) {
   };
 }
 
-function buildHubLookup(entries) {
-  const lookup = new Map();
-
-  for (const entry of entries) {
-    const name = String(entry.name || "").trim();
-    const url = String(entry.url || "").trim();
-    if (!name || !url) continue;
-
-    lookup.set(normalizeLookup(name), {
-      name,
-      url,
-      slug: url.replace(PAGE_PREFIX, "").replace(/\/+$/, ""),
-    });
-  }
-
-  return lookup;
-}
-
-function getCandidatePages(creature, hubLookup) {
+function getCandidateQueries(creature) {
   const candidates = [];
   const seen = new Set();
 
-  const push = (slug, sourceLabel) => {
-    const safeSlug = String(slug || "").trim();
-    if (!safeSlug || seen.has(safeSlug)) return;
-    seen.add(safeSlug);
-    candidates.push({
-      slug: safeSlug,
-      url: `${PAGE_PREFIX}${safeSlug}`,
-      sourceLabel,
-    });
+  const push = (query) => {
+    const safeQuery = String(query || "").trim();
+    if (!safeQuery) return;
+    const normalized = normalizeLookup(safeQuery);
+    if (!normalized || seen.has(normalized)) return;
+    seen.add(normalized);
+    candidates.push(safeQuery);
   };
 
-  const hubEntry =
-    hubLookup.get(normalizeLookup(creature.name)) ||
-    hubLookup.get(normalizeLookup(creature.id));
-  if (hubEntry) {
-    push(hubEntry.slug, "ARK Status");
-  }
-
-  const aliasSlugs = HIDDEN_SLUG_ALIASES.get(creature.id) || [];
-  aliasSlugs.forEach((slug) => push(slug, "ARK Status"));
+  push(creature.name);
+  const aliasQueries = QUERY_NAME_ALIASES.get(creature.id) || [];
+  aliasQueries.forEach((query) => push(query));
 
   return candidates;
 }
@@ -346,21 +347,30 @@ function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-async function resolveCreaturePage(creature, hubLookup) {
-  const candidates = getCandidatePages(creature, hubLookup);
+async function resolveCreaturePage(creature) {
+  const candidates = getCandidateQueries(creature);
+  const acceptableNames = new Set(candidates.map((entry) => normalizeLookup(entry)));
 
-  for (const candidate of candidates) {
+  for (const query of candidates) {
+    const url = `${CALCULATOR_URL}${encodeURIComponent(query)}`;
     try {
-      const html = await fetchText(candidate.url);
+      const html = await fetchText(url);
+      const resolvedCreatureName = extractResolvedCreatureName(html);
+      const normalizedResolvedName = normalizeLookup(resolvedCreatureName);
+      if (!normalizedResolvedName || !acceptableNames.has(normalizedResolvedName)) {
+        continue;
+      }
       const foods = extractPageFoods(html);
-      if (!foods.length) continue;
+      const method = extractPageMethod(html);
+      if (!foods.length && !method.tameMethod) continue;
       return {
-        sourceLabel: candidate.sourceLabel,
-        sourceUrl: candidate.url,
+        sourceLabel: "ARK Status",
+        sourceUrl: url,
         foods,
+        ...method,
       };
     } catch {
-      // Ignore candidate fetch failures and try the next slug.
+      // Ignore candidate fetch failures and try the next query.
     }
   }
 
@@ -369,13 +379,11 @@ async function resolveCreaturePage(creature, hubLookup) {
 
 async function main() {
   const itemLookup = buildItemLookup(IMPORTED_ITEM_ROSTER);
-  const hubHtml = await fetchText(HUB_URL);
-  const hubLookup = buildHubLookup(extractHubEntries(hubHtml));
   const records = {};
   const unresolvedCreaturePages = [];
 
   for (const creature of ASA_IMPORTED_CREATURES) {
-    const resolved = await resolveCreaturePage(creature, hubLookup);
+    const resolved = await resolveCreaturePage(creature);
     if (!resolved) {
       unresolvedCreaturePages.push(creature.name);
       await sleep(120);
@@ -386,14 +394,18 @@ async function main() {
       sourceLabel: resolved.sourceLabel,
       sourceUrl: resolved.sourceUrl,
       ...toRecordEntry(resolved.foods, itemLookup),
+      tameMethod: resolved.tameMethod,
+      tameMethodType: resolved.tameMethodType,
+      tameMethodDetail: resolved.tameMethodDetail,
     };
     await sleep(120);
   }
 
   Object.entries(MANUAL_OVERRIDES).forEach(([creatureId, entry]) => {
-    if (!records[creatureId]) {
-      records[creatureId] = entry;
-    }
+    records[creatureId] = {
+      ...(records[creatureId] || {}),
+      ...entry,
+    };
   });
 
   const unresolvedFoodLinks = Object.entries(records)

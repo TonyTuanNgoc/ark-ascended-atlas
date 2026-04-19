@@ -2,6 +2,27 @@ export const ASA_ITEM_SUPPLEMENT_VERSION = "2026-04-20-tame-food";
 
 export const ASA_IMPORTED_ITEM_SUPPLEMENTS = [
   {
+    id: "dead-fish",
+    name: "Dead Fish",
+    officialListGroup: "Consumables",
+    officialIdCategory: "Consumables",
+    officialSubcategory: "",
+    dlc: "Base Game",
+    isLiveASA: true,
+    isObtainable: true,
+    media: {
+      src: "https://ark.wiki.gg/images/thumb/Dead_Fish.png/30px-Dead_Fish.png",
+      type: "image",
+      alt: "Dead Fish icon",
+      tone: "bronze",
+    },
+    notes: "",
+    practicalNote: "",
+    relatedCreatureIds: [],
+    relatedBossIds: [],
+    relatedMapIds: [],
+  },
+  {
     id: "archelon-algae",
     name: "Archelon Algae",
     officialListGroup: "Consumables",

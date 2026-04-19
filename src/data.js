@@ -13,10 +13,16 @@ import {
 } from "./asa-item-supplements.js";
 import {
   ASA_IMPORTED_CREATURE_TAME_FOODS,
+  ASA_CREATURE_TAME_FOOD_IMPORT_VERSION,
 } from "./asa-creature-tame-foods.js";
+import {
+  ASA_CREATURE_TAMING_OVERRIDE_VERSION,
+  ASA_IMPORTED_CREATURE_TAMING_OVERRIDES,
+} from "./asa-creature-taming-overrides.js";
 
 const IMPORTED_ITEM_ROSTER = [...ASA_IMPORTED_ITEMS, ...ASA_IMPORTED_ITEM_SUPPLEMENTS];
 const IMPORTED_ITEM_VERSION = `${ASA_ITEM_IMPORT_VERSION}-${ASA_ITEM_SUPPLEMENT_VERSION}`;
+export const IMPORTED_CREATURE_TAMING_VERSION = `${ASA_CREATURE_TAME_FOOD_IMPORT_VERSION}-${ASA_CREATURE_TAMING_OVERRIDE_VERSION}`;
 
 const blankMedia = (label, tone) => ({
   src: "",
@@ -144,6 +150,74 @@ export const ITEM_IMPORT_NAME_ALIASES = {
   Vegetables: "Crops",
 };
 
+const normalizeImportedCreatureTameFoodEntries = (entries) =>
+  Array.isArray(entries)
+    ? entries
+        .map((foodEntry) => {
+          if (!foodEntry || typeof foodEntry !== "object") return null;
+          const label = String(foodEntry.label || "").trim();
+          const itemId = String(foodEntry.itemId || "").trim();
+          if (!label && !itemId) return null;
+          return {
+            label: label || itemId,
+            itemId,
+          };
+        })
+        .filter(Boolean)
+    : [];
+
+const normalizeImportedCreatureTamingType = (value) => {
+  const normalized = String(value || "").trim().toLowerCase();
+  return ["empty", "simple", "special"].includes(normalized) ? normalized : "";
+};
+
+export function getImportedCreatureTaming(entryId) {
+  const importedFood = ASA_IMPORTED_CREATURE_TAME_FOODS[entryId] || {};
+  const importedOverride = ASA_IMPORTED_CREATURE_TAMING_OVERRIDES[entryId] || {};
+  const merged = {
+    ...importedFood,
+    ...importedOverride,
+  };
+
+  const tameFood = String(merged.tameFood || "").trim();
+  const tameFoodEntries = normalizeImportedCreatureTameFoodEntries(merged.tameFoodEntries);
+  const tameFoodSourceLabel = String(merged.sourceLabel || "").trim();
+  const tameFoodSourceUrl = String(merged.sourceUrl || "").trim();
+  const tameMethodDetail = String(merged.tameMethodDetail || "").trim();
+  const explicitMethod = String(merged.tameMethod || "").trim();
+  const hasFood = Boolean(tameFood || tameFoodEntries.length);
+
+  let tameMethodType = normalizeImportedCreatureTamingType(merged.tameMethodType);
+  if (!tameMethodType) {
+    tameMethodType = tameMethodDetail
+      ? "special"
+      : explicitMethod || hasFood
+        ? "simple"
+        : "empty";
+  }
+
+  let tameMethod = explicitMethod;
+  if (!tameMethod && tameMethodType === "special") {
+    tameMethod = "Special Method";
+  }
+  if (!tameMethod && tameMethodType === "simple" && hasFood) {
+    tameMethod = "Knockout";
+  }
+  if (tameMethodType === "empty") {
+    tameMethod = "";
+  }
+
+  return {
+    tameFood,
+    tameFoodEntries,
+    tameFoodSourceLabel,
+    tameFoodSourceUrl,
+    tameMethod,
+    tameMethodType,
+    tameMethodDetail: tameMethodType === "special" ? tameMethodDetail : "",
+  };
+}
+
 function applyImportedCreatureRoster(data) {
   const existingById = new Map((data.dinos || []).map((entry) => [entry.id, entry]));
   const existingByName = new Map((data.dinos || []).map((entry) => [entry.name, entry]));
@@ -155,42 +229,15 @@ function applyImportedCreatureRoster(data) {
       existingByName.get(entry.name) ||
       (legacyName ? existingByName.get(legacyName) : null) ||
       {};
-    const importedTameFood = ASA_IMPORTED_CREATURE_TAME_FOODS[entry.id] || null;
-    const existingTameFoodEntries = Array.isArray(existing.tameFoodEntries)
-      ? existing.tameFoodEntries
-          .map((foodEntry) => {
-            if (!foodEntry || typeof foodEntry !== "object") return null;
-            const label = String(foodEntry.label || "").trim();
-            const itemId = String(foodEntry.itemId || "").trim();
-            if (!label && !itemId) return null;
-            return {
-              label: label || itemId,
-              itemId,
-            };
-          })
-          .filter(Boolean)
-      : [];
-    const importedTameFoodEntries = Array.isArray(importedTameFood?.tameFoodEntries)
-      ? importedTameFood.tameFoodEntries
-          .map((foodEntry) => {
-            if (!foodEntry || typeof foodEntry !== "object") return null;
-            const label = String(foodEntry.label || "").trim();
-            const itemId = String(foodEntry.itemId || "").trim();
-            if (!label && !itemId) return null;
-            return {
-              label: label || itemId,
-              itemId,
-            };
-          })
-          .filter(Boolean)
-      : [];
+    const importedTaming = getImportedCreatureTaming(entry.id);
+    const existingTameFoodEntries = normalizeImportedCreatureTameFoodEntries(existing.tameFoodEntries);
     const tameMethodType =
       existing.tameMethodType ||
       (existing.tameMethodDetail
         ? "special"
         : existing.tameMethod
-        ? "simple"
-        : DINO_PRACTICAL_DEFAULTS.tameMethodType);
+          ? "simple"
+          : importedTaming.tameMethodType || DINO_PRACTICAL_DEFAULTS.tameMethodType);
 
     return {
       ...existing,
@@ -203,27 +250,27 @@ function applyImportedCreatureRoster(data) {
       tameFood:
         typeof existing.tameFood === "string" && existing.tameFood.trim()
           ? existing.tameFood
-          : String(importedTameFood?.tameFood || DINO_PRACTICAL_DEFAULTS.tameFood),
+          : importedTaming.tameFood || DINO_PRACTICAL_DEFAULTS.tameFood,
       tameFoodEntries: existingTameFoodEntries.length
         ? existingTameFoodEntries
-        : importedTameFoodEntries,
+        : importedTaming.tameFoodEntries,
       tameFoodSourceLabel:
         typeof existing.tameFoodSourceLabel === "string" && existing.tameFoodSourceLabel.trim()
           ? existing.tameFoodSourceLabel
-          : String(importedTameFood?.sourceLabel || DINO_PRACTICAL_DEFAULTS.tameFoodSourceLabel),
+          : importedTaming.tameFoodSourceLabel || DINO_PRACTICAL_DEFAULTS.tameFoodSourceLabel,
       tameFoodSourceUrl:
         typeof existing.tameFoodSourceUrl === "string" && existing.tameFoodSourceUrl.trim()
           ? existing.tameFoodSourceUrl
-          : String(importedTameFood?.sourceUrl || DINO_PRACTICAL_DEFAULTS.tameFoodSourceUrl),
+          : importedTaming.tameFoodSourceUrl || DINO_PRACTICAL_DEFAULTS.tameFoodSourceUrl,
       tameMethod:
         typeof existing.tameMethod === "string"
           ? existing.tameMethod
-          : DINO_PRACTICAL_DEFAULTS.tameMethod,
+          : importedTaming.tameMethod || DINO_PRACTICAL_DEFAULTS.tameMethod,
       tameMethodType,
       tameMethodDetail:
         typeof existing.tameMethodDetail === "string"
           ? existing.tameMethodDetail
-          : DINO_PRACTICAL_DEFAULTS.tameMethodDetail,
+          : importedTaming.tameMethodDetail || DINO_PRACTICAL_DEFAULTS.tameMethodDetail,
       loot: typeof existing.loot === "string" ? existing.loot : DINO_PRACTICAL_DEFAULTS.loot,
     };
   });
@@ -240,6 +287,7 @@ function applyImportedCreatureRoster(data) {
   data.meta = {
     ...(data.meta || {}),
     creatureImportVersion: ASA_CREATURE_IMPORT_VERSION,
+    creatureTamingImportVersion: IMPORTED_CREATURE_TAMING_VERSION,
     itemImportVersion: IMPORTED_ITEM_VERSION,
   };
 

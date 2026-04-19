@@ -3,6 +3,8 @@ import {
   DINO_IMPORT_NAME_ALIASES,
   DINO_PRACTICAL_DEFAULTS,
   ENTITY_TYPES,
+  getImportedCreatureTaming,
+  IMPORTED_CREATURE_TAMING_VERSION,
   ITEM_FIELD_DEFAULTS,
   ITEM_IMPORT_NAME_ALIASES,
   shouldRefreshCreatureMedia,
@@ -20,10 +22,6 @@ import {
   ASA_IMPORTED_ITEM_SUPPLEMENTS,
   ASA_ITEM_SUPPLEMENT_VERSION,
 } from "./asa-item-supplements.js";
-import {
-  ASA_CREATURE_TAME_FOOD_IMPORT_VERSION,
-  ASA_IMPORTED_CREATURE_TAME_FOODS,
-} from "./asa-creature-tame-foods.js";
 import {
   loadCloudAtlasData,
   removeAtlasEntityMediaFromCloud,
@@ -401,21 +399,7 @@ function syncImportedCreatureRoster(targetState) {
   targetState.dinos = ASA_IMPORTED_CREATURES.map((entry) => {
     const existing = getImportedCreatureLegacyEntry(entry, existingById, existingByName) || {};
     const practical = normalizeDinoPracticalFields(existing);
-    const importedTameFood = ASA_IMPORTED_CREATURE_TAME_FOODS[entry.id] || null;
-    const importedTameFoodEntries = Array.isArray(importedTameFood?.tameFoodEntries)
-      ? importedTameFood.tameFoodEntries
-          .map((foodEntry) => {
-            if (!foodEntry || typeof foodEntry !== "object") return null;
-            const label = String(foodEntry.label || "").trim();
-            const itemId = String(foodEntry.itemId || "").trim();
-            if (!label && !itemId) return null;
-            return {
-              label: label || itemId,
-              itemId,
-            };
-          })
-          .filter(Boolean)
-      : [];
+    const importedTaming = getImportedCreatureTaming(entry.id);
     const existingMedia =
       existing.media && typeof existing.media === "object" ? existing.media : null;
     const keepExistingMedia =
@@ -430,17 +414,20 @@ function syncImportedCreatureRoster(targetState) {
       name: entry.name,
       mapIds: Array.isArray(entry.mapIds) ? [...entry.mapIds] : [],
       media: keepExistingMedia ? existingMedia : buildImportedCreatureMedia(entry, "amber"),
-      tameFood: practical.tameFood || String(importedTameFood?.tameFood || ""),
+      tameFood: practical.tameFood || importedTaming.tameFood,
       tameFoodEntries: practical.tameFoodEntries.length
         ? practical.tameFoodEntries
-        : importedTameFoodEntries,
+        : importedTaming.tameFoodEntries,
       tameFoodSourceLabel:
-        practical.tameFoodSourceLabel || String(importedTameFood?.sourceLabel || ""),
+        practical.tameFoodSourceLabel || importedTaming.tameFoodSourceLabel,
       tameFoodSourceUrl:
-        practical.tameFoodSourceUrl || String(importedTameFood?.sourceUrl || ""),
-      tameMethod: practical.tameMethod,
-      tameMethodType: practical.tameMethodType,
-      tameMethodDetail: practical.tameMethodDetail,
+        practical.tameFoodSourceUrl || importedTaming.tameFoodSourceUrl,
+      tameMethod: practical.tameMethod || importedTaming.tameMethod,
+      tameMethodType:
+        practical.tameMethodType !== DINO_PRACTICAL_DEFAULTS.tameMethodType
+          ? practical.tameMethodType
+          : importedTaming.tameMethodType,
+      tameMethodDetail: practical.tameMethodDetail || importedTaming.tameMethodDetail,
       loot: practical.loot,
     };
   });
@@ -457,6 +444,7 @@ function syncImportedCreatureRoster(targetState) {
   targetState.meta = {
     ...(targetState.meta || {}),
     creatureImportVersion: ASA_CREATURE_IMPORT_VERSION,
+    creatureTamingImportVersion: IMPORTED_CREATURE_TAMING_VERSION,
   };
 }
 
@@ -464,49 +452,50 @@ function syncImportedCreatureTameFoods(targetState) {
   const existingDinos = Array.isArray(targetState.dinos) ? targetState.dinos : [];
 
   targetState.dinos = existingDinos.map((dino) => {
-    const importedTameFood = ASA_IMPORTED_CREATURE_TAME_FOODS[dino.id] || null;
-    if (!importedTameFood) return dino;
-
+    const importedTaming = getImportedCreatureTaming(dino.id);
+    if (
+      !importedTaming.tameFood &&
+      !importedTaming.tameFoodEntries.length &&
+      !importedTaming.tameMethod &&
+      !importedTaming.tameMethodDetail
+    ) {
+      return dino;
+    }
     const practical = normalizeDinoPracticalFields(dino);
-    const importedTameFoodEntries = Array.isArray(importedTameFood.tameFoodEntries)
-      ? importedTameFood.tameFoodEntries
-          .map((foodEntry) => {
-            if (!foodEntry || typeof foodEntry !== "object") return null;
-            const label = String(foodEntry.label || "").trim();
-            const itemId = String(foodEntry.itemId || "").trim();
-            if (!label && !itemId) return null;
-            return {
-              label: label || itemId,
-              itemId,
-            };
-          })
-          .filter(Boolean)
-      : [];
-
     if (
       practical.tameFoodEntries.length &&
       practical.tameFoodSourceUrl &&
-      practical.tameFoodSourceUrl !== importedTameFood.sourceUrl
+      practical.tameFoodSourceUrl !== importedTaming.tameFoodSourceUrl
     ) {
       return dino;
     }
 
+    const shouldKeepMethod =
+      practical.tameMethodType === "special" ||
+      Boolean(practical.tameMethod) ||
+      Boolean(practical.tameMethodDetail);
+
     return {
       ...dino,
-      tameFood: practical.tameFood || String(importedTameFood.tameFood || ""),
+      tameFood: practical.tameFood || importedTaming.tameFood,
       tameFoodEntries: practical.tameFoodEntries.length
         ? practical.tameFoodEntries
-        : importedTameFoodEntries,
+        : importedTaming.tameFoodEntries,
       tameFoodSourceLabel:
-        practical.tameFoodSourceLabel || String(importedTameFood.sourceLabel || ""),
+        practical.tameFoodSourceLabel || importedTaming.tameFoodSourceLabel,
       tameFoodSourceUrl:
-        practical.tameFoodSourceUrl || String(importedTameFood.sourceUrl || ""),
+        practical.tameFoodSourceUrl || importedTaming.tameFoodSourceUrl,
+      tameMethod: shouldKeepMethod ? practical.tameMethod : importedTaming.tameMethod,
+      tameMethodType: shouldKeepMethod ? practical.tameMethodType : importedTaming.tameMethodType,
+      tameMethodDetail: shouldKeepMethod
+        ? practical.tameMethodDetail
+        : importedTaming.tameMethodDetail,
     };
   });
 
   targetState.meta = {
     ...(targetState.meta || {}),
-    creatureTameFoodImportVersion: ASA_CREATURE_TAME_FOOD_IMPORT_VERSION,
+    creatureTamingImportVersion: IMPORTED_CREATURE_TAMING_VERSION,
   };
 }
 
@@ -1093,6 +1082,7 @@ const ui = {
   },
   imageModal: null,
 };
+const creatureMethodNoteSaveTimers = new Map();
 
 function captureFocusSnapshot(root = document) {
   const active = root.activeElement;
@@ -1915,6 +1905,74 @@ function renderTameFoodLinks(value, itemLookup, limit = 5) {
   `;
 }
 
+function getCreatureMethodBadge(practical) {
+  const methodType = String(practical?.tameMethodType || "empty").toLowerCase();
+  const methodLabel = String(practical?.tameMethod || "").trim().toLowerCase();
+  const hasFood = Boolean(
+    String(practical?.tameFood || "").trim() || toArray(practical?.tameFoodEntries).length
+  );
+
+  if (methodType === "special") {
+    return {
+      label: "Special Method",
+      toneClass: "chip--tone-violet",
+      modifier: "special",
+    };
+  }
+
+  if (methodType === "simple" && methodLabel.includes("passive")) {
+    return {
+      label: "Passive",
+      toneClass: "chip--tone-forest",
+      modifier: "passive",
+    };
+  }
+
+  if (methodType === "simple" && (methodLabel || hasFood)) {
+    return {
+      label: "Knockout",
+      toneClass: "chip--tone-amber",
+      modifier: "knockout",
+    };
+  }
+
+  return null;
+}
+
+function renderCreatureMethodCell(dino, practical) {
+  const badge = getCreatureMethodBadge(practical);
+  if (!badge) return "—";
+
+  const badgeMarkup = `<span class="chip ${badge.toneClass} creature-method-badge creature-method-badge--${badge.modifier}">${escapeHtml(
+    badge.label
+  )}</span>`;
+
+  if (badge.modifier !== "special") {
+    return badgeMarkup;
+  }
+
+  return `
+    <div class="creature-method-note">
+      ${badgeMarkup}
+      <span class="creature-method-note__icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+          <path d="M5.5 4.5h10.25a2.75 2.75 0 0 1 2.75 2.75v11.75a.5.5 0 0 1-.76.43l-2.32-1.39a1 1 0 0 0-1.03 0l-2.32 1.39a.5.5 0 0 1-.52 0l-2.32-1.39a1 1 0 0 0-1.03 0L5.5 19.43a.5.5 0 0 1-.75-.43V4.5Z"/>
+          <path d="M8.75 8.5h6.5M8.75 11.5h6.5M8.75 14.5h4.25"/>
+        </svg>
+      </span>
+      <div class="creature-method-popover">
+        <span class="creature-method-popover__eyebrow">Special note</span>
+        <textarea
+          class="creature-method-note__textarea"
+          rows="4"
+          placeholder="Add your special tame note here..."
+          data-entity-id="${escapeAttribute(dino.id)}"
+        >${escapeHtml(practical.tameMethodDetail || "")}</textarea>
+      </div>
+    </div>
+  `;
+}
+
 function formatTopTameFood(rawValue, limit = 3) {
   const foods = getTopTameFoodItems(rawValue, limit);
   return foods.length ? foods.join(" / ") : "—";
@@ -2232,8 +2290,8 @@ function renderCreatureGallery() {
             <tr>
               <th style="width:64px">Avatar</th>
               <th>Name</th>
-              <th id="tame-food">Tame Food</th>
               <th>Tame Method</th>
+              <th id="tame-food">Tame Food</th>
               <th>Loot</th>
             </tr>
           </thead>
@@ -2244,25 +2302,6 @@ function renderCreatureGallery() {
                     .map((dino) => {
                       const practical = normalizeDinoPracticalFields(dino);
                       const hasImage = Boolean(dino.media?.src);
-                      const isEditorOpen = ui.activeCreatureEditorId === dino.id;
-                      const methodCell =
-                        practical.tameMethodType === "special"
-                          ? `
-                            <button
-                              class="ghost-button ghost-button--small creature-library-table__note-button"
-                              type="button"
-                              data-action="open-creature-editor"
-                              data-entity-id="${escapeHtml(dino.id)}"
-                              data-focus="tameMethodDetail"
-                            >
-                              ${escapeHtml(
-                                practical.tameMethodDetail ? "Open note" : "Method note"
-                              )}
-                            </button>
-                          `
-                          : practical.tameMethodType === "simple" && practical.tameMethod
-                          ? escapeHtml(practical.tameMethod)
-                          : "—";
 
                       return `
                         <tr>
@@ -2282,34 +2321,21 @@ function renderCreatureGallery() {
                             </div>
                           </td>
                           <td class="creature-library-table__name-cell">
-                            <div class="creature-library-table__name-stack">
-                              <span class="creature-table__name">${escapeHtml(dino.name)}</span>
-                              <button
-                                class="ghost-button ghost-button--small creature-library-table__edit-button"
-                                type="button"
-                                data-action="open-creature-editor"
-                                data-entity-id="${escapeHtml(dino.id)}"
-                                data-focus="tameFood"
-                              >
-                                Edit
-                              </button>
-                            </div>
+                            <span class="creature-table__name">${escapeHtml(dino.name)}</span>
                           </td>
+                          <td class="creature-table__taming creature-table__method">${renderCreatureMethodCell(
+                            dino,
+                            practical
+                          )}</td>
                           <td class="creature-table__taming">${renderTameFoodLinks(
                             practical,
                             tameFoodItemLookup,
                             5
                           )}</td>
-                          <td class="creature-table__taming">${methodCell}</td>
                           <td class="creature-table__loot">${
                             practical.loot ? escapeHtml(practical.loot) : "—"
                           }</td>
                         </tr>
-                        ${
-                          isEditorOpen
-                            ? renderCreatureLibraryEditorRow(dino, practical)
-                            : ""
-                        }
                       `;
                     })
                     .join("")
@@ -5727,7 +5753,7 @@ function normalizeRuntimeAtlasState(payload) {
     changed = true;
   }
 
-  if (state.meta.creatureTameFoodImportVersion !== ASA_CREATURE_TAME_FOOD_IMPORT_VERSION) {
+  if (state.meta.creatureTamingImportVersion !== IMPORTED_CREATURE_TAMING_VERSION) {
     syncImportedCreatureTameFoods(state);
     changed = true;
   }
@@ -6531,6 +6557,38 @@ async function saveCreaturePracticalForm(formData) {
   return true;
 }
 
+function queueCreatureMethodNoteCloudSync(entityId) {
+  const existingTimer = creatureMethodNoteSaveTimers.get(entityId);
+  if (existingTimer) {
+    window.clearTimeout(existingTimer);
+  }
+
+  const nextTimer = window.setTimeout(() => {
+    creatureMethodNoteSaveTimers.delete(entityId);
+    void syncEntityToCloud("dinos", entityId);
+  }, 900);
+
+  creatureMethodNoteSaveTimers.set(entityId, nextTimer);
+}
+
+function updateCreatureMethodNote(entityId, nextDetail) {
+  const existing = getDino(entityId);
+  if (!existing) return;
+
+  updateEntity(state, "dinos", entityId, (entity) => {
+    const practical = normalizeDinoPracticalFields(entity);
+    return {
+      ...entity,
+      tameMethod: practical.tameMethod || "Special Method",
+      tameMethodType: "special",
+      tameMethodDetail: String(nextDetail || ""),
+    };
+  });
+
+  saveState(state);
+  queueCreatureMethodNoteCloudSync(entityId);
+}
+
 window.addEventListener("hashchange", render);
 window.addEventListener("storage", (event) => {
   if (event.storageArea !== window.localStorage) return;
@@ -6882,6 +6940,14 @@ document.addEventListener("input", (event) => {
   if (mapSectionAction === "items-library-search") {
     ui.itemsLibrarySearch = event.target.value || "";
     render();
+    return;
+  }
+
+  if (event.target.matches(".creature-method-note__textarea")) {
+    const entityId = String(event.target.dataset.entityId || "").trim();
+    if (entityId) {
+      updateCreatureMethodNote(entityId, event.target.value || "");
+    }
     return;
   }
 
