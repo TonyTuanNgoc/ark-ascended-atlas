@@ -7,6 +7,16 @@ import {
   ASA_IMPORTED_ITEMS,
   ASA_ITEM_IMPORT_VERSION,
 } from "./asa-items-roster.js";
+import {
+  ASA_IMPORTED_ITEM_SUPPLEMENTS,
+  ASA_ITEM_SUPPLEMENT_VERSION,
+} from "./asa-item-supplements.js";
+import {
+  ASA_IMPORTED_CREATURE_TAME_FOODS,
+} from "./asa-creature-tame-foods.js";
+
+const IMPORTED_ITEM_ROSTER = [...ASA_IMPORTED_ITEMS, ...ASA_IMPORTED_ITEM_SUPPLEMENTS];
+const IMPORTED_ITEM_VERSION = `${ASA_ITEM_IMPORT_VERSION}-${ASA_ITEM_SUPPLEMENT_VERSION}`;
 
 const blankMedia = (label, tone) => ({
   src: "",
@@ -97,6 +107,10 @@ export const ENTITY_TYPES = [
 ];
 
 export const DINO_PRACTICAL_DEFAULTS = {
+  tameFood: "",
+  tameFoodEntries: [],
+  tameFoodSourceLabel: "",
+  tameFoodSourceUrl: "",
   loot: "",
   tameMethod: "",
   tameMethodType: "empty",
@@ -127,6 +141,7 @@ export const ITEM_IMPORT_NAME_ALIASES = {
   "Empty Cryopod": "Cryopod",
   "Pump-Action Shotgun": "Pump Shotgun",
   "Sweet Vegetable Cake": "Sweet Veggie Cake",
+  Vegetables: "Crops",
 };
 
 function applyImportedCreatureRoster(data) {
@@ -140,6 +155,35 @@ function applyImportedCreatureRoster(data) {
       existingByName.get(entry.name) ||
       (legacyName ? existingByName.get(legacyName) : null) ||
       {};
+    const importedTameFood = ASA_IMPORTED_CREATURE_TAME_FOODS[entry.id] || null;
+    const existingTameFoodEntries = Array.isArray(existing.tameFoodEntries)
+      ? existing.tameFoodEntries
+          .map((foodEntry) => {
+            if (!foodEntry || typeof foodEntry !== "object") return null;
+            const label = String(foodEntry.label || "").trim();
+            const itemId = String(foodEntry.itemId || "").trim();
+            if (!label && !itemId) return null;
+            return {
+              label: label || itemId,
+              itemId,
+            };
+          })
+          .filter(Boolean)
+      : [];
+    const importedTameFoodEntries = Array.isArray(importedTameFood?.tameFoodEntries)
+      ? importedTameFood.tameFoodEntries
+          .map((foodEntry) => {
+            if (!foodEntry || typeof foodEntry !== "object") return null;
+            const label = String(foodEntry.label || "").trim();
+            const itemId = String(foodEntry.itemId || "").trim();
+            if (!label && !itemId) return null;
+            return {
+              label: label || itemId,
+              itemId,
+            };
+          })
+          .filter(Boolean)
+      : [];
     const tameMethodType =
       existing.tameMethodType ||
       (existing.tameMethodDetail
@@ -156,7 +200,21 @@ function applyImportedCreatureRoster(data) {
         hasMediaSource(existing.media)
           ? existing.media
           : buildImportedCreatureMedia(entry, "amber"),
-      tameFood: typeof existing.tameFood === "string" ? existing.tameFood : "",
+      tameFood:
+        typeof existing.tameFood === "string" && existing.tameFood.trim()
+          ? existing.tameFood
+          : String(importedTameFood?.tameFood || DINO_PRACTICAL_DEFAULTS.tameFood),
+      tameFoodEntries: existingTameFoodEntries.length
+        ? existingTameFoodEntries
+        : importedTameFoodEntries,
+      tameFoodSourceLabel:
+        typeof existing.tameFoodSourceLabel === "string" && existing.tameFoodSourceLabel.trim()
+          ? existing.tameFoodSourceLabel
+          : String(importedTameFood?.sourceLabel || DINO_PRACTICAL_DEFAULTS.tameFoodSourceLabel),
+      tameFoodSourceUrl:
+        typeof existing.tameFoodSourceUrl === "string" && existing.tameFoodSourceUrl.trim()
+          ? existing.tameFoodSourceUrl
+          : String(importedTameFood?.sourceUrl || DINO_PRACTICAL_DEFAULTS.tameFoodSourceUrl),
       tameMethod:
         typeof existing.tameMethod === "string"
           ? existing.tameMethod
@@ -182,6 +240,7 @@ function applyImportedCreatureRoster(data) {
   data.meta = {
     ...(data.meta || {}),
     creatureImportVersion: ASA_CREATURE_IMPORT_VERSION,
+    itemImportVersion: IMPORTED_ITEM_VERSION,
   };
 
   return data;
@@ -201,7 +260,7 @@ export const defaultData = {
         ownerUid: "",
       },
     },
-    itemImportVersion: ASA_ITEM_IMPORT_VERSION,
+    itemImportVersion: IMPORTED_ITEM_VERSION,
     heroActions: [
       { label: "Khám phá thế giới", href: "#/maps" },
       { label: "Story Route", href: "#/story" },
@@ -1389,7 +1448,7 @@ export const defaultData = {
     { id: "tribute-valg-pack", name: "Valguero Tribute Pack", sourceCreature: "Mixed tribute set", sourceMethod: "Use this slot to record your own batch route.", where: "Valguero", estimate: "Custom", media: blankMedia("Valguero tribute pack", "forest") },
     { id: "tribute-alpha-carnivore-pack", name: "Alpha Carnivore Pack", sourceCreature: "Mixed alpha carnivores", sourceMethod: "Aggregate while running endgame patrols.", where: "Extinction / transferred routes", estimate: "High", media: blankMedia("Alpha carnivore pack", "ember") },
   ],
-  items: ASA_IMPORTED_ITEMS,
+  items: IMPORTED_ITEM_ROSTER,
   baseSpots: [
     { id: "island-hidden-lake", mapId: "the-island", title: "Hidden Lake Main Base", type: "Main Base", shortDescription: "Safe, scenic, and easy to scale into a breeding capital.", tags: ["Water", "Breeding", "Safe"], relatedIds: ["the-island", "argy"], media: blankMedia("Hidden Lake base spot", "emerald") },
     { id: "island-redwoods-forge", mapId: "the-island", title: "Redwoods Forge Shelf", type: "Crafting Base", shortDescription: "Closer to mountain circuits and industrial loops.", tags: ["Forge", "Metal", "Risk"], relatedIds: ["the-island", "anky"], media: blankMedia("Redwoods forge shelf", "forest") },

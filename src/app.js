@@ -17,6 +17,14 @@ import {
   ASA_ITEM_IMPORT_VERSION,
 } from "./asa-items-roster.js";
 import {
+  ASA_IMPORTED_ITEM_SUPPLEMENTS,
+  ASA_ITEM_SUPPLEMENT_VERSION,
+} from "./asa-item-supplements.js";
+import {
+  ASA_CREATURE_TAME_FOOD_IMPORT_VERSION,
+  ASA_IMPORTED_CREATURE_TAME_FOODS,
+} from "./asa-creature-tame-foods.js";
+import {
   loadCloudAtlasData,
   removeAtlasEntityMediaFromCloud,
   saveAtlasEntityMediaToCloud,
@@ -43,6 +51,8 @@ const adminToggleButton = document.querySelector("#adminToggle");
 const filePicker = document.querySelector("#imageFilePicker");
 const stateFilePicker = document.querySelector("#atlasStateFilePicker");
 let lastSectionRouteScrollKey = "";
+const IMPORTED_ITEM_ROSTER = [...ASA_IMPORTED_ITEMS, ...ASA_IMPORTED_ITEM_SUPPLEMENTS];
+const IMPORTED_ITEM_VERSION = `${ASA_ITEM_IMPORT_VERSION}-${ASA_ITEM_SUPPLEMENT_VERSION}`;
 
 const MAP_LINK_FIELDS = {
   bosses: "bossIds",
@@ -275,7 +285,26 @@ const toTextList = (value, separator = ", ", fallback = "") => {
 };
 
 function normalizeDinoPracticalFields(dino = {}) {
-  const tameFood = String(dino.tameFood || "");
+  const tameFoodEntries = Array.isArray(dino.tameFoodEntries)
+    ? dino.tameFoodEntries
+        .map((entry) => {
+          if (!entry || typeof entry !== "object") return null;
+          const label = String(entry.label || "").trim();
+          const itemId = String(entry.itemId || "").trim();
+          if (!label && !itemId) return null;
+          return {
+            label: label || itemId,
+            itemId,
+          };
+        })
+        .filter(Boolean)
+    : [];
+  const tameFoodSourceLabel = String(dino.tameFoodSourceLabel || "").trim();
+  const tameFoodSourceUrl = String(dino.tameFoodSourceUrl || "").trim();
+  const tameFood = String(
+    dino.tameFood ||
+      (tameFoodEntries.length ? tameFoodEntries.map((entry) => entry.label).join(" / ") : "")
+  ).trim();
   const tameMethod = String(dino.tameMethod || "").trim();
   const tameMethodDetail = String(dino.tameMethodDetail || "").trim();
   const loot = String(dino.loot || "").trim();
@@ -297,6 +326,9 @@ function normalizeDinoPracticalFields(dino = {}) {
 
   return {
     tameFood,
+    tameFoodEntries,
+    tameFoodSourceLabel,
+    tameFoodSourceUrl,
     tameMethod,
     tameMethodType,
     tameMethodDetail,
@@ -369,6 +401,21 @@ function syncImportedCreatureRoster(targetState) {
   targetState.dinos = ASA_IMPORTED_CREATURES.map((entry) => {
     const existing = getImportedCreatureLegacyEntry(entry, existingById, existingByName) || {};
     const practical = normalizeDinoPracticalFields(existing);
+    const importedTameFood = ASA_IMPORTED_CREATURE_TAME_FOODS[entry.id] || null;
+    const importedTameFoodEntries = Array.isArray(importedTameFood?.tameFoodEntries)
+      ? importedTameFood.tameFoodEntries
+          .map((foodEntry) => {
+            if (!foodEntry || typeof foodEntry !== "object") return null;
+            const label = String(foodEntry.label || "").trim();
+            const itemId = String(foodEntry.itemId || "").trim();
+            if (!label && !itemId) return null;
+            return {
+              label: label || itemId,
+              itemId,
+            };
+          })
+          .filter(Boolean)
+      : [];
     const existingMedia =
       existing.media && typeof existing.media === "object" ? existing.media : null;
     const keepExistingMedia =
@@ -383,7 +430,14 @@ function syncImportedCreatureRoster(targetState) {
       name: entry.name,
       mapIds: Array.isArray(entry.mapIds) ? [...entry.mapIds] : [],
       media: keepExistingMedia ? existingMedia : buildImportedCreatureMedia(entry, "amber"),
-      tameFood: practical.tameFood,
+      tameFood: practical.tameFood || String(importedTameFood?.tameFood || ""),
+      tameFoodEntries: practical.tameFoodEntries.length
+        ? practical.tameFoodEntries
+        : importedTameFoodEntries,
+      tameFoodSourceLabel:
+        practical.tameFoodSourceLabel || String(importedTameFood?.sourceLabel || ""),
+      tameFoodSourceUrl:
+        practical.tameFoodSourceUrl || String(importedTameFood?.sourceUrl || ""),
       tameMethod: practical.tameMethod,
       tameMethodType: practical.tameMethodType,
       tameMethodDetail: practical.tameMethodDetail,
@@ -406,12 +460,62 @@ function syncImportedCreatureRoster(targetState) {
   };
 }
 
+function syncImportedCreatureTameFoods(targetState) {
+  const existingDinos = Array.isArray(targetState.dinos) ? targetState.dinos : [];
+
+  targetState.dinos = existingDinos.map((dino) => {
+    const importedTameFood = ASA_IMPORTED_CREATURE_TAME_FOODS[dino.id] || null;
+    if (!importedTameFood) return dino;
+
+    const practical = normalizeDinoPracticalFields(dino);
+    const importedTameFoodEntries = Array.isArray(importedTameFood.tameFoodEntries)
+      ? importedTameFood.tameFoodEntries
+          .map((foodEntry) => {
+            if (!foodEntry || typeof foodEntry !== "object") return null;
+            const label = String(foodEntry.label || "").trim();
+            const itemId = String(foodEntry.itemId || "").trim();
+            if (!label && !itemId) return null;
+            return {
+              label: label || itemId,
+              itemId,
+            };
+          })
+          .filter(Boolean)
+      : [];
+
+    if (
+      practical.tameFoodEntries.length &&
+      practical.tameFoodSourceUrl &&
+      practical.tameFoodSourceUrl !== importedTameFood.sourceUrl
+    ) {
+      return dino;
+    }
+
+    return {
+      ...dino,
+      tameFood: practical.tameFood || String(importedTameFood.tameFood || ""),
+      tameFoodEntries: practical.tameFoodEntries.length
+        ? practical.tameFoodEntries
+        : importedTameFoodEntries,
+      tameFoodSourceLabel:
+        practical.tameFoodSourceLabel || String(importedTameFood.sourceLabel || ""),
+      tameFoodSourceUrl:
+        practical.tameFoodSourceUrl || String(importedTameFood.sourceUrl || ""),
+    };
+  });
+
+  targetState.meta = {
+    ...(targetState.meta || {}),
+    creatureTameFoodImportVersion: ASA_CREATURE_TAME_FOOD_IMPORT_VERSION,
+  };
+}
+
 function syncImportedItemRoster(targetState) {
   const existingItems = Array.isArray(targetState.items) ? targetState.items : [];
   const existingById = new Map(existingItems.map((entry) => [entry.id, entry]));
   const existingByName = new Map(existingItems.map((entry) => [entry.name, entry]));
 
-  targetState.items = ASA_IMPORTED_ITEMS.map((entry) => {
+  targetState.items = IMPORTED_ITEM_ROSTER.map((entry) => {
     const existing = getImportedItemLegacyEntry(entry, existingById, existingByName) || {};
     const normalized = normalizeItemFields(existing);
 
@@ -443,13 +547,13 @@ function syncImportedItemRoster(targetState) {
 
   targetState.meta = {
     ...(targetState.meta || {}),
-    itemImportVersion: ASA_ITEM_IMPORT_VERSION,
+    itemImportVersion: IMPORTED_ITEM_VERSION,
   };
 }
 
 function hasImportedItemRosterGap(items = []) {
   const knownItems = toArray(items);
-  if (knownItems.length !== ASA_IMPORTED_ITEMS.length) return true;
+  if (knownItems.length !== IMPORTED_ITEM_ROSTER.length) return true;
 
   const knownIds = new Set(
     knownItems
@@ -459,7 +563,7 @@ function hasImportedItemRosterGap(items = []) {
 
   if (!knownIds.size) return true;
 
-  return ASA_IMPORTED_ITEMS.some((entry) => !knownIds.has(entry.id));
+  return IMPORTED_ITEM_ROSTER.some((entry) => !knownIds.has(entry.id));
 }
 
 function ensureItemRosterForRender() {
@@ -1619,7 +1723,8 @@ function normalizeTameFoodLookupText(value) {
 }
 
 function buildTameFoodItemLookup() {
-  const lookup = new Map();
+  const byText = new Map();
+  const byId = new Map();
 
   toArray(state.items)
     .filter(Boolean)
@@ -1630,6 +1735,10 @@ function buildTameFoodItemLookup() {
     .forEach((item) => {
       const itemName = String(item.name || item.title || "").trim();
       if (!itemName) return;
+      const itemId = String(item.id || "").trim();
+      if (itemId && !byId.has(itemId)) {
+        byId.set(itemId, item);
+      }
 
       const variants = new Set([normalizeTameFoodLookupText(itemName)]);
 
@@ -1650,32 +1759,87 @@ function buildTameFoodItemLookup() {
       }
 
       variants.forEach((variant) => {
-        if (variant && !lookup.has(variant)) {
-          lookup.set(variant, item);
+        if (variant && !byText.has(variant)) {
+          byText.set(variant, item);
         }
       });
     });
 
-  return lookup;
+  return {
+    byId,
+    byText,
+  };
 }
 
-function resolveTameFoodEntries(rawValue, itemLookup, limit = 3) {
-  const tokens = getTopTameFoodItems(rawValue, Math.max(limit, 6));
+function resolveTameFoodEntries(value, itemLookup, limit = 5) {
+  const practical =
+    value && typeof value === "object" && !Array.isArray(value)
+      ? normalizeDinoPracticalFields(value)
+      : normalizeDinoPracticalFields({ tameFood: value });
   const resolved = [];
   const seen = new Set();
+  const lookupById = itemLookup?.byId || new Map();
+  const lookupByText = itemLookup?.byText || new Map();
+
+  const resolveItemFromLabel = (label) => {
+    const normalizedToken = normalizeTameFoodLookupText(label);
+    if (!normalizedToken) return null;
+
+    const directItem = lookupByText.get(normalizedToken);
+    if (directItem) return directItem;
+
+    const aliasTargets = TAME_FOOD_ITEM_ALIASES[normalizedToken] || [];
+    for (const targetName of aliasTargets) {
+      const matchedItem = lookupByText.get(normalizeTameFoodLookupText(targetName));
+      if (matchedItem) return matchedItem;
+    }
+
+    return null;
+  };
+
+  const structuredEntries = toArray(practical.tameFoodEntries);
+  if (structuredEntries.length) {
+    for (const foodEntry of structuredEntries) {
+      const label = String(foodEntry?.label || "").trim();
+      const itemId = String(foodEntry?.itemId || "").trim();
+      const uniqueKey = itemId || normalizeTameFoodLookupText(label);
+      if (!uniqueKey || seen.has(uniqueKey)) continue;
+      seen.add(uniqueKey);
+
+      const matchedItem =
+        (itemId ? lookupById.get(itemId) : null) || resolveItemFromLabel(label);
+
+      if (matchedItem) {
+        resolved.push({
+          type: "item",
+          item: matchedItem,
+          label: matchedItem.name || label || matchedItem.title || matchedItem.id,
+        });
+      } else if (label) {
+        resolved.push({
+          type: "text",
+          label,
+        });
+      }
+
+      if (resolved.length >= limit) return resolved;
+    }
+  }
+
+  const tokens = getTopTameFoodItems(practical.tameFood, Math.max(limit, 6));
 
   for (const token of tokens) {
     const normalizedToken = normalizeTameFoodLookupText(token);
     if (!normalizedToken) continue;
 
     const matches = [];
-    const directItem = itemLookup.get(normalizedToken);
+    const directItem = lookupByText.get(normalizedToken);
     if (directItem) {
       matches.push(directItem);
     } else {
       const aliasTargets = TAME_FOOD_ITEM_ALIASES[normalizedToken] || [];
       aliasTargets.forEach((targetName) => {
-        const matchedItem = itemLookup.get(normalizeTameFoodLookupText(targetName));
+        const matchedItem = lookupByText.get(normalizeTameFoodLookupText(targetName));
         if (matchedItem) {
           matches.push(matchedItem);
         }
@@ -1710,8 +1874,8 @@ function resolveTameFoodEntries(rawValue, itemLookup, limit = 3) {
   return resolved;
 }
 
-function renderTameFoodLinks(rawValue, itemLookup, limit = 3) {
-  const entries = resolveTameFoodEntries(rawValue, itemLookup, limit);
+function renderTameFoodLinks(value, itemLookup, limit = 5) {
+  const entries = resolveTameFoodEntries(value, itemLookup, limit);
   if (!entries.length) return "—";
 
   return `
@@ -1726,7 +1890,18 @@ function renderTameFoodLinks(rawValue, itemLookup, limit = 3) {
                   data-action="open-item-library-from-food"
                   data-query="${escapeAttribute(entry.label)}"
                 >
-                  ${escapeHtml(entry.label)}
+                  <span class="creature-table__food-chip-media">
+                    ${
+                      entry.item?.media?.src
+                        ? `<img src="${escapeAttribute(entry.item.media.src)}" alt="${escapeHtml(
+                            entry.label
+                          )}" loading="lazy" />`
+                        : `<span class="creature-table__food-chip-media-placeholder">${escapeHtml(
+                            String(entry.label || "IT").slice(0, 2)
+                          )}</span>`
+                    }
+                  </span>
+                  <span class="creature-table__food-chip-label">${escapeHtml(entry.label)}</span>
                 </button>
               `
             : `<span class="chip creature-table__food-chip creature-table__food-chip--unlinked">${escapeHtml(
@@ -2119,9 +2294,9 @@ function renderCreatureGallery() {
                             </div>
                           </td>
                           <td class="creature-table__taming">${renderTameFoodLinks(
-                            practical.tameFood,
+                            practical,
                             tameFoodItemLookup,
-                            3
+                            5
                           )}</td>
                           <td class="creature-table__taming">${methodCell}</td>
                           <td class="creature-table__loot">${
@@ -5550,8 +5725,13 @@ function normalizeRuntimeAtlasState(payload) {
     changed = true;
   }
 
+  if (state.meta.creatureTameFoodImportVersion !== ASA_CREATURE_TAME_FOOD_IMPORT_VERSION) {
+    syncImportedCreatureTameFoods(state);
+    changed = true;
+  }
+
   if (
-    state.meta.itemImportVersion !== ASA_ITEM_IMPORT_VERSION ||
+    state.meta.itemImportVersion !== IMPORTED_ITEM_VERSION ||
     hasImportedItemRosterGap(state.items)
   ) {
     syncImportedItemRoster(state);
@@ -5642,6 +5822,9 @@ function normalizeRuntimeAtlasState(payload) {
 
     if (
       dino.tameFood !== next.tameFood ||
+      JSON.stringify(toArray(dino.tameFoodEntries)) !== JSON.stringify(next.tameFoodEntries) ||
+      String(dino.tameFoodSourceLabel || "") !== next.tameFoodSourceLabel ||
+      String(dino.tameFoodSourceUrl || "") !== next.tameFoodSourceUrl ||
       dino.tameMethod !== next.tameMethod ||
       dino.tameMethodType !== next.tameMethodType ||
       dino.tameMethodDetail !== next.tameMethodDetail ||
@@ -6284,10 +6467,17 @@ function buildCreaturePracticalUpdate(formData, existing) {
   const loot = String(formData.get("loot") || "").trim();
   const tameMethod = String(formData.get("tameMethod") || "").trim();
   const tameMethodDetail = String(formData.get("tameMethodDetail") || "").trim();
+  const tameFoodChanged = tameFood !== practical.tameFood;
+  const tameFoodEntries = tameFoodChanged ? [] : practical.tameFoodEntries;
+  const tameFoodSourceLabel = tameFoodChanged ? "" : practical.tameFoodSourceLabel;
+  const tameFoodSourceUrl = tameFoodChanged ? "" : practical.tameFoodSourceUrl;
 
   if (tameMethodType === "empty") {
     return {
       tameFood,
+      tameFoodEntries,
+      tameFoodSourceLabel,
+      tameFoodSourceUrl,
       tameMethod: "",
       tameMethodType,
       tameMethodDetail: "",
@@ -6298,6 +6488,9 @@ function buildCreaturePracticalUpdate(formData, existing) {
   if (tameMethodType === "simple") {
     return {
       tameFood,
+      tameFoodEntries,
+      tameFoodSourceLabel,
+      tameFoodSourceUrl,
       tameMethod,
       tameMethodType,
       tameMethodDetail: "",
@@ -6307,6 +6500,9 @@ function buildCreaturePracticalUpdate(formData, existing) {
 
   return {
     tameFood,
+    tameFoodEntries,
+    tameFoodSourceLabel,
+    tameFoodSourceUrl,
     tameMethod,
     tameMethodType,
     tameMethodDetail,
