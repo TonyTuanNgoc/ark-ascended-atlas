@@ -1557,6 +1557,151 @@ function getTopTameFoodItems(rawValue, limit = 3) {
   return items;
 }
 
+const TAME_FOOD_ITEM_ALIASES = {
+  "raw prime fish": ["Raw Prime Fish Meat"],
+  "cooked prime fish": ["Cooked Prime Fish Meat"],
+  "raw fish": ["Raw Fish Meat"],
+  "cooked fish": ["Cooked Fish Meat"],
+  "charged battery": ["Charge Battery"],
+  "mejoberries": ["Mejoberry"],
+  "amarberries": ["Amarberry"],
+  "azulberries": ["Azulberry"],
+  "narcoberries": ["Narcoberry"],
+  "stimberries": ["Stimberry"],
+  "tintoberries": ["Tintoberry"],
+  blubber: ["Basilosaurus Blubber"],
+};
+
+function normalizeTameFoodLookupText(value) {
+  return String(value || "")
+    .toLowerCase()
+    .replace(/\([^)]*\)/g, " ")
+    .replace(/[\u2013\u2014]/g, " ")
+    .replace(/[^a-z0-9]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function buildTameFoodItemLookup() {
+  const lookup = new Map();
+
+  toArray(state.items)
+    .filter(Boolean)
+    .map((item) => ({
+      ...item,
+      ...normalizeItemFields(item),
+    }))
+    .forEach((item) => {
+      const itemName = String(item.name || item.title || "").trim();
+      if (!itemName) return;
+
+      const variants = new Set([normalizeTameFoodLookupText(itemName)]);
+
+      if (/berry$/i.test(itemName)) {
+        variants.add(normalizeTameFoodLookupText(itemName.replace(/berry$/i, "berries")));
+      }
+
+      if (/ meat$/i.test(itemName)) {
+        variants.add(normalizeTameFoodLookupText(itemName.replace(/\s+meat$/i, "")));
+      }
+
+      if (/^charge battery$/i.test(itemName)) {
+        variants.add("charged battery");
+      }
+
+      if (/blubber$/i.test(itemName)) {
+        variants.add("blubber");
+      }
+
+      variants.forEach((variant) => {
+        if (variant && !lookup.has(variant)) {
+          lookup.set(variant, item);
+        }
+      });
+    });
+
+  return lookup;
+}
+
+function resolveTameFoodEntries(rawValue, itemLookup, limit = 3) {
+  const tokens = getTopTameFoodItems(rawValue, Math.max(limit, 6));
+  const resolved = [];
+  const seen = new Set();
+
+  for (const token of tokens) {
+    const normalizedToken = normalizeTameFoodLookupText(token);
+    if (!normalizedToken) continue;
+
+    const matches = [];
+    const directItem = itemLookup.get(normalizedToken);
+    if (directItem) {
+      matches.push(directItem);
+    } else {
+      const aliasTargets = TAME_FOOD_ITEM_ALIASES[normalizedToken] || [];
+      aliasTargets.forEach((targetName) => {
+        const matchedItem = itemLookup.get(normalizeTameFoodLookupText(targetName));
+        if (matchedItem) {
+          matches.push(matchedItem);
+        }
+      });
+    }
+
+    if (matches.length) {
+      for (const item of matches) {
+        const key = `item:${item.id}`;
+        if (seen.has(key)) continue;
+        seen.add(key);
+        resolved.push({
+          type: "item",
+          item,
+          label: item.name || item.title || token,
+        });
+        if (resolved.length >= limit) return resolved;
+      }
+      continue;
+    }
+
+    const textKey = `text:${normalizedToken}`;
+    if (seen.has(textKey)) continue;
+    seen.add(textKey);
+    resolved.push({
+      type: "text",
+      label: token,
+    });
+    if (resolved.length >= limit) return resolved;
+  }
+
+  return resolved;
+}
+
+function renderTameFoodLinks(rawValue, itemLookup, limit = 3) {
+  const entries = resolveTameFoodEntries(rawValue, itemLookup, limit);
+  if (!entries.length) return "—";
+
+  return `
+    <div class="creature-table__tame-food-links">
+      ${entries
+        .map((entry) =>
+          entry.type === "item"
+            ? `
+                <button
+                  class="chip chip--button creature-table__food-chip"
+                  type="button"
+                  data-action="open-item-library-from-food"
+                  data-query="${escapeAttribute(entry.label)}"
+                >
+                  ${escapeHtml(entry.label)}
+                </button>
+              `
+            : `<span class="chip creature-table__food-chip creature-table__food-chip--unlinked">${escapeHtml(
+                entry.label
+              )}</span>`
+        )
+        .join("")}
+    </div>
+  `;
+}
+
 function formatTopTameFood(rawValue, limit = 3) {
   const foods = getTopTameFoodItems(rawValue, limit);
   return foods.length ? foods.join(" / ") : "—";
@@ -1824,6 +1969,7 @@ function renderCreatureGallery() {
   const creatures = [...toArray(state.dinos)]
     .filter(Boolean)
     .sort((a, b) => (a.name || "").localeCompare(b.name || ""));
+  const tameFoodItemLookup = buildTameFoodItemLookup();
 
   if (!creatures.length) {
     return renderEmptyState("No creatures yet", "Add creature entries to begin the library.");
@@ -1936,8 +2082,10 @@ function renderCreatureGallery() {
                               </button>
                             </div>
                           </td>
-                          <td class="creature-table__taming">${escapeHtml(
-                            formatTopTameFood(practical.tameFood, 3)
+                          <td class="creature-table__taming">${renderTameFoodLinks(
+                            practical.tameFood,
+                            tameFoodItemLookup,
+                            3
                           )}</td>
                           <td class="creature-table__taming">${methodCell}</td>
                           <td class="creature-table__loot">${
@@ -6231,6 +6379,19 @@ document.addEventListener("click", async (event) => {
         ui.route = parseRoute();
         render();
       }
+    }
+    return;
+  }
+
+  if (action === "open-item-library-from-food") {
+    const query = String(actionTarget.dataset.query || "").trim();
+    ui.itemsLibrarySearch = query;
+    event.preventDefault();
+    if (window.location.hash !== "#/resources") {
+      window.location.hash = "#/resources";
+    } else {
+      ui.route = parseRoute();
+      render();
     }
     return;
   }

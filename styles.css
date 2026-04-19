@@ -1185,6 +1185,27 @@ textarea {
   min-width: 160px;
 }
 
+.creature-table__tame-food-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.creature-table__food-chip {
+  min-height: 1.75rem;
+  padding: 0.26rem 0.62rem;
+  font-size: 0.74rem;
+  line-height: 1.2;
+  text-align: center;
+  font-family: inherit;
+}
+
+.creature-table__food-chip--unlinked {
+  opacity: 0.86;
+  border-color: rgba(132, 156, 186, 0.18);
+  color: rgba(200, 215, 236, 0.74);
+}
+
 .creature-table__loot {
   font-size: 0.82rem;
   color: rgba(216, 230, 247, 0.82);
