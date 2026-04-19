@@ -41,9 +41,15 @@ const normalizeCreatureIconLabel = (value) =>
     .replace(/\s+icon$/i, "")
     .trim();
 
+const toArkWikiPngFileName = (value, fallback = "Item") => {
+  const baseName = String(value || "")
+    .trim()
+    .replace(/\s+/g, "_");
+  return `${baseName || fallback}.png`;
+};
+
 const toCreatureIconFileName = (value) => {
-  const baseName = normalizeCreatureIconLabel(value).replace(/\s+/g, "_");
-  return `${baseName || "Creature"}.png`;
+  return toArkWikiPngFileName(normalizeCreatureIconLabel(value), "Creature");
 };
 
 const buildArkWikiThumbUrl = (fileName, size = 96) => {
@@ -55,6 +61,13 @@ const wikiMedia = (slug, label, tone) => ({
   src: buildArkWikiThumbUrl(toCreatureIconFileName(label || slug), 96),
   type: "image",
   alt: label,
+  tone,
+});
+
+const itemWikiMedia = (label, tone = "bronze") => ({
+  src: buildArkWikiThumbUrl(toArkWikiPngFileName(label, "Item"), 30),
+  type: "image",
+  alt: `${label} icon`,
   tone,
 });
 
@@ -99,6 +112,20 @@ export const buildImportedCreatureMedia = (entry, tone = "amber") => {
     `${entry?.name || "Creature"} icon`,
     tone
   );
+};
+
+export const buildImportedItemMedia = (entry, tone = "bronze") => {
+  const importedMedia = entry && typeof entry === "object" ? entry.media : null;
+  if (hasMediaSource(importedMedia)) {
+    return {
+      src: importedMedia.src,
+      type: importedMedia.type || "image",
+      alt: importedMedia.alt || `${entry?.name || "Item"} icon`,
+      tone: importedMedia.tone || tone,
+    };
+  }
+
+  return itemWikiMedia(entry?.name || entry?.id || "Item", tone);
 };
 
 export const ENTITY_TYPES = [
@@ -1541,7 +1568,10 @@ export const defaultData = {
     { id: "tribute-valg-pack", name: "Valguero Tribute Pack", sourceCreature: "Mixed tribute set", sourceMethod: "Use this slot to record your own batch route.", where: "Valguero", estimate: "Custom", media: blankMedia("Valguero tribute pack", "forest") },
     { id: "tribute-alpha-carnivore-pack", name: "Alpha Carnivore Pack", sourceCreature: "Mixed alpha carnivores", sourceMethod: "Aggregate while running endgame patrols.", where: "Extinction / transferred routes", estimate: "High", media: blankMedia("Alpha carnivore pack", "ember") },
   ],
-  items: IMPORTED_ITEM_ROSTER,
+  items: IMPORTED_ITEM_ROSTER.map((item) => ({
+    ...item,
+    media: buildImportedItemMedia(item, "bronze"),
+  })),
   baseSpots: [
     { id: "island-hidden-lake", mapId: "the-island", title: "Hidden Lake Main Base", type: "Main Base", shortDescription: "Safe, scenic, and easy to scale into a breeding capital.", tags: ["Water", "Breeding", "Safe"], relatedIds: ["the-island", "argy"], media: blankMedia("Hidden Lake base spot", "emerald") },
     { id: "island-redwoods-forge", mapId: "the-island", title: "Redwoods Forge Shelf", type: "Crafting Base", shortDescription: "Closer to mountain circuits and industrial loops.", tags: ["Forge", "Metal", "Risk"], relatedIds: ["the-island", "anky"], media: blankMedia("Redwoods forge shelf", "forest") },

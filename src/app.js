@@ -1,4 +1,5 @@
 import {
+  buildImportedItemMedia,
   buildImportedCreatureMedia,
   DINO_IMPORT_NAME_ALIASES,
   DINO_PRACTICAL_DEFAULTS,
@@ -566,14 +567,12 @@ function syncImportedItemRoster(targetState) {
       isLiveASA: entry.isLiveASA ?? normalized.isLiveASA,
       isObtainable: entry.isObtainable ?? normalized.isObtainable,
       media:
-        existing.media && typeof existing.media === "object"
+        existing.media &&
+        typeof existing.media === "object" &&
+        typeof existing.media.src === "string" &&
+        existing.media.src.trim()
           ? existing.media
-          : entry.media || {
-              src: "",
-              type: "empty",
-              alt: `${entry.name} icon`,
-              tone: "bronze",
-            },
+          : buildImportedItemMedia(entry, "bronze"),
       notes: normalized.notes,
       practicalNote: normalized.practicalNote,
       relatedCreatureIds: normalized.relatedCreatureIds,
@@ -2734,7 +2733,9 @@ function renderResourcesHub() {
                                 hasImage
                                   ? `<img src="${escapeAttribute(item.media.src)}" alt="${escapeHtml(
                                       item.name
-                                    )}" loading="lazy" />`
+                                    )}" loading="lazy" data-avatar-fallback="${escapeAttribute(
+                                      String(item.name || "IT").slice(0, 2)
+                                    )}" />`
                                   : `<span class="creature-table__avatar-placeholder">${escapeHtml(
                                       String(item.name || "IT").slice(0, 2)
                                     )}</span>`
