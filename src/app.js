@@ -455,26 +455,58 @@ function renderHomePage(section) {
 
 function renderHero() {
   const groupedMaps = getAtlasMapGroups();
+  const modules = [
+    { key: "maps", label: "Map", state: "active" },
+    { key: "creatures", label: "Creatures", state: "planned" },
+    { key: "resources", label: "Resources", state: "planned" },
+  ];
 
   return `
     <section class="hero-panel hero-panel--maps-only">
       <div class="hero-panel__veil"></div>
       <div class="hero-panel__content hero-panel__content--maps-only">
-        <div class="hero-map-groups">
-          ${groupedMaps
-            .map(
-              (group) => `
-                <div class="hero-map-group">
-                  <div class="hero-map-group__title">${escapeHtml(
-                    group.title
-                  )}</div>
-                  <div class="hero-map-grid">
-                    ${renderHeroMapCards(group.maps, group.badge)}
-                  </div>
-                </div>
-              `
-            )
-            .join("")}
+        <div class="hero-dashboard">
+          <div class="hero-dashboard__modules">
+            ${modules
+              .map(
+                (module) => `
+                  <button
+                    class="hero-dashboard__module hero-dashboard__module--${escapeHtml(
+                      module.state
+                    )}"
+                    type="button"
+                    ${
+                      module.state !== "active"
+                        ? 'disabled aria-disabled="true"'
+                        : 'aria-current="true"'
+                    }
+                  >
+                    <span>${escapeHtml(module.label)}</span>
+                  </button>
+                `
+              )
+              .join("")}
+          </div>
+          <div class="hero-dashboard__panel">
+            <div class="hero-dashboard__panel-body">
+              <div class="hero-map-groups">
+                ${groupedMaps
+                  .map(
+                    (group) => `
+                      <div class="hero-map-group">
+                        <div class="hero-map-group__title">${escapeHtml(
+                          group.title
+                        )}</div>
+                        <div class="hero-map-grid">
+                          ${renderHeroMapCards(group.maps, group.badge)}
+                        </div>
+                      </div>
+                    `
+                  )
+                  .join("")}
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
