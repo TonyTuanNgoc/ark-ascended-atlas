@@ -2052,20 +2052,24 @@ function renderResourcesHub() {
               data-action="items-library-search"
             />
           </label>
-          <label class="creature-library-toolbar__field items-library-toolbar__sort">
+          <div class="items-library-toolbar__sort-group">
             <span>Sort</span>
-            <select data-action="items-library-sort">
+            <div class="items-library-toolbar__sort-row">
               ${ITEM_LIBRARY_SORT_OPTIONS.map(
                 (option) => `
-                  <option value="${escapeAttribute(option.value)}" ${
-                    sort === option.value ? "selected" : ""
-                  }>
+                  <button
+                    type="button"
+                    class="chip chip--button ${sort === option.value ? "chip--active" : ""}"
+                    data-action="items-library-sort-option"
+                    data-value="${escapeAttribute(option.value)}"
+                    aria-pressed="${sort === option.value ? "true" : "false"}"
+                  >
                     ${escapeHtml(option.label)}
-                  </option>
+                  </button>
                 `
               ).join("")}
-            </select>
-          </label>
+            </div>
+          </div>
         </div>
       </div>
       <div class="map-data-table-wrap">
@@ -6222,6 +6226,15 @@ document.addEventListener("click", async (event) => {
     return;
   }
 
+  if (action === "items-library-sort-option") {
+    const nextSort = String(actionTarget.dataset.value || "name");
+    ui.itemsLibrarySort = ITEM_LIBRARY_SORT_OPTIONS.some((entry) => entry.value === nextSort)
+      ? nextSort
+      : "name";
+    render();
+    return;
+  }
+
   if (action === "export-state") {
     exportAtlasState();
     return;
@@ -6262,12 +6275,6 @@ document.addEventListener("change", async (event) => {
 
   if (mapFilterAction === "creature-method-type") {
     toggleCreatureMethodDetailField(event.target);
-    return;
-  }
-
-  if (mapFilterAction === "items-library-sort") {
-    ui.itemsLibrarySort = event.target.value || "name";
-    render();
     return;
   }
 
