@@ -321,9 +321,11 @@ function parseRoute() {
   const hash = window.location.hash.replace(/^#\/?/, "");
   if (!hash) return { type: "home", section: "home" };
 
-  const [segment, id] = hash.split("/");
+  const [routeSegment, rawAnchor] = hash.split("#");
+  const anchor = rawAnchor ? decodeURIComponent(rawAnchor) : "";
+  const [segment, id] = routeSegment.split("/");
   if (segment === "map" && id) {
-    return { type: "map", id };
+    return { type: "map", id, anchor: anchor || null };
   }
 
   const sections = [
@@ -341,10 +343,10 @@ function parseRoute() {
   ];
 
   if (sections.includes(segment)) {
-    return { type: "home", section: segment };
+    return { type: "home", section: segment, anchor: anchor || null };
   }
 
-  return { type: "home", section: "home" };
+  return { type: "home", section: "home", anchor: anchor || null };
 }
 
 function render() {
@@ -364,6 +366,11 @@ function render() {
       document
         .querySelector(`#section-${ui.route.section}`)
         ?.scrollIntoView({ behavior: "smooth", block: "start" });
+
+      if (ui.route.anchor) {
+        const anchor = document.querySelector(`#${CSS.escape(ui.route.anchor)}`);
+        anchor?.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
     }
   });
 }
@@ -725,6 +732,116 @@ function renderSectionShell(id, title, description, content) {
   `;
 }
 
+function getTopTameFoodItems(rawValue, limit = 3) {
+  const text = String(rawValue || "").trim();
+  if (!text) return [];
+
+  const splitItems = text
+    .split("/")
+    .flatMap((entry) => entry.split(";"))
+    .flatMap((entry) => entry.split(","))
+    .map((entry) => entry.trim())
+    .filter(Boolean)
+    .map((entry) => entry.replace(/\s+/g, " "));
+
+  const seen = new Set();
+  const items = [];
+
+  for (const item of splitItems) {
+    const key = item.toLowerCase();
+    if (seen.has(key)) continue;
+    seen.add(key);
+    items.push(item);
+    if (items.length >= limit) break;
+  }
+
+  return items;
+}
+
+function formatTopTameFood(rawValue, limit = 3) {
+  const foods = getTopTameFoodItems(rawValue, limit);
+  return foods.length ? foods.join(" / ") : "—";
+}
+
+function getResourceRowsFromState(maps) {
+  const resources = Array.isArray(state.resources) ? state.resources : [];
+  const rows = [];
+  const seen = new Set();
+
+  if (!maps.length) return rows;
+
+  const resourceById = new Map(resources.map((resource) => [resource.id, resource]));
+
+  maps.forEach((map) => {
+    const resourceIds =
+      Array.isArray(map.resourceIds) && map.resourceIds.length
+        ? map.resourceIds
+        : (Array.isArray(map.resourceRoutes)
+            ? map.resourceRoutes.map((route) =>
+                route.id || `${map.id}-${slugify(route.resource || route.name || "resource")}`
+              )
+            : []);
+
+    resourceIds.forEach((resourceId) => {
+      const sourceResource = resourceById.get(resourceId);
+      if (!sourceResource) {
+        return;
+      }
+
+      const rowKey = `${sourceResource.id}|${map.id}`;
+      if (seen.has(rowKey)) return;
+      seen.add(rowKey);
+
+      rows.push({
+        type: "Resource Route",
+        name: sourceResource.name || sourceResource.title || "Resource Route",
+        note: sourceResource.shortDescription || sourceResource.route || "",
+        tool: sourceResource.tool || sourceResource.resource || "",
+        risk: sourceResource.risk || "",
+        mapName: map.name || "Unknown map",
+        mapId: map.id,
+      });
+    });
+  });
+
+  return rows;
+}
+
+function getFoodRowsFromDinos() {
+  const foodRows = [];
+  const mapById = new Map((state.maps || []).map((map) => [map.id, map]));
+
+  (state.dinos || []).forEach((dino) => {
+    const foods = getTopTameFoodItems(dino.tameFood, 3);
+    if (!foods.length) return;
+
+    const linkedMapNames = Array.isArray(dino.linkedMaps)
+      ? dino.linkedMaps
+      : (state.maps || [])
+          .filter((map) => (map.tameIds || []).includes(dino.id))
+          .map((map) => map.name)
+          .filter(Boolean);
+
+    const dinoMapName =
+      linkedMapNames.length > 0
+        ? linkedMapNames.join(", ")
+        : (dino.mapId && mapById.get(dino.mapId)?.name) || "—";
+
+    foodRows.push({
+      type: "Food",
+      name: "Food",
+      note: formatTopTameFood(dino.tameFood, 3),
+      tool: dino.name,
+      risk: "—",
+      mapName: dinoMapName,
+      mapId: dino.mapId || "",
+      actionHref: "#/creatures#tame-food",
+    });
+  });
+
+  return foodRows;
+}
+
 function renderStoryRoute() {
   const canonicalOrder = [
     "the-island",
@@ -919,6 +1036,7 @@ function renderCreatureGallery() {
                     <th>Role</th>
                     <th>Stage</th>
                     <th>Taming</th>
+                    <th id="tame-food">Tame Food</th>
                     <th>Notes</th>
                   </tr>
                 </thead>
@@ -944,6 +1062,7 @@ function renderCreatureGallery() {
                         <td>${meta.role ? `<span class="chip chip--tone-${roleColor}">${escapeHtml(meta.role)}</span>` : "—"}</td>
                         <td>${meta.stage ? `<span class="chip chip--tone-${stageColor}">${escapeHtml(meta.stage)}</span>` : "—"}</td>
                         <td class="creature-table__taming">${meta.taming ? escapeHtml(meta.taming) : "—"}</td>
+                        <td class="creature-table__taming">${formatTopTameFood(dino.tameFood, 3)}</td>
                         <td class="creature-table__note">${meta.note ? escapeHtml(meta.note) : "—"}</td>
                       </tr>
                     `;
@@ -960,50 +1079,56 @@ function renderCreatureGallery() {
 
 function renderResourcesHub() {
   const maps = (state.maps || []).filter(Boolean);
-  const hasAny = maps.some((m) => (m.resourceRoutes || []).length > 0);
+  const resourceRows = [
+    ...getResourceRowsFromState(maps),
+    ...getFoodRowsFromDinos(),
+  ];
+  const hasAny = resourceRows.length > 0;
 
   const riskColor = { Low: "forest", Medium: "gold", High: "ember", Extreme: "violet" };
 
   const routeTable = hasAny
     ? `
       <div class="creature-atlas">
-        ${maps.map((map) => {
-          const routes = map.resourceRoutes || [];
-          if (!routes.length) return "";
-          return `
-            <div class="creature-map-block">
-              <div class="creature-map-block__header">
-                <h3>${escapeHtml(map.name)}</h3>
-                <span class="chip">${routes.length} routes</span>
-              </div>
-              <div class="map-data-table-wrap">
-                <table class="map-data-table creature-table">
-                  <thead>
-                    <tr>
-                      <th>Resource</th>
-                      <th>Route</th>
-                      <th>Tool / Mount</th>
-                      <th>Risk</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    ${routes.map((r) => {
-                      const tone = riskColor[r.risk] || "amber";
-                      return `
-                        <tr>
-                          <td class="creature-table__name">${escapeHtml(r.resource || "")}</td>
-                          <td class="creature-table__note">${escapeHtml(r.route || "")}</td>
-                          <td class="creature-table__taming">${escapeHtml(r.tool || "")}</td>
-                          <td><span class="chip chip--tone-${tone}">${escapeHtml(r.risk || "")}</span></td>
-                        </tr>
-                      `;
-                    }).join("")}
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          `;
-        }).join("")}
+        <div class="creature-map-block">
+          <div class="creature-map-block__header">
+            <h3>Resource Inventory</h3>
+            <span class="chip">${resourceRows.length} entries</span>
+          </div>
+          <div class="map-data-table-wrap">
+            <table class="map-data-table creature-table">
+              <thead>
+                <tr>
+                  <th>Category</th>
+                  <th>Resource / Item</th>
+                  <th>Route / Use</th>
+                  <th>Source</th>
+                  <th>Map</th>
+                  <th>Risk</th>
+                  <th>Details</th>
+                </tr>
+              </thead>
+              <tbody>
+                ${resourceRows
+                  .map((row) => {
+                    const tone = riskColor[row.risk] || "amber";
+                    return `
+                      <tr>
+                        <td>${escapeHtml(row.type)}</td>
+                        <td class="creature-table__name">${escapeHtml(row.name)}</td>
+                        <td class="creature-table__note">${escapeHtml(row.note || "")}</td>
+                        <td>${escapeHtml(row.tool || "")}</td>
+                        <td>${escapeHtml(row.mapName || "—")}</td>
+                        <td><span class="chip chip--tone-${tone}">${escapeHtml(row.risk || "")}</span></td>
+                        <td>${row.actionHref ? `<a class="text-link" href="${escapeAttribute(row.actionHref)}">Go to tame food</a>` : "—"}</td>
+                      </tr>
+                    `;
+                  })
+                  .join("")}
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
     `
     : renderEmptyState("No resource routes yet", "Add resource routes via the map editor.");
@@ -1541,6 +1666,7 @@ function renderMapSectionCreaturesModal(map, sectionDef, searchQuery) {
       entry.roleTags,
       entry.stages,
       entry.tameDifficulty,
+      entry.tameFood,
       entry.costPayoff,
       entry.transferValue,
       entry.bossRelevance,
@@ -1612,8 +1738,8 @@ function renderMapSectionCreaturesModal(map, sectionDef, searchQuery) {
                   })}</td>
                   <td>${escapeHtml(dino.name)}</td>
                   <td>${escapeHtml((dino.roleTags || []).join(", ") || "—")}</td>
-                  <td>${escapeHtml(dino.tameDifficulty || "—")}</td>
-                  <td>${escapeHtml(dino.tameFood || "—")}</td>
+                        <td>${escapeHtml(dino.tameDifficulty || "—")}</td>
+                        <td>${formatTopTameFood(dino.tameFood, 3)}</td>
                   <td>${escapeHtml(dino.tameMethod || "—")}</td>
                   <td>${escapeHtml(dino.timeToValue || "—")}</td>
                   <td>${escapeHtml(dino.bossRelevance || "—")}</td>
@@ -3185,6 +3311,12 @@ function renderAdminExtraFields(collectionKey, entity) {
         <input name="auxB" value="${escapeHtml((entity.stages || []).join(", "))}" placeholder="early, mid, endgame" />
       </label>
       <label>
+        Tame Food
+        <textarea name="tameFood" rows="2" placeholder="Cooked Prime Meat / Raw Prime Meat / Kibble">${escapeHtml(
+          entity.tameFood || ""
+        )}</textarea>
+      </label>
+      <label>
         Tame Difficulty / ROI
         <textarea name="dinoStats" rows="2" placeholder="tame difficulty, transfer value, boss relevance">${escapeHtml(
           `${entity.tameDifficulty || ""} / ${entity.timeToValue || ""} / ${
@@ -4378,6 +4510,7 @@ function buildEntityFromForm(formData) {
         name: title,
         roleTags: tags,
         stages: toList(auxB || existing.stages?.join(", ")),
+        tameFood: String(formData.get("tameFood") || existing.tameFood || ""),
         notes: shortDescription || existing.notes || "",
         mapId: auxA || existing.mapId || "",
         tameDifficulty: dinoStats.tameDifficulty,
