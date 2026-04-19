@@ -1,4 +1,13 @@
-import { DINO_PRACTICAL_DEFAULTS, ENTITY_TYPES } from "./data.js";
+import {
+  DINO_IMPORT_NAME_ALIASES,
+  DINO_PRACTICAL_DEFAULTS,
+  ENTITY_TYPES,
+} from "./data.js";
+import {
+  ASA_CREATURE_IMPORT_VERSION,
+  ASA_IMPORTED_CREATURES,
+  ASA_IMPORTED_MAP_CREATURE_IDS,
+} from "./asa-creature-roster.js";
 import {
   loadCloudAtlasData,
   removeAtlasEntityMediaFromCloud,
@@ -227,6 +236,62 @@ function normalizeDinoPracticalFields(dino = {}) {
     tameMethodType,
     tameMethodDetail,
     loot,
+  };
+}
+
+function getImportedCreatureLegacyEntry(importEntry, existingById, existingByName) {
+  const legacyName = DINO_IMPORT_NAME_ALIASES[importEntry.name];
+  return (
+    existingById.get(importEntry.id) ||
+    existingByName.get(importEntry.name) ||
+    (legacyName ? existingByName.get(legacyName) : null) ||
+    null
+  );
+}
+
+function syncImportedCreatureRoster(targetState) {
+  const existingDinos = Array.isArray(targetState.dinos) ? targetState.dinos : [];
+  const existingById = new Map(existingDinos.map((entry) => [entry.id, entry]));
+  const existingByName = new Map(existingDinos.map((entry) => [entry.name, entry]));
+
+  targetState.dinos = ASA_IMPORTED_CREATURES.map((entry) => {
+    const existing = getImportedCreatureLegacyEntry(entry, existingById, existingByName) || {};
+    const practical = normalizeDinoPracticalFields(existing);
+
+    return {
+      ...existing,
+      id: entry.id,
+      name: entry.name,
+      mapIds: Array.isArray(entry.mapIds) ? [...entry.mapIds] : [],
+      media:
+        existing.media && typeof existing.media === "object"
+          ? existing.media
+          : {
+              src: "",
+              type: "empty",
+              alt: `${entry.name} icon`,
+              tone: "amber",
+            },
+      tameFood: practical.tameFood,
+      tameMethod: practical.tameMethod,
+      tameMethodType: practical.tameMethodType,
+      tameMethodDetail: practical.tameMethodDetail,
+      loot: practical.loot,
+    };
+  });
+
+  targetState.maps = (Array.isArray(targetState.maps) ? targetState.maps : []).map((map) => {
+    const importedIds = ASA_IMPORTED_MAP_CREATURE_IDS[map.id];
+    if (!importedIds) return map;
+    return {
+      ...map,
+      tameIds: [...importedIds],
+    };
+  });
+
+  targetState.meta = {
+    ...(targetState.meta || {}),
+    creatureImportVersion: ASA_CREATURE_IMPORT_VERSION,
   };
 }
 
@@ -4852,6 +4917,11 @@ function normalizeRuntimeAtlasState(payload) {
   state.serverSettings = asArray(state.serverSettings);
 
   let changed = false;
+
+  if (state.meta.creatureImportVersion !== ASA_CREATURE_IMPORT_VERSION) {
+    syncImportedCreatureRoster(state);
+    changed = true;
+  }
 
   state.maps = (state.maps || []).map((map) => {
     const next = { ...map };

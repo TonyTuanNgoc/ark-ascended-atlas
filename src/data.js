@@ -1,3 +1,9 @@
+import {
+  ASA_CREATURE_IMPORT_VERSION,
+  ASA_IMPORTED_CREATURES,
+  ASA_IMPORTED_MAP_CREATURE_IDS,
+} from "./asa-creature-roster.js";
+
 const blankMedia = (label, tone) => ({
   src: "",
   type: "empty",
@@ -34,6 +40,70 @@ export const DINO_PRACTICAL_DEFAULTS = {
   tameMethodType: "empty",
   tameMethodDetail: "",
 };
+
+export const DINO_IMPORT_NAME_ALIASES = {
+  Angler: "Anglerfish",
+  Spinosaurus: "Spino",
+  Therizinosaurus: "Therizinosaur",
+};
+
+function applyImportedCreatureRoster(data) {
+  const existingById = new Map((data.dinos || []).map((entry) => [entry.id, entry]));
+  const existingByName = new Map((data.dinos || []).map((entry) => [entry.name, entry]));
+
+  data.dinos = ASA_IMPORTED_CREATURES.map((entry) => {
+    const legacyName = DINO_IMPORT_NAME_ALIASES[entry.name];
+    const existing =
+      existingById.get(entry.id) ||
+      existingByName.get(entry.name) ||
+      (legacyName ? existingByName.get(legacyName) : null) ||
+      {};
+    const tameMethodType =
+      existing.tameMethodType ||
+      (existing.tameMethodDetail
+        ? "special"
+        : existing.tameMethod
+        ? "simple"
+        : DINO_PRACTICAL_DEFAULTS.tameMethodType);
+
+    return {
+      ...existing,
+      id: entry.id,
+      name: entry.name,
+      media:
+        existing.media && typeof existing.media === "object"
+          ? existing.media
+          : blankMedia(`${entry.name} icon`, "amber"),
+      tameFood: typeof existing.tameFood === "string" ? existing.tameFood : "",
+      tameMethod:
+        typeof existing.tameMethod === "string"
+          ? existing.tameMethod
+          : DINO_PRACTICAL_DEFAULTS.tameMethod,
+      tameMethodType,
+      tameMethodDetail:
+        typeof existing.tameMethodDetail === "string"
+          ? existing.tameMethodDetail
+          : DINO_PRACTICAL_DEFAULTS.tameMethodDetail,
+      loot: typeof existing.loot === "string" ? existing.loot : DINO_PRACTICAL_DEFAULTS.loot,
+    };
+  });
+
+  data.maps = (data.maps || []).map((map) => {
+    const importedIds = ASA_IMPORTED_MAP_CREATURE_IDS[map.id];
+    if (!importedIds) return map;
+    return {
+      ...map,
+      tameIds: [...importedIds],
+    };
+  });
+
+  data.meta = {
+    ...(data.meta || {}),
+    creatureImportVersion: ASA_CREATURE_IMPORT_VERSION,
+  };
+
+  return data;
+}
 
 export const defaultData = {
   meta: {
@@ -1430,3 +1500,5 @@ export const defaultData = {
     },
   ],
 };
+
+applyImportedCreatureRoster(defaultData);
