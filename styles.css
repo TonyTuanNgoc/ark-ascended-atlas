@@ -554,6 +554,10 @@ textarea {
   border: 1px solid rgba(188, 225, 255, 0.16);
   background: linear-gradient(165deg, rgba(7, 10, 16, 0.7), rgba(7, 10, 16, 0.42));
   color: #dbe9ff;
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 2;
+  pointer-events: auto;
   backdrop-filter: blur(12px);
   font-family: var(--display);
   transition:
@@ -578,11 +582,13 @@ textarea {
   color: rgba(229, 243, 255, 0.94);
   background: linear-gradient(125deg, rgba(20, 23, 28, 0.92), rgba(17, 19, 24, 0.82));
   backdrop-filter: blur(4px);
+  pointer-events: none;
 }
 
 .hero-map-tile__media {
   position: relative;
   height: 10rem;
+  pointer-events: none;
 }
 
 .hero-map-tile__media--empty {
@@ -599,6 +605,7 @@ textarea {
 
 .hero-map-tile .media-slot {
   border-bottom: 0;
+  pointer-events: none;
 }
 
 .hero-map-tile .media-slot__actions {
@@ -623,6 +630,7 @@ textarea {
   padding: 0.9rem 1rem 1rem;
   font-size: 1rem;
   line-height: 1.15;
+  pointer-events: none;
 }
 
 .hero-map-tile:hover {

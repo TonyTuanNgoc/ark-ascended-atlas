@@ -1268,7 +1268,12 @@ function renderHeroMapCards(maps, badgeLabel = "") {
   return (maps || [])
     .map(
       (map) => `
-        <a class="hero-map-tile" href="#/map/${escapeHtml(map.id)}">
+        <a
+          class="hero-map-tile"
+          href="#/map/${escapeHtml(map.id)}"
+          data-action="hero-map-route"
+          data-href="#/map/${escapeAttribute(map.id)}"
+        >
           ${renderHeroMapCardMedia(map)}
           ${
             badgeLabel
@@ -6186,6 +6191,20 @@ document.addEventListener("click", async (event) => {
   }
 
   if (action === "hero-module-route") {
+    const href = String(actionTarget.dataset.href || actionTarget.getAttribute("href") || "#/").trim();
+    if (href.startsWith("#")) {
+      event.preventDefault();
+      if (window.location.hash !== href) {
+        window.location.hash = href;
+      } else {
+        ui.route = parseRoute();
+        render();
+      }
+    }
+    return;
+  }
+
+  if (action === "hero-map-route") {
     const href = String(actionTarget.dataset.href || actionTarget.getAttribute("href") || "#/").trim();
     if (href.startsWith("#")) {
       event.preventDefault();
