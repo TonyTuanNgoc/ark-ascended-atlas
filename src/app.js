@@ -1686,75 +1686,27 @@ function renderMapSectionCreaturesModal(map, sectionDef, searchQuery) {
       <table class="map-data-table">
         <thead>
           <tr>
-            <th>Image</th>
+            <th>Avatar</th>
             <th>Name</th>
-            <th>Role</th>
-            <th>Tame Difficulty</th>
             <th>Tame Food</th>
             <th>Tame Method</th>
-            <th>Time to Value</th>
-            <th>BOSS Relevance</th>
-            <th>Actions</th>
           </tr>
         </thead>
         <tbody>
           ${filteredEntries
-                .map((dino) => {
-          const isLinked = dino.__isLinked;
-                  const tags = [
-                    ...toArray(dino.roleTags),
-                    ...toArray(dino.stages).map(capitalize),
-                  ].filter(Boolean);
-                  return `
+            .map((dino) => {
+              return `
                 <tr>
                   <td>${renderMediaSlot("dinos", dino, {
-                    className: "map-data-table__thumb",
-                    label: "Creature image",
+                    className: "map-data-table__thumb map-data-table__thumb--editable",
+                    label: "Creature avatar",
                     aspect: "square",
-                    showActions: false,
+                    emptyLabel: "Upload or Add URL",
+                    showActions: true,
                   })}</td>
                   <td>${escapeHtml(dino.name)}</td>
-                  <td>${escapeHtml(toTextList(dino.roleTags) || "—")}</td>
-                        <td>${escapeHtml(dino.tameDifficulty || "—")}</td>
-                        <td>${formatTopTameFood(dino.tameFood, 3)}</td>
+                  <td>${formatTopTameFood(dino.tameFood, 3)}</td>
                   <td>${escapeHtml(dino.tameMethod || "—")}</td>
-                  <td>${escapeHtml(dino.timeToValue || "—")}</td>
-                  <td>${escapeHtml(dino.bossRelevance || "—")}</td>
-                  <td class="map-data-table__actions">
-                    <button
-                      class="ghost-button ghost-button--small"
-                      type="button"
-                      data-action="open-map-entity"
-                      data-collection="dinos"
-                      data-entity-id="${escapeHtml(dino.id)}"
-                    >
-                      View
-                    </button>
-                    ${ui.editMode
-                      ? `<button
-                          class="ghost-button ghost-button--small"
-                          type="button"
-                          data-action="${isLinked ? "unlink-map-entity" : "confirm-map-link"}"
-                          data-map-id="${escapeHtml(map.id)}"
-                          data-collection="dinos"
-                          data-entity-id="${escapeHtml(dino.id)}"
-                          data-link-field="tameIds"
-                        >
-                          ${isLinked ? "Unlink" : "Link"}
-                        </button>`
-                      : ""}
-                    ${ui.editMode
-                      ? `<button
-                          class="ghost-button ghost-button--small"
-                          type="button"
-                          data-action="quick-edit"
-                          data-collection="dinos"
-                          data-entity-id="${escapeHtml(dino.id)}"
-                        >
-                          Edit
-                        </button>`
-                      : ""}
-                  </td>
                 </tr>
               `;
             })

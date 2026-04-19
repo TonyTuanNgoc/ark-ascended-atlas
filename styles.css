@@ -1155,7 +1155,7 @@ textarea {
 .map-data-table {
   width: 100%;
   border-collapse: collapse;
-  min-width: 860px;
+  min-width: 620px;
   background: transparent;
 }
 
@@ -1196,6 +1196,42 @@ textarea {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.map-data-table__thumb--editable {
+  width: 104px;
+  height: 104px;
+  min-width: 104px;
+  border-radius: 16px;
+}
+
+.map-data-table__thumb--editable .media-slot__placeholder {
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.map-data-table__thumb--editable .media-slot__placeholder span {
+  font-size: 0.78rem;
+}
+
+.map-data-table__thumb--editable .media-slot__placeholder small {
+  display: block;
+  margin-top: 0.24rem;
+  font-size: 0.58rem;
+  line-height: 1.2;
+}
+
+.map-data-table__thumb--editable .media-slot__actions {
+  inset: auto 0.32rem 0.32rem;
+  width: calc(100% - 0.64rem);
+  justify-content: center;
+  gap: 0.28rem;
+}
+
+.map-data-table__thumb--editable .media-slot__actions .ghost-button--small {
+  min-height: 1.55rem;
+  padding: 0.22rem 0.42rem;
+  font-size: 0.62rem;
 }
 
 .map-section-gallery-grid {
