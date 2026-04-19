@@ -181,12 +181,48 @@ const CREATURE_STAGE_FILTERS = ["early", "mid", "endgame"];
 const CREATURE_ROLE_FILTERS = ["utility", "boss", "cave", "flyer", "transport", "breeder"];
 const CREATURE_DIFFICULTY_FILTERS = ["low", "medium", "high"];
 const DINO_TAME_METHOD_TYPES = ["empty", "simple", "special"];
-const ITEM_LIBRARY_SORT_OPTIONS = [
-  { value: "name", label: "Name" },
-  { value: "group", label: "Official Group" },
-  { value: "category", label: "Official Category" },
-  { value: "subcategory", label: "Official Subcategory" },
-  { value: "dlc", label: "DLC" },
+const ITEM_LIBRARY_FILTER_LABELS = {
+  Consumables: "Food",
+  Resources: "Resources",
+  Structures: "Structures",
+  Weapons: "Weapons",
+  Armor: "Armor",
+  Saddles: "Saddles",
+  Eggs: "Eggs",
+  Artifacts: "Artifacts",
+  Trophies: "Trophies",
+  Ammunition: "Ammo",
+  Tools: "Tools",
+  Recipes: "Recipes",
+  Seeds: "Seeds",
+  Farming: "Farming",
+  Skins: "Skins",
+  "Chibi-pets": "Chibi Pets",
+  Coloring: "Dye",
+  Attachments: "Attachments",
+  Vehicles: "Vehicles",
+};
+const ITEM_LIBRARY_FILTER_ORDER = [
+  "all",
+  "Consumables",
+  "Resources",
+  "Structures",
+  "Weapons",
+  "Armor",
+  "Saddles",
+  "Eggs",
+  "Artifacts",
+  "Trophies",
+  "Ammunition",
+  "Tools",
+  "Recipes",
+  "Seeds",
+  "Farming",
+  "Skins",
+  "Chibi-pets",
+  "Coloring",
+  "Attachments",
+  "Vehicles",
 ];
 const HOME_SECTION_LINKS = [
   { id: "home", label: "Home", href: "#/" },
@@ -940,7 +976,7 @@ const ui = {
   creatureEditorFocus: "",
   creatureLibrarySearch: "",
   itemsLibrarySearch: "",
-  itemsLibrarySort: "name",
+  itemsLibraryFilter: "all",
   route: parseRoute(),
   activeMapSection: null,
   activeMapEntity: null,
@@ -2206,6 +2242,31 @@ function compareLibraryText(a, b) {
   });
 }
 
+function getItemLibraryFilterOptions(items = []) {
+  const available = new Set(
+    items
+      .map((item) => String(item.officialIdCategory || item.officialListGroup || "").trim())
+      .filter(Boolean)
+  );
+
+  const baseOptions = ITEM_LIBRARY_FILTER_ORDER.filter(
+    (value) => value === "all" || available.has(value)
+  ).map((value) => ({
+    value,
+    label: value === "all" ? "All" : ITEM_LIBRARY_FILTER_LABELS[value] || value,
+  }));
+
+  const extraOptions = [...available]
+    .filter((value) => !ITEM_LIBRARY_FILTER_ORDER.includes(value))
+    .sort(compareLibraryText)
+    .map((value) => ({
+      value,
+      label: ITEM_LIBRARY_FILTER_LABELS[value] || value,
+    }));
+
+  return [...baseOptions, ...extraOptions];
+}
+
 function renderResourcesHub() {
   ensureItemRosterForRender();
 
@@ -2221,11 +2282,16 @@ function renderResourcesHub() {
   }
 
   const query = String(ui.itemsLibrarySearch || "").trim().toLowerCase();
-  const sort = ITEM_LIBRARY_SORT_OPTIONS.some((entry) => entry.value === ui.itemsLibrarySort)
-    ? ui.itemsLibrarySort
-    : "name";
+  const filterOptions = getItemLibraryFilterOptions(items);
+  const categoryFilter = filterOptions.some((entry) => entry.value === ui.itemsLibraryFilter)
+    ? ui.itemsLibraryFilter
+    : "all";
 
   const filtered = items.filter((item) => {
+    if (categoryFilter !== "all" && item.officialIdCategory !== categoryFilter) {
+      return false;
+    }
+
     if (!query) return true;
 
     const searchable = [
@@ -2245,27 +2311,14 @@ function renderResourcesHub() {
   });
 
   filtered.sort((left, right) => {
-    switch (sort) {
-      case "group":
-        return (
-          compareLibraryText(left.officialListGroup, right.officialListGroup) ||
-          compareLibraryText(left.name, right.name)
-        );
-      case "category":
-        return (
-          compareLibraryText(left.officialIdCategory, right.officialIdCategory) ||
-          compareLibraryText(left.name, right.name)
-        );
-      case "subcategory":
-        return (
-          compareLibraryText(left.officialSubcategory, right.officialSubcategory) ||
-          compareLibraryText(left.name, right.name)
-        );
-      case "dlc":
-        return compareLibraryText(left.dlc, right.dlc) || compareLibraryText(left.name, right.name);
-      default:
-        return compareLibraryText(left.name, right.name);
+    if (categoryFilter === "all") {
+      return (
+        compareLibraryText(left.officialIdCategory, right.officialIdCategory) ||
+        compareLibraryText(left.name, right.name)
+      );
     }
+
+    return compareLibraryText(left.name, right.name);
   });
 
   return `
@@ -2285,17 +2338,17 @@ function renderResourcesHub() {
               data-action="items-library-search"
             />
           </label>
-          <div class="items-library-toolbar__sort-group">
-            <span>Sort</span>
-            <div class="items-library-toolbar__sort-row">
-              ${ITEM_LIBRARY_SORT_OPTIONS.map(
+          <div class="items-library-toolbar__filter-group">
+            <span>Category</span>
+            <div class="items-library-toolbar__filter-row">
+              ${filterOptions.map(
                 (option) => `
                   <button
                     type="button"
-                    class="chip chip--button ${sort === option.value ? "chip--active" : ""}"
-                    data-action="items-library-sort-option"
+                    class="chip chip--button ${categoryFilter === option.value ? "chip--active" : ""}"
+                    data-action="items-library-filter-option"
                     data-value="${escapeAttribute(option.value)}"
-                    aria-pressed="${sort === option.value ? "true" : "false"}"
+                    aria-pressed="${categoryFilter === option.value ? "true" : "false"}"
                   >
                     ${escapeHtml(option.label)}
                   </button>
@@ -6386,6 +6439,7 @@ document.addEventListener("click", async (event) => {
   if (action === "open-item-library-from-food") {
     const query = String(actionTarget.dataset.query || "").trim();
     ui.itemsLibrarySearch = query;
+    ui.itemsLibraryFilter = "all";
     event.preventDefault();
     if (window.location.hash !== "#/resources") {
       window.location.hash = "#/resources";
@@ -6535,11 +6589,19 @@ document.addEventListener("click", async (event) => {
     return;
   }
 
-  if (action === "items-library-sort-option") {
-    const nextSort = String(actionTarget.dataset.value || "name");
-    ui.itemsLibrarySort = ITEM_LIBRARY_SORT_OPTIONS.some((entry) => entry.value === nextSort)
-      ? nextSort
-      : "name";
+  if (action === "items-library-filter-option") {
+    const filterOptions = getItemLibraryFilterOptions(
+      toArray(state.items)
+        .filter(Boolean)
+        .map((item) => ({
+          ...item,
+          ...normalizeItemFields(item),
+        }))
+    );
+    const nextFilter = String(actionTarget.dataset.value || "all");
+    ui.itemsLibraryFilter = filterOptions.some((entry) => entry.value === nextFilter)
+      ? nextFilter
+      : "all";
     render();
     return;
   }
