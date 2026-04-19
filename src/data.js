@@ -3,6 +3,10 @@ import {
   ASA_IMPORTED_CREATURES,
   ASA_IMPORTED_MAP_CREATURE_IDS,
 } from "./asa-creature-roster.js";
+import {
+  ASA_IMPORTED_ITEMS,
+  ASA_ITEM_IMPORT_VERSION,
+} from "./asa-items-roster.js";
 
 const blankMedia = (label, tone) => ({
   src: "",
@@ -41,10 +45,30 @@ export const DINO_PRACTICAL_DEFAULTS = {
   tameMethodDetail: "",
 };
 
+export const ITEM_FIELD_DEFAULTS = {
+  officialListGroup: "",
+  officialIdCategory: "",
+  officialSubcategory: "",
+  dlc: "",
+  isLiveASA: false,
+  isObtainable: false,
+  notes: "",
+  practicalNote: "",
+  relatedCreatureIds: [],
+  relatedBossIds: [],
+  relatedMapIds: [],
+};
+
 export const DINO_IMPORT_NAME_ALIASES = {
   Angler: "Anglerfish",
   Spinosaurus: "Spino",
   Therizinosaurus: "Therizinosaur",
+};
+
+export const ITEM_IMPORT_NAME_ALIASES = {
+  "Empty Cryopod": "Cryopod",
+  "Pump-Action Shotgun": "Pump Shotgun",
+  "Sweet Vegetable Cake": "Sweet Veggie Cake",
 };
 
 function applyImportedCreatureRoster(data) {
@@ -119,6 +143,7 @@ export const defaultData = {
         ownerUid: "",
       },
     },
+    itemImportVersion: ASA_ITEM_IMPORT_VERSION,
     heroActions: [
       { label: "Khám phá thế giới", href: "#/maps" },
       { label: "Story Route", href: "#/story" },
@@ -1306,15 +1331,7 @@ export const defaultData = {
     { id: "tribute-valg-pack", name: "Valguero Tribute Pack", sourceCreature: "Mixed tribute set", sourceMethod: "Use this slot to record your own batch route.", where: "Valguero", estimate: "Custom", media: blankMedia("Valguero tribute pack", "forest") },
     { id: "tribute-alpha-carnivore-pack", name: "Alpha Carnivore Pack", sourceCreature: "Mixed alpha carnivores", sourceMethod: "Aggregate while running endgame patrols.", where: "Extinction / transferred routes", estimate: "High", media: blankMedia("Alpha carnivore pack", "ember") },
   ],
-  items: [
-    { id: "item-shotgun", name: "Pump Shotgun", tags: ["Gear", "Boss Prep"], shortDescription: "The safest universal emergency tool for caves and boss recovery.", relatedIds: ["rockwell", "overseer"], media: blankMedia("Pump Shotgun", "steel") },
-    { id: "item-medbrew", name: "Medical Brew", tags: ["Consumable", "Boss Prep"], shortDescription: "Never enter serious arenas without a large reserve.", relatedIds: ["broodmother", "dragon", "overseer", "rockwell"], media: blankMedia("Medical Brew", "ember") },
-    { id: "item-veggie-cake", name: "Sweet Veggie Cake", tags: ["Consumable", "Boss Prep"], shortDescription: "Turns Therizino lines into dragon-ready survivors.", relatedIds: ["dragon", "rag-arena", "valg-arena"], media: blankMedia("Sweet Veggie Cake", "gold") },
-    { id: "item-cryo", name: "Cryopod", tags: ["Utility", "Transfer"], shortDescription: "Makes inter-map logistics sane and keeps the run moving.", relatedIds: ["the-island", "scorched-earth", "extinction"], media: blankMedia("Cryopod", "teal") },
-    { id: "item-haz", name: "Hazard Suit", tags: ["Armor", "Aberration"], shortDescription: "The gate between sightseeing and surviving on Aberration.", relatedIds: ["aberration", "rockwell"], media: blankMedia("Hazard Suit", "violet") },
-    { id: "item-gasmask", name: "Gas Mask", tags: ["Armor", "Caves"], shortDescription: "Swamp and toxic cave comfort tool.", relatedIds: ["artifact-immune", "artifact-strong"], media: blankMedia("Gas Mask", "shadow") },
-    { id: "item-industrial-forge", name: "Industrial Forge", tags: ["Crafting", "Economy"], shortDescription: "The moment your solo run stops feeling poor.", relatedIds: ["the-island", "ragnarok", "extinction"], media: blankMedia("Industrial Forge", "ember") },
-  ],
+  items: ASA_IMPORTED_ITEMS,
   baseSpots: [
     { id: "island-hidden-lake", mapId: "the-island", title: "Hidden Lake Main Base", type: "Main Base", shortDescription: "Safe, scenic, and easy to scale into a breeding capital.", tags: ["Water", "Breeding", "Safe"], relatedIds: ["the-island", "argy"], media: blankMedia("Hidden Lake base spot", "emerald") },
     { id: "island-redwoods-forge", mapId: "the-island", title: "Redwoods Forge Shelf", type: "Crafting Base", shortDescription: "Closer to mountain circuits and industrial loops.", tags: ["Forge", "Metal", "Risk"], relatedIds: ["the-island", "anky"], media: blankMedia("Redwoods forge shelf", "forest") },

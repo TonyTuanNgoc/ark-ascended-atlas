@@ -963,6 +963,11 @@ textarea {
   gap: 1rem;
 }
 
+.items-library-shell {
+  display: grid;
+  gap: 1rem;
+}
+
 .creature-library-shell__header {
   align-items: end;
 }
@@ -978,6 +983,17 @@ textarea {
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: rgba(180, 210, 255, 0.6);
+}
+
+.items-library-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: flex-end;
+}
+
+.items-library-toolbar__sort {
+  min-width: min(100%, 14rem);
 }
 
 .creature-map-block {
@@ -1015,6 +1031,19 @@ textarea {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.items-library-table td {
+  vertical-align: middle;
+}
+
+.items-library-table__thumb {
+  width: 40px;
+  height: 40px;
+}
+
+.items-library-table__name-cell {
+  min-width: 14rem;
 }
 
 .creature-table__avatar-placeholder {

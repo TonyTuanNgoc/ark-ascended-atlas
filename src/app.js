@@ -2,12 +2,18 @@ import {
   DINO_IMPORT_NAME_ALIASES,
   DINO_PRACTICAL_DEFAULTS,
   ENTITY_TYPES,
+  ITEM_FIELD_DEFAULTS,
+  ITEM_IMPORT_NAME_ALIASES,
 } from "./data.js";
 import {
   ASA_CREATURE_IMPORT_VERSION,
   ASA_IMPORTED_CREATURES,
   ASA_IMPORTED_MAP_CREATURE_IDS,
 } from "./asa-creature-roster.js";
+import {
+  ASA_IMPORTED_ITEMS,
+  ASA_ITEM_IMPORT_VERSION,
+} from "./asa-items-roster.js";
 import {
   loadCloudAtlasData,
   removeAtlasEntityMediaFromCloud,
@@ -172,6 +178,13 @@ const CREATURE_STAGE_FILTERS = ["early", "mid", "endgame"];
 const CREATURE_ROLE_FILTERS = ["utility", "boss", "cave", "flyer", "transport", "breeder"];
 const CREATURE_DIFFICULTY_FILTERS = ["low", "medium", "high"];
 const DINO_TAME_METHOD_TYPES = ["empty", "simple", "special"];
+const ITEM_LIBRARY_SORT_OPTIONS = [
+  { value: "name", label: "Name" },
+  { value: "group", label: "Official Group" },
+  { value: "category", label: "Official Category" },
+  { value: "subcategory", label: "Official Subcategory" },
+  { value: "dlc", label: "DLC" },
+];
 
 const toArray = (value) => (Array.isArray(value) ? value : []);
 const toArrayByObject = (value) =>
@@ -239,8 +252,55 @@ function normalizeDinoPracticalFields(dino = {}) {
   };
 }
 
+function normalizeItemFields(item = {}) {
+  const officialListGroup = String(
+    item.officialListGroup || ITEM_FIELD_DEFAULTS.officialListGroup || ""
+  ).trim();
+  const officialIdCategory = String(
+    item.officialIdCategory || officialListGroup || ITEM_FIELD_DEFAULTS.officialIdCategory || ""
+  ).trim();
+  const officialSubcategory = String(
+    item.officialSubcategory || ITEM_FIELD_DEFAULTS.officialSubcategory || ""
+  ).trim();
+  const dlc = String(item.dlc || ITEM_FIELD_DEFAULTS.dlc || "").trim();
+  const notes = String(item.notes || ITEM_FIELD_DEFAULTS.notes || "").trim();
+  const practicalNote = String(
+    item.practicalNote || item.shortDescription || ITEM_FIELD_DEFAULTS.practicalNote || ""
+  ).trim();
+
+  return {
+    officialListGroup,
+    officialIdCategory,
+    officialSubcategory,
+    dlc,
+    isLiveASA:
+      item.isLiveASA === true ||
+      String(item.isLiveASA || ITEM_FIELD_DEFAULTS.isLiveASA || "").toLowerCase() === "true",
+    isObtainable:
+      item.isObtainable === true ||
+      String(item.isObtainable ?? ITEM_FIELD_DEFAULTS.isObtainable).toLowerCase() === "true",
+    notes,
+    practicalNote,
+    relatedCreatureIds: toTextArray(
+      item.relatedCreatureIds ?? ITEM_FIELD_DEFAULTS.relatedCreatureIds
+    ),
+    relatedBossIds: toTextArray(item.relatedBossIds ?? ITEM_FIELD_DEFAULTS.relatedBossIds),
+    relatedMapIds: toTextArray(item.relatedMapIds ?? ITEM_FIELD_DEFAULTS.relatedMapIds),
+  };
+}
+
 function getImportedCreatureLegacyEntry(importEntry, existingById, existingByName) {
   const legacyName = DINO_IMPORT_NAME_ALIASES[importEntry.name];
+  return (
+    existingById.get(importEntry.id) ||
+    existingByName.get(importEntry.name) ||
+    (legacyName ? existingByName.get(legacyName) : null) ||
+    null
+  );
+}
+
+function getImportedItemLegacyEntry(importEntry, existingById, existingByName) {
+  const legacyName = ITEM_IMPORT_NAME_ALIASES[importEntry.name];
   return (
     existingById.get(importEntry.id) ||
     existingByName.get(importEntry.name) ||
@@ -292,6 +352,47 @@ function syncImportedCreatureRoster(targetState) {
   targetState.meta = {
     ...(targetState.meta || {}),
     creatureImportVersion: ASA_CREATURE_IMPORT_VERSION,
+  };
+}
+
+function syncImportedItemRoster(targetState) {
+  const existingItems = Array.isArray(targetState.items) ? targetState.items : [];
+  const existingById = new Map(existingItems.map((entry) => [entry.id, entry]));
+  const existingByName = new Map(existingItems.map((entry) => [entry.name, entry]));
+
+  targetState.items = ASA_IMPORTED_ITEMS.map((entry) => {
+    const existing = getImportedItemLegacyEntry(entry, existingById, existingByName) || {};
+    const normalized = normalizeItemFields(existing);
+
+    return {
+      ...existing,
+      ...entry,
+      officialListGroup: entry.officialListGroup || normalized.officialListGroup,
+      officialIdCategory: entry.officialIdCategory || normalized.officialIdCategory,
+      officialSubcategory: entry.officialSubcategory || normalized.officialSubcategory,
+      dlc: entry.dlc || normalized.dlc,
+      isLiveASA: entry.isLiveASA ?? normalized.isLiveASA,
+      isObtainable: entry.isObtainable ?? normalized.isObtainable,
+      media:
+        existing.media && typeof existing.media === "object"
+          ? existing.media
+          : entry.media || {
+              src: "",
+              type: "empty",
+              alt: `${entry.name} icon`,
+              tone: "bronze",
+            },
+      notes: normalized.notes,
+      practicalNote: normalized.practicalNote,
+      relatedCreatureIds: normalized.relatedCreatureIds,
+      relatedBossIds: normalized.relatedBossIds,
+      relatedMapIds: normalized.relatedMapIds,
+    };
+  });
+
+  targetState.meta = {
+    ...(targetState.meta || {}),
+    itemImportVersion: ASA_ITEM_IMPORT_VERSION,
   };
 }
 
@@ -754,6 +855,8 @@ const ui = {
   activeCreatureEditorId: null,
   creatureEditorFocus: "",
   creatureLibrarySearch: "",
+  itemsLibrarySearch: "",
+  itemsLibrarySort: "name",
   route: parseRoute(),
   activeMapSection: null,
   activeMapEntity: null,
@@ -921,7 +1024,7 @@ function renderHero() {
   const modules = [
     { key: "maps", label: "Map", state: "active" },
     { key: "creatures", label: "Creatures", state: "planned" },
-    { key: "resources", label: "Resources", state: "planned" },
+    { key: "resources", label: "Items", state: "planned" },
   ];
 
   return `
@@ -1038,7 +1141,10 @@ function renderHomeSection(section) {
     bosses: { title: "Boss Planner", description: "Boss capsules that stay execution-ready." },
     tames: { title: "Tame Planner", description: "Dino lineup by role and planning stage." },
     creatures: { title: "Creatures", description: "Practical creature library with tame food, tame method, loot, and note-ready editing." },
-    resources: { title: "Resources", description: "Artifact, tribute and utility resources connected through links." },
+    resources: {
+      title: "Items Library",
+      description: "Unified official ASA items table with preserved group, category, subcategory and DLC metadata.",
+    },
     settings: { title: "Server Settings", description: "Route modifiers and server strategy defaults." },
     knowledge: {
       title: "Ancient Records",
@@ -1207,7 +1313,7 @@ function renderKnowledgeArticleCard(article) {
         .join("")}
       ${linkedMaps.length ? `<div class="knowledge-article__links">${linkedMaps.map((entry) => `<a class="chip chip--button" href="#/map/${escapeHtml(entry.id)}">Map: ${escapeHtml(entry.name)}</a>`).join("")}</div>` : ""}
       ${linkedCreatures.length ? `<div class="knowledge-article__links"><span class="knowledge-article__link-label">Creatures:</span>${linkedCreatures.map((creature) => `<a class="chip chip--button" href="#/maps">${escapeHtml(creature.name)}</a>`).join("")}</div>` : ""}
-      ${linkedItems.length ? `<div class="knowledge-article__links"><span class="knowledge-article__link-label">Items:</span>${linkedItems.map((item) => `<a class="chip chip--button" href="#/tames">${escapeHtml(item.name || item.title)}</a>`).join("")}</div>` : ""}
+      ${linkedItems.length ? `<div class="knowledge-article__links"><span class="knowledge-article__link-label">Items:</span>${linkedItems.map((item) => `<a class="chip chip--button" href="#/resources">${escapeHtml(item.name || item.title)}</a>`).join("")}</div>` : ""}
       ${linkedPatches.length ? `<div class="knowledge-article__links"><span class="knowledge-article__link-label">Patch:</span>${linkedPatches.map((patch) => `<span class="chip">${escapeHtml(patch.version || patch.title || "Patch")}</span>`).join("")}</div>` : ""}
       ${linkedDlcs.length ? `<div class="knowledge-article__links"><span class="knowledge-article__link-label">DLC:</span>${linkedDlcs.map((entry) => `<span class="chip">${escapeHtml(entry.title || entry.name)}</span>`).join("")}</div>` : ""}
       ${linkedGallery.length ? `<div class="knowledge-article__links"><span class="knowledge-article__link-label">Gallery:</span>${linkedGallery.map((mediaItem) => `<span class="chip">${escapeHtml(mediaItem.name || mediaItem.title || mediaItem.type)}</span>`).join("")}</div>` : ""}
@@ -1750,63 +1856,160 @@ function renderCreatureLibraryEditorRow(dino, practical) {
   `;
 }
 
+function compareLibraryText(a, b) {
+  return String(a || "").localeCompare(String(b || ""), undefined, {
+    sensitivity: "base",
+    numeric: true,
+  });
+}
+
 function renderResourcesHub() {
-  const maps = toArray(state.maps).filter(Boolean);
-  const resourceRows = [
-    ...getResourceRowsFromState(maps),
-    ...getFoodRowsFromDinos(),
-  ];
-  const hasAny = resourceRows.length > 0;
+  const items = toArray(state.items)
+    .filter(Boolean)
+    .map((item) => ({
+      ...item,
+      ...normalizeItemFields(item),
+    }));
 
-  const riskColor = { Low: "forest", Medium: "gold", High: "ember", Extreme: "violet" };
+  if (!items.length) {
+    return renderEmptyState("No items yet", "Import the unified ASA items collection to populate the library.");
+  }
 
-  const routeTable = hasAny
-    ? `
-      <div class="creature-atlas">
-        <div class="creature-map-block">
-          <div class="creature-map-block__header">
-            <h3>Resource Inventory</h3>
-            <span class="chip">${resourceRows.length} entries</span>
-          </div>
-          <div class="map-data-table-wrap">
-            <table class="map-data-table creature-table">
-              <thead>
-                <tr>
-                  <th>Category</th>
-                  <th>Resource / Item</th>
-                  <th>Route / Use</th>
-                  <th>Source</th>
-                  <th>Map</th>
-                  <th>Risk</th>
-                  <th>Details</th>
-                </tr>
-              </thead>
-              <tbody>
-                ${resourceRows
-                  .map((row) => {
-                    const tone = riskColor[row.risk] || "amber";
-                    return `
-                      <tr>
-                        <td>${escapeHtml(row.type)}</td>
-                        <td class="creature-table__name">${escapeHtml(row.name)}</td>
-                        <td class="creature-table__note">${escapeHtml(row.note || "")}</td>
-                        <td>${escapeHtml(row.tool || "")}</td>
-                        <td>${escapeHtml(row.mapName || "—")}</td>
-                        <td><span class="chip chip--tone-${tone}">${escapeHtml(row.risk || "")}</span></td>
-                        <td>${row.actionHref ? `<a class="text-link" href="${escapeAttribute(row.actionHref)}">Go to tame food</a>` : "—"}</td>
-                      </tr>
-                    `;
-                  })
-                  .join("")}
-              </tbody>
-            </table>
-          </div>
+  const query = String(ui.itemsLibrarySearch || "").trim().toLowerCase();
+  const sort = ITEM_LIBRARY_SORT_OPTIONS.some((entry) => entry.value === ui.itemsLibrarySort)
+    ? ui.itemsLibrarySort
+    : "name";
+
+  const filtered = items.filter((item) => {
+    if (!query) return true;
+
+    const searchable = [
+      item.name,
+      item.officialListGroup,
+      item.officialIdCategory,
+      item.officialSubcategory,
+      item.dlc,
+      item.practicalNote,
+      item.notes,
+    ]
+      .filter(Boolean)
+      .join(" ")
+      .toLowerCase();
+
+    return searchable.includes(query);
+  });
+
+  filtered.sort((left, right) => {
+    switch (sort) {
+      case "group":
+        return (
+          compareLibraryText(left.officialListGroup, right.officialListGroup) ||
+          compareLibraryText(left.name, right.name)
+        );
+      case "category":
+        return (
+          compareLibraryText(left.officialIdCategory, right.officialIdCategory) ||
+          compareLibraryText(left.name, right.name)
+        );
+      case "subcategory":
+        return (
+          compareLibraryText(left.officialSubcategory, right.officialSubcategory) ||
+          compareLibraryText(left.name, right.name)
+        );
+      case "dlc":
+        return compareLibraryText(left.dlc, right.dlc) || compareLibraryText(left.name, right.name);
+      default:
+        return compareLibraryText(left.name, right.name);
+    }
+  });
+
+  return `
+    <div class="items-library-shell">
+      <div class="section-heading section-heading--compact creature-library-shell__header">
+        <div>
+          <h3>Items Library</h3>
+          <p>${filtered.length} of ${items.length} items.</p>
+        </div>
+        <div class="items-library-toolbar">
+          <label class="creature-library-toolbar__field">
+            <span>Search</span>
+            <input
+              type="search"
+              value="${escapeHtml(ui.itemsLibrarySearch || "")}"
+              placeholder="Search item, category, DLC, note"
+              data-action="items-library-search"
+            />
+          </label>
+          <label class="creature-library-toolbar__field items-library-toolbar__sort">
+            <span>Sort</span>
+            <select data-action="items-library-sort">
+              ${ITEM_LIBRARY_SORT_OPTIONS.map(
+                (option) => `
+                  <option value="${escapeAttribute(option.value)}" ${
+                    sort === option.value ? "selected" : ""
+                  }>
+                    ${escapeHtml(option.label)}
+                  </option>
+                `
+              ).join("")}
+            </select>
+          </label>
         </div>
       </div>
-    `
-    : renderEmptyState("No resource routes yet", "Add resource routes via the map editor.");
-
-  return routeTable;
+      <div class="map-data-table-wrap">
+        <table class="map-data-table items-library-table">
+          <thead>
+            <tr>
+              <th style="width:64px">Icon</th>
+              <th>Name</th>
+              <th>Official Group</th>
+              <th>Official Category</th>
+              <th>Official Subcategory</th>
+              <th>DLC</th>
+              <th>Practical Note</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${
+              filtered.length
+                ? filtered
+                    .map(
+                      (item) => `
+                        <tr>
+                          <td>
+                            ${renderMediaSlot("items", item, {
+                              className: "map-data-table__thumb items-library-table__thumb",
+                              label: "Item Icon",
+                              placeholderLabel: String(item.name || "IT").slice(0, 2),
+                              emptyLabel: "",
+                              showActions: false,
+                            })}
+                          </td>
+                          <td class="items-library-table__name-cell">
+                            <span class="creature-table__name">${escapeHtml(item.name)}</span>
+                          </td>
+                          <td>${escapeHtml(item.officialListGroup || "—")}</td>
+                          <td>${escapeHtml(item.officialIdCategory || "—")}</td>
+                          <td>${escapeHtml(item.officialSubcategory || "—")}</td>
+                          <td>${escapeHtml(item.dlc || "—")}</td>
+                          <td class="creature-table__note">${escapeHtml(item.practicalNote || "—")}</td>
+                        </tr>
+                      `
+                    )
+                    .join("")
+                : `
+                  <tr>
+                    <td colspan="7">
+                      <div class="inline-empty">No items matched your search.</div>
+                    </td>
+                  </tr>
+                `
+            }
+          </tbody>
+        </table>
+      </div>
+    </div>
+  `;
 }
 
 function renderServerSettings() {
@@ -4738,6 +4941,23 @@ function createBlankEntity(collectionKey) {
     };
   }
 
+  if (collectionKey === "items") {
+    return {
+      ...base,
+      officialListGroup: "",
+      officialIdCategory: "",
+      officialSubcategory: "",
+      dlc: "",
+      isLiveASA: false,
+      isObtainable: false,
+      notes: "",
+      practicalNote: "",
+      relatedCreatureIds: [],
+      relatedBossIds: [],
+      relatedMapIds: [],
+    };
+  }
+
   if (collectionKey === "knowledgeArticles") {
     return {
       ...base,
@@ -4808,7 +5028,7 @@ function getAuxPlaceholderA(collectionKey) {
     maps: "Map role",
     bosses: "Map ID or arena",
     dinos: "Primary map or main role",
-    items: "Primary usage",
+    items: "Official group",
     artifacts: "Map ID or cave",
     tributeItems: "Source creature",
     baseSpots: "Map ID or base type",
@@ -4827,7 +5047,7 @@ function getAuxPlaceholderB(collectionKey) {
     maps: "Access type (Free / Paid)",
     bosses: "Difficulty tags or warning",
     dinos: "Stages comma separated",
-    items: "Secondary usage",
+    items: "Official category",
     artifacts: "Difficulty or route note",
     tributeItems: "Where to farm",
     baseSpots: "Tags or travel note",
@@ -4923,6 +5143,11 @@ function normalizeRuntimeAtlasState(payload) {
     changed = true;
   }
 
+  if (state.meta.itemImportVersion !== ASA_ITEM_IMPORT_VERSION) {
+    syncImportedItemRoster(state);
+    changed = true;
+  }
+
   state.maps = (state.maps || []).map((map) => {
     const next = { ...map };
 
@@ -5003,6 +5228,44 @@ function normalizeRuntimeAtlasState(payload) {
       dino.tameMethodType !== next.tameMethodType ||
       dino.tameMethodDetail !== next.tameMethodDetail ||
       dino.loot !== next.loot
+    ) {
+      changed = true;
+    }
+
+    return next;
+  });
+
+  state.items = (state.items || []).map((item) => {
+    const normalized = normalizeItemFields(item);
+    const next = {
+      ...item,
+      ...normalized,
+      media:
+        item.media && typeof item.media === "object"
+          ? item.media
+          : {
+              src: "",
+              type: "empty",
+              alt: `${item.name || item.title || item.id || "Item"} icon`,
+              tone: "bronze",
+            },
+    };
+
+    if (
+      item.officialListGroup !== next.officialListGroup ||
+      item.officialIdCategory !== next.officialIdCategory ||
+      item.officialSubcategory !== next.officialSubcategory ||
+      item.dlc !== next.dlc ||
+      item.isLiveASA !== next.isLiveASA ||
+      item.isObtainable !== next.isObtainable ||
+      item.notes !== next.notes ||
+      item.practicalNote !== next.practicalNote ||
+      JSON.stringify(toTextArray(item.relatedCreatureIds)) !==
+        JSON.stringify(next.relatedCreatureIds) ||
+      JSON.stringify(toTextArray(item.relatedBossIds)) !==
+        JSON.stringify(next.relatedBossIds) ||
+      JSON.stringify(toTextArray(item.relatedMapIds)) !==
+        JSON.stringify(next.relatedMapIds)
     ) {
       changed = true;
     }
@@ -5310,6 +5573,26 @@ function buildEntityFromForm(formData) {
         risk: String(formData.get("auxB") || formData.get("risk") || existing.risk || "Medium"),
         mapIds: parseListFromForm(formData.get("mapIds"), existing.mapIds),
       };
+    case "items":
+      return {
+        ...shared,
+        name: title,
+        officialListGroup: auxA || existing.officialListGroup || "",
+        officialIdCategory: auxB || existing.officialIdCategory || "",
+        officialSubcategory: String(formData.get("officialSubcategory") || existing.officialSubcategory || ""),
+        dlc: String(formData.get("dlc") || existing.dlc || ""),
+        isLiveASA:
+          existing.isLiveASA === true ||
+          String(formData.get("isLiveASA") || existing.isLiveASA || "").toLowerCase() === "true",
+        isObtainable:
+          existing.isObtainable === true ||
+          String(formData.get("isObtainable") || existing.isObtainable || "").toLowerCase() === "true",
+        notes: String(formData.get("notes") || shortDescription || existing.notes || ""),
+        practicalNote: String(formData.get("practicalNote") || existing.practicalNote || ""),
+        relatedCreatureIds: parseListFromForm(formData.get("relatedCreatureIds"), existing.relatedCreatureIds),
+        relatedBossIds: parseListFromForm(formData.get("relatedBossIds"), existing.relatedBossIds),
+        relatedMapIds: parseListFromForm(formData.get("relatedMapIds"), existing.relatedMapIds),
+      };
     case "knowledgeArticles":
       const bulletList = toList(formData.get("bullets") || []);
       const mapIds = parseListFromForm(formData.get("mapIds"), existing.mapIds);
@@ -5376,7 +5659,6 @@ function buildEntityFromForm(formData) {
         mapIds: parseListFromForm(formData.get("mapIds"), existing.mapIds),
         noteBullets: noteBullets.length ? noteBullets : existing.noteBullets || [],
       };
-    case "items":
     default:
       return {
         ...shared,
@@ -5855,6 +6137,12 @@ document.addEventListener("change", async (event) => {
     return;
   }
 
+  if (mapFilterAction === "items-library-sort") {
+    ui.itemsLibrarySort = event.target.value || "name";
+    render();
+    return;
+  }
+
   if (event.target.id === "adminEntitySelect") {
     ui.admin.entityId = event.target.value;
     render();
@@ -5883,6 +6171,12 @@ document.addEventListener("input", (event) => {
 
   if (mapSectionAction === "creature-library-search") {
     ui.creatureLibrarySearch = event.target.value || "";
+    render();
+    return;
+  }
+
+  if (mapSectionAction === "items-library-search") {
+    ui.itemsLibrarySearch = event.target.value || "";
     render();
     return;
   }
