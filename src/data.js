@@ -16,6 +16,10 @@ import {
   ASA_CREATURE_TAME_FOOD_IMPORT_VERSION,
 } from "./asa-creature-tame-foods.js";
 import {
+  ASA_IMPORTED_CREATURE_LOOTS,
+  ASA_CREATURE_LOOT_IMPORT_VERSION,
+} from "./asa-creature-loots.js";
+import {
   ASA_CREATURE_TAMING_OVERRIDE_VERSION,
   ASA_IMPORTED_CREATURE_TAMING_OVERRIDES,
 } from "./asa-creature-taming-overrides.js";
@@ -23,6 +27,7 @@ import {
 const IMPORTED_ITEM_ROSTER = [...ASA_IMPORTED_ITEMS, ...ASA_IMPORTED_ITEM_SUPPLEMENTS];
 const IMPORTED_ITEM_VERSION = `${ASA_ITEM_IMPORT_VERSION}-${ASA_ITEM_SUPPLEMENT_VERSION}`;
 export const IMPORTED_CREATURE_TAMING_VERSION = `${ASA_CREATURE_TAME_FOOD_IMPORT_VERSION}-${ASA_CREATURE_TAMING_OVERRIDE_VERSION}`;
+export const IMPORTED_CREATURE_LOOT_VERSION = ASA_CREATURE_LOOT_IMPORT_VERSION;
 
 const blankMedia = (label, tone) => ({
   src: "",
@@ -118,6 +123,7 @@ export const DINO_PRACTICAL_DEFAULTS = {
   tameFoodSourceLabel: "",
   tameFoodSourceUrl: "",
   loot: "",
+  lootEntries: [],
   tameMethod: "",
   tameMethodType: "empty",
   tameMethodDetail: "",
@@ -157,6 +163,22 @@ const normalizeImportedCreatureTameFoodEntries = (entries) =>
           if (!foodEntry || typeof foodEntry !== "object") return null;
           const label = String(foodEntry.label || "").trim();
           const itemId = String(foodEntry.itemId || "").trim();
+          if (!label && !itemId) return null;
+          return {
+            label: label || itemId,
+            itemId,
+          };
+        })
+        .filter(Boolean)
+    : [];
+
+const normalizeImportedCreatureLootEntries = (entries) =>
+  Array.isArray(entries)
+    ? entries
+        .map((lootEntry) => {
+          if (!lootEntry || typeof lootEntry !== "object") return null;
+          const label = String(lootEntry.label || "").trim();
+          const itemId = String(lootEntry.itemId || "").trim();
           if (!label && !itemId) return null;
           return {
             label: label || itemId,
@@ -218,6 +240,20 @@ export function getImportedCreatureTaming(entryId) {
   };
 }
 
+export function getImportedCreatureLoot(entryId) {
+  const importedLoot = ASA_IMPORTED_CREATURE_LOOTS[entryId] || {};
+  const lootEntries = normalizeImportedCreatureLootEntries(importedLoot.lootEntries);
+  const loot = String(
+    importedLoot.loot ||
+      (lootEntries.length ? lootEntries.map((entry) => entry.label).join(" / ") : "")
+  ).trim();
+
+  return {
+    loot,
+    lootEntries,
+  };
+}
+
 function applyImportedCreatureRoster(data) {
   const existingById = new Map((data.dinos || []).map((entry) => [entry.id, entry]));
   const existingByName = new Map((data.dinos || []).map((entry) => [entry.name, entry]));
@@ -230,7 +266,9 @@ function applyImportedCreatureRoster(data) {
       (legacyName ? existingByName.get(legacyName) : null) ||
       {};
     const importedTaming = getImportedCreatureTaming(entry.id);
+    const importedLoot = getImportedCreatureLoot(entry.id);
     const existingTameFoodEntries = normalizeImportedCreatureTameFoodEntries(existing.tameFoodEntries);
+    const existingLootEntries = normalizeImportedCreatureLootEntries(existing.lootEntries);
     const tameMethodType =
       existing.tameMethodType ||
       (existing.tameMethodDetail
@@ -271,7 +309,13 @@ function applyImportedCreatureRoster(data) {
         typeof existing.tameMethodDetail === "string"
           ? existing.tameMethodDetail
           : importedTaming.tameMethodDetail || DINO_PRACTICAL_DEFAULTS.tameMethodDetail,
-      loot: typeof existing.loot === "string" ? existing.loot : DINO_PRACTICAL_DEFAULTS.loot,
+      loot:
+        typeof existing.loot === "string" && existing.loot.trim()
+          ? existing.loot
+          : importedLoot.loot || DINO_PRACTICAL_DEFAULTS.loot,
+      lootEntries: existingLootEntries.length
+        ? existingLootEntries
+        : importedLoot.lootEntries,
     };
   });
 
@@ -288,6 +332,7 @@ function applyImportedCreatureRoster(data) {
     ...(data.meta || {}),
     creatureImportVersion: ASA_CREATURE_IMPORT_VERSION,
     creatureTamingImportVersion: IMPORTED_CREATURE_TAMING_VERSION,
+    creatureLootImportVersion: IMPORTED_CREATURE_LOOT_VERSION,
     itemImportVersion: IMPORTED_ITEM_VERSION,
   };
 

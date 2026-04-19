@@ -1304,7 +1304,8 @@ textarea {
   pointer-events: auto;
 }
 
-.creature-table__tame-food-links {
+.creature-table__tame-food-links,
+.creature-table__loot-links {
   display: flex;
   flex-wrap: wrap;
   gap: 0.45rem;
@@ -1362,9 +1363,7 @@ textarea {
 }
 
 .creature-table__loot {
-  font-size: 0.82rem;
-  color: rgba(216, 230, 247, 0.82);
-  min-width: 130px;
+  min-width: 240px;
 }
 
 .creature-table__note {

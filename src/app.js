@@ -3,7 +3,9 @@ import {
   DINO_IMPORT_NAME_ALIASES,
   DINO_PRACTICAL_DEFAULTS,
   ENTITY_TYPES,
+  getImportedCreatureLoot,
   getImportedCreatureTaming,
+  IMPORTED_CREATURE_LOOT_VERSION,
   IMPORTED_CREATURE_TAMING_VERSION,
   ITEM_FIELD_DEFAULTS,
   ITEM_IMPORT_NAME_ALIASES,
@@ -283,20 +285,25 @@ const toTextList = (value, separator = ", ", fallback = "") => {
 };
 
 function normalizeDinoPracticalFields(dino = {}) {
+  const normalizeLinkedEntries = (value) =>
+    Array.isArray(value)
+      ? value
+          .map((entry) => {
+            if (!entry || typeof entry !== "object") return null;
+            const label = String(entry.label || "").trim();
+            const itemId = String(entry.itemId || "").trim();
+            if (!label && !itemId) return null;
+            return {
+              label: label || itemId,
+              itemId,
+            };
+          })
+          .filter(Boolean)
+      : [];
   const tameFoodEntries = Array.isArray(dino.tameFoodEntries)
-    ? dino.tameFoodEntries
-        .map((entry) => {
-          if (!entry || typeof entry !== "object") return null;
-          const label = String(entry.label || "").trim();
-          const itemId = String(entry.itemId || "").trim();
-          if (!label && !itemId) return null;
-          return {
-            label: label || itemId,
-            itemId,
-          };
-        })
-        .filter(Boolean)
+    ? normalizeLinkedEntries(dino.tameFoodEntries)
     : [];
+  const lootEntries = Array.isArray(dino.lootEntries) ? normalizeLinkedEntries(dino.lootEntries) : [];
   const tameFoodSourceLabel = String(dino.tameFoodSourceLabel || "").trim();
   const tameFoodSourceUrl = String(dino.tameFoodSourceUrl || "").trim();
   const tameFood = String(
@@ -305,7 +312,9 @@ function normalizeDinoPracticalFields(dino = {}) {
   ).trim();
   const tameMethod = String(dino.tameMethod || "").trim();
   const tameMethodDetail = String(dino.tameMethodDetail || "").trim();
-  const loot = String(dino.loot || "").trim();
+  const loot = String(
+    dino.loot || (lootEntries.length ? lootEntries.map((entry) => entry.label).join(" / ") : "")
+  ).trim();
   const explicitType = String(dino.tameMethodType || "").trim().toLowerCase();
 
   let tameMethodType = DINO_TAME_METHOD_TYPES.includes(explicitType)
@@ -327,10 +336,11 @@ function normalizeDinoPracticalFields(dino = {}) {
     tameFoodEntries,
     tameFoodSourceLabel,
     tameFoodSourceUrl,
+    loot,
+    lootEntries,
     tameMethod,
     tameMethodType,
     tameMethodDetail,
-    loot,
   };
 }
 
@@ -400,6 +410,7 @@ function syncImportedCreatureRoster(targetState) {
     const existing = getImportedCreatureLegacyEntry(entry, existingById, existingByName) || {};
     const practical = normalizeDinoPracticalFields(existing);
     const importedTaming = getImportedCreatureTaming(entry.id);
+    const importedLoot = getImportedCreatureLoot(entry.id);
     const existingMedia =
       existing.media && typeof existing.media === "object" ? existing.media : null;
     const keepExistingMedia =
@@ -428,7 +439,10 @@ function syncImportedCreatureRoster(targetState) {
           ? practical.tameMethodType
           : importedTaming.tameMethodType,
       tameMethodDetail: practical.tameMethodDetail || importedTaming.tameMethodDetail,
-      loot: practical.loot,
+      loot: practical.loot || importedLoot.loot,
+      lootEntries: practical.lootEntries.length
+        ? practical.lootEntries
+        : importedLoot.lootEntries,
     };
   });
 
@@ -445,6 +459,7 @@ function syncImportedCreatureRoster(targetState) {
     ...(targetState.meta || {}),
     creatureImportVersion: ASA_CREATURE_IMPORT_VERSION,
     creatureTamingImportVersion: IMPORTED_CREATURE_TAMING_VERSION,
+    creatureLootImportVersion: IMPORTED_CREATURE_LOOT_VERSION,
   };
 }
 
@@ -496,6 +511,39 @@ function syncImportedCreatureTameFoods(targetState) {
   targetState.meta = {
     ...(targetState.meta || {}),
     creatureTamingImportVersion: IMPORTED_CREATURE_TAMING_VERSION,
+  };
+}
+
+function syncImportedCreatureLoots(targetState) {
+  const existingDinos = Array.isArray(targetState.dinos) ? targetState.dinos : [];
+
+  targetState.dinos = existingDinos.map((dino) => {
+    const importedLoot = getImportedCreatureLoot(dino.id);
+    if (!importedLoot.loot && !importedLoot.lootEntries.length) {
+      return dino;
+    }
+
+    const practical = normalizeDinoPracticalFields(dino);
+    const hasManualLoot =
+      Boolean(practical.lootEntries.length) ||
+      (Boolean(practical.loot) && practical.loot !== importedLoot.loot);
+
+    if (hasManualLoot) {
+      return dino;
+    }
+
+    return {
+      ...dino,
+      loot: importedLoot.loot || practical.loot,
+      lootEntries: importedLoot.lootEntries.length
+        ? importedLoot.lootEntries
+        : practical.lootEntries,
+    };
+  });
+
+  targetState.meta = {
+    ...(targetState.meta || {}),
+    creatureLootImportVersion: IMPORTED_CREATURE_LOOT_VERSION,
   };
 }
 
@@ -1866,12 +1914,98 @@ function resolveTameFoodEntries(value, itemLookup, limit = 5) {
   return resolved;
 }
 
-function renderTameFoodLinks(value, itemLookup, limit = 5) {
-  const entries = resolveTameFoodEntries(value, itemLookup, limit);
+function splitLootTokens(value) {
+  if (Array.isArray(value)) {
+    return value
+      .map((token) => String(token || "").trim())
+      .filter(Boolean);
+  }
+
+  if (typeof value === "string") {
+    return value
+      .split(/[\/,]/)
+      .map((token) => token.trim())
+      .filter(Boolean);
+  }
+
+  return [];
+}
+
+function resolveLootEntries(value, itemLookup, limit = 5) {
+  const practical =
+    value && typeof value === "object" && !Array.isArray(value)
+      ? normalizeDinoPracticalFields(value)
+      : normalizeDinoPracticalFields({ loot: value });
+  const resolved = [];
+  const seen = new Set();
+  const lookupById = itemLookup?.byId || new Map();
+  const lookupByText = itemLookup?.byText || new Map();
+
+  const structuredEntries = toArray(practical.lootEntries);
+  if (structuredEntries.length) {
+    for (const lootEntry of structuredEntries) {
+      const label = String(lootEntry?.label || "").trim();
+      const itemId = String(lootEntry?.itemId || "").trim();
+      const uniqueKey = itemId || normalizeTameFoodLookupText(label);
+      if (!uniqueKey || seen.has(uniqueKey)) continue;
+      seen.add(uniqueKey);
+
+      const matchedItem =
+        (itemId ? lookupById.get(itemId) : null) ||
+        lookupByText.get(normalizeTameFoodLookupText(label));
+
+      if (matchedItem) {
+        resolved.push({
+          type: "item",
+          item: matchedItem,
+          label: matchedItem.name || label || matchedItem.title || matchedItem.id,
+        });
+      } else if (label) {
+        resolved.push({
+          type: "text",
+          label,
+        });
+      }
+
+      if (resolved.length >= limit) return resolved;
+    }
+  }
+
+  const tokens = splitLootTokens(practical.loot);
+  for (const token of tokens) {
+    const normalizedToken = normalizeTameFoodLookupText(token);
+    if (!normalizedToken) continue;
+    const item = lookupByText.get(normalizedToken);
+    if (item) {
+      const key = `item:${item.id}`;
+      if (seen.has(key)) continue;
+      seen.add(key);
+      resolved.push({
+        type: "item",
+        item,
+        label: item.name || item.title || token,
+      });
+    } else {
+      const key = `text:${normalizedToken}`;
+      if (seen.has(key)) continue;
+      seen.add(key);
+      resolved.push({
+        type: "text",
+        label: token,
+      });
+    }
+
+    if (resolved.length >= limit) return resolved;
+  }
+
+  return resolved;
+}
+
+function renderCreatureItemChips(entries, wrapperClass = "creature-table__tame-food-links") {
   if (!entries.length) return "—";
 
   return `
-    <div class="creature-table__tame-food-links">
+    <div class="${wrapperClass}">
       ${entries
         .map((entry) =>
           entry.type === "item"
@@ -1879,7 +2013,7 @@ function renderTameFoodLinks(value, itemLookup, limit = 5) {
                 <button
                   class="chip chip--button creature-table__food-chip"
                   type="button"
-                  data-action="open-item-library-from-food"
+                  data-action="open-item-library-link"
                   data-query="${escapeAttribute(entry.label)}"
                 >
                   <span class="creature-table__food-chip-media">
@@ -1903,6 +2037,16 @@ function renderTameFoodLinks(value, itemLookup, limit = 5) {
         .join("")}
     </div>
   `;
+}
+
+function renderTameFoodLinks(value, itemLookup, limit = 5) {
+  const entries = resolveTameFoodEntries(value, itemLookup, limit);
+  return renderCreatureItemChips(entries, "creature-table__tame-food-links");
+}
+
+function renderLootLinks(value, itemLookup, limit = 5) {
+  const entries = resolveLootEntries(value, itemLookup, limit);
+  return renderCreatureItemChips(entries, "creature-table__loot-links");
 }
 
 function getCreatureMethodBadge(practical) {
@@ -2240,7 +2384,7 @@ function renderCreatureGallery() {
   const creatures = [...toArray(state.dinos)]
     .filter(Boolean)
     .sort((a, b) => (a.name || "").localeCompare(b.name || ""));
-  const tameFoodItemLookup = buildTameFoodItemLookup();
+  const creatureItemLookup = buildTameFoodItemLookup();
 
   if (!creatures.length) {
     return renderEmptyState("No creatures yet", "Add creature entries to begin the library.");
@@ -2329,12 +2473,14 @@ function renderCreatureGallery() {
                           )}</td>
                           <td class="creature-table__taming">${renderTameFoodLinks(
                             practical,
-                            tameFoodItemLookup,
+                            creatureItemLookup,
                             5
                           )}</td>
-                          <td class="creature-table__loot">${
-                            practical.loot ? escapeHtml(practical.loot) : "—"
-                          }</td>
+                          <td class="creature-table__loot">${renderLootLinks(
+                            practical,
+                            creatureItemLookup,
+                            5
+                          )}</td>
                         </tr>
                       `;
                     })
@@ -5506,6 +5652,7 @@ function createBlankEntity(collectionKey) {
       transferValue: "",
       bossRelevance: "",
       loot: "",
+      lootEntries: [],
       notes: "",
     };
   }
@@ -5755,6 +5902,11 @@ function normalizeRuntimeAtlasState(payload) {
 
   if (state.meta.creatureTamingImportVersion !== IMPORTED_CREATURE_TAMING_VERSION) {
     syncImportedCreatureTameFoods(state);
+    changed = true;
+  }
+
+  if (state.meta.creatureLootImportVersion !== IMPORTED_CREATURE_LOOT_VERSION) {
+    syncImportedCreatureLoots(state);
     changed = true;
   }
 
@@ -6165,6 +6317,7 @@ function buildEntityFromForm(formData) {
         transferValue: dinoStats.transferValue,
         bossRelevance: dinoStats.bossRelevance,
         loot: practical.loot,
+        lootEntries: practical.lootEntries,
       };
     case "artifacts":
       return {
@@ -6692,7 +6845,7 @@ document.addEventListener("click", async (event) => {
     return;
   }
 
-  if (action === "open-item-library-from-food") {
+  if (action === "open-item-library-from-food" || action === "open-item-library-link") {
     const query = String(actionTarget.dataset.query || "").trim();
     ui.itemsLibrarySearch = query;
     ui.itemsLibraryFilter = "all";
