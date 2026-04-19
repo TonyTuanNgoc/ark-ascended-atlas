@@ -147,6 +147,8 @@ function mergeWithDefaults(saved, base) {
         output[key] = mergeWithDefaults(source[key], value);
       } else if (key === "src") {
         output[key] = source[key] || value;
+      } else if (key === "type" && source[key] === "empty" && value !== "empty") {
+        output[key] = value;
       } else {
         output[key] = source[key] ?? value;
       }

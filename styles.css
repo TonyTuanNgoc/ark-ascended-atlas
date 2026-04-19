@@ -1206,9 +1206,10 @@ textarea {
 }
 
 .map-data-table-wrap {
-  border: 1px solid rgba(108, 153, 195, 0.3);
+  border: 1px solid rgba(108, 153, 195, 0.22);
   border-radius: 18px;
   overflow: auto;
+  background: rgba(8, 14, 28, 0.6);
 }
 
 .map-data-table {
@@ -1221,17 +1222,20 @@ textarea {
 .map-data-table th {
   text-align: left;
   font-size: 0.79rem;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: rgba(8, 29, 54, 0.82);
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.92);
+  background: rgba(10, 25, 50, 0.55);
   border-bottom: 1px solid rgba(111, 159, 199, 0.32);
-  padding: 0.76rem 0.72rem;
+  padding: 0.76rem 0.9rem;
 }
 
 .map-data-table td {
-  padding: 0.78rem 0.72rem;
-  border-bottom: 1px solid rgba(111, 159, 199, 0.17);
-  vertical-align: top;
+  padding: 0.78rem 0.9rem;
+  border-bottom: 1px solid rgba(111, 159, 199, 0.12);
+  vertical-align: middle;
+  color: rgba(210, 230, 255, 0.88);
 }
 
 .map-data-table__actions {
