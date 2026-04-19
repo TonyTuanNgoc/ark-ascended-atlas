@@ -194,6 +194,11 @@ const HOME_SECTION_LINKS = [
   { id: "bosses", label: "Bosses", href: "#/bosses" },
   { id: "tames", label: "Tames", href: "#/tames" },
 ];
+const LIBRARY_SECTION_LINKS = [
+  { id: "home", label: "Back Home", href: "#/" },
+  { id: "creatures", label: "Creatures", href: "#/creatures" },
+  { id: "resources", label: "Items", href: "#/resources" },
+];
 
 const toArray = (value) => (Array.isArray(value) ? value : []);
 const toArrayByObject = (value) =>
@@ -1102,12 +1107,24 @@ function renderHomePage(section) {
 }
 
 function renderSectionRail(activeSection) {
+  const links =
+    activeSection === "creatures" || activeSection === "resources"
+      ? LIBRARY_SECTION_LINKS
+      : HOME_SECTION_LINKS;
+
   return `
     <nav class="section-rail" aria-label="Atlas navigation">
-      ${HOME_SECTION_LINKS.map(
+      ${links.map(
         (link) => `
           <a
-            class="section-rail__link ${link.id === activeSection ? "is-active" : ""}"
+            class="section-rail__link ${
+              link.id === activeSection ? "is-active" : ""
+            } ${
+              (activeSection === "creatures" || activeSection === "resources") &&
+              link.id === "home"
+                ? "section-rail__link--back"
+                : ""
+            }"
             href="${escapeAttribute(link.href)}"
           >
             ${escapeHtml(link.label)}

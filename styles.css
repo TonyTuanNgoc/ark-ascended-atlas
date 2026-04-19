@@ -158,6 +158,22 @@ textarea {
   color: #ffffff;
 }
 
+.section-rail__link--back {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.6rem;
+  padding: 0.62rem 1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(149, 191, 248, 0.24);
+  background: rgba(15, 24, 42, 0.8);
+  color: #ecf3ff;
+}
+
+.section-rail__link--back::after {
+  display: none;
+}
+
 .section-rail__link:hover::after,
 .text-link:hover::after,
 .section-rail__link.is-active::after {
