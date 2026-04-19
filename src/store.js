@@ -1,7 +1,7 @@
 import { defaultData } from "./data.js";
 
 const STORAGE_KEY = "ark-ascended-atlas-state-v1";
-const STORAGE_SCHEMA_VERSION = 3;
+const STORAGE_SCHEMA_VERSION = 4;
 const STORAGE_SCHEMA_KEY = "__schemaVersion";
 
 const clone = (value) => JSON.parse(JSON.stringify(value));
@@ -70,11 +70,29 @@ export const loadState = () => {
     }
 
     const parsed = JSON.parse(raw);
-    const migrated = mergeWithDefaults(parsed, defaultData);
-    if (
+    const needsMigration =
       !(STORAGE_SCHEMA_KEY in parsed) ||
-      parsed[STORAGE_SCHEMA_KEY] !== STORAGE_SCHEMA_VERSION
-    ) {
+      parsed[STORAGE_SCHEMA_KEY] !== STORAGE_SCHEMA_VERSION;
+
+    if (needsMigration && Array.isArray(parsed.dinos)) {
+      const metaFields = [
+        "roleTags", "tameDifficulty", "timeToValue", "costPayoff",
+        "transferValue", "bossRelevance", "tameFood", "tameMethod",
+      ];
+      parsed.dinos = parsed.dinos.map((dino) => {
+        const clean = { ...dino };
+        for (const f of metaFields) {
+          const v = clean[f];
+          if (v === undefined || v === null || v === "" || (Array.isArray(v) && v.length === 0)) {
+            delete clean[f];
+          }
+        }
+        return clean;
+      });
+    }
+
+    const migrated = mergeWithDefaults(parsed, defaultData);
+    if (needsMigration) {
       migrated[STORAGE_SCHEMA_KEY] = STORAGE_SCHEMA_VERSION;
       saveState(migrated);
     }

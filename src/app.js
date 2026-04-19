@@ -475,7 +475,6 @@ function renderHomeQuickNav(activeSection) {
     { id: "route", label: "Fastest Clear" },
     { id: "bosses", label: "Boss Planner" },
     { id: "tames", label: "Tame Planner" },
-    { id: "creatures", label: "Creature Atlas" },
     { id: "resources", label: "Resources" },
     { id: "settings", label: "Server Settings" },
     { id: "knowledge", label: "Ancient Records" },
@@ -1588,11 +1587,10 @@ function renderMapSectionCreaturesModal(map, sectionDef, searchQuery) {
             <th>Name</th>
             <th>Role</th>
             <th>Tame Difficulty</th>
+            <th>Tame Food</th>
+            <th>Tame Method</th>
             <th>Time to Value</th>
-            <th>Cost vs Payoff</th>
-            <th>Transfer Value</th>
             <th>BOSS Relevance</th>
-            <th>Tags</th>
             <th>Actions</th>
           </tr>
         </thead>
@@ -1615,11 +1613,10 @@ function renderMapSectionCreaturesModal(map, sectionDef, searchQuery) {
                   <td>${escapeHtml(dino.name)}</td>
                   <td>${escapeHtml((dino.roleTags || []).join(", ") || "—")}</td>
                   <td>${escapeHtml(dino.tameDifficulty || "—")}</td>
+                  <td>${escapeHtml(dino.tameFood || "—")}</td>
+                  <td>${escapeHtml(dino.tameMethod || "—")}</td>
                   <td>${escapeHtml(dino.timeToValue || "—")}</td>
-                  <td>${escapeHtml(dino.costPayoff || "—")}</td>
-                  <td>${escapeHtml(dino.transferValue || "—")}</td>
                   <td>${escapeHtml(dino.bossRelevance || "—")}</td>
-                  <td>${escapeHtml(tags.join(", ") || "—")}</td>
                   <td class="map-data-table__actions">
                     <button
                       class="ghost-button ghost-button--small"
@@ -3940,6 +3937,8 @@ function createBlankEntity(collectionKey) {
       roleTags: [],
       stages: [],
       tameDifficulty: "",
+      tameFood: "",
+      tameMethod: "",
       timeToValue: "",
       costPayoff: "",
       transferValue: "",
