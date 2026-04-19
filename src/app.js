@@ -1,4 +1,4 @@
-import { ENTITY_TYPES } from "./data.js";
+import { DINO_PRACTICAL_DEFAULTS, ENTITY_TYPES } from "./data.js";
 import {
   loadCloudAtlasData,
   removeAtlasEntityMediaFromCloud,
@@ -162,6 +162,7 @@ const MAP_PROGRESS_PHASES = [
 const CREATURE_STAGE_FILTERS = ["early", "mid", "endgame"];
 const CREATURE_ROLE_FILTERS = ["utility", "boss", "cave", "flyer", "transport", "breeder"];
 const CREATURE_DIFFICULTY_FILTERS = ["low", "medium", "high"];
+const DINO_TAME_METHOD_TYPES = ["empty", "simple", "special"];
 
 const toArray = (value) => (Array.isArray(value) ? value : []);
 const toArrayByObject = (value) =>
@@ -198,6 +199,50 @@ const toTextList = (value, separator = ", ", fallback = "") => {
   const items = toTextArray(value);
   return items.length ? items.join(separator) : fallback;
 };
+
+function normalizeDinoPracticalFields(dino = {}) {
+  const tameFood = String(dino.tameFood || "");
+  const tameMethod = String(dino.tameMethod || "").trim();
+  const tameMethodDetail = String(dino.tameMethodDetail || "").trim();
+  const loot = String(dino.loot || "").trim();
+  const explicitType = String(dino.tameMethodType || "").trim().toLowerCase();
+
+  let tameMethodType = DINO_TAME_METHOD_TYPES.includes(explicitType)
+    ? explicitType
+    : "";
+
+  if (!tameMethodType) {
+    if (tameMethodDetail) {
+      tameMethodType = "special";
+    } else if (tameMethod) {
+      tameMethodType = "simple";
+    } else {
+      tameMethodType = DINO_PRACTICAL_DEFAULTS.tameMethodType;
+    }
+  }
+
+  return {
+    tameFood,
+    tameMethod,
+    tameMethodType,
+    tameMethodDetail,
+    loot,
+  };
+}
+
+function getCreatureMethodSummary(dino = {}) {
+  const practical = normalizeDinoPracticalFields(dino);
+
+  if (practical.tameMethodType === "simple" && practical.tameMethod) {
+    return practical.tameMethod;
+  }
+
+  if (practical.tameMethodType === "special") {
+    return practical.tameMethod || "Method note";
+  }
+
+  return "—";
+}
 
 const CREATURE_META = {
   "argy":          { role: "flyer",      stage: "early",   taming: "Kibble / Raw Meat",          note: "Primary transport across all maps. First tame priority on any map." },
@@ -641,6 +686,9 @@ const ui = {
   editMode: false,
   editMapCards: false,
   activeBossId: null,
+  activeCreatureEditorId: null,
+  creatureEditorFocus: "",
+  creatureLibrarySearch: "",
   route: parseRoute(),
   activeMapSection: null,
   activeMapEntity: null,
@@ -714,6 +762,19 @@ function render() {
           const anchor = document.querySelector(`#${CSS.escape(ui.route.anchor)}`);
           anchor?.scrollIntoView({ behavior: "smooth", block: "start" });
         }
+      }
+
+      if (ui.creatureEditorFocus) {
+        const target = document.querySelector(
+          `[data-editor-focus-target="${CSS.escape(ui.creatureEditorFocus)}"]`
+        );
+        if (target instanceof HTMLElement) {
+          target.focus();
+          if (typeof target.select === "function") {
+            target.select();
+          }
+        }
+        ui.creatureEditorFocus = "";
       }
     });
   } catch (error) {
@@ -911,7 +972,7 @@ function renderHomeSection(section) {
     route: { title: "Fastest Clear Route", description: "Phased progression from economy to boss execution." },
     bosses: { title: "Boss Planner", description: "Boss capsules that stay execution-ready." },
     tames: { title: "Tame Planner", description: "Dino lineup by role and planning stage." },
-    creatures: { title: "Creatures", description: "All key tameable creatures organized by map — role, stage, taming method, and strategic notes." },
+    creatures: { title: "Creatures", description: "Practical creature library with tame food, tame method, loot, and note-ready editing." },
     resources: { title: "Resources", description: "Artifact, tribute and utility resources connected through links." },
     settings: { title: "Server Settings", description: "Route modifiers and server strategy defaults." },
     knowledge: {
@@ -1396,70 +1457,231 @@ function renderGlobalTamePlanner() {
 }
 
 function renderCreatureGallery() {
-  const maps = toArray(state.maps).filter(Boolean);
-  const hasAny = maps.some((m) => toArray(m.tameIds).length > 0);
-  if (!hasAny) {
-    return renderEmptyState("No creatures linked", "Link creatures to maps via the map editor.");
+  const creatures = [...toArray(state.dinos)]
+    .filter(Boolean)
+    .sort((a, b) => (a.name || "").localeCompare(b.name || ""));
+
+  if (!creatures.length) {
+    return renderEmptyState("No creatures yet", "Add creature entries to begin the library.");
   }
 
+  const query = String(ui.creatureLibrarySearch || "").trim().toLowerCase();
+  const filtered = creatures.filter((dino) => {
+    if (!query) return true;
+
+    const practical = normalizeDinoPracticalFields(dino);
+    const searchable = [
+      dino.name,
+      practical.tameFood,
+      practical.tameMethod,
+      practical.tameMethodDetail,
+      practical.loot,
+      dino.notes,
+      dino.shortDescription,
+    ]
+      .filter(Boolean)
+      .join(" ")
+      .toLowerCase();
+
+    return searchable.includes(query);
+  });
+
   return `
-    <div class="creature-atlas">
-      ${maps.map((map) => {
-        const creatures = toArray(map.tameIds).map((id) => getDino(id)).filter(Boolean);
-        if (!creatures.length) return "";
-        return `
-          <div class="creature-map-block">
-            <div class="creature-map-block__header">
-              <h3>${escapeHtml(map.name)}</h3>
-              <span class="chip">${creatures.length} creatures</span>
-            </div>
-            <div class="map-data-table-wrap">
-              <table class="map-data-table creature-table">
-                <thead>
+    <div class="creature-library-shell">
+      <div class="section-heading section-heading--compact creature-library-shell__header">
+        <div>
+          <h3>Creature Library</h3>
+          <p>${filtered.length} of ${creatures.length} creatures.</p>
+        </div>
+        <label class="creature-library-toolbar__field">
+          <span>Search</span>
+          <input
+            type="search"
+            value="${escapeHtml(ui.creatureLibrarySearch || "")}"
+            placeholder="Search creature, food, method, loot"
+            data-action="creature-library-search"
+          />
+        </label>
+      </div>
+      <div class="map-data-table-wrap">
+        <table class="map-data-table creature-library-table">
+          <thead>
+            <tr>
+              <th style="width:64px">Avatar</th>
+              <th>Name</th>
+              <th id="tame-food">Tame Food</th>
+              <th>Tame Method</th>
+              <th>Loot</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${
+              filtered.length
+                ? filtered
+                    .map((dino) => {
+                      const practical = normalizeDinoPracticalFields(dino);
+                      const hasImage = Boolean(dino.media?.src);
+                      const isEditorOpen = ui.activeCreatureEditorId === dino.id;
+                      const methodCell =
+                        practical.tameMethodType === "special"
+                          ? `
+                            <button
+                              class="ghost-button ghost-button--small creature-library-table__note-button"
+                              type="button"
+                              data-action="open-creature-editor"
+                              data-entity-id="${escapeHtml(dino.id)}"
+                              data-focus="tameMethodDetail"
+                            >
+                              ${escapeHtml(
+                                practical.tameMethodDetail ? "Open note" : "Method note"
+                              )}
+                            </button>
+                          `
+                          : practical.tameMethodType === "simple" && practical.tameMethod
+                          ? escapeHtml(practical.tameMethod)
+                          : "—";
+
+                      return `
+                        <tr>
+                          <td>
+                            <div class="creature-table__avatar">
+                              ${
+                                hasImage
+                                  ? `<img src="${escapeAttribute(dino.media.src)}" alt="${escapeHtml(
+                                      dino.name
+                                    )}" loading="lazy" />`
+                                  : `<span class="creature-table__avatar-placeholder">${escapeHtml(
+                                      String(dino.name || "??").slice(0, 2)
+                                    )}</span>`
+                              }
+                            </div>
+                          </td>
+                          <td class="creature-library-table__name-cell">
+                            <div class="creature-library-table__name-stack">
+                              <span class="creature-table__name">${escapeHtml(dino.name)}</span>
+                              <button
+                                class="ghost-button ghost-button--small creature-library-table__edit-button"
+                                type="button"
+                                data-action="open-creature-editor"
+                                data-entity-id="${escapeHtml(dino.id)}"
+                                data-focus="tameFood"
+                              >
+                                Edit
+                              </button>
+                            </div>
+                          </td>
+                          <td class="creature-table__taming">${escapeHtml(
+                            formatTopTameFood(practical.tameFood, 3)
+                          )}</td>
+                          <td class="creature-table__taming">${methodCell}</td>
+                          <td class="creature-table__loot">${
+                            practical.loot ? escapeHtml(practical.loot) : "—"
+                          }</td>
+                        </tr>
+                        ${
+                          isEditorOpen
+                            ? renderCreatureLibraryEditorRow(dino, practical)
+                            : ""
+                        }
+                      `;
+                    })
+                    .join("")
+                : `
                   <tr>
-                    <th style="width:52px"></th>
-                    <th>Creature</th>
-                    <th>Role</th>
-                    <th>Stage</th>
-                    <th>Taming</th>
-                    <th id="tame-food">Tame Food</th>
-                    <th>Notes</th>
+                    <td colspan="5">
+                      <div class="inline-empty">No creatures matched your search.</div>
+                    </td>
                   </tr>
-                </thead>
-                <tbody>
-                  ${creatures.map((dino) => {
-                    const meta = CREATURE_META[dino.id] || {};
-                    const hasImg = dino.media?.src && dino.media.src !== "";
-                    const roleColor = {
-                      boss: "ember", flyer: "frost", harvester: "stone",
-                      cave: "teal", transport: "violet", utility: "sand",
-                    }[meta.role] || "amber";
-                    const stageColor = { early: "forest", mid: "gold", endgame: "ember" }[meta.stage] || "amber";
-                    return `
-                      <tr>
-                        <td>
-                          <div class="creature-table__avatar">
-                            ${hasImg
-                              ? `<img src="${escapeHtml(dino.media.src)}" alt="${escapeHtml(dino.name)}" loading="lazy" />`
-                              : `<span class="creature-table__avatar-placeholder">${escapeHtml(dino.name.slice(0, 2))}</span>`}
-                          </div>
-                        </td>
-                        <td class="creature-table__name">${escapeHtml(dino.name)}</td>
-                        <td>${meta.role ? `<span class="chip chip--tone-${roleColor}">${escapeHtml(meta.role)}</span>` : "—"}</td>
-                        <td>${meta.stage ? `<span class="chip chip--tone-${stageColor}">${escapeHtml(meta.stage)}</span>` : "—"}</td>
-                        <td class="creature-table__taming">${meta.taming ? escapeHtml(meta.taming) : "—"}</td>
-                        <td class="creature-table__taming">${formatTopTameFood(dino.tameFood, 3)}</td>
-                        <td class="creature-table__note">${meta.note ? escapeHtml(meta.note) : "—"}</td>
-                      </tr>
-                    `;
-                  }).join("")}
-                </tbody>
-              </table>
-            </div>
-          </div>
-        `;
-      }).join("")}
+                `
+            }
+          </tbody>
+        </table>
+      </div>
     </div>
+  `;
+}
+
+function renderCreatureLibraryEditorRow(dino, practical) {
+  const safePractical = practical || normalizeDinoPracticalFields(dino);
+  const detailHidden = safePractical.tameMethodType !== "special";
+
+  return `
+    <tr class="creature-library-editor-row">
+      <td colspan="5">
+        <form class="creature-inline-editor" data-editor-for="${escapeHtml(dino.id)}">
+          <input type="hidden" name="entityId" value="${escapeHtml(dino.id)}" />
+          <div class="creature-inline-editor__grid">
+            <label>
+              <span>Tame Food</span>
+              <textarea
+                name="tameFood"
+                rows="2"
+                placeholder="Kibble / Mutton / Prime Meat"
+                data-editor-focus-target="tameFood"
+              >${escapeHtml(safePractical.tameFood)}</textarea>
+            </label>
+            <label>
+              <span>Method Type</span>
+              <select name="tameMethodType" data-action="creature-method-type">
+                ${DINO_TAME_METHOD_TYPES.map(
+                  (type) => `
+                    <option value="${type}" ${
+                      safePractical.tameMethodType === type ? "selected" : ""
+                    }>
+                      ${escapeHtml(capitalize(type))}
+                    </option>
+                  `
+                ).join("")}
+              </select>
+            </label>
+            <label>
+              <span>Tame Method</span>
+              <input
+                name="tameMethod"
+                type="text"
+                value="${escapeHtml(safePractical.tameMethod)}"
+                placeholder="Knockout, Passive"
+              />
+            </label>
+            <label>
+              <span>Loot</span>
+              <input
+                name="loot"
+                type="text"
+                value="${escapeHtml(safePractical.loot)}"
+                placeholder="Argentavis Talon"
+              />
+            </label>
+            <label class="creature-inline-editor__detail" ${detailHidden ? "hidden" : ""}>
+              <span>Method Detail</span>
+              <textarea
+                name="tameMethodDetail"
+                rows="4"
+                placeholder="Special taming note"
+                data-editor-focus-target="tameMethodDetail"
+                ${detailHidden ? "disabled" : ""}
+              >${escapeHtml(safePractical.tameMethodDetail)}</textarea>
+            </label>
+          </div>
+          <div class="creature-inline-editor__actions">
+            <button
+              class="ghost-button ghost-button--small"
+              type="button"
+              data-action="close-creature-editor"
+            >
+              Close
+            </button>
+            <button
+              class="hero-button hero-button--primary hero-button--small"
+              type="submit"
+              data-action="save-creature-editor"
+            >
+              Save
+            </button>
+          </div>
+        </form>
+      </td>
+    </tr>
   `;
 }
 
@@ -2075,7 +2297,7 @@ function renderMapSectionCreaturesModal(map, sectionDef, searchQuery) {
                   })}</td>
                   <td>${escapeHtml(dino.name)}</td>
                   <td>${formatTopTameFood(dino.tameFood, 3)}</td>
-                  <td>${escapeHtml(dino.tameMethod || "—")}</td>
+                  <td>${escapeHtml(getCreatureMethodSummary(dino))}</td>
                 </tr>
               `;
             })
@@ -4399,10 +4621,13 @@ function createBlankEntity(collectionKey) {
       tameDifficulty: "",
       tameFood: "",
       tameMethod: "",
+      tameMethodType: "empty",
+      tameMethodDetail: "",
       timeToValue: "",
       costPayoff: "",
       transferValue: "",
       bossRelevance: "",
+      loot: "",
       notes: "",
     };
   }
@@ -4695,6 +4920,26 @@ function normalizeRuntimeAtlasState(payload) {
     return next;
   });
 
+  state.dinos = (state.dinos || []).map((dino) => {
+    const practical = normalizeDinoPracticalFields(dino);
+    const next = {
+      ...dino,
+      ...practical,
+    };
+
+    if (
+      dino.tameFood !== next.tameFood ||
+      dino.tameMethod !== next.tameMethod ||
+      dino.tameMethodType !== next.tameMethodType ||
+      dino.tameMethodDetail !== next.tameMethodDetail ||
+      dino.loot !== next.loot
+    ) {
+      changed = true;
+    }
+
+    return next;
+  });
+
   (state.maps || []).forEach((map) => {
     (map.resourceRoutes || []).forEach((route) => {
       if (!route || !route.resource) return;
@@ -4939,12 +5184,16 @@ function buildEntityFromForm(formData) {
       };
     case "dinos":
       const dinoStats = parseDinoStats(formData.get("dinoStats"), existing);
+      const practical = normalizeDinoPracticalFields(existing);
       return {
         ...shared,
         name: title,
         roleTags: tags,
         stages: toList(auxB || toTextList(existing.stages)),
         tameFood: String(formData.get("tameFood") || existing.tameFood || ""),
+        tameMethod: practical.tameMethod,
+        tameMethodType: practical.tameMethodType,
+        tameMethodDetail: practical.tameMethodDetail,
         notes: shortDescription || existing.notes || "",
         mapId: auxA || existing.mapId || "",
         tameDifficulty: dinoStats.tameDifficulty,
@@ -4952,6 +5201,7 @@ function buildEntityFromForm(formData) {
         costPayoff: dinoStats.costPayoff,
         transferValue: dinoStats.transferValue,
         bossRelevance: dinoStats.bossRelevance,
+        loot: practical.loot,
       };
     case "artifacts":
       return {
@@ -5230,6 +5480,88 @@ function syncImagePreview() {
   preview.replaceWith(img);
 }
 
+function toggleCreatureMethodDetailField(selectElement) {
+  const form = selectElement?.closest("form");
+  if (!form) return;
+
+  const detailField = form.querySelector(".creature-inline-editor__detail");
+  const textarea = form.querySelector('textarea[name="tameMethodDetail"]');
+  const nextType = String(selectElement.value || "empty").toLowerCase();
+  const shouldShow = nextType === "special";
+
+  if (detailField) {
+    detailField.hidden = !shouldShow;
+  }
+
+  if (textarea instanceof HTMLTextAreaElement) {
+    textarea.disabled = !shouldShow;
+    if (!shouldShow) {
+      textarea.value = "";
+    }
+  }
+}
+
+function buildCreaturePracticalUpdate(formData, existing) {
+  const practical = normalizeDinoPracticalFields(existing);
+  const nextType = String(formData.get("tameMethodType") || practical.tameMethodType || "empty")
+    .trim()
+    .toLowerCase();
+  const tameMethodType = DINO_TAME_METHOD_TYPES.includes(nextType)
+    ? nextType
+    : "empty";
+  const tameFood = String(formData.get("tameFood") || "").trim();
+  const loot = String(formData.get("loot") || "").trim();
+  const tameMethod = String(formData.get("tameMethod") || "").trim();
+  const tameMethodDetail = String(formData.get("tameMethodDetail") || "").trim();
+
+  if (tameMethodType === "empty") {
+    return {
+      tameFood,
+      tameMethod: "",
+      tameMethodType,
+      tameMethodDetail: "",
+      loot,
+    };
+  }
+
+  if (tameMethodType === "simple") {
+    return {
+      tameFood,
+      tameMethod,
+      tameMethodType,
+      tameMethodDetail: "",
+      loot,
+    };
+  }
+
+  return {
+    tameFood,
+    tameMethod,
+    tameMethodType,
+    tameMethodDetail,
+    loot,
+  };
+}
+
+async function saveCreaturePracticalForm(formData) {
+  const entityId = String(formData.get("entityId") || "").trim();
+  if (!entityId) return false;
+
+  const existing = getDino(entityId);
+  if (!existing) return false;
+
+  const practical = buildCreaturePracticalUpdate(formData, existing);
+
+  updateEntity(state, "dinos", entityId, (entity) => ({
+    ...entity,
+    ...practical,
+  }));
+
+  persist();
+  await syncEntityToCloud("dinos", entityId);
+  return true;
+}
+
 window.addEventListener("hashchange", render);
 window.addEventListener("storage", (event) => {
   if (event.storageArea !== window.localStorage) return;
@@ -5267,6 +5599,20 @@ document.addEventListener("click", async (event) => {
   if (action === "open-boss") {
     ui.activeBossId = actionTarget.dataset.bossId;
     ui.imageModal = null;
+    render();
+    return;
+  }
+
+  if (action === "open-creature-editor") {
+    ui.activeCreatureEditorId = actionTarget.dataset.entityId || null;
+    ui.creatureEditorFocus = actionTarget.dataset.focus || "";
+    render();
+    return;
+  }
+
+  if (action === "close-creature-editor") {
+    ui.activeCreatureEditorId = null;
+    ui.creatureEditorFocus = "";
     render();
     return;
   }
@@ -5434,6 +5780,11 @@ document.addEventListener("change", async (event) => {
     return;
   }
 
+  if (mapFilterAction === "creature-method-type") {
+    toggleCreatureMethodDetailField(event.target);
+    return;
+  }
+
   if (event.target.id === "adminEntitySelect") {
     ui.admin.entityId = event.target.value;
     render();
@@ -5460,6 +5811,12 @@ document.addEventListener("input", (event) => {
     return;
   }
 
+  if (mapSectionAction === "creature-library-search") {
+    ui.creatureLibrarySearch = event.target.value || "";
+    render();
+    return;
+  }
+
   if (event.target.id === "imageUrlInput") {
     syncImagePreview();
   }
@@ -5472,6 +5829,13 @@ document.addEventListener("paste", (event) => {
 });
 
 document.addEventListener("submit", async (event) => {
+  if (event.target.matches(".creature-inline-editor")) {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    await saveCreaturePracticalForm(formData);
+    return;
+  }
+
   if (event.target.id === "adminForm") {
     event.preventDefault();
     const formData = new FormData(event.target);

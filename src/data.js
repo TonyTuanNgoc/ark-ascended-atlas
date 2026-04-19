@@ -28,6 +28,13 @@ export const ENTITY_TYPES = [
   { key: "patchHistory", label: "Patch" },
 ];
 
+export const DINO_PRACTICAL_DEFAULTS = {
+  loot: "",
+  tameMethod: "",
+  tameMethodType: "empty",
+  tameMethodDetail: "",
+};
+
 export const defaultData = {
   meta: {
     title: "The Solo Ascension Route",

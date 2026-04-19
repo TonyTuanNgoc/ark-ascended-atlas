@@ -220,6 +220,12 @@ textarea {
   font-size: 0.82rem;
 }
 
+.hero-button--small {
+  min-height: 2.1rem;
+  padding: 0.45rem 0.95rem;
+  font-size: 0.84rem;
+}
+
 .ghost-button.is-active {
   background: rgba(27, 64, 132, 0.65);
   border-color: rgba(139, 190, 255, 0.42);
@@ -952,6 +958,28 @@ textarea {
   gap: 2rem;
 }
 
+.creature-library-shell {
+  display: grid;
+  gap: 1rem;
+}
+
+.creature-library-shell__header {
+  align-items: end;
+}
+
+.creature-library-toolbar__field {
+  display: grid;
+  gap: 0.35rem;
+  min-width: min(100%, 22rem);
+}
+
+.creature-library-toolbar__field span {
+  font-size: 0.74rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(180, 210, 255, 0.6);
+}
+
 .creature-map-block {
   display: flex;
   flex-direction: column;
@@ -1009,11 +1037,79 @@ textarea {
   min-width: 160px;
 }
 
+.creature-table__loot {
+  font-size: 0.82rem;
+  color: rgba(216, 230, 247, 0.82);
+  min-width: 130px;
+}
+
 .creature-table__note {
   font-size: 0.82rem;
   color: rgba(180, 210, 255, 0.65);
   max-width: 340px;
   line-height: 1.45;
+}
+
+.creature-library-table__name-cell {
+  min-width: 190px;
+}
+
+.creature-library-table__name-stack {
+  display: grid;
+  gap: 0.45rem;
+  justify-items: start;
+}
+
+.creature-library-table__edit-button,
+.creature-library-table__note-button {
+  min-width: 0;
+}
+
+.creature-library-editor-row td {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.creature-inline-editor {
+  display: grid;
+  gap: 0.85rem;
+  margin: 0.15rem 0 0.35rem;
+  padding: 0.95rem 1rem;
+  border-radius: 18px;
+  border: 1px solid rgba(129, 180, 242, 0.18);
+  background:
+    linear-gradient(180deg, rgba(10, 16, 27, 0.95), rgba(7, 11, 19, 0.96));
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.24);
+}
+
+.creature-inline-editor__grid {
+  display: grid;
+  gap: 0.8rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.creature-inline-editor__grid label,
+.creature-inline-editor__detail {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.creature-inline-editor__grid label span,
+.creature-inline-editor__detail span {
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(180, 210, 255, 0.62);
+}
+
+.creature-inline-editor__detail {
+  grid-column: 1 / -1;
+}
+
+.creature-inline-editor__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.55rem;
 }
 
 .chip--tone-ember  { background: rgba(180,60,20,0.28);  border-color: rgba(255,100,50,0.35);  color: rgba(255,170,130,0.9); }
@@ -1859,6 +1955,14 @@ textarea {
 
   .hero-dashboard__modules {
     gap: 0.55rem;
+  }
+
+  .creature-library-shell__header {
+    align-items: stretch;
+  }
+
+  .creature-inline-editor__grid {
+    grid-template-columns: 1fr;
   }
 
   .hero-dashboard__module {
