@@ -954,6 +954,72 @@ const ui = {
   imageModal: null,
 };
 
+function captureFocusSnapshot(root = document) {
+  const active = root.activeElement;
+  if (
+    !active ||
+    !(active instanceof HTMLInputElement || active instanceof HTMLTextAreaElement || active instanceof HTMLSelectElement)
+  ) {
+    return null;
+  }
+
+  const snapshot = {
+    tagName: active.tagName.toLowerCase(),
+    id: active.id || "",
+    name: active.getAttribute("name") || "",
+    action: active.dataset.action || "",
+    section: active.dataset.section || "",
+    filter: active.dataset.filter || "",
+  };
+
+  if (active instanceof HTMLInputElement || active instanceof HTMLTextAreaElement) {
+    snapshot.selectionStart = typeof active.selectionStart === "number" ? active.selectionStart : null;
+    snapshot.selectionEnd = typeof active.selectionEnd === "number" ? active.selectionEnd : null;
+  }
+
+  return snapshot;
+}
+
+function restoreFocusSnapshot(snapshot) {
+  if (!snapshot) return;
+
+  const candidates = [];
+  if (snapshot.id) {
+    candidates.push(`#${CSS.escape(snapshot.id)}`);
+  }
+
+  if (snapshot.action) {
+    let selector = `[data-action="${CSS.escape(snapshot.action)}"]`;
+    if (snapshot.section) {
+      selector += `[data-section="${CSS.escape(snapshot.section)}"]`;
+    }
+    if (snapshot.filter) {
+      selector += `[data-filter="${CSS.escape(snapshot.filter)}"]`;
+    }
+    candidates.push(selector);
+  }
+
+  if (snapshot.name) {
+    candidates.push(`${snapshot.tagName}[name="${CSS.escape(snapshot.name)}"]`);
+  }
+
+  const nextTarget = candidates
+    .map((selector) => document.querySelector(selector))
+    .find((entry) => entry instanceof HTMLElement);
+
+  if (!(nextTarget instanceof HTMLElement)) return;
+
+  nextTarget.focus();
+
+  if (
+    (nextTarget instanceof HTMLInputElement || nextTarget instanceof HTMLTextAreaElement) &&
+    typeof snapshot.selectionStart === "number" &&
+    typeof snapshot.selectionEnd === "number"
+  ) {
+    nextTarget.setSelectionRange(snapshot.selectionStart, snapshot.selectionEnd);
+  }
+}
+
 function parseRoute() {
   const hash = window.location.hash.replace(/^#\/?/, "");
   if (!hash) return { type: "home", section: "home" };
@@ -988,6 +1054,7 @@ function parseRoute() {
 
 function render() {
   try {
+    const focusSnapshot = captureFocusSnapshot();
     ui.route = parseRoute();
     const routeScrollKey = `${ui.route.type}::${ui.route.section || ""}::${ui.route.anchor || ""}::${ui.route.id || ""}`;
     const pageMarkup =
@@ -1029,6 +1096,8 @@ function render() {
         }
         ui.creatureEditorFocus = "";
       }
+
+      restoreFocusSnapshot(focusSnapshot);
     });
   } catch (error) {
     console.error("Atlas render failed:", error);
