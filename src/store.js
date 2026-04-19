@@ -1,6 +1,6 @@
 import { defaultData } from "./data.js";
 
-const STORAGE_KEY = "ark-ascended-atlas-state-v1";
+export const STORAGE_KEY = "ark-ascended-atlas-state-v1";
 const STORAGE_SCHEMA_VERSION = 4;
 const STORAGE_SCHEMA_KEY = "__schemaVersion";
 

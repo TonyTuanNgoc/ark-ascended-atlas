@@ -13,6 +13,7 @@ import {
   loadState,
   resetState,
   saveState,
+  STORAGE_KEY,
   updateEntity,
   updateSetting,
   upsertEntity,
@@ -562,6 +563,52 @@ async function syncAllStateToCloud() {
   });
 }
 
+function entityHasPendingLocalMedia(entity) {
+  const mediaSrc = entity?.media?.src || "";
+  return (
+    entity?.media?.type === "local" ||
+    (typeof mediaSrc === "string" && mediaSrc.startsWith("data:image/"))
+  );
+}
+
+async function normalizePendingLocalMedia() {
+  const collectionsToNormalize = CLOUD_SYNC_COLLECTION_KEYS.filter((collectionKey) => {
+    const collection = Array.isArray(state[collectionKey]) ? state[collectionKey] : [];
+    return collection.some((entity) => entityHasPendingLocalMedia(entity));
+  });
+
+  if (!collectionsToNormalize.length) {
+    return true;
+  }
+
+  return runCloudTask("Normalizing media", "Media normalized", async () => {
+    let failures = 0;
+
+    for (const collectionKey of collectionsToNormalize) {
+      const collection = Array.isArray(state[collectionKey]) ? state[collectionKey] : [];
+      for (const entity of collection) {
+        if (!entityHasPendingLocalMedia(entity)) continue;
+
+        const savedEntity = await saveAtlasEntityMediaToCloud(
+          collectionKey,
+          entity,
+          entity.media?.src || "",
+          "local"
+        );
+        if (!savedEntity) {
+          failures += 1;
+          continue;
+        }
+        upsertEntity(state, collectionKey, savedEntity);
+      }
+    }
+
+    saveState(state);
+    render();
+    return failures === 0;
+  });
+}
+
 async function initializeCloudAtlas() {
   const services = await getFirebaseServices();
   cloudUi.available = Boolean(services);
@@ -583,6 +630,8 @@ async function initializeCloudAtlas() {
     updateCloudUi("ready", "Cloud ready");
   }
   render();
+
+  void normalizePendingLocalMedia();
 }
 
 const ui = {
@@ -5170,6 +5219,14 @@ function syncImagePreview() {
 }
 
 window.addEventListener("hashchange", render);
+window.addEventListener("storage", (event) => {
+  if (event.storageArea !== window.localStorage) return;
+  if (event.key !== STORAGE_KEY || !event.newValue) return;
+
+  state = loadState();
+  state = normalizeRuntimeAtlasState(state);
+  render();
+});
 
 document.addEventListener("click", async (event) => {
   const actionTarget = event.target.closest("[data-action]");

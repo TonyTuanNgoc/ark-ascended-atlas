@@ -57,11 +57,32 @@ function getCollectionPath(collectionKey) {
   return collectionKey;
 }
 
-function getMediaStoragePath(collectionKey, entityId, dataUrl) {
+function getMediaStoragePath(collectionKey, entityId, dataUrl, assetHash) {
   const mimeMatch = /^data:(image\/[a-zA-Z0-9.+-]+);base64,/.exec(dataUrl || "");
   const mimeType = mimeMatch?.[1] || "image/png";
   const extension = mimeType.split("/")[1]?.replace("jpeg", "jpg") || "png";
-  return `atlas-media/${collectionKey}/${entityId}/${Date.now()}.${extension}`;
+  const safeHash = assetHash || `${Date.now()}`;
+  return `atlas-media/${collectionKey}/${entityId}/${safeHash}.${extension}`;
+}
+
+async function getAssetHash(value) {
+  try {
+    const encoded = new TextEncoder().encode(String(value || ""));
+    const digest = await crypto.subtle.digest("SHA-256", encoded);
+    return Array.from(new Uint8Array(digest))
+      .map((entry) => entry.toString(16).padStart(2, "0"))
+      .join("")
+      .slice(0, 24);
+  } catch (error) {
+    console.warn("Atlas could not hash media payload; using timestamp fallback.", error);
+    return `${Date.now()}`;
+  }
+}
+
+function getPublicStorageUrl(storageBucket, path) {
+  return `https://firebasestorage.googleapis.com/v0/b/${encodeURIComponent(
+    storageBucket
+  )}/o/${encodeURIComponent(path)}?alt=media`;
 }
 
 async function deleteStorageObject(storage, storageApi, path) {
@@ -172,19 +193,32 @@ export async function saveAtlasEntityMediaToCloud(collectionKey, entity, src, ty
     let mediaSrc = src;
     let mediaType = type;
     let storagePath = entity.media?.storagePath || "";
+    let assetHash = entity.media?.assetHash || "";
 
     if (type === "local" && typeof src === "string" && src.startsWith("data:image/")) {
-      const nextPath = getMediaStoragePath(collectionKey, entityId, src);
-      await deleteStorageObject(services.storage, services.storageApi, storagePath);
+      assetHash = await getAssetHash(src);
+      const nextPath = getMediaStoragePath(collectionKey, entityId, src, assetHash);
+      const nextUrl = getPublicStorageUrl(services.app.options.storageBucket, nextPath);
+      const isDuplicateUpload =
+        entity.media?.storagePath === nextPath &&
+        entity.media?.assetHash === assetHash;
 
-      const storageRef = services.storageApi.ref(services.storage, nextPath);
-      await services.storageApi.uploadString(storageRef, src, "data_url");
-      mediaSrc = await services.storageApi.getDownloadURL(storageRef);
+      if (!isDuplicateUpload) {
+        if (storagePath && storagePath !== nextPath) {
+          await deleteStorageObject(services.storage, services.storageApi, storagePath);
+        }
+
+        const storageRef = services.storageApi.ref(services.storage, nextPath);
+        await services.storageApi.uploadString(storageRef, src, "data_url");
+      }
+
+      mediaSrc = nextUrl;
       mediaType = "storage";
       storagePath = nextPath;
     } else if (storagePath) {
       await deleteStorageObject(services.storage, services.storageApi, storagePath);
       storagePath = "";
+      assetHash = "";
     }
 
     const nextEntity = {
@@ -194,6 +228,7 @@ export async function saveAtlasEntityMediaToCloud(collectionKey, entity, src, ty
         src: mediaSrc,
         type: mediaType,
         storagePath,
+        assetHash,
       },
     };
 
@@ -229,6 +264,7 @@ export async function removeAtlasEntityMediaFromCloud(collectionKey, entity) {
         src: "",
         type: "empty",
         storagePath: "",
+        assetHash: "",
       },
     };
 
