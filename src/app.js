@@ -1091,9 +1091,8 @@ function renderHomePage(section) {
 function renderHero() {
   const groupedMaps = getAtlasMapGroups();
   const modules = [
-    { key: "maps", label: "Map", state: "active" },
-    { key: "creatures", label: "Creatures", state: "planned" },
-    { key: "resources", label: "Items", state: "planned" },
+    { key: "creatures", label: "Creatures", href: "#/creatures", state: "active" },
+    { key: "resources", label: "Items", href: "#/resources", state: "active" },
   ];
 
   return `
@@ -1105,19 +1104,15 @@ function renderHero() {
             ${modules
               .map(
                 (module) => `
-                  <button
+                  <a
                     class="hero-dashboard__module hero-dashboard__module--${escapeHtml(
                       module.state
                     )}"
-                    type="button"
-                    ${
-                      module.state !== "active"
-                        ? 'disabled aria-disabled="true"'
-                        : 'aria-current="true"'
-                    }
+                    href="${escapeHtml(module.href || "#")}"
+                    aria-label="${escapeHtml(module.label)}"
                   >
                     <span>${escapeHtml(module.label)}</span>
-                  </button>
+                  </a>
                 `
               )
               .join("")}
