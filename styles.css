@@ -338,6 +338,8 @@ textarea {
 }
 
 .page-shell--map {
+  width: min(100%, 1760px);
+  max-width: none;
   padding-top: 1rem;
 }
 
@@ -1595,7 +1597,7 @@ textarea {
 }
 
 .map-section-card__media.media-slot--poster {
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 1.08 / 1;
 }
 
 .map-section-card__header {
@@ -1629,9 +1631,31 @@ textarea {
   padding-top: 0;
 }
 
-@media (min-width: 1380px) {
+@media (min-width: 1200px) {
   .map-section-grid {
     grid-template-columns: repeat(9, minmax(0, 1fr));
+    gap: 0.58rem;
+  }
+
+  .map-section-card {
+    gap: 0.42rem;
+    padding: 0.5rem;
+    border-radius: 16px;
+  }
+
+  .map-section-card__media {
+    min-height: 5.3rem;
+    border-radius: 12px;
+  }
+
+  .map-section-card__header--solo {
+    min-height: 1.15rem;
+    padding-inline: 0.04rem;
+  }
+
+  .map-section-card__header--solo h3 {
+    font-size: 0.76rem;
+    line-height: 1.1;
   }
 }
 

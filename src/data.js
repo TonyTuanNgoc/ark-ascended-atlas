@@ -57,6 +57,13 @@ const buildArkWikiThumbUrl = (fileName, size = 96) => {
   return `https://ark.wiki.gg/images/thumb/${encodedFileName}/${size}px-${encodedFileName}`;
 };
 
+const mapWikiMedia = (fileName, label, tone, size = 1200) => ({
+  src: buildArkWikiThumbUrl(fileName, size),
+  type: "image",
+  alt: label,
+  tone,
+});
+
 const wikiMedia = (slug, label, tone) => ({
   src: buildArkWikiThumbUrl(toCreatureIconFileName(label || slug), 96),
   type: "image",
@@ -524,7 +531,11 @@ export const defaultData = {
       classification: { type: "Story", access: "Free" },
       role: "Foundation ARK",
       whyPlay: "Blueprints, breeder line, artifact discipline, and the cleanest first ascension.",
-      media: blankMedia("The Island poster", "emerald"),
+      media: mapWikiMedia(
+        "The_Island_Topographic_Map.jpg",
+        "The Island in-game map",
+        "emerald"
+      ),
       story: {
         place: "The first proving ground in the ascension chain.",
         objective: "Survive, unify a boss roster, and prove worthy before the next ARK opens.",
@@ -594,7 +605,11 @@ export const defaultData = {
       classification: { type: "Story", access: "Free" },
       role: "Heat Trial",
       whyPlay: "Fast wyvern value, desert loot, and a compact boss route anchored by Manticore.",
-      media: blankMedia("Scorched Earth poster", "sand"),
+      media: mapWikiMedia(
+        "Scorched_Earth_Topographic_Map.jpg",
+        "Scorched Earth in-game map",
+        "sand"
+      ),
       story: {
         place: "The next canonical ARK after The Island.",
         objective: "Adapt to a harsher biome and force a cleaner, faster progression loop.",
@@ -640,7 +655,11 @@ export const defaultData = {
       classification: { type: "Story", access: "Free" },
       role: "Mutation ARK",
       whyPlay: "Rock Drake mobility, charge-light mastery, and one of the strongest identity shifts in the story chain.",
-      media: blankMedia("Aberration poster", "violet"),
+      media: mapWikiMedia(
+        "Aberration_Map.jpg",
+        "Aberration in-game map",
+        "violet"
+      ),
       story: {
         place: "The damaged ARK after Scorched Earth.",
         objective: "Descend, survive corruption and radiation, then strike Rockwell at the core.",
@@ -686,7 +705,11 @@ export const defaultData = {
       classification: { type: "Story", access: "Free" },
       role: "Final War",
       whyPlay: "Titan progression, endgame gear, and the final original ascension arc.",
-      media: blankMedia("Extinction poster", "ember"),
+      media: mapWikiMedia(
+        "Extinction_Topographic_Map.jpg",
+        "Extinction in-game map",
+        "ember"
+      ),
       story: {
         place: "The original story climax on ruined Earth.",
         objective: "Arm for total war, break the Titans, and challenge the King Titan.",
@@ -731,7 +754,11 @@ export const defaultData = {
       classification: { type: "Side", access: "Free" },
       role: "Farm Adventure",
       whyPlay: "Scenic main base potential, rich caves, and good comfort when you want story-adjacent power.",
-      media: blankMedia("The Center poster", "teal"),
+      media: mapWikiMedia(
+        "The_Center_Topographic_Map.jpg",
+        "The Center in-game map",
+        "teal"
+      ),
       story: {
         place: "A side expedition outside the main canonical climb.",
         objective: "Farm, explore, and leverage its routes for stronger transfers.",
@@ -771,7 +798,11 @@ export const defaultData = {
       classification: { type: "Side", access: "Free" },
       role: "Explorer Kingdom",
       whyPlay: "Massive resource comfort, strong main base placements, and satisfying boss value without losing adventure.",
-      media: blankMedia("Ragnarok poster", "gold"),
+      media: mapWikiMedia(
+        "Ragnarok_Topographic_Map.jpg",
+        "Ragnarok in-game map",
+        "gold"
+      ),
       story: {
         place: "A side expedition with mythic scale rather than core canon focus.",
         objective: "Use its breadth to farm hard, breed comfortably, and sharpen boss execution.",
@@ -813,7 +844,11 @@ export const defaultData = {
       classification: { type: "Side", access: "Free" },
       role: "Balanced Side Route",
       whyPlay: "Solid all-around progression without the sprawl overhead of the biggest maps.",
-      media: blankMedia("Valguero poster", "forest"),
+      media: mapWikiMedia(
+        "Valguero_Topographic_Map.jpg",
+        "Valguero in-game map",
+        "forest"
+      ),
       story: {
         place: "A non-canonical but useful expedition.",
         objective: "Sharpen a compact route with flexible farming and multi-boss prep.",
@@ -853,7 +888,11 @@ export const defaultData = {
       classification: { type: "Story", access: "Paid" },
       role: "Story Continuation",
       whyPlay: "For players who want the next chapter framed inside the same ascension journal without turning the site into a lore wall.",
-      media: blankMedia("Lost Colony poster", "copper"),
+      media: mapWikiMedia(
+        "Level_55.jpg",
+        "Lost Colony in-game map",
+        "copper"
+      ),
       story: {
         place: "A continuation node beyond the original story arc.",
         objective: "Follow the surviving thread of the ARK conflict into a new expedition stage.",
@@ -889,7 +928,11 @@ export const defaultData = {
       classification: { type: "Side", access: "Free" },
       role: "Favorite Expedition",
       whyPlay: "When you want a discovery-heavy detour that still supports wealth and selective transfers.",
-      media: blankMedia("Astraeos poster", "azure"),
+      media: mapWikiMedia(
+        "Astraeos_Topographic_Map.jpg",
+        "Astraeos in-game map",
+        "azure"
+      ),
       story: {
         place: "A side expedition in your personal atlas rather than the core canon climb.",
         objective: "Extract beauty, route value, and memorable side progression.",
