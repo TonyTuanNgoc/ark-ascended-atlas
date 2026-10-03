@@ -3,3 +3,7 @@
 firebase-debug.log*
 npm-debug.log*
 *.local
+.firebase/
+**/xcuserdata/
+**/*.xcuserstate
+native/**/build/

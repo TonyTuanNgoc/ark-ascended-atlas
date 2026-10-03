@@ -1,0 +1,9 @@
+# Ascended iPad development v1
+User requested direct implementation: independent native iPad app named Ascended, original ARK Survival Ascended logo, cable-installed development build, no TestFlight, Single Player, Ragnarok only. This supersedes additional staged permission prompts.
+
+Scope: SwiftUI native navigation, Ragnarok overview, bundled ASA Ragnarok map with pinch/pan/double-tap/reset, on-device persistent notes, attributed source links. No calculators, creature data, progression claims or extra maps. No Tony OS changes and no webview wrapper. Requires iPadOS 17+; supports portrait and landscape. Original game logo is used without redrawing; map asset from Wikily ASA Ragnarok map, identified separately from official game publisher. Offline assets and notes; links require network. Separate bundle ID com.tonytuanngoc.ascended.
+
+Delivery: clean branch from fetched origin/main; simulator portrait/landscape and notes persistence QA; signed device build, install and launch on paired iPad; commit/push; hosting-only deploy existing ARK site with native/docs/build excluded, release receipt verified live. Do not upload to TestFlight.
+
+## User extension during implementation
+Research existing SSD/iCloud ARK data; add native Dino and Boss sections for Ragnarok current as of 2026-10-03. Keep historical research identifiable, refresh roster from live ASA sources and official 2026-09-30 changes. Include all 151 source registry names plus 8 wiki-supported supplemental creatures/Alpha variants; 159 catalogue entries include variants, not 159 species. Bosses: Nunatak main; Iceworm Queen, Lava Elemental, Spirit Dire Bear and Spirit Direwolf dungeon bosses (3 dungeon encounter groups). Exclude old Ragnarok Evolved Dragon/Manticore arena. Upgrade offline terrain to highest available source zoom 5, 8192×8192, plus zoom buttons and improved map layout. Version 0.2.0 (2), same bundle and notes key, direct device update, no TestFlight.

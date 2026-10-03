@@ -1,0 +1,469 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A33F558707B9F084E4C3F40 /* ragnarok-creatures.json in Resources */ = {isa = PBXBuildFile; fileRef = 117624CA7AE01E94124FA7DA /* ragnarok-creatures.json */; };
+		37FFCBC1D77B9E53007F2C25 /* AscendedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1AD1EAA4F7A46916301E1D /* AscendedApp.swift */; };
+		7E1988F3A8D148B277FC1681 /* AscendedShell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A91B2E5C7B289D1C4C46DEF /* AscendedShell.swift */; };
+		A3253B306FA95434F5C6B84A /* CreatureLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4F5D30EEB47F7931AF520A /* CreatureLibrary.swift */; };
+		A563E07C1FB7ACCBCF7A0082 /* BossLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6602DFCC85CCA8647502E88 /* BossLibrary.swift */; };
+		B04C9A14B723462EA353F201 /* ExpeditionNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87672B19297C391331E41BB /* ExpeditionNotes.swift */; };
+		B297C70D733C50A977E0AB03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CD3B0CB749ADBF9C76CB11E /* Assets.xcassets */; };
+		C2DF36FBB33C5C67DB4FBF1F /* RagnarokMapScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B94A451F9BEF607506714 /* RagnarokMapScreen.swift */; };
+		E538DBC7D81AC824CB404B29 /* RagnarokOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A8A1B021D9F858447D2051 /* RagnarokOverview.swift */; };
+		F3647652931C6D99937FDF38 /* AscendedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BD787F9B5473F20F11212D /* AscendedUITests.swift */; };
+		FF876071A61F309EE97B1A61 /* RagnarokCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E76EEB0B47B1415FE6E05B8 /* RagnarokCatalog.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6ED491619A6712ACF19FC853 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3DC1458031E2DDD3AB22D4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C63A1F8ACBD52454EB6258D7;
+			remoteInfo = Ascended;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		009B94A451F9BEF607506714 /* RagnarokMapScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RagnarokMapScreen.swift; sourceTree = "<group>"; };
+		03A8A1B021D9F858447D2051 /* RagnarokOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RagnarokOverview.swift; sourceTree = "<group>"; };
+		117624CA7AE01E94124FA7DA /* ragnarok-creatures.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "ragnarok-creatures.json"; sourceTree = "<group>"; };
+		2A7EFD263B75CC30DD725025 /* Ascended.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Ascended.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A91B2E5C7B289D1C4C46DEF /* AscendedShell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AscendedShell.swift; sourceTree = "<group>"; };
+		2C1AD1EAA4F7A46916301E1D /* AscendedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AscendedApp.swift; sourceTree = "<group>"; };
+		2CD3B0CB749ADBF9C76CB11E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5E76EEB0B47B1415FE6E05B8 /* RagnarokCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RagnarokCatalog.swift; sourceTree = "<group>"; };
+		6F4F5D30EEB47F7931AF520A /* CreatureLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatureLibrary.swift; sourceTree = "<group>"; };
+		6FC18FB590213ECE844E8B78 /* AscendedUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = AscendedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		95BD787F9B5473F20F11212D /* AscendedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AscendedUITests.swift; sourceTree = "<group>"; };
+		B87672B19297C391331E41BB /* ExpeditionNotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpeditionNotes.swift; sourceTree = "<group>"; };
+		E6602DFCC85CCA8647502E88 /* BossLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BossLibrary.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1177D2C527D888B965E39964 /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				95BD787F9B5473F20F11212D /* AscendedUITests.swift */,
+			);
+			path = UITests;
+			sourceTree = "<group>";
+		};
+		5838F58EECF56E852FD48F64 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				2C1AD1EAA4F7A46916301E1D /* AscendedApp.swift */,
+				2A91B2E5C7B289D1C4C46DEF /* AscendedShell.swift */,
+				E6602DFCC85CCA8647502E88 /* BossLibrary.swift */,
+				6F4F5D30EEB47F7931AF520A /* CreatureLibrary.swift */,
+				B87672B19297C391331E41BB /* ExpeditionNotes.swift */,
+				5E76EEB0B47B1415FE6E05B8 /* RagnarokCatalog.swift */,
+				009B94A451F9BEF607506714 /* RagnarokMapScreen.swift */,
+				03A8A1B021D9F858447D2051 /* RagnarokOverview.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		EA8688D1338FE26B8B47E6F2 = {
+			isa = PBXGroup;
+			children = (
+				2CD3B0CB749ADBF9C76CB11E /* Assets.xcassets */,
+				FDB7E224B5BCCA97F668DF5A /* Resources */,
+				5838F58EECF56E852FD48F64 /* Sources */,
+				1177D2C527D888B965E39964 /* UITests */,
+				F9E99E4DE5592CD422AC65E3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F9E99E4DE5592CD422AC65E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A7EFD263B75CC30DD725025 /* Ascended.app */,
+				6FC18FB590213ECE844E8B78 /* AscendedUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FDB7E224B5BCCA97F668DF5A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				117624CA7AE01E94124FA7DA /* ragnarok-creatures.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ABF572F3541C50D97B27C8C2 /* AscendedUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87870EDFB3A5B562D7E8227F /* Build configuration list for PBXNativeTarget "AscendedUITests" */;
+			buildPhases = (
+				25684B1CE9EE647427A093E0 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3E6BC46AB1DE04E85A9482E /* PBXTargetDependency */,
+			);
+			name = AscendedUITests;
+			packageProductDependencies = (
+			);
+			productName = AscendedUITests;
+			productReference = 6FC18FB590213ECE844E8B78 /* AscendedUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		C63A1F8ACBD52454EB6258D7 /* Ascended */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E650B9EF3C530C16CEF292D6 /* Build configuration list for PBXNativeTarget "Ascended" */;
+			buildPhases = (
+				9743017EEE50FAEDD299A431 /* Sources */,
+				C0B1AC25982ECF01FFBBF17D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ascended;
+			packageProductDependencies = (
+			);
+			productName = Ascended;
+			productReference = 2A7EFD263B75CC30DD725025 /* Ascended.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A3DC1458031E2DDD3AB22D4E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					ABF572F3541C50D97B27C8C2 = {
+						DevelopmentTeam = HP5W6N9V3N;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C63A1F8ACBD52454EB6258D7;
+					};
+					C63A1F8ACBD52454EB6258D7 = {
+						DevelopmentTeam = HP5W6N9V3N;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 383EEAC8791DBE833E5FB443 /* Build configuration list for PBXProject "Ascended" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = EA8688D1338FE26B8B47E6F2;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = F9E99E4DE5592CD422AC65E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C63A1F8ACBD52454EB6258D7 /* Ascended */,
+				ABF572F3541C50D97B27C8C2 /* AscendedUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C0B1AC25982ECF01FFBBF17D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B297C70D733C50A977E0AB03 /* Assets.xcassets in Resources */,
+				1A33F558707B9F084E4C3F40 /* ragnarok-creatures.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		25684B1CE9EE647427A093E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3647652931C6D99937FDF38 /* AscendedUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9743017EEE50FAEDD299A431 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37FFCBC1D77B9E53007F2C25 /* AscendedApp.swift in Sources */,
+				7E1988F3A8D148B277FC1681 /* AscendedShell.swift in Sources */,
+				A563E07C1FB7ACCBCF7A0082 /* BossLibrary.swift in Sources */,
+				A3253B306FA95434F5C6B84A /* CreatureLibrary.swift in Sources */,
+				B04C9A14B723462EA353F201 /* ExpeditionNotes.swift in Sources */,
+				FF876071A61F309EE97B1A61 /* RagnarokCatalog.swift in Sources */,
+				C2DF36FBB33C5C67DB4FBF1F /* RagnarokMapScreen.swift in Sources */,
+				E538DBC7D81AC824CB404B29 /* RagnarokOverview.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B3E6BC46AB1DE04E85A9482E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C63A1F8ACBD52454EB6258D7 /* Ascended */;
+			targetProxy = 6ED491619A6712ACF19FC853 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		29133C22DD24DEE65537E597 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Ascended;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonytuanngoc.ascended;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4D91407C2B222D5F5043F555 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonytuanngoc.AscendedUITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Ascended;
+			};
+			name = Debug;
+		};
+		66F8E47E6765A268EDBB7FE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 2;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = HP5W6N9V3N;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 0.2.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		6EA34C719528D88FA8D87DCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonytuanngoc.AscendedUITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Ascended;
+			};
+			name = Release;
+		};
+		9C441F393E6D18D51220AEC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 2;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = HP5W6N9V3N;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 0.2.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		B63E045D9290C9C6822A4A16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Ascended;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonytuanngoc.ascended;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		383EEAC8791DBE833E5FB443 /* Build configuration list for PBXProject "Ascended" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66F8E47E6765A268EDBB7FE6 /* Debug */,
+				9C441F393E6D18D51220AEC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		87870EDFB3A5B562D7E8227F /* Build configuration list for PBXNativeTarget "AscendedUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D91407C2B222D5F5043F555 /* Debug */,
+				6EA34C719528D88FA8D87DCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E650B9EF3C530C16CEF292D6 /* Build configuration list for PBXNativeTarget "Ascended" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29133C22DD24DEE65537E597 /* Debug */,
+				B63E045D9290C9C6822A4A16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A3DC1458031E2DDD3AB22D4E /* Project object */;
+}

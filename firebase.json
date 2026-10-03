@@ -11,7 +11,14 @@
     "ignore": [
       "firebase.json",
       "**/.*",
-      "**/node_modules/**"
+      "**/node_modules/**",
+      "native/**",
+      "docs/**",
+      "scripts/**",
+      "README.md",
+      "firestore.rules",
+      "firestore.indexes.json",
+      "storage.rules"
     ],
     "rewrites": [
       {
