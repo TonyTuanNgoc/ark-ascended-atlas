@@ -1,0 +1,401 @@
+{
+  "reviewedAt": "03/10/2026",
+  "artifacts": [
+    {
+      "id": "brute",
+      "name": "Artifact of the Brute",
+      "lat": 67.084,
+      "lon": 88.783,
+      "routeID": "trench",
+      "imageAsset": "Artifact-brute",
+      "sourceURL": "https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=21&layer=artifacts"
+    },
+    {
+      "id": "massive",
+      "name": "Artifact of the Massive",
+      "lat": 13.959,
+      "lon": 48.55,
+      "routeID": "lava",
+      "imageAsset": "Artifact-massive",
+      "sourceURL": "https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=21&layer=artifacts"
+    },
+    {
+      "id": "clever",
+      "name": "Artifact of the Clever",
+      "lat": 22.295,
+      "lon": 21.841,
+      "routeID": "north-ice",
+      "imageAsset": "Artifact-clever",
+      "sourceURL": "https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=21&layer=artifacts"
+    },
+    {
+      "id": "skylord",
+      "name": "Artifact of the Skylord",
+      "lat": 54.458,
+      "lon": 18.905,
+      "routeID": "south-ice",
+      "imageAsset": "Artifact-skylord",
+      "sourceURL": "https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=21&layer=artifacts"
+    },
+    {
+      "id": "devourer",
+      "name": "Artifact of the Devourer",
+      "lat": 26.739,
+      "lon": 23.784,
+      "routeID": "north-ice",
+      "imageAsset": "Artifact-devourer",
+      "sourceURL": "https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=21&layer=artifacts"
+    },
+    {
+      "id": "immune",
+      "name": "Artifact of the Immune",
+      "lat": 49.985,
+      "lon": 60.158,
+      "routeID": "jungle",
+      "imageAsset": "Artifact-immune",
+      "sourceURL": "https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=21&layer=artifacts"
+    },
+    {
+      "id": "devious",
+      "name": "Artifact of the Devious",
+      "lat": 42.471,
+      "lon": 30.706,
+      "routeID": "floating",
+      "imageAsset": "Artifact-devious",
+      "sourceURL": "https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=21&layer=artifacts"
+    },
+    {
+      "id": "hunter",
+      "name": "Artifact of the Hunter",
+      "lat": 19.99,
+      "lon": 49.809,
+      "routeID": "lava-oasis",
+      "imageAsset": "Artifact-hunter",
+      "sourceURL": "https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=21&layer=artifacts"
+    },
+    {
+      "id": "strong",
+      "name": "Artifact of the Strong",
+      "lat": 18.57,
+      "lon": 52.728,
+      "routeID": "lava",
+      "imageAsset": "Artifact-strong",
+      "sourceURL": "https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=21&layer=artifacts"
+    },
+    {
+      "id": "pack",
+      "name": "Artifact of the Pack",
+      "lat": 60.573,
+      "lon": 49.346,
+      "routeID": "underworld",
+      "imageAsset": "Artifact-pack",
+      "sourceURL": "https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=21&layer=artifacts"
+    },
+    {
+      "id": "cunning",
+      "name": "Artifact of the Cunning",
+      "lat": 36.963,
+      "lon": 16.294,
+      "routeID": "cliffside",
+      "imageAsset": "Artifact-cunning",
+      "sourceURL": "https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=21&layer=artifacts"
+    }
+  ],
+  "routes": [
+    {
+      "id": "north-ice",
+      "name": "North Ice Cave",
+      "artifactIDs": [
+        "clever",
+        "devourer"
+      ],
+      "entrances": [
+        {
+          "id": "north-ice-0",
+          "label": "Cửa phía bắc núi tuyết",
+          "lat": 21.9,
+          "lon": 27.1
+        }
+      ],
+      "boss": "",
+      "notes": "Hai artifact trong tuyến băng phía bắc; cần chuẩn bị lạnh, vực và đoạn nước.",
+      "kit": [
+        "Fur và đồ giữ ấm",
+        "Medical Brew, giáp/vũ khí dự phòng",
+        "Thăm dò khe hẹp và vực trước khi đưa tame",
+        "Đọc giới hạn hang; không mặc định có thể dùng cryopod",
+        "SCUBA cho nhánh nước"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/North_Ice_Cave_%28The_Center%29",
+      "entranceSourceURL": "https://primagames.com/gaming/all-cave-locations-in-the-center-in-ark-survival-ascended",
+      "imageAsset": "TheCenterMap",
+      "imageCaption": "Địa hình The Center Ascended · Wikily; không phải sơ đồ bên trong hang."
+    },
+    {
+      "id": "south-ice",
+      "name": "South Ice Cave",
+      "artifactIDs": [
+        "skylord"
+      ],
+      "entrances": [
+        {
+          "id": "south-ice-0",
+          "label": "Cửa phía nam núi tuyết",
+          "lat": 59.6,
+          "lon": 20.6
+        }
+      ],
+      "boss": "",
+      "notes": "Tuyến Skylord trong hang băng phía nam. Nhiều độ cao và chỗ rơi; giữ đường rút.",
+      "kit": [
+        "Fur và đồ giữ ấm",
+        "Medical Brew, giáp/vũ khí dự phòng",
+        "Thăm dò khe hẹp và vực trước khi đưa tame",
+        "Đọc giới hạn hang; không mặc định có thể dùng cryopod"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/South_Ice_Cave_%28The_Center%29",
+      "entranceSourceURL": "https://primagames.com/gaming/all-cave-locations-in-the-center-in-ark-survival-ascended",
+      "imageAsset": "TheCenterMap",
+      "imageCaption": "Địa hình The Center Ascended · Wikily; không phải sơ đồ bên trong hang."
+    },
+    {
+      "id": "lava-oasis",
+      "name": "Lava Oasis Cave",
+      "artifactIDs": [
+        "hunter"
+      ],
+      "entrances": [
+        {
+          "id": "lava-oasis-0",
+          "label": "Cửa phía tây đảo núi lửa",
+          "lat": 20.2,
+          "lon": 46.3
+        }
+      ],
+      "boss": "",
+      "notes": "Tuyến Hunter nóng và có nhánh nước. Tên Lava Oasis không có nghĩa phải băng qua hồ lava.",
+      "kit": [
+        "Vũ khí và đạn dự phòng",
+        "Giáp, Medical Brew, Stimulant",
+        "Lesser Antidote và đồ sửa",
+        "Nguồn sáng; đánh dấu đường rút",
+        "Đồ chống nóng, nước và dụng cụ lặn dự phòng"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Lava_Oasis_Cave_%28The_Center%29",
+      "entranceSourceURL": "https://primagames.com/gaming/all-cave-locations-in-the-center-in-ark-survival-ascended",
+      "imageAsset": "TheCenterMap",
+      "imageCaption": "Địa hình The Center Ascended · Wikily; không phải sơ đồ bên trong hang."
+    },
+    {
+      "id": "lava",
+      "name": "Lava Cave",
+      "artifactIDs": [
+        "massive",
+        "strong"
+      ],
+      "entrances": [
+        {
+          "id": "lava-0",
+          "label": "Cửa phía đông đảo núi lửa",
+          "lat": 15.0,
+          "lon": 62.0
+        }
+      ],
+      "boss": "",
+      "notes": "Hai artifact trong tuyến núi lửa. Chuẩn bị vận động qua địa hình cao, nóng; khảo sát hạn chế flyer/cryopod theo save.",
+      "kit": [
+        "Vũ khí và đạn dự phòng",
+        "Giáp, Medical Brew, Stimulant",
+        "Lesser Antidote và đồ sửa",
+        "Nguồn sáng; đánh dấu đường rút",
+        "Grapple, parachute và đồ chống nóng"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Lava_Cave_%28The_Center%29",
+      "entranceSourceURL": "https://primagames.com/gaming/all-cave-locations-in-the-center-in-ark-survival-ascended",
+      "imageAsset": "TheCenterMap",
+      "imageCaption": "Địa hình The Center Ascended · Wikily; không phải sơ đồ bên trong hang."
+    },
+    {
+      "id": "jungle",
+      "name": "Jungle Cave",
+      "artifactIDs": [
+        "immune"
+      ],
+      "entrances": [
+        {
+          "id": "jungle-0",
+          "label": "Lối tiếp cận 1",
+          "lat": 47.7,
+          "lon": 58.0
+        },
+        {
+          "id": "jungle-1",
+          "label": "Lối tiếp cận 2",
+          "lat": 51.5,
+          "lon": 65.4
+        },
+        {
+          "id": "jungle-2",
+          "label": "Lối tiếp cận 3",
+          "lat": 53.1,
+          "lon": 62.1
+        },
+        {
+          "id": "jungle-3",
+          "label": "Lối tiếp cận 4",
+          "lat": 54.5,
+          "lon": 57.7
+        }
+      ],
+      "boss": "",
+      "notes": "Hệ hang Immune nhiều lối vào. Các GPS là những cửa hướng dẫn đã liệt kê, không khẳng định mọi cửa; mang SCUBA nếu đi nhánh nước.",
+      "kit": [
+        "Vũ khí và đạn dự phòng",
+        "Giáp, Medical Brew, Stimulant",
+        "Lesser Antidote và đồ sửa",
+        "Nguồn sáng; đánh dấu đường rút",
+        "SCUBA"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Jungle_Cave_%28The_Center%29",
+      "entranceSourceURL": "https://primagames.com/gaming/all-cave-locations-in-the-center-in-ark-survival-ascended",
+      "imageAsset": "TheCenterMap",
+      "imageCaption": "Địa hình The Center Ascended · Wikily; không phải sơ đồ bên trong hang."
+    },
+    {
+      "id": "cliffside",
+      "name": "Cliffside Cavern",
+      "artifactIDs": [
+        "cunning"
+      ],
+      "entrances": [
+        {
+          "id": "cliffside-0",
+          "label": "Lối phía nam",
+          "lat": 57.7,
+          "lon": 11.6
+        },
+        {
+          "id": "cliffside-1",
+          "label": "Lối phía bắc",
+          "lat": 23.5,
+          "lon": 12.2
+        }
+      ],
+      "boss": "",
+      "notes": "Vùng hang lớn dọc vách phía tây; artifact Cunning nằm sâu bên trong. Không dùng tâm artifact làm cửa hang.",
+      "kit": [
+        "Vũ khí và đạn dự phòng",
+        "Giáp, Medical Brew, Stimulant",
+        "Lesser Antidote và đồ sửa",
+        "Nguồn sáng; đánh dấu đường rút",
+        "Tame di chuyển và đường quay về"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Cliffside_Cavern_%28The_Center%29",
+      "entranceSourceURL": "https://primagames.com/gaming/all-cave-locations-in-the-center-in-ark-survival-ascended",
+      "imageAsset": "TheCenterMap",
+      "imageCaption": "Địa hình The Center Ascended · Wikily; không phải sơ đồ bên trong hang."
+    },
+    {
+      "id": "floating",
+      "name": "The Center Cave",
+      "artifactIDs": [
+        "devious"
+      ],
+      "entrances": [
+        {
+          "id": "floating-0",
+          "label": "Cửa đảo nổi",
+          "lat": 38.1,
+          "lon": 32.5
+        }
+      ],
+      "boss": "",
+      "notes": "Tuyến Devious trong đảo nổi; chuẩn bị độ cao và đường rút. Chỉ dùng cửa đã phân biệt được với lối Underground World.",
+      "kit": [
+        "Vũ khí và đạn dự phòng",
+        "Giáp, Medical Brew, Stimulant",
+        "Lesser Antidote và đồ sửa",
+        "Nguồn sáng; đánh dấu đường rút",
+        "Parachute / Grapple"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/The_Center_Cave_%28The_Center%29",
+      "entranceSourceURL": "https://primagames.com/gaming/all-cave-locations-in-the-center-in-ark-survival-ascended",
+      "imageAsset": "TheCenterMap",
+      "imageCaption": "Địa hình The Center Ascended · Wikily; không phải sơ đồ bên trong hang."
+    },
+    {
+      "id": "underworld",
+      "name": "Underground World",
+      "artifactIDs": [
+        "pack"
+      ],
+      "entrances": [
+        {
+          "id": "underworld-0",
+          "label": "Cửa tiếp cận 1",
+          "lat": 54.4,
+          "lon": 48.8
+        },
+        {
+          "id": "underworld-1",
+          "label": "Cửa tiếp cận 2",
+          "lat": 53.4,
+          "lon": 49.8
+        }
+      ],
+      "boss": "",
+      "notes": "Tuyến Pack trong thế giới ngầm. Đánh dấu từng nhánh và điểm rơi; đây không phải cửa The Center Cave ở đảo nổi.",
+      "kit": [
+        "Vũ khí và đạn dự phòng",
+        "Giáp, Medical Brew, Stimulant",
+        "Lesser Antidote và đồ sửa",
+        "Nguồn sáng; đánh dấu đường rút",
+        "Bộ di chuyển và nguồn sáng"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Underground_World_%28The_Center%29",
+      "entranceSourceURL": "https://primagames.com/gaming/all-cave-locations-in-the-center-in-ark-survival-ascended",
+      "imageAsset": "TheCenterMap",
+      "imageCaption": "Địa hình The Center Ascended · Wikily; không phải sơ đồ bên trong hang."
+    },
+    {
+      "id": "trench",
+      "name": "Southeastern Trench",
+      "artifactIDs": [
+        "brute"
+      ],
+      "entrances": [],
+      "boss": "",
+      "notes": "Brute ở rãnh biển sâu phía đông nam, không có cửa hang. Điểm artifact là đích lặn; chuẩn bị khí, độ sâu và tame biển.",
+      "kit": [
+        "SCUBA đủ bền và bộ dự phòng",
+        "Tame biển phù hợp, saddle và food",
+        "Medical Brew, nguồn sáng",
+        "Khảo sát độ sâu, điện và đường thoát"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Southeastern_Trench_%28The_Center%29",
+      "entranceSourceURL": "https://primagames.com/gaming/all-cave-locations-in-the-center-in-ark-survival-ascended",
+      "imageAsset": "TheCenterMap",
+      "imageCaption": "Địa hình The Center Ascended · Wikily; không phải sơ đồ bên trong hang."
+    }
+  ],
+  "obelisks": [
+    {
+      "id": "obelisk-red",
+      "label": "Red Obelisk",
+      "lat": 12.194,
+      "lon": 54.147
+    },
+    {
+      "id": "obelisk-green",
+      "label": "Green Obelisk",
+      "lat": 36.64,
+      "lon": 14.249
+    },
+    {
+      "id": "obelisk-blue",
+      "label": "Blue Obelisk",
+      "lat": 51.293,
+      "lon": 74.695
+    }
+  ]
+}

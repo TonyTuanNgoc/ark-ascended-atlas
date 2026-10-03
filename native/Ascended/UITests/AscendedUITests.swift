@@ -5,6 +5,7 @@ final class AscendedUITests: XCTestCase {
         let app = XCUIApplication()
         XCUIDevice.shared.orientation = .landscapeLeft
         app.launch()
+        XCTAssertTrue(app.buttons["choose-ragnarok"].waitForExistence(timeout: 8)); app.buttons["choose-ragnarok"].tap()
         Thread.sleep(forTimeInterval: 1)
         XCTAssertTrue(app.buttons["openRagnarokMap"].waitForExistence(timeout: 10))
         let overview = XCTAttachment(screenshot: XCUIScreen.main.screenshot())
@@ -39,6 +40,7 @@ final class AscendedUITests: XCTestCase {
         let marker = "Ragnarok QA " + UUID().uuidString
         notes.typeText(marker)
         app.terminate(); app.launch()
+        XCTAssertTrue(app.buttons["choose-ragnarok"].waitForExistence(timeout: 8)); app.buttons["choose-ragnarok"].tap()
         app.buttons["Ghi chú"].tap()
         XCTAssertTrue(app.textViews["ragnarokNotes"].waitForExistence(timeout: 5))
         XCTAssertTrue((app.textViews["ragnarokNotes"].value as? String ?? "").contains(marker))
@@ -47,6 +49,7 @@ final class AscendedUITests: XCTestCase {
         let app = XCUIApplication()
         XCUIDevice.shared.orientation = .landscapeLeft
         app.launch()
+        XCTAssertTrue(app.buttons["choose-ragnarok"].waitForExistence(timeout: 8)); app.buttons["choose-ragnarok"].tap()
         XCTAssertTrue(app.buttons["openDinos"].waitForExistence(timeout: 10))
         app.buttons["openDinos"].tap()
         XCTAssertTrue(app.buttons["filter-DLC"].waitForExistence(timeout: 5))
@@ -76,6 +79,7 @@ final class AscendedUITests: XCTestCase {
         let app = XCUIApplication()
         XCUIDevice.shared.orientation = .landscapeLeft
         app.launch()
+        XCTAssertTrue(app.buttons["choose-ragnarok"].waitForExistence(timeout: 8)); app.buttons["choose-ragnarok"].tap()
         app.buttons["Artifact & Hang"].firstMatch.tap()
         XCTAssertTrue(app.buttons["route-jungle"].waitForExistence(timeout: 5))
         app.buttons["route-jungle"].tap()
@@ -119,6 +123,83 @@ final class AscendedUITests: XCTestCase {
         XCTAssertTrue(app.staticTexts["550"].exists)
         let boss = XCTAttachment(screenshot: XCUIScreen.main.screenshot())
         boss.name = "Nunatak-Alpha-guide"; boss.lifetime = .keepAlways; add(boss)
+    }
+
+    @MainActor func testMapSelectionIsolationAndProgress() throws {
+        let app = XCUIApplication()
+        XCUIDevice.shared.orientation = .landscapeLeft
+        app.launch()
+        XCTAssertTrue(app.buttons["choose-the-island"].waitForExistence(timeout: 8))
+        let picker = XCTAttachment(screenshot: XCUIScreen.main.screenshot())
+        picker.name = "Three-map-picker"; picker.lifetime = .keepAlways; add(picker)
+        app.buttons["choose-the-island"].tap()
+        XCTAssertEqual(app.staticTexts["mapInformationTitle"].label, "The Island")
+        app.buttons["section-Boss"].tap()
+        XCTAssertTrue(app.buttons["boss-dragon"].waitForExistence(timeout: 5))
+        XCTAssertFalse(app.buttons["boss-nunatak"].exists)
+        app.buttons["boss-broodmother"].tap()
+        let artifact = app.buttons["boss-artifact-hunter"]
+        for _ in 0..<4 { if artifact.isHittable { break }; app.swipeUp() }
+        XCTAssertTrue(artifact.isHittable); artifact.tap()
+        XCTAssertTrue(app.staticTexts["LAT 89.11 · LON 57.05"].waitForExistence(timeout: 5))
+        let collected = app.switches["collected-hunter"]
+        for _ in 0..<3 { if collected.isHittable { break }; app.swipeUp() }
+        XCTAssertTrue(collected.isHittable)
+        if collected.value as? String != "1" { collected.tap() }
+        XCTAssertEqual(collected.value as? String, "1")
+        app.buttons["section-Ghi chú"].tap()
+        let notes = app.textViews["ragnarokNotes"]
+        XCTAssertTrue(notes.waitForExistence(timeout: 5)); notes.tap()
+        let marker = "Island isolated " + UUID().uuidString
+        notes.typeText(marker)
+        app.buttons["changeMap"].tap()
+        app.buttons["choose-the-center"].tap()
+        XCTAssertEqual(app.staticTexts["mapInformationTitle"].label, "The Center")
+        app.buttons["section-Ghi chú"].tap()
+        XCTAssertTrue(notes.waitForExistence(timeout: 5))
+        XCTAssertFalse((notes.value as? String ?? "").contains(marker))
+        app.buttons["section-Dino"].tap()
+        let search = app.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("Shastasaurus")
+        XCTAssertTrue(app.buttons["creature-shastasaurus"].waitForExistence(timeout: 5))
+        app.buttons["creature-shastasaurus"].tap()
+        app.buttons["section-Boss"].tap()
+        XCTAssertTrue(app.buttons["boss-broodmother"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.buttons["boss-megapithecus"].exists)
+        XCTAssertFalse(app.buttons["boss-dragon"].exists); XCTAssertFalse(app.buttons["boss-overseer"].exists)
+        app.buttons["boss-broodmother"].tap()
+        let centerHunter = app.buttons["boss-artifact-hunter"]
+        for _ in 0..<5 { if centerHunter.isHittable { break }; app.swipeUp() }
+        XCTAssertTrue(centerHunter.isHittable); centerHunter.tap()
+        XCTAssertTrue(app.staticTexts["LAT 19.99 · LON 49.81"].waitForExistence(timeout: 5))
+        for _ in 0..<3 { if collected.isHittable { break }; app.swipeUp() }
+        XCTAssertTrue(collected.isHittable)
+        // Leave Center's Hunter uncollected, independent of Island's collected Hunter.
+        if collected.value as? String == "1" { collected.tap() }
+        XCTAssertEqual(collected.value as? String, "0")
+        app.buttons["show-artifact-hunter"].tap()
+        let viewport = app.scrollViews["ragnarokMapViewport"]
+        XCTAssertTrue(viewport.waitForExistence(timeout: 5))
+        XCTAssertEqual(viewport.label, "Bản đồ The Center")
+        let centerMap = XCTAttachment(screenshot: XCUIScreen.main.screenshot())
+        centerMap.name = "Center-focused-map"; centerMap.lifetime = .keepAlways; add(centerMap)
+        app.buttons["changeMap"].tap()
+        app.buttons["choose-the-island"].tap()
+        XCTAssertEqual(app.staticTexts["mapInformationTitle"].label, "The Island")
+        app.buttons["section-Ghi chú"].tap()
+        XCTAssertTrue(notes.waitForExistence(timeout: 5))
+        XCTAssertTrue((notes.value as? String ?? "").contains(marker))
+        // Verify map progress after a real process restart.
+        app.terminate(); app.launch()
+        app.buttons["choose-the-island"].tap()
+        app.buttons["section-Artifact & Hang"].tap()
+        app.buttons["route-lower-south"].tap()
+        let hunter = app.buttons["artifact-hunter"]
+        for _ in 0..<3 { if hunter.isHittable { break }; app.swipeUp() }
+        hunter.tap()
+        for _ in 0..<3 { if collected.isHittable { break }; app.swipeUp() }
+        XCTAssertEqual(collected.value as? String, "1")
+        collected.tap() // Restore collection state for later sessions.
     }
 
 }

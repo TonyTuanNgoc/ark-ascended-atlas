@@ -1,7 +1,12 @@
-# Ascended — native iPad development 0.3.0 (3)
-Single Player · Ragnarok. Independent app `com.tonytuanngoc.ascended`, installed by cable without TestFlight.
+# Ascended — native iPad development 0.4.0 (4)
+Single Player · Ragnarok / The Island / The Center. Independent app `com.tonytuanngoc.ascended`, installed by cable without TestFlight.
 
 ## Included
+- Outer three-map picker; every sidebar section is scoped to the selected map. Returning to the picker clears the previous map’s detail navigation.
+- New searchable **Thông tin map** guide: geography, resources, creatures, caves, bosses, progression, base planning, Single Player settings and dated sources.
+- Island: 124 creature/variant entries (113 structured profiles), ten artifacts, eleven exploration routes including a labelled Tek Cave approach region; Broodmother, Megapithecus, Dragon and Overseer.
+- Center: 132 creature/variant entries (123 structured profiles), eleven artifacts across nine routes; Broodmother and Megapithecus share the Center arena.
+- Each map has an offline 8192×8192 terrain image and its own notes, artifact collection and gear checklist. Existing Ragnarok storage keys are preserved.
 - Original ARK Survival Ascended logo and native SwiftUI navigation.
 - Offline 8192×8192 terrain, pinch/pan, double-tap zoom, zoom buttons and fit/reset; portrait and landscape.
 - 159 creature/variant entries: 151 entries in Wikily's Ragnarok spawn registry, supplemented by Xiphactinus and seven Alpha variants from the official community wiki. This is a source-based roster, not a measured count of a player's save. DLC creatures are labelled separately (12 entries).
@@ -39,3 +44,6 @@ Reviewed 3 October 2026; source URLs and update notes are included in the catalo
 Personal companion, not an official Studio Wildcard product. Full progression planning, base design and calculators remain subsequent steps.
 
 Field-guide source manifest: `Resources/field-guide-image-sources.json`. Artifact coordinates use Wikily's ASA spawn layer; entrances use the June 2025 Ascended guide at https://thegameslayer.com/guides/all-ragnarok-artifact-locations-ark-ragnarok-ascended/ . Boss statistics/tributes/rewards cite the Ascended tables on the community wiki. These are dated source records, not measurements of a Single Player save.
+
+## Multi-map source limits
+Island/Center ASA creature registries, artifact positions and terrain come from their linked Wikily map pages. Cave entrances are cross-checked against ASA community guides, separate from cave-region coordinates. Tek Cave’s marker is a region centre, explicitly not a verified doorway. Exact Island Obelisk GPS pins are omitted because the ASA layer did not supply them. The Center Gamma Element total conflicts between wiki tables; the app displays that conflict rather than a definite value. Creature variants count separately; 11 Island and nine Center roster entries await structured profiles. Cave terrain illustrations are not entrance photographs. See `Resources/multi-map-image-sources.json` and the 0.4 report for provenance.

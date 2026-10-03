@@ -29,7 +29,7 @@ struct BossLibrary: View {
                 Text("Boss chính là Nunatak. Iceworm Queen, Lava Elemental và nhóm Spirit Bear + Spirit Wolf là những cuộc chạm trán trong hang. Các biến thể Alpha ngoài tự nhiên nằm trong thư viện Dino.")
                     .foregroundStyle(.secondary)
                 ForEach(RagnarokBoss.all) { boss in
-                    NavigationLink { BossDetail(boss: boss) } label: {
+                    NavigationLink(value: GuideDestination.boss(boss.id)) {
                         HStack(spacing: 18) {
                             Image(boss.id == "nunatak" ? "Nunatak-Gamma" : "Boss-" + boss.id).resizable().scaledToFit().frame(width: 120, height: 80)
                             VStack(alignment: .leading, spacing: 6) {

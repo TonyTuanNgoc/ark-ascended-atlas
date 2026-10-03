@@ -6,14 +6,14 @@ struct BossKnowledge: View {
         if boss.id == "nunatak" { NunatakGuide() }
         else {
             let routeID = boss.id == "iceworm-queen" ? "frozen" : boss.id == "lava-elemental" ? "jungle" : "labyrinth"
-            if let route = ExplorationData.catalog?.routes.first(where: { $0.id == routeID }) {
+            if let route = ArkMap.ragnarok.exploration?.routes.first(where: { $0.id == routeID }) {
                 VStack(alignment: .leading, spacing: 14) {
                     Text("Đường tới boss").font(.title2.bold())
                     Text(boss.id == "lava-elemental" ? "Khu arena tham khảo: LAT 21.60 · LON 26.90. Đây là vùng cuối Jungle Dungeon, không phải cửa hang." : "Đi qua " + route.name + " tới nhóm trận cuối. GPS dưới đây là cửa vào, chưa coi là GPS chính xác của boss trong arena.")
                     ForEach(route.entrances) { Text($0.label + " · " + $0.coordinates).font(.subheadline).foregroundStyle(.orange) }
-                    NavigationLink("Mở hồ sơ hang & artifact") { CaveRouteDetail(route: route) }
+                    NavigationLink("Mở hồ sơ hang & artifact", value: GuideDestination.cave(route.id))
                         .accessibilityIdentifier("bossCaveRoute")
-                    NavigationLink("Xem lối tới boss trên bản đồ") { RagnarokMapScreen(initialFocus: boss.id == "lava-elemental" ? "boss-lava-arena" : "entrance-" + (route.entrances.first?.id ?? "")) }
+                    NavigationLink("Xem lối tới boss trên bản đồ", value: GuideDestination.map(boss.id == "lava-elemental" ? "boss-lava-arena" : "entrance-" + (route.entrances.first?.id ?? "")))
                 }.cardStyle()
                 if boss.id == "iceworm-queen" {
                     info("Cơ chế & chỉ số tham khảo", "Nữ hoàng xuất hiện khi xuống cuối thác vào arena; Wiki ghi nhận cần xuống khi không cưỡi tame. Không tame, không cưỡi, không breed; miễn torpor. Bảng Wiki ghi HP 27.000 và melee nền 500 ở mốc tối thiểu level 10; số thực tế còn phụ thuộc level và settings, không phải phép đo save Single Player của anh.")
@@ -63,8 +63,8 @@ struct NunatakGuide: View {
             VStack(alignment: .leading, spacing: 14) {
                 Text("Điểm triệu hồi Nunatak").font(.title2.bold())
                 Text("Nunatak không đi lang thang ở một tọa độ ngoài bản đồ. Mang tribute tới Obelisk; trận diễn ra trong arena được dịch chuyển tới. Với Single Player, ưu tiên Obelisk và kiểm tra cổng trong game.")
-                ForEach(ExplorationData.catalog?.obelisks ?? []) { point in
-                    NavigationLink { RagnarokMapScreen(initialFocus: point.id) } label: {
+                ForEach(ArkMap.ragnarok.exploration?.obelisks ?? []) { point in
+                    NavigationLink(value: GuideDestination.map(point.id)) {
                         HStack { Text(point.label); Spacer(); Text(point.coordinates).monospacedDigit().foregroundStyle(.cyan); Image(systemName: "map") }
                     }.accessibilityIdentifier("summon-" + point.id)
                 }
@@ -73,8 +73,8 @@ struct NunatakGuide: View {
             VStack(alignment: .leading, spacing: 14) {
                 Text("Tribute · " + levels[difficulty]).font(.title2.bold())
                 Text("10 artifact bên dưới · mỗi loại ×1").font(.headline).foregroundStyle(.cyan)
-                ForEach(ExplorationData.catalog?.artifacts ?? []) { artifact in
-                    NavigationLink { ArtifactDetail(artifact: artifact) } label: {
+                ForEach(ArkMap.ragnarok.exploration?.artifacts ?? []) { artifact in
+                    NavigationLink(value: GuideDestination.artifact(artifact.id)) {
                         HStack {
                             Image(artifact.imageAsset).resizable().scaledToFit().frame(width: 36, height: 36)
                             Text(artifact.name); Spacer(); Text("×1")

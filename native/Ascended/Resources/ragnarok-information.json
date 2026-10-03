@@ -1,0 +1,216 @@
+{
+  "subtitle": "Khám phá nhiều biome · chinh phục Nunatak",
+  "reviewedAt": "03/10/2026",
+  "sections": [
+    {
+      "id": "identity",
+      "title": "Ragnarok · map mở rộng",
+      "items": [
+        "Map khám phá có nhiều biome và hang đặc biệt. Boss chính Ascended là Nunatak, thay cho trận Dragon + Manticore của Evolved; bốn mini-boss có tên nằm trong ba nhóm trận hang.",
+        "Bản này giữ danh mục Ragnarok đã tổng hợp trước đó, cùng các ghi chép lịch sử được ghi ngày trong hồ sơ. Nguồn hiện tại được tách khỏi ghi chép cũ."
+      ]
+    },
+    {
+      "id": "geography",
+      "title": "Địa hình & biome",
+      "items": [
+        "Highlands, Viking Bay và các bờ biển là những khu nên khảo sát khi bắt đầu; kiểm tra predator, nước và chỗ thoát trước khi đặt base.",
+        "Có vùng núi, rừng, đầm lầy, băng tuyết, sa mạc và biển. Chuyến đi lạnh cần bộ giữ ấm; vùng nóng/lava cần nước, chống nóng và đường rút.",
+        "Wyvern phía nam và vùng băng không phải cùng một tuyến. Strong hiện ở Wyvern Cave phía nam, khác vị trí Strong cũ của Evolved."
+      ]
+    },
+    {
+      "id": "resources",
+      "title": "Tài nguyên & sản xuất",
+      "items": [
+        "Gợi ý: lập tuyến metal/crystal/obsidian ở các vùng núi; dầu và silica pearls cần kế hoạch theo khu biển/lạnh. Khảo sát một vòng trước khi đặt khu công nghiệp.",
+        "Ưu tiên tame vận chuyển và khai thác (Argentavis, Ankylosaurus, Doedicurus), khu luyện/smithy và kho theo nhóm vật liệu. Đừng xây đè vùng node đang cần farm."
+      ]
+    },
+    {
+      "id": "creatures",
+      "title": "Dino đặc trưng & DLC",
+      "items": [
+        "Danh mục riêng có Griffin, Wyvern, Dire Polar Bear và nhiều loài nhập từ các biome. Mục Dino ghi phương pháp tame, đồ ăn, base stats và drop khi có dữ liệu.",
+        "Các loài cần DLC được đánh dấu; danh sách gồm biến thể. Cerberax, Gargantar và Cryolophosaurus đã được cập nhật theo nguồn tháng 9/2026. Boss không bị trộn với sinh vật thường."
+      ]
+    },
+    {
+      "id": "caves",
+      "title": "Artifact & tuyến hang",
+      "items": [
+        "10 artifact trên 6 tuyến: Jungle Dungeon, Carnivorous Caverns, Frozen Dungeon, Life’s Labyrinth, Wyvern Cave và tuyến biển Devourer.",
+        "Hunter qua Jungle; Pack qua Frozen; Cunning/Immune qua Carnivorous; Clever/Devious/Massive/Skylord qua Labyrinth; Strong phía Wyvern; Devourer là tuyến lặn.",
+        "Lava Elemental là trận loot tùy chọn; không cần thắng để lấy Hunter. Đọc hồ sơ hang, checklist và GPS riêng trước chuyến đi."
+      ]
+    },
+    {
+      "id": "bosses",
+      "title": "Boss & đích chinh phục",
+      "items": [
+        "Nunatak có Gamma/Beta/Alpha, cần toàn bộ 10 artifact và tribute đúng cấp. Đọc cơ chế bay/tiếp đất, minion, đồ lạnh, đội hình và Tekgram trong mục Boss.",
+        "Iceworm Queen ở Frozen Dungeon; Lava Elemental ở Jungle; Spirit Dire Bear + Spirit Direwolf là nhóm trận Life’s Labyrinth. Không gắn Gamma/Beta/Alpha cho các mini-boss này.",
+        "Ragnarok không dùng tuyến Tek Cave / Overseer của The Island. Chọn mục tiêu thắng Nunatak cấp nào và bộ Tek muốn mở để tính chuyến tiếp theo."
+      ]
+    },
+    {
+      "id": "base",
+      "title": "Gợi ý base · Ragnarok",
+      "items": [
+        "Khởi đầu: nơi có nước, vật liệu nền, thoát hiểm và gần một đường farm an toàn. Kho nhỏ, giường, smithy và khu tame tách khỏi đường predator.",
+        "Base lâu dài: dành khu riêng cho công nghiệp, storage, breeding, food và đội boss. Khoảng trống để tame lớn quay đầu quan trọng hơn diện tích trang trí.",
+        "Có chòi tiếp tế ở cửa tuyến hang nhưng không chắn entrance / artifact / spawn. Ghi LAT/LON base và tuyến vận chuyển trong Ghi chú Ragnarok."
+      ]
+    },
+    {
+      "id": "phases",
+      "title": "Lộ trình gợi ý · Ragnarok",
+      "items": [
+        "Phase 1: survival, nước/food, giường và bộ thay thế. Phase 2: stone base, metal tools, vận chuyển và tame khai thác.",
+        "Phase 3: cave kit theo từng tuyến, tame biển, vũ khí tốt và bộ giữ ấm. Phase 4: farm artifact/tribute, breed/imprint và saddle đội boss.",
+        "Phase 5: khảo sát cổng, đấu Nunatak Gamma rồi nâng cấp theo loot thực tế. Chỉ chuyển cấp khi đủ vật liệu, tame và kinh nghiệm; checklist là danh sách chuẩn bị, không tự xác nhận đã thắng trận."
+      ]
+    },
+    {
+      "id": "settings",
+      "title": "Single Player · nền tảng để tính đúng",
+      "items": [
+        "Ghi lại Difficulty, Maximum Difficulty, Use Singleplayer Settings, tốc độ tame/breed, resource respawn và mọi mod trước khi lập kế hoạch. Đây là điều kiện đầu vào, không dùng chỉ số của server khác làm chuẩn save anh.",
+        "Gợi ý: giữ settings ổn định, ghi lại sau mỗi thay đổi. Mục tiêu một phase nên là điều kiện hoàn thành cụ thể: đủ máy, đủ đồ, đủ tame và đã khảo sát đường rút.",
+        "Dữ liệu sinh vật là danh mục loài/biến thể theo nguồn; vị trí spawn và level thực tế có thể khác trên save cũ hoặc có mod. Các liên kết cần mạng; nội dung chính trong app dùng offline."
+      ]
+    },
+    {
+      "id": "coordinates",
+      "title": "Đọc bản đồ & tọa độ",
+      "items": [
+        "LAT tăng về phía nam, LON tăng về phía đông. Artifact là điểm lấy; cửa hang là điểm tiếp cận. Những điểm sát nhau có menu để chọn; dùng từng lớp Artifact / Cửa hang / Boss trên bản đồ.",
+        "Các tọa độ cửa hang là chỉ dẫn cộng đồng, có thể lệch theo phiên bản hoặc vị trí đứng. Điểm được ghi khu vực/tham khảo không phải cửa vào chính xác. Map 8K là địa hình, không phải sơ đồ tầng hang."
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "name": "Beaver Dam",
+      "nodes": 7
+    },
+    {
+      "name": "Bee Hive",
+      "nodes": 19
+    },
+    {
+      "name": "Black Pearls",
+      "nodes": 116
+    },
+    {
+      "name": "Cactus with few berries",
+      "nodes": 1502
+    },
+    {
+      "name": "Carrots",
+      "nodes": 251
+    },
+    {
+      "name": "Clay",
+      "nodes": 305
+    },
+    {
+      "name": "Corn",
+      "nodes": 32
+    },
+    {
+      "name": "Crystal",
+      "nodes": 1217
+    },
+    {
+      "name": "Gem Bio",
+      "nodes": 68
+    },
+    {
+      "name": "Metal",
+      "nodes": 2673
+    },
+    {
+      "name": "Mushrooms",
+      "nodes": 212
+    },
+    {
+      "name": "Obsidian",
+      "nodes": 1237
+    },
+    {
+      "name": "Oil",
+      "nodes": 2564
+    },
+    {
+      "name": "Plant Species X",
+      "nodes": 209
+    },
+    {
+      "name": "Polymer",
+      "nodes": 101
+    },
+    {
+      "name": "Potatoes",
+      "nodes": 73
+    },
+    {
+      "name": "Rare Flowers",
+      "nodes": 2649
+    },
+    {
+      "name": "Rare Mushrooms",
+      "nodes": 303
+    },
+    {
+      "name": "Rich Metal",
+      "nodes": 1835
+    },
+    {
+      "name": "Rich Oil",
+      "nodes": 1
+    },
+    {
+      "name": "Sandpile",
+      "nodes": 105
+    },
+    {
+      "name": "Silica Pearls",
+      "nodes": 3416
+    },
+    {
+      "name": "Silk",
+      "nodes": 1101
+    },
+    {
+      "name": "Sulfur",
+      "nodes": 239
+    },
+    {
+      "name": "Wood Coal",
+      "nodes": 978
+    }
+  ],
+  "sources": [
+    {
+      "title": "Thông tin map · ARK Community Wiki",
+      "url": "https://ark.wiki.gg/wiki/Ragnarok"
+    },
+    {
+      "title": "Map / spawn / artifact Ascended · Wikily",
+      "url": "https://wikily.gg/ark-survival-ascended/maps/ragnarok/"
+    },
+    {
+      "title": "Quy tắc boss arena",
+      "url": "https://ark.wiki.gg/wiki/Boss_Arenas"
+    },
+    {
+      "title": "Nunatak",
+      "url": "https://ark.wiki.gg/wiki/Nunatak"
+    },
+    {
+      "title": "Cửa hang Ragnarok Ascended",
+      "url": "https://thegameslayer.com/guides/all-ragnarok-artifact-locations-ark-ragnarok-ascended/"
+    }
+  ]
+}

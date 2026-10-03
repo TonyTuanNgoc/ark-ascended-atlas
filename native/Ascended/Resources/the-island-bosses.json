@@ -1,0 +1,404 @@
+[
+  {
+    "id": "broodmother",
+    "name": "Broodmother Lysrix",
+    "kind": "Guardian · The Island",
+    "imageAsset": "Boss-broodmother",
+    "location": "Single Player: Green Obelisk; bấm tribute để dịch chuyển tới arena. Không phải boss đi lang thang ngoài map.",
+    "artifactIDs": [
+      "hunter",
+      "clever",
+      "massive"
+    ],
+    "levels": [
+      30,
+      50,
+      70
+    ],
+    "elements": [
+      24,
+      68,
+      178
+    ],
+    "tribute": [
+      {
+        "name": "Argentavis Talon",
+        "quantities": [
+          0,
+          5,
+          10
+        ]
+      },
+      {
+        "name": "Sarcosuchus Skin",
+        "quantities": [
+          0,
+          5,
+          10
+        ]
+      },
+      {
+        "name": "Sauropod Vertebra",
+        "quantities": [
+          0,
+          5,
+          10
+        ]
+      },
+      {
+        "name": "Titanoboa Venom",
+        "quantities": [
+          0,
+          5,
+          10
+        ]
+      }
+    ],
+    "summary": "Nhện guardian của The Island; có ba cấp Gamma/Beta/Alpha. Hạ boss lấy trophy để mở Tek Cave.",
+    "strategy": [
+      "Gợi ý: Megatherium tận dụng buff khi xử lý minion, Yutyrannus hỗ trợ courage; cần saddle và imprint tốt.",
+      "Giữ đội hình tránh bị kẹt trong minion; survivor có shotgun và thuốc dự phòng.",
+      "Arena thường tối đa 20 tame / 10 survivor; kiểm tra creature whitelist và timer ngay trong game."
+    ],
+    "rewardsNote": "Element theo bảng Ascended; có trophy/flag đúng cấp và Tekgram. Tek Foundation/Replicator ở Gamma, Tek Boots ở Beta, Tek Helmet ở Alpha; xem bảng unlock nguồn để tra từng cấu kiện.",
+    "kit": [
+      "Đủ artifact / trophy và tribute đúng cấp",
+      "Tame breed/imprint, saddle đã kiểm tra",
+      "Toàn đội hồi đầy máu, đủ food",
+      "Giáp và Medical Brew dự phòng",
+      "Kiểm tra cổng, giới hạn tame và timer trong save"
+    ],
+    "sourceURL": "https://ark.wiki.gg/wiki/Broodmother_Lysrix",
+    "entranceID": null
+  },
+  {
+    "id": "megapithecus",
+    "name": "Megapithecus",
+    "kind": "Guardian · The Island",
+    "imageAsset": "Boss-megapithecus",
+    "location": "Single Player: Blue Obelisk; dịch chuyển tới arena tuyết.",
+    "artifactIDs": [
+      "brute",
+      "devourer",
+      "pack"
+    ],
+    "levels": [
+      45,
+      65,
+      85
+    ],
+    "elements": [
+      48,
+      132,
+      264
+    ],
+    "tribute": [
+      {
+        "name": "Megalania Toxin",
+        "quantities": [
+          0,
+          5,
+          10
+        ]
+      },
+      {
+        "name": "Megalodon Tooth",
+        "quantities": [
+          0,
+          5,
+          10
+        ]
+      },
+      {
+        "name": "Spinosaurus Sail",
+        "quantities": [
+          0,
+          5,
+          10
+        ]
+      },
+      {
+        "name": "Therizino Claws",
+        "quantities": [
+          0,
+          5,
+          10
+        ]
+      },
+      {
+        "name": "Thylacoleo Hook-Claw",
+        "quantities": [
+          0,
+          5,
+          10
+        ]
+      }
+    ],
+    "summary": "Guardian khỉ khổng lồ; trận riêng trên The Island, khác trận đôi của The Center.",
+    "strategy": [
+      "Gợi ý: Rex / Therizino với saddle tốt, Yutyrannus hỗ trợ.",
+      "Giữ tame tránh vực và cầu hẹp; kéo boss về khu đứng an toàn thay vì dồn cả đội qua mép.",
+      "Đá ném và minion gây nguy hiểm cho survivor; giáp, thuốc và vũ khí tầm xa dự phòng."
+    ],
+    "rewardsNote": "Element Ascended, trophy/flag và Tekgram; xem bảng unlock của arena đúng map.",
+    "kit": [
+      "Đủ artifact / trophy và tribute đúng cấp",
+      "Tame breed/imprint, saddle đã kiểm tra",
+      "Toàn đội hồi đầy máu, đủ food",
+      "Giáp và Medical Brew dự phòng",
+      "Kiểm tra cổng, giới hạn tame và timer trong save"
+    ],
+    "sourceURL": "https://ark.wiki.gg/wiki/Megapithecus",
+    "entranceID": null
+  },
+  {
+    "id": "dragon",
+    "name": "Dragon",
+    "kind": "Guardian · The Island",
+    "imageAsset": "Boss-dragon",
+    "location": "Single Player: Red Obelisk; dịch chuyển vào Dragon Arena.",
+    "artifactIDs": [
+      "cunning",
+      "immune",
+      "skylord",
+      "strong"
+    ],
+    "levels": [
+      55,
+      75,
+      100
+    ],
+    "elements": [
+      96,
+      264,
+      528
+    ],
+    "tribute": [
+      {
+        "name": "Allosaurus Brain",
+        "quantities": [
+          0,
+          5,
+          10
+        ]
+      },
+      {
+        "name": "Basilosaurus Blubber",
+        "quantities": [
+          0,
+          5,
+          10
+        ]
+      },
+      {
+        "name": "Tusoteuthis Tentacle",
+        "quantities": [
+          0,
+          5,
+          10
+        ]
+      },
+      {
+        "name": "Yutyrannus Lungs",
+        "quantities": [
+          0,
+          5,
+          10
+        ]
+      },
+      {
+        "name": "Giganotosaurus Heart",
+        "quantities": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Tyrannosaurus Arm",
+        "quantities": [
+          0,
+          5,
+          15
+        ]
+      }
+    ],
+    "summary": "Guardian rồng của The Island; không dùng Nunatak của Ragnarok hoặc trận Center thay cho boss này.",
+    "strategy": [
+      "Gợi ý: Therizino và Sweet Vegetable Cake, Yutyrannus hỗ trợ; cần food/cake đủ và saddle tốt.",
+      "Hơi lửa nguy hiểm kể cả khi tame có nhiều HP; tránh lava và quản lý khi boss bay / tiếp đất.",
+      "Survivor ưu tiên giáp, thuốc và shotgun; không áp một ngưỡng HP/damage chung cho mọi settings."
+    ],
+    "rewardsNote": "Element theo bảng Ascended; trophy/flag và Tekgram. Thắng ba guardian cùng cấp là điều kiện tiến tới Tek Cave.",
+    "kit": [
+      "Đủ artifact / trophy và tribute đúng cấp",
+      "Tame breed/imprint, saddle đã kiểm tra",
+      "Toàn đội hồi đầy máu, đủ food",
+      "Giáp và Medical Brew dự phòng",
+      "Kiểm tra cổng, giới hạn tame và timer trong save"
+    ],
+    "sourceURL": "https://ark.wiki.gg/wiki/Dragon",
+    "entranceID": null
+  },
+  {
+    "id": "overseer",
+    "name": "Overseer",
+    "kind": "Ascension · The Island",
+    "imageAsset": "Boss-overseer",
+    "location": "Đi qua Tek Cave trên đỉnh Volcano rồi Hall of History tới arena; không triệu hồi ở Obelisk. Điểm map bên dưới là tâm khu Tek Cave theo Wikily, chưa xác minh cửa; không phải vị trí Overseer.",
+    "artifactIDs": [],
+    "levels": [
+      60,
+      80,
+      100
+    ],
+    "elements": [],
+    "tribute": [
+      {
+        "name": "Gamma Broodmother Trophy",
+        "quantities": [
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "name": "Gamma Megapithecus Trophy",
+        "quantities": [
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "name": "Gamma Dragon Trophy",
+        "quantities": [
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "name": "Beta Broodmother Trophy",
+        "quantities": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "name": "Beta Megapithecus Trophy",
+        "quantities": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "name": "Beta Dragon Trophy",
+        "quantities": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "name": "Alpha Broodmother Trophy",
+        "quantities": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "name": "Alpha Megapithecus Trophy",
+        "quantities": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "name": "Alpha Dragon Trophy",
+        "quantities": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "name": "Alpha Raptor Claw",
+        "quantities": [
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "name": "Alpha Carnotaurus Arm",
+        "quantities": [
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "name": "Alpha Tyrannosaur Tooth",
+        "quantities": [
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "name": "Alpha Megalodon Fin",
+        "quantities": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "name": "Alpha Mosasaur Tooth",
+        "quantities": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "name": "Alpha Tusoteuthis Eye",
+        "quantities": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "name": "Alpha Leedsichthys Blubber",
+        "quantities": [
+          0,
+          0,
+          1
+        ]
+      }
+    ],
+    "summary": "Đích ascension của The Island sau ba guardian; Tek Cave và trận Overseer là hai phần cần chuẩn bị cùng nhau.",
+    "strategy": [
+      "Tổ chức tame thành từng nhóm, khảo sát lava và đường cua; cửa Tek Cave đóng sau thời gian ngắn.",
+      "Wiki ghi tối đa 50 tame vào Tek Cave, nhưng số vào arena/teleporter phải kiểm tra riêng; không nhầm với 20 tame arena thông thường.",
+      "Overseer đổi dạng guardian và gọi drone / defense unit. Chuẩn bị giáp, shotgun, ammo và khả năng di chuyển; không đứng lại khi boss đổi pha.",
+      "Single Player có hành vi timer khác server; kiểm tra timer trong save. Trophy mở cửa Tek Cave không bị tiêu thụ theo Wiki."
+    ],
+    "rewardsNote": "Không rơi Element. Ascension tăng trần level theo cấp (+5 / +10 / +15); đọc cơ chế chuyển survivor sau trận và giữ bản sao save trước chuyến cuối.",
+    "kit": [
+      "Đủ artifact / trophy và tribute đúng cấp",
+      "Tame breed/imprint, saddle đã kiểm tra",
+      "Toàn đội hồi đầy máu, đủ food",
+      "Giáp và Medical Brew dự phòng",
+      "Kiểm tra cổng, giới hạn tame và timer trong save"
+    ],
+    "sourceURL": "https://ark.wiki.gg/wiki/Tek_Cave",
+    "entranceID": "entrance-tek-0"
+  }
+]

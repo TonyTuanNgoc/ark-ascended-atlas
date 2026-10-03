@@ -1,0 +1,173 @@
+{
+  "subtitle": "Đảo nổi, thế giới ngầm và trận hai guardian",
+  "reviewedAt": "03/10/2026",
+  "sections": [
+    {
+      "id": "identity",
+      "title": "The Center · map khám phá",
+      "items": [
+        "Map mở rộng có đảo nổi, thế giới ngầm và biển sâu. Hai guardian Broodmother Lysrix và Megapithecus cùng xuất hiện trong The Center Arena.",
+        "Không có Dragon hoặc Overseer ở đây và không có tuyến ascension Tek Cave của The Island. Map có 11 artifact nhưng arena chỉ cần sáu loại."
+      ]
+    },
+    {
+      "id": "geography",
+      "title": "Địa hình & biome",
+      "items": [
+        "Đảo núi lửa phía bắc, khu tuyết phía tây, rừng/Redwoods và các đảo nhiệt đới có yêu cầu di chuyển khác nhau.",
+        "Đảo nổi The Center và Underground World là hai tuyến riêng, không gộp cửa vào. Hang dọc vách, rãnh biển sâu và underwater domes tạo nhiều lựa chọn base/chuyến khám phá.",
+        "Biển lớn và độ sâu là một phần quan trọng của map. Chuyến lặn cần đủ khí, độ bền và đường lên, không chỉ một tọa độ đích."
+      ]
+    },
+    {
+      "id": "resources",
+      "title": "Tài nguyên & vận chuyển",
+      "items": [
+        "Gợi ý: lập tuyến metal/crystal/obsidian và một điểm tiếp tế trước khi khai thác vùng núi lửa; cân bằng khoảng cách farm với nguy cơ mất mount.",
+        "Pearls/dầu và vùng biển cần tame vận chuyển/chiến đấu riêng. Duy trì kho nguyên liệu sửa SCUBA, ammo và food trước khi đi rãnh sâu."
+      ]
+    },
+    {
+      "id": "creatures",
+      "title": "Dino theo The Center",
+      "items": [
+        "Shastasaurus là sinh vật nổi bật của map. Registry có Pyromane, Dreadmare, Drakelings, Elderclaw và những mục DLC được đánh dấu trong Dino.",
+        "Không tự đưa Unicorn hoặc Polar Bear của The Island vào Center. Mục Dino chỉ nạp registry Center và Alpha bổ sung đã xác định; không dùng danh sách Ragnarok.",
+        "Các thêm mới trong registry có Cerberax, Gargantar và Cryolophosaurus; đọc DLC/settings và kiểm tra spawn trên save thực tế."
+      ]
+    },
+    {
+      "id": "caves",
+      "title": "11 artifact · 9 tuyến khám phá",
+      "items": [
+        "North Ice: Clever/Devourer; South Ice: Skylord; Lava Oasis: Hunter; Lava Cave: Massive/Strong.",
+        "Jungle: Immune; Cliffside: Cunning; đảo nổi The Center Cave: Devious; Underground World: Pack; rãnh biển đông nam: Brute.",
+        "Bộ arena gồm Brute, Clever, Devourer, Hunter, Massive và Pack. Các artifact còn lại vẫn có hồ sơ GPS; không buộc farm cả 11 để triệu hồi trận Center."
+      ]
+    },
+    {
+      "id": "bosses",
+      "title": "Trận đôi The Center Arena",
+      "items": [
+        "Gamma/Beta/Alpha cần level 70/80/90, cùng sáu artifact; Beta/Alpha có apex tribute riêng. Hai boss cùng một trận, không phải hai cổng độc lập.",
+        "Phải hạ cả hai để hoàn tất phần thưởng. Nguồn Wiki hiện mâu thuẫn tổng Element Gamma (72 hoặc 92); app hiển thị khác biệt thay vì đưa một con số chắc chắn.",
+        "Đội hình có thể dùng Rex/Theri và Yutyrannus, cân nhắc Megatherium cho minion nhện. Đây là gợi ý chiến thuật; saddle, imprint, settings và timer quyết định khả năng hoàn thành."
+      ]
+    },
+    {
+      "id": "base",
+      "title": "Gợi ý base · The Center",
+      "items": [
+        "Starter base ở khu bờ biển/đảo đã khảo sát, có nước, vật liệu và đường đi. Tránh ưu tiên cảnh đẹp ở đảo nổi trước khi có phương án vận chuyển.",
+        "Base lâu dài cần access tới vùng farm và biển. Underworld / dome có cách vào và điều kiện xây riêng; khảo sát thật trước khi chuyển toàn bộ kho xuống.",
+        "Tách bãi tame biển, breeding, crafting và đồ tiếp tế hang. Ghi cửa đã dùng vào nhật ký để chuyến sau không nhầm với tọa độ artifact."
+      ]
+    },
+    {
+      "id": "phases",
+      "title": "Lộ trình gợi ý · The Center",
+      "items": [
+        "Phase 1–2: survival, base và tame khai thác/vận chuyển. Phase 3: cave kits, nguồn sáng, lạnh/nóng và tame biển.",
+        "Phase 4: gom sáu artifact arena và apex tribute đúng cấp; breed/imprint đội boss và saddle. Artifact khác là mục tiêu khám phá/hoàn thành thư viện.",
+        "Phase 5: The Center Arena Gamma → Beta → Alpha theo mức chuẩn bị; thu loot thực tế và nâng đội. Nếu muốn ascension The Island, chọn map đó và theo tuyến guardian/Tek Cave riêng."
+      ]
+    },
+    {
+      "id": "settings",
+      "title": "Single Player · nền tảng để tính đúng",
+      "items": [
+        "Ghi lại Difficulty, Maximum Difficulty, Use Singleplayer Settings, tốc độ tame/breed, resource respawn và mọi mod trước khi lập kế hoạch. Đây là điều kiện đầu vào, không dùng chỉ số của server khác làm chuẩn save anh.",
+        "Gợi ý: giữ settings ổn định, ghi lại sau mỗi thay đổi. Mục tiêu một phase nên là điều kiện hoàn thành cụ thể: đủ máy, đủ đồ, đủ tame và đã khảo sát đường rút.",
+        "Dữ liệu sinh vật là danh mục loài/biến thể theo nguồn; vị trí spawn và level thực tế có thể khác trên save cũ hoặc có mod. Các liên kết cần mạng; nội dung chính trong app dùng offline."
+      ]
+    },
+    {
+      "id": "coordinates",
+      "title": "Đọc bản đồ & tọa độ",
+      "items": [
+        "LAT tăng về phía nam, LON tăng về phía đông. Artifact là điểm lấy; cửa hang là điểm tiếp cận. Những điểm sát nhau có menu để chọn; dùng từng lớp Artifact / Cửa hang / Boss trên bản đồ.",
+        "Các tọa độ cửa hang là chỉ dẫn cộng đồng, có thể lệch theo phiên bản hoặc vị trí đứng. Điểm được ghi khu vực/tham khảo không phải cửa vào chính xác. Map 8K là địa hình, không phải sơ đồ tầng hang."
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "name": "Beaver Dam",
+      "nodes": 23
+    },
+    {
+      "name": "Bee Hive",
+      "nodes": 24
+    },
+    {
+      "name": "Crystal",
+      "nodes": 1443
+    },
+    {
+      "name": "Metal",
+      "nodes": 2233
+    },
+    {
+      "name": "Mushrooms",
+      "nodes": 84
+    },
+    {
+      "name": "Obsidian",
+      "nodes": 1045
+    },
+    {
+      "name": "Oil",
+      "nodes": 1189
+    },
+    {
+      "name": "Plant Species X",
+      "nodes": 167
+    },
+    {
+      "name": "Rare Flowers",
+      "nodes": 1510
+    },
+    {
+      "name": "Rare Mushrooms",
+      "nodes": 496
+    },
+    {
+      "name": "Rich Metal",
+      "nodes": 2085
+    },
+    {
+      "name": "Rich Oil",
+      "nodes": 1
+    },
+    {
+      "name": "Silica Pearls",
+      "nodes": 1445
+    },
+    {
+      "name": "Wood Coal",
+      "nodes": 1231
+    }
+  ],
+  "sources": [
+    {
+      "title": "Thông tin map · ARK Community Wiki",
+      "url": "https://ark.wiki.gg/wiki/Center"
+    },
+    {
+      "title": "Map / spawn / artifact Ascended · Wikily",
+      "url": "https://wikily.gg/ark-survival-ascended/maps/the-center/"
+    },
+    {
+      "title": "Quy tắc boss arena",
+      "url": "https://ark.wiki.gg/wiki/Boss_Arenas"
+    },
+    {
+      "title": "Cửa hang The Center Ascended · Aidan Lambourne",
+      "url": "https://primagames.com/gaming/all-cave-locations-in-the-center-in-ark-survival-ascended"
+    },
+    {
+      "title": "The Center Arena",
+      "url": "https://ark.wiki.gg/wiki/The_Center_Arena_%28The_Center%29"
+    }
+  ]
+}

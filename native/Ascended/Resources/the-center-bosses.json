@@ -1,0 +1,240 @@
+[
+  {
+    "id": "broodmother",
+    "name": "Broodmother Lysrix",
+    "kind": "The Center Arena",
+    "imageAsset": "Boss-broodmother",
+    "location": "Triệu hồi The Center Arena ở Obelisk; Broodmother và Megapithecus cùng xuất hiện. Ba terminal ASA có vị trí riêng ở dưới.",
+    "artifactIDs": [
+      "brute",
+      "clever",
+      "devourer",
+      "hunter",
+      "massive",
+      "pack"
+    ],
+    "levels": [
+      70,
+      80,
+      90
+    ],
+    "elements": [],
+    "tribute": [
+      {
+        "name": "Argentavis Talon",
+        "quantities": [
+          0,
+          10,
+          25
+        ]
+      },
+      {
+        "name": "Basilosaurus Blubber",
+        "quantities": [
+          0,
+          10,
+          25
+        ]
+      },
+      {
+        "name": "Megalania Toxin",
+        "quantities": [
+          0,
+          10,
+          25
+        ]
+      },
+      {
+        "name": "Megalodon Tooth",
+        "quantities": [
+          0,
+          10,
+          25
+        ]
+      },
+      {
+        "name": "Sarcosuchus Skin",
+        "quantities": [
+          0,
+          10,
+          25
+        ]
+      },
+      {
+        "name": "Sauropod Vertebra",
+        "quantities": [
+          0,
+          10,
+          25
+        ]
+      },
+      {
+        "name": "Spinosaurus Sail",
+        "quantities": [
+          0,
+          10,
+          25
+        ]
+      },
+      {
+        "name": "Thylacoleo Hook-Claw",
+        "quantities": [
+          0,
+          10,
+          25
+        ]
+      },
+      {
+        "name": "Titanoboa Venom",
+        "quantities": [
+          0,
+          10,
+          25
+        ]
+      },
+      {
+        "name": "Tusoteuthis Tentacle",
+        "quantities": [
+          0,
+          10,
+          25
+        ]
+      }
+    ],
+    "summary": "Một trong hai guardian của cùng trận The Center Arena; không phải một trận riêng như The Island.",
+    "strategy": [
+      "Gợi ý: Rex hoặc Therizino và Yutyrannus; cân nhắc Megatherium để xử lý nhện. Chuẩn bị theo áp lực hai boss cùng trận.",
+      "Giữ đội hình, chủ động kéo từng boss khi địa hình cho phép; quản lý minion, đá ném và nhện.",
+      "Kiểm tra tối đa 20 tame / 10 survivor, creature whitelist và timer; không mặc định flyer / tame quá lớn được vào."
+    ],
+    "rewardsNote": "Phải hạ cả hai guardian. Wiki arena ghi tổng Element Gamma/Beta/Alpha 72/200/442; trang Element ghi Gamma 92. Chưa chốt Gamma vì hai nguồn mâu thuẫn; kiểm tra loot trong game. Trophy/flag và Tekgram theo cấp; không có ascension của The Island.",
+    "kit": [
+      "Đủ artifact / trophy và tribute đúng cấp",
+      "Tame breed/imprint, saddle đã kiểm tra",
+      "Toàn đội hồi đầy máu, đủ food",
+      "Giáp và Medical Brew dự phòng",
+      "Kiểm tra cổng, giới hạn tame và timer trong save"
+    ],
+    "sourceURL": "https://ark.wiki.gg/wiki/The_Center_Arena_%28The_Center%29",
+    "entranceID": null
+  },
+  {
+    "id": "megapithecus",
+    "name": "Megapithecus",
+    "kind": "The Center Arena",
+    "imageAsset": "Boss-megapithecus",
+    "location": "Triệu hồi The Center Arena ở Obelisk; Broodmother và Megapithecus cùng xuất hiện. Ba terminal ASA có vị trí riêng ở dưới.",
+    "artifactIDs": [
+      "brute",
+      "clever",
+      "devourer",
+      "hunter",
+      "massive",
+      "pack"
+    ],
+    "levels": [
+      70,
+      80,
+      90
+    ],
+    "elements": [],
+    "tribute": [
+      {
+        "name": "Argentavis Talon",
+        "quantities": [
+          0,
+          10,
+          25
+        ]
+      },
+      {
+        "name": "Basilosaurus Blubber",
+        "quantities": [
+          0,
+          10,
+          25
+        ]
+      },
+      {
+        "name": "Megalania Toxin",
+        "quantities": [
+          0,
+          10,
+          25
+        ]
+      },
+      {
+        "name": "Megalodon Tooth",
+        "quantities": [
+          0,
+          10,
+          25
+        ]
+      },
+      {
+        "name": "Sarcosuchus Skin",
+        "quantities": [
+          0,
+          10,
+          25
+        ]
+      },
+      {
+        "name": "Sauropod Vertebra",
+        "quantities": [
+          0,
+          10,
+          25
+        ]
+      },
+      {
+        "name": "Spinosaurus Sail",
+        "quantities": [
+          0,
+          10,
+          25
+        ]
+      },
+      {
+        "name": "Thylacoleo Hook-Claw",
+        "quantities": [
+          0,
+          10,
+          25
+        ]
+      },
+      {
+        "name": "Titanoboa Venom",
+        "quantities": [
+          0,
+          10,
+          25
+        ]
+      },
+      {
+        "name": "Tusoteuthis Tentacle",
+        "quantities": [
+          0,
+          10,
+          25
+        ]
+      }
+    ],
+    "summary": "Một trong hai guardian của cùng trận The Center Arena; không phải một trận riêng như The Island.",
+    "strategy": [
+      "Gợi ý: Rex hoặc Therizino và Yutyrannus; cân nhắc Megatherium để xử lý nhện. Chuẩn bị theo áp lực hai boss cùng trận.",
+      "Giữ đội hình, chủ động kéo từng boss khi địa hình cho phép; quản lý minion, đá ném và nhện.",
+      "Kiểm tra tối đa 20 tame / 10 survivor, creature whitelist và timer; không mặc định flyer / tame quá lớn được vào."
+    ],
+    "rewardsNote": "Phải hạ cả hai guardian. Wiki arena ghi tổng Element Gamma/Beta/Alpha 72/200/442; trang Element ghi Gamma 92. Chưa chốt Gamma vì hai nguồn mâu thuẫn; kiểm tra loot trong game. Trophy/flag và Tekgram theo cấp; không có ascension của The Island.",
+    "kit": [
+      "Đủ artifact / trophy và tribute đúng cấp",
+      "Tame breed/imprint, saddle đã kiểm tra",
+      "Toàn đội hồi đầy máu, đủ food",
+      "Giáp và Medical Brew dự phòng",
+      "Kiểm tra cổng, giới hạn tame và timer trong save"
+    ],
+    "sourceURL": "https://ark.wiki.gg/wiki/The_Center_Arena_%28The_Center%29",
+    "entranceID": null
+  }
+]

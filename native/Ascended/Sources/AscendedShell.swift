@@ -1,11 +1,11 @@
 import SwiftUI
 
 enum Destination: String, CaseIterable, Identifiable {
-    case ragnarok = "Ragnarok", map = "Bản đồ", dinos = "Dino", bosses = "Boss", exploration = "Artifact & Hang", notes = "Ghi chú", sources = "Nguồn tham khảo"
+    case information = "Thông tin map", map = "Bản đồ", dinos = "Dino", bosses = "Boss", exploration = "Artifact & Hang", notes = "Ghi chú", sources = "Nguồn tham khảo"
     var id: String { rawValue }
     var symbol: String {
         switch self {
-        case .ragnarok: "mountain.2.fill"
+        case .information: "mountain.2.fill"
         case .map: "map.fill"
         case .dinos: "pawprint.fill"
         case .bosses: "shield.lefthalf.filled"
@@ -16,8 +16,10 @@ enum Destination: String, CaseIterable, Identifiable {
     }
 }
 
-struct AscendedShell: View {
-    @State private var selection: Destination? = .ragnarok
+struct MapSessionShell: View {
+    let map: ArkMap
+    let changeMap: () -> Void
+    @State private var selection: Destination? = .information
     @State private var visibility: NavigationSplitViewVisibility = .all
     var body: some View {
         NavigationSplitView(columnVisibility: $visibility) {
@@ -25,10 +27,11 @@ struct AscendedShell: View {
                 VStack(alignment: .leading, spacing: 8) {
                     Image("ArkLogo").resizable().scaledToFit().frame(height: 100)
                     Text("ASCENDED").font(.title2.weight(.bold)).tracking(3)
-                    Text("Hành trình của anh").font(.subheadline).foregroundStyle(.secondary)
+                    Text(map.name).font(.subheadline).foregroundStyle(.secondary)
                 }
                 .padding(.vertical, 16).listRowBackground(Color.clear)
-                Section("SINGLE PLAYER") {
+                Button(action: changeMap) { Label("Chọn map khác", systemImage: "square.grid.2x2.fill") }.accessibilityIdentifier("changeMap")
+                Section(map.name.uppercased() + " · SINGLE PLAYER") {
                     ForEach(Destination.allCases) { item in
                         NavigationLink(value: item) {
                             Label(item.rawValue, systemImage: item.symbol)
@@ -42,20 +45,32 @@ struct AscendedShell: View {
         } detail: {
             NavigationStack {
                 Group {
-                    switch selection ?? .ragnarok {
-                    case .ragnarok: RagnarokOverview(openMap: { selection = .map }, openDinos: { selection = .dinos }, openBosses: { selection = .bosses })
-                    case .map: RagnarokMapScreen()
+                    switch selection ?? .information {
+                    case .information: MapInformationScreen(openMap: { selection = .map }, openDinos: { selection = .dinos }, openBosses: { selection = .bosses })
+                    case .map: MapScreen()
                     case .dinos: CreatureLibrary()
-                    case .bosses: BossLibrary()
+                    case .bosses: if map == .ragnarok { BossLibrary() } else { MapBossLibrary() }
                     case .exploration: ExplorationLibrary()
                     case .notes: ExpeditionNotes()
                     case .sources: SourcesScreen()
                     }
                 }
                 .navigationDestination(for: GuideDestination.self) { $0.screen }
-                .navigationTitle((selection ?? .ragnarok).rawValue)
+                .navigationTitle((selection ?? .information).rawValue)
                 .navigationBarTitleDisplayMode(.inline)
             }
+        }
+    }
+}
+
+struct AscendedShell: View {
+    @State private var selectedMap: ArkMap?
+    var body: some View {
+        if let map = selectedMap {
+            MapSessionShell(map: map, changeMap: { selectedMap = nil })
+                .environment(\.arkMap, map).id(map)
+        } else {
+            MapPicker { selectedMap = $0 }
         }
     }
 }

@@ -1,0 +1,181 @@
+{
+  "subtitle": "Từ survival tới Tek Cave và ascension",
+  "reviewedAt": "03/10/2026",
+  "sections": [
+    {
+      "id": "identity",
+      "title": "The Island · story map",
+      "items": [
+        "Map gốc của hành trình ARK, có Explorer Notes/Dossiers và tuyến ascension. Ba guardian đánh riêng; sau đó Tek Cave dẫn tới Overseer.",
+        "Các loài ASA trong registry có Acrocanthosaurus, Archelon, Ceratosaurus, Cryolophosaurus, Deinosuchus, Deinotherium, Gigantoraptor và Helicoprion. Không dùng Tek creatures của Evolved làm spawn thường ASA."
+      ]
+    },
+    {
+      "id": "geography",
+      "title": "Địa hình & biome",
+      "items": [
+        "Bờ biển phía nam thuận tiện cho giai đoạn đầu; rừng trung tâm và Redwoods cần cẩn thận predator, Thylacoleo và đường di chuyển.",
+        "Vùng tuyết phía bắc, các núi và Volcano có tài nguyên nhưng đòi bộ đồ/mount phù hợp. Đầm lầy nguy hiểm với torpor, leech và sinh vật phục kích.",
+        "The Dead Island (Carno Island) phía đông bắc có tuyến Devourer; biển hai bên chứa hang Brute/Cunning và tài nguyên dưới nước."
+      ]
+    },
+    {
+      "id": "resources",
+      "title": "Tài nguyên & hậu cần",
+      "items": [
+        "Gợi ý: chuẩn bị tuyến farm metal/crystal/obsidian ở núi; cần một Argentavis và tame khai thác trước khi mở rộng công nghiệp.",
+        "Pearls/dầu và artifact biển cần SCUBA, đồ sửa và tame biển. Nhóm harvest/kho/crafting nên bố trí gần nhau; dành khoảng trống cho vận chuyển từ flyer."
+      ]
+    },
+    {
+      "id": "creatures",
+      "title": "Dino theo The Island",
+      "items": [
+        "Danh mục lấy registry The Island; Rhyniognatha, Unicorn, Polar Bear và Yeti có mặt theo dữ liệu map. Không mang danh sách Wyvern/Griffin của Ragnarok vào đây.",
+        "Polar Bear/Yeti và biến thể trong hang có quy tắc tame riêng; hồ sơ chỉ số loài không khẳng định mọi cá thể Feral trong hang tame được. Alpha là biến thể riêng và không tame."
+      ]
+    },
+    {
+      "id": "caves",
+      "title": "10 artifact · 10 tuyến + Tek Cave",
+      "items": [
+        "Broodmother: Hunter, Clever, Massive. Megapithecus: Brute, Devourer, Pack. Dragon: Cunning, Immune, Skylord, Strong.",
+        "Các tuyến artifact nằm ở hang đất, hang tuyết/swamp và hai hang biển. GPS vật phẩm được lấy từ lớp Ascended; không thay bằng GPS cũ của Evolved.",
+        "Tek Cave không có artifact cần nhặt để triệu hồi Overseer: nó cần trophy từ ba guardian đúng cấp và Alpha drops ở cấp cao. Đây là chuyến cuối, không phải hang luyện tập."
+      ]
+    },
+    {
+      "id": "bosses",
+      "title": "4 boss & ascension",
+      "items": [
+        "Single Player: Broodmother ở Green Obelisk; Megapithecus ở Blue; Dragon ở Red. Đọc đúng level/tribute từng cấp trong Boss.",
+        "Ba guardian cho Element/Tekgram và trophy; Overseer không rơi Element. Thắng Overseer để ascension, tăng trần level +5/+10/+15 theo cấp.",
+        "Không lấy HP/loot trận đôi The Center làm chuẩn cho trận riêng The Island. Settings Single Player ảnh hưởng sức mạnh; cần kiểm tra timer/cổng trong save."
+      ]
+    },
+    {
+      "id": "notes",
+      "title": "Explorer Notes & Dossiers",
+      "items": [
+        "The Island có ghi chép cốt truyện và hồ sơ sinh vật. Wikily snapshot có 239 điểm notes; đây là số điểm trong nguồn, không phải lời khẳng định về bộ achievement trên mọi phiên bản.",
+        "Đọc notes trong game để theo dõi story/XP. App hiện dẫn tới map nguồn để tra notes; Ghi chú là nhật ký cá nhân, không tự đồng bộ việc thu thập notes của game."
+      ]
+    },
+    {
+      "id": "base",
+      "title": "Gợi ý base · The Island",
+      "items": [
+        "Bắt đầu nhỏ gần bờ biển phía nam, nước và vật liệu; tránh mở base giữa đầm lầy hoặc sát predator nếu chưa có mount.",
+        "Base chính nên có đường đến núi, khu breeding và kho industrial; bố trí bãi tập/đội boss gần tuyến Obelisk thường dùng, giữ đồ thay thế ở nhà.",
+        "Chòi tiếp tế ngoài cửa hang, không xây chắn artifact hay node. Đội Tek Cave cần một khu tập đội hình trước chuyến cuối."
+      ]
+    },
+    {
+      "id": "phases",
+      "title": "Lộ trình gợi ý · The Island",
+      "items": [
+        "Phase 1–2: survival → stone/metal tools → flyer, harvester và điện/crafting. Phase 3: cave kits và tame biển, thu đủ các bộ artifact.",
+        "Phase 4: breed/imprint, saddle và thiết bị hỗ trợ; đánh ba guardian Gamma, nâng Beta/Alpha theo mục tiêu và kết quả thực tế.",
+        "Phase 5: gom trophy cùng cấp + Alpha drops, chuẩn bị đội Tek Cave/Overseer, khảo sát lava và teleporter. Giữ bản sao save trước chuyến ascension; không trộn trophy khác cấp khi tính tribute."
+      ]
+    },
+    {
+      "id": "settings",
+      "title": "Single Player · nền tảng để tính đúng",
+      "items": [
+        "Ghi lại Difficulty, Maximum Difficulty, Use Singleplayer Settings, tốc độ tame/breed, resource respawn và mọi mod trước khi lập kế hoạch. Đây là điều kiện đầu vào, không dùng chỉ số của server khác làm chuẩn save anh.",
+        "Gợi ý: giữ settings ổn định, ghi lại sau mỗi thay đổi. Mục tiêu một phase nên là điều kiện hoàn thành cụ thể: đủ máy, đủ đồ, đủ tame và đã khảo sát đường rút.",
+        "Dữ liệu sinh vật là danh mục loài/biến thể theo nguồn; vị trí spawn và level thực tế có thể khác trên save cũ hoặc có mod. Các liên kết cần mạng; nội dung chính trong app dùng offline."
+      ]
+    },
+    {
+      "id": "coordinates",
+      "title": "Đọc bản đồ & tọa độ",
+      "items": [
+        "LAT tăng về phía nam, LON tăng về phía đông. Artifact là điểm lấy; cửa hang là điểm tiếp cận. Những điểm sát nhau có menu để chọn; dùng từng lớp Artifact / Cửa hang / Boss trên bản đồ.",
+        "The Island: Wiki ghi hệ mini-map (M một lần), Tek gauntlet/TPCoords có thể khác hệ waypoint (M hai lần). App dùng lớp artifact Wikily và cửa hang theo hướng dẫn Ascended; đối chiếu địa hình khi đặt waypoint. Không dùng tọa độ Evolved thay thế tự động.",
+        "Các tọa độ cửa hang là chỉ dẫn cộng đồng, có thể lệch theo phiên bản hoặc vị trí đứng. Điểm được ghi khu vực/tham khảo không phải cửa vào chính xác. Map 8K là địa hình, không phải sơ đồ tầng hang."
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "name": "Beaver Dam",
+      "nodes": 6
+    },
+    {
+      "name": "Bee Hive",
+      "nodes": 227
+    },
+    {
+      "name": "Crystal",
+      "nodes": 2355
+    },
+    {
+      "name": "Metal",
+      "nodes": 940
+    },
+    {
+      "name": "Mushrooms",
+      "nodes": 1003
+    },
+    {
+      "name": "Obsidian",
+      "nodes": 509
+    },
+    {
+      "name": "Oil",
+      "nodes": 1078
+    },
+    {
+      "name": "Plant Species X",
+      "nodes": 173
+    },
+    {
+      "name": "Rare Flowers",
+      "nodes": 2654
+    },
+    {
+      "name": "Rare Mushrooms",
+      "nodes": 435
+    },
+    {
+      "name": "Rich Metal",
+      "nodes": 372
+    },
+    {
+      "name": "Silica Pearls",
+      "nodes": 1325
+    },
+    {
+      "name": "Wood Coal",
+      "nodes": 20
+    }
+  ],
+  "sources": [
+    {
+      "title": "Thông tin map · ARK Community Wiki",
+      "url": "https://ark.wiki.gg/wiki/The_Island"
+    },
+    {
+      "title": "Map / spawn / artifact Ascended · Wikily",
+      "url": "https://wikily.gg/ark-survival-ascended/maps/the-island/"
+    },
+    {
+      "title": "Quy tắc boss arena",
+      "url": "https://ark.wiki.gg/wiki/Boss_Arenas"
+    },
+    {
+      "title": "Cửa hang The Island Ascended · Dartex",
+      "url": "https://www.gamenguides.com/where-to-find-all-island-cave-entrances-in-ark-survival-ascended"
+    },
+    {
+      "title": "Tek Cave & ascension",
+      "url": "https://ark.wiki.gg/wiki/Tek_Cave"
+    },
+    {
+      "title": "Khác biệt hệ tọa độ ASA",
+      "url": "https://ark.wiki.gg/wiki/Resource_Map/The_Island"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+[
+  {
+    "asset": "Artifact-brute",
+    "sourceURL": "https://r2.wikily.gg/images/ark/icons/Artifact24_Icon.webp",
+    "width": 256,
+    "height": 256
+  },
+  {
+    "asset": "Boss-megapithecus",
+    "sourceURL": "https://ark.wiki.gg/images/7/7d/Megapithecus.png",
+    "width": 256,
+    "height": 256
+  },
+  {
+    "asset": "Boss-dragon",
+    "sourceURL": "https://ark.wiki.gg/images/c/c7/Dragon.png",
+    "width": 256,
+    "height": 256
+  },
+  {
+    "asset": "Boss-overseer",
+    "sourceURL": "https://ark.wiki.gg/images/f/f5/Overseer.png",
+    "width": 256,
+    "height": 256
+  },
+  {
+    "asset": "Boss-broodmother",
+    "sourceURL": "https://ark.wiki.gg/images/1/19/Broodmother.png",
+    "width": 256,
+    "height": 256
+  },
+  {
+    "asset": "TheIslandMap",
+    "sourceURL": "https://r2.wikily.gg/images/ark/maps/theisland_tiles/5/{x}/{y}.png",
+    "width": 8192,
+    "height": 8192,
+    "tiles": 1024,
+    "highestVerifiedZoom": 5
+  },
+  {
+    "asset": "TheCenterMap",
+    "sourceURL": "https://r2.wikily.gg/images/ark/maps/thecenter_tiles/5/{x}/{y}.png",
+    "width": 8192,
+    "height": 8192,
+    "tiles": 1024,
+    "highestVerifiedZoom": 5
+  },
+  {
+    "asset": "Dino-alpha-leedsichthys",
+    "sourceURL": "https://r2.wikily.gg/images/ark/icons/Empty_LeedsichthysHead_Icon.webp",
+    "profileURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/alpha-leedsichthys/",
+    "width": 256,
+    "height": 256
+  },
+  {
+    "asset": "Dino-leedsichthys",
+    "sourceURL": "https://r2.wikily.gg/images/ark/icons/Empty_LeedsichthysHead_Icon.webp",
+    "profileURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/leedsichthys/",
+    "width": 256,
+    "height": 256
+  },
+  {
+    "asset": "Dino-liopleurodon",
+    "sourceURL": "https://r2.wikily.gg/images/ark/icons/Empty_LiopleurodonHead_Icon.webp",
+    "profileURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/liopleurodon/",
+    "width": 256,
+    "height": 256
+  },
+  {
+    "asset": "Dino-shastasaurus",
+    "sourceURL": "https://r2.wikily.gg/images/ark/icons/Empty_Shastasaurus_Icon.webp",
+    "profileURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/shastasaurus/",
+    "width": 256,
+    "height": 256
+  },
+  {
+    "asset": "Dino-yeti",
+    "sourceURL": "https://r2.wikily.gg/images/ark/icons/Empty_BigfootHead_Icon.webp",
+    "profileURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/yeti/",
+    "width": 256,
+    "height": 256
+  },
+  {
+    "asset": "Dino-polar-bear",
+    "sourceURL": "https://ark.wiki.gg/images/Polar_Bear.png",
+    "profileURL": "https://ark.wiki.gg/wiki/Polar_Bear",
+    "width": 256,
+    "height": 256
+  }
+]

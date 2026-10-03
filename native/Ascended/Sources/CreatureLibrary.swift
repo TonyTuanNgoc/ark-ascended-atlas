@@ -2,12 +2,13 @@ import SwiftUI
 import UIKit
 
 struct CreatureLibrary: View {
+    @Environment(\.arkMap) private var map
     @State private var search = ""
     @State private var filter = "Tất cả"
     private let filters = ["Tất cả", "Trên cạn", "Bay", "Dưới nước", "Alpha", "DLC"]
     var body: some View {
         Group {
-            switch RagnarokCatalog.result {
+            switch map.creatures {
             case .failure:
                 ContentUnavailableView("Chưa mở được thư viện", systemImage: "book.closed", description: Text("Hãy đóng và mở lại Ascended."))
             case .success(let catalog):
@@ -20,7 +21,7 @@ struct CreatureLibrary: View {
                         HStack(alignment: .firstTextBaseline) {
                             VStack(alignment: .leading, spacing: 6) {
                                 Text("Dino & sinh vật").font(.largeTitle.bold())
-                                Text("Ragnarok Ascended · Đối chiếu 03/10/2026").foregroundStyle(.secondary)
+                                Text(map.name + " Ascended · Đối chiếu 03/10/2026").foregroundStyle(.secondary)
                             }
                             Spacer()
                             Text("\(items.count)").font(.largeTitle.bold()).foregroundStyle(.cyan)
@@ -49,7 +50,7 @@ struct CreatureLibrary: View {
                         }
                     }.padding(24)
                 }
-                .searchable(text: $search, placement: .navigationBarDrawer(displayMode: .always), prompt: "Tìm Dino trên Ragnarok")
+                .searchable(text: $search, placement: .navigationBarDrawer(displayMode: .always), prompt: "Tìm Dino trên " + map.name)
                 .accessibilityIdentifier("creatureLibrary")
             }
         }.background(Color(red: 0.025, green: 0.045, blue: 0.065))
@@ -89,6 +90,7 @@ struct CreatureCard: View {
 }
 
 struct CreatureDetail: View {
+    @Environment(\.arkMap) private var map
     let creature: Creature
     var body: some View {
         ScrollView {
@@ -97,7 +99,7 @@ struct CreatureDetail: View {
                     CreaturePortrait(creature: creature).frame(width: 120, height: 120)
                     VStack(alignment: .leading, spacing: 8) {
                         Text(creature.name).font(.largeTitle.bold())
-                        Text("Ragnarok · " + creature.group).foregroundStyle(.secondary)
+                        Text(map.name + " · " + creature.group).foregroundStyle(.secondary)
                         if !creature.dlc.isEmpty { Label(creature.dlc, systemImage: "lock.open.fill").font(.subheadline).foregroundStyle(.orange) }
                     }
                 }
@@ -127,7 +129,7 @@ struct CreatureDetail: View {
                     if !creature.drops.isEmpty { section("Loot khi hạ sinh vật", text: creature.drops.joined(separator: " · ")) }
                     if !creature.immobilizedBy.isEmpty { section("Công cụ có thể giữ chân", text: creature.immobilizedBy.joined(separator: " · ")) }
                 } else {
-                    section("Có trong danh mục Ragnarok", text: "Tên và sự hiện diện đã được đối chiếu từ danh mục map. Hướng dẫn tame và chỉ số riêng chưa được xác minh đầy đủ trong app.")
+                    section("Có trong danh mục " + map.name, text: "Tên và sự hiện diện đã được đối chiếu từ danh mục map. Hướng dẫn tame và chỉ số riêng chưa được xác minh đầy đủ trong app.")
                 }
                 if let archive = creature.archive {
                     DisclosureGroup("Ghi chép trước đây của anh · " + archive.date) {
@@ -143,7 +145,7 @@ struct CreatureDetail: View {
                     Text("Nguồn & ngày kiểm tra").font(.headline)
                     Text("Đối chiếu " + creature.reviewedAt).font(.caption).foregroundStyle(.secondary)
                     Link("Hồ sơ sinh vật", destination: URL(string: creature.sourceURL)!)
-                    Link("Danh mục Ragnarok · " + creature.rosterSource, destination: URL(string: creature.rosterSource == "Wiki bổ sung" ? "https://ark.wiki.gg/wiki/Ragnarok" : "https://wikily.gg/ark-survival-ascended/maps/ragnarok/")!)
+                    Link("Danh mục " + map.name + " · " + creature.rosterSource, destination: URL(string: creature.rosterSource == "Wiki bổ sung" ? map.wikiURL : map.mapURL)!)
                 }.cardStyle()
             }.padding(24).frame(maxWidth: 1000).frame(maxWidth: .infinity)
         }.navigationTitle(creature.name).navigationBarTitleDisplayMode(.inline)
