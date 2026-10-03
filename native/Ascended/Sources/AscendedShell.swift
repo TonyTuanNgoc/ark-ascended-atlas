@@ -1,7 +1,7 @@
 import SwiftUI
 
 enum Destination: String, CaseIterable, Identifiable {
-    case ragnarok = "Ragnarok", map = "Bản đồ", dinos = "Dino", bosses = "Boss", notes = "Ghi chú", sources = "Nguồn tham khảo"
+    case ragnarok = "Ragnarok", map = "Bản đồ", dinos = "Dino", bosses = "Boss", exploration = "Artifact & Hang", notes = "Ghi chú", sources = "Nguồn tham khảo"
     var id: String { rawValue }
     var symbol: String {
         switch self {
@@ -9,6 +9,7 @@ enum Destination: String, CaseIterable, Identifiable {
         case .map: "map.fill"
         case .dinos: "pawprint.fill"
         case .bosses: "shield.lefthalf.filled"
+        case .exploration: "diamond.fill"
         case .notes: "square.and.pencil"
         case .sources: "book.closed.fill"
         }
@@ -32,7 +33,7 @@ struct AscendedShell: View {
                         NavigationLink(value: item) {
                             Label(item.rawValue, systemImage: item.symbol)
                                 .padding(.vertical, 8)
-                        }
+                        }.accessibilityIdentifier("section-" + item.rawValue)
                     }
                 }
             }
@@ -46,10 +47,12 @@ struct AscendedShell: View {
                     case .map: RagnarokMapScreen()
                     case .dinos: CreatureLibrary()
                     case .bosses: BossLibrary()
+                    case .exploration: ExplorationLibrary()
                     case .notes: ExpeditionNotes()
                     case .sources: SourcesScreen()
                     }
                 }
+                .navigationDestination(for: GuideDestination.self) { $0.screen }
                 .navigationTitle((selection ?? .ragnarok).rawValue)
                 .navigationBarTitleDisplayMode(.inline)
             }

@@ -1,0 +1,301 @@
+{
+  "reviewedAt": "03/10/2026",
+  "artifacts": [
+    {
+      "id": "clever",
+      "name": "Artifact of the Clever",
+      "lat": 48.009,
+      "lon": 78.629,
+      "routeID": "labyrinth",
+      "imageAsset": "Artifact-clever",
+      "sourceURL": "https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=14&layer=artifacts"
+    },
+    {
+      "id": "cunning",
+      "name": "Artifact of the Cunning",
+      "lat": 20.255,
+      "lon": 45.99,
+      "routeID": "carnivorous",
+      "imageAsset": "Artifact-cunning",
+      "sourceURL": "https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=14&layer=artifacts"
+    },
+    {
+      "id": "devious",
+      "name": "Artifact of the Devious",
+      "lat": 49.092,
+      "lon": 79.477,
+      "routeID": "labyrinth",
+      "imageAsset": "Artifact-devious",
+      "sourceURL": "https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=14&layer=artifacts"
+    },
+    {
+      "id": "devourer",
+      "name": "Artifact of the Devourer",
+      "lat": 47.062,
+      "lon": 2.541,
+      "routeID": "ocean",
+      "imageAsset": "Artifact-devourer",
+      "sourceURL": "https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=14&layer=artifacts"
+    },
+    {
+      "id": "hunter",
+      "name": "Artifact of the Hunter",
+      "lat": 21.582,
+      "lon": 27.256,
+      "routeID": "jungle",
+      "imageAsset": "Artifact-hunter",
+      "sourceURL": "https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=14&layer=artifacts"
+    },
+    {
+      "id": "immune",
+      "name": "Artifact of the Immune",
+      "lat": 23.689,
+      "lon": 44.573,
+      "routeID": "carnivorous",
+      "imageAsset": "Artifact-immune",
+      "sourceURL": "https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=14&layer=artifacts"
+    },
+    {
+      "id": "massive",
+      "name": "Artifact of the Massive",
+      "lat": 48.927,
+      "lon": 79.477,
+      "routeID": "labyrinth",
+      "imageAsset": "Artifact-massive",
+      "sourceURL": "https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=14&layer=artifacts"
+    },
+    {
+      "id": "pack",
+      "name": "Artifact of the Pack",
+      "lat": 33.639,
+      "lon": 43.44,
+      "routeID": "frozen",
+      "imageAsset": "Artifact-pack",
+      "sourceURL": "https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=14&layer=artifacts"
+    },
+    {
+      "id": "skylord",
+      "name": "Artifact of the Skylord",
+      "lat": 47.752,
+      "lon": 78.905,
+      "routeID": "labyrinth",
+      "imageAsset": "Artifact-skylord",
+      "sourceURL": "https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=14&layer=artifacts"
+    },
+    {
+      "id": "strong",
+      "name": "Artifact of the Strong",
+      "lat": 62.757,
+      "lon": 42.156,
+      "routeID": "wyvern",
+      "imageAsset": "Artifact-strong",
+      "sourceURL": "https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=14&layer=artifacts"
+    }
+  ],
+  "routes": [
+    {
+      "id": "jungle",
+      "name": "Jungle Dungeon",
+      "artifactIDs": [
+        "hunter"
+      ],
+      "entrances": [
+        {
+          "id": "jungle-0",
+          "label": "Cửa phía hồ / thác",
+          "lat": 18.2,
+          "lon": 28.4
+        },
+        {
+          "id": "jungle-1",
+          "label": "Cửa đường bộ, sau dây leo",
+          "lat": 18.6,
+          "lon": 27.8
+        }
+      ],
+      "boss": "Lava Elemental",
+      "notes": "Bẫy gây torpor, Onyc, Arthropluera, nước và dung nham. Lava Elemental là trận loot tùy chọn; không cần thắng nó để lấy Hunter.",
+      "kit": [
+        "Grappling Hook + dây dự phòng",
+        "Giáp, shotgun và đạn",
+        "Medical Brew, Stimulant, Lesser Antidote",
+        "SCUBA dự phòng cho đoạn nước"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Jungle_Dungeon_%28Ragnarok%29",
+      "entranceSourceURL": "https://thegameslayer.com/guides/all-ragnarok-artifact-locations-ark-ragnarok-ascended/",
+      "imageAsset": "Cave-jungle",
+      "imageCaption": "Ảnh minh họa Ragnarok Ascended · TheGameSlayer (06/2025); không dùng để xác định chính xác cửa hang."
+    },
+    {
+      "id": "carnivorous",
+      "name": "Carnivorous Caverns",
+      "artifactIDs": [
+        "cunning",
+        "immune"
+      ],
+      "entrances": [
+        {
+          "id": "carnivorous-0",
+          "label": "Cửa sườn núi",
+          "lat": 17.5,
+          "lon": 42.7
+        },
+        {
+          "id": "carnivorous-1",
+          "label": "Cửa phía đầm lầy",
+          "lat": 21.8,
+          "lon": 42.0
+        },
+        {
+          "id": "carnivorous-2",
+          "label": "Lối nước, cần SCUBA",
+          "lat": 21.8,
+          "lon": 33.2
+        }
+      ],
+      "boss": "",
+      "notes": "Hệ hang lớn, nhiều nhánh; Cunning cần vượt đoạn cao, Immune ở nhánh sâu. Có Megalosaurus, Megalania và sinh vật hang level cao.",
+      "kit": [
+        "Nguồn sáng",
+        "Grappling Hook",
+        "Lesser Antidote và giáp dự phòng",
+        "SCUBA nếu đi lối nước"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Carnivorous_Caverns_%28Ragnarok%29",
+      "entranceSourceURL": "https://thegameslayer.com/guides/all-ragnarok-artifact-locations-ark-ragnarok-ascended/",
+      "imageAsset": "Cave-carnivorous",
+      "imageCaption": "Ảnh minh họa Ragnarok Ascended · TheGameSlayer (06/2025); không dùng để xác định chính xác cửa hang."
+    },
+    {
+      "id": "frozen",
+      "name": "Frozen Dungeon",
+      "artifactIDs": [
+        "pack"
+      ],
+      "entrances": [
+        {
+          "id": "frozen-0",
+          "label": "Cửa thác băng, phá lớp băng",
+          "lat": 31.3,
+          "lon": 33.7
+        },
+        {
+          "id": "frozen-1",
+          "label": "Cửa từ trên cao",
+          "lat": 30.9,
+          "lon": 37.8
+        }
+      ],
+      "boss": "Iceworm Queen",
+      "notes": "Lạnh khắc nghiệt, Dire Bear và Iceworm. Đi tiếp qua đấu trường nữ hoàng để tới khu tổ có Pack.",
+      "kit": [
+        "Fur tốt, Fria Curry, Otter nếu có",
+        "Shotgun + đạn",
+        "Khiên, Medical Brew",
+        "Đồ giữ nhiệt và nguồn sáng dự phòng"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Frozen_Dungeon_%28Ragnarok%29",
+      "entranceSourceURL": "https://thegameslayer.com/guides/all-ragnarok-artifact-locations-ark-ragnarok-ascended/",
+      "imageAsset": "Cave-frozen",
+      "imageCaption": "Ảnh minh họa Ragnarok Ascended · TheGameSlayer (06/2025); không dùng để xác định chính xác cửa hang."
+    },
+    {
+      "id": "labyrinth",
+      "name": "Life’s Labyrinth",
+      "artifactIDs": [
+        "skylord",
+        "clever",
+        "massive",
+        "devious"
+      ],
+      "entrances": [
+        {
+          "id": "labyrinth-0",
+          "label": "Khe thấp dưới khối đá sa mạc",
+          "lat": 51.6,
+          "lon": 77.7
+        }
+      ],
+      "boss": "Spirit Dire Bear + Spirit Direwolf",
+      "notes": "Mê cung nhiều nhánh, câu đố, bẫy lửa/gai, parkour và nước. Spirit Bear + Wolf là nhóm trận cuối; Massive và Devious ở vùng cuối sau giao chiến. Không phải một đường đi thẳng tới đủ bốn artifact.",
+      "kit": [
+        "Giáp và khiên dự phòng",
+        "Shotgun + đạn, Medical Brew",
+        "SCUBA / Lazarus Chowder",
+        "Parachute, nguồn sáng",
+        "Một sinh vật nhỏ cho phòng hiến tế (xem nguồn trước khi vào)"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Life%27s_Labyrinth_%28Ragnarok%29",
+      "entranceSourceURL": "https://thegameslayer.com/guides/all-ragnarok-artifact-locations-ark-ragnarok-ascended/",
+      "imageAsset": "Cave-labyrinth",
+      "imageCaption": "Ảnh minh họa Ragnarok Ascended · TheGameSlayer (06/2025); không dùng để xác định chính xác cửa hang."
+    },
+    {
+      "id": "wyvern",
+      "name": "Wyvern Cave · miền nam",
+      "artifactIDs": [
+        "strong"
+      ],
+      "entrances": [
+        {
+          "id": "wyvern-0",
+          "label": "Lối tiếp cận từ khe Wyvern phía nam",
+          "lat": 69.1,
+          "lon": 42.2
+        }
+      ],
+      "boss": "",
+      "notes": "Strong nằm trong Wyvern Cave ở phía nam, không còn ở Monkey Temple. Có Wyvern và Megalania; tọa độ lối tiếp cận không phải điểm artifact.",
+      "kit": [
+        "Flyer khỏe hoặc phương án đi bằng nước",
+        "Giáp, thuốc và đồ hồi stamina",
+        "Đường thoát đã khảo sát",
+        "Đồ lặn nếu chọn đường nước"
+      ],
+      "sourceURL": "https://thegameslayer.com/guides/all-ragnarok-artifact-locations-ark-ragnarok-ascended/",
+      "entranceSourceURL": "https://thegameslayer.com/guides/all-ragnarok-artifact-locations-ark-ragnarok-ascended/",
+      "imageAsset": "Cave-wyvern",
+      "imageCaption": "Ảnh minh họa Ragnarok Ascended · TheGameSlayer (06/2025); không dùng để xác định chính xác cửa hang."
+    },
+    {
+      "id": "ocean",
+      "name": "Sunken Ships · biển sâu",
+      "artifactIDs": [
+        "devourer"
+      ],
+      "entrances": [],
+      "boss": "",
+      "notes": "Devourer ở đáy biển phía tây giữa khu tàu đắm; không có cửa hang riêng. Tới điểm GPS rồi lặn xuống. Chú ý độ sâu và Tusoteuthis.",
+      "kit": [
+        "SCUBA đầy độ bền + bộ dự phòng",
+        "Tame biển khỏe, saddle tốt",
+        "Lazarus Chowder / nguồn oxygen dự phòng",
+        "Giữ đường quay lên mặt nước"
+      ],
+      "sourceURL": "https://thegameslayer.com/guides/all-ragnarok-artifact-locations-ark-ragnarok-ascended/",
+      "entranceSourceURL": "https://thegameslayer.com/guides/all-ragnarok-artifact-locations-ark-ragnarok-ascended/",
+      "imageAsset": "Cave-ocean",
+      "imageCaption": "Ảnh minh họa Ragnarok Ascended · TheGameSlayer (06/2025); không dùng để xác định chính xác cửa hang."
+    }
+  ],
+  "obelisks": [
+    {
+      "id": "obelisk-red",
+      "label": "Red Obelisk",
+      "lat": 35.034,
+      "lon": 85.689
+    },
+    {
+      "id": "obelisk-green",
+      "label": "Green Obelisk",
+      "lat": 56.998,
+      "lon": 38.124
+    },
+    {
+      "id": "obelisk-blue",
+      "label": "Blue Obelisk",
+      "lat": 18.157,
+      "lon": 17.366
+    }
+  ]
+}

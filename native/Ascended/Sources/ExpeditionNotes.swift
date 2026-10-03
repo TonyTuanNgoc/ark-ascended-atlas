@@ -27,7 +27,7 @@ struct SourcesScreen: View {
             }
             Section("Bản đồ và hình ảnh") {
                 Link("Bản đồ Ragnarok Ascended · Wikily", destination: URL(string: "https://wikily.gg/ark-survival-ascended/maps/ragnarok/")!)
-                Text("Logo ARK: Survival Ascended thuộc Studio Wildcard. Bản đồ và ảnh Ragnarok được lấy từ Wikily; bản đồ 8K trong app là địa hình, chưa có lớp tài nguyên hay vị trí sinh vật.")
+                Text("Logo ARK: Survival Ascended thuộc Studio Wildcard. Bản đồ và ảnh Ragnarok được lấy từ Wikily; bản đồ 8K trong app là địa hình, có đánh dấu artifact, cửa hang và điểm triệu hồi boss; chưa có lớp tài nguyên hay vị trí sinh vật.")
                     .foregroundStyle(.secondary)
             }
             Section("Dino & Boss") {
@@ -37,7 +37,7 @@ struct SourcesScreen: View {
                     .foregroundStyle(.secondary)
             }
             Section("Bản dev hiện tại") {
-                Text("Ascended 0.2.0 (2) · Single Player · Ragnarok")
+                Text("Ascended 0.3.0 (3) · Single Player · Ragnarok")
                 Text("App đồng hành cá nhân, không phải ứng dụng chính thức của Studio Wildcard. Bản đồ và ghi chú dùng offline; các liên kết tham khảo cần mạng.")
                     .foregroundStyle(.secondary)
             }

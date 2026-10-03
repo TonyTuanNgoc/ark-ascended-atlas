@@ -63,13 +63,62 @@ final class AscendedUITests: XCTestCase {
         XCTAssertTrue(app.staticTexts["Thử thách đặc biệt"].exists)
         let detail = XCTAttachment(screenshot: XCUIScreen.main.screenshot())
         detail.name = "Cerberax-profile"; detail.lifetime = .keepAlways; add(detail)
-        app.buttons["Boss"].firstMatch.tap()
+        app.buttons["section-Boss"].tap()
         XCTAssertTrue(app.buttons["boss-nunatak"].waitForExistence(timeout: 5))
         XCTAssertTrue(app.staticTexts["1 boss chính · 4 mini-boss có tên · 3 nhóm trận hang động"].exists)
         let bosses = XCTAttachment(screenshot: XCUIScreen.main.screenshot())
         bosses.name = "Boss-library"; bosses.lifetime = .keepAlways; add(bosses)
         app.buttons["boss-nunatak"].tap()
         XCTAssertTrue(app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "Gamma")).firstMatch.waitForExistence(timeout: 5))
+    }
+
+    @MainActor func testArtifactRouteMapLayersAndBossDifficulty() throws {
+        let app = XCUIApplication()
+        XCUIDevice.shared.orientation = .landscapeLeft
+        app.launch()
+        app.buttons["Artifact & Hang"].firstMatch.tap()
+        XCTAssertTrue(app.buttons["route-jungle"].waitForExistence(timeout: 5))
+        app.buttons["route-jungle"].tap()
+        let hunter = app.buttons["artifact-hunter"]
+        for _ in 0..<3 { if hunter.isHittable { break }; app.swipeUp() }
+        XCTAssertTrue(hunter.isHittable); hunter.tap()
+        XCTAssertTrue(app.buttons["show-artifact-hunter"].waitForExistence(timeout: 5), app.debugDescription)
+        XCTAssertTrue(app.staticTexts["LAT 21.58 · LON 27.26"].waitForExistence(timeout: 5))
+        app.buttons["show-artifact-hunter"].tap()
+        let map = app.scrollViews["ragnarokMapViewport"]
+        XCTAssertTrue(map.waitForExistence(timeout: 5))
+        expectation(for: NSPredicate(format: "value == %@", "4.00"), evaluatedWith: map)
+        waitForExpectations(timeout: 5)
+        let pin = app.buttons["pin-artifact-hunter"]
+        XCTAssertTrue(pin.exists); XCTAssertTrue(pin.isHittable)
+        XCTAssertLessThan(pin.frame.width, 60)
+        pin.tap()
+        let clusterChoice = app.collectionViews.buttons["Artifact of the Hunter"].firstMatch
+        if clusterChoice.waitForExistence(timeout: 2) { clusterChoice.tap() }
+        XCTAssertEqual(app.staticTexts["selectedMapLocation"].label, "Artifact of the Hunter")
+        let focused = XCTAttachment(screenshot: XCUIScreen.main.screenshot())
+        focused.name = "Artifact-focused-map"; focused.lifetime = .keepAlways; add(focused)
+        XCUIDevice.shared.orientation = .portrait
+        Thread.sleep(forTimeInterval: 1)
+        XCTAssertTrue(pin.isHittable); XCTAssertLessThan(pin.frame.width, 60)
+        let portrait = XCTAttachment(screenshot: XCUIScreen.main.screenshot())
+        portrait.name = "Artifact-focused-portrait"; portrait.lifetime = .keepAlways; add(portrait)
+        XCUIDevice.shared.orientation = .landscapeLeft
+        Thread.sleep(forTimeInterval: 1)
+        app.buttons["layer-Artifact"].tap()
+        XCTAssertFalse(app.buttons["pin-artifact-hunter"].exists)
+        app.buttons["layer-Artifact"].tap()
+        XCTAssertTrue(app.buttons["pin-artifact-hunter"].exists)
+        app.buttons["section-Boss"].tap()
+        XCTAssertTrue(app.buttons["boss-nunatak"].waitForExistence(timeout: 5))
+        app.buttons["boss-nunatak"].tap()
+        let alpha = app.segmentedControls["bossDifficulty"].buttons["Alpha"]
+        for _ in 0..<3 { if alpha.isHittable { break }; app.swipeUp() }
+        XCTAssertTrue(alpha.isHittable); alpha.tap()
+        XCTAssertTrue(app.staticTexts["1.250.000"].exists)
+        XCTAssertTrue(app.staticTexts["550"].exists)
+        let boss = XCTAttachment(screenshot: XCUIScreen.main.screenshot())
+        boss.name = "Nunatak-Alpha-guide"; boss.lifetime = .keepAlways; add(boss)
     }
 
 }

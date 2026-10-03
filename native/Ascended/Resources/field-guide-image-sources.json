@@ -1,0 +1,140 @@
+[
+  {
+    "asset": "Artifact-cunning",
+    "sourceURL": "https://r2.wikily.gg/images/ark/icons/Artifact25_Icon.webp",
+    "width": 256,
+    "height": 256
+  },
+  {
+    "asset": "Artifact-strong",
+    "sourceURL": "https://r2.wikily.gg/images/ark/icons/Artifact9_Icon.webp",
+    "width": 256,
+    "height": 256
+  },
+  {
+    "asset": "Artifact-devious",
+    "sourceURL": "https://r2.wikily.gg/images/ark/icons/Artifact4_Icon.webp",
+    "width": 256,
+    "height": 256
+  },
+  {
+    "asset": "Artifact-pack",
+    "sourceURL": "https://r2.wikily.gg/images/ark/icons/Artifact2_Icon.webp",
+    "width": 256,
+    "height": 256
+  },
+  {
+    "asset": "Artifact-hunter",
+    "sourceURL": "https://r2.wikily.gg/images/ark/icons/Artifact1_Icon.webp",
+    "width": 256,
+    "height": 256
+  },
+  {
+    "asset": "Artifact-devourer",
+    "sourceURL": "https://r2.wikily.gg/images/ark/icons/Artifact7_Icon.webp",
+    "width": 256,
+    "height": 256
+  },
+  {
+    "asset": "Artifact-immune",
+    "sourceURL": "https://r2.wikily.gg/images/ark/icons/Artifact8_Icon.webp",
+    "width": 256,
+    "height": 256
+  },
+  {
+    "asset": "Artifact-clever",
+    "sourceURL": "https://r2.wikily.gg/images/ark/icons/Artifact5_Icon.webp",
+    "width": 256,
+    "height": 256
+  },
+  {
+    "asset": "Artifact-massive",
+    "sourceURL": "https://r2.wikily.gg/images/ark/icons/Artifact3_Icon.webp",
+    "width": 256,
+    "height": 256
+  },
+  {
+    "asset": "Artifact-skylord",
+    "sourceURL": "https://r2.wikily.gg/images/ark/icons/Artifact6_Icon.webp",
+    "width": 256,
+    "height": 256
+  },
+  {
+    "asset": "Nunatak-Gamma",
+    "sourceURL": "https://ark.wiki.gg/images/c/cd/ASA_Nunatak_Gamma_No_Background.png",
+    "width": 2000,
+    "height": 1125
+  },
+  {
+    "asset": "Nunatak-Beta",
+    "sourceURL": "https://ark.wiki.gg/images/f/f1/ASA_Nunatak_Beta_No_Background.png",
+    "width": 2000,
+    "height": 1125
+  },
+  {
+    "asset": "Nunatak-Alpha",
+    "sourceURL": "https://ark.wiki.gg/images/a/a0/ASA_Nunatak_Alpha_No_Background.png",
+    "width": 2000,
+    "height": 1125
+  },
+  {
+    "asset": "Boss-iceworm-queen",
+    "sourceURL": "https://ark.wiki.gg/images/3/3b/Iceworm_Queen.png",
+    "width": 256,
+    "height": 256
+  },
+  {
+    "asset": "Boss-lava-elemental",
+    "sourceURL": "https://ark.wiki.gg/images/4/40/Lava_Elemental.png",
+    "width": 256,
+    "height": 256
+  },
+  {
+    "asset": "Boss-spirit-dire-bear",
+    "sourceURL": "https://ark.wiki.gg/images/0/07/Spirit_Dire_Bear.png",
+    "width": 256,
+    "height": 256
+  },
+  {
+    "asset": "Boss-spirit-direwolf",
+    "sourceURL": "https://ark.wiki.gg/images/0/03/Spirit_Direwolf.png",
+    "width": 256,
+    "height": 256
+  },
+  {
+    "asset": "Cave-carnivorous",
+    "sourceURL": "https://thegameslayer.com/wp-content/uploads/2025/06/Ark-Dungeon-e1750844201171.png",
+    "width": 1200,
+    "height": 676
+  },
+  {
+    "asset": "Cave-jungle",
+    "sourceURL": "https://thegameslayer.com/wp-content/uploads/2025/06/Ark-Water-2-e1750844108862.png",
+    "width": 1200,
+    "height": 674
+  },
+  {
+    "asset": "Cave-frozen",
+    "sourceURL": "https://thegameslayer.com/wp-content/uploads/2025/06/Ark-ice-e1750844078111.png",
+    "width": 1200,
+    "height": 675
+  },
+  {
+    "asset": "Cave-labyrinth",
+    "sourceURL": "https://thegameslayer.com/wp-content/uploads/2025/06/Ark-area-e1750844001318.png",
+    "width": 1200,
+    "height": 675
+  },
+  {
+    "asset": "Cave-ocean",
+    "sourceURL": "https://thegameslayer.com/wp-content/uploads/2025/06/Ark-Water-e1750843974590.png",
+    "width": 1200,
+    "height": 675
+  },
+  {
+    "asset": "Cave-wyvern",
+    "sourceURL": "https://thegameslayer.com/wp-content/uploads/2025/06/Arc-Ice-Dragon.png",
+    "width": 1600,
+    "height": 900
+  }
+]

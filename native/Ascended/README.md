@@ -1,4 +1,4 @@
-# Ascended — native iPad development 0.2.0 (2)
+# Ascended — native iPad development 0.3.0 (3)
 Single Player · Ragnarok. Independent app `com.tonytuanngoc.ascended`, installed by cable without TestFlight.
 
 ## Included
@@ -8,6 +8,10 @@ Single Player · Ragnarok. Independent app `com.tonytuanngoc.ascended`, installe
 - Current structured profiles for 140 entries: recorded taming method/food, base wild stats, drops and immobilization. Nineteen entries explicitly show that detailed information is pending. Variants are counted separately.
 - 126 dated practical notes retained from the existing repo, labelled historical (20 April 2026), separate from current profile data.
 - Boss catalogue: Nunatak main arena; Iceworm Queen, Lava Elemental, Spirit Dire Bear and Spirit Direwolf (four named mini-bosses across three dungeon encounters).
+- Visual field guide: ten ASA artifacts across six cave/underwater routes; nine entrance/approach GPS points, three Obelisk terminals and an approximate Lava Elemental arena point. Map layers, selectable fixed-size markers, nearby-location chooser and direct focus from profiles.
+- Nunatak Gamma/Beta/Alpha HP, entry levels, artifacts/apex tributes, Element, Tekgrams, arena rules and preparation; dungeon boss route/mechanics/gear notes with source-dependent values identified.
+- 23 additional offline images: ten artifact icons, three Nunatak renders, four mini-boss icons and six attributed Ragnarok illustrations. Cave illustrations are not exact entrance photographs.
+- Persistent artifact collection and preparation checklists.
 - Local autosaved notes and source links. Core content works offline; links require network.
 
 ## Build and install
@@ -20,12 +24,12 @@ xcrun devicectl device install app --device 'iPad (3)' /Users/admin/Ascended-Bui
 xcrun devicectl device process launch --device 'iPad (3)' com.tonytuanngoc.ascended
 ```
 
-Native source and docs are excluded from Firebase Hosting. Notes use `ascended.ragnarok.notes.v1`; updating preserves them, deleting the app removes them. No Tony OS synchronization.
+Native source and docs are excluded from Firebase Hosting. Notes use `ascended.ragnarok.notes.v1`; artifact collection uses `ascended.artifacts.collected.v1`, preparation uses `ascended.guide.checklist.v1`; updating preserves them, deleting the app removes them. No Tony OS synchronization.
 
 ## Sources and assets
 Reviewed 3 October 2026; source URLs and update notes are included in the catalogue.
 - Original logo: https://r2.wikily.gg/images/brand/asa-logo.webp (Studio Wildcard artwork, fitted to an opaque app icon without redrawing).
-- Terrain: https://r2.wikily.gg/images/ark/maps/ragnarok_tiles/5/{x}/{y}.png — 1,024 tiles at 256×256, assembled into source-native 8K. Zoom 6 returned 404; zoom 5 is the highest source level verified. No resource/spawn overlays or coordinates yet.
+- Terrain: https://r2.wikily.gg/images/ark/maps/ragnarok_tiles/5/{x}/{y}.png — 1,024 tiles at 256×256, assembled into source-native 8K. Zoom 6 returned 404; zoom 5 is the highest source level verified. Artifact, cave entrance/approach and boss portal overlays added; no resource or creature spawn overlays.
 - Current spawn registry and structured profiles: https://wikily.gg/ark-survival-ascended/maps/ragnarok/ and its creature profile pages.
 - Offline creature icons from the linked Wikily profiles: 152 of 159 entries have artwork; seven use a fallback symbol.
 - Official community wiki: https://ark.wiki.gg/wiki/Ragnarok , https://ark.wiki.gg/wiki/Nunatak and linked species/dungeon pages.
@@ -33,3 +37,5 @@ Reviewed 3 October 2026; source URLs and update notes are included in the catalo
 - Latest additions: https://survivetheark.com/index.php?/forums/topic/774248-therizino-tlc-cerberax-and-gargantar-are-out-now/ (30 September 2026; Cerberax, Gargantar and Ragnarok Cryolophosaurus spawns).
 
 Personal companion, not an official Studio Wildcard product. Full progression planning, base design and calculators remain subsequent steps.
+
+Field-guide source manifest: `Resources/field-guide-image-sources.json`. Artifact coordinates use Wikily's ASA spawn layer; entrances use the June 2025 Ascended guide at https://thegameslayer.com/guides/all-ragnarok-artifact-locations-ark-ragnarok-ascended/ . Boss statistics/tributes/rewards cite the Ascended tables on the community wiki. These are dated source records, not measurements of a Single Player save.

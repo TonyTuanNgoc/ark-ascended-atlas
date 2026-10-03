@@ -31,9 +31,7 @@ struct BossLibrary: View {
                 ForEach(RagnarokBoss.all) { boss in
                     NavigationLink { BossDetail(boss: boss) } label: {
                         HStack(spacing: 18) {
-                            Image(systemName: boss.id == "nunatak" ? "snowflake" : "flame.fill")
-                                .font(.largeTitle).foregroundStyle(boss.id == "nunatak" ? .cyan : .orange)
-                                .frame(width: 60, height: 60)
+                            Image(boss.id == "nunatak" ? "Nunatak-Gamma" : "Boss-" + boss.id).resizable().scaledToFit().frame(width: 120, height: 80)
                             VStack(alignment: .leading, spacing: 6) {
                                 Text(boss.name).font(.title3.bold()).foregroundStyle(.primary)
                                 Text(boss.kind + " · " + boss.encounter).font(.subheadline).foregroundStyle(.secondary)
@@ -54,6 +52,9 @@ struct BossDetail: View {
             VStack(alignment: .leading, spacing: 22) {
                 Label(boss.kind, systemImage: "shield.lefthalf.filled").foregroundStyle(.cyan)
                 Text(boss.name).font(.largeTitle.bold())
+                Image(boss.id == "nunatak" ? "Nunatak-Gamma" : "Boss-" + boss.id).resizable().scaledToFit().frame(height: boss.id == "nunatak" ? 280 : 160).frame(maxWidth: .infinity)
+                Text(boss.id == "nunatak" ? "Ảnh Nunatak Ascended · ARK Community Wiki" : "Icon mini-boss · ARK Community Wiki").font(.caption).foregroundStyle(.secondary)
+                BossKnowledge(boss: boss)
                 block("Tổng quan", boss.summary)
                 block("Tìm ở đâu", boss.location)
                 block("Nguy hiểm cần chuẩn bị", boss.danger)
