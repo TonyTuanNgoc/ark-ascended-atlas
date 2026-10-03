@@ -54,6 +54,7 @@ struct BossDetail: View {
                 Text(boss.name).font(.largeTitle.bold())
                 Image(boss.id == "nunatak" ? "Nunatak-Gamma" : "Boss-" + boss.id).resizable().scaledToFit().frame(height: boss.id == "nunatak" ? 280 : 160).frame(maxWidth: .infinity)
                 Text(boss.id == "nunatak" ? "Ảnh Nunatak Ascended · ARK Community Wiki" : "Icon mini-boss · ARK Community Wiki").font(.caption).foregroundStyle(.secondary)
+                NavigationLink(value: GuideDestination.army(boss.id)) { Label("Đội Dino, level & chỉ số chuẩn bị", systemImage: "pawprint.fill") }.accessibilityIdentifier("bossArmy")
                 BossKnowledge(boss: boss)
                 block("Tổng quan", boss.summary)
                 block("Tìm ở đâu", boss.location)

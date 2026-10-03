@@ -1,0 +1,136 @@
+{
+  "reviewedAt": "2026-10-03",
+  "method": "Public source video URL metadata inspection; metadata/chapter only; no video download or visual analysis",
+  "videos": [
+    {
+      "id": "2-qtw1pdg2A",
+      "url": "https://www.youtube.com/watch?v=2-qtw1pdg2A",
+      "title": "The Top 20 Base Locations in Ark Ragnarok Ascended",
+      "channel": "Ark: Survival Guide",
+      "publishDate": "20250622",
+      "statistics": {
+        "views": 42474,
+        "likes": 534,
+        "comments": 15
+      },
+      "relevantChapters": [
+        {
+          "title": "2 – 18.0,78.9 PVP/PVE Highlands Waterfall Cave",
+          "start": 130,
+          "end": 185
+        },
+        {
+          "title": "3 – 22.8, 30.9 PVP/PVE Viking Bay Ribcage Cave",
+          "start": 185,
+          "end": 233
+        },
+        {
+          "title": "4 – 39.8, 44.8 Multiple PVE Builder Canyon Plateaus",
+          "start": 233,
+          "end": 312
+        },
+        {
+          "title": "5 – 57.6, 19.4 PVE/PVP Herbivore Lighthouse",
+          "start": 312,
+          "end": 360
+        },
+        {
+          "title": "6 – 28.1, 48.3 PVP/PVE Large Waterfall Cave",
+          "start": 360,
+          "end": 401
+        },
+        {
+          "title": "16 – 41.1, 28.4 Large Alpha Canyon Plateau",
+          "start": 983,
+          "end": 1008
+        },
+        {
+          "title": "17 – 48.2, 12.2 Unraidable Waterfall PVP Rathole",
+          "start": 1008,
+          "end": 1080
+        }
+      ]
+    },
+    {
+      "id": "7L82DkFipzU",
+      "url": "https://www.youtube.com/watch?v=7L82DkFipzU",
+      "title": "TOP 25 BEST BASE LOCATIONS on RAGNAROK ASCENDED! | ARK: Survival Ascended",
+      "channel": "The Outcasts",
+      "publishDate": "20250621",
+      "statistics": {
+        "views": 15848,
+        "likes": 166,
+        "comments": 12
+      },
+      "relevantChapters": [
+        {
+          "title": "Canyon and jungle spots",
+          "start": 409,
+          "end": 466
+        }
+      ]
+    },
+    {
+      "id": "gK_j-65oX8w",
+      "url": "https://www.youtube.com/watch?v=gK_j-65oX8w",
+      "title": "Top 10 PVE Base Locations On Ragnarok Ascended",
+      "channel": "Inter",
+      "publishDate": "20250626",
+      "statistics": {
+        "views": 642,
+        "likes": 7,
+        "comments": 2
+      },
+      "relevantChapters": []
+    },
+    {
+      "id": "5mYGGM_bIhs",
+      "url": "https://www.youtube.com/watch?v=5mYGGM_bIhs",
+      "title": "Best Base Locations on Ark's Ragnarok Ascended Map",
+      "channel": "Phlinger Phoo",
+      "publishDate": "20250621",
+      "statistics": {
+        "views": 21207,
+        "likes": 617,
+        "comments": 36
+      },
+      "relevantChapters": [
+        {
+          "title": "Waterfall base spot",
+          "start": 0,
+          "end": 115
+        },
+        {
+          "title": "Northeast Highland cave",
+          "start": 115,
+          "end": 169
+        },
+        {
+          "title": "Herbivore island base",
+          "start": 676,
+          "end": 742
+        },
+        {
+          "title": "Swamp waterfall base",
+          "start": 742,
+          "end": 817
+        },
+        {
+          "title": "Canyon cliff base",
+          "start": 899,
+          "end": 961
+        },
+        {
+          "title": "Viking Bay base",
+          "start": 961,
+          "end": 1001
+        },
+        {
+          "title": "Waterfall cave base",
+          "start": 1163,
+          "end": 1232
+        }
+      ]
+    }
+  ]
+}

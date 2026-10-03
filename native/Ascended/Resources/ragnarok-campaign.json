@@ -1,0 +1,383 @@
+{
+  "summary": "Farm đồ và hoàn thiện artifact qua dungeon → Nunatak Gamma → Beta → Alpha. Mini-boss không phải trophy gate bắt buộc của Nunatak; Lava là loot tùy chọn.",
+  "sharedPreparation": [
+    "Mốc dưới đây là chỉ số trong inventory sau breed, imprint và điểm XP, trước courage / mate boost; không phải chỉ số mới nở hay sát thương hit thực tế.",
+    "Giả định wild max khoảng 150, stat multipliers gần mặc định và không mod combat. Single Player Settings ON có thể làm tame mạnh hơn; vẫn kiểm tra HP/melee thật, không tự chia số để giảm đội.",
+    "Chọn bố mẹ wild 130–150 có HP/melee tốt; tổng level chỉ là bộ lọc. Tame 150 hiệu quả cao thường khoảng 224, không phải mốc bắt buộc để thắng.",
+    "Ghép HP tốt + melee tốt vào cùng dòng breed, giữ bố mẹ dự phòng; imprint 100% nếu có thể. Rider imprint chỉ có khi đúng người đã imprint đang cưỡi; Dino AI không được rider bonus.",
+    "Lên XP: nâng HP tới mục tiêu, phần lớn điểm còn lại vào melee; Yuty ưu tiên HP/stamina, Daeodon ưu tiên food. Không bơm weight/speed cho DPS chỉ vì muốn tổng level cao.",
+    "Khoảng level 250–350+ có thể gặp ở đội đã train nhưng không chứng minh sức mạnh: level 300 dồn food yếu hơn level thấp có HP/melee đúng. Không có số mutation cố định phải đạt.",
+    "Solo thường cưỡi Yuty để giữ courage và whistle; 19 attacker + 1 Yuty = 20. Nếu dùng Daeodon, thay một attacker (18+1+1), chuẩn bị food và chấp nhận DPS giảm.",
+    "Chạy Gamma khảo sát → Beta → Alpha bằng cùng chiến thuật đã ổn định, thay saddle/đội khi thiếu; hồi đầy HP/food và mang súng dự phòng. Các ngưỡng là kế hoạch chuẩn bị, không cam kết no-loss.",
+    "Deinosuchus bleed đã bị loại khỏi boss ở patch 73.13. Các video/forum cũ nói bleed cheese không còn là bằng chứng cho hiện tại."
+  ],
+  "steps": [
+    {
+      "id": "queen",
+      "title": "1 · Frozen Dungeon → Iceworm Queen",
+      "reason": "Hướng tới artifact Pack và loot/saddle. Chuẩn bị đồ lạnh và khảo sát trước khi xuống arena.",
+      "bossIDs": [
+        "iceworm-queen"
+      ],
+      "kind": "Dungeon / chuẩn bị đồ"
+    },
+    {
+      "id": "lava",
+      "title": "2 · Jungle Dungeon → Lava Elemental",
+      "reason": "Lấy Hunter trước; đánh Lava khi muốn farm loot, có thể bỏ qua boss này nếu mục tiêu chỉ artifact.",
+      "bossIDs": [
+        "lava-elemental"
+      ],
+      "kind": "Tùy chọn"
+    },
+    {
+      "id": "spirits",
+      "title": "3 · Life’s Labyrinth → cặp Spirit",
+      "reason": "Một tuyến puzzle, hai loài cùng chạm trán. Không đem hai đội hoặc tính thành hai portal.",
+      "bossIDs": [
+        "spirit-dire-bear",
+        "spirit-direwolf"
+      ],
+      "kind": "Artifact / puzzle"
+    },
+    {
+      "id": "nunatak",
+      "title": "4 · Nunatak · Gamma → Beta → Alpha",
+      "reason": "Hoàn tất đủ 10 artifact và tribute đúng cấp; thử Gamma rồi nâng độ khó khi đội ổn định. Các tuyếnartifact khác vẫn cần làm.",
+      "bossIDs": [
+        "nunatak"
+      ],
+      "kind": "Boss chính"
+    }
+  ],
+  "loadouts": [
+    {
+      "bossID": "iceworm-queen",
+      "entry": "Không có3 cấp arena. Survivor level phụ thuộc đồ anh dùng; level Queen khác level tame.",
+      "warning": "",
+      "options": [
+        {
+          "id": "foot",
+          "title": "Solo trên chân · shotgun + đồ lạnh",
+          "team": "Không cần đội 20 Dino; tame vận chuyển hỗ trợ đường hang.",
+          "why": "Ít rủi ro tame kẹt và không cần giả định cryopod hoạt động trong arena.",
+          "targets": [
+            {
+              "difficulty": "Dungeon",
+              "hp": "Không áp ngưỡng HP Dino",
+              "melee": "Không áp dụng",
+              "saddle": "Không áp dụng",
+              "extra": "Pump-action tốt, đạn dư, shield/Medical Brew; đây là checklist đồ"
+            }
+          ],
+          "play": "Khảo sát điểm xuống, giữ đường né và không đứng sát hitbox Queen. Hồi HP đầy trước kích hoạt.",
+          "confidence": "Wiki mô tả ranged; solo cần tự né, không dùng chiến thuật nhiều người tank/bắn.",
+          "imageAsset": "Boss-iceworm-queen"
+        },
+        {
+          "id": "bary",
+          "title": "2 Baryonyx mate boost · nếu thả tame hợp lệ",
+          "team": "Hai Bary đã breed/imprint, khác giới; anh cưỡi một.",
+          "why": "Wiki đưa cặp Bary như một phương án.",
+          "targets": [
+            {
+              "difficulty": "Kế hoạch dungeon",
+              "hp": "10–15k / con",
+              "melee": "500–700%",
+              "saddle": "60–80+",
+              "extra": "Mốc do em đề xuất; chưa có minimum ASA được kiểm chứng"
+            }
+          ],
+          "play": "Kiểm tra có đưa/thả tame tới chỗ đánh trong settings thật không; Queen cần kích hoạt theo cơ chế không cưỡi. Không coi Wiki cryopod chung là quyền thả mọi nơi.",
+          "confidence": "Wiki chung Evolved/Ascended; stats là ngân sách đề xuất, độ tin cậy thấp hơn army guardian.",
+          "imageAsset": "Dino-baryonyx"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Wiki · Iceworm Queen",
+          "url": "https://ark.wiki.gg/wiki/Iceworm_Queen",
+          "note": "Ranged và cặp Bary được mô tả; phần Ascended nói Queen nhanh hơn."
+        },
+        {
+          "title": "Reddit · Carcha trong hang ASA · 07/2025",
+          "url": "https://www.reddit.com/r/ARK/comments/1lzpga7/",
+          "note": "Có người báo dùng Carcha; không có HP/saddle/route đủ để chuẩn hóa thành minimum."
+        }
+      ]
+    },
+    {
+      "bossID": "lava-elemental",
+      "entry": "Trận loot tùy chọn, không có Gamma/Beta/Alpha; Hunter không bắt buộc thắng Lava.",
+      "warning": "",
+      "options": [
+        {
+          "id": "rockets",
+          "title": "Grapple + rocket · không cần Dino",
+          "team": "Survivor trên bệ an toàn; tame chở đồ nằm ngoài trận.",
+          "why": "Melee/đạn thường bị kháng; tải nổ tầm xa là đường mặc định.",
+          "targets": [
+            {
+              "difficulty": "Loot dungeon",
+              "hp": "Không áp dụng",
+              "melee": "Không áp dụng",
+              "saddle": "Không áp dụng",
+              "extra": "Nhiều rocket, launcher dự phòng, grapples"
+            }
+          ],
+          "play": "Chọn bệ và đường rút; không đứng sát tường khi bắn nổ. Số rocket phụ thuộc level boss/weapon; không dùng 40/60rocket ASE làm tính toán ASA.",
+          "confidence": "Wiki + Reddit lịch sử; không có ngưỡng đạn ASA chắc chắn.",
+          "imageAsset": "Boss-lava-elemental"
+        },
+        {
+          "id": "tech",
+          "title": "Sau Tek / import · lựa chọn thêm",
+          "team": "Tek Rifle; hoặc Velonasaur từ map khác nếu anh cho phép chuyển tame.",
+          "why": "Tận dụng đồ/tame đã có về sau, không phải đội native Ragnarok.",
+          "targets": [
+            {
+              "difficulty": "Nâng cao",
+              "hp": "Chưa có minimum ASA xác minh",
+              "melee": "Train theo phương án thực tế",
+              "saddle": "Saddle tốt nếu Velo",
+              "extra": "Cần Tekgram/Element hoặc import hợp lệ"
+            }
+          ],
+          "play": "Đừng breed Rex để đưa xuống hồ lava. Velo không nằm trong roster native Rag; kiểm tra cryopod/địa hình thay vì giả định safe exploit.",
+          "confidence": "Phương án lịch sử/wiki, cần thử trên phiên bản/settings hiện tại.",
+          "imageAsset": "Boss-lava-elemental"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Wiki · Lava Elemental",
+          "url": "https://ark.wiki.gg/wiki/Lava_Elemental",
+          "note": "Kháng damage thường; ưu tiên ranged nổ/Tek."
+        },
+        {
+          "title": "Reddit · Lava rocket / Velo · ASE2023",
+          "url": "https://www.reddit.com/r/ARK/comments/13tplgp/",
+          "note": "Kinh nghiệm lịch sử ASE, không lấy số rocket làm minimum ASA."
+        }
+      ]
+    },
+    {
+      "bossID": "spirit-dire-bear",
+      "entry": "Chung encounter Life’s Labyrinth với Spirit Direwolf; không hai arena riêng.",
+      "warning": "",
+      "options": [
+        {
+          "id": "foot",
+          "title": "Shotgun + cơ chế mê cung · ưu tiên solo",
+          "team": "Không mang đội boss lớn; đồ sống sót, súng, đạn và tame hiến tế theo route.",
+          "why": "Thắng tuyến phụ thuộc puzzle và đợt spirit, không chỉ HP/DPS.",
+          "targets": [
+            {
+              "difficulty": "Life’s Labyrinth",
+              "hp": "Không có ngưỡng HP Dino được xác minh",
+              "melee": "Không áp dụng",
+              "saddle": "Không áp dụng",
+              "extra": "Medical Brew, giáp/súng dự phòng, đủ vật phẩm cơ chế"
+            }
+          ],
+          "play": "Hai loài chung một encounter. Nhận diện đợt, giữ khoảng cách và đọc hồ sơ tuyến; chuẩn bị tame hiến tế riêng, không dùng con chính.",
+          "confidence": "Cơ chế Wiki; không có thống kê army ASA đáng tin để gọi là minimum.",
+          "imageAsset": "Boss-spirit-dire-bear"
+        },
+        {
+          "id": "mount",
+          "title": "Mount nhỏ hỗ trợ · chỉ khi settings cho phép",
+          "team": "Một Thyla/Bary breed cho đường hang; không mặc định dùng được ở phòng cuối.",
+          "why": "Giúp di chuyển/giao chiến nếu rules cho phép; luôn có phương án trên chân.",
+          "targets": [
+            {
+              "difficulty": "Dự phòng dungeon",
+              "hp": "10–15k",
+              "melee": "500–700%",
+              "saddle": "60–80+",
+              "extra": "Mốc chuẩn bị tự tổng hợp; phải thử quyền dùng tame"
+            }
+          ],
+          "play": "Khảo sát cửa hẹp và cryopod; không chuyển chiến thuật mod/dino-storage trong bài ASE sang vanilla ASA.",
+          "confidence": "Chỉ option có điều kiện; nguồn thực chiến ASA thiếu, không cam kết.",
+          "imageAsset": "Dino-thylacoleo"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Wiki · Spirit encounter",
+          "url": "https://ark.wiki.gg/wiki/Spirit_Direwolf_%26_Spirit_Dire_Bear",
+          "note": "Puzzle/đợt spirit và điều kiện tuyến."
+        },
+        {
+          "title": "Reddit · Cave bosses · ASE2022",
+          "url": "https://www.reddit.com/r/ARK/comments/v3mxv2/",
+          "note": "Các gợi ý mount dùng dino-storage; không phải chứng minh vanilla ASA."
+        }
+      ]
+    },
+    {
+      "bossID": "spirit-direwolf",
+      "entry": "Cùng bộ đồ và đội của Spirit Dire Bear; không cộng hai đội riêng.",
+      "warning": "",
+      "options": [
+        {
+          "id": "foot",
+          "title": "Shotgun + cơ chế mê cung · ưu tiên solo",
+          "team": "Không mang đội boss lớn; đồ sống sót, súng, đạn và tame hiến tế theo route.",
+          "why": "Thắng tuyến phụ thuộc puzzle và đợt spirit, không chỉ HP/DPS.",
+          "targets": [
+            {
+              "difficulty": "Life’s Labyrinth",
+              "hp": "Không có ngưỡng HP Dino được xác minh",
+              "melee": "Không áp dụng",
+              "saddle": "Không áp dụng",
+              "extra": "Medical Brew, giáp/súng dự phòng, đủ vật phẩm cơ chế"
+            }
+          ],
+          "play": "Hai loài chung một encounter. Nhận diện đợt, giữ khoảng cách và đọc hồ sơ tuyến; chuẩn bị tame hiến tế riêng, không dùng con chính.",
+          "confidence": "Cơ chế Wiki; không có thống kê army ASA đáng tin để gọi là minimum.",
+          "imageAsset": "Boss-spirit-dire-bear"
+        },
+        {
+          "id": "mount",
+          "title": "Mount nhỏ hỗ trợ · chỉ khi settings cho phép",
+          "team": "Một Thyla/Bary breed cho đường hang; không mặc định dùng được ở phòng cuối.",
+          "why": "Giúp di chuyển/giao chiến nếu rules cho phép; luôn có phương án trên chân.",
+          "targets": [
+            {
+              "difficulty": "Dự phòng dungeon",
+              "hp": "10–15k",
+              "melee": "500–700%",
+              "saddle": "60–80+",
+              "extra": "Mốc chuẩn bị tự tổng hợp; phải thử quyền dùng tame"
+            }
+          ],
+          "play": "Khảo sát cửa hẹp và cryopod; không chuyển chiến thuật mod/dino-storage trong bài ASE sang vanilla ASA.",
+          "confidence": "Chỉ option có điều kiện; nguồn thực chiến ASA thiếu, không cam kết.",
+          "imageAsset": "Dino-thylacoleo"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Wiki · Spirit encounter",
+          "url": "https://ark.wiki.gg/wiki/Spirit_Direwolf_%26_Spirit_Dire_Bear",
+          "note": "Chung trận, không dùng chỉ số wolf thường."
+        }
+      ]
+    },
+    {
+      "bossID": "nunatak",
+      "entry": "Survivor Gamma70 / Beta80 / Alpha90; tối đa20 tame theo rule arena, kiểm tra save.",
+      "warning": "Đội Rex là lựa chọn có báo cáo solo Alpha cụ thể nhất trong nguồn tìm được. Theri/support là phương án Wiki, chưa có báo no-loss với đúng bộ chỉ số em đề xuất.",
+      "options": [
+        {
+          "id": "rex",
+          "title": "Rex + Yuty · dễ chuẩn hóa",
+          "team": "19 Rex + 1 Yutyrannus anh cưỡi; hoặc 18 Rex + Yuty + Daeodon.",
+          "why": "Một dòng breed có thể dùng nhiều trận; có saddle và chỉ số thực tế đủ.",
+          "targets": [
+            {
+              "difficulty": "Gamma",
+              "hp": "25–30k",
+              "melee": "700–800%",
+              "saddle": "80+",
+              "extra": ""
+            },
+            {
+              "difficulty": "Beta",
+              "hp": "30–35k",
+              "melee": "800–1000%",
+              "saddle": "100+",
+              "extra": ""
+            },
+            {
+              "difficulty": "Alpha",
+              "hp": "35–40k",
+              "melee": "900–1200%",
+              "saddle": "100+",
+              "extra": "Alpha có báo solo~800%; phần melee cao hơn là khoảng đệm."
+            }
+          ],
+          "play": "Whistle vào một mục tiêu, giữ courage, dùng Yuty tránh đòn; pig là lựa chọn, không healer vô hạn. Yuty gợi ý 25–30k HP / 2–3k stamina, saddle80+; pig 20k+ HP / 60–100k food là ngân sách support, không minimum.",
+          "confidence": "Kinh nghiệm cộng đồng + khoảng đệm do em đề xuất.",
+          "imageAsset": "Dino-rex"
+        },
+        {
+          "id": "theri",
+          "title": "Therizino + cake · tái dùng dòng breed",
+          "team": "19 Therizinosaurus + 1 Yuty; hoặc 18 Theri + Yuty + 1 pig.",
+          "why": "Có thể tái dùng dòng Theri đã breed để giảm công chuẩn bị nhiều dòng. Với trận này, đây là phương án đề xuất theo cơ chế tame và cake, chưa có báo cáo thắng đúng bộ chỉ số dưới đây trong nguồn đã dẫn.",
+          "targets": [
+            {
+              "difficulty": "Gamma",
+              "hp": "21–25k",
+              "melee": "800%+",
+              "saddle": "80+",
+              "extra": "15–20 cake / con"
+            },
+            {
+              "difficulty": "Beta",
+              "hp": "25–30k",
+              "melee": "1000%+",
+              "saddle": "100+",
+              "extra": "20–30 cake / con"
+            },
+            {
+              "difficulty": "Alpha",
+              "hp": "25–30k",
+              "melee": "1200%+",
+              "saddle": "100+",
+              "extra": "25–30 cake / con; HP cao theo khuyến nghị Wiki"
+            }
+          ],
+          "play": "Giữ cake trong từng inventory, thêm berries; đừng nhầm melee% với damage hiện trên một hit. Nâng HP quanh 21k rồi ưu tiên melee là cách tận dụng cake, không phải luật cấm tăng HP.",
+          "confidence": "Mốc do em đề xuất để lập kế hoạch; nguồn của trận này không xác minh riêng army Theri. Thử Gamma để đánh giá trước khi nâng độ khó.",
+          "imageAsset": "Dino-therizinosaur"
+        },
+        {
+          "id": "heal",
+          "title": "Đội Rex với healer · trận dài",
+          "team": "18 Rex + 1 Yuty anh cưỡi + 1 Daeodon.",
+          "why": "Wiki khuyên pig vì Iceworm gây damage cao; cân bằng sống sót và DPS.",
+          "targets": [
+            {
+              "difficulty": "Alpha · Rex",
+              "hp": "35–40k",
+              "melee": "900–1200%",
+              "saddle": "100+",
+              "extra": ""
+            },
+            {
+              "difficulty": "Support · Daeodon",
+              "hp": "20–25k",
+              "melee": "Food ưu tiên",
+              "saddle": "80+",
+              "extra": "60–100k food + đồ ăn dư, mục tiêu ngân sách"
+            }
+          ],
+          "play": "Ranged khi boss bay; khi hạ đất tập trung DPS. Solo không thể tự cưỡi cả Yuty và pig; kiểm soát food/heal AI, không coi pig là cứu tất cả.",
+          "confidence": "Wiki hỗ trợ cơ chế, stats support do em lập ngân sách; test Gamma trước.",
+          "imageAsset": "Dino-daeodon"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Reddit · Alpha Nunatak solo · 03/2026",
+          "url": "https://www.reddit.com/r/ArkSurvivalAscended/comments/1rq4cqc/",
+          "note": "Một người xác nhận solo cluster: Rex 35–40k HP, ~800%, saddle100+ và Yuty; đem shotgun khi boss bay. OP chỉ đang chuẩn bị, không coi OP là thắng."
+        },
+        {
+          "title": "Wiki · Nunatak",
+          "url": "https://ark.wiki.gg/wiki/Nunatak",
+          "note": "Khuyên Rex / Theri, Yuty, Daeodon; không flyer. HP cao, ranged khi bay và chuẩn bị nhiệt độ."
+        },
+        {
+          "title": "Wiki · Deinosuchus patch 73.13",
+          "url": "https://ark.wiki.gg/wiki/Deinosuchus",
+          "note": "Bleed của Deinosuchus không còn áp lên boss. Không dùng mẹo croc bleed cũ làm phương án mặc định."
+        }
+      ]
+    }
+  ]
+}

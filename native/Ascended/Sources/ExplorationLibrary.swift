@@ -165,7 +165,7 @@ extension ToggleStyle where Self == ChecklistToggleStyle { static var checkboxCo
 
 
 enum GuideDestination: Hashable {
-    case cave(String), artifact(String), map(String), boss(String)
+    case cave(String), artifact(String), map(String), boss(String), army(String), base(String), preparation
     var screen: some View { GuideDestinationScreen(destination: self) }
 }
 struct GuideDestinationScreen: View {
@@ -177,6 +177,10 @@ struct GuideDestinationScreen: View {
             if let route = map.exploration?.routes.first(where: { $0.id == id }) { CaveRouteDetail(route: route) }
         case .artifact(let id):
             if let artifact = map.exploration?.artifacts.first(where: { $0.id == id }) { ArtifactDetail(artifact: artifact) }
+        case .army(let id): BossArmyScreen(bossID: id)
+        case .preparation: BossPreparationScreen()
+        case .base(let id):
+            if let spot = map.bases?.locations.first(where: { $0.id == id }) { BaseLocationDetail(spot: spot) }
         case .map(let id): MapScreen(initialFocus: id)
         case .boss(let id):
             if map == .ragnarok, let boss = RagnarokBoss.all.first(where: { $0.id == id }) { BossDetail(boss: boss) }

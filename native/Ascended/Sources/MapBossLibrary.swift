@@ -51,6 +51,7 @@ struct MapBossDetail: View {
                 Text(map.name + " · " + boss.kind).foregroundStyle(.cyan)
                 MapBossPortrait(boss: boss).frame(height: 210).frame(maxWidth: .infinity)
                 Text("Artwork / icon · ARK Community Wiki").font(.caption).foregroundStyle(.secondary)
+                NavigationLink(value: GuideDestination.army(boss.id)) { Label("Đội Dino, level & chỉ số chuẩn bị", systemImage: "pawprint.fill") }.accessibilityIdentifier("bossArmy")
                 Text(boss.summary).cardStyle()
                 VStack(alignment: .leading, spacing: 14) {
                     Text("Địa điểm & đường vào").font(.title2.bold()); Text(boss.location)

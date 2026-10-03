@@ -1,11 +1,12 @@
 import SwiftUI
 
 enum Destination: String, CaseIterable, Identifiable {
-    case information = "Thông tin map", map = "Bản đồ", dinos = "Dino", bosses = "Boss", exploration = "Artifact & Hang", notes = "Ghi chú", sources = "Nguồn tham khảo"
+    case information = "Thông tin map", bases = "Base Location", map = "Bản đồ", dinos = "Dino", bosses = "Boss", exploration = "Artifact & Hang", notes = "Ghi chú", sources = "Nguồn tham khảo"
     var id: String { rawValue }
     var symbol: String {
         switch self {
         case .information: "mountain.2.fill"
+        case .bases: "house.fill"
         case .map: "map.fill"
         case .dinos: "pawprint.fill"
         case .bosses: "shield.lefthalf.filled"
@@ -32,7 +33,7 @@ struct MapSessionShell: View {
                 .padding(.vertical, 16).listRowBackground(Color.clear)
                 Button(action: changeMap) { Label("Chọn map khác", systemImage: "square.grid.2x2.fill") }.accessibilityIdentifier("changeMap")
                 Section(map.name.uppercased() + " · SINGLE PLAYER") {
-                    ForEach(Destination.allCases) { item in
+                    ForEach(Destination.allCases.filter { $0 != .bases || map == .ragnarok }) { item in
                         NavigationLink(value: item) {
                             Label(item.rawValue, systemImage: item.symbol)
                                 .padding(.vertical, 8)
@@ -47,9 +48,10 @@ struct MapSessionShell: View {
                 Group {
                     switch selection ?? .information {
                     case .information: MapInformationScreen(openMap: { selection = .map }, openDinos: { selection = .dinos }, openBosses: { selection = .bosses })
+                    case .bases: BaseLocationsScreen()
                     case .map: MapScreen()
                     case .dinos: CreatureLibrary()
-                    case .bosses: if map == .ragnarok { BossLibrary() } else { MapBossLibrary() }
+                    case .bosses: BossCampaignScreen()
                     case .exploration: ExplorationLibrary()
                     case .notes: ExpeditionNotes()
                     case .sources: SourcesScreen()

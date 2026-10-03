@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04930535A9A8BA26E51920E2 /* BaseLocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB6CA7EACF3817307BD3A81 /* BaseLocations.swift */; };
 		1A33F558707B9F084E4C3F40 /* ragnarok-creatures.json in Resources */ = {isa = PBXBuildFile; fileRef = 117624CA7AE01E94124FA7DA /* ragnarok-creatures.json */; };
 		1F695D0882D5378A3D881071 /* the-island-creatures.json in Resources */ = {isa = PBXBuildFile; fileRef = C4C4C3CBE0EB1B710AAFB5D6 /* the-island-creatures.json */; };
 		27F89E3B27F21095FECB065E /* the-center-bosses.json in Resources */ = {isa = PBXBuildFile; fileRef = F35037AFE7ED4F205CA9A65B /* the-center-bosses.json */; };
@@ -14,6 +15,8 @@
 		37FFCBC1D77B9E53007F2C25 /* AscendedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1AD1EAA4F7A46916301E1D /* AscendedApp.swift */; };
 		49EA1899E797984AF967E517 /* ragnarok-information.json in Resources */ = {isa = PBXBuildFile; fileRef = A9292302B088D9781D0F7FE4 /* ragnarok-information.json */; };
 		56B0C1CC0682C86A1519BA0D /* multi-map-image-sources.json in Resources */ = {isa = PBXBuildFile; fileRef = 2CB0F69F3295AA1C05178E96 /* multi-map-image-sources.json */; };
+		669BD895E7D5C0CE8361C5F5 /* ragnarok-bases.json in Resources */ = {isa = PBXBuildFile; fileRef = ABAFDD614333DBDA6EAB9AC9 /* ragnarok-bases.json */; };
+		680D5DD55734EF3F2B12125E /* the-island-campaign.json in Resources */ = {isa = PBXBuildFile; fileRef = 04E584D98FBA1FD093ECD9D5 /* the-island-campaign.json */; };
 		72E22AB6037DDDF95805D40B /* ExplorationLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B639950B996E68FD31FA778 /* ExplorationLibrary.swift */; };
 		7E1988F3A8D148B277FC1681 /* AscendedShell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A91B2E5C7B289D1C4C46DEF /* AscendedShell.swift */; };
 		8243B781E3317CD1EFEF2BF5 /* ArkMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE4E51E3919A7687253307A /* ArkMap.swift */; };
@@ -21,7 +24,9 @@
 		9312E0477163E01FD4FDB011 /* field-guide-image-sources.json in Resources */ = {isa = PBXBuildFile; fileRef = 95B3AF8ADB048B7C77DA6D93 /* field-guide-image-sources.json */; };
 		94B10C2D9AA4F824C5659E54 /* MapScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5F0090FAB489BD7EBA78AB /* MapScreen.swift */; };
 		970368C456790EEA2DB24199 /* MapLocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC77A3D4453B51810381610 /* MapLocations.swift */; };
+		98D6B1473B363D36D7CC1D21 /* the-center-campaign.json in Resources */ = {isa = PBXBuildFile; fileRef = 8EABEEDEA36C5F919CD3D501 /* the-center-campaign.json */; };
 		9F2F7CA352556AE83BCE99E9 /* the-island-exploration.json in Resources */ = {isa = PBXBuildFile; fileRef = 7C09734D7FAB4379584B352A /* the-island-exploration.json */; };
+		A1E9A54E26FC4FDFB2EFB83F /* ragnarok-campaign.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D08B735C6ABF219F781C9BD /* ragnarok-campaign.json */; };
 		A3253B306FA95434F5C6B84A /* CreatureLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4F5D30EEB47F7931AF520A /* CreatureLibrary.swift */; };
 		A563E07C1FB7ACCBCF7A0082 /* BossLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6602DFCC85CCA8647502E88 /* BossLibrary.swift */; };
 		A7814766395C658FA0D686F4 /* the-island-information.json in Resources */ = {isa = PBXBuildFile; fileRef = 10A247CBA0E7E6AC41179FC0 /* the-island-information.json */; };
@@ -29,6 +34,7 @@
 		B297C70D733C50A977E0AB03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CD3B0CB749ADBF9C76CB11E /* Assets.xcassets */; };
 		B449F14E4E43028D8D971D90 /* MapBossLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90350FB6D56D3E6E4B4BCFC /* MapBossLibrary.swift */; };
 		CF6EE9072EC3123ABED2B2B9 /* CreatureCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B5D2F67FAED8457F1C8566 /* CreatureCatalog.swift */; };
+		D906DEFC2753EBDFAD06436E /* BossCampaign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFB1AB0850F6A436E0DDEB9 /* BossCampaign.swift */; };
 		DA8202BCBE73CB630D975929 /* the-center-creatures.json in Resources */ = {isa = PBXBuildFile; fileRef = DE08DDBFABCB55A820C08FDF /* the-center-creatures.json */; };
 		DDF689470FDCB5C68D732173 /* BossKnowledge.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8DC9E214DC91A0FF42940B /* BossKnowledge.swift */; };
 		DF2C49BD8906310FA9E3024C /* MapInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581C5F29B7758B1F0B5757B5 /* MapInformation.swift */; };
@@ -48,10 +54,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04E584D98FBA1FD093ECD9D5 /* the-island-campaign.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "the-island-campaign.json"; sourceTree = "<group>"; };
 		05945E762F06E37563CE0082 /* the-island-bosses.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "the-island-bosses.json"; sourceTree = "<group>"; };
 		10A247CBA0E7E6AC41179FC0 /* the-island-information.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "the-island-information.json"; sourceTree = "<group>"; };
 		117624CA7AE01E94124FA7DA /* ragnarok-creatures.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "ragnarok-creatures.json"; sourceTree = "<group>"; };
 		1B639950B996E68FD31FA778 /* ExplorationLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorationLibrary.swift; sourceTree = "<group>"; };
+		1D08B735C6ABF219F781C9BD /* ragnarok-campaign.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "ragnarok-campaign.json"; sourceTree = "<group>"; };
 		2A7EFD263B75CC30DD725025 /* Ascended.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Ascended.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A91B2E5C7B289D1C4C46DEF /* AscendedShell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AscendedShell.swift; sourceTree = "<group>"; };
 		2C1AD1EAA4F7A46916301E1D /* AscendedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AscendedApp.swift; sourceTree = "<group>"; };
@@ -59,12 +67,16 @@
 		2CD3B0CB749ADBF9C76CB11E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52748689EA01BB672B5ACDF3 /* the-center-exploration.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "the-center-exploration.json"; sourceTree = "<group>"; };
 		581C5F29B7758B1F0B5757B5 /* MapInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInformation.swift; sourceTree = "<group>"; };
+		5EB6CA7EACF3817307BD3A81 /* BaseLocations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLocations.swift; sourceTree = "<group>"; };
 		6F4F5D30EEB47F7931AF520A /* CreatureLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatureLibrary.swift; sourceTree = "<group>"; };
 		6FC18FB590213ECE844E8B78 /* AscendedUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = AscendedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C09734D7FAB4379584B352A /* the-island-exploration.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "the-island-exploration.json"; sourceTree = "<group>"; };
+		8EABEEDEA36C5F919CD3D501 /* the-center-campaign.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "the-center-campaign.json"; sourceTree = "<group>"; };
+		8FFB1AB0850F6A436E0DDEB9 /* BossCampaign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BossCampaign.swift; sourceTree = "<group>"; };
 		95B3AF8ADB048B7C77DA6D93 /* field-guide-image-sources.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "field-guide-image-sources.json"; sourceTree = "<group>"; };
 		95BD787F9B5473F20F11212D /* AscendedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AscendedUITests.swift; sourceTree = "<group>"; };
 		A9292302B088D9781D0F7FE4 /* ragnarok-information.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "ragnarok-information.json"; sourceTree = "<group>"; };
+		ABAFDD614333DBDA6EAB9AC9 /* ragnarok-bases.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "ragnarok-bases.json"; sourceTree = "<group>"; };
 		AFC77A3D4453B51810381610 /* MapLocations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocations.swift; sourceTree = "<group>"; };
 		B87672B19297C391331E41BB /* ExpeditionNotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpeditionNotes.swift; sourceTree = "<group>"; };
 		C4C4C3CBE0EB1B710AAFB5D6 /* the-island-creatures.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "the-island-creatures.json"; sourceTree = "<group>"; };
@@ -95,6 +107,8 @@
 				CFE4E51E3919A7687253307A /* ArkMap.swift */,
 				2C1AD1EAA4F7A46916301E1D /* AscendedApp.swift */,
 				2A91B2E5C7B289D1C4C46DEF /* AscendedShell.swift */,
+				5EB6CA7EACF3817307BD3A81 /* BaseLocations.swift */,
+				8FFB1AB0850F6A436E0DDEB9 /* BossCampaign.swift */,
 				FA8DC9E214DC91A0FF42940B /* BossKnowledge.swift */,
 				E6602DFCC85CCA8647502E88 /* BossLibrary.swift */,
 				C7B5D2F67FAED8457F1C8566 /* CreatureCatalog.swift */,
@@ -134,14 +148,18 @@
 			children = (
 				95B3AF8ADB048B7C77DA6D93 /* field-guide-image-sources.json */,
 				2CB0F69F3295AA1C05178E96 /* multi-map-image-sources.json */,
+				ABAFDD614333DBDA6EAB9AC9 /* ragnarok-bases.json */,
+				1D08B735C6ABF219F781C9BD /* ragnarok-campaign.json */,
 				117624CA7AE01E94124FA7DA /* ragnarok-creatures.json */,
 				E1CFEE38A0F806972CB6E199 /* ragnarok-exploration.json */,
 				A9292302B088D9781D0F7FE4 /* ragnarok-information.json */,
 				F35037AFE7ED4F205CA9A65B /* the-center-bosses.json */,
+				8EABEEDEA36C5F919CD3D501 /* the-center-campaign.json */,
 				DE08DDBFABCB55A820C08FDF /* the-center-creatures.json */,
 				52748689EA01BB672B5ACDF3 /* the-center-exploration.json */,
 				FCB04B3CBD7B6BB506FFD960 /* the-center-information.json */,
 				05945E762F06E37563CE0082 /* the-island-bosses.json */,
+				04E584D98FBA1FD093ECD9D5 /* the-island-campaign.json */,
 				C4C4C3CBE0EB1B710AAFB5D6 /* the-island-creatures.json */,
 				7C09734D7FAB4379584B352A /* the-island-exploration.json */,
 				10A247CBA0E7E6AC41179FC0 /* the-island-information.json */,
@@ -236,14 +254,18 @@
 				B297C70D733C50A977E0AB03 /* Assets.xcassets in Resources */,
 				9312E0477163E01FD4FDB011 /* field-guide-image-sources.json in Resources */,
 				56B0C1CC0682C86A1519BA0D /* multi-map-image-sources.json in Resources */,
+				669BD895E7D5C0CE8361C5F5 /* ragnarok-bases.json in Resources */,
+				A1E9A54E26FC4FDFB2EFB83F /* ragnarok-campaign.json in Resources */,
 				1A33F558707B9F084E4C3F40 /* ragnarok-creatures.json in Resources */,
 				2D4D01B968BABE7FC0C60923 /* ragnarok-exploration.json in Resources */,
 				49EA1899E797984AF967E517 /* ragnarok-information.json in Resources */,
 				27F89E3B27F21095FECB065E /* the-center-bosses.json in Resources */,
+				98D6B1473B363D36D7CC1D21 /* the-center-campaign.json in Resources */,
 				DA8202BCBE73CB630D975929 /* the-center-creatures.json in Resources */,
 				EB7A97A67EEA75014D8BB2E7 /* the-center-exploration.json in Resources */,
 				8B88CA1442F44AA3862D9F7A /* the-center-information.json in Resources */,
 				FFAA8F0AA125EB6A9030AB32 /* the-island-bosses.json in Resources */,
+				680D5DD55734EF3F2B12125E /* the-island-campaign.json in Resources */,
 				1F695D0882D5378A3D881071 /* the-island-creatures.json in Resources */,
 				9F2F7CA352556AE83BCE99E9 /* the-island-exploration.json in Resources */,
 				A7814766395C658FA0D686F4 /* the-island-information.json in Resources */,
@@ -268,6 +290,8 @@
 				8243B781E3317CD1EFEF2BF5 /* ArkMap.swift in Sources */,
 				37FFCBC1D77B9E53007F2C25 /* AscendedApp.swift in Sources */,
 				7E1988F3A8D148B277FC1681 /* AscendedShell.swift in Sources */,
+				04930535A9A8BA26E51920E2 /* BaseLocations.swift in Sources */,
+				D906DEFC2753EBDFAD06436E /* BossCampaign.swift in Sources */,
 				DDF689470FDCB5C68D732173 /* BossKnowledge.swift in Sources */,
 				A563E07C1FB7ACCBCF7A0082 /* BossLibrary.swift in Sources */,
 				CF6EE9072EC3123ABED2B2B9 /* CreatureCatalog.swift in Sources */,
@@ -365,7 +389,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = HP5W6N9V3N;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -385,7 +409,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MARKETING_VERSION = 0.4.0;
+				MARKETING_VERSION = 0.5.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -452,7 +476,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = HP5W6N9V3N;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -466,7 +490,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MARKETING_VERSION = 0.4.0;
+				MARKETING_VERSION = 0.5.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";

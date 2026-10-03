@@ -1,7 +1,9 @@
-# Ascended — native iPad development 0.4.0 (4)
+# Ascended — native iPad development 0.5.0 (5)
 Single Player · Ragnarok / The Island / The Center. Independent app `com.tonytuanngoc.ascended`, installed by cable without TestFlight.
 
 ## Included
+- Ordered boss campaigns for all three maps; 27 army options across every named boss, with composition, level/breed/imprint/XP explanation, planning HP/melee/saddle targets, source confidence and patch caveats. Existing boss profiles remain accessible.
+- Ragnarok-only Base Location: five SP-balanced choices, offline region terrain previews, timestamped YouTube links and actual per-video popularity snapshots. Per-location forum signals are explicitly qualified; ranking is an editorial balance assessment, not a public vote leaderboard. Five base pins link map focus back to profiles.
 - Outer three-map picker; every sidebar section is scoped to the selected map. Returning to the picker clears the previous map’s detail navigation.
 - New searchable **Thông tin map** guide: geography, resources, creatures, caves, bosses, progression, base planning, Single Player settings and dated sources.
 - Island: 124 creature/variant entries (113 structured profiles), ten artifacts, eleven exploration routes including a labelled Tek Cave approach region; Broodmother, Megapithecus, Dragon and Overseer.
@@ -47,3 +49,5 @@ Field-guide source manifest: `Resources/field-guide-image-sources.json`. Artifac
 
 ## Multi-map source limits
 Island/Center ASA creature registries, artifact positions and terrain come from their linked Wikily map pages. Cave entrances are cross-checked against ASA community guides, separate from cave-region coordinates. Tek Cave’s marker is a region centre, explicitly not a verified doorway. Exact Island Obelisk GPS pins are omitted because the ASA layer did not supply them. The Center Gamma Element total conflicts between wiki tables; the app displays that conflict rather than a definite value. Creature variants count separately; 11 Island and nine Center roster entries await structured profiles. Cave terrain illustrations are not entrance photographs. See `Resources/multi-map-image-sources.json` and the 0.4 report for provenance.
+
+Boss/base source snapshot and detailed verification: `../../docs/codex-reports/2026-10-04-ascended-boss-base.md`. Dino targets are planning recommendations, not tested minimums. Deinosuchus boss bleed was removed; Tek Cave 20-tame teleport batches are distinct from the 50-tame cave and multiple pre-boss teleport batches.

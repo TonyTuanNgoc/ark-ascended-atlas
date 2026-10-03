@@ -71,6 +71,7 @@ final class AscendedUITests: XCTestCase {
         XCTAssertTrue(app.staticTexts["1 boss chính · 4 mini-boss có tên · 3 nhóm trận hang động"].exists)
         let bosses = XCTAttachment(screenshot: XCUIScreen.main.screenshot())
         bosses.name = "Boss-library"; bosses.lifetime = .keepAlways; add(bosses)
+        for _ in 0..<5 { if app.buttons["boss-nunatak"].isHittable { break }; app.swipeUp() }
         app.buttons["boss-nunatak"].tap()
         XCTAssertTrue(app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "Gamma")).firstMatch.waitForExistence(timeout: 5))
     }
@@ -115,6 +116,7 @@ final class AscendedUITests: XCTestCase {
         XCTAssertTrue(app.buttons["pin-artifact-hunter"].exists)
         app.buttons["section-Boss"].tap()
         XCTAssertTrue(app.buttons["boss-nunatak"].waitForExistence(timeout: 5))
+        for _ in 0..<5 { if app.buttons["boss-nunatak"].isHittable { break }; app.swipeUp() }
         app.buttons["boss-nunatak"].tap()
         let alpha = app.segmentedControls["bossDifficulty"].buttons["Alpha"]
         for _ in 0..<3 { if alpha.isHittable { break }; app.swipeUp() }
@@ -135,7 +137,8 @@ final class AscendedUITests: XCTestCase {
         app.buttons["choose-the-island"].tap()
         XCTAssertEqual(app.staticTexts["mapInformationTitle"].label, "The Island")
         app.buttons["section-Boss"].tap()
-        XCTAssertTrue(app.buttons["boss-dragon"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts["bossCampaignTitle"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.buttons["boss-dragon"].exists)
         XCTAssertFalse(app.buttons["boss-nunatak"].exists)
         app.buttons["boss-broodmother"].tap()
         let artifact = app.buttons["boss-artifact-hunter"]
@@ -200,6 +203,67 @@ final class AscendedUITests: XCTestCase {
         for _ in 0..<3 { if collected.isHittable { break }; app.swipeUp() }
         XCTAssertEqual(collected.value as? String, "1")
         collected.tap() // Restore collection state for later sessions.
+    }
+
+    @MainActor func testBossCampaignArmiesAndBaseMapLinks() throws {
+        let app = XCUIApplication()
+        XCUIDevice.shared.orientation = .landscapeLeft
+        app.launch()
+        XCTAssertTrue(app.buttons["choose-ragnarok"].waitForExistence(timeout: 8)); app.buttons["choose-ragnarok"].tap()
+        app.buttons["section-Boss"].tap()
+        XCTAssertTrue(app.staticTexts["boss-step-queen"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts["boss-step-lava"].exists)
+        let army = app.buttons["army-nunatak"]
+        for _ in 0..<5 { if army.isHittable { break }; app.swipeUp() }
+        XCTAssertTrue(army.isHittable); army.tap()
+        XCTAssertTrue(app.staticTexts["armyTitle"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts["armyTitle"].label.contains("Nunatak"))
+        XCTAssertTrue(app.staticTexts["armyOptionCount"].label.hasPrefix("3"))
+        let options = app.buttons["armyOptions"]
+        XCTAssertTrue(options.exists); options.tap()
+        app.buttons["Therizino + cake · tái dùng dòng breed"].tap()
+        XCTAssertTrue(app.staticTexts["armyOptionTitle"].label.contains("Therizino"))
+        let armyShot = XCTAttachment(screenshot: XCUIScreen.main.screenshot())
+        armyShot.name = "Nunatak-army-options"; armyShot.lifetime = .keepAlways; add(armyShot)
+        app.buttons["section-Base Location"].tap()
+        XCTAssertTrue(app.staticTexts["baseLocationsTitle"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.buttons["base-canyon"].exists)
+        XCTAssertTrue(app.staticTexts["basePreview-caption-canyon"].isHittable)
+        XCTAssertTrue(app.buttons["base-falls"].exists)
+        XCTAssertTrue(app.buttons["base-viking"].exists)
+        XCTAssertTrue(app.buttons["base-highlands"].exists)
+        XCTAssertTrue(app.buttons["base-herbivore"].exists)
+        let baseShot = XCTAttachment(screenshot: XCUIScreen.main.screenshot())
+        baseShot.name = "Ragnarok-base-shortlist"; baseShot.lifetime = .keepAlways; add(baseShot)
+        app.buttons["base-canyon"].tap()
+        XCTAssertTrue(app.staticTexts["LAT 39.80 · LON 44.80"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.links["baseVideo"].exists || app.buttons["baseVideo"].exists)
+        app.buttons["show-base-canyon"].tap()
+        XCTAssertTrue(app.scrollViews["ragnarokMapViewport"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.buttons["pin-base-canyon"].isHittable)
+        XCTAssertEqual(app.staticTexts["selectedMapLocation"].label, "Canyon Plateaus")
+        let mapShot = XCTAttachment(screenshot: XCUIScreen.main.screenshot())
+        mapShot.name = "Base-focused-map"; mapShot.lifetime = .keepAlways; add(mapShot)
+        app.buttons["mapBaseProfile"].tap()
+        XCTAssertTrue(app.buttons["show-base-canyon"].waitForExistence(timeout: 5))
+        app.buttons["changeMap"].tap(); app.buttons["choose-the-island"].tap()
+        XCTAssertFalse(app.buttons["section-Base Location"].exists)
+        app.buttons["section-Boss"].tap()
+        XCTAssertTrue(app.staticTexts["boss-step-monkey"].waitForExistence(timeout: 5))
+        XCTAssertFalse(app.buttons["boss-nunatak"].exists)
+        let mega = app.buttons["army-broodmother"]
+        for _ in 0..<4 { if mega.isHittable { break }; app.swipeUp() }
+        XCTAssertTrue(mega.isHittable); mega.tap()
+        XCTAssertTrue(app.staticTexts["armyOptionTitle"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts["armyOptionTitle"].label.contains("Megatherium"))
+        app.buttons["changeMap"].tap(); app.buttons["choose-the-center"].tap()
+        XCTAssertFalse(app.buttons["section-Base Location"].exists)
+        app.buttons["section-Boss"].tap()
+        XCTAssertTrue(app.staticTexts["boss-step-joint"].waitForExistence(timeout: 5))
+        XCTAssertFalse(app.buttons["boss-dragon"].exists)
+        app.buttons["army-megapithecus"].tap()
+        XCTAssertTrue(app.staticTexts["armyTitle"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts["armyOptionCount"].label.hasPrefix("3"))
     }
 
 }

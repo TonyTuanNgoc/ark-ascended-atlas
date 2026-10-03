@@ -96,7 +96,7 @@ struct SourcesScreen: View {
                 Text("Settings Single Player, difficulty, mods và bản game có thể thay đổi trải nghiệm. Dữ liệu Wiki có phần Evolved; chỉ áp dụng bảng Ascended được nêu và xem chú thích khi nguồn mâu thuẫn.")
             }
             Section("App cá nhân") {
-                Text("Ascended 0.4.0 (4) · " + map.name)
+                Text("Ascended 0.5.0 (5) · " + map.name)
                 Text("Logo / artwork thuộc Studio Wildcard và nguồn được dẫn. App đồng hành cá nhân; dữ liệu và ghi chú lưu offline trên iPad. Link tham khảo cần mạng. Ghi chú, checklist và tiến độ được lưu riêng từng map; xóa app sẽ xóa dữ liệu cục bộ.")
             }
         }

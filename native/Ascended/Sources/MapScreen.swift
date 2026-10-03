@@ -29,11 +29,11 @@ struct MapScreen: View {
             }.padding(16).background(.ultraThinMaterial)
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 10) {
-                    ForEach(MapLayer.allCases, id: \.self) { layer in
+                    ForEach(MapLayer.allCases.filter { $0 != .base || map.bases != nil }, id: \.self) { layer in
                         Button {
                             if visibleLayers.contains(layer) { visibleLayers.remove(layer) } else { visibleLayers.insert(layer) }
                             if selected?.layer == layer && !visibleLayers.contains(layer) { selected = nil; focusedID = nil }
-                        } label: { Label(layer.rawValue, systemImage: layer == .artifact ? "diamond.fill" : layer == .cave ? "mountain.2.fill" : "shield.lefthalf.filled") }
+                        } label: { Label(layer.rawValue, systemImage: layer == .artifact ? "diamond.fill" : layer == .cave ? "mountain.2.fill" : layer == .base ? "house.fill" : "shield.lefthalf.filled") }
                         .buttonStyle(.bordered).tint(visibleLayers.contains(layer) ? .cyan : .gray)
                         .accessibilityIdentifier("layer-" + layer.rawValue)
                     }
@@ -57,6 +57,9 @@ struct MapScreen: View {
                         NavigationLink("Hồ sơ", value: GuideDestination.artifact(id))
                     } else if let id = point.routeID, map.exploration?.routes.contains(where: { $0.id == id }) == true {
                         NavigationLink("Hang", value: GuideDestination.cave(id))
+                    }
+                    if point.layer == .base, let spot = map.bases?.locations.first(where: { "base-" + $0.id == point.id }) {
+                        NavigationLink("Hồ sơ base", value: GuideDestination.base(spot.id)).accessibilityIdentifier("mapBaseProfile")
                     }
                     Button { selected = nil; focusedID = nil } label: { Image(systemName: "xmark.circle.fill") }.accessibilityLabel("Đóng vị trí")
                 }.padding(16).background(.ultraThinMaterial)
