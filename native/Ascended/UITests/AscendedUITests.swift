@@ -1,6 +1,57 @@
 import XCTest
 
 final class AscendedUITests: XCTestCase {
+    @MainActor func testStoryBaseAndEquipmentLibrary() throws {
+        let app = XCUIApplication(); XCUIDevice.shared.orientation = .landscapeLeft; app.launch()
+        func sidebar(_ id: String) {
+            let button = app.buttons[id]
+            for _ in 0..<8 { if button.isHittable { break }; app.collectionViews.firstMatch.swipeDown() }
+            for _ in 0..<8 { if button.isHittable { break }; app.collectionViews.firstMatch.swipeUp() }
+            XCTAssertTrue(button.isHittable, id); button.tap()
+        }
+        sidebar("section-Cốt truyện ARK")
+        XCTAssertTrue(app.scrollViews["storyGuide"].waitForExistence(timeout: 5))
+        XCTAssertFalse(app.staticTexts.containing(NSPredicate(format: "label BEGINSWITH %@", "Bạn tỉnh dậy")).firstMatch.exists)
+        app.buttons["story-start"].tap()
+        XCTAssertTrue(app.staticTexts.containing(NSPredicate(format: "label BEGINSWITH %@", "Bạn tỉnh dậy")).firstMatch.exists)
+        let storyShot = XCTAttachment(screenshot: XCUIScreen.main.screenshot()); storyShot.name = "ARK-story-expand"; storyShot.lifetime = .keepAlways; add(storyShot)
+        sidebar("section-Xây base")
+        XCTAssertTrue(app.scrollViews["basePlanning"].waitForExistence(timeout: 5))
+        XCTAssertFalse(app.staticTexts["Điểm hồi sinh, thay đồ và chuẩn bị trước khi rời base."].exists)
+        app.buttons["base-zone-main"].tap()
+        XCTAssertTrue(app.staticTexts["Điểm hồi sinh, thay đồ và chuẩn bị trước khi rời base."].exists)
+        let baseShot = XCTAttachment(screenshot: XCUIScreen.main.screenshot()); baseShot.name = "Base-zone-equipment"; baseShot.lifetime = .keepAlways; add(baseShot)
+        app.buttons["Bố trí các khu"].tap()
+        let industrial = app.buttons["base-layout-industry"]
+        for _ in 0..<4 { if industrial.isHittable { break }; app.scrollViews["basePlanning"].swipeUp() }
+        XCTAssertTrue(industrial.isHittable); industrial.tap()
+        XCTAssertTrue(app.staticTexts["Luyện kim loại, sản xuất polymer và hóa chất, chế tạo trang bị."].waitForExistence(timeout: 5))
+        sidebar("section-Thư viện")
+        XCTAssertTrue(app.scrollViews["equipmentLibrary"].waitForExistence(timeout: 5))
+        let search = app.searchFields.firstMatch; search.tap(); search.typeText("Chemistry Bench")
+        let item = app.buttons.matching(NSPredicate(format: "label CONTAINS %@", "Chemistry Bench")).firstMatch
+        XCTAssertTrue(item.waitForExistence(timeout: 5)); item.tap()
+        XCTAssertTrue(app.scrollViews["equipmentDetail"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts["Chemistry Bench"].firstMatch.exists)
+        let machineShot = XCTAttachment(screenshot: XCUIScreen.main.screenshot()); machineShot.name = "Machine-reference"; machineShot.lifetime = .keepAlways; add(machineShot)
+    }
+    @MainActor func testCollapsedMapListsAndCatalogue() throws {
+        let app = XCUIApplication(); XCUIDevice.shared.orientation = .landscapeLeft; app.launch()
+        XCTAssertFalse(app.buttons["choose-scorched-earth"].exists)
+        app.buttons["map-group-Cốt truyện"].tap()
+        let island = app.buttons["choose-the-island"]
+        XCTAssertTrue(island.isHittable); island.tap()
+        XCTAssertEqual(app.descendants(matching: .any)["ragnarokMapViewport"].firstMatch.label, "Bản đồ The Island")
+        let section = app.buttons["section-Map & DLC"]
+        for _ in 0..<8 { if section.isHittable { break }; app.collectionViews.firstMatch.swipeUp() }
+        section.tap()
+        XCTAssertFalse(app.buttons["Chọn map"].exists)
+        app.buttons["Map cốt truyện"].tap()
+        let scorched = app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", "Scorched Earth")).allElementsBoundByIndex.last!
+        XCTAssertTrue(scorched.waitForExistence(timeout: 5)); scorched.tap()
+        XCTAssertTrue(app.buttons["Chọn map"].exists)
+        let shot = XCTAttachment(screenshot: XCUIScreen.main.screenshot()); shot.name = "Collapsed-map-catalogue"; shot.lifetime = .keepAlways; add(shot)
+    }
     @MainActor func testExpansionMapsAndGenesisPlanes() throws {
         let app = XCUIApplication(); XCUIDevice.shared.orientation = .landscapeLeft; app.launch()
         func tapSidebar(_ id: String) {
@@ -47,6 +98,7 @@ final class AscendedUITests: XCTestCase {
     }
     @MainActor func testResourcePopupsAndZoomAcrossMaps() throws {
         let app = XCUIApplication(); XCUIDevice.shared.orientation = .landscapeLeft; app.launch()
+        app.buttons["map-group-Cốt truyện"].tap(); app.buttons["map-group-Khám phá"].tap()
         for map in ["ragnarok", "the-island", "the-center"] {
             let choose = app.buttons["choose-" + map]
             for _ in 0..<10 { if choose.isHittable { break }; app.collectionViews.firstMatch.swipeDown() }

@@ -1,0 +1,105 @@
+{
+  "checkedAt": "2026-10-04",
+  "scope": "Vietnamese native story guide only; no application code or release performed by content agent",
+  "sources": [
+    {
+      "id": "lore",
+      "url": "https://ark.wiki.gg/wiki/Lore",
+      "supports": "ARK purpose, Element, parallel rescue projects; community interpretation distinguished from game notes"
+    },
+    {
+      "id": "ascension",
+      "url": "https://ark.wiki.gg/wiki/Ascension",
+      "supports": "Island guardian/Tek Cave/Overseer progression"
+    },
+    {
+      "id": "nerva",
+      "url": "https://ark.wiki.gg/wiki/Gaius_Marcellus_Nerva",
+      "supports": "Island conflict and death"
+    },
+    {
+      "id": "raia-notes",
+      "url": "https://ark.wiki.gg/wiki/Explorer_Notes/Raia",
+      "supports": "Game Explorer Notes: Nosti, John, Wyvern, Raia"
+    },
+    {
+      "id": "rockwell",
+      "url": "https://ark.wiki.gg/wiki/Rockwell_(Alpha)",
+      "supports": "Aberration mutation and connection to ARK"
+    },
+    {
+      "id": "helena",
+      "url": "https://ark.wiki.gg/wiki/Helena_Walker",
+      "supports": "Homo Deus, revival and HLN-A"
+    },
+    {
+      "id": "santiago",
+      "url": "https://ark.wiki.gg/wiki/Santiago",
+      "supports": "Tek/Mek and character relationships"
+    },
+    {
+      "id": "genesis-chronicles",
+      "url": "https://ark.wiki.gg/wiki/Genesis_Chronicles",
+      "supports": "Simulation and ARK relationship"
+    },
+    {
+      "id": "genesis-two-chronicles",
+      "url": "https://ark.wiki.gg/wiki/Genesis_2_Chronicles",
+      "supports": "Stored survivors, Santiago clones, Rockwell takeover"
+    },
+    {
+      "id": "master-controller",
+      "url": "https://ark.wiki.gg/wiki/Master_Controller",
+      "supports": "Digital Rockwell and Genesis1 ending"
+    },
+    {
+      "id": "genesis-store",
+      "url": "https://store.steampowered.com/app/1113410/ARK_Genesis_Season_Pass/",
+      "supports": "Original Survival Evolved Parts1/2, not ASA release evidence"
+    },
+    {
+      "id": "lost-colony-store",
+      "url": "https://store.steampowered.com/app/3583650/ARK_Lost_Colony/",
+      "supports": "Official: Arat Prime, Red Element, Reseed blockade, bridge to ARK2"
+    },
+    {
+      "id": "lost-colony",
+      "url": "https://ark.wiki.gg/wiki/Lost_Colony",
+      "supports": "Community timeline/Codex; exact interval intentionally not asserted"
+    },
+    {
+      "id": "king-titan",
+      "url": "https://ark.wiki.gg/wiki/Alpha_King_Titan",
+      "supports": "Extinction final boss"
+    },
+    {
+      "id": "colony-ship",
+      "url": "https://ark.wiki.gg/wiki/Colony_Ship",
+      "supports": "Genesis2 setting and Arrival"
+    },
+    {
+      "id": "asa-roadmap",
+      "url": "https://survivetheark.com/index.php?/forums/topic/773552-community-crunch-490-the-future-is-bright/",
+      "supports": "Official remaster roadmap; roadmap is not a release confirmation"
+    }
+  ],
+  "method": "Original Vietnamese paraphrases; no verbatim quoted lore. Search results retrieved when wiki direct fetch returned HTTP403. Official Steam used for product identity; game notes represented by official community wiki. No Reddit claims used as factual evidence.",
+  "uncertainties": [
+    "Lost Colony contains later campaign events and retrospective Genesis links. Do not flatten its chronology to Extinction -> Lost Colony -> Genesis.",
+    "Do not assert every historical/current Survivor is the same individual.",
+    "Genesis2 SE released does not prove Genesis2 ASA released. Guide delegates current playability to separately reviewed expansion catalog.",
+    "Exploration/premium map lore is not declared canon in the main Helena narrative."
+  ],
+  "qa": {
+    "jsonValid": true,
+    "overviewSections": 5,
+    "chapterSections": 12,
+    "characterSections": 9,
+    "allChapterMapIDsInCatalog": true,
+    "spoilerWarningInOverview": true,
+    "onlyOwnedFilesWritten": [
+      "native/Ascended/Resources/story-guide.json",
+      "docs/codex-reports/2026-10-04-story-sources.json"
+    ]
+  }
+}

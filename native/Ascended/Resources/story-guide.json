@@ -1,0 +1,265 @@
+{
+  "overview": [
+    {
+      "id": "start",
+      "title": "Bắt đầu không spoiler",
+      "symbol": "sparkles",
+      "paragraphs": [
+        "Bạn tỉnh dậy trong một thế giới có khủng long, công nghệ lạ và dấu vết của những người đến trước. Hãy coi sinh tồn là chương đầu của một bí ẩn dài: nơi này là gì, ai tạo ra nó và vì sao bạn ở đây?",
+        "ARK không bắt bạn phải hoàn thành truyện mới được xây nhà, nuôi thú hoặc chơi cùng bạn bè. Tuy nhiên, hang, artifact, boss và ascension tạo thành một mục tiêu dài hạn rất rõ."
+      ]
+    },
+    {
+      "id": "loop",
+      "title": "Chơi để tiến bộ điều gì?",
+      "symbol": "arrow.up.right",
+      "paragraphs": [
+        "Vòng chơi đi từ thức ăn và nơi trú → công cụ và tài nguyên → thuần hóa thú chuyên nhiệm → breeding, saddle và trang bị → khám phá hang → boss. Mỗi bước biến một nguy hiểm từng không thể vượt qua thành tuyến đi có thể chuẩn bị.",
+        "Đừng chỉ tăng số lượng thú. Hãy xây một hệ thống: thú vận chuyển, khai thác, đi hang, đội boss, thức ăn và đồ thay thế. Thất bại nên giúp bạn biết thiếu gì cho chuyến sau."
+      ]
+    },
+    {
+      "id": "notes",
+      "title": "Đọc truyện trong lúc chơi",
+      "symbol": "book.closed",
+      "paragraphs": [
+        "Explorer Notes là lời kể của người trong cuộc; dossiers thường giải thích sinh vật. Một nhân vật có thể hiểu sai hoặc che giấu điều gì đó, nên hãy đối chiếu nhiều ghi chép với cảnh kết thúc.",
+        "Phần Chương truyện bên dưới có SPOILER toàn bộ: bản chất ARK, số phận nhân vật và kết thúc Genesis. Dừng ở phần này nếu muốn tự khám phá."
+      ]
+    },
+    {
+      "id": "reading-order",
+      "title": "Thứ tự đọc cốt truyện",
+      "symbol": "list.number",
+      "paragraphs": [
+        "Đường truyện gốc Survival Evolved: The Island → Scorched Earth → Aberration → Extinction → Genesis Part 1 → Genesis Part 2. Các nhân vật trong notes thường đã trải qua những nơi này trước Survivor do bạn điều khiển.",
+        "Lost Colony là chương mới của ASA, mở rộng Arat Prime và nối tới ARK 2. Nên đọc sau khi đã hiểu Extinction và Genesis; các hồi tưởng và thời điểm của chiến dịch không tạo thành một chuỗi tuyến tính đơn giản giữa hai DLC gốc."
+      ]
+    },
+    {
+      "id": "asa-order",
+      "title": "Thứ tự chơi ASA thực tế",
+      "symbol": "gamecontroller",
+      "paragraphs": [
+        "Lộ trình học cơ chế đề nghị: The Island → Scorched Earth → Aberration → Extinction. Sau đó chọn Genesis Part 1 hoặc Lost Colony theo nội dung bạn đã cài; Lost Colony cần gói trả phí tương ứng. Đây là thứ tự chơi đề nghị, không phải lịch sử mọi sự kiện.",
+        "Genesis Part 1 và Part 2 đã có trong Survival Evolved. Điều đó không chứng minh bản remaster ASA của cả hai đã phát hành. Dùng trạng thái trong Danh mục map và cửa hàng chính thức; Genesis Part 2 ASA hiện chưa được xác nhận có thể chơi trong dữ liệu kiểm tra của ứng dụng.",
+        "The Center, Ragnarok, Valguero và các map khám phá có thể chơi xen kẽ. Chúng không thay thế một chương của đường truyện chính chỉ vì có artifact hoặc boss."
+      ]
+    }
+  ],
+  "chapters": [
+    {
+      "id": "collapse",
+      "title": "01 · SPOILER — Trái Đất sụp đổ",
+      "summary": "Element vừa mở ra công nghệ Tek vừa trở thành hiểm họa.",
+      "paragraphs": [
+        "Nền văn minh tương lai sử dụng Element cho công nghệ cực kỳ mạnh. Xung đột và sự lan rộng của vật chất này làm Trái Đất bị ô nhiễm, sinh vật bị corruption và các Titan trở thành mối đe dọa khổng lồ.",
+        "Người tạo ra ARK không muốn dựng một công viên khủng long cho giải trí. Họ cần bảo tồn sự sống trước thảm họa và tìm một con đường để nó có thể tồn tại sau thời đại con người."
+      ],
+      "playGoal": "Hiểu nguyên nhân trước khi đọc hành trình Survivor."
+    },
+    {
+      "id": "arks",
+      "title": "02 · SPOILER — Vì sao có các ARK?",
+      "summary": "Những hệ sinh thái nhân tạo giữ lại sự sống và chuẩn bị phục hồi hành tinh.",
+      "paragraphs": [
+        "ARK là các trạm không gian mang hệ sinh thái, kho dữ liệu sinh học và công nghệ tái tạo. Bầu trời cùng chu kỳ ngày đêm che giấu môi trường được điều khiển; sinh vật ở đây không phải một mẫu lịch sử tự nhiên nguyên vẹn.",
+        "Hai hướng cứu sự sống tồn tại song song: các ARK chờ cơ hội tái gieo sự sống trên Trái Đất; Colony Ship mang người và sinh vật đi tìm nơi ở mới. Genesis Simulation thuộc con tàu ấy, không phải tên gọi khác của mọi ARK."
+      ],
+      "playGoal": "Nhìn obelisk và bầu trời như dấu vết của một hệ thống."
+    },
+    {
+      "id": "survivors",
+      "title": "03 · SPOILER — Người từ nhiều thời đại",
+      "summary": "Kho lưu trữ và công nghệ tái tạo giải thích sự hiện diện của Survivor.",
+      "paragraphs": [
+        "Helena, Mei-Yin, Nerva và những người đến từ thời đại khác nhau được tái tạo trong hệ thống. Khám phá phòng chứa cơ thể trên Aberration khiến các nhân vật phải đối diện câu hỏi: mình có phải bản gốc không?",
+        "Implant, engram và khả năng hồi sinh có nền tảng trong công nghệ của thế giới này. Tuy vậy, không nên diễn giải mỗi lần respawn, boss lặp lại hay tùy chọn server thành một sự kiện lịch sử riêng."
+      ],
+      "playGoal": "Đọc notes như những hành trình riêng, không phải nhật ký của bạn."
+    },
+    {
+      "id": "island",
+      "title": "04 · SPOILER — The Island",
+      "summary": "Một hòn đảo sinh tồn dẫn đến sự thật ngoài bầu trời.",
+      "paragraphs": [
+        "Helena nghiên cứu sinh vật; Rockwell tìm bí mật; Mei-Yin chiến đấu để sống; Nerva xây New Legion và muốn thống trị. Những mục đích khác nhau đưa họ tới obelisk và trung tâm điều khiển.",
+        "Cuộc xung đột cuối cùng tách các nhân vật sang những ARK khác. Với người chơi, Broodmother, Megapithecus và Dragon là các mốc chuẩn bị; Tek Cave cùng Overseer mở ra ascension và cho thấy hòn đảo thuộc một hệ thống lớn hơn."
+      ],
+      "playGoal": "Ổn định căn cứ; thu artifact; đánh ba guardian rồi Tek Cave và Overseer.",
+      "mapID": "the-island"
+    },
+    {
+      "id": "scorched",
+      "title": "05 · SPOILER — Scorched Earth",
+      "summary": "Sinh tồn sa mạc và bi kịch của một cộng đồng muốn sống yên ổn.",
+      "paragraphs": [
+        "Raia và John Dahkeya xây Nosti thành nơi nương tựa. Thành phố bị hủy diệt; John sau đó chết trước Wyvern. Raia mất niềm tin cũ nhưng học nuôi chính sinh vật đã đem lại mất mát và tiếp tục giúp người tìm sự thật.",
+        "Helena và Rockwell đi qua sa mạc, nhận sự giúp đỡ của Raia và tiếp tục tới Aberration. Sa mạc cho thấy xây được một nền văn minh trong ARK không đồng nghĩa đã thoát khỏi quyền lực của hệ thống."
+      ],
+      "playGoal": "Chuẩn bị nước, Adobe, chống nóng; đi hang và đối đầu Manticore.",
+      "mapID": "scorched-earth"
+    },
+    {
+      "id": "aberration",
+      "title": "06 · SPOILER — Aberration",
+      "summary": "Một ARK hỏng phơi bày công nghệ bên dưới và sự biến đổi của Rockwell.",
+      "paragraphs": [
+        "Nhóm sống sót có Diana và Santiago đã chống lại bộ máy kiểm soát; hậu quả khiến môi trường ARK bị hư hại. Bề mặt nguy hiểm đẩy cuộc sống xuống các tầng hang và vùng phóng xạ.",
+        "Rockwell ám ảnh Element, gọi nó là Edmundium và tự thử nghiệm lên cơ thể. Ông biến thành quái vật, tấn công cộng đồng và giết Diana. Helena cùng Mei-Yin đánh bại ông, nhưng ông sống sót và gắn vào hệ thống ARK.",
+        "Phòng tái tạo và lối thoát khiến bí mật về Survivor không còn là giả thuyết. Hành trình rời Aberration đưa nhóm tới Trái Đất đã bị tàn phá."
+      ],
+      "playGoal": "Học light pet, đường leo và Hazmat; lấy artifact, chuẩn bị trận Rockwell.",
+      "mapID": "aberration"
+    },
+    {
+      "id": "extinction",
+      "title": "07 · SPOILER — Extinction",
+      "summary": "Trở về Trái Đất: mục tiêu là tạo điều kiện cho sự sống quay lại.",
+      "paragraphs": [
+        "Sanctuary, wasteland và các vùng thử nghiệm là dấu vết của nền văn minh thất bại. Santiago phát triển Mek; Helena dần trở thành Homo Deus và giúp những Survivor có thể thực hiện việc nhóm trước chưa hoàn thành.",
+        "Đánh bại King Titan mở đường cho Reseed Protocol: các ARK trở lại để phục hồi sự sống. Đây là thắng lợi cho kế hoạch cứu Trái Đất, nhưng Rockwell và phần ARK Aberration rơi xuống vẫn để lại nguy cơ chưa kết thúc."
+      ],
+      "playGoal": "Xây chuỗi tài nguyên, bảo vệ OSD/Element Vein và chuẩn bị các Titan cùng King Titan.",
+      "mapID": "extinction"
+    },
+    {
+      "id": "genesis-one",
+      "title": "08 · SPOILER — Genesis Part 1",
+      "summary": "Thử nghiệm sinh tồn diễn ra trong một môi trường hoàn toàn số hóa.",
+      "paragraphs": [
+        "HLN-A đồng hành cùng Survivor trong Genesis Simulation. Nhiều biome cực đoan và mission được thiết kế để luyện người cho cuộc sống ngoài mô phỏng.",
+        "Rockwell đã xâm nhập hệ thống, làm hỏng các bài thử và biến nó thành công cụ phục vụ mình. Corrupted Master Controller là hiện thân số của sự kiểm soát đó. Kết thúc đưa Survivor thức dậy trên Colony Ship và cho thấy nguy hiểm tồn tại cả ngoài mô phỏng."
+      ],
+      "playGoal": "Hoàn thành mission, phát triển đội theo biome và chuẩn bị Corrupted Master Controller.",
+      "mapID": "genesis-part-1"
+    },
+    {
+      "id": "genesis-two",
+      "title": "09 · SPOILER — Genesis Part 2",
+      "summary": "Con tàu cứu sự sống trở thành chiến trường cuối với Rockwell.",
+      "paragraphs": [
+        "Colony Ship mang môi trường sống và người đang ngủ tới một thế giới mới. Một phần con tàu bị Rockwell biến thành cơ thể và lãnh địa của mình; HLN-A giúp Survivor chống lại ông.",
+        "Trong trận kết thúc, HLN-A hy sinh và Rockwell bị tiêu diệt cùng phần tàu bị corruption. Phần còn lại đưa các pod xuống hành tinh mới; một Santiago được đánh thức, mở đường cho câu chuyện ARK 2.",
+        "Santiago trong đoạn này không nên được coi đơn giản là người đã chết ở Extinction sống lại theo cùng một dòng đời. Công nghệ lưu trữ và bản sao là chìa khóa để hiểu các phiên bản nhân vật."
+      ],
+      "playGoal": "Trong Survival Evolved: làm mission, chuẩn bị Mutagen và trận Rockwell Prime; kiểm tra riêng trạng thái ASA.",
+      "mapID": "genesis-part-2"
+    },
+    {
+      "id": "lost-colony",
+      "title": "10 · SPOILER — Lost Colony",
+      "summary": "Arat Prime mở rộng hậu quả của Reseed và mối nối tới thế giới mới.",
+      "paragraphs": [
+        "Lost Colony đưa bạn tới vùng Trái Đất chìm trong đêm và băng giá. Red Element nuôi lá chắn cùng thành phố; Lost King dùng nó để giữ quyền lực và ngăn Reseed hoàn tất ở nơi này. Đây là một chương truyện chính mới của ASA, không phải Genesis Part 2 đổi tên.",
+        "Arat Prime có liên kết với Colony Ship và Engram Codex — kho dữ liệu con người có ý nghĩa với tương lai. Mei-Yin và Diana trở lại; dấu vết Aberration cùng Rockwell làm rõ những phần nối còn thiếu.",
+        "Chiến dịch chứa hồi tưởng và diễn biến ở thời điểm muộn hơn Extinction. Nguồn cộng đồng mô tả khoảng cách hơn một thiên niên kỷ; hướng dẫn này không áp một con số tuyệt đối hay gán toàn bộ Lost Colony vào trước Genesis. Muốn đọc đầy đủ ý nghĩa, hãy biết kết thúc Genesis trước."
+      ],
+      "playGoal": "Theo chiến dịch, tìm notes, chuẩn bị chống lạnh và tiến tới Red Palace.",
+      "mapID": "lost-colony"
+    },
+    {
+      "id": "exploration",
+      "title": "11 · Map khám phá không phải chương bắt buộc",
+      "summary": "Một map có boss vẫn có thể phục vụ trải nghiệm sandbox riêng.",
+      "paragraphs": [
+        "The Center, Ragnarok, Valguero, Crystal Isles, Lost Island và Fjordur là những map mở rộng khả năng khám phá, thuần hóa và xây dựng. Tàn tích, rune, arena hoặc chủ đề thần thoại không tự chứng minh một chương canon tiếp nối Helena.",
+        "Astraeos và các map nội dung riêng như Atlantis, Dragontopia có chủ đề và tiến trình của chúng. Phân biệt lore do tác giả map tạo với đường truyện ARK chính; sự có mặt trong danh mục ứng dụng không có nghĩa mọi map đã phát hành trên ASA."
+      ],
+      "playGoal": "Chọn theo biome, sinh vật và mục tiêu căn cứ; không cần ép thứ tự lore."
+    },
+    {
+      "id": "future",
+      "title": "12 · Phần tiếp theo và giới hạn thông tin",
+      "summary": "Kết thúc một game không phải bằng chứng phần tiếp theo đã ra mắt.",
+      "paragraphs": [
+        "ARK 2 tiếp nối hướng sự sống tới hành tinh Arat sau Genesis Part 2. Không suy diễn thành cốt truyện đã hoàn chỉnh hoặc nội dung đã có thể chơi.",
+        "Animated Series là cách kể chuyển thể với khác biệt nhân vật và sự kiện; Bob’s Tall Tales/True Tales thêm góc nhìn hoặc gameplay. Hướng dẫn này ưu tiên notes và kết thúc trong game, tránh ghép mọi phiên bản thành một lịch sử duy nhất."
+      ],
+      "playGoal": "Theo dõi danh mục và nguồn chính thức trước khi mua hay chuyển save."
+    }
+  ],
+  "characters": [
+    {
+      "id": "helena",
+      "title": "Helena Walker",
+      "symbol": "leaf",
+      "paragraphs": [
+        "Nhà sinh học là điểm tựa để hiểu sinh vật và bí mật ARK. Cô ghi dossiers, học chiến đấu và chọn giúp người khác thay vì tìm quyền lực.",
+        "SPOILER: trở thành Homo Deus giúp cô can thiệp hệ thống và chuẩn bị Survivor chống King Titan. Quyền năng không xóa được giới hạn hoặc cái giá cô phải trả."
+      ]
+    },
+    {
+      "id": "mei-yin",
+      "title": "Mei-Yin Li",
+      "symbol": "shield",
+      "paragraphs": [
+        "Chiến binh đến từ Trung Hoa cổ đại, nổi bật bởi khả năng chiến đấu và gắn bó với thú. Cô chống Nerva, sát cánh với Helena và xây một mối quan hệ sâu sắc với Diana.",
+        "SPOILER: sự trở lại của cô trong Lost Colony cần đọc theo chiến dịch mới; đừng chỉ suy từ hình tượng “Beast Queen” ban đầu."
+      ]
+    },
+    {
+      "id": "rockwell",
+      "title": "Edmund Rockwell",
+      "symbol": "flask",
+      "paragraphs": [
+        "Từng là người nghiên cứu và đồng minh hữu ích, Rockwell ngày càng coi kiến thức là đặc quyền của mình. Nỗi ám ảnh Element biến tò mò thành ham muốn thống trị.",
+        "SPOILER: tự thử nghiệm dẫn đến dạng quái vật ở Aberration; Genesis mở rộng ông từ mối nguy của một ARK thành kẻ chiếm lấy mô phỏng và Colony Ship."
+      ]
+    },
+    {
+      "id": "diana",
+      "title": "Diana Altaras",
+      "symbol": "airplane",
+      "paragraphs": [
+        "Phi công có nền tảng công nghệ tương lai, Diana là cầu nối giữa nhóm sống sót và Tek. Tình cảm với Mei-Yin tạo một đường truyện con người giữa thảm họa.",
+        "SPOILER: Rockwell giết cô trên Aberration; Helena giúp cô trở lại. Vì vậy, việc thấy Diana ở các chương sau không nên bị hiểu là notes trước đã sai."
+      ]
+    },
+    {
+      "id": "santiago",
+      "title": "Santiago",
+      "symbol": "wrench.and.screwdriver",
+      "paragraphs": [
+        "Kỹ sư và hacker có khả năng biến hiểu biết về hệ thống thành phương án sống sót. Công việc Tek và Mek của anh là nền tảng quan trọng trong Aberration và Extinction.",
+        "SPOILER: bản Santiago trong hành trình ARK và bản được đánh thức trên Colony Ship phải được phân biệt. Kho lưu trữ có thể tạo nhiều phiên bản; cùng tên không bảo đảm cùng ký ức và dòng đời."
+      ]
+    },
+    {
+      "id": "hlna",
+      "title": "HLN-A",
+      "symbol": "sparkle",
+      "paragraphs": [
+        "Trợ lý được Helena tạo ra, có ký ức và tính cách gắn với người tạo nhưng vẫn là một nhân vật riêng. Trong Genesis, cô giải thích môi trường, mission và trò chuyện trực tiếp với Survivor.",
+        "SPOILER: sự hy sinh ở Genesis Part 2 làm rõ mục đích bảo vệ tương lai con người, đối lập với việc Rockwell muốn mọi người phục tùng."
+      ]
+    },
+    {
+      "id": "raia-john",
+      "title": "Raia & John Dahkeya",
+      "symbol": "heart",
+      "paragraphs": [
+        "Raia đem tổ chức và sự chăm sóc tới Nosti; John bảo vệ cộng đồng và giúp cô học tự vệ. Notes của họ biến sa mạc thành câu chuyện về xây dựng, tình yêu và mất mát.",
+        "SPOILER: mất John khiến Raia thay đổi nhưng không bỏ cuộc. Nuôi Wyvern là cả kỹ năng sinh tồn lẫn dấu hiệu cô học sống tiếp sau bi kịch."
+      ]
+    },
+    {
+      "id": "nerva",
+      "title": "Gaius Marcellus Nerva",
+      "symbol": "flag",
+      "paragraphs": [
+        "Tướng La Mã coi The Island là nơi phải chinh phục. New Legion và cuộc tìm kiếm quyền lực obelisk đẩy các nhân vật khác vào xung đột.",
+        "SPOILER: Mei-Yin đánh bại ông. Những hành động của Nerva vô tình mở đường cho nhóm rời Island, dù mục đích của ông là thống trị."
+      ]
+    },
+    {
+      "id": "lost-king",
+      "title": "Lost King",
+      "symbol": "crown",
+      "paragraphs": [
+        "SPOILER: người cai trị Lost Colony dùng Red Element và cấu trúc quyền lực để giữ thành phố sống trong một thế giới chưa được chữa lành. Ông đối lập trực tiếp với mục tiêu Reseed.",
+        "Đọc động cơ và quan hệ của ông qua chiến dịch cùng notes Lost Colony; tránh dùng phong cách vampire/gothic để kết luận đây chỉ là một map fantasy ngoài lore."
+      ]
+    }
+  ]
+}

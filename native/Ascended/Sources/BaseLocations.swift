@@ -28,6 +28,15 @@ struct BaseLocationsScreen: View {
             VStack(alignment: .leading, spacing: 22) {
                 Text("Base Location").font(.largeTitle.bold()).accessibilityIdentifier("baseLocationsTitle")
                 if let catalogue = map.bases {
+                    BaseSpotGrid(catalogue: catalogue)
+                } else { Text("Map này chưa có bộ vị trí base được nghiên cứu.") }
+            }.padding(24).frame(maxWidth: 1100).frame(maxWidth: .infinity)
+        }.background(Color(red: 0.025, green: 0.045, blue: 0.065))
+    }
+}
+struct BaseSpotGrid: View {
+    let catalogue: BaseCatalogue
+    var body: some View {
                     LazyVGrid(columns: [GridItem(.adaptive(minimum: 240, maximum: 340), spacing: 16)], spacing: 16) {
                         ForEach(catalogue.locations.sorted { $0.rank < $1.rank }) { spot in
                             NavigationLink(value: GuideDestination.base(spot.id)) {
@@ -37,9 +46,6 @@ struct BaseLocationsScreen: View {
                             }.buttonStyle(.plain).accessibilityIdentifier("base-" + spot.id)
                         }
                     }
-                } else { Text("Map này chưa có bộ vị trí base được nghiên cứu.") }
-            }.padding(24).frame(maxWidth: 1100).frame(maxWidth: .infinity)
-        }.background(Color(red: 0.025, green: 0.045, blue: 0.065))
     }
 }
 struct BaseTerrainPreview: View {

@@ -41,8 +41,8 @@ struct ExpansionProfile: View {
         }.accessibilityIdentifier("expansion-profile-" + record.id)
     }
     private func brief(_ title: String, items: [String]) -> some View {
-        VStack(alignment: .leading, spacing: 8) {
-            if !items.isEmpty { Text(title).font(.headline); ForEach(items, id: \.self) { VisualBrief(text: $0) } }
+        Group {
+            if !items.isEmpty { DisclosureGroup { ForEach(items, id: \.self) { VisualBrief(text: $0).padding(.vertical, 5) } } label: { Text(title).font(.headline) } }
         }
     }
 }
@@ -52,30 +52,33 @@ struct ExpansionCatalogScreen: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
                 ForEach(["story", "extra", "upcoming"], id: \.self) { group in
-                    Text(group == "story" ? "Cốt truyện" : group == "extra" ? "Khám phá" : "Chưa mở").font(.title2.bold())
-                    ForEach(ExpansionCatalog.shared.maps.filter { $0.group == group }.sorted { $0.order < $1.order }) { record in
-                        DisclosureGroup {
-                            if record.status == "available", let map = ArkMap(rawValue: record.id) {
-                                Button { chooseMap(map) } label: { Label("Chọn map", systemImage: "map.fill") }.buttonStyle(.borderedProminent).accessibilityIdentifier("open-expansion-" + record.id)
-                            }
-                            ExpansionProfile(record: record)
-                        } label: {
-                            HStack {
-                                Text(record.name).font(.headline)
-                                Spacer()
-                                Text(record.status == "available" ? (record.included ? "Gồm trong ASA" : "DLC") : record.status == "upcoming" ? "Sắp ra" : "Chưa xác nhận").font(.caption).foregroundStyle(.secondary)
-                            }
-                        }.cardStyle().accessibilityIdentifier("expansion-" + record.id)
-                    }
-                }
-                Text("Nội dung mua thêm").font(.title2.bold())
-                ForEach(ExpansionCatalog.shared.dlcs) { dlc in
                     DisclosureGroup {
-                        Text(dlc.summary).padding(.vertical, 8)
-                        Text(dlc.purchase).foregroundStyle(.secondary)
-                        if let url = URL(string: dlc.storeURL) { Link("Steam", destination: url).buttonStyle(.bordered) }
-                    } label: { Text(dlc.name).font(.headline) }.cardStyle()
+                        ForEach(ExpansionCatalog.shared.maps.filter { $0.group == group }.sorted { $0.order < $1.order }) { record in
+                            DisclosureGroup {
+                                if record.status == "available", let map = ArkMap(rawValue: record.id) {
+                                    Button { chooseMap(map) } label: { Label("Chọn map", systemImage: "map.fill") }.buttonStyle(.borderedProminent)
+                                }
+                                ExpansionProfile(record: record)
+                            } label: {
+                                HStack {
+                                    MapBadge(id: record.id)
+                                    Text(record.name).font(.headline)
+                                    Spacer()
+                                    Text(record.status == "available" ? (record.included ? "Gồm trong ASA" : "DLC") : record.status == "upcoming" ? "Sắp ra" : "Chưa xác nhận").font(.caption).foregroundStyle(.secondary)
+                                }
+                            }.padding(.vertical, 8)
+                        }
+                    } label: { Text(group == "story" ? "Map cốt truyện" : group == "extra" ? "Map khám phá" : "Map chưa mở").font(.headline) }.cardStyle()
                 }
+                DisclosureGroup {
+                    ForEach(ExpansionCatalog.shared.dlcs) { dlc in
+                        DisclosureGroup {
+                            Text(dlc.summary).padding(.vertical, 8)
+                            Text(dlc.purchase).foregroundStyle(.secondary)
+                            if let url = URL(string: dlc.storeURL) { Link("Steam", destination: url).buttonStyle(.bordered) }
+                        } label: { Text(dlc.name).font(.headline) }.padding(.vertical, 8)
+                    }
+                } label: { Text("Nội dung mua thêm").font(.headline) }.cardStyle()
             }.padding(24).frame(maxWidth: 1100).frame(maxWidth: .infinity)
         }
     }

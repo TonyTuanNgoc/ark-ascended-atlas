@@ -1,0 +1,37 @@
+{
+  "info" : {
+    "arguments" : [
+      "devicectl",
+      "device",
+      "install",
+      "app",
+      "--device",
+      "8FA117DA-854A-5EEB-AEFC-EE54036237A9",
+      "/Volumes/TONY SSD/ASCENDED_MEDIA/builds/Ascended-0.14.0-15/Build/Products/Debug-iphoneos/Ascended.app",
+      "--json-output",
+      "docs/codex-reports/2026-10-04-knowledge-device-install.json"
+    ],
+    "commandType" : "devicectl.device.install.app",
+    "environment" : {
+      "TERM" : "dumb"
+    },
+    "jsonVersion" : 3,
+    "outcome" : "success",
+    "version" : "518.31"
+  },
+  "result" : {
+    "deviceIdentifier" : "8FA117DA-854A-5EEB-AEFC-EE54036237A9",
+    "installedApplications" : [
+      {
+        "bundleID" : "com.tonytuanngoc.ascended",
+        "databaseSequenceNumber" : 2788,
+        "databaseUUID" : "CF1EF73B-08AD-4527-9C5C-89CB5C4DAADB",
+        "installationURL" : "file:///private/var/containers/Bundle/Application/7ABADB38-3945-4536-AD8E-55ED92CDF2A2/Ascended.app/",
+        "launchServicesIdentifier" : "unknown",
+        "options" : {
+
+        }
+      }
+    ]
+  }
+}

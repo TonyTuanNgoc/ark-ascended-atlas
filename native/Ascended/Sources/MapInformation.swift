@@ -33,7 +33,7 @@ struct MapInformationScreen: View {
                     }
                     LinearGradient(colors: [.clear, .black.opacity(0.95)], startPoint: .top, endPoint: .bottom)
                     VStack(alignment: .leading, spacing: 10) {
-                        Text(map.name).font(.system(size: 46, weight: .bold, design: .rounded)).accessibilityIdentifier("mapInformationTitle")
+                        HStack { MapBadge(id: map.expansionID); Text(map.name).font(.system(size: 46, weight: .bold, design: .rounded)).accessibilityIdentifier("mapInformationTitle") }
                     }.padding(24)
                 }.frame(height: 310).clipShape(RoundedRectangle(cornerRadius: 22))
                 LazyVGrid(columns: [GridItem(.adaptive(minimum: 150))], spacing: 14) {
@@ -47,23 +47,21 @@ struct MapInformationScreen: View {
                     Button(action: openBosses) { Label("Boss", systemImage: "shield.lefthalf.filled") }.labelStyle(.iconOnly).accessibilityLabel("Boss").accessibilityIdentifier("openBosses")
                 }.buttonStyle(.bordered)
                 if map.information != nil, let record = map.expansion {
-                    ExpansionProfile(record: record).cardStyle()
+                    DisclosureGroup("Thông tin & mục tiêu") { ExpansionProfile(record: record) }.cardStyle()
                 }
                 if let info = map.information {
                     ForEach(info.sections.filter { search.isEmpty || $0.title.localizedStandardContains(search) || $0.items.contains { $0.localizedStandardContains(search) } }) { section in
-                        VStack(alignment: .leading, spacing: 14) {
-                            Text(section.title).font(.title2.bold())
-                            ForEach(section.items, id: \.self) { VisualBrief(text: $0) }
-                        }.cardStyle().accessibilityIdentifier("information-" + section.id)
+                        DisclosureGroup {
+                            ForEach(section.items, id: \.self) { VisualBrief(text: $0).padding(.vertical, 5) }
+                        } label: { Text(section.title).font(.headline) }.cardStyle().accessibilityIdentifier("information-" + section.id)
                     }
                     if search.isEmpty || "tài nguyên resources".localizedStandardContains(search) {
-                        VStack(alignment: .leading, spacing: 12) {
-                            Text("Tài nguyên").font(.title2.bold())
+                        DisclosureGroup("Tài nguyên") {
                             ForEach(info.resources) { resource in VisualBrief(text: resource.name) }
                         }.cardStyle()
                     }
                 } else {
-                    if let record = map.expansion { ExpansionProfile(record: record).cardStyle() }
+                    if let record = map.expansion { DisclosureGroup("Thông tin & mục tiêu") { ExpansionProfile(record: record) }.cardStyle() }
                 }
             }.padding(24).frame(maxWidth: 1100).frame(maxWidth: .infinity)
         }.searchable(text: $search, prompt: "Tìm thông tin " + map.name)

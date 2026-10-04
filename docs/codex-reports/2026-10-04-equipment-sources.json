@@ -1,0 +1,4117 @@
+{
+  "date": "2026-10-04",
+  "method": "Full published catalog tables; no handpicked quantity target. Excludes explicit namespaces, Primitive Plus, obsolete ASA wiring/pipes and decorative trophies.",
+  "scope": "Source-enumerated cross-edition reference, not a claim every entry is obtainable in current ASA. Availability, levels and DLC ownership remain explicit verification conditions; mapIDs empty means not verified, not universal spawn.",
+  "asaMechanicsSource": "https://ark.wiki.gg/wiki/ARK_Survival_Ascended",
+  "asaVerificationSources": [
+    "https://ark.wiki.gg/wiki/Engrams",
+    "https://ark.wiki.gg/wiki/Electricity",
+    "https://ark.wiki.gg/wiki/Water_Reservoir",
+    "https://ark.wiki.gg/wiki/Stone_Irrigation_Pipe_-_Intake",
+    "https://ark.wiki.gg/wiki/Water_Well",
+    "https://ark.wiki.gg/wiki/Cryofridge",
+    "https://ark.wiki.gg/wiki/Feeding_Trough",
+    "https://ark.wiki.gg/wiki/ARK:_Survival_Ascended/Patch/85.0",
+    "https://ark.wiki.gg/wiki/Water_Reservoir_(Frontier_Showdown)"
+  ],
+  "counts": {
+    "resources": 78,
+    "tools": 184,
+    "machines": 79,
+    "structures": 299,
+    "supplies": 92
+  },
+  "catalogSources": [
+    {
+      "page": "Resources",
+      "url": "https://ark.wiki.gg/wiki/Resources",
+      "status": "retrieved",
+      "enumerated": 78
+    },
+    {
+      "page": "Item_IDs/Tools",
+      "url": "https://ark.wiki.gg/wiki/Item_IDs/Tools",
+      "status": "retrieved",
+      "enumerated": 27
+    },
+    {
+      "page": "Item_IDs/Weapons",
+      "url": "https://ark.wiki.gg/wiki/Item_IDs/Weapons",
+      "status": "retrieved",
+      "enumerated": 62
+    },
+    {
+      "page": "Item_IDs/Armor",
+      "url": "https://ark.wiki.gg/wiki/Item_IDs/Armor",
+      "status": "retrieved",
+      "enumerated": 77
+    },
+    {
+      "page": "Item_IDs/Ammunition",
+      "url": "https://ark.wiki.gg/wiki/Item_IDs/Ammunition",
+      "status": "retrieved",
+      "enumerated": 29
+    },
+    {
+      "page": "Structures",
+      "url": "https://ark.wiki.gg/wiki/Structures",
+      "status": "retrieved",
+      "enumerated": 428
+    }
+  ],
+  "engramEvidenceCount": 547,
+  "mapResourceEvidenceCount": 45,
+  "availabilityCounts": {
+    "asa-core-engram-reference": 407,
+    "asa-core-resource-reference": 33,
+    "asa-dlc-verified": 1,
+    "asa-map-resource-verified": 18,
+    "source-catalog-check-asa": 186,
+    "source-item-reference": 87
+  },
+  "excluded": [
+    "ARK Anniversary Surprise Cake",
+    "Admin Blink Rifle",
+    "Coelacanth Fishing Trophy",
+    "Crystal Wyvern Queen Flag",
+    "Cymathoa Flag",
+    "Decor Box",
+    "Dinopithecus King Flag",
+    "Dragon Flag",
+    "Electrical Cable Intersection",
+    "Electrical Outlet",
+    "Electronic Binoculars",
+    "Federation Exo Boots",
+    "Federation Exo Chestpiece",
+    "Federation Exo Gloves",
+    "Federation Exo Helmet",
+    "Federation Exo Leggings",
+    "Fenrisúlfr Flag",
+    "Flexible Electrical Cable",
+    "Fractalis Flag",
+    "Gorilla Flag",
+    "Grendel Flag",
+    "Inclined Electrical Cable",
+    "King Titan Flag",
+    "Kraken Flag",
+    "Large Taxidermy Base",
+    "Lost King Flag",
+    "Lost Queen Flag",
+    "Manticore Flag",
+    "Medium Taxidermy Base",
+    "Megalodon Jaws Fishing Trophy",
+    "Metal Irrigation Pipe - Flexible",
+    "Metal Irrigation Pipe - Inclined",
+    "Metal Irrigation Pipe - Intersection",
+    "Metal Irrigation Pipe - Straight",
+    "Metal Irrigation Pipe - Vertical",
+    "Moeder Flag",
+    "Multi-Panel Flag",
+    "Nunatak Flag",
+    "Piranha Fishing Trophy",
+    "Pliers",
+    "Pygocentrus Flag",
+    "Rockwell Final Form Flag",
+    "Rockwell Final Form Trophy",
+    "Rockwell Flag",
+    "Sabertooth Salmon Fishing Trophy",
+    "Single Panel Flag",
+    "Small Taxidermy Base",
+    "Spider Flag",
+    "Stone Irrigation Pipe - Flexible",
+    "Stone Irrigation Pipe - Inclined",
+    "Stone Irrigation Pipe - Intersection",
+    "Stone Irrigation Pipe - Straight",
+    "Stone Irrigation Pipe - Vertical",
+    "Straight Electrical Cable",
+    "Tier 1 Lootcrate",
+    "Tier 2 Lootcrate",
+    "Tier 3 Lootcrate",
+    "Trophy Wall-Mount",
+    "VR Boss Flag",
+    "Vertical Electrical Cable",
+    "Vulcanithys Flag"
+  ],
+  "artwork": [
+    {
+      "name": "Absorbent Substrate",
+      "status": "reused-exact",
+      "asset": "Item-absorbent-substrate",
+      "sourceURL": "https://ark.wiki.gg/wiki/Absorbent_Substrate"
+    },
+    {
+      "name": "Achatina Paste",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Achatina_Paste"
+    },
+    {
+      "name": "Ambergris",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Ambergris"
+    },
+    {
+      "name": "Ammonite Bile",
+      "status": "reused-exact",
+      "asset": "Item-ammonite-bile",
+      "sourceURL": "https://ark.wiki.gg/wiki/Ammonite_Bile"
+    },
+    {
+      "name": "AnglerGel",
+      "status": "reused-exact",
+      "asset": "Item-anglergel",
+      "sourceURL": "https://ark.wiki.gg/wiki/AnglerGel"
+    },
+    {
+      "name": "Bio Toxin",
+      "status": "reused-exact",
+      "asset": "Item-bio-toxin",
+      "sourceURL": "https://ark.wiki.gg/wiki/Bio_Toxin"
+    },
+    {
+      "name": "Black Pearl",
+      "status": "reused-exact",
+      "asset": "Item-black-pearl",
+      "sourceURL": "https://ark.wiki.gg/wiki/Black_Pearl"
+    },
+    {
+      "name": "Blue Crystalized Sap",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Blue_Crystalized_Sap"
+    },
+    {
+      "name": "Blue Gem",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Blue_Gem"
+    },
+    {
+      "name": "Cactus Sap",
+      "status": "reused-exact",
+      "asset": "Item-cactus-sap",
+      "sourceURL": "https://ark.wiki.gg/wiki/Cactus_Sap"
+    },
+    {
+      "name": "Cementing Paste",
+      "status": "reused-exact",
+      "asset": "Item-cementing-paste",
+      "sourceURL": "https://ark.wiki.gg/wiki/Cementing_Paste"
+    },
+    {
+      "name": "Cerato Venom Spine",
+      "status": "reused-exact",
+      "asset": "Item-cerato-venom-spine",
+      "sourceURL": "https://ark.wiki.gg/wiki/Cerato_Venom_Spine"
+    },
+    {
+      "name": "Charcoal",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Charcoal"
+    },
+    {
+      "name": "Chitin",
+      "status": "reused-exact",
+      "asset": "Item-chitin",
+      "sourceURL": "https://ark.wiki.gg/wiki/Chitin"
+    },
+    {
+      "name": "Clay",
+      "status": "reused-exact",
+      "asset": "Item-clay",
+      "sourceURL": "https://ark.wiki.gg/wiki/Clay"
+    },
+    {
+      "name": "Condensed Gas",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Condensed_Gas"
+    },
+    {
+      "name": "Congealed Gas Ball",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Congealed_Gas_Ball"
+    },
+    {
+      "name": "Corrupted Nodule",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Corrupted_Nodule"
+    },
+    {
+      "name": "Corrupted Wood",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Corrupted_Wood"
+    },
+    {
+      "name": "Crystal",
+      "status": "reused-exact",
+      "asset": "Item-crystal",
+      "sourceURL": "https://ark.wiki.gg/wiki/Crystal"
+    },
+    {
+      "name": "Ectoplasm",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Ectoplasm"
+    },
+    {
+      "name": "Electronics",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Electronics"
+    },
+    {
+      "name": "Element",
+      "status": "reused-exact",
+      "asset": "Item-element",
+      "sourceURL": "https://ark.wiki.gg/wiki/Element"
+    },
+    {
+      "name": "Element Dust",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Element_Dust"
+    },
+    {
+      "name": "Element Ore",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Element_Ore"
+    },
+    {
+      "name": "Element Shard",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Element_Shard"
+    },
+    {
+      "name": "Element-Imbued Gasoline",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Element-Imbued_Gasoline"
+    },
+    {
+      "name": "Fiber",
+      "status": "reused-exact",
+      "asset": "Item-fiber",
+      "sourceURL": "https://ark.wiki.gg/wiki/Fiber"
+    },
+    {
+      "name": "Flint",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Flint"
+    },
+    {
+      "name": "Flovis Flower",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Flovis_Flower"
+    },
+    {
+      "name": "Fragmented Green Gem",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Fragmented_Green_Gem"
+    },
+    {
+      "name": "Fungal Wood",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Fungal_Wood"
+    },
+    {
+      "name": "Gasoline",
+      "asset": "Equipment-gasoline",
+      "status": "downloaded-original",
+      "imageURL": "https://ark.wiki.gg/images/Gasoline.png",
+      "sourceURL": "https://ark.wiki.gg/wiki/Gasoline",
+      "sha256": "d9c31b835cd1fbe7c6b4277ec4cf174b61af420ba14d0f7c5f8ed7c904ba9fd5",
+      "attribution": "ARK Official Community Wiki; original game artwork belongs to Studio Wildcard; personal reference use"
+    },
+    {
+      "name": "Giant Bee Honey",
+      "status": "reused-exact",
+      "asset": "Item-giant-bee-honey",
+      "sourceURL": "https://ark.wiki.gg/wiki/Giant_Bee_Honey"
+    },
+    {
+      "name": "Gigantoraptor Feather",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Gigantoraptor_Feather"
+    },
+    {
+      "name": "Golden Nugget",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Golden_Nugget"
+    },
+    {
+      "name": "Green Gem",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Green_Gem"
+    },
+    {
+      "name": "Gunpowder",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Gunpowder"
+    },
+    {
+      "name": "Hairball",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Hairball"
+    },
+    {
+      "name": "Hide",
+      "status": "reused-exact",
+      "asset": "Item-hide",
+      "sourceURL": "https://ark.wiki.gg/wiki/Hide"
+    },
+    {
+      "name": "High Quality Pollen",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/High_Quality_Pollen"
+    },
+    {
+      "name": "Human Hair",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Human_Hair"
+    },
+    {
+      "name": "Keratin",
+      "status": "reused-exact",
+      "asset": "Item-keratin",
+      "sourceURL": "https://ark.wiki.gg/wiki/Keratin"
+    },
+    {
+      "name": "Leech Blood",
+      "status": "reused-exact",
+      "asset": "Item-leech-blood",
+      "sourceURL": "https://ark.wiki.gg/wiki/Leech_Blood"
+    },
+    {
+      "name": "Love Heart",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Love_Heart"
+    },
+    {
+      "name": "Metal",
+      "status": "reused-exact",
+      "asset": "Item-metal",
+      "sourceURL": "https://ark.wiki.gg/wiki/Metal"
+    },
+    {
+      "name": "Metal Ingot",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Metal_Ingot"
+    },
+    {
+      "name": "Mutagel",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Mutagel"
+    },
+    {
+      "name": "Mutagen",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Mutagen"
+    },
+    {
+      "name": "Mutagen Ooze",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Mutagen_Ooze"
+    },
+    {
+      "name": "Obsidian",
+      "status": "reused-exact",
+      "asset": "Item-obsidian",
+      "sourceURL": "https://ark.wiki.gg/wiki/Obsidian"
+    },
+    {
+      "name": "Oil",
+      "status": "reused-exact",
+      "asset": "Item-oil",
+      "sourceURL": "https://ark.wiki.gg/wiki/Oil"
+    },
+    {
+      "name": "Organic Polymer",
+      "status": "reused-exact",
+      "asset": "Item-organic-polymer",
+      "sourceURL": "https://ark.wiki.gg/wiki/Organic_Polymer"
+    },
+    {
+      "name": "Pelt",
+      "status": "reused-exact",
+      "asset": "Item-pelt",
+      "sourceURL": "https://ark.wiki.gg/wiki/Pelt"
+    },
+    {
+      "name": "Polymer",
+      "status": "reused-exact",
+      "asset": "Item-polymer",
+      "sourceURL": "https://ark.wiki.gg/wiki/Polymer"
+    },
+    {
+      "name": "Popsicle",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Popsicle"
+    },
+    {
+      "name": "Preserving Salt",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Preserving_Salt"
+    },
+    {
+      "name": "Prismatic Ink",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Prismatic_Ink"
+    },
+    {
+      "name": "Propellant",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Propellant"
+    },
+    {
+      "name": "Raw Salt",
+      "status": "reused-exact",
+      "asset": "Item-raw-salt",
+      "sourceURL": "https://ark.wiki.gg/wiki/Raw_Salt"
+    },
+    {
+      "name": "Red Crystalized Sap",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Red_Crystalized_Sap"
+    },
+    {
+      "name": "Red Gem",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Red_Gem"
+    },
+    {
+      "name": "Sand",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Sand"
+    },
+    {
+      "name": "Sap",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Sap"
+    },
+    {
+      "name": "Scrap Metal",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Scrap_Metal"
+    },
+    {
+      "name": "Scrap Metal Ingot",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Scrap_Metal_Ingot"
+    },
+    {
+      "name": "Shell Fragment",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Shell_Fragment"
+    },
+    {
+      "name": "Silica Pearls",
+      "status": "reused-exact",
+      "asset": "Item-silica-pearls",
+      "sourceURL": "https://ark.wiki.gg/wiki/Silica_Pearls"
+    },
+    {
+      "name": "Silicate",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Silicate"
+    },
+    {
+      "name": "Silk",
+      "status": "reused-exact",
+      "asset": "Item-silk",
+      "sourceURL": "https://ark.wiki.gg/wiki/Silk"
+    },
+    {
+      "name": "Sparkpowder",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Sparkpowder"
+    },
+    {
+      "name": "Stone",
+      "status": "reused-exact",
+      "asset": "Item-stone",
+      "sourceURL": "https://ark.wiki.gg/wiki/Stone"
+    },
+    {
+      "name": "Sulfur",
+      "status": "reused-exact",
+      "asset": "Item-sulfur",
+      "sourceURL": "https://ark.wiki.gg/wiki/Sulfur"
+    },
+    {
+      "name": "Thatch",
+      "status": "reused-exact",
+      "asset": "Item-thatch",
+      "sourceURL": "https://ark.wiki.gg/wiki/Thatch"
+    },
+    {
+      "name": "Unstable Element",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Unstable_Element"
+    },
+    {
+      "name": "Unstable Element Shard",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Unstable_Element_Shard"
+    },
+    {
+      "name": "Wood",
+      "status": "reused-exact",
+      "asset": "Item-wood",
+      "sourceURL": "https://ark.wiki.gg/wiki/Wood"
+    },
+    {
+      "name": "Wool",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Wool"
+    },
+    {
+      "name": "Blood Extraction Syringe",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Blood_Extraction_Syringe"
+    },
+    {
+      "name": "Camera",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Camera"
+    },
+    {
+      "name": "Chainsaw",
+      "status": "reused-exact",
+      "asset": "Item-chainsaw",
+      "sourceURL": "https://ark.wiki.gg/wiki/Chainsaw"
+    },
+    {
+      "name": "Compass",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Compass"
+    },
+    {
+      "name": "Cryopod",
+      "status": "reused-exact",
+      "asset": "Item-cryopod",
+      "sourceURL": "https://ark.wiki.gg/wiki/Cryopod"
+    },
+    {
+      "name": "Fish Net",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Fish_Net"
+    },
+    {
+      "name": "Fishing Rod",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Fishing_Rod"
+    },
+    {
+      "name": "GPS",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/GPS"
+    },
+    {
+      "name": "Magnifying Glass",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Magnifying_Glass"
+    },
+    {
+      "name": "Metal Hatchet",
+      "status": "reused-exact",
+      "asset": "Item-metal-hatchet",
+      "sourceURL": "https://ark.wiki.gg/wiki/Metal_Hatchet"
+    },
+    {
+      "name": "Metal Pick",
+      "status": "reused-exact",
+      "asset": "Item-metal-pick",
+      "sourceURL": "https://ark.wiki.gg/wiki/Metal_Pick"
+    },
+    {
+      "name": "Metal Sickle",
+      "status": "reused-exact",
+      "asset": "Item-metal-sickle",
+      "sourceURL": "https://ark.wiki.gg/wiki/Metal_Sickle"
+    },
+    {
+      "name": "Mining Drill",
+      "status": "reused-exact",
+      "asset": "Item-mining-drill",
+      "sourceURL": "https://ark.wiki.gg/wiki/Mining_Drill"
+    },
+    {
+      "name": "Paintbrush",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Paintbrush"
+    },
+    {
+      "name": "Radio",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Radio"
+    },
+    {
+      "name": "Scissors",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Scissors"
+    },
+    {
+      "name": "Spyglass",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Spyglass"
+    },
+    {
+      "name": "Stone Hatchet",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Stone_Hatchet"
+    },
+    {
+      "name": "Stone Pick",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Stone_Pick"
+    },
+    {
+      "name": "Taxidermy Tool",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Taxidermy_Tool"
+    },
+    {
+      "name": "Torch",
+      "status": "reused-exact",
+      "asset": "Item-torch",
+      "sourceURL": "https://ark.wiki.gg/wiki/Torch"
+    },
+    {
+      "name": "Whip",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Whip"
+    },
+    {
+      "name": "Assault Rifle",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Assault_Rifle"
+    },
+    {
+      "name": "Bear Trap",
+      "status": "reused-exact",
+      "asset": "Item-bear-trap",
+      "sourceURL": "https://ark.wiki.gg/wiki/Bear_Trap"
+    },
+    {
+      "name": "Bola",
+      "status": "reused-exact",
+      "asset": "Item-bola",
+      "sourceURL": "https://ark.wiki.gg/wiki/Bola"
+    },
+    {
+      "name": "Boomerang",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Boomerang"
+    },
+    {
+      "name": "Bow",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Bow"
+    },
+    {
+      "name": "C4 Remote Detonator",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/C4_Remote_Detonator"
+    },
+    {
+      "name": "Chain Bola",
+      "status": "reused-exact",
+      "asset": "Item-chain-bola",
+      "sourceURL": "https://ark.wiki.gg/wiki/Chain_Bola"
+    },
+    {
+      "name": "Charge Lantern",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Charge_Lantern"
+    },
+    {
+      "name": "Climbing Pick",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Climbing_Pick"
+    },
+    {
+      "name": "Cluster Grenade",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Cluster_Grenade"
+    },
+    {
+      "name": "Compound Bow",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Compound_Bow"
+    },
+    {
+      "name": "Crossbow",
+      "status": "reused-exact",
+      "asset": "Item-crossbow",
+      "sourceURL": "https://ark.wiki.gg/wiki/Crossbow"
+    },
+    {
+      "name": "Cruise Missile",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Cruise_Missile"
+    },
+    {
+      "name": "Electric Prod",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Electric_Prod"
+    },
+    {
+      "name": "Fabricated Pistol",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Fabricated_Pistol"
+    },
+    {
+      "name": "Fabricated Sniper Rifle",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Fabricated_Sniper_Rifle"
+    },
+    {
+      "name": "Flamethrower",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Flamethrower"
+    },
+    {
+      "name": "Flaming Spear",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Flaming_Spear"
+    },
+    {
+      "name": "Flare Gun",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Flare_Gun"
+    },
+    {
+      "name": "Glow Stick",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Glow_Stick"
+    },
+    {
+      "name": "Grenade",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Grenade"
+    },
+    {
+      "name": "Handcuffs",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Handcuffs"
+    },
+    {
+      "name": "Harpoon Launcher",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Harpoon_Launcher"
+    },
+    {
+      "name": "Improvised Explosive Device",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Improvised_Explosive_Device"
+    },
+    {
+      "name": "Lance",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Lance"
+    },
+    {
+      "name": "Large Bear Trap",
+      "status": "reused-exact",
+      "asset": "Item-large-bear-trap",
+      "sourceURL": "https://ark.wiki.gg/wiki/Large_Bear_Trap"
+    },
+    {
+      "name": "Lasso",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Lasso"
+    },
+    {
+      "name": "Longneck Rifle",
+      "status": "reused-exact",
+      "asset": "Item-longneck-rifle",
+      "sourceURL": "https://ark.wiki.gg/wiki/Longneck_Rifle"
+    },
+    {
+      "name": "Minigun",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Minigun"
+    },
+    {
+      "name": "Oil Jar",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Oil_Jar"
+    },
+    {
+      "name": "Pike",
+      "status": "reused-exact",
+      "asset": "Item-pike",
+      "sourceURL": "https://ark.wiki.gg/wiki/Pike"
+    },
+    {
+      "name": "Plant Species Z Fruit",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Plant_Species_Z_Fruit"
+    },
+    {
+      "name": "Poison Grenade",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Poison_Grenade"
+    },
+    {
+      "name": "Pump-Action Shotgun",
+      "status": "reused-exact",
+      "asset": "Item-pump-action-shotgun",
+      "sourceURL": "https://ark.wiki.gg/wiki/Pump-Action_Shotgun"
+    },
+    {
+      "name": "Rocket Launcher",
+      "status": "reused-exact",
+      "asset": "Item-rocket-launcher",
+      "sourceURL": "https://ark.wiki.gg/wiki/Rocket_Launcher"
+    },
+    {
+      "name": "Scout Remote",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Scout_Remote"
+    },
+    {
+      "name": "Shotgun",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Shotgun"
+    },
+    {
+      "name": "Simple Pistol",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Simple_Pistol"
+    },
+    {
+      "name": "Slingshot",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Slingshot"
+    },
+    {
+      "name": "Smoke Grenade",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Smoke_Grenade"
+    },
+    {
+      "name": "Spear",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Spear"
+    },
+    {
+      "name": "Spray Painter",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Spray_Painter"
+    },
+    {
+      "name": "Sword",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Sword"
+    },
+    {
+      "name": "Tek Bow",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Bow"
+    },
+    {
+      "name": "Tek Claws",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Claws"
+    },
+    {
+      "name": "Tek Gravity Grenade",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Gravity_Grenade"
+    },
+    {
+      "name": "Tek Grenade",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Grenade"
+    },
+    {
+      "name": "Tek Grenade Launcher",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Grenade_Launcher"
+    },
+    {
+      "name": "Tek Phase Pistol",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Phase_Pistol"
+    },
+    {
+      "name": "Tek Railgun",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Railgun"
+    },
+    {
+      "name": "Tek Rifle",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Rifle"
+    },
+    {
+      "name": "Tek Sword",
+      "status": "reused-exact",
+      "asset": "Item-tek-sword",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Sword"
+    },
+    {
+      "name": "Transponder Tracker",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Transponder_Tracker"
+    },
+    {
+      "name": "Tripwire Alarm Trap",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tripwire_Alarm_Trap"
+    },
+    {
+      "name": "Tripwire Narcotic Trap",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tripwire_Narcotic_Trap"
+    },
+    {
+      "name": "Wooden Club",
+      "status": "reused-exact",
+      "asset": "Item-wooden-club",
+      "sourceURL": "https://ark.wiki.gg/wiki/Wooden_Club"
+    },
+    {
+      "name": "Flashlight Attachment",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Flashlight_Attachment"
+    },
+    {
+      "name": "Holo-Scope Attachment",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Holo-Scope_Attachment"
+    },
+    {
+      "name": "Laser Attachment",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Laser_Attachment"
+    },
+    {
+      "name": "Scope Attachment",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Scope_Attachment"
+    },
+    {
+      "name": "Silencer Attachment",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Silencer_Attachment"
+    },
+    {
+      "name": "Chitin Leggings",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Chitin_Leggings"
+    },
+    {
+      "name": "Chitin Chestpiece",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Chitin_Chestpiece"
+    },
+    {
+      "name": "Chitin Helmet",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Chitin_Helmet"
+    },
+    {
+      "name": "Chitin Boots",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Chitin_Boots"
+    },
+    {
+      "name": "Chitin Gauntlets",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Chitin_Gauntlets"
+    },
+    {
+      "name": "Cloth Pants",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Cloth_Pants"
+    },
+    {
+      "name": "Cloth Shirt",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Cloth_Shirt"
+    },
+    {
+      "name": "Cloth Hat",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Cloth_Hat"
+    },
+    {
+      "name": "Cloth Boots",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Cloth_Boots"
+    },
+    {
+      "name": "Cloth Gloves",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Cloth_Gloves"
+    },
+    {
+      "name": "Desert Cloth Boots",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Desert_Cloth_Boots"
+    },
+    {
+      "name": "Desert Cloth Gloves",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Desert_Cloth_Gloves"
+    },
+    {
+      "name": "Desert Goggles and Hat",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Desert_Goggles_and_Hat"
+    },
+    {
+      "name": "Desert Cloth Pants",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Desert_Cloth_Pants"
+    },
+    {
+      "name": "Desert Cloth Shirt",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Desert_Cloth_Shirt"
+    },
+    {
+      "name": "Flak Leggings",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Flak_Leggings"
+    },
+    {
+      "name": "Flak Chestpiece",
+      "status": "reused-exact",
+      "asset": "Item-flak-chestpiece",
+      "sourceURL": "https://ark.wiki.gg/wiki/Flak_Chestpiece"
+    },
+    {
+      "name": "Flak Helmet",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Flak_Helmet"
+    },
+    {
+      "name": "Flak Boots",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Flak_Boots"
+    },
+    {
+      "name": "Flak Gauntlets",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Flak_Gauntlets"
+    },
+    {
+      "name": "Fur Leggings",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Fur_Leggings"
+    },
+    {
+      "name": "Fur Chestpiece",
+      "status": "reused-exact",
+      "asset": "Item-fur-chestpiece",
+      "sourceURL": "https://ark.wiki.gg/wiki/Fur_Chestpiece"
+    },
+    {
+      "name": "Fur Cap",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Fur_Cap"
+    },
+    {
+      "name": "Fur Boots",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Fur_Boots"
+    },
+    {
+      "name": "Fur Gauntlets",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Fur_Gauntlets"
+    },
+    {
+      "name": "Ghillie Boots",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Ghillie_Boots"
+    },
+    {
+      "name": "Ghillie Chestpiece",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Ghillie_Chestpiece"
+    },
+    {
+      "name": "Ghillie Gauntlets",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Ghillie_Gauntlets"
+    },
+    {
+      "name": "Ghillie Leggings",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Ghillie_Leggings"
+    },
+    {
+      "name": "Ghillie Mask",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Ghillie_Mask"
+    },
+    {
+      "name": "Hazard Suit Boots",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Hazard_Suit_Boots"
+    },
+    {
+      "name": "Hazard Suit Gloves",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Hazard_Suit_Gloves"
+    },
+    {
+      "name": "Hazard Suit Hat",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Hazard_Suit_Hat"
+    },
+    {
+      "name": "Hazard Suit Pants",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Hazard_Suit_Pants"
+    },
+    {
+      "name": "Hazard Suit Shirt",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Hazard_Suit_Shirt"
+    },
+    {
+      "name": "Hide Pants",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Hide_Pants"
+    },
+    {
+      "name": "Hide Shirt",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Hide_Shirt"
+    },
+    {
+      "name": "Hide Hat",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Hide_Hat"
+    },
+    {
+      "name": "Hide Boots",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Hide_Boots"
+    },
+    {
+      "name": "Hide Gloves",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Hide_Gloves"
+    },
+    {
+      "name": "M.D.S.M.",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/M.D.S.M."
+    },
+    {
+      "name": "M.O.M.I.",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/M.O.M.I."
+    },
+    {
+      "name": "M.R.L.M.",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/M.R.L.M."
+    },
+    {
+      "name": "M.S.C.M.",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/M.S.C.M."
+    },
+    {
+      "name": "Pearl Leggings",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Pearl_Leggings"
+    },
+    {
+      "name": "Pearl Chestpiece",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Pearl_Chestpiece"
+    },
+    {
+      "name": "Pearl Gauntlets",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Pearl_Gauntlets"
+    },
+    {
+      "name": "Pearl Boots",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Pearl_Boots"
+    },
+    {
+      "name": "Pearl Helmet",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Pearl_Helmet"
+    },
+    {
+      "name": "Riot Leggings",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Riot_Leggings"
+    },
+    {
+      "name": "Riot Chestpiece",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Riot_Chestpiece"
+    },
+    {
+      "name": "Riot Gauntlets",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Riot_Gauntlets"
+    },
+    {
+      "name": "Riot Boots",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Riot_Boots"
+    },
+    {
+      "name": "Riot Helmet",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Riot_Helmet"
+    },
+    {
+      "name": "SCUBA Leggings",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/SCUBA_Leggings"
+    },
+    {
+      "name": "SCUBA Tank",
+      "status": "reused-exact",
+      "asset": "Item-scuba-tank",
+      "sourceURL": "https://ark.wiki.gg/wiki/SCUBA_Tank"
+    },
+    {
+      "name": "SCUBA Mask",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/SCUBA_Mask"
+    },
+    {
+      "name": "SCUBA Flippers",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/SCUBA_Flippers"
+    },
+    {
+      "name": "Tek Boots",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Boots"
+    },
+    {
+      "name": "Tek Chestpiece",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Chestpiece"
+    },
+    {
+      "name": "Tek Gauntlets",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Gauntlets"
+    },
+    {
+      "name": "Tek Helmet",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Helmet"
+    },
+    {
+      "name": "Tek Leggings",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Leggings"
+    },
+    {
+      "name": "Tek Shoulder Cannon",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Shoulder_Cannon"
+    },
+    {
+      "name": "Wooden Shield",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Wooden_Shield"
+    },
+    {
+      "name": "Metal Shield",
+      "status": "reused-exact",
+      "asset": "Item-metal-shield",
+      "sourceURL": "https://ark.wiki.gg/wiki/Metal_Shield"
+    },
+    {
+      "name": "Riot Shield",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Riot_Shield"
+    },
+    {
+      "name": "Tek Shield",
+      "status": "reused-exact",
+      "asset": "Item-tek-shield",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Shield"
+    },
+    {
+      "name": "Gas Mask",
+      "status": "reused-exact",
+      "asset": "Item-gas-mask",
+      "sourceURL": "https://ark.wiki.gg/wiki/Gas_Mask"
+    },
+    {
+      "name": "Heavy Miner's Helmet",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Heavy_Miner%27s_Helmet"
+    },
+    {
+      "name": "Night Vision Goggles",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Night_Vision_Goggles"
+    },
+    {
+      "name": "Parachute",
+      "status": "reused-exact",
+      "asset": "Item-parachute",
+      "sourceURL": "https://ark.wiki.gg/wiki/Parachute"
+    },
+    {
+      "name": "Advanced Bullet",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Advanced_Bullet"
+    },
+    {
+      "name": "Advanced Rifle Bullet",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Advanced_Rifle_Bullet"
+    },
+    {
+      "name": "Advanced Sniper Bullet",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Advanced_Sniper_Bullet"
+    },
+    {
+      "name": "Boulder",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Boulder"
+    },
+    {
+      "name": "C4 Charge",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/C4_Charge"
+    },
+    {
+      "name": "Cannon Ball",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Cannon_Ball"
+    },
+    {
+      "name": "Cannon Shell",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Cannon_Shell"
+    },
+    {
+      "name": "Explosive Arrow",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Explosive_Arrow"
+    },
+    {
+      "name": "Flame Arrow",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Flame_Arrow"
+    },
+    {
+      "name": "Flamethrower Ammo",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Flamethrower_Ammo"
+    },
+    {
+      "name": "Grappling Hook",
+      "status": "reused-exact",
+      "asset": "Item-grappling-hook",
+      "sourceURL": "https://ark.wiki.gg/wiki/Grappling_Hook"
+    },
+    {
+      "name": "Jar of Pitch",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Jar_of_Pitch"
+    },
+    {
+      "name": "Net Projectile",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Net_Projectile"
+    },
+    {
+      "name": "Metal Arrow",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Metal_Arrow"
+    },
+    {
+      "name": "Pheromone Dart",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Pheromone_Dart"
+    },
+    {
+      "name": "Rocket Homing Missile",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Rocket_Homing_Missile"
+    },
+    {
+      "name": "Rocket Pod",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Rocket_Pod"
+    },
+    {
+      "name": "Rocket Propelled Grenade",
+      "status": "reused-exact",
+      "asset": "Item-rocket-propelled-grenade",
+      "sourceURL": "https://ark.wiki.gg/wiki/Rocket_Propelled_Grenade"
+    },
+    {
+      "name": "Shocking Tranquilizer Dart",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Shocking_Tranquilizer_Dart"
+    },
+    {
+      "name": "Simple Bullet",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Simple_Bullet"
+    },
+    {
+      "name": "Simple Rifle Ammo",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Simple_Rifle_Ammo"
+    },
+    {
+      "name": "Simple Shotgun Ammo",
+      "status": "reused-exact",
+      "asset": "Item-simple-shotgun-ammo",
+      "sourceURL": "https://ark.wiki.gg/wiki/Simple_Shotgun_Ammo"
+    },
+    {
+      "name": "Spear Bolt",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Spear_Bolt"
+    },
+    {
+      "name": "Stone Arrow",
+      "status": "reused-exact",
+      "asset": "Item-stone-arrow",
+      "sourceURL": "https://ark.wiki.gg/wiki/Stone_Arrow"
+    },
+    {
+      "name": "Tranq Arrow",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tranq_Arrow"
+    },
+    {
+      "name": "Tranquilizer Dart",
+      "status": "reused-exact",
+      "asset": "Item-tranquilizer-dart",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tranquilizer_Dart"
+    },
+    {
+      "name": "Tranq Spear Bolt",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tranq_Spear_Bolt"
+    },
+    {
+      "name": "Transponder Node",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Transponder_Node"
+    },
+    {
+      "name": "Zip-Line Anchor",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Zip-Line_Anchor"
+    },
+    {
+      "name": "Adobe Ceiling",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Adobe_Ceiling"
+    },
+    {
+      "name": "Adobe Dinosaur Gate",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Adobe_Dinosaur_Gate"
+    },
+    {
+      "name": "Adobe Dinosaur Gateway",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Adobe_Dinosaur_Gateway"
+    },
+    {
+      "name": "Adobe Door",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Adobe_Door"
+    },
+    {
+      "name": "Adobe Doorframe",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Adobe_Doorframe"
+    },
+    {
+      "name": "Adobe Double Door",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Adobe_Double_Door"
+    },
+    {
+      "name": "Adobe Double Doorframe",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Adobe_Double_Doorframe"
+    },
+    {
+      "name": "Adobe Fence Foundation",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Adobe_Fence_Foundation"
+    },
+    {
+      "name": "Adobe Fence Support",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Adobe_Fence_Support"
+    },
+    {
+      "name": "Adobe Foundation",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Adobe_Foundation"
+    },
+    {
+      "name": "Adobe Hatchframe",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Adobe_Hatchframe"
+    },
+    {
+      "name": "Adobe Ladder",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Adobe_Ladder"
+    },
+    {
+      "name": "Adobe Pillar",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Adobe_Pillar"
+    },
+    {
+      "name": "Adobe Railing",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Adobe_Railing"
+    },
+    {
+      "name": "Adobe Ramp",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Adobe_Ramp"
+    },
+    {
+      "name": "Adobe Staircase",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Adobe_Staircase"
+    },
+    {
+      "name": "Adobe Stairs",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Adobe_Stairs"
+    },
+    {
+      "name": "Adobe Trapdoor",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Adobe_Trapdoor"
+    },
+    {
+      "name": "Adobe Triangle Ceiling",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Adobe_Triangle_Ceiling"
+    },
+    {
+      "name": "Adobe Triangle Foundation",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Adobe_Triangle_Foundation"
+    },
+    {
+      "name": "Adobe Triangle Roof",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Adobe_Triangle_Roof"
+    },
+    {
+      "name": "Adobe Wall",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Adobe_Wall"
+    },
+    {
+      "name": "Adobe Window",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Adobe_Window"
+    },
+    {
+      "name": "Adobe Windowframe",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Adobe_Windowframe"
+    },
+    {
+      "name": "Air Conditioner",
+      "asset": "Equipment-air-conditioner",
+      "status": "downloaded-original",
+      "imageURL": "https://ark.wiki.gg/images/Air_Conditioner.png",
+      "sourceURL": "https://ark.wiki.gg/wiki/Air_Conditioner",
+      "sha256": "d3a3c26b7016f474624ea72c55aac6e04523afeeec71e492094ab536865ceb40"
+    },
+    {
+      "name": "Airplane",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Airplane"
+    },
+    {
+      "name": "Ammo Box",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Ammo_Box"
+    },
+    {
+      "name": "Aquarium",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Aquarium"
+    },
+    {
+      "name": "Artifact Pedestal",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Artifact_Pedestal"
+    },
+    {
+      "name": "Auto Turret",
+      "asset": "Equipment-auto-turret",
+      "status": "downloaded-original",
+      "imageURL": "https://ark.wiki.gg/images/Auto_Turret.png",
+      "sourceURL": "https://ark.wiki.gg/wiki/Auto_Turret",
+      "sha256": "81794328278eee9f8d2f3618d0db03b843bd6dc63529bb0a22a3ad1beeec0ca3"
+    },
+    {
+      "name": "Ballista Turret",
+      "asset": "Equipment-ballista-turret",
+      "status": "downloaded-original",
+      "imageURL": "https://ark.wiki.gg/images/Ballista_Turret.png",
+      "sourceURL": "https://ark.wiki.gg/wiki/Ballista_Turret",
+      "sha256": "76de47fc83cca2d86be821359ebffb5817940b384fcb8564739700e335490db8"
+    },
+    {
+      "name": "Barrel Storage",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Barrel_Storage"
+    },
+    {
+      "name": "BattleRig",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/BattleRig"
+    },
+    {
+      "name": "BattleRig Garage",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/BattleRig_Garage"
+    },
+    {
+      "name": "Bee Hive",
+      "status": "reused-exact",
+      "asset": "Item-bee-hive",
+      "sourceURL": "https://ark.wiki.gg/wiki/Bee_Hive"
+    },
+    {
+      "name": "Beer Barrel",
+      "asset": "Equipment-beer-barrel",
+      "status": "downloaded-original",
+      "imageURL": "https://ark.wiki.gg/images/Beer_Barrel.png",
+      "sourceURL": "https://ark.wiki.gg/wiki/Beer_Barrel",
+      "sha256": "71116566d80ee6ae9bd505e8257ea8d72290f1ed3216215548fc1c90a357d4ed"
+    },
+    {
+      "name": "Behemoth Adobe Dinosaur Gate",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Behemoth_Adobe_Dinosaur_Gate"
+    },
+    {
+      "name": "Behemoth Adobe Dinosaur Gateway",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Behemoth_Adobe_Dinosaur_Gateway"
+    },
+    {
+      "name": "Behemoth Gate",
+      "asset": "Equipment-behemoth-gate",
+      "status": "downloaded-original",
+      "imageURL": "https://ark.wiki.gg/images/Behemoth_Gate.png",
+      "sourceURL": "https://ark.wiki.gg/wiki/Behemoth_Gate",
+      "sha256": "492aedf017a34af37b67bd54f3513584ad04f29b609c428a0ca848a1a4b6188d",
+      "attribution": "ARK Official Community Wiki; original game artwork belongs to Studio Wildcard; personal reference use"
+    },
+    {
+      "name": "Behemoth Gateway",
+      "asset": "Equipment-behemoth-gateway",
+      "status": "downloaded-original",
+      "imageURL": "https://ark.wiki.gg/images/Behemoth_Gateway.png",
+      "sourceURL": "https://ark.wiki.gg/wiki/Behemoth_Gateway",
+      "sha256": "814b4412b90eb65833019b13de9bd1f403b0aa84c871d2a5524bd4f07e5bbc32",
+      "attribution": "ARK Official Community Wiki; original game artwork belongs to Studio Wildcard; personal reference use"
+    },
+    {
+      "name": "Behemoth Reinforced Dinosaur Gate",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Behemoth_Reinforced_Dinosaur_Gate"
+    },
+    {
+      "name": "Behemoth Stone Dinosaur Gateway",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Behemoth_Stone_Dinosaur_Gateway"
+    },
+    {
+      "name": "Behemoth Tek Gate",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Behemoth_Tek_Gate"
+    },
+    {
+      "name": "Behemoth Tek Gateway",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Behemoth_Tek_Gateway"
+    },
+    {
+      "name": "Birthday Cake",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Birthday_Cake"
+    },
+    {
+      "name": "Bladewasp Hive",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Bladewasp_Hive"
+    },
+    {
+      "name": "Bloodforge",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Bloodforge"
+    },
+    {
+      "name": "Bookshelf",
+      "asset": "Equipment-bookshelf",
+      "status": "downloaded-original",
+      "imageURL": "https://ark.wiki.gg/images/Bookshelf.png",
+      "sourceURL": "https://ark.wiki.gg/wiki/Bookshelf",
+      "sha256": "ffdf2fa12c08963e08479faa77bd330ae73a5d0b3c1b3f9ecfae9e6322592eb3"
+    },
+    {
+      "name": "Brigantine",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Brigantine"
+    },
+    {
+      "name": "Bunk Bed",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Bunk_Bed"
+    },
+    {
+      "name": "Bunny Egg",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Bunny_Egg"
+    },
+    {
+      "name": "Buried Hex-infected Junk",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Buried_Hex-infected_Junk"
+    },
+    {
+      "name": "Buried Treasure Chest",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Buried_Treasure_Chest"
+    },
+    {
+      "name": "Campfire",
+      "asset": "Equipment-campfire",
+      "status": "downloaded-original",
+      "imageURL": "https://ark.wiki.gg/images/Campfire.png",
+      "sourceURL": "https://ark.wiki.gg/wiki/Campfire",
+      "sha256": "ac02d68941698996cd62f64d569a453fa6be1eef5fd3ddc62107b4fb4d04e328"
+    },
+    {
+      "name": "Cannon",
+      "asset": "Equipment-cannon",
+      "status": "downloaded-original",
+      "imageURL": "https://ark.wiki.gg/images/Cannon.png",
+      "sourceURL": "https://ark.wiki.gg/wiki/Cannon",
+      "sha256": "6f08b5483b523288087a080fca54a4df8bd4677a4aac861e4454f2ef48932f6d"
+    },
+    {
+      "name": "Canoe",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Canoe"
+    },
+    {
+      "name": "Catapult Turret",
+      "asset": "Equipment-catapult-turret",
+      "status": "downloaded-original",
+      "imageURL": "https://ark.wiki.gg/images/Catapult_Turret.png",
+      "sourceURL": "https://ark.wiki.gg/wiki/Catapult_Turret",
+      "sha256": "b0b4115c12775c15dd8d5bf000f257db5642c8f8d005ce7285fb061447bd07ae"
+    },
+    {
+      "name": "Charge Node",
+      "asset": "Equipment-charge-node",
+      "status": "downloaded-original",
+      "imageURL": "https://ark.wiki.gg/images/Charge_Node.png",
+      "sourceURL": "https://ark.wiki.gg/wiki/Charge_Node",
+      "sha256": "a3b3315f96f53ef5f126765858eb14b54b140b74788ab07bd04aee73460ce7b8"
+    },
+    {
+      "name": "Chemistry Bench",
+      "asset": "Equipment-chemistry-bench",
+      "status": "downloaded-original",
+      "imageURL": "https://ark.wiki.gg/images/Chemistry_Bench.png",
+      "sourceURL": "https://ark.wiki.gg/wiki/Chemistry_Bench",
+      "sha256": "6692e174481325630f79a2c6242b7bb23e5427ef65efb0dee9a6e1429ce49b48"
+    },
+    {
+      "name": "Clockface",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Clockface"
+    },
+    {
+      "name": "Cloning Chamber",
+      "asset": "Equipment-cloning-chamber",
+      "status": "downloaded-original",
+      "imageURL": "https://ark.wiki.gg/images/Cloning_Chamber.png",
+      "sourceURL": "https://ark.wiki.gg/wiki/Cloning_Chamber",
+      "sha256": "c2559675dd64b8a24da84985e4672c402f7f44e0745b4cd1e666e638de620720"
+    },
+    {
+      "name": "Coffin",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Coffin"
+    },
+    {
+      "name": "Companion Bed",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Companion_Bed"
+    },
+    {
+      "name": "Compost Bin",
+      "asset": "Equipment-compost-bin",
+      "status": "downloaded-original",
+      "imageURL": "https://ark.wiki.gg/images/Compost_Bin.png",
+      "sourceURL": "https://ark.wiki.gg/wiki/Compost_Bin",
+      "sha256": "508ae561a96c561b4669dde45d2714a7b88a3b438b58dca0037fa3abaa26dc6a"
+    },
+    {
+      "name": "Cooking Pot",
+      "asset": "Equipment-cooking-pot",
+      "status": "downloaded-original",
+      "imageURL": "https://ark.wiki.gg/images/Cooking_Pot.png",
+      "sourceURL": "https://ark.wiki.gg/wiki/Cooking_Pot",
+      "sha256": "9abd543cc59d9e73748819933fa30c80e8d72201f69cb695e8fb0a02041f8bd4"
+    },
+    {
+      "name": "Cryo Hospital",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Cryo_Hospital"
+    },
+    {
+      "name": "Cryofridge",
+      "asset": "Equipment-cryofridge",
+      "status": "downloaded-original",
+      "imageURL": "https://ark.wiki.gg/images/Cryofridge.png",
+      "sourceURL": "https://ark.wiki.gg/wiki/Cryofridge",
+      "sha256": "3de4db922ec44167628af8dd8ad228ddce5ff160150ddd7b08e5a88592b32fcc"
+    },
+    {
+      "name": "Dark Altar",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Dark_Altar"
+    },
+    {
+      "name": "Delivery Crate",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Delivery_Crate"
+    },
+    {
+      "name": "Dino Leash",
+      "asset": "Equipment-dino-leash",
+      "status": "downloaded-original",
+      "imageURL": "https://ark.wiki.gg/images/Dino_Leash.png",
+      "sourceURL": "https://ark.wiki.gg/wiki/Dino_Leash",
+      "sha256": "a1be835dfe8d2b4b321449b005b97014a5e291d399efa4d7abcd725d54f9068e"
+    },
+    {
+      "name": "Dinosaur Gate",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Dinosaur_Gate"
+    },
+    {
+      "name": "Dinosaur Gateway",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Dinosaur_Gateway"
+    },
+    {
+      "name": "Display Case",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Display_Case"
+    },
+    {
+      "name": "Drawing Paper",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Drawing_Paper"
+    },
+    {
+      "name": "Egg Incubator",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Egg_Incubator"
+    },
+    {
+      "name": "Power Generator",
+      "asset": "Equipment-power-generator",
+      "status": "downloaded-original",
+      "imageURL": "https://ark.wiki.gg/images/Electrical_Generator.png",
+      "sourceURL": "https://ark.wiki.gg/wiki/Power_Generator",
+      "sha256": "1311a74910cac729653bc3ff6633d02865b8865003194608d1ebd9ffd907c8fd"
+    },
+    {
+      "name": "Element Node",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Element_Node"
+    },
+    {
+      "name": "Elevator Track",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Elevator_Track"
+    },
+    {
+      "name": "Embryo Incubator",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Embryo_Incubator"
+    },
+    {
+      "name": "Fabricator",
+      "asset": "Equipment-fabricator",
+      "status": "downloaded-original",
+      "imageURL": "https://ark.wiki.gg/images/Fabricator.png",
+      "sourceURL": "https://ark.wiki.gg/wiki/Fabricator",
+      "sha256": "d36e6930adfbbccc05729da69aa88d6372b811ed48bad5246ce215a2a13197c4"
+    },
+    {
+      "name": "Fancy Armchair",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Fancy_Armchair"
+    },
+    {
+      "name": "Fancy Sofa",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Fancy_Sofa"
+    },
+    {
+      "name": "Feeding Trough",
+      "asset": "Equipment-feeding-trough",
+      "status": "downloaded-original",
+      "imageURL": "https://ark.wiki.gg/images/Feeding_Trough.png",
+      "sourceURL": "https://ark.wiki.gg/wiki/Feeding_Trough",
+      "sha256": "a83dbbf4b0206d7405705c525cd51544efa6d22f3d77fce57babd49dd7cca550"
+    },
+    {
+      "name": "Fish Basket",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Fish_Basket"
+    },
+    {
+      "name": "Flower",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Flower"
+    },
+    {
+      "name": "Fossil Pile",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Fossil_Pile"
+    },
+    {
+      "name": "Frontier Lamp",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Frontier_Lamp"
+    },
+    {
+      "name": "Galleon",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Galleon"
+    },
+    {
+      "name": "Gas Collector",
+      "asset": "Equipment-gas-collector",
+      "status": "downloaded-original",
+      "imageURL": "https://ark.wiki.gg/images/Gas_Collector.png",
+      "sourceURL": "https://ark.wiki.gg/wiki/Gas_Collector",
+      "sha256": "9a8e87c993d5b78e711f493d2d47f424871bf05c763b50013321759d19b33247"
+    },
+    {
+      "name": "Gene Storage",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Gene_Storage"
+    },
+    {
+      "name": "Giant Adobe Hatchframe",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Giant_Adobe_Hatchframe"
+    },
+    {
+      "name": "Giant Adobe Trapdoor",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Giant_Adobe_Trapdoor"
+    },
+    {
+      "name": "Giant Metal Hatchframe",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Giant_Metal_Hatchframe"
+    },
+    {
+      "name": "Giant Metal Trapdoor",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Giant_Metal_Trapdoor"
+    },
+    {
+      "name": "Giant Reinforced Trapdoor",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Giant_Reinforced_Trapdoor"
+    },
+    {
+      "name": "Giant Stone Hatchframe",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Giant_Stone_Hatchframe"
+    },
+    {
+      "name": "Gift Box",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Gift_Box"
+    },
+    {
+      "name": "Gravestone",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Gravestone"
+    },
+    {
+      "name": "Greenhouse Ceiling",
+      "asset": "Equipment-greenhouse-ceiling",
+      "status": "downloaded-original",
+      "imageURL": "https://ark.wiki.gg/images/Greenhouse_Ceiling.png",
+      "sourceURL": "https://ark.wiki.gg/wiki/Greenhouse_Ceiling",
+      "sha256": "1505bf81f25531c2894f2b6a94223a061579700f703187f936d1a96dc7d10a2b",
+      "attribution": "ARK Official Community Wiki; original game artwork belongs to Studio Wildcard; personal reference use"
+    },
+    {
+      "name": "Greenhouse Door",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Greenhouse_Door"
+    },
+    {
+      "name": "Greenhouse Doorframe",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Greenhouse_Doorframe"
+    },
+    {
+      "name": "Greenhouse Double Door",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Greenhouse_Double_Door"
+    },
+    {
+      "name": "Greenhouse Double Doorframe",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Greenhouse_Double_Doorframe"
+    },
+    {
+      "name": "Greenhouse Triangle Ceiling",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Greenhouse_Triangle_Ceiling"
+    },
+    {
+      "name": "Greenhouse Triangle Roof",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Greenhouse_Triangle_Roof"
+    },
+    {
+      "name": "Greenhouse Wall",
+      "asset": "Equipment-greenhouse-wall",
+      "status": "downloaded-original",
+      "imageURL": "https://ark.wiki.gg/images/Greenhouse_Wall.png",
+      "sourceURL": "https://ark.wiki.gg/wiki/Greenhouse_Wall",
+      "sha256": "1cf0ba1f79fa2fbee3e446077d39bcf4daa33f617cd17c2877cc0b414875c5c7",
+      "attribution": "ARK Official Community Wiki; original game artwork belongs to Studio Wildcard; personal reference use"
+    },
+    {
+      "name": "Greenhouse Window",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Greenhouse_Window"
+    },
+    {
+      "name": "Heavy Auto Turret",
+      "asset": "Equipment-heavy-auto-turret",
+      "status": "downloaded-original",
+      "imageURL": "https://ark.wiki.gg/images/Heavy_Auto_Turret.png",
+      "sourceURL": "https://ark.wiki.gg/wiki/Heavy_Auto_Turret",
+      "sha256": "035f34bc4aa66ff14679f9f155287d517523be6e5464525de222e878c02fa5c9"
+    },
+    {
+      "name": "Hide Sleeping Bag",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Hide_Sleeping_Bag"
+    },
+    {
+      "name": "Holiday Lights",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Holiday_Lights"
+    },
+    {
+      "name": "Holiday Stocking",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Holiday_Stocking"
+    },
+    {
+      "name": "Holiday Tree",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Holiday_Tree"
+    },
+    {
+      "name": "Homing Underwater Mine",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Homing_Underwater_Mine"
+    },
+    {
+      "name": "Hydrosphere",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Hydrosphere"
+    },
+    {
+      "name": "Industrial Cooker",
+      "asset": "Equipment-industrial-cooker",
+      "status": "downloaded-original",
+      "imageURL": "https://ark.wiki.gg/images/Industrial_Cooker.png",
+      "sourceURL": "https://ark.wiki.gg/wiki/Industrial_Cooker",
+      "sha256": "10aa6878808e9926d188478f895ce63048403d456740a0f862824492ac249cd8"
+    },
+    {
+      "name": "Industrial Forge",
+      "status": "reused-exact",
+      "asset": "Item-industrial-forge",
+      "sourceURL": "https://ark.wiki.gg/wiki/Industrial_Forge"
+    },
+    {
+      "name": "Industrial Grill",
+      "asset": "Equipment-industrial-grill",
+      "status": "downloaded-original",
+      "imageURL": "https://ark.wiki.gg/images/Industrial_Grill.png",
+      "sourceURL": "https://ark.wiki.gg/wiki/Industrial_Grill",
+      "sha256": "18480bdb299b969945259fa07f9622ee885908328426c356fa89cf576e0be3b9"
+    },
+    {
+      "name": "Industrial Grinder",
+      "asset": "Equipment-industrial-grinder",
+      "status": "downloaded-original",
+      "imageURL": "https://ark.wiki.gg/images/Industrial_Grinder.png",
+      "sourceURL": "https://ark.wiki.gg/wiki/Industrial_Grinder",
+      "sha256": "fe6c011f43c2994aa6f5f60a594d209c35f7ba048bfec9f0dba6208a0aa73be4"
+    },
+    {
+      "name": "Industrial Preserving Bin",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Industrial_Preserving_Bin"
+    },
+    {
+      "name": "Infectarium",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Infectarium"
+    },
+    {
+      "name": "Lamppost",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Lamppost"
+    },
+    {
+      "name": "Large Adobe Wall",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Large_Adobe_Wall"
+    },
+    {
+      "name": "Large Crop Plot",
+      "asset": "Equipment-large-crop-plot",
+      "status": "downloaded-original",
+      "imageURL": "https://ark.wiki.gg/images/Large_Crop_Plot.png",
+      "sourceURL": "https://ark.wiki.gg/wiki/Large_Crop_Plot",
+      "sha256": "5dce952de2c62d10e1940e8820e259dcdce39800fe921ce78804366159def8db"
+    },
+    {
+      "name": "Large Elevator Platform",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Large_Elevator_Platform"
+    },
+    {
+      "name": "Large Metal Wall",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Large_Metal_Wall"
+    },
+    {
+      "name": "Large Stone Wall",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Large_Stone_Wall"
+    },
+    {
+      "name": "Large Storage Box",
+      "asset": "Equipment-large-storage-box",
+      "status": "downloaded-original",
+      "imageURL": "https://ark.wiki.gg/images/Large_Storage_Box.png",
+      "sourceURL": "https://ark.wiki.gg/wiki/Large_Storage_Box",
+      "sha256": "92cf5f51f143691638f78ac3343a52c9313d8cb018da6565fd6d5ca07860bceb"
+    },
+    {
+      "name": "Large Tek Wall",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Large_Tek_Wall"
+    },
+    {
+      "name": "Large Wood Elevator Platform",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Large_Wood_Elevator_Platform"
+    },
+    {
+      "name": "Large Wooden Wall",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Large_Wooden_Wall"
+    },
+    {
+      "name": "Library Storage",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Library_Storage"
+    },
+    {
+      "name": "Linked Storage Box",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Linked_Storage_Box"
+    },
+    {
+      "name": "Loadout Mannequin",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Loadout_Mannequin"
+    },
+    {
+      "name": "Lost Colony Lights",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Lost_Colony_Lights"
+    },
+    {
+      "name": "Makeshift Megalab",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Makeshift_Megalab"
+    },
+    {
+      "name": "Medical Stand",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Medical_Stand"
+    },
+    {
+      "name": "Medium Crop Plot",
+      "asset": "Equipment-medium-crop-plot",
+      "status": "downloaded-original",
+      "imageURL": "https://ark.wiki.gg/images/Medium_Crop_Plot.png",
+      "sourceURL": "https://ark.wiki.gg/wiki/Medium_Crop_Plot",
+      "sha256": "7759c9ae29378cdd9f5f95a575ee8e68f0b8e3bb4605e26193a056f2139eed1b"
+    },
+    {
+      "name": "Medium Elevator Platform",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Medium_Elevator_Platform"
+    },
+    {
+      "name": "Medium Tek Teleporter",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Medium_Tek_Teleporter"
+    },
+    {
+      "name": "Medium Wood Elevator Platform",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Medium_Wood_Elevator_Platform"
+    },
+    {
+      "name": "Metal Billboard",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Metal_Billboard"
+    },
+    {
+      "name": "Metal Catwalk",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Metal_Catwalk"
+    },
+    {
+      "name": "Metal Ceiling",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Metal_Ceiling"
+    },
+    {
+      "name": "Metal Cliff Platform",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Metal_Cliff_Platform"
+    },
+    {
+      "name": "Metal Dinosaur Gate",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Metal_Dinosaur_Gate"
+    },
+    {
+      "name": "Metal Dinosaur Gateway",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Metal_Dinosaur_Gateway"
+    },
+    {
+      "name": "Metal Door",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Metal_Door"
+    },
+    {
+      "name": "Metal Doorframe",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Metal_Doorframe"
+    },
+    {
+      "name": "Metal Double Door",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Metal_Double_Door"
+    },
+    {
+      "name": "Metal Double Doorframe",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Metal_Double_Doorframe"
+    },
+    {
+      "name": "Metal Fence Foundation",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Metal_Fence_Foundation"
+    },
+    {
+      "name": "Metal Fence Support",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Metal_Fence_Support"
+    },
+    {
+      "name": "Metal Foundation",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Metal_Foundation"
+    },
+    {
+      "name": "Metal Hatchframe",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Metal_Hatchframe"
+    },
+    {
+      "name": "Metal Irrigation Pipe - Intake",
+      "asset": "Equipment-metal-irrigation-pipe-intake",
+      "status": "downloaded-original",
+      "imageURL": "https://ark.wiki.gg/images/Metal_Irrigation_Pipe_-_Intake.png",
+      "sourceURL": "https://ark.wiki.gg/wiki/Metal_Irrigation_Pipe_-_Intake",
+      "sha256": "3769fa6e50802641e22049c06ffd8140eb5e709ec493bc0285c6be25178465fd"
+    },
+    {
+      "name": "Metal Irrigation Pipe - Tap",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Metal_Irrigation_Pipe_-_Tap"
+    },
+    {
+      "name": "Metal Ladder",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Metal_Ladder"
+    },
+    {
+      "name": "Metal Ocean Platform",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Metal_Ocean_Platform"
+    },
+    {
+      "name": "Metal Pillar",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Metal_Pillar"
+    },
+    {
+      "name": "Metal Railing",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Metal_Railing"
+    },
+    {
+      "name": "Metal Ramp",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Metal_Ramp"
+    },
+    {
+      "name": "Metal Sign",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Metal_Sign"
+    },
+    {
+      "name": "Metal Spike Wall",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Metal_Spike_Wall"
+    },
+    {
+      "name": "Metal Staircase",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Metal_Staircase"
+    },
+    {
+      "name": "Metal Stairs",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Metal_Stairs"
+    },
+    {
+      "name": "Metal Trapdoor",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Metal_Trapdoor"
+    },
+    {
+      "name": "Metal Tree Platform",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Metal_Tree_Platform"
+    },
+    {
+      "name": "Metal Triangle Ceiling",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Metal_Triangle_Ceiling"
+    },
+    {
+      "name": "Metal Triangle Foundation",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Metal_Triangle_Foundation"
+    },
+    {
+      "name": "Metal Triangle Roof",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Metal_Triangle_Roof"
+    },
+    {
+      "name": "Metal Wall",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Metal_Wall"
+    },
+    {
+      "name": "Metal Wall Sign",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Metal_Wall_Sign"
+    },
+    {
+      "name": "Metal Water Reservoir",
+      "asset": "Equipment-metal-water-reservoir",
+      "status": "downloaded-original",
+      "imageURL": "https://ark.wiki.gg/images/Metal_Water_Reservoir.png",
+      "sourceURL": "https://ark.wiki.gg/wiki/Metal_Water_Reservoir",
+      "sha256": "dead7211776d2c7f04bc8051274cdb48056c734a903829583e63e00c0fe6161f"
+    },
+    {
+      "name": "Metal Window",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Metal_Window"
+    },
+    {
+      "name": "Metal Windowframe",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Metal_Windowframe"
+    },
+    {
+      "name": "Minigun Turret",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Minigun_Turret"
+    },
+    {
+      "name": "Mirror",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Mirror"
+    },
+    {
+      "name": "Mortar and Pestle",
+      "asset": "Equipment-mortar-and-pestle",
+      "status": "downloaded-original",
+      "imageURL": "https://ark.wiki.gg/images/Mortar_And_Pestle.png",
+      "sourceURL": "https://ark.wiki.gg/wiki/Mortar_and_Pestle",
+      "sha256": "babcc88002e440fb487493fab8b30ddfa6d81f44ef51cd3d13e4fed2273f3da3"
+    },
+    {
+      "name": "Motorboat",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Motorboat"
+    },
+    {
+      "name": "Oil Pump",
+      "asset": "Equipment-oil-pump",
+      "status": "downloaded-original",
+      "imageURL": "https://ark.wiki.gg/images/Oil_Pump.png",
+      "sourceURL": "https://ark.wiki.gg/wiki/Oil_Pump",
+      "sha256": "7cd3f04bd251d26703816b6247b96839ca1a51b6541e7984237ca72fb9b23ded"
+    },
+    {
+      "name": "Omnidirectional Lamppost",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Omnidirectional_Lamppost"
+    },
+    {
+      "name": "Painting Canvas",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Painting_Canvas"
+    },
+    {
+      "name": "Pet Display",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Pet_Display"
+    },
+    {
+      "name": "Plant Species X",
+      "status": "reused-exact",
+      "asset": "Item-plant-species-x",
+      "sourceURL": "https://ark.wiki.gg/wiki/Plant_Species_X"
+    },
+    {
+      "name": "Plant Species Z",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Plant_Species_Z"
+    },
+    {
+      "name": "Portable Rope Ladder",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Portable_Rope_Ladder"
+    },
+    {
+      "name": "Preserving Bin",
+      "asset": "Equipment-preserving-bin",
+      "status": "downloaded-original",
+      "imageURL": "https://ark.wiki.gg/images/Preserving_Bin.png",
+      "sourceURL": "https://ark.wiki.gg/wiki/Preserving_Bin",
+      "sha256": "61f445eec6f601b775ed0ddb02c826063d0a6c25502ab943093dbab33a41b52b"
+    },
+    {
+      "name": "Pressure Plate",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Pressure_Plate"
+    },
+    {
+      "name": "Pumpkin",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Pumpkin"
+    },
+    {
+      "name": "Refining Forge",
+      "status": "reused-exact",
+      "asset": "Item-refining-forge",
+      "sourceURL": "https://ark.wiki.gg/wiki/Refining_Forge"
+    },
+    {
+      "name": "Refrigerator",
+      "asset": "Equipment-refrigerator",
+      "status": "downloaded-original",
+      "imageURL": "https://ark.wiki.gg/images/Refrigerator.png",
+      "sourceURL": "https://ark.wiki.gg/wiki/Refrigerator",
+      "sha256": "c714a0b18add96539e7ffbffcac11edebb6bab9bf22496e95b744db1c5ca84d3"
+    },
+    {
+      "name": "Reinforced Dinosaur Gate",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Reinforced_Dinosaur_Gate"
+    },
+    {
+      "name": "Reinforced Double Door",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Reinforced_Double_Door"
+    },
+    {
+      "name": "Reinforced Trapdoor",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Reinforced_Trapdoor"
+    },
+    {
+      "name": "Reinforced Window",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Reinforced_Window"
+    },
+    {
+      "name": "Reinforced Wooden Door",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Reinforced_Wooden_Door"
+    },
+    {
+      "name": "Remote Keypad",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Remote_Keypad"
+    },
+    {
+      "name": "Rift Generator",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Rift_Generator"
+    },
+    {
+      "name": "Rocket Turret",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Rocket_Turret"
+    },
+    {
+      "name": "Rope Ladder",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Rope_Ladder"
+    },
+    {
+      "name": "Scarecrow",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Scarecrow"
+    },
+    {
+      "name": "Shag Rug",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Shag_Rug"
+    },
+    {
+      "name": "Shipyard",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Shipyard"
+    },
+    {
+      "name": "Shootable Bottle",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Shootable_Bottle"
+    },
+    {
+      "name": "Simple Bed",
+      "status": "reused-exact",
+      "asset": "Item-simple-bed",
+      "sourceURL": "https://ark.wiki.gg/wiki/Simple_Bed"
+    },
+    {
+      "name": "Sloop",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Sloop"
+    },
+    {
+      "name": "Sloped Adobe Roof",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Sloped_Adobe_Roof"
+    },
+    {
+      "name": "Sloped Adobe Wall Left",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Sloped_Adobe_Wall_Left"
+    },
+    {
+      "name": "Sloped Adobe Wall Right",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Sloped_Adobe_Wall_Right"
+    },
+    {
+      "name": "Sloped Greenhouse Roof",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Sloped_Greenhouse_Roof"
+    },
+    {
+      "name": "Sloped Greenhouse Wall Left",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Sloped_Greenhouse_Wall_Left"
+    },
+    {
+      "name": "Sloped Greenhouse Wall Right",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Sloped_Greenhouse_Wall_Right"
+    },
+    {
+      "name": "Sloped Metal Roof",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Sloped_Metal_Roof"
+    },
+    {
+      "name": "Sloped Metal Wall Left",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Sloped_Metal_Wall_Left"
+    },
+    {
+      "name": "Sloped Metal Wall Right",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Sloped_Metal_Wall_Right"
+    },
+    {
+      "name": "Sloped Stone Roof",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Sloped_Stone_Roof"
+    },
+    {
+      "name": "Sloped Stone Wall Left",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Sloped_Stone_Wall_Left"
+    },
+    {
+      "name": "Sloped Stone Wall Right",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Sloped_Stone_Wall_Right"
+    },
+    {
+      "name": "Sloped Tek Roof",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Sloped_Tek_Roof"
+    },
+    {
+      "name": "Sloped Tek Wall Left",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Sloped_Tek_Wall_Left"
+    },
+    {
+      "name": "Sloped Tek Wall Right",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Sloped_Tek_Wall_Right"
+    },
+    {
+      "name": "Sloped Thatch Roof",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Sloped_Thatch_Roof"
+    },
+    {
+      "name": "Sloped Thatch Wall Left",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Sloped_Thatch_Wall_Left"
+    },
+    {
+      "name": "Sloped Thatch Wall Right",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Sloped_Thatch_Wall_Right"
+    },
+    {
+      "name": "Sloped Wood Wall Left",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Sloped_Wood_Wall_Left"
+    },
+    {
+      "name": "Sloped Wood Wall Right",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Sloped_Wood_Wall_Right"
+    },
+    {
+      "name": "Sloped Wooden Roof",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Sloped_Wooden_Roof"
+    },
+    {
+      "name": "Small Crop Plot",
+      "asset": "Equipment-small-crop-plot",
+      "status": "downloaded-original",
+      "imageURL": "https://ark.wiki.gg/images/Small_Crop_Plot.png",
+      "sourceURL": "https://ark.wiki.gg/wiki/Small_Crop_Plot",
+      "sha256": "6d1ede0fa16337cf5fe6c11041de40a73374a30159f3e6b7184df8a6d87648c9"
+    },
+    {
+      "name": "Small Elevator Platform",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Small_Elevator_Platform"
+    },
+    {
+      "name": "Small Tek Teleporter",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Small_Tek_Teleporter"
+    },
+    {
+      "name": "Small Wood Elevator Platform",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Small_Wood_Elevator_Platform"
+    },
+    {
+      "name": "Smithy",
+      "status": "reused-exact",
+      "asset": "Item-smithy",
+      "sourceURL": "https://ark.wiki.gg/wiki/Smithy"
+    },
+    {
+      "name": "Snowman",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Snowman"
+    },
+    {
+      "name": "Spotlight",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Spotlight"
+    },
+    {
+      "name": "Standing Torch",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Standing_Torch"
+    },
+    {
+      "name": "Steam Forge",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Steam_Forge"
+    },
+    {
+      "name": "Steam Lights & Lamps",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Steam_Lights_%26_Lamps"
+    },
+    {
+      "name": "Stolen Headstone",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Stolen_Headstone"
+    },
+    {
+      "name": "Stone Ceiling",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Stone_Ceiling"
+    },
+    {
+      "name": "Stone Cliff Platform",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Stone_Cliff_Platform"
+    },
+    {
+      "name": "Stone Dinosaur Gateway",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Stone_Dinosaur_Gateway"
+    },
+    {
+      "name": "Stone Doorframe",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Stone_Doorframe"
+    },
+    {
+      "name": "Stone Double Doorframe",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Stone_Double_Doorframe"
+    },
+    {
+      "name": "Stone Fence Foundation",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Stone_Fence_Foundation"
+    },
+    {
+      "name": "Stone Fence Support",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Stone_Fence_Support"
+    },
+    {
+      "name": "Fireplace",
+      "asset": "Equipment-fireplace",
+      "status": "downloaded-original",
+      "imageURL": "https://ark.wiki.gg/images/Stone_Fireplace.png",
+      "sourceURL": "https://ark.wiki.gg/wiki/Stone_Fireplace",
+      "sha256": "95d7d5ac64e7705c386c800a270459a51b1b9eea66ce151f6b91a84d2225da1f"
+    },
+    {
+      "name": "Stone Foundation",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Stone_Foundation"
+    },
+    {
+      "name": "Stone Hatchframe",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Stone_Hatchframe"
+    },
+    {
+      "name": "Stone Irrigation Pipe - Intake",
+      "asset": "Equipment-stone-irrigation-pipe-intake",
+      "status": "downloaded-original",
+      "imageURL": "https://ark.wiki.gg/images/Stone_Irrigation_Pipe_-_Intake.png",
+      "sourceURL": "https://ark.wiki.gg/wiki/Stone_Irrigation_Pipe_-_Intake",
+      "sha256": "da5a585a50bfc23c6031006b9b4efdd7708cb48fa96910f63cc627bdcfd45833"
+    },
+    {
+      "name": "Stone Irrigation Pipe - Tap",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Stone_Irrigation_Pipe_-_Tap"
+    },
+    {
+      "name": "Stone Pillar",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Stone_Pillar"
+    },
+    {
+      "name": "Stone Railing",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Stone_Railing"
+    },
+    {
+      "name": "Stone Staircase",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Stone_Staircase"
+    },
+    {
+      "name": "Stone Stairs",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Stone_Stairs"
+    },
+    {
+      "name": "Stone Tree Platform",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Stone_Tree_Platform"
+    },
+    {
+      "name": "Stone Triangle Ceiling",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Stone_Triangle_Ceiling"
+    },
+    {
+      "name": "Stone Triangle Foundation",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Stone_Triangle_Foundation"
+    },
+    {
+      "name": "Stone Triangle Roof",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Stone_Triangle_Roof"
+    },
+    {
+      "name": "Stone Wall",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Stone_Wall"
+    },
+    {
+      "name": "Stone Windowframe",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Stone_Windowframe"
+    },
+    {
+      "name": "Storage Box",
+      "status": "reused-exact",
+      "asset": "Item-storage-box",
+      "sourceURL": "https://ark.wiki.gg/wiki/Storage_Box"
+    },
+    {
+      "name": "Tek ATV",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_ATV"
+    },
+    {
+      "name": "Tek Behemoth Cellar Door",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Behemoth_Cellar_Door"
+    },
+    {
+      "name": "Tek Bridge",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Bridge"
+    },
+    {
+      "name": "Tek Catwalk",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Catwalk"
+    },
+    {
+      "name": "Tek Ceiling",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Ceiling"
+    },
+    {
+      "name": "Tek Crop Plot",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Crop_Plot"
+    },
+    {
+      "name": "Tek Dedicated Storage",
+      "asset": "Equipment-tek-dedicated-storage",
+      "status": "downloaded-original",
+      "imageURL": "https://ark.wiki.gg/images/Tek_Dedicated_Storage.png",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Dedicated_Storage",
+      "sha256": "4d0aced27e3faab2fb587bde953e61bd980b097efbbb4b1aae135eb441d9f71a"
+    },
+    {
+      "name": "Tek Dinosaur Gate",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Dinosaur_Gate"
+    },
+    {
+      "name": "Tek Dinosaur Gateway",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Dinosaur_Gateway"
+    },
+    {
+      "name": "Tek Door",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Door"
+    },
+    {
+      "name": "Tek Doorframe",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Doorframe"
+    },
+    {
+      "name": "Tek Double Door",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Double_Door"
+    },
+    {
+      "name": "Tek Double Doorframe",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Double_Doorframe"
+    },
+    {
+      "name": "Tek Fence Foundation",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Fence_Foundation"
+    },
+    {
+      "name": "Tek Fence Support",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Fence_Support"
+    },
+    {
+      "name": "Tek Floating Foundation",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Floating_Foundation"
+    },
+    {
+      "name": "Tek Forcefield",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Forcefield"
+    },
+    {
+      "name": "Tek Foundation",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Foundation"
+    },
+    {
+      "name": "Tek Generator",
+      "asset": "Equipment-tek-generator",
+      "status": "downloaded-original",
+      "imageURL": "https://ark.wiki.gg/images/Tek_Generator.png",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Generator",
+      "sha256": "d3086a8a99e021e537b0ff042c1ac5a5087c72cf8c616c71a838b49556c29eb3"
+    },
+    {
+      "name": "Tek Hatchframe",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Hatchframe"
+    },
+    {
+      "name": "Tek Hoversail",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Hoversail"
+    },
+    {
+      "name": "Tek Jump Pad",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Jump_Pad"
+    },
+    {
+      "name": "Tek Ladder",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Ladder"
+    },
+    {
+      "name": "Tek Large Cellar Door",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Large_Cellar_Door"
+    },
+    {
+      "name": "Tek Light",
+      "status": "reused-exact",
+      "asset": "Item-tek-light",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Light"
+    },
+    {
+      "name": "Tek Ocean Platform",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Ocean_Platform"
+    },
+    {
+      "name": "Tek Pillar",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Pillar"
+    },
+    {
+      "name": "Tek Railing",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Railing"
+    },
+    {
+      "name": "Tek Ramp",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Ramp"
+    },
+    {
+      "name": "Tek Remote Camera",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Remote_Camera"
+    },
+    {
+      "name": "Tek Replicator",
+      "status": "reused-exact",
+      "asset": "Item-tek-replicator",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Replicator"
+    },
+    {
+      "name": "Tek Sensor",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Sensor"
+    },
+    {
+      "name": "Tek Sleeping Pod",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Sleeping_Pod"
+    },
+    {
+      "name": "Tek Staircase",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Staircase"
+    },
+    {
+      "name": "Tek Stairs",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Stairs"
+    },
+    {
+      "name": "Tek Surveillance Console",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Surveillance_Console"
+    },
+    {
+      "name": "Tek Teleporter",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Teleporter"
+    },
+    {
+      "name": "Tek Thalassian Hoversail",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Thalassian_Hoversail"
+    },
+    {
+      "name": "Tek Transmitter",
+      "status": "reused-exact",
+      "asset": "Item-tek-transmitter",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Transmitter"
+    },
+    {
+      "name": "Tek Trapdoor",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Trapdoor"
+    },
+    {
+      "name": "Tek Triangle Ceiling",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Triangle_Ceiling"
+    },
+    {
+      "name": "Tek Triangle Floating Foundation",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Triangle_Floating_Foundation"
+    },
+    {
+      "name": "Tek Triangle Foundation",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Triangle_Foundation"
+    },
+    {
+      "name": "Tek Triangle Roof",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Triangle_Roof"
+    },
+    {
+      "name": "Tek Trough",
+      "asset": "Equipment-tek-trough",
+      "status": "downloaded-original",
+      "imageURL": "https://ark.wiki.gg/images/Tek_Trough.png",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Trough",
+      "sha256": "088264cb0016d5e69212dc7c42a5f9a5d9d9d61238e1bc9e7cc0658d62541467"
+    },
+    {
+      "name": "Tek Turret",
+      "asset": "Equipment-tek-turret",
+      "status": "downloaded-original",
+      "imageURL": "https://ark.wiki.gg/images/Tek_Turret.png",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Turret",
+      "sha256": "8f4d1456ec3214397329ba6ac382f95114960685bf3d6cbea18e5b4cbe728c1f"
+    },
+    {
+      "name": "Tek Wall",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Wall"
+    },
+    {
+      "name": "Tek Window",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Window"
+    },
+    {
+      "name": "Tek Windowframe",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Windowframe"
+    },
+    {
+      "name": "Tent",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tent"
+    },
+    {
+      "name": "Tesla Coil",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tesla_Coil"
+    },
+    {
+      "name": "Thatch Ceiling",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Thatch_Ceiling"
+    },
+    {
+      "name": "Thatch Door",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Thatch_Door"
+    },
+    {
+      "name": "Thatch Doorframe",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Thatch_Doorframe"
+    },
+    {
+      "name": "Thatch Foundation",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Thatch_Foundation"
+    },
+    {
+      "name": "Thatch Wall",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Thatch_Wall"
+    },
+    {
+      "name": "Tinkering Desk",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tinkering_Desk"
+    },
+    {
+      "name": "Toilet",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Toilet"
+    },
+    {
+      "name": "Train Engine",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Train_Engine"
+    },
+    {
+      "name": "Training Dummy",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Training_Dummy"
+    },
+    {
+      "name": "Tree Sap Tap",
+      "asset": "Equipment-tree-sap-tap",
+      "status": "downloaded-original",
+      "imageURL": "https://ark.wiki.gg/images/Tree_Sap_Tap.png",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tree_Sap_Tap",
+      "sha256": "0d40209ea885a9d9fb267346fec618511c6633422282aa5d609a0ad89a93d7c6"
+    },
+    {
+      "name": "Tribe Tower",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tribe_Tower"
+    },
+    {
+      "name": "Trireme",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Trireme"
+    },
+    {
+      "name": "Unassembled TEK Hover Skiff",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Unassembled_TEK_Hover_Skiff"
+    },
+    {
+      "name": "Underwater Crop Plot",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Underwater_Crop_Plot"
+    },
+    {
+      "name": "Vacuum Compartment",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Vacuum_Compartment"
+    },
+    {
+      "name": "Vacuum Compartment Moonpool",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Vacuum_Compartment_Moonpool"
+    },
+    {
+      "name": "Vault",
+      "asset": "Equipment-vault",
+      "status": "downloaded-original",
+      "imageURL": "https://ark.wiki.gg/images/Vault.png",
+      "sourceURL": "https://ark.wiki.gg/wiki/Vault",
+      "sha256": "11f68a8acea38bf1b9776505cddb19a0b44824f30677811aaf2d2222e8a2316f"
+    },
+    {
+      "name": "Vessel",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Vessel"
+    },
+    {
+      "name": "Wall Torch",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Wall_Torch"
+    },
+    {
+      "name": "War Map",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/War_Map"
+    },
+    {
+      "name": "Warbench",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Warbench"
+    },
+    {
+      "name": "Wardrums",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Wardrums"
+    },
+    {
+      "name": "Wasteland Lights",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Wasteland_Lights"
+    },
+    {
+      "name": "Water Reservoir",
+      "asset": "Equipment-water-reservoir",
+      "status": "downloaded-original",
+      "imageURL": "https://ark.wiki.gg/images/Water_Reservoir.png",
+      "sourceURL": "https://ark.wiki.gg/wiki/Water_Reservoir",
+      "sha256": "557bc8ab96a38a599e17bfad3d0f753a225d9c4872f70295a39c4b5fe7a5d2f8"
+    },
+    {
+      "name": "Water Reservoir (Frontier Showdown)",
+      "asset": "Equipment-water-reservoir-frontier-showdown",
+      "status": "downloaded-original",
+      "imageURL": "https://ark.wiki.gg/images/Water_Reservoir_%28Frontier_Showdown%29.png",
+      "sourceURL": "https://ark.wiki.gg/wiki/Water_Reservoir_(Frontier_Showdown)",
+      "sha256": "7ceb00f1bc8cacae4bfaf0bbc6bd35579a1fc595b5dc81272906a1dd69dd45ad"
+    },
+    {
+      "name": "Water Well",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Water_Well"
+    },
+    {
+      "name": "Wind Turbine",
+      "asset": "Equipment-wind-turbine",
+      "status": "downloaded-original",
+      "imageURL": "https://ark.wiki.gg/images/Wind_Turbine.png",
+      "sourceURL": "https://ark.wiki.gg/wiki/Wind_Turbine",
+      "sha256": "ea81f56054c96f0c45fa91c9f7c0a41cc54139b5e15352df01544e5d8df602bd"
+    },
+    {
+      "name": "Windmill",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Windmill"
+    },
+    {
+      "name": "Wood Elevator Top Switch",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Wood_Elevator_Top_Switch"
+    },
+    {
+      "name": "Wood Elevator Track",
+      "asset": "Equipment-wood-elevator-track",
+      "status": "downloaded-original",
+      "imageURL": "https://ark.wiki.gg/images/Wood_Elevator_Track.png",
+      "sourceURL": "https://ark.wiki.gg/wiki/Wood_Elevator_Track",
+      "sha256": "cb0fe8595fb9ab04d1025c1abb23adc18b560876f1fef1ec2d4ddd5a38252831"
+    },
+    {
+      "name": "Wood Ocean Platform",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Wood_Ocean_Platform"
+    },
+    {
+      "name": "Wooden Bench",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Wooden_Bench"
+    },
+    {
+      "name": "Wooden Billboard",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Wooden_Billboard"
+    },
+    {
+      "name": "Wooden Cage",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Wooden_Cage"
+    },
+    {
+      "name": "Wooden Catwalk",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Wooden_Catwalk"
+    },
+    {
+      "name": "Wooden Ceiling",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Wooden_Ceiling"
+    },
+    {
+      "name": "Wooden Chair",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Wooden_Chair"
+    },
+    {
+      "name": "Wooden Door",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Wooden_Door"
+    },
+    {
+      "name": "Wooden Doorframe",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Wooden_Doorframe"
+    },
+    {
+      "name": "Wooden Double Door",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Wooden_Double_Door"
+    },
+    {
+      "name": "Wooden Double Doorframe",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Wooden_Double_Doorframe"
+    },
+    {
+      "name": "Wooden Fence Foundation",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Wooden_Fence_Foundation"
+    },
+    {
+      "name": "Wooden Fence Support",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Wooden_Fence_Support"
+    },
+    {
+      "name": "Wooden Foundation",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Wooden_Foundation"
+    },
+    {
+      "name": "Wooden Hatchframe",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Wooden_Hatchframe"
+    },
+    {
+      "name": "Wooden Ladder",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Wooden_Ladder"
+    },
+    {
+      "name": "Wooden Pillar",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Wooden_Pillar"
+    },
+    {
+      "name": "Wooden Raft",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Wooden_Raft"
+    },
+    {
+      "name": "Wooden Railing",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Wooden_Railing"
+    },
+    {
+      "name": "Wooden Ramp",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Wooden_Ramp"
+    },
+    {
+      "name": "Wooden Sign",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Wooden_Sign"
+    },
+    {
+      "name": "Wooden Spike Wall",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Wooden_Spike_Wall"
+    },
+    {
+      "name": "Wooden Staircase",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Wooden_Staircase"
+    },
+    {
+      "name": "Wooden Stairs",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Wooden_Stairs"
+    },
+    {
+      "name": "Wooden Table",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Wooden_Table"
+    },
+    {
+      "name": "Wooden Trapdoor",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Wooden_Trapdoor"
+    },
+    {
+      "name": "Wooden Tree Platform",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Wooden_Tree_Platform"
+    },
+    {
+      "name": "Wooden Triangle Ceiling",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Wooden_Triangle_Ceiling"
+    },
+    {
+      "name": "Wooden Triangle Foundation",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Wooden_Triangle_Foundation"
+    },
+    {
+      "name": "Wooden Triangle Roof",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Wooden_Triangle_Roof"
+    },
+    {
+      "name": "Wooden Wall",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Wooden_Wall"
+    },
+    {
+      "name": "Wooden Wall Sign",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Wooden_Wall_Sign"
+    },
+    {
+      "name": "Wooden Window",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Wooden_Window"
+    },
+    {
+      "name": "Wooden Windowframe",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Wooden_Windowframe"
+    },
+    {
+      "name": "Wreath",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Wreath"
+    },
+    {
+      "name": "Zeppelin",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Zeppelin"
+    },
+    {
+      "name": "Acro Adrenal Gland",
+      "status": "reused-exact",
+      "asset": "Item-acro-adrenal-gland",
+      "sourceURL": "https://ark.wiki.gg/wiki/Acro_Adrenal_Gland"
+    },
+    {
+      "name": "Aggeravic Mushroom",
+      "status": "reused-exact",
+      "asset": "Item-aggeravic-mushroom",
+      "sourceURL": "https://ark.wiki.gg/wiki/Aggeravic_Mushroom"
+    },
+    {
+      "name": "Allosaurus Brain",
+      "status": "reused-exact",
+      "asset": "Item-allosaurus-brain",
+      "sourceURL": "https://ark.wiki.gg/wiki/Allosaurus_Brain"
+    },
+    {
+      "name": "Alpha Broodmother Trophy",
+      "status": "reused-exact",
+      "asset": "Item-alpha-broodmother-trophy",
+      "sourceURL": "https://ark.wiki.gg/wiki/Alpha_Broodmother_Trophy"
+    },
+    {
+      "name": "Alpha Carnotaurus Arm",
+      "status": "reused-exact",
+      "asset": "Item-alpha-carnotaurus-arm",
+      "sourceURL": "https://ark.wiki.gg/wiki/Alpha_Carnotaurus_Arm"
+    },
+    {
+      "name": "Alpha Dragon Trophy",
+      "status": "reused-exact",
+      "asset": "Item-alpha-dragon-trophy",
+      "sourceURL": "https://ark.wiki.gg/wiki/Alpha_Dragon_Trophy"
+    },
+    {
+      "name": "Alpha Leedsichthys Blubber",
+      "status": "reused-exact",
+      "asset": "Item-alpha-leedsichthys-blubber",
+      "sourceURL": "https://ark.wiki.gg/wiki/Alpha_Leedsichthys_Blubber"
+    },
+    {
+      "name": "Alpha Megalodon Fin",
+      "status": "reused-exact",
+      "asset": "Item-alpha-megalodon-fin",
+      "sourceURL": "https://ark.wiki.gg/wiki/Alpha_Megalodon_Fin"
+    },
+    {
+      "name": "Alpha Megapithecus Trophy",
+      "status": "reused-exact",
+      "asset": "Item-alpha-megapithecus-trophy",
+      "sourceURL": "https://ark.wiki.gg/wiki/Alpha_Megapithecus_Trophy"
+    },
+    {
+      "name": "Alpha Mosasaur Tooth",
+      "status": "reused-exact",
+      "asset": "Item-alpha-mosasaur-tooth",
+      "sourceURL": "https://ark.wiki.gg/wiki/Alpha_Mosasaur_Tooth"
+    },
+    {
+      "name": "Alpha Raptor Claw",
+      "status": "reused-exact",
+      "asset": "Item-alpha-raptor-claw",
+      "sourceURL": "https://ark.wiki.gg/wiki/Alpha_Raptor_Claw"
+    },
+    {
+      "name": "Alpha Tusoteuthis Eye",
+      "status": "reused-exact",
+      "asset": "Item-alpha-tusoteuthis-eye",
+      "sourceURL": "https://ark.wiki.gg/wiki/Alpha_Tusoteuthis_Eye"
+    },
+    {
+      "name": "Alpha Tyrannosaur Tooth",
+      "status": "reused-exact",
+      "asset": "Item-alpha-tyrannosaur-tooth",
+      "sourceURL": "https://ark.wiki.gg/wiki/Alpha_Tyrannosaur_Tooth"
+    },
+    {
+      "name": "Amarberry",
+      "status": "reused-exact",
+      "asset": "Item-amarberry",
+      "sourceURL": "https://ark.wiki.gg/wiki/Amarberry"
+    },
+    {
+      "name": "Argentavis Talon",
+      "status": "reused-exact",
+      "asset": "Item-argentavis-talon",
+      "sourceURL": "https://ark.wiki.gg/wiki/Argentavis_Talon"
+    },
+    {
+      "name": "Auric Mushroom",
+      "status": "reused-exact",
+      "asset": "Item-auric-mushroom",
+      "sourceURL": "https://ark.wiki.gg/wiki/Auric_Mushroom"
+    },
+    {
+      "name": "Azulberry",
+      "status": "reused-exact",
+      "asset": "Item-azulberry",
+      "sourceURL": "https://ark.wiki.gg/wiki/Azulberry"
+    },
+    {
+      "name": "Basic Kibble",
+      "status": "reused-exact",
+      "asset": "Item-basic-kibble",
+      "sourceURL": "https://ark.wiki.gg/wiki/Basic_Kibble"
+    },
+    {
+      "name": "Basilosaurus Blubber",
+      "status": "reused-exact",
+      "asset": "Item-basilosaurus-blubber",
+      "sourceURL": "https://ark.wiki.gg/wiki/Basilosaurus_Blubber"
+    },
+    {
+      "name": "Beer Jar",
+      "status": "reused-exact",
+      "asset": "Item-beer-jar",
+      "sourceURL": "https://ark.wiki.gg/wiki/Beer_Jar"
+    },
+    {
+      "name": "Beta Broodmother Trophy",
+      "status": "reused-exact",
+      "asset": "Item-beta-broodmother-trophy",
+      "sourceURL": "https://ark.wiki.gg/wiki/Beta_Broodmother_Trophy"
+    },
+    {
+      "name": "Beta Dragon Trophy",
+      "status": "reused-exact",
+      "asset": "Item-beta-dragon-trophy",
+      "sourceURL": "https://ark.wiki.gg/wiki/Beta_Dragon_Trophy"
+    },
+    {
+      "name": "Beta Megapithecus Trophy",
+      "status": "reused-exact",
+      "asset": "Item-beta-megapithecus-trophy",
+      "sourceURL": "https://ark.wiki.gg/wiki/Beta_Megapithecus_Trophy"
+    },
+    {
+      "name": "Broth of Enlightenment",
+      "status": "reused-exact",
+      "asset": "Item-broth-of-enlightenment",
+      "sourceURL": "https://ark.wiki.gg/wiki/Broth_of_Enlightenment"
+    },
+    {
+      "name": "Bug Repellant",
+      "status": "reused-exact",
+      "asset": "Item-bug-repellant",
+      "sourceURL": "https://ark.wiki.gg/wiki/Bug_Repellant"
+    },
+    {
+      "name": "Canteen",
+      "status": "reused-exact",
+      "asset": "Item-canteen",
+      "sourceURL": "https://ark.wiki.gg/wiki/Canteen"
+    },
+    {
+      "name": "Cianberry",
+      "status": "reused-exact",
+      "asset": "Item-cianberry",
+      "sourceURL": "https://ark.wiki.gg/wiki/Cianberry"
+    },
+    {
+      "name": "Cooked Lamb Chop",
+      "status": "reused-exact",
+      "asset": "Item-cooked-lamb-chop",
+      "sourceURL": "https://ark.wiki.gg/wiki/Cooked_Lamb_Chop"
+    },
+    {
+      "name": "Cooked Meat",
+      "status": "reused-exact",
+      "asset": "Item-cooked-meat",
+      "sourceURL": "https://ark.wiki.gg/wiki/Cooked_Meat"
+    },
+    {
+      "name": "Cooked Prime Meat",
+      "status": "reused-exact",
+      "asset": "Item-cooked-prime-meat",
+      "sourceURL": "https://ark.wiki.gg/wiki/Cooked_Prime_Meat"
+    },
+    {
+      "name": "Deathworm Horn",
+      "status": "reused-exact",
+      "asset": "Item-deathworm-horn",
+      "sourceURL": "https://ark.wiki.gg/wiki/Deathworm_Horn"
+    },
+    {
+      "name": "Exceptional Dinosaur Egg",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Exceptional_Dinosaur_Egg"
+    },
+    {
+      "name": "Exceptional Kibble",
+      "status": "reused-exact",
+      "asset": "Item-exceptional-kibble",
+      "sourceURL": "https://ark.wiki.gg/wiki/Exceptional_Kibble"
+    },
+    {
+      "name": "Extraordinary Dinosaur Egg",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Extraordinary_Dinosaur_Egg"
+    },
+    {
+      "name": "Extraordinary Kibble",
+      "status": "reused-exact",
+      "asset": "Item-extraordinary-kibble",
+      "sourceURL": "https://ark.wiki.gg/wiki/Extraordinary_Kibble"
+    },
+    {
+      "name": "Fire Talon",
+      "status": "reused-exact",
+      "asset": "Item-fire-talon",
+      "sourceURL": "https://ark.wiki.gg/wiki/Fire_Talon"
+    },
+    {
+      "name": "Fria Curry",
+      "status": "reused-exact",
+      "asset": "Item-fria-curry",
+      "sourceURL": "https://ark.wiki.gg/wiki/Fria_Curry"
+    },
+    {
+      "name": "Gamma Broodmother Trophy",
+      "status": "reused-exact",
+      "asset": "Item-gamma-broodmother-trophy",
+      "sourceURL": "https://ark.wiki.gg/wiki/Gamma_Broodmother_Trophy"
+    },
+    {
+      "name": "Gamma Dragon Trophy",
+      "status": "reused-exact",
+      "asset": "Item-gamma-dragon-trophy",
+      "sourceURL": "https://ark.wiki.gg/wiki/Gamma_Dragon_Trophy"
+    },
+    {
+      "name": "Gamma Megapithecus Trophy",
+      "status": "reused-exact",
+      "asset": "Item-gamma-megapithecus-trophy",
+      "sourceURL": "https://ark.wiki.gg/wiki/Gamma_Megapithecus_Trophy"
+    },
+    {
+      "name": "Giganotosaurus Heart",
+      "status": "reused-exact",
+      "asset": "Item-giganotosaurus-heart",
+      "sourceURL": "https://ark.wiki.gg/wiki/Giganotosaurus_Heart"
+    },
+    {
+      "name": "Kibble (Argentavis Egg)",
+      "status": "reused-exact",
+      "asset": "Item-kibble-argentavis-egg",
+      "sourceURL": "https://ark.wiki.gg/wiki/Kibble_%28Argentavis_Egg%29"
+    },
+    {
+      "name": "Large Animal Feces",
+      "status": "reused-exact",
+      "asset": "Item-large-animal-feces",
+      "sourceURL": "https://ark.wiki.gg/wiki/Large_Animal_Feces"
+    },
+    {
+      "name": "Lazarus Chowder",
+      "status": "reused-exact",
+      "asset": "Item-lazarus-chowder",
+      "sourceURL": "https://ark.wiki.gg/wiki/Lazarus_Chowder"
+    },
+    {
+      "name": "Lesser Antidote",
+      "status": "reused-exact",
+      "asset": "Item-lesser-antidote",
+      "sourceURL": "https://ark.wiki.gg/wiki/Lesser_Antidote"
+    },
+    {
+      "name": "Lightning Talon",
+      "status": "reused-exact",
+      "asset": "Item-lightning-talon",
+      "sourceURL": "https://ark.wiki.gg/wiki/Lightning_Talon"
+    },
+    {
+      "name": "Magenberry",
+      "status": "reused-exact",
+      "asset": "Item-magenberry",
+      "sourceURL": "https://ark.wiki.gg/wiki/Magenberry"
+    },
+    {
+      "name": "Medical Brew",
+      "status": "reused-exact",
+      "asset": "Item-medical-brew",
+      "sourceURL": "https://ark.wiki.gg/wiki/Medical_Brew"
+    },
+    {
+      "name": "Medium Animal Feces",
+      "status": "reused-exact",
+      "asset": "Item-medium-animal-feces",
+      "sourceURL": "https://ark.wiki.gg/wiki/Medium_Animal_Feces"
+    },
+    {
+      "name": "Megalania Toxin",
+      "status": "reused-exact",
+      "asset": "Item-megalania-toxin",
+      "sourceURL": "https://ark.wiki.gg/wiki/Megalania_Toxin"
+    },
+    {
+      "name": "Megalodon Tooth",
+      "status": "reused-exact",
+      "asset": "Item-megalodon-tooth",
+      "sourceURL": "https://ark.wiki.gg/wiki/Megalodon_Tooth"
+    },
+    {
+      "name": "Mejoberry",
+      "status": "reused-exact",
+      "asset": "Item-mejoberry",
+      "sourceURL": "https://ark.wiki.gg/wiki/Mejoberry"
+    },
+    {
+      "name": "Narcotic",
+      "status": "reused-exact",
+      "asset": "Item-narcotic",
+      "sourceURL": "https://ark.wiki.gg/wiki/Narcotic"
+    },
+    {
+      "name": "Plant Species X Seed",
+      "status": "reused-exact",
+      "asset": "Item-plant-species-x-seed",
+      "sourceURL": "https://ark.wiki.gg/wiki/Plant_Species_X_Seed"
+    },
+    {
+      "name": "Plant Species Y",
+      "status": "reused-exact",
+      "asset": "Item-plant-species-y",
+      "sourceURL": "https://ark.wiki.gg/wiki/Plant_Species_Y"
+    },
+    {
+      "name": "Plant Species Y Seed",
+      "status": "reused-exact",
+      "asset": "Item-plant-species-y-seed",
+      "sourceURL": "https://ark.wiki.gg/wiki/Plant_Species_Y_Seed"
+    },
+    {
+      "name": "Plant Species Z Seed",
+      "status": "reused-exact",
+      "asset": "Item-plant-species-z-seed",
+      "sourceURL": "https://ark.wiki.gg/wiki/Plant_Species_Z_Seed"
+    },
+    {
+      "name": "Poison Talon",
+      "status": "reused-exact",
+      "asset": "Item-poison-talon",
+      "sourceURL": "https://ark.wiki.gg/wiki/Poison_Talon"
+    },
+    {
+      "name": "Rare Flower",
+      "status": "reused-exact",
+      "asset": "Item-rare-flower",
+      "sourceURL": "https://ark.wiki.gg/wiki/Rare_Flower"
+    },
+    {
+      "name": "Rare Mushroom",
+      "status": "reused-exact",
+      "asset": "Item-rare-mushroom",
+      "sourceURL": "https://ark.wiki.gg/wiki/Rare_Mushroom"
+    },
+    {
+      "name": "Raw Fish Meat",
+      "status": "reused-exact",
+      "asset": "Item-raw-fish-meat",
+      "sourceURL": "https://ark.wiki.gg/wiki/Raw_Fish_Meat"
+    },
+    {
+      "name": "Raw Meat",
+      "status": "reused-exact",
+      "asset": "Item-raw-meat",
+      "sourceURL": "https://ark.wiki.gg/wiki/Raw_Meat"
+    },
+    {
+      "name": "Raw Mutton",
+      "status": "reused-exact",
+      "asset": "Item-raw-mutton",
+      "sourceURL": "https://ark.wiki.gg/wiki/Raw_Mutton"
+    },
+    {
+      "name": "Raw Prime Fish Meat",
+      "status": "reused-exact",
+      "asset": "Item-raw-prime-fish-meat",
+      "sourceURL": "https://ark.wiki.gg/wiki/Raw_Prime_Fish_Meat"
+    },
+    {
+      "name": "Raw Prime Meat",
+      "status": "reused-exact",
+      "asset": "Item-raw-prime-meat",
+      "sourceURL": "https://ark.wiki.gg/wiki/Raw_Prime_Meat"
+    },
+    {
+      "name": "Regular Dinosaur Egg",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Regular_Dinosaur_Egg"
+    },
+    {
+      "name": "Regular Kibble",
+      "status": "reused-exact",
+      "asset": "Item-regular-kibble",
+      "sourceURL": "https://ark.wiki.gg/wiki/Regular_Kibble"
+    },
+    {
+      "name": "Rex Bone Helmet",
+      "status": "reused-exact",
+      "asset": "Item-rex-bone-helmet",
+      "sourceURL": "https://ark.wiki.gg/wiki/Rex_Bone_Helmet"
+    },
+    {
+      "name": "Rockarrot",
+      "status": "reused-exact",
+      "asset": "Item-rockarrot",
+      "sourceURL": "https://ark.wiki.gg/wiki/Rockarrot"
+    },
+    {
+      "name": "Sarcosuchus Skin",
+      "status": "reused-exact",
+      "asset": "Item-sarcosuchus-skin",
+      "sourceURL": "https://ark.wiki.gg/wiki/Sarcosuchus_Skin"
+    },
+    {
+      "name": "Sauropod Vertebra",
+      "status": "reused-exact",
+      "asset": "Item-sauropod-vertebra",
+      "sourceURL": "https://ark.wiki.gg/wiki/Sauropod_Vertebra"
+    },
+    {
+      "name": "Simple Kibble",
+      "status": "reused-exact",
+      "asset": "Item-simple-kibble",
+      "sourceURL": "https://ark.wiki.gg/wiki/Simple_Kibble"
+    },
+    {
+      "name": "Small Animal Feces",
+      "status": "reused-exact",
+      "asset": "Item-small-animal-feces",
+      "sourceURL": "https://ark.wiki.gg/wiki/Small_Animal_Feces"
+    },
+    {
+      "name": "Spinosaurus Sail",
+      "status": "reused-exact",
+      "asset": "Item-spinosaurus-sail",
+      "sourceURL": "https://ark.wiki.gg/wiki/Spinosaurus_Sail"
+    },
+    {
+      "name": "Spoiled Meat",
+      "status": "reused-exact",
+      "asset": "Item-spoiled-meat",
+      "sourceURL": "https://ark.wiki.gg/wiki/Spoiled_Meat"
+    },
+    {
+      "name": "Stimberry",
+      "status": "reused-exact",
+      "asset": "Item-stimberry",
+      "sourceURL": "https://ark.wiki.gg/wiki/Stimberry"
+    },
+    {
+      "name": "Stimulant",
+      "status": "reused-exact",
+      "asset": "Item-stimulant",
+      "sourceURL": "https://ark.wiki.gg/wiki/Stimulant"
+    },
+    {
+      "name": "Superior Dinosaur Egg",
+      "status": "no-local-artwork",
+      "sourceURL": "https://ark.wiki.gg/wiki/Superior_Dinosaur_Egg"
+    },
+    {
+      "name": "Superior Kibble",
+      "status": "reused-exact",
+      "asset": "Item-superior-kibble",
+      "sourceURL": "https://ark.wiki.gg/wiki/Superior_Kibble"
+    },
+    {
+      "name": "Sweet Vegetable Cake",
+      "status": "reused-exact",
+      "asset": "Item-sweet-vegetable-cake",
+      "sourceURL": "https://ark.wiki.gg/wiki/Sweet_Vegetable_Cake"
+    },
+    {
+      "name": "Therizino Claws",
+      "status": "reused-exact",
+      "asset": "Item-therizino-claws",
+      "sourceURL": "https://ark.wiki.gg/wiki/Therizino_Claws"
+    },
+    {
+      "name": "Thylacoleo Hook-Claw",
+      "status": "reused-exact",
+      "asset": "Item-thylacoleo-hook-claw",
+      "sourceURL": "https://ark.wiki.gg/wiki/Thylacoleo_Hook-Claw"
+    },
+    {
+      "name": "Titanoboa Venom",
+      "status": "reused-exact",
+      "asset": "Item-titanoboa-venom",
+      "sourceURL": "https://ark.wiki.gg/wiki/Titanoboa_Venom"
+    },
+    {
+      "name": "Tusoteuthis Tentacle",
+      "status": "reused-exact",
+      "asset": "Item-tusoteuthis-tentacle",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tusoteuthis_Tentacle"
+    },
+    {
+      "name": "Tyrannosaurus Arm",
+      "status": "reused-exact",
+      "asset": "Item-tyrannosaurus-arm",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tyrannosaurus_Arm"
+    },
+    {
+      "name": "Umbra Apex Drop",
+      "status": "reused-exact",
+      "asset": "Item-umbra-apex-drop",
+      "sourceURL": "https://ark.wiki.gg/wiki/Umbra_Apex_Drop"
+    },
+    {
+      "name": "Umbra Scale",
+      "status": "reused-exact",
+      "asset": "Item-umbra-scale",
+      "sourceURL": "https://ark.wiki.gg/wiki/Umbra_Scale"
+    },
+    {
+      "name": "Verdberry",
+      "status": "reused-exact",
+      "asset": "Item-verdberry",
+      "sourceURL": "https://ark.wiki.gg/wiki/Verdberry"
+    },
+    {
+      "name": "Wood Coal",
+      "status": "reused-exact",
+      "asset": "Item-wood-coal",
+      "sourceURL": "https://ark.wiki.gg/wiki/Wood_Coal"
+    },
+    {
+      "name": "Woolly Rhino Horn",
+      "status": "reused-exact",
+      "asset": "Item-woolly-rhino-horn",
+      "sourceURL": "https://ark.wiki.gg/wiki/Woolly_Rhino_Horn"
+    },
+    {
+      "name": "Wyvern Milk",
+      "status": "reused-exact",
+      "asset": "Item-wyvern-milk",
+      "sourceURL": "https://ark.wiki.gg/wiki/Wyvern_Milk"
+    },
+    {
+      "name": "Yutyrannus Lungs",
+      "status": "reused-exact",
+      "asset": "Item-yutyrannus-lungs",
+      "sourceURL": "https://ark.wiki.gg/wiki/Yutyrannus_Lungs"
+    }
+  ],
+  "limitations": [
+    "Wiki catalogs combine ASE and ASA; individual availability is not asserted without edition evidence.",
+    "No fabricated recipes or level values.",
+    "No mod/Primitive Plus/ATLAS namespace imports.",
+    "Source game icon edition may be ASE shared art; artwork is never claimed as an ASA screenshot.",
+    "Supplemental supplies enumerate existing source-linked real item facts; skins, saddles and cosmetic variants are not claimed complete."
+  ]
+}

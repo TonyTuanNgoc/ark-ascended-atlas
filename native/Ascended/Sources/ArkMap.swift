@@ -7,7 +7,7 @@ enum ArkMap: String, CaseIterable, Identifiable {
     var id: String { rawValue }
     var expansionID: String { self == .genesisOcean ? "genesis-part-1" : rawValue }
     var expansion: ExpansionMap? { ExpansionCatalog.shared.maps.first { $0.id == expansionID } }
-    static let storyMaps: [ArkMap] = [.island, .scorchedEarth, .aberration, .extinction, .lostColony, .genesis]
+    static let storyMaps: [ArkMap] = [.island, .scorchedEarth, .aberration, .extinction, .genesis, .lostColony]
     static let extraMaps: [ArkMap] = [.center, .ragnarok, .valguero, .astraeos]
     var name: String { self == .genesisOcean ? "Genesis · Ocean" : expansion?.name ?? rawValue }
     var imageAsset: String { switch self { case .ragnarok: "RagnarokMap"; case .island: "TheIslandMap"; case .center: "TheCenterMap"; default: "Map-" + rawValue } }

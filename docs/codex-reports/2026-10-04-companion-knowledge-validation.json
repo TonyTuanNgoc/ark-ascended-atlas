@@ -1,0 +1,24 @@
+{
+  "storySections": 26,
+  "equipmentItems": 732,
+  "categories": {
+    "machines": 79,
+    "resources": 78,
+    "structures": 299,
+    "supplies": 92,
+    "tools": 184
+  },
+  "uniqueEquipmentArtwork": 208,
+  "baseZones": 9,
+  "basePhases": 5,
+  "verifiedPlayableMapBadges": 10,
+  "availability": {
+    "asa-core-engram-reference": 407,
+    "source-catalog-check-asa": 186,
+    "asa-dlc-verified": 1,
+    "asa-core-resource-reference": 33,
+    "asa-map-resource-verified": 18,
+    "source-item-reference": 87
+  },
+  "result": "passed"
+}
