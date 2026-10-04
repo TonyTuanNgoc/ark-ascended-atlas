@@ -1,0 +1,3029 @@
+{
+  "scope": "Approximate primitive planning library; not game meshes; one unit = one assumed foundation module, not measured metres.",
+  "assets": [
+    {
+      "id": "air-conditioner",
+      "name": "Air Conditioner",
+      "category": "machines",
+      "family": "utility",
+      "parts": 2,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "auto-turret",
+      "name": "Auto Turret",
+      "category": "machines",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "ballista-turret",
+      "name": "Ballista Turret",
+      "category": "machines",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "beer-barrel",
+      "name": "Beer Barrel",
+      "category": "machines",
+      "family": "vessel",
+      "parts": 2,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "bookshelf",
+      "name": "Bookshelf",
+      "category": "machines",
+      "family": "cabinet",
+      "parts": 3,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "campfire",
+      "name": "Campfire",
+      "category": "machines",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "cannon",
+      "name": "Cannon",
+      "category": "machines",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "catapult-turret",
+      "name": "Catapult Turret",
+      "category": "machines",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "charge-node",
+      "name": "Charge Node",
+      "category": "machines",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "chemistry-bench",
+      "name": "Chemistry Bench",
+      "category": "machines",
+      "family": "workbench",
+      "parts": 6,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "cloning-chamber",
+      "name": "Cloning Chamber",
+      "category": "machines",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "compost-bin",
+      "name": "Compost Bin",
+      "category": "machines",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "cooking-pot",
+      "name": "Cooking Pot",
+      "category": "machines",
+      "family": "vessel",
+      "parts": 2,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "cryo-hospital",
+      "name": "Cryo Hospital",
+      "category": "machines",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "cryofridge",
+      "name": "Cryofridge",
+      "category": "machines",
+      "family": "cabinet",
+      "parts": 3,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "delivery-crate",
+      "name": "Delivery Crate",
+      "category": "machines",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "dino-leash",
+      "name": "Dino Leash",
+      "category": "machines",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "egg-incubator",
+      "name": "Egg Incubator",
+      "category": "machines",
+      "family": "utility",
+      "parts": 2,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "elevator-track",
+      "name": "Elevator Track",
+      "category": "machines",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "embryo-incubator",
+      "name": "Embryo Incubator",
+      "category": "machines",
+      "family": "utility",
+      "parts": 2,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "fabricator",
+      "name": "Fabricator",
+      "category": "machines",
+      "family": "workbench",
+      "parts": 6,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "feeding-trough",
+      "name": "Feeding Trough",
+      "category": "machines",
+      "family": "tray",
+      "parts": 5,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "fireplace",
+      "name": "Fireplace",
+      "category": "machines",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "gas-collector",
+      "name": "Gas Collector",
+      "category": "machines",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "gene-storage",
+      "name": "Gene Storage",
+      "category": "machines",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "heavy-auto-turret",
+      "name": "Heavy Auto Turret",
+      "category": "machines",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "industrial-cooker",
+      "name": "Industrial Cooker",
+      "category": "machines",
+      "family": "vessel",
+      "parts": 2,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "industrial-forge",
+      "name": "Industrial Forge",
+      "category": "machines",
+      "family": "furnace",
+      "parts": 3,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "industrial-grill",
+      "name": "Industrial Grill",
+      "category": "machines",
+      "family": "workbench",
+      "parts": 6,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "industrial-grinder",
+      "name": "Industrial Grinder",
+      "category": "machines",
+      "family": "vessel",
+      "parts": 2,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "industrial-preserving-bin",
+      "name": "Industrial Preserving Bin",
+      "category": "machines",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "lamppost",
+      "name": "Lamppost",
+      "category": "machines",
+      "family": "mast",
+      "parts": 3,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "large-crop-plot",
+      "name": "Large Crop Plot",
+      "category": "machines",
+      "family": "tray",
+      "parts": 5,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "large-elevator-platform",
+      "name": "Large Elevator Platform",
+      "category": "machines",
+      "family": "slab",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "large-storage-box",
+      "name": "Large Storage Box",
+      "category": "machines",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "large-wood-elevator-platform",
+      "name": "Large Wood Elevator Platform",
+      "category": "machines",
+      "family": "slab",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "medium-crop-plot",
+      "name": "Medium Crop Plot",
+      "category": "machines",
+      "family": "tray",
+      "parts": 5,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "medium-elevator-platform",
+      "name": "Medium Elevator Platform",
+      "category": "machines",
+      "family": "slab",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "medium-wood-elevator-platform",
+      "name": "Medium Wood Elevator Platform",
+      "category": "machines",
+      "family": "slab",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "metal-irrigation-pipe-intake",
+      "name": "Metal Irrigation Pipe - Intake",
+      "category": "machines",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "metal-irrigation-pipe-tap",
+      "name": "Metal Irrigation Pipe - Tap",
+      "category": "machines",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "metal-water-reservoir",
+      "name": "Metal Water Reservoir",
+      "category": "machines",
+      "family": "vessel",
+      "parts": 2,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "mortar-and-pestle",
+      "name": "Mortar and Pestle",
+      "category": "machines",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "oil-pump",
+      "name": "Oil Pump",
+      "category": "machines",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "omnidirectional-lamppost",
+      "name": "Omnidirectional Lamppost",
+      "category": "machines",
+      "family": "mast",
+      "parts": 3,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "power-generator",
+      "name": "Power Generator",
+      "category": "machines",
+      "family": "utility",
+      "parts": 2,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "preserving-bin",
+      "name": "Preserving Bin",
+      "category": "machines",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "refining-forge",
+      "name": "Refining Forge",
+      "category": "machines",
+      "family": "furnace",
+      "parts": 3,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "refrigerator",
+      "name": "Refrigerator",
+      "category": "machines",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "remote-keypad",
+      "name": "Remote Keypad",
+      "category": "machines",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "small-crop-plot",
+      "name": "Small Crop Plot",
+      "category": "machines",
+      "family": "tray",
+      "parts": 5,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "small-elevator-platform",
+      "name": "Small Elevator Platform",
+      "category": "machines",
+      "family": "slab",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "small-wood-elevator-platform",
+      "name": "Small Wood Elevator Platform",
+      "category": "machines",
+      "family": "slab",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "smithy",
+      "name": "Smithy",
+      "category": "machines",
+      "family": "workbench",
+      "parts": 5,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "standing-torch",
+      "name": "Standing Torch",
+      "category": "machines",
+      "family": "mast",
+      "parts": 3,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "stone-irrigation-pipe-intake",
+      "name": "Stone Irrigation Pipe - Intake",
+      "category": "machines",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "stone-irrigation-pipe-tap",
+      "name": "Stone Irrigation Pipe - Tap",
+      "category": "machines",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "storage-box",
+      "name": "Storage Box",
+      "category": "machines",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "tek-crop-plot",
+      "name": "Tek Crop Plot",
+      "category": "machines",
+      "family": "tray",
+      "parts": 5,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "tek-dedicated-storage",
+      "name": "Tek Dedicated Storage",
+      "category": "machines",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "tek-forcefield",
+      "name": "Tek Forcefield",
+      "category": "machines",
+      "family": "pad",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "tek-generator",
+      "name": "Tek Generator",
+      "category": "machines",
+      "family": "utility",
+      "parts": 2,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "tek-light",
+      "name": "Tek Light",
+      "category": "machines",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "tek-replicator",
+      "name": "Tek Replicator",
+      "category": "machines",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "tek-sleeping-pod",
+      "name": "Tek Sleeping Pod",
+      "category": "machines",
+      "family": "bed",
+      "parts": 7,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "tek-teleporter",
+      "name": "Tek Teleporter",
+      "category": "machines",
+      "family": "pad",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "tek-transmitter",
+      "name": "Tek Transmitter",
+      "category": "machines",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "tek-trough",
+      "name": "Tek Trough",
+      "category": "machines",
+      "family": "tray",
+      "parts": 5,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "tek-turret",
+      "name": "Tek Turret",
+      "category": "machines",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "toilet",
+      "name": "Toilet",
+      "category": "machines",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "tree-sap-tap",
+      "name": "Tree Sap Tap",
+      "category": "machines",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "vault",
+      "name": "Vault",
+      "category": "machines",
+      "family": "cabinet",
+      "parts": 3,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "wall-torch",
+      "name": "Wall Torch",
+      "category": "machines",
+      "family": "wall",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "water-reservoir",
+      "name": "Water Reservoir",
+      "category": "machines",
+      "family": "vessel",
+      "parts": 2,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "water-reservoir-frontier-showdown",
+      "name": "Water Reservoir (Frontier Showdown)",
+      "category": "machines",
+      "family": "vessel",
+      "parts": 2,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "water-well",
+      "name": "Water Well",
+      "category": "machines",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "wind-turbine",
+      "name": "Wind Turbine",
+      "category": "machines",
+      "family": "mast",
+      "parts": 3,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "wood-elevator-top-switch",
+      "name": "Wood Elevator Top Switch",
+      "category": "machines",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "wood-elevator-track",
+      "name": "Wood Elevator Track",
+      "category": "machines",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "adobe-ceiling",
+      "name": "Adobe Ceiling",
+      "category": "structures",
+      "family": "slab",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "adobe-dinosaur-gate",
+      "name": "Adobe Dinosaur Gate",
+      "category": "structures",
+      "family": "door",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "adobe-dinosaur-gateway",
+      "name": "Adobe Dinosaur Gateway",
+      "category": "structures",
+      "family": "opening",
+      "parts": 3,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "adobe-door",
+      "name": "Adobe Door",
+      "category": "structures",
+      "family": "door",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "adobe-doorframe",
+      "name": "Adobe Doorframe",
+      "category": "structures",
+      "family": "opening",
+      "parts": 3,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "adobe-double-door",
+      "name": "Adobe Double Door",
+      "category": "structures",
+      "family": "door",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "adobe-double-doorframe",
+      "name": "Adobe Double Doorframe",
+      "category": "structures",
+      "family": "opening",
+      "parts": 3,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "adobe-fence-foundation",
+      "name": "Adobe Fence Foundation",
+      "category": "structures",
+      "family": "slab",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "adobe-fence-support",
+      "name": "Adobe Fence Support",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "adobe-foundation",
+      "name": "Adobe Foundation",
+      "category": "structures",
+      "family": "slab",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "adobe-hatchframe",
+      "name": "Adobe Hatchframe",
+      "category": "structures",
+      "family": "opening",
+      "parts": 4,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "adobe-ladder",
+      "name": "Adobe Ladder",
+      "category": "structures",
+      "family": "ladder",
+      "parts": 7,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "adobe-pillar",
+      "name": "Adobe Pillar",
+      "category": "structures",
+      "family": "pillar",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "adobe-railing",
+      "name": "Adobe Railing",
+      "category": "structures",
+      "family": "railing",
+      "parts": 4,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "adobe-ramp",
+      "name": "Adobe Ramp",
+      "category": "structures",
+      "family": "slope",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "adobe-staircase",
+      "name": "Adobe Staircase",
+      "category": "structures",
+      "family": "stairs",
+      "parts": 8,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "adobe-stairs",
+      "name": "Adobe Stairs",
+      "category": "structures",
+      "family": "stairs",
+      "parts": 8,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "adobe-trapdoor",
+      "name": "Adobe Trapdoor",
+      "category": "structures",
+      "family": "slab",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "adobe-triangle-ceiling",
+      "name": "Adobe Triangle Ceiling",
+      "category": "structures",
+      "family": "triangle",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "adobe-triangle-foundation",
+      "name": "Adobe Triangle Foundation",
+      "category": "structures",
+      "family": "triangle",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "adobe-triangle-roof",
+      "name": "Adobe Triangle Roof",
+      "category": "structures",
+      "family": "triangle",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "adobe-wall",
+      "name": "Adobe Wall",
+      "category": "structures",
+      "family": "wall",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "adobe-window",
+      "name": "Adobe Window",
+      "category": "structures",
+      "family": "window",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "adobe-windowframe",
+      "name": "Adobe Windowframe",
+      "category": "structures",
+      "family": "opening",
+      "parts": 4,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "airplane",
+      "name": "Airplane",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "ammo-box",
+      "name": "Ammo Box",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "aquarium",
+      "name": "Aquarium",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "artifact-pedestal",
+      "name": "Artifact Pedestal",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "barrel-storage",
+      "name": "Barrel Storage",
+      "category": "structures",
+      "family": "vessel",
+      "parts": 2,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "battlerig",
+      "name": "BattleRig",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "battlerig-garage",
+      "name": "BattleRig Garage",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "bee-hive",
+      "name": "Bee Hive",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "behemoth-adobe-dinosaur-gate",
+      "name": "Behemoth Adobe Dinosaur Gate",
+      "category": "structures",
+      "family": "door",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "behemoth-adobe-dinosaur-gateway",
+      "name": "Behemoth Adobe Dinosaur Gateway",
+      "category": "structures",
+      "family": "opening",
+      "parts": 3,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "behemoth-gate",
+      "name": "Behemoth Gate",
+      "category": "structures",
+      "family": "door",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "behemoth-gateway",
+      "name": "Behemoth Gateway",
+      "category": "structures",
+      "family": "opening",
+      "parts": 3,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "behemoth-reinforced-dinosaur-gate",
+      "name": "Behemoth Reinforced Dinosaur Gate",
+      "category": "structures",
+      "family": "door",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "behemoth-stone-dinosaur-gateway",
+      "name": "Behemoth Stone Dinosaur Gateway",
+      "category": "structures",
+      "family": "opening",
+      "parts": 3,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "behemoth-tek-gate",
+      "name": "Behemoth Tek Gate",
+      "category": "structures",
+      "family": "door",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "behemoth-tek-gateway",
+      "name": "Behemoth Tek Gateway",
+      "category": "structures",
+      "family": "opening",
+      "parts": 3,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "birthday-cake",
+      "name": "Birthday Cake",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "bladewasp-hive",
+      "name": "Bladewasp Hive",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "bloodforge",
+      "name": "Bloodforge",
+      "category": "structures",
+      "family": "furnace",
+      "parts": 3,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "brigantine",
+      "name": "Brigantine",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "bunk-bed",
+      "name": "Bunk Bed",
+      "category": "structures",
+      "family": "bed",
+      "parts": 7,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "bunny-egg",
+      "name": "Bunny Egg",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "buried-hex-infected-junk",
+      "name": "Buried Hex-infected Junk",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "buried-treasure-chest",
+      "name": "Buried Treasure Chest",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "canoe",
+      "name": "Canoe",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "clockface",
+      "name": "Clockface",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "coffin",
+      "name": "Coffin",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "companion-bed",
+      "name": "Companion Bed",
+      "category": "structures",
+      "family": "bed",
+      "parts": 7,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "dark-altar",
+      "name": "Dark Altar",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "dinosaur-gate",
+      "name": "Dinosaur Gate",
+      "category": "structures",
+      "family": "door",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "dinosaur-gateway",
+      "name": "Dinosaur Gateway",
+      "category": "structures",
+      "family": "opening",
+      "parts": 3,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "display-case",
+      "name": "Display Case",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "drawing-paper",
+      "name": "Drawing Paper",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "element-node",
+      "name": "Element Node",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "fancy-armchair",
+      "name": "Fancy Armchair",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "fancy-sofa",
+      "name": "Fancy Sofa",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "fish-basket",
+      "name": "Fish Basket",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "flower",
+      "name": "Flower",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "fossil-pile",
+      "name": "Fossil Pile",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "frontier-lamp",
+      "name": "Frontier Lamp",
+      "category": "structures",
+      "family": "mast",
+      "parts": 3,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "galleon",
+      "name": "Galleon",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "giant-adobe-hatchframe",
+      "name": "Giant Adobe Hatchframe",
+      "category": "structures",
+      "family": "opening",
+      "parts": 4,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "giant-adobe-trapdoor",
+      "name": "Giant Adobe Trapdoor",
+      "category": "structures",
+      "family": "slab",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "giant-metal-hatchframe",
+      "name": "Giant Metal Hatchframe",
+      "category": "structures",
+      "family": "opening",
+      "parts": 4,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "giant-metal-trapdoor",
+      "name": "Giant Metal Trapdoor",
+      "category": "structures",
+      "family": "slab",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "giant-reinforced-trapdoor",
+      "name": "Giant Reinforced Trapdoor",
+      "category": "structures",
+      "family": "slab",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "giant-stone-hatchframe",
+      "name": "Giant Stone Hatchframe",
+      "category": "structures",
+      "family": "opening",
+      "parts": 4,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "gift-box",
+      "name": "Gift Box",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "gravestone",
+      "name": "Gravestone",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "greenhouse-ceiling",
+      "name": "Greenhouse Ceiling",
+      "category": "structures",
+      "family": "slab",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "greenhouse-door",
+      "name": "Greenhouse Door",
+      "category": "structures",
+      "family": "door",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "greenhouse-doorframe",
+      "name": "Greenhouse Doorframe",
+      "category": "structures",
+      "family": "opening",
+      "parts": 3,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "greenhouse-double-door",
+      "name": "Greenhouse Double Door",
+      "category": "structures",
+      "family": "door",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "greenhouse-double-doorframe",
+      "name": "Greenhouse Double Doorframe",
+      "category": "structures",
+      "family": "opening",
+      "parts": 3,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "greenhouse-triangle-ceiling",
+      "name": "Greenhouse Triangle Ceiling",
+      "category": "structures",
+      "family": "triangle",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "greenhouse-triangle-roof",
+      "name": "Greenhouse Triangle Roof",
+      "category": "structures",
+      "family": "triangle",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "greenhouse-wall",
+      "name": "Greenhouse Wall",
+      "category": "structures",
+      "family": "wall",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "greenhouse-window",
+      "name": "Greenhouse Window",
+      "category": "structures",
+      "family": "window",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "hide-sleeping-bag",
+      "name": "Hide Sleeping Bag",
+      "category": "structures",
+      "family": "bed",
+      "parts": 7,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "holiday-lights",
+      "name": "Holiday Lights",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "holiday-stocking",
+      "name": "Holiday Stocking",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "holiday-tree",
+      "name": "Holiday Tree",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "homing-underwater-mine",
+      "name": "Homing Underwater Mine",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "hydrosphere",
+      "name": "Hydrosphere",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "infectarium",
+      "name": "Infectarium",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "large-adobe-wall",
+      "name": "Large Adobe Wall",
+      "category": "structures",
+      "family": "wall",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "large-metal-wall",
+      "name": "Large Metal Wall",
+      "category": "structures",
+      "family": "wall",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "large-stone-wall",
+      "name": "Large Stone Wall",
+      "category": "structures",
+      "family": "wall",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "large-tek-wall",
+      "name": "Large Tek Wall",
+      "category": "structures",
+      "family": "wall",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "large-wooden-wall",
+      "name": "Large Wooden Wall",
+      "category": "structures",
+      "family": "wall",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "library-storage",
+      "name": "Library Storage",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "linked-storage-box",
+      "name": "Linked Storage Box",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "loadout-mannequin",
+      "name": "Loadout Mannequin",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "lost-colony-lights",
+      "name": "Lost Colony Lights",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "makeshift-megalab",
+      "name": "Makeshift Megalab",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "medical-stand",
+      "name": "Medical Stand",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "medium-tek-teleporter",
+      "name": "Medium Tek Teleporter",
+      "category": "structures",
+      "family": "pad",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "metal-billboard",
+      "name": "Metal Billboard",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "metal-catwalk",
+      "name": "Metal Catwalk",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "metal-ceiling",
+      "name": "Metal Ceiling",
+      "category": "structures",
+      "family": "slab",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "metal-cliff-platform",
+      "name": "Metal Cliff Platform",
+      "category": "structures",
+      "family": "slab",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "metal-dinosaur-gate",
+      "name": "Metal Dinosaur Gate",
+      "category": "structures",
+      "family": "door",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "metal-dinosaur-gateway",
+      "name": "Metal Dinosaur Gateway",
+      "category": "structures",
+      "family": "opening",
+      "parts": 3,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "metal-door",
+      "name": "Metal Door",
+      "category": "structures",
+      "family": "door",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "metal-doorframe",
+      "name": "Metal Doorframe",
+      "category": "structures",
+      "family": "opening",
+      "parts": 3,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "metal-double-door",
+      "name": "Metal Double Door",
+      "category": "structures",
+      "family": "door",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "metal-double-doorframe",
+      "name": "Metal Double Doorframe",
+      "category": "structures",
+      "family": "opening",
+      "parts": 3,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "metal-fence-foundation",
+      "name": "Metal Fence Foundation",
+      "category": "structures",
+      "family": "slab",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "metal-fence-support",
+      "name": "Metal Fence Support",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "metal-foundation",
+      "name": "Metal Foundation",
+      "category": "structures",
+      "family": "slab",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "metal-hatchframe",
+      "name": "Metal Hatchframe",
+      "category": "structures",
+      "family": "opening",
+      "parts": 4,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "metal-ladder",
+      "name": "Metal Ladder",
+      "category": "structures",
+      "family": "ladder",
+      "parts": 7,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "metal-ocean-platform",
+      "name": "Metal Ocean Platform",
+      "category": "structures",
+      "family": "slab",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "metal-pillar",
+      "name": "Metal Pillar",
+      "category": "structures",
+      "family": "pillar",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "metal-railing",
+      "name": "Metal Railing",
+      "category": "structures",
+      "family": "railing",
+      "parts": 4,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "metal-ramp",
+      "name": "Metal Ramp",
+      "category": "structures",
+      "family": "slope",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "metal-sign",
+      "name": "Metal Sign",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "metal-spike-wall",
+      "name": "Metal Spike Wall",
+      "category": "structures",
+      "family": "wall",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "metal-staircase",
+      "name": "Metal Staircase",
+      "category": "structures",
+      "family": "stairs",
+      "parts": 8,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "metal-stairs",
+      "name": "Metal Stairs",
+      "category": "structures",
+      "family": "stairs",
+      "parts": 8,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "metal-trapdoor",
+      "name": "Metal Trapdoor",
+      "category": "structures",
+      "family": "slab",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "metal-tree-platform",
+      "name": "Metal Tree Platform",
+      "category": "structures",
+      "family": "slab",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "metal-triangle-ceiling",
+      "name": "Metal Triangle Ceiling",
+      "category": "structures",
+      "family": "triangle",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "metal-triangle-foundation",
+      "name": "Metal Triangle Foundation",
+      "category": "structures",
+      "family": "triangle",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "metal-triangle-roof",
+      "name": "Metal Triangle Roof",
+      "category": "structures",
+      "family": "triangle",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "metal-wall",
+      "name": "Metal Wall",
+      "category": "structures",
+      "family": "wall",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "metal-wall-sign",
+      "name": "Metal Wall Sign",
+      "category": "structures",
+      "family": "wall",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "metal-window",
+      "name": "Metal Window",
+      "category": "structures",
+      "family": "window",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "metal-windowframe",
+      "name": "Metal Windowframe",
+      "category": "structures",
+      "family": "opening",
+      "parts": 4,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "minigun-turret",
+      "name": "Minigun Turret",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "mirror",
+      "name": "Mirror",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "motorboat",
+      "name": "Motorboat",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "painting-canvas",
+      "name": "Painting Canvas",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "pet-display",
+      "name": "Pet Display",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "plant-species-x",
+      "name": "Plant Species X",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "plant-species-z",
+      "name": "Plant Species Z",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "portable-rope-ladder",
+      "name": "Portable Rope Ladder",
+      "category": "structures",
+      "family": "ladder",
+      "parts": 7,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "pressure-plate",
+      "name": "Pressure Plate",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "pumpkin",
+      "name": "Pumpkin",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "reinforced-dinosaur-gate",
+      "name": "Reinforced Dinosaur Gate",
+      "category": "structures",
+      "family": "door",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "reinforced-double-door",
+      "name": "Reinforced Double Door",
+      "category": "structures",
+      "family": "door",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "reinforced-trapdoor",
+      "name": "Reinforced Trapdoor",
+      "category": "structures",
+      "family": "slab",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "reinforced-window",
+      "name": "Reinforced Window",
+      "category": "structures",
+      "family": "window",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "reinforced-wooden-door",
+      "name": "Reinforced Wooden Door",
+      "category": "structures",
+      "family": "door",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "rift-generator",
+      "name": "Rift Generator",
+      "category": "structures",
+      "family": "utility",
+      "parts": 2,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "rocket-turret",
+      "name": "Rocket Turret",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "rope-ladder",
+      "name": "Rope Ladder",
+      "category": "structures",
+      "family": "ladder",
+      "parts": 7,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "scarecrow",
+      "name": "Scarecrow",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "shag-rug",
+      "name": "Shag Rug",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "shipyard",
+      "name": "Shipyard",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "shootable-bottle",
+      "name": "Shootable Bottle",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "simple-bed",
+      "name": "Simple Bed",
+      "category": "structures",
+      "family": "bed",
+      "parts": 7,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "sloop",
+      "name": "Sloop",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "sloped-adobe-roof",
+      "name": "Sloped Adobe Roof",
+      "category": "structures",
+      "family": "slope",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "sloped-adobe-wall-left",
+      "name": "Sloped Adobe Wall Left",
+      "category": "structures",
+      "family": "wall",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "sloped-adobe-wall-right",
+      "name": "Sloped Adobe Wall Right",
+      "category": "structures",
+      "family": "wall",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "sloped-greenhouse-roof",
+      "name": "Sloped Greenhouse Roof",
+      "category": "structures",
+      "family": "slope",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "sloped-greenhouse-wall-left",
+      "name": "Sloped Greenhouse Wall Left",
+      "category": "structures",
+      "family": "wall",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "sloped-greenhouse-wall-right",
+      "name": "Sloped Greenhouse Wall Right",
+      "category": "structures",
+      "family": "wall",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "sloped-metal-roof",
+      "name": "Sloped Metal Roof",
+      "category": "structures",
+      "family": "slope",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "sloped-metal-wall-left",
+      "name": "Sloped Metal Wall Left",
+      "category": "structures",
+      "family": "wall",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "sloped-metal-wall-right",
+      "name": "Sloped Metal Wall Right",
+      "category": "structures",
+      "family": "wall",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "sloped-stone-roof",
+      "name": "Sloped Stone Roof",
+      "category": "structures",
+      "family": "slope",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "sloped-stone-wall-left",
+      "name": "Sloped Stone Wall Left",
+      "category": "structures",
+      "family": "wall",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "sloped-stone-wall-right",
+      "name": "Sloped Stone Wall Right",
+      "category": "structures",
+      "family": "wall",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "sloped-tek-roof",
+      "name": "Sloped Tek Roof",
+      "category": "structures",
+      "family": "slope",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "sloped-tek-wall-left",
+      "name": "Sloped Tek Wall Left",
+      "category": "structures",
+      "family": "wall",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "sloped-tek-wall-right",
+      "name": "Sloped Tek Wall Right",
+      "category": "structures",
+      "family": "wall",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "sloped-thatch-roof",
+      "name": "Sloped Thatch Roof",
+      "category": "structures",
+      "family": "slope",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "sloped-thatch-wall-left",
+      "name": "Sloped Thatch Wall Left",
+      "category": "structures",
+      "family": "wall",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "sloped-thatch-wall-right",
+      "name": "Sloped Thatch Wall Right",
+      "category": "structures",
+      "family": "wall",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "sloped-wood-wall-left",
+      "name": "Sloped Wood Wall Left",
+      "category": "structures",
+      "family": "wall",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "sloped-wood-wall-right",
+      "name": "Sloped Wood Wall Right",
+      "category": "structures",
+      "family": "wall",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "sloped-wooden-roof",
+      "name": "Sloped Wooden Roof",
+      "category": "structures",
+      "family": "slope",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "small-tek-teleporter",
+      "name": "Small Tek Teleporter",
+      "category": "structures",
+      "family": "pad",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "snowman",
+      "name": "Snowman",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "spotlight",
+      "name": "Spotlight",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "steam-forge",
+      "name": "Steam Forge",
+      "category": "structures",
+      "family": "furnace",
+      "parts": 3,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "steam-lights-lamps",
+      "name": "Steam Lights & Lamps",
+      "category": "structures",
+      "family": "mast",
+      "parts": 3,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "stolen-headstone",
+      "name": "Stolen Headstone",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "stone-ceiling",
+      "name": "Stone Ceiling",
+      "category": "structures",
+      "family": "slab",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "stone-cliff-platform",
+      "name": "Stone Cliff Platform",
+      "category": "structures",
+      "family": "slab",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "stone-dinosaur-gateway",
+      "name": "Stone Dinosaur Gateway",
+      "category": "structures",
+      "family": "opening",
+      "parts": 3,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "stone-doorframe",
+      "name": "Stone Doorframe",
+      "category": "structures",
+      "family": "opening",
+      "parts": 3,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "stone-double-doorframe",
+      "name": "Stone Double Doorframe",
+      "category": "structures",
+      "family": "opening",
+      "parts": 3,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "stone-fence-foundation",
+      "name": "Stone Fence Foundation",
+      "category": "structures",
+      "family": "slab",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "stone-fence-support",
+      "name": "Stone Fence Support",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "stone-foundation",
+      "name": "Stone Foundation",
+      "category": "structures",
+      "family": "slab",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "stone-hatchframe",
+      "name": "Stone Hatchframe",
+      "category": "structures",
+      "family": "opening",
+      "parts": 4,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "stone-pillar",
+      "name": "Stone Pillar",
+      "category": "structures",
+      "family": "pillar",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "stone-railing",
+      "name": "Stone Railing",
+      "category": "structures",
+      "family": "railing",
+      "parts": 4,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "stone-staircase",
+      "name": "Stone Staircase",
+      "category": "structures",
+      "family": "stairs",
+      "parts": 8,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "stone-stairs",
+      "name": "Stone Stairs",
+      "category": "structures",
+      "family": "stairs",
+      "parts": 8,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "stone-tree-platform",
+      "name": "Stone Tree Platform",
+      "category": "structures",
+      "family": "slab",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "stone-triangle-ceiling",
+      "name": "Stone Triangle Ceiling",
+      "category": "structures",
+      "family": "triangle",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "stone-triangle-foundation",
+      "name": "Stone Triangle Foundation",
+      "category": "structures",
+      "family": "triangle",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "stone-triangle-roof",
+      "name": "Stone Triangle Roof",
+      "category": "structures",
+      "family": "triangle",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "stone-wall",
+      "name": "Stone Wall",
+      "category": "structures",
+      "family": "wall",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "stone-windowframe",
+      "name": "Stone Windowframe",
+      "category": "structures",
+      "family": "opening",
+      "parts": 4,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "tek-atv",
+      "name": "Tek ATV",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "tek-behemoth-cellar-door",
+      "name": "Tek Behemoth Cellar Door",
+      "category": "structures",
+      "family": "door",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "tek-bridge",
+      "name": "Tek Bridge",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "tek-catwalk",
+      "name": "Tek Catwalk",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "tek-ceiling",
+      "name": "Tek Ceiling",
+      "category": "structures",
+      "family": "slab",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "tek-dinosaur-gate",
+      "name": "Tek Dinosaur Gate",
+      "category": "structures",
+      "family": "door",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "tek-dinosaur-gateway",
+      "name": "Tek Dinosaur Gateway",
+      "category": "structures",
+      "family": "opening",
+      "parts": 3,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "tek-door",
+      "name": "Tek Door",
+      "category": "structures",
+      "family": "door",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "tek-doorframe",
+      "name": "Tek Doorframe",
+      "category": "structures",
+      "family": "opening",
+      "parts": 3,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "tek-double-door",
+      "name": "Tek Double Door",
+      "category": "structures",
+      "family": "door",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "tek-double-doorframe",
+      "name": "Tek Double Doorframe",
+      "category": "structures",
+      "family": "opening",
+      "parts": 3,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "tek-fence-foundation",
+      "name": "Tek Fence Foundation",
+      "category": "structures",
+      "family": "slab",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "tek-fence-support",
+      "name": "Tek Fence Support",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "tek-floating-foundation",
+      "name": "Tek Floating Foundation",
+      "category": "structures",
+      "family": "slab",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "tek-foundation",
+      "name": "Tek Foundation",
+      "category": "structures",
+      "family": "slab",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "tek-hatchframe",
+      "name": "Tek Hatchframe",
+      "category": "structures",
+      "family": "opening",
+      "parts": 4,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "tek-hoversail",
+      "name": "Tek Hoversail",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "tek-jump-pad",
+      "name": "Tek Jump Pad",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "tek-ladder",
+      "name": "Tek Ladder",
+      "category": "structures",
+      "family": "ladder",
+      "parts": 7,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "tek-large-cellar-door",
+      "name": "Tek Large Cellar Door",
+      "category": "structures",
+      "family": "door",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "tek-ocean-platform",
+      "name": "Tek Ocean Platform",
+      "category": "structures",
+      "family": "slab",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "tek-pillar",
+      "name": "Tek Pillar",
+      "category": "structures",
+      "family": "pillar",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "tek-railing",
+      "name": "Tek Railing",
+      "category": "structures",
+      "family": "railing",
+      "parts": 4,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "tek-ramp",
+      "name": "Tek Ramp",
+      "category": "structures",
+      "family": "slope",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "tek-remote-camera",
+      "name": "Tek Remote Camera",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "tek-sensor",
+      "name": "Tek Sensor",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "tek-staircase",
+      "name": "Tek Staircase",
+      "category": "structures",
+      "family": "stairs",
+      "parts": 8,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "tek-stairs",
+      "name": "Tek Stairs",
+      "category": "structures",
+      "family": "stairs",
+      "parts": 8,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "tek-surveillance-console",
+      "name": "Tek Surveillance Console",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "tek-thalassian-hoversail",
+      "name": "Tek Thalassian Hoversail",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "tek-trapdoor",
+      "name": "Tek Trapdoor",
+      "category": "structures",
+      "family": "slab",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "tek-triangle-ceiling",
+      "name": "Tek Triangle Ceiling",
+      "category": "structures",
+      "family": "triangle",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "tek-triangle-floating-foundation",
+      "name": "Tek Triangle Floating Foundation",
+      "category": "structures",
+      "family": "triangle",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "tek-triangle-foundation",
+      "name": "Tek Triangle Foundation",
+      "category": "structures",
+      "family": "triangle",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "tek-triangle-roof",
+      "name": "Tek Triangle Roof",
+      "category": "structures",
+      "family": "triangle",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "tek-wall",
+      "name": "Tek Wall",
+      "category": "structures",
+      "family": "wall",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "tek-window",
+      "name": "Tek Window",
+      "category": "structures",
+      "family": "window",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "tek-windowframe",
+      "name": "Tek Windowframe",
+      "category": "structures",
+      "family": "opening",
+      "parts": 4,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "tent",
+      "name": "Tent",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "tesla-coil",
+      "name": "Tesla Coil",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "thatch-ceiling",
+      "name": "Thatch Ceiling",
+      "category": "structures",
+      "family": "slab",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "thatch-door",
+      "name": "Thatch Door",
+      "category": "structures",
+      "family": "door",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "thatch-doorframe",
+      "name": "Thatch Doorframe",
+      "category": "structures",
+      "family": "opening",
+      "parts": 3,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "thatch-foundation",
+      "name": "Thatch Foundation",
+      "category": "structures",
+      "family": "slab",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "thatch-wall",
+      "name": "Thatch Wall",
+      "category": "structures",
+      "family": "wall",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "tinkering-desk",
+      "name": "Tinkering Desk",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "train-engine",
+      "name": "Train Engine",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "training-dummy",
+      "name": "Training Dummy",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "tribe-tower",
+      "name": "Tribe Tower",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "trireme",
+      "name": "Trireme",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "unassembled-tek-hover-skiff",
+      "name": "Unassembled TEK Hover Skiff",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "underwater-crop-plot",
+      "name": "Underwater Crop Plot",
+      "category": "structures",
+      "family": "tray",
+      "parts": 5,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "vacuum-compartment",
+      "name": "Vacuum Compartment",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "vacuum-compartment-moonpool",
+      "name": "Vacuum Compartment Moonpool",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "vessel",
+      "name": "Vessel",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "war-map",
+      "name": "War Map",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "warbench",
+      "name": "Warbench",
+      "category": "structures",
+      "family": "workbench",
+      "parts": 6,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "wardrums",
+      "name": "Wardrums",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "wasteland-lights",
+      "name": "Wasteland Lights",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "windmill",
+      "name": "Windmill",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "wood-ocean-platform",
+      "name": "Wood Ocean Platform",
+      "category": "structures",
+      "family": "slab",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "wooden-bench",
+      "name": "Wooden Bench",
+      "category": "structures",
+      "family": "workbench",
+      "parts": 6,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "wooden-billboard",
+      "name": "Wooden Billboard",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "wooden-cage",
+      "name": "Wooden Cage",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "wooden-catwalk",
+      "name": "Wooden Catwalk",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "wooden-ceiling",
+      "name": "Wooden Ceiling",
+      "category": "structures",
+      "family": "slab",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "wooden-chair",
+      "name": "Wooden Chair",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "wooden-door",
+      "name": "Wooden Door",
+      "category": "structures",
+      "family": "door",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "wooden-doorframe",
+      "name": "Wooden Doorframe",
+      "category": "structures",
+      "family": "opening",
+      "parts": 3,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "wooden-double-door",
+      "name": "Wooden Double Door",
+      "category": "structures",
+      "family": "door",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "wooden-double-doorframe",
+      "name": "Wooden Double Doorframe",
+      "category": "structures",
+      "family": "opening",
+      "parts": 3,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "wooden-fence-foundation",
+      "name": "Wooden Fence Foundation",
+      "category": "structures",
+      "family": "slab",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "wooden-fence-support",
+      "name": "Wooden Fence Support",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "wooden-foundation",
+      "name": "Wooden Foundation",
+      "category": "structures",
+      "family": "slab",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "wooden-hatchframe",
+      "name": "Wooden Hatchframe",
+      "category": "structures",
+      "family": "opening",
+      "parts": 4,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "wooden-ladder",
+      "name": "Wooden Ladder",
+      "category": "structures",
+      "family": "ladder",
+      "parts": 7,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "wooden-pillar",
+      "name": "Wooden Pillar",
+      "category": "structures",
+      "family": "pillar",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "wooden-raft",
+      "name": "Wooden Raft",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "wooden-railing",
+      "name": "Wooden Railing",
+      "category": "structures",
+      "family": "railing",
+      "parts": 4,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "wooden-ramp",
+      "name": "Wooden Ramp",
+      "category": "structures",
+      "family": "slope",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "wooden-sign",
+      "name": "Wooden Sign",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "wooden-spike-wall",
+      "name": "Wooden Spike Wall",
+      "category": "structures",
+      "family": "wall",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "wooden-staircase",
+      "name": "Wooden Staircase",
+      "category": "structures",
+      "family": "stairs",
+      "parts": 8,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "wooden-stairs",
+      "name": "Wooden Stairs",
+      "category": "structures",
+      "family": "stairs",
+      "parts": 8,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "wooden-table",
+      "name": "Wooden Table",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "wooden-trapdoor",
+      "name": "Wooden Trapdoor",
+      "category": "structures",
+      "family": "slab",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "wooden-tree-platform",
+      "name": "Wooden Tree Platform",
+      "category": "structures",
+      "family": "slab",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "wooden-triangle-ceiling",
+      "name": "Wooden Triangle Ceiling",
+      "category": "structures",
+      "family": "triangle",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "wooden-triangle-foundation",
+      "name": "Wooden Triangle Foundation",
+      "category": "structures",
+      "family": "triangle",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "wooden-triangle-roof",
+      "name": "Wooden Triangle Roof",
+      "category": "structures",
+      "family": "triangle",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "wooden-wall",
+      "name": "Wooden Wall",
+      "category": "structures",
+      "family": "wall",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "wooden-wall-sign",
+      "name": "Wooden Wall Sign",
+      "category": "structures",
+      "family": "wall",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "wooden-window",
+      "name": "Wooden Window",
+      "category": "structures",
+      "family": "window",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "wooden-windowframe",
+      "name": "Wooden Windowframe",
+      "category": "structures",
+      "family": "opening",
+      "parts": 4,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "wreath",
+      "name": "Wreath",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    },
+    {
+      "id": "zeppelin",
+      "name": "Zeppelin",
+      "category": "structures",
+      "family": "footprint-only",
+      "parts": 1,
+      "verifiedDimensions": false
+    }
+  ]
+}

@@ -47,3 +47,6 @@ Added twenty-six story sections with closed spoiler chapters and separated narra
 
 ## 2026-10-04 — Ascended 0.15.0 (16), practical five-house base
 Five functional adjacent houses with native floorplan/3D layout proxies and direct ASA shell budget; Blender file with 728 packed 2D inventory references. Completed genuine equipment artwork, larger map title art, white dossier creature visuals, checked map layers and decluttered markers. Scoped UI and data validation passed. See codex-reports/2026-10-04-ascended-practical-base-icons.md for source limitations and cable delivery evidence.
+
+## 2026-10-04 — Blender approximate practical building kit
+Prepared and opened a separate 378-asset construction/machinery library for Mac-only practical planning: 241 primitive family representations and 137 explicit footprint placeholders. Shared foundation-module scale,31 common viewport examples, preserved existing five-house plan. No app change; delivered Blender file, generator and manifest. See codex-reports/2026-10-04-blender-building-kit.md.
