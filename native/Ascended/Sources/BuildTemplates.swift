@@ -112,7 +112,7 @@ struct BuildPartsPanel:View {
                     } else if tab==1 {resourceRows(BuildBill.direct(pieces))} else {
                         let e=BuildBill.expand(BuildBill.direct(pieces))
                         ForEach(e.steps) {step in VStack(alignment:.leading) {Text("\(step.name) ×\(step.batches*step.recipe.output)").font(.caption.bold());Text(step.recipe.station).font(.caption2).foregroundStyle(.cyan);resourceRows(step.recipe.ingredients.mapValues {$0*step.batches})}}
-                        Text("Raw materials").font(.subheadline.bold());resourceRows(e.raw)
+                        Text("Materials to gather").font(.subheadline.bold());resourceRows(e.raw)
                     }
                     if pieces.contains(where:{BuildBill.ingredient($0.kind)==nil}) {Text("Unverified recipes excluded from totals.").font(.caption).foregroundStyle(.orange)}
                 }

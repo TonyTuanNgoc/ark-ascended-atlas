@@ -57,7 +57,7 @@ struct BuildBillView:View {
                             }
                             if let recipe=BuildBill.ingredient(id) {
                                 materialStrip(recipe.mapValues {$0*n})
-                                Label(item?.stations.first ?? "Inventory",systemImage:"hammer.fill").font(.caption).foregroundStyle(.secondary)
+                                Label(item?.stations.first ?? "Station not verified",systemImage:"hammer.fill").font(.caption).foregroundStyle(.secondary)
                             } else {Text("Recipe not verified").font(.caption).foregroundStyle(.orange)}
                         }.padding(12).background(Color.white.opacity(0.05),in:RoundedRectangle(cornerRadius:10)).accessibilityElement(children:.contain).accessibilityIdentifier("bill-piece-"+id)
                     }
@@ -71,7 +71,7 @@ struct BuildBillView:View {
                                 Spacer();materialStrip(step.recipe.ingredients.mapValues {$0*step.batches})
                             }.padding(12).background(Color.white.opacity(0.05),in:RoundedRectangle(cornerRadius:10)).accessibilityElement(children:.contain).accessibilityIdentifier("craft-step-"+step.name)
                         }
-                        Text("Raw materials").font(.headline);materialStrip(expanded.raw)
+                        Text("Materials to gather").font(.headline);materialStrip(expanded.raw)
                     }
                     Text("Standard engrams. Fuel, missing crafting stations and blueprint multipliers are excluded. Alternative ingredients use one equivalent option.").font(.caption).foregroundStyle(.secondary)
                     if pieces.contains(where:{BuildBill.ingredient($0.kind)==nil}) {Text("Totals exclude items with unverified recipes.").foregroundStyle(.orange).font(.caption)}

@@ -1,0 +1,102 @@
+{
+  "scorched-eastern-metal": {
+    "starts": [
+      23,
+      19,
+      30
+    ],
+    "title": "Harvesting",
+    "duration": 3.5,
+    "sourceAcquisition": "Initial native video chunks received through licensed tony-youtube download; full download ended with HTTP 403. Only fully decoded received ranges are used."
+  },
+  "scorched-central-metal": {
+    "starts": [
+      43,
+      39,
+      47
+    ],
+    "title": "Resource view",
+    "duration": 3.5,
+    "sourceAcquisition": "Initial native video chunks received through licensed tony-youtube download; full download ended with HTTP 403. Only fully decoded received ranges are used."
+  },
+  "extinction-oil-lake": {
+    "starts": [
+      21,
+      17,
+      19
+    ],
+    "title": "Resource view",
+    "duration": 1.5,
+    "sourceAcquisition": "Initial native video chunks received through licensed tony-youtube download; full download ended with HTTP 403. Only fully decoded received ranges are used."
+  },
+  "lost-colony-north-metal": {
+    "starts": [
+      53,
+      20,
+      28
+    ],
+    "title": "Resource view",
+    "duration": 3.5,
+    "sourceAcquisition": "Initial native video chunks received through licensed tony-youtube download; full download ended with HTTP 403. Only fully decoded received ranges are used."
+  },
+  "valguero-nw-pearl-lake": {
+    "starts": [
+      49,
+      34,
+      43
+    ],
+    "title": "Resource view",
+    "duration": 3.5,
+    "sourceAcquisition": "Initial native video chunks received through licensed tony-youtube download; full download ended with HTTP 403. Only fully decoded received ranges are used."
+  },
+  "astraeos-phokintos-crystal": {
+    "starts": [
+      18,
+      12,
+      15
+    ],
+    "title": "Resource view",
+    "duration": 2.5,
+    "sourceAcquisition": "Initial native video chunks received through licensed tony-youtube download; full download ended with HTTP 403. Only fully decoded received ranges are used."
+  },
+  "aberration-green-metal": {
+    "starts": [
+      28,
+      17,
+      22
+    ],
+    "title": "Resource view",
+    "duration": 3.5,
+    "sourceAcquisition": "Initial native video chunks received through licensed tony-youtube download; full download ended with HTTP 403. Only fully decoded received ranges are used."
+  },
+  "aberration-blue-metal": {
+    "starts": [
+      19,
+      11,
+      29
+    ],
+    "title": "Resource view",
+    "duration": 3.5,
+    "sourceAcquisition": "Initial native video chunks received through licensed tony-youtube download; full download ended with HTTP 403. Only fully decoded received ranges are used."
+  },
+  "genesis-ocean-waterfall-cave": {
+    "starts": [
+      58,
+      65,
+      79
+    ],
+    "title": "Resource view",
+    "duration": 3.5,
+    "sourceAcquisition": "Initial native video chunks received through licensed tony-youtube download; full download ended with HTTP 403. Only fully decoded received ranges are used."
+  },
+  "genesis-arctic-metal-field": {
+    "starts": [
+      43.5,
+      10,
+      35
+    ],
+    "title": "Resource view",
+    "duration": 3.5,
+    "sourceAcquisition": "Initial native video chunks received through licensed tony-youtube download; full download ended with HTTP 403. Only fully decoded received ranges are used."
+  }
+}

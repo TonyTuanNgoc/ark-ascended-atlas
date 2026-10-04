@@ -4,7 +4,7 @@ import UIKit
 struct ResourceFarmCatalog: Decodable {
     let spots: [VerifiedResourceSpot]
     let coverage: [ResourceCoverage]?
-    static var shared: ResourceFarmCatalog { (try? ArkMap.load(ResourceFarmCatalog.self, name: "verified-resource-spots")) ?? ResourceFarmCatalog(spots: [], coverage: []) }
+    static let shared = (try? ArkMap.load(ResourceFarmCatalog.self, name: "verified-resource-spots")) ?? ResourceFarmCatalog(spots: [], coverage: [])
     static func spots(in map: ArkMap) -> [VerifiedResourceSpot] { shared.spots.filter { $0.map == map.rawValue && $0.verified } }
 }
 struct ResourceCoverage: Decodable, Identifiable {
@@ -42,7 +42,11 @@ struct FarmDetails: View {
     }
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
-            Image(spot.imageAsset).resizable().scaledToFit().clipShape(RoundedRectangle(cornerRadius: 10)).accessibilityIdentifier("farmPhoto")
+            if let guide = ResourceClipCatalog.guide(for: spot.id) {
+                ResourceClipWalkthrough(guide: guide).id(spot.id)
+            } else {
+                Image(spot.imageAsset).resizable().scaledToFit().clipShape(RoundedRectangle(cornerRadius: 10)).accessibilityIdentifier("farmPhoto")
+            }
             Text(spot.name).font(.headline).accessibilityIdentifier("selectedMapLocation")
             GPSBadge(coordinates: spot.point.coordinates).foregroundStyle(.cyan)
             ScrollView(.horizontal, showsIndicators: false) {
@@ -112,5 +116,74 @@ struct ResourceFarmingScreen: View {
             }.padding(20)
 
         }.searchable(text: $search, prompt: "Search resources")
+    }
+}
+
+
+struct ResourceClipCatalog: Decodable {
+    let guides: [ResourceClipGuide]
+    static let shared = (try? ArkMap.load(ResourceClipCatalog.self, name: "resource-guides")) ?? ResourceClipCatalog(guides: [])
+    static func guide(for spotID: String) -> ResourceClipGuide? { shared.guides.first { $0.spotID == spotID } }
+}
+struct ResourceClipGuide: Decodable {
+    let spotID, sourceURL, evidenceLimitations: String
+    let harvestDemonstrated: Bool
+    let steps: [ResourceClipStep]
+}
+struct ResourceClipStep: Decodable, Identifiable {
+    let id, title, loop, poster, sourceURL: String
+    let startSeconds, endSeconds: Double
+    private func mediaURL(_ name: String, extension ext: String) -> URL? {
+        Bundle.main.url(forResource: name, withExtension: ext, subdirectory: "ResourceClips") ?? Bundle.main.url(forResource: name, withExtension: ext)
+    }
+    var url: URL? { mediaURL(loop, extension: "mp4") }
+    var caveStep: CaveGIFStep {
+        let posterName = Bundle.main.url(forResource: poster, withExtension: "jpg", subdirectory: "ResourceClips") != nil ? "ResourceClips/" + poster : poster
+        return CaveGIFStep(id: id, title: title, gif: id, poster: posterName, direction: nil, loop: loop)
+    }
+}
+private struct ResourceClipWalkthrough: View {
+    let guide: ResourceClipGuide
+    @Environment(\.scenePhase) private var scenePhase
+    @State private var selectedIndex = 0
+    @State private var visible = false
+    var body: some View {
+        if !guide.steps.isEmpty {
+            let step = guide.steps[min(selectedIndex, guide.steps.count - 1)]
+            VStack(alignment: .leading, spacing: 8) {
+                ZStack {
+                    Color.black
+                    if visible && scenePhase == .active, let url = step.url {
+                        AutoCaveGIF(step: step.caveStep, url: url).id(step.id)
+                    } else if let image = step.caveStep.posterImage {
+                        Image(uiImage: image).resizable().scaledToFit()
+                    }
+                    if step.url == nil { Text("Clip unavailable").font(.caption).foregroundStyle(.white) }
+                }.aspectRatio(16 / 9, contentMode: .fit).clipShape(RoundedRectangle(cornerRadius: 10))
+                    .accessibilityIdentifier("farmClip-" + step.id)
+                HStack(spacing: 6) {
+                    ForEach(Array(guide.steps.enumerated()), id: \.element.id) { index, item in
+                        Button { selectedIndex = index } label: {
+                            VStack(spacing:4) {
+                                if let image=item.caveStep.posterImage {Image(uiImage:image).resizable().scaledToFit().clipShape(RoundedRectangle(cornerRadius:6))}
+                                Text(item.title).font(.caption2).multilineTextAlignment(.center)
+                            }.frame(maxWidth:.infinity).padding(3)
+                                .background(selectedIndex==index ? Color.orange.opacity(0.15):Color.clear,in:RoundedRectangle(cornerRadius:8))
+                        }.buttonStyle(.bordered).tint(selectedIndex == index ? .orange : .gray)
+                            .accessibilityIdentifier("farmClipSelect-" + item.id)
+                    }
+                }
+                HStack {
+                    Text(step.title).font(.caption.bold()).foregroundStyle(.secondary)
+                    Spacer()
+                    if let url = URL(string: step.sourceURL) {
+                        Link("Source video", destination: url).font(.caption).accessibilityIdentifier("farmClipSource")
+                    }
+                }
+                if !guide.evidenceLimitations.isEmpty {
+                    Text(guide.evidenceLimitations).font(.caption2).foregroundStyle(.secondary)
+                }
+            }.onAppear { visible = true }.onDisappear { visible = false }
+        }
     }
 }

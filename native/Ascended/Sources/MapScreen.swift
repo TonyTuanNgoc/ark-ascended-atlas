@@ -5,10 +5,14 @@ struct MapScreen: View {
     @Environment(\.arkMap) private var map
     var initialFocus: String? = nil
     var initialResources = false
-    @State private var visibleLayers: Set<MapLayer> = Set([MapLayer.cave, MapLayer.obelisk])
-    @State private var resourceTypes: Set<String> = []
-    private var allPoints: [MapLocation] { MapLocation.all(in: map) }
-    private var availableLayers: [MapLayer] { MapLayer.allCases.filter { $0 != .base || map.bases != nil } }
+    @State private var filters=MapFilterSelection()
+    @State private var expandedLayers:Set<MapLayer>=[]
+    @AppStorage("ascended.map.personal-locations.v1") private var personalJSON="[]"
+    @State private var draft:PersonalMapLocation?
+    private var personal:[PersonalMapLocation] {PersonalMapLocation.decode(personalJSON)}
+    private var allPoints:[MapLocation] {MapLocation.all(in:map)+personal.filter {$0.map==map.rawValue}.map(\.point)}
+    private var resourceTypes:[String] {MapResources.types(in:map)}
+    private var availableLayers:[MapLayer] {MapLayer.allCases}
     @State private var selected: MapLocation?
     @State private var focusedID: String?
     @State private var resetToken = UUID()
@@ -16,7 +20,7 @@ struct MapScreen: View {
     var body: some View {
         GeometryReader { geometry in
         HStack(alignment: .top, spacing: 8) {
-        ZoomableMap(imageAsset: map.imageAsset, mapName: map.name, resetToken: resetToken, action: action, locations: allPoints.filter { visibleLayers.contains($0.layer) && ($0.layer != .resource || ($0.farmID == nil ? resourceTypes.contains($0.name) : !resourceTypes.isDisjoint(with: $0.resourceNames))) }, focusID: focusedID, select: { selected = $0; focusedID = $0.id })
+        ZoomableMap(imageAsset: map.imageAsset, mapName: map.name, resetToken: resetToken, action: action, locations: allPoints.filter {filters.includes($0)}, focusID: focusedID, select: { selected = $0; focusedID = $0.id }, addLocation:{gps in draft=PersonalMapLocation(map:map.rawValue,name:"",lat:gps.lat,lon:gps.lon)})
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
             .overlay(alignment: .bottomTrailing) {
@@ -38,6 +42,10 @@ struct MapScreen: View {
                                 .font(.caption).foregroundStyle(.secondary).fixedSize(horizontal: false, vertical: true)
                         }
                         Spacer()
+                        if point.layer == .custom,let saved=personal.first(where:{"custom-"+$0.id==point.id}) {
+                            Button {draft=saved} label:{Image(systemName:"pencil")}.accessibilityLabel("Edit location")
+                            Button {personalJSON=PersonalMapLocation.encode(personal.filter {$0.id != saved.id});filters.locations.remove(point.id);selected=nil;focusedID=nil} label:{Image(systemName:"trash")}.accessibilityLabel("Delete location").accessibilityIdentifier("deletePersonalLocation")
+                        }
                         if let id = point.artifactID, map.exploration?.artifacts.contains(where: { $0.id == id }) == true {
                             NavigationLink(value: GuideDestination.artifact(id)) { Image(systemName: "diamond.fill") }.accessibilityLabel("Artifact")
                         } else if let id = point.routeID, map.exploration?.routes.contains(where: { $0.id == id }) == true {
@@ -57,73 +65,78 @@ struct MapScreen: View {
             controls.frame(width: min(240, max(190, geometry.size.width * 0.24)))
         }.padding(8)
         .onAppear {
-            resourceTypes = Set(MapResources.types(in: map))
-            if initialResources { visibleLayers.insert(.resource) }
-            if let id = initialFocus, let point = MapLocation.all(in: map).first(where: { $0.id == id }) {
-                selected = point; focusedID = id; visibleLayers.insert(point.layer)
+            if initialResources {filters.resources=Set(resourceTypes)}
+            if let id=initialFocus,let point=allPoints.first(where:{$0.id==id}) {
+                if point.layer == .resource {filters.resources.formUnion(point.resourceNames)} else {filters.locations.insert(id)}
+                selected=point;focusedID=id
             }
         }
+        .sheet(item:$draft) {value in PersonalLocationEditor(location:value) {saved in
+            var rows=personal;rows.removeAll {$0.id==saved.id};rows.append(saved)
+            personalJSON=PersonalMapLocation.encode(rows);filters.locations.insert(saved.point.id);selected=saved.point;focusedID=saved.point.id
+        }}
         }
     }
 
-    private var controls: some View {
-        ScrollView(.vertical, showsIndicators: false) {
-            VStack(alignment: .leading, spacing: 8) {
-                HStack(spacing: 4) {
-                    Button { visibleLayers = Set(availableLayers); resourceTypes = Set(MapResources.types(in: map)) } label: { Image(systemName: "checkmark.circle.fill").frame(width: 54, height: 38) }
-                        .accessibilityLabel("Select all").accessibilityIdentifier("selectAllMapLayers")
-                    Button { visibleLayers.removeAll(); selected = nil; focusedID = nil } label: { Image(systemName: "circle").frame(width: 54, height: 38) }
-                        .accessibilityLabel("Clear all").accessibilityIdentifier("clearMapLayers")
-                }
-                ForEach(availableLayers, id: \.self) { layer in
-                    Button {
-                        if visibleLayers.contains(layer) { visibleLayers.remove(layer) } else { visibleLayers.insert(layer) }
-                        if selected?.layer == layer && !visibleLayers.contains(layer) { selected = nil; focusedID = nil }
-                    } label: {
-                        HStack(spacing: 7) {
-                            Image(systemName: layer.symbol).frame(width: 22)
-                            Text(layer.title).font(.subheadline.bold()).fixedSize(horizontal: false, vertical: true)
-                            Spacer(minLength: 0)
-                            Image(systemName: visibleLayers.contains(layer) ? "checkmark.circle.fill" : "circle").font(.caption)
-                        }.padding(.horizontal, 8).frame(height: 40)
-                            .background(visibleLayers.contains(layer) ? Color.cyan.opacity(0.16) : Color.clear, in: RoundedRectangle(cornerRadius: 8))
-                    }.tint(visibleLayers.contains(layer) ? .cyan : .gray)
-                        .accessibilityLabel(layer.title).accessibilityIdentifier("layer-" + layer.rawValue)
-                        .accessibilityValue(visibleLayers.contains(layer) ? "Visible" : "Hidden")
-                }
-                if visibleLayers.contains(.resource) {
-                    ForEach(MapResources.types(in: map), id: \.self) { type in
-                        Button {
-                            if resourceTypes.contains(type) { resourceTypes.remove(type) } else { resourceTypes.insert(type) }
-                        } label: {
-                            HStack(spacing: 5) {
-                                Group {
-                                    if UIImage(named: MapResources.asset(for: type)) != nil { Image(MapResources.asset(for: type)).resizable().scaledToFit() }
-                                    else { Image(systemName: MapResources.symbol(for: type)).resizable().scaledToFit() }
-                                }.frame(width: 24, height: 24)
-                                Text(MapResources.label(for: type)).font(.caption.weight(.medium)).multilineTextAlignment(.leading)
-                                Spacer(minLength: 0)
-                                Image(systemName: resourceTypes.contains(type) ? "checkmark.circle.fill" : "circle").font(.system(size: 10))
-                            }.padding(5).frame(minHeight: 34)
-                                .background(resourceTypes.contains(type) ? Color.cyan.opacity(0.13) : Color.clear, in: RoundedRectangle(cornerRadius: 6))
-                        }.tint(resourceTypes.contains(type) ? .white : .gray).accessibilityIdentifier("resource-" + type)
-                            .accessibilityValue(resourceTypes.contains(type) ? "Visible" : "Hidden")
-                    }
+    private var controls:some View {
+        ScrollView(.vertical,showsIndicators:false) {
+            VStack(alignment:.leading,spacing:10) {
+                ForEach(availableLayers,id:\.self) {layer in
+                    let count=filters.selectedCount(layer,points:allPoints,types:resourceTypes)
+                    let total=filters.total(layer,points:allPoints,types:resourceTypes)
+                    VStack(alignment:.leading,spacing:5) {
+                        HStack(spacing:5) {
+                            Button {if expandedLayers.contains(layer) {expandedLayers.remove(layer)} else {expandedLayers.insert(layer)}} label:{
+                                HStack(spacing:8) {
+                                    Image(layer.illustration).resizable().scaledToFit().frame(width:36,height:38)
+                                    Text(layer.title).font(.subheadline.bold()).multilineTextAlignment(.leading).fixedSize(horizontal:false,vertical:true)
+                                    Spacer(minLength:0)
+                                    Image(systemName:expandedLayers.contains(layer) ? "chevron.up":"chevron.down").font(.system(size:9,weight:.semibold))
+                                }.frame(maxWidth:.infinity,alignment:.leading)
+                            }.accessibilityIdentifier("expand-layer-"+layer.rawValue).accessibilityLabel("Show "+layer.title)
+                            Button {filters.toggle(layer,points:allPoints,types:resourceTypes);if let point=selected,!filters.includes(point) {selected=nil;focusedID=nil}} label:{
+                                Image(systemName:count==0 ? "square":count==total ? "checkmark.square.fill":"minus.square.fill").font(.title3).frame(width:32,height:42)
+                            }.accessibilityLabel("Select "+layer.title).accessibilityIdentifier("layer-"+layer.rawValue).accessibilityValue(count==0 ? "Hidden":count==total ? "Visible":"Partially visible").disabled(total==0)
+                        }.foregroundStyle(count>0 ? .cyan:.primary)
+                        if expandedLayers.contains(layer) {
+                            if layer == .resource {
+                                ForEach(resourceTypes,id:\.self) {name in
+                                    Button {filters.toggleResource(name);if let point=selected,!filters.includes(point) {selected=nil;focusedID=nil}} label:{
+                                        HStack(spacing:8) {resourcePicture(name);Text(MapResources.label(for:name)).font(.caption).multilineTextAlignment(.leading);Spacer(minLength:0);Image(systemName:filters.resources.contains(name) ? "checkmark.square.fill":"square")}
+                                            .padding(7).background(filters.resources.contains(name) ? Color.cyan.opacity(0.12):Color.white.opacity(0.035),in:RoundedRectangle(cornerRadius:8))
+                                    }.accessibilityIdentifier("resource-"+name).accessibilityValue(filters.resources.contains(name) ? "Visible":"Hidden")
+                                }
+                            } else {
+                                ForEach(allPoints.filter {$0.layer==layer}) {point in
+                                    Button {filters.togglePoint(point.id);if !filters.locations.contains(point.id) && selected?.id==point.id {selected=nil;focusedID=nil}} label:{
+                                        HStack(spacing:8) {pointPicture(point);Text(point.name.replacingOccurrences(of:"Artifact of the ",with:"" )).font(.caption).multilineTextAlignment(.leading).fixedSize(horizontal:false,vertical:true);Spacer(minLength:0);Image(systemName:filters.locations.contains(point.id) ? "checkmark.square.fill":"square")}
+                                            .padding(7).background(filters.locations.contains(point.id) ? Color.cyan.opacity(0.12):Color.white.opacity(0.035),in:RoundedRectangle(cornerRadius:8))
+                                    }.accessibilityIdentifier("location-filter-"+point.id).accessibilityValue(filters.locations.contains(point.id) ? "Visible":"Hidden")
+                                }
+                            }
+                            if total==0 {Text(layer == .custom ? "Hold the map to add a location." : "No verified locations yet.").font(.caption).foregroundStyle(.secondary).padding(7)}
+                        }
+                    }.padding(8).background(count>0 ? Color.cyan.opacity(0.06):Color.white.opacity(0.03),in:RoundedRectangle(cornerRadius:12))
                 }
                 Divider()
                 Menu {
-                    ForEach(allPoints.filter { $0.layer != .resource || $0.farmID != nil }) { point in
-                        Button(point.name) { visibleLayers.insert(point.layer); selected = point; focusedID = point.id }.accessibilityIdentifier("find-" + point.id)
+                    ForEach(allPoints) {point in
+                        Button(point.name) {if point.layer == .resource {filters.resources.formUnion(point.resourceNames)} else {filters.locations.insert(point.id)};selected=point;focusedID=point.id}.accessibilityIdentifier("find-"+point.id)
                     }
-                } label: { Label("Find location", systemImage: "magnifyingglass").font(.caption).frame(height: 38) }
-                    .accessibilityIdentifier("findMapLocation")
-                HStack(spacing: 0) {
-                    Button { action = .out; resetToken = UUID() } label: { Image(systemName: "minus").frame(width: 38, height: 38) }.accessibilityLabel("Zoom out").accessibilityIdentifier("zoomOut")
-                    Button { action = .inside; resetToken = UUID() } label: { Image(systemName: "plus").frame(width: 38, height: 38) }.accessibilityLabel("Zoom in").accessibilityIdentifier("zoomIn")
-                    Button { focusedID = nil; action = .fit; resetToken = UUID() } label: { Image(systemName: "arrow.counterclockwise").frame(width: 38, height: 38) }.accessibilityLabel("Fit map").accessibilityIdentifier("resetMap")
-                }
+                } label:{Label("Find location",systemImage:"magnifyingglass").font(.caption).frame(height:38)}.accessibilityIdentifier("findMapLocation")
+                HStack {Button {action = .out;resetToken=UUID()} label:{Image(systemName:"minus").frame(width:38,height:38)}.accessibilityLabel("Zoom out").accessibilityIdentifier("zoomOut");Button {action = .inside;resetToken=UUID()} label:{Image(systemName:"plus").frame(width:38,height:38)}.accessibilityLabel("Zoom in").accessibilityIdentifier("zoomIn");Button {focusedID=nil;action = .fit;resetToken=UUID()} label:{Image(systemName:"arrow.counterclockwise").frame(width:38,height:38)}.accessibilityLabel("Fit map").accessibilityIdentifier("resetMap")}
+                Text("Hold to add your own location").font(.caption2).foregroundStyle(.secondary)
             }.padding(8)
-        }.accessibilityIdentifier("mapFilterRail").buttonStyle(.plain).background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 12))
+        }.accessibilityIdentifier("mapFilterRail").buttonStyle(.plain).background(.ultraThinMaterial,in:RoundedRectangle(cornerRadius:16))
+    }
+    private func resourcePicture(_ name:String)->some View {
+        Image(UIImage(named:MapResources.asset(for:name)) != nil ? MapResources.asset(for:name):MapLayer.resource.illustration).resizable().scaledToFit().frame(width:28,height:30)
+    }
+    @ViewBuilder private func pointPicture(_ point:MapLocation)->some View {
+        if let asset=point.imageAsset,UIImage(named:asset) != nil {
+            Image(asset).renderingMode(point.layer == .obelisk ? .template:.original).resizable().scaledToFit().foregroundStyle(Color(uiColor:point.color)).frame(width:28,height:30).clipShape(RoundedRectangle(cornerRadius:5))
+        } else if point.layer == .custom {Image(systemName:point.symbol).foregroundStyle(Color(uiColor:point.color)).frame(width:28,height:30)}
+        else {Image(point.layer.illustration).resizable().scaledToFit().frame(width:28,height:30)}
     }
 
 }
@@ -138,6 +151,7 @@ struct ZoomableMap: UIViewRepresentable {
     let locations: [MapLocation]
     let focusID: String?
     let select: (MapLocation) -> Void
+    var addLocation:((MapGPS)->Void)? = nil
     func makeUIView(context: Context) -> MapScrollView {
         let view = MapScrollView()
         view.delegate = context.coordinator
@@ -166,9 +180,13 @@ struct ZoomableMap: UIViewRepresentable {
         tap.numberOfTapsRequired = 2
         view.addGestureRecognizer(tap)
         context.coordinator.resetToken = resetToken
+        context.coordinator.addLocation=addLocation
+        let hold=UILongPressGestureRecognizer(target:context.coordinator,action:#selector(Coordinator.longPress(_:)));hold.minimumPressDuration=0.65
+        view.imageView.addGestureRecognizer(hold)
         return view
     }
     func updateUIView(_ uiView: MapScrollView, context: Context) {
+        context.coordinator.addLocation=addLocation
         uiView.updateLocations(locations, select: select)
         if uiView.focusID != focusID {
             uiView.focusID = focusID
@@ -186,6 +204,11 @@ struct ZoomableMap: UIViewRepresentable {
     func makeCoordinator() -> Coordinator { Coordinator() }
     final class Coordinator: NSObject, UIScrollViewDelegate {
         var resetToken: UUID?
+        var addLocation:((MapGPS)->Void)?
+        @objc func longPress(_ gesture:UILongPressGestureRecognizer) {
+            guard gesture.state == .began,let image=gesture.view,let gps=MapCoordinateTransform.gps(at:gesture.location(in:image),size:image.bounds.size) else {return}
+            addLocation?(gps)
+        }
         func viewForZooming(in scrollView: UIScrollView) -> UIView? { (scrollView as? MapScrollView)?.imageView }
         func scrollViewDidZoom(_ scrollView: UIScrollView) { (scrollView as? MapScrollView)?.centerMap() }
         func scrollViewDidScroll(_ scrollView: UIScrollView) { (scrollView as? MapScrollView)?.refreshResources() }
@@ -221,7 +244,7 @@ final class MapScrollView: UIScrollView {
         resourceSurface.points = resources
         if resourceSurface.superview == nil { addSubview(resourceSurface) }
         let points = points.filter { $0.layer != .resource || $0.farmID != nil }
-        guard locationIDs != points.map(\.id) else { refreshResources(); return }
+        guard locations != points else { refreshResources(); return }
         markerButtons.forEach { $0.removeFromSuperview() }; markerButtons.removeAll()
         markerLabels.forEach { $0.removeFromSuperview() }; markerLabels.removeAll()
         locations = points; locationIDs = points.map(\.id); menuMemberships.removeAll()
@@ -233,7 +256,7 @@ final class MapScrollView: UIScrollView {
             button.setImage(artwork?.withRenderingMode(point.layer == .obelisk || point.layer == .boss ? .alwaysTemplate : .alwaysOriginal) ?? UIImage(systemName: point.symbol), for: .normal)
             button.imageView?.contentMode = .scaleAspectFit
             button.contentEdgeInsets = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
-            button.tintColor = point.layer == .obelisk ? point.color : .white
+            button.tintColor = point.layer == .obelisk || point.layer == .custom ? point.color : .white
             button.backgroundColor = UIColor.black.withAlphaComponent(0.85)
             button.layer.cornerRadius = 16; button.layer.borderWidth = 1.5; button.layer.borderColor = point.color.cgColor
             let badge = UILabel(frame: CGRect(x: 21, y: -4, width: 17, height: 17))
@@ -263,7 +286,7 @@ final class MapScrollView: UIScrollView {
         zoom(to: CGRect(x: center.x - size.width / 2, y: center.y - size.height / 2, width: size.width, height: size.height), animated: animated)
     }
     private func pixelPoint(_ point: MapLocation) -> CGPoint {
-        CGPoint(x: point.lon / 100 * imageView.bounds.width, y: point.lat / 100 * imageView.bounds.height)
+        MapCoordinateTransform.pixel(lat:point.lat,lon:point.lon,size:imageView.bounds.size)
     }
     private var lastSize = CGSize.zero
     override func layoutSubviews() {

@@ -55,6 +55,23 @@ enum VisualFacts {
             return FactMatch(fact: fact, quantity: quantity?.isEmpty == false ? quantity : nil)
         }
     }
+    static func isInventory(_ text: String) -> Bool {
+        // Colons and arrows encode relationships such as boss → artifact set.
+        // Keep that association in text even when every noun has an illustration.
+        guard !text.contains(":"), !text.contains("→"), !text.contains("="), !text.contains("/"), text.range(of:"(?i)\\bor\\b",options:.regularExpression)==nil else { return false }
+        let inventory = matches(text)
+        guard !inventory.isEmpty else { return false }
+        let ids = Set(inventory.map(\.id))
+        var remainder = text
+        for (fact, expressions) in patterns where ids.contains(fact.id) {
+            for expression in expressions {
+                remainder = expression.stringByReplacingMatches(in: remainder,
+                    range: NSRange(location: 0, length: (remainder as NSString).length), withTemplate: "")
+            }
+        }
+        remainder = remainder.replacingOccurrences(of: "(?i)\\b(and|or|x)\\b", with: "", options: .regularExpression)
+        return remainder.rangeOfCharacter(from: .letters) == nil
+    }
     static func symbol(for label: String) -> String {
         let value = label.lowercased()
         if value.contains("health") || value.contains("hp") || value.contains("máu") { return "heart.fill" }
@@ -113,20 +130,15 @@ struct VisualBrief: View {
     var body: some View {
         let matches = VisualFacts.matches(text)
         VStack(alignment: .leading, spacing: 10) {
-            if !matches.isEmpty {
+            // Illustrate an explicit inventory, never infer the meaning of a paragraph
+            // from one incidental noun (for example “water” in a survival goal).
+            if VisualFacts.isInventory(text), !matches.isEmpty {
                 FactGrid(matches: matches)
-                if (text.localizedCaseInsensitiveContains("/ con") || text.localizedCaseInsensitiveContains("per creature") || text.localizedCaseInsensitiveContains("per tame")) {
-                    HStack(spacing: 5) { Text("/"); Image(systemName: "pawprint.fill"); Text("1") }
-                        .font(.caption.bold()).foregroundStyle(.cyan).accessibilityElement(children: .ignore).accessibilityLabel("Quantity per creature").accessibilityIdentifier("unit-per-dino")
-                }
-                if let condition = text.components(separatedBy: ". ").first(where: { sentence in
-                    ["not", "require", "if", "depend", "limit", "cannot", "không", "cần", "nếu", "tùy", "giới hạn"].contains { sentence.localizedCaseInsensitiveContains($0) }
-                }), condition.count > 25 {
-                    Label(condition, systemImage: "exclamationmark.circle").font(.caption).foregroundStyle(.orange).fixedSize(horizontal: false, vertical: true)
-                }
+            } else {
+                Text(text).font(.subheadline).lineSpacing(4)
+                    .fixedSize(horizontal: false, vertical: true)
+                    .frame(maxWidth: .infinity, alignment: .leading)
             }
-            else { Label(String(text.split(separator: ".").first ?? Substring(text)), systemImage: symbol).font(.subheadline).lineLimit(2) }
-
         }
     }
 }
@@ -166,6 +178,7 @@ struct VisualKitGroup: View {
             Text(text).font(.caption).foregroundStyle(.secondary)
         } else {
             FactGrid(matches: matches.map { FactMatch(fact: $0.fact, quantity: nil) })
+            if !VisualFacts.isInventory(text) { Text(text).font(.caption).foregroundStyle(.secondary).fixedSize(horizontal: false, vertical: true) }
         }
     }
 }
@@ -182,6 +195,9 @@ struct RoutePreparation: View {
         VStack(alignment: .leading, spacing: 12) {
             Text("Route preparation").font(.headline)
             FactGrid(matches: facts)
+            ForEach(items.filter { !VisualFacts.isInventory($0) }, id: \.self) { text in
+                Text(text).font(.caption).foregroundStyle(.secondary).fixedSize(horizontal: false, vertical: true)
+            }
         }.cardStyle()
     }
 }

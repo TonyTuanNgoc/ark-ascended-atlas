@@ -22,7 +22,7 @@ enum Destination: String, CaseIterable, Identifiable {
         case .story: "book.closed.fill"
         case .equipment: "square.grid.2x2.fill"
         case .expansions: "square.stack.3d.up.fill"
-        case .farming: "pickaxe"
+        case .farming: "hammer.fill"
         case .information: "mountain.2.fill"
         case .bases: "house.fill"
         case .map: "map.fill"
@@ -95,11 +95,15 @@ struct MapSessionShell: View {
                     .overlay(alignment: .bottom) { Divider() }
     }
     private var appLogo: some View {
-        Image("ArkLogo").resizable().scaledToFit().frame(width: 82, height: 46).accessibilityHidden(true)
+        Image("ArkLogo").resizable().scaledToFit().padding(10)
+            .frame(width: 112, height: 70)
+            .background(Color.black.opacity(0.22), in: RoundedRectangle(cornerRadius: 18))
+            .overlay { RoundedRectangle(cornerRadius: 18).strokeBorder(.white.opacity(0.12)) }
+            .accessibilityHidden(true)
     }
     private var currentMapHeader: some View {
         HStack(spacing: 10) {
-            MapBadge(id: map.expansionID)
+            MapBadge(id: map.expansionID, width: 100, height: 64)
             VStack(alignment: .leading, spacing: 2) {
                 Text("CURRENT MAP").font(.caption2.bold()).foregroundStyle(.secondary)
                 Text(map.name).font(.headline).fixedSize(horizontal: false, vertical: true)
@@ -162,15 +166,24 @@ private struct MapSelectionCard: View {
                                         Text(option == map ? "Current map" : "Open map session").font(.caption).foregroundStyle(.secondary)
                                     }
                                     Spacer()
-                                    Image(systemName: option == map ? "checkmark.circle.fill" : "arrow.up.right").foregroundStyle(.cyan)
+                                    if option == map || (option == .genesis && map == .genesisOcean) { Image(systemName: "checkmark.circle.fill").foregroundStyle(.cyan) }
                                 }.padding(12).background(Color.cyan.opacity(option == map ? 0.14 : 0.04), in: RoundedRectangle(cornerRadius: 12))
                             }.buttonStyle(.plain).accessibilityIdentifier("choose-" + option.rawValue)
                                 .accessibilityValue(option == map ? "Selected" : "Not selected")
-                        }
-                        if options.contains(.genesis) {
-                            Button { presented = false; choose(.genesisOcean) } label: {
-                                Label("Genesis · Ocean", systemImage: "water.waves").font(.subheadline.bold()).padding(12)
-                            }.buttonStyle(.plain).accessibilityIdentifier("choose-" + ArkMap.genesisOcean.rawValue)
+                            if option == .genesis {
+                                Button { presented = false; choose(.genesisOcean) } label: {
+                                    HStack(spacing: 10) {
+                                        Image(systemName: "water.waves").foregroundStyle(.cyan)
+                                        VStack(alignment: .leading, spacing: 3) {
+                                            Text("Ocean biome").font(.subheadline.bold())
+                                            Text("Within Genesis Part 1").font(.caption).foregroundStyle(.secondary)
+                                        }
+                                        Spacer()
+                                        if map == .genesisOcean { Image(systemName: "checkmark.circle.fill").foregroundStyle(.cyan) }
+                                    }.padding(12).background(.white.opacity(0.035), in: RoundedRectangle(cornerRadius: 12))
+                                }.buttonStyle(.plain).padding(.leading, 28)
+                                    .accessibilityIdentifier("choose-" + ArkMap.genesisOcean.rawValue)
+                            }
                         }
                     }.padding(20)
                 }.frame(width: 380, height: min(CGFloat(options.count * 78 + 100), 620))

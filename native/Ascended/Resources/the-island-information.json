@@ -94,7 +94,7 @@
       "items": [
         "LAT increases southward and LON eastward. Artifact marks the collection point; cave entrance marks the approach. Nearby points have a selection menu; use the Artifact / Cave entrance / Boss layers separately.",
         "On The Island, mini-map coordinates may differ from waypoints. Identify more terrain when searching for the cave entrance.",
-        "Cave entrance coordinates are community guidance and may vary with version or standing position. Area/reference points are not exact entrances. The 8K map shows terrain, not cave floors."
+        "Cave entrance coordinates are community guidance and may vary with version or standing position. Area/reference points are not exact entrances. The map shows surface terrain, not cave floors."
       ]
     }
   ],

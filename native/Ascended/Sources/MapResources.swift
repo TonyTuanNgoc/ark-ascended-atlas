@@ -20,7 +20,7 @@ enum MapResources {
         pointCatalog[map] = points
         return points
     }
-    static func types(in map: ArkMap) -> [String] { Set(([ArkMap.ragnarok, .island, .center].contains(map) ? [] : nodes(in: map).map(\.resource_type)) + ResourceFarmCatalog.spots(in: map).flatMap(\.resources)).sorted() }
+    static func types(in map: ArkMap) -> [String] { Set(ResourceFarmCatalog.spots(in: map).flatMap(\.resources)).sorted() }
     static func asset(for type: String) -> String {
         switch type {
         case "Salt": return "Item-raw-salt"

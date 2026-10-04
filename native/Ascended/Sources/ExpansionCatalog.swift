@@ -19,31 +19,53 @@ struct ExpansionDLC: Decodable, Identifiable {
 }
 struct ExpansionProfile: View {
     let record: ExpansionMap
+    var search = ""
+    private var topics: [InformationTopic] {
+        [InformationTopic(id: "goals", title: "Goals", symbol: "flag.checkered", items: record.goals),
+         InformationTopic(id: "preparation", title: "Preparation", symbol: "backpack.fill", items: record.preparation),
+         InformationTopic(id: "boss", title: "Boss encounters", symbol: "shield.lefthalf.filled", items: record.bosses),
+         InformationTopic(id: "terrain", title: "Terrain & biomes", symbol: "mountain.2.fill", items: record.biomes),
+         InformationTopic(id: "signature-creatures", title: "Signature creatures", symbol: "pawprint.fill", items: record.signatureCreatures)]
+            .filter { !$0.items.isEmpty && (search.isEmpty || ($0.title + " " + $0.items.joined(separator: " ")).localizedStandardContains(search)) }
+    }
     var body: some View {
         VStack(alignment: .leading, spacing: 18) {
-            Label(record.included ? "Included in ASA" : "Requires DLC", systemImage: record.included ? "checkmark.seal.fill" : "cart.fill").foregroundStyle(record.included ? .cyan : .orange)
-            Text(record.purchase).font(.callout)
-            Text(record.storyRole).foregroundStyle(.secondary)
-            brief("Goals", items: record.goals)
-            brief("Preparation", items: record.preparation)
-            brief("Boss", items: record.bosses)
-            brief("Terrain", items: record.biomes)
-            brief("Signature creatures", items: record.signatureCreatures)
-            ForEach(ExpansionCatalog.shared.dlcs.filter { record.dlcIDs.contains($0.id) }) { dlc in
-                VStack(alignment: .leading, spacing: 5) {
-                    Text(dlc.name).font(.headline)
-                    Text(dlc.summary).font(.caption)
-                    Text(dlc.purchase).font(.caption).foregroundStyle(.secondary)
-                    if let url = URL(string: dlc.storeURL) { Link("Steam", destination: url) }
+            if search.isEmpty {
+                VStack(alignment: .leading, spacing: 12) {
+                    Text("Your journey").font(.title2.bold())
+                    Text(record.storyRole).font(.callout).fixedSize(horizontal: false, vertical: true)
+                    Label(record.included ? "Included in ASA" : "Requires DLC", systemImage: record.included ? "checkmark.seal.fill" : "cart.fill").font(.caption.bold()).foregroundStyle(record.included ? .cyan : .orange)
+                    Text(record.purchase).font(.caption).foregroundStyle(.secondary)
+                }.frame(maxWidth: .infinity, alignment: .leading).cardStyle()
+            }
+            LazyVGrid(columns: [GridItem(.adaptive(minimum: 270), spacing: 16)], alignment: .leading, spacing: 16) {
+                ForEach(topics) { topic in
+                    NavigationLink { InformationTopicDetail(topic: topic, mapID: record.id) } label: { InformationTopicCard(topic: topic) }
+                        .buttonStyle(.plain).accessibilityIdentifier("expansion-" + topic.id)
                 }
             }
-            if let url = URL(string: record.storeURL) { Link(destination: url) { Label("Steam", systemImage: "cart") }.buttonStyle(.bordered) }
+            if search.isEmpty {
+                let dlcs = ExpansionCatalog.shared.dlcs.filter { record.dlcIDs.contains($0.id) }
+                if !dlcs.isEmpty {
+                    NavigationLink {
+                        ScrollView {
+                            VStack(alignment: .leading, spacing: 20) {
+                                ForEach(dlcs) { dlc in
+                                    VStack(alignment: .leading, spacing: 12) {
+                                        Text(dlc.name).font(.title2.bold())
+                                        Text(dlc.summary).fixedSize(horizontal: false, vertical: true)
+                                        Text(dlc.purchase).font(.callout).foregroundStyle(.secondary)
+                                        if let url = URL(string: dlc.storeURL) { Link("View on Steam", destination: url).buttonStyle(.bordered) }
+                                    }.frame(maxWidth: .infinity, alignment: .leading).cardStyle()
+                                }
+                            }.padding(24).frame(maxWidth: 1000).frame(maxWidth: .infinity)
+                        }.navigationTitle("Related content")
+                    } label: {
+                        InformationTopicCard(topic: InformationTopic(id: "related-content", title: "Related content", symbol: "square.stack.3d.up.fill", items: dlcs.map(\.summary)))
+                    }.buttonStyle(.plain)
+                }
+            }
         }.accessibilityIdentifier("expansion-profile-" + record.id)
-    }
-    private func brief(_ title: String, items: [String]) -> some View {
-        Group {
-            if !items.isEmpty { DisclosureGroup { ForEach(items, id: \.self) { VisualBrief(text: $0).padding(.vertical, 5) } } label: { Text(title).font(.headline) } }
-        }
     }
 }
 struct ExpansionCatalogScreen: View {

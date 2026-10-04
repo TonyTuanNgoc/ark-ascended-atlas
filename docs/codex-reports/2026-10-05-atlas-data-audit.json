@@ -1,0 +1,92 @@
+{
+  "checkedAt": "2026-10-05",
+  "atlasProjection": "Wikily client function j(lon,lat) converts full normalized 0-100 tile plane; native image-local transform follows the same normalized pixel plane. This is not game-runtime calibration.",
+  "clientURL": "https://wikily.gg/_next/static/chunks/0e3yw6e43ts5k.js",
+  "clientSHA256": "47c3eb8635e8c055d71f3352e6860e4bd737bb53bae0ef73fafbd0f31b3f5c35",
+  "maps": [
+    {
+      "map": "the-island",
+      "artifactEntries": 10,
+      "verifiedRouteEntries": 11,
+      "obeliskEntries": 0,
+      "filmedResourceRegions": 12
+    },
+    {
+      "map": "scorched-earth",
+      "artifactEntries": 3,
+      "verifiedRouteEntries": 0,
+      "obeliskEntries": 0,
+      "filmedResourceRegions": 2
+    },
+    {
+      "map": "aberration",
+      "artifactEntries": 4,
+      "verifiedRouteEntries": 0,
+      "obeliskEntries": 0,
+      "filmedResourceRegions": 2
+    },
+    {
+      "map": "extinction",
+      "artifactEntries": 2,
+      "verifiedRouteEntries": 0,
+      "obeliskEntries": 0,
+      "filmedResourceRegions": 1
+    },
+    {
+      "map": "genesis-part-1",
+      "artifactEntries": 0,
+      "verifiedRouteEntries": 0,
+      "obeliskEntries": 0,
+      "filmedResourceRegions": 1
+    },
+    {
+      "map": "genesis-part-1-ocean",
+      "artifactEntries": 0,
+      "verifiedRouteEntries": 0,
+      "obeliskEntries": 0,
+      "filmedResourceRegions": 1
+    },
+    {
+      "map": "lost-colony",
+      "artifactEntries": 0,
+      "verifiedRouteEntries": 0,
+      "obeliskEntries": 0,
+      "filmedResourceRegions": 1
+    },
+    {
+      "map": "the-center",
+      "artifactEntries": 11,
+      "verifiedRouteEntries": 9,
+      "obeliskEntries": 3,
+      "filmedResourceRegions": 11
+    },
+    {
+      "map": "ragnarok",
+      "artifactEntries": 10,
+      "verifiedRouteEntries": 6,
+      "obeliskEntries": 3,
+      "filmedResourceRegions": 18
+    },
+    {
+      "map": "valguero",
+      "artifactEntries": 10,
+      "verifiedRouteEntries": 0,
+      "obeliskEntries": 0,
+      "filmedResourceRegions": 1
+    },
+    {
+      "map": "astraeos",
+      "artifactEntries": 12,
+      "verifiedRouteEntries": 0,
+      "obeliskEntries": 0,
+      "filmedResourceRegions": 1
+    }
+  ],
+  "gaps": [
+    "Most expansion cave/obelisk/boss summon GPS entries remain absent; actor centers and legacy Evolved coordinates are not imported as verified entrances/ASA terminals.",
+    "Island API22 has no obelisks; no false terminal locations added.",
+    "Extinction Chaos API8 coordinate101.206/94.425 lies outside this normalized0-100 terrain; not clamped/invented.",
+    "51 filmed resource regions are not exhaustive every-resource/all-node coverage.",
+    "Absolute in-game GPS calibration has not been proven for all 11 planes, especially Island mini-map/waypoint divergence."
+  ]
+}

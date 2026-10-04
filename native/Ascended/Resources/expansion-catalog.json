@@ -27,9 +27,9 @@
         "Yutyrannus"
       ],
       "goals": [
-        "Build a base near water and metal lines.",
+        "Build a base near water and metal routes.",
         "Collect artifacts and tributes at the right difficulty level.",
-        "Prepare the breeding team, saddle and supplies for the guardian then Tek Cave."
+        "Breed a guardian army and prepare saddles and supplies, then plan for Tek Cave."
       ],
       "bosses": [
         "Broodmother",
@@ -38,9 +38,9 @@
         "Overseer"
       ],
       "preparation": [
-        "Separate the team to go to the cave and the team to fight the boss.",
+        "Prepare separate teams for caves and boss arenas.",
         "Bring cold-proof gear, SCUBA for sea routes and spare gear.",
-        "Practice whistles, formations and time to enter Tek Cave before the main turn."
+        "Practice whistles and formations; plan your entry into Tek Cave."
       ],
       "dlcIDs": [],
       "sourceURLs": [
@@ -74,17 +74,17 @@
         "Fasolasuchus"
       ],
       "goals": [
-        "Establish water and shelter before exploring far.",
-        "Preparing for the egg retrieval trip Wyvern.",
-        "Collect artifacts and tributes to challenge Manticore."
+        "Secure a water supply and shelter before longer expeditions.",
+        "Plan and prepare a Wyvern egg expedition.",
+        "Collect artifacts and tributes to challenge the Manticore."
       ],
       "bosses": [
         "Manticore"
       ],
       "preparation": [
-        "Prioritize insulation, water reserves and Adobe houses.",
-        "Keep the mount with a spare set of clothes when trenching.",
-        "Storm shelter; Avoid being completely dependent on electrical equipment."
+        "Prioritize insulation, water reserves, and an Adobe shelter.",
+        "Prepare your mount and spare clothing before entering the Wyvern trench.",
+        "Plan shelter for storms; avoid relying entirely on electrical equipment."
       ],
       "dlcIDs": [
         "bobs-tall-tales"
@@ -119,17 +119,17 @@
         "Yi Ling"
       ],
       "goals": [
-        "Tame the light pet and stabilize the base to a safe level.",
+        "Tame a light pet and establish a safe base.",
         "Open resource, gas and charge routes.",
-        "Prepare the anti-radiation kit to retrieve eggs Rock Drake and go deep."
+        "Prepare radiation protection before collecting Rock Drake eggs or exploring deeper."
       ],
       "bosses": [
         "Rockwell"
       ],
       "preparation": [
-        "Light pet needs enough charge to resist Nameless.",
+        "Keep your light pet charged for protection against Nameless.",
         "Wear multiple Hazmat suits because losing one piece can cause loss of protection.",
-        "Climbing picks, ziplines and drawlines are more important than flyers."
+        "Plan routes around climbing picks and ziplines rather than flyers."
       ],
       "dlcIDs": [
         "bobs-tall-tales"
@@ -166,8 +166,8 @@
       ],
       "goals": [
         "Set up a safe base and farm resources before entering the wasteland.",
-        "Train OSD and Element Vein from the appropriate level.",
-        "Prepare tribute, Titan and lineup for King Titan."
+        "Practice Orbital Supply Drops and Element Veins at an appropriate difficulty.",
+        "Prepare tributes, Titans, and your team for the King Titan."
       ],
       "bosses": [
         "Forest Titan",
@@ -176,9 +176,9 @@
         "King Titan"
       ],
       "preparation": [
-        "Observe meteors and creatures Corrupted.",
-        "Carry repair supplies, ammo stores and spare mounts for a long battle.",
-        "Do not play high-end OSD with an untried team."
+        "Watch for meteors and Corrupted creatures.",
+        "Carry repair supplies, spare ammunition, and backup mounts for long battles.",
+        "Test your team before attempting high-difficulty Orbital Supply Drops."
       ],
       "dlcIDs": [
         "bobs-tall-tales"
@@ -212,7 +212,7 @@
         "Gigadesmodus"
       ],
       "goals": [
-        "Open the cold-resistant base and learn skillpaths.",
+        "Establish a cold-resistant base and learn the skillpaths.",
         "Recruit and equip Thrall for logistical and combat support.",
         "Clear outposts for Sigils, prepare the Red-Handed mission in Red Palace, and face Lost King/Lost Queen in two fights."
       ],
@@ -263,16 +263,16 @@
       ],
       "goals": [
         "Complete missions at the appropriate difficulty level and fix glitches.",
-        "Use Hexagon to support supplies, learn each biome before increasing the difficulty.",
-        "Prepare mission goals for the end-of-chapter progress."
+        "Use Hexagons for supplies; learn each biome before increasing mission difficulty.",
+        "Complete the mission requirements for end-of-chapter progression."
       ],
       "bosses": [
         "Corrupted Master Controller"
       ],
       "preparation": [
-        "Change items according to biome: cold, lava, deep water and low gravity.",
+        "Adapt your equipment to cold, lava, deep water, and low gravity.",
         "Practice missions before upgrading to Beta or Alpha.",
-        "Tides of Fortune adds ships and naval combat; Not required to enter the map."
+        "Tides of Fortune adds ships and naval combat; it is optional for this map."
       ],
       "dlcIDs": [
         "genesis-part-1",
@@ -335,16 +335,16 @@
         "Basilosaurus"
       ],
       "goals": [
-        "Open floating islands, underworld and sea caves.",
-        "Prepare artifact and guardian arena.",
-        "Choose based on flight or sea route instead of just straight distance."
+        "Explore the floating islands, underworld, and sea caves.",
+        "Collect artifacts and prepare for the guardian arena.",
+        "Plan journeys by air or sea, allowing for terrain rather than straight-line distance."
       ],
       "bosses": [
         "Broodmother + Megapithecus"
       ],
       "preparation": [
         "Bring spare cold-weather gear, heat protection, and SCUBA.",
-        "Prepare to mount the sign in front of the underwater artifact route.",
+        "Prepare for underwater artifact routes.",
         "Vertical terrain and lava require safe respawn points."
       ],
       "dlcIDs": [],
@@ -381,7 +381,7 @@
       "goals": [
         "Open artifact, dungeon, and resource routes.",
         "Prepare a flying mount before collecting Wyvern eggs.",
-        "Explore the new ASA island; Complete the artifact to challenge Nunatak Gamma → Beta → Alpha."
+        "Explore the ASA island and collect artifacts to challenge Nunatak: Gamma → Beta → Alpha."
       ],
       "bosses": [
         "Nunatak · guardian ASA",
@@ -393,7 +393,7 @@
       "preparation": [
         "Use anti-cold gear for ice areas, SCUBA for the sea.",
         "Bring medicine, ammunition, and spare gear for dungeons.",
-        "Keep an eye on volcano and hot spring when choosing a farm route.",
+        "Watch the volcano and hot springs when planning farming routes.",
         "ASA uses Nunatak in place of Ragnarok Evolved's Dragon + Manticore; do not assume ASE tributes or team compositions apply."
       ],
       "dlcIDs": [],

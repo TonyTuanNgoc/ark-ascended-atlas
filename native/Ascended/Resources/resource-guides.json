@@ -1,0 +1,2471 @@
+{
+  "schemaVersion": 1,
+  "mediaFormat": "Muted H.264 offline loops, 1280x720, 24 fps",
+  "guides": [
+    {
+      "sourceAcquisition": "Approved complete local source cache",
+      "spotID": "center-blue-metal",
+      "map": "the-center",
+      "videoID": "bAqRvM-080g",
+      "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "coordinateEvidence": "In-game map camera GPS visible at 17s: latitude 52.3, longitude 78.2. Pin identifies the filmed farming region, not every individual resource actor.",
+      "inventoryEvidence": "Metal resource chapter 16\u201349s; ore rocks and metal overlay shown at 25s. Rich Metal describes high-yield ore appearance, not a guaranteed node count.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "The source shows this region and resource or method. A completed harvest and measured yield are not demonstrated in these clips.",
+      "steps": [
+        {
+          "id": "Resource-center-blue-metal-1",
+          "title": "Area / coordinates",
+          "loop": "Resource-center-blue-metal-1",
+          "poster": "Resource-center-blue-metal-1",
+          "startSeconds": 15,
+          "endSeconds": 18.5,
+          "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g&t=15s",
+          "sha256": "a131e516ff19b75506bbdf0f27446f82e61a773168c3705c32e8c9006ac2cdc6"
+        },
+        {
+          "id": "Resource-center-blue-metal-2",
+          "title": "Approach / surroundings",
+          "loop": "Resource-center-blue-metal-2",
+          "poster": "Resource-center-blue-metal-2",
+          "startSeconds": 21,
+          "endSeconds": 24.5,
+          "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g&t=21s",
+          "sha256": "2da86ac29e7ba211f0d1241da32324443de23168361c59ff67607c454091f66b"
+        },
+        {
+          "id": "Resource-center-blue-metal-3",
+          "title": "Resource view",
+          "loop": "Resource-center-blue-metal-3",
+          "poster": "Resource-center-blue-metal-3",
+          "startSeconds": 25,
+          "endSeconds": 28.5,
+          "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g&t=25s",
+          "sha256": "b6841538d85e6a83307f1916496a945877ec038fdd7807d4a6135f92791d7cc5"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved complete local source cache",
+      "spotID": "center-spire-obsidian",
+      "map": "the-center",
+      "videoID": "bAqRvM-080g",
+      "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "coordinateEvidence": "In-game map camera GPS visible at 47s: latitude 63.0, longitude 60.3. Pin identifies the filmed farming region, not every individual resource actor.",
+      "inventoryEvidence": "Obsidian chapter 49\u2013114s; dark obsidian rocks shown at 65s.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "The source shows this region and resource or method. A completed harvest and measured yield are not demonstrated in these clips.",
+      "steps": [
+        {
+          "id": "Resource-center-spire-obsidian-1",
+          "title": "Area / coordinates",
+          "loop": "Resource-center-spire-obsidian-1",
+          "poster": "Resource-center-spire-obsidian-1",
+          "startSeconds": 46,
+          "endSeconds": 49.5,
+          "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g&t=46s",
+          "sha256": "50cc7a0a3e96a09bd03c8e3e59f11fbf3ee4d45d09221207052b0502f0d56200"
+        },
+        {
+          "id": "Resource-center-spire-obsidian-2",
+          "title": "Approach / surroundings",
+          "loop": "Resource-center-spire-obsidian-2",
+          "poster": "Resource-center-spire-obsidian-2",
+          "startSeconds": 56,
+          "endSeconds": 59.5,
+          "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g&t=56s",
+          "sha256": "b7ee8e769585770487c19321280465c539ef02c1a97b3ef4ef496136cda5f86a"
+        },
+        {
+          "id": "Resource-center-spire-obsidian-3",
+          "title": "Resource view",
+          "loop": "Resource-center-spire-obsidian-3",
+          "poster": "Resource-center-spire-obsidian-3",
+          "startSeconds": 64,
+          "endSeconds": 67.5,
+          "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g&t=64s",
+          "sha256": "792bddc8c2eb0ded14a6d803a818d63491a5852a060f81be4b870047eb4972a0"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved complete local source cache",
+      "spotID": "center-lava-metal",
+      "map": "the-center",
+      "videoID": "bAqRvM-080g",
+      "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "coordinateEvidence": "In-game map camera GPS visible at 179s: latitude 16.5, longitude 60.9. Pin identifies the filmed farming region, not every individual resource actor.",
+      "inventoryEvidence": "More Metal chapter 187\u2013273s; gold-rich ore visible at 195s.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "The source shows this region and resource or method. A completed harvest and measured yield are not demonstrated in these clips.",
+      "steps": [
+        {
+          "id": "Resource-center-lava-metal-1",
+          "title": "Area / coordinates",
+          "loop": "Resource-center-lava-metal-1",
+          "poster": "Resource-center-lava-metal-1",
+          "startSeconds": 177,
+          "endSeconds": 180.5,
+          "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g&t=177s",
+          "sha256": "5d992f809d6922f1a2f2de71193b1078ac8d645508d3d9f3d416bcde099e0b7b"
+        },
+        {
+          "id": "Resource-center-lava-metal-2",
+          "title": "Approach / surroundings",
+          "loop": "Resource-center-lava-metal-2",
+          "poster": "Resource-center-lava-metal-2",
+          "startSeconds": 186,
+          "endSeconds": 189.5,
+          "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g&t=186s",
+          "sha256": "2962931d676ef538386f3f0af7051cd1a4c46b2d542efc63e3a769145ff21e0a"
+        },
+        {
+          "id": "Resource-center-lava-metal-3",
+          "title": "Resource view",
+          "loop": "Resource-center-lava-metal-3",
+          "poster": "Resource-center-lava-metal-3",
+          "startSeconds": 194,
+          "endSeconds": 197.5,
+          "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g&t=194s",
+          "sha256": "a094bb3ff688a540b77c65543f804441929e75e1d2c8a196b12f05a837053549"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved complete local source cache",
+      "spotID": "center-snow-crystal",
+      "map": "the-center",
+      "videoID": "bAqRvM-080g",
+      "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "coordinateEvidence": "In-game map camera GPS visible at 275s: latitude 58.0, longitude 18.5. Pin identifies the filmed farming region, not every individual resource actor.",
+      "inventoryEvidence": "Metal and Crystal chapter 273\u2013345s; white crystal clusters shown at 305s. GPS is the route start camera position.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "The source shows this region and resource or method. A completed harvest and measured yield are not demonstrated in these clips.",
+      "steps": [
+        {
+          "id": "Resource-center-snow-crystal-1",
+          "title": "Area / coordinates",
+          "loop": "Resource-center-snow-crystal-1",
+          "poster": "Resource-center-snow-crystal-1",
+          "startSeconds": 273,
+          "endSeconds": 276.5,
+          "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g&t=273s",
+          "sha256": "3617c4f446097730f771f8d7f4ca916feed419358d0d4f8dab5093754af6a43c"
+        },
+        {
+          "id": "Resource-center-snow-crystal-2",
+          "title": "Approach / surroundings",
+          "loop": "Resource-center-snow-crystal-2",
+          "poster": "Resource-center-snow-crystal-2",
+          "startSeconds": 295,
+          "endSeconds": 298.5,
+          "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g&t=295s",
+          "sha256": "2178ea28d2aa85cc4863fde32eeaaa80c197324cbc3e9b7e84f779ce3207799e"
+        },
+        {
+          "id": "Resource-center-snow-crystal-3",
+          "title": "Resource view",
+          "loop": "Resource-center-snow-crystal-3",
+          "poster": "Resource-center-snow-crystal-3",
+          "startSeconds": 303,
+          "endSeconds": 306.5,
+          "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g&t=303s",
+          "sha256": "82c39cfa3d28bfdcebf4c39b368e2714ae5de7ecc985f41abf201ec761fb9642"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved complete local source cache",
+      "spotID": "center-beaver-pond",
+      "map": "the-center",
+      "videoID": "bAqRvM-080g",
+      "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "coordinateEvidence": "In-game map camera GPS visible at 491s: latitude 53.1, longitude 57.2. Pin identifies the filmed farming region, not every individual resource actor.",
+      "inventoryEvidence": "At519s Beaver Dam inventory visibly labels x700 Wood, x12 Silica Pearls, x312 Cementing Paste and x20 Rare Flower. This loot is shown in the filmed farm region.",
+      "harvestDemonstrated": true,
+      "evidenceLimitations": "",
+      "steps": [
+        {
+          "id": "Resource-center-beaver-pond-1",
+          "title": "Area / coordinates",
+          "loop": "Resource-center-beaver-pond-1",
+          "poster": "Resource-center-beaver-pond-1",
+          "startSeconds": 489,
+          "endSeconds": 492.5,
+          "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g&t=489s",
+          "sha256": "1bea46b90671960cf1547b87c5bfeb9348fe584494fa8fb58c771c4c8ca2ff81"
+        },
+        {
+          "id": "Resource-center-beaver-pond-2",
+          "title": "Approach / surroundings",
+          "loop": "Resource-center-beaver-pond-2",
+          "poster": "Resource-center-beaver-pond-2",
+          "startSeconds": 509,
+          "endSeconds": 512.5,
+          "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g&t=509s",
+          "sha256": "c2d0c0c12ceadc974cdcf5dc766835b9c728681000100833bedcea7869a503e5"
+        },
+        {
+          "id": "Resource-center-beaver-pond-3",
+          "title": "Dam loot",
+          "loop": "Resource-center-beaver-pond-3",
+          "poster": "Resource-center-beaver-pond-3",
+          "startSeconds": 517,
+          "endSeconds": 520.5,
+          "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g&t=517s",
+          "sha256": "f24015aebe43f2d5707977f1807205e6e2bc2b0c65a04cea8cb655b99ba22ff3"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved complete local source cache",
+      "spotID": "center-ring-pearls",
+      "map": "the-center",
+      "videoID": "bAqRvM-080g",
+      "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "coordinateEvidence": "In-game map camera GPS visible at 535s: latitude 36.7, longitude 35.5. Pin identifies the filmed farming region, not every individual resource actor.",
+      "inventoryEvidence": "Silica Pearls/Oil chapter 534\u2013639s; seabed pearl clumps visible at 551s. GPS camera is the waterfall entry, not individual underwater nodes.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "The source shows this region and resource or method. A completed harvest and measured yield are not demonstrated in these clips.",
+      "steps": [
+        {
+          "id": "Resource-center-ring-pearls-1",
+          "title": "Area / coordinates",
+          "loop": "Resource-center-ring-pearls-1",
+          "poster": "Resource-center-ring-pearls-1",
+          "startSeconds": 534,
+          "endSeconds": 537.5,
+          "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g&t=534s",
+          "sha256": "37d3231fd9ea63f8e8631594c800794bd56d5ce468e43d49e2e11eb4f4009678"
+        },
+        {
+          "id": "Resource-center-ring-pearls-2",
+          "title": "Approach / surroundings",
+          "loop": "Resource-center-ring-pearls-2",
+          "poster": "Resource-center-ring-pearls-2",
+          "startSeconds": 546,
+          "endSeconds": 549.5,
+          "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g&t=546s",
+          "sha256": "99f5e5be4439b09aeddc02982261eaf21e8f5597fce9300186648597216e6f7c"
+        },
+        {
+          "id": "Resource-center-ring-pearls-3",
+          "title": "Resource view",
+          "loop": "Resource-center-ring-pearls-3",
+          "poster": "Resource-center-ring-pearls-3",
+          "startSeconds": 551,
+          "endSeconds": 554.5,
+          "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g&t=551s",
+          "sha256": "4622f237f002bdca298e251a212e5e458905e300b70abbd51deb9258e26156d7"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved complete local source cache",
+      "spotID": "center-ice-polymer",
+      "map": "the-center",
+      "videoID": "bAqRvM-080g",
+      "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "coordinateEvidence": "In-game map camera GPS visible at 639s: latitude 37.0, longitude 9.9. Pin identifies the filmed farming region, not every individual resource actor.",
+      "inventoryEvidence": "Organic Polymer chapter 639\u2013720s; ice floe and Kairuku route footage, no universal guaranteed penguin spawn.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "The source shows this region and resource or method. A completed harvest and measured yield are not demonstrated in these clips.",
+      "steps": [
+        {
+          "id": "Resource-center-ice-polymer-1",
+          "title": "Area / coordinates",
+          "loop": "Resource-center-ice-polymer-1",
+          "poster": "Resource-center-ice-polymer-1",
+          "startSeconds": 638,
+          "endSeconds": 641.5,
+          "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g&t=638s",
+          "sha256": "d413bc67b801bdbbca3e304b6b80dbf59d3957ca4cb749024285aaeb82082b6e"
+        },
+        {
+          "id": "Resource-center-ice-polymer-2",
+          "title": "Approach / surroundings",
+          "loop": "Resource-center-ice-polymer-2",
+          "poster": "Resource-center-ice-polymer-2",
+          "startSeconds": 647,
+          "endSeconds": 650.5,
+          "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g&t=647s",
+          "sha256": "ad13ad1b48f893869f4eead5f7aafed81f5fd9cb0f61a58d0e3635c570f20e14"
+        },
+        {
+          "id": "Resource-center-ice-polymer-3",
+          "title": "Resource view",
+          "loop": "Resource-center-ice-polymer-3",
+          "poster": "Resource-center-ice-polymer-3",
+          "startSeconds": 655,
+          "endSeconds": 658.5,
+          "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g&t=655s",
+          "sha256": "928b6544ec3cc24c415d5af119c0d16850bc78c5c2aa9b592f9df21de8ecfcc9"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved complete local source cache",
+      "spotID": "rag-underwater-metal",
+      "map": "ragnarok",
+      "videoID": "5IhlD3yzqjU",
+      "sourceURL": "https://www.youtube.com/watch?v=5IhlD3yzqjU",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "coordinateEvidence": "In-game map camera GPS visible at 100s: latitude 94.8, longitude 73.6. Pin identifies the filmed farming region, not every individual resource actor.",
+      "inventoryEvidence": "Metal chapter 83\u2013198s; GPS map at 100s crosshair beside Metal POI; harvesting footage and ore at 112s.",
+      "harvestDemonstrated": true,
+      "evidenceLimitations": "",
+      "steps": [
+        {
+          "id": "Resource-rag-underwater-metal-1",
+          "title": "Area / coordinates",
+          "loop": "Resource-rag-underwater-metal-1",
+          "poster": "Resource-rag-underwater-metal-1",
+          "startSeconds": 98,
+          "endSeconds": 101.5,
+          "sourceURL": "https://www.youtube.com/watch?v=5IhlD3yzqjU&t=98s",
+          "sha256": "fa8e230c63cbacc835b53b2a23d436654c5aac8f0b8aa8a1a45354b5c9c4ee55"
+        },
+        {
+          "id": "Resource-rag-underwater-metal-2",
+          "title": "Approach / surroundings",
+          "loop": "Resource-rag-underwater-metal-2",
+          "poster": "Resource-rag-underwater-metal-2",
+          "startSeconds": 105,
+          "endSeconds": 108.5,
+          "sourceURL": "https://www.youtube.com/watch?v=5IhlD3yzqjU&t=105s",
+          "sha256": "f06cc5be07d201133c5b73717dfe9d220daf91907954525c8f5c2ee6e754918e"
+        },
+        {
+          "id": "Resource-rag-underwater-metal-3",
+          "title": "Harvesting",
+          "loop": "Resource-rag-underwater-metal-3",
+          "poster": "Resource-rag-underwater-metal-3",
+          "startSeconds": 111,
+          "endSeconds": 114.5,
+          "sourceURL": "https://www.youtube.com/watch?v=5IhlD3yzqjU&t=111s",
+          "sha256": "8e6d82bd2e07d4e2d09b8f0a453e9b33d3fec141afc59f629817f3c2d9c6a508"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved complete local source cache",
+      "spotID": "rag-dam-lakes",
+      "map": "ragnarok",
+      "videoID": "5IhlD3yzqjU",
+      "sourceURL": "https://www.youtube.com/watch?v=5IhlD3yzqjU",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "coordinateEvidence": "In-game map camera GPS visible at 508s: latitude 24.8, longitude 42.3. Pin identifies the filmed farming region, not every individual resource actor.",
+      "inventoryEvidence": "Beaver Dam inventory at 517s shows paste, flowers, mushrooms, pearls and wood; 525s shows the actual underwater dam. GPS at 508s labels the camera farm region.",
+      "harvestDemonstrated": true,
+      "evidenceLimitations": "",
+      "steps": [
+        {
+          "id": "Resource-rag-dam-lakes-1",
+          "title": "Area / coordinates",
+          "loop": "Resource-rag-dam-lakes-1",
+          "poster": "Resource-rag-dam-lakes-1",
+          "startSeconds": 506,
+          "endSeconds": 509.5,
+          "sourceURL": "https://www.youtube.com/watch?v=5IhlD3yzqjU&t=506s",
+          "sha256": "0e1cfa5814571ef71e0f58a366ca7a62a6914bc5144c7c77b3e788f8bd8e88ed"
+        },
+        {
+          "id": "Resource-rag-dam-lakes-2",
+          "title": "Approach / surroundings",
+          "loop": "Resource-rag-dam-lakes-2",
+          "poster": "Resource-rag-dam-lakes-2",
+          "startSeconds": 523,
+          "endSeconds": 526.5,
+          "sourceURL": "https://www.youtube.com/watch?v=5IhlD3yzqjU&t=523s",
+          "sha256": "bf9693c5f3c50b5ecd38c0af716ec3e1fd7751215b040711d326ba9ea2831f40"
+        },
+        {
+          "id": "Resource-rag-dam-lakes-3",
+          "title": "Dam loot",
+          "loop": "Resource-rag-dam-lakes-3",
+          "poster": "Resource-rag-dam-lakes-3",
+          "startSeconds": 515,
+          "endSeconds": 518.5,
+          "sourceURL": "https://www.youtube.com/watch?v=5IhlD3yzqjU&t=515s",
+          "sha256": "6e8f9a0ffe5b9188af20550b3904c176973059eae0f1e4b50b547d7331f0093b"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved complete local source cache",
+      "spotID": "rag-cactus-route",
+      "map": "ragnarok",
+      "videoID": "5IhlD3yzqjU",
+      "sourceURL": "https://www.youtube.com/watch?v=5IhlD3yzqjU",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "coordinateEvidence": "In-game map camera GPS visible at 757s: latitude 62.6, longitude 59.6. Pin identifies the filmed farming region, not every individual resource actor.",
+      "inventoryEvidence": "Cactus chapter 739\u2013752s and region map inset at 757s; cactus harvest shown at 748s. GPS identifies region shown by creator, not all plants.",
+      "harvestDemonstrated": true,
+      "evidenceLimitations": "",
+      "steps": [
+        {
+          "id": "Resource-rag-cactus-route-1",
+          "title": "Area / coordinates",
+          "loop": "Resource-rag-cactus-route-1",
+          "poster": "Resource-rag-cactus-route-1",
+          "startSeconds": 755,
+          "endSeconds": 758.5,
+          "sourceURL": "https://www.youtube.com/watch?v=5IhlD3yzqjU&t=755s",
+          "sha256": "b2940a3f4cb4bdc3e558f239b5c708bc1e7460ff03cc188503dfdd848aaad614"
+        },
+        {
+          "id": "Resource-rag-cactus-route-2",
+          "title": "Approach / surroundings",
+          "loop": "Resource-rag-cactus-route-2",
+          "poster": "Resource-rag-cactus-route-2",
+          "startSeconds": 741,
+          "endSeconds": 744.5,
+          "sourceURL": "https://www.youtube.com/watch?v=5IhlD3yzqjU&t=741s",
+          "sha256": "9c6e207feb4b5cfd0f913da31832dbf90d9dfbf64d8dabb8283a63f8cf70fd95"
+        },
+        {
+          "id": "Resource-rag-cactus-route-3",
+          "title": "Harvesting",
+          "loop": "Resource-rag-cactus-route-3",
+          "poster": "Resource-rag-cactus-route-3",
+          "startSeconds": 746,
+          "endSeconds": 749.5,
+          "sourceURL": "https://www.youtube.com/watch?v=5IhlD3yzqjU&t=746s",
+          "sha256": "44f4fded27266df5e059e6f2b48b8a5dbd3136b58336e4f9dd714451dae4bd01"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved complete local source cache",
+      "spotID": "rag-coast-flowers",
+      "map": "ragnarok",
+      "videoID": "5IhlD3yzqjU",
+      "sourceURL": "https://www.youtube.com/watch?v=5IhlD3yzqjU",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "coordinateEvidence": "In-game map camera GPS visible at 919s: latitude 36.3, longitude 18.9. Pin identifies the filmed farming region, not every individual resource actor.",
+      "inventoryEvidence": "Plant Species X & Rare Flowers chapter 915\u2013949s; literal creator map crosshair at 919s identifies this island; bushes and harvest scene at 932s.",
+      "harvestDemonstrated": true,
+      "evidenceLimitations": "",
+      "steps": [
+        {
+          "id": "Resource-rag-coast-flowers-1",
+          "title": "Area / coordinates",
+          "loop": "Resource-rag-coast-flowers-1",
+          "poster": "Resource-rag-coast-flowers-1",
+          "startSeconds": 917,
+          "endSeconds": 920.5,
+          "sourceURL": "https://www.youtube.com/watch?v=5IhlD3yzqjU&t=917s",
+          "sha256": "915381ee324e0dc21daada4fa30f5a99926a4d4bcd93e5403b3b2d3845ca8d61"
+        },
+        {
+          "id": "Resource-rag-coast-flowers-2",
+          "title": "Approach / surroundings",
+          "loop": "Resource-rag-coast-flowers-2",
+          "poster": "Resource-rag-coast-flowers-2",
+          "startSeconds": 926,
+          "endSeconds": 929.5,
+          "sourceURL": "https://www.youtube.com/watch?v=5IhlD3yzqjU&t=926s",
+          "sha256": "987f9ac15e824415bae85358925ad3798d50d255478deb54fca031ad8983a800"
+        },
+        {
+          "id": "Resource-rag-coast-flowers-3",
+          "title": "Harvesting",
+          "loop": "Resource-rag-coast-flowers-3",
+          "poster": "Resource-rag-coast-flowers-3",
+          "startSeconds": 931,
+          "endSeconds": 934.5,
+          "sourceURL": "https://www.youtube.com/watch?v=5IhlD3yzqjU&t=931s",
+          "sha256": "8a402d78933f93ceac4ab9e7e5ab6133a0b08a3cfb826f98dd5ad2a1eec09e05"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved complete local source cache",
+      "spotID": "island-volcano-ore",
+      "map": "the-island",
+      "videoID": "IOCye6IYUCM",
+      "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "coordinateEvidence": "In-game map camera GPS visible at 182s: latitude 40.1, longitude 37.5. Pin identifies the filmed farming region, not every individual resource actor.",
+      "inventoryEvidence": "Metal Obsidian chapter 171\u2013270s; rich gold ore and black obsidian at 206s, crystals at 226s. GPS 182s is the route start.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "The source shows this region and resource or method. A completed harvest and measured yield are not demonstrated in these clips.",
+      "steps": [
+        {
+          "id": "Resource-island-volcano-ore-1",
+          "title": "Area / coordinates",
+          "loop": "Resource-island-volcano-ore-1",
+          "poster": "Resource-island-volcano-ore-1",
+          "startSeconds": 180,
+          "endSeconds": 183.5,
+          "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM&t=180s",
+          "sha256": "4c26aa1f5f33789051658909cd98b4ae55e451fb560cd8becf1c9524e6525c58"
+        },
+        {
+          "id": "Resource-island-volcano-ore-2",
+          "title": "Approach / surroundings",
+          "loop": "Resource-island-volcano-ore-2",
+          "poster": "Resource-island-volcano-ore-2",
+          "startSeconds": 197,
+          "endSeconds": 200.5,
+          "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM&t=197s",
+          "sha256": "c4ebc29fd9991ec43de0392e05f7b27b3093fd333622a1e1a74b655bee5f5e36"
+        },
+        {
+          "id": "Resource-island-volcano-ore-3",
+          "title": "Resource view",
+          "loop": "Resource-island-volcano-ore-3",
+          "poster": "Resource-island-volcano-ore-3",
+          "startSeconds": 205,
+          "endSeconds": 208.5,
+          "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM&t=205s",
+          "sha256": "bf9be713760bea9d8bb881d4abfd402e7719423c7c78fab20e663a7f6a1dc5c0"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved complete local source cache",
+      "spotID": "island-west-black-pearls",
+      "map": "the-island",
+      "videoID": "IOCye6IYUCM",
+      "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "coordinateEvidence": "In-game map camera GPS visible at 294s: latitude 57.0, longitude 5.6. Pin identifies the filmed farming region, not every individual resource actor.",
+      "inventoryEvidence": "Black Pearls creator chapter270\u2013369s; in-game GPS294s and actual seabed farm-region footage318s. No measured harvest yield claimed.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "The source shows this region and resource or method. A completed harvest and measured yield are not demonstrated in these clips.",
+      "steps": [
+        {
+          "id": "Resource-island-west-black-pearls-1",
+          "title": "Area / coordinates",
+          "loop": "Resource-island-west-black-pearls-1",
+          "poster": "Resource-island-west-black-pearls-1",
+          "startSeconds": 292,
+          "endSeconds": 295.5,
+          "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM&t=292s",
+          "sha256": "3171f01f35edfd1980ea498b2e6af411ec630e08dbfbf0eb0ecaf0ef2f2984e0"
+        },
+        {
+          "id": "Resource-island-west-black-pearls-2",
+          "title": "Approach / surroundings",
+          "loop": "Resource-island-west-black-pearls-2",
+          "poster": "Resource-island-west-black-pearls-2",
+          "startSeconds": 313,
+          "endSeconds": 316.5,
+          "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM&t=313s",
+          "sha256": "3e8d0c595c7604238fd42d871bba8bae18489502864964e49b76be1166c70607"
+        },
+        {
+          "id": "Resource-island-west-black-pearls-3",
+          "title": "Resource view",
+          "loop": "Resource-island-west-black-pearls-3",
+          "poster": "Resource-island-west-black-pearls-3",
+          "startSeconds": 317,
+          "endSeconds": 320.5,
+          "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM&t=317s",
+          "sha256": "105918d6e29294c179cb7a8f1957172453589069ba3c97597570b6dd17097513"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved complete local source cache",
+      "spotID": "island-redwood-fiber",
+      "map": "the-island",
+      "videoID": "IOCye6IYUCM",
+      "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "coordinateEvidence": "In-game map camera GPS visible at 418s: latitude 64.8, longitude 35.2. Pin identifies the filmed farming region, not every individual resource actor.",
+      "inventoryEvidence": "Berries Fiber chapter 369\u2013470s; GPS at418s and dense bushes at426s.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "The source shows this region and resource or method. A completed harvest and measured yield are not demonstrated in these clips.",
+      "steps": [
+        {
+          "id": "Resource-island-redwood-fiber-1",
+          "title": "Area / coordinates",
+          "loop": "Resource-island-redwood-fiber-1",
+          "poster": "Resource-island-redwood-fiber-1",
+          "startSeconds": 417,
+          "endSeconds": 420.5,
+          "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM&t=417s",
+          "sha256": "0b2dcbd89cf2e2cb1e497abb970bbdd8e2271880b6cb8a6ada39fe004d3868c2"
+        },
+        {
+          "id": "Resource-island-redwood-fiber-2",
+          "title": "Approach / surroundings",
+          "loop": "Resource-island-redwood-fiber-2",
+          "poster": "Resource-island-redwood-fiber-2",
+          "startSeconds": 422,
+          "endSeconds": 425.5,
+          "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM&t=422s",
+          "sha256": "59654ed5e10184911bc29ed808c8e4fa34826aaa10ecc92a3f7a726e19f2d119"
+        },
+        {
+          "id": "Resource-island-redwood-fiber-3",
+          "title": "Resource view",
+          "loop": "Resource-island-redwood-fiber-3",
+          "poster": "Resource-island-redwood-fiber-3",
+          "startSeconds": 427,
+          "endSeconds": 430.5,
+          "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM&t=427s",
+          "sha256": "6ea94aea9af761a5678d754a7fb5a77e1dfe3eb0fd689c1cb9d0bd66190903db"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved complete local source cache",
+      "spotID": "island-west-starter",
+      "map": "the-island",
+      "videoID": "IOCye6IYUCM",
+      "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "coordinateEvidence": "In-game map camera GPS visible at 482s: latitude 71.0, longitude 7.1. Pin identifies the filmed farming region, not every individual resource actor.",
+      "inventoryEvidence": "Chitin chapter470\u2013551s, GPS482s and filmed shoreline494s; Trilobite demonstrated at514s. Trees, bushes and rocks visible make this a basic-material hub rather than exact individual tree pins. Water availability derives from actual visible water shoreline and Flint from visible harvestable ground rocks plus standard Metal Pick rock harvesting mechanics; no specific yield or extra GPS actor claimed.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "The source shows this region and resource or method. A completed harvest and measured yield are not demonstrated in these clips.",
+      "steps": [
+        {
+          "id": "Resource-island-west-starter-1",
+          "title": "Area / coordinates",
+          "loop": "Resource-island-west-starter-1",
+          "poster": "Resource-island-west-starter-1",
+          "startSeconds": 480,
+          "endSeconds": 483.5,
+          "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM&t=480s",
+          "sha256": "192c57685b7e5b453a24401fa55c625b0e04abe80d7cb81f8c979a62a484333e"
+        },
+        {
+          "id": "Resource-island-west-starter-2",
+          "title": "Approach / surroundings",
+          "loop": "Resource-island-west-starter-2",
+          "poster": "Resource-island-west-starter-2",
+          "startSeconds": 489,
+          "endSeconds": 492.5,
+          "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM&t=489s",
+          "sha256": "97e84e914289f84051f383c4bc49a83d9d02ce908ae28da48079dc0f8c8322f0"
+        },
+        {
+          "id": "Resource-island-west-starter-3",
+          "title": "Creature view",
+          "loop": "Resource-island-west-starter-3",
+          "poster": "Resource-island-west-starter-3",
+          "startSeconds": 511,
+          "endSeconds": 514.5,
+          "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM&t=511s",
+          "sha256": "e0606e1aec2c4f01e4f78286a06d085dbc1cf989b3544c0c3c47a3591d2ba903"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved complete local source cache",
+      "spotID": "island-carno-crystal",
+      "map": "the-island",
+      "videoID": "IOCye6IYUCM",
+      "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "coordinateEvidence": "In-game map camera GPS visible at 566s: latitude 9.0, longitude 91.2. Pin identifies the filmed farming region, not every individual resource actor.",
+      "inventoryEvidence": "Crystal creator chapter551\u2013629s; GPS in cave566s and visible white crystal clusters574s. GPS identifies the cave region, not exact every cluster.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "The source shows this region and resource or method. A completed harvest and measured yield are not demonstrated in these clips.",
+      "steps": [
+        {
+          "id": "Resource-island-carno-crystal-1",
+          "title": "Area / coordinates",
+          "loop": "Resource-island-carno-crystal-1",
+          "poster": "Resource-island-carno-crystal-1",
+          "startSeconds": 565,
+          "endSeconds": 568.5,
+          "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM&t=565s",
+          "sha256": "1b955f978869a322bb975b52771125e732d58e5c8172e5ed876d3b4bce836e4b"
+        },
+        {
+          "id": "Resource-island-carno-crystal-2",
+          "title": "Approach / surroundings",
+          "loop": "Resource-island-carno-crystal-2",
+          "poster": "Resource-island-carno-crystal-2",
+          "startSeconds": 569,
+          "endSeconds": 572.5,
+          "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM&t=569s",
+          "sha256": "856eabdceecf1f0b0d964dbe195759f82c762c2e56d4cc4f116fa783305a1766"
+        },
+        {
+          "id": "Resource-island-carno-crystal-3",
+          "title": "Resource view",
+          "loop": "Resource-island-carno-crystal-3",
+          "poster": "Resource-island-carno-crystal-3",
+          "startSeconds": 574,
+          "endSeconds": 577.5,
+          "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM&t=574s",
+          "sha256": "7efde235bf5aba80b3b7c935fb1f2d625dd4159334d2a65848f2aa1d9b4565af"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved complete local source cache",
+      "spotID": "island-redwood-paste",
+      "map": "the-island",
+      "videoID": "IOCye6IYUCM",
+      "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "coordinateEvidence": "In-game map camera GPS visible at 654s: latitude 55.2, longitude 25.7. Pin identifies the filmed farming region, not every individual resource actor.",
+      "inventoryEvidence": "CP chapter629\u2013720s; camera GPS654s identifies this river segment, active beaver dam sequence662s.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "The source shows this region and resource or method. A completed harvest and measured yield are not demonstrated in these clips.",
+      "steps": [
+        {
+          "id": "Resource-island-redwood-paste-1",
+          "title": "Area / coordinates",
+          "loop": "Resource-island-redwood-paste-1",
+          "poster": "Resource-island-redwood-paste-1",
+          "startSeconds": 652,
+          "endSeconds": 655.5,
+          "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM&t=652s",
+          "sha256": "83656537742031406c6b76268162eb409a2513825139deebc251251122304286"
+        },
+        {
+          "id": "Resource-island-redwood-paste-2",
+          "title": "Approach / surroundings",
+          "loop": "Resource-island-redwood-paste-2",
+          "poster": "Resource-island-redwood-paste-2",
+          "startSeconds": 658,
+          "endSeconds": 661.5,
+          "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM&t=658s",
+          "sha256": "de4e1fa5a9984c2bf3bb5f12ad182cf768608e8f644db4c1089a729ffd4ecbaa"
+        },
+        {
+          "id": "Resource-island-redwood-paste-3",
+          "title": "Dam view",
+          "loop": "Resource-island-redwood-paste-3",
+          "poster": "Resource-island-redwood-paste-3",
+          "startSeconds": 662,
+          "endSeconds": 665.5,
+          "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM&t=662s",
+          "sha256": "e173be0658857e552482c4fe90029d6e09e16453b92139d97f69a37f37c14e56"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved complete local source cache",
+      "spotID": "island-nw-oil",
+      "map": "the-island",
+      "videoID": "IOCye6IYUCM",
+      "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "coordinateEvidence": "In-game map camera GPS visible at 730s: latitude 28.7, longitude 10.1. Pin identifies the filmed farming region, not every individual resource actor.",
+      "inventoryEvidence": "Oil Organic Polymer chapter720\u2013831s; camera GPS730s visible 28.7/10.1; oil rock harvesting shown746s. This pin covers oil, not an inferred penguin spawn.",
+      "harvestDemonstrated": true,
+      "evidenceLimitations": "",
+      "steps": [
+        {
+          "id": "Resource-island-nw-oil-1",
+          "title": "Area / coordinates",
+          "loop": "Resource-island-nw-oil-1",
+          "poster": "Resource-island-nw-oil-1",
+          "startSeconds": 728,
+          "endSeconds": 731.5,
+          "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM&t=728s",
+          "sha256": "533368d3182cc6672512fbac2eca6f75e01ff52fbcc49257c3be65cae87a6823"
+        },
+        {
+          "id": "Resource-island-nw-oil-2",
+          "title": "Approach / surroundings",
+          "loop": "Resource-island-nw-oil-2",
+          "poster": "Resource-island-nw-oil-2",
+          "startSeconds": 741,
+          "endSeconds": 744.5,
+          "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM&t=741s",
+          "sha256": "1d24e69280002ed10ea2a9feeed246c1ea8d47c3c227d93dd339c5a731c59d63"
+        },
+        {
+          "id": "Resource-island-nw-oil-3",
+          "title": "Harvesting",
+          "loop": "Resource-island-nw-oil-3",
+          "poster": "Resource-island-nw-oil-3",
+          "startSeconds": 745,
+          "endSeconds": 748.5,
+          "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM&t=745s",
+          "sha256": "9638e50f2b30141f665482830c835edfe4c68422ab4d0c305e6afb4b9544f16b"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved complete local source cache",
+      "spotID": "rag-black-pearl-bed",
+      "map": "ragnarok",
+      "videoID": "0i0-XEV85m8",
+      "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "coordinateEvidence": "Creator coordinate caption visible at 177.5s: latitude 6.2, longitude 63.0. Pin identifies the filmed farming region, not every individual resource actor.",
+      "inventoryEvidence": "Black Pearls chapter120\u2013253s; creator coordinate overlay6.2/63.0 at177.5s, black pearl clumps around wreck at182.5s.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "The source shows this region and resource or method. A completed harvest and measured yield are not demonstrated in these clips.",
+      "steps": [
+        {
+          "id": "Resource-rag-black-pearl-bed-1",
+          "title": "Area / coordinates",
+          "loop": "Resource-rag-black-pearl-bed-1",
+          "poster": "Resource-rag-black-pearl-bed-1",
+          "startSeconds": 176,
+          "endSeconds": 179.5,
+          "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8&t=176s",
+          "sha256": "3b3b4e2cc267b3eb186909fff9e141e411c1e43e5d5c15c9104a57b7f19dbc7e"
+        },
+        {
+          "id": "Resource-rag-black-pearl-bed-2",
+          "title": "Approach / surroundings",
+          "loop": "Resource-rag-black-pearl-bed-2",
+          "poster": "Resource-rag-black-pearl-bed-2",
+          "startSeconds": 180,
+          "endSeconds": 183.5,
+          "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8&t=180s",
+          "sha256": "c7f1e5ddfbd86910ca805afda9d226351dc044ed05a66c98572870607b48d9b9"
+        },
+        {
+          "id": "Resource-rag-black-pearl-bed-3",
+          "title": "Resource view",
+          "loop": "Resource-rag-black-pearl-bed-3",
+          "poster": "Resource-rag-black-pearl-bed-3",
+          "startSeconds": 184,
+          "endSeconds": 187.5,
+          "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8&t=184s",
+          "sha256": "0324cd8c97f26b6f3752fb74df0165961ccc8c9ffc41b7e66d52dcc713a45264"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved complete local source cache",
+      "spotID": "rag-crystal-highland",
+      "map": "ragnarok",
+      "videoID": "0i0-XEV85m8",
+      "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "coordinateEvidence": "Creator coordinate caption visible at 382.5s: latitude 6.5, longitude 87.7. Pin identifies the filmed farming region, not every individual resource actor.",
+      "inventoryEvidence": "Crystal chapter347\u2013424s; creator coordinates6.5/87.7 at382.5s; actual white crystal clusters387.5s.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "The source shows this region and resource or method. A completed harvest and measured yield are not demonstrated in these clips.",
+      "steps": [
+        {
+          "id": "Resource-rag-crystal-highland-1",
+          "title": "Area / coordinates",
+          "loop": "Resource-rag-crystal-highland-1",
+          "poster": "Resource-rag-crystal-highland-1",
+          "startSeconds": 378,
+          "endSeconds": 381.5,
+          "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8&t=378s",
+          "sha256": "8673d562724ae44c099b1bbec34197c204ea818358512bbad4417164e4d7feed"
+        },
+        {
+          "id": "Resource-rag-crystal-highland-2",
+          "title": "Approach / surroundings",
+          "loop": "Resource-rag-crystal-highland-2",
+          "poster": "Resource-rag-crystal-highland-2",
+          "startSeconds": 383,
+          "endSeconds": 386.5,
+          "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8&t=383s",
+          "sha256": "96f71a6d50baec94a8c8a5126abb374a76642700a43ebb775cb8cb3113de672e"
+        },
+        {
+          "id": "Resource-rag-crystal-highland-3",
+          "title": "Resource view",
+          "loop": "Resource-rag-crystal-highland-3",
+          "poster": "Resource-rag-crystal-highland-3",
+          "startSeconds": 388,
+          "endSeconds": 391.5,
+          "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8&t=388s",
+          "sha256": "c54ef1d7b44f437926c2c4358a6f7c77ba64191d38d54fbba40763e4c954c325"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved complete local source cache",
+      "spotID": "rag-cave-metal-obsidian",
+      "map": "ragnarok",
+      "videoID": "0i0-XEV85m8",
+      "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "coordinateEvidence": "Creator coordinate caption visible at 437.5s: latitude 21.3, longitude 24.6. Pin identifies the filmed farming region, not every individual resource actor.",
+      "inventoryEvidence": "Metal chapter424\u2013516s and Obsidian516\u2013579s share same cave; overlay21.3/24.6 at437.5s and527.5s; metal ores442.5s and dark obsidian527.5s.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "The source shows this region and resource or method. A completed harvest and measured yield are not demonstrated in these clips.",
+      "steps": [
+        {
+          "id": "Resource-rag-cave-metal-obsidian-1",
+          "title": "Area / coordinates",
+          "loop": "Resource-rag-cave-metal-obsidian-1",
+          "poster": "Resource-rag-cave-metal-obsidian-1",
+          "startSeconds": 436,
+          "endSeconds": 439.5,
+          "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8&t=436s",
+          "sha256": "2c5147ec6665461ba3b1ed139e5f518d4c204248d79185cfaa55f09065bbcbb1"
+        },
+        {
+          "id": "Resource-rag-cave-metal-obsidian-2",
+          "title": "Approach / surroundings",
+          "loop": "Resource-rag-cave-metal-obsidian-2",
+          "poster": "Resource-rag-cave-metal-obsidian-2",
+          "startSeconds": 443,
+          "endSeconds": 446.5,
+          "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8&t=443s",
+          "sha256": "b35754c6029db21b64ee1a8548457c9dae2b984bfaa7a2daacb6d9616c0f9be4"
+        },
+        {
+          "id": "Resource-rag-cave-metal-obsidian-3",
+          "title": "Resource view",
+          "loop": "Resource-rag-cave-metal-obsidian-3",
+          "poster": "Resource-rag-cave-metal-obsidian-3",
+          "startSeconds": 526,
+          "endSeconds": 529.5,
+          "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8&t=526s",
+          "sha256": "4758db63e64e2ef0c77359cfdebaa96454a28cd54cdcc19274ec95e49aab7e48"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved complete local source cache",
+      "spotID": "rag-oil-north-shore",
+      "map": "ragnarok",
+      "videoID": "0i0-XEV85m8",
+      "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "coordinateEvidence": "Creator coordinate caption visible at 597.5s: latitude 11.1, longitude 40.7. Pin identifies the filmed farming region, not every individual resource actor.",
+      "inventoryEvidence": "Oil chapter579\u2013711s; source overlay11.1/40.7 at597.5s; clear harvestable oil rock at592.5s.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "The source shows this region and resource or method. A completed harvest and measured yield are not demonstrated in these clips.",
+      "steps": [
+        {
+          "id": "Resource-rag-oil-north-shore-1",
+          "title": "Area / coordinates",
+          "loop": "Resource-rag-oil-north-shore-1",
+          "poster": "Resource-rag-oil-north-shore-1",
+          "startSeconds": 597,
+          "endSeconds": 600.5,
+          "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8&t=597s",
+          "sha256": "27e4e58c4d85fbacf2a90e463884da1f620a0d10e2cef9c2c149de224cb1b079"
+        },
+        {
+          "id": "Resource-rag-oil-north-shore-2",
+          "title": "Approach / surroundings",
+          "loop": "Resource-rag-oil-north-shore-2",
+          "poster": "Resource-rag-oil-north-shore-2",
+          "startSeconds": 590,
+          "endSeconds": 593.5,
+          "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8&t=590s",
+          "sha256": "e2b615de1956022a59206e38d2c6f23b09395025749e19b4c1bec60247fa7906"
+        },
+        {
+          "id": "Resource-rag-oil-north-shore-3",
+          "title": "Resource view",
+          "loop": "Resource-rag-oil-north-shore-3",
+          "poster": "Resource-rag-oil-north-shore-3",
+          "startSeconds": 594,
+          "endSeconds": 597.5,
+          "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8&t=594s",
+          "sha256": "b11c59bb33e236946f550c0f80bdd7d7ab96b8d3b62ab6c0be65d7431d33f3de"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved complete local source cache",
+      "spotID": "rag-polymer-plants",
+      "map": "ragnarok",
+      "videoID": "0i0-XEV85m8",
+      "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "coordinateEvidence": "Creator coordinate caption visible at 717.5s: latitude 22.7, longitude 29.5. Pin identifies the filmed farming region, not every individual resource actor.",
+      "inventoryEvidence": "Polymer chapter711\u2013817s; overlay22.7/29.5 at717.5s; plant closeup727.5s. Resource is Organic Polymer from plants, not crafted Polymer.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "The source shows this region and resource or method. A completed harvest and measured yield are not demonstrated in these clips.",
+      "steps": [
+        {
+          "id": "Resource-rag-polymer-plants-1",
+          "title": "Area / coordinates",
+          "loop": "Resource-rag-polymer-plants-1",
+          "poster": "Resource-rag-polymer-plants-1",
+          "startSeconds": 716,
+          "endSeconds": 719.5,
+          "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8&t=716s",
+          "sha256": "da889e78a5ff29041a1188a4d7dc46607fcff222410ededa7e6679bc4385a9e2"
+        },
+        {
+          "id": "Resource-rag-polymer-plants-2",
+          "title": "Approach / surroundings",
+          "loop": "Resource-rag-polymer-plants-2",
+          "poster": "Resource-rag-polymer-plants-2",
+          "startSeconds": 721,
+          "endSeconds": 724.5,
+          "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8&t=721s",
+          "sha256": "3ce2a3a92bbd110c9fe6f0c42b11920f4a0a581f7d342805a266a512a43a6a08"
+        },
+        {
+          "id": "Resource-rag-polymer-plants-3",
+          "title": "Resource view",
+          "loop": "Resource-rag-polymer-plants-3",
+          "poster": "Resource-rag-polymer-plants-3",
+          "startSeconds": 726,
+          "endSeconds": 729.5,
+          "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8&t=726s",
+          "sha256": "d5bbc43e476a48596514db48ad7587f501c63e74ac9478747fc5501ac87daebf"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved complete local source cache",
+      "spotID": "rag-flowers-nw",
+      "map": "ragnarok",
+      "videoID": "0i0-XEV85m8",
+      "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "coordinateEvidence": "Creator coordinate caption visible at 832.5s: latitude 21.8, longitude 27.9. Pin identifies the filmed farming region, not every individual resource actor.",
+      "inventoryEvidence": "Rare Flowers chapter817\u2013870s; explicit overlay21.8/27.9 and flowers in same832.5s frame.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "The source shows this region and resource or method. A completed harvest and measured yield are not demonstrated in these clips.",
+      "steps": [
+        {
+          "id": "Resource-rag-flowers-nw-1",
+          "title": "Area / coordinates",
+          "loop": "Resource-rag-flowers-nw-1",
+          "poster": "Resource-rag-flowers-nw-1",
+          "startSeconds": 829,
+          "endSeconds": 832.5,
+          "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8&t=829s",
+          "sha256": "d88c130e1216dcd6a43327f0cbcf9cbbbefc81ff604342388c612fda12753173"
+        },
+        {
+          "id": "Resource-rag-flowers-nw-2",
+          "title": "Approach / surroundings",
+          "loop": "Resource-rag-flowers-nw-2",
+          "poster": "Resource-rag-flowers-nw-2",
+          "startSeconds": 833,
+          "endSeconds": 836.5,
+          "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8&t=833s",
+          "sha256": "748602bd1c608fac08b8f163806625a0746d4d5cd38e04caf671cb6635963b96"
+        },
+        {
+          "id": "Resource-rag-flowers-nw-3",
+          "title": "Resource view",
+          "loop": "Resource-rag-flowers-nw-3",
+          "poster": "Resource-rag-flowers-nw-3",
+          "startSeconds": 837,
+          "endSeconds": 840.5,
+          "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8&t=837s",
+          "sha256": "d3a61a39de973a033b5e6f1b202857d8c19b17cb882dd914170437f29503d51c"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved complete local source cache",
+      "spotID": "rag-pearls-cave",
+      "map": "ragnarok",
+      "videoID": "0i0-XEV85m8",
+      "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "coordinateEvidence": "Creator coordinate caption visible at 1007.5s: latitude 21.8, longitude 33.1. Pin identifies the filmed farming region, not every individual resource actor.",
+      "inventoryEvidence": "Silica Pearls chapter1000\u20131057s; harvest ADDED Silica Pearls at1002.5s; coordinate overlay21.8/33.1 at1007.5s.",
+      "harvestDemonstrated": true,
+      "evidenceLimitations": "",
+      "steps": [
+        {
+          "id": "Resource-rag-pearls-cave-1",
+          "title": "Area / coordinates",
+          "loop": "Resource-rag-pearls-cave-1",
+          "poster": "Resource-rag-pearls-cave-1",
+          "startSeconds": 1006,
+          "endSeconds": 1009.5,
+          "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8&t=1006s",
+          "sha256": "c390c3f4ae22f384d5ab6551810eb42b05eb215038ef6256372aa6ed91146743"
+        },
+        {
+          "id": "Resource-rag-pearls-cave-2",
+          "title": "Approach / surroundings",
+          "loop": "Resource-rag-pearls-cave-2",
+          "poster": "Resource-rag-pearls-cave-2",
+          "startSeconds": 1011,
+          "endSeconds": 1014.5,
+          "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8&t=1011s",
+          "sha256": "3f561be00d9c6f27dfc64849c42c82a90eba8ef34cfe3daf70d91a4c2f2bb55b"
+        },
+        {
+          "id": "Resource-rag-pearls-cave-3",
+          "title": "Harvesting",
+          "loop": "Resource-rag-pearls-cave-3",
+          "poster": "Resource-rag-pearls-cave-3",
+          "startSeconds": 1001,
+          "endSeconds": 1004.5,
+          "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8&t=1001s",
+          "sha256": "e5f75857bc82d00a2eaf77a70a4da74d9ddfcc37b1e42d38393ea714cb6d69b7"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved complete local source cache",
+      "spotID": "rag-silk-fields",
+      "map": "ragnarok",
+      "videoID": "0i0-XEV85m8",
+      "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "coordinateEvidence": "Creator coordinate caption visible at 1072.5s: latitude 11.7, longitude 83.7. Pin identifies the filmed farming region, not every individual resource actor.",
+      "inventoryEvidence": "Silk chapter1057\u20131110s; overlay11.7/83.7 and dense plants in same1072.5s frame.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "The source shows this region and resource or method. A completed harvest and measured yield are not demonstrated in these clips.",
+      "steps": [
+        {
+          "id": "Resource-rag-silk-fields-1",
+          "title": "Area / coordinates",
+          "loop": "Resource-rag-silk-fields-1",
+          "poster": "Resource-rag-silk-fields-1",
+          "startSeconds": 1069,
+          "endSeconds": 1072.5,
+          "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8&t=1069s",
+          "sha256": "dffa0469436d5b720c6b58a175ffcfc6cb034371fe24d9bc13db6f6d86c552f9"
+        },
+        {
+          "id": "Resource-rag-silk-fields-2",
+          "title": "Approach / surroundings",
+          "loop": "Resource-rag-silk-fields-2",
+          "poster": "Resource-rag-silk-fields-2",
+          "startSeconds": 1073,
+          "endSeconds": 1076.5,
+          "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8&t=1073s",
+          "sha256": "833f0743c0c91488c4b15006c6f1b651c53adca47453e03c5dabc2b9f3ee463d"
+        },
+        {
+          "id": "Resource-rag-silk-fields-3",
+          "title": "Resource view",
+          "loop": "Resource-rag-silk-fields-3",
+          "poster": "Resource-rag-silk-fields-3",
+          "startSeconds": 1077,
+          "endSeconds": 1080.5,
+          "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8&t=1077s",
+          "sha256": "2ca745e723a146095a379933dad71b0f3ee4abd010d4a9090ae79c2b1e0bcdc4"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved complete local source cache",
+      "spotID": "rag-sulfur-rocks",
+      "map": "ragnarok",
+      "videoID": "0i0-XEV85m8",
+      "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "coordinateEvidence": "Creator coordinate caption visible at 1122.5s: latitude 22.7, longitude 64.1. Pin identifies the filmed farming region, not every individual resource actor.",
+      "inventoryEvidence": "Sulfur chapter1110\u20131166s; coordinate overlay22.7/64.1 at1122.5s; yellow sulfur nodes in same frame.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "The source shows this region and resource or method. A completed harvest and measured yield are not demonstrated in these clips.",
+      "steps": [
+        {
+          "id": "Resource-rag-sulfur-rocks-1",
+          "title": "Area / coordinates",
+          "loop": "Resource-rag-sulfur-rocks-1",
+          "poster": "Resource-rag-sulfur-rocks-1",
+          "startSeconds": 1118,
+          "endSeconds": 1121.5,
+          "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8&t=1118s",
+          "sha256": "f275479148bdec9e0b0c84c849e551a573c9c1fefc0d420bb361fa076580904c"
+        },
+        {
+          "id": "Resource-rag-sulfur-rocks-2",
+          "title": "Approach / surroundings",
+          "loop": "Resource-rag-sulfur-rocks-2",
+          "poster": "Resource-rag-sulfur-rocks-2",
+          "startSeconds": 1122,
+          "endSeconds": 1125.5,
+          "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8&t=1122s",
+          "sha256": "944395c696856ab65aaeaf1796f391ef9687f1630ab5b60d2cddd5d5a9b14dbb"
+        },
+        {
+          "id": "Resource-rag-sulfur-rocks-3",
+          "title": "Resource view",
+          "loop": "Resource-rag-sulfur-rocks-3",
+          "poster": "Resource-rag-sulfur-rocks-3",
+          "startSeconds": 1126,
+          "endSeconds": 1129.5,
+          "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8&t=1126s",
+          "sha256": "0633f52252ac10872908694deda131e345be1f500d24ad9a51a25128acf5fc31"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved complete local source cache",
+      "spotID": "rag-salt-columns",
+      "map": "ragnarok",
+      "videoID": "0i0-XEV85m8",
+      "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "coordinateEvidence": "In-game map camera GPS visible at 1237.5s: latitude 86.2, longitude 39.1. Pin identifies the filmed farming region, not every individual resource actor.",
+      "inventoryEvidence": "Raw Salt chapter1225\u20131270s; GPS86.2/39.1 at1237.5s; salt columns at1232.5s.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "The source shows this region and resource or method. A completed harvest and measured yield are not demonstrated in these clips.",
+      "steps": [
+        {
+          "id": "Resource-rag-salt-columns-1",
+          "title": "Area / coordinates",
+          "loop": "Resource-rag-salt-columns-1",
+          "poster": "Resource-rag-salt-columns-1",
+          "startSeconds": 1236,
+          "endSeconds": 1239.5,
+          "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8&t=1236s",
+          "sha256": "306fb995dcc44397cef252dd361a1ebb9e86b18ea84fb43fd7f70ce3c2ccf80c"
+        },
+        {
+          "id": "Resource-rag-salt-columns-2",
+          "title": "Approach / surroundings",
+          "loop": "Resource-rag-salt-columns-2",
+          "poster": "Resource-rag-salt-columns-2",
+          "startSeconds": 1228,
+          "endSeconds": 1231.5,
+          "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8&t=1228s",
+          "sha256": "a1810c54d00136658893ee5cc6689d400218b2947a2869ce777ebb0d151ea288"
+        },
+        {
+          "id": "Resource-rag-salt-columns-3",
+          "title": "Resource view",
+          "loop": "Resource-rag-salt-columns-3",
+          "poster": "Resource-rag-salt-columns-3",
+          "startSeconds": 1232,
+          "endSeconds": 1235.5,
+          "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8&t=1232s",
+          "sha256": "77637cb6b6ca10ed99999371bcda7f22920ee2086d338755a59738a278a8005d"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved complete local source cache",
+      "spotID": "island-ice-polymer",
+      "map": "the-island",
+      "videoID": "IOCye6IYUCM",
+      "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "coordinateEvidence": "In-game map camera GPS visible at 776s: latitude 25.8, longitude 6.5. Pin identifies the filmed farming region, not every individual resource actor.",
+      "inventoryEvidence": "Oil Organic Polymer chapter720\u2013831s; exact camera GPS25.8/6.5 at776s and ice floe in same frame. No measured yield or permanent penguin spawn claimed.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "The source shows this region and resource or method. A completed harvest and measured yield are not demonstrated in these clips.",
+      "steps": [
+        {
+          "id": "Resource-island-ice-polymer-1",
+          "title": "Area / coordinates",
+          "loop": "Resource-island-ice-polymer-1",
+          "poster": "Resource-island-ice-polymer-1",
+          "startSeconds": 775,
+          "endSeconds": 778.5,
+          "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM&t=775s",
+          "sha256": "05bf170d8efd85ed4c6417ceffcb5eaa4a83f9e22fe22cbf6e2baf05662470e2"
+        },
+        {
+          "id": "Resource-island-ice-polymer-2",
+          "title": "Approach / surroundings",
+          "loop": "Resource-island-ice-polymer-2",
+          "poster": "Resource-island-ice-polymer-2",
+          "startSeconds": 767,
+          "endSeconds": 770.5,
+          "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM&t=767s",
+          "sha256": "c35c73d9ebae2b5ec761bc849a5027d953566e10c9948cdd9adb2e949591d9b1"
+        },
+        {
+          "id": "Resource-island-ice-polymer-3",
+          "title": "Resource view",
+          "loop": "Resource-island-ice-polymer-3",
+          "poster": "Resource-island-ice-polymer-3",
+          "startSeconds": 780,
+          "endSeconds": 783.5,
+          "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM&t=780s",
+          "sha256": "bb4c862e14ada52015e92e1c89684234c70bc68da7e15fa138f8bb862aa233df"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved complete local source cache",
+      "spotID": "rag-lake-basic-hub",
+      "map": "ragnarok",
+      "videoID": "5IhlD3yzqjU",
+      "sourceURL": "https://www.youtube.com/watch?v=5IhlD3yzqjU",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "coordinateEvidence": "In-game map camera GPS visible at 508s: latitude 24.8, longitude 42.3. Pin identifies the filmed farming region, not every individual resource actor.",
+      "inventoryEvidence": "Camera GPS24.8/42.3 at508s; actual forested rocky shoreline535s. Basic materials described as a broad gatherable hub visible in scene, not individual raw actor exact pins. The same resource guide shows wood tree harvesting806\u2013867s elsewhere; no measured yield for this shoreline claimed. Water availability derives from actual visible water shoreline and Flint from visible harvestable ground rocks plus standard Metal Pick rock harvesting mechanics; no specific yield or extra GPS actor claimed.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "The source shows this region and resource or method. A completed harvest and measured yield are not demonstrated in these clips.",
+      "steps": [
+        {
+          "id": "Resource-rag-lake-basic-hub-1",
+          "title": "Area / coordinates",
+          "loop": "Resource-rag-lake-basic-hub-1",
+          "poster": "Resource-rag-lake-basic-hub-1",
+          "startSeconds": 506,
+          "endSeconds": 509.5,
+          "sourceURL": "https://www.youtube.com/watch?v=5IhlD3yzqjU&t=506s",
+          "sha256": "0e1cfa5814571ef71e0f58a366ca7a62a6914bc5144c7c77b3e788f8bd8e88ed"
+        },
+        {
+          "id": "Resource-rag-lake-basic-hub-2",
+          "title": "Approach / surroundings",
+          "loop": "Resource-rag-lake-basic-hub-2",
+          "poster": "Resource-rag-lake-basic-hub-2",
+          "startSeconds": 532,
+          "endSeconds": 535.5,
+          "sourceURL": "https://www.youtube.com/watch?v=5IhlD3yzqjU&t=532s",
+          "sha256": "547797eb06b527bb3850987f18a687c560bc7a3b787d0890816f55800e329796"
+        },
+        {
+          "id": "Resource-rag-lake-basic-hub-3",
+          "title": "Resource view",
+          "loop": "Resource-rag-lake-basic-hub-3",
+          "poster": "Resource-rag-lake-basic-hub-3",
+          "startSeconds": 536,
+          "endSeconds": 539.5,
+          "sourceURL": "https://www.youtube.com/watch?v=5IhlD3yzqjU&t=536s",
+          "sha256": "d209bae32e46d21ca0c3d8d8cea36a72987ddbac0fbefa60548dedfaad5c9cc7"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved complete local source cache",
+      "spotID": "island-surface-pearls",
+      "map": "the-island",
+      "videoID": "0JqFIlmuq9o",
+      "sourceURL": "https://www.youtube.com/watch?v=0JqFIlmuq9o",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "coordinateEvidence": "In-game map camera GPS visible at 195s: latitude 35.7, longitude 12.3. Pin identifies the filmed farming region, not every individual resource actor.",
+      "inventoryEvidence": "Creator literal GPS overlay35.7/12.3 at195s; shoreline overview195s, actual white pearl clusters seabed209s. No measured yield claimed.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "The source shows this region and resource or method. A completed harvest and measured yield are not demonstrated in these clips.",
+      "steps": [
+        {
+          "id": "Resource-island-surface-pearls-1",
+          "title": "Area / coordinates",
+          "loop": "Resource-island-surface-pearls-1",
+          "poster": "Resource-island-surface-pearls-1",
+          "startSeconds": 194,
+          "endSeconds": 197.5,
+          "sourceURL": "https://www.youtube.com/watch?v=0JqFIlmuq9o&t=194s",
+          "sha256": "cae05a2827c0be15a30fb061694dda8e07d5cefe60a94a8a08657a109e94a3d2"
+        },
+        {
+          "id": "Resource-island-surface-pearls-2",
+          "title": "Approach / surroundings",
+          "loop": "Resource-island-surface-pearls-2",
+          "poster": "Resource-island-surface-pearls-2",
+          "startSeconds": 199,
+          "endSeconds": 202.5,
+          "sourceURL": "https://www.youtube.com/watch?v=0JqFIlmuq9o&t=199s",
+          "sha256": "f370e3d12eec3b44d8fe024099d8c0ed9f8c8fcfe3518fffa3220bae9d437c9e"
+        },
+        {
+          "id": "Resource-island-surface-pearls-3",
+          "title": "Resource view",
+          "loop": "Resource-island-surface-pearls-3",
+          "poster": "Resource-island-surface-pearls-3",
+          "startSeconds": 204,
+          "endSeconds": 207.5,
+          "sourceURL": "https://www.youtube.com/watch?v=0JqFIlmuq9o&t=204s",
+          "sha256": "dad0d535d5392237f03f3465ca4a6b42c8c0b43c2f059486aa93208dc7ae34fd"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved complete local source cache",
+      "spotID": "rag-whale-keratin",
+      "map": "ragnarok",
+      "videoID": "Xlsuehsu9oQ",
+      "sourceURL": "https://www.youtube.com/watch?v=Xlsuehsu9oQ",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "coordinateEvidence": "In-game map camera GPS visible at 99s: latitude 9.85, longitude 92.05. Pin identifies the filmed farming region, not every individual resource actor.",
+      "inventoryEvidence": "Actual whale carcass being struck with tool99s; persistent source camera coordinates9.85/92.05 in same frame. Creature/carcass farming region, not guaranteed permanent spawn. No fixed yield promised.",
+      "harvestDemonstrated": true,
+      "evidenceLimitations": "",
+      "steps": [
+        {
+          "id": "Resource-rag-whale-keratin-1",
+          "title": "Area / coordinates",
+          "loop": "Resource-rag-whale-keratin-1",
+          "poster": "Resource-rag-whale-keratin-1",
+          "startSeconds": 97,
+          "endSeconds": 100.5,
+          "sourceURL": "https://www.youtube.com/watch?v=Xlsuehsu9oQ&t=97s",
+          "sha256": "e6edf3bc2bc808f813e4c3834d194df16657083d8727115832c9b5b9785c5acc"
+        },
+        {
+          "id": "Resource-rag-whale-keratin-2",
+          "title": "Approach / surroundings",
+          "loop": "Resource-rag-whale-keratin-2",
+          "poster": "Resource-rag-whale-keratin-2",
+          "startSeconds": 89,
+          "endSeconds": 92.5,
+          "sourceURL": "https://www.youtube.com/watch?v=Xlsuehsu9oQ&t=89s",
+          "sha256": "781be0188defe34f63356f351600f884c23027465604f5de864cd67dbdc6a0af"
+        },
+        {
+          "id": "Resource-rag-whale-keratin-3",
+          "title": "Harvesting",
+          "loop": "Resource-rag-whale-keratin-3",
+          "poster": "Resource-rag-whale-keratin-3",
+          "startSeconds": 101,
+          "endSeconds": 104.5,
+          "sourceURL": "https://www.youtube.com/watch?v=Xlsuehsu9oQ&t=101s",
+          "sha256": "3c36c37e000de1df9aeee6b69968fbcd9ba1dced97e7625e506a15661a0b7ab1"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved complete local source cache",
+      "spotID": "honey-center-redwoods",
+      "map": "the-center",
+      "videoID": "DgvNoRqz4EE",
+      "sourceURL": "https://www.youtube.com/watch?v=DgvNoRqz4EE",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "coordinateEvidence": "145s: creator overlay 77.1/65.3 and literal in-game map latitude77.1 longitude65.3; same tree shown135s. Region pin, not guaranteed hive actor.",
+      "inventoryEvidence": "135s actual tree-mounted hive under player tree platform; video shows Giant Bee/Queen sequence and player inventory later. No fixed honey yield or guaranteed spawn asserted.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "The source shows this region and resource or method. A completed harvest and measured yield are not demonstrated in these clips.",
+      "steps": [
+        {
+          "id": "Resource-honey-center-redwoods-1",
+          "title": "Area / coordinates",
+          "loop": "Resource-honey-center-redwoods-1",
+          "poster": "Resource-honey-center-redwoods-1",
+          "startSeconds": 143,
+          "endSeconds": 146.5,
+          "sourceURL": "https://www.youtube.com/watch?v=DgvNoRqz4EE&t=143s",
+          "sha256": "4a5da67814a08de03f79d8a9b728a946e5f6f675876c1b4ffdd6fbc577bf4568"
+        },
+        {
+          "id": "Resource-honey-center-redwoods-2",
+          "title": "Approach / surroundings",
+          "loop": "Resource-honey-center-redwoods-2",
+          "poster": "Resource-honey-center-redwoods-2",
+          "startSeconds": 126,
+          "endSeconds": 129.5,
+          "sourceURL": "https://www.youtube.com/watch?v=DgvNoRqz4EE&t=126s",
+          "sha256": "1a35716a8aa6557199e6074dcd8c47dfacc4df0a9e2178c4892ed327dfc5af27"
+        },
+        {
+          "id": "Resource-honey-center-redwoods-3",
+          "title": "Hive view",
+          "loop": "Resource-honey-center-redwoods-3",
+          "poster": "Resource-honey-center-redwoods-3",
+          "startSeconds": 134,
+          "endSeconds": 137.5,
+          "sourceURL": "https://www.youtube.com/watch?v=DgvNoRqz4EE&t=134s",
+          "sha256": "d58d3f3d7694e847af6ee27b384e0e495df92f45799de0bfd512704328577bad"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved complete local source cache",
+      "spotID": "honey-island-redwoods",
+      "map": "the-island",
+      "videoID": "biZPGe9eD5Y",
+      "sourceURL": "https://www.youtube.com/watch?v=biZPGe9eD5Y",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "coordinateEvidence": "38s and41s literal in-game M-map camera latitude63.3 longitude30.2; creator at same tree whose hive shown32s/45s. Keep source M-map coordinate convention; not estimated from minimap.",
+      "inventoryEvidence": "45s hive closeup with visible honey comb; same source tree shown32s before coordinate map. Source is location demonstration, not a measured inventory yield.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "The source shows this region and resource or method. A completed harvest and measured yield are not demonstrated in these clips.",
+      "steps": [
+        {
+          "id": "Resource-honey-island-redwoods-1",
+          "title": "Area / coordinates",
+          "loop": "Resource-honey-island-redwoods-1",
+          "poster": "Resource-honey-island-redwoods-1",
+          "startSeconds": 37,
+          "endSeconds": 40.5,
+          "sourceURL": "https://www.youtube.com/watch?v=biZPGe9eD5Y&t=37s",
+          "sha256": "f196416a3a90f8a998dfe78900214b183d132ec2af15f6733532f405ed286d3e"
+        },
+        {
+          "id": "Resource-honey-island-redwoods-2",
+          "title": "Approach / surroundings",
+          "loop": "Resource-honey-island-redwoods-2",
+          "poster": "Resource-honey-island-redwoods-2",
+          "startSeconds": 31,
+          "endSeconds": 34.5,
+          "sourceURL": "https://www.youtube.com/watch?v=biZPGe9eD5Y&t=31s",
+          "sha256": "1b342df58f1d68b59269993beb41e0784a96775153d1ef9a2ef197f2ab4350d1"
+        },
+        {
+          "id": "Resource-honey-island-redwoods-3",
+          "title": "Hive view",
+          "loop": "Resource-honey-island-redwoods-3",
+          "poster": "Resource-honey-island-redwoods-3",
+          "startSeconds": 44,
+          "endSeconds": 47.5,
+          "sourceURL": "https://www.youtube.com/watch?v=biZPGe9eD5Y&t=44s",
+          "sha256": "0534c484f2d40d60afd8a1e603fba8a92a4760471f6b055bfccac3a5df199a96"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved complete local source cache",
+      "spotID": "honey-ragnarok-queen-region",
+      "map": "ragnarok",
+      "videoID": "u_c-yTvCLek",
+      "sourceURL": "https://www.youtube.com/watch?v=u_c-yTvCLek",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "coordinateEvidence": "85s literal in-game map crosshair latitude25.2 longitude40.0, matching creator overlay25.2 LAT40 LONG and Giant Queen Bee marker. This is search region; moving Queen location is not guaranteed.",
+      "inventoryEvidence": "165s tame Giant Queen Bee with Obtain Bee Hive prompt;175s placed Bee Hive,185s hive inventory explicitly requests/provides Rare Flowers. Produced honey is not visibly measured; pin describes acquiring a Queen for honey production.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "The source shows this region and resource or method. A completed harvest and measured yield are not demonstrated in these clips.",
+      "steps": [
+        {
+          "id": "Resource-honey-ragnarok-queen-region-1",
+          "title": "Area / coordinates",
+          "loop": "Resource-honey-ragnarok-queen-region-1",
+          "poster": "Resource-honey-ragnarok-queen-region-1",
+          "startSeconds": 83,
+          "endSeconds": 86.5,
+          "sourceURL": "https://www.youtube.com/watch?v=u_c-yTvCLek&t=83s",
+          "sha256": "62324c8cb384f97e1c63b4693556511fe925fb52e33697f94e058f20ef6eb7bf"
+        },
+        {
+          "id": "Resource-honey-ragnarok-queen-region-2",
+          "title": "Approach / surroundings",
+          "loop": "Resource-honey-ragnarok-queen-region-2",
+          "poster": "Resource-honey-ragnarok-queen-region-2",
+          "startSeconds": 154,
+          "endSeconds": 157.5,
+          "sourceURL": "https://www.youtube.com/watch?v=u_c-yTvCLek&t=154s",
+          "sha256": "72423a7e5dab6708fc88e00399185ba09f0ddd5a12049fd634b792b2947209d2"
+        },
+        {
+          "id": "Resource-honey-ragnarok-queen-region-3",
+          "title": "Queen interaction",
+          "loop": "Resource-honey-ragnarok-queen-region-3",
+          "poster": "Resource-honey-ragnarok-queen-region-3",
+          "startSeconds": 164,
+          "endSeconds": 167.5,
+          "sourceURL": "https://www.youtube.com/watch?v=u_c-yTvCLek&t=164s",
+          "sha256": "5ee8e51b92ecf9b5b27444b22b172ef0210207058a62741de5fc0791df613781"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved complete local source cache",
+      "spotID": "rag-shore-sand",
+      "map": "ragnarok",
+      "videoID": "jkMVN1exw74",
+      "sourceURL": "https://www.youtube.com/watch?v=jkMVN1exw74",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "coordinateEvidence": "In-game map camera GPS visible at 51s: latitude 24.2, longitude 33. Pin identifies the filmed farming region, not every individual resource actor.",
+      "inventoryEvidence": "Literal M-map camera GPS24.2/33 at51s; same continuous shoreline chapter8\u201358s, actual golden Sandpile harvested19s with Sand+2 overlay.",
+      "harvestDemonstrated": true,
+      "evidenceLimitations": "",
+      "steps": [
+        {
+          "id": "Resource-rag-shore-sand-1",
+          "title": "Area / coordinates",
+          "loop": "Resource-rag-shore-sand-1",
+          "poster": "Resource-rag-shore-sand-1",
+          "startSeconds": 50,
+          "endSeconds": 53.5,
+          "sourceURL": "https://www.youtube.com/watch?v=jkMVN1exw74&t=50s",
+          "sha256": "5b30019f6e854d34e580fb3fa62cb0dc793471e9df42bb9ff0c51cd8e0f69e40"
+        },
+        {
+          "id": "Resource-rag-shore-sand-2",
+          "title": "Approach / surroundings",
+          "loop": "Resource-rag-shore-sand-2",
+          "poster": "Resource-rag-shore-sand-2",
+          "startSeconds": 10,
+          "endSeconds": 13.5,
+          "sourceURL": "https://www.youtube.com/watch?v=jkMVN1exw74&t=10s",
+          "sha256": "ed5c26323de2ef1c2bf4710e2278f15b2ecb31385df0fe0b83eea74b91dfca07"
+        },
+        {
+          "id": "Resource-rag-shore-sand-3",
+          "title": "Harvesting",
+          "loop": "Resource-rag-shore-sand-3",
+          "poster": "Resource-rag-shore-sand-3",
+          "startSeconds": 18,
+          "endSeconds": 21.5,
+          "sourceURL": "https://www.youtube.com/watch?v=jkMVN1exw74&t=18s",
+          "sha256": "6a1b7fcc0eb88222bd56d4619f231e7b6a314fc02719249dce8a9ef5b2b06e32"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved complete local source cache",
+      "spotID": "island-swamp-mushrooms",
+      "map": "the-island",
+      "videoID": "3oUZ_AoRLmg",
+      "sourceURL": "https://www.youtube.com/watch?v=3oUZ_AoRLmg",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "coordinateEvidence": "In-game map camera GPS visible at 79s: latitude 74.1, longitude 33.5. Pin identifies the filmed farming region, not every individual resource actor.",
+      "inventoryEvidence": "Literal source M-map camera GPS74.1/33.5 at79s; continuous swamp route79\u2013103s and actual tree chopping99s. Wood+61 and Rare Mushroom+3 item-icon harvest overlays in source99s; mushroom inventory showcased103s. Pin is regional swamp entry/camera position, not an individual tree coordinate.",
+      "harvestDemonstrated": true,
+      "evidenceLimitations": "",
+      "steps": [
+        {
+          "id": "Resource-island-swamp-mushrooms-1",
+          "title": "Area / coordinates",
+          "loop": "Resource-island-swamp-mushrooms-1",
+          "poster": "Resource-island-swamp-mushrooms-1",
+          "startSeconds": 77,
+          "endSeconds": 80.5,
+          "sourceURL": "https://www.youtube.com/watch?v=3oUZ_AoRLmg&t=77s",
+          "sha256": "035fcf6498e026f2d87bd59a6f69fa16f878f72b758aff5ed25e2a9d519e5e25"
+        },
+        {
+          "id": "Resource-island-swamp-mushrooms-2",
+          "title": "Approach / surroundings",
+          "loop": "Resource-island-swamp-mushrooms-2",
+          "poster": "Resource-island-swamp-mushrooms-2",
+          "startSeconds": 89,
+          "endSeconds": 92.5,
+          "sourceURL": "https://www.youtube.com/watch?v=3oUZ_AoRLmg&t=89s",
+          "sha256": "3ba262bc296b84e0998bae6b6bae0881ec28aec16a6ae6bab51d37ab6436aed2"
+        },
+        {
+          "id": "Resource-island-swamp-mushrooms-3",
+          "title": "Harvesting",
+          "loop": "Resource-island-swamp-mushrooms-3",
+          "poster": "Resource-island-swamp-mushrooms-3",
+          "startSeconds": 97,
+          "endSeconds": 100.5,
+          "sourceURL": "https://www.youtube.com/watch?v=3oUZ_AoRLmg&t=97s",
+          "sha256": "6dd9a1bde1e6cdbac765d1b5385eba1cefd61ac85f6a4a85a324ab6ccbdb7713"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved complete local source cache",
+      "spotID": "center-extra-swamp-mushrooms",
+      "map": "the-center",
+      "videoID": "tj-7gfu6AHA",
+      "sourceURL": "https://www.youtube.com/watch?v=tj-7gfu6AHA",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "coordinateEvidence": "Actual ASA in-game map at135\u2013140s literally displays LATITUDE49.4 LONGITUDE37.4; local speech transcription of108\u2013145s independently repeats these coordinates. Pin marks filmed swamp tree-farming region.",
+      "inventoryEvidence": "Dedicated ASA rare-mushroom guide chapter Swamp/Trees108\u2013145s shows exact swamp-tree scenery, equipped chainsaw120s and Therizinosaurus128\u2013131s. Creator explicitly names rare-mushroom harvesting with chainsaw/pick/Therizinosaurus in audio. No readable inventory yield/count shown here; this row verifies region and demonstrated method, not quantity.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "The source shows this region and resource or method. A completed harvest and measured yield are not demonstrated in these clips.",
+      "steps": [
+        {
+          "id": "Resource-center-extra-swamp-mushrooms-1",
+          "title": "Area / coordinates",
+          "loop": "Resource-center-extra-swamp-mushrooms-1",
+          "poster": "Resource-center-extra-swamp-mushrooms-1",
+          "startSeconds": 135,
+          "endSeconds": 138.5,
+          "sourceURL": "https://www.youtube.com/watch?v=tj-7gfu6AHA&t=135s",
+          "sha256": "fb4ff22a9f1f6f9cddb4e290ffc5046e8da23dbf95385519f67344e9be1bbfb2"
+        },
+        {
+          "id": "Resource-center-extra-swamp-mushrooms-2",
+          "title": "Approach / surroundings",
+          "loop": "Resource-center-extra-swamp-mushrooms-2",
+          "poster": "Resource-center-extra-swamp-mushrooms-2",
+          "startSeconds": 112,
+          "endSeconds": 115.5,
+          "sourceURL": "https://www.youtube.com/watch?v=tj-7gfu6AHA&t=112s",
+          "sha256": "48316e790d3722ea3b82becaf5971208aea92a311d1520d23896461ae5cfa393"
+        },
+        {
+          "id": "Resource-center-extra-swamp-mushrooms-3",
+          "title": "Tool demonstration",
+          "loop": "Resource-center-extra-swamp-mushrooms-3",
+          "poster": "Resource-center-extra-swamp-mushrooms-3",
+          "startSeconds": 119,
+          "endSeconds": 122.5,
+          "sourceURL": "https://www.youtube.com/watch?v=tj-7gfu6AHA&t=119s",
+          "sha256": "96f1cf67af1a7ddca6b9fe46a86352d88840ce2f51873ba7fd5769861e732a00"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved complete local source cache",
+      "spotID": "island-east-dam-rares",
+      "map": "the-island",
+      "videoID": "6d_iRk7tFBk",
+      "sourceURL": "https://www.youtube.com/watch?v=6d_iRk7tFBk",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "coordinateEvidence": "In-game map camera GPS visible at 286.5s: latitude 32.5, longitude 83.5. Pin identifies the filmed farming region, not every individual resource actor.",
+      "inventoryEvidence": "Literal camera M-map GPS32.5/83.5 at286.5s, aerial regional locator then continuous descent to actual dam292.5s. Open dam322.5s shows Rare Flowers16, Rare Mushrooms8, Silica Pearls27, Cementing Paste370; wood visibly in earlier same dam inventory295.5s. Camera region rather than individual dam GPS; variable loot not promised fixed yield.",
+      "harvestDemonstrated": true,
+      "evidenceLimitations": "",
+      "steps": [
+        {
+          "id": "Resource-island-east-dam-rares-1",
+          "title": "Area / coordinates",
+          "loop": "Resource-island-east-dam-rares-1",
+          "poster": "Resource-island-east-dam-rares-1",
+          "startSeconds": 285,
+          "endSeconds": 288.5,
+          "sourceURL": "https://www.youtube.com/watch?v=6d_iRk7tFBk&t=285s",
+          "sha256": "9368e408c94d281306415851a53e45b972735360938df146556603d5515252f8"
+        },
+        {
+          "id": "Resource-island-east-dam-rares-2",
+          "title": "Approach / surroundings",
+          "loop": "Resource-island-east-dam-rares-2",
+          "poster": "Resource-island-east-dam-rares-2",
+          "startSeconds": 291,
+          "endSeconds": 294.5,
+          "sourceURL": "https://www.youtube.com/watch?v=6d_iRk7tFBk&t=291s",
+          "sha256": "e1996b0d75182d6a8d4b28eac091b01bc47a131a10680b519134ac9be316e254"
+        },
+        {
+          "id": "Resource-island-east-dam-rares-3",
+          "title": "Dam loot",
+          "loop": "Resource-island-east-dam-rares-3",
+          "poster": "Resource-island-east-dam-rares-3",
+          "startSeconds": 321,
+          "endSeconds": 324.5,
+          "sourceURL": "https://www.youtube.com/watch?v=6d_iRk7tFBk&t=321s",
+          "sha256": "8a964ff21df34613f41fd877898c1704ffd330f3766d831ce97c2e09bc3a30fb"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved complete local source cache",
+      "spotID": "center-extra-lava-chitin",
+      "map": "the-center",
+      "videoID": "YU-ZCfZF8gk",
+      "sourceURL": "https://www.youtube.com/watch?v=YU-ZCfZF8gk",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "coordinateEvidence": "Same continuous ASA cave-farming sequence: HUD literally shows N19.36 47.68 at555s during Megatherium inventory after kills. The earlier100s map53.26/58.05 belongs to a different cave and is not used. Pin is interior farming region, not entrance or fixed creature spawn.",
+      "inventoryEvidence": "Actual Megatherium attacks on Pulmonoscorpius/Araneo visible480\u2013540s. At550\u2013555s inventory contains Chitin icons in stacks10000/10000/242. These are creator/server totals, not promised yields; footage uses modified stack sizes.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "The source shows this region and resource or method. A completed harvest and measured yield are not demonstrated in these clips.",
+      "steps": [
+        {
+          "id": "Resource-center-extra-lava-chitin-1",
+          "title": "Area / coordinates",
+          "loop": "Resource-center-extra-lava-chitin-1",
+          "poster": "Resource-center-extra-lava-chitin-1",
+          "startSeconds": 553,
+          "endSeconds": 556.5,
+          "sourceURL": "https://www.youtube.com/watch?v=YU-ZCfZF8gk&t=553s",
+          "sha256": "baa36c65439151af277ab3ed6e8bcdb9a7a8cd051524c951eda647ced4c4818d"
+        },
+        {
+          "id": "Resource-center-extra-lava-chitin-2",
+          "title": "Approach / surroundings",
+          "loop": "Resource-center-extra-lava-chitin-2",
+          "poster": "Resource-center-extra-lava-chitin-2",
+          "startSeconds": 479,
+          "endSeconds": 482.5,
+          "sourceURL": "https://www.youtube.com/watch?v=YU-ZCfZF8gk&t=479s",
+          "sha256": "965935e1279db627a16e298b080b6ab2ee222d574de463ff661524ebb67bea6c"
+        },
+        {
+          "id": "Resource-center-extra-lava-chitin-3",
+          "title": "Creature combat",
+          "loop": "Resource-center-extra-lava-chitin-3",
+          "poster": "Resource-center-extra-lava-chitin-3",
+          "startSeconds": 527,
+          "endSeconds": 530.5,
+          "sourceURL": "https://www.youtube.com/watch?v=YU-ZCfZF8gk&t=527s",
+          "sha256": "578a026579d0e0fb6e70d8f44de99e5ba51eb41f9cf4fd7faa4cbe604cfe9155"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved complete local source cache",
+      "spotID": "center-extra-blue-basics",
+      "map": "the-center",
+      "videoID": "bAqRvM-080g",
+      "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "coordinateEvidence": "The same ASA Blue Obelisk sequence shows the in-game map at 17s with literal LATITUDE 52.3 and LONGITUDE 78.2. The source photograph at 25s shows forest trees, bush clusters and a distinct metal resource actor at the bottom right. No different GPS was inferred for the lower forest.",
+      "inventoryEvidence": "Resource availability is inferred from the filmed terrain (tree trunks, bushes and a distinct ore actor) and the documented ARK Wiki harvesting mechanics: Trees provide Wood/Thatch and a Pick favors Thatch; Rocks provide Stone using a Hatchet; a Metal Sickle collects Fiber from plants. No inventory measurement or harvest count is claimed. Cliff geometry is not treated as a harvestable rock. Water availability derives from actual visible water shoreline and Flint from visible harvestable ground rocks plus standard Metal Pick rock harvesting mechanics; no specific yield or extra GPS actor claimed.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "The source shows this region and resource or method. A completed harvest and measured yield are not demonstrated in these clips.",
+      "steps": [
+        {
+          "id": "Resource-center-extra-blue-basics-1",
+          "title": "Area / coordinates",
+          "loop": "Resource-center-extra-blue-basics-1",
+          "poster": "Resource-center-extra-blue-basics-1",
+          "startSeconds": 15,
+          "endSeconds": 18.5,
+          "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g&t=15s",
+          "sha256": "a131e516ff19b75506bbdf0f27446f82e61a773168c3705c32e8c9006ac2cdc6"
+        },
+        {
+          "id": "Resource-center-extra-blue-basics-2",
+          "title": "Approach / surroundings",
+          "loop": "Resource-center-extra-blue-basics-2",
+          "poster": "Resource-center-extra-blue-basics-2",
+          "startSeconds": 21,
+          "endSeconds": 24.5,
+          "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g&t=21s",
+          "sha256": "2da86ac29e7ba211f0d1241da32324443de23168361c59ff67607c454091f66b"
+        },
+        {
+          "id": "Resource-center-extra-blue-basics-3",
+          "title": "Resource view",
+          "loop": "Resource-center-extra-blue-basics-3",
+          "poster": "Resource-center-extra-blue-basics-3",
+          "startSeconds": 25,
+          "endSeconds": 28.5,
+          "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g&t=25s",
+          "sha256": "b6841538d85e6a83307f1916496a945877ec038fdd7807d4a6135f92791d7cc5"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Initial native video chunks received through licensed tony-youtube download; full download ended with HTTP 403. Only fully decoded received ranges are used.",
+      "spotID": "scorched-eastern-metal",
+      "map": "scorched-earth",
+      "videoID": "k9IOWvnWMdg",
+      "sourceURL": "https://www.youtube.com/watch?v=k9IOWvnWMdg",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "coordinateEvidence": "In-game map reads latitude 53.8, longitude 78.7 at 25s. This is a filmed region, not every individual resource actor.",
+      "inventoryEvidence": "Metal rocks and pick strikes are visible in the metal chapter.",
+      "harvestDemonstrated": true,
+      "evidenceLimitations": "",
+      "steps": [
+        {
+          "id": "Resource-scorched-eastern-metal-1",
+          "title": "Area / coordinates",
+          "loop": "Resource-scorched-eastern-metal-1",
+          "poster": "Resource-scorched-eastern-metal-1",
+          "startSeconds": 23,
+          "endSeconds": 26.5,
+          "sourceURL": "https://www.youtube.com/watch?v=k9IOWvnWMdg&t=23s",
+          "sha256": "261919b159be12513222692d841187f44387037f649536b4509f88f41e2a6acc"
+        },
+        {
+          "id": "Resource-scorched-eastern-metal-2",
+          "title": "Approach / surroundings",
+          "loop": "Resource-scorched-eastern-metal-2",
+          "poster": "Resource-scorched-eastern-metal-2",
+          "startSeconds": 19,
+          "endSeconds": 22.5,
+          "sourceURL": "https://www.youtube.com/watch?v=k9IOWvnWMdg&t=19s",
+          "sha256": "95d8822056ce7a5fafa919b5f124bd15e5d691160aae191a941ed28600333195"
+        },
+        {
+          "id": "Resource-scorched-eastern-metal-3",
+          "title": "Harvesting",
+          "loop": "Resource-scorched-eastern-metal-3",
+          "poster": "Resource-scorched-eastern-metal-3",
+          "startSeconds": 30,
+          "endSeconds": 33.5,
+          "sourceURL": "https://www.youtube.com/watch?v=k9IOWvnWMdg&t=30s",
+          "sha256": "2b4010336ff890f1a40d8fc175754e68bb3974e852744067ba03b9669c64a432"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Initial native video chunks received through licensed tony-youtube download; full download ended with HTTP 403. Only fully decoded received ranges are used.",
+      "spotID": "scorched-central-metal",
+      "map": "scorched-earth",
+      "videoID": "k9IOWvnWMdg",
+      "sourceURL": "https://www.youtube.com/watch?v=k9IOWvnWMdg",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "coordinateEvidence": "In-game map reads latitude 48.2, longitude 63.0 at 45s. This is a filmed region, not every individual resource actor.",
+      "inventoryEvidence": "The source shows a large metal ore rock and the surrounding ridge; these clips do not demonstrate a completed harvest.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "The source shows this region and resource or method. A completed harvest and measured yield are not demonstrated in these clips.",
+      "steps": [
+        {
+          "id": "Resource-scorched-central-metal-1",
+          "title": "Area / coordinates",
+          "loop": "Resource-scorched-central-metal-1",
+          "poster": "Resource-scorched-central-metal-1",
+          "startSeconds": 43,
+          "endSeconds": 46.5,
+          "sourceURL": "https://www.youtube.com/watch?v=k9IOWvnWMdg&t=43s",
+          "sha256": "b4d636d3c549d0c888e21610b438796939fc3beeefef6d13f7a89921940ec922"
+        },
+        {
+          "id": "Resource-scorched-central-metal-2",
+          "title": "Approach / surroundings",
+          "loop": "Resource-scorched-central-metal-2",
+          "poster": "Resource-scorched-central-metal-2",
+          "startSeconds": 39,
+          "endSeconds": 42.5,
+          "sourceURL": "https://www.youtube.com/watch?v=k9IOWvnWMdg&t=39s",
+          "sha256": "b59fa12bfb7d007c513ae04093c9d9bfa9e50869e6aa2253429da88955fe077c"
+        },
+        {
+          "id": "Resource-scorched-central-metal-3",
+          "title": "Resource view",
+          "loop": "Resource-scorched-central-metal-3",
+          "poster": "Resource-scorched-central-metal-3",
+          "startSeconds": 47,
+          "endSeconds": 50.5,
+          "sourceURL": "https://www.youtube.com/watch?v=k9IOWvnWMdg&t=47s",
+          "sha256": "60c74d054ce632136e34326704283cb939d05dbc0b2959adefe71764166be69f"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Initial native video chunks received through licensed tony-youtube download; full download ended with HTTP 403. Only fully decoded received ranges are used.",
+      "spotID": "extinction-oil-lake",
+      "map": "extinction",
+      "videoID": "85xkdr_UYAo",
+      "sourceURL": "https://www.youtube.com/watch?v=85xkdr_UYAo",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "coordinateEvidence": "In-game map and creator GPS overlay both read latitude 16.5, longitude 66.6 at 22s. This is a filmed region, not every individual resource actor.",
+      "inventoryEvidence": "Oil chapter shows the lake and resource beds; harvesting is not demonstrated.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "The source shows this region and resource or method. A completed harvest and measured yield are not demonstrated in these clips.",
+      "steps": [
+        {
+          "id": "Resource-extinction-oil-lake-1",
+          "title": "Area / coordinates",
+          "loop": "Resource-extinction-oil-lake-1",
+          "poster": "Resource-extinction-oil-lake-1",
+          "startSeconds": 21,
+          "endSeconds": 22.5,
+          "sourceURL": "https://www.youtube.com/watch?v=85xkdr_UYAo&t=21s",
+          "sha256": "e14b896b618cdeec58911b471a1b1984996fb04c21d77e85be0ccae4e26a75ee"
+        },
+        {
+          "id": "Resource-extinction-oil-lake-2",
+          "title": "Approach / surroundings",
+          "loop": "Resource-extinction-oil-lake-2",
+          "poster": "Resource-extinction-oil-lake-2",
+          "startSeconds": 17,
+          "endSeconds": 18.5,
+          "sourceURL": "https://www.youtube.com/watch?v=85xkdr_UYAo&t=17s",
+          "sha256": "2189dee8faaa25b1b65266a55741c78177f8e8bbd2b238f97e572be02dc6d59b"
+        },
+        {
+          "id": "Resource-extinction-oil-lake-3",
+          "title": "Resource view",
+          "loop": "Resource-extinction-oil-lake-3",
+          "poster": "Resource-extinction-oil-lake-3",
+          "startSeconds": 19,
+          "endSeconds": 20.5,
+          "sourceURL": "https://www.youtube.com/watch?v=85xkdr_UYAo&t=19s",
+          "sha256": "38909740fc7f05bcd574d2f538c5ca801828070d1794b924a055fda941760d47"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Initial native video chunks received through licensed tony-youtube download; full download ended with HTTP 403. Only fully decoded received ranges are used.",
+      "spotID": "lost-colony-north-metal",
+      "map": "lost-colony",
+      "videoID": "WKNYEAeuSDA",
+      "sourceURL": "https://www.youtube.com/watch?v=WKNYEAeuSDA",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "coordinateEvidence": "The source edits a waypoint named Metal to latitude 3.7, longitude 14.1 at 55s. Camera map coordinates nearby are 3.8,14.7. Pin follows the explicit resource waypoint. This is a filmed region, not every individual resource actor.",
+      "inventoryEvidence": "Metal ore rocks are shown on the mountainside in the same resource chapter. Harvesting is not demonstrated.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "The source shows this region and resource or method. A completed harvest and measured yield are not demonstrated in these clips.",
+      "steps": [
+        {
+          "id": "Resource-lost-colony-north-metal-1",
+          "title": "Area / coordinates",
+          "loop": "Resource-lost-colony-north-metal-1",
+          "poster": "Resource-lost-colony-north-metal-1",
+          "startSeconds": 53,
+          "endSeconds": 56.5,
+          "sourceURL": "https://www.youtube.com/watch?v=WKNYEAeuSDA&t=53s",
+          "sha256": "f25cde090947aa97997d8f47e5a27180dcc3a55bccf7575b9b71389ee7e13740"
+        },
+        {
+          "id": "Resource-lost-colony-north-metal-2",
+          "title": "Approach / surroundings",
+          "loop": "Resource-lost-colony-north-metal-2",
+          "poster": "Resource-lost-colony-north-metal-2",
+          "startSeconds": 20,
+          "endSeconds": 23.5,
+          "sourceURL": "https://www.youtube.com/watch?v=WKNYEAeuSDA&t=20s",
+          "sha256": "cc454b12304a9baaad0d0dc4a969e17900f6c8f1785f19d8a09dc5ca805096ee"
+        },
+        {
+          "id": "Resource-lost-colony-north-metal-3",
+          "title": "Resource view",
+          "loop": "Resource-lost-colony-north-metal-3",
+          "poster": "Resource-lost-colony-north-metal-3",
+          "startSeconds": 28,
+          "endSeconds": 31.5,
+          "sourceURL": "https://www.youtube.com/watch?v=WKNYEAeuSDA&t=28s",
+          "sha256": "1e217dc8c536f6ad5f5769974c5ff2ed204f4b632ac8609d596590a9fd6225a9"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Initial native video chunks received through licensed tony-youtube download; full download ended with HTTP 403. Only fully decoded received ranges are used.",
+      "spotID": "valguero-nw-pearl-lake",
+      "map": "valguero",
+      "videoID": "boGcZ2neH6g",
+      "sourceURL": "https://www.youtube.com/watch?v=boGcZ2neH6g",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "coordinateEvidence": "In-game map cursor coincides with the green player arrow at latitude 43.9, longitude 22.5 at 50s. This is a filmed region, not every individual resource actor.",
+      "inventoryEvidence": "The source enters the lake and shows submerged white pearl clusters. Harvesting is not demonstrated.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "The source shows this region and resource or method. A completed harvest and measured yield are not demonstrated in these clips.",
+      "steps": [
+        {
+          "id": "Resource-valguero-nw-pearl-lake-1",
+          "title": "Area / coordinates",
+          "loop": "Resource-valguero-nw-pearl-lake-1",
+          "poster": "Resource-valguero-nw-pearl-lake-1",
+          "startSeconds": 49,
+          "endSeconds": 52.5,
+          "sourceURL": "https://www.youtube.com/watch?v=boGcZ2neH6g&t=49s",
+          "sha256": "33e4de3133ed68a3dc24d358fda25276e5e47ca171f8b97d2b6f9035c43fca42"
+        },
+        {
+          "id": "Resource-valguero-nw-pearl-lake-2",
+          "title": "Approach / surroundings",
+          "loop": "Resource-valguero-nw-pearl-lake-2",
+          "poster": "Resource-valguero-nw-pearl-lake-2",
+          "startSeconds": 34,
+          "endSeconds": 37.5,
+          "sourceURL": "https://www.youtube.com/watch?v=boGcZ2neH6g&t=34s",
+          "sha256": "0ec1aebd3d0e7d44bfcf19e4094e314fb81c6d2804a4a7cbfe1fd5634e623598"
+        },
+        {
+          "id": "Resource-valguero-nw-pearl-lake-3",
+          "title": "Resource view",
+          "loop": "Resource-valguero-nw-pearl-lake-3",
+          "poster": "Resource-valguero-nw-pearl-lake-3",
+          "startSeconds": 43,
+          "endSeconds": 46.5,
+          "sourceURL": "https://www.youtube.com/watch?v=boGcZ2neH6g&t=43s",
+          "sha256": "db9b9479fa35e09fd6bbed74e52366f850dac2126132b46dfde73d90500454be"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Initial native video chunks received through licensed tony-youtube download; full download ended with HTTP 403. Only fully decoded received ranges are used.",
+      "spotID": "astraeos-phokintos-crystal",
+      "map": "astraeos",
+      "videoID": "k73mk3nz0wI",
+      "sourceURL": "https://www.youtube.com/watch?v=k73mk3nz0wI",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "coordinateEvidence": "Creator location 1 overlay reads latitude 16.8, longitude 28.3 at 20s; in-game map places this region in Phokintos. This is a filmed region, not every individual resource actor.",
+      "inventoryEvidence": "Purple crystal formations are visible in the first filmed region. Harvesting is not demonstrated.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "The source shows this region and resource or method. A completed harvest and measured yield are not demonstrated in these clips.",
+      "steps": [
+        {
+          "id": "Resource-astraeos-phokintos-crystal-1",
+          "title": "Area / coordinates",
+          "loop": "Resource-astraeos-phokintos-crystal-1",
+          "poster": "Resource-astraeos-phokintos-crystal-1",
+          "startSeconds": 18,
+          "endSeconds": 20.5,
+          "sourceURL": "https://www.youtube.com/watch?v=k73mk3nz0wI&t=18s",
+          "sha256": "1cb77f9a245028a0cb087bb366fa637ca5af8497e35beab68772a018dd98a46f"
+        },
+        {
+          "id": "Resource-astraeos-phokintos-crystal-2",
+          "title": "Approach / surroundings",
+          "loop": "Resource-astraeos-phokintos-crystal-2",
+          "poster": "Resource-astraeos-phokintos-crystal-2",
+          "startSeconds": 12,
+          "endSeconds": 14.5,
+          "sourceURL": "https://www.youtube.com/watch?v=k73mk3nz0wI&t=12s",
+          "sha256": "40a12e49b0402b5fd5988c08d6b1876183cbd163f5e8c6ec8df2ca5802cb5eff"
+        },
+        {
+          "id": "Resource-astraeos-phokintos-crystal-3",
+          "title": "Resource view",
+          "loop": "Resource-astraeos-phokintos-crystal-3",
+          "poster": "Resource-astraeos-phokintos-crystal-3",
+          "startSeconds": 15,
+          "endSeconds": 17.5,
+          "sourceURL": "https://www.youtube.com/watch?v=k73mk3nz0wI&t=15s",
+          "sha256": "cc655320f559b01c02af4bcf629cf884ccc81e5f7bf33abcc4e9ff649dd2dbcf"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Initial native video chunks received through licensed tony-youtube download; full download ended with HTTP 403. Only fully decoded received ranges are used.",
+      "spotID": "aberration-green-metal",
+      "map": "aberration",
+      "videoID": "BZVk5xrksxk",
+      "sourceURL": "https://www.youtube.com/watch?v=BZVk5xrksxk",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "coordinateEvidence": "In-game map reads latitude 33.6, longitude 62.0 at 30s. This is a filmed region, not every individual resource actor.",
+      "inventoryEvidence": "The green-zone metal guide shows ore rocks and the approach. Harvesting is not demonstrated.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "The source shows this region and resource or method. A completed harvest and measured yield are not demonstrated in these clips.",
+      "steps": [
+        {
+          "id": "Resource-aberration-green-metal-1",
+          "title": "Area / coordinates",
+          "loop": "Resource-aberration-green-metal-1",
+          "poster": "Resource-aberration-green-metal-1",
+          "startSeconds": 28,
+          "endSeconds": 31.5,
+          "sourceURL": "https://www.youtube.com/watch?v=BZVk5xrksxk&t=28s",
+          "sha256": "00aedfe4b9d17a2933e4f23b690b8e62e714f4a2a976d9fdd7a78ff90c412e67"
+        },
+        {
+          "id": "Resource-aberration-green-metal-2",
+          "title": "Approach / surroundings",
+          "loop": "Resource-aberration-green-metal-2",
+          "poster": "Resource-aberration-green-metal-2",
+          "startSeconds": 17,
+          "endSeconds": 20.5,
+          "sourceURL": "https://www.youtube.com/watch?v=BZVk5xrksxk&t=17s",
+          "sha256": "3d01fb1e190bd3f5e217ae997b5ae12b4c2734f08a7fc1e0633b74a269e35f4d"
+        },
+        {
+          "id": "Resource-aberration-green-metal-3",
+          "title": "Resource view",
+          "loop": "Resource-aberration-green-metal-3",
+          "poster": "Resource-aberration-green-metal-3",
+          "startSeconds": 22,
+          "endSeconds": 25.5,
+          "sourceURL": "https://www.youtube.com/watch?v=BZVk5xrksxk&t=22s",
+          "sha256": "e4f2615cf4d467a7bb0fb7dffa5fdca275746eb835bc9986a4a4cc8b2bee5f86"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Initial native video chunks received through licensed tony-youtube download; full download ended with HTTP 403. Only fully decoded received ranges are used.",
+      "spotID": "aberration-blue-metal",
+      "map": "aberration",
+      "videoID": "a_Os1QOHqkE",
+      "sourceURL": "https://www.youtube.com/watch?v=a_Os1QOHqkE",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "coordinateEvidence": "In-game map reads latitude 59.3, longitude 72.0 at 20s and 25s. This is a filmed region, not every individual resource actor.",
+      "inventoryEvidence": "Blue-zone metallic rocks are visible beside the player. Harvesting is not demonstrated.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "The source shows this region and resource or method. A completed harvest and measured yield are not demonstrated in these clips.",
+      "steps": [
+        {
+          "id": "Resource-aberration-blue-metal-1",
+          "title": "Area / coordinates",
+          "loop": "Resource-aberration-blue-metal-1",
+          "poster": "Resource-aberration-blue-metal-1",
+          "startSeconds": 19,
+          "endSeconds": 22.5,
+          "sourceURL": "https://www.youtube.com/watch?v=a_Os1QOHqkE&t=19s",
+          "sha256": "8fba266857177e64fd0967771cfb885c5cd2ef73ebb8e3fbc95e34a5dc27a997"
+        },
+        {
+          "id": "Resource-aberration-blue-metal-2",
+          "title": "Approach / surroundings",
+          "loop": "Resource-aberration-blue-metal-2",
+          "poster": "Resource-aberration-blue-metal-2",
+          "startSeconds": 11,
+          "endSeconds": 14.5,
+          "sourceURL": "https://www.youtube.com/watch?v=a_Os1QOHqkE&t=11s",
+          "sha256": "affcee8cf39c26cb063de284923a5a5676c3c0c46e1d460dc5c05275cc7c973b"
+        },
+        {
+          "id": "Resource-aberration-blue-metal-3",
+          "title": "Resource view",
+          "loop": "Resource-aberration-blue-metal-3",
+          "poster": "Resource-aberration-blue-metal-3",
+          "startSeconds": 29,
+          "endSeconds": 32.5,
+          "sourceURL": "https://www.youtube.com/watch?v=a_Os1QOHqkE&t=29s",
+          "sha256": "68695aba7d339c3d2078968154edd4b75adf18998d3b28d7d2ccfce0aa88a97a"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Initial native video chunks received through licensed tony-youtube download; full download ended with HTTP 403. Only fully decoded received ranges are used.",
+      "spotID": "genesis-ocean-waterfall-cave",
+      "map": "genesis-part-1-ocean",
+      "videoID": "YTpXmtVTGNs",
+      "sourceURL": "https://www.youtube.com/watch?v=YTpXmtVTGNs",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "coordinateEvidence": "In-game map has Ocean selected; cursor coincides with the green player arrow at latitude 50.7, longitude 65.6 at 60s. Pin identifies the filmed cave approach. This is a filmed region, not every individual resource actor.",
+      "inventoryEvidence": "The source descends beside the waterfall into a cave with white crystal clusters and metallic ore rocks at 80s. Harvesting is not demonstrated.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "The source shows this region and resource or method. A completed harvest and measured yield are not demonstrated in these clips.",
+      "steps": [
+        {
+          "id": "Resource-genesis-ocean-waterfall-cave-1",
+          "title": "Area / coordinates",
+          "loop": "Resource-genesis-ocean-waterfall-cave-1",
+          "poster": "Resource-genesis-ocean-waterfall-cave-1",
+          "startSeconds": 58,
+          "endSeconds": 61.5,
+          "sourceURL": "https://www.youtube.com/watch?v=YTpXmtVTGNs&t=58s",
+          "sha256": "e9a59efe9e0e9feb64954578477939b1ffbb45d28f8483259f52a43c0502d913"
+        },
+        {
+          "id": "Resource-genesis-ocean-waterfall-cave-2",
+          "title": "Approach / surroundings",
+          "loop": "Resource-genesis-ocean-waterfall-cave-2",
+          "poster": "Resource-genesis-ocean-waterfall-cave-2",
+          "startSeconds": 65,
+          "endSeconds": 68.5,
+          "sourceURL": "https://www.youtube.com/watch?v=YTpXmtVTGNs&t=65s",
+          "sha256": "9771c998c6633c58135c5ad3ee1eaf3fd34ffb9ffd1f1f548dd49d835b0c88ae"
+        },
+        {
+          "id": "Resource-genesis-ocean-waterfall-cave-3",
+          "title": "Resource view",
+          "loop": "Resource-genesis-ocean-waterfall-cave-3",
+          "poster": "Resource-genesis-ocean-waterfall-cave-3",
+          "startSeconds": 79,
+          "endSeconds": 82.5,
+          "sourceURL": "https://www.youtube.com/watch?v=YTpXmtVTGNs&t=79s",
+          "sha256": "ceff74a5e50f9fe711e66b47b3de2430d6ef77c91ff2d10c1020bd32e447ff89"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Initial native video chunks received through licensed tony-youtube download; full download ended with HTTP 403. Only fully decoded received ranges are used.",
+      "spotID": "genesis-arctic-metal-field",
+      "map": "genesis-part-1",
+      "videoID": "-A6rpnfcqtw",
+      "sourceURL": "https://www.youtube.com/watch?v=-A6rpnfcqtw",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "coordinateEvidence": "In-game map reads latitude 76.2, longitude 27.6 at 45s in the snow-biome chapter. Pin identifies the filmed region, not every individual resource actor.",
+      "inventoryEvidence": "The source shows metallic ore rocks in the snow biome and activates the resource scanner. Completed harvesting is not demonstrated.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "The source shows this region and resource or method. A completed harvest and measured yield are not demonstrated in these clips.",
+      "steps": [
+        {
+          "id": "Resource-genesis-arctic-metal-field-1",
+          "title": "Area / coordinates",
+          "loop": "Resource-genesis-arctic-metal-field-1",
+          "poster": "Resource-genesis-arctic-metal-field-1",
+          "startSeconds": 43.5,
+          "endSeconds": 47.0,
+          "sourceURL": "https://www.youtube.com/watch?v=-A6rpnfcqtw&t=43s",
+          "sha256": "0cda5252e80849fee092699fbad949c48f1b58f43cfbdfb5faea76e926d6fffc"
+        },
+        {
+          "id": "Resource-genesis-arctic-metal-field-2",
+          "title": "Approach / surroundings",
+          "loop": "Resource-genesis-arctic-metal-field-2",
+          "poster": "Resource-genesis-arctic-metal-field-2",
+          "startSeconds": 10,
+          "endSeconds": 13.5,
+          "sourceURL": "https://www.youtube.com/watch?v=-A6rpnfcqtw&t=10s",
+          "sha256": "e5ec5ac52c223c972c0af043617db8f0565f284296a354813f3d3c9ee03ed643"
+        },
+        {
+          "id": "Resource-genesis-arctic-metal-field-3",
+          "title": "Resource view",
+          "loop": "Resource-genesis-arctic-metal-field-3",
+          "poster": "Resource-genesis-arctic-metal-field-3",
+          "startSeconds": 35,
+          "endSeconds": 38.5,
+          "sourceURL": "https://www.youtube.com/watch?v=-A6rpnfcqtw&t=35s",
+          "sha256": "d7b5694b3643babecb8646d2f85eb910194fb38458bd6636b92b9b10b5be678e"
+        }
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "map": "the-island",
+      "verifiedRegions": 12,
+      "status": "source-verified",
+      "reason": "Filmed GPS regions reviewed against source footage; individual actors and respawns vary."
+    },
+    {
+      "map": "the-center",
+      "verifiedRegions": 11,
+      "status": "source-verified",
+      "reason": "Filmed GPS regions reviewed against source footage; individual actors and respawns vary."
+    },
+    {
+      "map": "ragnarok",
+      "verifiedRegions": 18,
+      "status": "source-verified",
+      "reason": "Filmed GPS regions reviewed against source footage; individual actors and respawns vary."
+    },
+    {
+      "map": "scorched-earth",
+      "verifiedRegions": 2,
+      "status": "source-verified",
+      "reason": "Filmed GPS regions reviewed against source footage; individual actors and respawns vary."
+    },
+    {
+      "map": "aberration",
+      "verifiedRegions": 2,
+      "status": "source-verified",
+      "reason": "Filmed GPS regions reviewed against source footage; individual actors and respawns vary."
+    },
+    {
+      "map": "extinction",
+      "verifiedRegions": 1,
+      "status": "source-verified",
+      "reason": "Filmed GPS regions reviewed against source footage; individual actors and respawns vary."
+    },
+    {
+      "map": "valguero",
+      "verifiedRegions": 1,
+      "status": "source-verified",
+      "reason": "Filmed GPS regions reviewed against source footage; individual actors and respawns vary."
+    },
+    {
+      "map": "astraeos",
+      "verifiedRegions": 1,
+      "status": "source-verified",
+      "reason": "Filmed GPS regions reviewed against source footage; individual actors and respawns vary."
+    },
+    {
+      "map": "lost-colony",
+      "verifiedRegions": 1,
+      "status": "source-verified",
+      "reason": "Filmed GPS regions reviewed against source footage; individual actors and respawns vary."
+    },
+    {
+      "map": "genesis-part-1",
+      "verifiedRegions": 1,
+      "status": "source-verified",
+      "reason": "Filmed GPS regions reviewed against source footage; individual actors and respawns vary."
+    },
+    {
+      "map": "genesis-part-1-ocean",
+      "verifiedRegions": 1,
+      "status": "source-verified",
+      "reason": "Filmed GPS regions reviewed against source footage; individual actors and respawns vary."
+    }
+  ]
+}

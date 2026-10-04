@@ -3,16 +3,20 @@ import UIKit
 
 struct MapBadge: View {
     let id: String
+    var width: CGFloat = 76
+    var height: CGFloat = 48
     var body: some View {
         Group {
-            if id == "the-island" {
-                Image("TheIslandMap").resizable().scaledToFill()
-            } else if UIImage(named: "MapLogo-" + id) != nil {
+            if UIImage(named: "MapLogo-" + id) != nil {
                 Image("MapLogo-" + id).resizable().scaledToFit()
             } else if let map = ArkMap(rawValue: id) {
                 Image(map.imageAsset).resizable().scaledToFit()
             } else { Image("ArkLogo").resizable().scaledToFit() }
-        }.frame(width: 64, height: 38).background(Color.white.opacity(0.05)).clipShape(RoundedRectangle(cornerRadius:8)).accessibilityHidden(true)
+        }.frame(width: width, height: height)
+            .background(Color.black.opacity(0.25), in: RoundedRectangle(cornerRadius: 14))
+            .clipShape(RoundedRectangle(cornerRadius: 14))
+            .overlay { RoundedRectangle(cornerRadius: 14).strokeBorder(.white.opacity(0.1)) }
+            .accessibilityHidden(true)
     }
 }
 struct StoryGuide: Decodable {
@@ -134,7 +138,11 @@ struct EquipmentDetail: View {
                 if BuildCraftCatalogue.shared.item(item.id)?.recipeVerified == true {Button {craft=true} label: {Label("Craft",systemImage:"hammer.fill")}.buttonStyle(.bordered)}
                 Text(item.summary)
                 Label(item.use, systemImage: "hand.point.up.left.fill")
-                if !item.station.isEmpty { Label(item.station, systemImage: "gearshape.fill") }
+                if let recipe = BuildCraftCatalogue.shared.item(item.id), recipe.recipeVerified {
+                    Label(recipe.stations.isEmpty ? "Crafting station not specified in the source" : recipe.stations.joined(separator: " · "), systemImage: "gearshape.fill")
+                } else if !item.station.isEmpty {
+                    Label(item.station, systemImage: "gearshape.fill")
+                }
                 if item.category != "resources" && item.category != "supplies" {
                     if !item.unlock.isEmpty { Label(item.unlock, systemImage: "lock.open.fill") }
                 }

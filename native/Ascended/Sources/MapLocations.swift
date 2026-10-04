@@ -1,21 +1,23 @@
 import SwiftUI
 import UIKit
 
-enum MapLayer: String, CaseIterable { case artifact = "Artifact", cave = "Cửa hang", obelisk = "Obelisk", boss = "Boss", base = "Base", resource = "Resources" }
+enum MapLayer: String, CaseIterable { case artifact = "Artifact", cave = "Cửa hang", obelisk = "Obelisk", boss = "Boss", base = "Base", resource = "Resources", custom = "My Locations" }
 extension MapLayer {
-    var title: String { switch self { case .artifact: "Artifacts"; case .cave: "Cave Entrances"; case .obelisk: "Obelisks"; case .boss: "Bosses"; case .base: "Bases"; case .resource: "Resources" } }
-    var symbol: String { switch self { case .artifact: "diamond.fill"; case .cave: "door.left.hand.open"; case .obelisk: "triangle.fill"; case .boss: "shield.lefthalf.filled"; case .base: "house.fill"; case .resource: "shippingbox.fill" } }
+    var title: String { switch self { case .artifact: "Artifacts"; case .cave: "Cave Entrances"; case .obelisk: "Obelisks"; case .boss: "Bosses"; case .base: "Bases"; case .resource: "Resources"; case .custom: "My Locations" } }
+    var symbol: String { switch self { case .artifact: "diamond.fill"; case .cave: "door.left.hand.open"; case .obelisk: "triangle.fill"; case .boss: "shield.lefthalf.filled"; case .base: "house.fill"; case .resource: "shippingbox.fill"; case .custom: "mappin" } }
 }
-struct MapLocation: Identifiable {
+struct MapLocation: Identifiable, Equatable {
     let id: String; let name: String; let lat: Double; let lon: Double; let layer: MapLayer
     let note: String; let routeID: String?; let artifactID: String?
     var imageAsset: String? = nil
     var farmID: String? = nil
     var resourceNames: [String] = []
+    var symbolOverride:String? = nil
+    var colorOverride:String? = nil
     var coordinates: String { String(format: "LAT %.2f · LON %.2f", lat, lon) }
     var title: String { layer.title }
-    var symbol: String { layer.symbol }
-    var color: UIColor { switch layer { case .artifact: .systemPurple; case .cave: .systemOrange; case .boss, .obelisk: id == "obelisk-red" ? .systemRed : id == "obelisk-green" ? .systemGreen : id == "obelisk-blue" ? .systemBlue : .systemCyan; case .base: .systemGreen; case .resource: .systemYellow } }
+    var symbol: String { symbolOverride ?? layer.symbol }
+    var color: UIColor { if let colorOverride {switch colorOverride {case "blue":return .systemBlue;case "green":return .systemGreen;case "yellow":return .systemYellow;case "orange":return .systemOrange;case "red":return .systemRed;case "purple":return .systemPurple;case "white":return .white;default:return .systemCyan}};return switch layer { case .artifact: .systemPurple; case .cave: .systemOrange; case .boss, .obelisk: id == "obelisk-red" ? .systemRed : id == "obelisk-green" ? .systemGreen : id == "obelisk-blue" ? .systemBlue : .systemCyan; case .base: .systemGreen; case .resource: .systemYellow;case .custom:.systemCyan } }
     static func all(in map: ArkMap) -> [MapLocation] {
         let data = map.exploration ?? ExplorationCatalog(reviewedAt: "", artifacts: [], routes: [], obelisks: [])
         var list = data.artifacts.map { MapLocation(id: "artifact-" + $0.id, name: $0.name, lat: $0.lat, lon: $0.lon, layer: .artifact, note: "Artifact collection location", routeID: $0.routeID, artifactID: $0.id) }
@@ -31,6 +33,6 @@ struct MapLocation: Identifiable {
             else if point.id.hasPrefix("obelisk-") { list[index].imageAsset = "Map-Obelisk" }
             else if point.id == "boss-lava-arena" { list[index].imageAsset = "Boss-lava-elemental" }
         }
-        return list + MapResources.points(in: map) + ResourceFarmCatalog.spots(in: map).map(\.point)
+        return list + ResourceFarmCatalog.spots(in: map).map(\.point)
     }
 }
