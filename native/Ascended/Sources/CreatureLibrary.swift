@@ -158,7 +158,7 @@ extension View {
     }
 }
 
-/// Verified game gallery images retain their natural appearance.
+/// Library cards retain the game's familiar species avatar.
 struct CreatureAvatar: View {
     let asset: String
     var body: some View {
@@ -168,6 +168,20 @@ struct CreatureAvatar: View {
             Image(asset).resizable().scaledToFit()
         } else {
             Image(systemName: "photo").resizable().scaledToFit().foregroundStyle(.secondary).padding(18)
+        }
+    }
+}
+
+/// Contextual creature pictures keep the full body's original game colours.
+struct CreatureCutout: View {
+    let asset: String
+    var body: some View {
+        if let image = UIImage(named: "Cutout-" + asset) {
+            Image(uiImage: image).resizable().scaledToFit()
+        } else if !asset.hasPrefix("Dino-") && !asset.hasPrefix("Boss-") {
+            Image(asset).resizable().scaledToFit()
+        } else {
+            Image(asset).renderingMode(.template).resizable().scaledToFit().foregroundStyle(.white)
         }
     }
 }

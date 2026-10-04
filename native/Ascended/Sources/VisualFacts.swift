@@ -76,7 +76,7 @@ struct FactPicture: View {
     let fact: VisualFact
     var body: some View {
         if let asset = fact.asset {
-            if fact.category == "creature" || fact.category == "boss" { CreatureAvatar(asset: asset) }
+            if fact.category == "creature" || fact.category == "boss" { CreatureCutout(asset: asset) }
             else { Image(asset).resizable().scaledToFit() }
         } else { Image(systemName: fact.symbol).resizable().scaledToFit().padding(12).foregroundStyle(fact.symbol == "flame.fill" ? .orange : .cyan) }
     }

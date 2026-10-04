@@ -1,6 +1,56 @@
 import XCTest
 
 final class AscendedUITests: XCTestCase {
+    @MainActor func testResourcePopupsAndZoomAcrossMaps() throws {
+        let app = XCUIApplication(); XCUIDevice.shared.orientation = .landscapeLeft; app.launch()
+        for map in ["ragnarok", "the-island", "the-center"] {
+            app.buttons["choose-" + map].tap(); app.buttons["section-Bản đồ"].tap()
+            app.buttons["clearMapLayers"].tap(); app.buttons["layer-Resources"].tap()
+            let resource = app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "resource-pin-")).firstMatch
+            XCTAssertTrue(resource.waitForExistence(timeout: 8))
+            resource.tap()
+            XCTAssertTrue(app.staticTexts["selectedMapLocation"].waitForExistence(timeout: 5))
+            app.buttons["Đóng vị trí"].tap()
+            let rail = app.scrollViews["mapFilterRail"]
+            while !app.buttons["zoomIn"].isHittable { rail.swipeUp() }
+            app.buttons["zoomIn"].tap()
+            let viewport = app.descendants(matching: .any)["ragnarokMapViewport"].firstMatch
+            XCTAssertTrue(Double(viewport.value as? String ?? "0")! > 1)
+            viewport.swipeLeft()
+            XCTAssertTrue(resource.waitForExistence(timeout: 5))
+            let shot = XCTAttachment(screenshot: XCUIScreen.main.screenshot()); shot.name = "Resources-zoom-" + map; shot.lifetime = .keepAlways; add(shot)
+        }
+    }
+    @MainActor func testMapRightRailFiltersAndResources() throws {
+        let app = XCUIApplication(); XCUIDevice.shared.orientation = .landscapeLeft; app.launch()
+        app.buttons["choose-ragnarok"].tap(); app.buttons["section-Bản đồ"].tap()
+        let rail = app.scrollViews["mapFilterRail"]
+        let viewport = app.descendants(matching: .any)["ragnarokMapViewport"].firstMatch
+        XCTAssertTrue(rail.waitForExistence(timeout: 8))
+        XCTAssertGreaterThan(rail.frame.minX, viewport.frame.midX)
+        app.buttons["clearMapLayers"].tap()
+        XCTAssertFalse(app.buttons["pin-obelisk-red"].exists)
+        app.buttons["layer-Obelisk"].tap()
+        XCTAssertTrue(app.buttons["pin-obelisk-red"].exists)
+        XCTAssertFalse(app.buttons["pin-artifact-hunter"].exists)
+        app.buttons["layer-Artifact"].tap()
+        XCTAssertTrue(app.buttons["pin-artifact-hunter"].exists)
+        app.buttons["layer-Resources"].tap()
+        XCTAssertTrue(app.buttons["resource-Rich Metal"].exists)
+        let filters = XCTAttachment(screenshot: XCUIScreen.main.screenshot()); filters.name = "Right-rail-resource-filters"; filters.lifetime = .keepAlways; add(filters)
+        app.buttons["clearMapLayers"].tap()
+        app.buttons["selectAllMapLayers"].tap()
+        XCTAssertEqual(app.buttons["layer-Resources"].value as? String, "Hiện")
+        XCTAssertTrue(app.buttons["pin-obelisk-red"].exists)
+        app.buttons["clearMapLayers"].tap()
+        app.buttons["layer-Cửa hang"].tap()
+        XCTAssertTrue(app.buttons["pin-entrance-jungle-0"].exists)
+        XCTAssertFalse(app.buttons["pin-obelisk-red"].exists)
+        XCUIDevice.shared.orientation = .portrait
+        XCTAssertTrue(app.buttons["layer-Cửa hang"].isHittable)
+        let portrait = XCTAttachment(screenshot: XCUIScreen.main.screenshot()); portrait.name = "Portrait-cave-photo-pins"; portrait.lifetime = .keepAlways; add(portrait)
+    }
+
     @MainActor func testVisualArmyCountsAndUnits() throws {
         let app = XCUIApplication(); XCUIDevice.shared.orientation = .landscapeLeft; app.launch()
         app.buttons["choose-ragnarok"].tap(); app.buttons["section-Boss"].tap()

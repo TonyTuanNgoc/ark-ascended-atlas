@@ -1,5 +1,7 @@
 # ARK: Survival Ascended Atlas
 
+The standalone native iPad companion is at **Ascended 0.12.0 (13)**, installed by cable without TestFlight. Current native release: [map filters and full-body imagery](docs/codex-reports/2026-10-04-ascended-map-body.md). The hosting instructions below describe the separate web atlas, not native deployment.
+
 ## Quick deployment (GitHub + Firebase)
 
 ### 1) Init Git + push lên GitHub

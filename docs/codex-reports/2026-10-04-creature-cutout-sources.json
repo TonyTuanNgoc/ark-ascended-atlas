@@ -1,0 +1,695 @@
+[
+  {
+    "asset": "Cutout-Dino-rex",
+    "sourceAsset": "Game-Dino-rex",
+    "method": "original-transparent-game-render"
+  },
+  {
+    "asset": "Cutout-Dino-spino",
+    "sourceAsset": "Game-Dino-spino",
+    "method": "original-transparent-game-render"
+  },
+  {
+    "asset": "Cutout-Dino-sabertooth",
+    "sourceAsset": "Game-Dino-sabertooth",
+    "method": "original-transparent-game-render"
+  },
+  {
+    "asset": "Cutout-Dino-jerboa",
+    "sourceAsset": "Game-Dino-jerboa",
+    "method": "original-transparent-game-render"
+  },
+  {
+    "asset": "Cutout-Dino-piranha",
+    "sourceAsset": "Game-Dino-piranha",
+    "method": "original-transparent-game-render"
+  },
+  {
+    "asset": "Cutout-Dino-megaloceros",
+    "sourceAsset": "Game-Dino-megaloceros",
+    "method": "original-transparent-game-render"
+  },
+  {
+    "asset": "Cutout-Dino-sabertooth-salmon",
+    "sourceAsset": "Game-Dino-sabertooth-salmon",
+    "method": "original-transparent-game-render"
+  },
+  {
+    "asset": "Cutout-Dino-dunkleosteus",
+    "sourceAsset": "Game-Dino-dunkleosteus",
+    "method": "original-transparent-game-render"
+  },
+  {
+    "asset": "Cutout-Dino-dilophosaur",
+    "sourceAsset": "Game-Dino-dilophosaur",
+    "method": "original-transparent-game-render"
+  },
+  {
+    "asset": "Cutout-Dino-electrophorus",
+    "sourceAsset": "Game-Dino-electrophorus",
+    "method": "original-transparent-game-render"
+  },
+  {
+    "asset": "Cutout-Dino-carnotaurus",
+    "sourceAsset": "Game-Dino-carnotaurus",
+    "method": "original-transparent-game-render"
+  },
+  {
+    "asset": "Cutout-Dino-onyc",
+    "sourceAsset": "Game-Dino-onyc",
+    "method": "original-transparent-game-render"
+  },
+  {
+    "asset": "Cutout-Dino-thylacoleo",
+    "sourceAsset": "Game-Dino-thylacoleo",
+    "method": "original-transparent-game-render"
+  },
+  {
+    "asset": "Cutout-Dino-triceratops",
+    "sourceAsset": "Game-Dino-triceratops",
+    "method": "original-transparent-game-render"
+  },
+  {
+    "asset": "Cutout-Dino-pelagornis",
+    "sourceAsset": "Game-Dino-pelagornis",
+    "method": "original-transparent-game-render"
+  },
+  {
+    "asset": "Cutout-Dino-coelacanth",
+    "sourceAsset": "Game-Dino-coelacanth",
+    "method": "original-transparent-game-render"
+  },
+  {
+    "asset": "Cutout-Dino-kairuku",
+    "sourceAsset": "Game-Dino-kairuku",
+    "method": "original-transparent-game-render"
+  },
+  {
+    "asset": "Cutout-Dino-chalicotherium",
+    "sourceAsset": "Game-Dino-chalicotherium",
+    "method": "original-transparent-game-render"
+  },
+  {
+    "asset": "Cutout-Dino-ankylosaurus",
+    "sourceURL": "https://ark.wiki.gg/images/Render_Ankylosaurus.png",
+    "method": "original-transparent-game-render",
+    "sha256": "da509259c314b20504e5e5a2c105cd4acf8bf9f4028f0b6bbd9a5f8a2cf801cd"
+  },
+  {
+    "asset": "Cutout-Dino-argentavis",
+    "sourceURL": "https://ark.wiki.gg/images/Render_Argentavis.png",
+    "method": "original-transparent-game-render",
+    "sha256": "ab2a7e67a81e6628274b0d2888ba7fa41b87dfd714c63c25a697fd8fb1a89967"
+  },
+  {
+    "asset": "Cutout-Dino-beelzebufo",
+    "sourceURL": "https://ark.wiki.gg/images/Render_Beelzebufo.png",
+    "method": "original-transparent-game-render",
+    "sha256": "d7922d751b7cea340d5ffa3b6070e0b924cc66aa7395f1f805ad8d5547ea5536"
+  },
+  {
+    "asset": "Cutout-Dino-brontosaurus",
+    "sourceURL": "https://ark.wiki.gg/images/Render_Brontosaurus.png",
+    "method": "original-transparent-game-render",
+    "sha256": "53ac6538fbb52b31b3098e1f79cffdcafe6ffa4895a32ac150fdfa8a09366a10"
+  },
+  {
+    "asset": "Cutout-Dino-carbonemys",
+    "sourceURL": "https://ark.wiki.gg/images/Render_Turtle.png",
+    "method": "original-transparent-game-render",
+    "sha256": "70f23e8fc7a0b6ac049cc7895f68aa39a811a0442cc958acff9f66a67e351b2d"
+  },
+  {
+    "asset": "Cutout-Dino-yutyrannus",
+    "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/fullbody-candidates/Yutyrannus_PaintRegion0_ASA.png",
+    "sourceURL": "https://ark.wiki.gg/images/Yutyrannus_PaintRegion0_ASA.png",
+    "sourceSHA256": "467159dfe01d92b60520460bf67655dd0cea736b61eea7d3074e38f1d5abd263",
+    "method": "game-model-debug-colour-restoration",
+    "prompt": "Use case: precise ARK creature asset edit. The FIRST image is a genuine full-body game model render with artificial RED debug paint-region highlighting. Preserve its exact full-body geometry, pose, all limbs, entire tail and wings. Remove only the technical red highlight colouring and restore the creature's actual game colour palette using the SECOND image as colour reference. Do not adopt the cropped composition or pose from the second image. For Purlovia with no second image, replace only the red debug patches with the neutral grey-brown fur already visible elsewhere on this same model. Do not change anatomy, add equipment, invent texture features, or alter the silhouette. Output the COMPLETE full-body model on a fully transparent background, centred with 8% transparent margin around every extremity, no text, no ground, no other creature. Dino-yutyrannus",
+    "outputSHA256": "3b8a0b082881dee8c3e811e103825ebf7716a586c869ed90ea3592bf0329532f",
+    "reviewed": true,
+    "colourReferenceAsset": "Game-Dino-yutyrannus",
+    "colourReferenceURL": "https://ark.wiki.gg/images/Yutyrannus_Extra_Feathers.jpg"
+  },
+  {
+    "asset": "Cutout-Dino-megatherium",
+    "path": "/Users/admin/Ascended-iPad-Dev/native/Ascended/Assets.xcassets/Game-Dino-megatherium.imageset/image.png",
+    "extra": "Keep the single seated grey Megatherium, including original harness.",
+    "output": "/Users/admin/.codex/generated_images/01a101c6-c5a3-7f01-a88d-7439e1f7c5e0/exec-523f9137-2329-470d-b9ab-ed69e75d78f2.png",
+    "method": "imagegen-background-extraction"
+  },
+  {
+    "asset": "Cutout-Dino-daeodon",
+    "path": "/Users/admin/Ascended-iPad-Dev/native/Ascended/Assets.xcassets/Game-Dino-daeodon.imageset/image.png",
+    "extra": "Keep only the brown-and-black Daeodon on the RIGHT, remove the green Daeodon on the left.",
+    "output": "/Users/admin/.codex/generated_images/01a101c6-c5a3-7f01-a88d-7439e1f7c5e0/exec-bcdea2c6-c739-4107-b811-4c38d88cbd06.png",
+    "method": "imagegen-background-extraction"
+  },
+  {
+    "asset": "Cutout-Dino-therizinosaur",
+    "path": "/Volumes/TONY SSD/ASCENDED_MEDIA/Therizinosaurus_large.png",
+    "extra": "Remove all white and grey residual backdrop patches. Preserve the single blue-grey Therizinosaur and exact pose.",
+    "output": "/Users/admin/.codex/generated_images/01a101c6-c5a3-7f01-a88d-7439e1f7c5e0/exec-c5a8e742-7b50-4446-a679-249b62cd2548.png",
+    "method": "imagegen-background-extraction"
+  },
+  {
+    "asset": "Cutout-Dino-baryonyx",
+    "path": "/Users/admin/Ascended-iPad-Dev/native/Ascended/Assets.xcassets/Game-Dino-baryonyx.imageset/image.png",
+    "output": "/Users/admin/.codex/generated_images/01a101c6-c5a3-7f01-a88d-7439e1f7c5e0/exec-e6627ead-a094-4c8c-972b-d31d012ca812.png",
+    "method": "imagegen-background-extraction"
+  },
+  {
+    "asset": "Cutout-Dino-direwolf",
+    "path": "/Users/admin/Ascended-iPad-Dev/native/Ascended/Assets.xcassets/Game-Dino-direwolf.imageset/image.png",
+    "output": "/Users/admin/.codex/generated_images/01a101c6-c5a3-7f01-a88d-7439e1f7c5e0/exec-8e760676-c44c-4f00-a503-1a9545b9c1e9.png",
+    "method": "imagegen-background-extraction"
+  },
+  {
+    "asset": "Cutout-Dino-giganotosaurus",
+    "path": "/Users/admin/Ascended-iPad-Dev/native/Ascended/Assets.xcassets/Game-Dino-giganotosaurus.imageset/image.png",
+    "output": "/Users/admin/.codex/generated_images/01a101c6-c5a3-7f01-a88d-7439e1f7c5e0/exec-457d2a88-d25f-48c3-80fa-46643c958dc6.png",
+    "method": "imagegen-background-extraction"
+  },
+  {
+    "asset": "Cutout-Dino-cryolophosaurus",
+    "sourcePath": "/Users/admin/Ascended-iPad-Dev/native/Ascended/Assets.xcassets/Game-Dino-cryolophosaurus.imageset/image.png",
+    "sourceURL": "https://ark.wiki.gg/images/ASA_LC_12.jpg",
+    "sourceSHA256": "832676f1aa88034bb1f48c78887b3c8b7b33db1d635a2271c732a5fb50a4aaf1",
+    "method": "imagegen-background-extraction",
+    "prompt": "Use case: background-extraction. Extract the exact actual ARK creature Dino-cryolophosaurus from this game image onto a fully transparent background. Preserve its original game anatomy, pose, scales/fur, colours including dark/black areas and attached flame/alpha effects. Show the complete visible body including feet, tail and wings, with 8% transparent margin. Do not crop or zoom into its head. Remove scenery, floor, sky, text, UI, people and other animals. Do not invent unseen anatomy or redraw it. Keep the main creature only.",
+    "outputSHA256": "a00cd74d554043b4cfa83f748fa4614f0b1cbb58fcc466714f93b107bdc1a928",
+    "reviewed": true
+  },
+  {
+    "asset": "Cutout-Boss-iceworm-queen",
+    "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/IcewormQueenASA.jpeg",
+    "sourceURL": "https://ark.wiki.gg/images/IcewormQueenASA.jpeg",
+    "sourceSHA256": "e5257a87c0b8de2c2b6ad599ea92ece932ba21f4904830c59910edc11d8a72f0",
+    "method": "actual-ASA-game-background-extraction",
+    "prompt": "Use case: background extraction from actual ASA game screenshot. Isolate only the large Iceworm Queen, preserving the whole visible body, ALL lateral spikes and dangling appendages and its exact dark blue/black game colours. Remove the four humans, snow, ice, sky and room. Do not redesign the creature or invent hidden underground anatomy. Fit the entire observed creature inside a fully transparent PNG with 8% transparent margin around every visible extremity.",
+    "outputSHA256": "7c8a7dcee953b8aec60f1c6e82411252b020df49670af450b161011b989a9870",
+    "reviewed": true
+  },
+  {
+    "asset": "Cutout-Boss-megapithecus",
+    "sourcePath": "/Users/admin/Ascended-iPad-Dev/native/Ascended/Assets.xcassets/Game-Boss-megapithecus.imageset/image.png",
+    "sourceURL": "https://ark.wiki.gg/images/Last_Stand_Promo.jpg",
+    "sourceSHA256": "4b469f8fe599f4133ba73fb3f89e558a6739a07ba7a3a42ecd43c3d9d3b61135",
+    "method": "imagegen-background-extraction",
+    "prompt": "Use case: background-extraction. Edit supplied authentic ARK game image. Keep the single white-furred Megapithecus, remove everything else. Preserve exact observed anatomy, pose, colour and surface detail. Background removal ONLY; no redraw, no enhancement, no invented parts. Preserve source crop where body was outside frame. Actual alpha transparency, no scenery, backdrop, text or humans.",
+    "outputSHA256": "bfd07c3ca7351b30c2e1bf281abbf0bc14c660c4b187cdb7205244b86e852eab",
+    "reviewed": true
+  },
+  {
+    "asset": "Cutout-Dino-megalania",
+    "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/fullbody-candidates/Megalania_PaintRegion0_ASA.png",
+    "sourceURL": "https://ark.wiki.gg/images/Megalania_PaintRegion0_ASA.png",
+    "sourceSHA256": "bb840c84f5bc3a8d01fad05a5eed492b1b6d9f95e0d7fd740e6a846465a8e1ff",
+    "method": "game-model-debug-colour-restoration",
+    "prompt": "Use case: precise ARK creature asset edit. The FIRST image is a genuine full-body game model render with artificial RED debug paint-region highlighting. Preserve its exact full-body geometry, pose, all limbs, entire tail and wings. Remove only the technical red highlight colouring and restore the creature's actual game colour palette using the SECOND image as colour reference. Do not adopt the cropped composition or pose from the second image. For Purlovia with no second image, replace only the red debug patches with the neutral grey-brown fur already visible elsewhere on this same model. Do not change anatomy, add equipment, invent texture features, or alter the silhouette. Output the COMPLETE full-body model on a fully transparent background, centred with 8% transparent margin around every extremity, no text, no ground, no other creature. Dino-megalania",
+    "outputSHA256": "50bf8048c9219932ab0e391c06106a31541cc58b29d32349b356b86e3e3e5984",
+    "reviewed": true,
+    "colourReferenceAsset": "Game-Dino-megalania",
+    "colourReferenceURL": "https://ark.wiki.gg/images/Megalania_on_cavewall.jpg"
+  },
+  {
+    "asset": "Cutout-Dino-dire-polar-bear",
+    "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/Polar_Bears.png",
+    "sourceURL": "https://ark.wiki.gg/images/Polar_Bears.png",
+    "sourceSHA256": "6a79c616a9554c60e994a5287a6d0eb4b41da1bda3cfa38c53dd30b622cbae44",
+    "method": "imagegen-background-extraction",
+    "prompt": "Use case: background-extraction. Extract the exact actual ARK creature Dino-dire-polar-bear from this game image onto a fully transparent background. Preserve its original game anatomy, pose, scales/fur, colours including dark/black areas and attached flame/alpha effects. Show the complete visible body including feet, tail and wings, with 8% transparent margin. Do not crop or zoom into its head. Remove scenery, floor, sky, text, UI, people and other animals. Do not invent unseen anatomy or redraw it. Keep the closest left bear.",
+    "outputSHA256": "f067676f9e6f682be0825e77c1af3a7a0ab78af6796f61d0c70c9f8e4b921a47",
+    "reviewed": true
+  },
+  {
+    "asset": "Cutout-Dino-yeti",
+    "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/Yeti.jpg",
+    "sourceURL": "https://ark.wiki.gg/images/Yeti.jpg",
+    "sourceSHA256": "1d27f1a082e3629030c15c010a154ff657b9c64bbe0af83a8b6ba2334a72c22c",
+    "method": "imagegen-background-extraction",
+    "prompt": "Use case: background-extraction. Extract the exact actual ARK creature Dino-yeti from this game image onto a fully transparent background. Preserve its original game anatomy, pose, scales/fur, colours including dark/black areas and attached flame/alpha effects. Show the complete visible body including feet, tail and wings, with 8% transparent margin. Do not crop or zoom into its head. Remove scenery, floor, sky, text, UI, people and other animals. Do not invent unseen anatomy or redraw it. Keep the main creature only.",
+    "outputSHA256": "3b14a32ab1b97055a3c91546d11296afe2f965ac05269a005faf44bfdf809fd9",
+    "reviewed": true
+  },
+  {
+    "asset": "Cutout-Dino-titanoboa",
+    "sourcePath": "/Users/admin/Ascended-iPad-Dev/native/Ascended/Assets.xcassets/Game-Dino-titanoboa.imageset/image.png",
+    "sourceURL": "https://ark.wiki.gg/images/Aberrant_Titanoboa_Ingame.jpg",
+    "sourceSHA256": "b667144b7986f05154398b885b521c18bfe4e223da5df95a929ce89e38fdcd2d",
+    "method": "imagegen-background-extraction",
+    "prompt": "Use case: background-extraction. Extract the exact actual ARK creature Dino-titanoboa from this game image onto a fully transparent background. Preserve its original game anatomy, pose, scales/fur, colours including dark/black areas and attached flame/alpha effects. Show the complete visible body including feet, tail and wings, with 8% transparent margin. Do not crop or zoom into its head. Remove scenery, floor, sky, text, UI, people and other animals. Do not invent unseen anatomy or redraw it. Keep the main creature only.",
+    "outputSHA256": "3cf1a4a44a354005a0b23c0944d1039047f0f01348e272736e7fa27a01ab79d1",
+    "reviewed": true
+  },
+  {
+    "asset": "Cutout-Dino-megalodon",
+    "sourcePath": "/Users/admin/Ascended-iPad-Dev/native/Ascended/Assets.xcassets/Game-Dino-megalodon.imageset/image.png",
+    "sourceURL": "https://ark.wiki.gg/images/Sharky_ASIG.png",
+    "sourceSHA256": "13c347fffecf5a8da4129eccbb54cdbb14e143f581f0474a946356b113a92d77",
+    "method": "imagegen-background-extraction",
+    "prompt": "Use case: background-extraction. Extract the exact actual ARK creature Dino-megalodon from this game image onto a fully transparent background. Preserve its original game anatomy, pose, scales/fur, colours including dark/black areas and attached flame/alpha effects. Show the complete visible body including feet, tail and wings, with 8% transparent margin. Do not crop or zoom into its head. Remove scenery, floor, sky, text, UI, people and other animals. Do not invent unseen anatomy or redraw it. Keep the main creature only.",
+    "outputSHA256": "2ed469e79bd8d5d7a1280ae40a1a7f72ce87cddedda2140fec7fc4cfc5670d60",
+    "reviewed": true
+  },
+  {
+    "asset": "Cutout-Dino-pyromane",
+    "sourcePath": "/Users/admin/Ascended-iPad-Dev/native/Ascended/Assets.xcassets/Game-Dino-pyromane.imageset/image.png",
+    "sourceURL": "https://ark.wiki.gg/images/ASA_Pyromane_2560x1440.jpg",
+    "sourceSHA256": "ccb4a9a1387e77b6307acacffe0503556af7d732d11d6464a0bea1b90007dd61",
+    "method": "imagegen-background-extraction",
+    "prompt": "Use case: background-extraction. Extract the exact actual ARK creature Dino-pyromane from this game image onto a fully transparent background. Preserve its original game anatomy, pose, scales/fur, colours including dark/black areas and attached flame/alpha effects. Show the complete visible body including feet, tail and wings, with 8% transparent margin. Do not crop or zoom into its head. Remove scenery, floor, sky, text, UI, people and other animals. Do not invent unseen anatomy or redraw it. Keep the fiery feline on the RIGHT only, preserve its orange flames.",
+    "outputSHA256": "4693176e8abb0baf516cce85a392918f0ef01d4954b68372c0ee00fe78f692b9",
+    "reviewed": true
+  },
+  {
+    "asset": "Cutout-Dino-gigantoraptor",
+    "sourcePath": "/Users/admin/Ascended-iPad-Dev/native/Ascended/Assets.xcassets/Game-Dino-gigantoraptor.imageset/image.png",
+    "sourceURL": "https://ark.wiki.gg/images/ASA_Gigantoraptor_CC09Feb_Wallpaper_2560x1440.png",
+    "sourceSHA256": "42e7f0cc283e34dff322fc713ea044e811548bf6421a9e8f9045a97e60b0f842",
+    "method": "imagegen-background-extraction",
+    "prompt": "Use case: background-extraction. Extract the exact actual ARK creature Dino-gigantoraptor from this game image onto a fully transparent background. Preserve its original game anatomy, pose, scales/fur, colours including dark/black areas and attached flame/alpha effects. Show the complete visible body including feet, tail and wings, with 8% transparent margin. Do not crop or zoom into its head. Remove scenery, floor, sky, text, UI, people and other animals. Do not invent unseen anatomy or redraw it. Keep the large right adult only, remove human and chicks.",
+    "outputSHA256": "2a5a62dae2dd37d983ec2d8d2f550019326a1ec415e3a9283e90142e9bb3691b",
+    "reviewed": true
+  },
+  {
+    "asset": "Cutout-Dino-shastasaurus",
+    "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/fullbody-candidates/Shastasaurus_PaintRegion0_ASA.png",
+    "sourceURL": "https://ark.wiki.gg/images/Shastasaurus_PaintRegion0_ASA.png",
+    "sourceSHA256": "1d798dd4df58846b7a38d72c7006a50c3777affac060873211d241181e515085",
+    "method": "game-model-debug-colour-restoration",
+    "prompt": "Use case: precise ARK creature asset edit. The FIRST image is a genuine full-body game model render with artificial RED debug paint-region highlighting. Preserve its exact full-body geometry, pose, all limbs, entire tail and wings. Remove only the technical red highlight colouring and restore the creature's actual game colour palette using the SECOND image as colour reference. Do not adopt the cropped composition or pose from the second image. For Purlovia with no second image, replace only the red debug patches with the neutral grey-brown fur already visible elsewhere on this same model. Do not change anatomy, add equipment, invent texture features, or alter the silhouette. Output the COMPLETE full-body model on a fully transparent background, centred with 8% transparent margin around every extremity, no text, no ground, no other creature. Dino-shastasaurus",
+    "outputSHA256": "bdab3185203d2cb4085e11ff37bbc7f26f6cbd65ca8cadfc302c98277a668e14",
+    "reviewed": true,
+    "colourReferenceAsset": "Game-Dino-shastasaurus",
+    "colourReferenceURL": "https://ark.wiki.gg/images/ASA_Shastasaurus_2560x1440.jpg"
+  },
+  {
+    "asset": "Cutout-Dino-dreadmare",
+    "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/fullbody-candidates/Dreadmare_PaintRegion0_ASA.png",
+    "sourceURL": "https://ark.wiki.gg/images/Dreadmare_PaintRegion0_ASA.png",
+    "sourceSHA256": "f1939b98b27656fc081cff9eb7b2a443307fa87d89033cff77ad0ef8d466e822",
+    "method": "game-model-debug-colour-restoration",
+    "prompt": "Use case: precise ARK creature asset edit. The FIRST image is a genuine full-body game model render with artificial RED debug paint-region highlighting. Preserve its exact full-body geometry, pose, all limbs, entire tail and wings. Remove only the technical red highlight colouring and restore the creature's actual game colour palette using the SECOND image as colour reference. Do not adopt the cropped composition or pose from the second image. For Purlovia with no second image, replace only the red debug patches with the neutral grey-brown fur already visible elsewhere on this same model. Do not change anatomy, add equipment, invent texture features, or alter the silhouette. Output the COMPLETE full-body model on a fully transparent background, centred with 8% transparent margin around every extremity, no text, no ground, no other creature. Dino-dreadmare",
+    "outputSHA256": "a9bdf6fe80852614a93d43ba48bb1bde53322922b1bbc44fc8bcd0a3867a20ed",
+    "reviewed": true,
+    "colourReferenceAsset": "Game-Dino-dreadmare",
+    "colourReferenceURL": "https://ark.wiki.gg/images/ASA_Dreadmare_.png"
+  },
+  {
+    "asset": "Cutout-Boss-spirit-dire-bear",
+    "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/spirit-fullbody/1340.jpg",
+    "sourceURL": "https://www.youtube.com/watch?v=dB3V_7-s92s&t=1340s",
+    "sourceSHA256": "061d6ce265d75a631339fc73557523254ccd4b67a9562092d755106c356d4efd",
+    "method": "actual-ASA-video-background-extraction",
+    "prompt": "Use case: background-extraction. Extract the actual ARK Spirit creature from this ASA screenshot into a fully transparent PNG. Keep only the bear near the centre behind the foreground player. Preserve the actual visible bear and its attached spectral effect; remove player, flowers, vegetation, ruins. Keep its entire visible body and all observed extremities, centre it with 8% transparent margins. Do not invent anatomy, change its pose, or use a different animal. Keep original game colours and translucency.",
+    "outputSHA256": "f38cb4cbce9bc5fb56538c956f40efe8a7c409759d920d2decaac246222808bc",
+    "reviewed": true
+  },
+  {
+    "asset": "Cutout-Dino-purlovia",
+    "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/fullbody-candidates/Purlovia_PaintRegion5_ASA.png",
+    "sourceURL": "https://ark.wiki.gg/images/Purlovia_PaintRegion5_ASA.png",
+    "sourceSHA256": "ea991ad37b7b2d69885d5deb53190788ffde405a98052d8ccdfa2b8f082f3bf4",
+    "method": "game-model-debug-colour-restoration",
+    "prompt": "Use case: precise ARK creature asset edit. The FIRST image is a genuine full-body game model render with artificial RED debug paint-region highlighting. Preserve its exact full-body geometry, pose, all limbs, entire tail and wings. Remove only the technical red highlight colouring and restore the creature's actual game colour palette using the SECOND image as colour reference. Do not adopt the cropped composition or pose from the second image. For Purlovia with no second image, replace only the red debug patches with the neutral grey-brown fur already visible elsewhere on this same model. Do not change anatomy, add equipment, invent texture features, or alter the silhouette. Output the COMPLETE full-body model on a fully transparent background, centred with 8% transparent margin around every extremity, no text, no ground, no other creature. Dino-purlovia",
+    "outputSHA256": "db177b67f50364c97ad4337b64a5cf7e375293085c8def54f3d2b57611c9cbb9",
+    "reviewed": true,
+    "colourReferenceAsset": "Game-Dino-purlovia",
+    "colourReferenceURL": null
+  },
+  {
+    "asset": "Cutout-Dino-acrocanthosaurus",
+    "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/fullbody-candidates/Acrocanthosaurus_PaintRegion0_ASA.png",
+    "sourceURL": "https://ark.wiki.gg/images/Acrocanthosaurus_PaintRegion0_ASA.png",
+    "sourceSHA256": "407a34b4165df59fa172a84e0f7acec3ca1a8173e637a02e01ab202c74c4f636",
+    "method": "game-model-debug-colour-restoration",
+    "prompt": "Use case: precise ARK creature asset edit. The FIRST image is a genuine full-body game model render with artificial RED debug paint-region highlighting. Preserve its exact full-body geometry, pose, all limbs, entire tail and wings. Remove only the technical red highlight colouring and restore the creature's actual game colour palette using the SECOND image as colour reference. Do not adopt the cropped composition or pose from the second image. For Purlovia with no second image, replace only the red debug patches with the neutral grey-brown fur already visible elsewhere on this same model. Do not change anatomy, add equipment, invent texture features, or alter the silhouette. Output the COMPLETE full-body model on a fully transparent background, centred with 8% transparent margin around every extremity, no text, no ground, no other creature. Dino-acrocanthosaurus",
+    "outputSHA256": "7288be5af6ef3d302e344c31d8ea31ae23917be05ba50df3e201cc92ec37ab2f",
+    "reviewed": true,
+    "colourReferenceAsset": "Game-Dino-acrocanthosaurus",
+    "colourReferenceURL": "https://ark.wiki.gg/images/ASA_Acrocanthosaurus.jpg"
+  },
+  {
+    "asset": "Cutout-Dino-leech",
+    "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/fullbody-candidates/Leech_Normal.jpg",
+    "sourceURL": "https://ark.wiki.gg/images/Leech_Normal.jpg",
+    "sourceSHA256": "94de9184e7c168de8449ddabeea1582b940fa0c343146d6f1430ac3062dc1ea2",
+    "method": "imagegen-background-extraction",
+    "prompt": "Use case: background-extraction. Extract the exact actual ARK creature Dino-leech from this game image onto a fully transparent background. Preserve its original game anatomy, pose, scales/fur, colours including dark/black areas and attached flame/alpha effects. Show the complete visible body including feet, tail and wings, with 8% transparent margin. Do not crop or zoom into its head. Remove scenery, floor, sky, text, UI, people and other animals. Do not invent unseen anatomy or redraw it. Keep the entire foreground leech, including its side frills. Remove the player's hands and ground.",
+    "outputSHA256": "73b093db3258752a05a26440dd8c165a5da7a2e5b3166b94e0bc28f8d858231f",
+    "reviewed": true
+  },
+  {
+    "asset": "Cutout-Dino-leedsichthys",
+    "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/Leedsichthys_attacking_Raft.jpg",
+    "sourceURL": "https://ark.wiki.gg/images/Leedsichthys_attacking_Raft.jpg",
+    "sourceSHA256": "bce340e76c6baabcd77b357823a88e4ddbd48c16ee1c3e6303cc1993cab72f27",
+    "method": "imagegen-background-extraction",
+    "prompt": "Use case: background-extraction. Extract the exact actual ARK creature Dino-leedsichthys from this game image onto a fully transparent background. Preserve its original game anatomy, pose, scales/fur, colours including dark/black areas and attached flame/alpha effects. Show the complete visible body including feet, tail and wings, with 8% transparent margin. Do not crop or zoom into its head. Remove scenery, floor, sky, text, UI, people and other animals. Do not invent unseen anatomy or redraw it. Keep the main creature only.",
+    "outputSHA256": "c760024ef2a0c7cb226e29e139ed4bb3bae679864b7dfadad216f2db23907939",
+    "reviewed": true
+  },
+  {
+    "asset": "Cutout-Dino-doedicurus",
+    "sourcePath": "/Users/admin/Ascended-iPad-Dev/native/Ascended/Assets.xcassets/Game-Dino-doedicurus.imageset/image.png",
+    "sourceURL": "https://ark.wiki.gg/images/Playing_Doedicurus.jpg",
+    "sourceSHA256": "ac1e1cddd55fee443d2195bacc97639dd92e012952ebb4d2da204e88f2f6dce0",
+    "method": "imagegen-background-extraction",
+    "prompt": "Use case: background-extraction. Extract the exact actual ARK creature Dino-doedicurus from this game image onto a fully transparent background. Preserve its original game anatomy, pose, scales/fur, colours including dark/black areas and attached flame/alpha effects. Show the complete visible body including feet, tail and wings, with 8% transparent margin. Do not crop or zoom into its head. Remove scenery, floor, sky, text, UI, people and other animals. Do not invent unseen anatomy or redraw it. Keep the main creature only.",
+    "outputSHA256": "199dc354b94cca23d23f1ca287af8e0eadbb2e4d8504fc1b2f2e764293fb8c9c",
+    "reviewed": true
+  },
+  {
+    "asset": "Cutout-Dino-alpha-leedsichthys",
+    "sourcePath": "/Users/admin/Ascended-iPad-Dev/native/Ascended/Assets.xcassets/Game-Dino-alpha-leedsichthys.imageset/image.png",
+    "sourceURL": "https://ark.wiki.gg/images/Alpha_Leedsichthys_Image.jpg",
+    "sourceSHA256": "3738c24ec4772aa578afe22b9ce123d5d283f711624e96eb6d795dad6f559351",
+    "method": "imagegen-background-extraction",
+    "prompt": "Use case: background-extraction. Extract the exact actual ARK creature Dino-alpha-leedsichthys from this game image onto a fully transparent background. Preserve its original game anatomy, pose, scales/fur, colours including dark/black areas and attached flame/alpha effects. Show the complete visible body including feet, tail and wings, with 8% transparent margin. Do not crop or zoom into its head. Remove scenery, floor, sky, text, UI, people and other animals. Do not invent unseen anatomy or redraw it. Keep the main creature only.",
+    "outputSHA256": "2fd7ae019ca007661275049acff30cdb5e43f2e4a2bf85bb7607639258d20f3d",
+    "reviewed": true
+  },
+  {
+    "asset": "Cutout-Dino-basilosaurus",
+    "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/fullbody-candidates/Render_Basilosaurus.jpg",
+    "sourceURL": "https://ark.wiki.gg/images/Render_Basilosaurus.jpg",
+    "sourceSHA256": "99dc35f189af567334100aba48d91078c4e157360374e0cb003f5a65564d545e",
+    "method": "imagegen-background-extraction",
+    "prompt": "Use case: background-extraction. Extract the exact actual ARK creature Dino-basilosaurus from this game image onto a fully transparent background. Preserve its original game anatomy, pose, scales/fur, colours including dark/black areas and attached flame/alpha effects. Show the complete visible body including feet, tail and wings, with 8% transparent margin. Do not crop or zoom into its head. Remove scenery, floor, sky, text, UI, people and other animals. Do not invent unseen anatomy or redraw it. Keep the main creature only.",
+    "outputSHA256": "ad89d45b89538a9df5999aac589912862bcae054eb98a2a743d1e59416288542",
+    "reviewed": true
+  },
+  {
+    "asset": "Cutout-Dino-archelon",
+    "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/fullbody-candidates/Archelon_PaintRegion0_ASA.png",
+    "sourceURL": "https://ark.wiki.gg/images/Archelon_PaintRegion0_ASA.png",
+    "sourceSHA256": "1d30fee6f81002021ceef626720933371100691e226d565c710ab03c664f351b",
+    "method": "game-model-debug-colour-restoration",
+    "prompt": "Use case: precise ARK creature asset edit. The FIRST image is a genuine full-body game model render with artificial RED debug paint-region highlighting. Preserve its exact full-body geometry, pose, all limbs, entire tail and wings. Remove only the technical red highlight colouring and restore the creature's actual game colour palette using the SECOND image as colour reference. Do not adopt the cropped composition or pose from the second image. For Purlovia with no second image, replace only the red debug patches with the neutral grey-brown fur already visible elsewhere on this same model. Do not change anatomy, add equipment, invent texture features, or alter the silhouette. Output the COMPLETE full-body model on a fully transparent background, centred with 8% transparent margin around every extremity, no text, no ground, no other creature. Dino-archelon",
+    "outputSHA256": "a9d90551bf68598d13739e59dda8253b7413e8397876955579a861caf6a06a55",
+    "reviewed": true,
+    "colourReferenceAsset": "Game-Dino-archelon",
+    "colourReferenceURL": "https://ark.wiki.gg/images/ASA_Archelon.png"
+  },
+  {
+    "asset": "Cutout-Dino-carcharodontosaurus",
+    "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/fullbody-candidates/Carcharodontosaurus_PaintRegion0_ASA.png",
+    "sourceURL": "https://ark.wiki.gg/images/Carcharodontosaurus_PaintRegion0_ASA.png",
+    "sourceSHA256": "c4aa9babe449b43aff1927e7dbe835cffeed73c45093589950b6cf2f2482c0c4",
+    "method": "game-model-debug-colour-restoration",
+    "prompt": "Use case: precise ARK creature asset edit. The FIRST image is a genuine full-body game model render with artificial RED debug paint-region highlighting. Preserve its exact full-body geometry, pose, all limbs, entire tail and wings. Remove only the technical red highlight colouring and restore the creature's actual game colour palette using the SECOND image as colour reference. Do not adopt the cropped composition or pose from the second image. For Purlovia with no second image, replace only the red debug patches with the neutral grey-brown fur already visible elsewhere on this same model. Do not change anatomy, add equipment, invent texture features, or alter the silhouette. Output the COMPLETE full-body model on a fully transparent background, centred with 8% transparent margin around every extremity, no text, no ground, no other creature. Dino-carcharodontosaurus",
+    "outputSHA256": "0696b7869e5066d83e42907e356f3521e213201968bb9caf6bf6d22d36d53959",
+    "reviewed": true,
+    "colourReferenceAsset": "Game-Dino-carcharodontosaurus",
+    "colourReferenceURL": "https://ark.wiki.gg/images/ASA_Carcharodontosaurus.jpg"
+  },
+  {
+    "asset": "Cutout-Dino-tusoteuthis",
+    "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/fullbody-candidates/Tusoteuthis_PaintRegion0_ASA.png",
+    "sourceURL": "https://ark.wiki.gg/images/Tusoteuthis_PaintRegion0_ASA.png",
+    "sourceSHA256": "cd2e7ca8e1c0266e682977a46ff3af788b074e53651704308afc6e418e1a92b9",
+    "method": "game-model-debug-colour-restoration",
+    "prompt": "Use case: precise game asset background extraction. This is the actual full-body ASA model with a red paint-region debug marking on the mantle. Restore only that debug red to the brown/black colouring in the second reference image. Preserve the exact full-body model pose and ALL entire tentacles, including the longest tentacle tip. Do not adopt the reference's baby size or crop. Remove only scenery, water, text and UI; preserve the actual game creature geometry and natural colours. Fit the WHOLE body in a fully transparent PNG, with 8% transparent margins around every extremity. No invented anatomy, no redesigned creature, no crop.",
+    "outputSHA256": "cc901e46520d8f1a54de372525c17d054d7670f1b7286ecbc0499d162903c72d",
+    "reviewed": true,
+    "colourReferenceAsset": "Game-Dino-tusoteuthis",
+    "colourReferenceURL": "https://ark.wiki.gg/images/Tusobaby.png"
+  },
+  {
+    "asset": "Cutout-Dino-otter",
+    "sourcePath": "/Users/admin/Ascended-iPad-Dev/native/Ascended/Assets.xcassets/Game-Dino-otter.imageset/image.png",
+    "sourceURL": "https://ark.wiki.gg/images/Otter_Ingame.png",
+    "sourceSHA256": "38fc3587b944ccfdf8c1e89a47f7a43b3123af2fd8c7c6236e19bbb4df0f6f4f",
+    "method": "imagegen-background-extraction",
+    "prompt": "Use case: background-extraction. Extract the exact actual ARK creature Dino-otter from this game image onto a fully transparent background. Preserve its original game anatomy, pose, scales/fur, colours including dark/black areas and attached flame/alpha effects. Show the complete visible body including feet, tail and wings, with 8% transparent margin. Do not crop or zoom into its head. Remove scenery, floor, sky, text, UI, people and other animals. Do not invent unseen anatomy or redraw it. Keep the main creature only.",
+    "outputSHA256": "466bbc921a650a308fe390b62844e821b546b73c55f5384639b3784c8955905d",
+    "reviewed": true
+  },
+  {
+    "asset": "Cutout-Dino-megalosaurus",
+    "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/fullbody-candidates/Megalosaurus_PaintRegion0_ASA.png",
+    "sourceURL": "https://ark.wiki.gg/images/Megalosaurus_PaintRegion0_ASA.png",
+    "sourceSHA256": "bac8de399299b711e1b48d161e7380cdd2aaf453e47c6c1bb2ea03e5e357147a",
+    "method": "game-model-debug-colour-restoration",
+    "prompt": "Use case: precise ARK creature asset edit. The FIRST image is a genuine full-body game model render with artificial RED debug paint-region highlighting. Preserve its exact full-body geometry, pose, all limbs, entire tail and wings. Remove only the technical red highlight colouring and restore the creature's actual game colour palette using the SECOND image as colour reference. Do not adopt the cropped composition or pose from the second image. For Purlovia with no second image, replace only the red debug patches with the neutral grey-brown fur already visible elsewhere on this same model. Do not change anatomy, add equipment, invent texture features, or alter the silhouette. Output the COMPLETE full-body model on a fully transparent background, centred with 8% transparent margin around every extremity, no text, no ground, no other creature. Dino-megalosaurus",
+    "outputSHA256": "c973ec8585c576e329c795c96ffec62e8f5d65f820535ea7bdd9b64b1e8f8a67",
+    "reviewed": true,
+    "colourReferenceAsset": "Game-Dino-megalosaurus",
+    "colourReferenceURL": "https://ark.wiki.gg/images/Megalosaurus_Riders.jpg"
+  },
+  {
+    "asset": "Cutout-Boss-spirit-direwolf",
+    "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/spirit-fullbody/1358.jpg",
+    "sourceURL": "https://www.youtube.com/watch?v=dB3V_7-s92s&t=1358s",
+    "sourceSHA256": "78e6fc42d406fcd9ef947a42be468228dbbeff089e9a0895a7038944dab6f8a1",
+    "method": "actual-ASA-video-background-extraction",
+    "prompt": "Use case: background-extraction. Extract the actual ARK Spirit creature from this ASA screenshot into a fully transparent PNG. Keep only the white translucent wolf lying near the centre/right, preserve its actual lying pose and spectral white effect. Remove player, foreground rock, ruins, plants and ground. Keep its entire visible body and all observed extremities, centre it with 8% transparent margins. Do not invent anatomy, change its pose, or use a different animal. Keep original game colours and translucency.",
+    "outputSHA256": "a32a888d400fab7337ad06ae8418cf3af281fcdbdca9aca2c950e691d3c1c86c",
+    "reviewed": true
+  },
+  {
+    "asset": "Cutout-Boss-overseer",
+    "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/Overseer_Model_with_Shield.jpg",
+    "sourceURL": "https://ark.wiki.gg/images/Overseer_Model_with_Shield.jpg",
+    "sourceSHA256": "1aa5e25bd7a1efbf1b6827816c2450999d4aab78ec93c750b4b6c11a3c8c0ab0",
+    "method": "imagegen-background-extraction",
+    "prompt": "Use case: background-extraction. Edit supplied authentic ARK game image. Keep the central metallic diamond Overseer, its existing blue shield and orbiting pieces; remove sky, floor, shadows and unrelated bright dot on left. Preserve exact observed anatomy, pose, colour and surface detail. Background removal ONLY; no redraw, no enhancement, no invented parts. Preserve source crop where body was outside frame. Actual alpha transparency, no scenery, backdrop, text or humans.",
+    "outputSHA256": "9acd32378b4b638cdc3fd4c1f6bf0a8ed72e1a966d44cf5422184a057ba7eae3",
+    "reviewed": true
+  },
+  {
+    "asset": "Cutout-Dino-rhyniognatha",
+    "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/fullbody-candidates/Rhyniognatha_PaintRegion0_ASA.png",
+    "sourceURL": "https://ark.wiki.gg/images/Rhyniognatha_PaintRegion0_ASA.png",
+    "sourceSHA256": "2d239b63d26df726ecc1fe0b529481a08ef2ca7dd1ad5cbda4de1c579db48c8c",
+    "method": "game-model-debug-colour-restoration",
+    "prompt": "Use case: precise ARK creature asset edit. The FIRST image is a genuine full-body game model render with artificial RED debug paint-region highlighting. Preserve its exact full-body geometry, pose, all limbs, entire tail and wings. Remove only the technical red highlight colouring and restore the creature's actual game colour palette using the SECOND image as colour reference. Do not adopt the cropped composition or pose from the second image. For Purlovia with no second image, replace only the red debug patches with the neutral grey-brown fur already visible elsewhere on this same model. Do not change anatomy, add equipment, invent texture features, or alter the silhouette. Output the COMPLETE full-body model on a fully transparent background, centred with 8% transparent margin around every extremity, no text, no ground, no other creature. Dino-rhyniognatha",
+    "outputSHA256": "91c4fc97606ff37ded9a76417803897f3e9a3cc55331e0f8f4aa5e135f4e455e",
+    "reviewed": true,
+    "colourReferenceAsset": "Game-Dino-rhyniognatha",
+    "colourReferenceURL": "https://ark.wiki.gg/images/Rhyniognatha.jpg"
+  },
+  {
+    "asset": "Cutout-Dino-gargantar",
+    "sourcePath": "/Users/admin/Ascended-iPad-Dev/native/Ascended/Assets.xcassets/Game-Dino-gargantar.imageset/image.png",
+    "sourceURL": "https://ark.wiki.gg/images/ASA_Gargantarr.jpg",
+    "sourceSHA256": "7431d3c9d6c07d218e8efb45e01bf2e1a8f018cce2af2dabdc5e3b9e8208e191",
+    "method": "imagegen-background-extraction",
+    "prompt": "Use case: background-extraction. Extract the exact actual ARK creature Dino-gargantar from this game image onto a fully transparent background. Preserve its original game anatomy, pose, scales/fur, colours including dark/black areas and attached flame/alpha effects. Show the complete visible body including feet, tail and wings, with 8% transparent margin. Do not crop or zoom into its head. Remove scenery, floor, sky, text, UI, people and other animals. Do not invent unseen anatomy or redraw it. Keep the main creature only.",
+    "outputSHA256": "4bda6ece9d95564715e685fa2ff78945ca6d9fd7d572d7b4b1f9de44d36e7579",
+    "reviewed": true
+  },
+  {
+    "asset": "Cutout-Dino-helicoprion",
+    "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/fullbody-candidates/ASA_Helicoprion_01.png",
+    "sourceURL": "https://ark.wiki.gg/images/ASA_Helicoprion_01.png",
+    "sourceSHA256": "526237b06af007539524a7fda06032021726bb8eeaf5eb1649851e26248b790a",
+    "method": "imagegen-background-extraction",
+    "prompt": "Use case: precise game asset background extraction. Keep the single complete shark, including the entire rear body and tail. Remove only scenery, water, text and UI; preserve the actual game creature geometry and natural colours. Fit the WHOLE body in a fully transparent PNG, with 8% transparent margins around every extremity. No invented anatomy, no redesigned creature, no crop.",
+    "outputSHA256": "c7811b4e3b95280bbcd3a1313583645bbbb6e4d7047ad5bb68a369993bf3e658",
+    "reviewed": true
+  },
+  {
+    "asset": "Cutout-Dino-allosaurus",
+    "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/fullbody-candidates/Allosaurus_PaintRegion0_ASA.png",
+    "sourceURL": "https://ark.wiki.gg/images/Allosaurus_PaintRegion0_ASA.png",
+    "sourceSHA256": "a2468a9ff27a1c03e0ede40cb5399997157faeee7792e6ed99c8560bad5cb569",
+    "method": "game-model-debug-colour-restoration",
+    "prompt": "Use case: precise ARK creature asset edit. The FIRST image is a genuine full-body game model render with artificial RED debug paint-region highlighting. Preserve its exact full-body geometry, pose, all limbs, entire tail and wings. Remove only the technical red highlight colouring and restore the creature's actual game colour palette using the SECOND image as colour reference. Do not adopt the cropped composition or pose from the second image. For Purlovia with no second image, replace only the red debug patches with the neutral grey-brown fur already visible elsewhere on this same model. Do not change anatomy, add equipment, invent texture features, or alter the silhouette. Output the COMPLETE full-body model on a fully transparent background, centred with 8% transparent margin around every extremity, no text, no ground, no other creature. Dino-allosaurus",
+    "outputSHA256": "8142bcbc34c19f7d63618b406170607cc20d2ff798496cbc1a17ea3655f7a630",
+    "reviewed": true,
+    "colourReferenceAsset": "Game-Dino-allosaurus",
+    "colourReferenceURL": "https://ark.wiki.gg/images/Allosaurus_Image.jpg"
+  },
+  {
+    "asset": "Cutout-Dino-alpha-megalodon",
+    "sourcePath": "/Users/admin/Ascended-iPad-Dev/native/Ascended/Assets.xcassets/Game-Dino-alpha-megalodon.imageset/image.png",
+    "sourceURL": "https://ark.wiki.gg/images/Alpha_Megalodon_Image.jpg",
+    "sourceSHA256": "f8b9acf59c416561d1efc473ae83ca24c117af67b539581feaddd23e9ccbc303",
+    "method": "imagegen-background-extraction",
+    "prompt": "Use case: background-extraction. Edit this actual ARK game image into a single creature PNG on a completely transparent background. The subject is Dino-alpha-megalodon. Preserve the exact visible subject, anatomy, pose, scales/fur, equipment if present, and original colours including dark and black areas. Remove all scenery, floor, sky, text, UI, people and other animals. Do not redesign, recolour, whiten, or invent missing/offscreen body parts: retain the original crop where needed. Keep attached Alpha/Spirit/flame effects belonging to the creature. Keep the main creature only.",
+    "outputSHA256": "9eaaaf2615ea9a496ed655372da74f0c7ad2b75eb01ffaea6dca365f5cda9d1e",
+    "reviewed": true
+  },
+  {
+    "asset": "Cutout-Dino-raptor",
+    "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/fullbody-candidates/Raptor_PaintRegion0_ASA.png",
+    "sourceURL": "https://ark.wiki.gg/images/Raptor_PaintRegion0_ASA.png",
+    "sourceSHA256": "9b1c9fda0620e0ffaf34e52a63c884e1252577eb4d87d2af75f96fb6471dea3a",
+    "method": "game-model-debug-colour-restoration",
+    "prompt": "Use case: precise ARK creature asset edit. The FIRST image is a genuine full-body game model render with artificial RED debug paint-region highlighting. Preserve its exact full-body geometry, pose, all limbs, entire tail and wings. Remove only the technical red highlight colouring and restore the creature's actual game colour palette using the SECOND image as colour reference. Do not adopt the cropped composition or pose from the second image. For Purlovia with no second image, replace only the red debug patches with the neutral grey-brown fur already visible elsewhere on this same model. Do not change anatomy, add equipment, invent texture features, or alter the silhouette. Output the COMPLETE full-body model on a fully transparent background, centred with 8% transparent margin around every extremity, no text, no ground, no other creature. Dino-raptor",
+    "outputSHA256": "286add0d205a16438826468c5c012fabf0bad0cd861e5e2e4709bc8ecd5b92ff",
+    "reviewed": true,
+    "colourReferenceAsset": "Game-Dino-raptor",
+    "colourReferenceURL": "https://ark.wiki.gg/images/Tek_Raptor_Image.jpg"
+  },
+  {
+    "asset": "Cutout-Dino-deinosuchus",
+    "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/fullbody-candidates/Mod_ARK_Additions_Deinosuchus_image_2.jpg",
+    "sourceURL": "https://ark.wiki.gg/images/Mod_ARK_Additions_Deinosuchus_image_2.jpg",
+    "sourceSHA256": "75510fc1f6be81db1d4d32330ac8993fe2a3774a52d6a31554a6b2527510bbef",
+    "method": "imagegen-background-extraction",
+    "prompt": "Use case: background-extraction. Extract the exact actual ARK creature Dino-deinosuchus from this game image onto a fully transparent background. Preserve its original game anatomy, pose, scales/fur, colours including dark/black areas and attached flame/alpha effects. Show the complete visible body including feet, tail and wings, with 8% transparent margin. Do not crop or zoom into its head. Remove scenery, floor, sky, text, UI, people and other animals. Do not invent unseen anatomy or redraw it. Keep the long crocodile only.",
+    "outputSHA256": "ca2f0478e43c506cb5b5c9f66ac4dd0490acad37f7304811818a38efbf5ffdc2",
+    "reviewed": true
+  },
+  {
+    "asset": "Cutout-Dino-elderclaw",
+    "sourcePath": "/Users/admin/Ascended-iPad-Dev/native/Ascended/Assets.xcassets/Game-Dino-elderclaw.imageset/image.png",
+    "sourceURL": "https://ark.wiki.gg/images/ASA_Elderclaw.jpg",
+    "sourceSHA256": "8679f205e1cec54b00daf0dbf010819e57740bd382319129dba25fa2a4fd8e31",
+    "method": "imagegen-background-extraction",
+    "prompt": "Use case: background-extraction. Extract the exact actual ARK creature Dino-elderclaw from this game image onto a fully transparent background. Preserve its original game anatomy, pose, scales/fur, colours including dark/black areas and attached flame/alpha effects. Show the complete visible body including feet, tail and wings, with 8% transparent margin. Do not crop or zoom into its head. Remove scenery, floor, sky, text, UI, people and other animals. Do not invent unseen anatomy or redraw it. Keep the main creature only.",
+    "outputSHA256": "026c87a96fd2e5d46707207ccf2c2383849bb7be1f96f7dad6f3cce560aed5b9",
+    "reviewed": true
+  },
+  {
+    "asset": "Cutout-Dino-griffin",
+    "sourcePath": "/Users/admin/Ascended-iPad-Dev/native/Ascended/Assets.xcassets/Game-Dino-griffin.imageset/image.png",
+    "sourceURL": "https://ark.wiki.gg/images/Griffin_Promo_Image.jpg",
+    "sourceSHA256": "e1881708dd2fd11de54e345faf81f1f0e509e4eca9f39697a5fd72fe080eaba2",
+    "method": "imagegen-background-extraction",
+    "prompt": "Use case: background-extraction. Extract the exact actual ARK creature Dino-griffin from this game image onto a fully transparent background. Preserve its original game anatomy, pose, scales/fur, colours including dark/black areas and attached flame/alpha effects. Show the complete visible body including feet, tail and wings, with 8% transparent margin. Do not crop or zoom into its head. Remove scenery, floor, sky, text, UI, people and other animals. Do not invent unseen anatomy or redraw it. Keep the main creature only.",
+    "outputSHA256": "11aaed5c2e043b0492005a2457a11ac676371e1c312e277f8a63f35ed356249e",
+    "reviewed": true
+  },
+  {
+    "asset": "Cutout-Dino-arthropluera",
+    "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/Arthropluera_on_Beach.jpg",
+    "sourceURL": "https://ark.wiki.gg/images/Arthropluera_on_Beach.jpg",
+    "sourceSHA256": "40ec2a3eeea0ad87f5380631c2c680c3f863650aa4f0b2441103cf4ad941efa2",
+    "method": "imagegen-background-extraction",
+    "prompt": "Use case: background-extraction. Edit target is the supplied authentic ARK game picture. Keep ONLY the purple-blue Arthropluera on the RIGHT, the long segmented centipede. Remove the other animal on the left, beach, rock and player hands. Remove only background and cast shadows. Preserve EXACT animal colour, observed anatomy, pose, proportions and surface texture. Do not redraw, stylize, enhance or invent missing/offscreen body parts. No humans, text or scenery. Actual transparent alpha; no backdrop/halo. Keep source crop for any parts originally outside frame.",
+    "outputSHA256": "d1c4bc113e8c8ad73200f0415856f6662c874aaab940b6e7aad83c92946053c6",
+    "reviewed": true
+  },
+  {
+    "asset": "Cutout-Dino-alpha-mosasaur",
+    "sourcePath": "/Users/admin/Ascended-iPad-Dev/native/Ascended/Assets.xcassets/Game-Dino-alpha-mosasaur.imageset/image.png",
+    "sourceURL": "https://ark.wiki.gg/images/Alpha_Mosa_Size_Comparison.jpg",
+    "sourceSHA256": "998d794c723779d12791f81af2d64df5b351bbe1637c8a5364001118cfe2b1c5",
+    "method": "imagegen-background-extraction",
+    "prompt": "Use case: background-extraction. Edit this actual ARK game image into a single creature PNG on a completely transparent background. The subject is Dino-alpha-mosasaur. Preserve the exact visible subject, anatomy, pose, scales/fur, equipment if present, and original colours including dark and black areas. Remove all scenery, floor, sky, text, UI, people and other animals. Do not redesign, recolour, whiten, or invent missing/offscreen body parts: retain the original crop where needed. Keep attached Alpha/Spirit/flame effects belonging to the creature. Keep the red foreground Alpha Mosasaur only; remove the rear regular animal.",
+    "outputSHA256": "5759438ca1e4bfb10396cfb12d0bf20ab70da0c8f580ae22fe4dba2717497167",
+    "reviewed": true
+  },
+  {
+    "asset": "Cutout-Boss-lava-elemental",
+    "sourcePath": "/Users/admin/Ascended-iPad-Dev/native/Ascended/Assets.xcassets/Game-Boss-lava-elemental.imageset/image.png",
+    "sourceURL": "https://ark.wiki.gg/images/Lava_Elemental_Image.png",
+    "sourceSHA256": "36b7186ed08e4f7c3e53355bab2268b499a5d4e67d24c744143240a7b7141893",
+    "method": "imagegen-background-extraction",
+    "prompt": "Use case: background-extraction. Edit target is the supplied authentic ARK game picture. Keep the rocky Lava Elemental's actual shape, black/orange rock and molten orange cracks. Remove surrounding cave walls and the lava pool. Remove only background and cast shadows. Preserve EXACT animal colour, observed anatomy, pose, proportions and surface texture. Do not redraw, stylize, enhance or invent missing/offscreen body parts. No humans, text or scenery. Actual transparent alpha; no backdrop/halo. Keep source crop for any parts originally outside frame.",
+    "outputSHA256": "7f943090e6205438154ce6493a3b5e270145cbadf7d43ebd8c1dbf4c8ba8ae66",
+    "reviewed": true
+  },
+  {
+    "asset": "Cutout-Boss-broodmother",
+    "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/fullbody-candidates/BroodmotherSize.png",
+    "sourceURL": "https://ark.wiki.gg/images/BroodmotherSize.png",
+    "sourceSHA256": "2079d9eadc9c3e5729a8ac553115b3940a3097a561b64783d581bf468b81d90e",
+    "method": "imagegen-background-extraction",
+    "prompt": "Use case: background-extraction. Extract the exact actual ARK creature Boss-broodmother from this game image onto a fully transparent background. Preserve its original game anatomy, pose, scales/fur, colours including dark/black areas and attached flame/alpha effects. Show the complete visible body including feet, tail and wings, with 8% transparent margin. Do not crop or zoom into its head. Remove scenery, floor, sky, text, UI, people and other animals. Do not invent unseen anatomy or redraw it. Keep the main creature only.",
+    "outputSHA256": "f1dcd0c31fd61272fe848160afd47cc9fa88e056e1d7a67db4a900e5ca164982",
+    "reviewed": true
+  },
+  {
+    "asset": "Cutout-Dino-alpha-raptor",
+    "sourcePath": "/Users/admin/Ascended-iPad-Dev/native/Ascended/Assets.xcassets/Game-Dino-alpha-raptor.imageset/image.png",
+    "sourceURL": "https://ark.wiki.gg/images/Alpha_Raptor_Image.jpg",
+    "sourceSHA256": "e46ae3d044a7cc0e941c7a3a725e01ce8b51965f1da93b1b2072b402c7147b60",
+    "method": "imagegen-background-extraction",
+    "prompt": "Use case: background-extraction. Edit this actual ARK game image into a single creature PNG on a completely transparent background. The subject is Dino-alpha-raptor. Preserve the exact visible subject, anatomy, pose, scales/fur, equipment if present, and original colours including dark and black areas. Remove all scenery, floor, sky, text, UI, people and other animals. Do not redesign, recolour, whiten, or invent missing/offscreen body parts: retain the original crop where needed. Keep attached Alpha/Spirit/flame effects belonging to the creature. Keep the main creature only.",
+    "outputSHA256": "bd9627fec3f171527cf43f4051914fc4f7c935f8e49a6727d573c90844233e22",
+    "reviewed": true
+  },
+  {
+    "asset": "Cutout-Dino-dire-bear",
+    "sourcePath": "/Users/admin/Ascended-iPad-Dev/native/Ascended/Assets.xcassets/Game-Dino-dire-bear.imageset/image.png",
+    "sourceURL": "https://ark.wiki.gg/images/Valguero_3.jpg",
+    "sourceSHA256": "6ae089985b7043a0c4e8e3e1fc2921b539336cfabad902ab2b9c39d38efa83a5",
+    "method": "imagegen-background-extraction",
+    "prompt": "Use case: background-extraction. Edit target is the supplied authentic ARK game picture. Keep the single upright dark brown Dire Bear. Remove only background and cast shadows. Preserve EXACT animal colour, observed anatomy, pose, proportions and surface texture. Do not redraw, stylize, enhance or invent missing/offscreen body parts. No humans, text or scenery. Actual transparent alpha; no backdrop/halo. Keep source crop for any parts originally outside frame.",
+    "outputSHA256": "2e6bde77a79a1d8c3d82cd1702de6192e79fb9b69455a633b00955a3dec9af4a",
+    "reviewed": true
+  },
+  {
+    "asset": "Cutout-Boss-dragon",
+    "sourcePath": "/Users/admin/Ascended-iPad-Dev/native/Ascended/Assets.xcassets/Game-Boss-dragon.imageset/image.png",
+    "sourceURL": "https://ark.wiki.gg/images/ARK10.jpg",
+    "sourceSHA256": "51964bf66b91f6498efbcba5c421cd4d4fca67ca5538ced228610d40a5e03339",
+    "method": "imagegen-background-extraction",
+    "prompt": "Use case: background-extraction. Edit supplied authentic ARK game image. Keep ONLY the CENTRAL boss Dragon with raised wings, remove the other dinosaurs and ground. Preserve its body and the flame from its mouth. Preserve exact observed anatomy, pose, colour and surface detail. Background removal ONLY; no redraw, no enhancement, no invented parts. Preserve source crop where body was outside frame. Actual alpha transparency, no scenery, backdrop, text or humans.",
+    "outputSHA256": "52ac0c106e83b6f2a3aa7c3b33a7ca49b72756391dc3b1a284d05c281ed8dc86",
+    "reviewed": true
+  },
+  {
+    "asset": "Cutout-Dino-deinotherium",
+    "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/fullbody-candidates/ARK_Deinotherium_1.jpg",
+    "sourceURL": "https://ark.wiki.gg/images/ARK_Deinotherium_1.jpg",
+    "sourceSHA256": "78e338e979a87e927b6b29dd2dc21f75fb71c9f4fdb512f76d2e8d5dbfb2ae1e",
+    "method": "imagegen-background-extraction",
+    "prompt": "Use case: background-extraction. Extract the exact actual ARK creature Dino-deinotherium from this game image onto a fully transparent background. Preserve its original game anatomy, pose, scales/fur, colours including dark/black areas and attached flame/alpha effects. Show the complete visible body including feet, tail and wings, with 8% transparent margin. Do not crop or zoom into its head. Remove scenery, floor, sky, text, UI, people and other animals. Do not invent unseen anatomy or redraw it. Keep the main creature only.",
+    "outputSHA256": "93cd7dacdf6db3a54103b928cdf7b776d439776c34614535a9b614d7f2b42a45",
+    "reviewed": true
+  },
+  {
+    "asset": "Cutout-Dino-cerberax",
+    "sourcePath": "/Users/admin/Ascended-iPad-Dev/native/Ascended/Assets.xcassets/Game-Dino-cerberax.imageset/image.png",
+    "sourceURL": "https://ark.wiki.gg/images/ASA_FT_Season1_Cerberax.jpg",
+    "sourceSHA256": "4e86e9a176b0dd6d88fd08cae18ac8117ea088de8a622a8a91501efc959aa38e",
+    "method": "imagegen-background-extraction",
+    "prompt": "Use case: background-extraction. Edit this actual ARK game image into a single creature PNG on a completely transparent background. The subject is Dino-cerberax. Preserve the exact visible subject, anatomy, pose, scales/fur, equipment if present, and original colours including dark and black areas. Remove all scenery, floor, sky, text, UI, people and other animals. Do not redesign, recolour, whiten, or invent missing/offscreen body parts: retain the original crop where needed. Keep attached Alpha/Spirit/flame effects belonging to the creature. Keep the main creature only.",
+    "outputSHA256": "b0072e63b66453f16735b3344bc631aff16c673e7e6d20aa8a6161a9eff8033d",
+    "reviewed": true
+  },
+  {
+    "asset": "Cutout-Dino-alpha-carnotaurus",
+    "sourcePath": "/Users/admin/Ascended-iPad-Dev/native/Ascended/Assets.xcassets/Game-Dino-alpha-carnotaurus.imageset/image.png",
+    "sourceURL": "https://ark.wiki.gg/images/Alpha_Carnotaurus_Image.jpg",
+    "sourceSHA256": "643a583a305c4f91317f7cb515a3abda7393b6c15b46df79ceaae9f944c727dc",
+    "method": "imagegen-background-extraction",
+    "prompt": "Use case: background-extraction. Edit this actual ARK game image into a single creature PNG on a completely transparent background. The subject is Dino-alpha-carnotaurus. Preserve the exact visible subject, anatomy, pose, scales/fur, equipment if present, and original colours including dark and black areas. Remove all scenery, floor, sky, text, UI, people and other animals. Do not redesign, recolour, whiten, or invent missing/offscreen body parts: retain the original crop where needed. Keep attached Alpha/Spirit/flame effects belonging to the creature. Keep the main creature only.",
+    "outputSHA256": "d673912050cafec15b8fd1d263161d0cce781ac1ee7d4f45527eb576e873f3fc",
+    "reviewed": true
+  },
+  {
+    "asset": "Cutout-Dino-ceratosaurus",
+    "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/fullbody-candidates/2399830_20231029200001_1.png",
+    "sourceURL": "https://ark.wiki.gg/images/2399830_20231029200001_1.png",
+    "sourceSHA256": "377c940674a7d754e34a034aca138c5b7912b6ced8725653d8045571474a0ffd",
+    "method": "imagegen-background-extraction",
+    "prompt": "Use case: background-extraction. Extract the exact actual ARK creature Dino-ceratosaurus from this game image onto a fully transparent background. Preserve its original game anatomy, pose, scales/fur, colours including dark/black areas and attached flame/alpha effects. Show the complete visible body including feet, tail and wings, with 8% transparent margin. Do not crop or zoom into its head. Remove scenery, floor, sky, text, UI, people and other animals. Do not invent unseen anatomy or redraw it. Keep the SMALL full-body green/purple dinosaur left of the large orange one. Remove the large orange animal.",
+    "outputSHA256": "ce1f16612ed095cb13d6b5b13f20c344cb4d4993b2080359062565a4ea46cd76",
+    "reviewed": true
+  },
+  {
+    "asset": "Cutout-Dino-alpha-tusoteuthis",
+    "sourcePath": "/Users/admin/Ascended-iPad-Dev/native/Ascended/Assets.xcassets/Game-Dino-alpha-tusoteuthis.imageset/image.png",
+    "sourceURL": "https://ark.wiki.gg/images/Alpha_Tusoteuthis_Image.jpg",
+    "sourceSHA256": "544ae443d630cd9c21f6c1a76ea31ffa54d221ed271d67193f822b9a64c6f2bc",
+    "method": "imagegen-background-extraction",
+    "prompt": "Use case: background-extraction. Edit this actual ARK game image into a single creature PNG on a completely transparent background. The subject is Dino-alpha-tusoteuthis. Preserve the exact visible subject, anatomy, pose, scales/fur, equipment if present, and original colours including dark and black areas. Remove all scenery, floor, sky, text, UI, people and other animals. Do not redesign, recolour, whiten, or invent missing/offscreen body parts: retain the original crop where needed. Keep attached Alpha/Spirit/flame effects belonging to the creature. Keep the main creature only.",
+    "outputSHA256": "71a3358a95d31061b343468e0c0cabe882b31ef239a58d4c2e0d5b176bf58c0b",
+    "reviewed": true
+  },
+  {
+    "asset": "Cutout-Dino-polar-bear",
+    "sourceAsset": "Cutout-Dino-dire-polar-bear",
+    "method": "same-species-name-alias",
+    "reviewed": true
+  },
+  {
+    "asset": "Cutout-Dino-spirit-dire-bear",
+    "sourceAsset": "Cutout-Boss-spirit-dire-bear",
+    "method": "same-species-name-alias",
+    "reviewed": true
+  },
+  {
+    "asset": "Cutout-Dino-spirit-direwolf",
+    "sourceAsset": "Cutout-Boss-spirit-direwolf",
+    "method": "same-species-name-alias",
+    "reviewed": true
+  }
+]

@@ -31,7 +31,7 @@ struct BossLibrary: View {
                 ForEach(RagnarokBoss.all) { boss in
                     NavigationLink(value: GuideDestination.boss(boss.id)) {
                         HStack(spacing: 18) {
-                            CreatureAvatar(asset: boss.id == "nunatak" ? "Nunatak-Gamma" : "Boss-" + boss.id).frame(width: 120, height: 80)
+                            CreatureCutout(asset: boss.id == "nunatak" ? "Nunatak-Gamma" : "Boss-" + boss.id).frame(width: 120, height: 80)
                             VStack(alignment: .leading, spacing: 6) {
                                 Text(boss.name).font(.title3.bold()).foregroundStyle(.primary)
                                 Text(boss.kind + " · " + boss.encounter).font(.subheadline).foregroundStyle(.secondary)
@@ -51,7 +51,7 @@ struct BossDetail: View {
             VStack(alignment: .leading, spacing: 22) {
                 Label(boss.kind, systemImage: "shield.lefthalf.filled").foregroundStyle(.cyan)
                 Text(boss.name).font(.largeTitle.bold())
-                CreatureAvatar(asset: boss.id == "nunatak" ? "Nunatak-Gamma" : "Boss-" + boss.id).frame(height: boss.id == "nunatak" ? 280 : 160).frame(maxWidth: .infinity)
+                CreatureCutout(asset: boss.id == "nunatak" ? "Nunatak-Gamma" : "Boss-" + boss.id).frame(height: boss.id == "nunatak" ? 280 : 160).frame(maxWidth: .infinity)
                 NavigationLink(value: GuideDestination.army(boss.id)) { Label("Đội Dino, level & chỉ số chuẩn bị", systemImage: "pawprint.fill") }.accessibilityIdentifier("bossArmy")
                 BossKnowledge(boss: boss)
                 block("Tổng quan", boss.summary)

@@ -1,0 +1,26 @@
+{
+  "version": "0.12.0",
+  "build": "13",
+  "bundle": "com.tonytuanngoc.ascended",
+  "device": "8FA117DA-854A-5EEB-AEFC-EE54036237A9",
+  "deviceRegistry": {
+    "appClip": false,
+    "builtByDeveloper": true,
+    "bundleIdentifier": "com.tonytuanngoc.ascended",
+    "bundleVersion": "13",
+    "defaultApp": false,
+    "hidden": false,
+    "internalApp": false,
+    "name": "Ascended",
+    "removable": true,
+    "url": "file:///private/var/containers/Bundle/Application/60E82FE7-0156-43FA-B6B8-9C727100A537/Ascended.app/",
+    "version": "0.12.0"
+  },
+  "installation": "success",
+  "launch": "denied-device-locked",
+  "executableSHA256": "90590b95284c9a2df4463a227d6d7cd88ebc296f6c8cfc75d39a6e12773005af",
+  "assetsSHA256": "6bcbe3485b85e2fae9f1cc51a4b9ab7d11ec81d1c9943417d29af7b6f9e9e23d",
+  "proofDirectory": "/Volumes/TONY SSD/ASCENDED_MEDIA",
+  "physicalTouchQA": false,
+  "simulatorFinalTests": 4
+}

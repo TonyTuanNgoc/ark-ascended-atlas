@@ -14,7 +14,7 @@ struct BossTribute: Decodable, Identifiable {
 struct MapBossPortrait: View {
     let boss: MapBoss
     var body: some View {
-        if UIImage(named: boss.imageAsset) != nil { CreatureAvatar(asset: boss.imageAsset) }
+        if UIImage(named: boss.imageAsset) != nil { CreatureCutout(asset: boss.imageAsset) }
         else { Image(systemName: "shield.lefthalf.filled").resizable().scaledToFit().foregroundStyle(.cyan).padding(20) }
     }
 }
