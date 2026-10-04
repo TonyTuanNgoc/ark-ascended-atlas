@@ -320,37 +320,91 @@ final class AscendedUITests: XCTestCase {
                     thenDragTo: origin.withOffset(CGVector(dx: x, dy: y - min(delta, 350))))
             }
         }
-        let clip = app.buttons["cave-gif-central-clever-01"]
+        let clip = app.descendants(matching: .any)["cave-gif-central-clever-01"].firstMatch
         reveal(clip)
         XCTAssertTrue(clip.isHittable)
-        XCTAssertEqual(clip.value as? String, "Đã dừng")
-        clip.tap()
         XCTAssertEqual(clip.value as? String, "Đang phát")
+        XCTAssertFalse(app.buttons["gif-previous-central"].isEnabled)
         Thread.sleep(forTimeInterval: 2)
         let first = clip.screenshot().pngRepresentation
         Thread.sleep(forTimeInterval: 1.5)
-        XCTAssertNotEqual(first, clip.screenshot().pngRepresentation, "GIF must animate after loading")
+        XCTAssertNotEqual(first, clip.screenshot().pngRepresentation, "GIF must animate without tapping")
+        clip.swipeLeft()
+        let second = app.descendants(matching: .any)["cave-gif-central-clever-02"].firstMatch
+        expectation(for: NSPredicate(format: "value == %@", "Đang phát"), evaluatedWith: second)
+        waitForExpectations(timeout: 5)
+        XCTAssertEqual(app.staticTexts["gif-position-central"].label, "2 / 4")
+        XCTAssertTrue(app.staticTexts["cave-direction-clever-02"].exists)
+        second.swipeRight()
+        expectation(for: NSPredicate(format: "value == %@", "Đang phát"), evaluatedWith: clip)
+        waitForExpectations(timeout: 5)
+        let card = app.buttons["gif-card-central-clever-04"]
+        for _ in 0..<4 { if card.isHittable { break }; app.swipeUp() }
+        XCTAssertTrue(card.isHittable); card.tap()
+        XCTAssertEqual(app.staticTexts["gif-position-central"].label, "4 / 4")
+        XCTAssertEqual(card.value as? String, "Đang chọn")
+        XCTAssertFalse(app.buttons["gif-next-central"].isEnabled)
+        let selected = app.descendants(matching: .any)["cave-gif-central-clever-04"].firstMatch
+        Thread.sleep(forTimeInterval: 2)
+        let selectedFrame = selected.screenshot().pngRepresentation
+        Thread.sleep(forTimeInterval: 1.5)
+        XCTAssertNotEqual(selectedFrame, selected.screenshot().pngRepresentation, "Selected card must autoplay its own GIF")
         let playing = XCTAttachment(screenshot: XCUIScreen.main.screenshot())
-        playing.name = "Local-GIF-playing"; playing.lifetime = .keepAlways; add(playing)
-        clip.tap()
-        XCTAssertEqual(clip.value as? String, "Đã dừng")
+        playing.name = "Auto-GIF-card-library"; playing.lifetime = .keepAlways; add(playing)
         app.buttons["changeMap"].tap(); app.buttons["choose-ragnarok"].tap()
         app.buttons["section-Artifact & Hang"].tap(); app.buttons["route-jungle"].tap()
-        let rag = app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "cave-gif-jungle-")).firstMatch
+        let rag = app.descendants(matching: .any).matching(NSPredicate(format: "identifier BEGINSWITH %@", "cave-gif-jungle-")).firstMatch
         reveal(rag)
         XCTAssertTrue(rag.isHittable)
-        XCTAssertEqual(rag.value as? String, "Đã dừng")
+        XCTAssertEqual(rag.value as? String, "Đang phát")
         XCTAssertFalse(clip.exists)
-        rag.tap(); XCTAssertEqual(rag.value as? String, "Đang phát")
         app.buttons["changeMap"].tap(); app.buttons["choose-the-center"].tap()
         app.buttons["section-Artifact & Hang"].tap(); app.buttons["route-north-ice"].tap()
-        let center = app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "cave-gif-north-ice-")).firstMatch
+        let center = app.descendants(matching: .any).matching(NSPredicate(format: "identifier BEGINSWITH %@", "cave-gif-north-ice-")).firstMatch
         reveal(center)
         XCTAssertTrue(center.isHittable)
-        XCTAssertEqual(center.value as? String, "Đã dừng")
+        XCTAssertEqual(center.value as? String, "Đang phát")
         XCTAssertFalse(rag.exists)
         let shot = XCTAttachment(screenshot: XCUIScreen.main.screenshot())
-        shot.name = "Center-GIF-directions"; shot.lifetime = .keepAlways; add(shot)
+        shot.name = "Center-auto-GIF-directions"; shot.lifetime = .keepAlways; add(shot)
+    }
+
+    @MainActor func testGIFCarouselSectionsAndOrderedCards() throws {
+        let app = XCUIApplication()
+        XCUIDevice.shared.orientation = .landscapeLeft
+        app.launch()
+        app.buttons["choose-ragnarok"].tap()
+        app.buttons["section-Artifact & Hang"].tap()
+        app.buttons["route-carnivorous"].tap()
+        let selector = app.buttons["gif-section-selector"]
+        for _ in 0..<10 { if selector.isHittable { break }; app.swipeUp() }
+        XCTAssertTrue(selector.isHittable)
+        selector.tap()
+        app.buttons["Từ cửa sườn núi → Cunning"].tap()
+        XCTAssertEqual(app.staticTexts["gif-position-carnivorous"].label, "1 / 8")
+        app.buttons["gif-next-carnivorous"].tap()
+        XCTAssertEqual(app.staticTexts["gif-position-carnivorous"].label, "2 / 8")
+        selector.tap(); app.buttons["Từ cửa dưới lâu đài → Immune"].tap()
+        XCTAssertEqual(app.staticTexts["gif-position-carnivorous"].label, "1 / 10")
+        let card = app.buttons["gif-card-carnivorous-immune-10"]
+        for _ in 0..<4 { if app.buttons["gif-card-carnivorous-immune-01"].isHittable { break }; app.swipeUp() }
+        let firstCard = app.buttons["gif-card-carnivorous-immune-01"]
+        XCTAssertTrue(firstCard.isHittable)
+        XCTAssertEqual(firstCard.frame.width, firstCard.frame.height, accuracy: 2)
+        // Browse the horizontal library without changing the active step until a card is tapped.
+        let origin = app.coordinate(withNormalizedOffset: CGVector(dx: 0, dy: 0))
+        let libraryY = firstCard.frame.midY, libraryLeft = firstCard.frame.minX + 15
+        for _ in 0..<5 {
+            if card.isHittable { break }
+            origin.withOffset(CGVector(dx: app.frame.maxX - 100, dy: libraryY)).press(forDuration: 0.1,
+                thenDragTo: origin.withOffset(CGVector(dx: libraryLeft, dy: libraryY)))
+        }
+        XCTAssertTrue(card.isHittable)
+        XCTAssertEqual(app.staticTexts["gif-position-carnivorous"].label, "1 / 10")
+        card.tap()
+        XCTAssertEqual(app.staticTexts["gif-position-carnivorous"].label, "10 / 10")
+        XCTAssertEqual(card.value as? String, "Đang chọn")
+
     }
 
 }
