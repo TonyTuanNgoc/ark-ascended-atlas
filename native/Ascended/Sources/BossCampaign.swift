@@ -62,7 +62,7 @@ struct BossCampaignScreen: View {
                             }
                         }.cardStyle()
                     }
-                } else { Text("Chưa tải được lộ trình của map này.") }
+                } else if let record = map.expansion { ExpansionProfile(record: record).cardStyle() }
             }.padding(24).frame(maxWidth: 1100).frame(maxWidth: .infinity)
         }.background(Color(red: 0.025, green: 0.045, blue: 0.065))
     }

@@ -4,6 +4,7 @@ import UIKit
 struct MapScreen: View {
     @Environment(\.arkMap) private var map
     var initialFocus: String? = nil
+    var initialResources = false
     @State private var visibleLayers: Set<MapLayer> = Set(MapLayer.allCases.filter { $0 != .resource })
     @State private var resourceTypes: Set<String> = []
     private var allPoints: [MapLocation] { MapLocation.all(in: map) }
@@ -14,11 +15,17 @@ struct MapScreen: View {
     @State private var action: MapAction = .fit
     var body: some View {
         HStack(alignment: .top, spacing: 8) {
-        ZoomableMap(imageAsset: map.imageAsset, mapName: map.name, resetToken: resetToken, action: action, locations: allPoints.filter { visibleLayers.contains($0.layer) && ($0.layer != .resource || resourceTypes.contains($0.name)) }, focusID: focusedID, select: { selected = $0; focusedID = $0.id })
+        ZoomableMap(imageAsset: map.imageAsset, mapName: map.name, resetToken: resetToken, action: action, locations: allPoints.filter { visibleLayers.contains($0.layer) && ($0.layer != .resource || ($0.farmID == nil ? resourceTypes.contains($0.name) : !resourceTypes.isDisjoint(with: $0.resourceNames))) }, focusID: focusedID, select: { selected = $0; focusedID = $0.id })
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
             .overlay(alignment: .bottomTrailing) {
                 if let point = selected {
+                    if let farmID = point.farmID, let spot = ResourceFarmCatalog.spots(in: map).first(where: { $0.id == farmID }) {
+                        VStack(alignment: .trailing, spacing: 4) {
+                            Button { selected = nil; focusedID = nil } label: { Image(systemName: "xmark") }.accessibilityLabel("Đóng vị trí")
+                            ScrollView { FarmDetails(spot: spot) }.frame(maxHeight: 490)
+                        }.padding(14).frame(maxWidth: 440).background(.black.opacity(0.94), in: RoundedRectangle(cornerRadius: 16)).padding(12)
+                    } else {
                     HStack(alignment: .top, spacing: 12) {
                         if let asset = point.imageAsset, UIImage(named: asset) != nil {
                             Image(asset).renderingMode(asset == "Map-Obelisk" ? .template : .original).resizable().scaledToFit().foregroundStyle(Color(uiColor: point.color)).frame(width: 54, height: 64)
@@ -43,12 +50,14 @@ struct MapScreen: View {
                         .frame(maxWidth: 430).background(.black.opacity(0.94), in: RoundedRectangle(cornerRadius: 16))
                         .overlay(RoundedRectangle(cornerRadius: 16).stroke(.white.opacity(0.16)))
                         .padding(12)
+                    }
                 }
             }
             controls.frame(width: 134)
         }.padding(8)
         .onAppear {
-            resourceTypes = Set(MapResources.nodes(in: map).map(\.resource_type))
+            resourceTypes = Set(MapResources.types(in: map))
+            if initialResources { visibleLayers.insert(.resource) }
             if let id = initialFocus, let point = MapLocation.all(in: map).first(where: { $0.id == id }) {
                 selected = point; focusedID = id; visibleLayers.insert(point.layer)
             }
@@ -59,7 +68,7 @@ struct MapScreen: View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack(alignment: .leading, spacing: 8) {
                 HStack(spacing: 4) {
-                    Button { visibleLayers = Set(availableLayers); resourceTypes = Set(MapResources.nodes(in: map).map(\.resource_type)) } label: { Image(systemName: "checkmark.circle.fill").frame(width: 54, height: 38) }
+                    Button { visibleLayers = Set(availableLayers); resourceTypes = Set(MapResources.types(in: map)) } label: { Image(systemName: "checkmark.circle.fill").frame(width: 54, height: 38) }
                         .accessibilityLabel("Chọn tất cả").accessibilityIdentifier("selectAllMapLayers")
                     Button { visibleLayers.removeAll(); selected = nil; focusedID = nil } label: { Image(systemName: "circle").frame(width: 54, height: 38) }
                         .accessibilityLabel("Bỏ chọn tất cả").accessibilityIdentifier("clearMapLayers")
@@ -85,7 +94,10 @@ struct MapScreen: View {
                             if resourceTypes.contains(type) { resourceTypes.remove(type) } else { resourceTypes.insert(type) }
                         } label: {
                             HStack(spacing: 5) {
-                                Image(MapResources.asset(for: type)).resizable().scaledToFit().frame(width: 24, height: 24)
+                                Group {
+                                    if UIImage(named: MapResources.asset(for: type)) != nil { Image(MapResources.asset(for: type)).resizable().scaledToFit() }
+                                    else { Image(systemName: MapResources.symbol(for: type)).resizable().scaledToFit() }
+                                }.frame(width: 24, height: 24)
                                 Text(MapResources.label(for: type)).font(.system(size: 10, weight: .medium)).multilineTextAlignment(.leading)
                                 Spacer(minLength: 0)
                             }.padding(5).frame(minHeight: 34)
@@ -96,8 +108,8 @@ struct MapScreen: View {
                 }
                 Divider()
                 Menu {
-                    ForEach(allPoints.filter { $0.layer != .resource }) { point in
-                        Button(point.name) { visibleLayers.insert(point.layer); selected = point; focusedID = point.id }
+                    ForEach(allPoints.filter { $0.layer != .resource || $0.farmID != nil }) { point in
+                        Button(point.name) { visibleLayers.insert(point.layer); selected = point; focusedID = point.id }.accessibilityIdentifier("find-" + point.id)
                     }
                 } label: { Label("Tìm vị trí", systemImage: "magnifyingglass").font(.caption).frame(height: 38) }
                     .accessibilityIdentifier("findMapLocation")
@@ -201,10 +213,10 @@ final class MapScrollView: UIScrollView {
     func updateLocations(_ points: [MapLocation], select: @escaping (MapLocation) -> Void) {
         self.select = select
         resourceSurface.choose = select
-        resources = points.filter { $0.layer == .resource }
+        resources = points.filter { $0.layer == .resource && $0.farmID == nil }
         resourceSurface.points = resources
         if resourceSurface.superview == nil { addSubview(resourceSurface) }
-        let points = points.filter { $0.layer != .resource }
+        let points = points.filter { $0.layer != .resource || $0.farmID != nil }
         guard locationIDs != points.map(\.id) else { refreshResources(); return }
         markerButtons.forEach { $0.removeFromSuperview() }; markerButtons.removeAll()
         markerLabels.forEach { $0.removeFromSuperview() }; markerLabels.removeAll()
@@ -215,7 +227,7 @@ final class MapScrollView: UIScrollView {
             let artwork = point.imageAsset.flatMap { UIImage(named: $0) }
             button.setImage(artwork?.withRenderingMode(point.imageAsset == "Map-Obelisk" ? .alwaysTemplate : .alwaysOriginal) ?? UIImage(systemName: point.symbol), for: .normal)
             button.imageView?.contentMode = .scaleAspectFit
-            if point.layer == .cave, let artwork, point.imageAsset?.hasPrefix("Entrance-") == true {
+            if let artwork, point.farmID != nil || point.imageAsset?.hasPrefix("Entrance-") == true {
                 button.setImage(nil, for: .normal)
                 let photo = UIImageView(image: artwork)
                 photo.frame = button.bounds; photo.autoresizingMask = [.flexibleWidth, .flexibleHeight]

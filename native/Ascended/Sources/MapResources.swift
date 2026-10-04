@@ -9,16 +9,21 @@ struct ResourceNode: Decodable {
 }
 enum MapResources {
     private static let catalog = Dictionary(uniqueKeysWithValues: ArkMap.allCases.map { ($0, (try? ArkMap.load([ResourceNode].self, name: $0.rawValue + "-resources")) ?? []) })
-    private static let pointCatalog = Dictionary(uniqueKeysWithValues: ArkMap.allCases.map { map in
-        (map, nodes(in: map).enumerated().map { index, node in
-            MapLocation(id: "resource-\(map.rawValue)-\(index)", name: node.resource_type, lat: node.lat, lon: node.lon, layer: .resource, note: node.is_cave ? "Trong hang · cần tìm cửa vào trước." : "Điểm thu thập ngoài trời.", routeID: nil, artifactID: nil, imageAsset: asset(for: node.resource_type))
-        })
-    })
+    private static var pointCatalog: [ArkMap: [MapLocation]] = [:]
     static func nodes(in map: ArkMap) -> [ResourceNode] { catalog[map] ?? [] }
-    static func points(in map: ArkMap) -> [MapLocation] { pointCatalog[map] ?? [] }
-    static func types(in map: ArkMap) -> [String] { Set(nodes(in: map).map(\.resource_type)).sorted() }
+    static func points(in map: ArkMap) -> [MapLocation] {
+        guard ![ArkMap.ragnarok, .island, .center].contains(map) else { return [] }
+        if let cached = pointCatalog[map] { return cached }
+        let points = nodes(in: map).enumerated().map { index, node in
+            MapLocation(id: "resource-\(map.rawValue)-\(index)", name: node.resource_type, lat: node.lat, lon: node.lon, layer: .resource, note: node.is_cave ? "Trong hang · cần tìm cửa vào trước." : "Điểm thu thập ngoài trời.", routeID: nil, artifactID: nil, imageAsset: asset(for: node.resource_type))
+        }
+        pointCatalog[map] = points
+        return points
+    }
+    static func types(in map: ArkMap) -> [String] { Set(([ArkMap.ragnarok, .island, .center].contains(map) ? [] : nodes(in: map).map(\.resource_type)) + ResourceFarmCatalog.spots(in: map).flatMap(\.resources)).sorted() }
     static func asset(for type: String) -> String {
         switch type {
+        case "Salt": return "Item-raw-salt"
         case "Beaver Dam": return "Item-beaver-dam"
         case "Cactus with few berries": return "Item-cactus-sap"
         case "Gem Bio": return "Item-blue-gem"
@@ -26,6 +31,7 @@ enum MapResources {
         default: return "Item-" + type.lowercased().replacingOccurrences(of: " ", with: "-")
         }
     }
+    static func symbol(for type: String) -> String { type == "Water" ? "drop.fill" : "shippingbox.fill" }
     static func label(for type: String) -> String {
         switch type { case "Cactus with few berries": "Cactus"; case "Gem Bio": "Blue Gem"; case "Sandpile": "Sand"; default: type }
     }
@@ -95,7 +101,7 @@ final class ResourceSurface: UIView {
             ctx.setFillColor(UIColor.black.withAlphaComponent(0.48).cgColor)
             ctx.fillEllipse(in: box)
             if let asset = cluster.point.imageAsset {
-                if pictures[asset] == nil { pictures[asset] = UIImage(named: asset) }
+                if pictures[asset] == nil { pictures[asset] = UIImage(named: asset) ?? UIImage(systemName: "shippingbox.fill")?.withTintColor(.systemYellow, renderingMode: .alwaysOriginal) }
                 pictures[asset]?.draw(in: box.insetBy(dx: 2, dy: 2))
             }
             if cluster.count > 1 {

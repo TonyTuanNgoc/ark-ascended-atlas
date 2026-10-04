@@ -1,0 +1,68 @@
+{
+  "checkedAt": "2026-10-04",
+  "approval": "user-licensed-20261004",
+  "rights": "licensed",
+  "spots": [
+    {
+      "id": "center-blackpearls-alpha-mosa",
+      "map": "the-center",
+      "name": "Black Pearls · vùng săn Alpha Mosasaur biển đông",
+      "lat": 35.19,
+      "lon": 95.77,
+      "resources": [
+        "Black Pearls"
+      ],
+      "imageAsset": "FarmPhoto-center-blackpearls-alpha-mosa",
+      "videoID": "SHb-iMDtk7k",
+      "seconds": 333,
+      "direction": "Lặn xuống biển sâu phía đông gần ranh giới map, quanh vùng 35.19 / 95.77 trong video; tìm Alpha Mosasaur đang sống. Đây là vùng săn, không phải cụm ngọc mọc cố định.",
+      "method": "Đánh bại Alpha Mosasaur bằng đội mount biển đủ mạnh rồi lấy loot từ xác; Black Pearls có trong chuỗi inventory được quay. Không coi vị trí hoặc số lượng spawn của video là bảo đảm cho save hiện tại.",
+      "kit": [
+        "SCUBA Tank",
+        "SCUBA Flippers",
+        "Mosasaurus",
+        "Tusoteuthis"
+      ],
+      "risks": [
+        "Alpha Mosasaur mạnh",
+        "Thiếu oxy",
+        "Biển sâu",
+        "Sinh vật di chuyển và spawn thay đổi"
+      ],
+      "verified": true,
+      "sourceURL": "https://www.youtube.com/watch?v=SHb-iMDtk7k",
+      "photoSHA256": "38513500ac29ae3bc90f517830c4ea9e174ed9946a2ba1e691ad5b6bc22fe1b9",
+      "coordinateEvidence": "333s literal creator GPS overlay N35.19 95.77 with Alpha Mosasaur95 visibly23m away. GPS denotes camera in filmed hunting region; animal is mobile. Camera survey uses mods/admin tools; no inferred fixed node.",
+      "inventoryEvidence": "333s visible Wild Alpha Mosasaur95;350s its dead inventory screen, while player inventory clearly labels x101 Black Pearl. The video already carried some loot, so101 is not claimed as per-kill yield. Sequence uses survey/admin killing; surviving this fight in a player save is not tested."
+    }
+  ],
+  "sources": [
+    {
+      "title": "How To Get 1000s Of BLACK PEARLS on THE CENTER in Ark Survival Ascended!!! Black Pearls Guide",
+      "creator": "Teachers Game Too",
+      "publishedAt": "2024-06-07",
+      "videoID": "SHb-iMDtk7k",
+      "url": "https://www.youtube.com/watch?v=SHb-iMDtk7k",
+      "chapters": [
+        {
+          "start": 234,
+          "end": 517,
+          "title": "Alpha creature hunting"
+        }
+      ]
+    }
+  ],
+  "caveats": [
+    "Native ASA footage; source uses survey mods/admin tools, so no survival-combat performance or yield guarantees.",
+    "GPS reads literal overlay; coordinate is farm region camera near mobile animal, not fixed spawn actor.",
+    "Black Pearls confirmed in inventory sequence, but total101 includes pre-existing inventory and is not farm-yield claim."
+  ],
+  "supportingSource": {
+    "videoID": "pDgqcmTaGf0",
+    "title": "ASA | Center | Black Pearl locations | find Tusoteuthis",
+    "creator": "MrDolphin",
+    "publishedAt": "2024-06-10",
+    "url": "https://www.youtube.com/watch?v=pDgqcmTaGf0",
+    "role": "Independent current-ASA deep-sea black pearl/Tusoteuthis location guide; not used for literal GPS row."
+  }
+}

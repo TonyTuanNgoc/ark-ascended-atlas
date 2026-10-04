@@ -1,0 +1,105 @@
+{
+  "checkedAt": "2026-10-04",
+  "approval": "user-licensed-20261004",
+  "rights": "licensed",
+  "spots": [
+    {
+      "id": "honey-center-redwoods",
+      "map": "the-center",
+      "name": "Honey · cây Redwood sát vách đá",
+      "lat": 77.1,
+      "lon": 65.3,
+      "resources": [
+        "Giant Bee Honey"
+      ],
+      "imageAsset": "FarmPhoto-honey-center-redwoods",
+      "videoID": "DgvNoRqz4EE",
+      "seconds": 135,
+      "direction": "Tới khu Redwood phía nam, tìm cây lớn cạnh vách đá; trong video hive nằm dưới tree platform. Platform do người chơi đặt, không phải cấu trúc tự nhiên.",
+      "method": "Lấy honey từ hive còn hoạt động; nếu cần farm lâu dài, tame Queen rồi chuyển thành Bee Hive tại căn cứ. Tổ và Queen là spawn động.",
+      "kit": [
+        "Ghillie Armor",
+        "Bug Repellant",
+        "Rare Flower"
+      ],
+      "risks": [
+        "Ong tấn công",
+        "Sinh vật săn mồi",
+        "Hive hoặc Queen có thể không spawn trong save hiện tại"
+      ],
+      "verified": true,
+      "sourceURL": "https://www.youtube.com/watch?v=DgvNoRqz4EE",
+      "photoSHA256": "18db5cab729cbc94867f7987ae49e4652fa6fa282ddbf7ed175f79a8e6373245",
+      "coordinateEvidence": "145s: creator overlay 77.1/65.3 and literal in-game map latitude77.1 longitude65.3; same tree shown135s. Region pin, not guaranteed hive actor.",
+      "inventoryEvidence": "135s actual tree-mounted hive under player tree platform; video shows Giant Bee/Queen sequence and player inventory later. No fixed honey yield or guaranteed spawn asserted."
+    },
+    {
+      "id": "honey-island-redwoods",
+      "map": "the-island",
+      "name": "Honey · hive ở Redwood phía tây",
+      "lat": 63.3,
+      "lon": 30.2,
+      "resources": [
+        "Giant Bee Honey"
+      ],
+      "imageAsset": "FarmPhoto-honey-island-redwoods",
+      "videoID": "biZPGe9eD5Y",
+      "seconds": 45,
+      "direction": "Tới Redwood phía tây, kiểm tra thân cây lớn gần bờ hồ và nền đá; hive trong video nằm cao trên thân cây.",
+      "method": "Tiếp cận tổ bằng flyer rồi lấy honey khi an toàn; theo dõi ong và đường rút. Có thể tame Queen để dựng hive riêng.",
+      "kit": [
+        "Ghillie Armor",
+        "Bug Repellant",
+        "Rare Flower"
+      ],
+      "risks": [
+        "Ong tấn công",
+        "Sinh vật săn mồi",
+        "Hive hoặc Queen có thể không spawn trong save hiện tại"
+      ],
+      "verified": true,
+      "sourceURL": "https://www.youtube.com/watch?v=biZPGe9eD5Y",
+      "photoSHA256": "90857c107cfd18851de8191ee69e35074cffc3504cd04e39dbb27b923754c376",
+      "coordinateEvidence": "38s and41s literal in-game M-map camera latitude63.3 longitude30.2; creator at same tree whose hive shown32s/45s. Keep source M-map coordinate convention; not estimated from minimap.",
+      "inventoryEvidence": "45s hive closeup with visible honey comb; same source tree shown32s before coordinate map. Source is location demonstration, not a measured inventory yield."
+    },
+    {
+      "id": "honey-ragnarok-queen-region",
+      "map": "ragnarok",
+      "name": "Honey · vùng tìm Queen phía bắc",
+      "lat": 25.2,
+      "lon": 40.0,
+      "resources": [
+        "Giant Bee Honey"
+      ],
+      "imageAsset": "FarmPhoto-honey-ragnarok-queen-region",
+      "videoID": "u_c-yTvCLek",
+      "seconds": 165,
+      "direction": "Tìm Queen quanh vùng rừng và khe đá phía bắc được video đánh dấu; rà soát mặt đất nếu không thấy tổ trên cây.",
+      "method": "Dùng Ghillie và Bug Repellant, passive tame Queen bằng Rare Flower; chọn Obtain Bee Hive rồi đặt tại căn cứ, thêm Rare Flower để nuôi tổ. Không phải node honey cố định.",
+      "kit": [
+        "Ghillie Armor",
+        "Bug Repellant",
+        "Rare Flower"
+      ],
+      "risks": [
+        "Ong tấn công",
+        "Sinh vật săn mồi",
+        "Hive hoặc Queen có thể không spawn trong save hiện tại"
+      ],
+      "verified": true,
+      "sourceURL": "https://www.youtube.com/watch?v=u_c-yTvCLek",
+      "photoSHA256": "0c826cdef7bc7a12bc90dbf72bb017b1c3b3d12176e1bb7a7dda7b1adc5b24dc",
+      "coordinateEvidence": "85s literal in-game map crosshair latitude25.2 longitude40.0, matching creator overlay25.2 LAT40 LONG and Giant Queen Bee marker. This is search region; moving Queen location is not guaranteed.",
+      "inventoryEvidence": "165s tame Giant Queen Bee with Obtain Bee Hive prompt;175s placed Bee Hive,185s hive inventory explicitly requests/provides Rare Flowers. Produced honey is not visibly measured; pin describes acquiring a Queen for honey production."
+    }
+  ],
+  "sourceRoot": "/Volumes/TONY SSD/ASCENDED_MEDIA/resource-sources",
+  "scope": "Three ASA videos personally inspected at literal GPS and matching resource/Queen frames. No ASE coordinates mixed.",
+  "caveats": [
+    "Hive and Queen are dynamic spawns; these are filmed search regions, not guaranteed permanent nodes.",
+    "The Island uses literal M-map coordinate convention from this video; confirm app terrain projection before merging.",
+    "Ragnarok Queen can move; video uses Dino Finder to demonstrate region and explicitly warns some worlds have missing hives.",
+    "Inventory evidence records exactly what was visible; no fabricated produced-honey yield."
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "itemImages": [
+    {
+      "asset": "Item-raw-salt",
+      "page": "https://ark.wiki.gg/wiki/Raw_Salt",
+      "imageURL": "https://ark.wiki.gg/images/Raw_Salt.png",
+      "sha256": "677f431148bd9a8266aebb527b9b3ec6c14d8e115e24dd11a7cc090a776e9b6e"
+    }
+  ],
+  "mechanicsSources": [
+    "https://ark.wiki.gg/wiki/Crafting",
+    "https://ark.wiki.gg/wiki/Chemistry_Bench",
+    "https://ark.wiki.gg/wiki/Polymer",
+    "https://ark.wiki.gg/wiki/Keratin",
+    "https://ark.wiki.gg/wiki/Chitin_Keratin"
+  ]
+}

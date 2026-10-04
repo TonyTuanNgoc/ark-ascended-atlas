@@ -735,7 +735,8 @@
       "fur",
       "giữ ấm",
       "giữ nhiệt",
-      "giáp lạnh"
+      "giáp lạnh",
+      "Fur Armor"
     ],
     "asset": "Item-fur-chestpiece",
     "symbol": "shippingbox.fill",
@@ -1467,7 +1468,8 @@
       "SCUBA Tank",
       "scuba",
       "đồ lặn",
-      "lặn"
+      "lặn",
+      "SCUBA Gear"
     ],
     "asset": "Item-scuba-tank",
     "symbol": "shippingbox.fill",
@@ -3776,5 +3778,76 @@
     "asset": null,
     "symbol": "pawprint.fill",
     "category": "creature"
+  },
+  {
+    "id": "item-metal-pick",
+    "name": "Metal Pick",
+    "aliases": [
+      "Metal Pick"
+    ],
+    "asset": "Item-metal-pick",
+    "symbol": "wrench.fill",
+    "category": "item"
+  },
+  {
+    "id": "item-metal-hatchet",
+    "name": "Metal Hatchet",
+    "aliases": [
+      "Metal Hatchet"
+    ],
+    "asset": "Item-metal-hatchet",
+    "symbol": "wrench.fill",
+    "category": "item"
+  },
+  {
+    "id": "item-chainsaw",
+    "name": "Chainsaw",
+    "aliases": [
+      "Chainsaw"
+    ],
+    "asset": "Item-chainsaw",
+    "symbol": "wrench.fill",
+    "category": "item"
+  },
+  {
+    "id": "item-mining-drill",
+    "name": "Mining Drill",
+    "aliases": [
+      "Mining Drill"
+    ],
+    "asset": "Item-mining-drill",
+    "symbol": "wrench.fill",
+    "category": "item"
+  },
+  {
+    "id": "item-metal-sickle",
+    "name": "Metal Sickle",
+    "aliases": [
+      "Metal Sickle"
+    ],
+    "asset": "Item-metal-sickle",
+    "symbol": "wrench.fill",
+    "category": "item"
+  },
+  {
+    "id": "item-wooden-club",
+    "name": "Wooden Club",
+    "aliases": [
+      "Wooden Club"
+    ],
+    "asset": "Item-wooden-club",
+    "symbol": "wrench.fill",
+    "category": "item"
+  },
+  {
+    "id": "raw-salt",
+    "name": "Raw Salt",
+    "aliases": [
+      "Raw Salt",
+      "Salt"
+    ],
+    "asset": "Item-raw-salt",
+    "symbol": "shippingbox.fill",
+    "category": "item"
   }
 ]

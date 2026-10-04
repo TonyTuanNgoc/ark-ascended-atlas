@@ -1,0 +1,143 @@
+{
+  "reviewedAt": "2026-10-04",
+  "spots": [
+    {
+      "id": "center-extra-swamp-mushrooms",
+      "map": "the-center",
+      "name": "Rare Mushrooms từ cây đầm lầy",
+      "lat": 49.4,
+      "lon": 37.4,
+      "resources": [
+        "Rare Mushrooms"
+      ],
+      "imageAsset": "FarmPhoto-center-extra-swamp-mushrooms",
+      "videoID": "tj-7gfu6AHA",
+      "seconds": 120,
+      "direction": "Đến bờ đầm lầy phía đông nam vòng nước quanh đảo nổi. Đi dọc các cụm cây có rễ ngập nước quanh GPS này; đây là vùng khai thác, không phải một cây duy nhất.",
+      "method": "Dùng Chainsaw hoặc Metal Pick vào cây đầm lầy; có thể mang Therizinosaurus để khai thác. Video hướng dẫn tại vùng này, không cam kết số nấm mỗi lần thu.",
+      "kit": [
+        "Chainsaw",
+        "Metal Pick",
+        "Therizinosaurus"
+      ],
+      "risks": [
+        "Sinh vật săn mồi trong đầm lầy",
+        "Nước sâu và địa hình khó thoát"
+      ],
+      "verified": true,
+      "sourceURL": "https://www.youtube.com/watch?v=tj-7gfu6AHA",
+      "photoSHA256": "bb981f3579c8c34a398eded2a71973906273df6eeb2cab8666a281b7d7645173",
+      "coordinateEvidence": "Actual ASA in-game map at135–140s literally displays LATITUDE49.4 LONGITUDE37.4; local speech transcription of108–145s independently repeats these coordinates. Pin marks filmed swamp tree-farming region.",
+      "inventoryEvidence": "Dedicated ASA rare-mushroom guide chapter Swamp/Trees108–145s shows exact swamp-tree scenery, equipped chainsaw120s and Therizinosaurus128–131s. Creator explicitly names rare-mushroom harvesting with chainsaw/pick/Therizinosaurus in audio. No readable inventory yield/count shown here; this row verifies region and demonstrated method, not quantity.",
+      "sourceApproval": "user-licensed-20261004",
+      "rights": "licensed"
+    },
+    {
+      "id": "center-extra-lava-chitin",
+      "map": "the-center",
+      "name": "Chitin từ côn trùng trong hang đảo núi lửa",
+      "lat": 19.36,
+      "lon": 47.68,
+      "resources": [
+        "Chitin"
+      ],
+      "imageAsset": "FarmPhoto-center-extra-lava-chitin",
+      "videoID": "YU-ZCfZF8gk",
+      "seconds": 530,
+      "direction": "Đây là vùng khai thác bên trong hang đảo núi lửa phía bắc, không phải GPS cửa hang. Theo đoạn video từ325s để nhận diện lối vào rồi tiếp tục tới khu có cây đỏ và bọ; sinh vật di chuyển và hồi sinh quanh vùng này.",
+      "method": "Dùng Megatherium tiêu diệt rồi thu hoạch nhện và bọ cạp trong hang. Chuẩn bị trước tải trọng và lối rút; lượng Chitin phụ thuộc sinh vật và hệ số máy chủ.",
+      "kit": [
+        "Megatherium",
+        "Metal Hatchet",
+        "Medical Brew"
+      ],
+      "risks": [
+        "Sinh vật hang level cao",
+        "Torpor",
+        "Đường hang hẹp"
+      ],
+      "verified": true,
+      "sourceURL": "https://www.youtube.com/watch?v=YU-ZCfZF8gk",
+      "photoSHA256": "5c1f2a517c32d7814245c0ba8f621eea18e9e46ce28e0df3d81267121f1f8aa2",
+      "coordinateEvidence": "Same continuous ASA cave-farming sequence: HUD literally shows N19.36 47.68 at555s during Megatherium inventory after kills. The earlier100s map53.26/58.05 belongs to a different cave and is not used. Pin is interior farming region, not entrance or fixed creature spawn.",
+      "inventoryEvidence": "Actual Megatherium attacks on Pulmonoscorpius/Araneo visible480–540s. At550–555s inventory contains Chitin icons in stacks10000/10000/242. These are creator/server totals, not promised yields; footage uses modified stack sizes.",
+      "sourceApproval": "user-licensed-20261004",
+      "rights": "licensed",
+      "coordinateKind": "interior farm region"
+    },
+    {
+      "id": "center-extra-blue-basics",
+      "map": "the-center",
+      "name": "Stone, Fiber và Thatch quanh Blue Obelisk",
+      "lat": 52.3,
+      "lon": 78.2,
+      "resources": [
+        "Stone",
+        "Fiber",
+        "Thatch"
+      ],
+      "imageAsset": "FarmPhoto-center-extra-blue-basics",
+      "videoID": "bAqRvM-080g",
+      "seconds": 25,
+      "direction": "Hạ cánh quanh Blue Obelisk tại GPS này. Kiểm tra gờ có node đá/quặng rồi xuống tầng rừng bên dưới vách mỏ để tìm bụi thấp và cây. Pin đánh dấu vùng tiếp cận được quay; không đánh vào vách đá liền khối.",
+      "method": "Stone: dùng Metal Hatchet vào node đá có thể khai thác, hoặc nhặt đá rời. Fiber: dùng Metal Sickle vào bụi cây thấp. Thatch: dùng Metal Pick vào thân cây. Ảnh xác nhận địa hình có cây, bụi và node quặng; cơ chế thu hoạch đối chiếu Wiki, không có số lượng thu hoạch đo trực tiếp tại điểm này.",
+      "kit": [
+        "Metal Hatchet",
+        "Metal Sickle",
+        "Metal Pick"
+      ],
+      "risks": [
+        "Vách đá cao",
+        "Sinh vật săn mồi trong rừng"
+      ],
+      "verified": true,
+      "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g",
+      "photoSHA256": "31c02b7993a29710d9af8d1bc618cb861e53bcd046e36b0b6f974e297039ac4d",
+      "coordinateEvidence": "The same ASA Blue Obelisk sequence shows the in-game map at 17s with literal LATITUDE 52.3 and LONGITUDE 78.2. The source photograph at 25s shows forest trees, bush clusters and a distinct metal resource actor at the bottom right. No different GPS was inferred for the lower forest.",
+      "inventoryEvidence": "Resource availability is inferred from the filmed terrain (tree trunks, bushes and a distinct ore actor) and the documented ARK Wiki harvesting mechanics: Trees provide Wood/Thatch and a Pick favors Thatch; Rocks provide Stone using a Hatchet; a Metal Sickle collects Fiber from plants. No inventory measurement or harvest count is claimed. Cliff geometry is not treated as a harvestable rock.",
+      "mechanicsSources": [
+        "https://ark.wiki.gg/wiki/Trees",
+        "https://ark.wiki.gg/wiki/Rocks",
+        "https://ark.wiki.gg/wiki/Sickle"
+      ],
+      "sourceApproval": "user-licensed-20261004",
+      "rights": "licensed",
+      "coordinateKind": "farm region hub"
+    }
+  ],
+  "pending": [
+    "Black Pearls: reviewed ASA guides show broad creature regions but no literal GPS for the filmed harvest; no pin invented.",
+    "Keratin: no Center-specific literalGPS and harvest evidence verified."
+  ],
+  "reviewedSources": [
+    {
+      "id": "SHb-iMDtk7k",
+      "status": "public metadata confirmed; licensed acquisition failed HTTP403; no bypass attempted"
+    },
+    {
+      "id": "BA3NhdQjzQo",
+      "status": "ASA swamp-tree collection footage downloaded, no literalGPS; supplementary context only"
+    },
+    {
+      "id": "d3d4cAzEpr0",
+      "status": "ASA creature/resource-region guide downloaded, no literalGPS in reviewedPearls/Chitin chapters; no coordinate pin inferred"
+    },
+    {
+      "id": "xICSZyohfQs",
+      "status": "Actual ASA Chitin harvest/inventory568s verified, but no literalGPS established for cave. Later580s GPS belongs to redwood BeaverDams segment; not reused for Chitin."
+    },
+    {
+      "id": "YU-ZCfZF8gk",
+      "status": "Dedicated ASA Chitin farm, literal location HUD and actual Megatherium insect harvesting/inventory in the same chapter; verifiedinteriorfarmregion19.36/47.68."
+    },
+    {
+      "id": "bAqRvM-080g",
+      "status": "LiteralGPS17s andphysicalforest/bush/node terrain25s; basicyieldsmechanicsverifiedWiki; noquantitiesmeasured.",
+      "mechanicsSourceSHA256": {
+        "trees": "5458659ae156e486cc9524f496042e8175430be09da28f79edbea9e72415ffad",
+        "rocks": "55360719f45d9de85cbed18c58552d44c96944735a59ff19aea4bacffc82bc05",
+        "sickle": "07ecced9636da55e7ea9b96b47ebc479907fe1d79e0fe9cbccc3042538b76724"
+      }
+    }
+  ]
+}

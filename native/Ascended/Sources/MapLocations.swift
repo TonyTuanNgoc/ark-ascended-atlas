@@ -9,11 +9,13 @@ struct MapLocation: Identifiable {
     let id: String; let name: String; let lat: Double; let lon: Double; let layer: MapLayer
     let note: String; let routeID: String?; let artifactID: String?
     var imageAsset: String? = nil
+    var farmID: String? = nil
+    var resourceNames: [String] = []
     var coordinates: String { String(format: "LAT %.2f · LON %.2f", lat, lon) }
     var symbol: String { layer.symbol }
     var color: UIColor { switch layer { case .artifact: .systemPurple; case .cave: .systemOrange; case .boss, .obelisk: id == "obelisk-red" ? .systemRed : id == "obelisk-green" ? .systemGreen : id == "obelisk-blue" ? .systemBlue : .systemCyan; case .base: .systemGreen; case .resource: .systemYellow } }
     static func all(in map: ArkMap) -> [MapLocation] {
-        guard let data = map.exploration else { return [] }
+        let data = map.exploration ?? ExplorationCatalog(reviewedAt: "", artifacts: [], routes: [], obelisks: [])
         var list = data.artifacts.map { MapLocation(id: "artifact-" + $0.id, name: $0.name, lat: $0.lat, lon: $0.lon, layer: .artifact, note: "Vị trí lấy artifact", routeID: $0.routeID, artifactID: $0.id) }
         list += data.routes.flatMap { route in route.entrances.map { MapLocation(id: "entrance-" + $0.id, name: route.name + " · " + $0.label, lat: $0.lat, lon: $0.lon, layer: .cave, note: $0.kind == "area" ? "Khu vực tiếp cận; tìm cửa hang theo địa hình" : "Cửa hang · đối chiếu địa hình để vào", routeID: route.id, artifactID: nil) } }
         list += data.obelisks.map { MapLocation(id: $0.id, name: $0.label + (map == .ragnarok ? " · triệu hồi Nunatak" : " · cổng boss"), lat: $0.lat, lon: $0.lon, layer: .obelisk, note: "Điểm triệu hồi; boss ở đấu trường được dịch chuyển tới", routeID: nil, artifactID: nil) }
@@ -27,6 +29,6 @@ struct MapLocation: Identifiable {
             else if point.id.hasPrefix("obelisk-") { list[index].imageAsset = "Map-Obelisk" }
             else if point.id == "boss-lava-arena" { list[index].imageAsset = "Cutout-Boss-lava-elemental" }
         }
-        return list + MapResources.points(in: map)
+        return list + MapResources.points(in: map) + ResourceFarmCatalog.spots(in: map).map(\.point)
     }
 }

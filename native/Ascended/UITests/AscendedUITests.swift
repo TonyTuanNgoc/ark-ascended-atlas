@@ -1,24 +1,76 @@
 import XCTest
 
 final class AscendedUITests: XCTestCase {
+    @MainActor func testExpansionMapsAndGenesisPlanes() throws {
+        let app = XCUIApplication(); XCUIDevice.shared.orientation = .landscapeLeft; app.launch()
+        func tapSidebar(_ id: String) {
+            let button = app.buttons[id]
+            for _ in 0..<8 { if button.isHittable { break }; app.collectionViews.firstMatch.swipeDown() }
+            for _ in 0..<8 { if button.isHittable { break }; app.collectionViews.firstMatch.swipeUp() }
+            XCTAssertTrue(button.isHittable, id); button.tap()
+        }
+        for id in ["the-island", "scorched-earth", "aberration", "extinction", "lost-colony", "genesis-part-1", "genesis-part-1-ocean", "the-center", "ragnarok", "valguero", "astraeos"] {
+            tapSidebar("choose-" + id)
+            XCTAssertTrue(app.descendants(matching: .any)["ragnarokMapViewport"].firstMatch.waitForExistence(timeout: 8), id)
+            XCTAssertEqual(app.buttons["choose-" + id].value as? String, "Đang chọn")
+            tapSidebar("section-Thông tin map")
+            XCTAssertTrue(app.staticTexts["mapInformationTitle"].waitForExistence(timeout: 5))
+            tapSidebar("section-Dino")
+            XCTAssertTrue(app.scrollViews["creatureLibrary"].waitForExistence(timeout: 5))
+            let shot = XCTAttachment(screenshot: XCUIScreen.main.screenshot()); shot.name = "Expansion-" + id; shot.lifetime = .keepAlways; add(shot)
+        }
+        tapSidebar("section-Map & DLC")
+        XCTAssertTrue(app.otherElements["expansion-the-island"].exists || app.buttons["expansion-the-island"].exists)
+        XCTAssertFalse(app.buttons["choose-dragontopia"].exists)
+    }
+    @MainActor func testAcquisitionAndCatalogSelection() throws {
+        let app = XCUIApplication(); XCUIDevice.shared.orientation = .landscapeLeft; app.launch()
+        func tapSidebar(_ id: String) {
+            let button = app.buttons[id]
+            for _ in 0..<10 { if button.isHittable { break }; app.collectionViews.firstMatch.swipeDown() }
+            for _ in 0..<10 { if button.isHittable { break }; app.collectionViews.firstMatch.swipeUp() }
+            XCTAssertTrue(button.isHittable, id); button.tap()
+        }
+        tapSidebar("choose-ragnarok"); tapSidebar("section-Khai thác")
+        let search = app.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("Chitin")
+        XCTAssertTrue(app.otherElements["acquisition-ragnarok-Chitin"].exists)
+        XCTAssertFalse(app.buttons["pin-farm-acquisition-rag-chitin"].exists)
+        let shot = XCTAttachment(screenshot: XCUIScreen.main.screenshot()); shot.name = "Creature-acquisition-no-guessed-GPS"; shot.lifetime = .keepAlways; add(shot)
+        tapSidebar("section-Map & DLC")
+        app.buttons["expansion-the-island"].tap()
+        let open = app.buttons["Chọn map"]
+        for _ in 0..<12 { if open.isHittable { break }; app.scrollViews.firstMatch.swipeUp() }
+        XCTAssertTrue(open.isHittable); open.tap()
+        XCTAssertTrue(app.descendants(matching: .any)["ragnarokMapViewport"].firstMatch.waitForExistence(timeout: 8))
+        XCTAssertEqual(app.descendants(matching: .any)["ragnarokMapViewport"].firstMatch.label, "Bản đồ The Island")
+    }
     @MainActor func testResourcePopupsAndZoomAcrossMaps() throws {
         let app = XCUIApplication(); XCUIDevice.shared.orientation = .landscapeLeft; app.launch()
         for map in ["ragnarok", "the-island", "the-center"] {
-            app.buttons["choose-" + map].tap(); app.buttons["section-Bản đồ"].tap()
+            let choose = app.buttons["choose-" + map]
+            for _ in 0..<10 { if choose.isHittable { break }; app.collectionViews.firstMatch.swipeDown() }
+            for _ in 0..<10 { if choose.isHittable { break }; app.collectionViews.firstMatch.swipeUp() }
+            choose.tap()
             app.buttons["clearMapLayers"].tap(); app.buttons["layer-Resources"].tap()
-            let resource = app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "resource-pin-")).firstMatch
-            XCTAssertTrue(resource.waitForExistence(timeout: 8))
-            resource.tap()
-            XCTAssertTrue(app.staticTexts["selectedMapLocation"].waitForExistence(timeout: 5))
-            app.buttons["Đóng vị trí"].tap()
             let rail = app.scrollViews["mapFilterRail"]
-            while !app.buttons["zoomIn"].isHittable { rail.swipeUp() }
+            let pins = app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "pin-farm-"))
+            XCTAssertTrue(pins.firstMatch.waitForExistence(timeout: 8))
+            let visible = try XCTUnwrap(pins.allElementsBoundByIndex.first(where: { $0.isHittable }))
+            visible.tap()
+            if !app.staticTexts["selectedMapLocation"].exists {
+                let name = visible.label.components(separatedBy: ", LAT").first ?? visible.label
+                app.buttons[name].tap()
+            }
+            XCTAssertTrue(app.staticTexts["selectedMapLocation"].waitForExistence(timeout: 5))
+            XCTAssertTrue(app.images["farmPhoto"].exists)
+            XCTAssertTrue(app.links["farmVideo"].exists || app.buttons["farmVideo"].exists)
+            let shot = XCTAttachment(screenshot: XCUIScreen.main.screenshot()); shot.name = "Verified-farm-" + map; shot.lifetime = .keepAlways; add(shot)
+            app.buttons["Đóng vị trí"].tap()
+            for _ in 0..<12 { if app.buttons["zoomIn"].isHittable { break }; rail.swipeUp() }
             app.buttons["zoomIn"].tap()
             let viewport = app.descendants(matching: .any)["ragnarokMapViewport"].firstMatch
             XCTAssertTrue(Double(viewport.value as? String ?? "0")! > 1)
-            viewport.swipeLeft()
-            XCTAssertTrue(resource.waitForExistence(timeout: 5))
-            let shot = XCTAttachment(screenshot: XCUIScreen.main.screenshot()); shot.name = "Resources-zoom-" + map; shot.lifetime = .keepAlways; add(shot)
         }
     }
     @MainActor func testMapRightRailFiltersAndResources() throws {

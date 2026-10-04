@@ -1,10 +1,12 @@
 import SwiftUI
 
 enum Destination: String, CaseIterable, Identifiable {
-    case information = "Thông tin map", bases = "Base Location", map = "Bản đồ", dinos = "Dino", bosses = "Boss", exploration = "Artifact & Hang"
+    case expansions = "Map & DLC", farming = "Khai thác", information = "Thông tin map", bases = "Base Location", map = "Bản đồ", dinos = "Dino", bosses = "Boss", exploration = "Artifact & Hang"
     var id: String { rawValue }
     var symbol: String {
         switch self {
+        case .expansions: "square.stack.3d.up.fill"
+        case .farming: "pickaxe"
         case .information: "mountain.2.fill"
         case .bases: "house.fill"
         case .map: "map.fill"
@@ -25,18 +27,10 @@ struct MapSessionShell: View {
             List(selection: $selection) {
                 Image("ArkLogo").resizable().scaledToFit().frame(height: 85)
                     .frame(maxWidth: .infinity).padding(.vertical, 8).listRowBackground(Color.clear)
-                Section("Map") {
-                    ForEach(ArkMap.allCases) { option in
-                        Button { selection = .map; chooseMap(option) } label: {
-                            HStack {
-                                Text(option.name)
-                                Spacer()
-                                if map == option { Image(systemName: "checkmark").foregroundStyle(.cyan) }
-                            }.contentShape(Rectangle())
-                        }.foregroundStyle(map == option ? .cyan : .primary)
-                            .accessibilityIdentifier("choose-" + option.rawValue)
-                            .accessibilityValue(map == option ? "Đang chọn" : "Chưa chọn")
-                    }
+                mapSection("Cốt truyện", options: ArkMap.storyMaps)
+                mapSection("Khám phá", options: ArkMap.extraMaps)
+                if map == .genesis || map == .genesisOcean {
+                    mapSection("Genesis · Ocean", options: [.genesisOcean])
                 }
                 Section {
                     ForEach(Destination.allCases.filter { $0 != .bases || map == .ragnarok }) { item in
@@ -51,6 +45,8 @@ struct MapSessionShell: View {
             NavigationStack {
                 Group {
                     switch selection ?? .map {
+                    case .expansions: ExpansionCatalogScreen(chooseMap: { selection = .map; chooseMap($0) })
+                    case .farming: ResourceFarmingScreen()
                     case .information: MapInformationScreen(openMap: { selection = .map }, openDinos: { selection = .dinos }, openBosses: { selection = .bosses })
                     case .bases: BaseLocationsScreen()
                     case .map: MapScreen()
@@ -64,6 +60,18 @@ struct MapSessionShell: View {
             }.id(map)
         }.navigationSplitViewStyle(.balanced)
     }
+    private func mapSection(_ title: String, options: [ArkMap]) -> some View {
+        Section(title) {
+            ForEach(options) { option in
+                Button { selection = .map; chooseMap(option) } label: {
+                    HStack { Text(option.name); Spacer(); if map == option { Image(systemName: "checkmark").foregroundStyle(.cyan) } }
+                }.foregroundStyle(map == option ? .cyan : .primary)
+                    .accessibilityIdentifier("choose-" + option.rawValue)
+                    .accessibilityValue(map == option ? "Đang chọn" : "Chưa chọn")
+            }
+        }
+    }
+
 }
 
 struct AscendedShell: View {

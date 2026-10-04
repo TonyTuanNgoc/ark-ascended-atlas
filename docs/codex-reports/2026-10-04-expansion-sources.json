@@ -1,0 +1,170 @@
+{
+  "checkedAt": "2026-10-04",
+  "scope": "Official Steam ASA DLC index plus official Power Rangers premium cosmetic collaborations; excludes arbitrary community premium mods.",
+  "steamProductCount": 20,
+  "availableMapCount": 10,
+  "mapEntryCount": 17,
+  "dlcEntryCount": 22,
+  "sources": [
+    {
+      "id": "scorched-earth",
+      "url": "https://store.steampowered.com/app/2849450/"
+    },
+    {
+      "id": "aberration",
+      "url": "https://store.steampowered.com/app/3059650/"
+    },
+    {
+      "id": "extinction",
+      "url": "https://store.steampowered.com/app/3349320/"
+    },
+    {
+      "id": "the-center",
+      "url": "https://store.steampowered.com/app/2827030/"
+    },
+    {
+      "id": "ragnarok",
+      "url": "https://store.steampowered.com/app/3675020/"
+    },
+    {
+      "id": "valguero",
+      "url": "https://store.steampowered.com/app/3982310/"
+    },
+    {
+      "id": "genesis-part-1",
+      "url": "https://store.steampowered.com/app/4558470/"
+    },
+    {
+      "id": "bobs-tall-tales",
+      "url": "https://store.steampowered.com/app/2881150/"
+    },
+    {
+      "id": "astraeos",
+      "url": "https://store.steampowered.com/app/3483400/"
+    },
+    {
+      "id": "lost-colony",
+      "url": "https://store.steampowered.com/app/3583650/"
+    },
+    {
+      "id": "lost-colony-pass",
+      "url": "https://store.steampowered.com/app/3720100/"
+    },
+    {
+      "id": "pyromane",
+      "url": "https://store.steampowered.com/app/2972680/"
+    },
+    {
+      "id": "dreadmare",
+      "url": "https://store.steampowered.com/app/3282470/"
+    },
+    {
+      "id": "drakelings",
+      "url": "https://store.steampowered.com/app/3720200/"
+    },
+    {
+      "id": "elderclaw",
+      "url": "https://store.steampowered.com/app/3982300/"
+    },
+    {
+      "id": "fantastic-tames-season-1",
+      "url": "https://store.steampowered.com/app/4558510/"
+    },
+    {
+      "id": "tides-of-fortune",
+      "url": "https://store.steampowered.com/app/4558480/"
+    },
+    {
+      "id": "dragontopia",
+      "url": "https://store.steampowered.com/app/4558490/"
+    },
+    {
+      "id": "animated-series-costumes",
+      "url": "https://store.steampowered.com/app/3571730/"
+    },
+    {
+      "id": "lost-colony-soundtrack",
+      "url": "https://store.steampowered.com/app/4274580/"
+    },
+    {
+      "id": "power-rangers-wave-1",
+      "url": "https://www.curseforge.com/ark-survival-ascended/mods/mighty-morphin-cosmetic-pack"
+    },
+    {
+      "id": "power-rangers-wave-2",
+      "url": "https://www.curseforge.com/ark-survival-ascended/mods/mighty-morphin-cosmetic-pack-2"
+    }
+  ],
+  "roadmapSource": "https://survivetheark.com/index.php?/forums/topic/773552-community-crunch-490-the-future-is-bright/",
+  "caveats": [
+    "Dragontopia DLC released 2026-07-03; store flight plan puts full skyworld in December 2026, so map marked upcoming.",
+    "Season 1: Burrowbuck and Cerberax available; Enigmasaur Q4 2026 is not confirmed released.",
+    "Genesis 2, Fjordur, Lost Island, Crystal Isles, Atlantis and Legacy of Santiago are unconfirmed as released ASA content.",
+    "No region prices, invented GPS, or Survival Evolved release dates used.",
+    "Preparation and goals are editorial suggestions based on described mechanics; not tested in a player save.",
+    "No cover assets acquired: shell network DNS unavailable; do not substitute unrelated map imagery."
+  ],
+  "indexSource": "https://store.steampowered.com/dlc/2399830/",
+  "verification": "Opened official Steam index and individual store pages; all 20 listed products accounted for by app IDs. Cosmetic Waves 1–2 checked on CurseForge and official Community Crunch announcements.",
+  "criticalEvidence": [
+    {
+      "url": "https://store.steampowered.com/app/4558490/",
+      "fact": "Released July 3, 2026; flight plan still says December full map-wide skyworld."
+    },
+    {
+      "url": "https://store.steampowered.com/app/4558510/",
+      "fact": "Burrowbuck and Cerberax Available Now; Enigmasaur Q4 2026."
+    },
+    {
+      "url": "https://store.steampowered.com/app/3583650/",
+      "fact": "Lost Colony requires Lost Colony Expansion Pass."
+    },
+    {
+      "url": "https://store.steampowered.com/app/4558470/",
+      "fact": "Genesis Part 1 released July 3, 2026, Free; Tides of Fortune recommended, not required."
+    },
+    {
+      "url": "https://store.steampowered.com/app/3483400/",
+      "fact": "Astraeos now complete 1.0 with Heaven and Abyss; Kraken ascension encounters."
+    }
+  ],
+  "editionAudit": [
+    {
+      "mapID": "ragnarok",
+      "correction": "Nunatak replaces ASE Dragon + Manticore; retain Iceworm Queen, Lava Elemental and two Life’s Labyrinth spirit minibosses.",
+      "sources": [
+        "https://store.steampowered.com/app/3675020/",
+        "https://survivetheark.com/index.php?/forums/topic/772489-ragnarok-ascended-and-lost-colony-expansion-pass-are-now-live/",
+        "https://ark.wiki.gg/wiki/Nunatak",
+        "https://ark.wiki.gg/wiki/Spirit_Direwolf_%26_Spirit_Dire_Bear"
+      ]
+    },
+    {
+      "mapID": "valguero",
+      "correction": "ASA guardian is Grendel, the boss Megaraptor variant; wild Megaraptor is tameable and not the proper boss name. Broodmother retained as world encounter.",
+      "sources": [
+        "https://store.steampowered.com/app/3982310/",
+        "https://survivetheark.com/index.php?/forums/topic/772919-valguero-ascended-and-fantastic-tames-elderclaw-are-now-live/",
+        "https://ark.wiki.gg/wiki/Valguero_Ascended",
+        "https://ark.wiki.gg/wiki/Forsaken_Oasis_%28Valguero%29"
+      ]
+    },
+    {
+      "mapID": "lost-colony",
+      "correction": "Added Lost Queen beside Lost King; both occur in Red-Handed.",
+      "sources": [
+        "https://store.steampowered.com/app/3583650/",
+        "https://ark.wiki.gg/wiki/Red-Handed_%28Lost_Colony%29",
+        "https://survivetheark.com/index.php?/forums/topic/773849-community-crunch-505-deep-dives-technical-strides-what%E2%80%99s-surfacing-next/"
+      ]
+    },
+    {
+      "mapID": "astraeos",
+      "correction": "Steam 1.0 confirms two Kraken encounters plus Hydraskos and current minibosses; official February 2026 announcement confirms Manticore, Medusa arena and Minotarchos.",
+      "sources": [
+        "https://store.steampowered.com/app/3483400/",
+        "https://survivetheark.com/index.php?/forums/topic/773697-astraeos-mega-update-is-now-live/"
+      ]
+    }
+  ]
+}

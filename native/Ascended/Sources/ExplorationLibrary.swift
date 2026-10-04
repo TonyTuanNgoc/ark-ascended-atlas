@@ -29,6 +29,19 @@ struct ExplorationLibrary: View {
                 Text("Artifact & Hang").font(.largeTitle.bold())
                 Text("\(map.exploration?.artifacts.count ?? 0) artifact · \(map.exploration?.routes.count ?? 0) tuyến khám phá · " + map.name + " Ascended").font(.headline).foregroundStyle(.cyan)
                 Text("GPS artifact là điểm lấy vật phẩm. GPS cửa hang là lối tiếp cận, không phải vị trí artifact. Tọa độ cửa hang theo hướng dẫn cộng đồng có thể lệch vài phần mười; dùng địa hình để nhận diện.").foregroundStyle(.secondary)
+                if map.exploration?.routes.isEmpty == true {
+                    ForEach(map.exploration?.artifacts ?? []) { artifact in
+                        HStack(spacing: 14) {
+                            if !artifact.imageAsset.isEmpty { Image(artifact.imageAsset).resizable().scaledToFit().frame(width: 52, height: 64) }
+                            VStack(alignment: .leading, spacing: 6) { Text(artifact.name).font(.headline); GPSBadge(coordinates: artifact.coordinates).foregroundStyle(.cyan) }
+                            Spacer()
+                            NavigationLink(value: GuideDestination.map("artifact-" + artifact.id)) { Image(systemName: "map.fill") }.accessibilityLabel("Xem artifact trên bản đồ")
+                        }.cardStyle()
+                    }
+                    if map.exploration?.artifacts.isEmpty == true, let record = map.expansion {
+                        ExpansionProfile(record: record).cardStyle()
+                    }
+                }
                 LazyVGrid(columns: [GridItem(.adaptive(minimum: 240, maximum: 340), spacing: 16)], spacing: 16) {
                 ForEach((map.exploration?.routes ?? []).filter { search.isEmpty || $0.name.localizedStandardContains(search) || $0.artifacts(in: map).contains { $0.name.localizedStandardContains(search) } }) { route in
                     NavigationLink(value: GuideDestination.cave(route.id)) {

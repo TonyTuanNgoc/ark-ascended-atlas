@@ -39,13 +39,16 @@ struct MapInformationScreen: View {
                 LazyVGrid(columns: [GridItem(.adaptive(minimum: 150))], spacing: 14) {
                     metric("\((try? map.creatures.get().creatures.count) ?? 0)", "Dino")
                     metric("\(map.exploration?.artifacts.count ?? 0)", "Artifact")
-                    metric(map == .ragnarok ? "5" : "\(map.bosses.count)", "Boss")
+                    metric(map == .ragnarok ? "5" : "\(map.bosses.isEmpty ? (map.expansion?.bosses.count ?? 0) : map.bosses.count)", "Boss")
                 }
                 HStack {
                     Button(action: openMap) { Label("Mở bản đồ", systemImage: "map.fill") }.labelStyle(.iconOnly).accessibilityLabel("Mở bản đồ").accessibilityIdentifier("openRagnarokMap")
                     Button(action: openDinos) { Label("Dino", systemImage: "pawprint.fill") }.labelStyle(.iconOnly).accessibilityLabel("Dino").accessibilityIdentifier("openDinos")
                     Button(action: openBosses) { Label("Boss", systemImage: "shield.lefthalf.filled") }.labelStyle(.iconOnly).accessibilityLabel("Boss").accessibilityIdentifier("openBosses")
                 }.buttonStyle(.bordered)
+                if map.information != nil, let record = map.expansion {
+                    ExpansionProfile(record: record).cardStyle()
+                }
                 if let info = map.information {
                     ForEach(info.sections.filter { search.isEmpty || $0.title.localizedStandardContains(search) || $0.items.contains { $0.localizedStandardContains(search) } }) { section in
                         VStack(alignment: .leading, spacing: 14) {
@@ -60,7 +63,7 @@ struct MapInformationScreen: View {
                         }.cardStyle()
                     }
                 } else {
-                    ContentUnavailableView("Chưa mở được thông tin map", systemImage: "book.closed")
+                    if let record = map.expansion { ExpansionProfile(record: record).cardStyle() }
                 }
             }.padding(24).frame(maxWidth: 1100).frame(maxWidth: .infinity)
         }.searchable(text: $search, prompt: "Tìm thông tin " + map.name)

@@ -1,0 +1,1037 @@
+{
+  "checkedAt": "2026-10-04",
+  "maps": [
+    {
+      "id": "the-island",
+      "name": "The Island",
+      "group": "story",
+      "order": 1,
+      "status": "available",
+      "included": true,
+      "purchase": "Đã gồm trong ARK: Survival Ascended; không cần mua DLC phụ.",
+      "storeURL": "https://store.steampowered.com/app/2399830/",
+      "summary": "Điểm bắt đầu: từ bãi biển, thuần hóa và xây căn cứ đến hang artifact, guardian và Tek Cave.",
+      "storyRole": "Chương mở đầu của lộ trình Survivor; khám phá bản chất các ARK trước khi ascension.",
+      "biomes": [
+        "Bãi biển",
+        "Rừng",
+        "Đầm lầy",
+        "Redwoods",
+        "Núi tuyết",
+        "Đại dương"
+      ],
+      "signatureCreatures": [
+        "Rex",
+        "Therizinosaur",
+        "Megatherium",
+        "Yutyrannus"
+      ],
+      "goals": [
+        "Dựng căn cứ gần nước và tuyến metal.",
+        "Thu thập artifact cùng tribute đúng độ khó.",
+        "Chuẩn bị đội breed, saddle và vật tư cho guardian rồi Tek Cave."
+      ],
+      "bosses": [
+        "Broodmother",
+        "Megapithecus",
+        "Dragon",
+        "Overseer"
+      ],
+      "preparation": [
+        "Tách đội đi hang và đội đánh boss.",
+        "Mang đồ chống lạnh, SCUBA cho tuyến biển và đồ dự phòng.",
+        "Luyện whistle, đội hình và thời gian vào Tek Cave trước lượt chính."
+      ],
+      "dlcIDs": [],
+      "sourceURLs": [
+        "https://store.steampowered.com/app/2399830/",
+        "https://ark.wiki.gg/wiki/The_Island"
+      ]
+    },
+    {
+      "id": "scorched-earth",
+      "name": "Scorched Earth",
+      "group": "story",
+      "order": 2,
+      "status": "available",
+      "included": true,
+      "purchase": "Đã gồm trong ARK: Survival Ascended; không cần mua DLC phụ.",
+      "storeURL": "https://store.steampowered.com/app/2849450/",
+      "summary": "Sa mạc khắc nghiệt với khát nước, nóng, bão và Wyvern.",
+      "storyRole": "Chương tiếp theo sau The Island trong lộ trình ascension.",
+      "biomes": [
+        "Cồn cát",
+        "Badlands",
+        "Ốc đảo",
+        "Núi",
+        "Wyvern trench"
+      ],
+      "signatureCreatures": [
+        "Wyvern",
+        "Rock Elemental",
+        "Morellatops",
+        "Phoenix",
+        "Fasolasuchus"
+      ],
+      "goals": [
+        "Ổn định nước và nơi trú trước khi khám phá xa.",
+        "Chuẩn bị chuyến lấy trứng Wyvern.",
+        "Thu artifact và tribute để thách đấu Manticore."
+      ],
+      "bosses": [
+        "Manticore"
+      ],
+      "preparation": [
+        "Ưu tiên đồ cách nhiệt, nước dự trữ và nhà Adobe.",
+        "Giữ mount cùng bộ đồ dự phòng khi đi trench.",
+        "Trú bão; tránh phụ thuộc hoàn toàn vào thiết bị điện."
+      ],
+      "dlcIDs": [
+        "bobs-tall-tales"
+      ],
+      "sourceURLs": [
+        "https://store.steampowered.com/app/2849450/",
+        "https://ark.wiki.gg/wiki/Scorched_Earth"
+      ]
+    },
+    {
+      "id": "aberration",
+      "name": "Aberration",
+      "group": "story",
+      "order": 3,
+      "status": "available",
+      "included": true,
+      "purchase": "Đã gồm trong ARK: Survival Ascended; không cần mua DLC phụ.",
+      "storeURL": "https://store.steampowered.com/app/3059650/",
+      "summary": "ARK hỏng với hệ hang nhiều tầng, phóng xạ, Nameless và sinh vật phát sáng.",
+      "storyRole": "Khám phá bí mật của ARK và đối đầu Rockwell sau Scorched Earth.",
+      "biomes": [
+        "Fertile zone",
+        "Bioluminescent zone",
+        "Radiation zone",
+        "Surface"
+      ],
+      "signatureCreatures": [
+        "Rock Drake",
+        "Reaper",
+        "Karkinos",
+        "Bulbdog",
+        "Yi Ling"
+      ],
+      "goals": [
+        "Thuần hóa light pet và ổn định căn cứ tầng an toàn.",
+        "Mở tuyến tài nguyên, gas và charge.",
+        "Chuẩn bị bộ chống phóng xạ để lấy trứng Rock Drake và đi sâu."
+      ],
+      "bosses": [
+        "Rockwell"
+      ],
+      "preparation": [
+        "Light pet cần đủ charge để chống Nameless.",
+        "Mang nhiều Hazmat suit vì hỏng một mảnh có thể mất bảo vệ.",
+        "Climbing pick, zipline và đường rút quan trọng hơn flyer."
+      ],
+      "dlcIDs": [
+        "bobs-tall-tales"
+      ],
+      "sourceURLs": [
+        "https://store.steampowered.com/app/3059650/",
+        "https://ark.wiki.gg/wiki/Aberration"
+      ]
+    },
+    {
+      "id": "extinction",
+      "name": "Extinction",
+      "group": "story",
+      "order": 4,
+      "status": "available",
+      "included": true,
+      "purchase": "Đã gồm trong ARK: Survival Ascended; không cần mua DLC phụ.",
+      "storeURL": "https://store.steampowered.com/app/3349320/",
+      "summary": "Trở về Trái Đất nhiễm Element: thành phố bỏ hoang, OSD và những Titan khổng lồ.",
+      "storyRole": "Hoàn tất chu kỳ ARK trên Earth; chuyển tiếp sang Lost Colony và Genesis.",
+      "biomes": [
+        "Sanctuary",
+        "Wasteland",
+        "Snow dome",
+        "Desert dome",
+        "Sunken Forest"
+      ],
+      "signatureCreatures": [
+        "Snow Owl",
+        "Gacha",
+        "Managarmr",
+        "Velonasaur",
+        "Mek"
+      ],
+      "goals": [
+        "Đặt căn cứ an toàn và farm tài nguyên trước khi vào wasteland.",
+        "Luyện OSD và Element Vein từ cấp phù hợp.",
+        "Chuẩn bị tribute, Titan và đội hình cho King Titan."
+      ],
+      "bosses": [
+        "Forest Titan",
+        "Desert Titan",
+        "Ice Titan",
+        "King Titan"
+      ],
+      "preparation": [
+        "Quan sát meteor và sinh vật Corrupted.",
+        "Mang vật tư sửa chữa, kho đạn và mount dự phòng cho trận dài.",
+        "Không đánh OSD cao cấp với đội chưa thử sức."
+      ],
+      "dlcIDs": [
+        "bobs-tall-tales"
+      ],
+      "sourceURLs": [
+        "https://store.steampowered.com/app/3349320/",
+        "https://ark.wiki.gg/wiki/Extinction"
+      ]
+    },
+    {
+      "id": "lost-colony",
+      "name": "Lost Colony",
+      "group": "story",
+      "order": 5,
+      "status": "available",
+      "included": false,
+      "purchase": "Cần sở hữu ARK: Survival Ascended và mua Lost Colony Expansion Pass.",
+      "storeURL": "https://store.steampowered.com/app/3583650/",
+      "summary": "Arat Prime trong đêm băng giá: gothic city, Red Element, Thrall và hệ kỹ năng mới.",
+      "storyRole": "Nhánh canon nối Extinction với tương lai ARK; đặt ở đây theo lộ trình chơi, không phải thứ tự thời gian mọi explorer note.",
+      "biomes": [
+        "Tundra",
+        "Twilight Forest",
+        "Lost City",
+        "Crashed Aberrant ARK"
+      ],
+      "signatureCreatures": [
+        "Ossidon",
+        "Aureliax",
+        "Gloon",
+        "Gigadesmodus"
+      ],
+      "goals": [
+        "Mở căn cứ chịu lạnh và học các skillpath.",
+        "Tuyển, trang bị Thrall để hỗ trợ hậu cần và chiến đấu.",
+        "Đánh outpost kiếm Sigil, chuẩn bị nhiệm vụ Red-Handed trong Red Palace và hai trận Lost King/Lost Queen."
+      ],
+      "bosses": [
+        "Lost King",
+        "Lost Queen"
+      ],
+      "preparation": [
+        "Chuẩn bị Arctic Armor, vật tư hồi phục và trang bị dự phòng.",
+        "Chọn kỹ năng Wayfarer, Beastmaster hoặc Utility theo mục tiêu.",
+        "Thử tuyến outpost trước khi mang toàn bộ đồ quý."
+      ],
+      "dlcIDs": [
+        "lost-colony",
+        "lost-colony-pass"
+      ],
+      "sourceURLs": [
+        "https://store.steampowered.com/app/3583650/",
+        "https://ark.wiki.gg/wiki/Red-Handed_%28Lost_Colony%29",
+        "https://survivetheark.com/index.php?/forums/topic/773849-community-crunch-505-deep-dives-technical-strides-what%E2%80%99s-surfacing-next/"
+      ]
+    },
+    {
+      "id": "genesis-part-1",
+      "name": "Genesis Part 1",
+      "group": "story",
+      "order": 6,
+      "status": "available",
+      "included": true,
+      "purchase": "Đã gồm trong ARK: Survival Ascended; không cần mua DLC phụ.",
+      "storeURL": "https://store.steampowered.com/app/4558470/",
+      "summary": "Mô phỏng nhiều biome với HLN-A, mission, Hexagon và đại dương mở rộng trong ASA.",
+      "storyRole": "Chặng thử nghiệm của Genesis sau phần Earth; dẫn đến câu chuyện Seed Ship.",
+      "biomes": [
+        "Bog",
+        "Arctic",
+        "Volcanic",
+        "Ocean",
+        "Lunar"
+      ],
+      "signatureCreatures": [
+        "Palaeoctopus",
+        "Bloodstalker",
+        "Ferox",
+        "Megachelon",
+        "Magmasaur",
+        "Astrocetus"
+      ],
+      "goals": [
+        "Hoàn thành mission ở độ khó phù hợp và sửa glitch.",
+        "Dùng Hexagon để hỗ trợ vật tư, học từng biome trước khi tăng độ khó.",
+        "Chuẩn bị mục tiêu mission cho tiến trình cuối chương."
+      ],
+      "bosses": [
+        "Corrupted Master Controller"
+      ],
+      "preparation": [
+        "Đổi đồ theo biome: lạnh, dung nham, nước sâu và trọng lực thấp.",
+        "Luyện mission trước khi tăng lên Beta hoặc Alpha.",
+        "Tides of Fortune bổ sung tàu và hải chiến; không bắt buộc để vào map."
+      ],
+      "dlcIDs": [
+        "genesis-part-1",
+        "tides-of-fortune"
+      ],
+      "sourceURLs": [
+        "https://store.steampowered.com/app/4558470/",
+        "https://ark.wiki.gg/wiki/Ascension"
+      ]
+    },
+    {
+      "id": "genesis-part-2",
+      "name": "Genesis Part 2",
+      "group": "story",
+      "order": 7,
+      "status": "unconfirmed",
+      "included": false,
+      "purchase": "Chưa xác nhận quyền truy cập bản ASA đã phát hành; kiểm tra thông báo chính thức trước khi mua.",
+      "storeURL": "https://store.steampowered.com/app/2399830/",
+      "summary": "Chương tiếp theo trên Seed Ship; bản ASA chưa được xác nhận đã phát hành trong lần kiểm tra này.",
+      "storyRole": "Theo sau Genesis Part 1 trong lộ trình story.",
+      "biomes": [
+        "Seed Ship · kế hoạch ASA"
+      ],
+      "signatureCreatures": [],
+      "goals": [
+        "Theo dõi thông báo phát hành ASA trước khi lập save mới."
+      ],
+      "bosses": [],
+      "preparation": [
+        "Không dùng nội dung hoặc lịch bản Survival Evolved để khẳng định ASA đã có."
+      ],
+      "dlcIDs": [],
+      "sourceURLs": [
+        "https://store.steampowered.com/app/2399830/",
+        "https://survivetheark.com/index.php?/forums/topic/773552-community-crunch-490-the-future-is-bright/"
+      ]
+    },
+    {
+      "id": "the-center",
+      "name": "The Center",
+      "group": "extra",
+      "order": 1,
+      "status": "available",
+      "included": true,
+      "purchase": "Đã gồm trong ARK: Survival Ascended; không cần mua DLC phụ.",
+      "storeURL": "https://store.steampowered.com/app/2827030/",
+      "summary": "Đảo nổi, thác lớn, thế giới ngầm và hang biển tạo bản đồ thiên về khám phá.",
+      "storyRole": "Map phụ tự do; có thể chơi xen giữa các chương story.",
+      "biomes": [
+        "Floating Island",
+        "Lava island",
+        "Underground world",
+        "Snow",
+        "Ocean air bubbles"
+      ],
+      "signatureCreatures": [
+        "Shastasaurus",
+        "Rex",
+        "Basilosaurus"
+      ],
+      "goals": [
+        "Mở tuyến đảo nổi, thế giới ngầm và hang biển.",
+        "Chuẩn bị artifact và guardian arena.",
+        "Chọn căn cứ theo tuyến bay hoặc biển thay vì chỉ khoảng cách thẳng."
+      ],
+      "bosses": [
+        "Broodmother + Megapithecus"
+      ],
+      "preparation": [
+        "Dự phòng chống lạnh, chống nóng và SCUBA.",
+        "Chuẩn bị mount biển trước tuyến artifact dưới nước.",
+        "Địa hình đứng và lava cần điểm hồi sinh an toàn."
+      ],
+      "dlcIDs": [],
+      "sourceURLs": [
+        "https://store.steampowered.com/app/2827030/",
+        "https://ark.wiki.gg/wiki/The_Center"
+      ]
+    },
+    {
+      "id": "ragnarok",
+      "name": "Ragnarok",
+      "group": "extra",
+      "order": 2,
+      "status": "available",
+      "included": true,
+      "purchase": "Đã gồm trong ARK: Survival Ascended; không cần mua DLC phụ.",
+      "storeURL": "https://store.steampowered.com/app/3675020/",
+      "summary": "Map rộng pha rừng, sa mạc, băng, dungeon và Wyvern; ASA thêm đảo và Bison.",
+      "storyRole": "Map phụ khám phá và xây dựng; không cần theo tuyến story.",
+      "biomes": [
+        "Scotland Hills",
+        "Alpines",
+        "Redwoods",
+        "Desert",
+        "Volcano",
+        "Ocean"
+      ],
+      "signatureCreatures": [
+        "Griffin",
+        "Ice Wyvern",
+        "Bison",
+        "Polar Bear"
+      ],
+      "goals": [
+        "Mở các tuyến artifact, dungeon và tài nguyên.",
+        "Chuẩn bị mount bay trước khi lấy trứng Wyvern.",
+        "Khám phá đảo ASA mới; hoàn thiện artifact để thách đấu Nunatak Gamma → Beta → Alpha."
+      ],
+      "bosses": [
+        "Nunatak · guardian ASA",
+        "Iceworm Queen · dungeon",
+        "Lava Elemental · dungeon",
+        "Spirit Dire Bear · Life’s Labyrinth",
+        "Spirit Direwolf · Life’s Labyrinth"
+      ],
+      "preparation": [
+        "Dùng đồ chống lạnh cho vùng băng, SCUBA cho biển.",
+        "Mang thuốc, đạn và bộ đồ dự phòng cho dungeon.",
+        "Theo dõi volcano và hot spring khi chọn tuyến farm.",
+        "ASA dùng Nunatak thay Dragon + Manticore của Ragnarok Evolved; không dùng tribute hoặc đội hình ASE mặc định."
+      ],
+      "dlcIDs": [],
+      "sourceURLs": [
+        "https://store.steampowered.com/app/3675020/",
+        "https://survivetheark.com/index.php?/forums/topic/772489-ragnarok-ascended-and-lost-colony-expansion-pass-are-now-live/",
+        "https://ark.wiki.gg/wiki/Nunatak",
+        "https://ark.wiki.gg/wiki/Spirit_Direwolf_%26_Spirit_Dire_Bear"
+      ]
+    },
+    {
+      "id": "valguero",
+      "name": "Valguero",
+      "group": "extra",
+      "order": 3,
+      "status": "available",
+      "included": true,
+      "purchase": "Đã gồm trong ARK: Survival Ascended; không cần mua DLC phụ.",
+      "storeURL": "https://store.steampowered.com/app/3982310/",
+      "summary": "White Cliffs, tundra, Redwoods và Aberration Trench; ASA có Rock Drake, Reaper và Megaraptor.",
+      "storyRole": "Map phụ với hành trình khám phá riêng; không phải chương canon bắt buộc.",
+      "biomes": [
+        "White Cliffs",
+        "Tundra",
+        "Redwoods",
+        "Snowfields",
+        "Ocean",
+        "Aberration Trench"
+      ],
+      "signatureCreatures": [
+        "Deinonychus",
+        "Rock Drake",
+        "Reaper",
+        "Megaraptor"
+      ],
+      "goals": [
+        "Học địa hình White Cliffs và tuyến trứng Deinonychus.",
+        "Chuẩn bị chuyến xuống trench lấy trứng và tìm Reaper.",
+        "Khám phá hang; chuẩn bị artifact và tribute cho Grendel ở Forsaken Oasis."
+      ],
+      "bosses": [
+        "Grendel · guardian ASA, biến thể Megaraptor",
+        "Broodmother Lysrix · boss ngoài arena"
+      ],
+      "preparation": [
+        "Chống lạnh cho tundra; chuẩn bị đồ và light pet trước khi vào trench.",
+        "Đặt giường cùng đồ dự phòng ngoài vùng nguy hiểm.",
+        "ASA đánh Grendel, không dùng arena Dragon + Manticore + Megapithecus của Valguero Evolved."
+      ],
+      "dlcIDs": [],
+      "sourceURLs": [
+        "https://store.steampowered.com/app/3982310/",
+        "https://survivetheark.com/index.php?/forums/topic/772919-valguero-ascended-and-fantastic-tames-elderclaw-are-now-live/",
+        "https://ark.wiki.gg/wiki/Valguero_Ascended",
+        "https://ark.wiki.gg/wiki/Forsaken_Oasis_%28Valguero%29"
+      ]
+    },
+    {
+      "id": "astraeos",
+      "name": "Astraeos",
+      "group": "extra",
+      "order": 4,
+      "status": "available",
+      "included": false,
+      "purchase": "Cần sở hữu ARK: Survival Ascended và mua Astraeos DLC.",
+      "storeURL": "https://store.steampowered.com/app/3483400/",
+      "summary": "Thế giới thần thoại Hy Lạp đã đạt 1.0: biển động, sa mạc, đảo nổi và thành phố dưới nước.",
+      "storyRole": "Map phụ có ascension riêng; không thay các chương story chính.",
+      "biomes": [
+        "Helianthos",
+        "Abyssanthos",
+        "Pyranthos",
+        "Lemnokis",
+        "Volcano Island"
+      ],
+      "signatureCreatures": [
+        "Maeguana",
+        "Grand Tortugar",
+        "Boaratos"
+      ],
+      "goals": [
+        "Mở tuyến hang artifact ở Pyranthos và labyrinth.",
+        "Luyện di chuyển biển động với Trireme và mount biển.",
+        "Tiến từ miniboss đến Hydraskos và hai thử thách Kraken."
+      ],
+      "bosses": [
+        "Kraken · encounter dưới nước",
+        "Kraken · encounter mặt biển",
+        "Hydraskos the Unbroken",
+        "Manticore",
+        "Medusa",
+        "Colossus · miniboss",
+        "Kroaratos · miniboss",
+        "Kalydonios + Erymanthian · miniboss",
+        "Minotarchos · miniboss"
+      ],
+      "preparation": [
+        "Mang đồ chống lạnh/nóng theo vùng và SCUBA cho abyss.",
+        "Chuẩn bị đội phối hợp cho boss nhiều đầu và trận biển.",
+        "Tides of Fortune là bổ sung tùy chọn; map cần Astraeos DLC."
+      ],
+      "dlcIDs": [
+        "astraeos",
+        "tides-of-fortune"
+      ],
+      "sourceURLs": [
+        "https://store.steampowered.com/app/3483400/",
+        "https://survivetheark.com/index.php?/forums/topic/773697-astraeos-mega-update-is-now-live/"
+      ]
+    },
+    {
+      "id": "dragontopia",
+      "name": "Dragontopia",
+      "group": "upcoming",
+      "order": 1,
+      "status": "upcoming",
+      "included": false,
+      "purchase": "Cần sở hữu ARK: Survival Ascended và mua Dragontopia DLC.",
+      "storeURL": "https://store.steampowered.com/app/4558490/",
+      "summary": "DLC đã bán và có dragon/kỹ năng; toàn bộ map skyworld được Steam lên kế hoạch tháng 12/2026.",
+      "storyRole": "Nhánh fantasy phụ; chưa xác nhận map hoàn chỉnh đang chơi được.",
+      "biomes": [
+        "Floating landmasses · dự kiến",
+        "Procedural shattered isles · dự kiến"
+      ],
+      "signatureCreatures": [
+        "Eclipsar Umbra · có trong DLC",
+        "Lumina · theo lịch rollout"
+      ],
+      "goals": [
+        "Trải nghiệm dragon hiện có trên map hỗ trợ.",
+        "Chờ thông báo mở skyworld trước khi chuyển tiến trình map."
+      ],
+      "bosses": [
+        "Apex threat · chưa công bố chi tiết"
+      ],
+      "preparation": [
+        "Kiểm tra nội dung đã mở thay vì coi ngày bán DLC là ngày ra toàn bộ map.",
+        "Nội dung sky-behemoth tháng 10 và skyworld tháng 12 là kế hoạch."
+      ],
+      "dlcIDs": [
+        "dragontopia"
+      ],
+      "sourceURLs": [
+        "https://store.steampowered.com/app/4558490/",
+        "https://survivetheark.com/index.php?/forums/topic/773552-community-crunch-490-the-future-is-bright/"
+      ]
+    },
+    {
+      "id": "fjordur",
+      "name": "Fjordur",
+      "group": "upcoming",
+      "order": 2,
+      "status": "unconfirmed",
+      "included": false,
+      "purchase": "Chưa xác nhận quyền truy cập bản ASA đã phát hành; kiểm tra thông báo chính thức trước khi mua.",
+      "storeURL": "https://store.steampowered.com/app/2399830/",
+      "summary": "Chưa xác nhận bản ASA đã phát hành trong lần kiểm tra 04/10/2026.",
+      "storyRole": "Nội dung kế hoạch; chưa đưa vào danh sách map đang chơi được.",
+      "biomes": [],
+      "signatureCreatures": [],
+      "goals": [
+        "Theo dõi thông báo phát hành chính thức."
+      ],
+      "bosses": [],
+      "preparation": [
+        "Không dùng bản Survival Evolved hoặc roadmap cũ làm bằng chứng đã ra ASA."
+      ],
+      "dlcIDs": [],
+      "sourceURLs": [
+        "https://store.steampowered.com/app/2399830/",
+        "https://survivetheark.com/index.php?/forums/topic/773552-community-crunch-490-the-future-is-bright/"
+      ]
+    },
+    {
+      "id": "lost-island",
+      "name": "Lost Island",
+      "group": "upcoming",
+      "order": 3,
+      "status": "unconfirmed",
+      "included": false,
+      "purchase": "Chưa xác nhận quyền truy cập bản ASA đã phát hành; kiểm tra thông báo chính thức trước khi mua.",
+      "storeURL": "https://store.steampowered.com/app/2399830/",
+      "summary": "Chưa xác nhận bản ASA đã phát hành trong lần kiểm tra 04/10/2026.",
+      "storyRole": "Nội dung kế hoạch; chưa đưa vào danh sách map đang chơi được.",
+      "biomes": [],
+      "signatureCreatures": [],
+      "goals": [
+        "Theo dõi thông báo phát hành chính thức."
+      ],
+      "bosses": [],
+      "preparation": [
+        "Không dùng bản Survival Evolved hoặc roadmap cũ làm bằng chứng đã ra ASA."
+      ],
+      "dlcIDs": [],
+      "sourceURLs": [
+        "https://store.steampowered.com/app/2399830/",
+        "https://survivetheark.com/index.php?/forums/topic/773552-community-crunch-490-the-future-is-bright/"
+      ]
+    },
+    {
+      "id": "crystal-isles",
+      "name": "Crystal Isles",
+      "group": "upcoming",
+      "order": 4,
+      "status": "unconfirmed",
+      "included": false,
+      "purchase": "Chưa xác nhận quyền truy cập bản ASA đã phát hành; kiểm tra thông báo chính thức trước khi mua.",
+      "storeURL": "https://store.steampowered.com/app/2399830/",
+      "summary": "Chưa xác nhận bản ASA đã phát hành trong lần kiểm tra 04/10/2026.",
+      "storyRole": "Nội dung kế hoạch; chưa đưa vào danh sách map đang chơi được.",
+      "biomes": [],
+      "signatureCreatures": [],
+      "goals": [
+        "Theo dõi thông báo phát hành chính thức."
+      ],
+      "bosses": [],
+      "preparation": [
+        "Không dùng bản Survival Evolved hoặc roadmap cũ làm bằng chứng đã ra ASA."
+      ],
+      "dlcIDs": [],
+      "sourceURLs": [
+        "https://store.steampowered.com/app/2399830/",
+        "https://survivetheark.com/index.php?/forums/topic/773552-community-crunch-490-the-future-is-bright/"
+      ]
+    },
+    {
+      "id": "atlantis",
+      "name": "Atlantis",
+      "group": "upcoming",
+      "order": 5,
+      "status": "unconfirmed",
+      "included": false,
+      "purchase": "Chưa xác nhận quyền truy cập bản ASA đã phát hành; kiểm tra thông báo chính thức trước khi mua.",
+      "storeURL": "https://store.steampowered.com/app/2399830/",
+      "summary": "Chưa xác nhận bản ASA đã phát hành trong lần kiểm tra 04/10/2026.",
+      "storyRole": "Nội dung kế hoạch; chưa đưa vào danh sách map đang chơi được.",
+      "biomes": [],
+      "signatureCreatures": [],
+      "goals": [
+        "Theo dõi thông báo phát hành chính thức."
+      ],
+      "bosses": [],
+      "preparation": [
+        "Không dùng bản Survival Evolved hoặc roadmap cũ làm bằng chứng đã ra ASA."
+      ],
+      "dlcIDs": [],
+      "sourceURLs": [
+        "https://store.steampowered.com/app/2399830/",
+        "https://survivetheark.com/index.php?/forums/topic/773552-community-crunch-490-the-future-is-bright/"
+      ]
+    },
+    {
+      "id": "legacy-of-santiago",
+      "name": "Legacy of Santiago",
+      "group": "upcoming",
+      "order": 6,
+      "status": "unconfirmed",
+      "included": false,
+      "purchase": "Chưa xác nhận quyền truy cập bản ASA đã phát hành; kiểm tra thông báo chính thức trước khi mua.",
+      "storeURL": "https://store.steampowered.com/app/2399830/",
+      "summary": "Chưa xác nhận bản ASA đã phát hành trong lần kiểm tra 04/10/2026.",
+      "storyRole": "Nội dung kế hoạch; chưa đưa vào danh sách map đang chơi được.",
+      "biomes": [],
+      "signatureCreatures": [],
+      "goals": [
+        "Theo dõi thông báo phát hành chính thức."
+      ],
+      "bosses": [],
+      "preparation": [
+        "Không dùng bản Survival Evolved hoặc roadmap cũ làm bằng chứng đã ra ASA."
+      ],
+      "dlcIDs": [],
+      "sourceURLs": [
+        "https://store.steampowered.com/app/2399830/",
+        "https://survivetheark.com/index.php?/forums/topic/773552-community-crunch-490-the-future-is-bright/"
+      ]
+    }
+  ],
+  "dlcs": [
+    {
+      "id": "scorched-earth",
+      "name": "Scorched Earth Ascended",
+      "kind": "map",
+      "purchase": "Miễn phí khi sở hữu ARK: Survival Ascended.",
+      "storeURL": "https://store.steampowered.com/app/2849450/",
+      "appliesTo": [
+        "scorched-earth"
+      ],
+      "summary": "Map miễn phí; DLC được đề xuất trên trang Steam là tùy chọn.",
+      "includedIn": [],
+      "requiredForStory": false,
+      "sourceURLs": [
+        "https://store.steampowered.com/app/2849450/"
+      ]
+    },
+    {
+      "id": "aberration",
+      "name": "Aberration Ascended",
+      "kind": "map",
+      "purchase": "Miễn phí khi sở hữu ARK: Survival Ascended.",
+      "storeURL": "https://store.steampowered.com/app/3059650/",
+      "appliesTo": [
+        "aberration"
+      ],
+      "summary": "Map miễn phí; DLC được đề xuất trên trang Steam là tùy chọn.",
+      "includedIn": [],
+      "requiredForStory": false,
+      "sourceURLs": [
+        "https://store.steampowered.com/app/3059650/"
+      ]
+    },
+    {
+      "id": "extinction",
+      "name": "Extinction Ascended",
+      "kind": "map",
+      "purchase": "Miễn phí khi sở hữu ARK: Survival Ascended.",
+      "storeURL": "https://store.steampowered.com/app/3349320/",
+      "appliesTo": [
+        "extinction"
+      ],
+      "summary": "Map miễn phí; DLC được đề xuất trên trang Steam là tùy chọn.",
+      "includedIn": [],
+      "requiredForStory": false,
+      "sourceURLs": [
+        "https://store.steampowered.com/app/3349320/"
+      ]
+    },
+    {
+      "id": "the-center",
+      "name": "The Center Ascended",
+      "kind": "map",
+      "purchase": "Miễn phí khi sở hữu ARK: Survival Ascended.",
+      "storeURL": "https://store.steampowered.com/app/2827030/",
+      "appliesTo": [
+        "the-center"
+      ],
+      "summary": "Map miễn phí; DLC được đề xuất trên trang Steam là tùy chọn.",
+      "includedIn": [],
+      "requiredForStory": false,
+      "sourceURLs": [
+        "https://store.steampowered.com/app/2827030/"
+      ]
+    },
+    {
+      "id": "ragnarok",
+      "name": "Ragnarok Ascended",
+      "kind": "map",
+      "purchase": "Miễn phí khi sở hữu ARK: Survival Ascended.",
+      "storeURL": "https://store.steampowered.com/app/3675020/",
+      "appliesTo": [
+        "ragnarok"
+      ],
+      "summary": "Map miễn phí; DLC được đề xuất trên trang Steam là tùy chọn.",
+      "includedIn": [],
+      "requiredForStory": false,
+      "sourceURLs": [
+        "https://store.steampowered.com/app/3675020/"
+      ]
+    },
+    {
+      "id": "valguero",
+      "name": "Valguero Ascended",
+      "kind": "map",
+      "purchase": "Miễn phí khi sở hữu ARK: Survival Ascended.",
+      "storeURL": "https://store.steampowered.com/app/3982310/",
+      "appliesTo": [
+        "valguero"
+      ],
+      "summary": "Map miễn phí; DLC được đề xuất trên trang Steam là tùy chọn.",
+      "includedIn": [],
+      "requiredForStory": false,
+      "sourceURLs": [
+        "https://store.steampowered.com/app/3982310/"
+      ]
+    },
+    {
+      "id": "genesis-part-1",
+      "name": "Genesis Ascended Part 1",
+      "kind": "map",
+      "purchase": "Miễn phí khi sở hữu ARK: Survival Ascended.",
+      "storeURL": "https://store.steampowered.com/app/4558470/",
+      "appliesTo": [
+        "genesis-part-1"
+      ],
+      "summary": "Map miễn phí; DLC được đề xuất trên trang Steam là tùy chọn.",
+      "includedIn": [],
+      "requiredForStory": false,
+      "sourceURLs": [
+        "https://store.steampowered.com/app/4558470/"
+      ]
+    },
+    {
+      "id": "bobs-tall-tales",
+      "name": "Bob's Tall Tales",
+      "kind": "gameplay",
+      "purchase": "Mua riêng; cần ARK: Survival Ascended.",
+      "storeURL": "https://store.steampowered.com/app/2881150/",
+      "appliesTo": [
+        "scorched-earth",
+        "aberration",
+        "extinction"
+      ],
+      "summary": "Ba chương phụ: Frontier ở Scorched Earth (Oasisaur, train), Steampunk ở Aberration (Cosmo, robot, gene trait), Wasteland ở Extinction (BattleRig). Không cần để chơi các map này.",
+      "includedIn": [],
+      "requiredForStory": false,
+      "sourceURLs": [
+        "https://store.steampowered.com/app/2881150/"
+      ]
+    },
+    {
+      "id": "astraeos",
+      "name": "Astraeos",
+      "kind": "map",
+      "purchase": "Mua riêng; cần ARK: Survival Ascended.",
+      "storeURL": "https://store.steampowered.com/app/3483400/",
+      "appliesTo": [
+        "astraeos"
+      ],
+      "summary": "Map Hy Lạp 1.0 với Heaven & Abyss, Trireme, boss thần thoại và ascension.",
+      "includedIn": [],
+      "requiredForStory": false,
+      "sourceURLs": [
+        "https://store.steampowered.com/app/3483400/"
+      ]
+    },
+    {
+      "id": "lost-colony",
+      "name": "Lost Colony",
+      "kind": "map",
+      "purchase": "Cần Lost Colony Expansion Pass để truy cập; kiểm tra quyền sở hữu trước khi mua lại.",
+      "storeURL": "https://store.steampowered.com/app/3583650/",
+      "appliesTo": [
+        "lost-colony"
+      ],
+      "summary": "Chương canon Arat Prime; quyền map nằm trong Lost Colony Expansion Pass.",
+      "includedIn": [
+        "lost-colony-pass"
+      ],
+      "requiredForStory": true,
+      "sourceURLs": [
+        "https://store.steampowered.com/app/3583650/"
+      ]
+    },
+    {
+      "id": "lost-colony-pass",
+      "name": "Lost Colony Expansion Pass",
+      "kind": "pass",
+      "purchase": "Mua riêng; cần ARK: Survival Ascended.",
+      "storeURL": "https://store.steampowered.com/app/3720100/",
+      "appliesTo": [
+        "lost-colony"
+      ],
+      "summary": "Gồm Lost Colony, Drakelings và Elderclaw; soundtrack Lost Colony được ghi là kèm pass.",
+      "includedIn": [],
+      "requiredForStory": true,
+      "sourceURLs": [
+        "https://store.steampowered.com/app/3720100/"
+      ]
+    },
+    {
+      "id": "pyromane",
+      "name": "Fantastic Tames · Pyromane",
+      "kind": "creature",
+      "purchase": "Mua riêng; cần ARK: Survival Ascended.",
+      "storeURL": "https://store.steampowered.com/app/2972680/",
+      "appliesTo": [
+        "the-center",
+        "scorched-earth"
+      ],
+      "summary": "Mèo vai biến thành sư tử cưỡi được; hỗ trợ lửa, nấu thịt và nhiên liệu forge. Mua quyền tame; không mở map.",
+      "includedIn": [],
+      "requiredForStory": false,
+      "sourceURLs": [
+        "https://store.steampowered.com/app/2972680/"
+      ]
+    },
+    {
+      "id": "dreadmare",
+      "name": "Fantastic Tames · Dreadmare",
+      "kind": "creature",
+      "purchase": "Mua riêng; cần ARK: Survival Ascended.",
+      "storeURL": "https://store.steampowered.com/app/3282470/",
+      "appliesTo": [],
+      "summary": "Mount hắc ám có khả năng di chuyển và lưu giữ creature bằng sức mạnh bóng tối; mua quyền tame, không mở map.",
+      "includedIn": [],
+      "requiredForStory": false,
+      "sourceURLs": [
+        "https://store.steampowered.com/app/3282470/"
+      ]
+    },
+    {
+      "id": "drakelings",
+      "name": "Fantastic Tames · Drakelings",
+      "kind": "creature",
+      "purchase": "Có thể mua riêng hoặc đã gồm trong lost-colony-pass. Cần ARK: Survival Ascended.",
+      "storeURL": "https://store.steampowered.com/app/3720200/",
+      "appliesTo": [
+        "lost-colony"
+      ],
+      "summary": "Bốn dragon vai theo mùa, hỗ trợ hồi phục, đề kháng, thu hoạch và giảm sát thương. Không phải map.",
+      "includedIn": [
+        "lost-colony-pass"
+      ],
+      "requiredForStory": false,
+      "sourceURLs": [
+        "https://store.steampowered.com/app/3720200/"
+      ]
+    },
+    {
+      "id": "elderclaw",
+      "name": "Fantastic Tames · Elderclaw",
+      "kind": "creature",
+      "purchase": "Có thể mua riêng hoặc đã gồm trong lost-colony-pass. Cần ARK: Survival Ascended.",
+      "storeURL": "https://store.steampowered.com/app/3982300/",
+      "appliesTo": [
+        "valguero",
+        "aberration",
+        "extinction",
+        "ragnarok",
+        "the-center"
+      ],
+      "summary": "Guardian rừng dùng root, totem và Spirit Echo để bảo vệ đồng minh. Không phải map.",
+      "includedIn": [
+        "lost-colony-pass"
+      ],
+      "requiredForStory": false,
+      "sourceURLs": [
+        "https://store.steampowered.com/app/3982300/",
+        "https://survivetheark.com/index.php?/forums/topic/772919-valguero-ascended-and-fantastic-tames-elderclaw-are-now-live/"
+      ]
+    },
+    {
+      "id": "fantastic-tames-season-1",
+      "name": "Fantastic Tames Season 1",
+      "kind": "pass",
+      "purchase": "Mua riêng; cần ARK: Survival Ascended.",
+      "storeURL": "https://store.steampowered.com/app/4558510/",
+      "appliesTo": [],
+      "summary": "Burrowbuck và Cerberax đang có; Enigmasaur dự kiến Q4/2026. Không bao gồm Pyromane, Dreadmare, Drakelings hay Elderclaw chỉ vì cùng tên Fantastic Tames.",
+      "includedIn": [],
+      "requiredForStory": false,
+      "sourceURLs": [
+        "https://store.steampowered.com/app/4558510/"
+      ]
+    },
+    {
+      "id": "tides-of-fortune",
+      "name": "Tides of Fortune",
+      "kind": "gameplay",
+      "purchase": "Mua riêng; cần ARK: Survival Ascended.",
+      "storeURL": "https://store.steampowered.com/app/4558480/",
+      "appliesTo": [
+        "genesis-part-1",
+        "astraeos"
+      ],
+      "summary": "Bổ sung Sloop/Brigantine/Galleon, hải chiến, treasure, Tidepup và Parrot. Genesis Part 1 chơi được miễn phí với game gốc; gói này tùy chọn.",
+      "includedIn": [],
+      "requiredForStory": false,
+      "sourceURLs": [
+        "https://store.steampowered.com/app/4558480/"
+      ]
+    },
+    {
+      "id": "dragontopia",
+      "name": "Dragontopia",
+      "kind": "staged-expansion",
+      "purchase": "Mua riêng; cần ARK: Survival Ascended.",
+      "storeURL": "https://store.steampowered.com/app/4558490/",
+      "appliesTo": [
+        "dragontopia"
+      ],
+      "summary": "DLC có dragon và skill tree hiện tại; map-wide skyworld lên kế hoạch tháng 12/2026. Không coi DLC đã bán là map hoàn chỉnh đã ra.",
+      "includedIn": [],
+      "requiredForStory": false,
+      "sourceURLs": [
+        "https://store.steampowered.com/app/4558490/"
+      ]
+    },
+    {
+      "id": "animated-series-costumes",
+      "name": "Animated Series 109-Costumes Pack",
+      "kind": "cosmetic",
+      "purchase": "Mua riêng; cần ARK: Survival Ascended.",
+      "storeURL": "https://store.steampowered.com/app/3571730/",
+      "appliesTo": [],
+      "summary": "Trang phục nhân vật và sinh vật theo ARK Animated Series; không mở map, boss hay chương story.",
+      "includedIn": [],
+      "requiredForStory": false,
+      "sourceURLs": [
+        "https://store.steampowered.com/app/3571730/"
+      ]
+    },
+    {
+      "id": "lost-colony-soundtrack",
+      "name": "Lost Colony Original Soundtrack",
+      "kind": "soundtrack",
+      "purchase": "Đi kèm Lost Colony Expansion Pass; đây là nhạc bổ sung, không phải quyền mở gameplay.",
+      "storeURL": "https://store.steampowered.com/app/4274580/",
+      "appliesTo": [
+        "lost-colony"
+      ],
+      "summary": "Nhạc Gareth Coker; Steam ghi soundtrack đi kèm Lost Colony Expansion Pass. Không mở gameplay.",
+      "includedIn": [
+        "lost-colony-pass"
+      ],
+      "requiredForStory": false,
+      "sourceURLs": [
+        "https://store.steampowered.com/app/4274580/"
+      ]
+    },
+    {
+      "id": "power-rangers-wave-1",
+      "name": "Power Rangers · Wave 1",
+      "kind": "premium-cosmetic-mod",
+      "purchase": "Mua riêng; cần ARK: Survival Ascended.",
+      "storeURL": "https://www.curseforge.com/ark-survival-ascended/mods/mighty-morphin-cosmetic-pack",
+      "appliesTo": [],
+      "summary": "Gói skin hợp tác Power Rangers qua marketplace/mod browser. Người không mua vẫn có thể thấy skin; không mở story hoặc map.",
+      "includedIn": [],
+      "requiredForStory": false,
+      "sourceURLs": [
+        "https://www.curseforge.com/ark-survival-ascended/mods/mighty-morphin-cosmetic-pack"
+      ]
+    },
+    {
+      "id": "power-rangers-wave-2",
+      "name": "Power Rangers · Wave 2",
+      "kind": "premium-cosmetic-mod",
+      "purchase": "Mua riêng; cần ARK: Survival Ascended.",
+      "storeURL": "https://www.curseforge.com/ark-survival-ascended/mods/mighty-morphin-cosmetic-pack-2",
+      "appliesTo": [],
+      "summary": "Gói skin hợp tác Power Rangers qua marketplace/mod browser. Người không mua vẫn có thể thấy skin; không mở story hoặc map.",
+      "includedIn": [],
+      "requiredForStory": false,
+      "sourceURLs": [
+        "https://www.curseforge.com/ark-survival-ascended/mods/mighty-morphin-cosmetic-pack-2"
+      ]
+    }
+  ]
+}

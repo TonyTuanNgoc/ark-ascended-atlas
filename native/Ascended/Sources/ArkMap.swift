@@ -2,12 +2,18 @@ import SwiftUI
 
 enum ArkMap: String, CaseIterable, Identifiable {
     case ragnarok, island = "the-island", center = "the-center"
+    case scorchedEarth = "scorched-earth", aberration, extinction, lostColony = "lost-colony"
+    case genesis = "genesis-part-1", genesisOcean = "genesis-part-1-ocean", valguero, astraeos
     var id: String { rawValue }
-    var name: String { switch self { case .ragnarok: "Ragnarok"; case .island: "The Island"; case .center: "The Center" } }
-    var imageAsset: String { switch self { case .ragnarok: "RagnarokMap"; case .island: "TheIslandMap"; case .center: "TheCenterMap" } }
-    var summary: String { switch self { case .ragnarok: "Nunatak · hang băng · Wyvern · 10 artifact"; case .island: "4 boss · Tek Cave · ascension · 10 artifact"; case .center: "Đảo nổi · thế giới ngầm · 2 guardian · 11 artifact" } }
-    var wikiURL: String { "https://ark.wiki.gg/wiki/" + (self == .island ? "The_Island" : self == .center ? "Center" : "Ragnarok") }
-    var mapURL: String { "https://wikily.gg/ark-survival-ascended/maps/" + rawValue + "/" }
+    var expansionID: String { self == .genesisOcean ? "genesis-part-1" : rawValue }
+    var expansion: ExpansionMap? { ExpansionCatalog.shared.maps.first { $0.id == expansionID } }
+    static let storyMaps: [ArkMap] = [.island, .scorchedEarth, .aberration, .extinction, .lostColony, .genesis]
+    static let extraMaps: [ArkMap] = [.center, .ragnarok, .valguero, .astraeos]
+    var name: String { self == .genesisOcean ? "Genesis · Ocean" : expansion?.name ?? rawValue }
+    var imageAsset: String { switch self { case .ragnarok: "RagnarokMap"; case .island: "TheIslandMap"; case .center: "TheCenterMap"; default: "Map-" + rawValue } }
+    var summary: String { expansion?.summary ?? "" }
+    var wikiURL: String { "https://ark.wiki.gg/wiki/" + (expansion?.name ?? name).replacingOccurrences(of: " ", with: "_") }
+    var mapURL: String { "https://wikily.gg/ark-survival-ascended/maps/" + ((self == .genesis || self == .genesisOcean) ? "genesis" : rawValue) + "/" }
     var creatures: Result<CreatureCatalog, Error> { Self.creatureCatalogues[self]! }
     var exploration: ExplorationCatalog? { Self.explorationCatalogues[self] ?? nil }
     var information: MapInformation? { Self.informationCatalogues[self] ?? nil }
