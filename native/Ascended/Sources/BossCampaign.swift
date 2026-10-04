@@ -53,7 +53,7 @@ struct BossCampaignScreen: View {
                             Text(step.reason).foregroundStyle(.secondary)
                             ForEach(step.bossIDs, id: \.self) { id in
                                 HStack(spacing: 18) {
-                                    Image(map.bossImage(id)).resizable().scaledToFit().frame(width: 100, height: 80)
+                                    CreatureAvatar(asset: map.bossImage(id)).frame(width: 100, height: 80)
                                     VStack(alignment: .leading, spacing: 10) {
                                         NavigationLink(value: GuideDestination.boss(id)) { Label(map.bossName(id), systemImage: "chevron.right") }.accessibilityIdentifier("boss-" + id)
                                         NavigationLink(value: GuideDestination.army(id)) { Label("Đội Dino & chỉ số chuẩn bị", systemImage: "pawprint.fill") }.accessibilityIdentifier("army-" + id)
@@ -102,7 +102,7 @@ struct BossArmyScreen: View {
                     Text("\(guide.options.count) phương án · chọn đội hình để xem chi tiết").font(.caption).foregroundStyle(.secondary).accessibilityIdentifier("armyOptionCount")
                     let option = guide.options[min(selected, guide.options.count - 1)]
                     VStack(alignment: .leading, spacing: 14) {
-                        if UIImage(named: option.imageAsset) != nil { Image(option.imageAsset).resizable().scaledToFit().frame(height: 150).frame(maxWidth: .infinity) }
+                        if UIImage(named: option.imageAsset) != nil { CreatureAvatar(asset: option.imageAsset).frame(height: 150).frame(maxWidth: .infinity) }
                         Text(option.title).font(.title2.bold()).accessibilityIdentifier("armyOptionTitle")
                         Text(option.team).font(.headline).foregroundStyle(.cyan)
                         Text(option.why)

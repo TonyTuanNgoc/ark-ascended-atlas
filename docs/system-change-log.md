@@ -11,3 +11,6 @@ Added outer Ragnarok / The Island / The Center picker and searchable map informa
 
 ## 2026-10-04 — Ascended boss campaigns and Ragnarok bases 0.5.0 (5)
 Changed Boss to ordered campaigns for all three maps with 27 source-qualified army options across 11 named boss profiles, breeding/imprint/XP guidance and difficulty planning targets. Added five Ragnarok SP base profiles, GPS, timestamped YouTube sources/popularity metadata, native terrain previews and selectable map/profile links. Ranking is editorial balance, not a fabricated location-vote leaderboard. Five UI tests passed, final targeted caption/navigation regression passed, signed cable installation succeeded. Physical launch currently denied by locked device; no touch QA claimed. No TestFlight, Tony OS or web deployment. Receipt: codex-reports/2026-10-04-ascended-boss-base.md.
+
+## 2026-10-04 — Ascended avatar contrast 0.5.1 (6)
+Unified Dino and icon-based Boss avatars as white across cards, profiles, campaigns and army options on all maps. Preserved original map/photo/logo imagery. Two relevant UI tests passed and screenshots visually verified; signed cable installation and device inventory confirm 0.5.1 (6). Physical automatic launch denied by device lock. Receipt: codex-reports/2026-10-04-ascended-avatar-contrast.md.

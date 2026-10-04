@@ -62,7 +62,7 @@ struct CreaturePortrait: View {
     var body: some View {
         Group {
             if UIImage(named: creature.iconAsset) != nil {
-                Image(creature.iconAsset).resizable().scaledToFit()
+                CreatureAvatar(asset: creature.iconAsset)
             } else {
                 Image(systemName: "pawprint.fill").resizable().scaledToFit().foregroundStyle(.cyan.opacity(0.6)).padding(18)
             }
@@ -171,5 +171,18 @@ extension View {
     func cardStyle() -> some View {
         self.padding(22).frame(maxWidth: .infinity, alignment: .leading)
             .background(Color.white.opacity(0.055), in: RoundedRectangle(cornerRadius: 18))
+    }
+}
+
+/// Shared high-contrast rendering for creature/boss icons on the dark field guide.
+/// Photographic assets such as Nunatak retain their original colours.
+struct CreatureAvatar: View {
+    let asset: String
+    var body: some View {
+        Image(asset)
+            .renderingMode(asset.hasPrefix("Dino-") || asset.hasPrefix("Boss-") ? .template : .original)
+            .resizable()
+            .scaledToFit()
+            .foregroundStyle(.white)
     }
 }
