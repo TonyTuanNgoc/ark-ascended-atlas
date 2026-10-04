@@ -11,4 +11,4 @@ Authorized standalone native cable delivery, no TestFlight/Tony OS/web. Keep use
 - [x] All-map source-layer inventory and precise-location audits.
 - [x] Video-source inventories, genuine 3-loop sets and remaining source restrictions.
 - [x] Build/workshop audit, GPS/selection/save tests, visual and scoped UI QA, independent review.
-- [ ] Signed build passes; delivery interrupted and inventory/launch awaiting reconnect. Reports/change-log prepared; commit/push proceeding.
+- [ ] Signed build passes; two device-install attempts interrupted. Final02:04:18 readback remains0.18.0/build19. USB/unlock check and version20 install/launch awaiting external connection change. Implementation/report committed and pushed; strict portrait check separately skipped for Simulator rotation limitation.

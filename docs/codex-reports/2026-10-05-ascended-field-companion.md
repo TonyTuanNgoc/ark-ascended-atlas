@@ -17,9 +17,9 @@ Build audit: verified recipe station data is consistent between equipment and co
 ## Verification
 
 - Final signed physical build: BUILD SUCCEEDED; signature deep/strict verification passed; bundle plist 0.19.0 /20.
-- Final Simulator unit/UI run: 14 unit cases +4 UI cases passed; additional2 UI cases passed (top rail/header, seven-column library, story, portrait).
+- Final Simulator unit/UI run: 14 unit cases +4 UI cases passed; additional2 functional UI cases passed (top rail/header, seven-column library and story). Portrait proof remains unavailable: the old screenshot was actually landscape; a strict geometry check timed out after sensor rotation. SpringBoard also stayed landscape in manual rotation checks. QA now separates portrait geometry and explicitly skips it when the Simulator does not deliver interface rotation. Final02:05 run passed the story/library case with0 failures and1 explicit portrait skip; result Test-Ascended-2026.10.05_02-05-18-+0700.xcresult. No portrait rendering success is claimed.
 - Unit coverage: GPS round trips/boundaries/invalid touches, UIKit image conversion under transformed/panned scroll view, parent/partial selection, resource intersection, save serialization/map isolation, semantic prose/alternative preservation, bundle media/posters/all-map coverage, recipe expansion and build phase/count integrity.
-- UI coverage: empty initial layers, parent/individual artifact and obelisk choice, three source-clip selectors, long-press point save/relaunch/map isolation, Scorched detailed goals, builder stage changes/manual isolation, portrait header and library layout. Screenshots inspected and stored below.
+- UI coverage: empty initial layers, parent/individual artifact and obelisk choice, three source-clip selectors, long-press point save/relaunch/map isolation, Scorched detailed goals, builder stage changes/manual isolation, landscape header and library layout. Screenshots inspected and stored below.
 - Final test result bundles: Test-Ascended-2026.10.05_01-41-28-+0700.xcresult; Test-Ascended-2026.10.05_01-46-10-+0700.xcresult, under the SSD Simulator DerivedData Logs/Test directory.
 - 153 source-manifest MP4 hashes and poster files independently checked; all153 fully decoded in media worker validation. Three distinct hashes per guide. All artifact imageAsset references across11 maps resolve to existing imagesets.
 - Initial test failed because a SwiftUI menu does not retain child IDs in the native menu hierarchy; updated QA to use actual rendered resource markers. Final run passed. No product workaround masking this failure.
@@ -35,7 +35,7 @@ Existing community build limitations remain: approximate authored geometry, not 
 
 ## Delivery
 
-Signed fresh delivery bundle: /Volumes/TONY SSD/ASCENDED_MEDIA/builds/Ascended-0.19.0-20-delivery/Ascended.app. First cable installation failed at 01:50 with CoreDevice3002 /IXRemoteErrorDomain6, Connection interrupted. Concurrent read-only device inventory timed out. Device remains listed as paired/available, which does not prove usable app services or installation. Requested cable/unlock check; retry and fresh inventory/launch remain outstanding. No uninstall performed.
+Signed fresh delivery bundle: /Volumes/TONY SSD/ASCENDED_MEDIA/builds/Ascended-0.19.0-20-delivery/Ascended.app. First device-install attempt failed at 01:50 with CoreDevice3002 /IXRemoteErrorDomain6, Connection interrupted. Concurrent read-only device inventory timed out. Device remains listed as paired/available, which does not prove usable app services or installation. Requested cable/unlock check. Subsequent device inventory succeeded and confirms prior0.18.0/build19 remains installed. CoreDevice reports localNetwork transport; no iPad was enumerated on USB. Second installation also failed with the same Connection interrupted /IXRemoteErrorDomain6 after about5min40s. Fresh final device inventory at2026-10-05 02:04:18 +07 confirms0.18.0/build19 still installed. Version20 is NOT installed/launched. USB cable/unlock check remains requested; no third retry without an external connection change. No uninstall performed.
 
 ## Visual evidence
 
