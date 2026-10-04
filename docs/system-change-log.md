@@ -53,3 +53,6 @@ Prepared and opened a separate 378-asset construction/machinery library for Mac-
 
 ## 2026-10-04 — Blender stone visual fidelity sample
 Responded to rejection of primitive visual quality with two reference-guided reconstruction samples and procedural stone materials. Opened separate Blender sample, preserved existing files; whole-library upgrade and identical game appearance remain incomplete. See codex-reports/2026-10-04-blender-stone-visual-sample.md.
+
+## 2026-10-04 — Angular stone reconstruction revision
+Replaced regular rounded stones with angular chipped polygon meshes, varied stone proportions, dark rough surface and deeper irregular joints. Reopened in Blender and reviewed render against game inventory reference. Original game fidelity and measured dimensions remain unverified; other assets unchanged.
