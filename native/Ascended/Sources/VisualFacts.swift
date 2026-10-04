@@ -83,15 +83,19 @@ struct FactPicture: View {
 }
 struct FactTile: View {
     let match: FactMatch
+    private var creature: Bool { match.fact.category == "creature" || match.fact.category == "boss" }
     var body: some View {
         VStack(spacing: 6) {
             ZStack(alignment: .bottomTrailing) {
                 FactPicture(fact: match.fact).frame(width: 72, height: 64)
-                if let value = match.metricValue { Text(value).font(.headline.bold()).padding(5).background(.black.opacity(0.8), in: Capsule()) }
-                else if let quantity = match.quantity { Text("×" + quantity).font(.headline.bold()).padding(5).background(.black.opacity(0.8), in: Capsule()) }
+                if !creature {
+                    if let value = match.metricValue { Text(value).font(.headline.bold()).padding(5).background(.black.opacity(0.8), in: Capsule()) }
+                    else if let quantity = match.quantity { Text("×" + quantity).font(.headline.bold()).padding(5).background(.black.opacity(0.8), in: Capsule()) }
+                }
             }
+            if creature, let quantity = match.quantity { Text("×" + quantity).font(.caption.bold()).monospacedDigit() }
             Text(match.fact.name).font(.caption).lineLimit(2).multilineTextAlignment(.center)
-        }.frame(width: 108, height: 110).background(.white.opacity(0.045), in: RoundedRectangle(cornerRadius: 12))
+        }.frame(width: 108, height: creature && match.quantity != nil ? 132 : 110).background(.white.opacity(0.045), in: RoundedRectangle(cornerRadius: 12))
             .accessibilityElement(children: .combine).accessibilityIdentifier("fact-" + match.id)
     }
 }

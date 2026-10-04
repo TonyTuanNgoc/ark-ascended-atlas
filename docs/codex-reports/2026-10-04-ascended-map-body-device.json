@@ -13,14 +13,15 @@
     "internalApp": false,
     "name": "Ascended",
     "removable": true,
-    "url": "file:///private/var/containers/Bundle/Application/60E82FE7-0156-43FA-B6B8-9C727100A537/Ascended.app/",
+    "url": "file:///private/var/containers/Bundle/Application/63B9C6CA-3D4B-4F66-A1BF-8983DB90A953/Ascended.app/",
     "version": "0.12.0"
   },
   "installation": "success",
   "launch": "denied-device-locked",
-  "executableSHA256": "90590b95284c9a2df4463a227d6d7cd88ebc296f6c8cfc75d39a6e12773005af",
+  "executableSHA256": "260dcd32a236f5a56a60e4ae4dd8b704b2d3087be97f3dcdf228b63e31309c70",
   "assetsSHA256": "6bcbe3485b85e2fae9f1cc51a4b9ab7d11ec81d1c9943417d29af7b6f9e9e23d",
   "proofDirectory": "/Volumes/TONY SSD/ASCENDED_MEDIA",
   "physicalTouchQA": false,
-  "simulatorFinalTests": 4
+  "simulatorFinalTests": 4,
+  "finalQuantityLayoutTest": true
 }
