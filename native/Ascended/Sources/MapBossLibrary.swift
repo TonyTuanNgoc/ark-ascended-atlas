@@ -24,8 +24,8 @@ struct MapBossLibrary: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 22) {
                 Text("Boss · " + map.name).font(.largeTitle.bold())
-                Text(map == .island ? "3 guardian riêng + Overseer qua Tek Cave" : "2 guardian trong cùng trận The Center Arena").font(.headline).foregroundStyle(.cyan)
-                Text(map == .island ? "Single Player: Broodmother ở Green Obelisk, Megapithecus ở Blue Obelisk, Dragon ở Red Obelisk; Overseer qua Tek Cave." : "Broodmother Lysrix và Megapithecus cùng được triệu hồi. Không có Dragon, Overseer hoặc ascension của The Island trên map này.").foregroundStyle(.secondary)
+                Text(map == .island ? "3 separate guardians + Overseer through Tek Cave" : "2 guardians in one The Center Arena encounter").font(.headline).foregroundStyle(.cyan)
+                Text(map == .island ? "Single Player: Broodmother at the Green Obelisk, Megapithecus at the Blue Obelisk, Dragon at the Red Obelisk; reach Overseer through Tek Cave." : "Broodmother Lysrix and Megapithecus are summoned together. This map does not include Dragon, Overseer or The Island ascension.").foregroundStyle(.secondary)
                 ForEach(map.bosses) { boss in
                     NavigationLink(value: GuideDestination.boss(boss.id)) {
                         HStack(spacing: 18) {
@@ -50,18 +50,18 @@ struct MapBossDetail: View {
                 Text(boss.name).font(.largeTitle.bold())
                 Text(map.name + " · " + boss.kind).foregroundStyle(.cyan)
                 MapBossPortrait(boss: boss).frame(height: 210).frame(maxWidth: .infinity)
-                NavigationLink(value: GuideDestination.army(boss.id)) { Label("Đội Dino, level & chỉ số chuẩn bị", systemImage: "pawprint.fill") }.accessibilityIdentifier("bossArmy")
+                NavigationLink(value: GuideDestination.army(boss.id)) { Label("Creature army, levels & preparation stats", systemImage: "pawprint.fill") }.accessibilityIdentifier("bossArmy")
                 VisualBrief(text: boss.summary).cardStyle()
                 VStack(alignment: .leading, spacing: 14) {
-                    Text("Địa điểm & đường vào").font(.title2.bold()); VisualBrief(text: boss.location)
-                    if let id = boss.entranceID { NavigationLink(value: GuideDestination.map(id)) { Label("Xem điểm tiếp cận trên bản đồ", systemImage: "map") } }
+                    Text("Location & approach").font(.title2.bold()); VisualBrief(text: boss.location)
+                    if let id = boss.entranceID { NavigationLink(value: GuideDestination.map(id)) { Label("Show approach on map", systemImage: "map") } }
                     if map == .center { ForEach(map.exploration?.obelisks ?? []) { point in
                         NavigationLink(value: GuideDestination.map(point.id)) { HStack { Text(point.label); GPSBadge(coordinates: point.coordinates); Image(systemName: "map") } }
                     } }
                 }.cardStyle()
                 VStack(alignment: .leading, spacing: 14) {
-                    Text("Điều kiện · " + names[difficulty]).font(.title2.bold())
-                    Picker("Độ khó", selection: $difficulty) { ForEach(0..<3) { Text(names[$0]).tag($0) } }.pickerStyle(.segmented).accessibilityIdentifier("bossDifficulty")
+                    Text("Requirements · " + names[difficulty]).font(.title2.bold())
+                    Picker("Difficulty", selection: $difficulty) { ForEach(0..<3) { Text(names[$0]).tag($0) } }.pickerStyle(.segmented).accessibilityIdentifier("bossDifficulty")
                     Label(String(boss.levels[difficulty]), systemImage: "arrow.up.circle.fill").font(.headline).foregroundStyle(.cyan)
                     if !boss.elements.isEmpty { FactGrid(matches: VisualFacts.matches(String(boss.elements[difficulty]) + " Element")).font(.headline).foregroundStyle(.cyan) }
                     VisualBrief(text: boss.rewardsNote).font(.subheadline).foregroundStyle(.secondary)
@@ -73,10 +73,10 @@ struct MapBossDetail: View {
                         }
                     }
                     ForEach(boss.tribute.filter { $0.quantities[difficulty] > 0 }) { item in VisualBrief(text: "\(item.quantities[difficulty]) " + item.name) }
-                    if difficulty == 0 && !boss.artifactIDs.isEmpty { Text("Gamma: không cần apex tribute thêm ngoài bộ artifact.").font(.caption) }
+                    if difficulty == 0 && !boss.artifactIDs.isEmpty { Text("Gamma: no additional apex tribute is required beyond the artifact set.").font(.caption) }
                 }.cardStyle()
-                VStack(alignment: .leading, spacing: 14) { Text("Chiến thuật & giới hạn").font(.title2.bold()); ForEach(boss.strategy, id: \.self) { VisualBrief(text: $0) } }.cardStyle()
-                GuideChecklist(title: "Trước khi vào trận", items: boss.kit, key: boss.id)
+                VStack(alignment: .leading, spacing: 14) { Text("Strategy & limits").font(.title2.bold()); ForEach(boss.strategy, id: \.self) { VisualBrief(text: $0) } }.cardStyle()
+                GuideChecklist(title: "Before entering the arena", items: boss.kit, key: boss.id)
             }.padding(24).frame(maxWidth: 1000).frame(maxWidth: .infinity)
         }.navigationTitle(boss.name).navigationBarTitleDisplayMode(.inline)
     }

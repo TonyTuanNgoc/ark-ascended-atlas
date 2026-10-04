@@ -3,6 +3,8 @@ import SwiftUI
 struct StoneBuilder: View {
     let embedded:Bool
     @State private var catalogue=false
+    @State private var gallery=true
+    @State private var material="Stone"
     @State private var activeTemplate:String?
     @State private var showParts=false
     @Environment(\.dismiss) private var dismiss
@@ -25,38 +27,53 @@ struct StoneBuilder: View {
     var body:some View {
         NavigationStack {
             VStack(spacing:8) {
-                templates
+                Picker("Workspace",selection:$gallery) {Text("House designs").tag(true);Text("Build freely").tag(false)}.pickerStyle(.segmented)
+                if gallery { CommunityBuildGallery() } else {
+                materialPicker
                 palette
                 HStack(alignment:.top,spacing:10) {
                 StoneBuildScene(pieces:pieces,selected:selected,ghost:ghost,onPick:pick,onCursor:{ px,pz in selected=nil;x=px;z=pz;message="" })
                     .frame(maxHeight:.infinity).clipShape(RoundedRectangle(cornerRadius:14)).accessibilityIdentifier("stone-builder-scene")
-                    if showParts { BuildPartsPanel(pieces:pieces,openBill:{bill=true},close:{showParts=false}).frame(width:210) }
+                    BuildPartsPanel(pieces:pieces,openBill:{bill=true},close:{}).frame(width:240)
                 }
                 controls
                 if !message.isEmpty { Text(message).font(.caption).foregroundStyle(.orange).accessibilityIdentifier("builder-message") }
-                Text(current?.referenceOnly == true ? "Ảnh tham chiếu · chưa có hình khối đo thực tế" : "Tỷ lệ mô phỏng · kéo xoay · chụm hai ngón để zoom").font(.caption).foregroundStyle(.secondary)
-            }.padding(12).navigationTitle("Xây base").navigationBarTitleDisplayMode(.inline)
+                Text(current?.referenceOnly == true ? "Reference image • physical geometry not measured" : "Planning scale • drag to orbit • pinch to zoom").font(.caption).foregroundStyle(.secondary)
+            }
+            }.padding(12).navigationTitle("Build").navigationBarTitleDisplayMode(.inline)
             .toolbar {
-                ToolbarItem(placement:.topBarLeading) { if !embedded { Button("Đóng") { dismiss() } } }
+                ToolbarItem(placement:.topBarLeading) { if !embedded { Button("Close") { dismiss() } } }
                 ToolbarItem(placement:.topBarTrailing) { HStack {
-                    Button { restorePrevious() } label: {Image(systemName:"arrow.uturn.backward.circle")} .disabled(previousDesign.isEmpty).accessibilityLabel("Khôi phục bản trước khi chọn mẫu").accessibilityIdentifier("builder-restore-design")
-                    Text("\(pieces.count) món").font(.caption).accessibilityIdentifier("builder-count").accessibilityValue(String(pieces.count))
-                    Button { bill=true } label: { Image(systemName:"shippingbox") }.accessibilityLabel("Vật liệu bản thiết kế").accessibilityIdentifier("builder-bill")
-                    Button { clear=true } label: { Image(systemName:"trash") }.accessibilityLabel("Xóa bản thiết kế")
+                    if !gallery {
+                    Button { restorePrevious() } label: {Image(systemName:"arrow.uturn.backward.circle")} .disabled(previousDesign.isEmpty).accessibilityLabel("Restore previous design").accessibilityIdentifier("builder-restore-design")
+                    Text("\(pieces.count) parts").font(.caption).accessibilityIdentifier("builder-count").accessibilityValue(String(pieces.count))
+                    Button { bill=true } label: { Image(systemName:"shippingbox") }.accessibilityLabel("Design materials").accessibilityIdentifier("builder-bill")
+                    Button { clear=true } label: { Image(systemName:"trash") }.accessibilityLabel("Clear design")
+                    }
                 } }
             }
             .sheet(isPresented:$bill) { BuildBillView(pieces:pieces) }
             .sheet(isPresented:$catalogue) { BuildItemPicker {id in kind=id;selected=nil;message=""} }
-            .confirmationDialog("Xóa bản thiết kế này?",isPresented:$clear) { Button("Xóa",role:.destructive) { change { pieces=[];selected=nil;activeTemplate=nil;showParts=false } }.accessibilityIdentifier("builder-clear-confirm") }
+            .confirmationDialog("Clear this design?",isPresented:$clear) { Button("Delete",role:.destructive) { change { pieces=[];selected=nil;activeTemplate=nil;showParts=false } }.accessibilityIdentifier("builder-clear-confirm") }
         }.onAppear { load() }
         .onChange(of:pieces) { _,_ in persist() }
         .preferredColorScheme(.dark)
     }
+    private var materialModels:[StoneModel] {
+        StoneKit.shared.models.filter {m in
+            guard m.group=="structures",m.referenceOnly != true else {return false}
+            let key=material=="Wood" ? "wooden":material.lowercased()
+            return m.id.contains(key) || (material=="Stone" && m.id=="reinforced-wooden-door")
+        }
+    }
+    private var materialPicker:some View {
+        Picker("Material",selection:$material) {ForEach(["Thatch","Wood","Stone","Metal","Greenhouse","Adobe","Tek"],id:\.self) {Text($0).tag($0)}}.pickerStyle(.segmented).onChange(of:material) {_,_ in kind=materialModels.first?.id ?? "stone-foundation";selected=nil}
+    }
     private var palette:some View {
         ScrollView(.horizontal) {
             HStack(spacing:8) {
-                Button {catalogue=true} label: {VStack {Image(systemName:"square.grid.2x2");Text("Tất cả").font(.caption)}.frame(width:68,height:60)}.accessibilityIdentifier("build-catalogue")
-                ForEach(["stone-foundation","stone-wall","stone-doorframe","reinforced-wooden-door","stone-ceiling","sloped-stone-roof","stone-ramp","stone-pillar","stone-windowframe","stone-triangle-foundation","stone-triangle-ceiling"].compactMap {id in StoneKit.shared.models.first {$0.id==id}}) { model in
+                Button {catalogue=true} label: {VStack {Image(systemName:"square.grid.2x2");Text("All").font(.caption)}.frame(width:68,height:60)}.accessibilityIdentifier("build-catalogue")
+                ForEach(materialModels) { model in
                     Button { kind=model.id;selected=nil;message="" } label: {
                         VStack(spacing:4) {
                             if let asset=model.asset { Image(asset).resizable().scaledToFit().frame(width:44,height:34) }
@@ -73,19 +90,19 @@ struct StoneBuilder: View {
             HStack {
                 Text(current?.title ?? "Stone").font(.caption).lineLimit(1).frame(maxWidth:150)
                 Spacer()
-                Stepper("↔ \(x.formatted())",value:$x,in:-6...6,step:0.5).frame(maxWidth:.infinity).accessibilityIdentifier("builder-x")
-                Stepper("↕ \(z.formatted())",value:$z,in:-6...6,step:0.5).frame(maxWidth:.infinity).accessibilityIdentifier("builder-z")
-                Stepper("Tầng \(level)",value:$level,in:0...8).frame(maxWidth:.infinity).accessibilityIdentifier("builder-level")
+                Stepper("X  \(x.formatted())",value:$x,in:-6...6,step:0.5).frame(maxWidth:.infinity).accessibilityIdentifier("builder-x")
+                Stepper("Y  \(z.formatted())",value:$z,in:-6...6,step:0.5).frame(maxWidth:.infinity).accessibilityIdentifier("builder-z")
+                Stepper("Level \(level)",value:$level,in:0...8).frame(maxWidth:.infinity).accessibilityIdentifier("builder-level")
             }
             HStack(spacing:16) {
                 Button { turn=(turn+1)%4 } label: { Label("\(turn*90)°",systemImage:"rotate.right") }.accessibilityIdentifier("builder-rotate")
-                Button(selected == nil ? "Đặt" : "Di chuyển") { apply() }.buttonStyle(.borderedProminent).accessibilityIdentifier("builder-place")
-                Button { duplicate() } label: { Label("Nhân bản",systemImage:"plus.square.on.square") }.disabled(selected==nil).accessibilityIdentifier("builder-copy")
-                Button { if let id=selected { change { pieces.removeAll {$0.id==id};selected=nil } } } label: { Label("Xóa",systemImage:"trash") }.disabled(selected==nil).accessibilityIdentifier("builder-delete")
-                Button { if let last=history.popLast() { pieces=last;selected=nil;message="" } } label: { Image(systemName:"arrow.uturn.backward") }.disabled(history.isEmpty).accessibilityLabel("Hoàn tác").accessibilityIdentifier("builder-undo")
-                if selected != nil { Button("Bỏ chọn") { selected=nil } }
+                Button(selected == nil ? "Place" : "Move") { apply() }.buttonStyle(.borderedProminent).accessibilityIdentifier("builder-place")
+                Button { duplicate() } label: { Label("Duplicate",systemImage:"plus.square.on.square") }.disabled(selected==nil).accessibilityIdentifier("builder-copy")
+                Button { if let id=selected { change { pieces.removeAll {$0.id==id};selected=nil } } } label: { Label("Delete",systemImage:"trash") }.disabled(selected==nil).accessibilityIdentifier("builder-delete")
+                Button { if let last=history.popLast() { pieces=last;selected=nil;message="" } } label: { Image(systemName:"arrow.uturn.backward") }.disabled(history.isEmpty).accessibilityLabel("Undo").accessibilityIdentifier("builder-undo")
+                if selected != nil { Button("Deselect") { selected=nil } }
             }
-        }
+        }.padding(12).background(Color.white.opacity(0.06),in:RoundedRectangle(cornerRadius:12))
     }
     private var templates:some View {
         ScrollView(.horizontal) {
@@ -106,16 +123,16 @@ struct StoneBuilder: View {
     private func change(_ edit:()->Void) { history.append(pieces);if history.count>50 {history.removeFirst()};edit();message="" }
     private func apply() {
         let p=ghost
-        if pieces.contains(where:{$0.id != selected && $0.occupiesSameSlot(as:p)}) {message="Ô này đã có cấu kiện cùng loại và góc xoay.";return}
+        if pieces.contains(where:{$0.id != selected && $0.occupiesSameSlot(as:p)}) {message="A matching structure already occupies this position.";return}
         if let id=selected,let i=pieces.firstIndex(where:{$0.id==id}) { change { pieces[i]=StonePlacement(id:id,kind:kind,x:x,z:z,level:level,turn:turn) } }
         else if pieces.count<500 { let added=p;change {pieces.append(added);selected=added.id} }
-        else {message="Bản thiết kế đã đạt 500 cấu kiện."}
+        else {message="This design has reached 500 structures."}
     }
     private func duplicate() {
         guard let id=selected,let original=pieces.first(where:{$0.id==id}) else{return}
-        guard pieces.count<500 else {message="Bản thiết kế đã đạt 500 cấu kiện.";return}
+        guard pieces.count<500 else {message="This design has reached 500 structures.";return}
         let candidates=Array(stride(from:original.x+1,through:6,by:0.5)) + (original.x+0.5<=6 ? [original.x+0.5] : [])
-        guard let next=candidates.first(where:{newX in !pieces.contains(where:{$0.occupiesSameSlot(as:StonePlacement(kind:original.kind,x:newX,z:original.z,level:original.level,turn:original.turn))})}) else {message="Không còn ô trống bên phải; chọn vị trí khác để đặt.";return}
+        guard let next=candidates.first(where:{newX in !pieces.contains(where:{$0.occupiesSameSlot(as:StonePlacement(kind:original.kind,x:newX,z:original.z,level:original.level,turn:original.turn))})}) else {message="No free position to the right. Choose another position.";return}
         let p=StonePlacement(kind:original.kind,x:next,z:original.z,level:original.level,turn:original.turn)
         change {pieces.append(p);selected=p.id;x=p.x;z=p.z;level=p.level;turn=p.turn}
     }

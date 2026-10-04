@@ -59,30 +59,30 @@ struct BaseSpatialPlanner: View {
     @State private var threeD = false
     var body: some View {
         VStack(alignment: .leading, spacing: 14) {
-            Button { buildStone=true } label: { Label("Xây từng cấu kiện Stone",systemImage:"square.stack.3d.up") }.buttonStyle(.borderedProminent).accessibilityIdentifier("open-stone-builder")
+            Button { buildStone=true } label: { Label("Build with individual Stone pieces",systemImage:"square.stack.3d.up") }.buttonStyle(.borderedProminent).accessibilityIdentifier("open-stone-builder")
             HStack {
-                Picker("Góc nhìn", selection: $threeD) { Text("Bản đồ base").tag(false); Text("Không gian 3D").tag(true) }.pickerStyle(.segmented)
-                Button { houses = BaseHouse.defaults; persist() } label: { Image(systemName: "arrow.counterclockwise") }.accessibilityLabel("Đặt lại bố trí base")
+                Picker("View", selection: $threeD) { Text("Base plan").tag(false); Text("3D space").tag(true) }.pickerStyle(.segmented)
+                Button { houses = BaseHouse.defaults; persist() } label: { Image(systemName: "arrow.counterclockwise") }.accessibilityLabel("Reset base layout")
             }
             if threeD { BaseSceneView(houses: BaseHouse.arranged(houses), select: { selectedID = $0 }).frame(height: 390).accessibilityIdentifier("base3D") }
             else { BaseFloorplan(houses: BaseHouse.arranged(houses), selectedID: selectedID, select: { selectedID = $0 }).frame(height: 370) }
-            Text("Ô móng · khối bố trí; chưa có mô hình gốc của máy và Dino").font(.caption).foregroundStyle(.secondary)
+            Text("Foundation units · layout blocks; original machine and creature models are not available").font(.caption).foregroundStyle(.secondary)
             if let index = houses.firstIndex(where: { $0.id == selectedID }) {
-                HStack { Text(houses[index].title).font(.headline); Spacer(); Button("Xem công năng") { select(selectedID) } }
+                HStack { Text(houses[index].title).font(.headline); Spacer(); Button("View purpose") { select(selectedID) } }
                 HStack {
-                    Stepper("Ngang \(houses[index].width)", value: $houses[index].width, in: 2...12)
-                    Stepper("Sâu \(houses[index].depth)", value: $houses[index].depth, in: 2...12)
+                    Stepper("Width \(houses[index].width)", value: $houses[index].width, in: 2...12)
+                    Stepper("Depth \(houses[index].depth)", value: $houses[index].depth, in: 2...12)
                 }.font(.callout)
-                Stepper("Cao \(houses[index].levels) ô tường", value: $houses[index].levels, in: 1...5).font(.callout)
+                Stepper("Height \(houses[index].levels) wall units", value: $houses[index].levels, in: 1...5).font(.callout)
             }
             DisclosureGroup {
-                Text("Mỗi nhà: móng kín, mái kín, một cửa người; chưa gồm cửa Dino lớn, nhà kính, nội thất và máy.").font(.caption).foregroundStyle(.secondary)
+                Text("Each building includes enclosed foundations, a complete roof and one human door; large creature gates, greenhouse pieces, furnishings and machines are excluded.").font(.caption).foregroundStyle(.secondary)
                 HStack(spacing: 12) {
                     ForEach(BaseBill.materials(houses), id: \.0) { name,count in
                         VStack { FactTile(match: VisualFacts.items([name])[0]); Text("×\(count)").monospacedDigit().font(.headline).accessibilityIdentifier("base-material-"+name).accessibilityValue(String(count)) }
                     }
                 }.padding(.vertical, 10)
-            } label: { Text("Vật liệu khung 5 nhà").accessibilityIdentifier("base-materials") }
+            } label: { Text("Frame materials for 5 buildings").accessibilityIdentifier("base-materials") }
         }.fullScreenCover(isPresented:$buildStone) { StoneBuilder(mapID:map.id) }
         .onAppear { if let data = saved.data(using:.utf8), let values = try? JSONDecoder().decode([BaseHouse].self,from:data), values.count == 5 { houses = values } }
         .onChange(of: houses.map { "\($0.width)-\($0.depth)-\($0.levels)" }) { _,_ in persist() }
@@ -107,7 +107,7 @@ struct BaseFloorplan: View {
                             .overlay(Rectangle().stroke(h.id == selectedID ? .cyan : .white.opacity(0.45),lineWidth:2))
                     }.buttonStyle(.plain).offset(x:CGFloat(h.x)*scale,y:CGFloat(h.z)*scale).accessibilityIdentifier("base-layout-"+h.id)
                 }
-                Text("Lối vận chuyển").font(.caption2).foregroundStyle(.secondary).offset(x:scale*8,y:scale*CGFloat((houses.filter { ["main","garden","industry"].contains($0.id) }.map(\.depth).max() ?? 6) + 2))
+                Text("Transport route").font(.caption2).foregroundStyle(.secondary).offset(x:scale*8,y:scale*CGFloat((houses.filter { ["main","garden","industry"].contains($0.id) }.map(\.depth).max() ?? 6) + 2))
             }.clipped()
         }
     }

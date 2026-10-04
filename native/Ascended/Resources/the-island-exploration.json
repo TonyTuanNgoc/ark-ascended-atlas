@@ -102,23 +102,23 @@
       "entrances": [
         {
           "id": "lower-south-0",
-          "label": "Cửa khe núi phía nam",
+          "label": "South ravine entrance",
           "lat": 85.3,
           "lon": 54.2
         }
       ],
       "boss": "",
-      "notes": "Tuyến Hunter ở phía nam. Chuẩn bị torpor, bệnh từ dơi và đoạn nước; điểm artifact nằm sâu hơn cửa vào.",
+      "notes": "Route Hunter is in the south. Prepare for torpor, diseases from bats and water passages; The artifact point is located deeper than the entrance.",
       "kit": [
-        "Vũ khí và đạn dự phòng",
-        "Giáp, Medical Brew, Stimulant",
-        "Lesser Antidote và đồ sửa",
-        "Nguồn sáng; đánh dấu đường rút"
+        "Spare weapons and ammo",
+        "Armor, Medical Brew, Stimulant",
+        "Lesser Antidote and repair supplies",
+        "Light source; mark the withdrawal path"
       ],
       "sourceURL": "https://ark.wiki.gg/wiki/Lower_South_Cave",
       "entranceSourceURL": "https://www.gamenguides.com/where-to-find-all-island-cave-entrances-in-ark-survival-ascended",
       "imageAsset": "TheIslandMap",
-      "imageCaption": "Địa hình The Island Ascended · Wikily; không phải sơ đồ bên trong hang."
+      "imageCaption": "Terrain The Island Ascended · Wikily; not a diagram of the inside of the cave."
     },
     {
       "id": "central",
@@ -129,23 +129,23 @@
       "entrances": [
         {
           "id": "central-0",
-          "label": "Cửa hang giữa đảo",
+          "label": "Cave entrance in the middle of the island",
           "lat": 40.2,
           "lon": 46.6
         }
       ],
       "boss": "",
-      "notes": "Hang Clever giữa đảo, có nhánh vòng và khu nước. Khảo sát trước khi mang tame lớn vào.",
+      "notes": "Cave Clever is in the middle of the island, with a circular branch and a water area. Survey before bringing in the big tame.",
       "kit": [
-        "Vũ khí và đạn dự phòng",
-        "Giáp, Medical Brew, Stimulant",
-        "Lesser Antidote và đồ sửa",
-        "Nguồn sáng; đánh dấu đường rút"
+        "Spare weapons and ammo",
+        "Armor, Medical Brew, Stimulant",
+        "Lesser Antidote and repair supplies",
+        "Light source; mark the withdrawal path"
       ],
       "sourceURL": "https://ark.wiki.gg/wiki/Central_Cave",
       "entranceSourceURL": "https://www.gamenguides.com/where-to-find-all-island-cave-entrances-in-ark-survival-ascended",
       "imageAsset": "TheIslandMap",
-      "imageCaption": "Địa hình The Island Ascended · Wikily; không phải sơ đồ bên trong hang."
+      "imageCaption": "Terrain The Island Ascended · Wikily; not a diagram of the inside of the cave."
     },
     {
       "id": "lava",
@@ -156,24 +156,24 @@
       "entrances": [
         {
           "id": "lava-0",
-          "label": "Cửa hang đông nam",
+          "label": "Southeast cave entrance",
           "lat": 74.1,
           "lon": 92.2
         }
       ],
       "boss": "",
-      "notes": "Tuyến Massive qua khu nóng và dung nham. Giữ stamina cho nhảy, mang đồ dự phòng; ngã vào lava có thể mất toàn bộ đồ.",
+      "notes": "Route Massive through hot zone and lava. Keep stamina for jumping, bring spare items; Falling into lava can cause you to lose all your items.",
       "kit": [
-        "Vũ khí và đạn dự phòng",
-        "Giáp, Medical Brew, Stimulant",
-        "Lesser Antidote và đồ sửa",
-        "Nguồn sáng; đánh dấu đường rút",
-        "Parachute / Grapple theo khả năng sử dụng của hang"
+        "Spare weapons and ammo",
+        "Armor, Medical Brew, Stimulant",
+        "Lesser Antidote and repair supplies",
+        "Light source; mark the withdrawal path",
+        "Parachute / Grapple according to the usability of the cave"
       ],
       "sourceURL": "https://ark.wiki.gg/wiki/Lava_Cave",
       "entranceSourceURL": "https://www.gamenguides.com/where-to-find-all-island-cave-entrances-in-ark-survival-ascended",
       "imageAsset": "TheIslandMap",
-      "imageCaption": "Địa hình The Island Ascended · Wikily; không phải sơ đồ bên trong hang."
+      "imageCaption": "Terrain The Island Ascended · Wikily; not a diagram of the inside of the cave."
     },
     {
       "id": "upper-south",
@@ -184,24 +184,24 @@
       "entrances": [
         {
           "id": "upper-south-0",
-          "label": "Cửa hang nam trên",
+          "label": "Upper south cave entrance",
           "lat": 71.3,
           "lon": 57.2
         }
       ],
       "boss": "",
-      "notes": "Tuyến Pack có nhánh nước. Chuẩn bị lặn và đường quay ra, đừng dùng điểm artifact thay cho GPS cửa hang.",
+      "notes": "Pack's route includes a water branch. Prepare diving gear and a return route; do not substitute artifact coordinates for the cave entrance GPS.",
       "kit": [
-        "Vũ khí và đạn dự phòng",
-        "Giáp, Medical Brew, Stimulant",
-        "Lesser Antidote và đồ sửa",
-        "Nguồn sáng; đánh dấu đường rút",
-        "SCUBA và nguồn sáng"
+        "Spare weapons and ammo",
+        "Armor, Medical Brew, Stimulant",
+        "Lesser Antidote and repair supplies",
+        "Light source; mark the withdrawal path",
+        "SCUBA and light source"
       ],
       "sourceURL": "https://ark.wiki.gg/wiki/Upper_South_Cave",
       "entranceSourceURL": "https://www.gamenguides.com/where-to-find-all-island-cave-entrances-in-ark-survival-ascended",
       "imageAsset": "TheIslandMap",
-      "imageCaption": "Địa hình The Island Ascended · Wikily; không phải sơ đồ bên trong hang."
+      "imageCaption": "Terrain The Island Ascended · Wikily; not a diagram of the inside of the cave."
     },
     {
       "id": "north-east",
@@ -212,24 +212,24 @@
       "entrances": [
         {
           "id": "north-east-0",
-          "label": "Cửa trên Carno Island",
+          "label": "Door on Carno Island",
           "lat": 8.9,
           "lon": 91.3
         }
       ],
       "boss": "",
-      "notes": "Đảo đông bắc, đường xoắn sát vực, lạnh và nhiều dơi. Phải có đường rút an toàn.",
+      "notes": "Northeast island, spiral road close to the cliff, cold and many bats. There must be a safe exit route.",
       "kit": [
-        "Vũ khí và đạn dự phòng",
-        "Giáp, Medical Brew, Stimulant",
-        "Lesser Antidote và đồ sửa",
-        "Nguồn sáng; đánh dấu đường rút",
-        "Đồ giữ ấm và parachute"
+        "Spare weapons and ammo",
+        "Armor, Medical Brew, Stimulant",
+        "Lesser Antidote and repair supplies",
+        "Light source; mark the withdrawal path",
+        "Warmers and parachutes"
       ],
       "sourceURL": "https://ark.wiki.gg/wiki/North_East_Cave",
       "entranceSourceURL": "https://www.gamenguides.com/where-to-find-all-island-cave-entrances-in-ark-survival-ascended",
       "imageAsset": "TheIslandMap",
-      "imageCaption": "Địa hình The Island Ascended · Wikily; không phải sơ đồ bên trong hang."
+      "imageCaption": "Terrain The Island Ascended · Wikily; not a diagram of the inside of the cave."
     },
     {
       "id": "north-west",
@@ -240,23 +240,23 @@
       "entrances": [
         {
           "id": "north-west-0",
-          "label": "Cửa vùng tuyết tây bắc",
+          "label": "Door to the northwest snow region",
           "lat": 14.1,
           "lon": 13.9
         }
       ],
       "boss": "",
-      "notes": "Tuyến Skylord có khe hẹp và vực. Khảo sát bằng survivor; không hứa tame lớn đi qua được.",
+      "notes": "Skylord's route has tight crevices and chasms. Survey on foot; large tames are not guaranteed to fit.",
       "kit": [
-        "Fur và đồ giữ ấm",
-        "Medical Brew, giáp/vũ khí dự phòng",
-        "Thăm dò khe hẹp và vực trước khi đưa tame",
-        "Đọc giới hạn hang; không mặc định có thể dùng cryopod"
+        "Fur and warm gear",
+        "Medical Brew, spare armor/weapon",
+        "Explore narrow gaps and abysses before inserting tame",
+        "Read cave limits; No default cryopod can be used"
       ],
       "sourceURL": "https://ark.wiki.gg/wiki/North_West_Cave",
       "entranceSourceURL": "https://www.gamenguides.com/where-to-find-all-island-cave-entrances-in-ark-survival-ascended",
       "imageAsset": "TheIslandMap",
-      "imageCaption": "Địa hình The Island Ascended · Wikily; không phải sơ đồ bên trong hang."
+      "imageCaption": "Terrain The Island Ascended · Wikily; not a diagram of the inside of the cave."
     },
     {
       "id": "swamp",
@@ -267,24 +267,24 @@
       "entrances": [
         {
           "id": "swamp-0",
-          "label": "Cửa vùng Redwoods",
+          "label": "Zone door Redwoods",
           "lat": 64.8,
           "lon": 35.1
         }
       ],
       "boss": "",
-      "notes": "Tuyến Immune có không khí nguy hiểm và nhiều sinh vật gây torpor. Chuẩn bị bộ bảo vệ hô hấp phù hợp trước khi vào.",
+      "notes": "Route Immune has dangerous air and many torpor-causing organisms. Prepare appropriate respiratory protection before entering.",
       "kit": [
-        "Vũ khí và đạn dự phòng",
-        "Giáp, Medical Brew, Stimulant",
-        "Lesser Antidote và đồ sửa",
-        "Nguồn sáng; đánh dấu đường rút",
-        "Gas Mask / tổ hợp SCUBA phù hợp, bộ dự phòng"
+        "Spare weapons and ammo",
+        "Armor, Medical Brew, Stimulant",
+        "Lesser Antidote and repair supplies",
+        "Light source; mark the withdrawal path",
+        "Gas Mask / suitable combination SCUBA, spare set"
       ],
       "sourceURL": "https://ark.wiki.gg/wiki/Swamp_Cave",
       "entranceSourceURL": "https://www.gamenguides.com/where-to-find-all-island-cave-entrances-in-ark-survival-ascended",
       "imageAsset": "TheIslandMap",
-      "imageCaption": "Địa hình The Island Ascended · Wikily; không phải sơ đồ bên trong hang."
+      "imageCaption": "Terrain The Island Ascended · Wikily; not a diagram of the inside of the cave."
     },
     {
       "id": "snow",
@@ -295,23 +295,23 @@
       "entrances": [
         {
           "id": "snow-0",
-          "label": "Cửa hang tuyết",
+          "label": "Snow cave door",
           "lat": 26.0,
           "lon": 29.0
         }
       ],
       "boss": "",
-      "notes": "Tuyến Strong lạnh, có sinh vật hang nguy hiểm và chỗ chật. Xem lại khả năng đi qua cửa của tame, dự phòng Purlovia/Yeti.",
+      "notes": "Strong's cold route has dangerous cave creatures and tight passages. Check whether your tame fits through the entrance and prepare for Purlovia/Yeti.",
       "kit": [
-        "Fur và đồ giữ ấm",
-        "Medical Brew, giáp/vũ khí dự phòng",
-        "Thăm dò khe hẹp và vực trước khi đưa tame",
-        "Đọc giới hạn hang; không mặc định có thể dùng cryopod"
+        "Fur and warm gear",
+        "Medical Brew, spare armor/weapon",
+        "Explore narrow gaps and abysses before inserting tame",
+        "Read cave limits; No default cryopod can be used"
       ],
       "sourceURL": "https://ark.wiki.gg/wiki/Snow_Cave",
       "entranceSourceURL": "https://www.gamenguides.com/where-to-find-all-island-cave-entrances-in-ark-survival-ascended",
       "imageAsset": "TheIslandMap",
-      "imageCaption": "Địa hình The Island Ascended · Wikily; không phải sơ đồ bên trong hang."
+      "imageCaption": "Terrain The Island Ascended · Wikily; not a diagram of the inside of the cave."
     },
     {
       "id": "lost-faith",
@@ -322,23 +322,23 @@
       "entrances": [
         {
           "id": "lost-faith-0",
-          "label": "Cửa biển phía tây",
+          "label": "Western seaport",
           "lat": 54.4,
           "lon": 3.9
         }
       ],
       "boss": "",
-      "notes": "Tuyến Brute dưới biển phía tây. Kiểm tra bình khí, độ bền và cách né các nhóm sinh vật biển.",
+      "notes": "Route Brute under the western sea. Check the air tank, durability and how to avoid groups of sea creatures.",
       "kit": [
-        "SCUBA đủ bền và bộ dự phòng",
-        "Tame biển phù hợp, saddle và food",
-        "Medical Brew, nguồn sáng",
-        "Khảo sát độ sâu, điện và đường thoát"
+        "SCUBA is durable enough and has a spare set",
+        "Suitable ocean tames, saddle and food",
+        "Medical Brew, light source",
+        "Survey depth, electricity and escape routes"
       ],
       "sourceURL": "https://ark.wiki.gg/wiki/Caverns_of_Lost_Faith",
       "entranceSourceURL": "https://www.gamenguides.com/where-to-find-all-island-cave-entrances-in-ark-survival-ascended",
       "imageAsset": "TheIslandMap",
-      "imageCaption": "Địa hình The Island Ascended · Wikily; không phải sơ đồ bên trong hang."
+      "imageCaption": "Terrain The Island Ascended · Wikily; not a diagram of the inside of the cave."
     },
     {
       "id": "lost-hope",
@@ -349,23 +349,23 @@
       "entrances": [
         {
           "id": "lost-hope-0",
-          "label": "Cửa biển phía đông",
+          "label": "Eastern seaport",
           "lat": 45.4,
           "lon": 95.0
         }
       ],
       "boss": "",
-      "notes": "Tuyến Cunning dưới biển phía đông. Đồ lặn và tame chiến đấu cần được chuẩn bị riêng; không coi đây là hang để vào thử bằng đồ đầu game.",
+      "notes": "Cunning route beneath the eastern ocean. Prepare diving gear and a combat tame separately; do not attempt it as an early-game test cave.",
       "kit": [
-        "SCUBA đủ bền và bộ dự phòng",
-        "Tame biển phù hợp, saddle và food",
-        "Medical Brew, nguồn sáng",
-        "Khảo sát độ sâu, điện và đường thoát"
+        "SCUBA is durable enough and has a spare set",
+        "Suitable ocean tames, saddle and food",
+        "Medical Brew, light source",
+        "Survey depth, electricity and escape routes"
       ],
       "sourceURL": "https://ark.wiki.gg/wiki/Caverns_of_Lost_Hope",
       "entranceSourceURL": "https://www.gamenguides.com/where-to-find-all-island-cave-entrances-in-ark-survival-ascended",
       "imageAsset": "TheIslandMap",
-      "imageCaption": "Địa hình The Island Ascended · Wikily; không phải sơ đồ bên trong hang."
+      "imageCaption": "Terrain The Island Ascended · Wikily; not a diagram of the inside of the cave."
     },
     {
       "id": "tek",
@@ -374,24 +374,24 @@
       "entrances": [
         {
           "id": "tek-0",
-          "label": "Vùng Tek Cave · tâm dữ liệu, chưa chốt cửa vào",
+          "label": "Area Tek Cave · data center, unlatched entrance",
           "lat": 39.9,
           "lon": 34.8,
           "kind": "area"
         }
       ],
       "boss": "Overseer",
-      "notes": "Khu Tek Cave theo lớp cave Ascended Wikily. Đây là tâm khu vực, không phải GPS cửa đã xác minh. Cửa thực tế nằm trên đỉnh Volcano; cần khảo sát terminal và quy đổi hệ tọa độ trước khi đưa đội vào. Tuyến không có artifact, dùng trophy guardian để mở cửa rồi tới Overseer.",
+      "notes": "Tek Cave area follows the cave layer Ascended Wikily. This is the center of the area, not the verified door GPS. The actual door is on top of the Volcano; Need to survey the terminal and convert the coordinate system before sending the team in. Route without artifacts, use trophy guardian to open the door then go to Overseer.",
       "kit": [
-        "Trophy đúng cấp của ba guardian",
-        "Alpha drops theo cấp, đọc mục Overseer",
-        "Khảo sát lava, đường cua và cửa trên đỉnh Volcano",
-        "Giáp / vũ khí / ammo và đội tame đã chuẩn bị"
+        "Trophy at the correct level of the three guardians",
+        "Alpha drops by level, read section Overseer",
+        "Survey the lava, curves and gates at the top of Volcano",
+        "Armor/weapon/ammo and tame team prepared"
       ],
       "sourceURL": "https://ark.wiki.gg/wiki/Tek_Cave",
       "entranceSourceURL": "https://wikily.gg/ark-survival-ascended/maps/the-island/",
       "imageAsset": "TheIslandMap",
-      "imageCaption": "Địa hình The Island Ascended · Wikily; không phải sơ đồ bên trong Tek Cave."
+      "imageCaption": "Terrain The Island Ascended · Wikily; not the interior diagram of Tek Cave."
     }
   ],
   "obelisks": []

@@ -3,7 +3,7 @@
     {
       "id": "center-blue-metal",
       "map": "the-center",
-      "name": "Mỏ kim loại quanh Blue Obelisk",
+      "name": "Metal mine around Blue Obelisk",
       "lat": 52.3,
       "lon": 78.2,
       "resources": [
@@ -13,16 +13,16 @@
       "imageAsset": "FarmPhoto-center-blue-metal",
       "videoID": "bAqRvM-080g",
       "seconds": 25,
-      "direction": "Hạ cánh dưới Blue Obelisk rồi kiểm tra các gờ đá.",
-      "method": "Dùng Ankylosaurus hoặc Metal Pick khai thác mỏ; chở về bằng Argentavis.",
+      "direction": "Land under Blue Obelisk then check the ledges.",
+      "method": "Mine with Ankylosaurus or Metal Pick; transport resources home with Argentavis.",
       "kit": [
         "Metal Pick",
         "Ankylosaurus",
         "Argentavis"
       ],
       "risks": [
-        "Vách đá",
-        "Sinh vật săn mồi"
+        "Cliff",
+        "Predatory creature"
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g",
@@ -33,7 +33,7 @@
     {
       "id": "center-spire-obsidian",
       "map": "the-center",
-      "name": "Obsidian ở trụ đá phía nam",
+      "name": "Obsidian in the southern stone pillar",
       "lat": 63.0,
       "lon": 60.3,
       "resources": [
@@ -42,15 +42,15 @@
       "imageAsset": "FarmPhoto-center-spire-obsidian",
       "videoID": "bAqRvM-080g",
       "seconds": 65,
-      "direction": "Bay đến trụ đá đơn lẻ, kiểm tra các gờ bên dưới.",
-      "method": "Khai thác các tảng Obsidian màu đen.",
+      "direction": "Fly to the lone stone pillar, examine the ledges below.",
+      "method": "Mining black Obsidian blocks.",
       "kit": [
         "Metal Pick",
         "Ankylosaurus",
         "Argentavis"
       ],
       "risks": [
-        "Ngã từ độ cao"
+        "Fall from height"
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g",
@@ -61,7 +61,7 @@
     {
       "id": "center-lava-metal",
       "map": "the-center",
-      "name": "Mỏ kim loại trên Lava Island",
+      "name": "Metal mine on Lava Island",
       "lat": 16.5,
       "lon": 60.9,
       "resources": [
@@ -71,8 +71,8 @@
       "imageAsset": "FarmPhoto-center-lava-metal",
       "videoID": "bAqRvM-080g",
       "seconds": 195,
-      "direction": "Đến gờ mỏ gần miệng núi lửa, tránh dung nham.",
-      "method": "Dùng Ankylosaurus lấy quặng rồi chở về bằng Argentavis.",
+      "direction": "Go to the mine ledge near the crater, avoiding the lava.",
+      "method": "Use Ankylosaurus to get ore and then transport it back with Argentavis.",
       "kit": [
         "Ankylosaurus",
         "Argentavis",
@@ -80,8 +80,8 @@
       ],
       "risks": [
         "Dung nham",
-        "Nóng",
-        "Sinh vật săn mồi"
+        "Hot",
+        "Predatory creature"
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g",
@@ -92,7 +92,7 @@
     {
       "id": "center-snow-crystal",
       "map": "the-center",
-      "name": "Tuyến Crystal trên sườn núi tuyết",
+      "name": "Crystal route on the snowy mountain slope",
       "lat": 58.0,
       "lon": 18.5,
       "resources": [
@@ -102,8 +102,8 @@
       "imageAsset": "FarmPhoto-center-snow-crystal",
       "videoID": "bAqRvM-080g",
       "seconds": 305,
-      "direction": "Theo sườn tuyết trong video từ vị trí GPS.",
-      "method": "Khai thác cụm Crystal và mỏ Metal dọc sườn núi.",
+      "direction": "Follow the snow slope in the video from location GPS.",
+      "method": "Mining Crystal cluster and Metal mine along the mountainside.",
       "kit": [
         "Fur Armor",
         "Ankylosaurus",
@@ -111,8 +111,8 @@
         "Metal Pick"
       ],
       "risks": [
-        "Lạnh",
-        "Sinh vật vùng tuyết"
+        "Cold",
+        "Snow creatures"
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g",
@@ -123,7 +123,7 @@
     {
       "id": "center-beaver-pond",
       "map": "the-center",
-      "name": "Đập hải ly trong hồ rừng phía nam",
+      "name": "Beaver dam in southern forest lake",
       "lat": 53.1,
       "lon": 57.2,
       "resources": [
@@ -136,15 +136,15 @@
       "imageAsset": "FarmPhoto-center-beaver-pond",
       "videoID": "bAqRvM-080g",
       "seconds": 519,
-      "direction": "Xuống hồ gần GPS để tìm đập hải ly đang xuất hiện.",
-      "method": "Lấy vật phẩm trong đập và dọn hết đồ còn lại để đập có thể hồi sinh.",
+      "direction": "Drop down into the lake near GPS to find a beaver dam appearing.",
+      "method": "Get the items in the dam and clear out all remaining items so the dam can respawn.",
       "kit": [
         "Fast Mount",
         "Argentavis"
       ],
       "risks": [
-        "Hải ly tấn công",
-        "Đập xuất hiện theo spawn"
+        "Beaver attack",
+        "Dam availability depends on spawns"
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g",
@@ -155,7 +155,7 @@
     {
       "id": "center-ring-pearls",
       "map": "the-center",
-      "name": "Pearls và Oil dưới thác đảo nổi",
+      "name": "Pearls and Oil under the floating island waterfall",
       "lat": 36.7,
       "lon": 35.5,
       "resources": [
@@ -165,16 +165,16 @@
       "imageAsset": "FarmPhoto-center-ring-pearls",
       "videoID": "bAqRvM-080g",
       "seconds": 551,
-      "direction": "Lặn xuống chân thác cạnh đảo nổi.",
-      "method": "Nhặt Silica Pearls dưới đáy và dùng Metal Pick lấy Oil; mang thú thủy sinh.",
+      "direction": "Dive to the foot of the waterfall next to the floating island.",
+      "method": "Pick up Silica Pearls from the bottom and use Metal Pick to get Oil; bring aquatic animals.",
       "kit": [
         "SCUBA Gear",
         "Basilosaurus",
         "Metal Pick"
       ],
       "risks": [
-        "Hết oxy",
-        "Sinh vật biển"
+        "Out of oxygen",
+        "Sea creatures"
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g",
@@ -185,7 +185,7 @@
     {
       "id": "center-ice-polymer",
       "map": "the-center",
-      "name": "Organic Polymer ở băng trôi phía tây",
+      "name": "Organic Polymer on western icebergs",
       "lat": 37.0,
       "lon": 9.9,
       "resources": [
@@ -194,16 +194,16 @@
       "imageAsset": "FarmPhoto-center-ice-polymer",
       "videoID": "bAqRvM-080g",
       "seconds": 657,
-      "direction": "Bay tới băng trôi phía tây để tìm Kairuku.",
-      "method": "Thu hoạch xác Kairuku; mang Polymer về trước khi hết hạn.",
+      "direction": "Fly to the western iceberg to find Kairuku.",
+      "method": "Harvesting Kairuku's body; Bring back Polymer before it expires.",
       "kit": [
         "Wooden Club",
         "Pelagornis",
         "Fur Armor"
       ],
       "risks": [
-        "Lạnh",
-        "Organic Polymer có hạn sử dụng"
+        "Cold",
+        "Organic Polymer has an expiration date"
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g",
@@ -214,7 +214,7 @@
     {
       "id": "rag-underwater-metal",
       "map": "ragnarok",
-      "name": "Mỏ kim loại dưới biển phía nam",
+      "name": "Southern undersea metal mine",
       "lat": 94.8,
       "lon": 73.6,
       "resources": [
@@ -223,16 +223,16 @@
       "imageAsset": "FarmPhoto-rag-underwater-metal",
       "videoID": "5IhlD3yzqjU",
       "seconds": 112,
-      "direction": "Lặn xuống cụm mỏ dưới biển; ảnh cho thấy vùng mỏ, không phải từng node.",
-      "method": "Dùng Dunkleosteus khai thác mỏ, chuyển tải trọng về bờ.",
+      "direction": "Dive to the underwater ore deposits; the image shows the mining area, not individual nodes.",
+      "method": "Use Dunkleosteus to mine and transfer loads to shore.",
       "kit": [
         "Dunkleosteus",
         "SCUBA Gear",
         "Basilosaurus"
       ],
       "risks": [
-        "Biển sâu",
-        "Sinh vật biển"
+        "Deep sea",
+        "Sea creatures"
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=5IhlD3yzqjU",
@@ -243,7 +243,7 @@
     {
       "id": "rag-dam-lakes",
       "map": "ragnarok",
-      "name": "Chuỗi hồ đập hải ly",
+      "name": "Chain of beaver dam lakes",
       "lat": 24.8,
       "lon": 42.3,
       "resources": [
@@ -257,15 +257,15 @@
       "imageAsset": "FarmPhoto-rag-dam-lakes",
       "videoID": "5IhlD3yzqjU",
       "seconds": 525,
-      "direction": "Tìm đập dọc chuỗi hồ và dòng suối gần GPS trong video.",
-      "method": "Lấy đồ trong đập rồi dọn hết vật phẩm còn lại để đập có thể hồi sinh.",
+      "direction": "Find the dam along the chain of lakes and streams near GPS in the video.",
+      "method": "Take the items in the dam and then clear all remaining items so the dam can revive.",
       "kit": [
         "Fast Mount",
         "Argentavis"
       ],
       "risks": [
-        "Hải ly tấn công",
-        "Đập xuất hiện theo spawn"
+        "Beaver attack",
+        "Dam availability depends on spawns"
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=5IhlD3yzqjU",
@@ -276,7 +276,7 @@
     {
       "id": "rag-cactus-route",
       "map": "ragnarok",
-      "name": "Vùng xương rồng rìa sa mạc",
+      "name": "Cactus area on the edge of the desert",
       "lat": 62.6,
       "lon": 59.6,
       "resources": [
@@ -285,15 +285,15 @@
       "imageAsset": "FarmPhoto-rag-cactus-route",
       "videoID": "5IhlD3yzqjU",
       "seconds": 748,
-      "direction": "Đến rìa sa mạc có cây xương rồng trong cảnh quay.",
-      "method": "Thu hoạch xương rồng; dùng Morellatops hoặc công cụ phù hợp.",
+      "direction": "Go to the edge of the desert with the cactus in the scene.",
+      "method": "Harvesting cacti; Use Morellatops or suitable tool.",
       "kit": [
         "Morellatops",
         "Metal Hatchet"
       ],
       "risks": [
-        "Nóng",
-        "Sinh vật sa mạc"
+        "Hot",
+        "Desert creatures"
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=5IhlD3yzqjU",
@@ -304,7 +304,7 @@
     {
       "id": "rag-coast-flowers",
       "map": "ragnarok",
-      "name": "Bụi hoa ven đảo phía tây",
+      "name": "Flower bushes along the western island",
       "lat": 36.3,
       "lon": 18.9,
       "resources": [
@@ -313,14 +313,14 @@
       "imageAsset": "FarmPhoto-rag-coast-flowers",
       "videoID": "5IhlD3yzqjU",
       "seconds": 932,
-      "direction": "Tìm các bụi cây trên đảo nhỏ ven bờ phía tây.",
-      "method": "Nhặt hoa trên các bụi cây trong video; Therizinosaurus hỗ trợ thu hoạch khi có đủ trang bị.",
+      "direction": "Find bushes on small islands along the western shore.",
+      "method": "Pick flowers from the bushes in the video; Therizinosaurus supports harvesting when fully equipped.",
       "kit": [
         "Therizinosaurus",
         "Argentavis"
       ],
       "risks": [
-        "Ăn Rare Flower sẽ thu hút sinh vật"
+        "Eating Rare Flowers will attract creatures"
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=5IhlD3yzqjU",
@@ -331,7 +331,7 @@
     {
       "id": "island-volcano-ore",
       "map": "the-island",
-      "name": "Metal và Obsidian quanh miệng núi lửa",
+      "name": "Metal and Obsidian around the crater",
       "lat": 40.1,
       "lon": 37.5,
       "resources": [
@@ -343,8 +343,8 @@
       "imageAsset": "FarmPhoto-island-volcano-ore",
       "videoID": "IOCye6IYUCM",
       "seconds": 206,
-      "direction": "Đến miệng núi lửa rồi đi theo vành đá có quặng trong video.",
-      "method": "Dùng Ankylosaurus hoặc Metal Pick lấy quặng; tránh mép dung nham.",
+      "direction": "Go to the crater and follow the rock rim with ore in the video.",
+      "method": "Use Ankylosaurus or Metal Pick to get ore; Avoid the edge of the lava.",
       "kit": [
         "Ankylosaurus",
         "Argentavis",
@@ -352,7 +352,7 @@
       ],
       "risks": [
         "Dung nham",
-        "Vách đá"
+        "Cliff"
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM",
@@ -363,7 +363,7 @@
     {
       "id": "island-west-black-pearls",
       "map": "the-island",
-      "name": "Black Pearls ngoài khơi phía tây",
+      "name": "Black Pearls off the west coast",
       "lat": 57.0,
       "lon": 5.6,
       "resources": [
@@ -372,8 +372,8 @@
       "imageAsset": "FarmPhoto-island-west-black-pearls",
       "videoID": "IOCye6IYUCM",
       "seconds": 318,
-      "direction": "Lặn ngoài khơi phía tây từ GPS trong video.",
-      "method": "Săn Eurypterid dưới biển rồi thu hoạch xác để lấy Black Pearls.",
+      "direction": "Diving off the west coast from GPS in video.",
+      "method": "Hunt the Eurypterid in the sea then harvest the carcass to get Black Pearls.",
       "kit": [
         "Basilosaurus",
         "SCUBA Gear",
@@ -381,8 +381,8 @@
       ],
       "risks": [
         "Torpor",
-        "Sinh vật biển",
-        "Biển sâu"
+        "Sea creatures",
+        "Deep sea"
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM",
@@ -393,7 +393,7 @@
     {
       "id": "island-redwood-fiber",
       "map": "the-island",
-      "name": "Bụi cây dưới tán Redwood",
+      "name": "Bushes beneath the Redwood canopy",
       "lat": 64.8,
       "lon": 35.2,
       "resources": [
@@ -402,15 +402,15 @@
       "imageAsset": "FarmPhoto-island-redwood-fiber",
       "videoID": "IOCye6IYUCM",
       "seconds": 426,
-      "direction": "Tìm các bụi cây dày dưới tán Redwood gần GPS.",
-      "method": "Thu hoạch bụi cây bằng tay, Metal Sickle hoặc Therizinosaurus.",
+      "direction": "Look for thick bushes under the canopy of Redwood near GPS.",
+      "method": "Harvest bushes by hand, Metal Sickle or Therizinosaurus.",
       "kit": [
         "Metal Sickle",
         "Therizinosaurus"
       ],
       "risks": [
         "Thylacoleo",
-        "Sinh vật rừng"
+        "Forest creatures"
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM",
@@ -421,7 +421,7 @@
     {
       "id": "island-west-starter",
       "map": "the-island",
-      "name": "Bãi biển phía tây: Chitin và vật liệu cơ bản",
+      "name": "West beach: Chitin and base material",
       "lat": 71.0,
       "lon": 7.1,
       "resources": [
@@ -436,16 +436,16 @@
       "imageAsset": "FarmPhoto-island-west-starter",
       "videoID": "IOCye6IYUCM",
       "seconds": 494,
-      "direction": "Đi dọc bãi biển và cửa sông, kiểm tra Trilobite và cây bụi ven bờ.",
-      "method": "Săn Trilobite lấy Chitin; thu thập đá, gỗ, lá và Fiber ở khu vực ven bờ.",
+      "direction": "Walk along the beach and estuary, checking for Trilobite and shoreline shrubs.",
+      "method": "Hunt Trilobite for Chitin; collect stone, wood, thatch, and Fiber along the coast.",
       "kit": [
         "Metal Hatchet",
         "Metal Pick",
         "Metal Sickle"
       ],
       "risks": [
-        "Trilobite xuất hiện theo spawn",
-        "Sinh vật ven bờ"
+        "Trilobite appears from spawn",
+        "Coastal creatures"
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM",
@@ -456,7 +456,7 @@
     {
       "id": "island-carno-crystal",
       "map": "the-island",
-      "name": "Crystal trong hang đảo Carnivore",
+      "name": "Crystal in Carnivore Island cave",
       "lat": 9.0,
       "lon": 91.2,
       "resources": [
@@ -465,16 +465,16 @@
       "imageAsset": "FarmPhoto-island-carno-crystal",
       "videoID": "IOCye6IYUCM",
       "seconds": 574,
-      "direction": "Vào hang ở đảo phía đông bắc, tìm các cụm Crystal trong video.",
-      "method": "Dùng Metal Pick khai thác Crystal và đưa đồ ra theo đường hang.",
+      "direction": "Enter the cave in the northeast island, find the Crystal clusters in the video.",
+      "method": "Use Metal Pick to mine Crystal and take the items out through the cave.",
       "kit": [
         "Metal Pick",
         "Torch",
         "Grappling Hook"
       ],
       "risks": [
-        "Sinh vật hang",
-        "Vách sâu"
+        "Cave creatures",
+        "Deep drop"
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM",
@@ -485,7 +485,7 @@
     {
       "id": "island-redwood-paste",
       "map": "the-island",
-      "name": "Đập hải ly cửa sông Redwood",
+      "name": "Beaver dams at the Redwood estuary",
       "lat": 55.2,
       "lon": 25.7,
       "resources": [
@@ -495,15 +495,15 @@
       "imageAsset": "FarmPhoto-island-redwood-paste",
       "videoID": "IOCye6IYUCM",
       "seconds": 662,
-      "direction": "Xuống đoạn sông gần GPS và tìm đập đang xuất hiện.",
-      "method": "Lấy đồ trong đập rồi dọn hết vật phẩm còn lại để đập có thể hồi sinh.",
+      "direction": "Drop down to the river near GPS and look for the dam appearing.",
+      "method": "Take the items in the dam and then clear all remaining items so the dam can revive.",
       "kit": [
         "Argentavis",
         "Fast Mount"
       ],
       "risks": [
-        "Hải ly tấn công",
-        "Đập xuất hiện theo spawn"
+        "Beaver attack",
+        "Dam availability depends on spawns"
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM",
@@ -514,7 +514,7 @@
     {
       "id": "island-nw-oil",
       "map": "the-island",
-      "name": "Oil trên bờ tuyết phía tây bắc",
+      "name": "Oil on the northwest snow bank",
       "lat": 28.7,
       "lon": 10.1,
       "resources": [
@@ -523,16 +523,16 @@
       "imageAsset": "FarmPhoto-island-nw-oil",
       "videoID": "IOCye6IYUCM",
       "seconds": 746,
-      "direction": "Theo bờ tuyết phía tây bắc và tìm các tảng Oil sọc đen trong video.",
-      "method": "Dùng Metal Pick hoặc Ankylosaurus khai thác Oil.",
+      "direction": "Follow the snowbank to the northwest and look for the black-striped Oil boulders in the video.",
+      "method": "Use Metal Pick or Ankylosaurus to mine Oil.",
       "kit": [
         "Fur Armor",
         "Metal Pick",
         "Ankylosaurus"
       ],
       "risks": [
-        "Lạnh",
-        "Sinh vật vùng tuyết"
+        "Cold",
+        "Snow creatures"
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM",
@@ -543,7 +543,7 @@
     {
       "id": "rag-black-pearl-bed",
       "map": "ragnarok",
-      "name": "Black Pearls dưới biển phía bắc",
+      "name": "Black Pearls under the northern sea",
       "lat": 6.2,
       "lon": 63.0,
       "resources": [
@@ -552,15 +552,15 @@
       "imageAsset": "FarmPhoto-rag-black-pearl-bed",
       "videoID": "0i0-XEV85m8",
       "seconds": 182.5,
-      "direction": "Lặn đến xác tàu và các cụm sò tối màu trong video.",
-      "method": "Nhặt các cụm Black Pearls dưới đáy biển.",
+      "direction": "Dive to the wreck and dark clam clusters in the video.",
+      "method": "Pick up the Black Pearls clusters on the seabed.",
       "kit": [
         "SCUBA Gear",
         "Basilosaurus"
       ],
       "risks": [
-        "Biển sâu",
-        "Sinh vật biển"
+        "Deep sea",
+        "Sea creatures"
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8",
@@ -571,7 +571,7 @@
     {
       "id": "rag-crystal-highland",
       "map": "ragnarok",
-      "name": "Crystal trên đồi phía đông bắc",
+      "name": "Crystal on the northeast hill",
       "lat": 6.5,
       "lon": 87.7,
       "resources": [
@@ -580,15 +580,15 @@
       "imageAsset": "FarmPhoto-rag-crystal-highland",
       "videoID": "0i0-XEV85m8",
       "seconds": 387.5,
-      "direction": "Đến vùng đồi có các cụm Crystal trắng trong cảnh quay.",
-      "method": "Dùng Metal Pick hoặc Ankylosaurus khai thác Crystal.",
+      "direction": "Go to the hills with white Crystal clusters in the scene.",
+      "method": "Use Metal Pick or Ankylosaurus to mine Crystal.",
       "kit": [
         "Metal Pick",
         "Ankylosaurus",
         "Argentavis"
       ],
       "risks": [
-        "Sinh vật hoang dã"
+        "Wild creatures"
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8",
@@ -599,7 +599,7 @@
     {
       "id": "rag-cave-metal-obsidian",
       "map": "ragnarok",
-      "name": "Hang mỏ Metal và Obsidian phía tây bắc",
+      "name": "Northwestern Metal and Obsidian mine cave",
       "lat": 21.3,
       "lon": 24.6,
       "resources": [
@@ -610,8 +610,8 @@
       "imageAsset": "FarmPhoto-rag-cave-metal-obsidian",
       "videoID": "0i0-XEV85m8",
       "seconds": 527.5,
-      "direction": "Vào hang có cửa đá lớn trong video rồi theo các gờ quặng.",
-      "method": "Khai thác Metal và Obsidian; chuẩn bị đường vận chuyển đồ ra hang.",
+      "direction": "Enter the cave with the large stone door in the video and then follow the ore ledges.",
+      "method": "Mine Metal and Obsidian; prepare a transport route out of the cave.",
       "kit": [
         "Metal Pick",
         "Ankylosaurus",
@@ -619,7 +619,7 @@
       ],
       "risks": [
         "Hang",
-        "Đường vận chuyển hẹp"
+        "Narrow transportation road"
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8",
@@ -630,7 +630,7 @@
     {
       "id": "rag-oil-north-shore",
       "map": "ragnarok",
-      "name": "Oil trên bờ biển phía bắc",
+      "name": "Oil on the north coast",
       "lat": 11.1,
       "lon": 40.7,
       "resources": [
@@ -639,15 +639,15 @@
       "imageAsset": "FarmPhoto-rag-oil-north-shore",
       "videoID": "0i0-XEV85m8",
       "seconds": 592.5,
-      "direction": "Tìm các tảng Oil sọc đen dọc bờ biển trong video.",
-      "method": "Dùng Metal Pick hoặc Ankylosaurus khai thác các tảng Oil.",
+      "direction": "Find the black-striped Oil boulders along the beach in the video.",
+      "method": "Use Metal Pick or Ankylosaurus to harvest Oil rocks.",
       "kit": [
         "Metal Pick",
         "Ankylosaurus",
         "Argentavis"
       ],
       "risks": [
-        "Sinh vật ven bờ"
+        "Coastal creatures"
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8",
@@ -658,7 +658,7 @@
     {
       "id": "rag-polymer-plants",
       "map": "ragnarok",
-      "name": "Cây Organic Polymer trong hang nước",
+      "name": "Organic Polymer tree in the water cave",
       "lat": 22.7,
       "lon": 29.5,
       "resources": [
@@ -667,16 +667,16 @@
       "imageAsset": "FarmPhoto-rag-polymer-plants",
       "videoID": "0i0-XEV85m8",
       "seconds": 727.5,
-      "direction": "Bơi vào hang nước có cây hồng trong video.",
-      "method": "Thu hoạch các cây hồng để lấy Organic Polymer; đưa về trước khi hết hạn.",
+      "direction": "Swim into the water cave with pink plants shown in the video.",
+      "method": "Harvest pink plants for Organic Polymer and bring it home before it spoils.",
       "kit": [
         "Metal Sickle",
         "Therizinosaurus",
         "SCUBA Gear"
       ],
       "risks": [
-        "Bơi trong hang",
-        "Organic Polymer có hạn sử dụng"
+        "Swimming in the cave",
+        "Organic Polymer has an expiration date"
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8",
@@ -687,7 +687,7 @@
     {
       "id": "rag-flowers-nw",
       "map": "ragnarok",
-      "name": "Rare Flowers trong bãi cây phía tây bắc",
+      "name": "Rare Flowers in the northwest tree patch",
       "lat": 21.8,
       "lon": 27.9,
       "resources": [
@@ -696,14 +696,14 @@
       "imageAsset": "FarmPhoto-rag-flowers-nw",
       "videoID": "0i0-XEV85m8",
       "seconds": 832.5,
-      "direction": "Tìm các bụi có hoa xanh trong vùng GPS được ghi trên video.",
-      "method": "Nhặt hoa hoặc thu hoạch cây bằng thú phù hợp.",
+      "direction": "Look for bushes with blue flowers in the area GPS recorded on video.",
+      "method": "Pick flowers or harvest plants with a suitable animal.",
       "kit": [
         "Therizinosaurus",
         "Metal Sickle"
       ],
       "risks": [
-        "Rare Flower thu hút sinh vật khi ăn"
+        "Rare Flower attracts creatures when eaten"
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8",
@@ -714,7 +714,7 @@
     {
       "id": "rag-pearls-cave",
       "map": "ragnarok",
-      "name": "Silica Pearls trong hang nước phía tây bắc",
+      "name": "Silica Pearls in the northwest water cave",
       "lat": 21.8,
       "lon": 33.1,
       "resources": [
@@ -723,15 +723,15 @@
       "imageAsset": "FarmPhoto-rag-pearls-cave",
       "videoID": "0i0-XEV85m8",
       "seconds": 1007.5,
-      "direction": "Lặn vào hang nước có cụm sò sáng trong video.",
-      "method": "Nhặt Silica Pearls dưới đáy; chuẩn bị đủ oxy.",
+      "direction": "Dive into the water cave with bright clam clusters in the video.",
+      "method": "Pick up Silica Pearls from the bottom; Prepare enough oxygen.",
       "kit": [
         "SCUBA Gear",
         "Basilosaurus"
       ],
       "risks": [
-        "Hết oxy",
-        "Hang dưới nước"
+        "Out of oxygen",
+        "Underwater cave"
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8",
@@ -742,7 +742,7 @@
     {
       "id": "rag-silk-fields",
       "map": "ragnarok",
-      "name": "Cánh đồng Silk phía đông bắc",
+      "name": "Silk fields in the northeast",
       "lat": 11.7,
       "lon": 83.7,
       "resources": [
@@ -751,14 +751,14 @@
       "imageAsset": "FarmPhoto-rag-silk-fields",
       "videoID": "0i0-XEV85m8",
       "seconds": 1072.5,
-      "direction": "Đến cánh đồng cây tím trong ảnh và video.",
-      "method": "Thu hoạch cây tím bằng tay, Metal Sickle hoặc Therizinosaurus.",
+      "direction": "Reach the field of purple plants shown in the image and video.",
+      "method": "Harvest purple plants by hand, Metal Sickle or Therizinosaurus.",
       "kit": [
         "Metal Sickle",
         "Therizinosaurus"
       ],
       "risks": [
-        "Sinh vật vùng đồng cỏ"
+        "Grassland creatures"
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8",
@@ -769,7 +769,7 @@
     {
       "id": "rag-sulfur-rocks",
       "map": "ragnarok",
-      "name": "Sulfur trong vùng đá núi lửa",
+      "name": "Sulfur in volcanic rocks",
       "lat": 22.7,
       "lon": 64.1,
       "resources": [
@@ -778,16 +778,16 @@
       "imageAsset": "FarmPhoto-rag-sulfur-rocks",
       "videoID": "0i0-XEV85m8",
       "seconds": 1122.5,
-      "direction": "Tìm các mỏ vàng sáng giữa nền đá núi lửa trong ảnh.",
-      "method": "Dùng Metal Pick hoặc Ankylosaurus khai thác Sulfur.",
+      "direction": "Find the bright yellow deposits among volcanic rock shown in the image.",
+      "method": "Use Metal Pick or Ankylosaurus to mine Sulfur.",
       "kit": [
         "Metal Pick",
         "Ankylosaurus",
         "Argentavis"
       ],
       "risks": [
-        "Nóng",
-        "Sinh vật núi lửa"
+        "Hot",
+        "Volcanic creatures"
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8",
@@ -798,7 +798,7 @@
     {
       "id": "rag-salt-columns",
       "map": "ragnarok",
-      "name": "Cột Raw Salt trên bờ phía nam",
+      "name": "Raw Salt column on the south bank",
       "lat": 86.2,
       "lon": 39.1,
       "resources": [
@@ -807,15 +807,15 @@
       "imageAsset": "FarmPhoto-rag-salt-columns",
       "videoID": "0i0-XEV85m8",
       "seconds": 1232.5,
-      "direction": "Tìm các cột muối màu trắng hồng trên bờ phía nam.",
-      "method": "Dùng Metal Pick khai thác Raw Salt từ các cột trong video.",
+      "direction": "Look for pink-white salt pillars on the south shore.",
+      "method": "Use Metal Pick to extract Raw Salt from the columns in the video.",
       "kit": [
         "Metal Pick",
         "Argentavis"
       ],
       "risks": [
-        "Nóng",
-        "Sinh vật ven bờ"
+        "Hot",
+        "Coastal creatures"
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8",
@@ -826,7 +826,7 @@
     {
       "id": "island-ice-polymer",
       "map": "the-island",
-      "name": "Organic Polymer quanh băng trôi phía tây bắc",
+      "name": "Organic Polymer around northwest drift ice",
       "lat": 25.8,
       "lon": 6.5,
       "resources": [
@@ -835,17 +835,17 @@
       "imageAsset": "FarmPhoto-island-ice-polymer",
       "videoID": "IOCye6IYUCM",
       "seconds": 776,
-      "direction": "Kiểm tra các tảng băng trôi ven bờ phía tây bắc trong video.",
-      "method": "Tìm Kairuku và thu hoạch xác bằng Wooden Club hoặc Pelagornis; đưa về trước khi hết hạn.",
+      "direction": "Check out the icebergs along the northwest coast in the video.",
+      "method": "Find Kairuku and harvest the carcass with Wooden Club or Pelagornis; returned before expiration.",
       "kit": [
         "Wooden Club",
         "Pelagornis",
         "Fur Armor"
       ],
       "risks": [
-        "Lạnh",
-        "Kairuku xuất hiện theo spawn",
-        "Organic Polymer có hạn sử dụng"
+        "Cold",
+        "Kairuku appears from spawn",
+        "Organic Polymer has an expiration date"
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM",
@@ -856,7 +856,7 @@
     {
       "id": "rag-lake-basic-hub",
       "map": "ragnarok",
-      "name": "Vật liệu cơ bản quanh hồ hải ly",
+      "name": "Basic materials around beaver ponds",
       "lat": 24.8,
       "lon": 42.3,
       "resources": [
@@ -870,8 +870,8 @@
       "imageAsset": "FarmPhoto-rag-lake-basic-hub",
       "videoID": "5IhlD3yzqjU",
       "seconds": 535,
-      "direction": "Theo bờ hồ và dòng suối cạnh vùng đập hải ly trong video.",
-      "method": "Lấy gỗ và lá từ cây, Fiber từ bụi, Stone từ đá; chuẩn bị thú vận chuyển.",
+      "direction": "Follow the lakeshore and stream next to the beaver dam area in the video.",
+      "method": "Harvest wood and thatch from trees, Fiber from bushes, and Stone from rocks; prepare transport tames.",
       "kit": [
         "Metal Hatchet",
         "Metal Pick",
@@ -879,8 +879,8 @@
         "Argentavis"
       ],
       "risks": [
-        "Hải ly tấn công khi phá đập",
-        "Sinh vật rừng"
+        "Beavers attack when breaking dams",
+        "Forest creatures"
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=5IhlD3yzqjU",
@@ -891,7 +891,7 @@
     {
       "id": "island-surface-pearls",
       "map": "the-island",
-      "name": "Silica Pearls ở vịnh nông phía tây",
+      "name": "Silica Pearls in shallow western bay",
       "lat": 35.7,
       "lon": 12.3,
       "resources": [
@@ -900,15 +900,15 @@
       "imageAsset": "FarmPhoto-island-surface-pearls",
       "videoID": "0JqFIlmuq9o",
       "seconds": 209,
-      "direction": "Từ bờ rừng phía tây, xuống vùng nước nông cạnh băng trôi trong video.",
-      "method": "Nhặt các cụm ngọc trai trắng dưới đáy nông; đi theo bờ để giữ đường rút.",
+      "direction": "From the western forest bank, descend into the shallow water next to the drift ice in the video.",
+      "method": "Pick clusters of white pearls from the shallow bottom; Follow the shore to keep the retreat.",
       "kit": [
         "Scuba Tank",
         "Otter"
       ],
       "risks": [
-        "Lạnh gần băng",
-        "Sinh vật biển"
+        "Cold near the ice",
+        "Sea creatures"
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=0JqFIlmuq9o",
@@ -919,7 +919,7 @@
     {
       "id": "rag-whale-keratin",
       "map": "ragnarok",
-      "name": "Keratin từ xác cá voi ven bờ đông bắc",
+      "name": "Keratin from whale carcasses along the northeast coast",
       "lat": 9.85,
       "lon": 92.05,
       "resources": [
@@ -928,15 +928,15 @@
       "imageAsset": "FarmPhoto-rag-whale-keratin",
       "videoID": "Xlsuehsu9oQ",
       "seconds": 99,
-      "direction": "Theo bờ đông bắc, kiểm tra xác cá voi ở vùng nước sát bãi đá trong video.",
-      "method": "Thu hoạch xác cá voi bằng Metal Hatchet hoặc thú thu hoạch; kiểm tra nhiều đoạn bờ vì xác xuất hiện theo spawn.",
+      "direction": "Following the northeast shore, check the whale carcass in the water close to the rocks in the video.",
+      "method": "Harvest whale carcasses with Metal Hatchet or harvest animal; Check many shore sections because corpses appear with spawn.",
       "kit": [
         "Metal Hatchet",
         "Argentavis"
       ],
       "risks": [
-        "Spawn xác thay đổi",
-        "Sinh vật biển và ven bờ"
+        "Carcass spawns vary",
+        "Marine and coastal creatures"
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=Xlsuehsu9oQ",
@@ -947,7 +947,7 @@
     {
       "id": "honey-center-redwoods",
       "map": "the-center",
-      "name": "Honey · cây Redwood sát vách đá",
+      "name": "Honey · Redwood tree beside a cliff",
       "lat": 77.1,
       "lon": 65.3,
       "resources": [
@@ -956,17 +956,17 @@
       "imageAsset": "FarmPhoto-honey-center-redwoods",
       "videoID": "DgvNoRqz4EE",
       "seconds": 135,
-      "direction": "Tới khu Redwood phía nam, tìm cây lớn cạnh vách đá; trong video hive nằm dưới tree platform. Platform do người chơi đặt, không phải cấu trúc tự nhiên.",
-      "method": "Lấy honey từ hive còn hoạt động; nếu cần farm lâu dài, tame Queen rồi chuyển thành Bee Hive tại căn cứ. Tổ và Queen là spawn động.",
+      "direction": "Go to area Redwood south, find the big tree next to the cliff; in the video the hive is under the tree platform. Platforms are placed by players, not natural structures.",
+      "method": "Get honey from active hive; If you need to farm for a long time, tame Queen and then transform into Bee Hive at the base. Nest and Queen are dynamic spawners.",
       "kit": [
         "Ghillie Armor",
         "Bug Repellant",
         "Rare Flower"
       ],
       "risks": [
-        "Ong tấn công",
-        "Sinh vật săn mồi",
-        "Hive hoặc Queen có thể không spawn trong save hiện tại"
+        "Bee attack",
+        "Predatory creature",
+        "Hive or Queen may not spawn in the current save"
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=DgvNoRqz4EE",
@@ -977,7 +977,7 @@
     {
       "id": "honey-island-redwoods",
       "map": "the-island",
-      "name": "Honey · hive ở Redwood phía tây",
+      "name": "Honey · hive in Redwood west",
       "lat": 63.3,
       "lon": 30.2,
       "resources": [
@@ -986,17 +986,17 @@
       "imageAsset": "FarmPhoto-honey-island-redwoods",
       "videoID": "biZPGe9eD5Y",
       "seconds": 45,
-      "direction": "Tới Redwood phía tây, kiểm tra thân cây lớn gần bờ hồ và nền đá; hive trong video nằm cao trên thân cây.",
-      "method": "Tiếp cận tổ bằng flyer rồi lấy honey khi an toàn; theo dõi ong và đường rút. Có thể tame Queen để dựng hive riêng.",
+      "direction": "Go to Redwood to the west, check the large tree trunk near the lake shore and the rock base; The hive in the video is located high on a tree trunk.",
+      "method": "Approach the hive on a flyer and collect honey when safe; watch bees and keep a retreat route. You can tame Queen to establish your own hive.",
       "kit": [
         "Ghillie Armor",
         "Bug Repellant",
         "Rare Flower"
       ],
       "risks": [
-        "Ong tấn công",
-        "Sinh vật săn mồi",
-        "Hive hoặc Queen có thể không spawn trong save hiện tại"
+        "Bee attack",
+        "Predatory creature",
+        "Hive or Queen may not spawn in the current save"
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=biZPGe9eD5Y",
@@ -1007,7 +1007,7 @@
     {
       "id": "honey-ragnarok-queen-region",
       "map": "ragnarok",
-      "name": "Honey · vùng tìm Queen phía bắc",
+      "name": "Honey · area to find Queen in the north",
       "lat": 25.2,
       "lon": 40.0,
       "resources": [
@@ -1016,17 +1016,17 @@
       "imageAsset": "FarmPhoto-honey-ragnarok-queen-region",
       "videoID": "u_c-yTvCLek",
       "seconds": 165,
-      "direction": "Tìm Queen quanh vùng rừng và khe đá phía bắc được video đánh dấu; rà soát mặt đất nếu không thấy tổ trên cây.",
-      "method": "Dùng Ghillie và Bug Repellant, passive tame Queen bằng Rare Flower; chọn Obtain Bee Hive rồi đặt tại căn cứ, thêm Rare Flower để nuôi tổ. Không phải node honey cố định.",
+      "direction": "Look for the Queen around the northern forest and rock crevices marked by the video; Check the ground if you don't see a nest in the tree.",
+      "method": "Use Ghillie and Bug Repellant, passively tame Queen with Rare Flower; Choose Obtain Bee Hive and place it at the base, add Rare Flower to feed the nest. Not a fixed honey node.",
       "kit": [
         "Ghillie Armor",
         "Bug Repellant",
         "Rare Flower"
       ],
       "risks": [
-        "Ong tấn công",
-        "Sinh vật săn mồi",
-        "Hive hoặc Queen có thể không spawn trong save hiện tại"
+        "Bee attack",
+        "Predatory creature",
+        "Hive or Queen may not spawn in the current save"
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=u_c-yTvCLek",
@@ -1037,7 +1037,7 @@
     {
       "id": "rag-shore-sand",
       "map": "ragnarok",
-      "name": "Sandpile trên bờ biển phía bắc",
+      "name": "Sandpile on the north coast",
       "lat": 24.2,
       "lon": 33,
       "resources": [
@@ -1047,15 +1047,15 @@
       "imageAsset": "FarmPhoto-rag-shore-sand",
       "videoID": "jkMVN1exw74",
       "seconds": 19,
-      "direction": "Tìm các mảng cát vàng tròn trên bãi biển cạnh vách đá và vùng nước trong video.",
-      "method": "Dùng tay hoặc dụng cụ thu hoạch các mảng cát; kiểm tra trọng lượng trước khi gom nhiều.",
+      "direction": "Look for rounded patches of golden sand on the beach next to cliffs and bodies of water in the video.",
+      "method": "Use your hands or tools to harvest sand patches; Check the weight before bulking up.",
       "kit": [
         "Metal Hatchet",
         "Argentavis"
       ],
       "risks": [
-        "Sinh vật ven bờ",
-        "Sand nặng"
+        "Coastal creatures",
+        "Sand is heavy"
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=jkMVN1exw74",
@@ -1066,7 +1066,7 @@
     {
       "id": "island-swamp-mushrooms",
       "map": "the-island",
-      "name": "Rare Mushrooms từ cây đầm lầy phía nam",
+      "name": "Rare Mushrooms from southern swamp plants",
       "lat": 74.1,
       "lon": 33.5,
       "resources": [
@@ -1077,16 +1077,16 @@
       "imageAsset": "FarmPhoto-island-swamp-mushrooms",
       "videoID": "3oUZ_AoRLmg",
       "seconds": 99,
-      "direction": "Từ nhánh sông phía nam, đi vào vùng cây rễ ngập nước trong video.",
-      "method": "Chặt cây đầm lầy để lấy Rare Mushrooms cùng gỗ và lá; dùng thú thu hoạch khi đã đủ sức bảo vệ.",
+      "direction": "From the south branch of the river, enter the submerged tree root area in the video.",
+      "method": "Harvest swamp trees for Rare Mushrooms, wood, and thatch; use harvesting tames when you can protect them.",
       "kit": [
         "Metal Hatchet",
         "Therizinosaurus",
         "Brontosaurus"
       ],
       "risks": [
-        "Rắn và cá sấu",
-        "Đầm lầy dễ mất tầm nhìn"
+        "Snakes and crocodiles",
+        "Swamps easily lose visibility"
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=3oUZ_AoRLmg",
@@ -1097,7 +1097,7 @@
     {
       "id": "center-extra-swamp-mushrooms",
       "map": "the-center",
-      "name": "Rare Mushrooms từ cây đầm lầy",
+      "name": "Rare Mushrooms from swamp plants",
       "lat": 49.4,
       "lon": 37.4,
       "resources": [
@@ -1106,16 +1106,16 @@
       "imageAsset": "FarmPhoto-center-extra-swamp-mushrooms",
       "videoID": "tj-7gfu6AHA",
       "seconds": 120,
-      "direction": "Đến bờ đầm lầy phía đông nam vòng nước quanh đảo nổi. Đi dọc các cụm cây có rễ ngập nước quanh GPS này; đây là vùng khai thác, không phải một cây duy nhất.",
-      "method": "Dùng Chainsaw hoặc Metal Pick vào cây đầm lầy; có thể mang Therizinosaurus để khai thác. Video hướng dẫn tại vùng này, không cam kết số nấm mỗi lần thu.",
+      "direction": "Reach the swamp shore southeast of the water ring around the floating island. Follow trees with submerged roots around this GPS; this is a harvesting area, not a single tree.",
+      "method": "Use Chainsaw or Metal Pick on the swamp plant; can bring Therizinosaurus for mining. Instructional videos in this area do not guarantee the number of mushrooms collected each time.",
       "kit": [
         "Chainsaw",
         "Metal Pick",
         "Therizinosaurus"
       ],
       "risks": [
-        "Sinh vật săn mồi trong đầm lầy",
-        "Nước sâu và địa hình khó thoát"
+        "Creatures hunting in the swamp",
+        "The water is deep and the terrain is difficult to escape"
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=tj-7gfu6AHA",
@@ -1128,7 +1128,7 @@
     {
       "id": "island-east-dam-rares",
       "map": "the-island",
-      "name": "Rare Flowers ở ao hải ly vùng núi phía đông",
+      "name": "Rare Flowers in beaver pond in the eastern mountains",
       "lat": 32.5,
       "lon": 83.5,
       "resources": [
@@ -1142,14 +1142,14 @@
       "imageAsset": "FarmPhoto-island-east-dam-rares",
       "videoID": "6d_iRk7tFBk",
       "seconds": 292.5,
-      "direction": "GPS đánh dấu góc nhìn trên cao; tiếp tục hạ xuống ao có đập hải ly trong video.",
-      "method": "Lấy tài nguyên trong đập rồi dọn sạch phần còn lại; rút khỏi hải ly đang bảo vệ đập.",
+      "direction": "GPS marks the overhead view; Continue lowering into the pond with the beaver dam in the video.",
+      "method": "Grab the resources in the dam then clear the rest; withdraw from the beavers protecting the dam.",
       "kit": [
         "Argentavis"
       ],
       "risks": [
-        "Hải ly bảo vệ đập",
-        "Nội dung đập thay đổi theo lần spawn"
+        "Beavers protect the dam",
+        "Dam content changes with spawn"
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=6d_iRk7tFBk",
@@ -1160,7 +1160,7 @@
     {
       "id": "center-extra-lava-chitin",
       "map": "the-center",
-      "name": "Chitin từ côn trùng trong hang đảo núi lửa",
+      "name": "Chitin from insects in volcanic island caves",
       "lat": 19.36,
       "lon": 47.68,
       "resources": [
@@ -1169,17 +1169,17 @@
       "imageAsset": "FarmPhoto-center-extra-lava-chitin",
       "videoID": "YU-ZCfZF8gk",
       "seconds": 530,
-      "direction": "Đây là vùng khai thác bên trong hang đảo núi lửa phía bắc, không phải GPS cửa hang. Theo đoạn video từ325s để nhận diện lối vào rồi tiếp tục tới khu có cây đỏ và bọ; sinh vật di chuyển và hồi sinh quanh vùng này.",
-      "method": "Dùng Megatherium tiêu diệt rồi thu hoạch nhện và bọ cạp trong hang. Chuẩn bị trước tải trọng và lối rút; lượng Chitin phụ thuộc sinh vật và hệ số máy chủ.",
+      "direction": "This is a farming area inside the northern volcanic island cave, not its entrance GPS. Follow the video from325s to identify the entrance, then continue to red plants and insects; creatures move and respawn around this area.",
+      "method": "Use Megatherium to kill and harvest cave spiders and scorpions. Prepare carrying capacity and a retreat route; Chitin yield depends on creatures and server multipliers.",
       "kit": [
         "Megatherium",
         "Metal Hatchet",
         "Medical Brew"
       ],
       "risks": [
-        "Sinh vật hang level cao",
+        "High level cave creatures",
         "Torpor",
-        "Đường hang hẹp"
+        "Narrow cave path"
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=YU-ZCfZF8gk",
@@ -1193,7 +1193,7 @@
     {
       "id": "center-extra-blue-basics",
       "map": "the-center",
-      "name": "Stone, Fiber và Thatch quanh Blue Obelisk",
+      "name": "Stone, Fiber and Thatch around Blue Obelisk",
       "lat": 52.3,
       "lon": 78.2,
       "resources": [
@@ -1206,16 +1206,16 @@
       "imageAsset": "FarmPhoto-center-extra-blue-basics",
       "videoID": "bAqRvM-080g",
       "seconds": 25,
-      "direction": "Hạ cánh quanh Blue Obelisk tại GPS này. Kiểm tra gờ có node đá/quặng rồi xuống tầng rừng bên dưới vách mỏ để tìm bụi thấp và cây. Pin đánh dấu vùng tiếp cận được quay; không đánh vào vách đá liền khối.",
-      "method": "Stone: dùng Metal Hatchet vào node đá có thể khai thác, hoặc nhặt đá rời. Fiber: dùng Metal Sickle vào bụi cây thấp. Thatch: dùng Metal Pick vào thân cây. Ảnh xác nhận địa hình có cây, bụi và node quặng; cơ chế thu hoạch đối chiếu Wiki, không có số lượng thu hoạch đo trực tiếp tại điểm này.",
+      "direction": "Land around Blue Obelisk at this GPS. Check ledges with rock/ore nodes, then descend to the forest below the mining cliff for low bushes and trees. The pin marks the filmed approach area; do not strike solid cliff faces.",
+      "method": "Stone: use Metal Hatchet on harvestable rocks, or collect loose stones. Fiber: use Metal Sickle on low bushes. Thatch: use Metal Pick on tree trunks. Images confirm trees, bushes, and ore nodes; harvest mechanics are checked against the wiki, with no directly measured yield at this point.",
       "kit": [
         "Metal Hatchet",
         "Metal Sickle",
         "Metal Pick"
       ],
       "risks": [
-        "Vách đá cao",
-        "Sinh vật săn mồi trong rừng"
+        "High cliff",
+        "Creatures hunt in the forest"
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g",
@@ -1241,7 +1241,7 @@
         "rag-underwater-metal",
         "rag-cave-metal-obsidian"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "ragnarok",
@@ -1250,7 +1250,7 @@
       "spotIDs": [
         "rag-cave-metal-obsidian"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "ragnarok",
@@ -1259,7 +1259,7 @@
       "spotIDs": [
         "rag-crystal-highland"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "ragnarok",
@@ -1268,7 +1268,7 @@
       "spotIDs": [
         "rag-cave-metal-obsidian"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "ragnarok",
@@ -1277,7 +1277,7 @@
       "spotIDs": [
         "rag-oil-north-shore"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "ragnarok",
@@ -1287,7 +1287,7 @@
         "rag-dam-lakes",
         "rag-pearls-cave"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "ragnarok",
@@ -1296,7 +1296,7 @@
       "spotIDs": [
         "rag-black-pearl-bed"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "ragnarok",
@@ -1305,7 +1305,7 @@
       "spotIDs": [
         "rag-dam-lakes"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "ragnarok",
@@ -1314,14 +1314,14 @@
       "spotIDs": [
         "rag-polymer-plants"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "ragnarok",
       "resource": "Polymer",
       "status": "crafting",
       "spotIDs": [],
-      "reason": "Chế tạo tại Fabricator: 2 Cementing Paste + 2 Obsidian cho 1 Polymer; Organic Polymer có thể thay thế theo công thức."
+      "reason": "Craft at Fabricator: 2 Cementing Paste + 2 Obsidian produce 1 Polymer; Organic Polymer can substitute as allowed by the recipe."
     },
     {
       "map": "ragnarok",
@@ -1332,7 +1332,7 @@
         "rag-coast-flowers",
         "rag-flowers-nw"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "ragnarok",
@@ -1341,7 +1341,7 @@
       "spotIDs": [
         "rag-dam-lakes"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "ragnarok",
@@ -1350,27 +1350,27 @@
       "spotIDs": [
         "honey-ragnarok-queen-region"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "ragnarok",
       "resource": "Chitin",
       "status": "creature",
       "spotIDs": [],
-      "reason": "Thu hoạch xác Karkinos hoặc Iceworm bằng Chainsaw; chuẩn bị vũ khí và giáp trước khi vào hang. Đây là phương pháp săn sinh vật, chưa có pin GPS của đoạn farm.",
+      "reason": "Harvest Karkinos or Iceworm carcasses with Chainsaw; prepare weapons and armor before entering the cave. This is a creature-hunting method, without a GPS pin for the farming segment.",
       "videoID": "5IhlD3yzqjU",
       "seconds": 676.5,
       "sourceURL": "https://www.youtube.com/watch?v=5IhlD3yzqjU",
       "imageAsset": "FarmPhoto-acquisition-rag-chitin",
-      "method": "Giết Karkinos bằng thú chiến đấu phù hợp rồi dùng Chainsaw thu hoạch xác; giữ đường rút khỏi hang.",
+      "method": "Kill Karkinos with a suitable combat animal and then use the Chainsaw to harvest the body; keep the way out of the cave.",
       "kit": [
         "Chainsaw",
         "Pump-Action Shotgun",
         "Fur Armor"
       ],
       "risks": [
-        "Karkinos có thể kẹp người hoặc thú",
-        "Iceworm và lạnh nếu chọn hang băng"
+        "Karkinos can grip people or animals",
+        "Iceworm and cold if choose ice cave"
       ],
       "coordinateEvidence": "No GPS pin is claimed. Source farming method chapter626–706s lacks literal farm GPS.",
       "inventoryEvidence": "Actual Karkinos corpse673.5–682.5s is harvested with Chainsaw; screenshot676.5s displays Chitin+1569, Organic Polymer+564 and Raw Meat+209 overlay. These are creator yield examples, not promised vanilla-save amounts.",
@@ -1384,7 +1384,7 @@
       "spotIDs": [
         "rag-whale-keratin"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "ragnarok",
@@ -1394,7 +1394,7 @@
         "rag-dam-lakes",
         "rag-lake-basic-hub"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "ragnarok",
@@ -1403,7 +1403,7 @@
       "spotIDs": [
         "rag-lake-basic-hub"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "ragnarok",
@@ -1412,7 +1412,7 @@
       "spotIDs": [
         "rag-lake-basic-hub"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "ragnarok",
@@ -1421,7 +1421,7 @@
       "spotIDs": [
         "rag-lake-basic-hub"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "ragnarok",
@@ -1430,7 +1430,7 @@
       "spotIDs": [
         "rag-lake-basic-hub"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "ragnarok",
@@ -1439,14 +1439,14 @@
       "spotIDs": [
         "rag-lake-basic-hub"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "ragnarok",
       "resource": "Element",
       "status": "boss",
       "spotIDs": [],
-      "reason": "Nhận Element từ boss tương ứng của bản đồ; cần Artifact, tribute và đội hình. Không phải node tài nguyên tự nhiên."
+      "reason": "Obtain Element from the map's corresponding boss; Need Artifact, tribute and squad. Not a natural resource node."
     },
     {
       "map": "ragnarok",
@@ -1455,7 +1455,7 @@
       "spotIDs": [
         "rag-sulfur-rocks"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "ragnarok",
@@ -1464,7 +1464,7 @@
       "spotIDs": [
         "rag-shore-sand"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "ragnarok",
@@ -1473,14 +1473,14 @@
       "spotIDs": [
         "rag-cactus-route"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "ragnarok",
       "resource": "Clay",
       "status": "crafting",
       "spotIDs": [],
-      "reason": "Chế tạo tại Mortar and Pestle: 2 Sand + 1 Cactus Sap cho 2 Clay; không gán pin chế tạo thành node tự nhiên."
+      "reason": "Craft at Mortar and Pestle: 2 Sand + 1 Cactus Sap produce 2 Clay; do not represent a crafting pin as a natural resource node."
     },
     {
       "map": "ragnarok",
@@ -1489,7 +1489,7 @@
       "spotIDs": [
         "rag-silk-fields"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "ragnarok",
@@ -1498,7 +1498,7 @@
       "spotIDs": [
         "rag-salt-columns"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "the-island",
@@ -1507,7 +1507,7 @@
       "spotIDs": [
         "island-volcano-ore"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "the-island",
@@ -1516,7 +1516,7 @@
       "spotIDs": [
         "island-volcano-ore"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "the-island",
@@ -1526,7 +1526,7 @@
         "island-volcano-ore",
         "island-carno-crystal"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "the-island",
@@ -1535,7 +1535,7 @@
       "spotIDs": [
         "island-volcano-ore"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "the-island",
@@ -1544,7 +1544,7 @@
       "spotIDs": [
         "island-nw-oil"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "the-island",
@@ -1554,7 +1554,7 @@
         "island-surface-pearls",
         "island-east-dam-rares"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "the-island",
@@ -1563,7 +1563,7 @@
       "spotIDs": [
         "island-west-black-pearls"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "the-island",
@@ -1573,7 +1573,7 @@
         "island-redwood-paste",
         "island-east-dam-rares"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "the-island",
@@ -1582,14 +1582,14 @@
       "spotIDs": [
         "island-ice-polymer"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "the-island",
       "resource": "Polymer",
       "status": "crafting",
       "spotIDs": [],
-      "reason": "Chế tạo tại Fabricator: 2 Cementing Paste + 2 Obsidian cho 1 Polymer; Organic Polymer có thể thay thế theo công thức."
+      "reason": "Craft at Fabricator: 2 Cementing Paste + 2 Obsidian produce 1 Polymer; Organic Polymer can substitute as allowed by the recipe."
     },
     {
       "map": "the-island",
@@ -1598,7 +1598,7 @@
       "spotIDs": [
         "island-east-dam-rares"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "the-island",
@@ -1608,7 +1608,7 @@
         "island-swamp-mushrooms",
         "island-east-dam-rares"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "the-island",
@@ -1617,7 +1617,7 @@
       "spotIDs": [
         "honey-island-redwoods"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "the-island",
@@ -1626,27 +1626,27 @@
       "spotIDs": [
         "island-west-starter"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "the-island",
       "resource": "Keratin",
       "status": "creature",
       "spotIDs": [],
-      "reason": "Săn Carbonemys, Triceratops, Stegosaurus hoặc Ankylosaurus, rồi thu hoạch xác bằng Metal Hatchet hay thú phù hợp. Chitin có thể thay Keratin trong công thức ghi Chitin/Keratin; hãy kiểm tra công thức riêng.",
+      "reason": "Hunt Carbonemys, Triceratops, Stegosaurus or Ankylosaurus, then harvest the carcass with a Metal Hatchet or suitable animal. Chitin can replace Keratin in the formula written Chitin /Keratin; Please check the recipe separately.",
       "videoID": "LIlgVYn8Fag",
       "seconds": 133.5,
       "sourceURL": "https://www.youtube.com/watch?v=LIlgVYn8Fag",
       "imageAsset": "FarmPhoto-acquisition-keratin",
-      "method": "Dùng Metal Hatchet thu hoạch xác; chọn Carbonemys ven bờ khi mới bắt đầu, tránh Stegosaurus hoặc Ankylosaurus nếu chưa đủ sức.",
+      "method": "Use the Metal Hatchet to harvest the corpse; Choose coastal Carbonemys when starting out, avoid Stegosaurus or Ankylosaurus if you don't have enough strength.",
       "kit": [
         "Metal Hatchet",
         "Argentavis",
         "Therizinosaurus"
       ],
       "risks": [
-        "Sinh vật di chuyển",
-        "Bầy thú có thể phản công"
+        "Creatures move",
+        "The herd can counterattack"
       ],
       "coordinateEvidence": "No GPS or Center location is claimed. The actual ASA Island resource guide is used for general Keratin mechanics only.",
       "inventoryEvidence": "Source Keratin explanation around103–141s shows actual ASA Carbonemys/Trike/Ankylosaurus footage; screenshot133.5s depicts Ankylosaurus. No per-kill harvest, measured yield or location is claimed.",
@@ -1662,7 +1662,7 @@
         "island-swamp-mushrooms",
         "island-east-dam-rares"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "the-island",
@@ -1671,7 +1671,7 @@
       "spotIDs": [
         "island-west-starter"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "the-island",
@@ -1681,7 +1681,7 @@
         "island-redwood-fiber",
         "island-west-starter"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "the-island",
@@ -1691,7 +1691,7 @@
         "island-west-starter",
         "island-swamp-mushrooms"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "the-island",
@@ -1700,7 +1700,7 @@
       "spotIDs": [
         "island-west-starter"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "the-island",
@@ -1709,14 +1709,14 @@
       "spotIDs": [
         "island-west-starter"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "the-island",
       "resource": "Element",
       "status": "boss",
       "spotIDs": [],
-      "reason": "Nhận Element từ boss tương ứng của bản đồ; cần Artifact, tribute và đội hình. Không phải node tài nguyên tự nhiên."
+      "reason": "Obtain Element from the map's corresponding boss; Need Artifact, tribute and squad. Not a natural resource node."
     },
     {
       "map": "the-center",
@@ -1727,7 +1727,7 @@
         "center-lava-metal",
         "center-snow-crystal"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "the-center",
@@ -1737,7 +1737,7 @@
         "center-blue-metal",
         "center-lava-metal"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "the-center",
@@ -1746,7 +1746,7 @@
       "spotIDs": [
         "center-snow-crystal"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "the-center",
@@ -1755,7 +1755,7 @@
       "spotIDs": [
         "center-spire-obsidian"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "the-center",
@@ -1764,7 +1764,7 @@
       "spotIDs": [
         "center-ring-pearls"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "the-center",
@@ -1774,19 +1774,19 @@
         "center-beaver-pond",
         "center-ring-pearls"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "the-center",
       "resource": "Black Pearls",
       "status": "creature",
       "spotIDs": [],
-      "reason": "Săn Alpha Mosasaur hoặc Alpha Tusoteuthis rồi lấy loot từ xác; Eurypterid là nguồn nhỏ hơn. Video minh họa sinh vật, không xác nhận vùng spawn hoặc GPS tại The Center.",
+      "reason": "Hunt Alpha Mosasaur or Alpha Tusoteuthis and get loot from the corpse; Eurypterids are the smaller source. Video illustrates creature, does not confirm spawn area or GPS at The Center.",
       "videoID": "SHb-iMDtk7k",
       "seconds": 333,
       "sourceURL": "https://www.youtube.com/watch?v=SHb-iMDtk7k",
       "imageAsset": "FarmPhoto-center-blackpearls-alpha-mosa",
-      "method": "Dùng đội thú biển đã chuẩn bị đủ sức để đánh bại Alpha Mosasaur; kiểm tra inventory xác hoặc túi loot trước khi thu hoạch hết.",
+      "method": "Use a sufficiently prepared ocean tame team to defeat Alpha Mosasaur; check its corpse inventory or loot bag before fully harvesting it.",
       "kit": [
         "SCUBA Tank",
         "SCUBA Flippers",
@@ -1794,9 +1794,9 @@
         "Tusoteuthis"
       ],
       "risks": [
-        "Alpha Mosasaur rất mạnh",
-        "Thiếu oxy",
-        "Sinh vật di chuyển và spawn thay đổi"
+        "Alpha Mosasaur is very strong",
+        "Lack of oxygen",
+        "Creature movements and spawn changes"
       ],
       "coordinateEvidence": "No location or GPS claim. Source survey uses admin/mod tools and natural versus manually spawned status cannot be independently established. The former35.19/95.77 GPS point was removed from verified spots.",
       "inventoryEvidence": "Actual source frame333s illustrates Alpha Mosasaur. Player BlackPearl101 at350s was already carried and is not harvest proof. Legitimate obtaining mechanism independently supported by official Wiki Black Pearl; source admin-killing behavior is not recommended.",
@@ -1810,7 +1810,7 @@
       "spotIDs": [
         "center-beaver-pond"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "the-center",
@@ -1819,14 +1819,14 @@
       "spotIDs": [
         "center-ice-polymer"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "the-center",
       "resource": "Polymer",
       "status": "crafting",
       "spotIDs": [],
-      "reason": "Chế tạo tại Fabricator: 2 Cementing Paste + 2 Obsidian cho 1 Polymer; Organic Polymer có thể thay thế theo công thức."
+      "reason": "Craft at Fabricator: 2 Cementing Paste + 2 Obsidian produce 1 Polymer; Organic Polymer can substitute as allowed by the recipe."
     },
     {
       "map": "the-center",
@@ -1835,7 +1835,7 @@
       "spotIDs": [
         "center-beaver-pond"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "the-center",
@@ -1844,7 +1844,7 @@
       "spotIDs": [
         "center-extra-swamp-mushrooms"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "the-center",
@@ -1853,7 +1853,7 @@
       "spotIDs": [
         "honey-center-redwoods"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "the-center",
@@ -1862,27 +1862,27 @@
       "spotIDs": [
         "center-extra-lava-chitin"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "the-center",
       "resource": "Keratin",
       "status": "creature",
       "spotIDs": [],
-      "reason": "Săn Carbonemys, Triceratops, Stegosaurus hoặc Ankylosaurus, rồi thu hoạch xác bằng Metal Hatchet hay thú phù hợp. Chitin có thể thay Keratin trong công thức ghi Chitin/Keratin; hãy kiểm tra công thức riêng. Video minh họa cơ chế bằng cảnh The Island, không xác nhận vị trí tại The Center.",
+      "reason": "Hunt Carbonemys, Triceratops, Stegosaurus or Ankylosaurus, then harvest the carcass with a Metal Hatchet or suitable animal. Chitin can replace Keratin in the formula written Chitin /Keratin; Please check the recipe separately. The video illustrates the mechanism using scene The Island, location unconfirmed at The Center.",
       "videoID": "LIlgVYn8Fag",
       "seconds": 133.5,
       "sourceURL": "https://www.youtube.com/watch?v=LIlgVYn8Fag",
       "imageAsset": "FarmPhoto-acquisition-keratin",
-      "method": "Dùng Metal Hatchet thu hoạch xác; chọn Carbonemys ven bờ khi mới bắt đầu, tránh Stegosaurus hoặc Ankylosaurus nếu chưa đủ sức.",
+      "method": "Use the Metal Hatchet to harvest the corpse; Choose coastal Carbonemys when starting out, avoid Stegosaurus or Ankylosaurus if you don't have enough strength.",
       "kit": [
         "Metal Hatchet",
         "Argentavis",
         "Therizinosaurus"
       ],
       "risks": [
-        "Sinh vật di chuyển",
-        "Bầy thú có thể phản công"
+        "Creatures move",
+        "The herd can counterattack"
       ],
       "coordinateEvidence": "No GPS or Center location is claimed. The actual ASA Island resource guide is used for general Keratin mechanics only.",
       "inventoryEvidence": "Source Keratin explanation around103–141s shows actual ASA Carbonemys/Trike/Ankylosaurus footage; screenshot133.5s depicts Ankylosaurus. No per-kill harvest, measured yield or location is claimed.",
@@ -1896,7 +1896,7 @@
       "spotIDs": [
         "center-beaver-pond"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "the-center",
@@ -1905,7 +1905,7 @@
       "spotIDs": [
         "center-extra-blue-basics"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "the-center",
@@ -1914,7 +1914,7 @@
       "spotIDs": [
         "center-extra-blue-basics"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "the-center",
@@ -1923,7 +1923,7 @@
       "spotIDs": [
         "center-extra-blue-basics"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "the-center",
@@ -1932,7 +1932,7 @@
       "spotIDs": [
         "center-extra-blue-basics"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "the-center",
@@ -1941,14 +1941,14 @@
       "spotIDs": [
         "center-extra-blue-basics"
       ],
-      "reason": "Đã đối chiếu tọa độ và ảnh thật của vùng farm trong video."
+      "reason": "Coordinates and actual images of the video farming area have been cross-checked."
     },
     {
       "map": "the-center",
       "resource": "Element",
       "status": "boss",
       "spotIDs": [],
-      "reason": "Nhận Element từ boss tương ứng của bản đồ; cần Artifact, tribute và đội hình. Không phải node tài nguyên tự nhiên."
+      "reason": "Obtain Element from the map's corresponding boss; Need Artifact, tribute and squad. Not a natural resource node."
     }
   ]
 }

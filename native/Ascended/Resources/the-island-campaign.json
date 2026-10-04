@@ -1,30 +1,30 @@
 {
-  "summary": "Thứ tự giao chiến gợi ý: Megapithecus → Broodmother → Dragon → Overseer. Guardian1–2 có thể đổi chỗ; Overseer có trophy gate thật.",
+  "summary": "Suggested fight order: Megapithecus → Broodmother → Dragon → Overseer. Guardian1–2 can switch places; Overseer has an actual trophy gate.",
   "sharedPreparation": [
-    "Mốc dưới đây là chỉ số trong inventory sau breed, imprint và điểm XP, trước courage / mate boost; không phải chỉ số mới nở hay sát thương hit thực tế.",
-    "Giả định wild max khoảng 150, stat multipliers gần mặc định và không mod combat. Single Player Settings ON có thể làm tame mạnh hơn; vẫn kiểm tra HP/melee thật, không tự chia số để giảm đội.",
-    "Chọn bố mẹ wild 130–150 có HP/melee tốt; tổng level chỉ là bộ lọc. Tame 150 hiệu quả cao thường khoảng 224, không phải mốc bắt buộc để thắng.",
-    "Ghép HP tốt + melee tốt vào cùng dòng breed, giữ bố mẹ dự phòng; imprint 100% nếu có thể. Rider imprint chỉ có khi đúng người đã imprint đang cưỡi; Dino AI không được rider bonus.",
-    "Lên XP: nâng HP tới mục tiêu, phần lớn điểm còn lại vào melee; Yuty ưu tiên HP/stamina, Daeodon ưu tiên food. Không bơm weight/speed cho DPS chỉ vì muốn tổng level cao.",
-    "Khoảng level 250–350+ có thể gặp ở đội đã train nhưng không chứng minh sức mạnh: level 300 dồn food yếu hơn level thấp có HP/melee đúng. Không có số mutation cố định phải đạt.",
-    "Solo thường cưỡi Yuty để giữ courage và whistle; 19 attacker + 1 Yuty = 20. Nếu dùng Daeodon, thay một attacker (18+1+1), chuẩn bị food và chấp nhận DPS giảm.",
-    "Chạy Gamma khảo sát → Beta → Alpha bằng cùng chiến thuật đã ổn định, thay saddle/đội khi thiếu; hồi đầy HP/food và mang súng dự phòng. Các ngưỡng là kế hoạch chuẩn bị, không cam kết no-loss.",
-    "Deinosuchus bleed đã bị loại khỏi boss ở patch 73.13. Các video/forum cũ nói bleed cheese không còn là bằng chứng cho hiện tại."
+    "Targets below are inventory stats after breeding, imprinting, and XP levels, before courage / mate boost; they are not hatch stats or actual hit damage.",
+    "Assumes a wild maximum around 150, near-default stat multipliers, and no combat mods. Single Player Settings ON may strengthen tames; still check actual HP/melee, and do not simply divide targets to reduce the team.",
+    "Choose wild parents at 130–150 with good HP/melee; total level is only a filter. A high-effectiveness level 150 tame usually ends around 224, not a required winning threshold.",
+    "Combine good HP + good melee in one breeding line and keep backup parents; imprint 100% if possible. Rider imprint applies only while the imprinter rides; AI Dino do not receive the rider bonus.",
+    "Spend XP levels on HP to the target, then mostly melee; prioritize HP/stamina for Yuty and food for Daeodon. Do not level weight/speed on DPS creatures just to raise their total level.",
+    "Trained teams may reach level 250–350+, but level does not prove strength: a level 300 creature invested in food is weaker than a lower-level creature with suitable HP/melee. No fixed mutation count is required.",
+    "Solo players usually ride Yuty for courage and whistles; 19 attackers + 1 Yuty = 20. With Daeodon, replace an attacker (18+1+1), prepare food, and accept lower DPS.",
+    "Scout with Gamma → Beta → Alpha using a proven strategy; improve saddles/team where needed, restore full HP/food, and bring a spare gun. Targets are preparation plans, not no-loss guarantees.",
+    "Deinosuchus bleed was removed from bosses in patch 73.13. Old bleed-cheese videos/forums no longer demonstrate current behavior."
   ],
   "steps": [
     {
       "id": "monkey",
       "title": "1 · Megapithecus",
-      "reason": "Trận thường dễ hơn nhện/Dragon với dòng Rex, nhưng bộ artifact khó hơn. Nếu anh đã có Mega và artifact nhện, làm Broodmother Gamma trước là hợp lý.",
+      "reason": "The fight is often easier than the spider/Dragon with a Rex line, but its artifact set is harder. If you already have Mega and the spider artifacts, doing Broodmother Gamma first makes sense.",
       "bossIDs": [
         "megapithecus"
       ],
-      "kind": "Mở Tek & tập điều đội"
+      "kind": "Unlock Tek & practice team control"
     },
     {
       "id": "spider",
       "title": "2 · Broodmother",
-      "reason": "Kiểm tra saddle/DPS và kỹ năng bao vây. Làm Gamma → Beta → Alpha theo sức đội, không nhảy Alpha chỉ vì đủ level.",
+      "reason": "Check saddles/DPS and encirclement control. Progress Gamma → Beta → Alpha as your team allows; do not jump to Alpha just because your level is high enough.",
       "bossIDs": [
         "broodmother"
       ],
@@ -33,40 +33,40 @@
     {
       "id": "dragon",
       "title": "3 · Dragon",
-      "reason": "Hoàn thiện dòng Theri + cake và phương án chống hơi lửa.",
+      "reason": "Complete a Theri line, cake supplies, and a fire-breath strategy.",
       "bossIDs": [
         "dragon"
       ],
-      "kind": "Guardian khó"
+      "kind": "Difficult guardian"
     },
     {
       "id": "overseer",
       "title": "4 · Tek Cave → Overseer",
-      "reason": "Sau khi có cả 3 trophy cùng cấp mục tiêu; khảo sát hang rồi ascend.",
+      "reason": "After collecting all 3 trophies at the target difficulty, survey the cave and ascend.",
       "bossIDs": [
         "overseer"
       ],
-      "kind": "Gate bắt buộc"
+      "kind": "Required gate"
     }
   ],
   "loadouts": [
     {
       "bossID": "megapithecus",
-      "entry": "Survivor level Gamma45 / Beta65 / Alpha85. Dino không có level vào trận chung.",
-      "warning": "Để đội ở vùng spawn, kéo monkey tới; không đuổi cả đàn lên cầu/rìa vực. Có thể thua vì rơi vực dù chỉ số cao.",
+      "entry": "Survivor level Gamma45 / Beta65 / Alpha85. Dino have no general entry-level requirement.",
+      "warning": "Leave the team at spawn and pull the monkey over; do not chase with the herd onto the bridge/cliff edge. Falling can cause a loss even with high stats.",
       "options": [
         {
           "id": "rex",
-          "title": "Rex + Yuty · dễ chuẩn hóa",
-          "team": "19 Rex + 1 Yutyrannus anh cưỡi; hoặc 18 Rex + Yuty + Daeodon.",
-          "why": "Một dòng breed có thể dùng nhiều trận; có saddle và chỉ số thực tế đủ.",
+          "title": "Rex + Yuty · easy to standardize",
+          "team": "19 Rex +1 Yutyrannus he rides; or 18 Rex + Yuty + Daeodon.",
+          "why": "One breeding line can serve multiple fights with adequate saddles and actual stats.",
           "targets": [
             {
               "difficulty": "Gamma",
               "hp": "15–20k",
               "melee": "500–600%",
               "saddle": "60–80+",
-              "extra": "Kế hoạch khởi đầu; thử Gamma trước."
+              "extra": "Starting plan; test Gamma first."
             },
             {
               "difficulty": "Beta",
@@ -80,18 +80,18 @@
               "hp": "35–40k",
               "melee": "900–1200%",
               "saddle": "100+",
-              "extra": "Mốc có khoảng đệm do em tổng hợp; không phải minimum."
+              "extra": "Compiled targets with a safety margin; not minimums."
             }
           ],
-          "play": "Whistle vào một mục tiêu, giữ courage, dùng Yuty tránh đòn; pig là lựa chọn, không healer vô hạn. Yuty gợi ý 25–30k HP / 2–3k stamina, saddle80+; pig 20k+ HP / 60–100k food là ngân sách support, không minimum.",
-          "confidence": "Kinh nghiệm cộng đồng + khoảng đệm do em đề xuất.",
+          "play": "Whistle one target, maintain courage, and dodge attacks on Yuty; a pig is optional, not an unlimited healer. Suggested Yuty budget: 25–30k HP / 2–3k stamina, saddle80+; pig 20k+ HP / 60–100k food. These are support budgets, not minimums.",
+          "confidence": "Community experience + buffer suggested by you.",
           "imageAsset": "Dino-rex"
         },
         {
           "id": "theri",
-          "title": "Therizino + cake · tái dùng dòng breed",
-          "team": "19 Therizinosaurus + 1 Yuty; hoặc 18 Theri + Yuty + 1 pig.",
-          "why": "Có thể tái dùng dòng Theri đã breed để giảm công chuẩn bị nhiều dòng. Thử ở Gamma trước khi tăng độ khó.",
+          "title": "Therizino + cake · reuse breed line",
+          "team": "19 Therizinosaurus +1 Yuty; or 18 Theri + Yuty +1 pig.",
+          "why": "It is possible to reuse already bred Theri lines to reduce the effort of preparing multiple lines. Try at Gamma before increasing the difficulty.",
           "targets": [
             {
               "difficulty": "Gamma",
@@ -112,11 +112,11 @@
               "hp": "~21k",
               "melee": "1000–1300%+",
               "saddle": "100+",
-              "extra": "20–30 cake / con; kiểm soát vị trí, food và nguồn cake"
+              "extra": "20–30 cake/piece; Control position, food and cake source"
             }
           ],
-          "play": "Giữ cake trong từng inventory, thêm berries; đừng nhầm melee% với damage hiện trên một hit. Nâng HP quanh 21k rồi ưu tiên melee là cách tận dụng cake, không phải luật cấm tăng HP.",
-          "confidence": "Mốc do em đề xuất để lập kế hoạch; nguồn của trận này không xác minh riêng army Theri. Thử Gamma để đánh giá trước khi nâng độ khó.",
+          "play": "Keep cakes in each inventory with extra berries; melee% is not the damage displayed for one hit. Raising HP to around 21k then prioritizing melee makes use of cakes, not a rule forbidding higher HP.",
+          "confidence": "Suggested planning targets; sources for this fight do not separately verify a Theri army. Evaluate Gamma before increasing difficulty.",
           "imageAsset": "Dino-therizinosaur"
         }
       ],
@@ -124,30 +124,30 @@
         {
           "title": "Reddit · ASA army comparison · 06/2024",
           "url": "https://www.reddit.com/r/ARK/comments/1dedy9s/",
-          "note": "Báo Gamma monkey với 12 Rex 15–20k HP, 400–550% và saddle 95+. Dùng làm ví dụ để tách Gamma khỏi Alpha."
+          "note": "Gamma monkey report: 12 Rex with 15–20k HP, 400–550%, and 95+ saddles. Use this example to distinguish Gamma from Alpha."
         },
         {
           "title": "Reddit · Broodmother · 08/2026",
           "url": "https://www.reddit.com/r/ARK/comments/1vxfbkh/",
-          "note": "Một bình luận báo Alpha thắng với Rex 30k HP, 800% và saddle 80 + Yuty; đây là kinh nghiệm, không phải minimum."
+          "note": "A comment reported an Alpha win with Rex at 30k HP, 800%, and 80 saddles + Yuty; this is experience, not a minimum."
         },
         {
-          "title": "Wiki · settings & cơ chế",
+          "title": "Wiki · settings & mechanics",
           "url": "https://ark.wiki.gg/wiki/Server_configuration",
-          "note": "Single Player Settings thay đổi hệ số tame; so chỉ số thực tế trong inventory trước trận."
+          "note": "Single Player Settings change tame multipliers; compare actual inventory stats before the fight."
         }
       ]
     },
     {
       "bossID": "broodmother",
       "entry": "Survivor level Gamma30 / Beta50 / Alpha70.",
-      "warning": "Alpha khó hơn Gamma rất nhiều; có báo Mega 30k/800% mất con. Mốc kế hoạch không chứng minh thắng nếu bị kẹt/minion chặn.",
+      "warning": "Alpha is much harder than Gamma; a report lost Mega at 30k/800%. Planned targets do not prove success if tames get stuck or blocked by minions.",
       "options": [
         {
           "id": "mega",
-          "title": "Megatherium · chuyên trị nhện",
-          "team": "19 Megatherium + 1 Yuty; hoặc 18 Mega + Yuty + pig.",
-          "why": "Buff khi giết côn trùng làm đội chuyên boss nhện nổi bật.",
+          "title": "Megatherium · spider specialist",
+          "team": "19 Megatherium + 1 Yuty; or 18 Mega + Yuty + pig.",
+          "why": "Its insect-kill buff makes this team stand out against the spider boss.",
           "targets": [
             {
               "difficulty": "Gamma",
@@ -168,25 +168,25 @@
               "hp": "~30k",
               "melee": "900–1200%",
               "saddle": "100+",
-              "extra": "Bao vây để nhiều con ăn buff côn trùng; không chỉ vài con được đánh."
+              "extra": "Surround the boss so many creatures receive the insect buff, rather than only a few getting to attack."
             }
           ],
-          "play": "Chia đàn hai bên, cho nhiều Mega giết minion thay vì tắc trước mặt boss. Giữ Yuty ngoài cụm độc. Đừng mặc định Mega tự hồi bằng cake như Theri.",
-          "confidence": "Có báo cáo Alpha; bố trí và buff là điều kiện quan trọng.",
+          "play": "Split the herd between both sides so more Mega kill minions instead of jamming in front of the boss. Keep Yuty away from poison clusters. Do not assume Mega heal with cakes like Theri.",
+          "confidence": "Alpha reports exist; positioning and buffs are important conditions.",
           "imageAsset": "Dino-megatherium"
         },
         {
           "id": "rex",
-          "title": "Rex + Yuty · dễ chuẩn hóa",
-          "team": "19 Rex + 1 Yutyrannus anh cưỡi; hoặc 18 Rex + Yuty + Daeodon.",
-          "why": "Một dòng breed có thể dùng nhiều trận; có saddle và chỉ số thực tế đủ.",
+          "title": "Rex + Yuty · easy to standardize",
+          "team": "19 Rex +1 Yutyrannus he rides; or 18 Rex + Yuty + Daeodon.",
+          "why": "One breeding line can serve multiple fights with adequate saddles and actual stats.",
           "targets": [
             {
               "difficulty": "Gamma",
               "hp": "15–20k",
               "melee": "500–600%",
               "saddle": "60–80+",
-              "extra": "Kế hoạch khởi đầu; thử Gamma trước."
+              "extra": "Starting plan; test Gamma first."
             },
             {
               "difficulty": "Beta",
@@ -200,18 +200,18 @@
               "hp": "35–40k",
               "melee": "900–1200%",
               "saddle": "100+",
-              "extra": "Mốc có khoảng đệm do em tổng hợp; không phải minimum."
+              "extra": "Compiled targets with a safety margin; not minimums."
             }
           ],
-          "play": "Whistle vào một mục tiêu, giữ courage, dùng Yuty tránh đòn; pig là lựa chọn, không healer vô hạn. Yuty gợi ý 25–30k HP / 2–3k stamina, saddle80+; pig 20k+ HP / 60–100k food là ngân sách support, không minimum.",
-          "confidence": "Kinh nghiệm cộng đồng + khoảng đệm do em đề xuất.",
+          "play": "Whistle one target, maintain courage, and dodge attacks on Yuty; a pig is optional, not an unlimited healer. Suggested Yuty budget: 25–30k HP / 2–3k stamina, saddle80+; pig 20k+ HP / 60–100k food. These are support budgets, not minimums.",
+          "confidence": "Community experience + buffer suggested by you.",
           "imageAsset": "Dino-rex"
         },
         {
           "id": "theri",
-          "title": "Therizino + cake · tái dùng dòng breed",
-          "team": "19 Therizinosaurus + 1 Yuty; hoặc 18 Theri + Yuty + 1 pig.",
-          "why": "Có thể tái dùng dòng Theri đã breed để giảm công chuẩn bị nhiều dòng. Thử ở Gamma trước khi tăng độ khó.",
+          "title": "Therizino + cake · reuse breed line",
+          "team": "19 Therizinosaurus +1 Yuty; or 18 Theri + Yuty +1 pig.",
+          "why": "It is possible to reuse already bred Theri lines to reduce the effort of preparing multiple lines. Try at Gamma before increasing the difficulty.",
           "targets": [
             {
               "difficulty": "Gamma",
@@ -232,11 +232,11 @@
               "hp": "~21k",
               "melee": "1000–1300%+",
               "saddle": "100+",
-              "extra": "20–30 cake / con; kiểm soát vị trí, food và nguồn cake"
+              "extra": "20–30 cake/piece; Control position, food and cake source"
             }
           ],
-          "play": "Giữ cake trong từng inventory, thêm berries; đừng nhầm melee% với damage hiện trên một hit. Nâng HP quanh 21k rồi ưu tiên melee là cách tận dụng cake, không phải luật cấm tăng HP.",
-          "confidence": "Mốc do em đề xuất để lập kế hoạch; nguồn của trận này không xác minh riêng army Theri. Thử Gamma để đánh giá trước khi nâng độ khó.",
+          "play": "Keep cakes in each inventory with extra berries; melee% is not the damage displayed for one hit. Raising HP to around 21k then prioritizing melee makes use of cakes, not a rule forbidding higher HP.",
+          "confidence": "Suggested planning targets; sources for this fight do not separately verify a Theri army. Evaluate Gamma before increasing difficulty.",
           "imageAsset": "Dino-therizinosaur"
         }
       ],
@@ -244,30 +244,30 @@
         {
           "title": "Reddit · Alpha Broodmother ASA · 06/2025",
           "url": "https://www.reddit.com/r/ARK/comments/1ljplad/",
-          "note": "Một người báo 30k HP, 800% melee, saddle BP 84 và mất một Mega; kết quả phụ thuộc settings và cách vây boss."
+          "note": "A player reported 30k HP, 800% melee, saddle BP 84, and one Mega lost; results depend on settings and encirclement."
         },
         {
           "title": "Reddit · Broodmother · 08/2026",
           "url": "https://www.reddit.com/r/ARK/comments/1vxfbkh/",
-          "note": "Một bình luận báo Alpha thắng với Rex 30k HP, 800% và saddle 80 + Yuty; đây là kinh nghiệm, không phải minimum."
+          "note": "A comment reported an Alpha win with Rex at 30k HP, 800%, and 80 saddles + Yuty; this is experience, not a minimum."
         },
         {
-          "title": "Wiki · settings & cơ chế",
+          "title": "Wiki · settings & mechanics",
           "url": "https://ark.wiki.gg/wiki/Server_configuration",
-          "note": "Single Player Settings thay đổi hệ số tame; so chỉ số thực tế trong inventory trước trận."
+          "note": "Single Player Settings change tame multipliers; compare actual inventory stats before the fight."
         }
       ]
     },
     {
       "bossID": "dragon",
       "entry": "Survivor level Gamma55 / Beta75 / Alpha100.",
-      "warning": "Phản hồi09/2026 báo hơi lửa liên tiếp. Giữ đủ cake và kiểm soát vị trí quan trọng hơn chỉ nhìn saddle. Extinguisher Grenade là hỗ trợ có DLC riêng; không đưa vào kit mặc định.",
+      "warning": "Feedback from09/2026 reports repeated fire breath. Enough cakes and position control matter more than saddle quality alone. Extinguisher Grenade requires separate DLC; it is not in the default kit.",
       "options": [
         {
           "id": "theri",
-          "title": "Therizino + cake · tái dùng dòng breed",
-          "team": "19 Therizinosaurus + 1 Yuty; hoặc 18 Theri + Yuty + 1 pig.",
-          "why": "Có cake và dễ điều hướng hơn đội Rex; hữu ích cho Dragon / Tek Cave.",
+          "title": "Therizino + cake · reuse breed line",
+          "team": "19 Therizinosaurus +1 Yuty; or 18 Theri + Yuty +1 pig.",
+          "why": "Can use cakes and is easier to maneuver than a Rex team; useful for Dragon / Tek Cave.",
           "targets": [
             {
               "difficulty": "Gamma",
@@ -288,72 +288,72 @@
               "hp": "~21k",
               "melee": "1000–1300%+",
               "saddle": "100+",
-              "extra": "20–30 cake / con; cần kiểm soát hơi lửa"
+              "extra": "20–30 cakes / creature; fire breath must be managed"
             }
           ],
-          "play": "Giữ cake trong từng inventory, thêm berries; đừng nhầm melee% với damage hiện trên một hit. Nâng HP quanh 21k rồi ưu tiên melee là cách tận dụng cake, không phải luật cấm tăng HP.",
-          "confidence": "Khuyến nghị phổ biến; số Gamma/Beta là kế hoạch do em tổng hợp, Alpha có báo cáo cộng đồng.",
+          "play": "Keep cakes in each inventory with extra berries; melee% is not the damage displayed for one hit. Raising HP to around 21k then prioritizing melee makes use of cakes, not a rule forbidding higher HP.",
+          "confidence": "Common recommendation; Gamma/Beta numbers are compiled planning targets, while Alpha has community reports.",
           "imageAsset": "Dino-therizinosaur"
         },
         {
           "id": "rex",
-          "title": "Rex mạnh · dùng dòng có sẵn",
-          "team": "18 Rex + Yuty + Daeodon; giới hạn 20 tame.",
-          "why": "Chỉ chọn khi đã có dòng Rex mạnh và không muốn breed Theri mới.",
+          "title": "Strong Rex · use an existing line",
+          "team": "18 Rex + Yuty + Daeodon; limit of 20 tames.",
+          "why": "Choose only if you already have a strong Rex line and do not want to breed new Theri.",
           "targets": [
             {
               "difficulty": "Gamma/Beta",
               "hp": "30–40k",
               "melee": "1000%+",
               "saddle": "100+",
-              "extra": "Kế hoạch thử nghiệm, không ưu tiên solo mới."
+              "extra": "Experimental plan; not preferred for a first solo attempt."
             },
             {
               "difficulty": "Alpha",
               "hp": "35–40k",
               "melee": "1200%+",
               "saddle": "100+",
-              "extra": "Rủi ro cao: sát thương theo %HP, không chỉ saddle."
+              "extra": "High risk: damage scales with %HP, not just saddle quality."
             }
           ],
-          "play": "Giữ pig đủ food, hỗ trợ shotgun khi boss bay, không đứng trong lava. HP/saddle cao không loại bỏ DOT hơi lửa.",
-          "confidence": "Phương án thay thế; diễn đàn có thắng lẫn wipe, không mốc đảm bảo.",
+          "play": "Keep the pig fed, support with a shotgun while the boss flies, and avoid lava. High HP/saddles do not remove fire-breath DOT.",
+          "confidence": "Alternative approach; forums report both wins and wipes, with no guaranteed threshold.",
           "imageAsset": "Dino-rex"
         }
       ],
       "sources": [
         {
-          "title": "Reddit · Dragon và fire spam · 09/2026",
+          "title": "Reddit · Dragon and fire spam · 09/2026",
           "url": "https://www.reddit.com/r/ARK/comments/1wc2h4n/",
-          "note": "Có thất bại với Theri 21k HP, 1000% và ít cake; các phản hồi khuyên 15–20+ cake, quản lý hơi lửa. Saddle cao không tự bảo đảm thắng."
+          "note": "A failure was reported with Theri at 21k HP, 1000%, and few cakes; replies recommend 15–20+ cakes and fire-breath management. High saddles alone do not guarantee a win."
         },
         {
           "title": "Reddit · Alpha Dragon ASA official · 01/2024",
           "url": "https://www.reddit.com/r/playark/comments/19eei4w/",
-          "note": "Báo Theri 21k HP, 1300% sau lên điểm; bài cũ, cần đối chiếu patch hiện tại."
+          "note": "Reported Theri at 21k HP and 1300% after leveling; an older post that needs comparison with the current patch."
         },
         {
           "title": "Steam · Island boss stats · 12/2025",
           "url": "https://steamcommunity.com/app/2399830/discussions/0/684113723162439898/",
-          "note": "Báo Alpha Dragon dùng 14 croc 29k HP, 1000% sau nerf bleed, có nhiều support. Imprint scale của người hỏi là 3; không sao chép settings."
+          "note": "An Alpha Dragon report used 14 crocs at 29k HP, 1000% after the bleed nerf, with multiple supports. The questioner's imprint scale was 3; do not copy those settings."
         },
         {
           "title": "Wiki · Deinosuchus patch 73.13",
           "url": "https://ark.wiki.gg/wiki/Deinosuchus",
-          "note": "Bleed của Deinosuchus không còn áp lên boss. Không dùng mẹo croc bleed cũ làm phương án mặc định."
+          "note": "Deinosuchus 's Bleed no longer applies to bosses. Don't use the old croc bleed trick as your default option."
         }
       ]
     },
     {
       "bossID": "overseer",
-      "entry": "Survivor level Gamma60 / Beta80 / Alpha100; cần trophy của cả 3 guardian đúng cấp. Tách nhóm dọn Tek Cave khỏi nhóm teleport arena.",
-      "warning": "Rủi ro lớn là Tek Cave: thời gian đưa đội vào, quay đầu, lava và Purlovia. Wiki ghi 50 tame trong hang, teleporter 20 tame mỗi lượt; có thể đưa thêm đợt trước khi khởi động boss. Các đội ở đây chủ động dùng 20 để solo dễ quản lý, không khẳng định arena chỉ cho tổng cộng 20. Kiểm tra quy tắc hiện tại của save.",
+      "entry": "Survivor level Gamma60 / Beta80 / Alpha100; requires trophies from all 3 guardians at the correct difficulty. Separate the Tek Cave clearing group from the arena teleport group.",
+      "warning": "The major risk is Tek Cave: entry time, turning, lava, and Purlovia. The wiki lists 50 tames in the cave and 20 tames per teleporter trip; more trips are possible before starting the boss. These teams deliberately use 20 for easier solo control, not to claim the arena allows only 20 in total. Check current rules in your save.",
       "options": [
         {
           "id": "theri",
-          "title": "Therizino + cake · tái dùng dòng breed",
-          "team": "19 Therizinosaurus + 1 Yuty; hoặc 18 Theri + Yuty + 1 pig.",
-          "why": "Có cake và dễ điều hướng hơn đội Rex; hữu ích cho Dragon / Tek Cave.",
+          "title": "Therizino + cake · reuse breed line",
+          "team": "19 Therizinosaurus +1 Yuty; or 18 Theri + Yuty +1 pig.",
+          "why": "Can use cakes and is easier to maneuver than a Rex team; useful for Dragon / Tek Cave.",
           "targets": [
             {
               "difficulty": "Gamma/Beta",
@@ -367,18 +367,18 @@
               "hp": "21–25k",
               "melee": "1000–1300%",
               "saddle": "100+",
-              "extra": "20–30 cake / con; giữ đội sống qua hang"
+              "extra": "20–30 cakes / creature; keep the team alive through the cave"
             }
           ],
-          "play": "Giữ cake trong từng inventory, thêm berries; đừng nhầm melee% với damage hiện trên một hit. Nâng HP quanh 21k rồi ưu tiên melee là cách tận dụng cake, không phải luật cấm tăng HP.",
-          "confidence": "Khuyến nghị phổ biến; số Gamma/Beta là kế hoạch do em tổng hợp, Alpha có báo cáo cộng đồng.",
+          "play": "Keep cakes in each inventory with extra berries; melee% is not the damage displayed for one hit. Raising HP to around 21k then prioritizing melee makes use of cakes, not a rule forbidding higher HP.",
+          "confidence": "Common recommendation; Gamma/Beta numbers are compiled planning targets, while Alpha has community reports.",
           "imageAsset": "Dino-therizinosaur"
         },
         {
           "id": "mixed",
-          "title": "Đội gọn + Carcha mở đường",
-          "team": "17 Theri + 1 Rex + Yuty + pig cho arena; Carcha chỉ làm nhiệm vụ dọn hang.",
-          "why": "Dùng tame mở đường để đội chính không chạy vào lava.",
+          "title": "Compact team + Carcha to clear the route",
+          "team": "17 Theri + 1 Rex + Yuty + pig for the arena; Carcha only clears the cave.",
+          "why": "Use a route-clearing tame to keep the main team from running into lava.",
           "targets": [
             {
               "difficulty": "Alpha · Theri",
@@ -388,33 +388,33 @@
               "extra": ""
             },
             {
-              "difficulty": "Carcha mở đường",
-              "hp": "Không có minimum ASA đã xác minh",
+              "difficulty": "Carcha clears the route",
+              "hp": "No verified ASA minimum",
               "melee": "Imprint + train melee",
-              "saddle": "Saddle tốt",
-              "extra": "Không teleport Carcha vào arena"
+              "saddle": "Good saddle",
+              "extra": "Do not teleport Carcha into the arena"
             }
           ],
-          "play": "Dọn từng đoạn trước, dừng đội trên nền an toàn; dùng follow train/nhóm nhỏ, kiểm tra tame bị mắc. Không giả định cryopod thả được mọi chỗ; xem settings thật.",
-          "confidence": "Báo cáo thực chiến khuyên Carcha + đội Theri; cấu hình 20 con do em tổng hợp.",
+          "play": "Clear each section first and stop the team on safe ground; use a follow train/small groups and check for stuck tames. Do not assume cryopods can release everywhere; check actual settings.",
+          "confidence": "Combat reports recommend Carcha + a Theri team; the 20-creature composition is a compiled suggestion.",
           "imageAsset": "Dino-carcharodontosaurus"
         },
         {
           "id": "tek",
-          "title": "Tek suit + shotgun · phương án nâng cao",
-          "team": "Không cần đội Dino trong arena; tame dọn hang tùy cách chơi.",
-          "why": "Tránh mất đội vì pathing, đổi sang kỹ năng điều khiển và kho đạn.",
+          "title": "Tek suit + shotgun · advanced approach",
+          "team": "No Dino team is needed in the arena; cave-clearing tames depend on play style.",
+          "why": "Avoid losing a team to pathing, in exchange for movement skill and a large ammo supply.",
           "targets": [
             {
-              "difficulty": "Nâng cao",
-              "hp": "Không áp dụng",
-              "melee": "Không áp dụng",
-              "saddle": "Không áp dụng",
-              "extra": "Tekgram dùng được, armor/durability và shotgun+đạn lớn"
+              "difficulty": "Advanced",
+              "hp": "Not applicable",
+              "melee": "Not applicable",
+              "saddle": "Not applicable",
+              "extra": "Usable Tekgrams, armor/durability, and shotgun + ample ammo"
             }
           ],
-          "play": "Chỉ khi đã có Tekgram và hiểu hover/laser/drone. Có người solo thành công; không dùng làm bước đầu mặc định. Kiểm tra khả năng Tek theo bản game và save.",
-          "confidence": "Nguồn Reddit ASA06/2026; chưa kiểm chứng trên save anh.",
+          "play": "Only use this with Tekgrams unlocked and an understanding of hover/laser/drone mechanics. Solo successes exist; this is not the default first approach. Check Tek functionality for your game version and save.",
+          "confidence": "Reddit ASA06/2026 source; not verified in your save.",
           "imageAsset": "Boss-overseer"
         }
       ],
@@ -422,22 +422,22 @@
         {
           "title": "Reddit · Solo Tek Cave / Overseer · 05/2025",
           "url": "https://www.reddit.com/r/ARK/comments/1khqcfl/",
-          "note": "Báo 19 Theri + Yuty, Theri 25k HP/~900%, saddle ~85, 10 cake; dùng Carcha mở đường. Rủi ro lava/pathing tách khỏi DPS."
+          "note": "Reported 19 Theri + Yuty: Theri at 25k HP/~900%, saddles ~85, 10 cakes; Carcha cleared the route. Lava/pathing risks are separate from DPS."
         },
         {
           "title": "Reddit · Alpha Overseer · 06/2026",
           "url": "https://www.reddit.com/r/ArkSurvivalAscended/comments/1u7i6a8/",
-          "note": "Có báo 17 Theri + Yuty + 2 Daeodon; có phương án Tek suit/shotgun. Solo cần tự quản lý support và đường hang."
+          "note": "Reported 17 Theri + Yuty + 2 Daeodon; Tek suit/shotgun options also exist. Solo players must manage support and cave travel themselves."
         },
         {
-          "title": "Wiki · settings & cơ chế",
+          "title": "Wiki · settings & mechanics",
           "url": "https://ark.wiki.gg/wiki/Server_configuration",
-          "note": "Single Player Settings thay đổi hệ số tame; so chỉ số thực tế trong inventory trước trận."
+          "note": "Single Player Settings change tame multipliers; compare actual inventory stats before the fight."
         },
         {
-          "title": "Wiki · Tek Cave và teleporter",
+          "title": "Wiki · Tek Cave and teleporter",
           "url": "https://ark.wiki.gg/wiki/Tek_Cave",
-          "note": "Phân biệt 50 trong hang, 20 mỗi lượt teleport và nhiều đợt trước khi boss khởi động; không dùng con số như giới hạn tổng arena."
+          "note": "Distinguish 50 in the cave, 20 per teleport trip, and multiple trips before the boss starts; do not treat these numbers as the arena's total limit."
         }
       ]
     }

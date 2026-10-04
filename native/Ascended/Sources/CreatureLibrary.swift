@@ -4,23 +4,23 @@ import UIKit
 struct CreatureLibrary: View {
     @Environment(\.arkMap) private var map
     @State private var search = ""
-    @State private var filter = "Tất cả"
-    private let filters = ["Tất cả", "Trên cạn", "Bay", "Dưới nước", "Alpha", "DLC"]
+    @State private var filter = "All"
+    private let filters = ["All", "Land", "Flying", "Aquatic", "Alpha", "DLC"]
     var body: some View {
         Group {
             switch map.creatures {
             case .failure:
-                ContentUnavailableView("Chưa mở được thư viện", systemImage: "book.closed", description: Text("Hãy đóng và mở lại Ascended."))
+                ContentUnavailableView("Unable to open library", systemImage: "book.closed", description: Text("Close and reopen Ascended."))
             case .success(let catalog):
                 let items = catalog.creatures.filter { d in
-                    (filter == "Tất cả" || (filter == "DLC" ? !d.dlc.isEmpty : d.group == filter)) &&
+                    (filter == "All" || (filter == "DLC" ? !d.dlc.isEmpty : d.group == filter)) &&
                     (search.isEmpty || ([d.name] + d.aliases).contains { $0.localizedStandardContains(search) })
                 }
                 ScrollView {
                     VStack(alignment: .leading, spacing: 20) {
                         HStack(alignment: .firstTextBaseline) {
                             VStack(alignment: .leading, spacing: 6) {
-                                Text("Dino & sinh vật").font(.largeTitle.bold())
+                                Text("Dinosaurs & creatures").font(.largeTitle.bold())
                                 Text(map.name).foregroundStyle(.secondary)
                             }
                             Spacer()
@@ -31,7 +31,7 @@ struct CreatureLibrary: View {
                                 ForEach(filters, id: \.self) { item in
                                     Button(item) { filter = item }
                                         .buttonStyle(.bordered).tint(filter == item ? .cyan : .gray)
-                                        .accessibilityIdentifier("filter-" + item)
+                                        .accessibilityIdentifier("filter-" + (["All": "Tất cả", "Land": "Trên cạn", "Flying": "Bay", "Aquatic": "Dưới nước"][item] ?? item))
                                 }
                             }
                         }
@@ -48,7 +48,7 @@ struct CreatureLibrary: View {
                         }
                     }.padding(24)
                 }
-                .searchable(text: $search, placement: .navigationBarDrawer(displayMode: .always), prompt: "Tìm Dino trên " + map.name)
+                .searchable(text: $search, placement: .navigationBarDrawer(displayMode: .always), prompt: "Search creatures on " + map.name)
                 .accessibilityIdentifier("creatureLibrary")
             }
         }.background(Color(red: 0.025, green: 0.045, blue: 0.065))
@@ -96,37 +96,37 @@ struct CreatureDetail: View {
                     }
                 }
                 if !creature.updateNote.isEmpty {
-                    section("Cập nhật mới", text: creature.updateNote)
+                    section("Recent updates", text: creature.updateNote)
                 }
                 if creature.detailAvailable {
                     VStack(alignment: .leading, spacing: 12) {
-                        Text("Thuần hóa").font(.title2.bold())
-                        if !creature.diet.isEmpty { row("Chế độ ăn", creature.diet) }
-                        if let tameable = creature.tameable { row("Tame trực tiếp", tameable ? "Có" : "Không") }
+                        Text("Taming").font(.title2.bold())
+                        if !creature.diet.isEmpty { row("Diet", creature.diet) }
+                        if let tameable = creature.tameable { row("Directly tameable", tameable ? "Yes" : "No") }
                         if creature.tameable == true {
-                            if !creature.method.isEmpty && creature.method != "X" { row("Phương pháp", translatedMethod(creature.method)) }
+                            if !creature.method.isEmpty && creature.method != "X" { row("Method", translatedMethod(creature.method)) }
                             if !creature.foods.isEmpty { FactGrid(matches: VisualFacts.items(creature.foods)) }
                         }
                     }.cardStyle()
                     if !creature.stats.isEmpty {
                         VStack(alignment: .leading, spacing: 14) {
-                            Text("Chỉ số nền").font(.title2.bold())
+                            Text("Base stats").font(.title2.bold())
                             ForEach(creature.stats, id: \.label) { stat in
                                 row(stat.label, stat.value.formatted(.number.precision(.fractionLength(0...2))))
                             }
                         }.cardStyle()
                     }
                     if !creature.drops.isEmpty { itemSection("Loot", items: creature.drops) }
-                    if !creature.immobilizedBy.isEmpty { itemSection("Giữ chân", items: creature.immobilizedBy) }
+                    if !creature.immobilizedBy.isEmpty { itemSection("Immobilization", items: creature.immobilizedBy) }
                 } else {
-                    section("Có trong danh mục " + map.name, text: "Hướng dẫn thuần hóa đang được bổ sung.")
+                    section("Listed on " + map.name, text: "Taming details are being added.")
                 }
             }.padding(24).frame(maxWidth: 1000).frame(maxWidth: .infinity)
         }.navigationTitle(creature.name).navigationBarTitleDisplayMode(.inline)
             .background(Color(red: 0.025, green: 0.045, blue: 0.065))
     }
     private func translatedMethod(_ value: String) -> String {
-        switch value { case "Knockout": "Đánh ngất"; case "Passive": "Tame thụ động"; case "Special": "Phương pháp đặc biệt"; default: value }
+        switch value { case "Knockout": "Knockout"; case "Passive": "Passive taming"; case "Special": "Special method"; default: value }
     }
     private func itemSection(_ title: String, items: [String]) -> some View {
         VStack(alignment: .leading, spacing: 12) { Text(title).font(.title2.bold()); FactGrid(matches: VisualFacts.items(items)) }.cardStyle()

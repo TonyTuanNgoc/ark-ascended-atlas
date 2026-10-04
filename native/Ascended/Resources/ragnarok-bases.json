@@ -1,7 +1,7 @@
 {
   "reviewedAt": "2026-10-03",
-  "methodology": "5 lựa chọn do em xếp theo cân bằng cho Single Player: di chuyển, không gian Dino/breed, an toàn, tài nguyên và độ rõ của nguồn ASA. Đây không phải top 5 vote toàn YouTube. Like/view thuộc cả video; vote forum là snapshot của bình luận, đôi khi kèm nhiều địa điểm. Thứ tự là đánh giá của em, không phải kết quả bình chọn.",
-  "limits": "Ảnh trong game đã đối chiếu: ba ảnh khu vực từ NoobFeed; hai ảnh chapter video có GPS trùng pin. Hai ảnh storyboard chỉ 320×180 vì video đầy đủ trả HTTP 403. Ảnh khu vực không xác nhận cùng một nền foundation hoặc quyền xây trong save. Vote/like vẫn là snapshot, không phải bình chọn toàn cộng đồng.",
+  "methodology": "5 locations ranked for Single Player balance: travel, Dino/breeding space, safety, resources, and clarity of ASA sources. This is not a YouTube-wide top 5 vote. Likes/views belong to the whole video; forum votes are comment snapshots that sometimes include multiple locations. The order is an assessment, not a poll result.",
+  "limits": "Matched in-game images: three regional images from NoobFeed and two video chapter images with GPS matching the pins. The two storyboard images are only 320×180 because the full video returned HTTP 403. Regional images do not confirm the same foundation footprint or build permissions in your save. Votes/likes remain snapshots, not a community-wide poll.",
   "videos": [
     {
       "id": "5mYGGM_bIhs",
@@ -51,28 +51,28 @@
       "rank": 1,
       "lat": 39.8,
       "lon": 44.8,
-      "tag": "Main base · cân bằng mid/end game",
-      "why": "Đề xuất số 1 của em cho main base: nằm gần trung tâm, thuận chia khu sản xuất/breed và đi nhiều hướng.",
+      "tag": "Main base · balanced mid/end game",
+      "why": "Suggested number 1 main base: central location, convenient production/breeding zones, and routes in multiple directions.",
       "pros": [
-        "Plateau phù hợp chia khu nhà và sân Dino; video chỉ nhiều mặt bằng trong vùng.",
-        "Vị trí trung tâm thuận cho các chuyến bay, cảnh quan canyon đẹp."
+        "Plateau is suitable for dividing houses and yards Dino; The video shows many premises in the area.",
+        "Central location, convenient for flights, beautiful canyon landscape."
       ],
       "cons": [
-        "Cần flyer và khảo sát đường đưa Dino lớn lên.",
-        "Mép vực cần hàng rào; tài nguyên vẫn cần chuyến farm, không có tất cả ở nhà."
+        "Need flyer and road survey to bring Dino up.",
+        "The edge of the cliff needs a fence; Resources still need to be farmed, not all at home."
       ],
       "layout": [
-        "Workshop và breeding nằm trên plateau; dành một đường đáp cho Argy.",
-        "Chuồng và cổng lùi khỏi mép vực; đặt kho, giường dự phòng."
+        "Workshop and breeding are located on the plateau; reserve a landing path for Argy.",
+        "The barn and gate are set back from the edge; Set up storage and spare beds."
       ],
       "videoID": "2-qtw1pdg2A",
       "seconds": 233,
-      "support": "Bình luận ASA 06/2026 về Grand Canyon có +3 vote. Đây là vote cho khu vực, không cho đúng pin 39.8/44.8.",
+      "support": "An ASA 06/2026 Grand Canyon comment had +3 votes. These support the region, not the exact 39.8/44.8 pin.",
       "sources": [
         {
           "title": "YouTube · chapterCanyon",
           "url": "https://www.youtube.com/watch?v=5mYGGM_bIhs&t=899s",
-          "note": "Creator có chapter Canyon; chưa xác nhận cùng một plateau."
+          "note": "Creator has chapter Canyon; The same plateau has not yet been confirmed."
         },
         {
           "title": "Forum · canyon recommendation",
@@ -82,7 +82,7 @@
         {
           "title": "Guide · canyon",
           "url": "https://www.noobfeed.com/articles/ark-survival-ascended-guide-best-base-locations-on-ragnarok",
-          "note": "Mốc 39.9/45.0 xác nhận cùng vùng, không cùng nền nhà."
+          "note": "Landmark 39.9/45.0 confirms the same area, not the same floor."
         }
       ],
       "photoSource": {
@@ -107,38 +107,38 @@
       "rank": 2,
       "lat": 28.1,
       "lon": 48.3,
-      "tag": "Main base · nước & căn cứ gọn",
-      "why": "Cân bằng nếu anh thích nước và căn cứ gọn; khảo sát vùng thác trước khi chọn cửa cave.",
+      "tag": "Main base · water & compact base",
+      "why": "A balanced choice for water and a compact base; survey the waterfall area before choosing a cave entrance.",
       "pros": [
-        "Hệ thác, cave và hồ phù hợp thiết kế nhiều tầng.",
-        "Guide khác ghi 28.2/49.0; pin dùng điểm tiếp cận 28.1/48.3 từ chapter ASA."
+        "The system of waterfalls, caves and lakes is suitable for multi-storey designs.",
+        "Another guide lists 28.2/49.0; this pin uses the 28.1/48.3 approach point from the ASA chapter."
       ],
       "cons": [
-        "Kiểm tra quyền xây, lối đi và kích thước Dino lớn trong cave.",
-        "Không che kín nguồn nước hoặc đường spawn; bố trí phụ thuộc địa hình thật."
+        "Check the construction rights, walkways and size of the large Dino in the cave.",
+        "Do not cover the water source or spawning line; The layout depends on the actual terrain."
       ],
       "layout": [
-        "Workshop gần lối vào; khu breed ra sân ngoài nếu cave chật.",
-        "Giữ đường đáp cho Argy, kho vật liệu và điểm hồi phục trước chuyến hang."
+        "Workshop near the entrance; The breeding area is out in the yard if the cave is cramped.",
+        "Hold landing strip for Argy, material depot and recovery point before flight."
       ],
       "videoID": "2-qtw1pdg2A",
       "seconds": 360,
-      "support": "Forum 06/2026 có bình luận +2 về vùng thác/Griffin gần volcano. Mô tả chưa đủ để xác nhận đúng cửa này.",
+      "support": "A 06/2026 forum comment had +2 for the waterfall/Griffin area near the volcano. Its description does not confirm this exact entrance.",
       "sources": [
         {
           "title": "YouTube · Waterfall cave",
           "url": "https://www.youtube.com/watch?v=5mYGGM_bIhs&t=1163s",
-          "note": "Creator có chapter Waterfall cave; đối chiếu đúng địa hình."
+          "note": "Creator has chapter Waterfall cave; Compare the correct terrain."
         },
         {
           "title": "Guide · Ragnarok Falls",
           "url": "https://www.noobfeed.com/articles/ark-survival-ascended-guide-best-base-locations-on-ragnarok",
-          "note": "Guide ghi 28.2/49.0 cho vùng thác."
+          "note": "The guide says 28.2/49.0 for the waterfall area."
         },
         {
           "title": "Forum · waterfall discussion",
           "url": "https://www.reddit.com/r/ARK/comments/1tu6s8z/base_locations_ragnarok/",
-          "note": "Ủng hộ loại địa hình, không có vote riêng cho pin."
+          "note": "Supports the terrain type; no separate votes for this pin."
         }
       ],
       "photoSource": {
@@ -164,37 +164,37 @@
       "lat": 22.8,
       "lon": 30.9,
       "tag": "Starter → mid game",
-      "why": "Phù hợp bắt đầu rồi phát triển; chọn nơi có lối ra đất và nước, không chỉ một rathole nhỏ cho PvP.",
+      "why": "Suitable for starting and expanding; choose access to land and water, rather than just a small PvP rathole.",
       "pros": [
-        "Chapter ASA có GPS cho vùng Viking Bay/Ribcage Cave.",
-        "Vị trí bờ biển dễ định hướng; Wiki mô tả Viking Bay tương đối an toàn."
+        "Chapter ASA has GPS for the Viking Bay/Ribcage Cave area.",
+        "Coastal location is easy to navigate; Wiki describes Viking Bay as relatively safe."
       ],
       "cons": [
-        "Vẫn cần kiểm tra spawn nguy hiểm quanh cave và bãi biển.",
-        "Sân breed Rex lớn có thể phải đặt ngoài cave; giữ lối tới artifact thông thoáng."
+        "Still need to check for dangerous spawn around the cave and beach.",
+        "Large breeding yard Rex may have to be placed outside the cave; Keep the path to the artifact clear."
       ],
       "layout": [
-        "Đặt starter/workshop trên nền đã khảo sát, mở cổng hướng ra bờ.",
-        "Dino lớn ở sân ngoài, đồ quan trọng ở khu gọn; giữ đường xuồng."
+        "Place the starter/workshop on the surveyed foundation, open the gate facing the shore.",
+        "Large Dino in the outer yard, important items in the compact area; keep the canoe path."
       ],
       "videoID": "2-qtw1pdg2A",
       "seconds": 185,
-      "support": "Bình luận ASA 06/2026 có +4 và đề xuất Viking Bay cùng đảo desert. Không tách được 4 vote đó thành vote riêng Viking Bay.",
+      "support": "An ASA 06/2026 comment had +4 and recommended Viking Bay alongside a desert island. Those 4 votes cannot be assigned solely to Viking Bay.",
       "sources": [
         {
           "title": "YouTube · VikingBay",
           "url": "https://www.youtube.com/watch?v=5mYGGM_bIhs&t=961s",
-          "note": "Chapter Viking Bay hỗ trợ khu vực."
+          "note": "The Viking Bay Chapter provides regional support."
         },
         {
           "title": "Wiki · Viking Bay",
           "url": "https://ark.wiki.gg/wiki/Viking_Bay",
-          "note": "Mô tả vùng; kiểm tra khác biệt Ascended."
+          "note": "Region description; Ascended difference test."
         },
         {
           "title": "Forum · VikingBay",
           "url": "https://www.reddit.com/r/ARK/comments/1tu6s8z/base_locations_ragnarok/",
-          "note": "Bình luận +4 gồm nhiều địa điểm, không vote riêng pin."
+          "note": "The +4 comment includes multiple locations, not votes specifically for this pin."
         }
       ],
       "photoSource": {
@@ -219,33 +219,33 @@
       "rank": 4,
       "lat": 18.0,
       "lon": 78.9,
-      "tag": "Main base · cảnh đẹp / Wyvern tuyến gần",
-      "why": "Cho anh thích Highlands và các chuyến lấy tame/egg; cave có cửa và nước dễ bố trí hơn đồng trống.",
+      "tag": "Main base · beautiful scenery / Wyvern nearby",
+      "why": "For players who like Highlands and tame/egg expeditions; a cave with entrances and water is easier to organize than an open field.",
       "pros": [
-        "Có chapter GPS ASA cụ thể; Phlinger cũng liệt kê Highland cave.",
-        "Cave và nước giúp định hướng khi khảo sát, phù hợp một căn cứ gọn."
+        "There is a specific chapter GPS ASA; Phlinger also lists Highland cave.",
+        "Cave and water help with orientation when surveying, suitable for a compact base."
       ],
       "cons": [
-        "Khảo sát Giga/Carcha, Wyvern và đường đi trước khi đưa dòng breed về.",
-        "Đồng cỏ thiếu cây theo phản hồi cộng đồng; cần phương án chở wood."
+        "Survey Giga / Carcha, Wyvern and the path before bringing the breed back.",
+        "Grasslands lack trees according to community feedback; Need a plan to transport wood."
       ],
       "layout": [
-        "Argy và Anky phục vụ vật tư; kiểm tra Dino qua được cổng.",
-        "Đặt kho, giường dự phòng và tường stone; tránh xây sát nest."
+        "Argy and Anky serve supplies; Check that Dino passes through the gate.",
+        "Place storage, spare beds and stone walls; Avoid building close to nests."
       ],
       "videoID": "2-qtw1pdg2A",
       "seconds": 130,
-      "support": "Hai video ASA có chapter Highlands. Chưa tìm thấy vote riêng cho cave 18.0/78.9.",
+      "support": "Two videos ASA have the Highlands chapter. No separate votes have been found for cave 18.0/78.9.",
       "sources": [
         {
           "title": "YouTube · Highlandcave",
           "url": "https://www.youtube.com/watch?v=5mYGGM_bIhs&t=115s",
-          "note": "Chapter Northeast Highland cave, chưa có GPS thứ hai."
+          "note": "Chapter Northeast Highland cave, no second GPS yet."
         },
         {
           "title": "Forum · Highlands tradeoff",
           "url": "https://www.reddit.com/r/ArkSurvivalAscended/comments/1qzfkyz/",
-          "note": "Bình luận +1 cảnh báo đồng cỏ thiếu cây; đây là đánh đổi."
+          "note": "Comments +1 warns of grassland lack of trees; This is the trade-off."
         }
       ],
       "photoSource": {
@@ -270,38 +270,38 @@
       "rank": 5,
       "lat": 8.7,
       "lon": 96.7,
-      "tag": "An toàn · breeding / base yên tĩnh",
-      "why": "Ưu tiên an toàn và sân breed yên tĩnh; đổi lại phải vận chuyển tài nguyên từ mainland.",
+      "tag": "Safe · breeding / quiet base",
+      "why": "Prioritizes safety and quiet breeding space; resources must be transported from the mainland.",
       "pros": [
-        "Guide ASA và Wikily cùng nêu đảo northeast.",
-        "Phlinger có chapter Herbivore Island; phù hợp giữ dòng breed."
+        "Guide ASA and Wikily both mention the northeast island.",
+        "Phlinger has a Herbivore Island chapter; suitable for breed lines."
       ],
       "cons": [
-        "Ít cây và tài nguyên đa dạng; cần Argy/raft và outpost mainland.",
-        "Xa nhiều tuyến artifact; không nhầm đảo này với Herbivore Lighthouse ở 57.6/19.4."
+        "Few trees and diverse resources; Need Argy /raft and outpost mainland.",
+        "Far from many artifact routes; Do not confuse this island with the Herbivore Lighthouse in 57.6/19.4."
       ],
       "layout": [
-        "Breeding/storage trên đảo; workshop và dock ở bờ, mining outpost trên mainland.",
-        "Chưa có flyer thì giữ production chính ở nơi dễ farm hơn."
+        "Breeding/storage on the island; workshop and dock on shore, mining outpost on mainland.",
+        "If you don't have a flyer yet, keep the main production in a place that's easier to farm."
       ],
       "videoID": "5mYGGM_bIhs",
       "seconds": 676,
-      "support": "Forum 02/2026 có bình luận +1 xác nhận chuyển main base đến Herbivore Island vì tài nguyên và mặt bằng; không phải bình chọn toàn cộng đồng.",
+      "support": "A 02/2026 forum comment had +1 and confirmed moving the main base to Herbivore Island for resources and space; not a community-wide poll.",
       "sources": [
         {
           "title": "Guide · HerbivoreIsland",
           "url": "https://www.noobfeed.com/articles/ark-survival-ascended-guide-best-base-locations-on-ragnarok",
-          "note": "GPS 8.7/96.7 và ghi rõ thiếu wood."
+          "note": "GPS 8.7/96.7 and clearly states missing wood."
         },
         {
           "title": "Wikily · ASA region",
           "url": "https://wikily.gg/ark-survival-ascended/maps/ragnarok/",
-          "note": "Mốc 8/96 cho đảo northeast."
+          "note": "Landmark 8/96 for the northeast island."
         },
         {
           "title": "Forum · mainbase move",
           "url": "https://www.reddit.com/r/ArkSurvivalAscended/comments/1qzfkyz/",
-          "note": "Kinh nghiệm riêng +1, không leaderboard."
+          "note": "Own experience +1, no leaderboard."
         }
       ],
       "photoSource": {

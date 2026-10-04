@@ -1,80 +1,80 @@
 {
-  "intro": "5 nhà đặt cạnh nhau. Xưởng sát lối dỡ hàng; nhà nuôi con cạnh bếp. Xây đủ dùng, mở rộng khi cần.",
+  "intro": "Place 5 buildings next to one another. Keep the workshop beside the unloading route and the nursery beside the kitchen. Build what you need and expand as required.",
   "phases": [
     {
       "id": "starter",
-      "title": "1 · Trạm sống sót",
-      "goal": "Ổn định hồi sinh, đồ ăn và dụng cụ trước khi xây lớn.",
+      "title": "1 · Survival station",
+      "goal": "Secure respawning, food, and tools before building a large base.",
       "zoneIDs": [
         "main",
         "industry"
       ],
       "exit": [
-        "Có chỗ ngủ và bộ đồ dự phòng.",
-        "Có nguồn nước, thức ăn và lối thoát an toàn."
+        "A sleeping place and spare gear are ready.",
+        "Water, food, and a safe escape route are available."
       ]
     },
     {
       "id": "production",
-      "title": "2 · Base sản xuất",
-      "goal": "Đưa tài nguyên về, xử lý và cất thành chuỗi ngắn.",
+      "title": "2 · Production base",
+      "goal": "Bring resources in, process them, and store them along a short workflow.",
       "zoneIDs": [
         "industry",
         "garden"
       ],
       "exit": [
-        "Smithy/forge hoạt động; nguyên liệu được phân kho.",
-        "Máy dùng điện/nhiên liệu có nguồn ổn định."
+        "The Smithy/forge are working and materials have dedicated storage.",
+        "Powered or fueled machines have a steady supply."
       ]
     },
     {
       "id": "sustain",
-      "title": "3 · Vườn & đàn farm",
-      "goal": "Tự duy trì rau, kibble, thức ăn và phương tiện vận chuyển.",
+      "title": "3 · Garden & farming tames",
+      "goal": "Sustain vegetables, kibble, food, and transport.",
       "zoneIDs": [
         "garden",
         "dino"
       ],
       "exit": [
-        "Vườn được tưới và bón phân.",
-        "Dino farm và vận chuyển được cho ăn, có đường ra."
+        "The garden is irrigated and fertilized.",
+        "Farming and transport Dino are fed and have a clear exit."
       ]
     },
     {
       "id": "boss",
-      "title": "4 · Nuôi đội boss",
-      "goal": "Giảm thao tác lặp lại, tập trung breeding và chuẩn bị hành trình.",
+      "title": "4 · Breed a boss team",
+      "goal": "Reduce repetitive work and focus on breeding and expedition preparation.",
       "zoneIDs": [
         "breeding",
         "main"
       ],
       "exit": [
-        "Có dòng giống, thức ăn cho con và không gian imprint.",
-        "Có kit theo tuyến hang/boss cùng điểm phục hồi."
+        "Breeding lines, baby food, and imprinting space are ready.",
+        "Cave/boss route kits and a recovery point are prepared."
       ]
     },
     {
       "id": "tek",
-      "title": "5 · Nâng cấp Tek",
-      "goal": "Nâng cấp chỗ nghẽn sau khi mở engram; giữ chuỗi dự phòng.",
+      "title": "5 · Tek upgrades",
+      "goal": "Upgrade bottlenecks after unlocking the engrams; keep a backup workflow.",
       "zoneIDs": [
         "industry"
       ],
       "exit": [
-        "Chỉ dùng công nghệ đã mở đúng boss/map.",
-        "Dự trữ Element và nhiên liệu phù hợp trước khi chuyển máy."
+        "Use only technology unlocked through the correct boss/map.",
+        "Stock enough Element and suitable fuel before replacing machines."
       ]
     }
   ],
   "zones": [
     {
       "id": "main",
-      "name": "Nhà chính",
+      "name": "Main house",
       "symbol": "house.fill",
-      "purpose": "Hồi sinh, cất đồ cá nhân và chuẩn bị chuyến đi.",
-      "placement": "Nằm cạnh các nhà khác, chừa lối vận chuyển ở giữa.",
-      "flow": "Giường → trang bị → đồ ăn → cửa ra",
-      "size": "Gợi ý 4×4 móng, 2 tầng",
+      "purpose": "Respawn, store personal gear, and prepare for trips.",
+      "placement": "Place it beside the other buildings with a transport lane between them.",
+      "flow": "Bed → gear → food → exit",
+      "size": "Suggested size: 4×4 foundations, 2 floors",
       "items": [
         "Simple Bed",
         "Storage Box",
@@ -87,22 +87,22 @@
         "SCUBA Tank"
       ],
       "steps": [
-        "Tầng dưới để đồ đang dùng; tầng trên để giường và đồ dự phòng.",
-        "Tách bộ đồ đi hang, đi biển và lạnh thành các kho dễ nhận.",
-        "Một điểm hồi sinh dự phòng đặt cách nhà chính một khoảng.",
-        "Tiền đồn giữ giường, đồ dự phòng và phương tiện quay lại.",
-        "Kiểm tra quyền build từng map/hang và settings trước khi đặt.",
-        "Không chặn artifact, spawn tài nguyên hoặc cửa hang."
+        "Keep active equipment downstairs; put beds and spare gear upstairs.",
+        "Use clearly marked storage for cave, ocean, and cold-weather kits.",
+        "Place a backup respawn point some distance from the main house.",
+        "Keep a bed, spare gear, and return transport at the outpost.",
+        "Check each map/cave's building rules and settings before placing structures.",
+        "Do not block artifacts, resource spawns, or cave entrances."
       ]
     },
     {
       "id": "industry",
-      "name": "Xưởng & kho tài nguyên",
+      "name": "Workshop & resource storage",
       "symbol": "gearshape.2.fill",
-      "purpose": "Nhận tài nguyên, luyện kim, chế tạo; điện nước chung đặt tại đây.",
-      "placement": "Nằm cạnh các nhà khác, chừa lối vận chuyển ở giữa.",
-      "flow": "Metal → Forge → Ingot → Fabricator; vật liệu hóa chất → Chemistry Bench",
-      "size": "Gợi ý 6×6, trần cao; thử footprint máy trước",
+      "purpose": "Receive resources, smelt, and craft here; keep shared power and water systems here too.",
+      "placement": "Place it beside the other buildings with a transport lane between them.",
+      "flow": "Metal → Forge → Ingot → Fabricator; chemical materials → Chemistry Bench",
+      "size": "Suggested size: 6×6 with high ceilings; test machine footprints first",
       "items": [
         "Refining Forge",
         "Smithy",
@@ -123,27 +123,27 @@
         "Gasoline"
       ],
       "steps": [
-        "Đầu game dùng Smithy và Refining Forge; chừa chỗ nâng cấp.",
-        "Làm Fabricator khi chuỗi metal, paste và dầu đã ổn.",
-        "Industrial Forge/Chemistry Bench tùy điểm nghẽn; không có thứ tự tối ưu cho mọi save.",
-        "Chừa lối Dino vận chuyển và khoảng trống cho máy lớn.",
-        "Tách kho kim loại/đá, gỗ/sợi, đồ hữu cơ và blueprint.",
-        "Đặt nguyên liệu nặng gần máy dùng chúng để giảm đi lại.",
-        "Tek Dedicated Storage là nâng cấp cuối game; không chờ Tek mới xây kho.",
-        "ASA dùng vùng phủ điện/nước; không sao chép hệ dây/ống của ASE.",
-        "Kiểm tra trạng thái máy tại mép phủ, không chỉ nhìn khoảng cách.",
-        "Chừa nhiên liệu dự phòng và điểm nước dự phòng.",
-        "Tek là nâng cấp sau mở khóa, không phải yêu cầu base đầu game."
+        "Start with a Smithy and Refining Forge; leave space for upgrades.",
+        "Build a Fabricator once metal, paste, and oil supplies are stable.",
+        "Choose Industrial Forge/Chemistry Bench upgrades according to the bottleneck; no upgrade order is optimal for every save.",
+        "Leave transport lanes for Dino and enough room for large machines.",
+        "Separate metal/stone, wood/fiber, organic materials, and blueprints into storage groups.",
+        "Store heavy materials near the machines that use them to reduce trips.",
+        "Tek Dedicated Storage is a late-game upgrade; build storage before unlocking Tek.",
+        "ASA uses power/water coverage areas; do not copy ASE wiring and pipe systems.",
+        "Check machines at the edge of coverage; distance alone does not prove they work.",
+        "Keep reserve fuel and a backup water source.",
+        "Tek is an upgrade after unlocking it, not a requirement for an early-game base."
       ]
     },
     {
       "id": "garden",
-      "name": "Bếp & nhà vườn",
+      "name": "Kitchen & greenhouse",
       "symbol": "leaf.fill",
-      "purpose": "Trồng rau, nấu kibble và giữ đồ ăn trong cùng một nhà.",
-      "placement": "Nằm cạnh các nhà khác, chừa lối vận chuyển ở giữa.",
-      "flow": "Nước + phân → Crop Plot → rau → bếp",
-      "size": "Gợi ý 4×6; mở rộng theo tiêu thụ",
+      "purpose": "Grow vegetables, cook kibble, and store food in one building.",
+      "placement": "Place it beside the other buildings with a transport lane between them.",
+      "flow": "Water + fertilizer → Crop Plot → vegetables → kitchen",
+      "size": "Suggested size: 4×6; expand to meet consumption",
       "items": [
         "Large Crop Plot",
         "Medium Crop Plot",
@@ -160,23 +160,23 @@
         "Refrigerator"
       ],
       "steps": [
-        "Kiểm tra tưới nước hoạt động trước khi gieo hạt.",
-        "Duy trì phân và kiểm tra greenhouse effect; mái phải đáp ứng cơ chế nhà kính.",
-        "Trồng bốn loại rau cơ bản; thêm cây phòng thủ ở vòng ngoài nếu cần.",
-        "Nguồn phân có thể từ Dino; Dung Beetle là lựa chọn hỗ trợ, không điều kiện bắt buộc.",
-        "Đầu game Cooking Pot và Preserving Bin đủ khởi đầu.",
-        "Bếp công nghiệp chỉ nâng cấp khi có nhu cầu sản xuất hàng loạt.",
-        "Giữ nguyên liệu và thành phẩm riêng; kiểm tra điện, nước và thời hạn đồ ăn."
+        "Check irrigation before planting seeds.",
+        "Maintain fertilizer and check the greenhouse effect; the roof must satisfy greenhouse mechanics.",
+        "Grow the four basic vegetables; add defensive plants around the perimeter if needed.",
+        "Dino can provide fertilizer; Dung Beetle is a useful option, not a requirement.",
+        "A Cooking Pot and Preserving Bin are enough to get started.",
+        "Upgrade to an industrial cooker only when you need bulk production.",
+        "Separate ingredients from finished food; check power, water, and spoil timers."
       ]
     },
     {
       "id": "dino",
-      "name": "Nhà Dino",
+      "name": "Dino shelter",
       "symbol": "pawprint.fill",
-      "purpose": "Đỗ và cho ăn Dino farm; có lối thẳng từ cổng tới kho.",
-      "placement": "Nằm cạnh các nhà khác, chừa lối vận chuyển ở giữa.",
-      "flow": "Tame → kiểm tra saddle/đồ ăn → sân → chuyến farm",
-      "size": "Kích thước theo Dino lớn nhất; thử quay đầu",
+      "purpose": "Park and feed farming Dino; provide a straight route from the gate to storage.",
+      "placement": "Place it beside the other buildings with a transport lane between them.",
+      "flow": "Tame → check saddle/food → yard → farming trip",
+      "size": "Size for your largest Dino; test its turning space",
       "items": [
         "Feeding Trough",
         "Behemoth Gateway",
@@ -187,19 +187,19 @@
         "Tranquilizer Dart"
       ],
       "steps": [
-        "Chừa đường tới xưởng cho Argy và Dino chở vật liệu.",
-        "Chuồng tame/trap đặt riêng; không kéo thú hoang vào đàn chính.",
-        "Cryopod và Cryofridge phụ thuộc quy tắc ASA và settings; kiểm tra save trước khi dựa hoàn toàn vào chúng."
+        "Leave a route to the workshop for Argy and material-carrying Dino.",
+        "Keep taming pens/traps separate; do not lure wild creatures into the main herd.",
+        "Cryopod and Cryofridge behavior depends on ASA rules and settings; check your save before relying on them completely."
       ]
     },
     {
       "id": "breeding",
-      "name": "Nhà nuôi con",
+      "name": "Nursery",
       "symbol": "heart.fill",
-      "purpose": "Ấp trứng, nuôi con và imprint; nằm sát bếp để lấy thức ăn nhanh.",
-      "placement": "Nằm cạnh các nhà khác, chừa lối vận chuyển ở giữa.",
-      "flow": "Bố mẹ → trứng → ấp → con non → imprint → đội boss",
-      "size": "Gợi ý 6×6; sân bên ngoài cho loài lớn",
+      "purpose": "Incubate eggs, raise babies, and imprint; place it beside the kitchen for quick food access.",
+      "placement": "Place it beside the other buildings with a transport lane between them.",
+      "flow": "Parents → eggs → incubation → babies → imprint → boss team",
+      "size": "Suggested size: 6×6; provide an outside yard for large species",
       "items": [
         "Air Conditioner",
         "Feeding Trough",
@@ -208,10 +208,10 @@
         "Cryopod"
       ],
       "steps": [
-        "Kiểm tra nhiệt độ cho đúng loài; không ấn định một số điều hòa dùng cho mọi trứng.",
-        "Con quá nhỏ cần thức ăn trong inventory theo cơ chế loài; không mặc định trough nuôi mọi con từ lúc sinh.",
-        "Đánh dấu bố mẹ và chỉ số gốc; chừa khu riêng cho mutation.",
-        "Khu nuôi boss phải đủ chỗ trưởng thành và đi ra cổng."
+        "Check the temperature requirements of each species; no fixed air-conditioner count works for every egg.",
+        "Very young babies need food in their inventory according to species mechanics; do not assume a trough feeds every baby from birth.",
+        "Label parents and base stats; leave a separate area for mutations.",
+        "The boss nursery needs enough room for fully grown creatures and a clear route to the gate."
       ]
     }
   ]

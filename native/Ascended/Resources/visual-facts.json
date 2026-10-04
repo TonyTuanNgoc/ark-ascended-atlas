@@ -434,7 +434,7 @@
     "name": "Canteen",
     "aliases": [
       "Canteen",
-      "nước uống",
+      "drinking water",
       "canteen"
     ],
     "asset": "Item-canteen",
@@ -547,7 +547,7 @@
     "aliases": [
       "Cooked Meat",
       "food",
-      "thức ăn"
+      "food"
     ],
     "asset": "Item-cooked-meat",
     "symbol": "shippingbox.fill",
@@ -581,7 +581,7 @@
     "name": "Crossbow",
     "aliases": [
       "Crossbow",
-      "nỏ"
+      "crossbow"
     ],
     "asset": "Item-crossbow",
     "symbol": "shippingbox.fill",
@@ -707,7 +707,7 @@
     "name": "Flak Chestpiece",
     "aliases": [
       "Flak Chestpiece",
-      "giáp",
+      "armor",
       "armor"
     ],
     "asset": "Item-flak-chestpiece",
@@ -733,9 +733,9 @@
     "aliases": [
       "Fur Chestpiece",
       "fur",
-      "giữ ấm",
-      "giữ nhiệt",
-      "giáp lạnh",
+      "keep warm",
+      "retain heat",
+      "cold armor",
       "Fur Armor"
     ],
     "asset": "Item-fur-chestpiece",
@@ -782,7 +782,7 @@
     "aliases": [
       "Gas Mask",
       "gas mask",
-      "hô hấp"
+      "breathing"
     ],
     "asset": "Item-gas-mask",
     "symbol": "shippingbox.fill",
@@ -828,7 +828,7 @@
     "aliases": [
       "Grappling Hook",
       "grapple",
-      "dây",
+      "rope",
       "grappling"
     ],
     "asset": "Item-grappling-hook",
@@ -852,7 +852,7 @@
     "name": "Industrial Forge",
     "aliases": [
       "Industrial Forge",
-      "công nghiệp"
+      "industrial"
     ],
     "asset": "Item-industrial-forge",
     "symbol": "shippingbox.fill",
@@ -933,7 +933,7 @@
     "aliases": [
       "Lesser Antidote",
       "lesser antidote",
-      "bệnh"
+      "disease"
     ],
     "asset": "Item-lesser-antidote",
     "symbol": "shippingbox.fill",
@@ -990,7 +990,7 @@
     "name": "Medical Brew",
     "aliases": [
       "Medical Brew",
-      "thuốc",
+      "medicine",
       "medical brew"
     ],
     "asset": "Item-medical-brew",
@@ -1059,7 +1059,7 @@
     "name": "Metal Shield",
     "aliases": [
       "Metal Shield",
-      "khiên"
+      "shield"
     ],
     "asset": "Item-metal-shield",
     "symbol": "shippingbox.fill",
@@ -1106,7 +1106,7 @@
     "name": "Oil",
     "aliases": [
       "Oil",
-      "dầu"
+      "oil"
     ],
     "asset": "Item-oil",
     "symbol": "shippingbox.fill",
@@ -1153,7 +1153,7 @@
     "name": "Pike",
     "aliases": [
       "Pike",
-      "vũ khí"
+      "weapons"
     ],
     "asset": "Item-pike",
     "symbol": "shippingbox.fill",
@@ -1364,7 +1364,7 @@
     "name": "Refining Forge",
     "aliases": [
       "Refining Forge",
-      "luyện"
+      "practice"
     ],
     "asset": "Item-refining-forge",
     "symbol": "shippingbox.fill",
@@ -1467,8 +1467,8 @@
     "aliases": [
       "SCUBA Tank",
       "scuba",
-      "đồ lặn",
-      "lặn",
+      "diving suit",
+      "dive",
       "SCUBA Gear"
     ],
     "asset": "Item-scuba-tank",
@@ -1549,7 +1549,7 @@
     "name": "Simple Bed",
     "aliases": [
       "Simple Bed",
-      "giường"
+      "bed"
     ],
     "asset": "Item-simple-bed",
     "symbol": "shippingbox.fill",
@@ -1572,7 +1572,7 @@
     "name": "Simple Shotgun Ammo",
     "aliases": [
       "Simple Shotgun Ammo",
-      "đạn",
+      "ammo",
       "ammo"
     ],
     "asset": "Item-simple-shotgun-ammo",
@@ -1653,7 +1653,7 @@
     "name": "Stone",
     "aliases": [
       "Stone",
-      "đá"
+      "stone"
     ],
     "asset": "Item-stone",
     "symbol": "shippingbox.fill",
@@ -1838,7 +1838,7 @@
     "name": "Torch",
     "aliases": [
       "Torch",
-      "nguồn sáng"
+      "light source"
     ],
     "asset": "Item-torch",
     "symbol": "shippingbox.fill",
@@ -1917,7 +1917,7 @@
     "name": "Wood",
     "aliases": [
       "Wood",
-      "gỗ"
+      "wood"
     ],
     "asset": "Item-wood",
     "symbol": "shippingbox.fill",
@@ -3627,11 +3627,11 @@
   },
   {
     "id": "hazard-water",
-    "name": "Nước",
+    "name": "Water",
     "aliases": [
-      "nước",
       "water",
-      "biển"
+      "water",
+      "sea"
     ],
     "asset": null,
     "symbol": "water.waves",
@@ -3639,10 +3639,10 @@
   },
   {
     "id": "hazard-cold",
-    "name": "Lạnh",
+    "name": "Cold",
     "aliases": [
-      "lạnh",
-      "băng",
+      "cold",
+      "ice",
       "cold"
     ],
     "asset": null,
@@ -3651,9 +3651,9 @@
   },
   {
     "id": "hazard-heat",
-    "name": "Nóng",
+    "name": "Hot",
     "aliases": [
-      "nóng",
+      "hot",
       "heat"
     ],
     "asset": null,
@@ -3662,10 +3662,10 @@
   },
   {
     "id": "hazard-fall",
-    "name": "Vực",
+    "name": "Abyss",
     "aliases": [
-      "vực",
-      "rơi"
+      "chasm",
+      "fall"
     ],
     "asset": null,
     "symbol": "figure.fall",
@@ -3673,9 +3673,9 @@
   },
   {
     "id": "hazard-trap",
-    "name": "Bẫy",
+    "name": "Trap",
     "aliases": [
-      "bẫy",
+      "trap",
       "trap"
     ],
     "asset": null,
@@ -3694,10 +3694,10 @@
   },
   {
     "id": "hazard-poison",
-    "name": "Khí độc",
+    "name": "Toxic gas",
     "aliases": [
-      "không khí nguy hiểm",
-      "khí độc"
+      "dangerous atmosphere",
+      "toxic gas"
     ],
     "asset": null,
     "symbol": "aqi.high",
@@ -3705,12 +3705,12 @@
   },
   {
     "id": "hazard-route",
-    "name": "Đường rút",
+    "name": "Retreat route",
     "aliases": [
-      "đường rút",
-      "đường thoát",
-      "đường quay",
-      "lối ra"
+      "retreat route",
+      "escape route",
+      "return route",
+      "exit"
     ],
     "asset": null,
     "symbol": "arrow.uturn.backward",
@@ -3732,7 +3732,7 @@
     "name": "HP",
     "aliases": [
       "HP",
-      "hồi đầy máu"
+      "fully heal"
     ],
     "asset": null,
     "symbol": "heart.fill",

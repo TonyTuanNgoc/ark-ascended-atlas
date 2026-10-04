@@ -42,12 +42,12 @@ struct MapInformationScreen: View {
                     metric(map == .ragnarok ? "5" : "\(map.bosses.isEmpty ? (map.expansion?.bosses.count ?? 0) : map.bosses.count)", "Boss")
                 }
                 HStack {
-                    Button(action: openMap) { Label("Mở bản đồ", systemImage: "map.fill") }.labelStyle(.iconOnly).accessibilityLabel("Mở bản đồ").accessibilityIdentifier("openRagnarokMap")
+                    Button(action: openMap) { Label("Open map", systemImage: "map.fill") }.labelStyle(.iconOnly).accessibilityLabel("Open map").accessibilityIdentifier("openRagnarokMap")
                     Button(action: openDinos) { Label("Dino", systemImage: "pawprint.fill") }.labelStyle(.iconOnly).accessibilityLabel("Dino").accessibilityIdentifier("openDinos")
                     Button(action: openBosses) { Label("Boss", systemImage: "shield.lefthalf.filled") }.labelStyle(.iconOnly).accessibilityLabel("Boss").accessibilityIdentifier("openBosses")
                 }.buttonStyle(.bordered)
                 if map.information != nil, let record = map.expansion {
-                    DisclosureGroup("Thông tin & mục tiêu") { ExpansionProfile(record: record) }.cardStyle()
+                    DisclosureGroup("Information & goals") { ExpansionProfile(record: record) }.cardStyle()
                 }
                 if let info = map.information {
                     ForEach(info.sections.filter { search.isEmpty || $0.title.localizedStandardContains(search) || $0.items.contains { $0.localizedStandardContains(search) } }) { section in
@@ -55,16 +55,16 @@ struct MapInformationScreen: View {
                             ForEach(section.items, id: \.self) { VisualBrief(text: $0).padding(.vertical, 5) }
                         } label: { Text(section.title).font(.headline) }.cardStyle().accessibilityIdentifier("information-" + section.id)
                     }
-                    if search.isEmpty || "tài nguyên resources".localizedStandardContains(search) {
-                        DisclosureGroup("Tài nguyên") {
+                    if search.isEmpty || "resources".localizedStandardContains(search) {
+                        DisclosureGroup("Resources") {
                             ForEach(info.resources) { resource in VisualBrief(text: resource.name) }
                         }.cardStyle()
                     }
                 } else {
-                    if let record = map.expansion { DisclosureGroup("Thông tin & mục tiêu") { ExpansionProfile(record: record) }.cardStyle() }
+                    if let record = map.expansion { DisclosureGroup("Information & goals") { ExpansionProfile(record: record) }.cardStyle() }
                 }
             }.padding(24).frame(maxWidth: 1100).frame(maxWidth: .infinity)
-        }.searchable(text: $search, prompt: "Tìm thông tin " + map.name)
+        }.searchable(text: $search, prompt: "Search information on " + map.name)
             .background(Color(red: 0.025, green: 0.045, blue: 0.065))
     }
     private func metric(_ value: String, _ label: String) -> some View {
@@ -75,26 +75,26 @@ struct SourcesScreen: View {
     @Environment(\.arkMap) private var map
     var body: some View {
         List {
-            Section(map.name + " · nguồn dữ liệu") {
+            Section(map.name + " · data sources") {
                 ForEach(map.information?.sources ?? []) { source in
                     if let url = URL(string: source.url) { Link(source.title, destination: url) }
                 }
             }
-            Section("Hình ảnh & tọa độ") {
-                Link("Bản đồ " + map.name + " Ascended · Wikily", destination: URL(string: map.mapURL)!)
-                Text("Địa hình 8192 × 8192 từ tile gốc zoom 5; zoom 6 không có trên nguồn đã kiểm tra. Sinh vật, artifact và terminal lấy đúng bộ dữ liệu map đang chọn. Ảnh tuyến được chú thích rõ; không tự coi ảnh minh họa là ảnh cửa hang.")
-                if map == .island { Text("The Island có khác biệt giữa hệ mini-map (M một lần) và waypoint (M hai lần). Tọa độ artifact theo lớp Wikily; cửa hang theo hướng dẫn Ascended. Dùng địa hình và chú thích của từng tuyến để nhận diện.") }
+            Section("Imagery & coordinates") {
+                Link("Map " + map.name + " Ascended · Wikily", destination: URL(string: map.mapURL)!)
+                Text("The 8192 × 8192 terrain uses original zoom-5 tiles; zoom 6 was unavailable in the checked source. Creatures, artifacts and terminals use the selected map dataset. Route images are labeled; illustration images are not presented as cave-entrance photographs.")
+                if map == .island { Text("The Island uses different coordinate systems for the mini-map (press M once) and waypoints (press M twice). Artifact coordinates follow the Wikily layer; cave entrances follow Ascended guides. Use the terrain and route notes to identify locations.") }
             }
             Section("Dino & Boss") {
                 if case .success(let catalogue) = map.creatures {
-                    Text("\(catalogue.spawnRegistryEntries) mục trong registry của map + \(catalogue.wikiSupplementEntries) mục Wiki bổ sung. Biến thể được đếm riêng; sinh vật sự kiện / mod không được tự gộp thành spawn thường.")
-                    Text("\(catalogue.creatures.filter(\.detailAvailable).count) hồ sơ có thông tin loài; các hồ sơ còn lại ghi rõ chưa có chi tiết. Danh mục map và chỉ số loài là dữ liệu nguồn, không phải đo save Single Player.")
+                    Text("\(catalogue.spawnRegistryEntries) map registry entries + \(catalogue.wikiSupplementEntries) Wiki supplement entries. Variants are counted separately; event and mod creatures are not automatically treated as regular spawns.")
+                    Text("\(catalogue.creatures.filter(\.detailAvailable).count) profiles have species details; the remaining profiles state that details are unavailable. Map catalogs and species stats come from sources, rather than measurements of your Single Player save.")
                 }
-                Text("Settings Single Player, difficulty, mods và bản game có thể thay đổi trải nghiệm. Dữ liệu Wiki có phần Evolved; chỉ áp dụng bảng Ascended được nêu và xem chú thích khi nguồn mâu thuẫn.")
+                Text("Single Player settings, difficulty, mods and game version can change the experience. Some Wiki data refers to Evolved; use the identified Ascended tables and read notes when sources conflict.")
             }
-            Section("App cá nhân") {
+            Section("Personal app") {
                 Text("Ascended 0.5.1 (6) · " + map.name)
-                Text("Logo / artwork thuộc Studio Wildcard và nguồn được dẫn. App đồng hành cá nhân; dữ liệu và ghi chú lưu offline trên iPad. Link tham khảo cần mạng. Ghi chú, checklist và tiến độ được lưu riêng từng map; xóa app sẽ xóa dữ liệu cục bộ.")
+                Text("Logos and artwork belong to Studio Wildcard and the credited sources. This personal companion stores data and notes offline on iPad. Reference links require a connection. Notes, checklists and progress are saved separately for each map; deleting the app removes local data.")
             }
         }
     }

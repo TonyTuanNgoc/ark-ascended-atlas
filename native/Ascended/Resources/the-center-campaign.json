@@ -1,46 +1,46 @@
 {
-  "summary": "Một arena, hai boss cùng lúc. Tiến triển Gamma → Beta → Alpha; trong mỗi trận ưu tiên Megapithecus rồi Broodmother.",
+  "summary": "One arena, two bosses at the same time. Progression Gamma → Beta → Alpha; In each match, prioritize Megapithecus and then Broodmother.",
   "sharedPreparation": [
-    "Mốc dưới đây là chỉ số trong inventory sau breed, imprint và điểm XP, trước courage / mate boost; không phải chỉ số mới nở hay sát thương hit thực tế.",
-    "Giả định wild max khoảng 150, stat multipliers gần mặc định và không mod combat. Single Player Settings ON có thể làm tame mạnh hơn; vẫn kiểm tra HP/melee thật, không tự chia số để giảm đội.",
-    "Chọn bố mẹ wild 130–150 có HP/melee tốt; tổng level chỉ là bộ lọc. Tame 150 hiệu quả cao thường khoảng 224, không phải mốc bắt buộc để thắng.",
-    "Ghép HP tốt + melee tốt vào cùng dòng breed, giữ bố mẹ dự phòng; imprint 100% nếu có thể. Rider imprint chỉ có khi đúng người đã imprint đang cưỡi; Dino AI không được rider bonus.",
-    "Lên XP: nâng HP tới mục tiêu, phần lớn điểm còn lại vào melee; Yuty ưu tiên HP/stamina, Daeodon ưu tiên food. Không bơm weight/speed cho DPS chỉ vì muốn tổng level cao.",
-    "Khoảng level 250–350+ có thể gặp ở đội đã train nhưng không chứng minh sức mạnh: level 300 dồn food yếu hơn level thấp có HP/melee đúng. Không có số mutation cố định phải đạt.",
-    "Solo thường cưỡi Yuty để giữ courage và whistle; 19 attacker + 1 Yuty = 20. Nếu dùng Daeodon, thay một attacker (18+1+1), chuẩn bị food và chấp nhận DPS giảm.",
-    "Chạy Gamma khảo sát → Beta → Alpha bằng cùng chiến thuật đã ổn định, thay saddle/đội khi thiếu; hồi đầy HP/food và mang súng dự phòng. Các ngưỡng là kế hoạch chuẩn bị, không cam kết no-loss.",
-    "Deinosuchus bleed đã bị loại khỏi boss ở patch 73.13. Các video/forum cũ nói bleed cheese không còn là bằng chứng cho hiện tại."
+    "Targets below are inventory stats after breeding, imprinting, and XP levels, before courage / mate boost; they are not hatch stats or actual hit damage.",
+    "Assumes a wild maximum around 150, near-default stat multipliers, and no combat mods. Single Player Settings ON may strengthen tames; still check actual HP/melee, and do not simply divide targets to reduce the team.",
+    "Choose wild parents at 130–150 with good HP/melee; total level is only a filter. A high-effectiveness level 150 tame usually ends around 224, not a required winning threshold.",
+    "Combine good HP + good melee in one breeding line and keep backup parents; imprint 100% if possible. Rider imprint applies only while the imprinter rides; AI Dino do not receive the rider bonus.",
+    "Spend XP levels on HP to the target, then mostly melee; prioritize HP/stamina for Yuty and food for Daeodon. Do not level weight/speed on DPS creatures just to raise their total level.",
+    "Trained teams may reach level 250–350+, but level does not prove strength: a level 300 creature invested in food is weaker than a lower-level creature with suitable HP/melee. No fixed mutation count is required.",
+    "Solo players usually ride Yuty for courage and whistles; 19 attackers + 1 Yuty = 20. With Daeodon, replace an attacker (18+1+1), prepare food, and accept lower DPS.",
+    "Scout with Gamma → Beta → Alpha using a proven strategy; improve saddles/team where needed, restore full HP/food, and bring a spare gun. Targets are preparation plans, not no-loss guarantees.",
+    "Deinosuchus bleed was removed from bosses in patch 73.13. Old bleed-cheese videos/forums no longer demonstrate current behavior."
   ],
   "steps": [
     {
       "id": "joint",
       "title": "1 · The Center Arena",
-      "reason": "Mở cả hai hồ sơ để chuẩn bị cùng một đội; một lần dịch chuyển, không có Dragon/Overseer.",
+      "reason": "Open both profiles to prepare one team; there is one teleport, with no Dragon/Overseer.",
       "bossIDs": [
         "megapithecus",
         "broodmother"
       ],
-      "kind": "Focus monkey → nhện"
+      "kind": "Focus monkey → spider"
     },
     {
       "id": "upgrade",
-      "title": "2 · Nâng Gamma → Beta → Alpha",
-      "reason": "Đội thắng sạch Gamma mới nâng độ khó, farm saddle rồi Alpha. Không so trực tiếp HP boss/Element với The Island.",
+      "title": "2 Lift Gamma → Beta → Alpha",
+      "reason": "Increase difficulty after a clean Gamma win; farm saddles before Alpha. Do not directly compare boss HP/Element with The Island.",
       "bossIDs": [],
-      "kind": "Sau Gamma: tăng chất lượng đội"
+      "kind": "After Gamma: increase team quality"
     }
   ],
   "loadouts": [
     {
       "bossID": "megapithecus",
-      "entry": "Survivor Gamma70 / Beta80 / Alpha90. Hai guardian xuất hiện cùng trận; một bộ tribute cho arena.",
-      "warning": "Thứ tự tập trung mục tiêu: Megapithecus trước → Broodmother; đây là chiến thuật gợi ý, không phải hai lần triệu hồi.",
+      "entry": "Survivor Gamma 70 / Beta 80 / Alpha 90. Two guardians appear in the same battle; a tribute set for the arena.",
+      "warning": "Target focus order: Megapithecus first → Broodmother; This is a suggested strategy, not two summons.",
       "options": [
         {
           "id": "rex",
-          "title": "Rex + Yuty · dễ chuẩn hóa",
-          "team": "19 Rex + 1 Yutyrannus anh cưỡi; hoặc 18 Rex + Yuty + Daeodon.",
-          "why": "Một dòng breed có thể dùng nhiều trận; có saddle và chỉ số thực tế đủ.",
+          "title": "Rex + Yuty · easy to standardize",
+          "team": "19 Rex +1 Yutyrannus he rides; or 18 Rex + Yuty + Daeodon.",
+          "why": "One breeding line can serve multiple fights with adequate saddles and actual stats.",
           "targets": [
             {
               "difficulty": "Gamma",
@@ -61,43 +61,43 @@
               "hp": "25–30k",
               "melee": "900–1100%",
               "saddle": "100+",
-              "extra": "Có báo thắng thấp hơn; đây là khoảng đệm chuẩn bị."
+              "extra": "There is a lower win indicator; This is the preparation buffer."
             }
           ],
-          "play": "Whistle vào một mục tiêu, giữ courage, dùng Yuty tránh đòn; pig là lựa chọn, không healer vô hạn. Yuty gợi ý 25–30k HP / 2–3k stamina, saddle80+; pig 20k+ HP / 60–100k food là ngân sách support, không minimum.",
-          "confidence": "Kinh nghiệm cộng đồng + khoảng đệm do em đề xuất.",
+          "play": "Whistle one target, maintain courage, and dodge attacks on Yuty; a pig is optional, not an unlimited healer. Suggested Yuty budget: 25–30k HP / 2–3k stamina, saddle80+; pig 20k+ HP / 60–100k food. These are support budgets, not minimums.",
+          "confidence": "Community experience + buffer suggested by you.",
           "imageAsset": "Dino-rex"
         },
         {
           "id": "spino",
-          "title": "Spino / Rex · khai thác arena có nước",
-          "team": "9 Spino + 9 Rex + 1 Yuty + 1 pig; hoặc 19 Spino + Yuty.",
-          "why": "Một đội lai đã được người chơi ASA xác nhận Alpha thắng.",
+          "title": "Spino / Rex · use the arena's water",
+          "team": "9 Spino +9 Rex +1 Yuty +1 pig; or 19 Spino + Yuty.",
+          "why": "An ASA player confirmed an Alpha win with a mixed team.",
           "targets": [
             {
               "difficulty": "Alpha · Rex",
               "hp": "~30k",
               "melee": "~900%",
-              "saddle": "BP 63 trong báo cáo",
-              "extra": "Override difficulty6; không phải mặc định."
+              "saddle": "BP 63 in the report",
+              "extra": "Override difficulty 6; not default."
             },
             {
               "difficulty": "Alpha · Spino",
               "hp": "~20k",
               "melee": "~900%",
-              "saddle": "BP 93 trong báo cáo",
-              "extra": "Giữ water buff khi có thể"
+              "saddle": "BP 93 in the report",
+              "extra": "Keep water buff when possible"
             }
           ],
-          "play": "Focus monkey trước để bỏ áp lực ranged, sau đó bao nhện. Đừng tách đàn thành hai trận; canh địa hình/nước.",
-          "confidence": "Báo cáo thắng ASA05/2026; biến thể19Spino là gợi ý, chưa có đo riêng.",
+          "play": "Focus the monkey first to remove ranged pressure, then surround the spider. Do not split the herd into two fights; watch terrain/water.",
+          "confidence": "Win report ASA 05/2026; Variant 19 Spino is suggested, not specifically measured yet.",
           "imageAsset": "Dino-spino"
         },
         {
           "id": "theri",
-          "title": "Therizino + cake · tái dùng dòng breed",
-          "team": "19 Therizinosaurus + 1 Yuty; hoặc 18 Theri + Yuty + 1 pig.",
-          "why": "Có thể tái dùng dòng Theri đã breed để giảm công chuẩn bị nhiều dòng. Thử ở Gamma trước khi tăng độ khó.",
+          "title": "Therizino + cake · reuse breed line",
+          "team": "19 Therizinosaurus +1 Yuty; or 18 Theri + Yuty +1 pig.",
+          "why": "It is possible to reuse already bred Theri lines to reduce the effort of preparing multiple lines. Try at Gamma before increasing the difficulty.",
           "targets": [
             {
               "difficulty": "Gamma",
@@ -118,42 +118,42 @@
               "hp": "~21k",
               "melee": "1000–1300%+",
               "saddle": "100+",
-              "extra": "20–30 cake / con; kiểm soát vị trí, food và nguồn cake"
+              "extra": "20–30 cake/piece; Control position, food and cake source"
             }
           ],
-          "play": "Giữ cake trong từng inventory, thêm berries; đừng nhầm melee% với damage hiện trên một hit. Nâng HP quanh 21k rồi ưu tiên melee là cách tận dụng cake, không phải luật cấm tăng HP.",
-          "confidence": "Mốc do em đề xuất để lập kế hoạch; nguồn của trận này không xác minh riêng army Theri. Thử Gamma để đánh giá trước khi nâng độ khó.",
+          "play": "Keep cakes in each inventory with extra berries; melee% is not the damage displayed for one hit. Raising HP to around 21k then prioritizing melee makes use of cakes, not a rule forbidding higher HP.",
+          "confidence": "Suggested planning targets; sources for this fight do not separately verify a Theri army. Evaluate Gamma before increasing difficulty.",
           "imageAsset": "Dino-therizinosaur"
         }
       ],
       "sources": [
         {
-          "title": "Reddit · Center Alpha thắng · 05/2026",
+          "title": "Reddit · Center Alpha wins · 05/2026",
           "url": "https://www.reddit.com/r/ArkSurvivalAscended/comments/1t205vg/",
-          "note": "Người đăng xác nhận thắng: 9 Rex 30k HP/900%, saddle BP 63 + 9 Spino 20k/900%, BP 93 + Yuty/Daeodon; difficulty override6, private server."
+          "note": "The poster confirmed a win: 9 Rex 30k HP/900%, saddle BP 63 + 9 Spino 20k/900%, BP 93 + Yuty/Daeodon; difficulty override6 on a private server."
         },
         {
           "title": "Reddit · Center Alpha Rex · 09/2024",
           "url": "https://www.reddit.com/r/playark/comments/1fgq0h7/",
-          "note": "Báo ~18 Rex 20–25k HP/800–900%, saddle70 và Yuty. Không áp sức mạnh Island lên Center."
+          "note": "Reported ~18 Rex 20–25k HP/800–900%, saddle70 and Yuty. Do not transfer Island difficulty assumptions to Center."
         },
         {
           "title": "Wiki · Deinosuchus patch 73.13",
           "url": "https://ark.wiki.gg/wiki/Deinosuchus",
-          "note": "Bleed của Deinosuchus không còn áp lên boss. Không dùng mẹo croc bleed cũ làm phương án mặc định."
+          "note": "Deinosuchus 's Bleed no longer applies to bosses. Don't use the old croc bleed trick as your default option."
         }
       ]
     },
     {
       "bossID": "broodmother",
-      "entry": "Survivor Gamma70 / Beta80 / Alpha90. Hai guardian xuất hiện cùng trận; một bộ tribute cho arena.",
-      "warning": "Thứ tự tập trung mục tiêu: Megapithecus trước → Broodmother; đây là chiến thuật gợi ý, không phải hai lần triệu hồi.",
+      "entry": "Survivor Gamma 70 / Beta 80 / Alpha 90. Two guardians appear in the same battle; a tribute set for the arena.",
+      "warning": "Target focus order: Megapithecus first → Broodmother; This is a suggested strategy, not two summons.",
       "options": [
         {
           "id": "rex",
-          "title": "Rex + Yuty · dễ chuẩn hóa",
-          "team": "19 Rex + 1 Yutyrannus anh cưỡi; hoặc 18 Rex + Yuty + Daeodon.",
-          "why": "Một dòng breed có thể dùng nhiều trận; có saddle và chỉ số thực tế đủ.",
+          "title": "Rex + Yuty · easy to standardize",
+          "team": "19 Rex +1 Yutyrannus he rides; or 18 Rex + Yuty + Daeodon.",
+          "why": "One breeding line can serve multiple fights with adequate saddles and actual stats.",
           "targets": [
             {
               "difficulty": "Gamma",
@@ -174,43 +174,43 @@
               "hp": "25–30k",
               "melee": "900–1100%",
               "saddle": "100+",
-              "extra": "Có báo thắng thấp hơn; đây là khoảng đệm chuẩn bị."
+              "extra": "There is a lower win indicator; This is the preparation buffer."
             }
           ],
-          "play": "Whistle vào một mục tiêu, giữ courage, dùng Yuty tránh đòn; pig là lựa chọn, không healer vô hạn. Yuty gợi ý 25–30k HP / 2–3k stamina, saddle80+; pig 20k+ HP / 60–100k food là ngân sách support, không minimum.",
-          "confidence": "Kinh nghiệm cộng đồng + khoảng đệm do em đề xuất.",
+          "play": "Whistle one target, maintain courage, and dodge attacks on Yuty; a pig is optional, not an unlimited healer. Suggested Yuty budget: 25–30k HP / 2–3k stamina, saddle80+; pig 20k+ HP / 60–100k food. These are support budgets, not minimums.",
+          "confidence": "Community experience + buffer suggested by you.",
           "imageAsset": "Dino-rex"
         },
         {
           "id": "spino",
-          "title": "Spino / Rex · khai thác arena có nước",
-          "team": "9 Spino + 9 Rex + 1 Yuty + 1 pig; hoặc 19 Spino + Yuty.",
-          "why": "Một đội lai đã được người chơi ASA xác nhận Alpha thắng.",
+          "title": "Spino / Rex · use the arena's water",
+          "team": "9 Spino +9 Rex +1 Yuty +1 pig; or 19 Spino + Yuty.",
+          "why": "An ASA player confirmed an Alpha win with a mixed team.",
           "targets": [
             {
               "difficulty": "Alpha · Rex",
               "hp": "~30k",
               "melee": "~900%",
-              "saddle": "BP 63 trong báo cáo",
-              "extra": "Override difficulty6; không phải mặc định."
+              "saddle": "BP 63 in the report",
+              "extra": "Override difficulty 6; not default."
             },
             {
               "difficulty": "Alpha · Spino",
               "hp": "~20k",
               "melee": "~900%",
-              "saddle": "BP 93 trong báo cáo",
-              "extra": "Giữ water buff khi có thể"
+              "saddle": "BP 93 in the report",
+              "extra": "Keep water buff when possible"
             }
           ],
-          "play": "Focus monkey trước để bỏ áp lực ranged, sau đó bao nhện. Đừng tách đàn thành hai trận; canh địa hình/nước.",
-          "confidence": "Báo cáo thắng ASA05/2026; biến thể19Spino là gợi ý, chưa có đo riêng.",
+          "play": "Focus the monkey first to remove ranged pressure, then surround the spider. Do not split the herd into two fights; watch terrain/water.",
+          "confidence": "Win report ASA 05/2026; Variant 19 Spino is suggested, not specifically measured yet.",
           "imageAsset": "Dino-spino"
         },
         {
           "id": "theri",
-          "title": "Therizino + cake · tái dùng dòng breed",
-          "team": "19 Therizinosaurus + 1 Yuty; hoặc 18 Theri + Yuty + 1 pig.",
-          "why": "Có thể tái dùng dòng Theri đã breed để giảm công chuẩn bị nhiều dòng. Thử ở Gamma trước khi tăng độ khó.",
+          "title": "Therizino + cake · reuse breed line",
+          "team": "19 Therizinosaurus +1 Yuty; or 18 Theri + Yuty +1 pig.",
+          "why": "It is possible to reuse already bred Theri lines to reduce the effort of preparing multiple lines. Try at Gamma before increasing the difficulty.",
           "targets": [
             {
               "difficulty": "Gamma",
@@ -231,29 +231,29 @@
               "hp": "~21k",
               "melee": "1000–1300%+",
               "saddle": "100+",
-              "extra": "20–30 cake / con; kiểm soát vị trí, food và nguồn cake"
+              "extra": "20–30 cake/piece; Control position, food and cake source"
             }
           ],
-          "play": "Giữ cake trong từng inventory, thêm berries; đừng nhầm melee% với damage hiện trên một hit. Nâng HP quanh 21k rồi ưu tiên melee là cách tận dụng cake, không phải luật cấm tăng HP.",
-          "confidence": "Mốc do em đề xuất để lập kế hoạch; nguồn của trận này không xác minh riêng army Theri. Thử Gamma để đánh giá trước khi nâng độ khó.",
+          "play": "Keep cakes in each inventory with extra berries; melee% is not the damage displayed for one hit. Raising HP to around 21k then prioritizing melee makes use of cakes, not a rule forbidding higher HP.",
+          "confidence": "Suggested planning targets; sources for this fight do not separately verify a Theri army. Evaluate Gamma before increasing difficulty.",
           "imageAsset": "Dino-therizinosaur"
         }
       ],
       "sources": [
         {
-          "title": "Reddit · Center Alpha thắng · 05/2026",
+          "title": "Reddit · Center Alpha wins · 05/2026",
           "url": "https://www.reddit.com/r/ArkSurvivalAscended/comments/1t205vg/",
-          "note": "Người đăng xác nhận thắng: 9 Rex 30k HP/900%, saddle BP 63 + 9 Spino 20k/900%, BP 93 + Yuty/Daeodon; difficulty override6, private server."
+          "note": "The poster confirmed a win: 9 Rex 30k HP/900%, saddle BP 63 + 9 Spino 20k/900%, BP 93 + Yuty/Daeodon; difficulty override6 on a private server."
         },
         {
           "title": "Reddit · Center Alpha Rex · 09/2024",
           "url": "https://www.reddit.com/r/playark/comments/1fgq0h7/",
-          "note": "Báo ~18 Rex 20–25k HP/800–900%, saddle70 và Yuty. Không áp sức mạnh Island lên Center."
+          "note": "Reported ~18 Rex 20–25k HP/800–900%, saddle70 and Yuty. Do not transfer Island difficulty assumptions to Center."
         },
         {
           "title": "Wiki · Deinosuchus patch 73.13",
           "url": "https://ark.wiki.gg/wiki/Deinosuchus",
-          "note": "Bleed của Deinosuchus không còn áp lên boss. Không dùng mẹo croc bleed cũ làm phương án mặc định."
+          "note": "Deinosuchus 's Bleed no longer applies to bosses. Don't use the old croc bleed trick as your default option."
         }
       ]
     }

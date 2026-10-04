@@ -1,92 +1,92 @@
 {
-  "subtitle": "Đảo nổi, thế giới ngầm và trận hai guardian",
+  "subtitle": "Floating islands, an underground world, and a two-guardian fight",
   "reviewedAt": "03/10/2026",
   "sections": [
     {
       "id": "identity",
-      "title": "The Center · map khám phá",
+      "title": "The Center · exploration map",
       "items": [
-        "Map mở rộng có đảo nổi, thế giới ngầm và biển sâu. Hai guardian Broodmother Lysrix và Megapithecus cùng xuất hiện trong The Center Arena.",
-        "Không có Dragon hoặc Overseer ở đây và không có tuyến ascension Tek Cave của The Island. Map có 11 artifact nhưng arena chỉ cần sáu loại."
+        "An expansion map with floating islands, an underground world, and deep seas. Guardians Broodmother Lysrix and Megapithecus appear together in The Center Arena.",
+        "There is no Dragon or Overseer here, or The Island's Tek Cave ascension route. The map has 11 artifacts, but its arena only needs six types."
       ]
     },
     {
       "id": "geography",
-      "title": "Địa hình & biome",
+      "title": "Terrain & biome",
       "items": [
-        "Đảo núi lửa phía bắc, khu tuyết phía tây, rừng/Redwoods và các đảo nhiệt đới có yêu cầu di chuyển khác nhau.",
-        "Đảo nổi The Center và Underground World là hai tuyến riêng, không gộp cửa vào. Hang dọc vách, rãnh biển sâu và underwater domes tạo nhiều lựa chọn base/chuyến khám phá.",
-        "Biển lớn và độ sâu là một phần quan trọng của map. Chuyến lặn cần đủ khí, độ bền và đường lên, không chỉ một tọa độ đích."
+        "The northern volcanic island, western snow region, forests/Redwoods, and tropical islands have different travel requirements.",
+        "The floating island The Center and Underground World are separate routes; do not combine their entrances. Cliffside caves, deep-sea trenches, and underwater domes offer many base and expedition options.",
+        "The vast ocean and its depth are central to this map. Diving trips need enough air, durability, and a way up, not just a destination coordinate."
       ]
     },
     {
       "id": "resources",
-      "title": "Tài nguyên & vận chuyển",
+      "title": "Resources & transport",
       "items": [
-        "Gợi ý: lập tuyến metal/crystal/obsidian và một điểm tiếp tế trước khi khai thác vùng núi lửa; cân bằng khoảng cách farm với nguy cơ mất mount.",
-        "Pearls/dầu và vùng biển cần tame vận chuyển/chiến đấu riêng. Duy trì kho nguyên liệu sửa SCUBA, ammo và food trước khi đi rãnh sâu."
+        "Suggestion: establish metal/crystal/obsidian routes and a supply point before harvesting in volcanic areas; balance farming distance against the risk of losing your mount.",
+        "Pearls/oil and ocean trips need dedicated transport/combat tames. Maintain materials for SCUBA repairs, ammo, and food before entering deep trenches."
       ]
     },
     {
       "id": "creatures",
       "title": "Dino theo The Center",
       "items": [
-        "Shastasaurus là sinh vật nổi bật của map. Registry có Pyromane, Dreadmare, Drakelings, Elderclaw và những mục DLC được đánh dấu trong Dino.",
-        "Không tự đưa Unicorn hoặc Polar Bear của The Island vào Center. Mục Dino chỉ nạp registry Center và Alpha bổ sung đã xác định; không dùng danh sách Ragnarok.",
-        "Các thêm mới trong registry có Cerberax, Gargantar và Cryolophosaurus; đọc DLC/settings và kiểm tra spawn trên save thực tế."
+        "Shastasaurus is a signature map creature. The registry includes Pyromane, Dreadmare, Drakelings, Elderclaw, and DLC entries marked in Dino.",
+        "Do not automatically add The Island's Unicorn or Polar Bear to Center. Dino loads only the Center registry and identified additional Alphas, not Ragnarok's list.",
+        "Registry additions include Cerberax, Gargantar, and Cryolophosaurus; read the DLC/settings requirements and check actual spawns in your save."
       ]
     },
     {
       "id": "caves",
-      "title": "11 artifact · 9 tuyến khám phá",
+      "title": "11 artifacts · 9 exploration routes",
       "items": [
         "North Ice: Clever/Devourer; South Ice: Skylord; Lava Oasis: Hunter; Lava Cave: Massive/Strong.",
-        "Jungle: Immune; Cliffside: Cunning; đảo nổi The Center Cave: Devious; Underground World: Pack; rãnh biển đông nam: Brute.",
-        "Bộ arena gồm Brute, Clever, Devourer, Hunter, Massive và Pack. Các artifact còn lại vẫn có hồ sơ GPS; không buộc farm cả 11 để triệu hồi trận Center."
+        "Jungle: Immune; Cliffside: Cunning; floating island The Center Cave: Devious; Underground World: Pack; southeastern ocean trench: Brute.",
+        "The arena set is Brute, Clever, Devourer, Hunter, Massive, and Pack. Other artifacts still have GPS profiles; you do not need to farm all 11 to summon the Center fight."
       ]
     },
     {
       "id": "bosses",
-      "title": "Trận đôi The Center Arena",
+      "title": "The Center Arena double-boss fight",
       "items": [
-        "Gamma/Beta/Alpha cần level 70/80/90, cùng sáu artifact; Beta/Alpha có apex tribute riêng. Hai boss cùng một trận, không phải hai cổng độc lập.",
-        "Phải hạ cả hai boss để hoàn tất trận và nhận phần thưởng.",
-        "Đội hình có thể dùng Rex/Theri và Yutyrannus, cân nhắc Megatherium cho minion nhện. Đây là gợi ý chiến thuật; saddle, imprint, settings và timer quyết định khả năng hoàn thành."
+        "Gamma/Beta/Alpha require level 70/80/90 and the same six artifacts; Beta/Alpha have separate apex tributes. Both bosses share one fight, not two independent portals.",
+        "Defeat both bosses to complete the fight and receive rewards.",
+        "A team may use Rex/Theri and Yutyrannus, with Megatherium considered for spider minions. This is tactical guidance; saddles, imprinting, settings, and the timer determine whether it can succeed."
       ]
     },
     {
       "id": "base",
-      "title": "Gợi ý base · The Center",
+      "title": "Base suggestions · The Center",
       "items": [
-        "Starter base ở khu bờ biển/đảo đã khảo sát, có nước, vật liệu và đường đi. Tránh ưu tiên cảnh đẹp ở đảo nổi trước khi có phương án vận chuyển.",
-        "Base lâu dài cần access tới vùng farm và biển. Underworld / dome có cách vào và điều kiện xây riêng; khảo sát thật trước khi chuyển toàn bộ kho xuống.",
-        "Tách bãi tame biển, breeding, crafting và đồ tiếp tế hang. Ghi cửa đã dùng vào nhật ký để chuyến sau không nhầm với tọa độ artifact."
+        "Start on a surveyed coast/island with water, materials, and access routes. Avoid prioritizing the floating island's scenery before solving transport.",
+        "A long-term base needs access to farming regions and the sea. Underworld / domes have distinct entrances and building conditions; survey them before moving all your storage down.",
+        "Separate ocean tame docks, breeding, crafting, and cave supplies. Record the entrance used so later trips do not confuse it with artifact coordinates."
       ]
     },
     {
       "id": "phases",
-      "title": "Lộ trình gợi ý · The Center",
+      "title": "Suggested progression · The Center",
       "items": [
-        "Phase 1–2: survival, base và tame khai thác/vận chuyển. Phase 3: cave kits, nguồn sáng, lạnh/nóng và tame biển.",
-        "Phase 4: gom sáu artifact arena và apex tribute đúng cấp; breed/imprint đội boss và saddle. Artifact khác là mục tiêu khám phá/hoàn thành thư viện.",
-        "Phase 5: The Center Arena Gamma → Beta → Alpha theo mức chuẩn bị; thu loot thực tế và nâng đội. Nếu muốn ascension The Island, chọn map đó và theo tuyến guardian/Tek Cave riêng."
+        "Phase 1–2: survival, base, and harvesting/transport tames. Phase 3: cave kits, lighting, cold/heat protection, and ocean tames.",
+        "Phase 4: collect the six arena artifacts and apex tributes for the chosen difficulty; breed/imprint the boss team and prepare saddles. Other artifacts are exploration/library-completion goals.",
+        "Phase 5: The Center Arena Gamma → Beta → Alpha as preparation allows; collect actual loot and improve the team. For The Island ascension, select that map and follow its separate guardian/Tek Cave route."
       ]
     },
     {
       "id": "settings",
-      "title": "Single Player · nền tảng để tính đúng",
+      "title": "Single Player · platform for correct calculation",
       "items": [
-        "Ghi lại Difficulty, Maximum Difficulty, Use Singleplayer Settings, tốc độ tame/breed, resource respawn và mọi mod trước khi lập kế hoạch. Đây là điều kiện đầu vào, không dùng chỉ số của server khác làm chuẩn save anh.",
-        "Gợi ý: giữ settings ổn định, ghi lại sau mỗi thay đổi. Mục tiêu một phase nên là điều kiện hoàn thành cụ thể: đủ máy, đủ đồ, đủ tame và đã khảo sát đường rút.",
-        "Level và vị trí sinh vật có thể thay đổi theo thiết lập thế giới và mod."
+        "Record Difficulty, Maximum Difficulty, Use Singleplayer Settings, taming/breeding rates, resource respawn, and all mods before planning. These are input conditions; another server's stats are not the standard for your save.",
+        "Suggestion: keep settings stable, record after each change. The goal of a phase should be specific completion conditions: enough machines, enough equipment, enough tame and the exit route has been surveyed.",
+        "Creature levels and locations may change according to world and mod settings."
       ]
     },
     {
       "id": "coordinates",
-      "title": "Đọc bản đồ & tọa độ",
+      "title": "Read maps & coordinates",
       "items": [
-        "LAT tăng về phía nam, LON tăng về phía đông. Artifact là điểm lấy; cửa hang là điểm tiếp cận. Những điểm sát nhau có menu để chọn; dùng từng lớp Artifact / Cửa hang / Boss trên bản đồ.",
-        "Các tọa độ cửa hang là chỉ dẫn cộng đồng, có thể lệch theo phiên bản hoặc vị trí đứng. Điểm được ghi khu vực/tham khảo không phải cửa vào chính xác. Map 8K là địa hình, không phải sơ đồ tầng hang."
+        "LAT increases southward and LON eastward. Artifact marks the collection point; cave entrance marks the approach. Nearby points have a selection menu; use the Artifact / Cave entrance / Boss layers separately.",
+        "Cave entrance coordinates are community guidance and may vary with version or standing position. Area/reference points are not exact entrances. The 8K map shows terrain, not cave floors."
       ]
     }
   ],
@@ -150,7 +150,7 @@
   ],
   "sources": [
     {
-      "title": "Thông tin map · ARK Community Wiki",
+      "title": "Map information · ARK Community Wiki",
       "url": "https://ark.wiki.gg/wiki/Center"
     },
     {
@@ -158,11 +158,11 @@
       "url": "https://wikily.gg/ark-survival-ascended/maps/the-center/"
     },
     {
-      "title": "Quy tắc boss arena",
+      "title": "Boss arena rules",
       "url": "https://ark.wiki.gg/wiki/Boss_Arenas"
     },
     {
-      "title": "Cửa hang The Center Ascended · Aidan Lambourne",
+      "title": "The Center Ascended cave entrances · Aidan Lambourne",
       "url": "https://primagames.com/gaming/all-cave-locations-in-the-center-in-ark-survival-ascended"
     },
     {

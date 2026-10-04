@@ -7,17 +7,18 @@ final class AscendedUITests: XCTestCase {
             let base=app.buttons["section-Xây base"]
             for _ in 0..<10 {if base.isHittable {break};app.collectionViews.firstMatch.swipeUp()}
             base.tap()
+            app.buttons["Build freely"].tap()
             XCTAssertTrue(app.buttons["builder-place"].waitForExistence(timeout:5))
         }
         open()
         if app.staticTexts["builder-count"].value as? String != "0" {
-            app.buttons["Xóa bản thiết kế"].tap();XCTAssertTrue(app.buttons["builder-clear-confirm"].waitForExistence(timeout:5));app.buttons["builder-clear-confirm"].firstMatch.tap()
+            app.buttons["Clear design"].tap();XCTAssertTrue(app.buttons["builder-clear-confirm"].waitForExistence(timeout:5));app.buttons["builder-clear-confirm"].firstMatch.tap()
         }
         app.buttons["builder-place"].tap()
         XCTAssertEqual(app.staticTexts["builder-count"].value as? String,"1")
         app.buttons["builder-bill"].tap()
         XCTAssertEqual(app.staticTexts["builder-material-Stone"].value as? String,"80")
-        app.buttons["Xong"].tap()
+        app.buttons["Done"].tap()
         app.buttons["builder-copy"].tap()
         XCTAssertEqual(app.staticTexts["builder-count"].value as? String,"2")
         app.buttons["builder-rotate"].tap()
@@ -37,7 +38,7 @@ final class AscendedUITests: XCTestCase {
         XCTAssertEqual(app.staticTexts["builder-material-Stone"].value as? String,"200")
         XCTAssertEqual(app.staticTexts["builder-material-Wood"].value as? String,"100")
         XCTAssertEqual(app.staticTexts["builder-material-Thatch"].value as? String,"75")
-        app.buttons["Xong"].tap()
+        app.buttons["Done"].tap()
         app.terminate();app.launch();open()
         XCTAssertEqual(app.staticTexts["builder-count"].value as? String,"3")
     }

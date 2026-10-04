@@ -38,12 +38,12 @@ struct BossCampaignScreen: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 22) {
-                Text("Lộ trình Boss").font(.largeTitle.bold()).accessibilityIdentifier("bossCampaignTitle")
-                if map == .ragnarok { Text("1 boss chính · 4 mini-boss có tên · 3 nhóm trận hang động").font(.caption).foregroundStyle(.secondary) }
+                Text("Boss campaign").font(.largeTitle.bold()).accessibilityIdentifier("bossCampaignTitle")
+                if map == .ragnarok { Text("1 main boss · 4 named mini-bosses · 3 dungeon encounter groups").font(.caption).foregroundStyle(.secondary) }
                 if let campaign = map.campaign {
                     VisualBrief(text: campaign.summary).cardStyle()
                     NavigationLink(value: GuideDestination.preparation) {
-                        Label("Level, breed, imprint & cách lên điểm", systemImage: "graduationcap.fill").font(.headline).frame(maxWidth: .infinity, alignment: .leading).padding(8).contentShape(Rectangle())
+                        Label("Levels, breeding, imprinting & stat allocation", systemImage: "graduationcap.fill").font(.headline).frame(maxWidth: .infinity, alignment: .leading).padding(8).contentShape(Rectangle())
                     }.cardStyle().accessibilityIdentifier("bossPreparation")
                     ForEach(campaign.steps) { step in
                         VStack(alignment: .leading, spacing: 16) {
@@ -55,7 +55,7 @@ struct BossCampaignScreen: View {
                                     CreatureCutout(asset: map.bossImage(id)).frame(width: 100, height: 80)
                                     VStack(alignment: .leading, spacing: 10) {
                                         NavigationLink(value: GuideDestination.boss(id)) { Label(map.bossName(id), systemImage: "chevron.right") }.accessibilityIdentifier("boss-" + id)
-                                        NavigationLink(value: GuideDestination.army(id)) { Label("Đội Dino & chỉ số chuẩn bị", systemImage: "pawprint.fill") }.labelStyle(.iconOnly).accessibilityLabel("Đội Dino & chỉ số chuẩn bị").frame(width: 44, height: 44).accessibilityIdentifier("army-" + id)
+                                        NavigationLink(value: GuideDestination.army(id)) { Label("Creature army & preparation stats", systemImage: "pawprint.fill") }.labelStyle(.iconOnly).accessibilityLabel("Creature army & preparation stats").frame(width: 44, height: 44).accessibilityIdentifier("army-" + id)
                                     }.font(.headline)
                                     Spacer(minLength: 0)
                                 }.padding(.vertical, 6)
@@ -72,13 +72,13 @@ struct BossPreparationScreen: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
-                Text("Xây đội boss").font(.largeTitle.bold())
-                Text(map.name + " · level không thay thế HP / melee / saddle").foregroundStyle(.cyan)
+                Text("Build your boss army").font(.largeTitle.bold())
+                Text(map.name + " · level does not replace HP / melee / saddles").foregroundStyle(.cyan)
                 ForEach(Array((map.campaign?.sharedPreparation ?? []).enumerated()), id: \.offset) { index, text in
                     VStack(alignment: .leading, spacing: 10) { Text("\(index + 1)").font(.title2.bold()).foregroundStyle(.cyan); VisualBrief(text: text) }.cardStyle()
                 }
             }.padding(24).frame(maxWidth: 1000).frame(maxWidth: .infinity)
-        }.navigationTitle("Breed & lên điểm")
+        }.navigationTitle("Breeding & stat allocation")
     }
 }
 struct BossArmyScreen: View {
@@ -88,14 +88,14 @@ struct BossArmyScreen: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 22) {
-                Text("Đội hình · " + map.bossName(bossID)).font(.largeTitle.bold()).accessibilityIdentifier("armyTitle")
+                Text("Army · " + map.bossName(bossID)).font(.largeTitle.bold()).accessibilityIdentifier("armyTitle")
                 Text(map.name).foregroundStyle(.cyan)
                 if let guide = map.campaign?.loadouts.first(where: { $0.bossID == bossID }), !guide.options.isEmpty {
                     VisualBrief(text: guide.entry).cardStyle()
-                    Picker("Chọn đội hình", selection: $selected) {
+                    Picker("Choose army", selection: $selected) {
                         ForEach(Array(guide.options.enumerated()), id: \.offset) { index, option in Text(option.title).tag(index) }
                     }.pickerStyle(.menu).accessibilityIdentifier("armyOptions")
-                    Text("\(guide.options.count) phương án · chọn đội hình để xem chi tiết").font(.caption).foregroundStyle(.secondary).accessibilityIdentifier("armyOptionCount")
+                    Text("\(guide.options.count) options · choose an army to see details").font(.caption).foregroundStyle(.secondary).accessibilityIdentifier("armyOptionCount")
                     let option = guide.options[min(selected, guide.options.count - 1)]
                     VStack(alignment: .leading, spacing: 14) {
                         if UIImage(named: option.imageAsset) != nil { CreatureCutout(asset: option.imageAsset).frame(height: 150).frame(maxWidth: .infinity) }
@@ -104,7 +104,7 @@ struct BossArmyScreen: View {
                         VisualBrief(text: option.why)
                     }.cardStyle()
                     VStack(alignment: .leading, spacing: 18) {
-                        Text("Mốc chuẩn bị sau imprint & lên XP").font(.title2.bold())
+                        Text("Preparation targets after imprinting & XP leveling").font(.title2.bold())
                         ForEach(option.targets) { target in
                             VStack(alignment: .leading, spacing: 12) {
                                 Text(target.difficulty).font(.headline).foregroundStyle(.cyan)
@@ -116,13 +116,13 @@ struct BossArmyScreen: View {
                         }
                     }.cardStyle()
                     VStack(alignment: .leading, spacing: 12) {
-                        Text("Điều khiển & rủi ro").font(.title2.bold()); VisualBrief(text: option.play)
+                        Text("Controls & risks").font(.title2.bold()); VisualBrief(text: option.play)
                     }.cardStyle()
-                    NavigationLink(value: GuideDestination.preparation) { Label("Cách chọn level, breed và lên điểm", systemImage: "graduationcap.fill") }
-                    NavigationLink(value: GuideDestination.boss(bossID)) { Label("Hồ sơ, tribute & đường tới boss", systemImage: "shield.lefthalf.filled") }
-                } else { Text("Chưa có đội hình cho boss này.") }
+                    NavigationLink(value: GuideDestination.preparation) { Label("Choosing levels, breeding and stat allocation", systemImage: "graduationcap.fill") }
+                    NavigationLink(value: GuideDestination.boss(bossID)) { Label("Profile, tribute & route to the boss", systemImage: "shield.lefthalf.filled") }
+                } else { Text("No army guide is available for this boss yet.") }
             }.padding(24).frame(maxWidth: 1000).frame(maxWidth: .infinity)
-        }.navigationTitle("Đội Dino").navigationBarTitleDisplayMode(.inline)
+        }.navigationTitle("Creature army").navigationBarTitleDisplayMode(.inline)
     }
     private func stat(_ name: String, _ value: String) -> some View {
         VStack(alignment: .leading, spacing: 5) { Label(name, systemImage: VisualFacts.symbol(for: name)).labelStyle(.iconOnly).accessibilityLabel(name).foregroundStyle(.cyan); Text(value).font(.headline).textSelection(.enabled) }.frame(maxWidth: .infinity, alignment: .leading)

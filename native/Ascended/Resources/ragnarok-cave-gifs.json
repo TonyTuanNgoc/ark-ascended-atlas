@@ -4,28 +4,28 @@
     "sections": [
       {
         "id": "strong",
-        "title": "Tới Artifact of the Strong",
+        "title": "Go to Artifact of the Strong",
         "steps": [
           {
             "id": "01",
-            "title": "Vào hang tím",
-            "direction": "Bay theo lòng hang có tinh thể tím. Nhìn vòm đá phía trước và đi qua đó; nhớ giữ stamina để còn thoát Wyvern.",
+            "title": "Enter the purple cave",
+            "direction": "Fly along the cave with purple crystals. Look at the stone arch ahead and go through it; Remember to keep your stamina to escape Wyvern.",
             "gif": "gif-ragnarok-wyvern-01",
             "poster": "gif-ragnarok-wyvern-01",
             "loop": "gif-ragnarok-wyvern-01"
           },
           {
             "id": "02",
-            "title": "Rẽ vào phế tích",
-            "direction": "Đi tới phía cuối hang, chỗ tưởng như cụt đường, rồi rẽ phải. Anh sẽ thấy một cụm tường đá cũ.",
+            "title": "Turn into the ruins",
+            "direction": "Go to the end of the cave, where it seems like there is a dead end, then turn right. You will see a cluster of old stone walls.",
             "gif": "gif-ragnarok-wyvern-02",
             "poster": "gif-ragnarok-wyvern-02",
             "loop": "gif-ragnarok-wyvern-02"
           },
           {
             "id": "03",
-            "title": "Lấy Strong",
-            "direction": "Qua khung cửa của phế tích. Artifact nằm ngay sau bức tường bên trong, không phải ngoài các cụm tinh thể.",
+            "title": "Get Strong",
+            "direction": "Through the door of the ruins. Artifact is located just behind the inner wall, not beyond the crystal clusters.",
             "gif": "gif-ragnarok-wyvern-03",
             "poster": "gif-ragnarok-wyvern-03",
             "loop": "gif-ragnarok-wyvern-03"
@@ -39,28 +39,28 @@
     "sections": [
       {
         "id": "devourer",
-        "title": "Tới Artifact of the Devourer",
+        "title": "Go to Artifact of the Devourer",
         "steps": [
           {
             "id": "01",
-            "title": "Lặn xuống rãnh",
-            "direction": "Từ điểm Devourer trên bản đồ, lặn thẳng xuống rãnh sâu. Dùng khối đá lớn dưới chân làm mốc, theo khe xuống tiếp.",
+            "title": "Dive into the trench",
+            "direction": "From the Devourer map point, dive straight into the deep trench. Use the large rock below as a landmark and continue down the crevice.",
             "gif": "gif-ragnarok-ocean-01",
             "poster": "gif-ragnarok-ocean-01",
             "loop": "gif-ragnarok-ocean-01"
           },
           {
             "id": "02",
-            "title": "Tìm cây phát sáng",
-            "direction": "Xuống sát đáy tới khu có cây xanh phát sáng. Đừng dừng lâu giữa rãnh: khu này có Tusoteuthis.",
+            "title": "Find glowing plants",
+            "direction": "Go down to the bottom to the area with glowing green trees. Don't stop too long in the middle of the ditch: this area has Tusoteuthis.",
             "gif": "gif-ragnarok-ocean-02",
             "poster": "gif-ragnarok-ocean-02",
             "loop": "gif-ragnarok-ocean-02"
           },
           {
             "id": "03",
-            "title": "Lấy Devourer",
-            "direction": "Tìm ánh tím giữa các cây xanh ở đáy rãnh rồi tới lấy Artifact. Giữ hướng quay lên mặt nước và để ý oxygen.",
+            "title": "Get Devourer",
+            "direction": "Find the purple glow among the green plants at the trench bottom and collect the Artifact. Keep track of the route back to the surface and watch oxygen.",
             "gif": "gif-ragnarok-ocean-03",
             "poster": "gif-ragnarok-ocean-03",
             "loop": "gif-ragnarok-ocean-03"
@@ -74,132 +74,132 @@
     "sections": [
       {
         "id": "hunter",
-        "title": "Cửa đường bộ → Hunter",
+        "title": "Road gate → Hunter",
         "steps": [
           {
             "id": "01",
-            "title": "Nhận ra cửa hang",
-            "direction": "Tìm cửa đường bộ dưới các khối đá và dây leo, cạnh nhánh cây lớn. Đặt flyer ngoài cửa; đoạn này đi bộ.",
+            "title": "Recognize the cave entrance",
+            "direction": "Find the entrance under rocks and vines, next to a large tree branch. Place flyers outside the door; This part is on foot.",
             "gif": "gif-ragnarok-jungle-01",
             "poster": "gif-ragnarok-jungle-01",
             "loop": "gif-ragnarok-jungle-01"
           },
           {
             "id": "02",
-            "title": "Xuống lối đá",
-            "direction": "Theo lối đá xuống thấp, đi tiếp về khoảng xanh có ánh sáng. Giữ giáp trên người vì bẫy có thể gây torpor.",
+            "title": "Down the stone path",
+            "direction": "Follow the rocky path down low, continue towards the green space with light. Keep armor on you because traps can cause torpor.",
             "gif": "gif-ragnarok-jungle-02",
             "poster": "gif-ragnarok-jungle-02",
             "loop": "gif-ragnarok-jungle-02"
           },
           {
             "id": "03",
-            "title": "Qua khu cây xanh",
-            "direction": "Theo nền đá phủ cây tới đoạn hành lang màu cam. Đừng áp sát nhện hay rết, kể cả khi đã dùng Cactus Broth và Bug Repellant.",
+            "title": "Through the green area",
+            "direction": "Follow the tree-covered stone floor to the orange hallway. Do not approach spiders or centipedes, even when using Cactus Broth and Bug Repellant.",
             "gif": "gif-ragnarok-jungle-03",
             "poster": "gif-ragnarok-jungle-03",
             "loop": "gif-ragnarok-jungle-03"
           },
           {
             "id": "04",
-            "title": "Tới nhánh gỗ",
-            "direction": "Đi qua khung đá rồi men theo nhánh gỗ bên mép vực. Chậm lại trước đoạn hẹp.",
+            "title": "Go to the wooden branch",
+            "direction": "Go through the stone frame and then follow the wooden branch at the edge of the cliff. Slow down before the narrow section.",
             "gif": "gif-ragnarok-jungle-04",
             "poster": "gif-ragnarok-jungle-04",
             "loop": "gif-ragnarok-jungle-04"
           },
           {
             "id": "05",
-            "title": "Băng qua vực",
-            "direction": "Nhìn chân và bám giữa nhánh gỗ để sang bờ. Chuẩn bị sẵn Grappling Hook nếu trượt.",
+            "title": "Cross the cliff",
+            "direction": "Look at your feet and cling between the wooden branches to get to the shore. Have Grappling Hook ready if you fail.",
             "gif": "gif-ragnarok-jungle-05",
             "poster": "gif-ragnarok-jungle-05",
             "loop": "gif-ragnarok-jungle-05"
           },
           {
             "id": "06",
-            "title": "Nếu bị trượt xuống",
-            "direction": "Clip này có một lần trượt chân. Nếu rơi, dùng Grapple kéo lên lại nhánh gỗ; đừng cố đi tiếp dưới đáy.",
+            "title": "If it slips down",
+            "direction": "The clip includes a slip. If you fall, Grapple back onto the wooden branch; do not continue along the bottom.",
             "gif": "gif-ragnarok-jungle-06",
             "poster": "gif-ragnarok-jungle-06",
             "loop": "gif-ragnarok-jungle-06"
           },
           {
             "id": "07",
-            "title": "Ra khỏi đoạn tối",
-            "direction": "Qua nhánh gỗ và khung đá để trở lại lối sáng màu cam. Theo lối đi lên phía trước.",
+            "title": "Get out of the dark",
+            "direction": "Go past the wooden branch and stone frame to return to the orange light. Follow the path forward.",
             "gif": "gif-ragnarok-jungle-07",
             "poster": "gif-ragnarok-jungle-07",
             "loop": "gif-ragnarok-jungle-07"
           },
           {
             "id": "08",
-            "title": "Tới cầu dung nham",
-            "direction": "Đi qua cây và dây leo, tới chỗ thấy ánh dung nham. Cầm vũ khí sẵn trước khi ra cầu.",
+            "title": "Go to the lava bridge",
+            "direction": "Go through the trees and vines, to the spot where you see the lava light. Have your weapon ready before going to the bridge.",
             "gif": "gif-ragnarok-jungle-08",
             "poster": "gif-ragnarok-jungle-08",
             "loop": "gif-ragnarok-jungle-08"
           },
           {
             "id": "09",
-            "title": "Qua cầu đầu",
-            "direction": "Nhảy qua đoạn hở và hơi lệch trái để đặt chân lên cầu. Đừng lao một mạch vì mặt cầu có chỗ thiếu ván.",
+            "title": "Cross the first bridge",
+            "direction": "Jump over the opening and slightly left to place your foot on the bridge. Don't rush all at once because the bridge surface is missing planks.",
             "gif": "gif-ragnarok-jungle-09",
             "poster": "gif-ragnarok-jungle-09",
             "loop": "gif-ragnarok-jungle-09"
           },
           {
             "id": "10",
-            "title": "Tới mép đá bên kia",
-            "direction": "Qua cầu rồi theo mép đá vòng tiếp. Tới khoảng hở lớn thì dừng để ngắm điểm móc.",
+            "title": "Go to the other edge of the rock",
+            "direction": "Cross the bridge and follow the stone edge around. When you reach a large opening, stop to look at the hook point.",
             "gif": "gif-ragnarok-jungle-10",
             "poster": "gif-ragnarok-jungle-10",
             "loop": "gif-ragnarok-jungle-10"
           },
           {
             "id": "11",
-            "title": "Móc qua khoảng hở",
-            "direction": "Bắn Grapple vào mép đá bên kia rồi kéo qua. Có thể dùng Parachute dự phòng; rơi xuống dung nham là mất mạng.",
+            "title": "Hook through the gap",
+            "direction": "Shoot Grapple at the ledge on the other side and pull across. Parachute can be used as backup; Falling into lava means losing your life.",
             "gif": "gif-ragnarok-jungle-11",
             "poster": "gif-ragnarok-jungle-11",
             "loop": "gif-ragnarok-jungle-11"
           },
           {
             "id": "12",
-            "title": "Vòng qua khu loot",
-            "direction": "Lên nền cây xanh, đi ngang khu có loot rồi tiếp tục qua cầu. Anh chưa cần dừng lấy loot trong lượt kiếm Artifact.",
+            "title": "Go around the loot area",
+            "direction": "Climb onto the green planted platform, pass the loot area, and cross the bridge. You do not need to stop for loot during an Artifact run.",
             "gif": "gif-ragnarok-jungle-12",
             "poster": "gif-ragnarok-jungle-12",
             "loop": "gif-ragnarok-jungle-12"
           },
           {
             "id": "13",
-            "title": "Theo cầu vòng ngoài",
-            "direction": "Theo cầu và các mép đá quanh khu loot, giữ dung nham bên dưới làm mốc. Nhớ kiểm tra chỗ hở trước khi nhảy.",
+            "title": "Follow the outer circle",
+            "direction": "Follow bridges and stone ledges around the loot area, using the lava below as a landmark. Check gaps before jumping.",
             "gif": "gif-ragnarok-jungle-13",
             "poster": "gif-ragnarok-jungle-13",
             "loop": "gif-ragnarok-jungle-13"
           },
           {
             "id": "14",
-            "title": "Tới nền sau thác dung nham",
-            "direction": "Nhìn thác dung nham phía trước. Móc sang nền đá phía sau nó theo clip, rồi thả dây khi đã đứng vững.",
+            "title": "Reach the platform behind the lava waterfall",
+            "direction": "Look for the lava waterfall ahead. Grapple to the stone platform behind it as shown in the clip, then release when standing securely.",
             "gif": "gif-ragnarok-jungle-14",
             "poster": "gif-ragnarok-jungle-14",
             "loop": "gif-ragnarok-jungle-14"
           },
           {
             "id": "15",
-            "title": "Tới Hunter",
-            "direction": "Từ nền này nhìn sang ánh xanh của Artifact. Móc qua chỗ đứng ngay cạnh nó; không nhảy xuống hồ dung nham.",
+            "title": "Go to Hunter",
+            "direction": "From this platform, look toward the blue Artifact glow. Grapple to the spot beside it; do not jump into the lava lake.",
             "gif": "gif-ragnarok-jungle-15",
             "poster": "gif-ragnarok-jungle-15",
             "loop": "gif-ragnarok-jungle-15"
           },
           {
             "id": "16",
-            "title": "Lấy Artifact",
-            "direction": "Đứng trên nền đá và lấy Hunter. Anh không cần đánh Lava Golem để lấy nó; quay ra theo đường vừa đi.",
+            "title": "Get Artifact",
+            "direction": "Stand on the stone platform and get Hunter. You don't need to fight the Lava Golem to get it; Turn back the way you just came.",
             "gif": "gif-ragnarok-jungle-16",
             "poster": "gif-ragnarok-jungle-16",
             "loop": "gif-ragnarok-jungle-16"
@@ -213,84 +213,84 @@
     "sections": [
       {
         "id": "immune",
-        "title": "Từ cửa dưới lâu đài → Immune",
+        "title": "From the door below the castle → Immune",
         "steps": [
           {
             "id": "immune-01",
-            "title": "Tìm cửa dưới lâu đài",
-            "direction": "Nhìn lên lâu đài lớn để định hướng, rồi tìm khe hang phủ dây leo ở chân núi như trong clip.",
+            "title": "Find the door under the castle",
+            "direction": "Look up at the large castle for orientation, then look for the vine-covered cave at the foot of the mountain like in the clip.",
             "gif": "gif-ragnarok-carnivorous-immune-01",
             "poster": "gif-ragnarok-carnivorous-immune-01",
             "loop": "gif-ragnarok-carnivorous-immune-01"
           },
           {
             "id": "immune-02",
-            "title": "Qua cửa hang",
-            "direction": "Đi vào khe có dây leo. Clip dùng Griffin; chuẩn bị ánh sáng nếu anh đi bộ.",
+            "title": "Through the cave entrance",
+            "direction": "Go into the crevice with the vines. Clip using Griffin; Prepare light if you walk.",
             "gif": "gif-ragnarok-carnivorous-immune-02",
             "poster": "gif-ragnarok-carnivorous-immune-02",
             "loop": "gif-ragnarok-carnivorous-immune-02"
           },
           {
             "id": "immune-03",
-            "title": "Theo lối phủ cây",
-            "direction": "Theo đường giữa các mảng cây xanh và nấm, đi sâu vào lòng hang.",
+            "title": "Follow the tree-covered path",
+            "direction": "Follow the path between the green trees and mushrooms, going deep into the cave.",
             "gif": "gif-ragnarok-carnivorous-immune-03",
             "poster": "gif-ragnarok-carnivorous-immune-03",
             "loop": "gif-ragnarok-carnivorous-immune-03"
           },
           {
             "id": "immune-04",
-            "title": "Tới chỗ chia đường",
-            "direction": "Đi tiếp tới đoạn có nấm nhiều màu. Chậm lại để nhận ra chỗ đường tách nhánh.",
+            "title": "Go to the road divider",
+            "direction": "Continue to the section with colorful mushrooms. Slow down to notice where the road branches.",
             "gif": "gif-ragnarok-carnivorous-immune-04",
             "poster": "gif-ragnarok-carnivorous-immune-04",
             "loop": "gif-ragnarok-carnivorous-immune-04"
           },
           {
             "id": "immune-05",
-            "title": "Lên dốc rồi rẽ trái",
-            "direction": "Đi thẳng lên lối dốc trước mặt. Tới nấm cam đỏ thì rẽ trái, hướng về gian hang xanh.",
+            "title": "Go uphill and turn left",
+            "direction": "Go straight up the ramp ahead. When you reach the red orange mushroom, turn left, towards the green cave.",
             "gif": "gif-ragnarok-carnivorous-immune-05",
             "poster": "gif-ragnarok-carnivorous-immune-05",
             "loop": "gif-ragnarok-carnivorous-immune-05"
           },
           {
             "id": "immune-06",
-            "title": "Bám vách phải",
-            "direction": "Qua gian xanh rồi bám sát vách bên phải. Đừng rẽ sang các lối rộng ở giữa.",
+            "title": "Stick to the right wall",
+            "direction": "Go through the green space and stick close to the wall on the right. Don't turn into wide paths in the middle.",
             "gif": "gif-ragnarok-carnivorous-immune-06",
             "poster": "gif-ragnarok-carnivorous-immune-06",
             "loop": "gif-ragnarok-carnivorous-immune-06"
           },
           {
             "id": "immune-07",
-            "title": "Theo nấm xanh",
-            "direction": "Giữ vách phải và đi qua nấm xanh, tinh thể trắng. Chui dưới vòm đá thấp để ra khoảng rộng.",
+            "title": "Follow green mushrooms",
+            "direction": "Hold the right wall and go through the green mushroom and white crystal. Crawl under the low stone arch to open a wide space.",
             "gif": "gif-ragnarok-carnivorous-immune-07",
             "poster": "gif-ragnarok-carnivorous-immune-07",
             "loop": "gif-ragnarok-carnivorous-immune-07"
           },
           {
             "id": "immune-08",
-            "title": "Rẽ phải xuống thấp",
-            "direction": "Tới khoảng rộng thì rẽ phải và xuống dưới. Có Megalosaurus ở đoạn này; đi ban ngày sẽ dễ quan sát hơn.",
+            "title": "Turn right downhill",
+            "direction": "When you reach a wide space, turn right and go down. There is Megalosaurus in this section; Going during the day will be easier to observe.",
             "gif": "gif-ragnarok-carnivorous-immune-08",
             "poster": "gif-ragnarok-carnivorous-immune-08",
             "loop": "gif-ragnarok-carnivorous-immune-08"
           },
           {
             "id": "immune-09",
-            "title": "Đi tiếp rồi rẽ trái",
-            "direction": "Từ nền thấp đi về phía trước, sau đó rẽ trái vào gian phủ cây xanh.",
+            "title": "Go forward then turn left",
+            "direction": "From the low platform, go forward, then turn left into the green space.",
             "gif": "gif-ragnarok-carnivorous-immune-09",
             "poster": "gif-ragnarok-carnivorous-immune-09",
             "loop": "gif-ragnarok-carnivorous-immune-09"
           },
           {
             "id": "immune-10",
-            "title": "Lấy Immune",
-            "direction": "Artifact phát sáng ngay trong gian này. Xuống thú, lấy Immune rồi quay lại theo đúng đường vừa vào.",
+            "title": "Get Immune",
+            "direction": "Artifact glows right in this room. Get down from the animal, take Immune and then go back the same way you came.",
             "gif": "gif-ragnarok-carnivorous-immune-10",
             "poster": "gif-ragnarok-carnivorous-immune-10",
             "loop": "gif-ragnarok-carnivorous-immune-10"
@@ -299,68 +299,68 @@
       },
       {
         "id": "cunning",
-        "title": "Từ cửa sườn núi → Cunning",
+        "title": "From the ridge door → Cunning",
         "steps": [
           {
             "id": "cunning-01",
-            "title": "Tìm cửa trên sườn núi",
-            "direction": "Tìm lỗ hang trên sườn núi, nhìn ra biển. Cửa này khác cửa dưới lâu đài dùng để tới Immune.",
+            "title": "Find the door on the mountainside",
+            "direction": "Find a cave hole on the mountainside, overlooking the ocean. This door is different from the door below the castle used to reach Immune.",
             "gif": "gif-ragnarok-carnivorous-cunning-01",
             "poster": "gif-ragnarok-carnivorous-cunning-01",
             "loop": "gif-ragnarok-carnivorous-cunning-01"
           },
           {
             "id": "cunning-02",
-            "title": "Rẽ trái đầu tiên",
-            "direction": "Vào hang, đi thẳng một đoạn rồi rẽ trái ngay chỗ nấm đỏ.",
+            "title": "Take the first left",
+            "direction": "Enter the cave, go straight for a while then turn left right at the red mushroom.",
             "gif": "gif-ragnarok-carnivorous-cunning-02",
             "poster": "gif-ragnarok-carnivorous-cunning-02",
             "loop": "gif-ragnarok-carnivorous-cunning-02"
           },
           {
             "id": "cunning-03",
-            "title": "Qua tinh thể trắng",
-            "direction": "Đi qua các cụm tinh thể trắng. Tới vách phủ nấm xanh thì vòng qua bên phải của vách.",
+            "title": "Through white crystals",
+            "direction": "Go through clusters of white crystals. When you reach the wall covered with green mushrooms, go around to the right side of the wall.",
             "gif": "gif-ragnarok-carnivorous-cunning-03",
             "poster": "gif-ragnarok-carnivorous-cunning-03",
             "loop": "gif-ragnarok-carnivorous-cunning-03"
           },
           {
             "id": "cunning-04",
-            "title": "Rẽ phải ở nấm đỏ",
-            "direction": "Gặp vách nấm đỏ tiếp theo thì rẽ phải. Theo hành lang có tinh thể trắng.",
+            "title": "Turn right at the red mushroom",
+            "direction": "When you see the next red mushroom wall, turn right. Along the corridor there are white crystals.",
             "gif": "gif-ragnarok-carnivorous-cunning-04",
             "poster": "gif-ragnarok-carnivorous-cunning-04",
             "loop": "gif-ragnarok-carnivorous-cunning-04"
           },
           {
             "id": "cunning-05",
-            "title": "Lấy nhánh trái",
-            "direction": "Đi tiếp giữa các cụm tinh thể, rồi lấy lối bên trái như trong clip.",
+            "title": "Take the left branch",
+            "direction": "Continue between the crystal clusters, then take the left path as shown in the clip.",
             "gif": "gif-ragnarok-carnivorous-cunning-05",
             "poster": "gif-ragnarok-carnivorous-cunning-05",
             "loop": "gif-ragnarok-carnivorous-cunning-05"
           },
           {
             "id": "cunning-06",
-            "title": "Tìm lỗ nhỏ",
-            "direction": "Tìm khe nhỏ giữa đá và tinh thể trắng. Xuống flyer trước khe này vì thú lớn khó lọt qua.",
+            "title": "Find small holes",
+            "direction": "Find the small gap between the stone and the white crystal. Get off the flyer before this gap because it is difficult for large animals to get through.",
             "gif": "gif-ragnarok-carnivorous-cunning-06",
             "poster": "gif-ragnarok-carnivorous-cunning-06",
             "loop": "gif-ragnarok-carnivorous-cunning-06"
           },
           {
             "id": "cunning-07",
-            "title": "Dùng Grapple qua khe",
-            "direction": "Bắn Grappling Hook vào phía trong để kéo qua khe. Thả dây và móc tiếp khi cần, giữ crossbow trên thanh đồ nhanh.",
+            "title": "Grapple through the crevice",
+            "direction": "Fire Grappling Hook inward and pull yourself through the crevice. Release and hook again as needed; keep the crossbow on your hotbar.",
             "gif": "gif-ragnarok-carnivorous-cunning-07",
             "poster": "gif-ragnarok-carnivorous-cunning-07",
             "loop": "gif-ragnarok-carnivorous-cunning-07"
           },
           {
             "id": "cunning-08",
-            "title": "Tới Cunning",
-            "direction": "Qua khe sẽ thấy gian hang rộng và sáng hơn. Đi tới Artifact ở nền đá, rồi lấy Cunning.",
+            "title": "Go to Cunning",
+            "direction": "Through the gap, you will see the cave room is larger and brighter. Go to Artifact on the stone platform, then get Cunning.",
             "gif": "gif-ragnarok-carnivorous-cunning-08",
             "poster": "gif-ragnarok-carnivorous-cunning-08",
             "loop": "gif-ragnarok-carnivorous-cunning-08"
@@ -378,390 +378,390 @@
         "steps": [
           {
             "id": "pack-01",
-            "title": "Tìm cửa hang băng · 1/3",
-            "direction": "Từ vùng tuyết, tìm cửa băng dưới vách đá như trong GIF. Đoạn ngoài clip dùng Griffin; vào khu dungeon phía sâu thì đi bộ.",
+            "title": "Find the ice cave door · 1/3",
+            "direction": "From the snowy area, find the ice door under the cliff as shown in the GIF. The outside of the clip uses Griffin; To enter the deeper dungeon, walk.",
             "gif": "gif-ragnarok-frozen-pack-01",
             "poster": "gif-ragnarok-frozen-pack-01",
             "loop": "gif-ragnarok-frozen-pack-01"
           },
           {
             "id": "pack-02",
-            "title": "Tìm cửa hang băng · 2/3",
+            "title": "Find the ice cave door · 2/3",
             "gif": "gif-ragnarok-frozen-pack-02",
             "poster": "gif-ragnarok-frozen-pack-02",
             "loop": "gif-ragnarok-frozen-pack-02"
           },
           {
             "id": "pack-03",
-            "title": "Tìm cửa hang băng · 3/3",
+            "title": "Find the ice cave door · 3/3",
             "gif": "gif-ragnarok-frozen-pack-03",
             "poster": "gif-ragnarok-frozen-pack-03",
             "loop": "gif-ragnarok-frozen-pack-03"
           },
           {
             "id": "pack-04",
-            "title": "Qua gian đầu và đường loot · 1/3",
-            "direction": "Theo gờ đá trong gian đầu. Các trụ loot phát sáng ở đây không phải Artifact; anh có thể lấy nếu đã an toàn.",
+            "title": "Go through the first room and loot path · 1/3",
+            "direction": "Follow the ledge in the first room. The glowing loot pillars here are not Artifact; You can take it if it's safe.",
             "gif": "gif-ragnarok-frozen-pack-04",
             "poster": "gif-ragnarok-frozen-pack-04",
             "loop": "gif-ragnarok-frozen-pack-04"
           },
           {
             "id": "pack-05",
-            "title": "Qua gian đầu và đường loot · 2/3",
+            "title": "Go through the first room and loot path · 2/3",
             "gif": "gif-ragnarok-frozen-pack-05",
             "poster": "gif-ragnarok-frozen-pack-05",
             "loop": "gif-ragnarok-frozen-pack-05"
           },
           {
             "id": "pack-06",
-            "title": "Qua gian đầu và đường loot · 3/3",
+            "title": "Go through the first room and loot path · 3/3",
             "gif": "gif-ragnarok-frozen-pack-06",
             "poster": "gif-ragnarok-frozen-pack-06",
             "loop": "gif-ragnarok-frozen-pack-06"
           },
           {
             "id": "pack-07",
-            "title": "Vòng qua cầu · 1/3",
-            "direction": "Đi về phía phải cầu rồi vòng lại phía trái theo đường trong GIF.",
+            "title": "Round the bridge · 1/3",
+            "direction": "Go right on the bridge and then turn around to the left following the path in the GIF.",
             "gif": "gif-ragnarok-frozen-pack-07",
             "poster": "gif-ragnarok-frozen-pack-07",
             "loop": "gif-ragnarok-frozen-pack-07"
           },
           {
             "id": "pack-08",
-            "title": "Vòng qua cầu · 2/3",
+            "title": "Round the bridge · 2/3",
             "gif": "gif-ragnarok-frozen-pack-08",
             "poster": "gif-ragnarok-frozen-pack-08",
             "loop": "gif-ragnarok-frozen-pack-08"
           },
           {
             "id": "pack-09",
-            "title": "Vòng qua cầu · 3/3",
+            "title": "Round the bridge · 3/3",
             "gif": "gif-ragnarok-frozen-pack-09",
             "poster": "gif-ragnarok-frozen-pack-09",
             "loop": "gif-ragnarok-frozen-pack-09"
           },
           {
             "id": "pack-10",
-            "title": "Tới cửa dungeon · 1/3",
-            "direction": "Xuống nền thấp, qua chỗ loot rồi lấy lối bên phải tới cửa dungeon. Xuống thú trước khi vào.",
+            "title": "Go to the dungeon door · 1/3",
+            "direction": "Drop down to the lower platform, past the loot, then take the right path to the dungeon door. Get off the animal before entering.",
             "gif": "gif-ragnarok-frozen-pack-10",
             "poster": "gif-ragnarok-frozen-pack-10",
             "loop": "gif-ragnarok-frozen-pack-10"
           },
           {
             "id": "pack-11",
-            "title": "Tới cửa dungeon · 2/3",
+            "title": "Go to the dungeon door · 2/3",
             "gif": "gif-ragnarok-frozen-pack-11",
             "poster": "gif-ragnarok-frozen-pack-11",
             "loop": "gif-ragnarok-frozen-pack-11"
           },
           {
             "id": "pack-12",
-            "title": "Tới cửa dungeon · 3/3",
+            "title": "Go to the dungeon door · 3/3",
             "gif": "gif-ragnarok-frozen-pack-12",
             "poster": "gif-ragnarok-frozen-pack-12",
             "loop": "gif-ragnarok-frozen-pack-12"
           },
           {
             "id": "pack-13",
-            "title": "Hai ngã rẽ trái · 1/4",
-            "direction": "Theo đường hầm băng. Ở ngã đầu lấy bên trái; tới chỗ chia lối tiếp theo cũng lấy bên trái.",
+            "title": "Two left turns · 1/4",
+            "direction": "Follow the ice tunnel. At the first intersection, take the left; At the next split, also take the left side.",
             "gif": "gif-ragnarok-frozen-pack-13",
             "poster": "gif-ragnarok-frozen-pack-13",
             "loop": "gif-ragnarok-frozen-pack-13"
           },
           {
             "id": "pack-14",
-            "title": "Hai ngã rẽ trái · 2/4",
+            "title": "Two left turns · 2/4",
             "gif": "gif-ragnarok-frozen-pack-14",
             "poster": "gif-ragnarok-frozen-pack-14",
             "loop": "gif-ragnarok-frozen-pack-14"
           },
           {
             "id": "pack-15",
-            "title": "Hai ngã rẽ trái · 3/4",
+            "title": "Two left turns · 3/4",
             "gif": "gif-ragnarok-frozen-pack-15",
             "poster": "gif-ragnarok-frozen-pack-15",
             "loop": "gif-ragnarok-frozen-pack-15"
           },
           {
             "id": "pack-16",
-            "title": "Hai ngã rẽ trái · 4/4",
+            "title": "Two left turns · 4/4",
             "gif": "gif-ragnarok-frozen-pack-16",
             "poster": "gif-ragnarok-frozen-pack-16",
             "loop": "gif-ragnarok-frozen-pack-16"
           },
           {
             "id": "pack-17",
-            "title": "Dọn Iceworm trên đường · 1/3",
-            "direction": "Tiếp tục theo hành lang, xử lý Iceworm chặn đường. Dừng tại nền rộng để đánh, rồi mới tiến tiếp.",
+            "title": "Clearing Iceworms on the Road · 1/3",
+            "direction": "Continue down the hallway, taking care of the Iceworm blocking the way. Stop at a large platform to attack, then move forward.",
             "gif": "gif-ragnarok-frozen-pack-17",
             "poster": "gif-ragnarok-frozen-pack-17",
             "loop": "gif-ragnarok-frozen-pack-17"
           },
           {
             "id": "pack-18",
-            "title": "Dọn Iceworm trên đường · 2/3",
+            "title": "Clearing Iceworms on the Road · 2/3",
             "gif": "gif-ragnarok-frozen-pack-18",
             "poster": "gif-ragnarok-frozen-pack-18",
             "loop": "gif-ragnarok-frozen-pack-18"
           },
           {
             "id": "pack-19",
-            "title": "Dọn Iceworm trên đường · 3/3",
+            "title": "Clearing Iceworms on the Road · 3/3",
             "gif": "gif-ragnarok-frozen-pack-19",
             "poster": "gif-ragnarok-frozen-pack-19",
             "loop": "gif-ragnarok-frozen-pack-19"
           },
           {
             "id": "pack-20",
-            "title": "Tới chỗ loot trong dungeon · 1/3",
-            "direction": "Dọn hết Iceworm quanh anh, đi tới chỗ loot phía trước. Ánh của loot ở đây vẫn chưa phải Pack.",
+            "title": "Go to the loot in the dungeon · 1/3",
+            "direction": "Clear nearby Iceworms and approach the loot ahead. This loot glow is not Pack yet.",
             "gif": "gif-ragnarok-frozen-pack-20",
             "poster": "gif-ragnarok-frozen-pack-20",
             "loop": "gif-ragnarok-frozen-pack-20"
           },
           {
             "id": "pack-21",
-            "title": "Tới chỗ loot trong dungeon · 2/3",
+            "title": "Go to the loot in the dungeon · 2/3",
             "gif": "gif-ragnarok-frozen-pack-21",
             "poster": "gif-ragnarok-frozen-pack-21",
             "loop": "gif-ragnarok-frozen-pack-21"
           },
           {
             "id": "pack-22",
-            "title": "Tới chỗ loot trong dungeon · 3/3",
+            "title": "Go to the loot in the dungeon · 3/3",
             "gif": "gif-ragnarok-frozen-pack-22",
             "poster": "gif-ragnarok-frozen-pack-22",
             "loop": "gif-ragnarok-frozen-pack-22"
           },
           {
             "id": "pack-23",
-            "title": "Qua cửa hẹp bằng thú nhỏ · 1/3",
-            "direction": "Clip đổi sang Pyromane, thú cần DLC riêng. Nếu dùng cách này, đưa thú qua cửa hẹp trước khi chuyển sang kích thước lớn.",
+            "title": "Through narrow gates with small animals · 1/3",
+            "direction": "Clip changed to Pyromane, animal needs separate DLC. If using this method, put the animal through the narrow door before moving to large size.",
             "gif": "gif-ragnarok-frozen-pack-23",
             "poster": "gif-ragnarok-frozen-pack-23",
             "loop": "gif-ragnarok-frozen-pack-23"
           },
           {
             "id": "pack-24",
-            "title": "Qua cửa hẹp bằng thú nhỏ · 2/3",
+            "title": "Through narrow gates with small animals · 2/3",
             "gif": "gif-ragnarok-frozen-pack-24",
             "poster": "gif-ragnarok-frozen-pack-24",
             "loop": "gif-ragnarok-frozen-pack-24"
           },
           {
             "id": "pack-25",
-            "title": "Qua cửa hẹp bằng thú nhỏ · 3/3",
+            "title": "Through narrow gates with small animals · 3/3",
             "gif": "gif-ragnarok-frozen-pack-25",
             "poster": "gif-ragnarok-frozen-pack-25",
             "loop": "gif-ragnarok-frozen-pack-25"
           },
           {
             "id": "pack-26",
-            "title": "Lấy bên phải và dọn worm · 1/3",
-            "direction": "Từ khoảng mở, đi về bên phải. Dọn Iceworm xuất hiện trước khi tiến vào đoạn tiếp.",
+            "title": "Take the right side and clear the worm · 1/3",
+            "direction": "From the opening, go right. Clear the Iceworm that appears before moving on to the next stage.",
             "gif": "gif-ragnarok-frozen-pack-26",
             "poster": "gif-ragnarok-frozen-pack-26",
             "loop": "gif-ragnarok-frozen-pack-26"
           },
           {
             "id": "pack-27",
-            "title": "Lấy bên phải và dọn worm · 2/3",
+            "title": "Take the right side and clear the worm · 2/3",
             "gif": "gif-ragnarok-frozen-pack-27",
             "poster": "gif-ragnarok-frozen-pack-27",
             "loop": "gif-ragnarok-frozen-pack-27"
           },
           {
             "id": "pack-28",
-            "title": "Lấy bên phải và dọn worm · 3/3",
+            "title": "Take the right side and clear the worm · 3/3",
             "gif": "gif-ragnarok-frozen-pack-28",
             "poster": "gif-ragnarok-frozen-pack-28",
             "loop": "gif-ragnarok-frozen-pack-28"
           },
           {
             "id": "pack-29",
-            "title": "Trái rồi phải · 1/3",
-            "direction": "Lấy lối trái, sau đó ngã đầu rẽ phải tới nền có loot. Lấy loot khi an toàn rồi quay về hành lang.",
+            "title": "Left then right · 1/3",
+            "direction": "Take the left path, then turn right to the platform with loot. Grab the loot when it's safe then return to the hallway.",
             "gif": "gif-ragnarok-frozen-pack-29",
             "poster": "gif-ragnarok-frozen-pack-29",
             "loop": "gif-ragnarok-frozen-pack-29"
           },
           {
             "id": "pack-30",
-            "title": "Trái rồi phải · 2/3",
+            "title": "Left then right · 2/3",
             "gif": "gif-ragnarok-frozen-pack-30",
             "poster": "gif-ragnarok-frozen-pack-30",
             "loop": "gif-ragnarok-frozen-pack-30"
           },
           {
             "id": "pack-31",
-            "title": "Trái rồi phải · 3/3",
+            "title": "Left then right · 3/3",
             "gif": "gif-ragnarok-frozen-pack-31",
             "poster": "gif-ragnarok-frozen-pack-31",
             "loop": "gif-ragnarok-frozen-pack-31"
           },
           {
             "id": "pack-32",
-            "title": "Bám vách trái · 1/3",
-            "direction": "Bám vách bên trái về phía tinh thể xanh. Clip có ghé hốc loot sau vách đá có thể đập; đây là nhánh phụ.",
+            "title": "Left wall attachment · 1/3",
+            "direction": "Grab the left wall towards the blue crystal. The clip includes a loot hole behind a cliff that can be smashed; This is a sub branch.",
             "gif": "gif-ragnarok-frozen-pack-32",
             "poster": "gif-ragnarok-frozen-pack-32",
             "loop": "gif-ragnarok-frozen-pack-32"
           },
           {
             "id": "pack-33",
-            "title": "Bám vách trái · 2/3",
+            "title": "Left wall attachment · 2/3",
             "gif": "gif-ragnarok-frozen-pack-33",
             "poster": "gif-ragnarok-frozen-pack-33",
             "loop": "gif-ragnarok-frozen-pack-33"
           },
           {
             "id": "pack-34",
-            "title": "Bám vách trái · 3/3",
+            "title": "Left wall attachment · 3/3",
             "gif": "gif-ragnarok-frozen-pack-34",
             "poster": "gif-ragnarok-frozen-pack-34",
             "loop": "gif-ragnarok-frozen-pack-34"
           },
           {
             "id": "pack-35",
-            "title": "Quay lại rồi lấy bên trái · 1/4",
-            "direction": "Ra khỏi nhánh loot phụ, về hành lang rồi lấy lối bên trái tới gian tiếp theo. Dọn sinh vật và kiểm tra đồ trước khi đi sâu.",
+            "title": "Go back and get the left · 1/4",
+            "direction": "Exit the side loot branch, go back to the hallway and then take the left path to the next room. Clear creatures and check items before diving in.",
             "gif": "gif-ragnarok-frozen-pack-35",
             "poster": "gif-ragnarok-frozen-pack-35",
             "loop": "gif-ragnarok-frozen-pack-35"
           },
           {
             "id": "pack-36",
-            "title": "Quay lại rồi lấy bên trái · 2/4",
+            "title": "Go back and get the left · 2/4",
             "gif": "gif-ragnarok-frozen-pack-36",
             "poster": "gif-ragnarok-frozen-pack-36",
             "loop": "gif-ragnarok-frozen-pack-36"
           },
           {
             "id": "pack-37",
-            "title": "Quay lại rồi lấy bên trái · 3/4",
+            "title": "Go back and get the left · 3/4",
             "gif": "gif-ragnarok-frozen-pack-37",
             "poster": "gif-ragnarok-frozen-pack-37",
             "loop": "gif-ragnarok-frozen-pack-37"
           },
           {
             "id": "pack-38",
-            "title": "Quay lại rồi lấy bên trái · 4/4",
+            "title": "Go back and get the left · 4/4",
             "gif": "gif-ragnarok-frozen-pack-38",
             "poster": "gif-ragnarok-frozen-pack-38",
             "loop": "gif-ragnarok-frozen-pack-38"
           },
           {
             "id": "pack-39",
-            "title": "Đi thẳng rồi rẽ phải · 1/3",
-            "direction": "Bỏ qua dốc bên trái, tiếp tục đi thẳng rồi rẽ phải theo hành lang. Đường này dẫn về phía Iceworm Queen.",
+            "title": "Go straight then turn right · 1/3",
+            "direction": "Ignore the slope on the left, continue straight and then turn right along the corridor. This path leads towards the Iceworm Queen.",
             "gif": "gif-ragnarok-frozen-pack-39",
             "poster": "gif-ragnarok-frozen-pack-39",
             "loop": "gif-ragnarok-frozen-pack-39"
           },
           {
             "id": "pack-40",
-            "title": "Đi thẳng rồi rẽ phải · 2/3",
+            "title": "Go straight then turn right · 2/3",
             "gif": "gif-ragnarok-frozen-pack-40",
             "poster": "gif-ragnarok-frozen-pack-40",
             "loop": "gif-ragnarok-frozen-pack-40"
           },
           {
             "id": "pack-41",
-            "title": "Đi thẳng rồi rẽ phải · 3/3",
+            "title": "Go straight then turn right · 3/3",
             "gif": "gif-ragnarok-frozen-pack-41",
             "poster": "gif-ragnarok-frozen-pack-41",
             "loop": "gif-ragnarok-frozen-pack-41"
           },
           {
             "id": "pack-42",
-            "title": "Qua gian có nước · 1/4",
-            "direction": "Vòng qua gian nước như trong GIF. Đoạn xuống nước là nhánh loot; sau đó quay lên nền cũ để đi tiếp.",
+            "title": "Through the water section · 1/4",
+            "direction": "Go around the water space like in the GIF. The section down to the water is the loot branch; then return to the old platform to continue.",
             "gif": "gif-ragnarok-frozen-pack-42",
             "poster": "gif-ragnarok-frozen-pack-42",
             "loop": "gif-ragnarok-frozen-pack-42"
           },
           {
             "id": "pack-43",
-            "title": "Qua gian có nước · 2/4",
+            "title": "Through the water section · 2/4",
             "gif": "gif-ragnarok-frozen-pack-43",
             "poster": "gif-ragnarok-frozen-pack-43",
             "loop": "gif-ragnarok-frozen-pack-43"
           },
           {
             "id": "pack-44",
-            "title": "Qua gian có nước · 3/4",
+            "title": "Through the water section · 3/4",
             "gif": "gif-ragnarok-frozen-pack-44",
             "poster": "gif-ragnarok-frozen-pack-44",
             "loop": "gif-ragnarok-frozen-pack-44"
           },
           {
             "id": "pack-45",
-            "title": "Qua gian có nước · 4/4",
+            "title": "Through the water section · 4/4",
             "gif": "gif-ragnarok-frozen-pack-45",
             "poster": "gif-ragnarok-frozen-pack-45",
             "loop": "gif-ragnarok-frozen-pack-45"
           },
           {
             "id": "pack-46",
-            "title": "Chuẩn bị trước mép vực · 1/2",
-            "direction": "Tới mép vực trước đấu trường Queen. Trang bị Parachute và kiểm tra vũ khí, máu, thuốc trước khi xuống.",
+            "title": "Preparing for the Edge · 1/2",
+            "direction": "Go to the edge of the cliff in front of Queen's arena. Equip Parachute and check weapons, health, and medicine before going down.",
             "gif": "gif-ragnarok-frozen-pack-46",
             "poster": "gif-ragnarok-frozen-pack-46",
             "loop": "gif-ragnarok-frozen-pack-46"
           },
           {
             "id": "pack-47",
-            "title": "Chuẩn bị trước mép vực · 2/2",
+            "title": "Preparing for the Edge · 2/2",
             "gif": "gif-ragnarok-frozen-pack-47",
             "poster": "gif-ragnarok-frozen-pack-47",
             "loop": "gif-ragnarok-frozen-pack-47"
           },
           {
             "id": "pack-48",
-            "title": "Hạ xuống qua rào vô hình · 1/2",
-            "direction": "Dùng Parachute hạ xuống nền như trong GIF. Giữ Pyromane nhỏ cho tới khi đã qua rào vô hình, tránh phóng to quá sớm và kẹt ở mép.",
+            "title": "Descent through invisible barrier · 1/2",
+            "direction": "Use Parachute to land on the platform shown in the GIF. Keep Pyromane small until past the invisible barrier; enlarging too early can get it stuck on the edge.",
             "gif": "gif-ragnarok-frozen-pack-48",
             "poster": "gif-ragnarok-frozen-pack-48",
             "loop": "gif-ragnarok-frozen-pack-48"
           },
           {
             "id": "pack-49",
-            "title": "Hạ xuống qua rào vô hình · 2/2",
+            "title": "Descent through invisible barrier · 2/2",
             "gif": "gif-ragnarok-frozen-pack-49",
             "poster": "gif-ragnarok-frozen-pack-49",
             "loop": "gif-ragnarok-frozen-pack-49"
           },
           {
             "id": "pack-50",
-            "title": "Đánh Iceworm Queen",
-            "direction": "Dọn Queen trước khi đi kiếm Pack. Clip dùng Pyromane và vòng quanh Queen; chọn bộ đồ, thú và vũ khí theo phần Boss của hang.",
+            "title": "Beat the Iceworm Queen",
+            "direction": "Defeat Queen before searching for Pack. The clip uses Pyromane and circles Queen; choose gear, tame, and weapons from the cave's Boss section.",
             "gif": "gif-ragnarok-frozen-pack-50",
             "poster": "gif-ragnarok-frozen-pack-50",
             "loop": "gif-ragnarok-frozen-pack-50"
           },
           {
             "id": "pack-51",
-            "title": "Kết thúc trận Queen",
-            "direction": "Hạ Queen, xử lý phần thưởng rồi kiểm tra máu và stamina. Chỉ đi tiếp khi đấu trường đã an toàn.",
+            "title": "End of Queen's battle",
+            "direction": "Defeat the Queen, process the reward, then check your health and stamina. Only continue when the arena is safe.",
             "gif": "gif-ragnarok-frozen-pack-51",
             "poster": "gif-ragnarok-frozen-pack-51",
             "loop": "gif-ragnarok-frozen-pack-51"
           },
           {
             "id": "pack-52",
-            "title": "Lối bên trái tới Pack · 1/2",
-            "direction": "Từ lối vào đấu trường, đi về bên trái rồi theo đường hầm tới Pack. Đoạn này minh họa đường bằng Creative; trong lượt chơi của anh, hãy hạ Queen trước rồi đi lấy Artifact.",
+            "title": "Left path to Pack · 1/2",
+            "direction": "From the arena entrance, go left through the tunnel toward Pack. This section demonstrates the route in Creative; in your own run, defeat Queen before collecting the Artifact.",
             "gif": "gif-ragnarok-frozen-pack-52",
             "poster": "gif-ragnarok-frozen-pack-52",
             "loop": "gif-ragnarok-frozen-pack-52"
           },
           {
             "id": "pack-53",
-            "title": "Lối bên trái tới Pack · 2/2",
+            "title": "Left path to Pack · 2/2",
             "gif": "gif-ragnarok-frozen-pack-53",
             "poster": "gif-ragnarok-frozen-pack-53",
             "loop": "gif-ragnarok-frozen-pack-53"
@@ -775,109 +775,109 @@
     "sections": [
       {
         "id": "entry",
-        "title": "Cửa vào & nút bấm chung",
+        "title": "General entrance & buttons",
         "steps": [
           {
             "id": "entry-outside",
-            "title": "Nhận ra phế tích cửa vào",
-            "direction": "Tìm phế tích tại GPS cửa hang ở phía trên. Cửa thấp phải cúi hoặc bò qua; mang sẵn thú vai cho phần hiến tế trước khi vào phòng nút bấm.",
+            "title": "Recognize the entrance ruins",
+            "direction": "Find the ruins at the cave entrance GPS above. Crouch or crawl through the low entrance; bring a shoulder pet for the sacrifice before entering the button room.",
             "gif": "gif-ragnarok-labyrinth-entry-outside",
             "poster": "gif-ragnarok-labyrinth-entry-outside",
             "loop": "gif-ragnarok-labyrinth-entry-outside"
           },
           {
             "id": "entry-01",
-            "title": "Bấm D R A K phía trên · 1/2",
-            "direction": "Trong phòng đầu, bấm các chữ theo thứ tự D → R → A → K → K → A → R. Bốn chữ đầu nằm ở khu phía trên như trong GIF.",
+            "title": "Press D R A K above · 1/2",
+            "direction": "In the first room, press the letters in order D → R → A → K → K → A → R. The first four letters are in the upper area as shown in the GIF.",
             "gif": "gif-ragnarok-labyrinth-entry-01",
             "poster": "gif-ragnarok-labyrinth-entry-01",
             "loop": "gif-ragnarok-labyrinth-entry-01"
           },
           {
             "id": "entry-02",
-            "title": "Bấm D R A K phía trên · 2/2",
+            "title": "Press D R A K above · 2/2",
             "gif": "gif-ragnarok-labyrinth-entry-02",
             "poster": "gif-ragnarok-labyrinth-entry-02",
             "loop": "gif-ragnarok-labyrinth-entry-02"
           },
           {
             "id": "entry-03",
-            "title": "Bấm K A R phía dưới · 1/2",
-            "direction": "Tìm ba chữ cuối ở khu thấp hơn. Chữ R ở sau cửa; nút mở cửa nằm sau các thùng trong phòng có chữ U. Tránh các ô bẫy trên nền.",
+            "title": "Press K A R below · 1/2",
+            "direction": "Find the final three letters in the lower area. R is behind the door; its opening button is behind barrels in the room marked U. Avoid floor traps.",
             "gif": "gif-ragnarok-labyrinth-entry-03",
             "poster": "gif-ragnarok-labyrinth-entry-03",
             "loop": "gif-ragnarok-labyrinth-entry-03"
           },
           {
             "id": "entry-04",
-            "title": "Bấm K A R phía dưới · 2/2",
+            "title": "Press K A R below · 2/2",
             "gif": "gif-ragnarok-labyrinth-entry-04",
             "poster": "gif-ragnarok-labyrinth-entry-04",
             "loop": "gif-ragnarok-labyrinth-entry-04"
           },
           {
             "id": "entry-05",
-            "title": "Qua hồ vào phòng tượng · 1/3",
-            "direction": "Sau khi mở được đường, đi qua chỗ hồ rồi theo hành lang tới phòng tượng. Vào sâu qua hồ là anh phải hoàn thành dungeon để ra ngoài.",
+            "title": "Cross the lake and enter the statue room · 1/3",
+            "direction": "After opening the path, go through the lake and follow the hallway to the statue room. Going deeper through the lake means you have to complete the dungeon to get out.",
             "gif": "gif-ragnarok-labyrinth-entry-05",
             "poster": "gif-ragnarok-labyrinth-entry-05",
             "loop": "gif-ragnarok-labyrinth-entry-05"
           },
           {
             "id": "entry-06",
-            "title": "Qua hồ vào phòng tượng · 2/3",
+            "title": "Cross the lake and enter the statue room · 2/3",
             "gif": "gif-ragnarok-labyrinth-entry-06",
             "poster": "gif-ragnarok-labyrinth-entry-06",
             "loop": "gif-ragnarok-labyrinth-entry-06"
           },
           {
             "id": "entry-07",
-            "title": "Qua hồ vào phòng tượng · 3/3",
+            "title": "Cross the lake and enter the statue room · 3/3",
             "gif": "gif-ragnarok-labyrinth-entry-07",
             "poster": "gif-ragnarok-labyrinth-entry-07",
             "loop": "gif-ragnarok-labyrinth-entry-07"
           },
           {
             "id": "entry-08",
-            "title": "Cúi người và bấm nút trái · 1/2",
-            "direction": "Giữ người thấp trong phòng tượng; đứng lên có thể chết ngay. Bấm nút bên trái đầu tiên, không bước lên các ụ nhỏ trên sàn.",
+            "title": "Crouch and press the left button · 1/2",
+            "direction": "Keep low in the statue room; If you stand up, you can die immediately. Press the left button first, don't step on the small mounds on the floor.",
             "gif": "gif-ragnarok-labyrinth-entry-08",
             "poster": "gif-ragnarok-labyrinth-entry-08",
             "loop": "gif-ragnarok-labyrinth-entry-08"
           },
           {
             "id": "entry-09",
-            "title": "Cúi người và bấm nút trái · 2/2",
+            "title": "Crouch and press the left button · 2/2",
             "gif": "gif-ragnarok-labyrinth-entry-09",
             "poster": "gif-ragnarok-labyrinth-entry-09",
             "loop": "gif-ragnarok-labyrinth-entry-09"
           },
           {
             "id": "entry-10",
-            "title": "Vòng sang nút phải · 1/2",
-            "direction": "Vẫn cúi người, vòng theo mép phòng tới nút bên phải. Đừng đi tắt qua giữa tượng.",
+            "title": "Loop to the right button · 1/2",
+            "direction": "Still crouching, follow the edge of the room to the button on the right. Don't take shortcuts through the middle of the statue.",
             "gif": "gif-ragnarok-labyrinth-entry-10",
             "poster": "gif-ragnarok-labyrinth-entry-10",
             "loop": "gif-ragnarok-labyrinth-entry-10"
           },
           {
             "id": "entry-11",
-            "title": "Vòng sang nút phải · 2/2",
+            "title": "Loop to the right button · 2/2",
             "gif": "gif-ragnarok-labyrinth-entry-11",
             "poster": "gif-ragnarok-labyrinth-entry-11",
             "loop": "gif-ragnarok-labyrinth-entry-11"
           },
           {
             "id": "entry-12",
-            "title": "Bò dưới bàn tay và bấm nút giữa · 1/2",
-            "direction": "Nằm bò qua dưới bàn tay tượng tới nút giữa. Thứ tự của phòng là trái → phải → giữa. Cửa phải dẫn Clever, cửa trái dẫn Skylord; hai nhánh đều về phòng hiến tế.",
+            "title": "Crawl under the hand and press the middle button · 1/2",
+            "direction": "Lie down and crawl under the statue's hand to the middle button. The order of the room is left → right → middle. The right door leads to Clever, the left door leads to Skylord; Both branches go to the sacrificial room.",
             "gif": "gif-ragnarok-labyrinth-entry-12",
             "poster": "gif-ragnarok-labyrinth-entry-12",
             "loop": "gif-ragnarok-labyrinth-entry-12"
           },
           {
             "id": "entry-13",
-            "title": "Bò dưới bàn tay và bấm nút giữa · 2/2",
+            "title": "Crawl under the hand and press the middle button · 2/2",
             "gif": "gif-ragnarok-labyrinth-entry-13",
             "poster": "gif-ragnarok-labyrinth-entry-13",
             "loop": "gif-ragnarok-labyrinth-entry-13"
@@ -886,196 +886,196 @@
       },
       {
         "id": "clever",
-        "title": "Nhánh phải → Clever",
+        "title": "Right branch → Clever",
         "steps": [
           {
             "id": "clever-01",
-            "title": "Vào nhánh phải qua gian nước · 1/3",
-            "direction": "Chọn cửa phải ở phòng tượng. Qua khu có nước và các nền đá; nếu rơi xuống nước, chuẩn bị xử lý cá Piranha.",
+            "title": "Enter the right branch through the water room · 1/3",
+            "direction": "Choose the right door in the statue room. Cross the water and stone platforms; prepare for Piranha if you fall into the water.",
             "gif": "gif-ragnarok-labyrinth-clever-01",
             "poster": "gif-ragnarok-labyrinth-clever-01",
             "loop": "gif-ragnarok-labyrinth-clever-01"
           },
           {
             "id": "clever-02",
-            "title": "Vào nhánh phải qua gian nước · 2/3",
+            "title": "Enter the right branch through the water room · 2/3",
             "gif": "gif-ragnarok-labyrinth-clever-02",
             "poster": "gif-ragnarok-labyrinth-clever-02",
             "loop": "gif-ragnarok-labyrinth-clever-02"
           },
           {
             "id": "clever-03",
-            "title": "Vào nhánh phải qua gian nước · 3/3",
+            "title": "Enter the right branch through the water room · 3/3",
             "gif": "gif-ragnarok-labyrinth-clever-03",
             "poster": "gif-ragnarok-labyrinth-clever-03",
             "loop": "gif-ragnarok-labyrinth-clever-03"
           },
           {
             "id": "clever-04",
-            "title": "Qua lối hẹp và bấm nút · 1/3",
-            "direction": "Theo gờ đá tới nút trên tường rồi qua lối mở. Nhìn các nền đáp trong GIF trước khi nhảy.",
+            "title": "Go through the narrow passage and press the button · 1/3",
+            "direction": "Follow the ledge to the switch in the wall and then through the opening. Look at the landing platforms in the GIF before jumping.",
             "gif": "gif-ragnarok-labyrinth-clever-04",
             "poster": "gif-ragnarok-labyrinth-clever-04",
             "loop": "gif-ragnarok-labyrinth-clever-04"
           },
           {
             "id": "clever-05",
-            "title": "Qua lối hẹp và bấm nút · 2/3",
+            "title": "Go through the narrow passage and press the button · 2/3",
             "gif": "gif-ragnarok-labyrinth-clever-05",
             "poster": "gif-ragnarok-labyrinth-clever-05",
             "loop": "gif-ragnarok-labyrinth-clever-05"
           },
           {
             "id": "clever-06",
-            "title": "Qua lối hẹp và bấm nút · 3/3",
+            "title": "Go through the narrow passage and press the button · 3/3",
             "gif": "gif-ragnarok-labyrinth-clever-06",
             "poster": "gif-ragnarok-labyrinth-clever-06",
             "loop": "gif-ragnarok-labyrinth-clever-06"
           },
           {
             "id": "clever-07",
-            "title": "Tránh giữa phòng tượng đỏ · 1/3",
-            "direction": "Dọn thú xuất hiện trước khi xuống. Tránh bậc và vùng giữa tượng đỏ; các ô áp lực có thể gọi thú hoặc kích bẫy chết ngay.",
+            "title": "Avoid the middle of the red statue room · 1/3",
+            "direction": "Clear spawned creatures before descending. Avoid the steps and central area between red statues; pressure plates may summon creatures or trigger instant-death traps.",
             "gif": "gif-ragnarok-labyrinth-clever-07",
             "poster": "gif-ragnarok-labyrinth-clever-07",
             "loop": "gif-ragnarok-labyrinth-clever-07"
           },
           {
             "id": "clever-08",
-            "title": "Tránh giữa phòng tượng đỏ · 2/3",
+            "title": "Avoid the middle of the red statue room · 2/3",
             "gif": "gif-ragnarok-labyrinth-clever-08",
             "poster": "gif-ragnarok-labyrinth-clever-08",
             "loop": "gif-ragnarok-labyrinth-clever-08"
           },
           {
             "id": "clever-09",
-            "title": "Tránh giữa phòng tượng đỏ · 3/3",
+            "title": "Avoid the middle of the red statue room · 3/3",
             "gif": "gif-ragnarok-labyrinth-clever-09",
             "poster": "gif-ragnarok-labyrinth-clever-09",
             "loop": "gif-ragnarok-labyrinth-clever-09"
           },
           {
             "id": "clever-10",
-            "title": "Bấm các nút quanh tường · 1/4",
-            "direction": "Đi vòng sát tường bấm các nút như trong GIF. Clip thử một vòng rồi tiếp tục vòng thứ hai; nếu cửa chưa mở, kiểm tra lại từng nút và tránh giữa phòng.",
+            "title": "Press the buttons around the wall · 1/4",
+            "direction": "Go around the wall and press the buttons like in the GIF. Clip tries one round then continues the second round; If the door is not open, recheck each button and avoid the middle of the room.",
             "gif": "gif-ragnarok-labyrinth-clever-10",
             "poster": "gif-ragnarok-labyrinth-clever-10",
             "loop": "gif-ragnarok-labyrinth-clever-10"
           },
           {
             "id": "clever-11",
-            "title": "Bấm các nút quanh tường · 2/4",
+            "title": "Press the buttons around the wall · 2/4",
             "gif": "gif-ragnarok-labyrinth-clever-11",
             "poster": "gif-ragnarok-labyrinth-clever-11",
             "loop": "gif-ragnarok-labyrinth-clever-11"
           },
           {
             "id": "clever-12",
-            "title": "Bấm các nút quanh tường · 3/4",
+            "title": "Press the buttons around the wall · 3/4",
             "gif": "gif-ragnarok-labyrinth-clever-12",
             "poster": "gif-ragnarok-labyrinth-clever-12",
             "loop": "gif-ragnarok-labyrinth-clever-12"
           },
           {
             "id": "clever-13",
-            "title": "Bấm các nút quanh tường · 4/4",
+            "title": "Press the buttons around the wall · 4/4",
             "gif": "gif-ragnarok-labyrinth-clever-13",
             "poster": "gif-ragnarok-labyrinth-clever-13",
             "loop": "gif-ragnarok-labyrinth-clever-13"
           },
           {
             "id": "clever-14",
-            "title": "Tìm đường tới cặp nút tính giờ · 1/3",
-            "direction": "Từ cửa bên phải, theo hành lang qua nút giữa tới cặp nút cạnh cửa. Xem hết các GIF chạy mê cung phía sau trước khi bắt đầu.",
+            "title": "Find your way to the pair of timing buttons · 1/3",
+            "direction": "From the right door, follow the hallway past the middle button to the pair of buttons next to the door. Check out all the maze running GIFs behind before starting.",
             "gif": "gif-ragnarok-labyrinth-clever-14",
             "poster": "gif-ragnarok-labyrinth-clever-14",
             "loop": "gif-ragnarok-labyrinth-clever-14"
           },
           {
             "id": "clever-15",
-            "title": "Tìm đường tới cặp nút tính giờ · 2/3",
+            "title": "Find your way to the pair of timing buttons · 2/3",
             "gif": "gif-ragnarok-labyrinth-clever-15",
             "poster": "gif-ragnarok-labyrinth-clever-15",
             "loop": "gif-ragnarok-labyrinth-clever-15"
           },
           {
             "id": "clever-16",
-            "title": "Tìm đường tới cặp nút tính giờ · 3/3",
+            "title": "Find your way to the pair of timing buttons · 3/3",
             "gif": "gif-ragnarok-labyrinth-clever-16",
             "poster": "gif-ragnarok-labyrinth-clever-16",
             "loop": "gif-ragnarok-labyrinth-clever-16"
           },
           {
             "id": "clever-17",
-            "title": "Bấm hai nút cạnh cửa",
-            "direction": "Bấm cả hai nút ở hai bên cửa. Đồng hồ bắt đầu khi bấm nút bên phải; anh có khoảng một phút để tới cửa cuối.",
+            "title": "Press the two buttons next to the door",
+            "direction": "Press both buttons on either side of the door. The clock starts when the right button is pressed; You have about a minute to get to the last door.",
             "gif": "gif-ragnarok-labyrinth-clever-17",
             "poster": "gif-ragnarok-labyrinth-clever-17",
             "loop": "gif-ragnarok-labyrinth-clever-17"
           },
           {
             "id": "clever-18",
-            "title": "Chạy khúc đầu mê cung · 1/2",
-            "direction": "Theo từng khúc quanh trong GIF, qua cửa thấp thì cúi người. Đừng dừng lại nhặt loot trong lượt chạy tính giờ.",
+            "title": "Run the first part of the maze · 1/2",
+            "direction": "Follow each turn in the GIF, crouch through low doors. Don't stop to pick up loot during the timed run.",
             "gif": "gif-ragnarok-labyrinth-clever-18",
             "poster": "gif-ragnarok-labyrinth-clever-18",
             "loop": "gif-ragnarok-labyrinth-clever-18"
           },
           {
             "id": "clever-19",
-            "title": "Chạy khúc đầu mê cung · 2/2",
+            "title": "Run the first part of the maze · 2/2",
             "gif": "gif-ragnarok-labyrinth-clever-19",
             "poster": "gif-ragnarok-labyrinth-clever-19",
             "loop": "gif-ragnarok-labyrinth-clever-19"
           },
           {
             "id": "clever-20",
-            "title": "Chạy tới cửa cuối · 1/3",
-            "direction": "Theo hành lang tiếp nối và xử lý sinh vật chắn đường. Giữ hướng theo hình, vì nhiều gian trông gần giống nhau.",
+            "title": "Run to the last door · 1/3",
+            "direction": "Continue through the corridors and clear blocking creatures. Follow the images carefully because many chambers look similar.",
             "gif": "gif-ragnarok-labyrinth-clever-20",
             "poster": "gif-ragnarok-labyrinth-clever-20",
             "loop": "gif-ragnarok-labyrinth-clever-20"
           },
           {
             "id": "clever-21",
-            "title": "Chạy tới cửa cuối · 2/3",
+            "title": "Run to the last door · 2/3",
             "gif": "gif-ragnarok-labyrinth-clever-21",
             "poster": "gif-ragnarok-labyrinth-clever-21",
             "loop": "gif-ragnarok-labyrinth-clever-21"
           },
           {
             "id": "clever-22",
-            "title": "Chạy tới cửa cuối · 3/3",
+            "title": "Run to the last door · 3/3",
             "gif": "gif-ragnarok-labyrinth-clever-22",
             "poster": "gif-ragnarok-labyrinth-clever-22",
             "loop": "gif-ragnarok-labyrinth-clever-22"
           },
           {
             "id": "clever-23",
-            "title": "Qua cửa và lấy Clever · 1/2",
-            "direction": "Qua cửa trước khi nó đóng, đi xuống gian có ánh xanh và lấy Clever. Nếu trễ, quay lại cặp nút đầu để mở và chạy lại.",
+            "title": "Go through the door and get Clever · 1/2",
+            "direction": "Go through the door before it closes, go down to the green lighted space and get Clever. If late, return to the first pair of buttons to open and run again.",
             "gif": "gif-ragnarok-labyrinth-clever-23",
             "poster": "gif-ragnarok-labyrinth-clever-23",
             "loop": "gif-ragnarok-labyrinth-clever-23"
           },
           {
             "id": "clever-24",
-            "title": "Qua cửa và lấy Clever · 2/2",
+            "title": "Go through the door and get Clever · 2/2",
             "gif": "gif-ragnarok-labyrinth-clever-24",
             "poster": "gif-ragnarok-labyrinth-clever-24",
             "loop": "gif-ragnarok-labyrinth-clever-24"
           },
           {
             "id": "clever-25",
-            "title": "Tới phòng hiến tế · 1/2",
-            "direction": "Từ Clever đi tiếp theo hành lang tới phòng có bệ hiến tế. Chuyển xuống phần Hiến tế & hai Artifact cuối để ra ngoài.",
+            "title": "Go to the sacrifice room · 1/2",
+            "direction": "Continue from Clever through the corridor to the sacrificial pedestal room. Follow the Sacrifice & final two Artifacts section below to exit.",
             "gif": "gif-ragnarok-labyrinth-clever-25",
             "poster": "gif-ragnarok-labyrinth-clever-25",
             "loop": "gif-ragnarok-labyrinth-clever-25"
           },
           {
             "id": "clever-26",
-            "title": "Tới phòng hiến tế · 2/2",
+            "title": "Go to the sacrifice room · 2/2",
             "gif": "gif-ragnarok-labyrinth-clever-26",
             "poster": "gif-ragnarok-labyrinth-clever-26",
             "loop": "gif-ragnarok-labyrinth-clever-26"
@@ -1084,314 +1084,314 @@
       },
       {
         "id": "skylord",
-        "title": "Nhánh trái → Skylord",
+        "title": "Left branch → Skylord",
         "steps": [
           {
             "id": "skylord-01",
-            "title": "Chọn cửa trái và xuống nước · 1/2",
-            "direction": "Từ phòng tượng chung, chọn cửa trái. Bò qua lối thấp và chuẩn bị SCUBA, chân vịt trước đoạn bơi.",
+            "title": "Choose the left door and enter the water · 1/2",
+            "direction": "From the common statue room, choose the left door. Crawl through the low path and prepare SCUBA, flippers before the swimming section.",
             "gif": "gif-ragnarok-labyrinth-skylord-01",
             "poster": "gif-ragnarok-labyrinth-skylord-01",
             "loop": "gif-ragnarok-labyrinth-skylord-01"
           },
           {
             "id": "skylord-02",
-            "title": "Chọn cửa trái và xuống nước · 2/2",
+            "title": "Choose the left door and enter the water · 2/2",
             "gif": "gif-ragnarok-labyrinth-skylord-02",
             "poster": "gif-ragnarok-labyrinth-skylord-02",
             "loop": "gif-ragnarok-labyrinth-skylord-02"
           },
           {
             "id": "skylord-03",
-            "title": "Bơi qua đường hầm · 1/3",
-            "direction": "Bơi theo đường hầm dưới đá tới gian có các nút ở giữa. Có cá mập; giữ đủ oxygen và stamina.",
+            "title": "Swim through the tunnel · 1/3",
+            "direction": "Swim down the tunnel under the rock to the room with the buttons in the middle. There are sharks; Maintain enough oxygen and stamina.",
             "gif": "gif-ragnarok-labyrinth-skylord-03",
             "poster": "gif-ragnarok-labyrinth-skylord-03",
             "loop": "gif-ragnarok-labyrinth-skylord-03"
           },
           {
             "id": "skylord-04",
-            "title": "Bơi qua đường hầm · 2/3",
+            "title": "Swim through the tunnel · 2/3",
             "gif": "gif-ragnarok-labyrinth-skylord-04",
             "poster": "gif-ragnarok-labyrinth-skylord-04",
             "loop": "gif-ragnarok-labyrinth-skylord-04"
           },
           {
             "id": "skylord-05",
-            "title": "Bơi qua đường hầm · 3/3",
+            "title": "Swim through the tunnel · 3/3",
             "gif": "gif-ragnarok-labyrinth-skylord-05",
             "poster": "gif-ragnarok-labyrinth-skylord-05",
             "loop": "gif-ragnarok-labyrinth-skylord-05"
           },
           {
             "id": "skylord-06",
-            "title": "Mở cửa phòng thứ nhất · 1/2",
-            "direction": "Bấm các nút ở giữa để mở cửa các nhánh, rồi theo thứ tự được chỉ trong GIF. Sinh vật có thể xuất hiện khi cửa mở.",
+            "title": "Open the door to the first room · 1/2",
+            "direction": "Press the buttons in the middle to open the branch doors, then follow the order shown in the GIF. Creatures may appear when the door is open.",
             "gif": "gif-ragnarok-labyrinth-skylord-06",
             "poster": "gif-ragnarok-labyrinth-skylord-06",
             "loop": "gif-ragnarok-labyrinth-skylord-06"
           },
           {
             "id": "skylord-07",
-            "title": "Mở cửa phòng thứ nhất · 2/2",
+            "title": "Open the door to the first room · 2/2",
             "gif": "gif-ragnarok-labyrinth-skylord-07",
             "poster": "gif-ragnarok-labyrinth-skylord-07",
             "loop": "gif-ragnarok-labyrinth-skylord-07"
           },
           {
             "id": "skylord-08",
-            "title": "Bấm các nhánh phòng thứ nhất · 1/2",
-            "direction": "Theo từng nhánh để bấm nút, quay về giữa phòng và đi qua cửa được mở. Đừng đổi nhánh chỉ vì thấy cửa đang mở sẵn.",
+            "title": "Click the first room branches · 1/2",
+            "direction": "Follow each branch to press the button, return to the middle of the room and go through the opened door. Don't change branches just because the door is open.",
             "gif": "gif-ragnarok-labyrinth-skylord-08",
             "poster": "gif-ragnarok-labyrinth-skylord-08",
             "loop": "gif-ragnarok-labyrinth-skylord-08"
           },
           {
             "id": "skylord-09",
-            "title": "Bấm các nhánh phòng thứ nhất · 2/2",
+            "title": "Click the first room branches · 2/2",
             "gif": "gif-ragnarok-labyrinth-skylord-09",
             "poster": "gif-ragnarok-labyrinth-skylord-09",
             "loop": "gif-ragnarok-labyrinth-skylord-09"
           },
           {
             "id": "skylord-10",
-            "title": "Phòng thứ hai: trái trước · 1/3",
-            "direction": "Ở phòng tiếp theo, lại bấm nút giữa mở các cửa. Theo nhánh trái phía gần cửa vào trước, xử lý thú rồi bấm nút.",
+            "title": "Second room: front left · 1/3",
+            "direction": "In the next room, press the middle button again to open the doors. Follow the left branch near the front door, handle the animal and press the button.",
             "gif": "gif-ragnarok-labyrinth-skylord-10",
             "poster": "gif-ragnarok-labyrinth-skylord-10",
             "loop": "gif-ragnarok-labyrinth-skylord-10"
           },
           {
             "id": "skylord-11",
-            "title": "Phòng thứ hai: trái trước · 2/3",
+            "title": "Second room: front left · 2/3",
             "gif": "gif-ragnarok-labyrinth-skylord-11",
             "poster": "gif-ragnarok-labyrinth-skylord-11",
             "loop": "gif-ragnarok-labyrinth-skylord-11"
           },
           {
             "id": "skylord-12",
-            "title": "Phòng thứ hai: trái trước · 3/3",
+            "title": "Second room: front left · 3/3",
             "gif": "gif-ragnarok-labyrinth-skylord-12",
             "poster": "gif-ragnarok-labyrinth-skylord-12",
             "loop": "gif-ragnarok-labyrinth-skylord-12"
           },
           {
             "id": "skylord-13",
-            "title": "Qua các nhánh còn lại · 1/3",
-            "direction": "Quay về giữa phòng, tiếp tục tới các nhánh còn lại đúng đường GIF. Mỗi lần mở nhánh hãy chuẩn bị xử lý sinh vật.",
+            "title": "Through the remaining branches · 1/3",
+            "direction": "Return to the middle of the room, continue to the remaining branches along the GIF path. Each time you open a branch, be prepared to handle the critters.",
             "gif": "gif-ragnarok-labyrinth-skylord-13",
             "poster": "gif-ragnarok-labyrinth-skylord-13",
             "loop": "gif-ragnarok-labyrinth-skylord-13"
           },
           {
             "id": "skylord-14",
-            "title": "Qua các nhánh còn lại · 2/3",
+            "title": "Through the remaining branches · 2/3",
             "gif": "gif-ragnarok-labyrinth-skylord-14",
             "poster": "gif-ragnarok-labyrinth-skylord-14",
             "loop": "gif-ragnarok-labyrinth-skylord-14"
           },
           {
             "id": "skylord-15",
-            "title": "Qua các nhánh còn lại · 3/3",
+            "title": "Through the remaining branches · 3/3",
             "gif": "gif-ragnarok-labyrinth-skylord-15",
             "poster": "gif-ragnarok-labyrinth-skylord-15",
             "loop": "gif-ragnarok-labyrinth-skylord-15"
           },
           {
             "id": "skylord-16",
-            "title": "Mở cửa cuối của phòng · 1/3",
-            "direction": "Sau các nút nhánh, tới lối phía xa mở công tắc cửa cuối. Theo hành lang tới gian đá xám.",
+            "title": "Open the door at the end of the room · 1/3",
+            "direction": "After the branch buttons, go to the far path and open the last door switch. Follow the hallway to the gray stone room.",
             "gif": "gif-ragnarok-labyrinth-skylord-16",
             "poster": "gif-ragnarok-labyrinth-skylord-16",
             "loop": "gif-ragnarok-labyrinth-skylord-16"
           },
           {
             "id": "skylord-17",
-            "title": "Mở cửa cuối của phòng · 2/3",
+            "title": "Open the door at the end of the room · 2/3",
             "gif": "gif-ragnarok-labyrinth-skylord-17",
             "poster": "gif-ragnarok-labyrinth-skylord-17",
             "loop": "gif-ragnarok-labyrinth-skylord-17"
           },
           {
             "id": "skylord-18",
-            "title": "Mở cửa cuối của phòng · 3/3",
+            "title": "Open the door at the end of the room · 3/3",
             "gif": "gif-ragnarok-labyrinth-skylord-18",
             "poster": "gif-ragnarok-labyrinth-skylord-18",
             "loop": "gif-ragnarok-labyrinth-skylord-18"
           },
           {
             "id": "skylord-19",
-            "title": "Tới lỗ xuống hồ · 1/3",
-            "direction": "Qua gian đá xám, tìm lỗ sàn dưới các bậc đá. Chuẩn bị vũ khí trước khi xuống; có Spino dưới hồ.",
+            "title": "Go to the hole into the lake · 1/3",
+            "direction": "Go through the gray stone room and find the floor hole under the stone steps. Prepare weapons before going down; There is Spino under the lake.",
             "gif": "gif-ragnarok-labyrinth-skylord-19",
             "poster": "gif-ragnarok-labyrinth-skylord-19",
             "loop": "gif-ragnarok-labyrinth-skylord-19"
           },
           {
             "id": "skylord-20",
-            "title": "Tới lỗ xuống hồ · 2/3",
+            "title": "Go to the hole into the lake · 2/3",
             "gif": "gif-ragnarok-labyrinth-skylord-20",
             "poster": "gif-ragnarok-labyrinth-skylord-20",
             "loop": "gif-ragnarok-labyrinth-skylord-20"
           },
           {
             "id": "skylord-21",
-            "title": "Tới lỗ xuống hồ · 3/3",
+            "title": "Go to the hole into the lake · 3/3",
             "gif": "gif-ragnarok-labyrinth-skylord-21",
             "poster": "gif-ragnarok-labyrinth-skylord-21",
             "loop": "gif-ragnarok-labyrinth-skylord-21"
           },
           {
             "id": "skylord-22",
-            "title": "Lên thuyền xử lý Spino · 1/3",
-            "direction": "Sau khi xuống hồ, bơi tới thuyền để có vị trí đánh Spino. Dọn sinh vật trước khi lặn tìm nút.",
+            "title": "Board the boat to fight Spino · 1/3",
+            "direction": "After entering the lake, swim to the boat to get a position to hit Spino. Clear out creatures before diving for the button.",
             "gif": "gif-ragnarok-labyrinth-skylord-22",
             "poster": "gif-ragnarok-labyrinth-skylord-22",
             "loop": "gif-ragnarok-labyrinth-skylord-22"
           },
           {
             "id": "skylord-23",
-            "title": "Lên thuyền xử lý Spino · 2/3",
+            "title": "Board the boat to fight Spino · 2/3",
             "gif": "gif-ragnarok-labyrinth-skylord-23",
             "poster": "gif-ragnarok-labyrinth-skylord-23",
             "loop": "gif-ragnarok-labyrinth-skylord-23"
           },
           {
             "id": "skylord-24",
-            "title": "Lên thuyền xử lý Spino · 3/3",
+            "title": "Board the boat to fight Spino · 3/3",
             "gif": "gif-ragnarok-labyrinth-skylord-24",
             "poster": "gif-ragnarok-labyrinth-skylord-24",
             "loop": "gif-ragnarok-labyrinth-skylord-24"
           },
           {
             "id": "skylord-25",
-            "title": "Bấm nút dưới nước · 1/3",
-            "direction": "Lặn quanh các tượng và bấm nút theo chiều kim đồng hồ. Nếu cửa chưa mở, kiểm tra và làm thêm một vòng như clip.",
+            "title": "Press the underwater button · 1/3",
+            "direction": "Dive around the statues and press the button clockwise. If the door is not open, check and do another round like the clip.",
             "gif": "gif-ragnarok-labyrinth-skylord-25",
             "poster": "gif-ragnarok-labyrinth-skylord-25",
             "loop": "gif-ragnarok-labyrinth-skylord-25"
           },
           {
             "id": "skylord-26",
-            "title": "Bấm nút dưới nước · 2/3",
+            "title": "Press the underwater button · 2/3",
             "gif": "gif-ragnarok-labyrinth-skylord-26",
             "poster": "gif-ragnarok-labyrinth-skylord-26",
             "loop": "gif-ragnarok-labyrinth-skylord-26"
           },
           {
             "id": "skylord-27",
-            "title": "Bấm nút dưới nước · 3/3",
+            "title": "Press the underwater button · 3/3",
             "gif": "gif-ragnarok-labyrinth-skylord-27",
             "poster": "gif-ragnarok-labyrinth-skylord-27",
             "loop": "gif-ragnarok-labyrinth-skylord-27"
           },
           {
             "id": "skylord-28",
-            "title": "Leo trở lại tầng trên · 1/4",
-            "direction": "Theo các gờ đá và bậc lên tầng trên. Đi chậm ở những chỗ hở, đối chiếu từng nền đáp.",
+            "title": "Climb back upstairs · 1/4",
+            "direction": "Follow the ledges and steps to the upper level. Go slowly in open areas, checking each landing platform.",
             "gif": "gif-ragnarok-labyrinth-skylord-28",
             "poster": "gif-ragnarok-labyrinth-skylord-28",
             "loop": "gif-ragnarok-labyrinth-skylord-28"
           },
           {
             "id": "skylord-29",
-            "title": "Leo trở lại tầng trên · 2/4",
+            "title": "Climb back upstairs · 2/4",
             "gif": "gif-ragnarok-labyrinth-skylord-29",
             "poster": "gif-ragnarok-labyrinth-skylord-29",
             "loop": "gif-ragnarok-labyrinth-skylord-29"
           },
           {
             "id": "skylord-30",
-            "title": "Leo trở lại tầng trên · 3/4",
+            "title": "Climb back upstairs · 3/4",
             "gif": "gif-ragnarok-labyrinth-skylord-30",
             "poster": "gif-ragnarok-labyrinth-skylord-30",
             "loop": "gif-ragnarok-labyrinth-skylord-30"
           },
           {
             "id": "skylord-31",
-            "title": "Leo trở lại tầng trên · 4/4",
+            "title": "Climb back upstairs · 4/4",
             "gif": "gif-ragnarok-labyrinth-skylord-31",
             "poster": "gif-ragnarok-labyrinth-skylord-31",
             "loop": "gif-ragnarok-labyrinth-skylord-31"
           },
           {
             "id": "skylord-32",
-            "title": "Bấm nút mở đường parkour · 1/2",
-            "direction": "Qua cửa tới khu nhảy cột. Bấm nút trên tường mở cửa có thời gian; xem trước các GIF tiếp theo để nhớ đường.",
+            "title": "Press the button to open the parkour path · 1/2",
+            "direction": "Pass through the door to the pillar-jump area. Press the wall button to open a timed door; preview the next GIFs to learn the route.",
             "gif": "gif-ragnarok-labyrinth-skylord-32",
             "poster": "gif-ragnarok-labyrinth-skylord-32",
             "loop": "gif-ragnarok-labyrinth-skylord-32"
           },
           {
             "id": "skylord-33",
-            "title": "Bấm nút mở đường parkour · 2/2",
+            "title": "Press the button to open the parkour path · 2/2",
             "gif": "gif-ragnarok-labyrinth-skylord-33",
             "poster": "gif-ragnarok-labyrinth-skylord-33",
             "loop": "gif-ragnarok-labyrinth-skylord-33"
           },
           {
             "id": "skylord-34",
-            "title": "Qua phòng nhảy thứ nhất · 1/3",
-            "direction": "Nhảy từng nền hẹp và gờ tường như trong GIF. Rơi xuống là chết và không lấy lại được đồ; đừng thử nhảy khi chưa thấy nền đáp.",
+            "title": "Go to the first dance room · 1/3",
+            "direction": "Jump each narrow platform and ledge like in the GIF. If you fall, you die and you can't get your items back; Don't try to jump until you see the landing platform.",
             "gif": "gif-ragnarok-labyrinth-skylord-34",
             "poster": "gif-ragnarok-labyrinth-skylord-34",
             "loop": "gif-ragnarok-labyrinth-skylord-34"
           },
           {
             "id": "skylord-35",
-            "title": "Qua phòng nhảy thứ nhất · 2/3",
+            "title": "Go to the first dance room · 2/3",
             "gif": "gif-ragnarok-labyrinth-skylord-35",
             "poster": "gif-ragnarok-labyrinth-skylord-35",
             "loop": "gif-ragnarok-labyrinth-skylord-35"
           },
           {
             "id": "skylord-36",
-            "title": "Qua phòng nhảy thứ nhất · 3/3",
+            "title": "Go to the first dance room · 3/3",
             "gif": "gif-ragnarok-labyrinth-skylord-36",
             "poster": "gif-ragnarok-labyrinth-skylord-36",
             "loop": "gif-ragnarok-labyrinth-skylord-36"
           },
           {
             "id": "skylord-37",
-            "title": "Qua các phòng nhảy tiếp theo · 1/3",
-            "direction": "Tiếp tục qua cửa và các nền đá hẹp. Đi từng đoạn theo GIF; giữ đủ stamina trước các bước nhảy dài.",
+            "title": "Over to the next dance room · 1/3",
+            "direction": "Continue through the doorway and narrow stone platforms. Follow each GIF section and keep enough stamina for long jumps.",
             "gif": "gif-ragnarok-labyrinth-skylord-37",
             "poster": "gif-ragnarok-labyrinth-skylord-37",
             "loop": "gif-ragnarok-labyrinth-skylord-37"
           },
           {
             "id": "skylord-38",
-            "title": "Qua các phòng nhảy tiếp theo · 2/3",
+            "title": "Over to the next dance room · 2/3",
             "gif": "gif-ragnarok-labyrinth-skylord-38",
             "poster": "gif-ragnarok-labyrinth-skylord-38",
             "loop": "gif-ragnarok-labyrinth-skylord-38"
           },
           {
             "id": "skylord-39",
-            "title": "Qua các phòng nhảy tiếp theo · 3/3",
+            "title": "Over to the next dance room · 3/3",
             "gif": "gif-ragnarok-labyrinth-skylord-39",
             "poster": "gif-ragnarok-labyrinth-skylord-39",
             "loop": "gif-ragnarok-labyrinth-skylord-39"
           },
           {
             "id": "skylord-40",
-            "title": "Lấy Skylord · 1/2",
-            "direction": "Qua nền cuối tới hốc Artifact và lấy Skylord. Đường sau đó dẫn về cùng phòng hiến tế như nhánh Clever.",
+            "title": "Get Skylord · 1/2",
+            "direction": "Go through the last platform to alcove Artifact and get Skylord. The path then leads back to the same sacrificial chamber as branch Clever.",
             "gif": "gif-ragnarok-labyrinth-skylord-40",
             "poster": "gif-ragnarok-labyrinth-skylord-40",
             "loop": "gif-ragnarok-labyrinth-skylord-40"
           },
           {
             "id": "skylord-41",
-            "title": "Lấy Skylord · 2/2",
+            "title": "Get Skylord · 2/2",
             "gif": "gif-ragnarok-labyrinth-skylord-41",
             "poster": "gif-ragnarok-labyrinth-skylord-41",
             "loop": "gif-ragnarok-labyrinth-skylord-41"
           },
           {
             "id": "skylord-42",
-            "title": "Về phòng hiến tế",
-            "direction": "Theo hành lang từ hốc Skylord về phòng có bệ hiến tế. Anh cần hoàn thành phần cuối bên dưới để ra ngoài.",
+            "title": "Return to the sacrifice room",
+            "direction": "Follow the hallway from alcove Skylord to the room with the sacrificial platform. You need to complete the bottom part to get out.",
             "gif": "gif-ragnarok-labyrinth-skylord-42",
             "poster": "gif-ragnarok-labyrinth-skylord-42",
             "loop": "gif-ragnarok-labyrinth-skylord-42"
@@ -1400,63 +1400,63 @@
       },
       {
         "id": "final",
-        "title": "Hiến tế → Devious & Massive → cửa ra",
+        "title": "Sacrifice → Devious & Massive → exit",
         "steps": [
           {
             "id": "final-01",
-            "title": "Hiến tế thú vai · 1/2",
-            "direction": "Single player: mang sẵn thú vai để hiến tế tại bệ như trong GIF. Dùng đường này để tiếp tục; nhánh hiến tế người cần thêm người chơi.",
+            "title": "Shoulder animal sacrifice · 1/2",
+            "direction": "Single player: bring a shoulder pet to sacrifice on the pedestal shown in the GIF. This route lets you continue; the human-sacrifice branch needs another player.",
             "gif": "gif-ragnarok-labyrinth-final-01",
             "poster": "gif-ragnarok-labyrinth-final-01",
             "loop": "gif-ragnarok-labyrinth-final-01"
           },
           {
             "id": "final-02",
-            "title": "Hiến tế thú vai · 2/2",
+            "title": "Shoulder animal sacrifice · 2/2",
             "gif": "gif-ragnarok-labyrinth-final-02",
             "poster": "gif-ragnarok-labyrinth-final-02",
             "loop": "gif-ragnarok-labyrinth-final-02"
           },
           {
             "id": "final-03",
-            "title": "Qua hành lang tối · 1/2",
-            "direction": "Sau khi mở cửa, theo hành lang tối có bẫy và dơi. Dùng đuốc để nhìn nền, tránh các ô bẫy.",
+            "title": "Through the dark hallway · 1/2",
+            "direction": "After opening the door, follow the dark corridor with traps and bats. Use a torch to see the floor and avoid trap tiles.",
             "gif": "gif-ragnarok-labyrinth-final-03",
             "poster": "gif-ragnarok-labyrinth-final-03",
             "loop": "gif-ragnarok-labyrinth-final-03"
           },
           {
             "id": "final-04",
-            "title": "Qua hành lang tối · 2/2",
+            "title": "Through the dark hallway · 2/2",
             "gif": "gif-ragnarok-labyrinth-final-04",
             "poster": "gif-ragnarok-labyrinth-final-04",
             "loop": "gif-ragnarok-labyrinth-final-04"
           },
           {
             "id": "final-05",
-            "title": "Tới khu đấu trường · 1/4",
-            "direction": "Qua cầu và các bậc của phế tích tới khu có cây và Megaloceros. Kiểm tra shotgun, đạn và thuốc trước khi kích trận.",
+            "title": "Go to the arena · 1/4",
+            "direction": "Cross the bridge and steps of the ruins to the area with the tree and Megaloceros. Check shotguns, bullets and medicine before engaging in battle.",
             "gif": "gif-ragnarok-labyrinth-final-05",
             "poster": "gif-ragnarok-labyrinth-final-05",
             "loop": "gif-ragnarok-labyrinth-final-05"
           },
           {
             "id": "final-06",
-            "title": "Tới khu đấu trường · 2/4",
+            "title": "Go to the arena · 2/4",
             "gif": "gif-ragnarok-labyrinth-final-06",
             "poster": "gif-ragnarok-labyrinth-final-06",
             "loop": "gif-ragnarok-labyrinth-final-06"
           },
           {
             "id": "final-07",
-            "title": "Tới khu đấu trường · 3/4",
+            "title": "Go to the arena · 3/4",
             "gif": "gif-ragnarok-labyrinth-final-07",
             "poster": "gif-ragnarok-labyrinth-final-07",
             "loop": "gif-ragnarok-labyrinth-final-07"
           },
           {
             "id": "final-08",
-            "title": "Tới khu đấu trường · 4/4",
+            "title": "Go to the arena · 4/4",
             "gif": "gif-ragnarok-labyrinth-final-08",
             "poster": "gif-ragnarok-labyrinth-final-08",
             "loop": "gif-ragnarok-labyrinth-final-08"
@@ -1465,50 +1465,50 @@
       },
       {
         "id": "finish",
-        "title": "Hạ thú linh hồn & lấy hai Artifact cuối",
+        "title": "Defeat the soul beast & get the last two Artifact",
         "steps": [
           {
             "id": "finish-01",
-            "title": "Kích trận và dọn từng đợt · 1/2",
-            "direction": "Hạ Megaloceros để kích các đợt Direwolf và Direbear linh hồn. Dọn hết các đợt trước khi tìm đường lấy Artifact.",
+            "title": "Attack and clear each wave · 1/2",
+            "direction": "Kill Megaloceros to trigger Spirit Direwolf and Direbear waves. Clear every wave before looking for the Artifact route.",
             "gif": "gif-ragnarok-labyrinth-finish-01",
             "poster": "gif-ragnarok-labyrinth-finish-01",
             "loop": "gif-ragnarok-labyrinth-finish-01"
           },
           {
             "id": "finish-02",
-            "title": "Kích trận và dọn từng đợt · 2/2",
+            "title": "Attack and clear each wave · 2/2",
             "gif": "gif-ragnarok-labyrinth-finish-02",
             "poster": "gif-ragnarok-labyrinth-finish-02",
             "loop": "gif-ragnarok-labyrinth-finish-02"
           },
           {
             "id": "finish-03",
-            "title": "Dọn sạch đấu trường · 1/2",
-            "direction": "Tiếp tục dọn thú linh hồn. Chờ thông báo hoàn thành rồi mới đi qua vùng rào vừa được mở.",
+            "title": "Clear the arena · 1/2",
+            "direction": "Continue clearing Spirit creatures. Wait for the completion notification before crossing the newly opened barrier.",
             "gif": "gif-ragnarok-labyrinth-finish-03",
             "poster": "gif-ragnarok-labyrinth-finish-03",
             "loop": "gif-ragnarok-labyrinth-finish-03"
           },
           {
             "id": "finish-04",
-            "title": "Dọn sạch đấu trường · 2/2",
+            "title": "Clear the arena · 2/2",
             "gif": "gif-ragnarok-labyrinth-finish-04",
             "poster": "gif-ragnarok-labyrinth-finish-04",
             "loop": "gif-ragnarok-labyrinth-finish-04"
           },
           {
             "id": "finish-05",
-            "title": "Lấy Devious và Massive",
-            "direction": "Tới gian Artifact sau khi rào đã mở, lấy cả Devious và Massive. Kiểm tra túi trước khi đi ra.",
+            "title": "Get Devious and Massive",
+            "direction": "After the barrier opens, enter the Artifact chamber and collect both Devious and Massive. Check your inventory before leaving.",
             "gif": "gif-ragnarok-labyrinth-finish-05",
             "poster": "gif-ragnarok-labyrinth-finish-05",
             "loop": "gif-ragnarok-labyrinth-finish-05"
           },
           {
             "id": "finish-06",
-            "title": "Theo đường nước ra ngoài",
-            "direction": "Theo lối nước và cửa thấp ra ngoài như trong GIF. Lượt hang hoàn tất khi anh đã mang Artifact ra an toàn.",
+            "title": "Follow the water out",
+            "direction": "Follow the water passage and low exit as shown in the GIF. The cave run is complete once you have brought the Artifacts out safely.",
             "gif": "gif-ragnarok-labyrinth-finish-06",
             "poster": "gif-ragnarok-labyrinth-finish-06",
             "loop": "gif-ragnarok-labyrinth-finish-06"

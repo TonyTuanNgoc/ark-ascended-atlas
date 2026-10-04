@@ -4,11 +4,11 @@ import SceneKit
 struct BuildTemplate:Identifiable {
     let id,title:String;let width,depth,height:Int;let equipment:[String];let greenhouse:Bool
     static let all:[Self]=[
-        .init(id:"starter",title:"Nhà 2 × 4",width:2,depth:4,height:1,equipment:["simple-bed","storage-box","mortar-and-pestle","campfire"],greenhouse:false),
-        .init(id:"workshop",title:"Xưởng 4 × 4",width:4,depth:4,height:2,equipment:["smithy","fabricator","refining-forge","chemistry-bench","power-generator"],greenhouse:false),
-        .init(id:"storage",title:"Kho 3 × 3",width:3,depth:3,height:2,equipment:["large-storage-box","large-storage-box","vault","refrigerator"],greenhouse:false),
-        .init(id:"garden",title:"Nhà kính 3 × 3",width:3,depth:3,height:2,equipment:["large-crop-plot","large-crop-plot","large-crop-plot","compost-bin"],greenhouse:true),
-        .init(id:"forge",title:"Xưởng mở 4 × 4",width:4,depth:4,height:0,equipment:["industrial-forge","smithy","industrial-grill"],greenhouse:false)
+        .init(id:"starter",title:"Starter cottage",width:2,depth:4,height:1,equipment:["simple-bed","storage-box","mortar-and-pestle","campfire"],greenhouse:false),
+        .init(id:"workshop",title:"Workshop",width:4,depth:4,height:2,equipment:["smithy","fabricator","refining-forge","chemistry-bench","power-generator"],greenhouse:false),
+        .init(id:"storage",title:"Storage",width:3,depth:3,height:2,equipment:["large-storage-box","large-storage-box","vault","refrigerator"],greenhouse:false),
+        .init(id:"garden",title:"Greenhouse",width:3,depth:3,height:2,equipment:["large-crop-plot","large-crop-plot","large-crop-plot","compost-bin"],greenhouse:true),
+        .init(id:"forge",title:"Open forge",width:4,depth:4,height:0,equipment:["industrial-forge","smithy","industrial-grill"],greenhouse:false)
     ]
     var pieces:[StonePlacement] {
         var p:[StonePlacement]=[];let wall=greenhouse ? "greenhouse-wall":"stone-wall";let frame=greenhouse ? "greenhouse-doorframe":"stone-doorframe"
@@ -76,29 +76,32 @@ struct BuildItemPicker:View {
                             VStack {
                                 if let asset=item.asset {Image(asset).resizable().scaledToFit().frame(height:55)}
                                 Text(item.name).font(.caption).lineLimit(2)
-                                if group=="tools" || group=="resources" {Text(item.stations.first ?? "Thu thập").font(.caption2).foregroundStyle(.secondary)}
+                                if group=="tools" || group=="resources" {Text(item.stations.first ?? "Gather").font(.caption2).foregroundStyle(.secondary)}
                             }.frame(maxWidth:.infinity).frame(height:100).padding(8).background(Color.white.opacity(0.05),in:RoundedRectangle(cornerRadius:8))
                         }.buttonStyle(.plain).accessibilityIdentifier("build-item-"+item.id)
                     }
                 }.padding(18)
-            }.searchable(text:$search,prompt:"Tìm kết cấu, máy, đồ nghề")
-                .navigationTitle("Đồ xây dựng").navigationBarTitleDisplayMode(.inline)
+            }.searchable(text:$search,prompt:"Search structures, machines and tools")
+                .navigationTitle("Building library").navigationBarTitleDisplayMode(.inline)
                 .safeAreaInset(edge:.top) {
-                    Picker("Nhóm",selection:$group) {Text("Kết cấu").tag("structures");Text("Máy").tag("machines");Text("Đồ nghề").tag("tools");Text("Vật liệu").tag("resources")}.pickerStyle(.segmented).padding()
+                    Picker("Category",selection:$group) {Text("Structures").tag("structures");Text("Machines").tag("machines");Text("Tools").tag("tools");Text("Materials").tag("resources")}.pickerStyle(.segmented).padding()
                 }.sheet(item:$detail) {item in BuildBillView(pieces:[StonePlacement(kind:item.id,x:0,z:0,level:0,turn:0)])}
-                .toolbar {Button("Xong") {dismiss()}}
+                .toolbar {Button("Done") {dismiss()}}
         }
     }
 }
 
 struct BuildPartsPanel:View {
     let pieces:[StonePlacement];let openBill:()->Void;let close:()->Void
+    @State private var tab=0
     var body:some View {
         let counts=Dictionary(pieces.map {($0.kind,1)},uniquingKeysWith:+)
         VStack(alignment:.leading,spacing:10) {
-            HStack {Button("Vật liệu",action:openBill).accessibilityIdentifier("template-bill");Spacer();Button(action:close) {Image(systemName:"xmark")}}
+            Text("Design materials").font(.headline)
+            Picker("Materials",selection:$tab) {Text("Parts").tag(0);Text("Resources").tag(1);Text("Craft").tag(2)}.pickerStyle(.segmented)
             ScrollView {
                 VStack(spacing:6) {
+                    if tab==0 {
                     ForEach(counts.keys.sorted(),id:\.self) {id in
                         let item=BuildCraftCatalogue.shared.item(id)
                         HStack {
@@ -106,8 +109,17 @@ struct BuildPartsPanel:View {
                             Text(item?.name ?? id).font(.caption).lineLimit(2);Spacer();Text("×\(counts[id] ?? 0)").font(.caption.bold())
                         }.padding(6).background(Color.white.opacity(0.05),in:RoundedRectangle(cornerRadius:8)).accessibilityElement(children:.combine).accessibilityIdentifier("template-part-"+id).accessibilityValue(String(counts[id] ?? 0))
                     }
+                    } else if tab==1 {resourceRows(BuildBill.direct(pieces))} else {
+                        let e=BuildBill.expand(BuildBill.direct(pieces))
+                        ForEach(e.steps) {step in VStack(alignment:.leading) {Text("\(step.name) ×\(step.batches*step.recipe.output)").font(.caption.bold());Text(step.recipe.station).font(.caption2).foregroundStyle(.cyan);resourceRows(step.recipe.ingredients.mapValues {$0*step.batches})}}
+                        Text("Raw materials").font(.subheadline.bold());resourceRows(e.raw)
+                    }
+                    if pieces.contains(where:{BuildBill.ingredient($0.kind)==nil}) {Text("Unverified recipes excluded from totals.").font(.caption).foregroundStyle(.orange)}
                 }
             }
         }.padding(10).background(Color.white.opacity(0.04),in:RoundedRectangle(cornerRadius:12))
+    }
+    private func resourceRows(_ amounts:[String:Int])->some View {
+        VStack(spacing:8) {ForEach(amounts.keys.sorted(),id:\.self) {name in HStack {FactTile(match:VisualFacts.items([name])[0]).frame(width:75);Spacer();Text("×\(amounts[name] ?? 0)").font(.caption.bold())}}}
     }
 }

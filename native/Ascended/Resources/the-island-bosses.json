@@ -4,7 +4,7 @@
     "name": "Broodmother Lysrix",
     "kind": "Guardian · The Island",
     "imageAsset": "Boss-broodmother",
-    "location": "Single Player: Green Obelisk; bấm tribute để dịch chuyển tới arena. Không phải boss đi lang thang ngoài map.",
+    "location": "Single Player: Green Obelisk; use the tribute to teleport to the arena. This is not a boss roaming the map.",
     "artifactIDs": [
       "hunter",
       "clever",
@@ -54,19 +54,19 @@
         ]
       }
     ],
-    "summary": "Nhện guardian của The Island; có ba cấp Gamma/Beta/Alpha. Hạ boss lấy trophy để mở Tek Cave.",
+    "summary": "The Island's spider guardian with three tiers: Gamma/Beta/Alpha. Defeat it for a trophy to open Tek Cave.",
     "strategy": [
-      "Gợi ý: Megatherium tận dụng buff khi xử lý minion, Yutyrannus hỗ trợ courage; cần saddle và imprint tốt.",
-      "Giữ đội hình tránh bị kẹt trong minion; survivor có shotgun và thuốc dự phòng.",
-      "Arena thường tối đa 20 tame / 10 survivor; kiểm tra creature whitelist và timer ngay trong game."
+      "Suggestion: Megatherium uses its buff from killing minions, supported by Yutyrannus courage; good saddles and imprinting are needed.",
+      "Keep formation to avoid getting stuck among minions; the survivor carries a shotgun and spare medicine.",
+      "A standard arena allows up to 20 tames / 10 survivors; check the creature whitelist and timer in game."
     ],
-    "rewardsNote": "Element theo bảng Ascended; có trophy/flag đúng cấp và Tekgram. Tek Foundation/Replicator ở Gamma, Tek Boots ở Beta, Tek Helmet ở Alpha; xem bảng unlock nguồn để tra từng cấu kiện.",
+    "rewardsNote": "Element follows the Ascended table, with difficulty-specific trophies/flags and Tekgrams. Tek Foundation/Replicator at Gamma, Tek Boots at Beta, Tek Helmet at Alpha; consult the source unlock table for each component.",
     "kit": [
-      "Đủ artifact / trophy và tribute đúng cấp",
-      "Tame breed/imprint, saddle đã kiểm tra",
-      "Toàn đội hồi đầy máu, đủ food",
-      "Giáp và Medical Brew dự phòng",
-      "Kiểm tra cổng, giới hạn tame và timer trong save"
+      "Required artifacts / trophies and tributes for the chosen difficulty",
+      "Bred and imprinted tames with checked saddles",
+      "Fully healed team with enough food",
+      "Spare armor and Medical Brew",
+      "Check the portal, tame limits, and timer in your save"
     ],
     "sourceURL": "https://ark.wiki.gg/wiki/Broodmother_Lysrix",
     "entranceID": null
@@ -76,7 +76,7 @@
     "name": "Megapithecus",
     "kind": "Guardian · The Island",
     "imageAsset": "Boss-megapithecus",
-    "location": "Single Player: Blue Obelisk; dịch chuyển tới arena tuyết.",
+    "location": "Single Player: Blue Obelisk; teleport to the snow arena.",
     "artifactIDs": [
       "brute",
       "devourer",
@@ -134,19 +134,19 @@
         ]
       }
     ],
-    "summary": "Guardian khỉ khổng lồ; trận riêng trên The Island, khác trận đôi của The Center.",
+    "summary": "Giant ape guardian; a separate fight on The Island, unlike The Center's double-boss fight.",
     "strategy": [
-      "Gợi ý: Rex / Therizino với saddle tốt, Yutyrannus hỗ trợ.",
-      "Giữ tame tránh vực và cầu hẹp; kéo boss về khu đứng an toàn thay vì dồn cả đội qua mép.",
-      "Đá ném và minion gây nguy hiểm cho survivor; giáp, thuốc và vũ khí tầm xa dự phòng."
+      "Suggestion: Rex / Therizino with good saddles, supported by Yutyrannus.",
+      "Keep tames away from cliffs and narrow bridges; pull the boss to safe ground rather than push the whole team across an edge.",
+      "Thrown rocks and minions threaten survivors; bring spare armor, medicine, and ranged weapons."
     ],
-    "rewardsNote": "Element Ascended, trophy/flag và Tekgram; xem bảng unlock của arena đúng map.",
+    "rewardsNote": "Ascended Element, trophies/flags, and Tekgrams; consult the arena unlock table for the correct map.",
     "kit": [
-      "Đủ artifact / trophy và tribute đúng cấp",
-      "Tame breed/imprint, saddle đã kiểm tra",
-      "Toàn đội hồi đầy máu, đủ food",
-      "Giáp và Medical Brew dự phòng",
-      "Kiểm tra cổng, giới hạn tame và timer trong save"
+      "Required artifacts / trophies and tributes for the chosen difficulty",
+      "Bred and imprinted tames with checked saddles",
+      "Fully healed team with enough food",
+      "Spare armor and Medical Brew",
+      "Check the portal, tame limits, and timer in your save"
     ],
     "sourceURL": "https://ark.wiki.gg/wiki/Megapithecus",
     "entranceID": null
@@ -156,7 +156,7 @@
     "name": "Dragon",
     "kind": "Guardian · The Island",
     "imageAsset": "Boss-dragon",
-    "location": "Single Player: Red Obelisk; dịch chuyển vào Dragon Arena.",
+    "location": "Single Player: Red Obelisk; teleport into Dragon Arena.",
     "artifactIDs": [
       "cunning",
       "immune",
@@ -223,19 +223,19 @@
         ]
       }
     ],
-    "summary": "Guardian rồng của The Island; không dùng Nunatak của Ragnarok hoặc trận Center thay cho boss này.",
+    "summary": "The Island's dragon guardian; Ragnarok's Nunatak and the Center fight do not substitute for this boss.",
     "strategy": [
-      "Gợi ý: Therizino và Sweet Vegetable Cake, Yutyrannus hỗ trợ; cần food/cake đủ và saddle tốt.",
-      "Hơi lửa nguy hiểm kể cả khi tame có nhiều HP; tránh lava và quản lý khi boss bay / tiếp đất.",
-      "Survivor ưu tiên giáp, thuốc và shotgun; không áp một ngưỡng HP/damage chung cho mọi settings."
+      "Suggestion: Therizino with Sweet Vegetable Cake, supported by Yutyrannus; enough food/cakes and good saddles are needed.",
+      "Fire breath remains dangerous even for high-HP tames; avoid lava and manage the team during flight/landing phases.",
+      "Survivors should prioritize armor, medicine, and a shotgun; no single HP/damage threshold applies to every setting."
     ],
-    "rewardsNote": "Element theo bảng Ascended; trophy/flag và Tekgram. Thắng ba guardian cùng cấp là điều kiện tiến tới Tek Cave.",
+    "rewardsNote": "Element follows the Ascended table, with trophies/flags and Tekgrams. Defeating all three guardians at the same difficulty allows progression to Tek Cave.",
     "kit": [
-      "Đủ artifact / trophy và tribute đúng cấp",
-      "Tame breed/imprint, saddle đã kiểm tra",
-      "Toàn đội hồi đầy máu, đủ food",
-      "Giáp và Medical Brew dự phòng",
-      "Kiểm tra cổng, giới hạn tame và timer trong save"
+      "Required artifacts / trophies and tributes for the chosen difficulty",
+      "Bred and imprinted tames with checked saddles",
+      "Fully healed team with enough food",
+      "Spare armor and Medical Brew",
+      "Check the portal, tame limits, and timer in your save"
     ],
     "sourceURL": "https://ark.wiki.gg/wiki/Dragon",
     "entranceID": null
@@ -245,7 +245,7 @@
     "name": "Overseer",
     "kind": "Ascension · The Island",
     "imageAsset": "Boss-overseer",
-    "location": "Đi qua Tek Cave trên đỉnh Volcano rồi Hall of History tới arena; không triệu hồi ở Obelisk. Điểm map bên dưới là tâm khu Tek Cave theo Wikily, chưa xác minh cửa; không phải vị trí Overseer.",
+    "location": "Pass through Tek Cave at the Volcano summit, then Hall of History to the arena; do not summon at an Obelisk. The map point below is the Tek Cave area center from Wikily, with the entrance unverified; it is not Overseer's location.",
     "artifactIDs": [],
     "levels": [
       60,
@@ -383,20 +383,20 @@
         ]
       }
     ],
-    "summary": "Đích ascension của The Island sau ba guardian; Tek Cave và trận Overseer là hai phần cần chuẩn bị cùng nhau.",
+    "summary": "The Island ascension destination after the three guardians; prepare for both Tek Cave and Overseer.",
     "strategy": [
-      "Tổ chức tame thành từng nhóm, khảo sát lava và đường cua; cửa Tek Cave đóng sau thời gian ngắn.",
-      "Wiki ghi 50 tame trong Tek Cave, teleporter tối đa 20 tame mỗi lượt và có thể thêm đợt trước khi khởi động boss. Kiểm tra rule trong save; đội solo gọn 20 là lựa chọn quản lý, không phải khẳng định giới hạn tổng arena.",
-      "Overseer đổi dạng guardian và gọi drone / defense unit. Chuẩn bị giáp, shotgun, ammo và khả năng di chuyển; không đứng lại khi boss đổi pha.",
-      "Single Player có hành vi timer khác server; kiểm tra timer trong save. Trophy mở cửa Tek Cave không bị tiêu thụ theo Wiki."
+      "Organize tames into groups and survey lava and bends; the Tek Cave entrance closes after a short time.",
+      "The wiki lists 50 tames in Tek Cave, a teleporter limit of 20 tames per trip, and additional trips before starting the boss. Check rules in your save; a compact 20-creature solo team is a management choice, not a claim about the arena's total limit.",
+      "Overseer changes guardian forms and summons drones / defense units. Prepare armor, shotgun, ammo, and mobility; keep moving when the boss changes phases.",
+      "Single Player timers behave differently from servers; check the timer in your save. Tek Cave entrance trophies are not consumed according to the wiki."
     ],
-    "rewardsNote": "Không rơi Element. Ascension tăng trần level theo cấp (+5 / +10 / +15); đọc cơ chế chuyển survivor sau trận và giữ bản sao save trước chuyến cuối.",
+    "rewardsNote": "No Element drops. Ascension raises the level cap by difficulty (+5 / +10 / +15); read the survivor-transfer mechanics after the fight and back up your save before the final trip.",
     "kit": [
-      "Đủ artifact / trophy và tribute đúng cấp",
-      "Tame breed/imprint, saddle đã kiểm tra",
-      "Toàn đội hồi đầy máu, đủ food",
-      "Giáp và Medical Brew dự phòng",
-      "Kiểm tra cổng, giới hạn tame và timer trong save"
+      "Required artifacts / trophies and tributes for the chosen difficulty",
+      "Bred and imprinted tames with checked saddles",
+      "Fully healed team with enough food",
+      "Spare armor and Medical Brew",
+      "Check the portal, tame limits, and timer in your save"
     ],
     "sourceURL": "https://ark.wiki.gg/wiki/Tek_Cave",
     "entranceID": "entrance-tek-0"

@@ -29,7 +29,7 @@ struct BaseLocationsScreen: View {
                 Text("Base Location").font(.largeTitle.bold()).accessibilityIdentifier("baseLocationsTitle")
                 if let catalogue = map.bases {
                     BaseSpotGrid(catalogue: catalogue)
-                } else { Text("Map này chưa có bộ vị trí base được nghiên cứu.") }
+                } else { Text("No researched base locations are available for this map yet.") }
             }.padding(24).frame(maxWidth: 1100).frame(maxWidth: .infinity)
         }.background(Color(red: 0.025, green: 0.045, blue: 0.065))
     }
@@ -58,7 +58,7 @@ struct BaseTerrainPreview: View {
                     .accessibilityIdentifier("base-photo-" + spot.id)
             } else {
                 ZStack { Color.white.opacity(0.04); Image(systemName: "photo").font(.largeTitle).foregroundStyle(.secondary) }
-                    .accessibilityLabel("Chưa có ảnh đã đối chiếu")
+                    .accessibilityLabel("No verified image available")
             }
         }
     }
@@ -74,14 +74,14 @@ struct BaseLocationDetail: View {
                 BaseTerrainPreview(spot: spot).frame(height: 250).clipShape(RoundedRectangle(cornerRadius: 20))
                 GPSBadge(coordinates: spot.coordinates).font(.title2.bold()).monospacedDigit().foregroundStyle(.orange)
                 HStack {
-                    NavigationLink(value: GuideDestination.map("base-" + spot.id)) { Label("Xem trên bản đồ", systemImage: "map.fill") }.labelStyle(.iconOnly).accessibilityLabel("Xem trên bản đồ").accessibilityIdentifier("show-base-" + spot.id)
+                    NavigationLink(value: GuideDestination.map("base-" + spot.id)) { Label("Show on map", systemImage: "map.fill") }.labelStyle(.iconOnly).accessibilityLabel("Show on map").accessibilityIdentifier("show-base-" + spot.id)
                     Link(destination: spot.videoURL) { Label("YouTube · " + spot.timestamp, systemImage: "play.rectangle.fill") }.labelStyle(.iconOnly).accessibilityLabel("Xem video").accessibilityIdentifier("baseVideo")
                 }.buttonStyle(.bordered)
                 VisualBrief(text: spot.why).cardStyle()
-                block("Điểm mạnh", spot.pros)
-                block("Đánh đổi & nguy hiểm", spot.cons)
-                block("Bố trí base & chuẩn bị", spot.layout)
-                GuideChecklist(title: "Trước khi chuyển main base", items: ["Khảo sát GPS, spawn nguy hiểm và quyền build", "Thử đường vận chuyển Dino lớn / Argy", "Kiểm tra nước, sân breed và tuyến farm", "Đặt giường / kho dự phòng trước", "Giữ nguồn resource và cửa hang thông thoáng"], key: "base-" + spot.id)
+                block("Strengths", spot.pros)
+                block("Tradeoffs & dangers", spot.cons)
+                block("Base layout & preparation", spot.layout)
+                GuideChecklist(title: "Before moving your main base", items: ["Check GPS, dangerous spawns and building permissions", "Test transport routes for large creatures and Argentavis", "Check water, breeding space and farming routes", "Place backup beds and storage first", "Keep resource spawns and cave entrances clear"], key: "base-" + spot.id)
             }.padding(24).frame(maxWidth: 1000).frame(maxWidth: .infinity)
         }.navigationTitle(spot.name).navigationBarTitleDisplayMode(.inline)
     }

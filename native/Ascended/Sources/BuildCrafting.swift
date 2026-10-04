@@ -58,25 +58,25 @@ struct BuildBillView:View {
                             if let recipe=BuildBill.ingredient(id) {
                                 materialStrip(recipe.mapValues {$0*n})
                                 Label(item?.stations.first ?? "Inventory",systemImage:"hammer.fill").font(.caption).foregroundStyle(.secondary)
-                            } else {Text("Công thức chưa xác minh").font(.caption).foregroundStyle(.orange)}
+                            } else {Text("Recipe not verified").font(.caption).foregroundStyle(.orange)}
                         }.padding(12).background(Color.white.opacity(0.05),in:RoundedRectangle(cornerRadius:10)).accessibilityElement(children:.contain).accessibilityIdentifier("bill-piece-"+id)
                     }
-                    Text("Tổng cần chế tạo").font(.headline)
+                    Text("Crafting requirements").font(.headline)
                     materialStrip(direct,ids:true)
                     if !expanded.steps.isEmpty {
-                        Text("Craft nguyên liệu").font(.headline)
+                        Text("Craft ingredients").font(.headline)
                         ForEach(expanded.steps) {step in
                             HStack(alignment:.top) {
                                 VStack(alignment:.leading) {Text(step.name+" ×\(step.batches*step.recipe.output)").font(.headline);Text(step.recipe.station).font(.caption).foregroundStyle(.cyan)}
                                 Spacer();materialStrip(step.recipe.ingredients.mapValues {$0*step.batches})
                             }.padding(12).background(Color.white.opacity(0.05),in:RoundedRectangle(cornerRadius:10)).accessibilityElement(children:.contain).accessibilityIdentifier("craft-step-"+step.name)
                         }
-                        Text("Nguyên liệu cuối tuyến").font(.headline);materialStrip(expanded.raw)
+                        Text("Raw materials").font(.headline);materialStrip(expanded.raw)
                     }
-                    Text("Engram thường · nguyên liệu trung gian theo Mortar/Fabricator/Forge · chưa gồm nhiên liệu, máy chưa sở hữu hay hệ số blueprint. Chitin/Keratin, Wood/Fungal Wood và Polymer thay thế: dùng một lựa chọn tương đương.").font(.caption).foregroundStyle(.secondary)
-                    if pieces.contains(where:{BuildBill.ingredient($0.kind)==nil}) {Text("Tổng chưa gồm các món chưa xác minh công thức.").foregroundStyle(.orange).font(.caption)}
+                    Text("Standard engrams. Fuel, missing crafting stations and blueprint multipliers are excluded. Alternative ingredients use one equivalent option.").font(.caption).foregroundStyle(.secondary)
+                    if pieces.contains(where:{BuildBill.ingredient($0.kind)==nil}) {Text("Totals exclude items with unverified recipes.").foregroundStyle(.orange).font(.caption)}
                 }.padding(20)
-            }.navigationTitle("Vật liệu").navigationBarTitleDisplayMode(.inline).toolbar {Button("Xong") {dismiss()}}
+            }.navigationTitle("Materials").navigationBarTitleDisplayMode(.inline).toolbar {Button("Done") {dismiss()}}
         }
     }
     private func materialStrip(_ amounts:[String:Int],ids:Bool=false)->some View {

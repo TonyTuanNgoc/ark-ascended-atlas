@@ -1,0 +1,37 @@
+{
+  "info" : {
+    "arguments" : [
+      "devicectl",
+      "device",
+      "install",
+      "app",
+      "--device",
+      "8FA117DA-854A-5EEB-AEFC-EE54036237A9",
+      "/Volumes/TONY SSD/ASCENDED_MEDIA/builds/Ascended-0.18.0-19-delivery/Ascended.app",
+      "--json-output",
+      "/tmp/ascended19-install-final.json"
+    ],
+    "commandType" : "devicectl.device.install.app",
+    "environment" : {
+      "TERM" : "dumb"
+    },
+    "jsonVersion" : 3,
+    "outcome" : "success",
+    "version" : "518.31"
+  },
+  "result" : {
+    "deviceIdentifier" : "8FA117DA-854A-5EEB-AEFC-EE54036237A9",
+    "installedApplications" : [
+      {
+        "bundleID" : "com.tonytuanngoc.ascended",
+        "databaseSequenceNumber" : 1560,
+        "databaseUUID" : "19CF7B10-CBC0-413B-8917-89A5A54D31EF",
+        "installationURL" : "file:///private/var/containers/Bundle/Application/FEF8CC58-F6C9-48EC-95DE-F0327B1EF4A4/Ascended.app/",
+        "launchServicesIdentifier" : "unknown",
+        "options" : {
+
+        }
+      }
+    ]
+  }
+}

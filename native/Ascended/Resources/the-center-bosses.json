@@ -4,7 +4,7 @@
     "name": "Broodmother Lysrix",
     "kind": "The Center Arena",
     "imageAsset": "Boss-broodmother",
-    "location": "Triệu hồi The Center Arena ở Obelisk; Broodmother và Megapithecus cùng xuất hiện. Ba terminal ASA có vị trí riêng ở dưới.",
+    "location": "Summon The Center Arena at an Obelisk; Broodmother and Megapithecus appear together. The three ASA terminal locations are listed below.",
     "artifactIDs": [
       "brute",
       "clever",
@@ -101,19 +101,19 @@
         ]
       }
     ],
-    "summary": "Một trong hai guardian của cùng trận The Center Arena; không phải một trận riêng như The Island.",
+    "summary": "One of the two guardians in The Center Arena fight; this is not a separate fight as it is on The Island.",
     "strategy": [
-      "Gợi ý: Rex hoặc Therizino và Yutyrannus; cân nhắc Megatherium để xử lý nhện. Chuẩn bị theo áp lực hai boss cùng trận.",
-      "Giữ đội hình, chủ động kéo từng boss khi địa hình cho phép; quản lý minion, đá ném và nhện.",
-      "Kiểm tra tối đa 20 tame / 10 survivor, creature whitelist và timer; không mặc định flyer / tame quá lớn được vào."
+      "Suggested team: Rex or Therizino with Yutyrannus; consider Megatherium to handle the spiders. Prepare for the pressure of fighting two bosses together.",
+      "Keep the team together and pull each boss separately when terrain allows; manage minions, thrown rocks, and spiders.",
+      "Check the limit of 20 tames / 10 survivors, the creature whitelist, and the timer; do not assume flyers or oversized tames can enter."
     ],
-    "rewardsNote": "Phải hạ cả hai guardian. Wiki arena ghi tổng Element Gamma/Beta/Alpha 72/200/442; trang Element ghi Gamma 92. Chưa chốt Gamma vì hai nguồn mâu thuẫn; kiểm tra loot trong game. Trophy/flag và Tekgram theo cấp; không có ascension của The Island.",
+    "rewardsNote": "Both guardians must be defeated. The arena wiki lists total Element for Gamma/Beta/Alpha as 72/200/442; the Element page lists Gamma as 92. Gamma remains unconfirmed because the two sources conflict; check the loot in game. Trophies/flags and Tekgrams depend on difficulty; there is no The Island ascension.",
     "kit": [
-      "Đủ artifact / trophy và tribute đúng cấp",
-      "Tame breed/imprint, saddle đã kiểm tra",
-      "Toàn đội hồi đầy máu, đủ food",
-      "Giáp và Medical Brew dự phòng",
-      "Kiểm tra cổng, giới hạn tame và timer trong save"
+      "Required artifacts / trophies and tributes for the chosen difficulty",
+      "Bred and imprinted tames with checked saddles",
+      "Fully healed team with enough food",
+      "Spare armor and Medical Brew",
+      "Check the portal, tame limits, and timer in your save"
     ],
     "sourceURL": "https://ark.wiki.gg/wiki/The_Center_Arena_%28The_Center%29",
     "entranceID": null
@@ -123,7 +123,7 @@
     "name": "Megapithecus",
     "kind": "The Center Arena",
     "imageAsset": "Boss-megapithecus",
-    "location": "Triệu hồi The Center Arena ở Obelisk; Broodmother và Megapithecus cùng xuất hiện. Ba terminal ASA có vị trí riêng ở dưới.",
+    "location": "Summon The Center Arena at an Obelisk; Broodmother and Megapithecus appear together. The three ASA terminal locations are listed below.",
     "artifactIDs": [
       "brute",
       "clever",
@@ -220,19 +220,19 @@
         ]
       }
     ],
-    "summary": "Một trong hai guardian của cùng trận The Center Arena; không phải một trận riêng như The Island.",
+    "summary": "One of the two guardians in The Center Arena fight; this is not a separate fight as it is on The Island.",
     "strategy": [
-      "Gợi ý: Rex hoặc Therizino và Yutyrannus; cân nhắc Megatherium để xử lý nhện. Chuẩn bị theo áp lực hai boss cùng trận.",
-      "Giữ đội hình, chủ động kéo từng boss khi địa hình cho phép; quản lý minion, đá ném và nhện.",
-      "Kiểm tra tối đa 20 tame / 10 survivor, creature whitelist và timer; không mặc định flyer / tame quá lớn được vào."
+      "Suggested team: Rex or Therizino with Yutyrannus; consider Megatherium to handle the spiders. Prepare for the pressure of fighting two bosses together.",
+      "Keep the team together and pull each boss separately when terrain allows; manage minions, thrown rocks, and spiders.",
+      "Check the limit of 20 tames / 10 survivors, the creature whitelist, and the timer; do not assume flyers or oversized tames can enter."
     ],
-    "rewardsNote": "Phải hạ cả hai guardian. Wiki arena ghi tổng Element Gamma/Beta/Alpha 72/200/442; trang Element ghi Gamma 92. Chưa chốt Gamma vì hai nguồn mâu thuẫn; kiểm tra loot trong game. Trophy/flag và Tekgram theo cấp; không có ascension của The Island.",
+    "rewardsNote": "Both guardians must be defeated. The arena wiki lists total Element for Gamma/Beta/Alpha as 72/200/442; the Element page lists Gamma as 92. Gamma remains unconfirmed because the two sources conflict; check the loot in game. Trophies/flags and Tekgrams depend on difficulty; there is no The Island ascension.",
     "kit": [
-      "Đủ artifact / trophy và tribute đúng cấp",
-      "Tame breed/imprint, saddle đã kiểm tra",
-      "Toàn đội hồi đầy máu, đủ food",
-      "Giáp và Medical Brew dự phòng",
-      "Kiểm tra cổng, giới hạn tame và timer trong save"
+      "Required artifacts / trophies and tributes for the chosen difficulty",
+      "Bred and imprinted tames with checked saddles",
+      "Fully healed team with enough food",
+      "Spare armor and Medical Brew",
+      "Check the portal, tame limits, and timer in your save"
     ],
     "sourceURL": "https://ark.wiki.gg/wiki/The_Center_Arena_%28The_Center%29",
     "entranceID": null

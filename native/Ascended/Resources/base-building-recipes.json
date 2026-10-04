@@ -18,7 +18,7 @@
         }
       ],
       "sourceURL": "https://wikily.gg/ark-survival-ascended/items/stone-foundation/",
-      "editionNote": "Nguồn ASA riêng, công thức engram thường cho 1 vật phẩm; không gồm nhiên liệu chạy máy hoặc nguyên liệu craft trung gian. Chưa đo trong save cá nhân; mod/override có thể đổi công thức."
+      "editionNote": "ASA-specific source; the standard engram recipe produces 1 item. Excludes machine fuel and intermediate crafting materials. Not measured in a personal save; mods/overrides may change the recipe."
     },
     {
       "id": "stone-wall",
@@ -38,7 +38,7 @@
         }
       ],
       "sourceURL": "https://wikily.gg/ark-survival-ascended/items/stone-wall-doorways-windowframe/",
-      "editionNote": "ASA: biến thể Wall của Stone Wall, Doorways & Windowframe; 1 vật phẩm cho 1 đoạn tường thường. Nguồn ASA riêng, công thức engram thường cho 1 vật phẩm; không gồm nhiên liệu chạy máy hoặc nguyên liệu craft trung gian. Chưa đo trong save cá nhân; mod/override có thể đổi công thức."
+      "editionNote": "ASA: Wall variant of Stone Wall, Doorways & Windowframe; 1 item produces 1 regular wall segment. ASA-specific source; the standard engram recipe produces 1 item. Excludes machine fuel and intermediate crafting materials. Not measured in a personal save; mods/overrides may change the recipe."
     },
     {
       "id": "stone-ceiling",
@@ -58,7 +58,7 @@
         }
       ],
       "sourceURL": "https://wikily.gg/ark-survival-ascended/items/stone-ceiling-hatchframe/",
-      "editionNote": "ASA: biến thể Ceiling của Stone Ceiling & Hatchframe; 1 vật phẩm cho 1 ô trần thường. Nguồn ASA riêng, công thức engram thường cho 1 vật phẩm; không gồm nhiên liệu chạy máy hoặc nguyên liệu craft trung gian. Chưa đo trong save cá nhân; mod/override có thể đổi công thức."
+      "editionNote": "ASA: Ceiling variant of Stone Ceiling & Hatchframe; 1 item produces 1 regular ceiling tile. ASA-specific source; the standard engram recipe produces 1 item. Excludes machine fuel and intermediate crafting materials. Not measured in a personal save; mods/overrides may change the recipe."
     },
     {
       "id": "stone-doorframe",
@@ -78,7 +78,7 @@
         }
       ],
       "sourceURL": "https://wikily.gg/ark-survival-ascended/items/stone-wall-doorways-windowframe/",
-      "editionNote": "ASA: biến thể Doorway của Stone Wall, Doorways & Windowframe. Không dùng công thức Doorframe riêng của ASE (30 Stone/16 Wood/12 Thatch). Nguồn ASA riêng, công thức engram thường cho 1 vật phẩm; không gồm nhiên liệu chạy máy hoặc nguyên liệu craft trung gian. Chưa đo trong save cá nhân; mod/override có thể đổi công thức."
+      "editionNote": "ASA: Doorway variant of Stone Wall, Doorways & Windowframe. Do not use ASE's separate Doorframe recipe (30 Stone/16 Wood/12 Thatch). ASA-specific source; the standard engram recipe produces 1 item. Excludes machine fuel and intermediate crafting materials. Not measured in a personal save; mods/overrides may change the recipe."
     },
     {
       "id": "reinforced-wooden-door",
@@ -98,7 +98,7 @@
         }
       ],
       "sourceURL": "https://wikily.gg/ark-survival-ascended/items/stone-reinforced-doors-windows/",
-      "editionNote": "ASA: biến thể cửa thường của Stone Reinforced Doors & Windows; không phải cổng Dino hoặc cửa cellar. Nguồn ASA riêng, công thức engram thường cho 1 vật phẩm; không gồm nhiên liệu chạy máy hoặc nguyên liệu craft trung gian. Chưa đo trong save cá nhân; mod/override có thể đổi công thức."
+      "editionNote": "ASA: regular door variant of Stone Reinforced Doors & Windows; not a Dino gate or cellar door. ASA-specific source; the standard engram recipe produces 1 item. Excludes machine fuel and intermediate crafting materials. Not measured in a personal save; mods/overrides may change the recipe."
     },
     {
       "id": "smithy",
@@ -122,7 +122,7 @@
         }
       ],
       "sourceURL": "https://wikily.gg/ark-survival-ascended/items/smithy/",
-      "editionNote": "Nguồn ASA riêng, công thức engram thường cho 1 vật phẩm; không gồm nhiên liệu chạy máy hoặc nguyên liệu craft trung gian. Chưa đo trong save cá nhân; mod/override có thể đổi công thức."
+      "editionNote": "ASA-specific source; the standard engram recipe produces 1 item. Excludes machine fuel and intermediate crafting materials. Not measured in a personal save; mods/overrides may change the recipe."
     },
     {
       "id": "fabricator",
@@ -150,7 +150,7 @@
         }
       ],
       "sourceURL": "https://wikily.gg/ark-survival-ascended/items/fabricator/",
-      "editionNote": "Nguồn ASA riêng, công thức engram thường cho 1 vật phẩm; không gồm nhiên liệu chạy máy hoặc nguyên liệu craft trung gian. Chưa đo trong save cá nhân; mod/override có thể đổi công thức."
+      "editionNote": "ASA-specific source; the standard engram recipe produces 1 item. Excludes machine fuel and intermediate crafting materials. Not measured in a personal save; mods/overrides may change the recipe."
     },
     {
       "id": "power-generator",
@@ -166,7 +166,7 @@
         }
       ],
       "sourceURL": "https://wikily.gg/ark-survival-ascended/items/power-generator/",
-      "editionNote": "Nguồn ASA riêng, công thức engram thường cho 1 vật phẩm; không gồm nhiên liệu chạy máy hoặc nguyên liệu craft trung gian. Chưa đo trong save cá nhân; mod/override có thể đổi công thức."
+      "editionNote": "ASA-specific source; the standard engram recipe produces 1 item. Excludes machine fuel and intermediate crafting materials. Not measured in a personal save; mods/overrides may change the recipe."
     },
     {
       "id": "refining-forge",
@@ -194,7 +194,7 @@
         }
       ],
       "sourceURL": "https://wikily.gg/ark-survival-ascended/items/refining-forge/",
-      "editionNote": "Nguồn ASA riêng, công thức engram thường cho 1 vật phẩm; không gồm nhiên liệu chạy máy hoặc nguyên liệu craft trung gian. Chưa đo trong save cá nhân; mod/override có thể đổi công thức."
+      "editionNote": "ASA-specific source; the standard engram recipe produces 1 item. Excludes machine fuel and intermediate crafting materials. Not measured in a personal save; mods/overrides may change the recipe."
     },
     {
       "id": "mortar-and-pestle",
@@ -210,7 +210,7 @@
         }
       ],
       "sourceURL": "https://wikily.gg/ark-survival-ascended/items/mortar-and-pestle/",
-      "editionNote": "Nguồn ASA riêng, công thức engram thường cho 1 vật phẩm; không gồm nhiên liệu chạy máy hoặc nguyên liệu craft trung gian. Chưa đo trong save cá nhân; mod/override có thể đổi công thức."
+      "editionNote": "ASA-specific source; the standard engram recipe produces 1 item. Excludes machine fuel and intermediate crafting materials. Not measured in a personal save; mods/overrides may change the recipe."
     },
     {
       "id": "preserving-bin",
@@ -234,7 +234,7 @@
         }
       ],
       "sourceURL": "https://wikily.gg/ark-survival-ascended/items/preserving-bin/",
-      "editionNote": "Nguồn ASA riêng, công thức engram thường cho 1 vật phẩm; không gồm nhiên liệu chạy máy hoặc nguyên liệu craft trung gian. Chưa đo trong save cá nhân; mod/override có thể đổi công thức."
+      "editionNote": "ASA-specific source; the standard engram recipe produces 1 item. Excludes machine fuel and intermediate crafting materials. Not measured in a personal save; mods/overrides may change the recipe."
     },
     {
       "id": "simple-bed",
@@ -258,7 +258,7 @@
         }
       ],
       "sourceURL": "https://wikily.gg/ark-survival-ascended/items/simple-bed/",
-      "editionNote": "Nguồn ASA riêng, công thức engram thường cho 1 vật phẩm; không gồm nhiên liệu chạy máy hoặc nguyên liệu craft trung gian. Chưa đo trong save cá nhân; mod/override có thể đổi công thức."
+      "editionNote": "ASA-specific source; the standard engram recipe produces 1 item. Excludes machine fuel and intermediate crafting materials. Not measured in a personal save; mods/overrides may change the recipe."
     }
   ]
 }

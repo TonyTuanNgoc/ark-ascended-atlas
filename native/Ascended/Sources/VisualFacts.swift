@@ -45,11 +45,11 @@ enum VisualFacts {
             let after = source.substring(from: NSMaxRange(range))
             let leading = before.range(of: "[0-9]+(?:[–-][0-9]+)?\\s*(?:×|x)?\\s*$", options: .regularExpression)
             let trailing = after.range(of: "^\\s*[×x]\\s*[0-9]+(?:[–-][0-9]+)?", options: .regularExpression)
-            let words = before.range(of: "(?i)(một|hai)\\s*$", options: .regularExpression).map { String(before[$0]).trimmingCharacters(in: .whitespaces).lowercased() }
-            let number = leading.map { String(before[$0]) } ?? trailing.map { String(after[$0]) } ?? words.map { $0 == "hai" ? "2" : "1" }
+            let words = before.range(of: "(?i)(one|two|một|hai)\\s*$", options: .regularExpression).map { String(before[$0]).trimmingCharacters(in: .whitespaces).lowercased() }
+            let number = leading.map { String(before[$0]) } ?? trailing.map { String(after[$0]) } ?? words.map { ($0 == "hai" || $0 == "two") ? "2" : "1" }
             let quantity = number?.filter { $0.isNumber || $0 == "–" || $0 == "-" }
             if ["hazard-hp", "hazard-melee", "hazard-level", "hazard-stamina"].contains(fact.id) {
-                let value = after.range(of: "^\\s*(?:nền\\s*)?[0-9][0-9.,]*(?:k|%)?", options: .regularExpression).map { String(after[$0]).replacingOccurrences(of: "nền", with: "").trimmingCharacters(in: .whitespaces) }
+                let value = after.range(of: "^\\s*(?:(?:base|nền)\\s*)?[0-9][0-9.,]*(?:k|%)?", options: .regularExpression).map { String(after[$0]).replacingOccurrences(of: "nền", with: "").replacingOccurrences(of: "base", with: "").trimmingCharacters(in: .whitespaces) }
                 return FactMatch(fact: fact, quantity: nil, metricValue: value)
             }
             return FactMatch(fact: fact, quantity: quantity?.isEmpty == false ? quantity : nil)
@@ -115,12 +115,12 @@ struct VisualBrief: View {
         VStack(alignment: .leading, spacing: 10) {
             if !matches.isEmpty {
                 FactGrid(matches: matches)
-                if text.localizedCaseInsensitiveContains("/ con") {
+                if (text.localizedCaseInsensitiveContains("/ con") || text.localizedCaseInsensitiveContains("per creature") || text.localizedCaseInsensitiveContains("per tame")) {
                     HStack(spacing: 5) { Text("/"); Image(systemName: "pawprint.fill"); Text("1") }
-                        .font(.caption.bold()).foregroundStyle(.cyan).accessibilityElement(children: .ignore).accessibilityLabel("Số lượng cho mỗi Dino").accessibilityIdentifier("unit-per-dino")
+                        .font(.caption.bold()).foregroundStyle(.cyan).accessibilityElement(children: .ignore).accessibilityLabel("Quantity per creature").accessibilityIdentifier("unit-per-dino")
                 }
                 if let condition = text.components(separatedBy: ". ").first(where: { sentence in
-                    ["không", "cần", "nếu", "tùy", "giới hạn"].contains { sentence.localizedCaseInsensitiveContains($0) }
+                    ["not", "require", "if", "depend", "limit", "cannot", "không", "cần", "nếu", "tùy", "giới hạn"].contains { sentence.localizedCaseInsensitiveContains($0) }
                 }), condition.count > 25 {
                     Label(condition, systemImage: "exclamationmark.circle").font(.caption).foregroundStyle(.orange).fixedSize(horizontal: false, vertical: true)
                 }
@@ -151,7 +151,7 @@ struct GPSBadge: View {
             .padding(.horizontal, 10).padding(.vertical, 7)
             .background(.cyan.opacity(0.08), in: RoundedRectangle(cornerRadius: 9))
             .fixedSize().accessibilityElement(children: .ignore)
-            .accessibilityLabel(numbers.count == 2 ? "Vĩ độ \(numbers[0]), kinh độ \(numbers[1])" : coordinates)
+            .accessibilityLabel(numbers.count == 2 ? "Latitude \(numbers[0]), longitude \(numbers[1])" : coordinates)
             .accessibilityIdentifier("gps-" + numbers.joined(separator: "-"))
     }
 }
@@ -180,7 +180,7 @@ struct RoutePreparation: View {
     }
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
-            Text("Chuẩn bị cho tuyến").font(.headline)
+            Text("Route preparation").font(.headline)
             FactGrid(matches: facts)
         }.cardStyle()
     }
@@ -190,8 +190,8 @@ struct VisualTeam: View {
     let text: String
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
-            ForEach(Array(text.components(separatedBy: "; hoặc ").enumerated()), id: \.offset) { index, option in
-                if index > 0 { Text("Hoặc").font(.caption).foregroundStyle(.secondary) }
+            ForEach(Array(text.replacingOccurrences(of: "; hoặc ", with: "; or ").components(separatedBy: "; or ").enumerated()), id: \.offset) { index, option in
+                if index > 0 { Text("Or").font(.caption).foregroundStyle(.secondary) }
                 let prepared = option.replacingOccurrences(of: "\\+\\s*(Yuty|Daeodon|pig)(?![\\p{L}])", with: "+ 1 $1", options: .regularExpression)
                 VisualBrief(text: prepared)
             }

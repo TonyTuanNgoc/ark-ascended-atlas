@@ -64,7 +64,7 @@ struct FarmDetails: View {
                     }
                 } }
             if !spot.risks.isEmpty { Label(spot.risks.joined(separator: " · "), systemImage: "exclamationmark.triangle.fill").font(.caption).foregroundStyle(.orange) }
-            if let url = spot.videoURL { Link(destination: url) { Label("Xem đường đi", systemImage: "play.rectangle.fill") }.buttonStyle(.bordered).accessibilityIdentifier("farmVideo") }
+            if let url = spot.videoURL { Link(destination: url) { Label("Watch the route", systemImage: "play.rectangle.fill") }.buttonStyle(.bordered).accessibilityIdentifier("farmVideo") }
         }
     }
 }
@@ -78,7 +78,7 @@ struct ResourceFarmingScreen: View {
                 ForEach(spots) { spot in
                     VStack(alignment: .leading, spacing: 10) {
                         FarmDetails(spot: spot)
-                        NavigationLink { MapScreen(initialFocus: "farm-" + spot.id) } label: { Label("Bản đồ", systemImage: "map.fill") }.buttonStyle(.bordered)
+                        NavigationLink { MapScreen(initialFocus: "farm-" + spot.id) } label: { Label("Map", systemImage: "map.fill") }.buttonStyle(.bordered)
                     }.cardStyle().accessibilityIdentifier("farm-card-" + spot.id)
                 }
             }.padding(20)
@@ -89,16 +89,16 @@ struct ResourceFarmingScreen: View {
                             Image(asset).resizable().scaledToFit().frame(maxHeight: 220).clipShape(RoundedRectangle(cornerRadius: 12))
                         }
                         VisualBrief(text: row.resource)
-                        Text(row.reason.components(separatedBy: "; không gán").first?.components(separatedBy: ". Không phải node").first ?? row.reason).font(.callout)
+                        Text(row.reason).font(.callout)
                         if let method = row.method, !method.isEmpty { Text(method).font(.callout) }
                         if let kit = row.kit, !kit.isEmpty { ScrollView(.horizontal, showsIndicators: false) { HStack { ForEach(VisualFacts.items(kit)) { FactTile(match: $0) } } } }
                         if let risks = row.risks, !risks.isEmpty { Label(risks.joined(separator: " · "), systemImage: "exclamationmark.triangle.fill").font(.caption).foregroundStyle(.orange) }
-                        if let url = row.videoURL { Link(destination: url) { Label("Xem cách thu hoạch", systemImage: "play.rectangle.fill") }.buttonStyle(.bordered) }
+                        if let url = row.videoURL { Link(destination: url) { Label("Watch harvesting guide", systemImage: "play.rectangle.fill") }.buttonStyle(.bordered) }
                         if row.status == "boss" { NavigationLink { BossCampaignScreen() } label: { Label("Boss", systemImage: "shield.lefthalf.filled") }.buttonStyle(.bordered) }
                     }.cardStyle().accessibilityElement(children: .contain).accessibilityIdentifier("acquisition-" + row.map + "-" + row.resource)
                 }
                 if spots.isEmpty {
-                    Text("Tài nguyên trên " + map.name).font(.title2.bold())
+                    Text("Resources on " + map.name).font(.title2.bold())
                     LazyVGrid(columns: [GridItem(.adaptive(minimum: 120))]) {
                         ForEach(MapResources.types(in: map), id: \.self) { name in
                             VStack {
@@ -107,10 +107,10 @@ struct ResourceFarmingScreen: View {
                             }.cardStyle()
                         }
                     }
-                    NavigationLink { MapScreen(initialResources: true) } label: { Label("Mở điểm tài nguyên", systemImage: "map.fill") }.buttonStyle(.borderedProminent)
+                    NavigationLink { MapScreen(initialResources: true) } label: { Label("Open resource locations", systemImage: "map.fill") }.buttonStyle(.borderedProminent)
                 }
             }.padding(20)
 
-        }.searchable(text: $search, prompt: "Tìm tài nguyên")
+        }.searchable(text: $search, prompt: "Search resources")
     }
 }

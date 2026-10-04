@@ -27,15 +27,15 @@ struct ExplorationLibrary: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 22) {
                 Text("Artifact & Hang").font(.largeTitle.bold())
-                Text("\(map.exploration?.artifacts.count ?? 0) artifact · \(map.exploration?.routes.count ?? 0) tuyến khám phá · " + map.name + " Ascended").font(.headline).foregroundStyle(.cyan)
-                Text("GPS artifact là điểm lấy vật phẩm. GPS cửa hang là lối tiếp cận, không phải vị trí artifact. Tọa độ cửa hang theo hướng dẫn cộng đồng có thể lệch vài phần mười; dùng địa hình để nhận diện.").foregroundStyle(.secondary)
+                Text("\(map.exploration?.artifacts.count ?? 0) artifacts · \(map.exploration?.routes.count ?? 0) exploration routes · " + map.name + " Ascended").font(.headline).foregroundStyle(.cyan)
+                Text("Artifact GPS marks the item pickup location. Cave-entrance GPS marks the approach, rather than the artifact. Community entrance coordinates may differ by a few tenths; identify the entrance using the terrain.").foregroundStyle(.secondary)
                 if map.exploration?.routes.isEmpty == true {
                     ForEach(map.exploration?.artifacts ?? []) { artifact in
                         HStack(spacing: 14) {
                             if !artifact.imageAsset.isEmpty { Image(artifact.imageAsset).resizable().scaledToFit().frame(width: 52, height: 64) }
                             VStack(alignment: .leading, spacing: 6) { Text(artifact.name).font(.headline); GPSBadge(coordinates: artifact.coordinates).foregroundStyle(.cyan) }
                             Spacer()
-                            NavigationLink(value: GuideDestination.map("artifact-" + artifact.id)) { Image(systemName: "map.fill") }.accessibilityLabel("Xem artifact trên bản đồ")
+                            NavigationLink(value: GuideDestination.map("artifact-" + artifact.id)) { Image(systemName: "map.fill") }.accessibilityLabel("Show artifact on map")
                         }.cardStyle()
                     }
                     if map.exploration?.artifacts.isEmpty == true, let record = map.expansion {
@@ -45,14 +45,14 @@ struct ExplorationLibrary: View {
                 LazyVGrid(columns: [GridItem(.adaptive(minimum: 240, maximum: 340), spacing: 16)], spacing: 16) {
                 ForEach((map.exploration?.routes ?? []).filter { search.isEmpty || $0.name.localizedStandardContains(search) || $0.artifacts(in: map).contains { $0.name.localizedStandardContains(search) } }) { route in
                     NavigationLink(value: GuideDestination.cave(route.id)) {
-                        SquareGuideTile(title: route.name, subtitle: route.artifacts(in: map).map { $0.name.replacingOccurrences(of: "Artifact of the ", with: "") }.joined(separator: " · "), gps: route.entrances.first?.coordinates ?? "Biển sâu") {
+                        SquareGuideTile(title: route.name, subtitle: route.artifacts(in: map).map { $0.name.replacingOccurrences(of: "Artifact of the ", with: "") }.joined(separator: " · "), gps: route.entrances.first?.coordinates ?? "Deep ocean") {
                             Image(route.imageAsset).resizable().scaledToFill()
                         }
                     }.buttonStyle(.plain).accessibilityIdentifier("route-" + route.id)
                 }
                 }
             }.padding(24).frame(maxWidth: 1100).frame(maxWidth: .infinity)
-        }.searchable(text: $search, prompt: "Tìm hang hoặc artifact")
+        }.searchable(text: $search, prompt: "Search caves or artifacts")
             .background(Color(red: 0.025, green: 0.045, blue: 0.065))
     }
 }
@@ -83,7 +83,7 @@ struct CaveRouteDetail: View {
                                     GPSBadge(coordinates: entrance.coordinates)
                                 }
                                 NavigationLink(value: GuideDestination.map("entrance-" + entrance.id)) { Image(systemName: "map") }
-                                    .accessibilityLabel("Xem cửa hang trên bản đồ").accessibilityIdentifier("show-entrance-" + entrance.id)
+                                    .accessibilityLabel("Show cave entrance on map").accessibilityIdentifier("show-entrance-" + entrance.id)
                             }
                         }
                     }
@@ -100,13 +100,13 @@ struct CaveRouteDetail: View {
                         showFullVideo.toggle()
                     } label: {
                         HStack {
-                            Label("Video đầy đủ", systemImage: "play.rectangle")
+                            Label("Full video", systemImage: "play.rectangle")
                             Spacer()
                             Image(systemName: showFullVideo ? "chevron.up" : "chevron.down")
                         }.contentShape(Rectangle())
                     }.buttonStyle(.plain)
                         .accessibilityIdentifier("full-cave-video-" + route.id)
-                        .accessibilityValue(showFullVideo ? "Đã mở" : "Đã đóng")
+                        .accessibilityValue(showFullVideo ? "Expanded" : "Collapsed")
                     if showFullVideo { CaveVideoTimeline(guide: video) }
                 }
 
@@ -129,17 +129,17 @@ struct ArtifactDetail: View {
                 Image(artifact.imageAsset).resizable().scaledToFit().frame(height: 160).frame(maxWidth: .infinity)
                 Text(artifact.name).font(.largeTitle.bold())
                 VStack(alignment: .leading, spacing: 12) {
-                    Text("Vị trí artifact").font(.headline)
+                    Text("Artifact location").font(.headline)
                     GPSBadge(coordinates: artifact.coordinates).font(.title2.bold()).monospacedDigit().foregroundStyle(.cyan).textSelection(.enabled)
-                    NavigationLink(value: GuideDestination.map("artifact-" + artifact.id)) { Label("Xem artifact trên bản đồ", systemImage: "map") }.labelStyle(.iconOnly).accessibilityLabel("Xem Artifact trên bản đồ")
+                    NavigationLink(value: GuideDestination.map("artifact-" + artifact.id)) { Label("Show artifact on map", systemImage: "map") }.labelStyle(.iconOnly).accessibilityLabel("Show artifact on map")
                         .accessibilityIdentifier("show-artifact-" + artifact.id)
                 }.cardStyle()
                 if let route = artifact.route(in: map) {
-                    NavigationLink(value: GuideDestination.cave(route.id)) { Label("Hang & đường vào · " + route.name, systemImage: "mountain.2.fill") }.labelStyle(.iconOnly).accessibilityLabel("Hang và đường vào").cardStyle()
+                    NavigationLink(value: GuideDestination.cave(route.id)) { Label("Cave & entrance · " + route.name, systemImage: "mountain.2.fill") }.labelStyle(.iconOnly).accessibilityLabel("Cave and entrance").cardStyle()
                 }
-                VisualBrief(text: map == .ragnarok ? "Nunatak cần 1 artifact này cho mỗi lần triệu hồi ở cả Gamma, Beta và Alpha." : "Mục Boss ghi rõ artifact này thuộc bộ tribute nào. Không phải mọi artifact trên map đều dùng trong mỗi trận.").cardStyle()
-                Toggle("Đã lấy artifact này", isOn: completion).accessibilityIdentifier("collected-" + artifact.id).cardStyle()
-                VisualBrief(text: "Danh sách đánh dấu của anh; bỏ đánh dấu sau khi dùng để triệu hồi. Nếu Single Player chưa có artifact, hãy để khu vực được tải và kiểm tra lại sau; không mặc định rằng artifact đã bị xóa.").font(.caption).foregroundStyle(.secondary)
+                VisualBrief(text: map == .ragnarok ? "Nunatak requires one of this artifact for each summon at Gamma, Beta and Alpha." : "The Boss section identifies which tribute set uses this artifact. Each encounter does not require every artifact on the map.").cardStyle()
+                Toggle("Collected this artifact", isOn: completion).accessibilityIdentifier("collected-" + artifact.id).cardStyle()
+                VisualBrief(text: "Your collection checklist; uncheck an artifact after using it to summon. If an artifact has not appeared in Single Player, keep the area loaded and check again later; do not assume it has been removed.").font(.caption).foregroundStyle(.secondary)
             }.padding(24).frame(maxWidth: 1000).frame(maxWidth: .infinity)
         }.navigationTitle(artifact.name).navigationBarTitleDisplayMode(.inline)
     }
@@ -178,7 +178,7 @@ struct ChecklistToggleStyle: ToggleStyle {
                 Image(systemName: configuration.isOn ? "checkmark.circle.fill" : "circle").foregroundStyle(configuration.isOn ? .cyan : .gray)
                 configuration.label.foregroundStyle(.primary); Spacer()
             }.contentShape(Rectangle())
-        }.buttonStyle(.plain).accessibilityValue(configuration.isOn ? "Đã chuẩn bị" : "Chưa chuẩn bị")
+        }.buttonStyle(.plain).accessibilityValue(configuration.isOn ? "Prepared" : "Not prepared")
     }
 }
 extension ToggleStyle where Self == ChecklistToggleStyle { static var checkboxCompat: ChecklistToggleStyle { ChecklistToggleStyle() } }

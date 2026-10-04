@@ -112,24 +112,24 @@
       "entrances": [
         {
           "id": "north-ice-0",
-          "label": "Cửa phía bắc núi tuyết",
+          "label": "Entrance north of the snowy mountain",
           "lat": 21.9,
           "lon": 27.1
         }
       ],
       "boss": "",
-      "notes": "Hai artifact trong tuyến băng phía bắc; cần chuẩn bị lạnh, vực và đoạn nước.",
+      "notes": "Two artifacts on the northern ice route; prepare for cold, cliffs, and water sections.",
       "kit": [
-        "Fur và đồ giữ ấm",
-        "Medical Brew, giáp/vũ khí dự phòng",
-        "Thăm dò khe hẹp và vực trước khi đưa tame",
-        "Đọc giới hạn hang; không mặc định có thể dùng cryopod",
-        "SCUBA cho nhánh nước"
+        "Fur and warm gear",
+        "Medical Brew, spare armor/weapon",
+        "Explore narrow gaps and abysses before inserting tame",
+        "Read cave limits; No default cryopod can be used",
+        "SCUBA for the water branch"
       ],
       "sourceURL": "https://ark.wiki.gg/wiki/North_Ice_Cave_%28The_Center%29",
       "entranceSourceURL": "https://primagames.com/gaming/all-cave-locations-in-the-center-in-ark-survival-ascended",
       "imageAsset": "TheCenterMap",
-      "imageCaption": "Địa hình The Center Ascended · Wikily; không phải sơ đồ bên trong hang."
+      "imageCaption": "The Center Ascended terrain · Wikily; not an interior cave map."
     },
     {
       "id": "south-ice",
@@ -140,23 +140,23 @@
       "entrances": [
         {
           "id": "south-ice-0",
-          "label": "Cửa phía nam núi tuyết",
+          "label": "Entrance south of the snowy mountain",
           "lat": 59.6,
           "lon": 20.6
         }
       ],
       "boss": "",
-      "notes": "Tuyến Skylord trong hang băng phía nam. Nhiều độ cao và chỗ rơi; giữ đường rút.",
+      "notes": "Skylord route through the southern ice cave. Multiple elevations and drops; keep a retreat route.",
       "kit": [
-        "Fur và đồ giữ ấm",
-        "Medical Brew, giáp/vũ khí dự phòng",
-        "Thăm dò khe hẹp và vực trước khi đưa tame",
-        "Đọc giới hạn hang; không mặc định có thể dùng cryopod"
+        "Fur and warm gear",
+        "Medical Brew, spare armor/weapon",
+        "Explore narrow gaps and abysses before inserting tame",
+        "Read cave limits; No default cryopod can be used"
       ],
       "sourceURL": "https://ark.wiki.gg/wiki/South_Ice_Cave_%28The_Center%29",
       "entranceSourceURL": "https://primagames.com/gaming/all-cave-locations-in-the-center-in-ark-survival-ascended",
       "imageAsset": "TheCenterMap",
-      "imageCaption": "Địa hình The Center Ascended · Wikily; không phải sơ đồ bên trong hang."
+      "imageCaption": "The Center Ascended terrain · Wikily; not an interior cave map."
     },
     {
       "id": "lava-oasis",
@@ -167,24 +167,24 @@
       "entrances": [
         {
           "id": "lava-oasis-0",
-          "label": "Cửa phía tây đảo núi lửa",
+          "label": "Entrance west of the volcanic island",
           "lat": 20.2,
           "lon": 46.3
         }
       ],
       "boss": "",
-      "notes": "Tuyến Hunter nóng và có nhánh nước. Tên Lava Oasis không có nghĩa phải băng qua hồ lava.",
+      "notes": "A hot Hunter route with a water branch. The name Lava Oasis does not mean you must cross a lava lake.",
       "kit": [
-        "Vũ khí và đạn dự phòng",
-        "Giáp, Medical Brew, Stimulant",
-        "Lesser Antidote và đồ sửa",
-        "Nguồn sáng; đánh dấu đường rút",
-        "Đồ chống nóng, nước và dụng cụ lặn dự phòng"
+        "Spare weapons and ammo",
+        "Armor, Medical Brew, Stimulant",
+        "Lesser Antidote and repair supplies",
+        "Light source; mark the withdrawal path",
+        "Heat protection, water, and spare diving gear"
       ],
       "sourceURL": "https://ark.wiki.gg/wiki/Lava_Oasis_Cave_%28The_Center%29",
       "entranceSourceURL": "https://primagames.com/gaming/all-cave-locations-in-the-center-in-ark-survival-ascended",
       "imageAsset": "TheCenterMap",
-      "imageCaption": "Địa hình The Center Ascended · Wikily; không phải sơ đồ bên trong hang."
+      "imageCaption": "The Center Ascended terrain · Wikily; not an interior cave map."
     },
     {
       "id": "lava",
@@ -196,24 +196,24 @@
       "entrances": [
         {
           "id": "lava-0",
-          "label": "Cửa phía đông đảo núi lửa",
+          "label": "Entrance east of the volcanic island",
           "lat": 15.0,
           "lon": 62.0
         }
       ],
       "boss": "",
-      "notes": "Hai artifact trong tuyến núi lửa. Chuẩn bị vận động qua địa hình cao, nóng; khảo sát hạn chế flyer/cryopod theo save.",
+      "notes": "Two artifacts on the volcanic route. Prepare for high, hot terrain; survey flyer/cryopod restrictions in your save.",
       "kit": [
-        "Vũ khí và đạn dự phòng",
-        "Giáp, Medical Brew, Stimulant",
-        "Lesser Antidote và đồ sửa",
-        "Nguồn sáng; đánh dấu đường rút",
-        "Grapple, parachute và đồ chống nóng"
+        "Spare weapons and ammo",
+        "Armor, Medical Brew, Stimulant",
+        "Lesser Antidote and repair supplies",
+        "Light source; mark the withdrawal path",
+        "Grapple, parachute, and heat protection"
       ],
       "sourceURL": "https://ark.wiki.gg/wiki/Lava_Cave_%28The_Center%29",
       "entranceSourceURL": "https://primagames.com/gaming/all-cave-locations-in-the-center-in-ark-survival-ascended",
       "imageAsset": "TheCenterMap",
-      "imageCaption": "Địa hình The Center Ascended · Wikily; không phải sơ đồ bên trong hang."
+      "imageCaption": "The Center Ascended terrain · Wikily; not an interior cave map."
     },
     {
       "id": "jungle",
@@ -224,42 +224,42 @@
       "entrances": [
         {
           "id": "jungle-0",
-          "label": "Lối tiếp cận 1",
+          "label": "Approach route 1",
           "lat": 47.7,
           "lon": 58.0
         },
         {
           "id": "jungle-1",
-          "label": "Lối tiếp cận 2",
+          "label": "Approach route 2",
           "lat": 51.5,
           "lon": 65.4
         },
         {
           "id": "jungle-2",
-          "label": "Lối tiếp cận 3",
+          "label": "Approach route 3",
           "lat": 53.1,
           "lon": 62.1
         },
         {
           "id": "jungle-3",
-          "label": "Lối tiếp cận 4",
+          "label": "Approach route 4",
           "lat": 54.5,
           "lon": 57.7
         }
       ],
       "boss": "",
-      "notes": "Hệ hang Immune nhiều lối vào. Các GPS là những cửa hướng dẫn đã liệt kê, không khẳng định mọi cửa; mang SCUBA nếu đi nhánh nước.",
+      "notes": "The Immune cave system has multiple entrances. The GPS points are the entrances listed in the guide, not a claim to cover every entrance; bring SCUBA for the water branch.",
       "kit": [
-        "Vũ khí và đạn dự phòng",
-        "Giáp, Medical Brew, Stimulant",
-        "Lesser Antidote và đồ sửa",
-        "Nguồn sáng; đánh dấu đường rút",
+        "Spare weapons and ammo",
+        "Armor, Medical Brew, Stimulant",
+        "Lesser Antidote and repair supplies",
+        "Light source; mark the withdrawal path",
         "SCUBA"
       ],
       "sourceURL": "https://ark.wiki.gg/wiki/Jungle_Cave_%28The_Center%29",
       "entranceSourceURL": "https://primagames.com/gaming/all-cave-locations-in-the-center-in-ark-survival-ascended",
       "imageAsset": "TheCenterMap",
-      "imageCaption": "Địa hình The Center Ascended · Wikily; không phải sơ đồ bên trong hang."
+      "imageCaption": "The Center Ascended terrain · Wikily; not an interior cave map."
     },
     {
       "id": "cliffside",
@@ -270,30 +270,30 @@
       "entrances": [
         {
           "id": "cliffside-0",
-          "label": "Lối phía nam",
+          "label": "Southern approach",
           "lat": 57.7,
           "lon": 11.6
         },
         {
           "id": "cliffside-1",
-          "label": "Lối phía bắc",
+          "label": "Northern approach",
           "lat": 23.5,
           "lon": 12.2
         }
       ],
       "boss": "",
-      "notes": "Vùng hang lớn dọc vách phía tây; artifact Cunning nằm sâu bên trong. Không dùng tâm artifact làm cửa hang.",
+      "notes": "A large cave area along the western cliff; Cunning lies deep inside. Do not treat the artifact center as the cave entrance.",
       "kit": [
-        "Vũ khí và đạn dự phòng",
-        "Giáp, Medical Brew, Stimulant",
-        "Lesser Antidote và đồ sửa",
-        "Nguồn sáng; đánh dấu đường rút",
-        "Tame di chuyển và đường quay về"
+        "Spare weapons and ammo",
+        "Armor, Medical Brew, Stimulant",
+        "Lesser Antidote and repair supplies",
+        "Light source; mark the withdrawal path",
+        "Travel tame and return route"
       ],
       "sourceURL": "https://ark.wiki.gg/wiki/Cliffside_Cavern_%28The_Center%29",
       "entranceSourceURL": "https://primagames.com/gaming/all-cave-locations-in-the-center-in-ark-survival-ascended",
       "imageAsset": "TheCenterMap",
-      "imageCaption": "Địa hình The Center Ascended · Wikily; không phải sơ đồ bên trong hang."
+      "imageCaption": "The Center Ascended terrain · Wikily; not an interior cave map."
     },
     {
       "id": "floating",
@@ -304,24 +304,24 @@
       "entrances": [
         {
           "id": "floating-0",
-          "label": "Cửa đảo nổi",
+          "label": "Floating island entrance",
           "lat": 38.1,
           "lon": 32.5
         }
       ],
       "boss": "",
-      "notes": "Tuyến Devious trong đảo nổi; chuẩn bị độ cao và đường rút. Chỉ dùng cửa đã phân biệt được với lối Underground World.",
+      "notes": "Devious route inside the floating island; prepare for heights and retreat. Use only an entrance distinguished from Underground World access.",
       "kit": [
-        "Vũ khí và đạn dự phòng",
-        "Giáp, Medical Brew, Stimulant",
-        "Lesser Antidote và đồ sửa",
-        "Nguồn sáng; đánh dấu đường rút",
+        "Spare weapons and ammo",
+        "Armor, Medical Brew, Stimulant",
+        "Lesser Antidote and repair supplies",
+        "Light source; mark the withdrawal path",
         "Parachute / Grapple"
       ],
       "sourceURL": "https://ark.wiki.gg/wiki/The_Center_Cave_%28The_Center%29",
       "entranceSourceURL": "https://primagames.com/gaming/all-cave-locations-in-the-center-in-ark-survival-ascended",
       "imageAsset": "TheCenterMap",
-      "imageCaption": "Địa hình The Center Ascended · Wikily; không phải sơ đồ bên trong hang."
+      "imageCaption": "The Center Ascended terrain · Wikily; not an interior cave map."
     },
     {
       "id": "underworld",
@@ -332,30 +332,30 @@
       "entrances": [
         {
           "id": "underworld-0",
-          "label": "Cửa tiếp cận 1",
+          "label": "Approach entrance 1",
           "lat": 54.4,
           "lon": 48.8
         },
         {
           "id": "underworld-1",
-          "label": "Cửa tiếp cận 2",
+          "label": "Approach entrance 2",
           "lat": 53.4,
           "lon": 49.8
         }
       ],
       "boss": "",
-      "notes": "Tuyến Pack trong thế giới ngầm. Đánh dấu từng nhánh và điểm rơi; đây không phải cửa The Center Cave ở đảo nổi.",
+      "notes": "Pack route in the underground world. Mark branches and drops; this is not The Center Cave entrance on the floating island.",
       "kit": [
-        "Vũ khí và đạn dự phòng",
-        "Giáp, Medical Brew, Stimulant",
-        "Lesser Antidote và đồ sửa",
-        "Nguồn sáng; đánh dấu đường rút",
-        "Bộ di chuyển và nguồn sáng"
+        "Spare weapons and ammo",
+        "Armor, Medical Brew, Stimulant",
+        "Lesser Antidote and repair supplies",
+        "Light source; mark the withdrawal path",
+        "Movement kit and light source"
       ],
       "sourceURL": "https://ark.wiki.gg/wiki/Underground_World_%28The_Center%29",
       "entranceSourceURL": "https://primagames.com/gaming/all-cave-locations-in-the-center-in-ark-survival-ascended",
       "imageAsset": "TheCenterMap",
-      "imageCaption": "Địa hình The Center Ascended · Wikily; không phải sơ đồ bên trong hang."
+      "imageCaption": "The Center Ascended terrain · Wikily; not an interior cave map."
     },
     {
       "id": "trench",
@@ -365,17 +365,17 @@
       ],
       "entrances": [],
       "boss": "",
-      "notes": "Brute ở rãnh biển sâu phía đông nam, không có cửa hang. Điểm artifact là đích lặn; chuẩn bị khí, độ sâu và tame biển.",
+      "notes": "Brute is in the deep southeastern ocean trench, with no cave entrance. The artifact point is the dive destination; prepare air, depth, and an ocean tame.",
       "kit": [
-        "SCUBA đủ bền và bộ dự phòng",
-        "Tame biển phù hợp, saddle và food",
-        "Medical Brew, nguồn sáng",
-        "Khảo sát độ sâu, điện và đường thoát"
+        "SCUBA is durable enough and has a spare set",
+        "Suitable ocean tames, saddle and food",
+        "Medical Brew, light source",
+        "Survey depth, electricity and escape routes"
       ],
       "sourceURL": "https://ark.wiki.gg/wiki/Southeastern_Trench_%28The_Center%29",
       "entranceSourceURL": "https://primagames.com/gaming/all-cave-locations-in-the-center-in-ark-survival-ascended",
       "imageAsset": "TheCenterMap",
-      "imageCaption": "Địa hình The Center Ascended · Wikily; không phải sơ đồ bên trong hang."
+      "imageCaption": "The Center Ascended terrain · Wikily; not an interior cave map."
     }
   ],
   "obelisks": [

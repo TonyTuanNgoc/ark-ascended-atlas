@@ -21,14 +21,14 @@ struct ExpansionProfile: View {
     let record: ExpansionMap
     var body: some View {
         VStack(alignment: .leading, spacing: 18) {
-            Label(record.included ? "Gồm trong ASA" : "Cần DLC", systemImage: record.included ? "checkmark.seal.fill" : "cart.fill").foregroundStyle(record.included ? .cyan : .orange)
+            Label(record.included ? "Included in ASA" : "Requires DLC", systemImage: record.included ? "checkmark.seal.fill" : "cart.fill").foregroundStyle(record.included ? .cyan : .orange)
             Text(record.purchase).font(.callout)
             Text(record.storyRole).foregroundStyle(.secondary)
-            brief("Mục tiêu", items: record.goals)
-            brief("Chuẩn bị", items: record.preparation)
+            brief("Goals", items: record.goals)
+            brief("Preparation", items: record.preparation)
             brief("Boss", items: record.bosses)
-            brief("Địa hình", items: record.biomes)
-            brief("Dino nổi bật", items: record.signatureCreatures)
+            brief("Terrain", items: record.biomes)
+            brief("Signature creatures", items: record.signatureCreatures)
             ForEach(ExpansionCatalog.shared.dlcs.filter { record.dlcIDs.contains($0.id) }) { dlc in
                 VStack(alignment: .leading, spacing: 5) {
                     Text(dlc.name).font(.headline)
@@ -56,7 +56,7 @@ struct ExpansionCatalogScreen: View {
                         ForEach(ExpansionCatalog.shared.maps.filter { $0.group == group }.sorted { $0.order < $1.order }) { record in
                             DisclosureGroup {
                                 if record.status == "available", let map = ArkMap(rawValue: record.id) {
-                                    Button { chooseMap(map) } label: { Label("Chọn map", systemImage: "map.fill") }.buttonStyle(.borderedProminent)
+                                    Button { chooseMap(map) } label: { Label("Choose map", systemImage: "map.fill") }.buttonStyle(.borderedProminent)
                                 }
                                 ExpansionProfile(record: record)
                             } label: {
@@ -64,11 +64,11 @@ struct ExpansionCatalogScreen: View {
                                     MapBadge(id: record.id)
                                     Text(record.name).font(.headline)
                                     Spacer()
-                                    Text(record.status == "available" ? (record.included ? "Gồm trong ASA" : "DLC") : record.status == "upcoming" ? "Sắp ra" : "Chưa xác nhận").font(.caption).foregroundStyle(.secondary)
+                                    Text(record.status == "available" ? (record.included ? "Included in ASA" : "DLC") : record.status == "upcoming" ? "Upcoming" : "Unconfirmed").font(.caption).foregroundStyle(.secondary)
                                 }
                             }.padding(.vertical, 8)
                         }
-                    } label: { Text(group == "story" ? "Map cốt truyện" : group == "extra" ? "Map khám phá" : "Map chưa mở").font(.headline) }.cardStyle()
+                    } label: { Text(group == "story" ? "Story Maps" : group == "extra" ? "Exploration Maps" : "Unavailable Maps").font(.headline) }.cardStyle()
                 }
                 DisclosureGroup {
                     ForEach(ExpansionCatalog.shared.dlcs) { dlc in
@@ -78,7 +78,7 @@ struct ExpansionCatalogScreen: View {
                             if let url = URL(string: dlc.storeURL) { Link("Steam", destination: url).buttonStyle(.bordered) }
                         } label: { Text(dlc.name).font(.headline) }.padding(.vertical, 8)
                     }
-                } label: { Text("Nội dung mua thêm").font(.headline) }.cardStyle()
+                } label: { Text("Additional paid content").font(.headline) }.cardStyle()
             }.padding(24).frame(maxWidth: 1100).frame(maxWidth: .infinity)
         }
     }

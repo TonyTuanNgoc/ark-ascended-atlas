@@ -24,7 +24,7 @@ struct CaveVideoTimeline: View {
     @State private var playing: VideoSelection?
     var body: some View {
         VStack(alignment: .leading, spacing: 14) {
-            Label("Video đường đi", systemImage: "play.rectangle.fill").font(.title2.bold())
+            Label("Route video", systemImage: "play.rectangle.fill").font(.title2.bold())
             ForEach(Array(guide.chapters.enumerated()), id: \.element.id) { index, chapter in
                 Button {
                     playing = VideoSelection(url: URL(string: "https://www.youtube.com/watch?v=\(guide.videoID)&t=\(chapter.start)s")!)

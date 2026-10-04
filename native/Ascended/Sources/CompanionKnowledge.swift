@@ -24,36 +24,52 @@ struct StoryChapter: Decodable, Identifiable { let id, title, summary, playGoal:
 struct StoryGuideScreen: View {
     var body: some View {
         ScrollView {
-            VStack(alignment: .leading, spacing: 16) {
-                Text("Hiểu thế giới ARK").font(.largeTitle.bold())
+            VStack(alignment: .leading, spacing: 20) {
+                VStack(alignment: .leading, spacing: 10) {
+                    Label("ARK STORY GUIDE", systemImage: "book.closed.fill").font(.caption.bold()).foregroundStyle(.cyan)
+                    Text("Understand the world of ARK").font(.largeTitle.bold())
+                    Text("Explore the setting, follow the story across the ARKs, and meet the people behind the journey.").font(.title3).foregroundStyle(.secondary)
+                }.padding(.vertical, 8)
+                Text("The world & its mysteries").font(.title2.bold())
                 ForEach(StoryGuide.shared.overview) { section in
-                    DisclosureGroup {
-                        paragraphs(section.paragraphs)
-                    } label: { Label(section.title, systemImage: section.symbol).font(.headline) }
-                    .cardStyle().accessibilityIdentifier("story-" + section.id)
+                    DisclosureGroup { paragraphs(section.paragraphs) } label: {
+                        Label(section.title, systemImage: section.symbol).font(.headline).padding(.vertical, 6)
+                    }.cardStyle().accessibilityIdentifier("story-" + section.id)
                 }
+                VStack(alignment: .leading, spacing: 6) {
+                    Text("The complete journey").font(.title2.bold())
+                    Text("Story spoilers · Open a chapter to read its events and gameplay goal.").font(.subheadline).foregroundStyle(.secondary)
+                }.padding(.top, 8)
                 DisclosureGroup {
-                    ForEach(StoryGuide.shared.chapters) { chapter in
-                        DisclosureGroup {
-                            Text(chapter.summary).foregroundStyle(.cyan).padding(.vertical, 8)
-                            paragraphs(chapter.paragraphs)
-                            Label(chapter.playGoal, systemImage: "flag.checkered").font(.callout).padding(.vertical, 10)
-                        } label: {
-                            HStack { if let id = chapter.mapID { MapBadge(id: id) }; Text(chapter.title).font(.headline) }
-                        }.padding(.vertical, 8).accessibilityIdentifier("chapter-" + chapter.id)
-                    }
-                } label: { Label("Diễn biến đầy đủ · có tiết lộ", systemImage: "book.closed.fill").font(.headline) }
-                .cardStyle().accessibilityIdentifier("story-full")
+                    VStack(spacing: 12) {
+                        ForEach(StoryGuide.shared.chapters) { chapter in
+                            DisclosureGroup {
+                                Text(chapter.summary).font(.headline).foregroundStyle(.cyan).fixedSize(horizontal: false, vertical: true).padding(.top, 12)
+                                paragraphs(chapter.paragraphs)
+                                Label(chapter.playGoal, systemImage: "flag.checkered").font(.callout).fixedSize(horizontal: false, vertical: true)
+                                    .padding(14).frame(maxWidth: .infinity, alignment: .leading)
+                                    .background(Color.cyan.opacity(0.08), in: RoundedRectangle(cornerRadius: 10))
+                            } label: {
+                                HStack(spacing: 12) { if let id = chapter.mapID { MapBadge(id: id) }; Text(chapter.title).font(.headline).fixedSize(horizontal: false, vertical: true) }.padding(.vertical, 6)
+                            }.padding(16).background(Color.white.opacity(0.035), in: RoundedRectangle(cornerRadius: 12))
+                                .accessibilityIdentifier("chapter-" + chapter.id)
+                        }
+                    }.padding(.top, 14)
+                } label: { Label("Full story · contains spoilers", systemImage: "book.closed.fill").font(.headline).padding(.vertical, 6) }
+                    .cardStyle().accessibilityIdentifier("story-full")
                 DisclosureGroup {
-                    ForEach(StoryGuide.shared.characters) { section in
-                        DisclosureGroup { paragraphs(section.paragraphs) } label: { Label(section.title, systemImage: section.symbol) }.padding(.vertical, 8)
-                    }
-                } label: { Label("Nhân vật & khái niệm", systemImage: "person.2.fill").font(.headline) }.cardStyle()
+                    VStack(spacing: 12) {
+                        ForEach(StoryGuide.shared.characters) { section in
+                            DisclosureGroup { paragraphs(section.paragraphs) } label: { Label(section.title, systemImage: section.symbol).font(.headline).padding(.vertical, 6) }
+                                .padding(16).background(Color.white.opacity(0.035), in: RoundedRectangle(cornerRadius: 12))
+                        }
+                    }.padding(.top, 14)
+                } label: { Label("Characters & concepts", systemImage: "person.2.fill").font(.headline).padding(.vertical, 6) }.cardStyle()
             }.padding(24).frame(maxWidth: 1050).frame(maxWidth: .infinity)
         }.accessibilityIdentifier("storyGuide")
     }
     private func paragraphs(_ values: [String]) -> some View {
-        VStack(alignment: .leading, spacing: 12) { ForEach(values, id: \.self) { Text($0).fixedSize(horizontal: false, vertical: true) } }.padding(.vertical, 12)
+        VStack(alignment: .leading, spacing: 16) { ForEach(values, id: \.self) { Text($0).font(.body).lineSpacing(5).fixedSize(horizontal: false, vertical: true).frame(maxWidth: .infinity, alignment: .leading) } }.padding(.vertical, 16)
     }
 }
 struct EquipmentCatalogue: Decodable {
@@ -70,32 +86,36 @@ struct EquipmentItem: Decodable, Identifiable {
 struct EquipmentLibraryScreen: View {
     @State private var search = ""
     var body: some View {
+        GeometryReader { geometry in
+            let columnCount = max(1, min(7, Int(max(0, min(geometry.size.width, 1150) - 48) / 110)))
         ScrollView {
             VStack(alignment: .leading, spacing: 16) {
                 ForEach(EquipmentCatalogue.shared.categories) { category in
                     let items = EquipmentCatalogue.shared.items.filter { $0.category == category.id && (search.isEmpty || ($0.name + " " + $0.summary + " " + $0.use).localizedStandardContains(search)) }
                     if !items.isEmpty {
-                        EquipmentCategoryGroup(category: category, items: items, searching: !search.isEmpty)
+                        EquipmentCategoryGroup(category: category, items: items, searching: !search.isEmpty, columnCount: columnCount)
                     }
                 }
                 if !search.isEmpty && !EquipmentCatalogue.shared.items.contains(where: { ($0.name + " " + $0.summary + " " + $0.use).localizedStandardContains(search) }) {
                     ContentUnavailableView.search(text: search)
                 }
             }.padding(24).frame(maxWidth: 1150).frame(maxWidth: .infinity)
-        }.searchable(text: $search, prompt: "Tìm tài nguyên, công cụ, máy móc")
+        }
+        }.searchable(text: $search, prompt: "Search resources, tools and machines")
             .accessibilityIdentifier("equipmentLibrary")
     }
 }
 private struct EquipmentCategoryGroup: View {
     let category: EquipmentCategory; let items: [EquipmentItem]; let searching: Bool
+    let columnCount: Int
     @State private var expanded = false
     var body: some View {
         DisclosureGroup(isExpanded: Binding(get: { expanded || searching }, set: { expanded = $0 })) {
-            LazyVGrid(columns: [GridItem(.adaptive(minimum: 145, maximum: 200))], spacing: 12) {
+            LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 8), count: columnCount), spacing: 10) {
                 ForEach(items) { item in
                     NavigationLink { EquipmentDetail(item: item) } label: {
-                        VStack(spacing: 10) { FactPicture(fact: item.fact).frame(height: 85); Text(item.name).font(.callout.bold()).lineLimit(2).multilineTextAlignment(.center) }
-                        .padding(12).frame(maxWidth: .infinity).frame(height: 145).background(.white.opacity(0.045), in: RoundedRectangle(cornerRadius: 12))
+                        VStack(spacing: 8) { FactPicture(fact: item.fact).frame(height: 54); Text(item.name).font(.caption.bold()).fixedSize(horizontal: false, vertical: true).multilineTextAlignment(.center).frame(maxWidth: .infinity) }
+                        .padding(8).frame(maxWidth: .infinity).frame(minHeight: 108, alignment: .top).background(.white.opacity(0.045), in: RoundedRectangle(cornerRadius: 12))
                     }.buttonStyle(.plain).accessibilityIdentifier("equipment-" + item.id)
                 }
             }.padding(.top, 14)
@@ -116,12 +136,11 @@ struct EquipmentDetail: View {
                 Label(item.use, systemImage: "hand.point.up.left.fill")
                 if !item.station.isEmpty { Label(item.station, systemImage: "gearshape.fill") }
                 if item.category != "resources" && item.category != "supplies" {
-                    if let end = item.unlock.range(of: " theo danh mục") { Label(String(item.unlock[..<end.lowerBound]), systemImage: "lock.open.fill") }
-                    else if item.unlock.contains("Tekgram") { Label("Cần Tekgram từ boss phù hợp", systemImage: "lock.open.fill") }
+                    if !item.unlock.isEmpty { Label(item.unlock, systemImage: "lock.open.fill") }
                 }
-                if item.availability == "source-catalog-check-asa" { Label("Chưa xác nhận trong ASA · kiểm tra Engram hoặc DLC", systemImage: "questionmark.circle").font(.callout).foregroundStyle(.orange) }
+                if item.availability == "source-catalog-check-asa" { Label("Unconfirmed in ASA · check Engrams or DLC", systemImage: "questionmark.circle").font(.callout).foregroundStyle(.orange) }
                 if !item.mapIDs.isEmpty {
-                    DisclosureGroup("Map & nội dung liên quan") {
+                    DisclosureGroup("Related maps & content") {
                         ForEach(item.mapIDs, id: \.self) { id in HStack { MapBadge(id: id); Text(ExpansionCatalog.shared.maps.first { $0.id == id }?.name ?? id) } }
                     }
                 }

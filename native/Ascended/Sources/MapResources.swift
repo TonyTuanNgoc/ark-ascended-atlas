@@ -15,7 +15,7 @@ enum MapResources {
         guard ![ArkMap.ragnarok, .island, .center].contains(map) else { return [] }
         if let cached = pointCatalog[map] { return cached }
         let points = nodes(in: map).enumerated().map { index, node in
-            MapLocation(id: "resource-\(map.rawValue)-\(index)", name: node.resource_type, lat: node.lat, lon: node.lon, layer: .resource, note: node.is_cave ? "Trong hang · cần tìm cửa vào trước." : "Điểm thu thập ngoài trời.", routeID: nil, artifactID: nil, imageAsset: asset(for: node.resource_type))
+            MapLocation(id: "resource-\(map.rawValue)-\(index)", name: node.resource_type, lat: node.lat, lon: node.lon, layer: .resource, note: node.is_cave ? "Inside a cave · locate the entrance first." : "Outdoor gathering location.", routeID: nil, artifactID: nil, imageAsset: asset(for: node.resource_type))
         }
         pointCatalog[map] = points
         return points
@@ -82,7 +82,7 @@ final class ResourceSurface: UIView {
             else { cells[key] = (position, point, 1) }
         }
         clusters = cells.keys.sorted().compactMap { cells[$0] }.map { ($0.0, $0.1, $0.2) }
-        accessibilityValue = "\(points.count) điểm · \(clusters.count) cụm đang hiện"
+        accessibilityValue = "\(points.count) locations · \(clusters.count) visible clusters"
         accessibilityElements = clusters.map { cluster in
             let element = ResourceAccessibilityElement(accessibilityContainer: self)
             element.accessibilityIdentifier = "resource-pin-" + cluster.point.id
@@ -121,7 +121,7 @@ final class ResourceSurface: UIView {
     private func select(_ cluster: (position: CGPoint, point: MapLocation, count: Int)) {
         var node = cluster.point
         if cluster.count > 1 {
-            node = MapLocation(id: node.id, name: node.name, lat: node.lat, lon: node.lon, layer: .resource, note: node.note + " Cụm \(cluster.count) điểm tài nguyên; phóng to để tách từng điểm.", routeID: nil, artifactID: nil, imageAsset: node.imageAsset)
+            node = MapLocation(id: node.id, name: node.name, lat: node.lat, lon: node.lon, layer: .resource, note: node.note + " Cluster of \(cluster.count) resource locations; zoom in to separate them.", routeID: nil, artifactID: nil, imageAsset: node.imageAsset)
         }
         choose?(node)
     }

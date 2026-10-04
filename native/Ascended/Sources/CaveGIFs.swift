@@ -95,7 +95,7 @@ struct CaveGIFWalkthrough: View {
                             .background(.black)
                             .accessibilityElement(children: .ignore)
                             .accessibilityLabel(item.title)
-                            .accessibilityValue(page == index && isVisible && scenePhase == .active ? "Đang phát" : "Chưa chọn")
+                            .accessibilityValue(page == index && isVisible && scenePhase == .active ? "Playing" : "Not selected")
                             .accessibilityIdentifier("cave-gif-\(guide.routeID)-\(item.id)")
                             .tag(page)
                         }
@@ -133,7 +133,7 @@ struct CaveGIFWalkthrough: View {
                                     .contentShape(Rectangle())
                                 }.buttonStyle(.plain)
                                     .accessibilityLabel(item.direction ?? item.title)
-                                    .accessibilityValue(card == index ? "Đang chọn" : "Chưa chọn")
+                                    .accessibilityValue(card == index ? "Selected" : "Not selected")
                                     .accessibilityIdentifier("gif-card-\(guide.routeID)-\(item.id)")
                                     .id(card)
                             }

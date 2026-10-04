@@ -14,6 +14,7 @@ struct MapScreen: View {
     @State private var resetToken = UUID()
     @State private var action: MapAction = .fit
     var body: some View {
+        GeometryReader { geometry in
         HStack(alignment: .top, spacing: 8) {
         ZoomableMap(imageAsset: map.imageAsset, mapName: map.name, resetToken: resetToken, action: action, locations: allPoints.filter { visibleLayers.contains($0.layer) && ($0.layer != .resource || ($0.farmID == nil ? resourceTypes.contains($0.name) : !resourceTypes.isDisjoint(with: $0.resourceNames))) }, focusID: focusedID, select: { selected = $0; focusedID = $0.id })
             .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -22,7 +23,7 @@ struct MapScreen: View {
                 if let point = selected {
                     if let farmID = point.farmID, let spot = ResourceFarmCatalog.spots(in: map).first(where: { $0.id == farmID }) {
                         VStack(alignment: .trailing, spacing: 4) {
-                            Button { selected = nil; focusedID = nil } label: { Image(systemName: "xmark") }.accessibilityLabel("Đóng vị trí")
+                            Button { selected = nil; focusedID = nil } label: { Image(systemName: "xmark") }.accessibilityLabel("Close location")
                             ScrollView { FarmDetails(spot: spot) }.frame(maxHeight: 490)
                         }.padding(14).frame(maxWidth: 440).background(.black.opacity(0.94), in: RoundedRectangle(cornerRadius: 16)).padding(12)
                     } else {
@@ -33,19 +34,19 @@ struct MapScreen: View {
                         VStack(alignment: .leading, spacing: 4) {
                             Text(point.layer == .resource ? MapResources.label(for: point.name) : point.name).font(.headline).accessibilityIdentifier("selectedMapLocation")
                             GPSBadge(coordinates: point.coordinates).foregroundStyle(.cyan).monospacedDigit()
-                            Text(point.layer == .artifact ? "Lấy tại tọa độ này. " + (map.exploration?.routes.first { $0.id == point.routeID }?.name ?? "") : point.note)
+                            Text(point.layer == .artifact ? "Collect at these coordinates. " + (map.exploration?.routes.first { $0.id == point.routeID }?.name ?? "") : point.note)
                                 .font(.caption).foregroundStyle(.secondary).fixedSize(horizontal: false, vertical: true)
                         }
                         Spacer()
                         if let id = point.artifactID, map.exploration?.artifacts.contains(where: { $0.id == id }) == true {
                             NavigationLink(value: GuideDestination.artifact(id)) { Image(systemName: "diamond.fill") }.accessibilityLabel("Artifact")
                         } else if let id = point.routeID, map.exploration?.routes.contains(where: { $0.id == id }) == true {
-                            NavigationLink(value: GuideDestination.cave(id)) { Image(systemName: "mountain.2.fill") }.accessibilityLabel("Hang")
+                            NavigationLink(value: GuideDestination.cave(id)) { Image(systemName: "mountain.2.fill") }.accessibilityLabel("Cave")
                         }
                         if point.layer == .base, let spot = map.bases?.locations.first(where: { "base-" + $0.id == point.id }) {
-                            NavigationLink(value: GuideDestination.base(spot.id)) { Image(systemName: "house.fill") }.accessibilityLabel("Hồ sơ base").accessibilityIdentifier("mapBaseProfile")
+                            NavigationLink(value: GuideDestination.base(spot.id)) { Image(systemName: "house.fill") }.accessibilityLabel("Base profile").accessibilityIdentifier("mapBaseProfile")
                         }
-                        Button { selected = nil; focusedID = nil } label: { Image(systemName: "xmark") }.accessibilityLabel("Đóng vị trí")
+                        Button { selected = nil; focusedID = nil } label: { Image(systemName: "xmark") }.accessibilityLabel("Close location")
                     }.buttonStyle(.bordered).padding(14)
                         .frame(maxWidth: 430).background(.black.opacity(0.94), in: RoundedRectangle(cornerRadius: 16))
                         .overlay(RoundedRectangle(cornerRadius: 16).stroke(.white.opacity(0.16)))
@@ -53,7 +54,7 @@ struct MapScreen: View {
                     }
                 }
             }
-            controls.frame(width: 134)
+            controls.frame(width: min(240, max(190, geometry.size.width * 0.24)))
         }.padding(8)
         .onAppear {
             resourceTypes = Set(MapResources.types(in: map))
@@ -62,6 +63,7 @@ struct MapScreen: View {
                 selected = point; focusedID = id; visibleLayers.insert(point.layer)
             }
         }
+        }
     }
 
     private var controls: some View {
@@ -69,9 +71,9 @@ struct MapScreen: View {
             VStack(alignment: .leading, spacing: 8) {
                 HStack(spacing: 4) {
                     Button { visibleLayers = Set(availableLayers); resourceTypes = Set(MapResources.types(in: map)) } label: { Image(systemName: "checkmark.circle.fill").frame(width: 54, height: 38) }
-                        .accessibilityLabel("Chọn tất cả").accessibilityIdentifier("selectAllMapLayers")
+                        .accessibilityLabel("Select all").accessibilityIdentifier("selectAllMapLayers")
                     Button { visibleLayers.removeAll(); selected = nil; focusedID = nil } label: { Image(systemName: "circle").frame(width: 54, height: 38) }
-                        .accessibilityLabel("Bỏ chọn tất cả").accessibilityIdentifier("clearMapLayers")
+                        .accessibilityLabel("Clear all").accessibilityIdentifier("clearMapLayers")
                 }
                 ForEach(availableLayers, id: \.self) { layer in
                     Button {
@@ -80,14 +82,14 @@ struct MapScreen: View {
                     } label: {
                         HStack(spacing: 7) {
                             Image(systemName: layer.symbol).frame(width: 22)
-                            Text(layer.rawValue).font(.caption.bold())
+                            Text(layer.title).font(.subheadline.bold()).fixedSize(horizontal: false, vertical: true)
                             Spacer(minLength: 0)
                             Image(systemName: visibleLayers.contains(layer) ? "checkmark.circle.fill" : "circle").font(.caption)
                         }.padding(.horizontal, 8).frame(height: 40)
                             .background(visibleLayers.contains(layer) ? Color.cyan.opacity(0.16) : Color.clear, in: RoundedRectangle(cornerRadius: 8))
                     }.tint(visibleLayers.contains(layer) ? .cyan : .gray)
-                        .accessibilityLabel(layer.rawValue).accessibilityIdentifier("layer-" + layer.rawValue)
-                        .accessibilityValue(visibleLayers.contains(layer) ? "Hiện" : "Ẩn")
+                        .accessibilityLabel(layer.title).accessibilityIdentifier("layer-" + layer.rawValue)
+                        .accessibilityValue(visibleLayers.contains(layer) ? "Visible" : "Hidden")
                 }
                 if visibleLayers.contains(.resource) {
                     ForEach(MapResources.types(in: map), id: \.self) { type in
@@ -99,13 +101,13 @@ struct MapScreen: View {
                                     if UIImage(named: MapResources.asset(for: type)) != nil { Image(MapResources.asset(for: type)).resizable().scaledToFit() }
                                     else { Image(systemName: MapResources.symbol(for: type)).resizable().scaledToFit() }
                                 }.frame(width: 24, height: 24)
-                                Text(MapResources.label(for: type)).font(.system(size: 10, weight: .medium)).multilineTextAlignment(.leading)
+                                Text(MapResources.label(for: type)).font(.caption.weight(.medium)).multilineTextAlignment(.leading)
                                 Spacer(minLength: 0)
                                 Image(systemName: resourceTypes.contains(type) ? "checkmark.circle.fill" : "circle").font(.system(size: 10))
                             }.padding(5).frame(minHeight: 34)
                                 .background(resourceTypes.contains(type) ? Color.cyan.opacity(0.13) : Color.clear, in: RoundedRectangle(cornerRadius: 6))
                         }.tint(resourceTypes.contains(type) ? .white : .gray).accessibilityIdentifier("resource-" + type)
-                            .accessibilityValue(resourceTypes.contains(type) ? "Hiện" : "Ẩn")
+                            .accessibilityValue(resourceTypes.contains(type) ? "Visible" : "Hidden")
                     }
                 }
                 Divider()
@@ -113,12 +115,12 @@ struct MapScreen: View {
                     ForEach(allPoints.filter { $0.layer != .resource || $0.farmID != nil }) { point in
                         Button(point.name) { visibleLayers.insert(point.layer); selected = point; focusedID = point.id }.accessibilityIdentifier("find-" + point.id)
                     }
-                } label: { Label("Tìm vị trí", systemImage: "magnifyingglass").font(.caption).frame(height: 38) }
+                } label: { Label("Find location", systemImage: "magnifyingglass").font(.caption).frame(height: 38) }
                     .accessibilityIdentifier("findMapLocation")
                 HStack(spacing: 0) {
-                    Button { action = .out; resetToken = UUID() } label: { Image(systemName: "minus").frame(width: 38, height: 38) }.accessibilityLabel("Thu nhỏ").accessibilityIdentifier("zoomOut")
-                    Button { action = .inside; resetToken = UUID() } label: { Image(systemName: "plus").frame(width: 38, height: 38) }.accessibilityLabel("Phóng to").accessibilityIdentifier("zoomIn")
-                    Button { focusedID = nil; action = .fit; resetToken = UUID() } label: { Image(systemName: "arrow.counterclockwise").frame(width: 38, height: 38) }.accessibilityLabel("Căn giữa bản đồ").accessibilityIdentifier("resetMap")
+                    Button { action = .out; resetToken = UUID() } label: { Image(systemName: "minus").frame(width: 38, height: 38) }.accessibilityLabel("Zoom out").accessibilityIdentifier("zoomOut")
+                    Button { action = .inside; resetToken = UUID() } label: { Image(systemName: "plus").frame(width: 38, height: 38) }.accessibilityLabel("Zoom in").accessibilityIdentifier("zoomIn")
+                    Button { focusedID = nil; action = .fit; resetToken = UUID() } label: { Image(systemName: "arrow.counterclockwise").frame(width: 38, height: 38) }.accessibilityLabel("Fit map").accessibilityIdentifier("resetMap")
                 }
             }.padding(8)
         }.accessibilityIdentifier("mapFilterRail").buttonStyle(.plain).background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 12))
@@ -141,7 +143,7 @@ struct ZoomableMap: UIViewRepresentable {
         view.delegate = context.coordinator
         view.isAccessibilityElement = false
         view.accessibilityIdentifier = "ragnarokMapViewport"
-        view.accessibilityLabel = "Bản đồ " + mapName
+        view.accessibilityLabel = "Map " + mapName
         view.minimumZoomScale = 0.01
         view.maximumZoomScale = 8
         view.showsHorizontalScrollIndicator = false
@@ -313,15 +315,15 @@ final class MapScrollView: UIScrollView {
                 let actionID = UIAction.Identifier("select-marker")
                 button.removeAction(identifiedBy: actionID, for: .touchUpInside)
                 if nearby.count > 1 {
-                    button.menu = UIMenu(title: "Chọn vị trí gần nhau", children: nearby.map { item in
+                    button.menu = UIMenu(title: "Choose nearby location", children: nearby.map { item in
                         UIAction(title: item.name, image: item.imageAsset.flatMap { UIImage(named: $0) } ?? UIImage(systemName: item.symbol)) { [weak self] _ in self?.select?(item) }
                     })
                     button.showsMenuAsPrimaryAction = true
-                    button.accessibilityHint = "Mở danh sách vị trí gần nhau"
+                    button.accessibilityHint = "Open nearby locations"
                 } else {
                     button.menu = nil; button.showsMenuAsPrimaryAction = false
                     button.addAction(UIAction(identifier: actionID) { [weak self] _ in self?.select?(point) }, for: .touchUpInside)
-                    button.accessibilityHint = "Mở thông tin vị trí"
+                    button.accessibilityHint = "Open location details"
                 }
             }
         }

@@ -1,0 +1,30 @@
+{
+  "changed": {
+    "the-center-bosses": 22,
+    "base-plan": 77,
+    "the-island-cave-videos": 1,
+    "the-island-cave-gifs": 221,
+    "the-center-campaign": 69,
+    "ragnarok-bases": 59,
+    "ragnarok-cave-gifs": 298,
+    "the-island-information": 40,
+    "ragnarok-exploration": 45,
+    "story-guide": 90,
+    "the-island-exploration": 81,
+    "ragnarok-information": 40,
+    "visual-facts": 45,
+    "verified-resource-spots": 285,
+    "expansion-catalog": 190,
+    "the-center-information": 39,
+    "ragnarok-campaign": 120,
+    "the-island-bosses": 45,
+    "the-island-campaign": 112,
+    "the-center-exploration": 72,
+    "the-center-cave-gifs": 198,
+    "base-building-recipes": 12
+  },
+  "total": 2161,
+  "issues": [],
+  "protectedLeaves": 2559,
+  "unchangedScalars": 631366
+}

@@ -1,91 +1,91 @@
 {
-  "subtitle": "Khám phá nhiều biome · chinh phục Nunatak",
+  "subtitle": "Explore many biomes · conquer Nunatak",
   "reviewedAt": "03/10/2026",
   "sections": [
     {
       "id": "identity",
-      "title": "Ragnarok · map mở rộng",
+      "title": "Ragnarok · extended map",
       "items": [
-        "Map khám phá có nhiều biome và hang đặc biệt. Boss chính Ascended là Nunatak, thay cho trận Dragon + Manticore của Evolved; bốn mini-boss có tên nằm trong ba nhóm trận hang.",
-        "Ragnarok rộng, nhiều biome, có Griffin, Wyvern và dungeon riêng."
+        "The exploration map has many biomes and special caves. Ascended main boss is Nunatak, replacing Evolved's battle Dragon + Manticore; Four named mini-bosses are located in three cave battle groups.",
+        "Ragnarok is large, has many biomes, has Griffin, Wyvern and its own dungeon."
       ]
     },
     {
       "id": "geography",
-      "title": "Địa hình & biome",
+      "title": "Terrain & biome",
       "items": [
-        "Highlands, Viking Bay và các bờ biển là những khu nên khảo sát khi bắt đầu; kiểm tra predator, nước và chỗ thoát trước khi đặt base.",
-        "Có vùng núi, rừng, đầm lầy, băng tuyết, sa mạc và biển. Chuyến đi lạnh cần bộ giữ ấm; vùng nóng/lava cần nước, chống nóng và đường rút.",
-        "Wyvern phía nam và vùng băng không phải cùng một tuyến. Strong hiện ở Wyvern Cave phía nam, khác vị trí Strong cũ của Evolved."
+        "The Highlands, Viking Bay and the coast are good areas to explore when starting out; Check for predators, water, and escape routes before placing a base.",
+        "Biomes include mountains, forests, swamps, snow/ice, desert, and ocean. Cold trips need warm gear; hot/lava areas need water, heat protection, and a retreat route.",
+        "Wyvern south and ice area are not in the same line. Strong is now in Wyvern Cave in the south, different from Evolved's old Strong location."
       ]
     },
     {
       "id": "resources",
-      "title": "Tài nguyên & sản xuất",
+      "title": "Resources & production",
       "items": [
-        "Gợi ý: lập tuyến metal/crystal/obsidian ở các vùng núi; dầu và silica pearls cần kế hoạch theo khu biển/lạnh. Khảo sát một vòng trước khi đặt khu công nghiệp.",
-        "Ưu tiên tame vận chuyển và khai thác (Argentavis, Ankylosaurus, Doedicurus), khu luyện/smithy và kho theo nhóm vật liệu. Đừng xây đè vùng node đang cần farm."
+        "Suggestion: set up metal/crystal/obsidian routes in mountainous areas; Oil and silica pearls need to be planned according to coastal/cold zones. Conduct a survey before locating the industrial park.",
+        "Prioritize transportation and exploitation tame ( Argentavis, Ankylosaurus, Doedicurus ), smelting/smithy area and warehouse by material group. Don't build over the node area that needs to be farmed."
       ]
     },
     {
       "id": "creatures",
-      "title": "Dino đặc trưng & DLC",
+      "title": "Dino featured & DLC",
       "items": [
-        "Có Griffin, Wyvern, Dire Polar Bear và nhiều loài từ các biome khác. Mở Dino để xem thuần hóa, thức ăn và chỉ số.",
-        "Sinh vật DLC được đánh dấu riêng. Có Cerberax, Gargantar và Cryolophosaurus."
+        "There are Griffin, Wyvern, Dire Polar Bear and many species from other biomes. Open Dino to see taming, food, and stats.",
+        "DLC creatures are marked separately. There are Cerberax, Gargantar and Cryolophosaurus."
       ]
     },
     {
       "id": "caves",
-      "title": "Artifact & tuyến hang",
+      "title": "Artifact & line",
       "items": [
-        "10 artifact trên 6 tuyến: Jungle Dungeon, Carnivorous Caverns, Frozen Dungeon, Life’s Labyrinth, Wyvern Cave và tuyến biển Devourer.",
-        "Hunter qua Jungle; Pack qua Frozen; Cunning/Immune qua Carnivorous; Clever/Devious/Massive/Skylord qua Labyrinth; Strong phía Wyvern; Devourer là tuyến lặn.",
-        "Lava Elemental là trận loot tùy chọn; không cần thắng để lấy Hunter. Đọc hồ sơ hang, checklist và GPS riêng trước chuyến đi."
+        "10 artifact on 6 routes: Jungle Dungeon, Carnivorous Caverns, Frozen Dungeon, Life's Labyrinth, Wyvern Cave and Devourer sea route.",
+        "Hunter via Jungle; Pack via Frozen; Cunning / Immune via Carnivorous; Clever /Devious/ Massive / Skylord via Labyrinth; Strong side Wyvern; Devourer is a diving route.",
+        "Lava Elemental is optional loot; No winning required to get Hunter. Read the cave profile, checklist and GPS separately before the trip."
       ]
     },
     {
       "id": "bosses",
-      "title": "Boss & đích chinh phục",
+      "title": "Boss & conquer destination",
       "items": [
-        "Nunatak có Gamma/Beta/Alpha, cần toàn bộ 10 artifact và tribute đúng cấp. Đọc cơ chế bay/tiếp đất, minion, đồ lạnh, đội hình và Tekgram trong mục Boss.",
-        "Iceworm Queen ở Frozen Dungeon; Lava Elemental ở Jungle; Spirit Dire Bear + Spirit Direwolf là nhóm trận Life’s Labyrinth. Không gắn Gamma/Beta/Alpha cho các mini-boss này.",
-        "Ragnarok không dùng tuyến Tek Cave / Overseer của The Island. Chọn mục tiêu thắng Nunatak cấp nào và bộ Tek muốn mở để tính chuyến tiếp theo."
+        "Nunatak has Gamma / Beta / Alpha, needs all 10 artifacts and the correct level tribute. Read about flight/landing mechanics, minions, cold items, formations and Tekgram in the Boss section.",
+        "Iceworm Queen in Frozen Dungeon; Lava Elemental in Jungle; Spirit Dire Bear + Spirit Direwolf is the Life's Labyrinth battle group. Do not attach Gamma / Beta / Alpha to these mini-bosses.",
+        "Ragnarok does not use the Tek Cave / Overseer route of The Island. Select the target level to win Nunatak and the set Tek you want to open to calculate the next trip."
       ]
     },
     {
       "id": "base",
-      "title": "Gợi ý base · Ragnarok",
+      "title": "Base suggestion · Ragnarok",
       "items": [
-        "Khởi đầu: nơi có nước, vật liệu nền, thoát hiểm và gần một đường farm an toàn. Kho nhỏ, giường, smithy và khu tame tách khỏi đường predator.",
-        "Base lâu dài: dành khu riêng cho công nghiệp, storage, breeding, food và đội boss. Khoảng trống để tame lớn quay đầu quan trọng hơn diện tích trang trí.",
-        "Có chòi tiếp tế ở cửa tuyến hang nhưng không chắn entrance / artifact / spawn. Ghi LAT/LON base và tuyến vận chuyển trong Ghi chú Ragnarok."
+        "Start where water, basic building materials, escape routes, and a safe farming route are available. Keep a small store, bed, smithy, and taming area away from predator paths.",
+        "Long-term base: dedicated area for industry, storage, breeding, food and boss team. The space for the large tame to turn around is more important than the decorative area.",
+        "Place a supply hut at the cave route entrance without blocking entrances / artifacts / spawns. Record base LAT/LON and transport routes in Ragnarok Notes."
       ]
     },
     {
       "id": "phases",
-      "title": "Lộ trình gợi ý · Ragnarok",
+      "title": "Suggested route · Ragnarok",
       "items": [
-        "Phase 1: survival, nước/food, giường và bộ thay thế. Phase 2: stone base, metal tools, vận chuyển và tame khai thác.",
-        "Phase 3: cave kit theo từng tuyến, tame biển, vũ khí tốt và bộ giữ ấm. Phase 4: farm artifact/tribute, breed/imprint và saddle đội boss.",
-        "Phase 5: khảo sát cổng, đấu Nunatak Gamma rồi nâng cấp theo loot thực tế. Chỉ chuyển cấp khi đủ vật liệu, tame và kinh nghiệm; checklist là danh sách chuẩn bị, không tự xác nhận đã thắng trận."
+        "Phase 1: survival, water/food, bed and replacement kit. Phase 2: stone base, metal tools, transportation and mining.",
+        "Phase 3: cave kit for each route, ocean tames, good weapons and warm gear. Phase 4: farm artifact/tribute, breed/imprint and boss team saddle.",
+        "Phase 5: survey the portal, fight Nunatak Gamma, then upgrade using actual loot. Advance only with enough materials, tames, and experience; a checklist records preparation, not a confirmed win."
       ]
     },
     {
       "id": "settings",
-      "title": "Single Player · nền tảng để tính đúng",
+      "title": "Single Player · platform for correct calculation",
       "items": [
-        "Ghi lại Difficulty, Maximum Difficulty, Use Singleplayer Settings, tốc độ tame/breed, resource respawn và mọi mod trước khi lập kế hoạch. Đây là điều kiện đầu vào, không dùng chỉ số của server khác làm chuẩn save anh.",
-        "Gợi ý: giữ settings ổn định, ghi lại sau mỗi thay đổi. Mục tiêu một phase nên là điều kiện hoàn thành cụ thể: đủ máy, đủ đồ, đủ tame và đã khảo sát đường rút.",
-        "Level và vị trí sinh vật có thể thay đổi theo thiết lập thế giới và mod."
+        "Record Difficulty, Maximum Difficulty, Use Singleplayer Settings, taming/breeding rates, resource respawn, and all mods before planning. These are input conditions; another server's stats are not the standard for your save.",
+        "Suggestion: keep settings stable, record after each change. The goal of a phase should be specific completion conditions: enough machines, enough equipment, enough tame and the exit route has been surveyed.",
+        "Creature levels and locations may change according to world and mod settings."
       ]
     },
     {
       "id": "coordinates",
-      "title": "Đọc bản đồ & tọa độ",
+      "title": "Read maps & coordinates",
       "items": [
-        "LAT tăng về phía nam, LON tăng về phía đông. Artifact là điểm lấy; cửa hang là điểm tiếp cận. Những điểm sát nhau có menu để chọn; dùng từng lớp Artifact / Cửa hang / Boss trên bản đồ.",
-        "Các tọa độ cửa hang là chỉ dẫn cộng đồng, có thể lệch theo phiên bản hoặc vị trí đứng. Điểm được ghi khu vực/tham khảo không phải cửa vào chính xác. Map 8K là địa hình, không phải sơ đồ tầng hang."
+        "LAT increases southward and LON eastward. Artifact marks the collection point; cave entrance marks the approach. Nearby points have a selection menu; use the Artifact / Cave entrance / Boss layers separately.",
+        "Cave entrance coordinates are community guidance and may vary with version or standing position. Area/reference points are not exact entrances. The 8K map shows terrain, not cave floors."
       ]
     }
   ],
@@ -193,7 +193,7 @@
   ],
   "sources": [
     {
-      "title": "Thông tin map · ARK Community Wiki",
+      "title": "Map information · ARK Community Wiki",
       "url": "https://ark.wiki.gg/wiki/Ragnarok"
     },
     {
@@ -201,7 +201,7 @@
       "url": "https://wikily.gg/ark-survival-ascended/maps/ragnarok/"
     },
     {
-      "title": "Quy tắc boss arena",
+      "title": "Boss arena rules",
       "url": "https://ark.wiki.gg/wiki/Boss_Arenas"
     },
     {
@@ -209,7 +209,7 @@
       "url": "https://ark.wiki.gg/wiki/Nunatak"
     },
     {
-      "title": "Cửa hang Ragnarok Ascended",
+      "title": "Ragnarok Ascended cave entrances",
       "url": "https://thegameslayer.com/guides/all-ragnarok-artifact-locations-ark-ragnarok-ascended/"
     }
   ]

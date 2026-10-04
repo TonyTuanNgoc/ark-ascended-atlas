@@ -8,30 +8,30 @@ struct BossKnowledge: View {
             let routeID = boss.id == "iceworm-queen" ? "frozen" : boss.id == "lava-elemental" ? "jungle" : "labyrinth"
             if let route = ArkMap.ragnarok.exploration?.routes.first(where: { $0.id == routeID }) {
                 VStack(alignment: .leading, spacing: 14) {
-                    Text("Đường tới boss").font(.title2.bold())
-                    if boss.id == "lava-elemental" { GPSBadge(coordinates: "LAT 21.60 · LON 26.90"); Label("Khu đấu", systemImage: "scope").font(.caption) }
-                    else { VisualBrief(text: "Đi qua " + route.name + " tới nhóm trận cuối. GPS dưới đây là cửa vào, chưa coi là GPS chính xác của boss trong arena.") }
+                    Text("Route to the boss").font(.title2.bold())
+                    if boss.id == "lava-elemental" { GPSBadge(coordinates: "LAT 21.60 · LON 26.90"); Label("Arena", systemImage: "scope").font(.caption) }
+                    else { VisualBrief(text: "Follow " + route.name + " to the final encounter group. The GPS below marks the entrance, rather than the exact boss position inside the arena.") }
                     ForEach(route.entrances) { entrance in HStack { Text(entrance.label); GPSBadge(coordinates: entrance.coordinates) } }
-                    NavigationLink("Mở hồ sơ hang & artifact", value: GuideDestination.cave(route.id))
+                    NavigationLink("Open cave & artifact guide", value: GuideDestination.cave(route.id))
                         .accessibilityIdentifier("bossCaveRoute")
-                    NavigationLink("Xem lối tới boss trên bản đồ", value: GuideDestination.map(boss.id == "lava-elemental" ? "boss-lava-arena" : "entrance-" + (route.entrances.first?.id ?? "")))
+                    NavigationLink("Show boss approach on map", value: GuideDestination.map(boss.id == "lava-elemental" ? "boss-lava-arena" : "entrance-" + (route.entrances.first?.id ?? "")))
                 }.cardStyle()
                 if boss.id == "iceworm-queen" {
-                    info("Cơ chế & chỉ số tham khảo", "Nữ hoàng xuất hiện khi xuống cuối thác vào arena; cần xuống khi không cưỡi tame. Không tame, không cưỡi, không breed; miễn torpor. Bảng Wiki ghi HP 27.000 và melee nền 500 ở mốc tối thiểu level 10; số thực tế còn phụ thuộc level và settings, không phải phép đo save Single Player của anh.")
-                    info("Giao chiến", "Giữ khoảng cách sau lúc boss trồi lên, vì hitbox rộng và bản Ascended nhanh hơn. Shotgun / vũ khí tầm xa tốt, khiên và thuốc hồi máu là phương án dự phòng. Solo phải tự quản lý cả sát thương lẫn né đòn; chiến thuật người tank + người bắn chỉ dành cho nhóm.")
-                    info("Thu hoạch & mục tiêu", "Đi tiếp tới Pack trong khu tổ. Bản Ascended có Iceworm Queen Trophy riêng. Wiki còn liệt kê Deathworm Horn, AnglerGel, Black Pearl, Leech Blood, Organic Polymer và vật liệu từ xác; bảng chung có mục của Evolved nên không coi mọi skin/trophy trong đó là drop chắc chắn của ASA.")
-                    GuideChecklist(title: "Bộ đồ đấu Iceworm Queen", items: ["Fur tốt + Fria Curry / Otter", "Shotgun, đạn và vũ khí dự phòng", "Khiên + Medical Brew", "Hồi đầy máu trước khi xuống thác", "Khảo sát lối ra và đường tới Pack"], key: boss.id)
+                    info("Mechanics & reference stats", "The Queen appears when you descend to the arena at the bottom of the waterfall; descend without riding a tame. It cannot be tamed, ridden or bred and is immune to torpor. The Wiki lists 27,000 HP and 500 base melee at the minimum level of 10; actual values depend on level and settings and are not measurements of your Single Player save.")
+                    info("Combat", "Keep your distance after the boss emerges: its hitbox is wide and the Ascended version is faster. Bring a good shotgun or ranged weapon, with a shield and healing supplies as backups. Solo players must manage both damage and dodging; a separate tank-and-shooter strategy requires a group.")
+                    info("Harvesting & goals", "Continue to Pack in the nest area. Ascended has its own Iceworm Queen Trophy. The Wiki also lists Deathworm Horn, AnglerGel, Black Pearl, Leech Blood, Organic Polymer and corpse materials; the shared table includes Evolved entries, so not every listed skin or trophy is a confirmed ASA drop.")
+                    GuideChecklist(title: "Iceworm Queen loadout", items: ["Quality Fur armor + Fria Curry / Otter", "Shotgun, ammunition and backup weapon", "Shield + Medical Brew", "Restore full health before descending the waterfall", "Scout the exit and route to Pack"], key: boss.id)
                 } else if boss.id == "lava-elemental" {
-                    info("Cơ chế & chỉ số tham khảo", "Trận loot tùy chọn. Wiki ghi mốc level 10: HP 60.000, melee nền 120; level và settings làm thay đổi sức mạnh thực tế. Không tame, không cưỡi, không breed; miễn torpor. Hunter lấy được mà không cần thắng trận này.")
-                    info("Vũ khí & vị trí bắn", "Ưu tiên Rocket Launcher và grapples để tìm vị trí cao, tránh sát mép. Wiki ghi đạn thường và melee bị giảm mạnh; Tek Rifle là lựa chọn sau khi có Tekgram. Chuẩn bị nhiều rocket và launcher dự phòng, tránh tự gây sát thương ở cự ly gần.")
-                    info("Đòn đánh & điểm yếu", "Đá dung nham ném từ xa, sát thương lửa và melee có thể đẩy anh xuống hồ lava. nhắm tay/cánh tay và tận dụng điểm cao; không coi địa hình là bảo đảm boss không đánh trúng. Tuyệt đối giữ đường rút khỏi dung nham.")
-                    info("Loot", "Crystal, Metal, Obsidian, Oil, Stone, Sulfur cùng trang bị/saddle hoặc blueprint. Chất lượng và số lượng loot phụ thuộc settings/phiên bản; không dùng khoảng chất lượng của bảng Evolved như cam kết cho ASA.")
-                    GuideChecklist(title: "Bộ đồ đấu Lava Elemental", items: ["Rocket + nhiều launcher dự phòng", "Grappling Hook và dây", "Giáp, Medical Brew, đồ sửa", "Xác định bệ đứng và đường thoát lava", "Lấy Hunter trước nếu mục tiêu là artifact"], key: boss.id)
+                    info("Mechanics & reference stats", "An optional loot encounter. The Wiki lists 60,000 HP and 120 base melee at level 10; actual strength changes with level and settings. It cannot be tamed, ridden or bred and is immune to torpor. Hunter can be collected without winning this fight.")
+                    info("Weapons & firing positions", "Prioritize Rocket Launchers and grapples to reach high positions, staying clear of edges. The Wiki reports heavy reductions to ordinary bullet and melee damage; a Tek Rifle is an option once its Tekgram is unlocked. Bring plenty of rockets and spare launchers, and avoid close-range self-damage.")
+                    info("Attacks & weak points", "Thrown lava rocks, fire damage and melee can knock you into lava. Aim at the hands or arms and use elevated positions; terrain does not guarantee protection from attacks. Always keep an escape route away from lava.")
+                    info("Loot", "Crystal, Metal, Obsidian, Oil, Stone and Sulfur, alongside equipment, saddles or blueprints. Loot quantity and quality depend on settings and version; Evolved quality ranges are not guarantees for ASA.")
+                    GuideChecklist(title: "Lava Elemental loadout", items: ["Rockets + spare launchers", "Grappling Hook and grapples", "Armor, Medical Brew and repair supplies", "Identify firing ledges and lava escape routes", "Collect Hunter first if the artifact is your goal"], key: boss.id)
                 } else {
-                    info("Nhóm trận linh hồn", "Spirit Dire Bear và Spirit Direwolf cùng thuộc Life’s Labyrinth. các cặp xuất hiện theo đợt từ level 50, tăng 50 tới 250. Không lấy chỉ số Dire Bear / Direwolf thông thường làm HP của những đối thủ này.")
-                    info("Kích hoạt & hoàn tất", "Tuyến có phòng hiến tế và cơ chế riêng. Khi tới khu cuối, nếu spirit chưa xuất hiện, tác động vào Megaloceros sau khi đã giải cơ chế trước đó. Khi các spirit được hạ, thông báo The spirits have calmed xuất hiện và đường tới artifact mở. Kiểm tra cơ chế trên thế giới của anh trước khi hiến tế tame có giá trị.")
-                    info("Chuẩn bị solo", "Vũ khí tầm xa, giáp/khiên dự phòng, Medical Brew, nguồn sáng và SCUBA. Khảo sát bẫy và đường đi trước khi giao chiến; các đợt sau gây áp lực lớn hơn. Không dựa vào grapple/flyer để bỏ qua toàn bộ mê cung: các cách leo/bay bị hạn chế ở đây.")
-                    GuideChecklist(title: "Bộ đồ cho nhóm Spirit", items: ["Shotgun, đạn và vũ khí dự phòng", "Giáp/khiên + thuốc", "SCUBA và nguồn sáng", "Parachute cho parkour", "Đọc cơ chế phòng hiến tế trước khi vào"], key: "spirit-group")
+                    info("Spirit encounter group", "Spirit Dire Bear and Spirit Direwolf belong to the same Life’s Labyrinth encounter. Pairs appear in waves from level 50, rising in increments of 50 up to 250. Ordinary Dire Bear and Direwolf stats do not represent these enemies’ HP.")
+                    info("Triggering & completion", "This route has a sacrifice room and its own mechanics. At the final area, if spirits have not appeared, interact with the Megaloceros after completing the preceding mechanics. Defeating the spirits displays The spirits have calmed and opens the artifact route. Verify the mechanics in your world before sacrificing a valuable tame.")
+                    info("Solo preparation", "Bring ranged weapons, spare armor and shields, Medical Brew, lighting and SCUBA. Scout traps and paths before combat; later waves apply more pressure. Do not rely on grapples or flyers to bypass the entire labyrinth: climbing and flying methods are restricted here.")
+                    GuideChecklist(title: "Spirit encounter loadout", items: ["Shotgun, ammunition and backup weapon", "Armor/shield + healing supplies", "SCUBA and a light source", "Parachute for parkour", "Read the sacrifice room mechanics before entering"], key: "spirit-group")
                 }
             }
         }
@@ -53,17 +53,17 @@ struct NunatakGuide: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 22) {
             VStack(alignment: .leading, spacing: 16) {
-                Text("Độ khó & phần thưởng").font(.title2.bold())
-                Picker("Độ khó", selection: $difficulty) { ForEach(0..<3) { index in Text(levels[index]).tag(index) } }.pickerStyle(.segmented).accessibilityIdentifier("bossDifficulty")
+                Text("Difficulty & rewards").font(.title2.bold())
+                Picker("Difficulty", selection: $difficulty) { ForEach(0..<3) { index in Text(levels[index]).tag(index) } }.pickerStyle(.segmented).accessibilityIdentifier("bossDifficulty")
                 Image("Nunatak-" + levels[difficulty]).resizable().scaledToFit().frame(maxHeight: 280).frame(maxWidth: .infinity)
                 HStack(alignment: .top) {
-                    fact("HP nền", health[difficulty]); Spacer(); fact("Level vào trận", String([70,80,90][difficulty])); Spacer(); fact("Element", String(elements[difficulty]))
+                    fact("Base HP", health[difficulty]); Spacer(); fact("Entry level", String([70,80,90][difficulty])); Spacer(); fact("Element", String(elements[difficulty]))
                 }
-                VisualBrief(text: "HP nền, chưa áp dụng điều chỉnh Single Player. Phần thưởng còn có Nunatak Flag và trophy đúng cấp. Không tame, không cưỡi, không breed; miễn torpor.").font(.caption).foregroundStyle(.secondary)
+                VisualBrief(text: "Base HP before Single Player adjustments. Rewards also include a Nunatak Flag and the trophy for the selected tier. The boss cannot be tamed, ridden or bred and is immune to torpor.").font(.caption).foregroundStyle(.secondary)
             }.cardStyle()
             VStack(alignment: .leading, spacing: 14) {
-                Text("Điểm triệu hồi Nunatak").font(.title2.bold())
-                VisualBrief(text: "Nunatak không đi lang thang ở một tọa độ ngoài bản đồ. Mang tribute tới Obelisk; trận diễn ra trong arena được dịch chuyển tới. Với Single Player, ưu tiên Obelisk và kiểm tra cổng trong game.")
+                Text("Nunatak summoning locations").font(.title2.bold())
+                VisualBrief(text: "Nunatak does not roam at a fixed overworld coordinate. Take tribute to an Obelisk and teleport into the arena. In Single Player, prioritize an Obelisk and check the portal in-game.")
                 ForEach(ArkMap.ragnarok.exploration?.obelisks ?? []) { point in
                     NavigationLink(value: GuideDestination.map(point.id)) {
                         HStack { Text(point.label); Spacer(); GPSBadge(coordinates: point.coordinates).monospacedDigit().foregroundStyle(.cyan); Image(systemName: "map") }
@@ -72,7 +72,7 @@ struct NunatakGuide: View {
             }.cardStyle()
             VStack(alignment: .leading, spacing: 14) {
                 Text("Tribute · " + levels[difficulty]).font(.title2.bold())
-                Text("10 artifact bên dưới · mỗi loại ×1").font(.headline).foregroundStyle(.cyan)
+                Text("10 artifacts below · each ×1").font(.headline).foregroundStyle(.cyan)
                 ForEach(ArkMap.ragnarok.exploration?.artifacts ?? []) { artifact in
                     NavigationLink(value: GuideDestination.artifact(artifact.id)) {
                         HStack {
@@ -81,24 +81,24 @@ struct NunatakGuide: View {
                         }.contentShape(Rectangle())
                     }.buttonStyle(.plain)
                 }
-                Text(difficulty == 0 ? "Gamma không cần các trophy nguyên liệu bên dưới." : "Thêm các nguyên liệu sau, mỗi loại ×" + String(difficulty == 1 ? 10 : 25)).font(.subheadline).foregroundStyle(.orange)
+                Text(difficulty == 0 ? "Gamma does not require the trophy materials below." : "Add the following materials, each ×" + String(difficulty == 1 ? 10 : 25)).font(.subheadline).foregroundStyle(.orange)
                 if difficulty > 0 { ForEach(tribute, id: \.self) { item in VisualBrief(text: String(difficulty == 1 ? 10 : 25) + " " + item) } }
             }.cardStyle()
             VStack(alignment: .leading, spacing: 14) {
                 Text("Tekgram · " + levels[difficulty]).font(.title2.bold())
-                Text("Cấp cao gồm các unlock của cấp thấp.").font(.caption).foregroundStyle(.secondary)
+                Text("Higher tiers include lower-tier unlocks.").font(.caption).foregroundStyle(.secondary)
                 ForEach(gammaTek + (difficulty > 0 ? betaAdds : []) + (difficulty > 1 ? alphaAdds : []), id: \.self) { VisualBrief(text: $0) }
             }.cardStyle()
             VStack(alignment: .leading, spacing: 12) {
-                Text("Nhịp giao chiến").font(.title2.bold())
-                VisualBrief(text: "Khi boss bay: dùng vũ khí tầm xa, xử lý các đợt Iceworm và giữ đội hình. Khi boss tiếp đất: tập trung damage; Nunatak không gọi Iceworm trong lúc ở mặt đất. Hơi băng làm chậm kết hợp minion gây áp lực lớn; nhiệt độ arena cũng cần tính vào bộ đồ.")
-                VisualBrief(text: "Rex / Therizino là lựa chọn phổ biến; Yutyrannus hỗ trợ courage, Daeodon hồi máu cần đủ food. Therizino có thể dùng Sweet Vegetable Cake. Chuẩn bị tame đã breed/imprint và saddle tốt; không áp một ngưỡng HP/damage chung cho mọi settings.")
+                Text("Combat flow").font(.title2.bold())
+                VisualBrief(text: "During flight, use ranged weapons, handle Iceworm waves and maintain formation. After landing, focus damage; Nunatak does not summon Iceworms while grounded. Slowing ice breath and minions create heavy pressure; account for arena temperature in your loadout.")
+                VisualBrief(text: "Rex and Therizino are common choices; Yutyrannus provides courage, while Daeodon healing requires enough food. Therizino can use Sweet Vegetable Cake. Prepare bred and imprinted creatures with good saddles; one HP or damage threshold does not fit every settings configuration.")
             }.cardStyle()
             VStack(alignment: .leading, spacing: 12) {
-                Text("Giới hạn & rủi ro trận").font(.title2.bold())
-                VisualBrief(text: "Không mang flyer vào arena. Quy tắc arena: tối đa 20 tame và 10 survivor; cart gắn trên tame có thể ngăn dịch chuyển. Timer hiện trên game là nguồn quyết định của save anh, vì Single Player/non-dedicated có khác biệt. Chết hoặc hết giờ có thể mất tame và đồ; xếp đội hình trong vùng cổng trước khi bấm.")
+                Text("Arena limits & risks").font(.title2.bold())
+                VisualBrief(text: "Flyers cannot enter the arena. Arena limits are 20 tames and 10 survivors; carts attached to tames may prevent teleportation. The in-game timer determines the limit for your save because Single Player and non-dedicated behavior differs. Death or timeout can cost creatures and gear; arrange your army inside the portal area before activating it.")
             }.cardStyle()
-            GuideChecklist(title: "Trước khi triệu hồi", items: ["Đủ 10 artifact và tribute đúng cấp", "Toàn đội hồi đầy HP / food", "Saddle, imprint và đội hình đã kiểm tra", "Shotgun + đạn, giáp lạnh dự phòng", "Medical Brew, food, nước", "Tame hỗ trợ có đủ food/cake", "Kiểm tra giới hạn tame, gỡ cart, đứng trong cổng", "Đọc timer và settings của save"], key: "nunatak")
+            GuideChecklist(title: "Before summoning", items: ["All 10 artifacts and the tribute for the selected tier", "Full HP and food for the entire army", "Check saddles, imprint and formation", "Shotgun + ammunition and spare cold-weather armor", "Medical Brew, food and water", "Enough food/cake for support creatures", "Check creature limits, remove carts and stand inside the portal", "Check the timer and your save settings"], key: "nunatak")
         }
     }
     private func fact(_ title: String, _ value: String) -> some View {

@@ -8,7 +8,7 @@
       "id": "achatina",
       "name": "Achatina",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/achatina/",
       "rosterSource": "Wikily The Center",
@@ -31,7 +31,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 75
         },
         {
@@ -39,7 +39,7 @@
           "value": 100
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 60
         },
         {
@@ -55,7 +55,7 @@
       "id": "acrocanthosaurus",
       "name": "Acrocanthosaurus",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/acrocanthosaurus/",
       "rosterSource": "Wikily The Center",
@@ -84,7 +84,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 1300
         },
         {
@@ -92,7 +92,7 @@
           "value": 400
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 600
         },
         {
@@ -108,7 +108,7 @@
       "id": "allosaurus",
       "name": "Allosaurus",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/allosaurus/",
       "rosterSource": "Wikily The Center",
@@ -138,7 +138,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 630
         },
         {
@@ -146,7 +146,7 @@
           "value": 250
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 380
         },
         {
@@ -202,7 +202,7 @@
       "immobilizedBy": [],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 4400
         },
         {
@@ -210,7 +210,7 @@
           "value": 500
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 1800
         },
         {
@@ -331,7 +331,7 @@
       "id": "ammonite",
       "name": "Ammonite",
       "aliases": [],
-      "group": "Dưới nước",
+      "group": "Aquatic",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/ammonite/",
       "rosterSource": "Wikily The Center",
@@ -352,7 +352,7 @@
       "immobilizedBy": [],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 165
         },
         {
@@ -360,7 +360,7 @@
           "value": 100
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 150
         },
         {
@@ -378,7 +378,7 @@
       "aliases": [
         "Anglerfish"
       ],
-      "group": "Dưới nước",
+      "group": "Aquatic",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/anglerfish/",
       "rosterSource": "Wikily The Center",
@@ -400,7 +400,7 @@
       "immobilizedBy": [],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 450
         },
         {
@@ -408,7 +408,7 @@
           "value": 240
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 350
         },
         {
@@ -424,7 +424,7 @@
       "id": "ankylosaurus",
       "name": "Ankylosaurus",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/ankylosaurus/",
       "rosterSource": "Wikily The Center",
@@ -452,7 +452,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 700
         },
         {
@@ -460,7 +460,7 @@
           "value": 175
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 250
         },
         {
@@ -476,7 +476,7 @@
       "id": "araneo",
       "name": "Araneo",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/araneo/",
       "rosterSource": "Wikily The Center",
@@ -502,7 +502,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 200
         },
         {
@@ -510,7 +510,7 @@
           "value": 150
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 150
         },
         {
@@ -526,7 +526,7 @@
       "id": "archaeopteryx",
       "name": "Archaeopteryx",
       "aliases": [],
-      "group": "Bay",
+      "group": "Flying",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/archaeopteryx/",
       "rosterSource": "Wikily The Center",
@@ -547,7 +547,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 125
         },
         {
@@ -555,7 +555,7 @@
           "value": 150
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 30
         },
         {
@@ -571,7 +571,7 @@
       "id": "archelon",
       "name": "Archelon",
       "aliases": [],
-      "group": "Dưới nước",
+      "group": "Aquatic",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/archelon/",
       "rosterSource": "Wikily The Center",
@@ -592,7 +592,7 @@
       "immobilizedBy": [],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 1400
         },
         {
@@ -600,7 +600,7 @@
           "value": 775
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 1000
         },
         {
@@ -616,7 +616,7 @@
       "id": "argentavis",
       "name": "Argentavis",
       "aliases": [],
-      "group": "Bay",
+      "group": "Flying",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/argentavis/",
       "rosterSource": "Wikily The Center",
@@ -645,7 +645,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 365
         },
         {
@@ -653,7 +653,7 @@
           "value": 400
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 400
         },
         {
@@ -669,7 +669,7 @@
       "id": "arthropluera",
       "name": "Arthropluera",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/arthropluera/",
       "rosterSource": "Wikily The Center",
@@ -691,7 +691,7 @@
       "immobilizedBy": [],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 500
         },
         {
@@ -699,7 +699,7 @@
           "value": 200
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 100
         },
         {
@@ -715,7 +715,7 @@
       "id": "autumn-drakeling",
       "name": "Autumn Drakeling",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "Lost Colony / Fantastic Tames: Drakelings",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/autumn-drakeling/",
       "rosterSource": "Wikily The Center",
@@ -738,7 +738,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 150
         },
         {
@@ -746,7 +746,7 @@
           "value": 150
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 65
         },
         {
@@ -762,7 +762,7 @@
       "id": "baryonyx",
       "name": "Baryonyx",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/baryonyx/",
       "rosterSource": "Wikily The Center",
@@ -786,7 +786,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 440
         },
         {
@@ -794,7 +794,7 @@
           "value": 325
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 325
         },
         {
@@ -810,7 +810,7 @@
       "id": "basilosaurus",
       "name": "Basilosaurus",
       "aliases": [],
-      "group": "Dưới nước",
+      "group": "Aquatic",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/basilosaurus/",
       "rosterSource": "Wikily The Center",
@@ -834,7 +834,7 @@
       "immobilizedBy": [],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 2400
         },
         {
@@ -842,7 +842,7 @@
           "value": 300
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 700
         },
         {
@@ -858,7 +858,7 @@
       "id": "beelzebufo",
       "name": "Beelzebufo",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/beelzebufo/",
       "rosterSource": "Wikily The Center",
@@ -881,7 +881,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 220
         },
         {
@@ -889,7 +889,7 @@
           "value": 190
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 160
         },
         {
@@ -905,7 +905,7 @@
       "id": "brontosaurus",
       "name": "Brontosaurus",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/brontosaurus/",
       "rosterSource": "Wikily The Center",
@@ -933,7 +933,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 2277
         },
         {
@@ -941,7 +941,7 @@
           "value": 240
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 1600
         },
         {
@@ -957,7 +957,7 @@
       "id": "burrowbuck",
       "name": "Burrowbuck",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "Fantastic Tames Season 1",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/burrowbuck/",
       "rosterSource": "Wikily The Center",
@@ -984,7 +984,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 550
         },
         {
@@ -992,7 +992,7 @@
           "value": 500
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 350
         },
         {
@@ -1008,7 +1008,7 @@
       "id": "carbonemys",
       "name": "Carbonemys",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/carbonemys/",
       "rosterSource": "Wikily The Center",
@@ -1036,7 +1036,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 700
         },
         {
@@ -1044,7 +1044,7 @@
           "value": 200
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 270
         },
         {
@@ -1060,7 +1060,7 @@
       "id": "carcharodontosaurus",
       "name": "Carcharodontosaurus",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/carcharodontosaurus/",
       "rosterSource": "Wikily The Center",
@@ -1083,7 +1083,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 70000
         },
         {
@@ -1091,7 +1091,7 @@
           "value": 480
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 650
         },
         {
@@ -1107,7 +1107,7 @@
       "id": "carnotaurus",
       "name": "Carnotaurus",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/carnotaurus/",
       "rosterSource": "Wikily The Center",
@@ -1136,7 +1136,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 420
         },
         {
@@ -1144,7 +1144,7 @@
           "value": 300
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 300
         },
         {
@@ -1160,7 +1160,7 @@
       "id": "castoroides",
       "name": "Castoroides",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/castoroides/",
       "rosterSource": "Wikily The Center",
@@ -1187,7 +1187,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 450
         },
         {
@@ -1195,7 +1195,7 @@
           "value": 180
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 300
         },
         {
@@ -1211,7 +1211,7 @@
       "id": "cat",
       "name": "Cat",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/cat/",
       "rosterSource": "Wikily The Center",
@@ -1238,7 +1238,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 125
         },
         {
@@ -1246,7 +1246,7 @@
           "value": 100
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 60
         },
         {
@@ -1262,7 +1262,7 @@
       "id": "ceratosaurus",
       "name": "Ceratosaurus",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/ceratosaurus/",
       "rosterSource": "Wikily The Center",
@@ -1292,7 +1292,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 550
         },
         {
@@ -1300,7 +1300,7 @@
           "value": 400
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 350
         },
         {
@@ -1316,7 +1316,7 @@
       "id": "cerberax",
       "name": "Cerberax",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "Fantastic Tames Season 1",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/cerberax/",
       "rosterSource": "Wikily The Center",
@@ -1324,7 +1324,7 @@
       "detailAvailable": true,
       "tameable": true,
       "diet": "Carnivore",
-      "method": "Thử thách đặc biệt",
+      "method": "Special challenge",
       "foods": [
         "Extraordinary Kibble"
       ],
@@ -1341,7 +1341,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 1400
         },
         {
@@ -1349,7 +1349,7 @@
           "value": 500
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 666
         },
         {
@@ -1359,13 +1359,13 @@
       ],
       "iconURL": "https://r2.wikily.gg/images/ark/icons/ASA_Icons_Ceberax_DinoHeadIcon_Light.webp",
       "archive": null,
-      "updateNote": "Có trong dữ liệu spawn The Center hiện tại; kiểm tra DLC và settings của save."
+      "updateNote": "Present in the current The Center spawn data; check the DLC and settings for your save."
     },
     {
       "id": "chalicotherium",
       "name": "Chalicotherium",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/chalicotherium/",
       "rosterSource": "Wikily The Center",
@@ -1391,7 +1391,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 600
         },
         {
@@ -1399,7 +1399,7 @@
           "value": 300
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 400
         },
         {
@@ -1415,7 +1415,7 @@
       "id": "cnidaria",
       "name": "Cnidaria",
       "aliases": [],
-      "group": "Dưới nước",
+      "group": "Aquatic",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/cnidaria/",
       "rosterSource": "Wikily The Center",
@@ -1431,7 +1431,7 @@
       "immobilizedBy": [],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 180
         },
         {
@@ -1439,7 +1439,7 @@
           "value": 120
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 25
         },
         {
@@ -1455,7 +1455,7 @@
       "id": "coelacanth",
       "name": "Coelacanth",
       "aliases": [],
-      "group": "Dưới nước",
+      "group": "Aquatic",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/coelacanth/",
       "rosterSource": "Wikily The Center",
@@ -1471,7 +1471,7 @@
       "immobilizedBy": [],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 30
         },
         {
@@ -1479,7 +1479,7 @@
           "value": 100
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 8
         },
         {
@@ -1495,7 +1495,7 @@
       "id": "compy",
       "name": "Compy",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/compy/",
       "rosterSource": "Wikily The Center",
@@ -1517,7 +1517,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 50
         },
         {
@@ -1525,7 +1525,7 @@
           "value": 100
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 25
         },
         {
@@ -1541,7 +1541,7 @@
       "id": "cryolophosaurus",
       "name": "Cryolophosaurus",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/cryolophosaurus/",
       "rosterSource": "Wikily The Center",
@@ -1565,7 +1565,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 500
         },
         {
@@ -1573,7 +1573,7 @@
           "value": 350
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 500
         },
         {
@@ -1583,13 +1583,13 @@
       ],
       "iconURL": "https://r2.wikily.gg/images/ark/icons/Cryo_Entry.webp",
       "archive": null,
-      "updateNote": "Có trong dữ liệu spawn The Center hiện tại; kiểm tra DLC và settings của save."
+      "updateNote": "Present in the current The Center spawn data; check the DLC and settings for your save."
     },
     {
       "id": "daeodon",
       "name": "Daeodon",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/daeodon/",
       "rosterSource": "Wikily The Center",
@@ -1616,7 +1616,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 900
         },
         {
@@ -1624,7 +1624,7 @@
           "value": 250
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 400
         },
         {
@@ -1640,7 +1640,7 @@
       "id": "deinosuchus",
       "name": "Deinosuchus",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/deinosuchus/",
       "rosterSource": "Wikily The Center",
@@ -1668,7 +1668,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 1000
         },
         {
@@ -1676,7 +1676,7 @@
           "value": 300
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 600
         },
         {
@@ -1692,7 +1692,7 @@
       "id": "deinotherium",
       "name": "Deinotherium",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/deinotherium/",
       "rosterSource": "Wikily The Center",
@@ -1722,7 +1722,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 1750
         },
         {
@@ -1730,7 +1730,7 @@
           "value": 450
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 800
         },
         {
@@ -1748,7 +1748,7 @@
       "aliases": [
         "Dilophosaur"
       ],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/dilophosaur/",
       "rosterSource": "Wikily The Center",
@@ -1771,7 +1771,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 130
         },
         {
@@ -1779,7 +1779,7 @@
           "value": 100
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 45
         },
         {
@@ -1795,7 +1795,7 @@
       "id": "dimetrodon",
       "name": "Dimetrodon",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/dimetrodon/",
       "rosterSource": "Wikily The Center",
@@ -1823,7 +1823,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 350
         },
         {
@@ -1831,7 +1831,7 @@
           "value": 300
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 250
         },
         {
@@ -1847,7 +1847,7 @@
       "id": "dimorphodon",
       "name": "Dimorphodon",
       "aliases": [],
-      "group": "Bay",
+      "group": "Flying",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/dimorphodon/",
       "rosterSource": "Wikily The Center",
@@ -1870,7 +1870,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 125
         },
         {
@@ -1878,7 +1878,7 @@
           "value": 150
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 50
         },
         {
@@ -1894,7 +1894,7 @@
       "id": "diplocaulus",
       "name": "Diplocaulus",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/diplocaulus/",
       "rosterSource": "Wikily The Center",
@@ -1917,7 +1917,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 250
         },
         {
@@ -1925,7 +1925,7 @@
           "value": 165
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 150
         },
         {
@@ -1941,7 +1941,7 @@
       "id": "diplodocus",
       "name": "Diplodocus",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/diplodocus/",
       "rosterSource": "Wikily The Center",
@@ -1970,7 +1970,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 1700
         },
         {
@@ -1978,7 +1978,7 @@
           "value": 550
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 800
         },
         {
@@ -1994,7 +1994,7 @@
       "id": "dire-bear",
       "name": "Dire Bear",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/dire-bear/",
       "rosterSource": "Wikily The Center",
@@ -2022,7 +2022,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 400
         },
         {
@@ -2030,7 +2030,7 @@
           "value": 500
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 650
         },
         {
@@ -2046,7 +2046,7 @@
       "id": "direwolf",
       "name": "Direwolf",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/direwolf/",
       "rosterSource": "Wikily The Center",
@@ -2073,7 +2073,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 330
         },
         {
@@ -2081,7 +2081,7 @@
           "value": 260
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 170
         },
         {
@@ -2097,7 +2097,7 @@
       "id": "diseased-leech",
       "name": "Diseased Leech",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://ark.wiki.gg/wiki/Diseased_Leech",
       "rosterSource": "Wikily The Center",
@@ -2118,7 +2118,7 @@
       "id": "dodo",
       "name": "Dodo",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/dodo/",
       "rosterSource": "Wikily The Center",
@@ -2141,7 +2141,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 40
         },
         {
@@ -2149,7 +2149,7 @@
           "value": 100
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 50
         },
         {
@@ -2165,7 +2165,7 @@
       "id": "doedicurus",
       "name": "Doedicurus",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/doedicurus/",
       "rosterSource": "Wikily The Center",
@@ -2193,7 +2193,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 850
         },
         {
@@ -2201,7 +2201,7 @@
           "value": 300
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 250
         },
         {
@@ -2217,7 +2217,7 @@
       "id": "dreadmare",
       "name": "Dreadmare",
       "aliases": [],
-      "group": "Bay",
+      "group": "Flying",
       "dlc": "Fantastic Tames: Dreadmare",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/dreadmare/",
       "rosterSource": "Wikily The Center",
@@ -2244,7 +2244,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 1000
         },
         {
@@ -2252,7 +2252,7 @@
           "value": 600
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 450
         },
         {
@@ -2268,7 +2268,7 @@
       "id": "dung-beetle",
       "name": "Dung Beetle",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/dung-beetle/",
       "rosterSource": "Wikily The Center",
@@ -2294,7 +2294,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 200
         },
         {
@@ -2302,7 +2302,7 @@
           "value": 100
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 5
         },
         {
@@ -2318,7 +2318,7 @@
       "id": "dunkleosteus",
       "name": "Dunkleosteus",
       "aliases": [],
-      "group": "Dưới nước",
+      "group": "Aquatic",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/dunkleosteus/",
       "rosterSource": "Wikily The Center",
@@ -2341,7 +2341,7 @@
       "immobilizedBy": [],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 710
         },
         {
@@ -2349,7 +2349,7 @@
           "value": 200
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 910
         },
         {
@@ -2365,7 +2365,7 @@
       "id": "elderclaw",
       "name": "Elderclaw",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "Fantastic Tames: Elderclaw",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/elderclaw/",
       "rosterSource": "Wikily The Center",
@@ -2390,7 +2390,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 800
         },
         {
@@ -2398,7 +2398,7 @@
           "value": 350
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 650
         },
         {
@@ -2414,7 +2414,7 @@
       "id": "electrophorus",
       "name": "Electrophorus",
       "aliases": [],
-      "group": "Dưới nước",
+      "group": "Aquatic",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/electrophorus/",
       "rosterSource": "Wikily The Center",
@@ -2435,7 +2435,7 @@
       "immobilizedBy": [],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 180
         },
         {
@@ -2443,7 +2443,7 @@
           "value": 165
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 150
         },
         {
@@ -2459,7 +2459,7 @@
       "id": "equus",
       "name": "Equus",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/equus/",
       "rosterSource": "Wikily The Center",
@@ -2486,7 +2486,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 240
         },
         {
@@ -2494,7 +2494,7 @@
           "value": 560
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 350
         },
         {
@@ -2510,7 +2510,7 @@
       "id": "eurypterid",
       "name": "Eurypterid",
       "aliases": [],
-      "group": "Dưới nước",
+      "group": "Aquatic",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/eurypterid/",
       "rosterSource": "Wikily The Center",
@@ -2530,7 +2530,7 @@
       "immobilizedBy": [],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 160
         },
         {
@@ -2538,7 +2538,7 @@
           "value": 100
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 150
         },
         {
@@ -2554,7 +2554,7 @@
       "id": "gallimimus",
       "name": "Gallimimus",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/gallimimus/",
       "rosterSource": "Wikily The Center",
@@ -2578,7 +2578,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 150
         },
         {
@@ -2586,7 +2586,7 @@
           "value": 300
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 270
         },
         {
@@ -2602,7 +2602,7 @@
       "id": "gargantar",
       "name": "Gargantar",
       "aliases": [],
-      "group": "Bay",
+      "group": "Flying",
       "dlc": "Dragontopia",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/gargantar/",
       "rosterSource": "Wikily The Center",
@@ -2610,7 +2610,7 @@
       "detailAvailable": true,
       "tameable": true,
       "diet": "Minerals",
-      "method": "Tame đặc biệt theo yêu cầu",
+      "method": "Special taming requirements",
       "foods": [],
       "drops": [],
       "immobilizedBy": [
@@ -2621,7 +2621,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 1500
         },
         {
@@ -2629,7 +2629,7 @@
           "value": 400
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 950
         },
         {
@@ -2639,13 +2639,13 @@
       ],
       "iconURL": "https://r2.wikily.gg/images/ark/icons/Empty_Gargantar_Icon_Light.webp",
       "archive": null,
-      "updateNote": "Có trong dữ liệu spawn The Center hiện tại; kiểm tra DLC và settings của save."
+      "updateNote": "Present in the current The Center spawn data; check the DLC and settings for your save."
     },
     {
       "id": "giganotosaurus",
       "name": "Giganotosaurus",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/giganotosaurus/",
       "rosterSource": "Wikily The Center",
@@ -2673,7 +2673,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 80000
         },
         {
@@ -2681,7 +2681,7 @@
           "value": 400
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 700
         },
         {
@@ -2697,7 +2697,7 @@
       "id": "gigantopithecus",
       "name": "Gigantopithecus",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/gigantopithecus/",
       "rosterSource": "Wikily The Center",
@@ -2721,7 +2721,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 640
         },
         {
@@ -2729,7 +2729,7 @@
           "value": 300
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 220
         },
         {
@@ -2745,7 +2745,7 @@
       "id": "gigantoraptor",
       "name": "Gigantoraptor",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/gigantoraptor/",
       "rosterSource": "Wikily The Center",
@@ -2768,7 +2768,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 770
         },
         {
@@ -2776,7 +2776,7 @@
           "value": 350
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 320
         },
         {
@@ -2792,7 +2792,7 @@
       "id": "helicoprion",
       "name": "Helicoprion",
       "aliases": [],
-      "group": "Dưới nước",
+      "group": "Aquatic",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/helicoprion/",
       "rosterSource": "Wikily The Center",
@@ -2811,7 +2811,7 @@
       "immobilizedBy": [],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 1300
         },
         {
@@ -2819,7 +2819,7 @@
           "value": 500
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 500
         },
         {
@@ -2835,7 +2835,7 @@
       "id": "hesperornis",
       "name": "Hesperornis",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/hesperornis/",
       "rosterSource": "Wikily The Center",
@@ -2854,7 +2854,7 @@
       "immobilizedBy": [],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 95
         },
         {
@@ -2862,7 +2862,7 @@
           "value": 200
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 70
         },
         {
@@ -2878,7 +2878,7 @@
       "id": "hyaenodon",
       "name": "Hyaenodon",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/hyaenodon/",
       "rosterSource": "Wikily The Center",
@@ -2901,7 +2901,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 175
         },
         {
@@ -2909,7 +2909,7 @@
           "value": 260
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 170
         },
         {
@@ -2925,7 +2925,7 @@
       "id": "ichthyornis",
       "name": "Ichthyornis",
       "aliases": [],
-      "group": "Bay",
+      "group": "Flying",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/ichthyornis/",
       "rosterSource": "Wikily The Center",
@@ -2948,7 +2948,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 50
         },
         {
@@ -2956,7 +2956,7 @@
           "value": 150
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 55
         },
         {
@@ -2972,7 +2972,7 @@
       "id": "ichthyosaurus",
       "name": "Ichthyosaurus",
       "aliases": [],
-      "group": "Dưới nước",
+      "group": "Aquatic",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/ichthyosaurus/",
       "rosterSource": "Wikily The Center",
@@ -2993,7 +2993,7 @@
       "immobilizedBy": [],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 275
         },
         {
@@ -3001,7 +3001,7 @@
           "value": 300
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 250
         },
         {
@@ -3017,7 +3017,7 @@
       "id": "iguanodon",
       "name": "Iguanodon",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/iguanodon/",
       "rosterSource": "Wikily The Center",
@@ -3043,7 +3043,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 250
         },
         {
@@ -3051,7 +3051,7 @@
           "value": 200
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 375
         },
         {
@@ -3067,7 +3067,7 @@
       "id": "kairuku",
       "name": "Kairuku",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/kairuku/",
       "rosterSource": "Wikily The Center",
@@ -3095,7 +3095,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 95
         },
         {
@@ -3103,7 +3103,7 @@
           "value": 200
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 70
         },
         {
@@ -3119,7 +3119,7 @@
       "id": "kaprosuchus",
       "name": "Kaprosuchus",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/kaprosuchus/",
       "rosterSource": "Wikily The Center",
@@ -3143,7 +3143,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 200
         },
         {
@@ -3151,7 +3151,7 @@
           "value": 350
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 140
         },
         {
@@ -3167,7 +3167,7 @@
       "id": "kentrosaurus",
       "name": "Kentrosaurus",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/kentrosaurus/",
       "rosterSource": "Wikily The Center",
@@ -3195,7 +3195,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 650
         },
         {
@@ -3203,7 +3203,7 @@
           "value": 300
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 500
         },
         {
@@ -3219,7 +3219,7 @@
       "id": "leech",
       "name": "Leech",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/leech/",
       "rosterSource": "Wikily The Center",
@@ -3239,7 +3239,7 @@
       "immobilizedBy": [],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 40
         },
         {
@@ -3247,7 +3247,7 @@
           "value": 100
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 10
         },
         {
@@ -3263,7 +3263,7 @@
       "id": "leedsichthys",
       "name": "Leedsichthys",
       "aliases": [],
-      "group": "Dưới nước",
+      "group": "Aquatic",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/leedsichthys/",
       "rosterSource": "Wikily The Center",
@@ -3280,7 +3280,7 @@
       "immobilizedBy": [],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 4400
         },
         {
@@ -3288,7 +3288,7 @@
           "value": 500
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 1800
         },
         {
@@ -3304,7 +3304,7 @@
       "id": "liopleurodon",
       "name": "Liopleurodon",
       "aliases": [],
-      "group": "Dưới nước",
+      "group": "Aquatic",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/liopleurodon/",
       "rosterSource": "Wikily The Center",
@@ -3324,7 +3324,7 @@
       "immobilizedBy": [],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 3200
         },
         {
@@ -3332,7 +3332,7 @@
           "value": 800
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 1000
         },
         {
@@ -3348,7 +3348,7 @@
       "id": "lystrosaurus",
       "name": "Lystrosaurus",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/lystrosaurus/",
       "rosterSource": "Wikily The Center",
@@ -3371,7 +3371,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 90
         },
         {
@@ -3379,7 +3379,7 @@
           "value": 100
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 90
         },
         {
@@ -3395,7 +3395,7 @@
       "id": "mammoth",
       "name": "Mammoth",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/mammoth/",
       "rosterSource": "Wikily The Center",
@@ -3425,7 +3425,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 1020
         },
         {
@@ -3433,7 +3433,7 @@
           "value": 330
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 500
         },
         {
@@ -3449,7 +3449,7 @@
       "id": "manta",
       "name": "Manta",
       "aliases": [],
-      "group": "Dưới nước",
+      "group": "Aquatic",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/manta/",
       "rosterSource": "Wikily The Center",
@@ -3467,7 +3467,7 @@
       "immobilizedBy": [],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 320
         },
         {
@@ -3475,7 +3475,7 @@
           "value": 270
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 200
         },
         {
@@ -3491,7 +3491,7 @@
       "id": "megalania",
       "name": "Megalania",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/megalania/",
       "rosterSource": "Wikily The Center",
@@ -3518,7 +3518,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 480
         },
         {
@@ -3526,7 +3526,7 @@
           "value": 400
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 400
         },
         {
@@ -3542,7 +3542,7 @@
       "id": "megaloceros",
       "name": "Megaloceros",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/megaloceros/",
       "rosterSource": "Wikily The Center",
@@ -3569,7 +3569,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 300
         },
         {
@@ -3577,7 +3577,7 @@
           "value": 280
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 220
         },
         {
@@ -3593,7 +3593,7 @@
       "id": "megalodon",
       "name": "Megalodon",
       "aliases": [],
-      "group": "Dưới nước",
+      "group": "Aquatic",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/megalodon/",
       "rosterSource": "Wikily The Center",
@@ -3616,7 +3616,7 @@
       "immobilizedBy": [],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 600
         },
         {
@@ -3624,7 +3624,7 @@
           "value": 320
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 250
         },
         {
@@ -3640,7 +3640,7 @@
       "id": "megalosaurus",
       "name": "Megalosaurus",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/megalosaurus/",
       "rosterSource": "Wikily The Center",
@@ -3669,7 +3669,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 1025
         },
         {
@@ -3677,7 +3677,7 @@
           "value": 300
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 300
         },
         {
@@ -3693,7 +3693,7 @@
       "id": "meganeura",
       "name": "Meganeura",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/meganeura/",
       "rosterSource": "Wikily The Center",
@@ -3711,7 +3711,7 @@
       "immobilizedBy": [],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 45
         },
         {
@@ -3719,7 +3719,7 @@
           "value": 100
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 50
         },
         {
@@ -3735,7 +3735,7 @@
       "id": "megatherium",
       "name": "Megatherium",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/megatherium/",
       "rosterSource": "Wikily The Center",
@@ -3763,7 +3763,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 740
         },
         {
@@ -3771,7 +3771,7 @@
           "value": 400
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 725
         },
         {
@@ -3787,7 +3787,7 @@
       "id": "mesopithecus",
       "name": "Mesopithecus",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/mesopithecus/",
       "rosterSource": "Wikily The Center",
@@ -3810,7 +3810,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 115
         },
         {
@@ -3818,7 +3818,7 @@
           "value": 100
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 70
         },
         {
@@ -3834,7 +3834,7 @@
       "id": "microraptor",
       "name": "Microraptor",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/microraptor/",
       "rosterSource": "Wikily The Center",
@@ -3857,7 +3857,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 130
         },
         {
@@ -3865,7 +3865,7 @@
           "value": 100
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 45
         },
         {
@@ -3881,7 +3881,7 @@
       "id": "mosasaurus",
       "name": "Mosasaurus",
       "aliases": [],
-      "group": "Dưới nước",
+      "group": "Aquatic",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/mosasaurus/",
       "rosterSource": "Wikily The Center",
@@ -3903,7 +3903,7 @@
       "immobilizedBy": [],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 3600
         },
         {
@@ -3911,7 +3911,7 @@
           "value": 400
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 1300
         },
         {
@@ -3927,7 +3927,7 @@
       "id": "moschops",
       "name": "Moschops",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/moschops/",
       "rosterSource": "Wikily The Center",
@@ -3948,7 +3948,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 375
         },
         {
@@ -3956,7 +3956,7 @@
           "value": 300
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 200
         },
         {
@@ -3972,7 +3972,7 @@
       "id": "onyc",
       "name": "Onyc",
       "aliases": [],
-      "group": "Bay",
+      "group": "Flying",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/onyc/",
       "rosterSource": "Wikily The Center",
@@ -3995,7 +3995,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 250
         },
         {
@@ -4003,7 +4003,7 @@
           "value": 100
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 50
         },
         {
@@ -4019,7 +4019,7 @@
       "id": "otter",
       "name": "Otter",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/otter/",
       "rosterSource": "Wikily The Center",
@@ -4041,7 +4041,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 40
         },
         {
@@ -4049,7 +4049,7 @@
           "value": 180
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 30
         },
         {
@@ -4065,7 +4065,7 @@
       "id": "oviraptor",
       "name": "Oviraptor",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/oviraptor/",
       "rosterSource": "Wikily The Center",
@@ -4088,7 +4088,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 140
         },
         {
@@ -4096,7 +4096,7 @@
           "value": 120
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 100
         },
         {
@@ -4112,7 +4112,7 @@
       "id": "ovis",
       "name": "Ovis",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/ovis/",
       "rosterSource": "Wikily The Center",
@@ -4136,7 +4136,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 100
         },
         {
@@ -4144,7 +4144,7 @@
           "value": 100
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 90
         },
         {
@@ -4160,7 +4160,7 @@
       "id": "pachy",
       "name": "Pachy",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/pachy/",
       "rosterSource": "Wikily The Center",
@@ -4183,7 +4183,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 165
         },
         {
@@ -4191,7 +4191,7 @@
           "value": 150
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 150
         },
         {
@@ -4207,7 +4207,7 @@
       "id": "pachyrhinosaurus",
       "name": "Pachyrhinosaurus",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/pachyrhinosaurus/",
       "rosterSource": "Wikily The Center",
@@ -4235,7 +4235,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 375
         },
         {
@@ -4243,7 +4243,7 @@
           "value": 150
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 365
         },
         {
@@ -4259,7 +4259,7 @@
       "id": "paraceratherium",
       "name": "Paraceratherium",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/paraceratherium/",
       "rosterSource": "Wikily The Center",
@@ -4287,7 +4287,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 1026
         },
         {
@@ -4295,7 +4295,7 @@
           "value": 300
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 850
         },
         {
@@ -4311,7 +4311,7 @@
       "id": "parasaur",
       "name": "Parasaur",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/parasaur/",
       "rosterSource": "Wikily The Center",
@@ -4337,7 +4337,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 200
         },
         {
@@ -4345,7 +4345,7 @@
           "value": 450
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 480
         },
         {
@@ -4361,7 +4361,7 @@
       "id": "pegomastax",
       "name": "Pegomastax",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/pegomastax/",
       "rosterSource": "Wikily The Center",
@@ -4384,7 +4384,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 120
         },
         {
@@ -4392,7 +4392,7 @@
           "value": 100
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 55
         },
         {
@@ -4408,7 +4408,7 @@
       "id": "pelagornis",
       "name": "Pelagornis",
       "aliases": [],
-      "group": "Bay",
+      "group": "Flying",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/pelagornis/",
       "rosterSource": "Wikily The Center",
@@ -4431,7 +4431,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 240
         },
         {
@@ -4439,7 +4439,7 @@
           "value": 180
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 150
         },
         {
@@ -4455,7 +4455,7 @@
       "id": "phiomia",
       "name": "Phiomia",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/phiomia/",
       "rosterSource": "Wikily The Center",
@@ -4481,7 +4481,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 300
         },
         {
@@ -4489,7 +4489,7 @@
           "value": 300
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 200
         },
         {
@@ -4505,7 +4505,7 @@
       "id": "piranha",
       "name": "Piranha",
       "aliases": [],
-      "group": "Dưới nước",
+      "group": "Aquatic",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/piranha/",
       "rosterSource": "Wikily The Center",
@@ -4521,7 +4521,7 @@
       "immobilizedBy": [],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 150
         },
         {
@@ -4529,7 +4529,7 @@
           "value": 120
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 15
         },
         {
@@ -4545,7 +4545,7 @@
       "id": "plesiosaur",
       "name": "Plesiosaur",
       "aliases": [],
-      "group": "Dưới nước",
+      "group": "Aquatic",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/plesiosaur/",
       "rosterSource": "Wikily The Center",
@@ -4567,7 +4567,7 @@
       "immobilizedBy": [],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 2400
         },
         {
@@ -4575,7 +4575,7 @@
           "value": 800
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 800
         },
         {
@@ -4591,7 +4591,7 @@
       "id": "procoptodon",
       "name": "Procoptodon",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/procoptodon/",
       "rosterSource": "Wikily The Center",
@@ -4617,7 +4617,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 400
         },
         {
@@ -4625,7 +4625,7 @@
           "value": 350
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 550
         },
         {
@@ -4641,7 +4641,7 @@
       "id": "pteranodon",
       "name": "Pteranodon",
       "aliases": [],
-      "group": "Bay",
+      "group": "Flying",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/pteranodon/",
       "rosterSource": "Wikily The Center",
@@ -4665,7 +4665,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 210
         },
         {
@@ -4673,7 +4673,7 @@
           "value": 150
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 120
         },
         {
@@ -4689,7 +4689,7 @@
       "id": "pulmonoscorpius",
       "name": "Pulmonoscorpius",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/pulmonoscorpius/",
       "rosterSource": "Wikily The Center",
@@ -4715,7 +4715,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 280
         },
         {
@@ -4723,7 +4723,7 @@
           "value": 200
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 200
         },
         {
@@ -4739,7 +4739,7 @@
       "id": "purlovia",
       "name": "Purlovia",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/purlovia/",
       "rosterSource": "Wikily The Center",
@@ -4767,7 +4767,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 275
         },
         {
@@ -4775,7 +4775,7 @@
           "value": 300
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 400
         },
         {
@@ -4791,7 +4791,7 @@
       "id": "pyromane",
       "name": "Pyromane",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "Fantastic Tames: Pyromane",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/pyromane/",
       "rosterSource": "Wikily The Center",
@@ -4810,7 +4810,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 600
         },
         {
@@ -4818,7 +4818,7 @@
           "value": 350
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 300
         },
         {
@@ -4834,7 +4834,7 @@
       "id": "quetzal",
       "name": "Quetzal",
       "aliases": [],
-      "group": "Bay",
+      "group": "Flying",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/quetzal/",
       "rosterSource": "Wikily The Center",
@@ -4862,7 +4862,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 1200
         },
         {
@@ -4870,7 +4870,7 @@
           "value": 800
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 800
         },
         {
@@ -4886,7 +4886,7 @@
       "id": "raptor",
       "name": "Raptor",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/raptor/",
       "rosterSource": "Wikily The Center",
@@ -4909,7 +4909,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 200
         },
         {
@@ -4917,7 +4917,7 @@
           "value": 150
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 140
         },
         {
@@ -4933,7 +4933,7 @@
       "id": "rex",
       "name": "Rex",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/rex/",
       "rosterSource": "Wikily The Center",
@@ -4963,7 +4963,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 1100
         },
         {
@@ -4971,7 +4971,7 @@
           "value": 420
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 500
         },
         {
@@ -4987,7 +4987,7 @@
       "id": "sabertooth",
       "name": "Sabertooth",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/sabertooth/",
       "rosterSource": "Wikily The Center",
@@ -5014,7 +5014,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 250
         },
         {
@@ -5022,7 +5022,7 @@
           "value": 200
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 200
         },
         {
@@ -5038,7 +5038,7 @@
       "id": "sabertooth-salmon",
       "name": "Sabertooth Salmon",
       "aliases": [],
-      "group": "Dưới nước",
+      "group": "Aquatic",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/sabertooth-salmon/",
       "rosterSource": "Wikily The Center",
@@ -5055,7 +5055,7 @@
       "immobilizedBy": [],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 65
         },
         {
@@ -5063,7 +5063,7 @@
           "value": 100
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 18
         },
         {
@@ -5079,7 +5079,7 @@
       "id": "sarco",
       "name": "Sarco",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/sarco/",
       "rosterSource": "Wikily The Center",
@@ -5108,7 +5108,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 400
         },
         {
@@ -5116,7 +5116,7 @@
           "value": 450
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 300
         },
         {
@@ -5132,7 +5132,7 @@
       "id": "shastasaurus",
       "name": "Shastasaurus",
       "aliases": [],
-      "group": "Dưới nước",
+      "group": "Aquatic",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/shastasaurus/",
       "rosterSource": "Wikily The Center",
@@ -5154,7 +5154,7 @@
       "immobilizedBy": [],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 4500
         },
         {
@@ -5162,7 +5162,7 @@
           "value": 300
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 3000
         },
         {
@@ -5178,7 +5178,7 @@
       "id": "spino",
       "name": "Spino",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/spino/",
       "rosterSource": "Wikily The Center",
@@ -5207,7 +5207,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 805
         },
         {
@@ -5215,7 +5215,7 @@
           "value": 350
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 350
         },
         {
@@ -5231,7 +5231,7 @@
       "id": "spring-drakeling",
       "name": "Spring Drakeling",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "Lost Colony / Fantastic Tames: Drakelings",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/spring-drakeling/",
       "rosterSource": "Wikily The Center",
@@ -5254,7 +5254,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 150
         },
         {
@@ -5262,7 +5262,7 @@
           "value": 150
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 65
         },
         {
@@ -5278,7 +5278,7 @@
       "id": "stegosaurus",
       "name": "Stegosaurus",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/stegosaurus/",
       "rosterSource": "Wikily The Center",
@@ -5307,7 +5307,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 650
         },
         {
@@ -5315,7 +5315,7 @@
           "value": 300
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 500
         },
         {
@@ -5331,7 +5331,7 @@
       "id": "summer-drakeling",
       "name": "Summer Drakeling",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "Lost Colony / Fantastic Tames: Drakelings",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/summer-drakeling/",
       "rosterSource": "Wikily The Center",
@@ -5354,7 +5354,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 150
         },
         {
@@ -5362,7 +5362,7 @@
           "value": 150
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 65
         },
         {
@@ -5378,7 +5378,7 @@
       "id": "tapejara",
       "name": "Tapejara",
       "aliases": [],
-      "group": "Bay",
+      "group": "Flying",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/tapejara/",
       "rosterSource": "Wikily The Center",
@@ -5402,7 +5402,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 325
         },
         {
@@ -5410,7 +5410,7 @@
           "value": 250
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 280
         },
         {
@@ -5426,7 +5426,7 @@
       "id": "terror-bird",
       "name": "Terror Bird",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/terror-bird/",
       "rosterSource": "Wikily The Center",
@@ -5449,7 +5449,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 270
         },
         {
@@ -5457,7 +5457,7 @@
           "value": 160
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 120
         },
         {
@@ -5473,7 +5473,7 @@
       "id": "therizinosaur",
       "name": "Therizinosaur",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/therizinosaur/",
       "rosterSource": "Wikily The Center",
@@ -5503,7 +5503,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 870
         },
         {
@@ -5511,7 +5511,7 @@
           "value": 300
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 365
         },
         {
@@ -5527,7 +5527,7 @@
       "id": "thylacoleo",
       "name": "Thylacoleo",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/thylacoleo/",
       "rosterSource": "Wikily The Center",
@@ -5556,7 +5556,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 700
         },
         {
@@ -5564,7 +5564,7 @@
           "value": 400
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 400
         },
         {
@@ -5580,7 +5580,7 @@
       "id": "titanoboa",
       "name": "Titanoboa",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/titanoboa/",
       "rosterSource": "Wikily The Center",
@@ -5599,7 +5599,7 @@
       "immobilizedBy": [],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 170
         },
         {
@@ -5607,7 +5607,7 @@
           "value": 150
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 150
         },
         {
@@ -5623,7 +5623,7 @@
       "id": "titanomyrma-drone",
       "name": "Titanomyrma Drone",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://ark.wiki.gg/wiki/Titanomyrma_Drone",
       "rosterSource": "Wikily The Center",
@@ -5644,7 +5644,7 @@
       "id": "titanomyrma-soldier",
       "name": "Titanomyrma Soldier",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://ark.wiki.gg/wiki/Titanomyrma_Soldier",
       "rosterSource": "Wikily The Center",
@@ -5665,7 +5665,7 @@
       "id": "titanosaur",
       "name": "Titanosaur",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/titanosaur/",
       "rosterSource": "Wikily The Center",
@@ -5684,7 +5684,7 @@
       "immobilizedBy": [],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 230000
         },
         {
@@ -5692,7 +5692,7 @@
           "value": 2000
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 50000
         },
         {
@@ -5708,7 +5708,7 @@
       "id": "triceratops",
       "name": "Triceratops",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/triceratops/",
       "rosterSource": "Wikily The Center",
@@ -5736,7 +5736,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 375
         },
         {
@@ -5744,7 +5744,7 @@
           "value": 150
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 365
         },
         {
@@ -5760,7 +5760,7 @@
       "id": "trilobite",
       "name": "Trilobite",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/trilobite/",
       "rosterSource": "Wikily The Center",
@@ -5780,7 +5780,7 @@
       "immobilizedBy": [],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 160
         },
         {
@@ -5788,7 +5788,7 @@
           "value": 100
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 150
         },
         {
@@ -5804,7 +5804,7 @@
       "id": "troodon",
       "name": "Troodon",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/troodon/",
       "rosterSource": "Wikily The Center",
@@ -5822,7 +5822,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 200
         },
         {
@@ -5830,7 +5830,7 @@
           "value": 150
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 140
         },
         {
@@ -5846,7 +5846,7 @@
       "id": "tusoteuthis",
       "name": "Tusoteuthis",
       "aliases": [],
-      "group": "Dưới nước",
+      "group": "Aquatic",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/tusoteuthis/",
       "rosterSource": "Wikily The Center",
@@ -5872,7 +5872,7 @@
       "immobilizedBy": [],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 2700
         },
         {
@@ -5880,7 +5880,7 @@
           "value": 300
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 800
         },
         {
@@ -5896,7 +5896,7 @@
       "id": "winter-drakeling",
       "name": "Winter Drakeling",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "Lost Colony / Fantastic Tames: Drakelings",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/winter-drakeling/",
       "rosterSource": "Wikily The Center",
@@ -5919,7 +5919,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 150
         },
         {
@@ -5927,7 +5927,7 @@
           "value": 150
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 65
         },
         {
@@ -5943,7 +5943,7 @@
       "id": "woolly-rhino",
       "name": "Woolly Rhino",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/woolly-rhino/",
       "rosterSource": "Wikily The Center",
@@ -5972,7 +5972,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 500
         },
         {
@@ -5980,7 +5980,7 @@
           "value": 120
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 750
         },
         {
@@ -5996,7 +5996,7 @@
       "id": "xiphactinus",
       "name": "Xiphactinus",
       "aliases": [],
-      "group": "Dưới nước",
+      "group": "Aquatic",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/xiphactinus/",
       "rosterSource": "Wikily The Center",
@@ -6018,7 +6018,7 @@
       "immobilizedBy": [],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 450
         },
         {
@@ -6026,7 +6026,7 @@
           "value": 420
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 300
         },
         {
@@ -6042,7 +6042,7 @@
       "id": "yeti",
       "name": "Yeti",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/yeti/",
       "rosterSource": "Wikily The Center",
@@ -6061,7 +6061,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 2000
         },
         {
@@ -6069,7 +6069,7 @@
           "value": 300
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 220
         },
         {
@@ -6085,7 +6085,7 @@
       "id": "yutyrannus",
       "name": "Yutyrannus",
       "aliases": [],
-      "group": "Trên cạn",
+      "group": "Land",
       "dlc": "",
       "sourceURL": "https://wikily.gg/ark-survival-ascended/dinosaurs/yutyrannus/",
       "rosterSource": "Wikily The Center",
@@ -6114,7 +6114,7 @@
       ],
       "stats": [
         {
-          "label": "Máu",
+          "label": "Health",
           "value": 1100
         },
         {
@@ -6122,7 +6122,7 @@
           "value": 420
         },
         {
-          "label": "Tải trọng",
+          "label": "Weight",
           "value": 500
         },
         {

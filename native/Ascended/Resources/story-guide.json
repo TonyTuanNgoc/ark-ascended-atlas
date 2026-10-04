@@ -2,181 +2,181 @@
   "overview": [
     {
       "id": "start",
-      "title": "Bắt đầu không spoiler",
+      "title": "Let's start without spoilers",
       "symbol": "sparkles",
       "paragraphs": [
-        "Bạn tỉnh dậy trong một thế giới có khủng long, công nghệ lạ và dấu vết của những người đến trước. Hãy coi sinh tồn là chương đầu của một bí ẩn dài: nơi này là gì, ai tạo ra nó và vì sao bạn ở đây?",
-        "ARK không bắt bạn phải hoàn thành truyện mới được xây nhà, nuôi thú hoặc chơi cùng bạn bè. Tuy nhiên, hang, artifact, boss và ascension tạo thành một mục tiêu dài hạn rất rõ."
+        "You wake up in a world with dinosaurs, strange technology, and traces of those who came before. Think of survival as the first chapter of a long mystery: what is this place, who created it, and why are you here?",
+        "ARK does not force you to complete the story to build a house, raise animals or play with friends. However, caves, artifacts, bosses and ascensions form a very clear long-term goal."
       ]
     },
     {
       "id": "loop",
-      "title": "Chơi để tiến bộ điều gì?",
+      "title": "Play to improve what?",
       "symbol": "arrow.up.right",
       "paragraphs": [
-        "Vòng chơi đi từ thức ăn và nơi trú → công cụ và tài nguyên → thuần hóa thú chuyên nhiệm → breeding, saddle và trang bị → khám phá hang → boss. Mỗi bước biến một nguy hiểm từng không thể vượt qua thành tuyến đi có thể chuẩn bị.",
-        "Đừng chỉ tăng số lượng thú. Hãy xây một hệ thống: thú vận chuyển, khai thác, đi hang, đội boss, thức ăn và đồ thay thế. Thất bại nên giúp bạn biết thiếu gì cho chuyến sau."
+        "The gameplay goes from food and shelter → tools and resources → taming specialized animals → breeding, saddle and equipment → exploring caves → bosses. Each step turns a once insurmountable danger into a prepareable route.",
+        "Don't just increase the number of animals. Build a system: transport animals, mining, dungeons, boss teams, food and replacement items. Failure should help you know what is missing for the next trip."
       ]
     },
     {
       "id": "notes",
-      "title": "Đọc truyện trong lúc chơi",
+      "title": "Read stories while playing",
       "symbol": "book.closed",
       "paragraphs": [
-        "Explorer Notes là lời kể của người trong cuộc; dossiers thường giải thích sinh vật. Một nhân vật có thể hiểu sai hoặc che giấu điều gì đó, nên hãy đối chiếu nhiều ghi chép với cảnh kết thúc.",
-        "Phần Chương truyện bên dưới có SPOILER toàn bộ: bản chất ARK, số phận nhân vật và kết thúc Genesis. Dừng ở phần này nếu muốn tự khám phá."
+        "Explorer Notes is an insider's account; dossiers often explain creatures. A character may misunderstand or hide something, so compare multiple notes with the ending scene.",
+        "The Chapter section below has full SPOILERS: the nature of ARK, the fate of the characters and the ending of Genesis. Stop here if you want to explore for yourself."
       ]
     },
     {
       "id": "reading-order",
-      "title": "Thứ tự đọc cốt truyện",
+      "title": "Order of reading the plot",
       "symbol": "list.number",
       "paragraphs": [
-        "Đường truyện gốc Survival Evolved: The Island → Scorched Earth → Aberration → Extinction → Genesis Part 1 → Genesis Part 2. Các nhân vật trong notes thường đã trải qua những nơi này trước Survivor do bạn điều khiển.",
-        "Lost Colony là chương mới của ASA, mở rộng Arat Prime và nối tới ARK 2. Nên đọc sau khi đã hiểu Extinction và Genesis; các hồi tưởng và thời điểm của chiến dịch không tạo thành một chuỗi tuyến tính đơn giản giữa hai DLC gốc."
+        "Original Survival Evolved story line: The Island → Scorched Earth → Aberration → Extinction → Genesis Part 1 → Genesis Part 2. The characters in the notes often have experienced these places before the Survivor you control.",
+        "Lost Colony is a new chapter of ASA, expanding Arat Prime and connecting to ARK 2. Should be read after understanding Extinction and Genesis; The flashbacks and campaign moments do not form a simple linear sequence between the two original DLCs."
       ]
     },
     {
       "id": "asa-order",
-      "title": "Thứ tự chơi ASA thực tế",
+      "title": "Actual ASA playing order",
       "symbol": "gamecontroller",
       "paragraphs": [
-        "Lộ trình học cơ chế đề nghị: The Island → Scorched Earth → Aberration → Extinction. Sau đó chọn Genesis Part 1 hoặc Lost Colony theo nội dung bạn đã cài; Lost Colony cần gói trả phí tương ứng. Đây là thứ tự chơi đề nghị, không phải lịch sử mọi sự kiện.",
-        "Genesis Part 1 và Part 2 đã có trong Survival Evolved. Điều đó không chứng minh bản remaster ASA của cả hai đã phát hành. Dùng trạng thái trong Danh mục map và cửa hàng chính thức; Genesis Part 2 ASA hiện chưa được xác nhận có thể chơi trong dữ liệu kiểm tra của ứng dụng.",
-        "The Center, Ragnarok, Valguero và các map khám phá có thể chơi xen kẽ. Chúng không thay thế một chương của đường truyện chính chỉ vì có artifact hoặc boss."
+        "Suggested mechanics-learning order: The Island → Scorched Earth → Aberration → Extinction. Then choose Genesis Part 1 or Lost Colony according to installed content; Lost Colony requires its paid pack. This is a suggested play order, not the chronology of every event.",
+        "Genesis Part 1 and Part 2 are available in Survival Evolved. That doesn't justify the ASA remaster both released. Use status in Map Directory and official store; Genesis Part 2 ASA is currently not confirmed to be playable in the application's test data.",
+        "The Center, Ragnarok, Valguero and exploration maps can be played alternately. They do not replace a chapter of the main story just because there is an artifact or boss."
       ]
     }
   ],
   "chapters": [
     {
       "id": "collapse",
-      "title": "01 · SPOILER — Trái Đất sụp đổ",
-      "summary": "Element vừa mở ra công nghệ Tek vừa trở thành hiểm họa.",
+      "title": "01 · SPOILER — Earth collapses",
+      "summary": "Element enables Tek technology while also becoming a threat.",
       "paragraphs": [
-        "Nền văn minh tương lai sử dụng Element cho công nghệ cực kỳ mạnh. Xung đột và sự lan rộng của vật chất này làm Trái Đất bị ô nhiễm, sinh vật bị corruption và các Titan trở thành mối đe dọa khổng lồ.",
-        "Người tạo ra ARK không muốn dựng một công viên khủng long cho giải trí. Họ cần bảo tồn sự sống trước thảm họa và tìm một con đường để nó có thể tồn tại sau thời đại con người."
+        "Future civilization uses Element for extremely powerful technology. The conflict and spread of this matter left the Earth contaminated, creatures corrupted, and the Titans a huge threat.",
+        "ARK's creators were not building a dinosaur park for entertainment. They needed to preserve life through catastrophe and find a way for it to survive beyond the human era."
       ],
-      "playGoal": "Hiểu nguyên nhân trước khi đọc hành trình Survivor."
+      "playGoal": "Understand the cause before reading the Survivor journey."
     },
     {
       "id": "arks",
-      "title": "02 · SPOILER — Vì sao có các ARK?",
-      "summary": "Những hệ sinh thái nhân tạo giữ lại sự sống và chuẩn bị phục hồi hành tinh.",
+      "title": "02 · SPOILER — Why do the ARKs exist?",
+      "summary": "Artificial ecosystems retain life and prepare the planet for recovery.",
       "paragraphs": [
-        "ARK là các trạm không gian mang hệ sinh thái, kho dữ liệu sinh học và công nghệ tái tạo. Bầu trời cùng chu kỳ ngày đêm che giấu môi trường được điều khiển; sinh vật ở đây không phải một mẫu lịch sử tự nhiên nguyên vẹn.",
-        "Hai hướng cứu sự sống tồn tại song song: các ARK chờ cơ hội tái gieo sự sống trên Trái Đất; Colony Ship mang người và sinh vật đi tìm nơi ở mới. Genesis Simulation thuộc con tàu ấy, không phải tên gọi khác của mọi ARK."
+        "ARKs are space stations carrying ecosystems, biological archives, and reconstruction technology. Their skies and day/night cycles conceal controlled environments; their creatures are not an intact snapshot of natural history.",
+        "Two approaches to saving life coexist: ARKs await a chance to reseed Earth, while Colony Ship carries humans and creatures in search of a new home. Genesis Simulation belongs to that ship; it is not another name for every ARK."
       ],
-      "playGoal": "Nhìn obelisk và bầu trời như dấu vết của một hệ thống."
+      "playGoal": "Look at the obelisk and the sky as traces of a system."
     },
     {
       "id": "survivors",
-      "title": "03 · SPOILER — Người từ nhiều thời đại",
-      "summary": "Kho lưu trữ và công nghệ tái tạo giải thích sự hiện diện của Survivor.",
+      "title": "03 · SPOILER — People from many eras",
+      "summary": "Archives and reconstruction technology explain Survivor's presence.",
       "paragraphs": [
-        "Helena, Mei-Yin, Nerva và những người đến từ thời đại khác nhau được tái tạo trong hệ thống. Khám phá phòng chứa cơ thể trên Aberration khiến các nhân vật phải đối diện câu hỏi: mình có phải bản gốc không?",
-        "Implant, engram và khả năng hồi sinh có nền tảng trong công nghệ của thế giới này. Tuy vậy, không nên diễn giải mỗi lần respawn, boss lặp lại hay tùy chọn server thành một sự kiện lịch sử riêng."
+        "Helena, Mei-Yin, Nerva, and people from different eras are recreated within the system. Discovering the body chamber on Aberration forces them to ask whether they are the originals.",
+        "Implants, engrams, and regeneration are grounded in the technology of this world. However, each respawn, boss repeat, or server option should not be interpreted as a separate historical event."
       ],
-      "playGoal": "Đọc notes như những hành trình riêng, không phải nhật ký của bạn."
+      "playGoal": "Read the notes as individual journeys, not your own diary."
     },
     {
       "id": "island",
       "title": "04 · SPOILER — The Island",
-      "summary": "Một hòn đảo sinh tồn dẫn đến sự thật ngoài bầu trời.",
+      "summary": "An island of survival leading to the truth beyond the sky.",
       "paragraphs": [
-        "Helena nghiên cứu sinh vật; Rockwell tìm bí mật; Mei-Yin chiến đấu để sống; Nerva xây New Legion và muốn thống trị. Những mục đích khác nhau đưa họ tới obelisk và trung tâm điều khiển.",
-        "Cuộc xung đột cuối cùng tách các nhân vật sang những ARK khác. Với người chơi, Broodmother, Megapithecus và Dragon là các mốc chuẩn bị; Tek Cave cùng Overseer mở ra ascension và cho thấy hòn đảo thuộc một hệ thống lớn hơn."
+        "Helena studies creatures; Rockwell seeks secrets; Mei-Yin fights to survive; Nerva builds New Legion and seeks control. Their different goals lead them to Obelisks and the control center.",
+        "The final conflict separates the characters onto other ARKs. For players, Broodmother, Megapithecus, and Dragon are preparation milestones; Tek Cave and Overseer unlock ascension and reveal the island as part of a larger system."
       ],
-      "playGoal": "Ổn định căn cứ; thu artifact; đánh ba guardian rồi Tek Cave và Overseer.",
+      "playGoal": "Secure a base, collect artifacts, defeat three guardians, then face Tek Cave and Overseer.",
       "mapID": "the-island"
     },
     {
       "id": "scorched",
       "title": "05 · SPOILER — Scorched Earth",
-      "summary": "Sinh tồn sa mạc và bi kịch của một cộng đồng muốn sống yên ổn.",
+      "summary": "Desert survival and the tragedy of a community that wants to live in peace.",
       "paragraphs": [
-        "Raia và John Dahkeya xây Nosti thành nơi nương tựa. Thành phố bị hủy diệt; John sau đó chết trước Wyvern. Raia mất niềm tin cũ nhưng học nuôi chính sinh vật đã đem lại mất mát và tiếp tục giúp người tìm sự thật.",
-        "Helena và Rockwell đi qua sa mạc, nhận sự giúp đỡ của Raia và tiếp tục tới Aberration. Sa mạc cho thấy xây được một nền văn minh trong ARK không đồng nghĩa đã thoát khỏi quyền lực của hệ thống."
+        "Raia and John Dahkeya make Nosti a refuge. The city is destroyed; John is later killed by a Wyvern. Raia loses her old faith but learns to raise the creature that caused her loss and continues helping those seeking the truth.",
+        "Helena and Rockwell travel through the desert, receive Raia's help, and continue to Aberration. The desert shows that building a civilization in ARK does not mean escaping the power of the system."
       ],
-      "playGoal": "Chuẩn bị nước, Adobe, chống nóng; đi hang và đối đầu Manticore.",
+      "playGoal": "Prepare water, Adobe, heat protection; Go to the cave and confront Manticore.",
       "mapID": "scorched-earth"
     },
     {
       "id": "aberration",
       "title": "06 · SPOILER — Aberration",
-      "summary": "Một ARK hỏng phơi bày công nghệ bên dưới và sự biến đổi của Rockwell.",
+      "summary": "A broken ARK exposes the underlying technology and transformation of the Rockwell.",
       "paragraphs": [
-        "Nhóm sống sót có Diana và Santiago đã chống lại bộ máy kiểm soát; hậu quả khiến môi trường ARK bị hư hại. Bề mặt nguy hiểm đẩy cuộc sống xuống các tầng hang và vùng phóng xạ.",
-        "Rockwell ám ảnh Element, gọi nó là Edmundium và tự thử nghiệm lên cơ thể. Ông biến thành quái vật, tấn công cộng đồng và giết Diana. Helena cùng Mei-Yin đánh bại ông, nhưng ông sống sót và gắn vào hệ thống ARK.",
-        "Phòng tái tạo và lối thoát khiến bí mật về Survivor không còn là giả thuyết. Hành trình rời Aberration đưa nhóm tới Trái Đất đã bị tàn phá."
+        "The survivors, including Diana and Santiago, fought the control system; the resulting damage harmed the ARK environment. Its dangerous surface pushes life into cave levels and radiation zones.",
+        "Obsessed with Element, Rockwell calls it Edmundium and experiments on himself. He becomes a monster, attacks the community, and kills Diana. Helena and Mei-Yin defeat him, but he survives and connects to the ARK system.",
+        "The reconstruction chamber and escape route turn the mystery of Survivors into evidence. Leaving Aberration takes the group to a devastated Earth."
       ],
-      "playGoal": "Học light pet, đường leo và Hazmat; lấy artifact, chuẩn bị trận Rockwell.",
+      "playGoal": "Learn light-pet, climbing, and Hazmat mechanics; collect artifacts and prepare for Rockwell.",
       "mapID": "aberration"
     },
     {
       "id": "extinction",
       "title": "07 · SPOILER — Extinction",
-      "summary": "Trở về Trái Đất: mục tiêu là tạo điều kiện cho sự sống quay lại.",
+      "summary": "Return to Earth: the goal is to facilitate the return of life.",
       "paragraphs": [
-        "Sanctuary, wasteland và các vùng thử nghiệm là dấu vết của nền văn minh thất bại. Santiago phát triển Mek; Helena dần trở thành Homo Deus và giúp những Survivor có thể thực hiện việc nhóm trước chưa hoàn thành.",
-        "Đánh bại King Titan mở đường cho Reseed Protocol: các ARK trở lại để phục hồi sự sống. Đây là thắng lợi cho kế hoạch cứu Trái Đất, nhưng Rockwell và phần ARK Aberration rơi xuống vẫn để lại nguy cơ chưa kết thúc."
+        "Sanctuary, wasteland and experimental zones are traces of failed civilization. Santiago develops Mek; Helena gradually becomes Homo Deus and helps the Survivors carry out unfinished work from the previous group.",
+        "Defeating King Titan enables Reseed Protocol: ARKs return to restore life. This advances the plan to save Earth, but Rockwell and the fallen Aberration ARK leave a threat unresolved."
       ],
-      "playGoal": "Xây chuỗi tài nguyên, bảo vệ OSD/Element Vein và chuẩn bị các Titan cùng King Titan.",
+      "playGoal": "Build resource supply chains, defend OSD/Element Vein, and prepare for the Titans and King Titan fights.",
       "mapID": "extinction"
     },
     {
       "id": "genesis-one",
       "title": "08 · SPOILER — Genesis Part 1",
-      "summary": "Thử nghiệm sinh tồn diễn ra trong một môi trường hoàn toàn số hóa.",
+      "summary": "The survival test takes place in a completely digital environment.",
       "paragraphs": [
-        "HLN-A đồng hành cùng Survivor trong Genesis Simulation. Nhiều biome cực đoan và mission được thiết kế để luyện người cho cuộc sống ngoài mô phỏng.",
-        "Rockwell đã xâm nhập hệ thống, làm hỏng các bài thử và biến nó thành công cụ phục vụ mình. Corrupted Master Controller là hiện thân số của sự kiểm soát đó. Kết thúc đưa Survivor thức dậy trên Colony Ship và cho thấy nguy hiểm tồn tại cả ngoài mô phỏng."
+        "HLN-A accompanies Survivor in Genesis Simulation. Many extreme biomes and missions are designed to train people for life beyond the simulation.",
+        "Rockwell infiltrates the system, corrupts its trials, and makes it serve him. Corrupted Master Controller is the digital embodiment of that control. The ending wakes the Survivor on Colony Ship, revealing danger beyond the simulation."
       ],
-      "playGoal": "Hoàn thành mission, phát triển đội theo biome và chuẩn bị Corrupted Master Controller.",
+      "playGoal": "Complete missions, develop biome-specific teams, and prepare for Corrupted Master Controller.",
       "mapID": "genesis-part-1"
     },
     {
       "id": "genesis-two",
       "title": "09 · SPOILER — Genesis Part 2",
-      "summary": "Con tàu cứu sự sống trở thành chiến trường cuối với Rockwell.",
+      "summary": "The life-saving ship becomes the final battlefield with Rockwell.",
       "paragraphs": [
-        "Colony Ship mang môi trường sống và người đang ngủ tới một thế giới mới. Một phần con tàu bị Rockwell biến thành cơ thể và lãnh địa của mình; HLN-A giúp Survivor chống lại ông.",
-        "Trong trận kết thúc, HLN-A hy sinh và Rockwell bị tiêu diệt cùng phần tàu bị corruption. Phần còn lại đưa các pod xuống hành tinh mới; một Santiago được đánh thức, mở đường cho câu chuyện ARK 2.",
-        "Santiago trong đoạn này không nên được coi đơn giản là người đã chết ở Extinction sống lại theo cùng một dòng đời. Công nghệ lưu trữ và bản sao là chìa khóa để hiểu các phiên bản nhân vật."
+        "Colony Ship carries habitats and sleeping people toward a new world. Rockwell transforms part of it into his body and domain; HLN-A helps the Survivor oppose him.",
+        "In the final battle, HLN-A sacrifices herself and Rockwell is destroyed with the corrupted ship section. The remainder sends pods down to the new planet; a Santiago awakens, setting up ARK 2.",
+        "The Santiago here is not simply the person who died on Extinction returning to the same life. Archive and copy technology is key to understanding different versions of characters."
       ],
-      "playGoal": "Trong Survival Evolved: làm mission, chuẩn bị Mutagen và trận Rockwell Prime; kiểm tra riêng trạng thái ASA.",
+      "playGoal": "In Survival Evolved: complete missions and prepare Mutagen and the Rockwell Prime fight; check ASA availability separately.",
       "mapID": "genesis-part-2"
     },
     {
       "id": "lost-colony",
       "title": "10 · SPOILER — Lost Colony",
-      "summary": "Arat Prime mở rộng hậu quả của Reseed và mối nối tới thế giới mới.",
+      "summary": "Arat Prime extends the consequences of Reseed and the connection to the new world.",
       "paragraphs": [
-        "Lost Colony đưa bạn tới vùng Trái Đất chìm trong đêm và băng giá. Red Element nuôi lá chắn cùng thành phố; Lost King dùng nó để giữ quyền lực và ngăn Reseed hoàn tất ở nơi này. Đây là một chương truyện chính mới của ASA, không phải Genesis Part 2 đổi tên.",
-        "Arat Prime có liên kết với Colony Ship và Engram Codex — kho dữ liệu con người có ý nghĩa với tương lai. Mei-Yin và Diana trở lại; dấu vết Aberration cùng Rockwell làm rõ những phần nối còn thiếu.",
-        "Chiến dịch chứa hồi tưởng và diễn biến ở thời điểm muộn hơn Extinction. Nguồn cộng đồng mô tả khoảng cách hơn một thiên niên kỷ; hướng dẫn này không áp một con số tuyệt đối hay gán toàn bộ Lost Colony vào trước Genesis. Muốn đọc đầy đủ ý nghĩa, hãy biết kết thúc Genesis trước."
+        "Lost Colony takes you to an Earth covered in night and ice. Red Element powers the shield and city; Lost King uses it to retain control and prevent Reseed from completing here. This is a new ASA main story chapter, not a renamed Genesis Part 2.",
+        "Arat Prime connects to Colony Ship and Engram Codex, a human archive important to the future. Mei-Yin and Diana return; Aberration and Rockwell connections clarify missing links.",
+        "The campaign includes flashbacks and events later than Extinction. Community sources describe a gap of over a millennium; this guide gives no absolute figure and does not place all Lost Colony before Genesis. Learn the Genesis ending first to understand the full significance."
       ],
-      "playGoal": "Theo chiến dịch, tìm notes, chuẩn bị chống lạnh và tiến tới Red Palace.",
+      "playGoal": "Follow the campaign, find notes, prepare against the cold and head to the Red Palace.",
       "mapID": "lost-colony"
     },
     {
       "id": "exploration",
-      "title": "11 · Map khám phá không phải chương bắt buộc",
-      "summary": "Một map có boss vẫn có thể phục vụ trải nghiệm sandbox riêng.",
+      "title": "11 · Discovery map is not a required chapter",
+      "summary": "A map with a boss can still serve its own sandbox experience.",
       "paragraphs": [
-        "The Center, Ragnarok, Valguero, Crystal Isles, Lost Island và Fjordur là những map mở rộng khả năng khám phá, thuần hóa và xây dựng. Tàn tích, rune, arena hoặc chủ đề thần thoại không tự chứng minh một chương canon tiếp nối Helena.",
-        "Astraeos và các map nội dung riêng như Atlantis, Dragontopia có chủ đề và tiến trình của chúng. Phân biệt lore do tác giả map tạo với đường truyện ARK chính; sự có mặt trong danh mục ứng dụng không có nghĩa mọi map đã phát hành trên ASA."
+        "The Center, Ragnarok, Valguero, Crystal Isles, Lost Island, and Fjordur expand exploration, taming, and building. Ruins, runes, arenas, or mythological themes do not establish a canon chapter continuing Helena's story.",
+        "Astraeos and separate-content maps such as Atlantis and Dragontopia have their own themes and progression. Distinguish map-author lore from the main ARK story; inclusion in this app's catalog does not mean every map has released on ASA."
       ],
-      "playGoal": "Chọn theo biome, sinh vật và mục tiêu căn cứ; không cần ép thứ tự lore."
+      "playGoal": "Choose by biome, creature and base target; no need to force lore order."
     },
     {
       "id": "future",
-      "title": "12 · Phần tiếp theo và giới hạn thông tin",
-      "summary": "Kết thúc một game không phải bằng chứng phần tiếp theo đã ra mắt.",
+      "title": "12 · Sequel and limitation information",
+      "summary": "Finishing a game is not proof that a sequel has come out.",
       "paragraphs": [
-        "ARK 2 tiếp nối hướng sự sống tới hành tinh Arat sau Genesis Part 2. Không suy diễn thành cốt truyện đã hoàn chỉnh hoặc nội dung đã có thể chơi.",
-        "Animated Series là cách kể chuyển thể với khác biệt nhân vật và sự kiện; Bob’s Tall Tales/True Tales thêm góc nhìn hoặc gameplay. Hướng dẫn này ưu tiên notes và kết thúc trong game, tránh ghép mọi phiên bản thành một lịch sử duy nhất."
+        "ARK 2 continues the journey of life toward planet Arat after Genesis Part 2. Do not infer a finished story or playable content.",
+        "Animated Series is an adaptation with different characters and events; Bob’s Tall Tales/True Tales adds perspective or gameplay. This guide prioritizes notes and endings in the game, avoiding merging all versions into a single history."
       ],
-      "playGoal": "Theo dõi danh mục và nguồn chính thức trước khi mua hay chuyển save."
+      "playGoal": "Follow the official catalog and source before purchasing or transferring saves."
     }
   ],
   "characters": [
@@ -185,8 +185,8 @@
       "title": "Helena Walker",
       "symbol": "leaf",
       "paragraphs": [
-        "Nhà sinh học là điểm tựa để hiểu sinh vật và bí mật ARK. Cô ghi dossiers, học chiến đấu và chọn giúp người khác thay vì tìm quyền lực.",
-        "SPOILER: trở thành Homo Deus giúp cô can thiệp hệ thống và chuẩn bị Survivor chống King Titan. Quyền năng không xóa được giới hạn hoặc cái giá cô phải trả."
+        "The biologist anchors our understanding of creatures and ARK's secrets. She writes dossiers, learns to fight, and chooses to help others rather than seek power.",
+        "SPOILER: becoming Homo Deus lets her intervene in the system and prepare the Survivor against King Titan. Her power does not remove her limitations or their cost."
       ]
     },
     {
@@ -194,8 +194,8 @@
       "title": "Mei-Yin Li",
       "symbol": "shield",
       "paragraphs": [
-        "Chiến binh đến từ Trung Hoa cổ đại, nổi bật bởi khả năng chiến đấu và gắn bó với thú. Cô chống Nerva, sát cánh với Helena và xây một mối quan hệ sâu sắc với Diana.",
-        "SPOILER: sự trở lại của cô trong Lost Colony cần đọc theo chiến dịch mới; đừng chỉ suy từ hình tượng “Beast Queen” ban đầu."
+        "A warrior from ancient China, known for her combat skill and bond with creatures. She opposes Nerva, stands beside Helena, and develops a deep relationship with Diana.",
+        "SPOILER: interpret her return in Lost Colony through the new campaign, rather than only her original “Beast Queen” image."
       ]
     },
     {
@@ -203,8 +203,8 @@
       "title": "Edmund Rockwell",
       "symbol": "flask",
       "paragraphs": [
-        "Từng là người nghiên cứu và đồng minh hữu ích, Rockwell ngày càng coi kiến thức là đặc quyền của mình. Nỗi ám ảnh Element biến tò mò thành ham muốn thống trị.",
-        "SPOILER: tự thử nghiệm dẫn đến dạng quái vật ở Aberration; Genesis mở rộng ông từ mối nguy của một ARK thành kẻ chiếm lấy mô phỏng và Colony Ship."
+        "Once a researcher and useful ally, Rockwell increasingly treats knowledge as his privilege. His Element obsession turns curiosity into a desire to dominate.",
+        "SPOILER: experimenting on himself turns Rockwell into a monster in Aberration; Genesis expands him from a threat to one ARK into the controller of the simulation and Colony Ship."
       ]
     },
     {
@@ -212,8 +212,8 @@
       "title": "Diana Altaras",
       "symbol": "airplane",
       "paragraphs": [
-        "Phi công có nền tảng công nghệ tương lai, Diana là cầu nối giữa nhóm sống sót và Tek. Tình cảm với Mei-Yin tạo một đường truyện con người giữa thảm họa.",
-        "SPOILER: Rockwell giết cô trên Aberration; Helena giúp cô trở lại. Vì vậy, việc thấy Diana ở các chương sau không nên bị hiểu là notes trước đã sai."
+        "A pilot familiar with future technology, Diana bridges the survivors and Tek. Her relationship with Mei-Yin provides a human story amid catastrophe.",
+        "SPOILER: Rockwell kills her on Aberration; Helena helps her return. Therefore, seeing Diana in later chapters should not be interpreted as meaning that the previous notes were wrong."
       ]
     },
     {
@@ -221,8 +221,8 @@
       "title": "Santiago",
       "symbol": "wrench.and.screwdriver",
       "paragraphs": [
-        "Kỹ sư và hacker có khả năng biến hiểu biết về hệ thống thành phương án sống sót. Công việc Tek và Mek của anh là nền tảng quan trọng trong Aberration và Extinction.",
-        "SPOILER: bản Santiago trong hành trình ARK và bản được đánh thức trên Colony Ship phải được phân biệt. Kho lưu trữ có thể tạo nhiều phiên bản; cùng tên không bảo đảm cùng ký ức và dòng đời."
+        "An engineer and hacker who turns system knowledge into survival strategies. His Tek and Mek work is foundational in Aberration and Extinction.",
+        "SPOILER: the version Santiago during the ARK voyage and the version awakened on the Colony Ship must be distinguished. Repositories can create multiple versions; The same name does not guarantee the same memories and life."
       ]
     },
     {
@@ -230,8 +230,8 @@
       "title": "HLN-A",
       "symbol": "sparkle",
       "paragraphs": [
-        "Trợ lý được Helena tạo ra, có ký ức và tính cách gắn với người tạo nhưng vẫn là một nhân vật riêng. Trong Genesis, cô giải thích môi trường, mission và trò chuyện trực tiếp với Survivor.",
-        "SPOILER: sự hy sinh ở Genesis Part 2 làm rõ mục đích bảo vệ tương lai con người, đối lập với việc Rockwell muốn mọi người phục tùng."
+        "Created by Helena, this assistant has memories and personality connected to her creator while remaining a distinct character. In Genesis, she explains environments and missions and speaks directly with the Survivor.",
+        "SPOILER: the sacrifice in Genesis Part 2 clarifies the purpose of protecting humanity's future, as opposed to Rockwell wanting everyone to obey."
       ]
     },
     {
@@ -239,8 +239,8 @@
       "title": "Raia & John Dahkeya",
       "symbol": "heart",
       "paragraphs": [
-        "Raia đem tổ chức và sự chăm sóc tới Nosti; John bảo vệ cộng đồng và giúp cô học tự vệ. Notes của họ biến sa mạc thành câu chuyện về xây dựng, tình yêu và mất mát.",
-        "SPOILER: mất John khiến Raia thay đổi nhưng không bỏ cuộc. Nuôi Wyvern là cả kỹ năng sinh tồn lẫn dấu hiệu cô học sống tiếp sau bi kịch."
+        "Raia brings organization and care to Nosti; John protects the community and teaches her self-defense. Their notes turn the desert into a story of building, love, and loss.",
+        "SPOILER: losing John causes Raia to change but not give up. Raising Wyvern is both a survival skill and a sign she learns to live on after tragedy."
       ]
     },
     {
@@ -248,8 +248,8 @@
       "title": "Gaius Marcellus Nerva",
       "symbol": "flag",
       "paragraphs": [
-        "Tướng La Mã coi The Island là nơi phải chinh phục. New Legion và cuộc tìm kiếm quyền lực obelisk đẩy các nhân vật khác vào xung đột.",
-        "SPOILER: Mei-Yin đánh bại ông. Những hành động của Nerva vô tình mở đường cho nhóm rời Island, dù mục đích của ông là thống trị."
+        "A Roman general who sees The Island as a place to conquer. New Legion and his pursuit of Obelisk power draw the other characters into conflict.",
+        "SPOILER: Mei-Yin defeats him. Nerva 's actions unintentionally paved the way for the group to leave the Island, even though his goal was to dominate."
       ]
     },
     {
@@ -257,8 +257,8 @@
       "title": "Lost King",
       "symbol": "crown",
       "paragraphs": [
-        "SPOILER: người cai trị Lost Colony dùng Red Element và cấu trúc quyền lực để giữ thành phố sống trong một thế giới chưa được chữa lành. Ông đối lập trực tiếp với mục tiêu Reseed.",
-        "Đọc động cơ và quan hệ của ông qua chiến dịch cùng notes Lost Colony; tránh dùng phong cách vampire/gothic để kết luận đây chỉ là một map fantasy ngoài lore."
+        "SPOILER: Lost Colony's ruler uses Red Element and his power structure to keep the city alive in an unhealed world. He directly opposes Reseed.",
+        "Read his motives and relationships through the Lost Colony campaign and notes; vampire/gothic styling does not make this merely a fantasy map outside the lore."
       ]
     }
   ]
