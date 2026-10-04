@@ -1,6 +1,6 @@
 # ARK: Survival Ascended Atlas
 
-The standalone native iPad companion is at **Ascended 0.16.0 (17)**, installed by cable without TestFlight. Current native release: [individual Stone builder with saved designs and material totals](docs/codex-reports/2026-10-04-ascended-stone-builder.md). The hosting instructions below describe the separate web atlas, not native deployment.
+The standalone native iPad companion is at **Ascended 0.17.0 (18)**, installed by cable without TestFlight. Current native release: [direct builder, five house templates and detailed crafting bills](docs/codex-reports/2026-10-04-ascended-base-workshop.md). The hosting instructions below describe the separate web atlas, not native deployment.
 
 ## Quick deployment (GitHub + Firebase)
 

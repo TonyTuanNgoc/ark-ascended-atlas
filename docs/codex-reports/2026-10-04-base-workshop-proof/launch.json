@@ -1,0 +1,57 @@
+{
+  "info" : {
+    "arguments" : [
+      "devicectl",
+      "device",
+      "process",
+      "launch",
+      "--device",
+      "8FA117DA-854A-5EEB-AEFC-EE54036237A9",
+      "--terminate-existing",
+      "com.tonytuanngoc.ascended",
+      "--json-output",
+      "docs/codex-reports/2026-10-04-base-workshop-proof/launch.json"
+    ],
+    "commandType" : "devicectl.device.process.launch",
+    "environment" : {
+      "TERM" : "dumb"
+    },
+    "jsonVersion" : 3,
+    "outcome" : "success",
+    "version" : "518.31"
+  },
+  "result" : {
+    "deviceIdentifier" : "8FA117DA-854A-5EEB-AEFC-EE54036237A9",
+    "launchOptions" : {
+      "activatedWhenStarted" : true,
+      "arguments" : [
+
+      ],
+      "environmentVariables" : {
+        "TERM" : "dumb"
+      },
+      "platformSpecificOptions" : {
+
+      },
+      "startStopped" : false,
+      "terminateExistingInstances" : true,
+      "user" : {
+        "active" : true
+      }
+    },
+    "process" : {
+      "auditToken" : [
+        4294967295,
+        501,
+        501,
+        501,
+        501,
+        874,
+        0,
+        2366
+      ],
+      "executable" : "file:///private/var/containers/Bundle/Application/D56820EA-CFB3-40C3-B8F4-C052EF7E75DA/Ascended.app/Ascended",
+      "processIdentifier" : 874
+    }
+  }
+}

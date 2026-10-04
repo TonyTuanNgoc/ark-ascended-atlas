@@ -1,0 +1,20 @@
+{
+  "version": "0.17.0",
+  "build": 18,
+  "catalogueItems": 728,
+  "constructionMachineEntries": 378,
+  "reconstructedModels": 231,
+  "inventoryReferences": 147,
+  "verifiedRecipeEntries": 511,
+  "standardProcesses": 9,
+  "sizePagesAttempted": 79,
+  "sizePagesRetrieved": 28,
+  "historicalSizeNotes": 3,
+  "exactASAMeshBoundsVerified": false,
+  "finiteGeometryAndNormalizedNormals": true,
+  "greenhouseModuleBounds": true,
+  "sourceHashes": {
+    "build-crafting.json": "4d6dd17c929c2ad4b167141666bd9a99b1150f55900553704371713200a03d45",
+    "construction-models.json": "777ccb4b137cfed4ad042854fb57a0d14f98758f147f4ee5c6ce6db9ceb8a715"
+  }
+}

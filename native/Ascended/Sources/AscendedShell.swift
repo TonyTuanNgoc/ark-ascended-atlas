@@ -43,7 +43,7 @@ struct MapSessionShell: View {
                     }
                 }
             }.navigationTitle("Ascended")
-                .navigationSplitViewColumnWidth(min: 210, ideal: 230, max: 270)
+                .navigationSplitViewColumnWidth(min: 240, ideal: 270, max: 300)
         } detail: {
             NavigationStack {
                 Group {
@@ -70,7 +70,7 @@ struct MapSessionShell: View {
             DisclosureGroup {
             ForEach(options) { option in
                 Button { selection = .map; chooseMap(option) } label: {
-                    HStack { MapBadge(id: option.expansionID); Text(option.name); Spacer(); if map == option { Image(systemName: "checkmark").foregroundStyle(.cyan) } }
+                    HStack { MapBadge(id: option.expansionID); Text(option.name).lineLimit(2).fixedSize(horizontal:false,vertical:true); Spacer(); if map == option { Image(systemName: "checkmark").foregroundStyle(.cyan) } }
                 }.foregroundStyle(map == option ? .cyan : .primary)
                     .accessibilityIdentifier("choose-" + option.rawValue)
                     .accessibilityValue(map == option ? "Đang chọn" : "Chưa chọn")

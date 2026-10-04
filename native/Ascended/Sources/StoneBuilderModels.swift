@@ -3,14 +3,24 @@ import SwiftUI
 
 struct StoneKit: Decodable {
     let models: [StoneModel]
-    static let shared = (try? ArkMap.load(StoneKit.self, name: "stone-building-kit")) ?? StoneKit(models: [])
+    static let shared:StoneKit = {
+        let stone=(try? ArkMap.load(StoneKit.self,name:"stone-building-kit"))?.models ?? []
+        let other=(try? ArkMap.load(StoneKit.self,name:"construction-models"))?.models ?? []
+        return StoneKit(models:stone+other)
+    }()
 }
 struct StoneModel: Decodable, Identifiable {
     let id, title, name: String
     let asset: String?
+    let category:String?
+    let referenceOnly:Bool?
+    var group:String {category ?? "structures"}
     let positions, normals, uv, colors: [Float]
     let ingredients: [String:Int]
     var geometry: SCNGeometry {
+        if referenceOnly == true {
+            let g=SCNPlane(width:0.8,height:0.8);let m=SCNMaterial();m.lightingModel = .constant;m.isDoubleSided=true;m.diffuse.contents=asset.flatMap {UIImage(named:$0)};g.materials=[m];return g
+        }
         func vectors(_ data:[Float])->[SCNVector3] { stride(from:0,to:data.count,by:3).map { SCNVector3(data[$0],data[$0+1],data[$0+2]) } }
         let vertices=SCNGeometrySource(vertices:vectors(positions))
         let ns=SCNGeometrySource(normals:vectors(normals))
@@ -29,7 +39,11 @@ struct StoneModel: Decodable, Identifiable {
 }
 struct StonePlacement: Codable, Identifiable, Equatable {
     var id=UUID();var kind:String;var x,z:Double;var level:Int;var turn:Int
-    var position:SCNVector3 { SCNVector3(Float(x),Float(level)+(kind.contains("ceiling") ? 0.25:0),Float(z)) }
+    var position:SCNVector3 {
+        let model=StoneKit.shared.models.first {$0.id==kind}
+        let base:Float = kind.contains("foundation") ? 0 : (kind.contains("ceiling") || model?.category != nil ? 0.25:0)
+        return SCNVector3(Float(x),Float(level)+base,Float(z))
+    }
     func occupiesSameSlot(as other:Self)->Bool { kind==other.kind && x==other.x && z==other.z && level==other.level && turn==other.turn }
 }
 enum StoneBudget {

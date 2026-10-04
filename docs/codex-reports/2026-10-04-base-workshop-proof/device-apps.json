@@ -1,0 +1,84 @@
+{
+  "info" : {
+    "arguments" : [
+      "devicectl",
+      "device",
+      "info",
+      "apps",
+      "--device",
+      "8FA117DA-854A-5EEB-AEFC-EE54036237A9",
+      "--filter",
+      "bundleIdentifier == \"com.tonytuanngoc.ascended\"",
+      "--json-output",
+      "docs/codex-reports/2026-10-04-base-workshop-proof/device-apps.json"
+    ],
+    "commandType" : "devicectl.device.info.apps",
+    "environment" : {
+      "TERM" : "dumb"
+    },
+    "jsonVersion" : 3,
+    "outcome" : "success",
+    "version" : "518.31"
+  },
+  "result" : {
+    "apps" : [
+      {
+        "appClip" : false,
+        "builtByDeveloper" : true,
+        "bundleIdentifier" : "com.tonytuanngoc.ascended",
+        "bundleVersion" : "18",
+        "defaultApp" : false,
+        "hidden" : false,
+        "internalApp" : false,
+        "name" : "Ascended",
+        "removable" : true,
+        "url" : "file:///private/var/containers/Bundle/Application/D56820EA-CFB3-40C3-B8F4-C052EF7E75DA/Ascended.app/",
+        "version" : "0.17.0"
+      },
+      {
+        "appClip" : false,
+        "builtByDeveloper" : true,
+        "bundleIdentifier" : "com.tonytuanngoc.AscendedUITests.xctrunner",
+        "bundleVersion" : "1",
+        "defaultApp" : false,
+        "hidden" : false,
+        "internalApp" : false,
+        "name" : "AscendedUITests-Runner",
+        "removable" : true,
+        "url" : "file:///private/var/containers/Bundle/Application/ECD3BF7E-EBB3-4482-82A1-8C14B4F6B027/AscendedUITests-Runner.app/",
+        "version" : "1.0"
+      },
+      {
+        "appClip" : false,
+        "builtByDeveloper" : true,
+        "bundleIdentifier" : "com.tonytuanngoc.tonyos",
+        "bundleVersion" : "133",
+        "defaultApp" : false,
+        "hidden" : false,
+        "internalApp" : false,
+        "name" : "Tony OS",
+        "removable" : true,
+        "url" : "file:///private/var/containers/Bundle/Application/37EE2DDA-7481-4CA3-BAA4-CDE2640D1423/TonyOS.app/",
+        "version" : "1.0"
+      },
+      {
+        "appClip" : false,
+        "builtByDeveloper" : true,
+        "bundleIdentifier" : "com.tonytuanngoc.tonyos.dev",
+        "bundleVersion" : "62",
+        "defaultApp" : false,
+        "hidden" : false,
+        "internalApp" : false,
+        "name" : "Tony OS Dev",
+        "removable" : true,
+        "url" : "file:///private/var/containers/Bundle/Application/E7F64335-FFF7-4E0C-8C52-33A4903B334F/TonyOS.app/",
+        "version" : "1.0"
+      }
+    ],
+    "defaultAppsIncluded" : false,
+    "deviceIdentifier" : "8FA117DA-854A-5EEB-AEFC-EE54036237A9",
+    "hiddenAppsIncluded" : false,
+    "internalAppsIncluded" : false,
+    "removableAppsIncluded" : true
+  }
+}

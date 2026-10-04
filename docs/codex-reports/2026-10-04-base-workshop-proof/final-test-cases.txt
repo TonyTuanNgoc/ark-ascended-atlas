@@ -1,0 +1,21 @@
+Test Case '-[AscendedTests.BuildCraftingTests testCatalogueIntegrity]' started.
+Test Case '-[AscendedTests.BuildCraftingTests testCatalogueIntegrity]' passed (0.319 seconds).
+Test Case '-[AscendedTests.BuildCraftingTests testChemistryBenchSharedIntermediates]' started.
+Test Case '-[AscendedTests.BuildCraftingTests testChemistryBenchSharedIntermediates]' passed (0.001 seconds).
+Test Case '-[AscendedTests.BuildCraftingTests testCombineBeforeBatchRounding]' started.
+Test Case '-[AscendedTests.BuildCraftingTests testCombineBeforeBatchRounding]' passed (0.000 seconds).
+Test Case '-[AscendedTests.BuildCraftingTests testEightFoundations]' started.
+Test Case '-[AscendedTests.BuildCraftingTests testEightFoundations]' passed (0.001 seconds).
+Test Case '-[AscendedTests.BuildCraftingTests testFabricatorProcessing]' started.
+Test Case '-[AscendedTests.BuildCraftingTests testFabricatorProcessing]' passed (0.000 seconds).
+Test Case '-[AscendedTests.BuildCraftingTests testTemplateRecipesAndUnverifiedExclusion]' started.
+Test Case '-[AscendedTests.BuildCraftingTests testTemplateRecipesAndUnverifiedExclusion]' passed (0.010 seconds).
+	 Executed 6 tests, with 0 failures (0 unexpected) in 0.331 (0.333) seconds
+	 Executed 6 tests, with 0 failures (0 unexpected) in 0.331 (0.343) seconds
+	 Executed 6 tests, with 0 failures (0 unexpected) in 0.331 (0.344) seconds
+Test Case '-[AscendedUITests.AscendedUITests testPracticalBase3DAndMapLayerChecks]' started.
+Test Case '-[AscendedUITests.AscendedUITests testPracticalBase3DAndMapLayerChecks]' passed (40.056 seconds).
+	 Executed 1 test, with 0 failures (0 unexpected) in 40.056 (40.057) seconds
+	 Executed 1 test, with 0 failures (0 unexpected) in 40.056 (40.059) seconds
+	 Executed 1 test, with 0 failures (0 unexpected) in 40.056 (40.060) seconds
+** TEST SUCCEEDED **

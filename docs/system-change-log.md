@@ -59,3 +59,7 @@ Replaced regular rounded stones with angular chipped polygon meshes, varied ston
 
 ## 2026-10-04 — Ascended individual Stone builder 0.16.0 (17)
 Added eleven Blender mesh reconstructions and a native SceneKit construction editor: half-module placement, rotation, move/copy/delete/undo, stable camera, map-scoped saves and actual-piece ASA material bills. Existing five-house overview preserved. Two relevant Simulator tests and mesh/recipe validators passed; visual scene reviewed. Final signed cable install, physical inventory0.16.0(17) and direct launch succeeded; physical touch/performance unverified. Approximate appearance/scale and no ARK structural physics. See codex-reports/2026-10-04-ascended-stone-builder.md. No Tony OS/TestFlight/web/domain changes.
+
+## 2026-10-04 — Ascended0.17.0(18) base workshop
+
+Direct compact/brighter construction editor replaces retired zone-planner UI; five3D templates, component counts and source-backed ingredient/intermediate craft bills.378 placeable entries distinguish231 reconstructions from147 picture references;728 catalogue items,511 recipe records,nine standard processes. Rounded map artwork and corrected Island thumbnail. Six unit/three scoped UI cases pass; signed cable install, fresh inventory and launch confirm build18. Exact ASA machine mesh dimensions remain unverified. Report: codex-reports/2026-10-04-ascended-base-workshop.md. Standalone native only.

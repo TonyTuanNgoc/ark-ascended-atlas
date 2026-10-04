@@ -1,0 +1,36 @@
+Test Suite 'All tests' started at 2026-10-04 23:17:05.553.
+Test Suite 'AscendedTests.xctest' started at 2026-10-04 23:17:05.554.
+Test Suite 'BuildCraftingTests' started at 2026-10-04 23:17:05.554.
+Test Case '-[AscendedTests.BuildCraftingTests testCatalogueIntegrity]' started.
+Test Case '-[AscendedTests.BuildCraftingTests testCatalogueIntegrity]' passed (0.307 seconds).
+Test Case '-[AscendedTests.BuildCraftingTests testChemistryBenchSharedIntermediates]' started.
+Test Case '-[AscendedTests.BuildCraftingTests testChemistryBenchSharedIntermediates]' passed (0.001 seconds).
+Test Case '-[AscendedTests.BuildCraftingTests testCombineBeforeBatchRounding]' started.
+Test Case '-[AscendedTests.BuildCraftingTests testCombineBeforeBatchRounding]' passed (0.000 seconds).
+Test Case '-[AscendedTests.BuildCraftingTests testEightFoundations]' started.
+Test Case '-[AscendedTests.BuildCraftingTests testEightFoundations]' passed (0.001 seconds).
+Test Case '-[AscendedTests.BuildCraftingTests testFabricatorProcessing]' started.
+Test Case '-[AscendedTests.BuildCraftingTests testFabricatorProcessing]' passed (0.001 seconds).
+Test Case '-[AscendedTests.BuildCraftingTests testTemplateRecipesAndUnverifiedExclusion]' started.
+Test Case '-[AscendedTests.BuildCraftingTests testTemplateRecipesAndUnverifiedExclusion]' passed (0.010 seconds).
+Test Suite 'BuildCraftingTests' passed at 2026-10-04 23:17:05.876.
+	 Executed 6 tests, with 0 failures (0 unexpected) in 0.320 (0.322) seconds
+Test Suite 'AscendedTests.xctest' passed at 2026-10-04 23:17:05.876.
+	 Executed 6 tests, with 0 failures (0 unexpected) in 0.320 (0.322) seconds
+Test Suite 'All tests' passed at 2026-10-04 23:17:05.876.
+	 Executed 6 tests, with 0 failures (0 unexpected) in 0.320 (0.323) seconds
+Test Suite 'Selected tests' started at 2026-10-04 23:17:07.450.
+Test Suite 'AscendedUITests.xctest' started at 2026-10-04 23:17:07.451.
+Test Suite 'AscendedUITests' started at 2026-10-04 23:17:07.451.
+Test Case '-[AscendedUITests.AscendedUITests testPracticalBase3DAndMapLayerChecks]' started.
+Test Case '-[AscendedUITests.AscendedUITests testPracticalBase3DAndMapLayerChecks]' passed (40.040 seconds).
+Test Case '-[AscendedUITests.AscendedUITests testStoneBuilderEditingBudgetAndPersistence]' started.
+Test Case '-[AscendedUITests.AscendedUITests testStoneBuilderEditingBudgetAndPersistence]' passed (36.319 seconds).
+Test Case '-[AscendedUITests.AscendedUITests testStoryBaseAndEquipmentLibrary]' started.
+Test Case '-[AscendedUITests.AscendedUITests testStoryBaseAndEquipmentLibrary]' passed (20.722 seconds).
+Test Suite 'AscendedUITests' passed at 2026-10-04 23:18:44.536.
+	 Executed 3 tests, with 0 failures (0 unexpected) in 97.081 (97.085) seconds
+Test Suite 'AscendedUITests.xctest' passed at 2026-10-04 23:18:44.537.
+	 Executed 3 tests, with 0 failures (0 unexpected) in 97.081 (97.086) seconds
+Test Suite 'Selected tests' passed at 2026-10-04 23:18:44.537.
+	 Executed 3 tests, with 0 failures (0 unexpected) in 97.081 (97.087) seconds

@@ -7,13 +7,11 @@ final class AscendedUITests: XCTestCase {
             let base=app.buttons["section-Xây base"]
             for _ in 0..<10 {if base.isHittable {break};app.collectionViews.firstMatch.swipeUp()}
             base.tap()
-            let entry=app.buttons["open-stone-builder"]
-            for _ in 0..<6 {if entry.isHittable {break};app.scrollViews["basePlanning"].swipeUp()}
-            entry.tap();XCTAssertTrue(app.buttons["builder-place"].waitForExistence(timeout:5))
+            XCTAssertTrue(app.buttons["builder-place"].waitForExistence(timeout:5))
         }
         open()
         if app.staticTexts["builder-count"].value as? String != "0" {
-            app.buttons["Xóa bản thiết kế"].tap();app.buttons.matching(identifier:"Xóa").allElementsBoundByIndex.last!.tap()
+            app.buttons["Xóa bản thiết kế"].tap();XCTAssertTrue(app.buttons["builder-clear-confirm"].waitForExistence(timeout:5));app.buttons["builder-clear-confirm"].firstMatch.tap()
         }
         app.buttons["builder-place"].tap()
         XCTAssertEqual(app.staticTexts["builder-count"].value as? String,"1")
@@ -58,14 +56,10 @@ final class AscendedUITests: XCTestCase {
         XCTAssertTrue(app.staticTexts.containing(NSPredicate(format: "label BEGINSWITH %@", "Bạn tỉnh dậy")).firstMatch.exists)
         let storyShot = XCTAttachment(screenshot: XCUIScreen.main.screenshot()); storyShot.name = "ARK-story-expand"; storyShot.lifetime = .keepAlways; add(storyShot)
         sidebar("section-Xây base")
-        XCTAssertTrue(app.scrollViews["basePlanning"].waitForExistence(timeout: 5))
-        XCTAssertFalse(app.staticTexts["Điểm hồi sinh, thay đồ và chuẩn bị trước khi rời base."].exists)
-        XCTAssertTrue(app.buttons["base-layout-industry"].exists)
-        XCTAssertFalse(app.buttons["base-layout-storage"].exists)
-        app.buttons["base-layout-industry"].tap()
-        app.buttons["Xem công năng"].tap()
-        XCTAssertTrue(app.staticTexts["Nhận tài nguyên, luyện kim, chế tạo; điện nước chung đặt tại đây."].waitForExistence(timeout: 5))
-        let baseShot = XCTAttachment(screenshot: XCUIScreen.main.screenshot()); baseShot.name = "Practical-five-house-base"; baseShot.lifetime = .keepAlways; add(baseShot)
+        XCTAssertTrue(app.buttons["build-template-starter"].waitForExistence(timeout:5))
+        app.buttons["build-template-starter"].tap()
+        XCTAssertTrue(app.buttons["template-bill"].exists)
+        let baseShot = XCTAttachment(screenshot: XCUIScreen.main.screenshot()); baseShot.name = "House-template-workshop"; baseShot.lifetime = .keepAlways; add(baseShot)
         sidebar("section-Thư viện")
         XCTAssertTrue(app.scrollViews["equipmentLibrary"].waitForExistence(timeout: 5))
         let search = app.searchFields.firstMatch; search.tap(); search.typeText("Chemistry Bench")
@@ -76,24 +70,33 @@ final class AscendedUITests: XCTestCase {
         let machineShot = XCTAttachment(screenshot: XCUIScreen.main.screenshot()); machineShot.name = "Machine-reference"; machineShot.lifetime = .keepAlways; add(machineShot)
     }
     @MainActor func testPracticalBase3DAndMapLayerChecks() throws {
-        let app = XCUIApplication(); XCUIDevice.shared.orientation = .landscapeLeft; app.launch()
-        XCTAssertEqual(app.buttons["layer-Cửa hang"].value as? String, "Hiện")
-        XCTAssertEqual(app.buttons["layer-Artifact"].value as? String, "Ẩn")
+        let app=XCUIApplication();XCUIDevice.shared.orientation = .landscapeLeft;app.launch()
+        XCTAssertEqual(app.buttons["layer-Cửa hang"].value as? String,"Hiện")
+        app.buttons["layer-Artifact"].tap();XCTAssertEqual(app.buttons["layer-Artifact"].value as? String,"Hiện")
         app.buttons["layer-Artifact"].tap()
-        XCTAssertEqual(app.buttons["layer-Artifact"].value as? String, "Hiện")
-        app.buttons["layer-Artifact"].tap()
-        XCTAssertEqual(app.buttons["layer-Artifact"].value as? String, "Ẩn")
-        let base = app.buttons["section-Xây base"]
-        for _ in 0..<8 { if base.isHittable { break }; app.collectionViews.firstMatch.swipeUp() }; base.tap()
-        app.buttons["Đặt lại bố trí base"].tap()
-        app.buttons["Không gian 3D"].tap()
-        XCTAssertTrue(app.descendants(matching: .any)["base3D"].firstMatch.waitForExistence(timeout: 5))
-        app.buttons["Bản đồ base"].tap()
-        let cost = app.buttons["base-materials"]
-        for _ in 0..<5 { if cost.isHittable { break }; app.scrollViews["basePlanning"].swipeUp() }; cost.tap()
-        XCTAssertTrue(app.staticTexts["base-material-Stone"].waitForExistence(timeout: 5))
-        XCTAssertEqual(app.staticTexts["base-material-Stone"].value as? String, "33860")
-        let shot = XCTAttachment(screenshot: XCUIScreen.main.screenshot()); shot.name = "Base-frame-budget"; shot.lifetime = .keepAlways; add(shot)
+        let base=app.buttons["section-Xây base"]
+        for _ in 0..<10 {if base.isHittable {break};app.collectionViews.firstMatch.swipeUp()};base.tap()
+        XCTAssertFalse(app.buttons["Bản đồ base"].exists)
+        XCTAssertFalse(app.buttons["Không gian 3D"].exists)
+        app.buttons["build-template-starter"].tap()
+        let part=app.descendants(matching:.any)["template-part-stone-foundation"].firstMatch
+        XCTAssertTrue(part.waitForExistence(timeout:5))
+        XCTAssertEqual(part.value as? String,"8")
+        let shot=XCTAttachment(screenshot:XCUIScreen.main.screenshot());shot.name="Direct-base-templates";shot.lifetime = .keepAlways;add(shot)
+        app.buttons["template-bill"].tap()
+        let row=app.otherElements["bill-piece-stone-foundation"]
+        XCTAssertEqual(row.staticTexts["ingredient-Stone"].value as? String,"640")
+        XCTAssertEqual(row.staticTexts["ingredient-Wood"].value as? String,"320")
+        XCTAssertEqual(row.staticTexts["ingredient-Thatch"].value as? String,"240")
+        app.buttons["Xong"].tap()
+        app.buttons["build-catalogue"].tap();app.buttons["Máy"].tap()
+        let search=app.searchFields.firstMatch;search.tap();search.typeText("Fabricator")
+        app.buttons["build-item-fabricator"].tap()
+        app.buttons["builder-place"].tap();app.buttons["builder-bill"].tap()
+        let craft=app.otherElements["craft-step-Sparkpowder"]
+        for _ in 0..<12 {if craft.isHittable {break};app.scrollViews.firstMatch.swipeUp()}
+        XCTAssertTrue(craft.exists)
+        let billShot=XCTAttachment(screenshot:XCUIScreen.main.screenshot());billShot.name="Craft-batch-breakdown";billShot.lifetime = .keepAlways;add(billShot)
     }
     @MainActor func testCollapsedMapListsAndCatalogue() throws {
         let app = XCUIApplication(); XCUIDevice.shared.orientation = .landscapeLeft; app.launch()

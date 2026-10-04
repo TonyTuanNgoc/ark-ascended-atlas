@@ -5,12 +5,14 @@ struct MapBadge: View {
     let id: String
     var body: some View {
         Group {
-            if UIImage(named: "MapLogo-" + id) != nil {
+            if id == "the-island" {
+                Image("TheIslandMap").resizable().scaledToFill()
+            } else if UIImage(named: "MapLogo-" + id) != nil {
                 Image("MapLogo-" + id).resizable().scaledToFit()
             } else if let map = ArkMap(rawValue: id) {
                 Image(map.imageAsset).resizable().scaledToFit()
             } else { Image("ArkLogo").resizable().scaledToFit() }
-        }.frame(width: 64, height: 38).accessibilityHidden(true)
+        }.frame(width: 64, height: 38).background(Color.white.opacity(0.05)).clipShape(RoundedRectangle(cornerRadius:8)).accessibilityHidden(true)
     }
 }
 struct StoryGuide: Decodable {
@@ -103,11 +105,13 @@ private struct EquipmentCategoryGroup: View {
 }
 struct EquipmentDetail: View {
     let item: EquipmentItem
+    @State private var craft=false
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 18) {
                 FactPicture(fact: item.fact).frame(height: 170).frame(maxWidth: .infinity)
                 Text(item.name).font(.largeTitle.bold())
+                if BuildCraftCatalogue.shared.item(item.id)?.recipeVerified == true {Button {craft=true} label: {Label("Craft",systemImage:"hammer.fill")}.buttonStyle(.bordered)}
                 Text(item.summary)
                 Label(item.use, systemImage: "hand.point.up.left.fill")
                 if !item.station.isEmpty { Label(item.station, systemImage: "gearshape.fill") }
@@ -122,7 +126,8 @@ struct EquipmentDetail: View {
                     }
                 }
             }.padding(24).frame(maxWidth: 900).frame(maxWidth: .infinity)
-        }.navigationTitle(item.name).navigationBarTitleDisplayMode(.inline).accessibilityIdentifier("equipmentDetail")
+        }.sheet(isPresented:$craft) {BuildBillView(pieces:[StonePlacement(kind:item.id,x:0,z:0,level:0,turn:0)])}
+        .navigationTitle(item.name).navigationBarTitleDisplayMode(.inline).accessibilityIdentifier("equipmentDetail")
     }
 }
 struct BasePlan: Decodable {
@@ -133,55 +138,5 @@ struct BasePhase: Decodable, Identifiable { let id, title, goal: String; let zon
 struct BaseZone: Decodable, Identifiable { let id, name, symbol, purpose, placement, flow, size: String; let items, steps: [String] }
 struct BasePlanningScreen: View {
     @Environment(\.arkMap) private var map
-    @State private var openZone: String?
-    var body: some View {
-        ScrollViewReader { proxy in
-        ScrollView {
-            VStack(alignment: .leading, spacing: 18) {
-                Text("Xây base").font(.largeTitle.bold())
-                Text(BasePlan.shared.intro).font(.callout).foregroundStyle(.secondary)
-                DisclosureGroup {
-                    ForEach(BasePlan.shared.phases) { phase in
-                        DisclosureGroup {
-                            Text(phase.goal).padding(.vertical, 8)
-                            ForEach(phase.zoneIDs, id: \.self) { id in
-                                if let zone = BasePlan.shared.zones.first(where: { $0.id == id }) {
-                                    Label(zone.name, systemImage: zone.symbol).foregroundStyle(.cyan)
-                                }
-                            }
-                            ForEach(phase.exit, id: \.self) { Text("→ " + $0).font(.callout).padding(.top, 5) }
-                        } label: { Text(phase.title).font(.headline) }.padding(.vertical, 8)
-                    }
-                } label: { Label("Thứ tự xây", systemImage: "arrow.triangle.branch").font(.headline) }.cardStyle().accessibilityIdentifier("base-phases")
-                BaseSpatialPlanner { id in
-                    openZone = id
-                    withAnimation { proxy.scrollTo("zone-" + id, anchor: .top) }
-                }.cardStyle()
-                ForEach(BasePlan.shared.zones) { zone in
-                    DisclosureGroup(isExpanded: Binding(get: { openZone == zone.id }, set: { openZone = $0 ? zone.id : nil })) {
-                        Text(zone.purpose).frame(maxWidth: .infinity, alignment: .leading).padding(.vertical, 8)
-                        HStack(alignment: .top) {
-                            Label(zone.size, systemImage: "ruler"); Spacer(); Label(zone.placement, systemImage: "location.fill")
-                        }.font(.callout).foregroundStyle(.secondary)
-                        ScrollView(.horizontal) {
-                            HStack(spacing: 10) {
-                                ForEach(zone.items, id: \.self) { name in
-                                    if let item = EquipmentCatalogue.find(name) {
-                                        NavigationLink { EquipmentDetail(item: item) } label: { FactTile(match: FactMatch(fact: item.fact, quantity: nil)) }.buttonStyle(.plain)
-                                    } else { FactTile(match: VisualFacts.items([name])[0]) }
-                                }
-                            }.padding(.vertical, 12)
-                        }
-                        Text(zone.flow).foregroundStyle(.cyan).font(.callout).frame(maxWidth: .infinity, alignment: .leading)
-                        ForEach(zone.steps, id: \.self) { Text($0).font(.callout).frame(maxWidth: .infinity, alignment: .leading).padding(.top, 5) }
-                    } label: { Label(zone.name, systemImage: zone.symbol).font(.headline) }
-                    .cardStyle().id("zone-" + zone.id).accessibilityIdentifier("base-zone-" + zone.id)
-                }
-                if map == .ragnarok {
-                    DisclosureGroup { if let catalogue = map.bases { BaseSpotGrid(catalogue: catalogue).padding(.top, 12) } } label: { Label("Vị trí base Ragnarok", systemImage: "mappin.and.ellipse").font(.headline) }.cardStyle()
-                }
-            }.padding(24).frame(maxWidth: 1100).frame(maxWidth: .infinity)
-        }.accessibilityIdentifier("basePlanning")
-        }
-    }
+    var body:some View { StoneBuilder(mapID:map.id,embedded:true) }
 }

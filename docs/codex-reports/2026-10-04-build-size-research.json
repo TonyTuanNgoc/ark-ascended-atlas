@@ -1,0 +1,643 @@
+{
+  "unit": "foundation/wall modules; no metre conversion claimed",
+  "records": [
+    {
+      "id": "air-conditioner",
+      "sourceURL": "https://ark.wiki.gg/wiki/Air_Conditioner?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": true,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "auto-turret",
+      "sourceURL": "https://ark.wiki.gg/wiki/Auto_Turret?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": true,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "ballista-turret",
+      "sourceURL": "https://ark.wiki.gg/wiki/Ballista_Turret?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": true,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "beer-barrel",
+      "sourceURL": "https://ark.wiki.gg/wiki/Beer_Barrel?useskin=vector",
+      "notes": [
+        " Notes The Beer Barrel is 1/2 foundation wide, 3/4 foundation deep and 1 wall tall"
+      ],
+      "asaMeshMeasured": false,
+      "pageRetrieved": true,
+      "status": "historical-wiki-notes"
+    },
+    {
+      "id": "bookshelf",
+      "sourceURL": "https://ark.wiki.gg/wiki/Bookshelf?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": true,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "campfire",
+      "sourceURL": "https://ark.wiki.gg/wiki/Campfire?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": true,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "cannon",
+      "sourceURL": "https://ark.wiki.gg/wiki/Cannon?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": true,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "catapult-turret",
+      "sourceURL": "https://ark.wiki.gg/wiki/Catapult_Turret?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": true,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "charge-node",
+      "sourceURL": "https://ark.wiki.gg/wiki/Charge_Node?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": true,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "chemistry-bench",
+      "sourceURL": "https://ark.wiki.gg/wiki/Chemistry_Bench?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": true,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "cloning-chamber",
+      "sourceURL": "https://ark.wiki.gg/wiki/Cloning_Chamber?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": true,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "compost-bin",
+      "sourceURL": "https://ark.wiki.gg/wiki/Compost_Bin?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": true,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "cooking-pot",
+      "sourceURL": "https://ark.wiki.gg/wiki/Cooking_Pot?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": true,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "cryo-hospital",
+      "sourceURL": "https://ark.wiki.gg/wiki/Cryo_Hospital?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": true,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "cryofridge",
+      "sourceURL": "https://ark.wiki.gg/wiki/Cryofridge?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": true,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "delivery-crate",
+      "sourceURL": "https://ark.wiki.gg/wiki/Delivery_Crate?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": true,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "dino-leash",
+      "sourceURL": "https://ark.wiki.gg/wiki/Dino_Leash?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": true,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "egg-incubator",
+      "sourceURL": "https://ark.wiki.gg/wiki/Egg_Incubator?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": true,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "elevator-track",
+      "sourceURL": "https://ark.wiki.gg/wiki/Elevator_Track?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": true,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "embryo-incubator",
+      "sourceURL": "https://ark.wiki.gg/wiki/Embryo_Incubator?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": true,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "fabricator",
+      "sourceURL": "https://ark.wiki.gg/wiki/Fabricator?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": true,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "feeding-trough",
+      "sourceURL": "https://ark.wiki.gg/wiki/Feeding_Trough?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": true,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "fireplace",
+      "sourceURL": "https://ark.wiki.gg/wiki/Stone_Fireplace?useskin=vector",
+      "notes": [
+        " Slightly more than half a foundation wide and just half a foundation deep, the Stone Fireplace must be placed on a floor and includes a 4 wall high chimney that will pass through structures"
+      ],
+      "asaMeshMeasured": false,
+      "pageRetrieved": true,
+      "status": "historical-wiki-notes"
+    },
+    {
+      "id": "gas-collector",
+      "sourceURL": "https://ark.wiki.gg/wiki/Gas_Collector?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": true,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "gene-storage",
+      "sourceURL": "https://ark.wiki.gg/wiki/Gene_Storage?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": true,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "heavy-auto-turret",
+      "sourceURL": "https://ark.wiki.gg/wiki/Heavy_Auto_Turret?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": true,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "industrial-cooker",
+      "sourceURL": "https://ark.wiki.gg/wiki/Industrial_Cooker?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": true,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "industrial-forge",
+      "sourceURL": "https://ark.wiki.gg/wiki/Industrial_Forge?useskin=vector",
+      "notes": [
+        " It can be placed on a single foundation, but will require a 3x3x6 enclosed structure to hide it completely"
+      ],
+      "asaMeshMeasured": false,
+      "pageRetrieved": true,
+      "status": "historical-wiki-notes"
+    },
+    {
+      "id": "industrial-grill",
+      "sourceURL": "https://ark.wiki.gg/wiki/Industrial_Grill?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": false,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "industrial-grinder",
+      "sourceURL": "https://ark.wiki.gg/wiki/Industrial_Grinder?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": false,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "industrial-preserving-bin",
+      "sourceURL": "https://ark.wiki.gg/wiki/Industrial_Preserving_Bin?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": false,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "lamppost",
+      "sourceURL": "https://ark.wiki.gg/wiki/Lamppost?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": false,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "large-crop-plot",
+      "sourceURL": "https://ark.wiki.gg/wiki/Large_Crop_Plot?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": false,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "large-elevator-platform",
+      "sourceURL": "https://ark.wiki.gg/wiki/Large_Elevator_Platform?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": false,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "large-storage-box",
+      "sourceURL": "https://ark.wiki.gg/wiki/Large_Storage_Box?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": false,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "large-wood-elevator-platform",
+      "sourceURL": "https://ark.wiki.gg/wiki/Large_Wood_Elevator_Platform?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": false,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "medium-crop-plot",
+      "sourceURL": "https://ark.wiki.gg/wiki/Medium_Crop_Plot?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": false,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "medium-elevator-platform",
+      "sourceURL": "https://ark.wiki.gg/wiki/Medium_Elevator_Platform?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": false,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "medium-wood-elevator-platform",
+      "sourceURL": "https://ark.wiki.gg/wiki/Medium_Wood_Elevator_Platform?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": false,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "metal-irrigation-pipe-intake",
+      "sourceURL": "https://ark.wiki.gg/wiki/Metal_Irrigation_Pipe_-_Intake?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": false,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "metal-irrigation-pipe-tap",
+      "sourceURL": "https://ark.wiki.gg/wiki/Metal_Irrigation_Pipe_-_Tap?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": false,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "metal-water-reservoir",
+      "sourceURL": "https://ark.wiki.gg/wiki/Metal_Water_Reservoir?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": false,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "mortar-and-pestle",
+      "sourceURL": "https://ark.wiki.gg/wiki/Mortar_and_Pestle?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": false,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "oil-pump",
+      "sourceURL": "https://ark.wiki.gg/wiki/Oil_Pump?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": false,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "omnidirectional-lamppost",
+      "sourceURL": "https://ark.wiki.gg/wiki/Omnidirectional_Lamppost?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": false,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "power-generator",
+      "sourceURL": "https://ark.wiki.gg/wiki/Power_Generator?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": false,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "preserving-bin",
+      "sourceURL": "https://ark.wiki.gg/wiki/Preserving_Bin?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": false,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "refining-forge",
+      "sourceURL": "https://ark.wiki.gg/wiki/Refining_Forge?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": false,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "refrigerator",
+      "sourceURL": "https://ark.wiki.gg/wiki/Refrigerator?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": false,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "remote-keypad",
+      "sourceURL": "https://ark.wiki.gg/wiki/Remote_Keypad?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": false,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "small-crop-plot",
+      "sourceURL": "https://ark.wiki.gg/wiki/Small_Crop_Plot?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": false,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "small-elevator-platform",
+      "sourceURL": "https://ark.wiki.gg/wiki/Small_Elevator_Platform?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": false,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "small-wood-elevator-platform",
+      "sourceURL": "https://ark.wiki.gg/wiki/Small_Wood_Elevator_Platform?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": false,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "smithy",
+      "sourceURL": "https://ark.wiki.gg/wiki/Smithy?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": false,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "standing-torch",
+      "sourceURL": "https://ark.wiki.gg/wiki/Standing_Torch?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": false,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "stone-irrigation-pipe-intake",
+      "sourceURL": "https://ark.wiki.gg/wiki/Stone_Irrigation_Pipe_-_Intake?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": false,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "stone-irrigation-pipe-tap",
+      "sourceURL": "https://ark.wiki.gg/wiki/Stone_Irrigation_Pipe_-_Tap?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": false,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "storage-box",
+      "sourceURL": "https://ark.wiki.gg/wiki/Storage_Box?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": false,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "tek-crop-plot",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Crop_Plot?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": false,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "tek-dedicated-storage",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Dedicated_Storage?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": false,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "tek-forcefield",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Forcefield?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": false,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "tek-generator",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Generator?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": false,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "tek-light",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Light?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": false,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "tek-replicator",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Replicator?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": false,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "tek-sleeping-pod",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Sleeping_Pod?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": false,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "tek-teleporter",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Teleporter?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": false,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "tek-transmitter",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Transmitter?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": false,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "tek-trough",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Trough?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": false,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "tek-turret",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tek_Turret?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": false,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "toilet",
+      "sourceURL": "https://ark.wiki.gg/wiki/Toilet?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": false,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "tree-sap-tap",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tree_Sap_Tap?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": false,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "vault",
+      "sourceURL": "https://ark.wiki.gg/wiki/Vault?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": false,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "wall-torch",
+      "sourceURL": "https://ark.wiki.gg/wiki/Wall_Torch?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": false,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "water-reservoir",
+      "sourceURL": "https://ark.wiki.gg/wiki/Water_Reservoir?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": false,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "water-reservoir-frontier-showdown",
+      "sourceURL": "https://ark.wiki.gg/wiki/Water_Reservoir_(Frontier_Showdown)?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": false,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "water-well",
+      "sourceURL": "https://ark.wiki.gg/wiki/Water_Well?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": false,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "wind-turbine",
+      "sourceURL": "https://ark.wiki.gg/wiki/Wind_Turbine?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": false,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "wood-elevator-top-switch",
+      "sourceURL": "https://ark.wiki.gg/wiki/Wood_Elevator_Top_Switch?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": false,
+      "status": "no-measured-size-found"
+    },
+    {
+      "id": "wood-elevator-track",
+      "sourceURL": "https://ark.wiki.gg/wiki/Wood_Elevator_Track?useskin=vector",
+      "notes": [],
+      "asaMeshMeasured": false,
+      "pageRetrieved": false,
+      "status": "no-measured-size-found"
+    }
+  ]
+}
