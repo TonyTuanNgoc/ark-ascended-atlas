@@ -1,7 +1,7 @@
 import XCTest
 
 final class AscendedUITests: XCTestCase {
-    @MainActor func testRagnarokNavigationMapAndNotesPersistence() throws {
+    @MainActor func testRagnarokMapNavigation() throws {
         let app = XCUIApplication()
         XCUIDevice.shared.orientation = .landscapeLeft
         app.launch()
@@ -33,17 +33,9 @@ final class AscendedUITests: XCTestCase {
         portrait.name = "Map-portrait"; portrait.lifetime = .keepAlways; add(portrait)
         XCUIDevice.shared.orientation = .landscapeLeft
         Thread.sleep(forTimeInterval: 1)
-        app.buttons["Ghi chú"].tap()
-        let notes = app.textViews["ragnarokNotes"]
-        XCTAssertTrue(notes.waitForExistence(timeout: 5))
-        notes.tap()
-        let marker = "Ragnarok QA " + UUID().uuidString
-        notes.typeText(marker)
-        app.terminate(); app.launch()
-        XCTAssertTrue(app.buttons["choose-ragnarok"].waitForExistence(timeout: 8)); app.buttons["choose-ragnarok"].tap()
-        app.buttons["Ghi chú"].tap()
-        XCTAssertTrue(app.textViews["ragnarokNotes"].waitForExistence(timeout: 5))
-        XCTAssertTrue((app.textViews["ragnarokNotes"].value as? String ?? "").contains(marker))
+        XCTAssertFalse(app.buttons["section-Ghi chú"].exists)
+        XCTAssertFalse(app.buttons["section-Nguồn tham khảo"].exists)
+
     }
     @MainActor func testCurrentCreatureLibraryAndBosses() throws {
         let app = XCUIApplication()
@@ -150,17 +142,9 @@ final class AscendedUITests: XCTestCase {
         XCTAssertTrue(collected.isHittable)
         if collected.value as? String != "1" { collected.tap() }
         XCTAssertEqual(collected.value as? String, "1")
-        app.buttons["section-Ghi chú"].tap()
-        let notes = app.textViews["ragnarokNotes"]
-        XCTAssertTrue(notes.waitForExistence(timeout: 5)); notes.tap()
-        let marker = "Island isolated " + UUID().uuidString
-        notes.typeText(marker)
         app.buttons["changeMap"].tap()
         app.buttons["choose-the-center"].tap()
         XCTAssertEqual(app.staticTexts["mapInformationTitle"].label, "The Center")
-        app.buttons["section-Ghi chú"].tap()
-        XCTAssertTrue(notes.waitForExistence(timeout: 5))
-        XCTAssertFalse((notes.value as? String ?? "").contains(marker))
         app.buttons["section-Dino"].tap()
         let search = app.searchFields.firstMatch
         XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("Shastasaurus")
@@ -189,9 +173,6 @@ final class AscendedUITests: XCTestCase {
         app.buttons["changeMap"].tap()
         app.buttons["choose-the-island"].tap()
         XCTAssertEqual(app.staticTexts["mapInformationTitle"].label, "The Island")
-        app.buttons["section-Ghi chú"].tap()
-        XCTAssertTrue(notes.waitForExistence(timeout: 5))
-        XCTAssertTrue((notes.value as? String ?? "").contains(marker))
         // Verify map progress after a real process restart.
         app.terminate(); app.launch()
         app.buttons["choose-the-island"].tap()
@@ -228,7 +209,9 @@ final class AscendedUITests: XCTestCase {
         app.buttons["section-Base Location"].tap()
         XCTAssertTrue(app.staticTexts["baseLocationsTitle"].waitForExistence(timeout: 5))
         XCTAssertTrue(app.buttons["base-canyon"].exists)
-        XCTAssertTrue(app.staticTexts["basePreview-caption-canyon"].isHittable)
+        XCTAssertFalse(app.staticTexts["basePreview-caption-canyon"].exists)
+        XCTAssertFalse(app.buttons["section-Ghi chú"].exists)
+        XCTAssertFalse(app.buttons["section-Nguồn tham khảo"].exists)
         XCTAssertTrue(app.buttons["base-falls"].exists)
         XCTAssertTrue(app.buttons["base-viking"].exists)
         XCTAssertTrue(app.buttons["base-highlands"].exists)
@@ -264,6 +247,49 @@ final class AscendedUITests: XCTestCase {
         app.buttons["army-megapithecus"].tap()
         XCTAssertTrue(app.staticTexts["armyTitle"].waitForExistence(timeout: 5))
         XCTAssertTrue(app.staticTexts["armyOptionCount"].label.hasPrefix("3"))
+    }
+
+    @MainActor func testCompactCardsAndCaveVideos() throws {
+        let app = XCUIApplication()
+        XCUIDevice.shared.orientation = .landscapeLeft
+        app.launch()
+        app.buttons["choose-ragnarok"].tap()
+        XCTAssertFalse(app.buttons["section-Ghi chú"].exists)
+        XCTAssertFalse(app.buttons["section-Nguồn tham khảo"].exists)
+        app.buttons["section-Base Location"].tap()
+        let tile = app.buttons["base-canyon"]
+        XCTAssertTrue(tile.waitForExistence(timeout: 5))
+        XCTAssertEqual(tile.frame.width, tile.frame.height, accuracy: 2)
+        XCTAssertFalse(app.staticTexts["Video đã đối chiếu"].exists)
+        let grid = XCTAttachment(screenshot: XCUIScreen.main.screenshot())
+        grid.name = "Compact-base-grid"; grid.lifetime = .keepAlways; add(grid)
+        app.buttons["section-Artifact & Hang"].tap()
+        let cave = app.buttons["route-jungle"]
+        XCTAssertTrue(cave.waitForExistence(timeout: 5))
+        XCTAssertEqual(cave.frame.width, cave.frame.height, accuracy: 2)
+        cave.tap()
+        let chapter = app.buttons["cave-video-jungle-134"]
+        for _ in 0..<4 { if chapter.isHittable { break }; app.swipeUp() }
+        XCTAssertTrue(chapter.isHittable)
+        let route = XCTAttachment(screenshot: XCUIScreen.main.screenshot())
+        route.name = "Cave-video-chapters"; route.lifetime = .keepAlways; add(route)
+        chapter.tap()
+        // SFSafariViewController presents the source video in-app; playback needs network.
+        XCTAssertTrue(app.buttons["Close"].waitForExistence(timeout: 15))
+        app.buttons["Close"].tap()
+        XCTAssertTrue(chapter.waitForExistence(timeout: 5))
+        XCTAssertTrue(chapter.isHittable)
+        app.buttons["changeMap"].tap()
+        app.buttons["choose-the-island"].tap()
+        app.buttons["section-Artifact & Hang"].tap()
+        app.buttons["route-central"].tap()
+        XCTAssertTrue(app.buttons["cave-video-central-196"].waitForExistence(timeout: 5))
+        XCTAssertFalse(app.buttons["cave-video-jungle-134"].exists)
+        app.buttons["changeMap"].tap()
+        app.buttons["choose-the-center"].tap()
+        app.buttons["section-Artifact & Hang"].tap()
+        app.buttons["route-north-ice"].tap()
+        XCTAssertTrue(app.buttons["cave-video-north-ice-325"].waitForExistence(timeout: 5))
     }
 
 }

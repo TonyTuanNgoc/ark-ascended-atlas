@@ -44,9 +44,9 @@ struct MapInformationScreen: View {
                     metric(map == .ragnarok ? "5" : "\(map.bosses.count)", "Boss có tên")
                 }
                 HStack {
-                    Button(action: openMap) { Label("Mở bản đồ", systemImage: "map.fill") }.accessibilityIdentifier("openRagnarokMap")
-                    Button(action: openDinos) { Label("Dino", systemImage: "pawprint.fill") }.accessibilityIdentifier("openDinos")
-                    Button(action: openBosses) { Label("Boss", systemImage: "shield.lefthalf.filled") }.accessibilityIdentifier("openBosses")
+                    Button(action: openMap) { Label("Mở bản đồ", systemImage: "map.fill") }.labelStyle(.iconOnly).accessibilityLabel("Mở bản đồ").accessibilityIdentifier("openRagnarokMap")
+                    Button(action: openDinos) { Label("Dino", systemImage: "pawprint.fill") }.labelStyle(.iconOnly).accessibilityLabel("Dino").accessibilityIdentifier("openDinos")
+                    Button(action: openBosses) { Label("Boss", systemImage: "shield.lefthalf.filled") }.labelStyle(.iconOnly).accessibilityLabel("Boss").accessibilityIdentifier("openBosses")
                 }.buttonStyle(.bordered)
                 if let info = map.information {
                     ForEach(info.sections.filter { search.isEmpty || $0.title.localizedStandardContains(search) || $0.items.contains { $0.localizedStandardContains(search) } }) { section in
@@ -57,12 +57,10 @@ struct MapInformationScreen: View {
                     }
                     if search.isEmpty || "tài nguyên resources".localizedStandardContains(search) {
                         VStack(alignment: .leading, spacing: 12) {
-                            Text("Tài nguyên trong dữ liệu map").font(.title2.bold())
-                            Text("Số node / cụm trong snapshot Wikily, không phải lượng vật liệu thu hoạch và không bảo đảm spawn trong save của anh.").font(.caption).foregroundStyle(.secondary)
-                            ForEach(info.resources) { resource in HStack { Text(resource.name); Spacer(); Text(resource.nodes.formatted()).monospacedDigit().foregroundStyle(.cyan) } }
+                            Text("Tài nguyên").font(.title2.bold())
+                            ForEach(info.resources) { resource in HStack { Text(resource.name); Spacer(); Image(systemName: "cube.fill").foregroundStyle(.cyan) } }
                         }.cardStyle()
                     }
-                    Text("Đối chiếu \(info.reviewedAt) · Thông tin, tọa độ và gợi ý riêng của \(map.name). Các mục bên trái mở hồ sơ chi tiết; tìm trong trang để lọc chủ đề.").font(.caption).foregroundStyle(.secondary)
                 } else {
                     ContentUnavailableView("Chưa mở được thông tin map", systemImage: "book.closed")
                 }

@@ -50,7 +50,7 @@
       "title": "Trận đôi The Center Arena",
       "items": [
         "Gamma/Beta/Alpha cần level 70/80/90, cùng sáu artifact; Beta/Alpha có apex tribute riêng. Hai boss cùng một trận, không phải hai cổng độc lập.",
-        "Phải hạ cả hai để hoàn tất phần thưởng. Nguồn Wiki hiện mâu thuẫn tổng Element Gamma (72 hoặc 92); app hiển thị khác biệt thay vì đưa một con số chắc chắn.",
+        "Phải hạ cả hai boss để hoàn tất trận và nhận phần thưởng.",
         "Đội hình có thể dùng Rex/Theri và Yutyrannus, cân nhắc Megatherium cho minion nhện. Đây là gợi ý chiến thuật; saddle, imprint, settings và timer quyết định khả năng hoàn thành."
       ]
     },
@@ -78,7 +78,7 @@
       "items": [
         "Ghi lại Difficulty, Maximum Difficulty, Use Singleplayer Settings, tốc độ tame/breed, resource respawn và mọi mod trước khi lập kế hoạch. Đây là điều kiện đầu vào, không dùng chỉ số của server khác làm chuẩn save anh.",
         "Gợi ý: giữ settings ổn định, ghi lại sau mỗi thay đổi. Mục tiêu một phase nên là điều kiện hoàn thành cụ thể: đủ máy, đủ đồ, đủ tame và đã khảo sát đường rút.",
-        "Dữ liệu sinh vật là danh mục loài/biến thể theo nguồn; vị trí spawn và level thực tế có thể khác trên save cũ hoặc có mod. Các liên kết cần mạng; nội dung chính trong app dùng offline."
+        "Level và vị trí sinh vật có thể thay đổi theo thiết lập thế giới và mod."
       ]
     },
     {

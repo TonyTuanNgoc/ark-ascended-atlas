@@ -1,0 +1,425 @@
+[
+  {
+    "routeID": "lower-south",
+    "videoID": "0f1o5yfh27M",
+    "title": "ARK Ascended Island - ARTIFACT OF THE HUNTER from Lower South Cave - S3E14",
+    "channel": "Arindam Gaming",
+    "chapters": [
+      {
+        "title": "Cave prep and location",
+        "start": 0,
+        "end": 118
+      },
+      {
+        "title": "Mount and equipment strategy",
+        "start": 118,
+        "end": 372
+      },
+      {
+        "title": "Artifact of the Hunter run",
+        "start": 372,
+        "end": 759
+      },
+      {
+        "title": "Explorer notes and wrap-up",
+        "start": 759,
+        "end": 1297
+      }
+    ]
+  },
+  {
+    "routeID": "lava",
+    "videoID": "Z4CfGBNbmlA",
+    "title": "ARK Ascended Island - ARTIFACT OF THE MASSIVE from Lava Cave - S3E15",
+    "channel": "Arindam Gaming",
+    "chapters": [
+      {
+        "title": "Preparation and setup",
+        "start": 0,
+        "end": 62
+      },
+      {
+        "title": "Taming and gear recommendations",
+        "start": 62,
+        "end": 162
+      },
+      {
+        "title": "Entering the lava cave",
+        "start": 162,
+        "end": 279
+      },
+      {
+        "title": "Navigating the interior",
+        "start": 279,
+        "end": 548
+      },
+      {
+        "title": "Securing the artifact",
+        "start": 548,
+        "end": 609
+      },
+      {
+        "title": "Collecting explorer notes",
+        "start": 609,
+        "end": 780
+      },
+      {
+        "title": "Exiting and concluding",
+        "start": 780,
+        "end": 912
+      }
+    ]
+  },
+  {
+    "routeID": "upper-south",
+    "videoID": "VuuzjEkkh1c",
+    "title": "ARK Ascended Island - ARTIFACT OF THE PACK from Upper South Cave - S3E16",
+    "channel": "Arindam Gaming",
+    "chapters": [
+      {
+        "title": "Cave preparation and setup",
+        "start": 0,
+        "end": 182
+      },
+      {
+        "title": "Taming and equipment loadout",
+        "start": 182,
+        "end": 447
+      },
+      {
+        "title": "Navigating into the cave",
+        "start": 447,
+        "end": 945
+      },
+      {
+        "title": "Collecting explorer notes",
+        "start": 945,
+        "end": 1365
+      },
+      {
+        "title": "Securing the artifact",
+        "start": 1365,
+        "end": 1533
+      },
+      {
+        "title": "Alternative cave routes",
+        "start": 1533,
+        "end": 1861
+      },
+      {
+        "title": "Exiting the cave",
+        "start": 1861,
+        "end": 1941
+      },
+      {
+        "title": "Base tour and conclusion",
+        "start": 1941,
+        "end": 2026
+      }
+    ]
+  },
+  {
+    "routeID": "central",
+    "videoID": "IXTBYrjc5Ks",
+    "title": "ARK Ascended Island - ARTIFACT OF THE CLEVER from Central Cave - S3E17",
+    "channel": "Arindam Gaming",
+    "chapters": [
+      {
+        "title": "Cave location and prep",
+        "start": 0,
+        "end": 98
+      },
+      {
+        "title": "Gearing and mount selection",
+        "start": 98,
+        "end": 196
+      },
+      {
+        "title": "Cave entry and initial notes",
+        "start": 196,
+        "end": 318
+      },
+      {
+        "title": "Locating the artifact",
+        "start": 318,
+        "end": 460
+      },
+      {
+        "title": "Final notes and conclusion",
+        "start": 460,
+        "end": 576
+      }
+    ]
+  },
+  {
+    "routeID": "north-east",
+    "videoID": "sk1h5BGeKZ0",
+    "title": "ARK Ascended Island - ARTIFACT OF THE DEVOURER from North East Cave - S3E18",
+    "channel": "Arindam Gaming",
+    "chapters": [
+      {
+        "title": "Đi tới Artifact",
+        "start": 0,
+        "end": 873
+      }
+    ]
+  },
+  {
+    "routeID": "lost-faith",
+    "videoID": "7sTXUDfH568",
+    "title": "ARK Ascended Island - ARTIFACT OF THE BRUTE from Caverns of Lost Faith - S3E19",
+    "channel": "Arindam Gaming",
+    "chapters": [
+      {
+        "title": "Cave run preparation",
+        "start": 0,
+        "end": 110
+      },
+      {
+        "title": "Gear and mount selection",
+        "start": 110,
+        "end": 271
+      },
+      {
+        "title": "Locating the cave entrance",
+        "start": 271,
+        "end": 431
+      },
+      {
+        "title": "Navigating the cave",
+        "start": 431,
+        "end": 842
+      },
+      {
+        "title": "Explorer notes and loot",
+        "start": 842,
+        "end": 1262
+      },
+      {
+        "title": "Securing the artifact",
+        "start": 1262,
+        "end": 1474
+      },
+      {
+        "title": "Extraction and conclusion",
+        "start": 1474,
+        "end": 1759
+      }
+    ]
+  },
+  {
+    "routeID": "north-west",
+    "videoID": "iUVghdmjCvc",
+    "title": "ARK Ascended Island - ARTIFACT OF THE SKYLORD from North West Cave - S3E20",
+    "channel": "Arindam Gaming",
+    "chapters": [
+      {
+        "title": "Preparation and gear setup",
+        "start": 0,
+        "end": 74
+      },
+      {
+        "title": "Graphic settings and location",
+        "start": 74,
+        "end": 97
+      },
+      {
+        "title": "Navigating the cave entrance",
+        "start": 97,
+        "end": 268
+      },
+      {
+        "title": "Retrieving the artifact",
+        "start": 268,
+        "end": 443
+      },
+      {
+        "title": "Exiting and concluding",
+        "start": 443,
+        "end": 524
+      }
+    ]
+  },
+  {
+    "routeID": "lost-hope",
+    "videoID": "23yX8Hibsvw",
+    "title": "ARK Ascended Island - ARTIFACT OF THE CUNNING from Caverns of Lost Hope - S3E21",
+    "channel": "Arindam Gaming",
+    "chapters": [
+      {
+        "title": "Cave strategy evaluation",
+        "start": 0,
+        "end": 101
+      },
+      {
+        "title": "Why other methods fail",
+        "start": 101,
+        "end": 290
+      },
+      {
+        "title": "Selecting the Xiphactinus",
+        "start": 290,
+        "end": 447
+      },
+      {
+        "title": "Cave entry and setup",
+        "start": 447,
+        "end": 551
+      },
+      {
+        "title": "Executing the cave run",
+        "start": 551,
+        "end": 787
+      },
+      {
+        "title": "Retrieving the artifact",
+        "start": 787,
+        "end": 934
+      },
+      {
+        "title": "Final summary and conclusion",
+        "start": 934,
+        "end": 991
+      }
+    ]
+  },
+  {
+    "routeID": "swamp",
+    "videoID": "zC3DF5Mmxpc",
+    "title": "ARK Ascended Island - ARTIFACT OF THE IMMUNE from Swamp Cave - S3E22",
+    "channel": "Arindam Gaming",
+    "chapters": [
+      {
+        "title": "Preparation and gear",
+        "start": 0,
+        "end": 67
+      },
+      {
+        "title": "Strategy and entry",
+        "start": 67,
+        "end": 194
+      },
+      {
+        "title": "Navigating the first chambers",
+        "start": 194,
+        "end": 721
+      },
+      {
+        "title": "Finding explorer notes",
+        "start": 721,
+        "end": 1263
+      },
+      {
+        "title": "Mid-cave exploration",
+        "start": 1263,
+        "end": 1606
+      },
+      {
+        "title": "Finding final explorer notes",
+        "start": 1606,
+        "end": 2082
+      },
+      {
+        "title": "Securing the artifact",
+        "start": 2082,
+        "end": 2264
+      },
+      {
+        "title": "Mission conclusion",
+        "start": 2264,
+        "end": 2374
+      }
+    ]
+  },
+  {
+    "routeID": "snow",
+    "videoID": "3s6_U2B5hfw",
+    "title": "ARK Ascended Island - ARTIFACT OF THE STRONG from Snow Cave (Easiest Way) - S3E23",
+    "channel": "Arindam Gaming",
+    "chapters": [
+      {
+        "title": "Intro",
+        "start": 0,
+        "end": 225
+      },
+      {
+        "title": "Equipment",
+        "start": 225,
+        "end": 275
+      },
+      {
+        "title": "Cave",
+        "start": 275,
+        "end": 580
+      },
+      {
+        "title": "Uus",
+        "start": 580,
+        "end": 960
+      },
+      {
+        "title": "Uus HP",
+        "start": 960,
+        "end": 1310
+      },
+      {
+        "title": "Loot Drop",
+        "start": 1310,
+        "end": 1490
+      },
+      {
+        "title": "Red Root Drop",
+        "start": 1490,
+        "end": 1825
+      },
+      {
+        "title": "Choke Point",
+        "start": 1825,
+        "end": 2590
+      }
+    ]
+  },
+  {
+    "routeID": "tek",
+    "videoID": "kZqr1m1SOR8",
+    "title": "ARK Ascended Island - SOLO GAMMA TEK CAVE & GAMMA OVERSEER (Carcharo, Shotgun + Teksuit) - S3E33",
+    "channel": "Arindam Gaming",
+    "chapters": [
+      {
+        "title": "Intro & Preparation",
+        "start": 0,
+        "end": 260
+      },
+      {
+        "title": "Tek Cave",
+        "start": 260,
+        "end": 610
+      },
+      {
+        "title": "Overseer Boss Fight",
+        "start": 610,
+        "end": 2378
+      },
+      {
+        "title": "Boss Defeated",
+        "start": 2378,
+        "end": 2420
+      },
+      {
+        "title": "Ascension Cinematic",
+        "start": 2420,
+        "end": 2600
+      },
+      {
+        "title": "My Server Settings",
+        "start": 2600,
+        "end": 2880
+      },
+      {
+        "title": "Post Ascension Spawn in + Outro",
+        "start": 2880,
+        "end": 3232
+      }
+    ]
+  }
+]

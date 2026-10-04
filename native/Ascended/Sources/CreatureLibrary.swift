@@ -21,7 +21,7 @@ struct CreatureLibrary: View {
                         HStack(alignment: .firstTextBaseline) {
                             VStack(alignment: .leading, spacing: 6) {
                                 Text("Dino & sinh vật").font(.largeTitle.bold())
-                                Text(map.name + " Ascended · Đối chiếu 03/10/2026").foregroundStyle(.secondary)
+                                Text(map.name).foregroundStyle(.secondary)
                             }
                             Spacer()
                             Text("\(items.count)").font(.largeTitle.bold()).foregroundStyle(.cyan)
@@ -84,8 +84,8 @@ struct CreatureCard: View {
                 Spacer()
                 if !creature.dlc.isEmpty { Text("DLC").font(.caption.bold()).foregroundStyle(.orange) }
             }
-        }.padding(18).frame(maxWidth: .infinity, alignment: .leading)
-            .background(Color.white.opacity(0.055), in: RoundedRectangle(cornerRadius: 18))
+        }.padding(14).frame(maxWidth: .infinity, alignment: .leading)
+            .background(Color.white.opacity(0.055), in: RoundedRectangle(cornerRadius: 8))
     }
 }
 
@@ -105,7 +105,6 @@ struct CreatureDetail: View {
                 }
                 if !creature.updateNote.isEmpty {
                     section("Cập nhật mới", text: creature.updateNote)
-                    if let url = creature.updateSourceURL.flatMap(URL.init(string:)) { Link("Xem thông báo Studio Wildcard", destination: url) }
                 }
                 if creature.detailAvailable {
                     VStack(alignment: .leading, spacing: 12) {
@@ -114,7 +113,7 @@ struct CreatureDetail: View {
                         if let tameable = creature.tameable { row("Tame trực tiếp", tameable ? "Có" : "Không") }
                         if creature.tameable == true {
                             if !creature.method.isEmpty && creature.method != "X" { row("Phương pháp", translatedMethod(creature.method)) }
-                            if !creature.foods.isEmpty { row("Thức ăn được nguồn ghi nhận", creature.foods.joined(separator: " · ")) }
+                            if !creature.foods.isEmpty { row("Thức ăn", creature.foods.joined(separator: " · ")) }
                         }
                     }.cardStyle()
                     if !creature.stats.isEmpty {
@@ -129,24 +128,8 @@ struct CreatureDetail: View {
                     if !creature.drops.isEmpty { section("Loot khi hạ sinh vật", text: creature.drops.joined(separator: " · ")) }
                     if !creature.immobilizedBy.isEmpty { section("Công cụ có thể giữ chân", text: creature.immobilizedBy.joined(separator: " · ")) }
                 } else {
-                    section("Có trong danh mục " + map.name, text: "Tên và sự hiện diện đã được đối chiếu từ danh mục map. Hướng dẫn tame và chỉ số riêng chưa được xác minh đầy đủ trong app.")
+                    section("Có trong danh mục " + map.name, text: "Hướng dẫn thuần hóa đang được bổ sung.")
                 }
-                if let archive = creature.archive {
-                    DisclosureGroup("Ghi chép trước đây của anh · " + archive.date) {
-                        VStack(alignment: .leading, spacing: 12) {
-                            Text("Bản lưu từ repo cũ; dùng để đối chiếu, không coi là hướng dẫn cập nhật.").font(.caption).foregroundStyle(.secondary)
-                            if !archive.method.isEmpty { row("Tame", archive.method) }
-                            if !archive.food.isEmpty { row("Thức ăn", archive.food) }
-                            if !archive.notes.isEmpty { Text(archive.notes).foregroundStyle(.secondary) }
-                        }.padding(.top, 12)
-                    }.cardStyle()
-                }
-                VStack(alignment: .leading, spacing: 10) {
-                    Text("Nguồn & ngày kiểm tra").font(.headline)
-                    Text("Đối chiếu " + creature.reviewedAt).font(.caption).foregroundStyle(.secondary)
-                    Link("Hồ sơ sinh vật", destination: URL(string: creature.sourceURL)!)
-                    Link("Danh mục " + map.name + " · " + creature.rosterSource, destination: URL(string: creature.rosterSource == "Wiki bổ sung" ? map.wikiURL : map.mapURL)!)
-                }.cardStyle()
             }.padding(24).frame(maxWidth: 1000).frame(maxWidth: .infinity)
         }.navigationTitle(creature.name).navigationBarTitleDisplayMode(.inline)
             .background(Color(red: 0.025, green: 0.045, blue: 0.065))
@@ -170,7 +153,7 @@ struct CreatureDetail: View {
 extension View {
     func cardStyle() -> some View {
         self.padding(22).frame(maxWidth: .infinity, alignment: .leading)
-            .background(Color.white.opacity(0.055), in: RoundedRectangle(cornerRadius: 18))
+            .background(Color.white.opacity(0.055), in: RoundedRectangle(cornerRadius: 8))
     }
 }
 
@@ -184,5 +167,25 @@ struct CreatureAvatar: View {
             .resizable()
             .scaledToFit()
             .foregroundStyle(.white)
+    }
+}
+
+struct SquareGuideTile<Preview: View>: View {
+    let title: String
+    let subtitle: String
+    let gps: String
+    @ViewBuilder let preview: () -> Preview
+    var body: some View {
+        GeometryReader { geometry in
+            VStack(alignment: .leading, spacing: 10) {
+                preview().frame(height: geometry.size.height * 0.52).clipped().clipShape(RoundedRectangle(cornerRadius: 6))
+                Text(title).font(.headline).foregroundStyle(.primary).lineLimit(2).fixedSize(horizontal: false, vertical: true)
+                Text(subtitle).font(.caption).foregroundStyle(.cyan).lineLimit(2)
+                Spacer(minLength: 0)
+                Label(gps, systemImage: "location.fill").font(.caption).monospacedDigit().foregroundStyle(.secondary).lineLimit(1).minimumScaleFactor(0.75)
+            }.padding(12).frame(width: geometry.size.width, height: geometry.size.height, alignment: .topLeading)
+                .background(.white.opacity(0.055), in: RoundedRectangle(cornerRadius: 8))
+        }.aspectRatio(1, contentMode: .fit).clipped().contentShape(Rectangle())
+            .accessibilityElement(children: .ignore).accessibilityLabel(title + ". " + subtitle + ". " + gps)
     }
 }

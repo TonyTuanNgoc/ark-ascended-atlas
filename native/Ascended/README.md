@@ -54,3 +54,6 @@ Boss/base source snapshot and detailed verification: `../../docs/codex-reports/2
 
 ### 0.5.1 (6) avatar contrast
 Dino and icon-based Boss portraits share explicit white template rendering across cards, detail pages, campaign steps and army options. Original transparent assets and attribution are retained; map/photo assets keep their original colours.
+
+### 0.6.0 (7) compact guide
+Square Base/Hang cards, compact corners, icon actions and player-focused copy. Notes and research/source UI are removed; internal provenance and stored progress remain. All 26 cave routes have 119 online YouTube chapter links via native Safari presentation. This release does not contain GIF walkthroughs: media reuse confirmation and actual route-footage verification remain pending.

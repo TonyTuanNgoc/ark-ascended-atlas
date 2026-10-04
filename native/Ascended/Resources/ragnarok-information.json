@@ -7,7 +7,7 @@
       "title": "Ragnarok · map mở rộng",
       "items": [
         "Map khám phá có nhiều biome và hang đặc biệt. Boss chính Ascended là Nunatak, thay cho trận Dragon + Manticore của Evolved; bốn mini-boss có tên nằm trong ba nhóm trận hang.",
-        "Bản này giữ danh mục Ragnarok đã tổng hợp trước đó, cùng các ghi chép lịch sử được ghi ngày trong hồ sơ. Nguồn hiện tại được tách khỏi ghi chép cũ."
+        "Ragnarok rộng, nhiều biome, có Griffin, Wyvern và dungeon riêng."
       ]
     },
     {
@@ -31,8 +31,8 @@
       "id": "creatures",
       "title": "Dino đặc trưng & DLC",
       "items": [
-        "Danh mục riêng có Griffin, Wyvern, Dire Polar Bear và nhiều loài nhập từ các biome. Mục Dino ghi phương pháp tame, đồ ăn, base stats và drop khi có dữ liệu.",
-        "Các loài cần DLC được đánh dấu; danh sách gồm biến thể. Cerberax, Gargantar và Cryolophosaurus đã được cập nhật theo nguồn tháng 9/2026. Boss không bị trộn với sinh vật thường."
+        "Có Griffin, Wyvern, Dire Polar Bear và nhiều loài từ các biome khác. Mở Dino để xem thuần hóa, thức ăn và chỉ số.",
+        "Sinh vật DLC được đánh dấu riêng. Có Cerberax, Gargantar và Cryolophosaurus."
       ]
     },
     {
@@ -77,7 +77,7 @@
       "items": [
         "Ghi lại Difficulty, Maximum Difficulty, Use Singleplayer Settings, tốc độ tame/breed, resource respawn và mọi mod trước khi lập kế hoạch. Đây là điều kiện đầu vào, không dùng chỉ số của server khác làm chuẩn save anh.",
         "Gợi ý: giữ settings ổn định, ghi lại sau mỗi thay đổi. Mục tiêu một phase nên là điều kiện hoàn thành cụ thể: đủ máy, đủ đồ, đủ tame và đã khảo sát đường rút.",
-        "Dữ liệu sinh vật là danh mục loài/biến thể theo nguồn; vị trí spawn và level thực tế có thể khác trên save cũ hoặc có mod. Các liên kết cần mạng; nội dung chính trong app dùng offline."
+        "Level và vị trí sinh vật có thể thay đổi theo thiết lập thế giới và mod."
       ]
     },
     {

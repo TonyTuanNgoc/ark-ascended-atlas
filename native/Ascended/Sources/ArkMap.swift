@@ -49,7 +49,6 @@ struct MapPicker: View {
                             }.buttonStyle(.plain).accessibilityIdentifier("choose-" + map.rawValue)
                         }
                     }
-                    Text("Single Player · Nội dung offline · Ascended 0.5.1 (6)").font(.caption).foregroundStyle(.secondary)
                 }.padding(28).frame(maxWidth: 1300).frame(maxWidth: .infinity)
             }.navigationTitle("Ascended").background(Color(red: 0.025, green: 0.045, blue: 0.065))
         }.accessibilityIdentifier("mapPicker")

@@ -1,7 +1,7 @@
 import SwiftUI
 
 enum Destination: String, CaseIterable, Identifiable {
-    case information = "Thông tin map", bases = "Base Location", map = "Bản đồ", dinos = "Dino", bosses = "Boss", exploration = "Artifact & Hang", notes = "Ghi chú", sources = "Nguồn tham khảo"
+    case information = "Thông tin map", bases = "Base Location", map = "Bản đồ", dinos = "Dino", bosses = "Boss", exploration = "Artifact & Hang"
     var id: String { rawValue }
     var symbol: String {
         switch self {
@@ -11,8 +11,6 @@ enum Destination: String, CaseIterable, Identifiable {
         case .dinos: "pawprint.fill"
         case .bosses: "shield.lefthalf.filled"
         case .exploration: "diamond.fill"
-        case .notes: "square.and.pencil"
-        case .sources: "book.closed.fill"
         }
     }
 }
@@ -53,8 +51,6 @@ struct MapSessionShell: View {
                     case .dinos: CreatureLibrary()
                     case .bosses: BossCampaignScreen()
                     case .exploration: ExplorationLibrary()
-                    case .notes: ExpeditionNotes()
-                    case .sources: SourcesScreen()
                     }
                 }
                 .navigationDestination(for: GuideDestination.self) { $0.screen }

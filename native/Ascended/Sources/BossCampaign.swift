@@ -56,14 +56,13 @@ struct BossCampaignScreen: View {
                                     CreatureAvatar(asset: map.bossImage(id)).frame(width: 100, height: 80)
                                     VStack(alignment: .leading, spacing: 10) {
                                         NavigationLink(value: GuideDestination.boss(id)) { Label(map.bossName(id), systemImage: "chevron.right") }.accessibilityIdentifier("boss-" + id)
-                                        NavigationLink(value: GuideDestination.army(id)) { Label("Đội Dino & chỉ số chuẩn bị", systemImage: "pawprint.fill") }.accessibilityIdentifier("army-" + id)
+                                        NavigationLink(value: GuideDestination.army(id)) { Label("Đội Dino & chỉ số chuẩn bị", systemImage: "pawprint.fill") }.labelStyle(.iconOnly).accessibilityLabel("Đội Dino & chỉ số chuẩn bị").frame(width: 44, height: 44).accessibilityIdentifier("army-" + id)
                                     }.font(.headline)
                                     Spacer(minLength: 0)
                                 }.padding(.vertical, 6)
                             }
                         }.cardStyle()
                     }
-                    Text("Thứ tự gợi ý do em tổng hợp; gate trophy và trận chung được nêu riêng. Nguồn thực chiến nằm trong từng bộ đội, không coi chỉ số diễn đàn là minimum chắc thắng.").font(.caption).foregroundStyle(.secondary)
                 } else { Text("Chưa tải được lộ trình của map này.") }
             }.padding(24).frame(maxWidth: 1100).frame(maxWidth: .infinity)
         }.background(Color(red: 0.025, green: 0.045, blue: 0.065))
@@ -79,7 +78,6 @@ struct BossPreparationScreen: View {
                 ForEach(Array((map.campaign?.sharedPreparation ?? []).enumerated()), id: \.offset) { index, text in
                     VStack(alignment: .leading, spacing: 10) { Text("\(index + 1)").font(.title2.bold()).foregroundStyle(.cyan); Text(text).textSelection(.enabled) }.cardStyle()
                 }
-                EvidenceLinks(sources: [GuideEvidence(title: "Wiki · Single Player Settings", url: "https://ark.wiki.gg/wiki/Server_configuration", note: "Các hệ số Single Player có thể nhân thêm vào giá trị đã đặt."), GuideEvidence(title: "Wiki · Deinosuchus changelog", url: "https://ark.wiki.gg/wiki/Deinosuchus", note: "Patch73.13 loại bleed khỏi boss; phân biệt Deinosuchus với Deinonychus.")])
             }.padding(24).frame(maxWidth: 1000).frame(maxWidth: .infinity)
         }.navigationTitle("Breed & lên điểm")
     }
@@ -92,10 +90,9 @@ struct BossArmyScreen: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 22) {
                 Text("Đội hình · " + map.bossName(bossID)).font(.largeTitle.bold()).accessibilityIdentifier("armyTitle")
-                Text(map.name + " · đối chiếu 03/10/2026").foregroundStyle(.cyan)
+                Text(map.name).foregroundStyle(.cyan)
                 if let guide = map.campaign?.loadouts.first(where: { $0.bossID == bossID }), !guide.options.isEmpty {
                     Text(guide.entry).cardStyle()
-                    if !guide.warning.isEmpty { Label(guide.warning, systemImage: "exclamationmark.bubble").foregroundStyle(.orange).cardStyle() }
                     Picker("Chọn đội hình", selection: $selected) {
                         ForEach(Array(guide.options.enumerated()), id: \.offset) { index, option in Text(option.title).tag(index) }
                     }.pickerStyle(.menu).accessibilityIdentifier("armyOptions")
@@ -109,7 +106,6 @@ struct BossArmyScreen: View {
                     }.cardStyle()
                     VStack(alignment: .leading, spacing: 18) {
                         Text("Mốc chuẩn bị sau imprint & lên XP").font(.title2.bold())
-                        Text("Mục tiêu lập kế hoạch, không phải minimum đã thử trên save anh. HP / melee là của attacker; support có chú thích riêng.").font(.subheadline).foregroundStyle(.secondary)
                         ForEach(option.targets) { target in
                             VStack(alignment: .leading, spacing: 12) {
                                 Text(target.difficulty).font(.headline).foregroundStyle(.cyan)
@@ -122,10 +118,8 @@ struct BossArmyScreen: View {
                     }.cardStyle()
                     VStack(alignment: .leading, spacing: 12) {
                         Text("Điều khiển & rủi ro").font(.title2.bold()); Text(option.play)
-                        Text(option.confidence).font(.caption).foregroundStyle(.orange)
                     }.cardStyle()
                     NavigationLink(value: GuideDestination.preparation) { Label("Cách chọn level, breed và lên điểm", systemImage: "graduationcap.fill") }
-                    EvidenceLinks(sources: guide.sources)
                     NavigationLink(value: GuideDestination.boss(bossID)) { Label("Hồ sơ, tribute & đường tới boss", systemImage: "shield.lefthalf.filled") }
                 } else { Text("Chưa có đội hình cho boss này.") }
             }.padding(24).frame(maxWidth: 1000).frame(maxWidth: .infinity)
@@ -135,17 +129,8 @@ struct BossArmyScreen: View {
         VStack(alignment: .leading, spacing: 5) { Text(name).font(.caption).foregroundStyle(.secondary); Text(value).font(.headline).textSelection(.enabled) }.frame(maxWidth: .infinity, alignment: .leading)
     }
 }
+// Research provenance is retained in bundled data and developer reports.
 struct EvidenceLinks: View {
     let sources: [GuideEvidence]
-    var body: some View {
-        VStack(alignment: .leading, spacing: 16) {
-            Text("Nguồn & độ tin cậy").font(.title2.bold())
-            ForEach(sources) { source in
-                VStack(alignment: .leading, spacing: 8) {
-                    if let url = URL(string: source.url) { Link(source.title, destination: url) }
-                    Text(source.note).font(.subheadline).foregroundStyle(.secondary)
-                }
-            }
-        }.cardStyle()
-    }
+    var body: some View { EmptyView() }
 }

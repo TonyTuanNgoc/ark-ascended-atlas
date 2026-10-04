@@ -50,7 +50,6 @@ struct MapBossDetail: View {
                 Text(boss.name).font(.largeTitle.bold())
                 Text(map.name + " · " + boss.kind).foregroundStyle(.cyan)
                 MapBossPortrait(boss: boss).frame(height: 210).frame(maxWidth: .infinity)
-                Text("Artwork / icon · ARK Community Wiki").font(.caption).foregroundStyle(.secondary)
                 NavigationLink(value: GuideDestination.army(boss.id)) { Label("Đội Dino, level & chỉ số chuẩn bị", systemImage: "pawprint.fill") }.accessibilityIdentifier("bossArmy")
                 Text(boss.summary).cardStyle()
                 VStack(alignment: .leading, spacing: 14) {
@@ -78,8 +77,6 @@ struct MapBossDetail: View {
                 }.cardStyle()
                 VStack(alignment: .leading, spacing: 14) { Text("Chiến thuật & giới hạn").font(.title2.bold()); ForEach(boss.strategy, id: \.self) { Text($0).foregroundStyle(.secondary) } }.cardStyle()
                 GuideChecklist(title: "Trước khi vào trận", items: boss.kit, key: boss.id)
-                Link("Hồ sơ boss / arena · ARK Community Wiki", destination: URL(string: boss.sourceURL)!)
-                Text("Đối chiếu 03/10/2026 · Không dùng chỉ số boss ở map khác thay cho trận này. Timer, sức mạnh và loot thực tế phụ thuộc phiên bản/settings.").font(.caption).foregroundStyle(.secondary)
             }.padding(24).frame(maxWidth: 1000).frame(maxWidth: .infinity)
         }.navigationTitle(boss.name).navigationBarTitleDisplayMode(.inline)
     }

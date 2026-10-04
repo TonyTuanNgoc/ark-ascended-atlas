@@ -78,7 +78,7 @@
           "id": "bary",
           "title": "2 Baryonyx mate boost · nếu thả tame hợp lệ",
           "team": "Hai Bary đã breed/imprint, khác giới; anh cưỡi một.",
-          "why": "Wiki đưa cặp Bary như một phương án.",
+          "why": "Một phương án dùng cặp Baryonyx.",
           "targets": [
             {
               "difficulty": "Kế hoạch dungeon",
@@ -88,7 +88,7 @@
               "extra": "Mốc do em đề xuất; chưa có minimum ASA được kiểm chứng"
             }
           ],
-          "play": "Kiểm tra có đưa/thả tame tới chỗ đánh trong settings thật không; Queen cần kích hoạt theo cơ chế không cưỡi. Không coi Wiki cryopod chung là quyền thả mọi nơi.",
+          "play": "Kiểm tra có đưa/thả tame tới chỗ đánh trong settings thật không; Queen cần kích hoạt theo cơ chế không cưỡi. Quyền thả cryopod phụ thuộc thiết lập và khu vực.",
           "confidence": "Wiki chung Evolved/Ascended; stats là ngân sách đề xuất, độ tin cậy thấp hơn army guardian.",
           "imageAsset": "Dino-baryonyx"
         }
@@ -307,7 +307,7 @@
           "id": "theri",
           "title": "Therizino + cake · tái dùng dòng breed",
           "team": "19 Therizinosaurus + 1 Yuty; hoặc 18 Theri + Yuty + 1 pig.",
-          "why": "Có thể tái dùng dòng Theri đã breed để giảm công chuẩn bị nhiều dòng. Với trận này, đây là phương án đề xuất theo cơ chế tame và cake, chưa có báo cáo thắng đúng bộ chỉ số dưới đây trong nguồn đã dẫn.",
+          "why": "Có thể tái dùng dòng Theri đã breed để giảm công chuẩn bị nhiều dòng. Thử ở Gamma trước khi tăng độ khó.",
           "targets": [
             {
               "difficulty": "Gamma",
@@ -339,7 +339,7 @@
           "id": "heal",
           "title": "Đội Rex với healer · trận dài",
           "team": "18 Rex + 1 Yuty anh cưỡi + 1 Daeodon.",
-          "why": "Wiki khuyên pig vì Iceworm gây damage cao; cân bằng sống sót và DPS.",
+          "why": "Dùng pig hồi máu vì Iceworm gây damage cao; cân bằng sống sót và DPS.",
           "targets": [
             {
               "difficulty": "Alpha · Rex",

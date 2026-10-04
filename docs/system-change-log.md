@@ -14,3 +14,6 @@ Changed Boss to ordered campaigns for all three maps with 27 source-qualified ar
 
 ## 2026-10-04 — Ascended avatar contrast 0.5.1 (6)
 Unified Dino and icon-based Boss avatars as white across cards, profiles, campaigns and army options on all maps. Preserved original map/photo/logo imagery. Two relevant UI tests passed and screenshots visually verified; signed cable installation and device inventory confirm 0.5.1 (6). Physical automatic launch denied by device lock. Receipt: codex-reports/2026-10-04-ascended-avatar-contrast.md.
+
+## 2026-10-04 — Ascended compact guide 0.6.0 (7)
+Added square Base/Hang cards and compact corners, replaced familiar actions with icons, removed Notes/source navigation and player-facing provenance/technical metadata. Preserved white avatars and stored map progress. Added 119 YouTube chapter links covering all 26 map-scoped cave routes, presented in native Safari. Initial five-test regression and final two targeted UI tests passed; final signed cable install and launch succeeded. GIFs/verified per-turn walkthroughs remain unfinished pending media reuse confirmation; no downloaded media or invented directions. Report: codex-reports/2026-10-04-ascended-compact-ui-cave-videos.md.

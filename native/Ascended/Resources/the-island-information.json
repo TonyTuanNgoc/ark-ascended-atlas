@@ -31,7 +31,7 @@
       "id": "creatures",
       "title": "Dino theo The Island",
       "items": [
-        "Danh mục lấy registry The Island; Rhyniognatha, Unicorn, Polar Bear và Yeti có mặt theo dữ liệu map. Không mang danh sách Wyvern/Griffin của Ragnarok vào đây.",
+        "The Island có Rhyniognatha, Unicorn, Polar Bear và Yeti. Không có Wyvern hay Griffin tự nhiên.",
         "Polar Bear/Yeti và biến thể trong hang có quy tắc tame riêng; hồ sơ chỉ số loài không khẳng định mọi cá thể Feral trong hang tame được. Alpha là biến thể riêng và không tame."
       ]
     },
@@ -57,8 +57,8 @@
       "id": "notes",
       "title": "Explorer Notes & Dossiers",
       "items": [
-        "The Island có ghi chép cốt truyện và hồ sơ sinh vật. Wikily snapshot có 239 điểm notes; đây là số điểm trong nguồn, không phải lời khẳng định về bộ achievement trên mọi phiên bản.",
-        "Đọc notes trong game để theo dõi story/XP. App hiện dẫn tới map nguồn để tra notes; Ghi chú là nhật ký cá nhân, không tự đồng bộ việc thu thập notes của game."
+        "Khám phá Explorer Notes để theo dõi cốt truyện và tăng XP.",
+        "Đọc Explorer Notes trong game trước khi luyện level để tận dụng XP boost."
       ]
     },
     {
@@ -85,7 +85,7 @@
       "items": [
         "Ghi lại Difficulty, Maximum Difficulty, Use Singleplayer Settings, tốc độ tame/breed, resource respawn và mọi mod trước khi lập kế hoạch. Đây là điều kiện đầu vào, không dùng chỉ số của server khác làm chuẩn save anh.",
         "Gợi ý: giữ settings ổn định, ghi lại sau mỗi thay đổi. Mục tiêu một phase nên là điều kiện hoàn thành cụ thể: đủ máy, đủ đồ, đủ tame và đã khảo sát đường rút.",
-        "Dữ liệu sinh vật là danh mục loài/biến thể theo nguồn; vị trí spawn và level thực tế có thể khác trên save cũ hoặc có mod. Các liên kết cần mạng; nội dung chính trong app dùng offline."
+        "Level và vị trí sinh vật có thể thay đổi theo thiết lập thế giới và mod."
       ]
     },
     {
@@ -93,7 +93,7 @@
       "title": "Đọc bản đồ & tọa độ",
       "items": [
         "LAT tăng về phía nam, LON tăng về phía đông. Artifact là điểm lấy; cửa hang là điểm tiếp cận. Những điểm sát nhau có menu để chọn; dùng từng lớp Artifact / Cửa hang / Boss trên bản đồ.",
-        "The Island: Wiki ghi hệ mini-map (M một lần), Tek gauntlet/TPCoords có thể khác hệ waypoint (M hai lần). App dùng lớp artifact Wikily và cửa hang theo hướng dẫn Ascended; đối chiếu địa hình khi đặt waypoint. Không dùng tọa độ Evolved thay thế tự động.",
+        "Trên The Island, tọa độ mini-map có thể khác waypoint. Nhận diện thêm địa hình khi tìm cửa hang.",
         "Các tọa độ cửa hang là chỉ dẫn cộng đồng, có thể lệch theo phiên bản hoặc vị trí đứng. Điểm được ghi khu vực/tham khảo không phải cửa vào chính xác. Map 8K là địa hình, không phải sơ đồ tầng hang."
       ]
     }

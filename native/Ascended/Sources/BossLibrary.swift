@@ -40,7 +40,6 @@ struct BossLibrary: View {
                         }.cardStyle()
                     }.buttonStyle(.plain).accessibilityIdentifier("boss-" + boss.id)
                 }
-                Text("Đối chiếu bản Ascended · 03/10/2026").font(.caption).foregroundStyle(.secondary)
             }.padding(24).frame(maxWidth: 1100).frame(maxWidth: .infinity)
         }.background(Color(red: 0.025, green: 0.045, blue: 0.065))
     }
@@ -53,21 +52,12 @@ struct BossDetail: View {
                 Label(boss.kind, systemImage: "shield.lefthalf.filled").foregroundStyle(.cyan)
                 Text(boss.name).font(.largeTitle.bold())
                 CreatureAvatar(asset: boss.id == "nunatak" ? "Nunatak-Gamma" : "Boss-" + boss.id).frame(height: boss.id == "nunatak" ? 280 : 160).frame(maxWidth: .infinity)
-                Text(boss.id == "nunatak" ? "Ảnh Nunatak Ascended · ARK Community Wiki" : "Icon mini-boss · ARK Community Wiki").font(.caption).foregroundStyle(.secondary)
                 NavigationLink(value: GuideDestination.army(boss.id)) { Label("Đội Dino, level & chỉ số chuẩn bị", systemImage: "pawprint.fill") }.accessibilityIdentifier("bossArmy")
                 BossKnowledge(boss: boss)
                 block("Tổng quan", boss.summary)
                 block("Tìm ở đâu", boss.location)
                 block("Nguy hiểm cần chuẩn bị", boss.danger)
                 block("Mục tiêu & phần thưởng", boss.rewards)
-                VStack(alignment: .leading, spacing: 12) {
-                    Text("Nguồn & ngày đối chiếu").font(.headline)
-                    Text("03/10/2026 · Ragnarok Ascended").font(.caption).foregroundStyle(.secondary)
-                    Link("ARK Official Community Wiki", destination: URL(string: boss.source)!)
-                    if boss.id == "nunatak" {
-                        Link("Thông báo ra mắt của Studio Wildcard", destination: URL(string: "https://survivetheark.com/index.php?/forums/topic/772489-ragnarok-ascended-and-lost-colony-expansion-pass-are-now-live/")!)
-                    }
-                }.cardStyle()
             }.padding(24).frame(maxWidth: 1000).frame(maxWidth: .infinity)
         }.navigationTitle(boss.name).navigationBarTitleDisplayMode(.inline)
             .background(Color(red: 0.025, green: 0.045, blue: 0.065))

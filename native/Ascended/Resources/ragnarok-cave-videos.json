@@ -1,0 +1,165 @@
+[
+  {
+    "routeID": "wyvern",
+    "videoID": "dB3V_7-s92s",
+    "title": "Life's Labyrinth Solo Guide And ALL Ragnarok Artefact Locations | Ark Survival Ascended",
+    "channel": "Frodo the Dodo",
+    "chapters": [
+      {
+        "title": "Artefact of the Strong / Wyvern Cave",
+        "start": 24,
+        "end": 75
+      }
+    ]
+  },
+  {
+    "routeID": "ocean",
+    "videoID": "dB3V_7-s92s",
+    "title": "Life's Labyrinth Solo Guide And ALL Ragnarok Artefact Locations | Ark Survival Ascended",
+    "channel": "Frodo the Dodo",
+    "chapters": [
+      {
+        "title": "Artefact of the Devourer / Tuso Trench",
+        "start": 75,
+        "end": 123
+      }
+    ]
+  },
+  {
+    "routeID": "jungle",
+    "videoID": "dB3V_7-s92s",
+    "title": "Life's Labyrinth Solo Guide And ALL Ragnarok Artefact Locations | Ark Survival Ascended",
+    "channel": "Frodo the Dodo",
+    "chapters": [
+      {
+        "title": "Artefact of the Hunter / Jungle Dungeon",
+        "start": 134,
+        "end": 221
+      }
+    ]
+  },
+  {
+    "routeID": "frozen",
+    "videoID": "dB3V_7-s92s",
+    "title": "Life's Labyrinth Solo Guide And ALL Ragnarok Artefact Locations | Ark Survival Ascended",
+    "channel": "Frodo the Dodo",
+    "chapters": [
+      {
+        "title": "Artefact of the Pack / Ice Dungeon",
+        "start": 221,
+        "end": 315
+      }
+    ]
+  },
+  {
+    "routeID": "carnivorous",
+    "videoID": "dB3V_7-s92s",
+    "title": "Life's Labyrinth Solo Guide And ALL Ragnarok Artefact Locations | Ark Survival Ascended",
+    "channel": "Frodo the Dodo",
+    "chapters": [
+      {
+        "title": "Carnivorous Caverns",
+        "start": 315,
+        "end": 370
+      },
+      {
+        "title": "Artefact of the Cunning / Carnivorous Caverns",
+        "start": 370,
+        "end": 398
+      },
+      {
+        "title": "Artefact of the Immune / Carnivorous Caverns",
+        "start": 398,
+        "end": 432
+      }
+    ]
+  },
+  {
+    "routeID": "labyrinth",
+    "videoID": "dB3V_7-s92s",
+    "title": "Life's Labyrinth Solo Guide And ALL Ragnarok Artefact Locations | Ark Survival Ascended",
+    "channel": "Frodo the Dodo",
+    "chapters": [
+      {
+        "title": "Life's Laybrinth",
+        "start": 435,
+        "end": 488
+      },
+      {
+        "title": "Walktrough",
+        "start": 488,
+        "end": 502
+      },
+      {
+        "title": "Button Room",
+        "start": 502,
+        "end": 552
+      },
+      {
+        "title": "Fire Statue Room",
+        "start": 552,
+        "end": 612
+      },
+      {
+        "title": "Right Door Path / Artefact of the Clever",
+        "start": 612,
+        "end": 627
+      },
+      {
+        "title": "Jumping Puzzle",
+        "start": 627,
+        "end": 654
+      },
+      {
+        "title": "Statue Room",
+        "start": 654,
+        "end": 688
+      },
+      {
+        "title": "Loot Crate Room",
+        "start": 688,
+        "end": 727
+      },
+      {
+        "title": "Maze Room",
+        "start": 727,
+        "end": 1085
+      },
+      {
+        "title": "Left Door Path / Artefact of the Skylord",
+        "start": 1085,
+        "end": 1089
+      },
+      {
+        "title": "Water Tunnel",
+        "start": 1089,
+        "end": 1139
+      },
+      {
+        "title": "Circular Maze",
+        "start": 1139,
+        "end": 1192
+      },
+      {
+        "title": "Water Jump Puzzle",
+        "start": 1192,
+        "end": 1224
+      },
+      {
+        "title": "Catwalk Room",
+        "start": 1224,
+        "end": 1255
+      },
+      {
+        "title": "Sacrifice Room",
+        "start": 1255,
+        "end": 1310
+      },
+      {
+        "title": "Oasis",
+        "start": 1310,
+        "end": 1388
+      }
+    ]
+  }
+]

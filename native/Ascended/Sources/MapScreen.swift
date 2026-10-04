@@ -14,7 +14,7 @@ struct MapScreen: View {
             HStack(spacing: 14) {
                 VStack(alignment: .leading, spacing: 4) {
                     Text(map.name + " Ascended").font(.title3.bold())
-                    Text("8K · Bản đồ địa hình offline").font(.caption).foregroundStyle(.cyan)
+                    Text(map.name).font(.caption).foregroundStyle(.cyan)
                 }
                 Spacer()
                 HStack(spacing: 8) {
@@ -34,14 +34,14 @@ struct MapScreen: View {
                             if visibleLayers.contains(layer) { visibleLayers.remove(layer) } else { visibleLayers.insert(layer) }
                             if selected?.layer == layer && !visibleLayers.contains(layer) { selected = nil; focusedID = nil }
                         } label: { Label(layer.rawValue, systemImage: layer == .artifact ? "diamond.fill" : layer == .cave ? "mountain.2.fill" : layer == .base ? "house.fill" : "shield.lefthalf.filled") }
-                        .buttonStyle(.bordered).tint(visibleLayers.contains(layer) ? .cyan : .gray)
+                        .labelStyle(.iconOnly).frame(minWidth: 44, minHeight: 44).accessibilityLabel(layer.rawValue).buttonStyle(.bordered).tint(visibleLayers.contains(layer) ? .cyan : .gray)
                         .accessibilityIdentifier("layer-" + layer.rawValue)
                     }
-                    Menu("Tìm vị trí") {
+                    Menu {
                         ForEach(MapLocation.all(in: map)) { point in
                             Button(point.name) { visibleLayers.insert(point.layer); selected = point; focusedID = point.id }
                         }
-                    }.accessibilityIdentifier("findMapLocation")
+                    } label: { Image(systemName: "magnifyingglass").frame(width: 44, height: 44) }.accessibilityLabel("Tìm vị trí").accessibilityIdentifier("findMapLocation")
                 }.padding(.horizontal, 16).padding(.vertical, 8)
             }
             ZoomableMap(imageAsset: map.imageAsset, mapName: map.name, resetToken: resetToken, action: action, locations: MapLocation.all(in: map).filter { visibleLayers.contains($0.layer) }, focusID: focusedID, select: { selected = $0; focusedID = $0.id })
@@ -59,7 +59,7 @@ struct MapScreen: View {
                         NavigationLink("Hang", value: GuideDestination.cave(id))
                     }
                     if point.layer == .base, let spot = map.bases?.locations.first(where: { "base-" + $0.id == point.id }) {
-                        NavigationLink("Hồ sơ base", value: GuideDestination.base(spot.id)).accessibilityIdentifier("mapBaseProfile")
+                        NavigationLink(value: GuideDestination.base(spot.id)) { Image(systemName: "house.fill").frame(width: 44, height: 44) }.accessibilityLabel("Hồ sơ base").accessibilityIdentifier("mapBaseProfile")
                     }
                     Button { selected = nil; focusedID = nil } label: { Image(systemName: "xmark.circle.fill") }.accessibilityLabel("Đóng vị trí")
                 }.padding(16).background(.ultraThinMaterial)
@@ -68,7 +68,6 @@ struct MapScreen: View {
             HStack {
                 Label("Chụm để zoom · Kéo để di chuyển", systemImage: "hand.draw.fill")
                 Spacer()
-                Text("8192 × 8192 · Wikily")
             }.font(.caption).foregroundStyle(.secondary).padding(14)
         }.background(Color(red: 0.025, green: 0.045, blue: 0.065))
         .onAppear {

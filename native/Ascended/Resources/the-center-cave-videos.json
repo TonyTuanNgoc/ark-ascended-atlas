@@ -1,0 +1,219 @@
+[
+  {
+    "routeID": "jungle",
+    "videoID": "vD4U9Hyi1WY",
+    "title": "CAVE ENTRANCES & ARTIFACT LOCATIONS - THE CENTER - Ark Survival Ascended",
+    "channel": "Kittykatlapurr",
+    "chapters": [
+      {
+        "title": "Jungle Cave Entrance 1",
+        "start": 52,
+        "end": 127
+      },
+      {
+        "title": "Jungle Cave Entrance 2",
+        "start": 127,
+        "end": 159
+      },
+      {
+        "title": "Jungle Cave Entrance 3",
+        "start": 159,
+        "end": 193
+      },
+      {
+        "title": "Jungle Cave Entrance 4",
+        "start": 193,
+        "end": 227
+      },
+      {
+        "title": "Jungle Cave Entrance 5",
+        "start": 227,
+        "end": 267
+      },
+      {
+        "title": "Artifact of the Immune",
+        "start": 267,
+        "end": 325
+      }
+    ]
+  },
+  {
+    "routeID": "north-ice",
+    "videoID": "vD4U9Hyi1WY",
+    "title": "CAVE ENTRANCES & ARTIFACT LOCATIONS - THE CENTER - Ark Survival Ascended",
+    "channel": "Kittykatlapurr",
+    "chapters": [
+      {
+        "title": "North Ice Cave Entrance",
+        "start": 325,
+        "end": 370
+      },
+      {
+        "title": "Artifact of the Devourer",
+        "start": 370,
+        "end": 378
+      },
+      {
+        "title": "Artifact of the Clever",
+        "start": 378,
+        "end": 388
+      }
+    ]
+  },
+  {
+    "routeID": "south-ice",
+    "videoID": "vD4U9Hyi1WY",
+    "title": "CAVE ENTRANCES & ARTIFACT LOCATIONS - THE CENTER - Ark Survival Ascended",
+    "channel": "Kittykatlapurr",
+    "chapters": [
+      {
+        "title": "South Ice Cave Entrance",
+        "start": 388,
+        "end": 427
+      },
+      {
+        "title": "Artifact of the Skylord",
+        "start": 427,
+        "end": 437
+      }
+    ]
+  },
+  {
+    "routeID": "cliffside",
+    "videoID": "vD4U9Hyi1WY",
+    "title": "CAVE ENTRANCES & ARTIFACT LOCATIONS - THE CENTER - Ark Survival Ascended",
+    "channel": "Kittykatlapurr",
+    "chapters": [
+      {
+        "title": "Cliffside Caverns Entrance ish",
+        "start": 437,
+        "end": 465
+      },
+      {
+        "title": "Artifact of the Cunning",
+        "start": 465,
+        "end": 478
+      }
+    ]
+  },
+  {
+    "routeID": "lava-oasis",
+    "videoID": "vD4U9Hyi1WY",
+    "title": "CAVE ENTRANCES & ARTIFACT LOCATIONS - THE CENTER - Ark Survival Ascended",
+    "channel": "Kittykatlapurr",
+    "chapters": [
+      {
+        "title": "Lava Oasis Cave Entrance",
+        "start": 478,
+        "end": 511
+      },
+      {
+        "title": "Artifact of the Hunter",
+        "start": 511,
+        "end": 540
+      }
+    ]
+  },
+  {
+    "routeID": "lava",
+    "videoID": "vD4U9Hyi1WY",
+    "title": "CAVE ENTRANCES & ARTIFACT LOCATIONS - THE CENTER - Ark Survival Ascended",
+    "channel": "Kittykatlapurr",
+    "chapters": [
+      {
+        "title": "Lava Cave Entrance",
+        "start": 540,
+        "end": 602
+      },
+      {
+        "title": "Artifact of the Strong",
+        "start": 602,
+        "end": 627
+      },
+      {
+        "title": "Artifact of the Massive",
+        "start": 627,
+        "end": 648
+      }
+    ]
+  },
+  {
+    "routeID": "trench",
+    "videoID": "vD4U9Hyi1WY",
+    "title": "CAVE ENTRANCES & ARTIFACT LOCATIONS - THE CENTER - Ark Survival Ascended",
+    "channel": "Kittykatlapurr",
+    "chapters": [
+      {
+        "title": "Southeastern Trench/Brute Artifact",
+        "start": 648,
+        "end": 694
+      }
+    ]
+  },
+  {
+    "routeID": "floating",
+    "videoID": "vD4U9Hyi1WY",
+    "title": "CAVE ENTRANCES & ARTIFACT LOCATIONS - THE CENTER - Ark Survival Ascended",
+    "channel": "Kittykatlapurr",
+    "chapters": [
+      {
+        "title": "The Center Cave Entrance 1",
+        "start": 694,
+        "end": 751
+      },
+      {
+        "title": "The Center Cave Entrance 2",
+        "start": 751,
+        "end": 773
+      },
+      {
+        "title": "The Center Cave Entrance 3",
+        "start": 773,
+        "end": 823
+      },
+      {
+        "title": "Artifact of the Devious",
+        "start": 823,
+        "end": 846
+      }
+    ]
+  },
+  {
+    "routeID": "underworld",
+    "videoID": "vD4U9Hyi1WY",
+    "title": "CAVE ENTRANCES & ARTIFACT LOCATIONS - THE CENTER - Ark Survival Ascended",
+    "channel": "Kittykatlapurr",
+    "chapters": [
+      {
+        "title": "The Underground Entrance 1",
+        "start": 846,
+        "end": 912
+      },
+      {
+        "title": "The Underground Entrance 2",
+        "start": 912,
+        "end": 976
+      },
+      {
+        "title": "The Underground Entrance 3",
+        "start": 976,
+        "end": 1013
+      },
+      {
+        "title": "The Underground Entrance 4",
+        "start": 1013,
+        "end": 1058
+      },
+      {
+        "title": "Artifact of the Pack",
+        "start": 1058,
+        "end": 1084
+      },
+      {
+        "title": "General/Outro",
+        "start": 1084,
+        "end": 1149
+      }
+    ]
+  }
+]
