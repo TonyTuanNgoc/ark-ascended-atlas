@@ -1,14 +1,14 @@
-# Ascended — native iPad development 0.10.0 (11)
+# Ascended — native iPad development 0.11.0 (12)
 Single Player · Ragnarok / The Island / The Center. Independent app `com.tonytuanngoc.ascended`, installed by cable without TestFlight.
 
 ## Included
 - Ordered boss campaigns for all three maps; 27 army options across every named boss, with composition, level/breed/imprint/XP explanation, planning HP/melee/saddle targets, source confidence and patch caveats. Existing boss profiles remain accessible.
-- Ragnarok-only Base Location: five SP-balanced choices, offline region terrain previews, timestamped YouTube links and actual per-video popularity snapshots. Per-location forum signals are explicitly qualified; ranking is an editorial balance assessment, not a public vote leaderboard. Five base pins link map focus back to profiles.
+- Ragnarok-only Base Location: five SP-balanced choices, offline in-game region photos, timestamped YouTube links and actual per-video popularity snapshots. Per-location forum signals are explicitly qualified; ranking is an editorial balance assessment, not a public vote leaderboard. Five base pins link map focus back to profiles.
 - Persistent three-map selection in the left sidebar. Selecting a map opens its full map and clears previous detail navigation; Hôm nay is removed.
 - New searchable **Thông tin map** guide: geography, resources, creatures, caves, bosses, progression, base planning, Single Player settings and dated sources.
 - Island: 124 creature/variant entries (113 structured profiles), ten artifacts, eleven exploration routes including a labelled Tek Cave approach region; Broodmother, Megapithecus, Dragon and Overseer.
 - Center: 132 creature/variant entries (123 structured profiles), eleven artifacts across nine routes; Broodmother and Megapithecus share the Center arena.
-- Each map has an offline 8192×8192 terrain image and its own notes, artifact collection and gear checklist. Existing Ragnarok storage keys are preserved.
+- Each map has an offline 8192×8192 terrain image and its own stored artifact collection and existing progress. Existing Ragnarok storage keys are preserved.
 - Original ARK Survival Ascended logo and native SwiftUI navigation.
 - Offline 8192×8192 terrain, pinch/pan, double-tap zoom, zoom buttons and fit/reset; portrait and landscape.
 - 159 creature/variant entries: 151 entries in Wikily's Ragnarok spawn registry, supplemented by Xiphactinus and seven Alpha variants from the official community wiki. This is a source-based roster, not a measured count of a player's save. DLC creatures are labelled separately (12 entries).
@@ -75,3 +75,11 @@ Map selection stays on the left, with a map-first landing and no Hôm nay. Maps 
 162 genuine item images support preparation, foods, drops, tools, tribute and rewards; explicit numbers appear with their images. Boss team alternatives are separate. Unspecified preparation quantities are user editable and persist separately for each map and route; they are not invented minimums. Directional captions remain beneath clips, while secondary prose uses a detail button. Unknown imagery uses labelled generic symbols.
 
 All 467 reviewed clips are replaced by silent 1920×1080 HEVC loops at source cadence up to 60 fps, with 1080p posters and AVPlayerLooper autoplay. No upscaling beyond the source; no lossless or 4K claim. Only the selected active clip has a player, neighboring pages retain posters and small library cards use downsampled thumbnails. Source/render hashes, route correspondence and decoded-media verification remain in internal reports. Cable build 11, no TestFlight or hosting release. See `../../docs/codex-reports/2026-10-04-ascended-visual-hq.md` for final validation/deployment evidence.
+
+
+### 0.11.0 (12) direct visual cave guide
+Cave pages show artifact artwork/name/GPS and entrance GPS, a flat pictured equipment list, then the autoplay HD loop and thumbnail strip. Preparation has no checkboxes, quantity controls or amounts. Artifact rows no longer open an extra page; existing collection progress remains accessible from boss tribute profiles. Hunter navigation uses the same carousel instead of numbered landmarks, a schematic, checkpoint confirmation and multiple pages. GIF headings, step numbers, previous/next buttons and thumbnail titles are removed; route instructions remain below the active loop. Alternative artifact branches retain a compact branch selector so contradictory paths are never merged.
+
+All ellipsis detail buttons are removed. Map points have fixed GPS anchors, actual artwork and names; tapping shows a floating information card without shrinking the map. Obelisks use the game's monument silhouette coloured by terminal; coordinates refer to terminals, not a boss wandering on the map. Lava indicators are orange. 162 creature/boss gallery/frame assets retain their actual colours, including the Spirit encounters. Thirteen entries lack a verified game photo and show an empty-photo state rather than the wrong species or a head avatar. Images from the community wiki can come from either game edition; edition-unconfirmed images are recorded internally and are not claimed as ASA captures.
+
+All five base previews use game photos. Three 1280×720 photos show the specified region; two verified chapter storyboards are 320×180 because full video downloads returned HTTP 403. Camera coordinates can differ from approach pins. No artificial upscale, generated place images or map-crop fallback. Sources and limitations: `../../docs/codex-reports/2026-10-04-game-portrait-sources.json`, each base's `photoSource`, and the 0.11 report. Existing 467 source-native 1080p loops are preserved. No TestFlight or web deployment.

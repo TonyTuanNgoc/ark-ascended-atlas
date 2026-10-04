@@ -50,47 +50,37 @@ struct CaveRouteDetail: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 22) {
-                ViewThatFits(in: .horizontal) {
-                    HStack(alignment: .top, spacing: 20) {
-                        routePhoto.frame(width: 420, height: 240)
-                        VisualBrief(text: route.notes).frame(width: 360, alignment: .leading)
-                    }
-                    VStack(alignment: .leading, spacing: 16) {
-                        routePhoto.frame(height: 230)
-                        VisualBrief(text: route.notes)
-                    }
-                }
-                if route.id == "jungle" && map == .ragnarok { Label("Lava Elemental · tùy chọn", systemImage: "circle.dotted").font(.caption).foregroundStyle(.secondary) }
-                VStack(alignment: .leading, spacing: 14) {
-                    if route.artifactIDs.isEmpty { Text("Tuyến này không có artifact; đọc điều kiện trophy trong mục Boss.").foregroundStyle(.secondary) }
-                    ForEach(route.artifacts(in: map)) { artifact in
-                        NavigationLink(value: GuideDestination.artifact(artifact.id)) {
-                            HStack(spacing: 16) {
-                                Image(artifact.imageAsset).resizable().scaledToFit().frame(width: 68, height: 68)
-                                VStack(alignment: .leading, spacing: 5) {
+                HStack(alignment: .top, spacing: 18) {
+                    routePhoto.frame(width: 230, height: 160)
+                    VStack(alignment: .leading, spacing: 12) {
+                        ForEach(route.artifacts(in: map)) { artifact in
+                            HStack(spacing: 12) {
+                                Image(artifact.imageAsset).resizable().scaledToFit().frame(width: 56, height: 64)
+                                VStack(alignment: .leading, spacing: 6) {
                                     Text(artifact.name.replacingOccurrences(of: "Artifact of the ", with: "")).font(.headline)
-                                    GPSBadge(coordinates: artifact.coordinates).font(.subheadline).foregroundStyle(.cyan)
+                                    GPSBadge(coordinates: artifact.coordinates)
                                 }
-                                Spacer(); Image(systemName: "chevron.right")
-                            }.contentShape(Rectangle())
-                        }.buttonStyle(.plain).accessibilityIdentifier("artifact-" + artifact.id)
-                    }
-                }.cardStyle()
-                VStack(alignment: .leading, spacing: 14) {
-                    if route.entrances.isEmpty { Text("Không có cửa hang trong tuyến này: tiếp cận điểm artifact từ biển; đọc hướng dẫn và chuẩn bị đồ lặn.") }
-                    ForEach(route.entrances) { entrance in
-                        VStack(alignment: .leading, spacing: 8) {
-                            Text(entrance.label).font(.headline)
-                            GPSBadge(coordinates: entrance.coordinates).monospacedDigit().foregroundStyle(.orange).textSelection(.enabled)
-                            NavigationLink(value: GuideDestination.map("entrance-" + entrance.id)) { Label(entrance.kind == "area" ? "Xem khu vực trên bản đồ" : "Xem cửa hang trên bản đồ", systemImage: "map") }.labelStyle(.iconOnly).accessibilityLabel("Xem cửa hang trên bản đồ")
-                                .accessibilityIdentifier("show-entrance-" + entrance.id)
+                            }
+                        }
+                        ForEach(route.entrances) { entrance in
+                            HStack(spacing: 10) {
+                                Image(systemName: "mountain.2.fill").foregroundStyle(.orange)
+                                VStack(alignment: .leading, spacing: 4) {
+                                    Text(entrance.label).font(.caption)
+                                    GPSBadge(coordinates: entrance.coordinates)
+                                }
+                                NavigationLink(value: GuideDestination.map("entrance-" + entrance.id)) { Image(systemName: "map") }
+                                    .accessibilityLabel("Xem cửa hang trên bản đồ").accessibilityIdentifier("show-entrance-" + entrance.id)
+                            }
                         }
                     }
-                }.cardStyle()
-                if map == .ragnarok && route.id == "jungle" {
-                    NavigationLink(value: GuideDestination.navigator) { Label("Dẫn đường Hunter", systemImage: "location.north.line.fill") }.buttonStyle(.borderedProminent).accessibilityIdentifier("open-jungle-navigator")
+                    Spacer(minLength: 0)
                 }
-                GuideChecklist(title: "Chuẩn bị cho tuyến", items: route.kit, key: "cave-" + route.id)
+                RoutePreparation(items: route.kit)
+                if let guide = map.caveGIFs.first(where: { $0.routeID == route.id }) {
+                    CaveGIFWalkthrough(guide: guide).id(map.rawValue + route.id)
+                }
+                VisualBrief(text: route.notes).cardStyle()
 
                 if let video = map.caveVideos.first(where: { $0.routeID == route.id }) {
                     Button {
@@ -106,9 +96,7 @@ struct CaveRouteDetail: View {
                         .accessibilityValue(showFullVideo ? "Đã mở" : "Đã đóng")
                     if showFullVideo { CaveVideoTimeline(guide: video) }
                 }
-                if let guide = map.caveGIFs.first(where: { $0.routeID == route.id }) {
-                    CaveGIFWalkthrough(guide: guide).id(map.rawValue + route.id)
-                }
+
             }.padding(24).frame(maxWidth: 1000).frame(maxWidth: .infinity)
         }.navigationTitle(route.name).navigationBarTitleDisplayMode(.inline)
     }

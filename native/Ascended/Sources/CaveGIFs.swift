@@ -66,8 +66,6 @@ struct CaveGIFWalkthrough: View {
             let index = min(selectedIndex, section.steps.count - 1)
             let step = section.steps[index]
             VStack(alignment: .leading, spacing: 16) {
-                Label("Đi từng đoạn", systemImage: "point.topleft.down.to.point.bottomright.curvepath")
-                    .font(.title2.bold())
                 if guide.sections.count > 1 {
                     Menu {
                         ForEach(guide.sections) { option in
@@ -82,23 +80,7 @@ struct CaveGIFWalkthrough: View {
                             Image(systemName: "chevron.down")
                         }
                     }.accessibilityIdentifier("gif-section-selector")
-                } else {
-                    Text(section.title).font(.headline)
                 }
-                HStack(spacing: 16) {
-                    Button { withAnimation { selectedIndex = index - 1 } } label: {
-                        Image(systemName: "chevron.left").frame(width: 40, height: 40)
-                    }.disabled(index == 0).accessibilityLabel("Đoạn trước")
-                        .accessibilityIdentifier("gif-previous-" + guide.routeID)
-                    Text("\(index + 1) / \(section.steps.count)").monospacedDigit()
-                        .accessibilityIdentifier("gif-position-" + guide.routeID)
-                    Button { withAnimation { selectedIndex = index + 1 } } label: {
-                        Image(systemName: "chevron.right").frame(width: 40, height: 40)
-                    }.disabled(index == section.steps.count - 1).accessibilityLabel("Đoạn tiếp theo")
-                        .accessibilityIdentifier("gif-next-" + guide.routeID)
-                    Spacer()
-                }.buttonStyle(.plain)
-                Text(step.title).font(.headline)
                 GeometryReader { geometry in
                     TabView(selection: $selectedIndex) {
                         ForEach(Array(section.steps.enumerated()), id: \.element.id) { page, item in
@@ -141,21 +123,16 @@ struct CaveGIFWalkthrough: View {
                                                 Image(uiImage: poster).resizable().scaledToFill()
                                                     .frame(width: 140, height: 79).clipped()
                                             }
-                                            Text("\(card + 1)").font(.caption.bold())
-                                                .padding(5).background(.black.opacity(0.75), in: RoundedRectangle(cornerRadius: 4))
-                                                .padding(4)
                                         }.clipShape(RoundedRectangle(cornerRadius: 5))
-                                        Text(item.title).font(.caption).lineLimit(2)
-                                            .frame(maxWidth: .infinity, alignment: .leading)
                                         Spacer(minLength: 0)
                                     }
-                                    .padding(8).frame(width: 156, height: 156)
+                                    .padding(5).frame(width: 150, height: 89)
                                     .foregroundStyle(.white)
                                     .background(card == index ? Color.cyan.opacity(0.12) : Color.white.opacity(0.04), in: RoundedRectangle(cornerRadius: 8))
                                     .overlay(RoundedRectangle(cornerRadius: 8).stroke(card == index ? Color.cyan : Color.clear, lineWidth: 2))
                                     .contentShape(Rectangle())
                                 }.buttonStyle(.plain)
-                                    .accessibilityLabel("\(card + 1) · " + item.title)
+                                    .accessibilityLabel(item.direction ?? item.title)
                                     .accessibilityValue(card == index ? "Đang chọn" : "Chưa chọn")
                                     .accessibilityIdentifier("gif-card-\(guide.routeID)-\(item.id)")
                                     .id(card)

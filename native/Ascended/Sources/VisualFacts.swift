@@ -78,7 +78,7 @@ struct FactPicture: View {
         if let asset = fact.asset {
             if fact.category == "creature" || fact.category == "boss" { CreatureAvatar(asset: asset) }
             else { Image(asset).resizable().scaledToFit() }
-        } else { Image(systemName: fact.symbol).resizable().scaledToFit().padding(12).foregroundStyle(.cyan) }
+        } else { Image(systemName: fact.symbol).resizable().scaledToFit().padding(12).foregroundStyle(fact.symbol == "flame.fill" ? .orange : .cyan) }
     }
 }
 struct FactTile: View {
@@ -106,7 +106,6 @@ struct FactGrid: View {
 struct VisualBrief: View {
     let text: String
     var symbol = "info.circle"
-    @State private var expanded = false
     var body: some View {
         let matches = VisualFacts.matches(text)
         VStack(alignment: .leading, spacing: 10) {
@@ -123,9 +122,7 @@ struct VisualBrief: View {
                 }
             }
             else { Label(String(text.split(separator: ".").first ?? Substring(text)), systemImage: symbol).font(.subheadline).lineLimit(2) }
-            Button { expanded.toggle() } label: { Image(systemName: expanded ? "chevron.up" : "ellipsis.circle").frame(width: 40, height: 32) }
-                .accessibilityLabel("Chi tiết").accessibilityValue(expanded ? "Đã mở" : "Đã đóng")
-            if expanded { Text(text).font(.subheadline).foregroundStyle(.secondary).fixedSize(horizontal: false, vertical: true) }
+
         }
     }
 }
@@ -156,57 +153,32 @@ struct GPSBadge: View {
 }
 
 struct VisualKitGroup: View {
-    @Environment(\.arkMap) private var map
     let text: String
     let token: String
     let checked: Binding<Bool>
-    @State private var editing: FactMatch?
-    @State private var amount = 1
-    @State private var revision = 0
-    @State private var showInstruction = false
-    private var key: String { "ascended.\(map.rawValue).kit-quantities.v1" }
-    private var quantities: [String: Int] { (UserDefaults.standard.dictionary(forKey: key) as? [String: Int]) ?? [:] }
     var body: some View {
-        let matches = VisualFacts.matches(text)
-        HStack(alignment: .top, spacing: 12) {
-            Button { checked.wrappedValue.toggle() } label: { Image(systemName: checked.wrappedValue ? "checkmark.circle.fill" : "circle").font(.title2).foregroundStyle(checked.wrappedValue ? .cyan : .gray).frame(width: 36, height: 40) }
-                .accessibilityLabel(text).accessibilityValue(checked.wrappedValue ? "Đã chuẩn bị" : "Chưa chuẩn bị")
-                .accessibilityIdentifier("kit-check-" + token)
-            VStack(alignment: .leading, spacing: 8) {
-                if matches.isEmpty { VisualBrief(text: text, symbol: "checklist") }
-                else {
-                    LazyVGrid(columns: [GridItem(.adaptive(minimum: 112, maximum: 145))], alignment: .leading, spacing: 10) {
-                        ForEach(matches) { match in
-                            VStack(spacing: 6) {
-                                FactPicture(fact: match.fact).frame(width: 72, height: 64)
-                                Text(match.fact.name).font(.caption).lineLimit(2)
-                                if match.fact.category == "item" {
-                                    Button {
-                                        editing = match; amount = quantities[token + ":" + match.id] ?? Int(match.quantity ?? "") ?? 1
-                                    } label: {
-                                        let _ = revision
-                                        if let value = quantities[token + ":" + match.id] { Text("×\(value)") }
-                                        else if let value = match.quantity { Text("×" + value) }
-                                        else { Image(systemName: "plus.circle") }
-                                    }.buttonStyle(.bordered).accessibilityLabel("Số lượng " + match.fact.name).accessibilityValue(quantities[token + ":" + match.id].map { "×\($0)" } ?? match.quantity.map { "×" + $0 } ?? "Chưa đặt").accessibilityIdentifier("kit-quantity-" + match.id)
-                                }
-                            }.frame(maxWidth: .infinity).padding(8).background(.white.opacity(0.045), in: RoundedRectangle(cornerRadius: 12))
-                        }
-                    }
-                    Button { showInstruction.toggle() } label: { Image(systemName: showInstruction ? "chevron.up" : "ellipsis.circle") }.accessibilityLabel("Chi tiết chuẩn bị")
-                    if showInstruction { Text(text).font(.caption).foregroundStyle(.secondary) }
-                }
-            }
-        }.popover(item: $editing) { match in
-            VStack(spacing: 16) {
-                FactPicture(fact: match.fact).frame(width: 88, height: 80)
-                Text(match.fact.name).font(.headline)
-                TextField("Số lượng", value: $amount, format: .number.grouping(.never)).keyboardType(.numberPad)
-                    .font(.title2.bold()).multilineTextAlignment(.center).textFieldStyle(.roundedBorder).accessibilityIdentifier("quantity-input")
-                Stepper(value: $amount, in: 1...9999) { Text("×\(amount)").font(.title2.bold()).monospacedDigit() }.accessibilityIdentifier("quantity-stepper")
-                Button { var values = quantities; values[token + ":" + match.id] = min(9999, max(1, amount)); UserDefaults.standard.set(values, forKey: key); revision += 1; editing = nil } label: { Image(systemName: "checkmark").frame(maxWidth: .infinity) }.buttonStyle(.borderedProminent).accessibilityLabel("Lưu số lượng").accessibilityIdentifier("save-quantity")
-            }.padding(24).frame(width: 300)
+        let matches = VisualFacts.matches(text).filter { $0.fact.category == "item" }
+        if matches.isEmpty {
+            Text(text).font(.caption).foregroundStyle(.secondary)
+        } else {
+            FactGrid(matches: matches.map { FactMatch(fact: $0.fact, quantity: nil) })
         }
+    }
+}
+
+struct RoutePreparation: View {
+    let items: [String]
+    private var facts: [FactMatch] {
+        var seen = Set<String>()
+        return items.flatMap { VisualFacts.matches($0) }.filter {
+            $0.fact.category == "item" && seen.insert($0.id).inserted
+        }.map { FactMatch(fact: $0.fact, quantity: nil) }
+    }
+    var body: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            Text("Chuẩn bị cho tuyến").font(.headline)
+            FactGrid(matches: facts)
+        }.cardStyle()
     }
 }
 

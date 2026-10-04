@@ -1,0 +1,38 @@
+{
+  "version": "0.11.0",
+  "build": "12",
+  "installedVersion": "0.11.0",
+  "installedBuild": "12",
+  "physicalDevice": "8FA117DA-854A-5EEB-AEFC-EE54036237A9",
+  "bundleIdentifier": "com.tonytuanngoc.ascended",
+  "installationURL": "file:///private/var/containers/Bundle/Application/F9A47EC9-1CAD-4BC0-9901-EF904064D0D3/Ascended.app/",
+  "receipts": {
+    "device-install12-final": "success",
+    "device-launch12-final": "success"
+  },
+  "mediaLoops": 467,
+  "mediaPosters": 467,
+  "physicalTouchQA": false,
+  "signatureVerified": "codesign --verify --deep --strict passed",
+  "sources": {
+    "native/Ascended/Sources/MapScreen.swift": "31fd13b6cc4af7611c28ed89ae68589688d83b8bf1d1f8261cb0d32261ec9d49",
+    "native/Ascended/Sources/BossLibrary.swift": "bfcd3e70660e985a194e405fe14a3970e16ed41897f89d1e46acd823324484a4",
+    "native/Ascended/Sources/BaseLocations.swift": "d10e18e3dd85103478bae957a0904aa0448c504bc59237c1120fe49439a014e3",
+    "native/Ascended/Sources/PlaySession.swift": "037d8f313260c143f0e3500be5923a695570efed7abfef5998e9e642a0581357",
+    "native/Ascended/Sources/MapInformation.swift": "5ff59c2d9fba52850b104f7ffd4b163af64f5307667d49f2a5ff25bf5ad16664",
+    "native/Ascended/Sources/CreatureLibrary.swift": "84cd5926177d264471d3fbb55559d9a7b4cb75641def4e47caf1c8aac070b815",
+    "native/Ascended/Sources/ExpeditionNotes.swift": "a2e193795579d3941152773a0e708a2a2f093d9097953913d498890c308b8527",
+    "native/Ascended/Sources/ExplorationLibrary.swift": "bd382e6304f89dcbb57943a42296a6781ad06a9e5efe5df2587d436e2c6f46b6",
+    "native/Ascended/Sources/CaveGIFs.swift": "2bef52706cf9790bf0800ecd8b34d252f81400e5e9749cfe19a081f025c13ce4",
+    "native/Ascended/Sources/BossKnowledge.swift": "1fc92496cef0615fb6ac24d4a8236eb56f71b9e223180c1425ce4f5c62eeefd4",
+    "native/Ascended/Sources/BossCampaign.swift": "a63e57feed1ed9016c87399285c1df64ae47891c92f724bebb85b5f0d2aaa11f",
+    "native/Ascended/Sources/MapBossLibrary.swift": "cdf790418d6946a555487159d5a882bc7a41894b792f5e78ce51fc11d08a68f7",
+    "native/Ascended/Sources/AscendedApp.swift": "98da57ac414da56110182cd078a63e96a41fcc7ffb87e464ad62cf3aacf6f87e",
+    "native/Ascended/Sources/MapLocations.swift": "608f3b746a6a40be261bf1625e8f96ebc46ce0f0ab43ee2a4c4f65abab40b889",
+    "native/Ascended/Sources/AscendedShell.swift": "b15a12c9eea0e98b508c41004c38c2868a417b88edaf4203650d62d273130c98",
+    "native/Ascended/Sources/ArkMap.swift": "235054561df710d4fa5df9076042ad36447158dbe8ba2dff26d3085d4198671d",
+    "native/Ascended/Sources/CaveVideos.swift": "02fdc9c0f2c84341d26d27639d371dde527572939913bb5e2d0476d700916c81",
+    "native/Ascended/Sources/VisualFacts.swift": "2b17830a9c78bdacd0dc2971334d1a22b388ea80bd7d7b3a9bbde0dc979d787e",
+    "native/Ascended/Sources/CreatureCatalog.swift": "53aff37919fd15398c786ff4e282c3479f878c2fd3e8dfb4734ab13c2d137c2e"
+  }
+}

@@ -1,0 +1,2356 @@
+[
+  {
+    "asset": "Dino-aberrant-dodo",
+    "gameAsset": "Game-Dino-aberrant-dodo",
+    "name": "Aberrant Dodo",
+    "page": "https://ark.wiki.gg/wiki/Aberrant_Dodo",
+    "imageURL": "https://ark.wiki.gg/images/Aberrant_Dodo_Ingame.jpg",
+    "sha256": "e443ebe5bcc09e255260ee680f6d5fe8845ef9c78f7d2c9628f648048ba04168",
+    "dimensions": [
+      1084,
+      1200
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-aberrant-megalania",
+    "name": "Aberrant Megalania",
+    "page": "https://ark.wiki.gg/wiki/Aberrant_Megalania",
+    "status": "no_verified_gallery"
+  },
+  {
+    "asset": "Dino-achatina",
+    "gameAsset": "Game-Dino-achatina",
+    "name": "Achatina",
+    "page": "https://ark.wiki.gg/wiki/Achatina",
+    "imageURL": "https://ark.wiki.gg/images/Achatina_Image.jpg",
+    "sha256": "0d8e867116dd63eaff3ba49f49a225163c87e2d3af7617b3c47ef5a21fbc4040",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-acrocanthosaurus",
+    "gameAsset": "Game-Dino-acrocanthosaurus",
+    "name": "Acrocanthosaurus",
+    "page": "https://ark.wiki.gg/wiki/Acrocanthosaurus",
+    "imageURL": "https://ark.wiki.gg/images/ASA_Acrocanthosaurus.jpg",
+    "sha256": "13db9c208b1ff9eaebcd11bc249de6cdf16adeb0f769c8571a8bbd793d192525",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "ASA",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-allosaurus",
+    "gameAsset": "Game-Dino-allosaurus",
+    "name": "Allosaurus",
+    "page": "https://ark.wiki.gg/wiki/Allosaurus",
+    "imageURL": "https://ark.wiki.gg/images/Allosaurus_Image.jpg",
+    "sha256": "7c3ac5ac55e26facad118cc24e7ccfb70bbea2757f321e8e341777591bc0f0e4",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-alpha-carnotaurus",
+    "gameAsset": "Game-Dino-alpha-carnotaurus",
+    "name": "Alpha Carnotaurus",
+    "page": "https://ark.wiki.gg/wiki/Alpha_Carnotaurus",
+    "imageURL": "https://ark.wiki.gg/images/Alpha_Carnotaurus_Image.jpg",
+    "sha256": "004b8fd0aa0e07fdc575d1f87bbb171dc5f26b0fadedbe4db439806ca87e657d",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-alpha-fire-wyvern",
+    "gameAsset": "Game-Dino-alpha-fire-wyvern",
+    "name": "Alpha Fire Wyvern",
+    "page": "https://ark.wiki.gg/wiki/Alpha_Fire_Wyvern",
+    "imageURL": "https://ark.wiki.gg/images/Alpha_Fire_Wyvern_Image.jpg",
+    "sha256": "4552c6ae307ac5b2e8fdc386daf0a64bc089ba5240b6bf9c3badce36fb570a7c",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-alpha-megalodon",
+    "gameAsset": "Game-Dino-alpha-megalodon",
+    "name": "Alpha Megalodon",
+    "page": "https://ark.wiki.gg/wiki/Alpha_Megalodon",
+    "imageURL": "https://ark.wiki.gg/images/Alpha_Megalodon_Image.jpg",
+    "sha256": "0d0358590c2e10cd26db2ed8a48fcfec6eaea48a971920c24ec8788d2f3d2942",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-alpha-mosasaur",
+    "gameAsset": "Game-Dino-alpha-mosasaur",
+    "name": "Alpha Mosasaur",
+    "page": "https://ark.wiki.gg/wiki/Alpha_Mosasaur",
+    "imageURL": "https://ark.wiki.gg/images/Alpha_Mosa_Size_Comparison.jpg",
+    "sha256": "e46801580e17c72d912296b43c1a7bf833f0eeb0754ae497e7f955272c3f3f9b",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-alpha-raptor",
+    "gameAsset": "Game-Dino-alpha-raptor",
+    "name": "Alpha Raptor",
+    "page": "https://ark.wiki.gg/wiki/Alpha_Raptor",
+    "imageURL": "https://ark.wiki.gg/images/Alpha_Raptor_Image.jpg",
+    "sha256": "ba86e209ead529ca946510e6a1e89f16fe4122da7a4563cc37e5201986be56cd",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-alpha-t-rex",
+    "gameAsset": "Game-Dino-alpha-t-rex",
+    "name": "Alpha T-Rex",
+    "page": "https://ark.wiki.gg/wiki/Alpha_T-Rex",
+    "imageURL": "https://ark.wiki.gg/images/Alpha_Rex_Image.jpg",
+    "sha256": "45138041a428c085e1f048c8a2d2029d5b5bb222ba1e54e93cd4b711d1001cfc",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-alpha-tusoteuthis",
+    "gameAsset": "Game-Dino-alpha-tusoteuthis",
+    "name": "Alpha Tusoteuthis",
+    "page": "https://ark.wiki.gg/wiki/Alpha_Tusoteuthis",
+    "imageURL": "https://ark.wiki.gg/images/Alpha_Tusoteuthis_Image.jpg",
+    "sha256": "a1ce5bc71a005b1e3c726fcb3f46675f53a64e48a9530538a052375387c0a399",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-ammonite",
+    "gameAsset": "Game-Dino-ammonite",
+    "name": "Ammonite",
+    "page": "https://ark.wiki.gg/wiki/Ammonite",
+    "imageURL": "https://ark.wiki.gg/images/ASA_Ammonite.jpg",
+    "sha256": "342111c5c0ba34d57527a118e9878e90ebfc6805f7ae0f86a704986d69fb8f81",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "ASA",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-anglerfish",
+    "gameAsset": "Game-Dino-anglerfish",
+    "name": "Angler",
+    "page": "https://ark.wiki.gg/wiki/Angler",
+    "imageURL": "https://ark.wiki.gg/images/ASA_Anglerfish.jpg",
+    "sha256": "b83d82f92c17dd4a68122746032fd9ec7942c59618b203e46259a76ea4eed769",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "ASA",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-ankylosaurus",
+    "gameAsset": "Game-Dino-ankylosaurus",
+    "name": "Ankylosaurus",
+    "page": "https://ark.wiki.gg/wiki/Ankylosaurus",
+    "imageURL": "https://ark.wiki.gg/images/ASA_Ankylosaurus.jpg",
+    "sha256": "1771cdc23a241e02df6cdc12d299df24e1824e6249c14c302a212c7be0d965b0",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "ASA",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-araneo",
+    "gameAsset": "Game-Dino-araneo",
+    "name": "Araneo",
+    "page": "https://ark.wiki.gg/wiki/Araneo",
+    "imageURL": "https://ark.wiki.gg/images/ASA_Araneo_3840x2160_%281%29.png",
+    "sha256": "e63258e50cf43caeddfca159a999789397e85e1998178d5611dd10cf7e18288e",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "ASA",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-archaeopteryx",
+    "gameAsset": "Game-Dino-archaeopteryx",
+    "name": "Archaeopteryx",
+    "page": "https://ark.wiki.gg/wiki/Archaeopteryx",
+    "imageURL": "https://ark.wiki.gg/images/ASA_Archaeopteryx.jpg",
+    "sha256": "e625a576bfa77074bc5e2587ebb45e8317648005c2e2314bc46834051b1e0faa",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "ASA",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-archelon",
+    "gameAsset": "Game-Dino-archelon",
+    "name": "Archelon",
+    "page": "https://ark.wiki.gg/wiki/Archelon",
+    "imageURL": "https://ark.wiki.gg/images/ASA_Archelon.png",
+    "sha256": "23b2bb7529cf2fe4268bf75e41119537deb1a89a769417e856254e0bb2c90b83",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "ASA",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-argentavis",
+    "gameAsset": "Game-Dino-argentavis",
+    "name": "Argentavis",
+    "page": "https://ark.wiki.gg/wiki/Argentavis",
+    "imageURL": "https://ark.wiki.gg/images/ASA_Argentavis.jpg",
+    "sha256": "34d27908b9e8b9ef2df46940eb014b1f7010ee543896ce7ad7cbc265c2ea1dd3",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "ASA",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-arthropluera",
+    "gameAsset": "Game-Dino-arthropluera",
+    "name": "Arthropluera",
+    "page": "https://ark.wiki.gg/wiki/Arthropluera",
+    "imageURL": "https://ark.wiki.gg/images/ASA_Arthropleura.jpg",
+    "sha256": "7403ed9776997100ed600618e193c3351ef4e925158dbccad86bf900f90d6eb6",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "ASA",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-autumn-drakeling",
+    "gameAsset": "Game-Dino-autumn-drakeling",
+    "name": "Autumn Drakeling",
+    "page": "https://ark.wiki.gg/wiki/Autumn_Drakeling",
+    "imageURL": "https://ark.wiki.gg/images/ASA_Drakeling_00.jpg",
+    "sha256": "349f43051f9fdafbb44c40f245815515172088a84ea20ad40156b8f53cfd1a59",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "ASA",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-baryonyx",
+    "gameAsset": "Game-Dino-baryonyx",
+    "name": "Baryonyx",
+    "page": "https://ark.wiki.gg/wiki/Baryonyx",
+    "imageURL": "https://ark.wiki.gg/images/ASA_Baryonyx.jpg",
+    "sha256": "98d00fb8cdc2beebccf4b65ec711d59171d09f8e4e14b1b636c8a08b1cf7880a",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "ASA",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-basilosaurus",
+    "gameAsset": "Game-Dino-basilosaurus",
+    "name": "Basilosaurus",
+    "page": "https://ark.wiki.gg/wiki/Basilosaurus",
+    "imageURL": "https://ark.wiki.gg/images/ASA_Basilosaurus.jpg",
+    "sha256": "e863c6469ec2256fe21793c3ad9775fa9838b03ca74a73edfc9174c56cd2a43d",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "ASA",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-beelzebufo",
+    "gameAsset": "Game-Dino-beelzebufo",
+    "name": "Beelzebufo",
+    "page": "https://ark.wiki.gg/wiki/Beelzebufo",
+    "imageURL": "https://ark.wiki.gg/images/ASA_Beelzebufo.jpg",
+    "sha256": "afd5de2ff49e33f9ab567c0d6e7617e742295066cb98331958e77141f18d864d",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "ASA",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-bison",
+    "gameAsset": "Game-Dino-bison",
+    "name": "Bison",
+    "page": "https://ark.wiki.gg/wiki/Bison",
+    "imageURL": "https://ark.wiki.gg/images/ASA_Bison.jpg",
+    "sha256": "ef7981892b936ef7790d3ac53c42b393405e2bf72da2b1d0b99b08ddcd1137f1",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "ASA",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-burrowbuck",
+    "gameAsset": "Game-Dino-burrowbuck",
+    "name": "Burrowbuck",
+    "page": "https://ark.wiki.gg/wiki/Burrowbuck",
+    "imageURL": "https://ark.wiki.gg/images/ASA_Burrowbuck.jpg",
+    "sha256": "936333bbb7060de745a22001326b4b88faf1334757123304bbe0779e3d0e444b",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "ASA",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-carbonemys",
+    "gameAsset": "Game-Dino-carbonemys",
+    "name": "Carbonemys",
+    "page": "https://ark.wiki.gg/wiki/Carbonemys",
+    "imageURL": "https://ark.wiki.gg/images/ASA_Carbonemys.jpg",
+    "sha256": "1b162927a0222ac45ace5c471740f780be56448921c1c8432d0adb0437245dd7",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "ASA",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-carcharodontosaurus",
+    "gameAsset": "Game-Dino-carcharodontosaurus",
+    "name": "Carcharodontosaurus",
+    "page": "https://ark.wiki.gg/wiki/Carcharodontosaurus",
+    "imageURL": "https://ark.wiki.gg/images/ASA_Carcharodontosaurus.jpg",
+    "sha256": "dc4ba589667b6c5e74a30f9e1c186b6a7b4bc09530c393797bafaeee977776a8",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "ASA",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-carnotaurus",
+    "gameAsset": "Game-Dino-carnotaurus",
+    "name": "Carnotaurus",
+    "page": "https://ark.wiki.gg/wiki/Carnotaurus",
+    "imageURL": "https://ark.wiki.gg/images/Render_Carno.png",
+    "sha256": "459fe895b7e22657868731cd05ee792a833ab37c7b8736fba860415fbd37b56b",
+    "dimensions": [
+      1200,
+      857
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-castoroides",
+    "gameAsset": "Game-Dino-castoroides",
+    "name": "Castoroides",
+    "page": "https://ark.wiki.gg/wiki/Castoroides",
+    "imageURL": "https://ark.wiki.gg/images/Castoroides_ingame.jpg",
+    "sha256": "fb1a0055873231ea23811d4a03759ac34831c9d5b604cdddfb2f4e107b36b2ea",
+    "dimensions": [
+      1024,
+      576
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-cat",
+    "gameAsset": "Game-Dino-cat",
+    "name": "Cat",
+    "page": "https://ark.wiki.gg/wiki/Cat",
+    "imageURL": "https://ark.wiki.gg/images/Cat_Render.png",
+    "sha256": "45c7a47fcf44d54617f681741e7389017195d49cc23d468f77ac10a8fcee6297",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-ceratosaurus",
+    "gameAsset": "Game-Dino-ceratosaurus",
+    "name": "Ceratosaurus",
+    "page": "https://ark.wiki.gg/wiki/Ceratosaurus",
+    "imageURL": "https://ark.wiki.gg/images/ASA_Ceratosaurus_PromoArt_2560x1440.jpg",
+    "sha256": "e8adac2cd4171a044434c53cb98456f284814ed12f2b98a3dad704c903e4766c",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "ASA",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-cerberax",
+    "gameAsset": "Game-Dino-cerberax",
+    "name": "Cerberax",
+    "page": "https://ark.wiki.gg/wiki/Cerberax",
+    "imageURL": "https://ark.wiki.gg/images/ASA_FT_Season1_Cerberax.jpg",
+    "sha256": "ae5851c7f239f2d9646a52ecf496f208d103df8ac29cb05621b663e6acceceab",
+    "dimensions": [
+      794,
+      490
+    ],
+    "edition": "ASA",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-chalicotherium",
+    "gameAsset": "Game-Dino-chalicotherium",
+    "name": "Chalicotherium",
+    "page": "https://ark.wiki.gg/wiki/Chalicotherium",
+    "imageURL": "https://ark.wiki.gg/images/Chalicotherium_large.png",
+    "sha256": "d1f81a19d198f21f9f2a79af01ac142f8a39f8de3396986ccfa572998dd715d1",
+    "dimensions": [
+      590,
+      599
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-cnidaria",
+    "gameAsset": "Game-Dino-cnidaria",
+    "name": "Cnidaria",
+    "page": "https://ark.wiki.gg/wiki/Cnidaria",
+    "imageURL": "https://ark.wiki.gg/images/Cnidaria_Ingame.jpg",
+    "sha256": "04d22ab2e56ba62d308dbf675299c0adc3b7e25cffe4e492dc20421a13667d07",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-coelacanth",
+    "gameAsset": "Game-Dino-coelacanth",
+    "name": "Coelacanth",
+    "page": "https://ark.wiki.gg/wiki/Coelacanth",
+    "imageURL": "https://ark.wiki.gg/images/Render_Coel.png",
+    "sha256": "660312ebfa5009b27714a40dec894712f3759bc048e9cc55abe920448383b840",
+    "dimensions": [
+      400,
+      400
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-compy",
+    "gameAsset": "Game-Dino-compy",
+    "name": "Compy",
+    "page": "https://ark.wiki.gg/wiki/Compy",
+    "imageURL": "https://ark.wiki.gg/images/Compy_ASIG.jpg",
+    "sha256": "3af271be5e75ce3bcac29ee793af175b14a3a307b6b8fae1435daed331f53ca8",
+    "dimensions": [
+      1200,
+      750
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-concavenator",
+    "gameAsset": "Game-Dino-concavenator",
+    "name": "Concavenator",
+    "page": "https://ark.wiki.gg/wiki/Concavenator",
+    "imageURL": "https://ark.wiki.gg/images/ASA_Concavenator.png",
+    "sha256": "a654db8e9cc6ef1c6c52cc077e0842104904eec68a4437f7d4505f56f043fa8b",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "ASA",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-cryolophosaurus",
+    "gameAsset": "Game-Dino-cryolophosaurus",
+    "name": "Cryolophosaurus",
+    "page": "https://ark.wiki.gg/wiki/Cryolophosaurus",
+    "imageURL": "https://ark.wiki.gg/images/ASA_LC_12.jpg",
+    "sha256": "aa3c1e0682a6c2c22db02cfab9f7eaac66a0df0b7df9bdbf7cd1ad09b2bfbf0c",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "ASA",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-daeodon",
+    "gameAsset": "Game-Dino-daeodon",
+    "name": "Daeodon",
+    "page": "https://ark.wiki.gg/wiki/Daeodon",
+    "imageURL": "https://ark.wiki.gg/images/Two_Daeodons_on_a_Desert_Island.jpg",
+    "sha256": "dd72e6a8a0d7e773cc66ea9a72218453c09abb84025982790215df1e7bd2725c",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-deathworm",
+    "gameAsset": "Game-Dino-deathworm",
+    "name": "Deathworm",
+    "page": "https://ark.wiki.gg/wiki/Deathworm",
+    "imageURL": "https://ark.wiki.gg/images/Sand_Worm_ASIG.jpg",
+    "sha256": "a3b6cad8d313ba19b13eaa0ebfcf565ed59de0762db7a40955ca25f97efef184",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-deinosuchus",
+    "gameAsset": "Game-Dino-deinosuchus",
+    "name": "Deinosuchus",
+    "page": "https://ark.wiki.gg/wiki/Deinosuchus",
+    "imageURL": "https://ark.wiki.gg/images/ASA_Deinosuchus_2560x1440.png",
+    "sha256": "5b7c20253582805736222efa33a7c7dd31beca58c29397bd00f03ce0d6b1c4ad",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "ASA",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-deinotherium",
+    "gameAsset": "Game-Dino-deinotherium",
+    "name": "Deinotherium",
+    "page": "https://ark.wiki.gg/wiki/Deinotherium",
+    "imageURL": "https://ark.wiki.gg/images/ASA_Deinotherium_back.jpg",
+    "sha256": "29d2648e831cdb3ae78d29a9807e4f898120fa62dfb6f77a0cf6c0c5afd7f43b",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "ASA",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-dilophosaur",
+    "gameAsset": "Game-Dino-dilophosaur",
+    "name": "Dilophosaurus",
+    "page": "https://ark.wiki.gg/wiki/Dilophosaurus",
+    "imageURL": "https://ark.wiki.gg/images/Render_Dilo.png",
+    "sha256": "1a90f46e25af4be7a70051394ad32ada236266829f8967e0c6afef26272b1985",
+    "dimensions": [
+      1100,
+      500
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-dimetrodon",
+    "gameAsset": "Game-Dino-dimetrodon",
+    "name": "Dimetrodon",
+    "page": "https://ark.wiki.gg/wiki/Dimetrodon",
+    "imageURL": "https://ark.wiki.gg/images/Dimetrodon_on_a_Small_Desert_Island.jpg",
+    "sha256": "e97ca59f7ffb25a80d54cd1cbd5a54aefc4fceee1a3f7f7055a8b214f89f1076",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-dimorphodon",
+    "gameAsset": "Game-Dino-dimorphodon",
+    "name": "Dimorphodon",
+    "page": "https://ark.wiki.gg/wiki/Dimorphodon",
+    "imageURL": "https://ark.wiki.gg/images/Dimo_ASIG.png",
+    "sha256": "3c2ba467f8753f24a27f266a2568f54026072dc647df5321a84ee233aef232cb",
+    "dimensions": [
+      1200,
+      628
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-diplocaulus",
+    "gameAsset": "Game-Dino-diplocaulus",
+    "name": "Diplocaulus",
+    "page": "https://ark.wiki.gg/wiki/Diplocaulus",
+    "imageURL": "https://ark.wiki.gg/images/Large.Diplocaulus.jpg",
+    "sha256": "98a6edc8efb85a508c601f79144e75a2eeefeaf05b572250fe20906382d2f30d",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-diplodocus",
+    "gameAsset": "Game-Dino-diplodocus",
+    "name": "Diplodocus",
+    "page": "https://ark.wiki.gg/wiki/Diplodocus",
+    "imageURL": "https://ark.wiki.gg/images/Diplodocus_Transport.jpg",
+    "sha256": "e663fa80ccbfeb47ea01ed32058cc731d552e31823379163f495c57da6a8ab8a",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-dire-bear",
+    "gameAsset": "Game-Dino-dire-bear",
+    "name": "Dire Bear",
+    "page": "https://ark.wiki.gg/wiki/Dire_Bear",
+    "imageURL": "https://ark.wiki.gg/images/Valguero_3.jpg",
+    "sha256": "71da970593d8839a2436c1f900c6c1358d525e38610969b0070e5c585fe0be45",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-dire-polar-bear",
+    "gameAsset": "Game-Dino-dire-polar-bear",
+    "name": "Dire Polar Bear",
+    "page": "https://ark.wiki.gg/wiki/Dire_Polar_Bear",
+    "imageURL": "https://ark.wiki.gg/images/Valguero_3.jpg",
+    "sha256": "71da970593d8839a2436c1f900c6c1358d525e38610969b0070e5c585fe0be45",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-direwolf",
+    "gameAsset": "Game-Dino-direwolf",
+    "name": "Direwolf",
+    "page": "https://ark.wiki.gg/wiki/Direwolf",
+    "imageURL": "https://ark.wiki.gg/images/DirewolfTLC.jpg",
+    "sha256": "846fb4873b65babdeb304a62348b6817d42bd48db9a3988650f19bda61dbee2a",
+    "dimensions": [
+      1200,
+      887
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-diseased-leech",
+    "gameAsset": "Game-Dino-diseased-leech",
+    "name": "Diseased Leech",
+    "page": "https://ark.wiki.gg/wiki/Diseased_Leech",
+    "imageURL": "https://ark.wiki.gg/images/Leech_Attack.jpg",
+    "sha256": "b8af3725dc384ead92a4a3dae137bac979bb0ff4883f06f506b756b8b80aaab3",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-dodo",
+    "gameAsset": "Game-Dino-dodo",
+    "name": "Dodo",
+    "page": "https://ark.wiki.gg/wiki/Dodo",
+    "imageURL": "https://ark.wiki.gg/images/Bunny_Image.jpg",
+    "sha256": "bcf07aa03477d0e8350ed97813aff02b8b75ce3267e154dfb450940de76ada17",
+    "dimensions": [
+      1200,
+      800
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-doedicurus",
+    "gameAsset": "Game-Dino-doedicurus",
+    "name": "Doedicurus",
+    "page": "https://ark.wiki.gg/wiki/Doedicurus",
+    "imageURL": "https://ark.wiki.gg/images/Playing_Doedicurus.jpg",
+    "sha256": "ec383428711d77f6004948a19b0483764e46d2cade3c1c6651852c8ff90230da",
+    "dimensions": [
+      1024,
+      576
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-dreadmare",
+    "gameAsset": "Game-Dino-dreadmare",
+    "name": "Dreadmare",
+    "page": "https://ark.wiki.gg/wiki/Dreadmare",
+    "imageURL": "https://ark.wiki.gg/images/ASA_Dreadmare_.png",
+    "sha256": "ef44b425b47b0e134e90d88898a7b888960779c2ace4a2a86c5af2d606f6f591",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "ASA",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-dung-beetle",
+    "gameAsset": "Game-Dino-dung-beetle",
+    "name": "Dung Beetle",
+    "page": "https://ark.wiki.gg/wiki/Dung_Beetle",
+    "imageURL": "https://ark.wiki.gg/images/Dung_Beetle_in_the_Dunes.jpg",
+    "sha256": "db5c8dc3d38f2c9aeb51b498055085d941364094ab5c82ec823782996da69c06",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-dunkleosteus",
+    "gameAsset": "Game-Dino-dunkleosteus",
+    "name": "Dunkleosteus",
+    "page": "https://ark.wiki.gg/wiki/Dunkleosteus",
+    "imageURL": "https://ark.wiki.gg/images/Render_Dunkleosteus.png",
+    "sha256": "38410eb99af63976c7134cb8cee9ab39b3d88082f1cb1b97afcc22920d1e96b7",
+    "dimensions": [
+      1200,
+      892
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-elderclaw",
+    "gameAsset": "Game-Dino-elderclaw",
+    "name": "Elderclaw",
+    "page": "https://ark.wiki.gg/wiki/Elderclaw",
+    "imageURL": "https://ark.wiki.gg/images/ASA_Elderclaw.jpg",
+    "sha256": "a044cc55981055f90e9cfe580fe0766740bdc6efdca9fd25c0e36e27142547b3",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "ASA",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-electrophorus",
+    "gameAsset": "Game-Dino-electrophorus",
+    "name": "Electrophorus",
+    "page": "https://ark.wiki.gg/wiki/Electrophorus",
+    "imageURL": "https://ark.wiki.gg/images/Electrophorus_Transparent.png",
+    "sha256": "d2180e1686407f2b0f7a17b887d3eed2c3b97ce7ad097477d4c4f2b398f7c7a9",
+    "dimensions": [
+      1200,
+      772
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-equus",
+    "gameAsset": "Game-Dino-equus",
+    "name": "Equus",
+    "page": "https://ark.wiki.gg/wiki/Equus",
+    "imageURL": "https://ark.wiki.gg/images/Equus_Taming.jpg",
+    "sha256": "31e258cc88318ab27190a676c32519fe9097a19ca18af7f8c78374cb8494c5e1",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-eurypterid",
+    "gameAsset": "Game-Dino-eurypterid",
+    "name": "Eurypterid",
+    "page": "https://ark.wiki.gg/wiki/Eurypterid",
+    "imageURL": "https://ark.wiki.gg/images/Eurypterid.jpg",
+    "sha256": "9bee7d242c40179494ed50892709213307de98b1754428ebb76239b4f48e68aa",
+    "dimensions": [
+      1200,
+      930
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-fasolasuchus",
+    "gameAsset": "Game-Dino-fasolasuchus",
+    "name": "Fasolasuchus",
+    "page": "https://ark.wiki.gg/wiki/Fasolasuchus",
+    "imageURL": "https://ark.wiki.gg/images/GAX77ajawAAqg-z.jpg",
+    "sha256": "a0cb69b50c529a655e032fba539e2274620f6a4bc92e2dfc5abb0209e2b42f82",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-featherlight",
+    "gameAsset": "Game-Dino-featherlight",
+    "name": "Featherlight",
+    "page": "https://ark.wiki.gg/wiki/Featherlight",
+    "imageURL": "https://ark.wiki.gg/images/Aber4.jpg",
+    "sha256": "d205861140073de7e0fead7616791575b496d46a7f07243c3686bed8d89bd407",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-fire-wyvern",
+    "gameAsset": "Game-Dino-fire-wyvern",
+    "name": "Fire Wyvern",
+    "page": "https://ark.wiki.gg/wiki/Fire_Wyvern",
+    "imageURL": "https://ark.wiki.gg/images/WyFire_Wyvern_flying.png",
+    "sha256": "e0ec9c8351bd737b3e20240aa0923a54406b1bd06fa9bce039c25c10e42f5b30",
+    "dimensions": [
+      1200,
+      550
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-gallimimus",
+    "gameAsset": "Game-Dino-gallimimus",
+    "name": "Gallimimus",
+    "page": "https://ark.wiki.gg/wiki/Gallimimus",
+    "imageURL": "https://ark.wiki.gg/images/Gallimimus_with_Saddle.jpg",
+    "sha256": "5fcdf6a3b9a89f80da76bdaaf6dc7b51429c6d6cc8711ed6befdccf2e6b4c312",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-gargantar",
+    "gameAsset": "Game-Dino-gargantar",
+    "name": "Gargantar",
+    "page": "https://ark.wiki.gg/wiki/Gargantar",
+    "imageURL": "https://ark.wiki.gg/images/ASA_Gargantarr.jpg",
+    "sha256": "1a42591b239233c09c53d694e14cad7e8fb168eeaa4459583be6fb98afa57914",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "ASA",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-giant-queen-bee",
+    "gameAsset": "Game-Dino-giant-queen-bee",
+    "name": "Giant Queen Bee",
+    "page": "https://ark.wiki.gg/wiki/Giant_Queen_Bee",
+    "imageURL": "https://ark.wiki.gg/images/Giant_Bee_Promo_Image.jpg",
+    "sha256": "466328f13907ed1f0263dcc950fc201422a66934966629e3043398ee422cd62b",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-gigantopithecus",
+    "gameAsset": "Game-Dino-gigantopithecus",
+    "name": "Gigantopithecus",
+    "page": "https://ark.wiki.gg/wiki/Gigantopithecus",
+    "imageURL": "https://ark.wiki.gg/images/Bigfoot_Throw_Image.png",
+    "sha256": "a0394da7c691931bee6a9191d55a0f6fe533d0db4cf53463fe2056ff8fe576f8",
+    "dimensions": [
+      1200,
+      683
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-gigantoraptor",
+    "gameAsset": "Game-Dino-gigantoraptor",
+    "name": "Gigantoraptor",
+    "page": "https://ark.wiki.gg/wiki/Gigantoraptor",
+    "imageURL": "https://ark.wiki.gg/images/ASA_Gigantoraptor_CC09Feb_Wallpaper_2560x1440.png",
+    "sha256": "382c6a27a5e61e6255247ed6f34f5e3218c94aab2a1e94e8764602f7fe02b95a",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "ASA",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-griffin",
+    "gameAsset": "Game-Dino-griffin",
+    "name": "Griffin",
+    "page": "https://ark.wiki.gg/wiki/Griffin",
+    "imageURL": "https://ark.wiki.gg/images/Griffin_Promo_Image.jpg",
+    "sha256": "8edcc5eed8c50e0d78b8fb4dbf897b73ee8a5dc6c35f5a8b48ee7355ef8df53c",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-helicoprion",
+    "gameAsset": "Game-Dino-helicoprion",
+    "name": "Helicoprion",
+    "page": "https://ark.wiki.gg/wiki/Helicoprion",
+    "imageURL": "https://ark.wiki.gg/images/ASA_Helicoprion.jpg",
+    "sha256": "e03b2226b3d045dbbdd9f5766302ccffc2210ac6389162b454bd6a063aa52312",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "ASA",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-hesperornis",
+    "gameAsset": "Game-Dino-hesperornis",
+    "name": "Hesperornis",
+    "page": "https://ark.wiki.gg/wiki/Hesperornis",
+    "imageURL": "https://ark.wiki.gg/images/Hesperonis_on_beach.jpg",
+    "sha256": "e90308993f757edb5df0f05ddac3a53a5304ff38d733f7a1ad4377dddf5a4549",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-hyaenodon",
+    "gameAsset": "Game-Dino-hyaenodon",
+    "name": "Hyaenodon",
+    "page": "https://ark.wiki.gg/wiki/Hyaenodon",
+    "imageURL": "https://ark.wiki.gg/images/Hyaenodon_tamed.jpg",
+    "sha256": "c21341d7f1b73903a9cfa191dbc036dd14d5f90730150b1dafe0b0c2d13ce963",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-ice-wyvern",
+    "gameAsset": "Game-Dino-ice-wyvern",
+    "name": "Ice Wyvern",
+    "page": "https://ark.wiki.gg/wiki/Ice_Wyvern",
+    "imageURL": "https://ark.wiki.gg/images/Ice_Wyvern.jpg",
+    "sha256": "5c0b7a18fa6da3cd671507b2de9ffaa30be7151a686f3679edea42d9db4854e3",
+    "dimensions": [
+      1200,
+      727
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-iceworm-male",
+    "gameAsset": "Game-Dino-iceworm-male",
+    "name": "Iceworm Male",
+    "page": "https://ark.wiki.gg/wiki/Iceworm_Male",
+    "imageURL": "https://ark.wiki.gg/images/Iceworm_Image.png",
+    "sha256": "f1f60a7ab345e30fc4d42eb3aa911fda71bf31469bcbe26d738227263981abb2",
+    "dimensions": [
+      1200,
+      664
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-ichthyornis",
+    "gameAsset": "Game-Dino-ichthyornis",
+    "name": "Ichthyornis",
+    "page": "https://ark.wiki.gg/wiki/Ichthyornis",
+    "imageURL": "https://ark.wiki.gg/images/Ichthyornis_shoulder-mounted.jpg",
+    "sha256": "e7dda2f3a6e4ed5d55b6856895ba9c466d22b3f87804c13290a2ed5f63d50551",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-ichthyosaurus",
+    "gameAsset": "Game-Dino-ichthyosaurus",
+    "name": "Ichthyosaurus",
+    "page": "https://ark.wiki.gg/wiki/Ichthyosaurus",
+    "imageURL": "https://ark.wiki.gg/images/Ichy_ASIG.png",
+    "sha256": "b7eb843c04b54c0b6e455877f4f3fcad4fab26c2601fc6ea08d1320845832fa2",
+    "dimensions": [
+      971,
+      651
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-iguanodon",
+    "gameAsset": "Game-Dino-iguanodon",
+    "name": "Iguanodon",
+    "page": "https://ark.wiki.gg/wiki/Iguanodon",
+    "imageURL": "https://ark.wiki.gg/images/Iguanodon_Ingame1.jpg",
+    "sha256": "98ff7a759e94378b95a2739a3af2f49c52e6717293375bf2cf5f6755e7b357fe",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-jerboa",
+    "gameAsset": "Game-Dino-jerboa",
+    "name": "Jerboa",
+    "page": "https://ark.wiki.gg/wiki/Jerboa",
+    "imageURL": "https://ark.wiki.gg/images/Render_Jerboa.png",
+    "sha256": "d0ba8dd6ea769f17f89854ed1f89cc0b60654d6fc37a14f2ccad2406ee6aeac9",
+    "dimensions": [
+      273,
+      343
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-kairuku",
+    "gameAsset": "Game-Dino-kairuku",
+    "name": "Kairuku",
+    "page": "https://ark.wiki.gg/wiki/Kairuku",
+    "imageURL": "https://ark.wiki.gg/images/Pingu.png",
+    "sha256": "5b01626a3f56235eca432557c7728de17b7e65c8d6f82ad213c236c644ad8307",
+    "dimensions": [
+      673,
+      906
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-kaprosuchus",
+    "gameAsset": "Game-Dino-kaprosuchus",
+    "name": "Kaprosuchus",
+    "page": "https://ark.wiki.gg/wiki/Kaprosuchus",
+    "imageURL": "https://ark.wiki.gg/images/KaprosuchusCampfire.jpg",
+    "sha256": "de9b4b98f99b430ebbba58440ca71d44e8d195b5b48606206218a34ece0e21e1",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-karkinos",
+    "gameAsset": "Game-Dino-karkinos",
+    "name": "Karkinos",
+    "page": "https://ark.wiki.gg/wiki/Karkinos",
+    "imageURL": "https://ark.wiki.gg/images/Karkinos_Idle.png",
+    "sha256": "99b1ba0c5f77b4a298fc8d5f14ffbf9f26f166ed869e6e7cda15d18f82d0b6ae",
+    "dimensions": [
+      369,
+      221
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-kentrosaurus",
+    "gameAsset": "Game-Dino-kentrosaurus",
+    "name": "Kentrosaurus",
+    "page": "https://ark.wiki.gg/wiki/Kentrosaurus",
+    "imageURL": "https://ark.wiki.gg/images/Three_Kentrosauruses_in_the_Mountains.jpg",
+    "sha256": "f26c710986892ffee22c950108e97f30bdaecf13ee1152c3c9dda779344cbd17",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-leech",
+    "gameAsset": "Game-Dino-leech",
+    "name": "Leech",
+    "page": "https://ark.wiki.gg/wiki/Leech",
+    "imageURL": "https://ark.wiki.gg/images/Leech_Attack.jpg",
+    "sha256": "b8af3725dc384ead92a4a3dae137bac979bb0ff4883f06f506b756b8b80aaab3",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-light-bug",
+    "gameAsset": "Game-Dino-light-bug",
+    "name": "Glowbug",
+    "page": "https://ark.wiki.gg/wiki/Glowbug",
+    "imageURL": "https://ark.wiki.gg/images/Glowbug_Abberation.jpg",
+    "sha256": "f233b0fc356ae0d8bf825123d0e02c56ecb3ad6e8d894e14c121fbca4277dc35",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-lightning-wyvern",
+    "name": "Lightning Wyvern",
+    "page": "https://ark.wiki.gg/wiki/Lightning_Wyvern",
+    "status": "no_verified_gallery"
+  },
+  {
+    "asset": "Dino-lumina",
+    "gameAsset": "Game-Dino-lumina",
+    "name": "Lumina",
+    "page": "https://ark.wiki.gg/wiki/Lumina",
+    "imageURL": "https://ark.wiki.gg/images/ASA_Lumina.png",
+    "sha256": "aa9e7b127faa2620c4aa6c91dc00bb1220e2c68554cfd53e7ea6c502ba3fc31c",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "ASA",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-lymantria",
+    "gameAsset": "Game-Dino-lymantria",
+    "name": "Lymantria",
+    "page": "https://ark.wiki.gg/wiki/Lymantria",
+    "imageURL": "https://ark.wiki.gg/images/Moth_ASIG.jpg",
+    "sha256": "6b9f4308248ca5b5192aecef7b5c648c0701d35241377e90eebd56cab44aa1c4",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-lystrosaurus",
+    "gameAsset": "Game-Dino-lystrosaurus",
+    "name": "Lystrosaurus",
+    "page": "https://ark.wiki.gg/wiki/Lystrosaurus",
+    "imageURL": "https://ark.wiki.gg/images/Lystrosaurus_on_the_Beach.jpg",
+    "sha256": "4099012d842c37f22dd0f465564572eabe9cf94ea528f40cb943b44da7d42672",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-mammoth",
+    "gameAsset": "Game-Dino-mammoth",
+    "name": "Mammoth",
+    "page": "https://ark.wiki.gg/wiki/Mammoth",
+    "imageURL": "https://ark.wiki.gg/images/Mammoth_TLC.jpg",
+    "sha256": "02c07cd595b21945426e9aa39cc22dc44f713332fc6d6a7998f3a1e0a2c82046",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-manta",
+    "gameAsset": "Game-Dino-manta",
+    "name": "Manta",
+    "page": "https://ark.wiki.gg/wiki/Manta",
+    "imageURL": "https://ark.wiki.gg/images/Manta_Near_a_Shipwreck.jpg",
+    "sha256": "59fa6106d8b4e617fa17138a81f94ca4be90d14ebe9f51082c279b205225513b",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-mantis",
+    "gameAsset": "Game-Dino-mantis",
+    "name": "Mantis",
+    "page": "https://ark.wiki.gg/wiki/Mantis",
+    "imageURL": "https://ark.wiki.gg/images/Mantis_ASIG.jpg",
+    "sha256": "cd723ffea85775e40c68e437adbeefb1cf114cafb127efb03730da7b1b8c985d",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-megalania",
+    "gameAsset": "Game-Dino-megalania",
+    "name": "Megalania",
+    "page": "https://ark.wiki.gg/wiki/Megalania",
+    "imageURL": "https://ark.wiki.gg/images/Megalania_on_cavewall.jpg",
+    "sha256": "72cfe42d44713ff086bb155597fd295401d65bf3530a331fc42f6cd3b3a3e141",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-megaloceros",
+    "gameAsset": "Game-Dino-megaloceros",
+    "name": "Megaloceros",
+    "page": "https://ark.wiki.gg/wiki/Megaloceros",
+    "imageURL": "https://ark.wiki.gg/images/Render_Megaloceros.png",
+    "sha256": "78d8af37b453b7d2309a83990f500b1de032568914529dd3ccbb260890edb1de",
+    "dimensions": [
+      1101,
+      1200
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-megalodon",
+    "gameAsset": "Game-Dino-megalodon",
+    "name": "Megalodon",
+    "page": "https://ark.wiki.gg/wiki/Megalodon",
+    "imageURL": "https://ark.wiki.gg/images/Sharky_ASIG.png",
+    "sha256": "8e12e612909116434ead08691d6a29bee14fbec6bc74b7b4fe53fa0ce21f2036",
+    "dimensions": [
+      1200,
+      579
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-megalosaurus",
+    "gameAsset": "Game-Dino-megalosaurus",
+    "name": "Megalosaurus",
+    "page": "https://ark.wiki.gg/wiki/Megalosaurus",
+    "imageURL": "https://ark.wiki.gg/images/Megalosaurus_Riders.jpg",
+    "sha256": "9469159fd194b4eba95921eda4d547d4804fa24d6ff2b1143820ded25d40417e",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-meganeura",
+    "gameAsset": "Game-Dino-meganeura",
+    "name": "Meganeura",
+    "page": "https://ark.wiki.gg/wiki/Meganeura",
+    "imageURL": "https://ark.wiki.gg/images/DragonflyASIG.png",
+    "sha256": "a8dc39c0b693f03cbf128715a0f022e4d22f2bb7e64b39757bd74d4b1251c674",
+    "dimensions": [
+      1200,
+      586
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-megatherium",
+    "gameAsset": "Game-Dino-megatherium",
+    "name": "Megatherium",
+    "page": "https://ark.wiki.gg/wiki/Megatherium",
+    "imageURL": "https://ark.wiki.gg/images/ARK35.jpg",
+    "sha256": "15a4a0ac0645f6b07896623dbebeeac1a788f7a068f2f047396653f15b8542c5",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-mesopithecus",
+    "gameAsset": "Game-Dino-mesopithecus",
+    "name": "Mesopithecus",
+    "page": "https://ark.wiki.gg/wiki/Mesopithecus",
+    "imageURL": "https://ark.wiki.gg/images/MonkeyASIG.png",
+    "sha256": "eea247283714a10baaf74d638a9354d0a57912bb76acdadd4e016ad20bbb6899",
+    "dimensions": [
+      1082,
+      890
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-microraptor",
+    "gameAsset": "Game-Dino-microraptor",
+    "name": "Microraptor",
+    "page": "https://ark.wiki.gg/wiki/Microraptor",
+    "imageURL": "https://ark.wiki.gg/images/A_pair_of_Microraptors.jpg",
+    "sha256": "bbf7fa2c7fe4d6e9933c3bd7b2ef44b02a3445b9ee32793129074dcd9a80fdb1",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-morellatops",
+    "gameAsset": "Game-Dino-morellatops",
+    "name": "Morellatops",
+    "page": "https://ark.wiki.gg/wiki/Morellatops",
+    "imageURL": "https://ark.wiki.gg/images/Morellatops_Herd.png",
+    "sha256": "d7d4818752be118376061eef07996ddba8ccc46657c7def472be7d49d6a92044",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-mosasaurus",
+    "name": "Mosasaurus",
+    "page": "https://ark.wiki.gg/wiki/Mosasaurus",
+    "status": "no_verified_gallery"
+  },
+  {
+    "asset": "Dino-moschops",
+    "gameAsset": "Game-Dino-moschops",
+    "name": "Moschops",
+    "page": "https://ark.wiki.gg/wiki/Moschops",
+    "imageURL": "https://ark.wiki.gg/images/Moschopswheelmenu.jpg",
+    "sha256": "3baeda5615f0bf90a7dd8058bfb6943333144733e3ac88946bc33e71650f25a9",
+    "dimensions": [
+      1080,
+      1080
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-oil-jug-bug",
+    "name": "Oil Jug Bug",
+    "page": "https://ark.wiki.gg/wiki/Oil_Jug_Bug",
+    "status": "no_verified_gallery"
+  },
+  {
+    "asset": "Dino-onyc",
+    "gameAsset": "Game-Dino-onyc",
+    "name": "Onyc",
+    "page": "https://ark.wiki.gg/wiki/Onyc",
+    "imageURL": "https://ark.wiki.gg/images/Render_Bat.png",
+    "sha256": "8b77cb3c10afcaa366fc960bf4e511b0d07df658ee8c0d0a2b1d95e9d8f9c377",
+    "dimensions": [
+      1100,
+      900
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-otter",
+    "gameAsset": "Game-Dino-otter",
+    "name": "Otter",
+    "page": "https://ark.wiki.gg/wiki/Otter",
+    "imageURL": "https://ark.wiki.gg/images/Otter_Ingame.png",
+    "sha256": "0c6360fb7dd31d8d246052b3ce210140105f6383dc44af1861d9180ed894e5bf",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-oviraptor",
+    "gameAsset": "Game-Dino-oviraptor",
+    "name": "Oviraptor",
+    "page": "https://ark.wiki.gg/wiki/Oviraptor",
+    "imageURL": "https://ark.wiki.gg/images/Ovi3.jpg",
+    "sha256": "cfaccbbd8254460e2d0bcd50f21cbeab86fb0055b1b9478aa6bfd8d674d43aa4",
+    "dimensions": [
+      480,
+      360
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-ovis",
+    "gameAsset": "Game-Dino-ovis",
+    "name": "Ovis",
+    "page": "https://ark.wiki.gg/wiki/Ovis",
+    "imageURL": "https://ark.wiki.gg/images/Ovis_Rider.jpg",
+    "sha256": "6554c178a63140849e08a37fdf5daf6e3f38a134f9b0156194a5762909add0f7",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-pachy",
+    "gameAsset": "Game-Dino-pachy",
+    "name": "Pachy",
+    "page": "https://ark.wiki.gg/wiki/Pachy",
+    "imageURL": "https://ark.wiki.gg/images/Pachycephalosaurus.jpg",
+    "sha256": "c7d748443dcd205d8265db1df9942d2ccb791db6be701c0f3b865796218a460b",
+    "dimensions": [
+      1200,
+      657
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-pachyrhinosaurus",
+    "gameAsset": "Game-Dino-pachyrhinosaurus",
+    "name": "Pachyrhinosaurus",
+    "page": "https://ark.wiki.gg/wiki/Pachyrhinosaurus",
+    "imageURL": "https://ark.wiki.gg/images/Pachyrhinosaurus.jpg",
+    "sha256": "61f70566cd9a548fc4b4ee90b3cf19eb2ecac5a0160d1381863a435f58fd93f6",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-paraceratherium",
+    "gameAsset": "Game-Dino-paraceratherium",
+    "name": "Paraceratherium",
+    "page": "https://ark.wiki.gg/wiki/Paraceratherium",
+    "imageURL": "https://ark.wiki.gg/images/ParacerSideView.jpg",
+    "sha256": "189d965196b393bec156cfdc713993f26b1dfa2872cfc08f3879d0b42292b9e4",
+    "dimensions": [
+      1200,
+      632
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-parasaur",
+    "gameAsset": "Game-Dino-parasaur",
+    "name": "Parasaur",
+    "page": "https://ark.wiki.gg/wiki/Parasaur",
+    "imageURL": "https://ark.wiki.gg/images/Tek_Parasaur_Image.jpg",
+    "sha256": "b144ba8fd5d62535bf1d538da750002afc77ef271b193ee626cd162cd7577c56",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-pegomastax",
+    "name": "Pegomastax",
+    "page": "https://ark.wiki.gg/wiki/Pegomastax",
+    "status": "no_verified_gallery"
+  },
+  {
+    "asset": "Dino-pelagornis",
+    "gameAsset": "Game-Dino-pelagornis",
+    "name": "Pelagornis",
+    "page": "https://ark.wiki.gg/wiki/Pelagornis",
+    "imageURL": "https://ark.wiki.gg/images/Render_Pelagornis.png",
+    "sha256": "3958ac10ed4c792524ab740b9204b0ef2b68385ce539659213077138cc084456",
+    "dimensions": [
+      1200,
+      391
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-phiomia",
+    "gameAsset": "Game-Dino-phiomia",
+    "name": "Phiomia",
+    "page": "https://ark.wiki.gg/wiki/Phiomia",
+    "imageURL": "https://ark.wiki.gg/images/OinkersASIG.png",
+    "sha256": "fae92ea877c85843da4de5cb247e20e9bca32778b06dccd4f9018c8c700106bc",
+    "dimensions": [
+      1095,
+      868
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-piranha",
+    "gameAsset": "Game-Dino-piranha",
+    "name": "Piranha",
+    "page": "https://ark.wiki.gg/wiki/Piranha",
+    "imageURL": "https://ark.wiki.gg/images/Render_Piranha.png",
+    "sha256": "e049163610a30058ed308638ce8251321608bc3c11195d2d06e10deb7fe440c6",
+    "dimensions": [
+      988,
+      578
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-plesiosaur",
+    "gameAsset": "Game-Dino-plesiosaur",
+    "name": "Plesiosaur",
+    "page": "https://ark.wiki.gg/wiki/Plesiosaur",
+    "imageURL": "https://ark.wiki.gg/images/SeaGiraffeASIG.png",
+    "sha256": "137d634af4c547961cff8290fd9b04b869deede7012f2be8b6f94d715be6456e",
+    "dimensions": [
+      1200,
+      497
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-poison-wyvern",
+    "name": "Poison Wyvern",
+    "page": "https://ark.wiki.gg/wiki/Poison_Wyvern",
+    "status": "no_verified_gallery"
+  },
+  {
+    "asset": "Dino-procoptodon",
+    "gameAsset": "Game-Dino-procoptodon",
+    "name": "Procoptodon",
+    "page": "https://ark.wiki.gg/wiki/Procoptodon",
+    "imageURL": "https://ark.wiki.gg/images/Large.2016-01-03_00001.jpg.666e195dac2575dfb744980d6db15a9d.jpg",
+    "sha256": "426e95f32a2f148a24074a6bf3285cb7e697b1c0836272f6b1c6ce3dafb74e8c",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-pteranodon",
+    "gameAsset": "Game-Dino-pteranodon",
+    "name": "Pteranodon",
+    "page": "https://ark.wiki.gg/wiki/Pteranodon",
+    "imageURL": "https://ark.wiki.gg/images/Pteranodon1.png",
+    "sha256": "be924608332db0a4f296f39ad8940ea54833da6e517b62de032d6353ca7a79d2",
+    "dimensions": [
+      1200,
+      636
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-pulmonoscorpius",
+    "gameAsset": "Game-Dino-pulmonoscorpius",
+    "name": "Pulmonoscorpius",
+    "page": "https://ark.wiki.gg/wiki/Pulmonoscorpius",
+    "imageURL": "https://ark.wiki.gg/images/ScorpionVSAnky.png",
+    "sha256": "9286a432372c419e75044b0e6c63c9d29317f15480a03e21976826759f5b8b26",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-purlovia",
+    "name": "Purlovia",
+    "page": "https://ark.wiki.gg/wiki/Purlovia",
+    "status": "no_verified_gallery"
+  },
+  {
+    "asset": "Dino-pyromane",
+    "gameAsset": "Game-Dino-pyromane",
+    "name": "Pyromane",
+    "page": "https://ark.wiki.gg/wiki/Pyromane",
+    "imageURL": "https://ark.wiki.gg/images/ASA_Pyromane_2560x1440.jpg",
+    "sha256": "f211961374ebe7d653bc90dd79a616cfa74a38f05fa94483a4c0677bedcbc317",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "ASA",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-quetzal",
+    "gameAsset": "Game-Dino-quetzal",
+    "name": "Quetzal",
+    "page": "https://ark.wiki.gg/wiki/Quetzal",
+    "imageURL": "https://ark.wiki.gg/images/Tek_Quetzal_Image.jpg",
+    "sha256": "82e30fcf93c444c133df9823b93cc399586caaf5cc836ed319f633380e5360b5",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-raptor",
+    "gameAsset": "Game-Dino-raptor",
+    "name": "Raptor",
+    "page": "https://ark.wiki.gg/wiki/Raptor",
+    "imageURL": "https://ark.wiki.gg/images/Tek_Raptor_Image.jpg",
+    "sha256": "6ff49911399d643855e9692f268885f28c30f136fbe37d7989d3bf9a569fcd63",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-rex",
+    "gameAsset": "Game-Dino-rex",
+    "name": "Rex",
+    "page": "https://ark.wiki.gg/wiki/Rex",
+    "imageURL": "https://ark.wiki.gg/images/Render_Tyrannosaurus.png",
+    "sha256": "30d599c6ef2c7b5244b0ab5b24a42245b38f4e613cc075562eb2faef5bb95ece",
+    "dimensions": [
+      1200,
+      858
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-rhyniognatha",
+    "gameAsset": "Game-Dino-rhyniognatha",
+    "name": "Rhyniognatha",
+    "page": "https://ark.wiki.gg/wiki/Rhyniognatha",
+    "imageURL": "https://ark.wiki.gg/images/Rhyniognatha.jpg",
+    "sha256": "04da3559d2168bd7aececcd1e21bdf5d007cd65e293751b54e1074ba783542f3",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-rock-elemental",
+    "name": "Rock Elemental",
+    "page": "https://ark.wiki.gg/wiki/Rock_Elemental",
+    "status": "no_verified_gallery"
+  },
+  {
+    "asset": "Dino-sabertooth",
+    "gameAsset": "Game-Dino-sabertooth",
+    "name": "Sabertooth",
+    "page": "https://ark.wiki.gg/wiki/Sabertooth",
+    "imageURL": "https://ark.wiki.gg/images/Render_Sabertooth.png",
+    "sha256": "80a857c2063bcaa3d161cb76d9353c73848e32c48661a5556caea0f40b5dd93e",
+    "dimensions": [
+      703,
+      505
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-sabertooth-salmon",
+    "gameAsset": "Game-Dino-sabertooth-salmon",
+    "name": "Sabertooth Salmon",
+    "page": "https://ark.wiki.gg/wiki/Sabertooth_Salmon",
+    "imageURL": "https://ark.wiki.gg/images/Sabertooth_Salmon_Render.png",
+    "sha256": "df43eca21083a4ab80ffa845c352d699fc5ec931f9ba26c9c1d0b480e654d026",
+    "dimensions": [
+      1200,
+      600
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-sarco",
+    "gameAsset": "Game-Dino-sarco",
+    "name": "Sarco",
+    "page": "https://ark.wiki.gg/wiki/Sarco",
+    "imageURL": "https://ark.wiki.gg/images/ARK11.jpg",
+    "sha256": "52e231cb9507320b8e1c0f3a7ae6787604946f8ebc1a24613a4094bd4f9ea712",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-shinehorn",
+    "gameAsset": "Game-Dino-shinehorn",
+    "name": "Shinehorn",
+    "page": "https://ark.wiki.gg/wiki/Shinehorn",
+    "imageURL": "https://ark.wiki.gg/images/Aberration_Mystery_Creature_5.jpg",
+    "sha256": "7efd490da81b5e7efe00f5a284e1a99aafd349c037e830e8ccfee1eca6114832",
+    "dimensions": [
+      1129,
+      1200
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-spino",
+    "gameAsset": "Game-Dino-spino",
+    "name": "Spino",
+    "page": "https://ark.wiki.gg/wiki/Spino",
+    "imageURL": "https://ark.wiki.gg/images/Ark_Aberrant_Spino_render.png",
+    "sha256": "478e882c878383838913d3d282951ac38b385df0ff558f305fcdce02f13d1ba9",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-spring-drakeling",
+    "gameAsset": "Game-Dino-spring-drakeling",
+    "name": "Spring Drakeling",
+    "page": "https://ark.wiki.gg/wiki/Spring_Drakeling",
+    "imageURL": "https://ark.wiki.gg/images/ASA_Drakeling_00.jpg",
+    "sha256": "349f43051f9fdafbb44c40f245815515172088a84ea20ad40156b8f53cfd1a59",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "ASA",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-stegosaurus",
+    "gameAsset": "Game-Dino-stegosaurus",
+    "name": "Stegosaurus",
+    "page": "https://ark.wiki.gg/wiki/Stegosaurus",
+    "imageURL": "https://ark.wiki.gg/images/Tek_Stego_Image.jpg",
+    "sha256": "851a163970bf921d3c1e17ae0447821479925c8e25bff21bc22e3053c5b6833a",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-summer-drakeling",
+    "gameAsset": "Game-Dino-summer-drakeling",
+    "name": "Summer Drakeling",
+    "page": "https://ark.wiki.gg/wiki/Summer_Drakeling",
+    "imageURL": "https://ark.wiki.gg/images/ASA_Drakeling_00.jpg",
+    "sha256": "349f43051f9fdafbb44c40f245815515172088a84ea20ad40156b8f53cfd1a59",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "ASA",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-tapejara",
+    "name": "Tapejara",
+    "page": "https://ark.wiki.gg/wiki/Tapejara",
+    "status": "no_verified_gallery"
+  },
+  {
+    "asset": "Dino-terror-bird",
+    "gameAsset": "Game-Dino-terror-bird",
+    "name": "Terror Bird",
+    "page": "https://ark.wiki.gg/wiki/Terror_Bird",
+    "imageURL": "https://ark.wiki.gg/images/Terror_Bird_with_Saddle.jpg",
+    "sha256": "cf8b89babdb4ea68d46b92599785681312b352104e8343821a7e70fe995504e0",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-therizinosaur",
+    "gameAsset": "Game-Dino-therizinosaur",
+    "name": "Therizinosaur",
+    "page": "https://ark.wiki.gg/wiki/Therizinosaur",
+    "imageURL": "https://ark.wiki.gg/images/ASA_Therizinosaurus_TLC.jpg",
+    "sha256": "725d73554a04195b0025ef34eac3f4b875c9dc17b6aa2ba201ac5cc2107064eb",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "ASA",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-thorny-dragon",
+    "name": "Thorny Dragon",
+    "page": "https://ark.wiki.gg/wiki/Thorny_Dragon",
+    "status": "no_verified_gallery"
+  },
+  {
+    "asset": "Dino-thylacoleo",
+    "gameAsset": "Game-Dino-thylacoleo",
+    "name": "Thylacoleo",
+    "page": "https://ark.wiki.gg/wiki/Thylacoleo",
+    "imageURL": "https://ark.wiki.gg/images/Thylacoleo_large.png",
+    "sha256": "b9d7cc06d2c7fd3da687c567bf7d8658fa6504f1edcd8a43ce20bb9789d54f09",
+    "dimensions": [
+      1020,
+      642
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-titanoboa",
+    "gameAsset": "Game-Dino-titanoboa",
+    "name": "Titanoboa",
+    "page": "https://ark.wiki.gg/wiki/Titanoboa",
+    "imageURL": "https://ark.wiki.gg/images/Aberrant_Titanoboa_Ingame.jpg",
+    "sha256": "56ffb4071235bfeb02f73d824645971d440c641e5ba7ca5fdd06044fec9c43ff",
+    "dimensions": [
+      1200,
+      756
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-titanomyrma-drone",
+    "gameAsset": "Game-Dino-titanomyrma-drone",
+    "name": "Titanomyrma Drone",
+    "page": "https://ark.wiki.gg/wiki/Titanomyrma_Drone",
+    "imageURL": "https://ark.wiki.gg/images/Titano.jpg",
+    "sha256": "cc1e518874341f8bb559670f05582a21c35003173e0ebd43a54b575eb4b89ff8",
+    "dimensions": [
+      1200,
+      776
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-titanomyrma-soldier",
+    "gameAsset": "Game-Dino-titanomyrma-soldier",
+    "name": "Titanomyrma Soldier",
+    "page": "https://ark.wiki.gg/wiki/Titanomyrma_Soldier",
+    "imageURL": "https://ark.wiki.gg/images/Titano.jpg",
+    "sha256": "cc1e518874341f8bb559670f05582a21c35003173e0ebd43a54b575eb4b89ff8",
+    "dimensions": [
+      1200,
+      776
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-titanosaur",
+    "gameAsset": "Game-Dino-titanosaur",
+    "name": "Titanosaur",
+    "page": "https://ark.wiki.gg/wiki/Titanosaur",
+    "imageURL": "https://ark.wiki.gg/images/Large.1460341108_ARK_Titanosaur.jpg.ae4654352702ce76cd5163e72cff1cd4.jpg",
+    "sha256": "19485c61768cfb477259a32877c703119a75321de12deb53acdfab53b1a063eb",
+    "dimensions": [
+      1200,
+      717
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-triceratops",
+    "gameAsset": "Game-Dino-triceratops",
+    "name": "Triceratops",
+    "page": "https://ark.wiki.gg/wiki/Triceratops",
+    "imageURL": "https://ark.wiki.gg/images/Ark_Trike_render.png",
+    "sha256": "8b1b925de96752ae27e9b0d6846030b17230cc2695ed2c2536b0a3ebc84eb49e",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-trilobite",
+    "gameAsset": "Game-Dino-trilobite",
+    "name": "Trilobite",
+    "page": "https://ark.wiki.gg/wiki/Trilobite",
+    "imageURL": "https://ark.wiki.gg/images/Trilobite.jpg",
+    "sha256": "26751dfa85867243e4f6ec1a7f81a7a783fb85fd38074d2b45d1258482cf4d09",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-troodon",
+    "name": "Troodon",
+    "page": "https://ark.wiki.gg/wiki/Troodon",
+    "status": "no_verified_gallery"
+  },
+  {
+    "asset": "Dino-tusoteuthis",
+    "gameAsset": "Game-Dino-tusoteuthis",
+    "name": "Tusoteuthis",
+    "page": "https://ark.wiki.gg/wiki/Tusoteuthis",
+    "imageURL": "https://ark.wiki.gg/images/Tusobaby.png",
+    "sha256": "e76fcc556f9d6606a9cfc761b08db10d4f646bd38c9dd0c190a9e4a2bd78c0c3",
+    "dimensions": [
+      450,
+      306
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-umbra",
+    "gameAsset": "Game-Dino-umbra",
+    "name": "Umbra",
+    "page": "https://ark.wiki.gg/wiki/Umbra",
+    "imageURL": "https://ark.wiki.gg/images/ASA_Umbra_5.jpg",
+    "sha256": "668a407355475b88a40b7af73347e61e8e8bf91492b9e81218a2fbe7c6c84057",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "ASA",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-unicorn",
+    "gameAsset": "Game-Dino-unicorn",
+    "name": "Unicorn",
+    "page": "https://ark.wiki.gg/wiki/Unicorn",
+    "imageURL": "https://ark.wiki.gg/images/Unicorn_Ingame.jpg",
+    "sha256": "6f0cd2f4f97172606ae07ef6fed23f5af628ef76910b95923095078d76f184a5",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-vulture",
+    "name": "Vulture",
+    "page": "https://ark.wiki.gg/wiki/Vulture",
+    "status": "no_verified_gallery"
+  },
+  {
+    "asset": "Dino-water-jug-bug",
+    "name": "Water Jug Bug",
+    "page": "https://ark.wiki.gg/wiki/Water_Jug_Bug",
+    "status": "no_verified_gallery"
+  },
+  {
+    "asset": "Dino-winter-drakeling",
+    "gameAsset": "Game-Dino-winter-drakeling",
+    "name": "Winter Drakeling",
+    "page": "https://ark.wiki.gg/wiki/Winter_Drakeling",
+    "imageURL": "https://ark.wiki.gg/images/ASA_Drakeling_00.jpg",
+    "sha256": "349f43051f9fdafbb44c40f245815515172088a84ea20ad40156b8f53cfd1a59",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "ASA",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-woolly-rhino",
+    "gameAsset": "Game-Dino-woolly-rhino",
+    "name": "Woolly Rhino",
+    "page": "https://ark.wiki.gg/wiki/Woolly_Rhino",
+    "imageURL": "https://ark.wiki.gg/images/Tibor.jpg",
+    "sha256": "4201c600fb621db61310cd725c31a7c08d5cd0b6eafe5958284d0ea9d1654c93",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-xiphactinus",
+    "gameAsset": "Game-Dino-xiphactinus",
+    "name": "Xiphactinus",
+    "page": "https://ark.wiki.gg/wiki/Xiphactinus",
+    "imageURL": "https://ark.wiki.gg/images/ASA_Xiphactinus_2560x1440.jpg",
+    "sha256": "a815d31ccd7d0f29ab3fb17b949642f5a85c4429964da762405ab85896d0e63d",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "ASA",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-yutyrannus",
+    "gameAsset": "Game-Dino-yutyrannus",
+    "name": "Yutyrannus",
+    "page": "https://ark.wiki.gg/wiki/Yutyrannus",
+    "imageURL": "https://ark.wiki.gg/images/Yutyrannus_Extra_Feathers.jpg",
+    "sha256": "dfe9b258178df0a4624d969ef621d1a19eb9316f2ab663323a1fa49cee97e680",
+    "dimensions": [
+      1200,
+      930
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-alpha-leedsichthys",
+    "gameAsset": "Game-Dino-alpha-leedsichthys",
+    "name": "Alpha Leedsichthys",
+    "page": "https://ark.wiki.gg/wiki/Alpha_Leedsichthys",
+    "imageURL": "https://ark.wiki.gg/images/Alpha_Leedsichthys_Image.jpg",
+    "sha256": "63db14d8658f2ea778628690f3da3f6e21069c630880a24838c58f118b6806a0",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-leedsichthys",
+    "gameAsset": "Game-Dino-leedsichthys",
+    "name": "Leedsichthys",
+    "page": "https://ark.wiki.gg/wiki/Leedsichthys",
+    "imageURL": "https://ark.wiki.gg/images/Alpha_Leedsichthys_Image.jpg",
+    "sha256": "63db14d8658f2ea778628690f3da3f6e21069c630880a24838c58f118b6806a0",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-liopleurodon",
+    "gameAsset": "Game-Dino-liopleurodon",
+    "name": "Liopleurodon",
+    "page": "https://ark.wiki.gg/wiki/Liopleurodon",
+    "imageURL": "https://ark.wiki.gg/images/Sparkling_Liopleurodon.jpg",
+    "sha256": "a53a7e37e38bad02039644092a8130c92899f381819072b38d060dfc68e050b4",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-shastasaurus",
+    "gameAsset": "Game-Dino-shastasaurus",
+    "name": "Shastasaurus",
+    "page": "https://ark.wiki.gg/wiki/Shastasaurus",
+    "imageURL": "https://ark.wiki.gg/images/ASA_Shastasaurus_2560x1440.jpg",
+    "sha256": "d545468067907f58ad57d551d35ef29a2a3a511ad3eed7b47f11e81d8cd93b11",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "ASA",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-yeti",
+    "gameAsset": "Game-Dino-yeti",
+    "name": "Yeti",
+    "page": "https://ark.wiki.gg/wiki/Yeti",
+    "imageURL": "https://ark.wiki.gg/images/Yeti_promotional_image.jpg",
+    "sha256": "8a79ddc109d71c12b87ecf4432345dbe51e516f5ca75a392f2d7aacc186cc5d9",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-polar-bear",
+    "gameAsset": "Game-Dino-polar-bear",
+    "name": "Polar Bear",
+    "page": "https://ark.wiki.gg/wiki/Polar_Bear",
+    "imageURL": "https://ark.wiki.gg/images/Valguero_3.jpg",
+    "sha256": "71da970593d8839a2436c1f900c6c1358d525e38610969b0070e5c585fe0be45",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Boss-broodmother",
+    "gameAsset": "Game-Boss-broodmother",
+    "name": "Broodmother Lysrix",
+    "page": "https://ark.wiki.gg/wiki/Broodmother_Lysrix",
+    "imageURL": "https://ark.wiki.gg/images/LastStandPromo2.jpg",
+    "sha256": "e15b1be8416cac6b1ebfeb014fae019b5c47c6f07a3e0c5b727beca1c7d0c28e",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Boss-megapithecus",
+    "gameAsset": "Game-Boss-megapithecus",
+    "name": "Megapithecus",
+    "page": "https://ark.wiki.gg/wiki/Megapithecus",
+    "imageURL": "https://ark.wiki.gg/images/Last_Stand_Promo.jpg",
+    "sha256": "10db35dba7d63b54f2fe9193876dd6a9527ab7196d6ea9201fa0d4670b98806b",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Boss-dragon",
+    "gameAsset": "Game-Boss-dragon",
+    "name": "Dragon",
+    "page": "https://ark.wiki.gg/wiki/Dragon",
+    "imageURL": "https://ark.wiki.gg/images/ARK10.jpg",
+    "sha256": "b4fbabdfdf2a655060e37cbb0a7b09268d2a6e47fe2517e94bee562e43cc2edc",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Boss-overseer",
+    "gameAsset": "Game-Boss-overseer",
+    "name": "Overseer",
+    "page": "https://ark.wiki.gg/wiki/Overseer",
+    "imageURL": "https://ark.wiki.gg/images/The_Overseer.jpg",
+    "sha256": "a57e4965389a607d076ed5959eaf815b1a62a83034c8fe893c4042bd939a8a2d",
+    "dimensions": [
+      1024,
+      576
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Boss-lava-elemental",
+    "gameAsset": "Game-Boss-lava-elemental",
+    "name": "Lava Elemental",
+    "page": "https://ark.wiki.gg/wiki/Lava_Elemental",
+    "imageURL": "https://ark.wiki.gg/images/Lava_Elemental_Image.png",
+    "sha256": "662294f297f8c0ef9426bbc1f018714afbb64ade56b0601f4007a572187c541f",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Boss-iceworm-queen",
+    "gameAsset": "Game-Boss-iceworm-queen",
+    "name": "Iceworm Queen",
+    "page": "https://ark.wiki.gg/wiki/Iceworm_Queen",
+    "imageURL": "https://ark.wiki.gg/images/Iceworm_Queen_Image.jpg",
+    "sha256": "250c161155df5939fc4261bb9f5fa8fca00f4b61f792768acc32479edf07a81b",
+    "dimensions": [
+      678,
+      678
+    ],
+    "edition": "game gallery, edition unconfirmed",
+    "status": "ready"
+  },
+  {
+    "asset": "Boss-spirit-dire-bear",
+    "gameAsset": "Game-Boss-spirit-dire-bear",
+    "name": "spirit-dire-bear",
+    "page": "https://www.youtube.com/watch?v=dB3V_7-s92s&t=1345s",
+    "status": "ready",
+    "edition": "ASA",
+    "sourceVideo": "dB3V_7-s92s",
+    "sourceSeconds": 1345,
+    "identityEvidence": "Visible game label, spectral body and Life’s Labyrinth encounter",
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "sha256": "8bd72104dfa9ea43a9ff89d093f9f9cdae568f530531d778a1e9af11f36d9371"
+  },
+  {
+    "asset": "Dino-spirit-dire-bear",
+    "gameAsset": "Game-Dino-spirit-dire-bear",
+    "name": "spirit-dire-bear",
+    "page": "https://www.youtube.com/watch?v=dB3V_7-s92s&t=1345s",
+    "status": "ready",
+    "edition": "ASA",
+    "sourceVideo": "dB3V_7-s92s",
+    "sourceSeconds": 1345,
+    "identityEvidence": "Visible game label, spectral body and Life’s Labyrinth encounter",
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "sha256": "8bd72104dfa9ea43a9ff89d093f9f9cdae568f530531d778a1e9af11f36d9371"
+  },
+  {
+    "asset": "Boss-spirit-direwolf",
+    "gameAsset": "Game-Boss-spirit-direwolf",
+    "name": "spirit-direwolf",
+    "page": "https://www.youtube.com/watch?v=dB3V_7-s92s&t=1357s",
+    "status": "ready",
+    "edition": "ASA",
+    "sourceVideo": "dB3V_7-s92s",
+    "sourceSeconds": 1357,
+    "identityEvidence": "Visible game label, spectral body and Life’s Labyrinth encounter",
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "sha256": "281f199b24ed1d4f244fbd9e42be8dc3666c39ac03007e528df5beeb89cefc52"
+  },
+  {
+    "asset": "Dino-spirit-direwolf",
+    "gameAsset": "Game-Dino-spirit-direwolf",
+    "name": "spirit-direwolf",
+    "page": "https://www.youtube.com/watch?v=dB3V_7-s92s&t=1357s",
+    "status": "ready",
+    "edition": "ASA",
+    "sourceVideo": "dB3V_7-s92s",
+    "sourceSeconds": 1357,
+    "identityEvidence": "Visible game label, spectral body and Life’s Labyrinth encounter",
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "sha256": "281f199b24ed1d4f244fbd9e42be8dc3666c39ac03007e528df5beeb89cefc52"
+  },
+  {
+    "asset": "Dino-brontosaurus",
+    "gameAsset": "Game-Dino-brontosaurus",
+    "name": "Brontosaurus",
+    "page": "https://ark.wiki.gg/wiki/Brontosaurus",
+    "imageURL": "https://ark.wiki.gg/images/ASA_Brontosaurus.jpg",
+    "sha256": "e19350f016be4ef5ddb7efbd8402ec5a2d377caacace6d1820339d6e5952941c",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "ASA",
+    "status": "ready"
+  },
+  {
+    "asset": "Dino-giganotosaurus",
+    "gameAsset": "Game-Dino-giganotosaurus",
+    "name": "Giganotosaurus",
+    "page": "https://ark.wiki.gg/wiki/Giganotosaurus",
+    "imageURL": "https://ark.wiki.gg/images/ASA_Giganatosaurus.jpg",
+    "sha256": "2fc909026b4dfe20729e2b336723f9a59ded1032f068cc629912c4133966d999",
+    "dimensions": [
+      1200,
+      675
+    ],
+    "edition": "ASA",
+    "status": "ready"
+  }
+]

@@ -44,21 +44,16 @@ struct BaseLocationsScreen: View {
 }
 struct BaseTerrainPreview: View {
     let spot: BaseSpot
-    private var terrain: UIImage? {
-        guard let cg = UIImage(named: "RagnarokMap")?.cgImage else { return nil }
-        let size = CGFloat(cg.width) * 0.18
-        let x = min(max(0, CGFloat(spot.lon / 100) * CGFloat(cg.width) - size / 2), CGFloat(cg.width) - size)
-        let y = min(max(0, CGFloat(spot.lat / 100) * CGFloat(cg.height) - size / 2), CGFloat(cg.height) - size)
-        guard let crop = cg.cropping(to: CGRect(x: x, y: y, width: size, height: size)) else { return nil }
-        return UIImage(cgImage: crop)
-    }
     var body: some View {
         GeometryReader { proxy in
-            ZStack(alignment: .bottomLeading) {
-                if let terrain { Image(uiImage: terrain).resizable().scaledToFill().frame(width: proxy.size.width, height: proxy.size.height).clipped() }
-                else { Image("RagnarokMap").resizable().scaledToFill().frame(width: proxy.size.width, height: proxy.size.height).clipped() }
-                LinearGradient(colors: [.clear, .black.opacity(0.8)], startPoint: .center, endPoint: .bottom)
-            }.frame(width: proxy.size.width, height: proxy.size.height).clipped()
+            if let photo = UIImage(named: "Base-" + spot.id) {
+                Image(uiImage: photo).resizable().scaledToFill()
+                    .frame(width: proxy.size.width, height: proxy.size.height).clipped()
+                    .accessibilityIdentifier("base-photo-" + spot.id)
+            } else {
+                ZStack { Color.white.opacity(0.04); Image(systemName: "photo").font(.largeTitle).foregroundStyle(.secondary) }
+                    .accessibilityLabel("Chưa có ảnh đã đối chiếu")
+            }
         }
     }
 }

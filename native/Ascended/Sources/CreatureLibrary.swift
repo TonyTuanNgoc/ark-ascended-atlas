@@ -158,16 +158,17 @@ extension View {
     }
 }
 
-/// Shared high-contrast rendering for creature/boss icons on the dark field guide.
-/// Photographic assets such as Nunatak retain their original colours.
+/// Verified game gallery images retain their natural appearance.
 struct CreatureAvatar: View {
     let asset: String
     var body: some View {
-        Image(asset)
-            .renderingMode(asset.hasPrefix("Dino-") || asset.hasPrefix("Boss-") ? .template : .original)
-            .resizable()
-            .scaledToFit()
-            .foregroundStyle(.white)
+        if let image = UIImage(named: "Game-" + asset) {
+            Image(uiImage: image).resizable().scaledToFit()
+        } else if !asset.hasPrefix("Dino-") && !asset.hasPrefix("Boss-") {
+            Image(asset).resizable().scaledToFit()
+        } else {
+            Image(systemName: "photo").resizable().scaledToFit().foregroundStyle(.secondary).padding(18)
+        }
     }
 }
 

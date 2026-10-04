@@ -48,12 +48,17 @@ struct MapScreen: View {
                     }.padding(4).background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 16))
                 }.buttonStyle(.plain).padding(12)
             }
-            .safeAreaInset(edge: .bottom, spacing: 8) {
+            .overlay(alignment: .bottomTrailing) {
                 if let point = selected {
-                    HStack(spacing: 14) {
+                    HStack(alignment: .top, spacing: 12) {
+                        if let asset = point.imageAsset, UIImage(named: asset) != nil {
+                            Image(asset).renderingMode(asset == "Map-Obelisk" ? .template : .original).resizable().scaledToFit().foregroundStyle(Color(uiColor: point.color)).frame(width: 54, height: 64)
+                        }
                         VStack(alignment: .leading, spacing: 4) {
                             Text(point.name).font(.headline).accessibilityIdentifier("selectedMapLocation")
                             GPSBadge(coordinates: point.coordinates).foregroundStyle(.cyan).monospacedDigit()
+                            Text(point.layer == .artifact ? "Lấy tại tọa độ này. " + (map.exploration?.routes.first { $0.id == point.routeID }?.name ?? "") : point.note)
+                                .font(.caption).foregroundStyle(.secondary).fixedSize(horizontal: false, vertical: true)
                         }
                         Spacer()
                         if let id = point.artifactID, map.exploration?.artifacts.contains(where: { $0.id == id }) == true {
@@ -66,7 +71,9 @@ struct MapScreen: View {
                         }
                         Button { selected = nil; focusedID = nil } label: { Image(systemName: "xmark") }.accessibilityLabel("Đóng vị trí")
                     }.buttonStyle(.bordered).padding(14)
-                        .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 16))
+                        .frame(maxWidth: 430).background(.black.opacity(0.94), in: RoundedRectangle(cornerRadius: 16))
+                        .overlay(RoundedRectangle(cornerRadius: 16).stroke(.white.opacity(0.16)))
+                        .padding(12)
                 }
             }.padding(8)
         .onAppear {
@@ -157,23 +164,37 @@ final class MapScrollView: UIScrollView {
     private var locationIDs: [String] = []
     private var locations: [MapLocation] = []
     private var markerButtons: [UIButton] = []
+    private var markerLabels: [UILabel] = []
     private var select: ((MapLocation) -> Void)?
     private var menuMemberships: [String: [String]] = [:]
     func updateLocations(_ points: [MapLocation], select: @escaping (MapLocation) -> Void) {
         self.select = select
         guard locationIDs != points.map(\.id) else { return }
         markerButtons.forEach { $0.removeFromSuperview() }; markerButtons.removeAll()
+        markerLabels.forEach { $0.removeFromSuperview() }; markerLabels.removeAll()
         locations = points; locationIDs = points.map(\.id); menuMemberships.removeAll()
         for point in points {
             let button = UIButton(type: .system)
             button.bounds = CGRect(x: 0, y: 0, width: 36, height: 36)
-            button.setImage(UIImage(systemName: point.symbol), for: .normal)
-            button.tintColor = .white; button.backgroundColor = point.color
+            let artwork = point.imageAsset.flatMap { UIImage(named: $0) }
+            button.setImage(artwork?.withRenderingMode(point.imageAsset == "Map-Obelisk" ? .alwaysTemplate : .alwaysOriginal) ?? UIImage(systemName: point.symbol), for: .normal)
+            button.imageView?.contentMode = .scaleAspectFit
+            button.contentEdgeInsets = UIEdgeInsets(top: 3, left: 3, bottom: 3, right: 3)
+            button.tintColor = point.imageAsset == "Map-Obelisk" ? point.color : .white; button.backgroundColor = artwork != nil ? UIColor.black.withAlphaComponent(0.8) : point.color
             button.layer.cornerRadius = 18; button.layer.borderWidth = 2; button.layer.borderColor = UIColor.white.cgColor
             button.accessibilityIdentifier = "pin-" + point.id
             button.accessibilityLabel = point.name + ", " + point.coordinates
 
             imageView.addSubview(button); markerButtons.append(button)
+            let label = UILabel()
+            label.text = point.name.replacingOccurrences(of: "Artifact of the ", with: "")
+            label.font = .systemFont(ofSize: 10, weight: .semibold)
+            label.textColor = .white; label.backgroundColor = UIColor.black.withAlphaComponent(0.75)
+            label.textAlignment = .center; label.numberOfLines = 2
+            label.layer.cornerRadius = 4; label.clipsToBounds = true
+            label.bounds = CGRect(x: 0, y: 0, width: 110, height: 28)
+            label.isAccessibilityElement = false; label.isUserInteractionEnabled = false
+            imageView.addSubview(label); markerLabels.append(label)
         }
         centerMap()
     }
@@ -212,6 +233,9 @@ final class MapScrollView: UIScrollView {
         for (index, button) in markerButtons.enumerated() {
             button.center = pixelPoint(locations[index])
             button.transform = CGAffineTransform(scaleX: 1 / max(zoomScale, 0.001), y: 1 / max(zoomScale, 0.001))
+            let label = markerLabels[index]
+            label.center = CGPoint(x: button.center.x, y: button.center.y + 34 / max(zoomScale, 0.001))
+            label.transform = button.transform
             let point = locations[index]
             let nearby = locations.filter {
                 let deltaX = (pixelPoint($0).x - button.center.x) * zoomScale
@@ -224,7 +248,7 @@ final class MapScrollView: UIScrollView {
                 button.removeAction(identifiedBy: actionID, for: .touchUpInside)
                 if nearby.count > 1 {
                     button.menu = UIMenu(title: "Chọn vị trí gần nhau", children: nearby.map { item in
-                        UIAction(title: item.name, image: UIImage(systemName: item.symbol)) { [weak self] _ in self?.select?(item) }
+                        UIAction(title: item.name, image: item.imageAsset.flatMap { UIImage(named: $0) } ?? UIImage(systemName: item.symbol)) { [weak self] _ in self?.select?(item) }
                     })
                     button.showsMenuAsPrimaryAction = true
                     button.accessibilityHint = "Mở danh sách vị trí gần nhau"

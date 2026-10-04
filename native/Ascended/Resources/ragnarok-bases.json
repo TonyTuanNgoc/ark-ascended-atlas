@@ -1,7 +1,7 @@
 {
   "reviewedAt": "2026-10-03",
   "methodology": "5 lựa chọn do em xếp theo cân bằng cho Single Player: di chuyển, không gian Dino/breed, an toàn, tài nguyên và độ rõ của nguồn ASA. Đây không phải top 5 vote toàn YouTube. Like/view thuộc cả video; vote forum là snapshot của bình luận, đôi khi kèm nhiều địa điểm. Thứ tự là đánh giá của em, không phải kết quả bình chọn.",
-  "limits": "Đã đọc metadata/chapter của 4 video ASA và thảo luận cộng đồng. Captions bị HTTP 429, chưa phân tích hình ảnh video; preview địa hình không phải ảnh base thật. GPS là điểm khảo sát từ guide, cần đối chiếu địa hình và quyền build trong save trước khi đặt foundation. Hidana/Green Obelisk cũng có bình luận +2 ủng hộ, nhưng chưa có GPS ASA/video đủ rõ để đưa thành pin chính xác trong 5 điểm.",
+  "limits": "Ảnh trong game đã đối chiếu: ba ảnh khu vực từ NoobFeed; hai ảnh chapter video có GPS trùng pin. Hai ảnh storyboard chỉ 320×180 vì video đầy đủ trả HTTP 403. Ảnh khu vực không xác nhận cùng một nền foundation hoặc quyền xây trong save. Vote/like vẫn là snapshot, không phải bình chọn toàn cộng đồng.",
   "videos": [
     {
       "id": "5mYGGM_bIhs",
@@ -84,7 +84,22 @@
           "url": "https://www.noobfeed.com/articles/ark-survival-ascended-guide-best-base-locations-on-ragnarok",
           "note": "Mốc 39.9/45.0 xác nhận cùng vùng, không cùng nền nhà."
         }
-      ]
+      ],
+      "photoSource": {
+        "pageURL": "https://www.noobfeed.com/articles/ark-survival-ascended-guide-best-base-locations-on-ragnarok",
+        "imageURL": "https://64.media.tumblr.com/1f305e6f13ae93575098714e3436f550/8f1eb95cc4826125-5c/s1280x1920/21fb61705e3615843d456758821533342825e2cb.jpg",
+        "coordinates": [
+          39.9,
+          45
+        ],
+        "scope": "Photographed region; approach pin may differ from camera position",
+        "dimensions": [
+          1280,
+          720
+        ],
+        "asset": "Base-canyon",
+        "sha256": "a65eae5d3feea3ce08ea96981320aeb42510e3d429d7b059615de472e7f4d092"
+      }
     },
     {
       "id": "falls",
@@ -125,7 +140,22 @@
           "url": "https://www.reddit.com/r/ARK/comments/1tu6s8z/base_locations_ragnarok/",
           "note": "Ủng hộ loại địa hình, không có vote riêng cho pin."
         }
-      ]
+      ],
+      "photoSource": {
+        "pageURL": "https://www.noobfeed.com/articles/ark-survival-ascended-guide-best-base-locations-on-ragnarok",
+        "imageURL": "https://64.media.tumblr.com/c80a8ef7a4a91da8b5a3b04473c53afb/8f1eb95cc4826125-d7/s1280x1920/f0913adc0e3fdcc1424626f9bacd73e540f7a061.jpg",
+        "coordinates": [
+          28.2,
+          49
+        ],
+        "scope": "Photographed region; approach pin may differ from camera position",
+        "dimensions": [
+          1280,
+          720
+        ],
+        "asset": "Base-falls",
+        "sha256": "603f3b66b44f64a75d38bb079d88924474b91b81db3c48c4d4eca5428283243b"
+      }
     },
     {
       "id": "viking",
@@ -166,7 +196,22 @@
           "url": "https://www.reddit.com/r/ARK/comments/1tu6s8z/base_locations_ragnarok/",
           "note": "Bình luận +4 gồm nhiều địa điểm, không vote riêng pin."
         }
-      ]
+      ],
+      "photoSource": {
+        "pageURL": "https://www.youtube.com/watch?v=2-qtw1pdg2A",
+        "seconds": 197.57,
+        "coordinates": [
+          22.8,
+          30.9
+        ],
+        "scope": "Public video storyboard; coordinates visible in image; original 320x180, no artificial upscale",
+        "dimensions": [
+          320,
+          180
+        ],
+        "asset": "Base-viking",
+        "sha256": "72345026597fb5e7b4cf197eee08ce8c49c57037d3958e5aded1ebf4a7d39e8e"
+      }
     },
     {
       "id": "highlands",
@@ -202,7 +247,22 @@
           "url": "https://www.reddit.com/r/ArkSurvivalAscended/comments/1qzfkyz/",
           "note": "Bình luận +1 cảnh báo đồng cỏ thiếu cây; đây là đánh đổi."
         }
-      ]
+      ],
+      "photoSource": {
+        "pageURL": "https://www.youtube.com/watch?v=2-qtw1pdg2A",
+        "seconds": 148.18,
+        "coordinates": [
+          18.0,
+          78.9
+        ],
+        "scope": "Public video storyboard; coordinates visible in image; original 320x180, no artificial upscale",
+        "dimensions": [
+          320,
+          180
+        ],
+        "asset": "Base-highlands",
+        "sha256": "0237d1dc0e9eb5255477e5a5970eea7031b6f9a2aa1bc5281bdafe03ca2fe298"
+      }
     },
     {
       "id": "herbivore",
@@ -243,7 +303,22 @@
           "url": "https://www.reddit.com/r/ArkSurvivalAscended/comments/1qzfkyz/",
           "note": "Kinh nghiệm riêng +1, không leaderboard."
         }
-      ]
+      ],
+      "photoSource": {
+        "pageURL": "https://www.noobfeed.com/articles/ark-survival-ascended-guide-best-base-locations-on-ragnarok",
+        "imageURL": "https://64.media.tumblr.com/c7b348192d944bee58d81325d699c017/8f1eb95cc4826125-c8/s1280x1920/a80b2671186a9fb262991dc25a9b57785c82b8c7.jpg",
+        "coordinates": [
+          8.7,
+          96.7
+        ],
+        "scope": "Photographed region; approach pin may differ from camera position",
+        "dimensions": [
+          1280,
+          720
+        ],
+        "asset": "Base-herbivore",
+        "sha256": "083fc720bfe6ab0318e7468065c550b7aa8890409d9abaec963ae3e76a553389"
+      }
     }
   ]
 }
