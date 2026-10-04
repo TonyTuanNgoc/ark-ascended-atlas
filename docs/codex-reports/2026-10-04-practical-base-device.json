@@ -1,0 +1,175 @@
+{
+  "version": "0.15.0",
+  "build": "16",
+  "device": "8FA117DA-854A-5EEB-AEFC-EE54036237A9",
+  "install": {
+    "info": {
+      "arguments": [
+        "devicectl",
+        "device",
+        "install",
+        "app",
+        "--device",
+        "8FA117DA-854A-5EEB-AEFC-EE54036237A9",
+        "/Volumes/TONY SSD/ASCENDED_MEDIA/builds/Ascended-0.15.0-16/Build/Products/Debug-iphoneos/Ascended.app",
+        "--json-output",
+        "/tmp/ascended-install-16.json"
+      ],
+      "commandType": "devicectl.device.install.app",
+      "environment": {
+        "TERM": "dumb"
+      },
+      "jsonVersion": 3,
+      "outcome": "success",
+      "version": "518.31"
+    },
+    "result": {
+      "deviceIdentifier": "8FA117DA-854A-5EEB-AEFC-EE54036237A9",
+      "installedApplications": [
+        {
+          "bundleID": "com.tonytuanngoc.ascended",
+          "databaseSequenceNumber": 2796,
+          "databaseUUID": "CF1EF73B-08AD-4527-9C5C-89CB5C4DAADB",
+          "installationURL": "file:///private/var/containers/Bundle/Application/14AA0F36-90F8-406D-9498-CB1E2E975BFC/Ascended.app/",
+          "launchServicesIdentifier": "unknown",
+          "options": {}
+        }
+      ]
+    }
+  },
+  "apps": {
+    "info": {
+      "arguments": [
+        "devicectl",
+        "device",
+        "info",
+        "apps",
+        "--device",
+        "8FA117DA-854A-5EEB-AEFC-EE54036237A9",
+        "--json-output",
+        "/tmp/ascended-apps-16-final.json"
+      ],
+      "commandType": "devicectl.device.info.apps",
+      "environment": {
+        "TERM": "dumb"
+      },
+      "jsonVersion": 3,
+      "outcome": "success",
+      "version": "518.31"
+    },
+    "result": {
+      "apps": [
+        {
+          "appClip": false,
+          "builtByDeveloper": true,
+          "bundleIdentifier": "com.tonytuanngoc.ascended",
+          "bundleVersion": "16",
+          "defaultApp": false,
+          "hidden": false,
+          "internalApp": false,
+          "name": "Ascended",
+          "removable": true,
+          "url": "file:///private/var/containers/Bundle/Application/14AA0F36-90F8-406D-9498-CB1E2E975BFC/Ascended.app/",
+          "version": "0.15.0"
+        },
+        {
+          "appClip": false,
+          "builtByDeveloper": true,
+          "bundleIdentifier": "com.tonytuanngoc.AscendedUITests.xctrunner",
+          "bundleVersion": "1",
+          "defaultApp": false,
+          "hidden": false,
+          "internalApp": false,
+          "name": "AscendedUITests-Runner",
+          "removable": true,
+          "url": "file:///private/var/containers/Bundle/Application/ECD3BF7E-EBB3-4482-82A1-8C14B4F6B027/AscendedUITests-Runner.app/",
+          "version": "1.0"
+        },
+        {
+          "appClip": false,
+          "builtByDeveloper": true,
+          "bundleIdentifier": "com.tonytuanngoc.tonyos",
+          "bundleVersion": "133",
+          "defaultApp": false,
+          "hidden": false,
+          "internalApp": false,
+          "name": "Tony OS",
+          "removable": true,
+          "url": "file:///private/var/containers/Bundle/Application/37EE2DDA-7481-4CA3-BAA4-CDE2640D1423/TonyOS.app/",
+          "version": "1.0"
+        },
+        {
+          "appClip": false,
+          "builtByDeveloper": true,
+          "bundleIdentifier": "com.tonytuanngoc.tonyos.dev",
+          "bundleVersion": "62",
+          "defaultApp": false,
+          "hidden": false,
+          "internalApp": false,
+          "name": "Tony OS Dev",
+          "removable": true,
+          "url": "file:///private/var/containers/Bundle/Application/E7F64335-FFF7-4E0C-8C52-33A4903B334F/TonyOS.app/",
+          "version": "1.0"
+        }
+      ],
+      "defaultAppsIncluded": false,
+      "deviceIdentifier": "8FA117DA-854A-5EEB-AEFC-EE54036237A9",
+      "hiddenAppsIncluded": false,
+      "internalAppsIncluded": false,
+      "removableAppsIncluded": true
+    }
+  },
+  "launch": {
+    "info": {
+      "arguments": [
+        "devicectl",
+        "device",
+        "process",
+        "launch",
+        "--device",
+        "8FA117DA-854A-5EEB-AEFC-EE54036237A9",
+        "com.tonytuanngoc.ascended",
+        "--json-output",
+        "/tmp/ascended-launch-16-final.json"
+      ],
+      "commandType": "devicectl.device.process.launch",
+      "environment": {
+        "TERM": "dumb"
+      },
+      "jsonVersion": 3,
+      "outcome": "success",
+      "version": "518.31"
+    },
+    "result": {
+      "deviceIdentifier": "8FA117DA-854A-5EEB-AEFC-EE54036237A9",
+      "launchOptions": {
+        "activatedWhenStarted": true,
+        "arguments": [],
+        "environmentVariables": {
+          "TERM": "dumb"
+        },
+        "platformSpecificOptions": {},
+        "startStopped": false,
+        "terminateExistingInstances": false,
+        "user": {
+          "active": true
+        }
+      },
+      "process": {
+        "auditToken": [
+          4294967295,
+          501,
+          501,
+          501,
+          501,
+          2470,
+          0,
+          6536
+        ],
+        "executable": "file:///private/var/containers/Bundle/Application/14AA0F36-90F8-406D-9498-CB1E2E975BFC/Ascended.app/Ascended",
+        "processIdentifier": 2470
+      }
+    }
+  },
+  "scope": "Cable installed and CoreDevice launch succeeded; physical touch/layout inspection not asserted."
+}

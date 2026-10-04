@@ -25,3 +25,6 @@ Map layer rows show selected checkmarks. Default caves/obelisks reduce clutter; 
 - Practical-base validator: five non-overlapping houses, exact shell budget, all 728 artwork references, 12 map logos and all silhouette aliases valid.
 - Companion knowledge, expansion/farm and visual-fact validators passed. Screenshot review confirms five-house floorplan and correct ASA material budget.
 - Signed Debug device build succeeded and strict code signature verification passed.
+
+- Cable installation succeeded. Fresh device inventory confirms 0.15.0 (16); CoreDevice launch succeeded at 21:34:16 local time. Receipt: 2026-10-04-practical-base-device.json. Physical touch/screenshot verification not asserted.
+- Blender file reopened successfully: five foundations, 728 packed icon references, zero genuine game meshes.
