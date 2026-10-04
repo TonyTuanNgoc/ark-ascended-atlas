@@ -1,0 +1,17 @@
+[
+  {
+    "clip": "gif-ragnarok-jungle-01",
+    "sourceVideoID": "G4VegTRuLvA",
+    "ssim": 0.971979
+  },
+  {
+    "clip": "gif-the-island-central-clever-01",
+    "sourceVideoID": "TxnfOx_ZW3c",
+    "ssim": 0.980302
+  },
+  {
+    "clip": "gif-the-center-north-ice-clever-01",
+    "sourceVideoID": "lwyGQA72nrk",
+    "ssim": 0.983571
+  }
+]

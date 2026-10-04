@@ -1,0 +1,9 @@
+{
+  "bundleID": "com.tonytuanngoc.ascended",
+  "version": "0.10.0",
+  "build": "11",
+  "signedBundleVerified": true,
+  "bundled1080pLoops": 467,
+  "legacyGIFs": 0,
+  "executableSHA256": "22b3be904f3a00b47c7777de7d12dffc9d2df2a21971c7de8ffaa610f3b35658"
+}

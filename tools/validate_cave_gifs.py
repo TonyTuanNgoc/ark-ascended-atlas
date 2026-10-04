@@ -2,6 +2,11 @@
 """Check decoded GIF frames, recipe correspondence, and all artifact-route coverage."""
 import hashlib, json
 from pathlib import Path
+import runpy
+if (Path(__file__).resolve().parents[1]/'docs/codex-reports/2026-10-04-hq-render-manifest.json').exists():
+ runpy.run_path(str(Path(__file__).with_name('validate_cave_loops.py')),run_name='__main__')
+ raise SystemExit(0)
+from pathlib import Path
 from PIL import Image
 root=Path(__file__).resolve().parents[1]
 r=root/'native/Ascended/Resources'

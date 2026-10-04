@@ -27,30 +27,3 @@ private struct ArkMapKey: EnvironmentKey { static let defaultValue: ArkMap = .ra
 extension EnvironmentValues {
     var arkMap: ArkMap { get { self[ArkMapKey.self] } set { self[ArkMapKey.self] = newValue } }
 }
-
-struct MapPicker: View {
-    let choose: (ArkMap) -> Void
-    var body: some View {
-        NavigationStack {
-            ScrollView {
-                VStack(alignment: .leading, spacing: 24) {
-                    Image("ArkLogo").resizable().scaledToFit().frame(height: 140).frame(maxWidth: .infinity)
-                    Text("Chọn thế giới của anh").font(.largeTitle.bold())
-                    Text("Mỗi map có thông tin, Dino, Boss, Artifact & Hang và tiến độ riêng. Chọn một map để bắt đầu.").foregroundStyle(.secondary)
-                    LazyVGrid(columns: [GridItem(.adaptive(minimum: 290), spacing: 22)], spacing: 22) {
-                        ForEach(ArkMap.allCases) { map in
-                            Button { choose(map) } label: {
-                                VStack(alignment: .leading, spacing: 14) {
-                                    Image(map.imageAsset).resizable().scaledToFill().frame(height: 240).clipped().clipShape(RoundedRectangle(cornerRadius: 18))
-                                    Text(map.name).font(.title.bold()).foregroundStyle(.primary)
-                                    Text(map.summary).foregroundStyle(.cyan).multilineTextAlignment(.leading)
-                                    Label("Mở hành trình", systemImage: "arrow.right").font(.headline)
-                                }.cardStyle().contentShape(Rectangle())
-                            }.buttonStyle(.plain).accessibilityIdentifier("choose-" + map.rawValue)
-                        }
-                    }
-                }.padding(28).frame(maxWidth: 1300).frame(maxWidth: .infinity)
-            }.navigationTitle("Ascended").background(Color(red: 0.025, green: 0.045, blue: 0.065))
-        }.accessibilityIdentifier("mapPicker")
-    }
-}

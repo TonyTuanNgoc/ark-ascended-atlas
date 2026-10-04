@@ -1,37 +1,72 @@
 import XCTest
 
 final class AscendedUITests: XCTestCase {
-    @MainActor func testSessionNavigatorConfirmationAndResume() throws {
+    @MainActor func testVisualArmyCountsAndUnits() throws {
+        let app = XCUIApplication(); XCUIDevice.shared.orientation = .landscapeLeft; app.launch()
+        app.buttons["choose-ragnarok"].tap(); app.buttons["section-Boss"].tap()
+        let army = app.buttons["army-nunatak"]
+        for _ in 0..<8 { if army.isHittable { break }; app.swipeUp() }; army.tap()
+        app.buttons["armyOptions"].tap(); app.buttons["Therizino + cake · tái dùng dòng breed"].tap()
+        let unit = app.descendants(matching: .any)["unit-per-dino"].firstMatch
+        for _ in 0..<8 { if unit.isHittable { break }; app.swipeUp() }
+        XCTAssertTrue(unit.isHittable)
+        XCTAssertEqual(unit.label, "Số lượng cho mỗi Dino")
+        let shot = XCTAttachment(screenshot: XCUIScreen.main.screenshot())
+        shot.name = "Army-counts-per-dino"; shot.lifetime = .keepAlways; add(shot)
+    }
+
+    @MainActor func testPicturedKitQuantitiesPersist() throws {
+        let app = XCUIApplication()
+        XCUIDevice.shared.orientation = .landscapeLeft
+        func openKit() {
+            app.buttons["choose-ragnarok"].tap()
+            app.buttons["section-Artifact & Hang"].tap()
+            app.buttons["route-jungle"].tap()
+            for _ in 0..<12 { if app.buttons["kit-quantity-simple-shotgun-ammo"].isHittable { break }; app.swipeUp() }
+        }
+        app.launch(); openKit()
+        let ammo = app.buttons["kit-quantity-simple-shotgun-ammo"]
+        XCTAssertTrue(ammo.isHittable)
+        ammo.tap()
+        let stepper = app.steppers["quantity-stepper"]
+        XCTAssertTrue(stepper.waitForExistence(timeout: 5))
+        stepper.buttons.element(boundBy: 1).tap()
+        let expected = "×" + (app.textFields["quantity-input"].value as? String ?? "")
+        app.buttons["save-quantity"].tap()
+        XCTAssertEqual(ammo.value as? String, expected)
+        let shot = XCTAttachment(screenshot: XCUIScreen.main.screenshot())
+        shot.name = "Pictured-kit-counts"; shot.lifetime = .keepAlways; add(shot)
+        app.terminate(); app.launch(); openKit()
+        XCTAssertEqual(ammo.value as? String, expected)
+    }
+
+    @MainActor func testSidebarMapsAndHDLoop() throws {
         let app = XCUIApplication()
         XCUIDevice.shared.orientation = .landscapeLeft
         app.launch()
+        XCTAssertTrue(app.buttons["section-Bản đồ"].waitForExistence(timeout: 8))
+        XCTAssertFalse(app.buttons["section-Hôm nay"].exists)
+        XCTAssertTrue(app.buttons["choose-the-center"].exists)
         app.buttons["choose-ragnarok"].tap()
-        XCTAssertTrue(app.staticTexts["session-title"].waitForExistence(timeout: 8))
-        app.buttons["session-navigate"].tap()
-        XCTAssertTrue(app.buttons["navigator-reset"].waitForExistence(timeout: 8))
-        app.buttons["navigator-reset"].tap()
-        XCTAssertEqual(app.staticTexts["navigator-location"].label, "Chưa xác nhận vị trí")
-        app.buttons["diagram-waypoint-2"].tap()
-        XCTAssertEqual(app.staticTexts["navigator-location"].label, "Chưa xác nhận vị trí")
-        XCTAssertTrue(app.buttons["navigator-confirm"].label.contains("Nhánh gỗ"))
-        app.buttons["navigator-confirm"].tap()
-        XCTAssertEqual(app.staticTexts["navigator-location"].label, "Anh đang ở: Nhánh gỗ qua vực")
-        XCTAssertTrue(app.buttons["navigator-confirm"].label.contains("Hành lang cam"))
-        app.buttons["diagram-waypoint-8"].tap()
-        app.buttons["navigator-confirm"].tap()
-        app.switches["navigator-return"].tap()
-        app.buttons["navigator-confirm"].tap()
-        XCTAssertTrue(app.buttons["navigator-confirm"].label.contains("Sau thác"))
-        XCTAssertTrue(app.staticTexts["navigator-next"].label.contains("GIF"))
-        let attachment = XCTAttachment(screenshot: XCUIScreen.main.screenshot())
-        attachment.name = "Jungle-waypoint-pilot"; attachment.lifetime = .keepAlways; add(attachment)
-        app.terminate(); app.launch()
-        app.buttons["choose-ragnarok"].tap(); app.buttons["session-navigate"].tap()
-        XCTAssertEqual(app.staticTexts["navigator-location"].label, "Anh đang ở: Artifact Hunter")
-        app.buttons["navigator-reset"].tap()
-        app.buttons["changeMap"].tap(); app.buttons["choose-the-island"].tap()
-        XCTAssertTrue(app.staticTexts["session-title"].waitForExistence(timeout: 8))
-        XCTAssertFalse(app.buttons["session-navigate"].exists)
+        XCTAssertTrue(app.buttons["resetMap"].waitForExistence(timeout: 5))
+        app.buttons["choose-the-island"].tap()
+        XCTAssertEqual(app.buttons["choose-the-island"].value as? String, "Đang chọn")
+        app.buttons["choose-ragnarok"].tap()
+        app.buttons["section-Artifact & Hang"].tap(); app.buttons["route-jungle"].tap()
+        let gif = app.descendants(matching: .any)["cave-gif-jungle-01"].firstMatch
+        for _ in 0..<7 { if gif.isHittable { break }; app.swipeUp() }
+        XCTAssertTrue(gif.isHittable)
+        Thread.sleep(forTimeInterval: 2)
+        let before = XCTAttachment(screenshot: XCUIScreen.main.screenshot())
+        before.name = "HD-loop-before"; before.lifetime = .keepAlways; add(before)
+        Thread.sleep(forTimeInterval: 3)
+        let after = XCTAttachment(screenshot: XCUIScreen.main.screenshot())
+        after.name = "HD-loop-after"; after.lifetime = .keepAlways; add(after)
+        app.buttons["gif-next-jungle"].tap()
+        XCTAssertEqual(app.staticTexts["gif-position-jungle"].label, "2 / 16")
+        app.buttons["choose-the-center"].tap()
+        XCTAssertTrue(app.buttons["resetMap"].waitForExistence(timeout: 5))
+        XCTAssertFalse(gif.exists)
     }
 
     @MainActor func testRagnarokMapNavigation() throws {
@@ -88,7 +123,7 @@ final class AscendedUITests: XCTestCase {
         XCTAssertTrue(app.buttons["creature-cerberax"].waitForExistence(timeout: 5))
         app.buttons["creature-cerberax"].tap()
         XCTAssertTrue(app.staticTexts["Cập nhật mới"].waitForExistence(timeout: 5))
-        XCTAssertTrue(app.staticTexts["Thử thách đặc biệt"].exists)
+        XCTAssertTrue(app.buttons["Chi tiết"].firstMatch.exists)
         let detail = XCTAttachment(screenshot: XCUIScreen.main.screenshot())
         detail.name = "Cerberax-profile"; detail.lifetime = .keepAlways; add(detail)
         app.buttons["section-Boss"].tap()
@@ -113,7 +148,7 @@ final class AscendedUITests: XCTestCase {
         for _ in 0..<3 { if hunter.isHittable { break }; app.swipeUp() }
         XCTAssertTrue(hunter.isHittable); hunter.tap()
         XCTAssertTrue(app.buttons["show-artifact-hunter"].waitForExistence(timeout: 5), app.debugDescription)
-        XCTAssertTrue(app.staticTexts["LAT 21.58 · LON 27.26"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.otherElements["gps-21.58-27.26"].waitForExistence(timeout: 5))
         app.buttons["show-artifact-hunter"].tap()
         let map = app.scrollViews["ragnarokMapViewport"]
         XCTAssertTrue(map.waitForExistence(timeout: 5))
@@ -169,13 +204,13 @@ final class AscendedUITests: XCTestCase {
         let artifact = app.buttons["boss-artifact-hunter"]
         for _ in 0..<4 { if artifact.isHittable { break }; app.swipeUp() }
         XCTAssertTrue(artifact.isHittable); artifact.tap()
-        XCTAssertTrue(app.staticTexts["LAT 89.11 · LON 57.05"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.otherElements["gps-89.11-57.05"].waitForExistence(timeout: 5))
         let collected = app.switches["collected-hunter"]
         for _ in 0..<3 { if collected.isHittable { break }; app.swipeUp() }
         XCTAssertTrue(collected.isHittable)
         if collected.value as? String != "1" { collected.tap() }
         XCTAssertEqual(collected.value as? String, "1")
-        app.buttons["changeMap"].tap()
+
         app.buttons["choose-the-center"].tap(); app.buttons["section-Thông tin map"].tap()
         XCTAssertEqual(app.staticTexts["mapInformationTitle"].label, "The Center")
         app.buttons["section-Dino"].tap()
@@ -191,7 +226,7 @@ final class AscendedUITests: XCTestCase {
         let centerHunter = app.buttons["boss-artifact-hunter"]
         for _ in 0..<5 { if centerHunter.isHittable { break }; app.swipeUp() }
         XCTAssertTrue(centerHunter.isHittable); centerHunter.tap()
-        XCTAssertTrue(app.staticTexts["LAT 19.99 · LON 49.81"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.otherElements["gps-19.99-49.81"].waitForExistence(timeout: 5))
         for _ in 0..<3 { if collected.isHittable { break }; app.swipeUp() }
         XCTAssertTrue(collected.isHittable)
         // Leave Center's Hunter uncollected, independent of Island's collected Hunter.
@@ -203,7 +238,7 @@ final class AscendedUITests: XCTestCase {
         XCTAssertEqual(viewport.label, "Bản đồ The Center")
         let centerMap = XCTAttachment(screenshot: XCUIScreen.main.screenshot())
         centerMap.name = "Center-focused-map"; centerMap.lifetime = .keepAlways; add(centerMap)
-        app.buttons["changeMap"].tap()
+
         app.buttons["choose-the-island"].tap(); app.buttons["section-Thông tin map"].tap()
         XCTAssertEqual(app.staticTexts["mapInformationTitle"].label, "The Island")
         // Verify map progress after a real process restart.
@@ -252,7 +287,7 @@ final class AscendedUITests: XCTestCase {
         let baseShot = XCTAttachment(screenshot: XCUIScreen.main.screenshot())
         baseShot.name = "Ragnarok-base-shortlist"; baseShot.lifetime = .keepAlways; add(baseShot)
         app.buttons["base-canyon"].tap()
-        XCTAssertTrue(app.staticTexts["LAT 39.80 · LON 44.80"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.otherElements["gps-39.80-44.80"].waitForExistence(timeout: 5))
         XCTAssertTrue(app.links["baseVideo"].exists || app.buttons["baseVideo"].exists)
         app.buttons["show-base-canyon"].tap()
         XCTAssertTrue(app.scrollViews["ragnarokMapViewport"].waitForExistence(timeout: 5))
@@ -262,7 +297,7 @@ final class AscendedUITests: XCTestCase {
         mapShot.name = "Base-focused-map"; mapShot.lifetime = .keepAlways; add(mapShot)
         app.buttons["mapBaseProfile"].tap()
         XCTAssertTrue(app.buttons["show-base-canyon"].waitForExistence(timeout: 5))
-        app.buttons["changeMap"].tap(); app.buttons["choose-the-island"].tap(); app.buttons["section-Thông tin map"].tap()
+        app.buttons["choose-the-island"].tap(); app.buttons["section-Thông tin map"].tap()
         XCTAssertFalse(app.buttons["section-Base Location"].exists)
         app.buttons["section-Boss"].tap()
         XCTAssertTrue(app.staticTexts["boss-step-monkey"].waitForExistence(timeout: 5))
@@ -272,7 +307,7 @@ final class AscendedUITests: XCTestCase {
         XCTAssertTrue(mega.isHittable); mega.tap()
         XCTAssertTrue(app.staticTexts["armyOptionTitle"].waitForExistence(timeout: 5))
         XCTAssertTrue(app.staticTexts["armyOptionTitle"].label.contains("Megatherium"))
-        app.buttons["changeMap"].tap(); app.buttons["choose-the-center"].tap(); app.buttons["section-Thông tin map"].tap()
+        app.buttons["choose-the-center"].tap(); app.buttons["section-Thông tin map"].tap()
         XCTAssertFalse(app.buttons["section-Base Location"].exists)
         app.buttons["section-Boss"].tap()
         XCTAssertTrue(app.staticTexts["boss-step-joint"].waitForExistence(timeout: 5))
@@ -315,7 +350,7 @@ final class AscendedUITests: XCTestCase {
         app.buttons["Close"].tap()
         XCTAssertTrue(chapter.waitForExistence(timeout: 5))
         XCTAssertTrue(chapter.isHittable)
-        app.buttons["changeMap"].tap()
+
         app.buttons["choose-the-island"].tap(); app.buttons["section-Thông tin map"].tap()
         app.buttons["section-Artifact & Hang"].tap()
         app.buttons["route-central"].tap()
@@ -324,7 +359,7 @@ final class AscendedUITests: XCTestCase {
         XCTAssertTrue(islandVideo.isHittable); islandVideo.tap()
         XCTAssertTrue(app.buttons["cave-video-central-196"].waitForExistence(timeout: 5))
         XCTAssertFalse(app.buttons["cave-video-jungle-134"].exists)
-        app.buttons["changeMap"].tap()
+
         app.buttons["choose-the-center"].tap(); app.buttons["section-Thông tin map"].tap()
         app.buttons["section-Artifact & Hang"].tap()
         app.buttons["route-north-ice"].tap()
@@ -384,14 +419,14 @@ final class AscendedUITests: XCTestCase {
         XCTAssertNotEqual(selectedFrame, selected.screenshot().pngRepresentation, "Selected card must autoplay its own GIF")
         let playing = XCTAttachment(screenshot: XCUIScreen.main.screenshot())
         playing.name = "Auto-GIF-card-library"; playing.lifetime = .keepAlways; add(playing)
-        app.buttons["changeMap"].tap(); app.buttons["choose-ragnarok"].tap(); app.buttons["section-Thông tin map"].tap()
+        app.buttons["choose-ragnarok"].tap(); app.buttons["section-Thông tin map"].tap()
         app.buttons["section-Artifact & Hang"].tap(); app.buttons["route-jungle"].tap()
         let rag = app.descendants(matching: .any).matching(NSPredicate(format: "identifier BEGINSWITH %@", "cave-gif-jungle-")).firstMatch
         reveal(rag)
         XCTAssertTrue(rag.isHittable)
         XCTAssertEqual(rag.value as? String, "Đang phát")
         XCTAssertFalse(clip.exists)
-        app.buttons["changeMap"].tap(); app.buttons["choose-the-center"].tap(); app.buttons["section-Thông tin map"].tap()
+        app.buttons["choose-the-center"].tap(); app.buttons["section-Thông tin map"].tap()
         app.buttons["section-Artifact & Hang"].tap(); app.buttons["route-north-ice"].tap()
         let center = app.descendants(matching: .any).matching(NSPredicate(format: "identifier BEGINSWITH %@", "cave-gif-north-ice-")).firstMatch
         reveal(center)

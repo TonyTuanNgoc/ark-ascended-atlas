@@ -1,11 +1,10 @@
 import SwiftUI
 
 enum Destination: String, CaseIterable, Identifiable {
-    case session = "Hôm nay", information = "Thông tin map", bases = "Base Location", map = "Bản đồ", dinos = "Dino", bosses = "Boss", exploration = "Artifact & Hang"
+    case information = "Thông tin map", bases = "Base Location", map = "Bản đồ", dinos = "Dino", bosses = "Boss", exploration = "Artifact & Hang"
     var id: String { rawValue }
     var symbol: String {
         switch self {
-        case .session: "scope"
         case .information: "mountain.2.fill"
         case .bases: "house.fill"
         case .map: "map.fill"
@@ -18,35 +17,40 @@ enum Destination: String, CaseIterable, Identifiable {
 
 struct MapSessionShell: View {
     let map: ArkMap
-    let changeMap: () -> Void
-    @State private var selection: Destination? = .session
+    let chooseMap: (ArkMap) -> Void
+    @State private var selection: Destination? = .map
     @State private var visibility: NavigationSplitViewVisibility = .all
     var body: some View {
         NavigationSplitView(columnVisibility: $visibility) {
             List(selection: $selection) {
-                VStack(alignment: .leading, spacing: 8) {
-                    Image("ArkLogo").resizable().scaledToFit().frame(height: 100)
-                    Text("ASCENDED").font(.title2.weight(.bold)).tracking(3)
-                    Text(map.name).font(.subheadline).foregroundStyle(.secondary)
+                Image("ArkLogo").resizable().scaledToFit().frame(height: 85)
+                    .frame(maxWidth: .infinity).padding(.vertical, 8).listRowBackground(Color.clear)
+                Section("Map") {
+                    ForEach(ArkMap.allCases) { option in
+                        Button { selection = .map; chooseMap(option) } label: {
+                            HStack {
+                                Text(option.name)
+                                Spacer()
+                                if map == option { Image(systemName: "checkmark").foregroundStyle(.cyan) }
+                            }.contentShape(Rectangle())
+                        }.foregroundStyle(map == option ? .cyan : .primary)
+                            .accessibilityIdentifier("choose-" + option.rawValue)
+                            .accessibilityValue(map == option ? "Đang chọn" : "Chưa chọn")
+                    }
                 }
-                .padding(.vertical, 16).listRowBackground(Color.clear)
-                Button(action: changeMap) { Label("Chọn map khác", systemImage: "square.grid.2x2.fill") }.accessibilityIdentifier("changeMap")
-                Section(map.name.uppercased() + " · SINGLE PLAYER") {
+                Section {
                     ForEach(Destination.allCases.filter { $0 != .bases || map == .ragnarok }) { item in
                         NavigationLink(value: item) {
-                            Label(item.rawValue, systemImage: item.symbol)
-                                .padding(.vertical, 8)
+                            Label(item.rawValue, systemImage: item.symbol).padding(.vertical, 4)
                         }.accessibilityIdentifier("section-" + item.rawValue)
                     }
                 }
-            }
-            .navigationTitle("Ascended")
-            .navigationSplitViewColumnWidth(min: 230, ideal: 260, max: 320)
+            }.navigationTitle("Ascended")
+                .navigationSplitViewColumnWidth(min: 210, ideal: 230, max: 270)
         } detail: {
             NavigationStack {
                 Group {
-                    switch selection ?? .information {
-                    case .session: PlaySessionScreen(openBosses: { selection = .bosses })
+                    switch selection ?? .map {
                     case .information: MapInformationScreen(openMap: { selection = .map }, openDinos: { selection = .dinos }, openBosses: { selection = .bosses })
                     case .bases: BaseLocationsScreen()
                     case .map: MapScreen()
@@ -54,23 +58,19 @@ struct MapSessionShell: View {
                     case .bosses: BossCampaignScreen()
                     case .exploration: ExplorationLibrary()
                     }
-                }
-                .navigationDestination(for: GuideDestination.self) { $0.screen }
-                .navigationTitle((selection ?? .information).rawValue)
-                .navigationBarTitleDisplayMode(.inline)
-            }
-        }
+                }.navigationDestination(for: GuideDestination.self) { $0.screen }
+                    .navigationTitle(selection == .map ? map.name : (selection ?? .map).rawValue)
+                    .navigationBarTitleDisplayMode(.inline)
+            }.id(map)
+        }.navigationSplitViewStyle(.balanced)
     }
 }
 
 struct AscendedShell: View {
-    @State private var selectedMap: ArkMap?
+    @AppStorage("ascended.selected-map.v1") private var selectedMapID = ArkMap.ragnarok.rawValue
+    private var selectedMap: ArkMap { ArkMap(rawValue: selectedMapID) ?? .ragnarok }
     var body: some View {
-        if let map = selectedMap {
-            MapSessionShell(map: map, changeMap: { selectedMap = nil })
-                .environment(\.arkMap, map).id(map)
-        } else {
-            MapPicker { selectedMap = $0 }
-        }
+        MapSessionShell(map: selectedMap, chooseMap: { selectedMapID = $0.rawValue })
+            .environment(\.arkMap, selectedMap)
     }
 }

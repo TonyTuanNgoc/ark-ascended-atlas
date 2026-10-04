@@ -1,10 +1,10 @@
-# Ascended — native iPad development 0.5.0 (5)
+# Ascended — native iPad development 0.10.0 (11)
 Single Player · Ragnarok / The Island / The Center. Independent app `com.tonytuanngoc.ascended`, installed by cable without TestFlight.
 
 ## Included
 - Ordered boss campaigns for all three maps; 27 army options across every named boss, with composition, level/breed/imprint/XP explanation, planning HP/melee/saddle targets, source confidence and patch caveats. Existing boss profiles remain accessible.
 - Ragnarok-only Base Location: five SP-balanced choices, offline region terrain previews, timestamped YouTube links and actual per-video popularity snapshots. Per-location forum signals are explicitly qualified; ranking is an editorial balance assessment, not a public vote leaderboard. Five base pins link map focus back to profiles.
-- Outer three-map picker; every sidebar section is scoped to the selected map. Returning to the picker clears the previous map’s detail navigation.
+- Persistent three-map selection in the left sidebar. Selecting a map opens its full map and clears previous detail navigation; Hôm nay is removed.
 - New searchable **Thông tin map** guide: geography, resources, creatures, caves, bosses, progression, base planning, Single Player settings and dated sources.
 - Island: 124 creature/variant entries (113 structured profiles), ten artifacts, eleven exploration routes including a labelled Tek Cave approach region; Broodmother, Megapithecus, Dragon and Overseer.
 - Center: 132 creature/variant entries (123 structured profiles), eleven artifacts across nine routes; Broodmother and Megapithecus share the Center arena.
@@ -19,7 +19,7 @@ Single Player · Ragnarok / The Island / The Center. Independent app `com.tonytu
 - Nunatak Gamma/Beta/Alpha HP, entry levels, artifacts/apex tributes, Element, Tekgrams, arena rules and preparation; dungeon boss route/mechanics/gear notes with source-dependent values identified.
 - 23 additional offline images: ten artifact icons, three Nunatak renders, four mini-boss icons and six attributed Ragnarok illustrations. Cave illustrations are not exact entrance photographs.
 - Persistent artifact collection and preparation checklists.
-- Core content and local GIF walkthroughs work offline; full-video links require network. Notes/source navigation is removed; existing stored values are preserved.
+- Core content and local 1080p looping walkthroughs work offline; full-video links require network. Notes/source navigation is removed; existing stored values are preserved.
 
 ## Build and install
 Requires Xcode, xcodegen, a paired/unlocked iPad with Developer Mode and authorized signing team HP5W6N9V3N.
@@ -68,3 +68,10 @@ The selected cave GIF loops automatically. Swipe the large image left/right, use
 
 ### 0.9.0 (10) session dashboard and waypoint pilot
 Selecting a map opens Hôm nay: choose a persistent map-scoped cave target, open its actual entrance map, use the same existing gear checklist, and jump to base layouts or boss campaigns. Ragnarok Jungle Hunter has a nine-landmark schematic linked to the existing reviewed GIFs. Viewing clips never advances confirmed location; explicit confirmation persists independently. Fall recovery is optional and excluded from the main sequence. Exit mode reverses landmark order, with outbound footage explicitly identified. Landscape pairs the schematic and GIF; a fixed confirmation button stays accessible. This is not surveyed cave geometry, live game telemetry, or a walkable 3D scene. The clarified walkable 3D requirement remains pending actual geometry acquisition; see the 3D design report.
+
+### 0.10.0 (11) visual information and source-quality loops
+Map selection stays on the left, with a map-first landing and no Hôm nay. Maps cover the viewport with pan/zoom, floating controls and softer edges. GPS uses latitude/longitude axis icons. Cave images sit beside visual hazard/creature information on wide layouts; redundant artifact headers are removed.
+
+162 genuine item images support preparation, foods, drops, tools, tribute and rewards; explicit numbers appear with their images. Boss team alternatives are separate. Unspecified preparation quantities are user editable and persist separately for each map and route; they are not invented minimums. Directional captions remain beneath clips, while secondary prose uses a detail button. Unknown imagery uses labelled generic symbols.
+
+All 467 reviewed clips are replaced by silent 1920×1080 HEVC loops at source cadence up to 60 fps, with 1080p posters and AVPlayerLooper autoplay. No upscaling beyond the source; no lossless or 4K claim. Only the selected active clip has a player, neighboring pages retain posters and small library cards use downsampled thumbnails. Source/render hashes, route correspondence and decoded-media verification remain in internal reports. Cable build 11, no TestFlight or hosting release. See `../../docs/codex-reports/2026-10-04-ascended-visual-hq.md` for final validation/deployment evidence.

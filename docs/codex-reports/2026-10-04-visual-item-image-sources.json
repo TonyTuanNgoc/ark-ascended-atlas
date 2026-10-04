@@ -1,0 +1,1969 @@
+[
+  {
+    "id": "absorbent-substrate",
+    "name": "Absorbent Substrate",
+    "aliases": [
+      "Absorbent Substrate"
+    ],
+    "asset": "Item-absorbent-substrate",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Absorbent_Substrate.png?61c7cf"
+  },
+  {
+    "id": "acro-adrenal-gland",
+    "name": "Acro Adrenal Gland",
+    "aliases": [
+      "Acro Adrenal Gland"
+    ],
+    "asset": "Item-acro-adrenal-gland",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Acro_Adrenal_Gland.png?4fe962"
+  },
+  {
+    "id": "aggeravic-mushroom",
+    "name": "Aggeravic Mushroom",
+    "aliases": [
+      "Aggeravic Mushroom"
+    ],
+    "asset": "Item-aggeravic-mushroom",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Aggeravic_Mushroom.png?2e4d7a"
+  },
+  {
+    "id": "allosaurus-brain",
+    "name": "Allosaurus Brain",
+    "aliases": [
+      "Allosaurus Brain"
+    ],
+    "asset": "Item-allosaurus-brain",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Allosaurus_Brain.png?5d7817"
+  },
+  {
+    "id": "alpha-broodmother-trophy",
+    "name": "Alpha Broodmother Trophy",
+    "aliases": [
+      "Alpha Broodmother Trophy"
+    ],
+    "asset": "Item-alpha-broodmother-trophy",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Alpha_Broodmother_Trophy.png?d89493"
+  },
+  {
+    "id": "alpha-carnotaurus-arm",
+    "name": "Alpha Carnotaurus Arm",
+    "aliases": [
+      "Alpha Carnotaurus Arm"
+    ],
+    "asset": "Item-alpha-carnotaurus-arm",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Alpha_Carnotaurus_Arm.png?f3ea93"
+  },
+  {
+    "id": "alpha-dragon-trophy",
+    "name": "Alpha Dragon Trophy",
+    "aliases": [
+      "Alpha Dragon Trophy"
+    ],
+    "asset": "Item-alpha-dragon-trophy",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Alpha_Dragon_Trophy.png?943f03"
+  },
+  {
+    "id": "alpha-leedsichthys-blubber",
+    "name": "Alpha Leedsichthys Blubber",
+    "aliases": [
+      "Alpha Leedsichthys Blubber"
+    ],
+    "asset": "Item-alpha-leedsichthys-blubber",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Alpha_Leedsichthys_Blubber.png?f2561e"
+  },
+  {
+    "id": "alpha-megalodon-fin",
+    "name": "Alpha Megalodon Fin",
+    "aliases": [
+      "Alpha Megalodon Fin"
+    ],
+    "asset": "Item-alpha-megalodon-fin",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Alpha_Megalodon_Fin.png?100a88"
+  },
+  {
+    "id": "alpha-megapithecus-trophy",
+    "name": "Alpha Megapithecus Trophy",
+    "aliases": [
+      "Alpha Megapithecus Trophy"
+    ],
+    "asset": "Item-alpha-megapithecus-trophy",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Alpha_Megapithecus_Trophy.png?351968"
+  },
+  {
+    "id": "alpha-mosasaur-tooth",
+    "name": "Alpha Mosasaur Tooth",
+    "aliases": [
+      "Alpha Mosasaur Tooth"
+    ],
+    "asset": "Item-alpha-mosasaur-tooth",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Alpha_Mosasaur_Tooth.png?650b17"
+  },
+  {
+    "id": "alpha-raptor-claw",
+    "name": "Alpha Raptor Claw",
+    "aliases": [
+      "Alpha Raptor Claw"
+    ],
+    "asset": "Item-alpha-raptor-claw",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Alpha_Raptor_Claw.png?3cb6b2"
+  },
+  {
+    "id": "alpha-tusoteuthis-eye",
+    "name": "Alpha Tusoteuthis Eye",
+    "aliases": [
+      "Alpha Tusoteuthis Eye"
+    ],
+    "asset": "Item-alpha-tusoteuthis-eye",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Alpha_Tusoteuthis_Eye.png?f9f7c6"
+  },
+  {
+    "id": "alpha-tyrannosaur-tooth",
+    "name": "Alpha Tyrannosaur Tooth",
+    "aliases": [
+      "Alpha Tyrannosaur Tooth"
+    ],
+    "asset": "Item-alpha-tyrannosaur-tooth",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Alpha_Tyrannosaur_Tooth.png?76ebe9"
+  },
+  {
+    "id": "amarberry",
+    "name": "Amarberry",
+    "aliases": [
+      "Amarberry"
+    ],
+    "asset": "Item-amarberry",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Amarberry.png?ad6dea"
+  },
+  {
+    "id": "ammonite-bile",
+    "name": "Ammonite Bile",
+    "aliases": [
+      "Ammonite Bile"
+    ],
+    "asset": "Item-ammonite-bile",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Ammonite_Bile.png?63f211"
+  },
+  {
+    "id": "anglergel",
+    "name": "AnglerGel",
+    "aliases": [
+      "AnglerGel"
+    ],
+    "asset": "Item-anglergel",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/AnglerGel.png?b3f6eb"
+  },
+  {
+    "id": "argentavis-talon",
+    "name": "Argentavis Talon",
+    "aliases": [
+      "Argentavis Talon"
+    ],
+    "asset": "Item-argentavis-talon",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Argentavis_Talon.png?ce4a98"
+  },
+  {
+    "id": "auric-mushroom",
+    "name": "Auric Mushroom",
+    "aliases": [
+      "Auric Mushroom"
+    ],
+    "asset": "Item-auric-mushroom",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Auric_Mushroom.png?bec8cd"
+  },
+  {
+    "id": "azulberry",
+    "name": "Azulberry",
+    "aliases": [
+      "Azulberry"
+    ],
+    "asset": "Item-azulberry",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Azulberry.png?4bfcd0"
+  },
+  {
+    "id": "base-seeds",
+    "name": "Base Seeds",
+    "aliases": [
+      "Base Seeds"
+    ],
+    "asset": "Item-base-seeds",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Missing.png?25f246"
+  },
+  {
+    "id": "base-veggie",
+    "name": "Base Veggie",
+    "aliases": [
+      "Base Veggie"
+    ],
+    "asset": null,
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": null
+  },
+  {
+    "id": "basic-kibble",
+    "name": "Basic Kibble",
+    "aliases": [
+      "Basic Kibble"
+    ],
+    "asset": "Item-basic-kibble",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Basic_Kibble.png?cfb67d"
+  },
+  {
+    "id": "basilosaurus-blubber",
+    "name": "Basilosaurus Blubber",
+    "aliases": [
+      "Basilosaurus Blubber"
+    ],
+    "asset": "Item-basilosaurus-blubber",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Basilosaurus_Blubber.png?c0f2bc"
+  },
+  {
+    "id": "bear-trap",
+    "name": "Bear Trap",
+    "aliases": [
+      "Bear Trap"
+    ],
+    "asset": "Item-bear-trap",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Bear_Trap.png?aa1947"
+  },
+  {
+    "id": "beaver-dam",
+    "name": "Beaver Dam",
+    "aliases": [
+      "Beaver Dam"
+    ],
+    "asset": null,
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": null
+  },
+  {
+    "id": "bee-hive",
+    "name": "Bee Hive",
+    "aliases": [
+      "Bee Hive"
+    ],
+    "asset": "Item-bee-hive",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Bee_Hive.png?f19f04"
+  },
+  {
+    "id": "beer-jar",
+    "name": "Beer Jar",
+    "aliases": [
+      "Beer Jar"
+    ],
+    "asset": "Item-beer-jar",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Beer_Jar.png?7cb4c4"
+  },
+  {
+    "id": "beta-broodmother-trophy",
+    "name": "Beta Broodmother Trophy",
+    "aliases": [
+      "Beta Broodmother Trophy"
+    ],
+    "asset": "Item-beta-broodmother-trophy",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Beta_Broodmother_Trophy.png?a11229"
+  },
+  {
+    "id": "beta-dragon-trophy",
+    "name": "Beta Dragon Trophy",
+    "aliases": [
+      "Beta Dragon Trophy"
+    ],
+    "asset": "Item-beta-dragon-trophy",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Beta_Dragon_Trophy.png?4df960"
+  },
+  {
+    "id": "beta-megapithecus-trophy",
+    "name": "Beta Megapithecus Trophy",
+    "aliases": [
+      "Beta Megapithecus Trophy"
+    ],
+    "asset": "Item-beta-megapithecus-trophy",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Beta_Megapithecus_Trophy.png?f2047c"
+  },
+  {
+    "id": "bio-toxin",
+    "name": "Bio Toxin",
+    "aliases": [
+      "Bio Toxin"
+    ],
+    "asset": "Item-bio-toxin",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Bio_Toxin.png?bc6a71"
+  },
+  {
+    "id": "black-pearl",
+    "name": "Black Pearl",
+    "aliases": [
+      "Black Pearl"
+    ],
+    "asset": "Item-black-pearl",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Black_Pearl.png?77a507"
+  },
+  {
+    "id": "black-pearls",
+    "name": "Black Pearls",
+    "aliases": [
+      "Black Pearls"
+    ],
+    "asset": "Item-black-pearls",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Black_Pearl.png?77a507"
+  },
+  {
+    "id": "bola",
+    "name": "Bola",
+    "aliases": [
+      "Bola",
+      "bola"
+    ],
+    "asset": "Item-bola",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Bola.png?da48a4"
+  },
+  {
+    "id": "broth-of-enlightenment",
+    "name": "Broth of Enlightenment",
+    "aliases": [
+      "Broth of Enlightenment"
+    ],
+    "asset": "Item-broth-of-enlightenment",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Broth_of_Enlightenment.png?d9248f"
+  },
+  {
+    "id": "bug-repellant",
+    "name": "Bug Repellant",
+    "aliases": [
+      "Bug Repellant"
+    ],
+    "asset": "Item-bug-repellant",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Bug_Repellant.png?f30710"
+  },
+  {
+    "id": "cactus-sap",
+    "name": "Cactus Sap",
+    "aliases": [
+      "Cactus Sap"
+    ],
+    "asset": "Item-cactus-sap",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Cactus_Sap.png?9df65f"
+  },
+  {
+    "id": "cactus-with-few-berries",
+    "name": "Cactus with few berries",
+    "aliases": [
+      "Cactus with few berries"
+    ],
+    "asset": null,
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": null
+  },
+  {
+    "id": "canteen",
+    "name": "Canteen",
+    "aliases": [
+      "Canteen",
+      "nước uống",
+      "canteen"
+    ],
+    "asset": "Item-canteen",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Canteen.png?a52580"
+  },
+  {
+    "id": "captains-hat",
+    "name": "Captains Hat",
+    "aliases": [
+      "Captains Hat"
+    ],
+    "asset": null,
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": null
+  },
+  {
+    "id": "carrots",
+    "name": "Carrots",
+    "aliases": [
+      "Carrots"
+    ],
+    "asset": "Item-carrots",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Rockarrot.png?bdca10"
+  },
+  {
+    "id": "cementing-paste",
+    "name": "Cementing Paste",
+    "aliases": [
+      "Cementing Paste"
+    ],
+    "asset": "Item-cementing-paste",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Cementing_Paste.png?95f434"
+  },
+  {
+    "id": "cerato-venom-spine",
+    "name": "Cerato Venom Spine",
+    "aliases": [
+      "Cerato Venom Spine"
+    ],
+    "asset": "Item-cerato-venom-spine",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Cerato_Venom_Spine.png?d739cc"
+  },
+  {
+    "id": "chain-bola",
+    "name": "Chain Bola",
+    "aliases": [
+      "Chain Bola"
+    ],
+    "asset": "Item-chain-bola",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Chain_Bola.png?317d80"
+  },
+  {
+    "id": "chitin",
+    "name": "Chitin",
+    "aliases": [
+      "Chitin"
+    ],
+    "asset": "Item-chitin",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Chitin.png?9a323f"
+  },
+  {
+    "id": "cianberry",
+    "name": "Cianberry",
+    "aliases": [
+      "Cianberry"
+    ],
+    "asset": "Item-cianberry",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Cianberry.png?6a8a00"
+  },
+  {
+    "id": "clay",
+    "name": "Clay",
+    "aliases": [
+      "Clay"
+    ],
+    "asset": "Item-clay",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Clay.png?1e01ac"
+  },
+  {
+    "id": "cooked-lamb-chop",
+    "name": "Cooked Lamb Chop",
+    "aliases": [
+      "Cooked Lamb Chop"
+    ],
+    "asset": "Item-cooked-lamb-chop",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Cooked_Lamb_Chop.png?8e0740"
+  },
+  {
+    "id": "cooked-meat",
+    "name": "Cooked Meat",
+    "aliases": [
+      "Cooked Meat",
+      "food",
+      "thức ăn"
+    ],
+    "asset": "Item-cooked-meat",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Cooked_Meat.png?2608fe"
+  },
+  {
+    "id": "cooked-prime-meat",
+    "name": "Cooked Prime Meat",
+    "aliases": [
+      "Cooked Prime Meat"
+    ],
+    "asset": "Item-cooked-prime-meat",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Cooked_Prime_Meat.png?231721"
+  },
+  {
+    "id": "corn",
+    "name": "Corn",
+    "aliases": [
+      "Corn"
+    ],
+    "asset": "Item-corn",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Longrass.png?2d022e"
+  },
+  {
+    "id": "crossbow",
+    "name": "Crossbow",
+    "aliases": [
+      "Crossbow",
+      "nỏ"
+    ],
+    "asset": "Item-crossbow",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Crossbow.png?e88cce"
+  },
+  {
+    "id": "cryopod",
+    "name": "Cryopod",
+    "aliases": [
+      "Cryopod",
+      "cryopod"
+    ],
+    "asset": "Item-cryopod",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Cryopod.png?59ca8e"
+  },
+  {
+    "id": "crystal",
+    "name": "Crystal",
+    "aliases": [
+      "Crystal",
+      "crystal"
+    ],
+    "asset": "Item-crystal",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Crystal.png?da1f2f"
+  },
+  {
+    "id": "deathworm-horn",
+    "name": "Deathworm Horn",
+    "aliases": [
+      "Deathworm Horn"
+    ],
+    "asset": "Item-deathworm-horn",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Deathworm_Horn.png?21c09e"
+  },
+  {
+    "id": "element",
+    "name": "Element",
+    "aliases": [
+      "Element",
+      "element"
+    ],
+    "asset": "Item-element",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Element.png?487c94"
+  },
+  {
+    "id": "exceptional-dinosaur-egg",
+    "name": "Exceptional Dinosaur Egg",
+    "aliases": [
+      "Exceptional Dinosaur Egg"
+    ],
+    "asset": null,
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": null
+  },
+  {
+    "id": "exceptional-kibble",
+    "name": "Exceptional Kibble",
+    "aliases": [
+      "Exceptional Kibble"
+    ],
+    "asset": "Item-exceptional-kibble",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Exceptional_Kibble.png?5206af"
+  },
+  {
+    "id": "extraordinary-dinosaur-egg",
+    "name": "Extraordinary Dinosaur Egg",
+    "aliases": [
+      "Extraordinary Dinosaur Egg"
+    ],
+    "asset": null,
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": null
+  },
+  {
+    "id": "extraordinary-kibble",
+    "name": "Extraordinary Kibble",
+    "aliases": [
+      "Extraordinary Kibble"
+    ],
+    "asset": "Item-extraordinary-kibble",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Extraordinary_Kibble.png?d87af7"
+  },
+  {
+    "id": "fiber",
+    "name": "Fiber",
+    "aliases": [
+      "Fiber",
+      "fiber"
+    ],
+    "asset": "Item-fiber",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Fiber.png?369938"
+  },
+  {
+    "id": "fire-talon",
+    "name": "Fire Talon",
+    "aliases": [
+      "Fire Talon"
+    ],
+    "asset": "Item-fire-talon",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Fire_Talon.png?7573c0"
+  },
+  {
+    "id": "flak-chestpiece",
+    "name": "Flak Chestpiece",
+    "aliases": [
+      "Flak Chestpiece",
+      "giáp",
+      "armor"
+    ],
+    "asset": "Item-flak-chestpiece",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Flak_Chestpiece.png?ef5f44"
+  },
+  {
+    "id": "fria-curry",
+    "name": "Fria Curry",
+    "aliases": [
+      "Fria Curry",
+      "fria curry"
+    ],
+    "asset": "Item-fria-curry",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Fria_Curry.png?4a513e"
+  },
+  {
+    "id": "fur-chestpiece",
+    "name": "Fur Chestpiece",
+    "aliases": [
+      "Fur Chestpiece",
+      "fur",
+      "giữ ấm",
+      "giữ nhiệt",
+      "giáp lạnh"
+    ],
+    "asset": "Item-fur-chestpiece",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Fur_Chestpiece.png?fc4db1"
+  },
+  {
+    "id": "gamma-broodmother-trophy",
+    "name": "Gamma Broodmother Trophy",
+    "aliases": [
+      "Gamma Broodmother Trophy"
+    ],
+    "asset": "Item-gamma-broodmother-trophy",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Gamma_Broodmother_Trophy.png?3cda2a"
+  },
+  {
+    "id": "gamma-dragon-trophy",
+    "name": "Gamma Dragon Trophy",
+    "aliases": [
+      "Gamma Dragon Trophy"
+    ],
+    "asset": "Item-gamma-dragon-trophy",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Gamma_Dragon_Trophy.png?666964"
+  },
+  {
+    "id": "gamma-megapithecus-trophy",
+    "name": "Gamma Megapithecus Trophy",
+    "aliases": [
+      "Gamma Megapithecus Trophy"
+    ],
+    "asset": "Item-gamma-megapithecus-trophy",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Gamma_Megapithecus_Trophy.png?ec2b92"
+  },
+  {
+    "id": "gas-mask",
+    "name": "Gas Mask",
+    "aliases": [
+      "Gas Mask",
+      "gas mask",
+      "hô hấp"
+    ],
+    "asset": "Item-gas-mask",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Gas_Mask.png?37a792"
+  },
+  {
+    "id": "gem-bio",
+    "name": "Gem Bio",
+    "aliases": [
+      "Gem Bio"
+    ],
+    "asset": null,
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": null
+  },
+  {
+    "id": "giant-bee-honey",
+    "name": "Giant Bee Honey",
+    "aliases": [
+      "Giant Bee Honey"
+    ],
+    "asset": "Item-giant-bee-honey",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Giant_Bee_Honey.png?62b92b"
+  },
+  {
+    "id": "giganotosaurus-heart",
+    "name": "Giganotosaurus Heart",
+    "aliases": [
+      "Giganotosaurus Heart"
+    ],
+    "asset": "Item-giganotosaurus-heart",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Giganotosaurus_Heart.png?90fa0b"
+  },
+  {
+    "id": "grappling-hook",
+    "name": "Grappling Hook",
+    "aliases": [
+      "Grappling Hook",
+      "grapple",
+      "dây",
+      "grappling"
+    ],
+    "asset": "Item-grappling-hook",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Grappling_Hook.png?822606"
+  },
+  {
+    "id": "hide",
+    "name": "Hide",
+    "aliases": [
+      "Hide"
+    ],
+    "asset": "Item-hide",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Hide.png?c3c64e"
+  },
+  {
+    "id": "industrial-forge",
+    "name": "Industrial Forge",
+    "aliases": [
+      "Industrial Forge",
+      "công nghiệp"
+    ],
+    "asset": "Item-industrial-forge",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Industrial_Forge.png?c6dc9c"
+  },
+  {
+    "id": "keratin",
+    "name": "Keratin",
+    "aliases": [
+      "Keratin"
+    ],
+    "asset": "Item-keratin",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Keratin.png?bcd823"
+  },
+  {
+    "id": "kibble-argentavis-egg",
+    "name": "Kibble (Argentavis Egg)",
+    "aliases": [
+      "Kibble (Argentavis Egg)"
+    ],
+    "asset": "Item-kibble-argentavis-egg",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Superior_Kibble.png?816778"
+  },
+  {
+    "id": "large-animal-feces",
+    "name": "Large Animal Feces",
+    "aliases": [
+      "Large Animal Feces"
+    ],
+    "asset": "Item-large-animal-feces",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Feces.png?9bf328"
+  },
+  {
+    "id": "large-bear-trap",
+    "name": "Large Bear Trap",
+    "aliases": [
+      "Large Bear Trap"
+    ],
+    "asset": "Item-large-bear-trap",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Large_Bear_Trap.png?893b10"
+  },
+  {
+    "id": "lazarus-chowder",
+    "name": "Lazarus Chowder",
+    "aliases": [
+      "Lazarus Chowder",
+      "lazarus chowder",
+      "oxygen"
+    ],
+    "asset": "Item-lazarus-chowder",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Lazarus_Chowder.png?34edbe"
+  },
+  {
+    "id": "leech-blood",
+    "name": "Leech Blood",
+    "aliases": [
+      "Leech Blood"
+    ],
+    "asset": "Item-leech-blood",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Leech_Blood.png?b7d470"
+  },
+  {
+    "id": "lesser-antidote",
+    "name": "Lesser Antidote",
+    "aliases": [
+      "Lesser Antidote",
+      "lesser antidote",
+      "bệnh"
+    ],
+    "asset": "Item-lesser-antidote",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Lesser_Antidote.png?f6f365"
+  },
+  {
+    "id": "lightning-talon",
+    "name": "Lightning Talon",
+    "aliases": [
+      "Lightning Talon"
+    ],
+    "asset": "Item-lightning-talon",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Lightning_Talon.png?19fd83"
+  },
+  {
+    "id": "little-ratfish-treats",
+    "name": "Little Ratfish Treats!",
+    "aliases": [
+      "Little Ratfish Treats!"
+    ],
+    "asset": null,
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": null
+  },
+  {
+    "id": "longneck-rifle",
+    "name": "Longneck Rifle",
+    "aliases": [
+      "Longneck Rifle",
+      "longneck"
+    ],
+    "asset": "Item-longneck-rifle",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Longneck_Rifle.png?e81bc9"
+  },
+  {
+    "id": "magenberry",
+    "name": "Magenberry",
+    "aliases": [
+      "Magenberry"
+    ],
+    "asset": "Item-magenberry",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Magenberry.png?478934"
+  },
+  {
+    "id": "medical-brew",
+    "name": "Medical Brew",
+    "aliases": [
+      "Medical Brew",
+      "thuốc",
+      "medical brew"
+    ],
+    "asset": "Item-medical-brew",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Medical_Brew.png?5d6df4"
+  },
+  {
+    "id": "medium-animal-feces",
+    "name": "Medium Animal Feces",
+    "aliases": [
+      "Medium Animal Feces"
+    ],
+    "asset": "Item-medium-animal-feces",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Feces.png?9bf328"
+  },
+  {
+    "id": "megalania-toxin",
+    "name": "Megalania Toxin",
+    "aliases": [
+      "Megalania Toxin"
+    ],
+    "asset": "Item-megalania-toxin",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Megalania_Toxin.png?d70759"
+  },
+  {
+    "id": "megalodon-tooth",
+    "name": "Megalodon Tooth",
+    "aliases": [
+      "Megalodon Tooth"
+    ],
+    "asset": "Item-megalodon-tooth",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Megalodon_Tooth.png?aba54f"
+  },
+  {
+    "id": "mejoberry",
+    "name": "Mejoberry",
+    "aliases": [
+      "Mejoberry"
+    ],
+    "asset": "Item-mejoberry",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Mejoberry.png?ac102d"
+  },
+  {
+    "id": "metal",
+    "name": "Metal",
+    "aliases": [
+      "Metal",
+      "metal"
+    ],
+    "asset": "Item-metal",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Metal.png?2f50af"
+  },
+  {
+    "id": "metal-shield",
+    "name": "Metal Shield",
+    "aliases": [
+      "Metal Shield",
+      "khiên"
+    ],
+    "asset": "Item-metal-shield",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Metal_Shield.png?ee8c76"
+  },
+  {
+    "id": "mushrooms",
+    "name": "Mushrooms",
+    "aliases": [
+      "Mushrooms"
+    ],
+    "asset": "Item-mushrooms",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Aggeravic_Mushroom.png?2e4d7a"
+  },
+  {
+    "id": "narcotic",
+    "name": "Narcotic",
+    "aliases": [
+      "Narcotic",
+      "narcotic"
+    ],
+    "asset": "Item-narcotic",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Narcotic.png?380ff6"
+  },
+  {
+    "id": "obsidian",
+    "name": "Obsidian",
+    "aliases": [
+      "Obsidian",
+      "obsidian"
+    ],
+    "asset": "Item-obsidian",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Obsidian.png?9b1459"
+  },
+  {
+    "id": "oil",
+    "name": "Oil",
+    "aliases": [
+      "Oil",
+      "dầu"
+    ],
+    "asset": "Item-oil",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Oil.png?bee78c"
+  },
+  {
+    "id": "organic-polymer",
+    "name": "Organic Polymer",
+    "aliases": [
+      "Organic Polymer"
+    ],
+    "asset": "Item-organic-polymer",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Organic_Polymer.png?2c7a22"
+  },
+  {
+    "id": "parachute",
+    "name": "Parachute",
+    "aliases": [
+      "Parachute",
+      "parachute",
+      "parkour"
+    ],
+    "asset": "Item-parachute",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Parachute.png?6a5173"
+  },
+  {
+    "id": "pelt",
+    "name": "Pelt",
+    "aliases": [
+      "Pelt"
+    ],
+    "asset": "Item-pelt",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Pelt.png?7e74e4"
+  },
+  {
+    "id": "pike",
+    "name": "Pike",
+    "aliases": [
+      "Pike",
+      "vũ khí"
+    ],
+    "asset": "Item-pike",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Pike.png?d66934"
+  },
+  {
+    "id": "plant-species-x",
+    "name": "Plant Species X",
+    "aliases": [
+      "Plant Species X"
+    ],
+    "asset": "Item-plant-species-x",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Plant_Species_X.png?dc0e47"
+  },
+  {
+    "id": "plant-species-x-seed",
+    "name": "Plant Species X Seed",
+    "aliases": [
+      "Plant Species X Seed"
+    ],
+    "asset": "Item-plant-species-x-seed",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Plant_Species_X_Seed.png?1cce38"
+  },
+  {
+    "id": "plant-species-y",
+    "name": "Plant Species Y",
+    "aliases": [
+      "Plant Species Y"
+    ],
+    "asset": "Item-plant-species-y",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Plant_Species_Y_Trap.png?928ac0"
+  },
+  {
+    "id": "plant-species-y-seed",
+    "name": "Plant Species Y Seed",
+    "aliases": [
+      "Plant Species Y Seed"
+    ],
+    "asset": "Item-plant-species-y-seed",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Plant_Species_Y_Seed.png?1418d7"
+  },
+  {
+    "id": "plant-species-z-seed",
+    "name": "Plant Species Z Seed",
+    "aliases": [
+      "Plant Species Z Seed"
+    ],
+    "asset": "Item-plant-species-z-seed",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Plant_Species_Z_Seed.png?4151fa"
+  },
+  {
+    "id": "poison-talon",
+    "name": "Poison Talon",
+    "aliases": [
+      "Poison Talon"
+    ],
+    "asset": "Item-poison-talon",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Poison_Talon.png?fd528d"
+  },
+  {
+    "id": "polymer",
+    "name": "Polymer",
+    "aliases": [
+      "Polymer"
+    ],
+    "asset": "Item-polymer",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Polymer.png?b7e5e3"
+  },
+  {
+    "id": "potatoes",
+    "name": "Potatoes",
+    "aliases": [
+      "Potatoes"
+    ],
+    "asset": "Item-potatoes",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Savoroot.png?45a2c2"
+  },
+  {
+    "id": "pump-action-shotgun",
+    "name": "Pump-Action Shotgun",
+    "aliases": [
+      "Pump-Action Shotgun",
+      "shotgun"
+    ],
+    "asset": "Item-pump-action-shotgun",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Pump-Action_Shotgun.png?80431c"
+  },
+  {
+    "id": "rare-flower",
+    "name": "Rare Flower",
+    "aliases": [
+      "Rare Flower"
+    ],
+    "asset": "Item-rare-flower",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Rare_Flower.png?da2f70"
+  },
+  {
+    "id": "rare-flowers",
+    "name": "Rare Flowers",
+    "aliases": [
+      "Rare Flowers"
+    ],
+    "asset": "Item-rare-flowers",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Rare_Flower.png?da2f70"
+  },
+  {
+    "id": "rare-mushroom",
+    "name": "Rare Mushroom",
+    "aliases": [
+      "Rare Mushroom"
+    ],
+    "asset": "Item-rare-mushroom",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Rare_Mushroom.png?f1fca8"
+  },
+  {
+    "id": "rare-mushrooms",
+    "name": "Rare Mushrooms",
+    "aliases": [
+      "Rare Mushrooms"
+    ],
+    "asset": "Item-rare-mushrooms",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Rare_Mushroom.png?f1fca8"
+  },
+  {
+    "id": "raw-fish-meat",
+    "name": "Raw Fish Meat",
+    "aliases": [
+      "Raw Fish Meat"
+    ],
+    "asset": "Item-raw-fish-meat",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Raw_Fish_Meat.png?21f2b3"
+  },
+  {
+    "id": "raw-meat",
+    "name": "Raw Meat",
+    "aliases": [
+      "Raw Meat"
+    ],
+    "asset": "Item-raw-meat",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Raw_Meat.png?533cc8"
+  },
+  {
+    "id": "raw-mutton",
+    "name": "Raw Mutton",
+    "aliases": [
+      "Raw Mutton"
+    ],
+    "asset": "Item-raw-mutton",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Raw_Mutton.png?533e5a"
+  },
+  {
+    "id": "raw-prime-fish-meat",
+    "name": "Raw Prime Fish Meat",
+    "aliases": [
+      "Raw Prime Fish Meat"
+    ],
+    "asset": "Item-raw-prime-fish-meat",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Raw_Prime_Fish_Meat.png?dec963"
+  },
+  {
+    "id": "raw-prime-meat",
+    "name": "Raw Prime Meat",
+    "aliases": [
+      "Raw Prime Meat"
+    ],
+    "asset": "Item-raw-prime-meat",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Raw_Prime_Meat.png?87ba3b"
+  },
+  {
+    "id": "refining-forge",
+    "name": "Refining Forge",
+    "aliases": [
+      "Refining Forge",
+      "luyện"
+    ],
+    "asset": "Item-refining-forge",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Refining_Forge.png?ced415"
+  },
+  {
+    "id": "regular-dinosaur-egg",
+    "name": "Regular Dinosaur Egg",
+    "aliases": [
+      "Regular Dinosaur Egg"
+    ],
+    "asset": null,
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": null
+  },
+  {
+    "id": "regular-kibble",
+    "name": "Regular Kibble",
+    "aliases": [
+      "Regular Kibble"
+    ],
+    "asset": "Item-regular-kibble",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Regular_Kibble.png?1f8f03"
+  },
+  {
+    "id": "rex-bone-helmet",
+    "name": "Rex Bone Helmet",
+    "aliases": [
+      "Rex Bone Helmet"
+    ],
+    "asset": "Item-rex-bone-helmet",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Rex_Bone_Helmet_Skin.png?79a516"
+  },
+  {
+    "id": "rich-metal",
+    "name": "Rich Metal",
+    "aliases": [
+      "Rich Metal"
+    ],
+    "asset": "Item-rich-metal",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Metal.png?2f50af"
+  },
+  {
+    "id": "rich-oil",
+    "name": "Rich Oil",
+    "aliases": [
+      "Rich Oil"
+    ],
+    "asset": "Item-rich-oil",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Oil.png?bee78c"
+  },
+  {
+    "id": "rockarrot",
+    "name": "Rockarrot",
+    "aliases": [
+      "Rockarrot"
+    ],
+    "asset": "Item-rockarrot",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Rockarrot.png?bdca10"
+  },
+  {
+    "id": "rocket-launcher",
+    "name": "Rocket Launcher",
+    "aliases": [
+      "Rocket Launcher",
+      "launcher"
+    ],
+    "asset": "Item-rocket-launcher",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Rocket_Launcher.png?75b192"
+  },
+  {
+    "id": "rocket-propelled-grenade",
+    "name": "Rocket Propelled Grenade",
+    "aliases": [
+      "Rocket Propelled Grenade",
+      "rocket"
+    ],
+    "asset": "Item-rocket-propelled-grenade",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Rocket_Propelled_Grenade.png?3e4d3e"
+  },
+  {
+    "id": "scuba-tank",
+    "name": "SCUBA Tank",
+    "aliases": [
+      "SCUBA Tank",
+      "scuba",
+      "đồ lặn",
+      "lặn"
+    ],
+    "asset": "Item-scuba-tank",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/SCUBA_Tank.png?5ab9b4"
+  },
+  {
+    "id": "saddle",
+    "name": "Saddle",
+    "aliases": [
+      "Saddle",
+      "saddle"
+    ],
+    "asset": "Item-saddle",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Rex_Saddle.png?5c83b1"
+  },
+  {
+    "id": "sandpile",
+    "name": "Sandpile",
+    "aliases": [
+      "Sandpile"
+    ],
+    "asset": null,
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": null
+  },
+  {
+    "id": "sarcosuchus-skin",
+    "name": "Sarcosuchus Skin",
+    "aliases": [
+      "Sarcosuchus Skin"
+    ],
+    "asset": "Item-sarcosuchus-skin",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Sarcosuchus_Skin.png?ea2f34"
+  },
+  {
+    "id": "sauropod-vertebra",
+    "name": "Sauropod Vertebra",
+    "aliases": [
+      "Sauropod Vertebra"
+    ],
+    "asset": "Item-sauropod-vertebra",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Sauropod_Vertebra.png?43ac00"
+  },
+  {
+    "id": "silica-pearls",
+    "name": "Silica Pearls",
+    "aliases": [
+      "Silica Pearls",
+      "silica pearls"
+    ],
+    "asset": "Item-silica-pearls",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Silica_Pearls.png?1ac144"
+  },
+  {
+    "id": "silk",
+    "name": "Silk",
+    "aliases": [
+      "Silk"
+    ],
+    "asset": "Item-silk",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Silk.png?f78a80"
+  },
+  {
+    "id": "simple-bed",
+    "name": "Simple Bed",
+    "aliases": [
+      "Simple Bed",
+      "giường"
+    ],
+    "asset": "Item-simple-bed",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Simple_Bed.png?e4ae75"
+  },
+  {
+    "id": "simple-kibble",
+    "name": "Simple Kibble",
+    "aliases": [
+      "Simple Kibble"
+    ],
+    "asset": "Item-simple-kibble",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Simple_Kibble.png?590c6e"
+  },
+  {
+    "id": "simple-shotgun-ammo",
+    "name": "Simple Shotgun Ammo",
+    "aliases": [
+      "Simple Shotgun Ammo",
+      "đạn",
+      "ammo"
+    ],
+    "asset": "Item-simple-shotgun-ammo",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Simple_Shotgun_Ammo.png?7c80f7"
+  },
+  {
+    "id": "small-animal-feces",
+    "name": "Small Animal Feces",
+    "aliases": [
+      "Small Animal Feces"
+    ],
+    "asset": "Item-small-animal-feces",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Feces.png?9bf328"
+  },
+  {
+    "id": "smithy",
+    "name": "Smithy",
+    "aliases": [
+      "Smithy",
+      "smithy"
+    ],
+    "asset": "Item-smithy",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Smithy.png?d71490"
+  },
+  {
+    "id": "spinosaurus-sail",
+    "name": "Spinosaurus Sail",
+    "aliases": [
+      "Spinosaurus Sail"
+    ],
+    "asset": "Item-spinosaurus-sail",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Spinosaurus_Sail.png?31f554"
+  },
+  {
+    "id": "spoiled-meat",
+    "name": "Spoiled Meat",
+    "aliases": [
+      "Spoiled Meat"
+    ],
+    "asset": "Item-spoiled-meat",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Spoiled_Meat.png?8b9551"
+  },
+  {
+    "id": "stimberry",
+    "name": "Stimberry",
+    "aliases": [
+      "Stimberry"
+    ],
+    "asset": "Item-stimberry",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Stimberry.png?b8a28d"
+  },
+  {
+    "id": "stimulant",
+    "name": "Stimulant",
+    "aliases": [
+      "Stimulant",
+      "stimulant"
+    ],
+    "asset": "Item-stimulant",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Stimulant.png?c3202c"
+  },
+  {
+    "id": "stone",
+    "name": "Stone",
+    "aliases": [
+      "Stone",
+      "đá"
+    ],
+    "asset": "Item-stone",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Stone.png?ba6cca"
+  },
+  {
+    "id": "stone-arrow",
+    "name": "Stone Arrow",
+    "aliases": [
+      "Stone Arrow",
+      "stone arrow"
+    ],
+    "asset": "Item-stone-arrow",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Stone_Arrow.png?6be92e"
+  },
+  {
+    "id": "storage-box",
+    "name": "Storage Box",
+    "aliases": [
+      "Storage Box",
+      "kho"
+    ],
+    "asset": "Item-storage-box",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Storage_Box.png?5de7ea"
+  },
+  {
+    "id": "sulfur",
+    "name": "Sulfur",
+    "aliases": [
+      "Sulfur"
+    ],
+    "asset": "Item-sulfur",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Sulfur.png?c5c387"
+  },
+  {
+    "id": "superior-dinosaur-egg",
+    "name": "Superior Dinosaur Egg",
+    "aliases": [
+      "Superior Dinosaur Egg"
+    ],
+    "asset": null,
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": null
+  },
+  {
+    "id": "superior-kibble",
+    "name": "Superior Kibble",
+    "aliases": [
+      "Superior Kibble"
+    ],
+    "asset": "Item-superior-kibble",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Superior_Kibble.png?816778"
+  },
+  {
+    "id": "sweet-vegetable-cake",
+    "name": "Sweet Vegetable Cake",
+    "aliases": [
+      "Sweet Vegetable Cake",
+      "cake"
+    ],
+    "asset": "Item-sweet-vegetable-cake",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Sweet_Vegetable_Cake.png?95302c"
+  },
+  {
+    "id": "tek-light",
+    "name": "Tek Light",
+    "aliases": [
+      "Tek Light",
+      "tek light"
+    ],
+    "asset": "Item-tek-light",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Tek_Light.png?e9a5ee"
+  },
+  {
+    "id": "tek-replicator",
+    "name": "Tek Replicator",
+    "aliases": [
+      "Tek Replicator",
+      "tek replicator"
+    ],
+    "asset": "Item-tek-replicator",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Tek_Replicator.png?275239"
+  },
+  {
+    "id": "tek-shield",
+    "name": "Tek Shield",
+    "aliases": [
+      "Tek Shield",
+      "tek shield"
+    ],
+    "asset": "Item-tek-shield",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Tek_Shield.png?ad0c68"
+  },
+  {
+    "id": "tek-sword",
+    "name": "Tek Sword",
+    "aliases": [
+      "Tek Sword",
+      "tek sword"
+    ],
+    "asset": "Item-tek-sword",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Tek_Sword.png?dc1d3c"
+  },
+  {
+    "id": "tek-transmitter",
+    "name": "Tek Transmitter",
+    "aliases": [
+      "Tek Transmitter",
+      "tek transmitter"
+    ],
+    "asset": "Item-tek-transmitter",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Tek_Transmitter.png?47c886"
+  },
+  {
+    "id": "thatch",
+    "name": "Thatch",
+    "aliases": [
+      "Thatch"
+    ],
+    "asset": "Item-thatch",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Thatch.png?144efe"
+  },
+  {
+    "id": "therizino-claws",
+    "name": "Therizino Claws",
+    "aliases": [
+      "Therizino Claws"
+    ],
+    "asset": "Item-therizino-claws",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Therizino_Claws.png?a79516"
+  },
+  {
+    "id": "thylacoleo-hook-claw",
+    "name": "Thylacoleo Hook-Claw",
+    "aliases": [
+      "Thylacoleo Hook-Claw"
+    ],
+    "asset": "Item-thylacoleo-hook-claw",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Thylacoleo_Hook-Claw.png?f676f1"
+  },
+  {
+    "id": "titanoboa-venom",
+    "name": "Titanoboa Venom",
+    "aliases": [
+      "Titanoboa Venom"
+    ],
+    "asset": "Item-titanoboa-venom",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Titanoboa_Venom.png?dd515b"
+  },
+  {
+    "id": "torch",
+    "name": "Torch",
+    "aliases": [
+      "Torch",
+      "nguồn sáng"
+    ],
+    "asset": "Item-torch",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Torch.png?ebdecf"
+  },
+  {
+    "id": "tranquilizer-dart",
+    "name": "Tranquilizer Dart",
+    "aliases": [
+      "Tranquilizer Dart",
+      "tranq"
+    ],
+    "asset": "Item-tranquilizer-dart",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Tranquilizer_Dart.png?29bdb6"
+  },
+  {
+    "id": "tusoteuthis-tentacle",
+    "name": "Tusoteuthis Tentacle",
+    "aliases": [
+      "Tusoteuthis Tentacle"
+    ],
+    "asset": "Item-tusoteuthis-tentacle",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Tusoteuthis_Tentacle.png?a3f8b2"
+  },
+  {
+    "id": "tyrannosaurus-arm",
+    "name": "Tyrannosaurus Arm",
+    "aliases": [
+      "Tyrannosaurus Arm"
+    ],
+    "asset": "Item-tyrannosaurus-arm",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Tyrannosaurus_Arm.png?89c018"
+  },
+  {
+    "id": "umbra-apex-drop",
+    "name": "Umbra Apex Drop",
+    "aliases": [
+      "Umbra Apex Drop"
+    ],
+    "asset": "Item-umbra-apex-drop",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Lightning_Talon.png?19fd83"
+  },
+  {
+    "id": "umbra-scale",
+    "name": "Umbra Scale",
+    "aliases": [
+      "Umbra Scale"
+    ],
+    "asset": "Item-umbra-scale",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Hide.png?c3c64e"
+  },
+  {
+    "id": "verdberry",
+    "name": "Verdberry",
+    "aliases": [
+      "Verdberry"
+    ],
+    "asset": "Item-verdberry",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Verdberry.png?5816cd"
+  },
+  {
+    "id": "wood",
+    "name": "Wood",
+    "aliases": [
+      "Wood",
+      "gỗ"
+    ],
+    "asset": "Item-wood",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Wood.png?2fb6c6"
+  },
+  {
+    "id": "wood-coal",
+    "name": "Wood Coal",
+    "aliases": [
+      "Wood Coal"
+    ],
+    "asset": "Item-wood-coal",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Charcoal.png?f4b513"
+  },
+  {
+    "id": "woolly-rhino-horn",
+    "name": "Woolly Rhino Horn",
+    "aliases": [
+      "Woolly Rhino Horn"
+    ],
+    "asset": "Item-woolly-rhino-horn",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Woolly_Rhino_Horn.png?1858ba"
+  },
+  {
+    "id": "wyvern-milk",
+    "name": "Wyvern Milk",
+    "aliases": [
+      "Wyvern Milk"
+    ],
+    "asset": "Item-wyvern-milk",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Wyvern_Milk.png?aa3290"
+  },
+  {
+    "id": "yutyrannus-lungs",
+    "name": "Yutyrannus Lungs",
+    "aliases": [
+      "Yutyrannus Lungs"
+    ],
+    "asset": "Item-yutyrannus-lungs",
+    "symbol": "shippingbox.fill",
+    "category": "item",
+    "sourceURL": "https://ark.wiki.gg/images/Yutyrannus_Lungs.png?ad2444"
+  }
+]

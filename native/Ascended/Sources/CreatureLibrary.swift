@@ -26,8 +26,6 @@ struct CreatureLibrary: View {
                             Spacer()
                             Text("\(items.count)").font(.largeTitle.bold()).foregroundStyle(.cyan)
                         }
-                        Text("Danh mục gồm sinh vật và biến thể. Những con cần DLC được đánh dấu riêng; boss nằm trong mục Boss.")
-                            .font(.subheadline).foregroundStyle(.secondary)
                         ScrollView(.horizontal, showsIndicators: false) {
                             HStack(spacing: 8) {
                                 ForEach(filters, id: \.self) { item in
@@ -113,20 +111,19 @@ struct CreatureDetail: View {
                         if let tameable = creature.tameable { row("Tame trực tiếp", tameable ? "Có" : "Không") }
                         if creature.tameable == true {
                             if !creature.method.isEmpty && creature.method != "X" { row("Phương pháp", translatedMethod(creature.method)) }
-                            if !creature.foods.isEmpty { row("Thức ăn", creature.foods.joined(separator: " · ")) }
+                            if !creature.foods.isEmpty { FactGrid(matches: VisualFacts.items(creature.foods)) }
                         }
                     }.cardStyle()
                     if !creature.stats.isEmpty {
                         VStack(alignment: .leading, spacing: 14) {
                             Text("Chỉ số nền").font(.title2.bold())
-                            Text("Giá trị gốc trong dữ liệu sinh vật, chưa cộng level, tame, imprint hay settings Single Player.").font(.caption).foregroundStyle(.secondary)
                             ForEach(creature.stats, id: \.label) { stat in
                                 row(stat.label, stat.value.formatted(.number.precision(.fractionLength(0...2))))
                             }
                         }.cardStyle()
                     }
-                    if !creature.drops.isEmpty { section("Loot khi hạ sinh vật", text: creature.drops.joined(separator: " · ")) }
-                    if !creature.immobilizedBy.isEmpty { section("Công cụ có thể giữ chân", text: creature.immobilizedBy.joined(separator: " · ")) }
+                    if !creature.drops.isEmpty { itemSection("Loot", items: creature.drops) }
+                    if !creature.immobilizedBy.isEmpty { itemSection("Giữ chân", items: creature.immobilizedBy) }
                 } else {
                     section("Có trong danh mục " + map.name, text: "Hướng dẫn thuần hóa đang được bổ sung.")
                 }
@@ -137,15 +134,19 @@ struct CreatureDetail: View {
     private func translatedMethod(_ value: String) -> String {
         switch value { case "Knockout": "Đánh ngất"; case "Passive": "Tame thụ động"; case "Special": "Phương pháp đặc biệt"; default: value }
     }
+    private func itemSection(_ title: String, items: [String]) -> some View {
+        VStack(alignment: .leading, spacing: 12) { Text(title).font(.title2.bold()); FactGrid(matches: VisualFacts.items(items)) }.cardStyle()
+    }
     private func row(_ label: String, _ value: String) -> some View {
         VStack(alignment: .leading, spacing: 4) {
-            Text(label).font(.caption).foregroundStyle(.secondary)
-            Text(value).textSelection(.enabled)
+            Label(label, systemImage: VisualFacts.symbol(for: label)).labelStyle(.iconOnly).accessibilityLabel(label).foregroundStyle(.cyan)
+            if VisualFacts.matches(value).isEmpty { Text(value).textSelection(.enabled) }
+            else { FactGrid(matches: VisualFacts.matches(value)) }
         }
     }
     private func section(_ title: String, text: String) -> some View {
         VStack(alignment: .leading, spacing: 12) {
-            Text(title).font(.title2.bold()); Text(text).foregroundStyle(.secondary).textSelection(.enabled)
+            Text(title).font(.title2.bold()); VisualBrief(text: text)
         }.frame(maxWidth: .infinity, alignment: .leading).cardStyle()
     }
 }
@@ -182,7 +183,7 @@ struct SquareGuideTile<Preview: View>: View {
                 Text(title).font(.headline).foregroundStyle(.primary).lineLimit(2).fixedSize(horizontal: false, vertical: true)
                 Text(subtitle).font(.caption).foregroundStyle(.cyan).lineLimit(2)
                 Spacer(minLength: 0)
-                Label(gps, systemImage: "location.fill").font(.caption).monospacedDigit().foregroundStyle(.secondary).lineLimit(1).minimumScaleFactor(0.75)
+                GPSBadge(coordinates: gps).font(.caption).scaleEffect(0.9, anchor: .leading)
             }.padding(12).frame(width: geometry.size.width, height: geometry.size.height, alignment: .topLeading)
                 .background(.white.opacity(0.055), in: RoundedRectangle(cornerRadius: 8))
         }.aspectRatio(1, contentMode: .fit).clipped().contentShape(Rectangle())

@@ -51,20 +51,20 @@ struct MapBossDetail: View {
                 Text(map.name + " · " + boss.kind).foregroundStyle(.cyan)
                 MapBossPortrait(boss: boss).frame(height: 210).frame(maxWidth: .infinity)
                 NavigationLink(value: GuideDestination.army(boss.id)) { Label("Đội Dino, level & chỉ số chuẩn bị", systemImage: "pawprint.fill") }.accessibilityIdentifier("bossArmy")
-                Text(boss.summary).cardStyle()
+                VisualBrief(text: boss.summary).cardStyle()
                 VStack(alignment: .leading, spacing: 14) {
-                    Text("Địa điểm & đường vào").font(.title2.bold()); Text(boss.location)
+                    Text("Địa điểm & đường vào").font(.title2.bold()); VisualBrief(text: boss.location)
                     if let id = boss.entranceID { NavigationLink(value: GuideDestination.map(id)) { Label("Xem điểm tiếp cận trên bản đồ", systemImage: "map") } }
                     if map == .center { ForEach(map.exploration?.obelisks ?? []) { point in
-                        NavigationLink(value: GuideDestination.map(point.id)) { Label(point.label + " · " + point.coordinates, systemImage: "map") }
+                        NavigationLink(value: GuideDestination.map(point.id)) { HStack { Text(point.label); GPSBadge(coordinates: point.coordinates); Image(systemName: "map") } }
                     } }
                 }.cardStyle()
                 VStack(alignment: .leading, spacing: 14) {
                     Text("Điều kiện · " + names[difficulty]).font(.title2.bold())
                     Picker("Độ khó", selection: $difficulty) { ForEach(0..<3) { Text(names[$0]).tag($0) } }.pickerStyle(.segmented).accessibilityIdentifier("bossDifficulty")
-                    Text("Level vào trận: \(boss.levels[difficulty])").font(.headline).foregroundStyle(.cyan)
-                    if !boss.elements.isEmpty { Text("Element: \(boss.elements[difficulty])").font(.headline).foregroundStyle(.cyan) }
-                    Text(boss.rewardsNote).font(.subheadline).foregroundStyle(.secondary)
+                    Label(String(boss.levels[difficulty]), systemImage: "arrow.up.circle.fill").font(.headline).foregroundStyle(.cyan)
+                    if !boss.elements.isEmpty { FactGrid(matches: VisualFacts.matches(String(boss.elements[difficulty]) + " Element")).font(.headline).foregroundStyle(.cyan) }
+                    VisualBrief(text: boss.rewardsNote).font(.subheadline).foregroundStyle(.secondary)
                     ForEach(boss.artifactIDs, id: \.self) { id in
                         if let artifact = map.exploration?.artifacts.first(where: { $0.id == id }) {
                             NavigationLink(value: GuideDestination.artifact(id)) {
@@ -72,10 +72,10 @@ struct MapBossDetail: View {
                             }.buttonStyle(.plain).accessibilityIdentifier("boss-artifact-" + id)
                         }
                     }
-                    ForEach(boss.tribute.filter { $0.quantities[difficulty] > 0 }) { item in HStack { Text(item.name); Spacer(); Text("×\(item.quantities[difficulty])").foregroundStyle(.orange) } }
+                    ForEach(boss.tribute.filter { $0.quantities[difficulty] > 0 }) { item in VisualBrief(text: "\(item.quantities[difficulty]) " + item.name) }
                     if difficulty == 0 && !boss.artifactIDs.isEmpty { Text("Gamma: không cần apex tribute thêm ngoài bộ artifact.").font(.caption) }
                 }.cardStyle()
-                VStack(alignment: .leading, spacing: 14) { Text("Chiến thuật & giới hạn").font(.title2.bold()); ForEach(boss.strategy, id: \.self) { Text($0).foregroundStyle(.secondary) } }.cardStyle()
+                VStack(alignment: .leading, spacing: 14) { Text("Chiến thuật & giới hạn").font(.title2.bold()); ForEach(boss.strategy, id: \.self) { VisualBrief(text: $0) } }.cardStyle()
                 GuideChecklist(title: "Trước khi vào trận", items: boss.kit, key: boss.id)
             }.padding(24).frame(maxWidth: 1000).frame(maxWidth: .infinity)
         }.navigationTitle(boss.name).navigationBarTitleDisplayMode(.inline)

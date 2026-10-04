@@ -1,5 +1,7 @@
 import SwiftUI
 import WebKit
+import AVFoundation
+import ImageIO
 
 struct CaveGIFGuide: Decodable, Identifiable {
     let routeID: String
@@ -19,12 +21,26 @@ struct CaveGIFStep: Decodable, Identifiable {
     let gif: String
     let poster: String
     let direction: String?
+    let loop: String?
 
-    var gifURL: URL? { Bundle.main.url(forResource: gif, withExtension: "gif") }
-    var posterImage: UIImage? {
-        guard let url = Bundle.main.url(forResource: poster, withExtension: "jpg") else { return nil }
-        return UIImage(contentsOfFile: url.path)
+    var gifURL: URL? {
+        if let loop, let url = Bundle.main.url(forResource: loop, withExtension: "mp4") { return url }
+        return Bundle.main.url(forResource: gif, withExtension: "gif")
     }
+    var posterImage: UIImage? { poster(maxPixelSize: 1920) }
+    var posterThumbnail: UIImage? { poster(maxPixelSize: 320) }
+    private func poster(maxPixelSize: Int) -> UIImage? {
+        guard let url = Bundle.main.url(forResource: poster, withExtension: "jpg"),
+              let source = CGImageSourceCreateWithURL(url as CFURL, nil),
+              let cg = CGImageSourceCreateThumbnailAtIndex(source, 0, [
+                kCGImageSourceCreateThumbnailFromImageAlways: true,
+                kCGImageSourceThumbnailMaxPixelSize: maxPixelSize,
+                kCGImageSourceCreateThumbnailWithTransform: true,
+                kCGImageSourceShouldCacheImmediately: true
+              ] as CFDictionary) else { return nil }
+        return UIImage(cgImage: cg)
+    }
+
 }
 
 extension ArkMap {
@@ -89,7 +105,7 @@ struct CaveGIFWalkthrough: View {
                             ZStack {
                                 if page == index && isVisible && scenePhase == .active, let url = item.gifURL {
                                     AutoCaveGIF(step: item, url: url).id(item.gif)
-                                } else if let poster = item.posterImage {
+                                } else if abs(page - index) <= 1, let poster = item.posterImage {
                                     Image(uiImage: poster).resizable().scaledToFit()
                                 }
                             }
@@ -104,7 +120,7 @@ struct CaveGIFWalkthrough: View {
                     }.tabViewStyle(.page(indexDisplayMode: .never))
                 }
                 .aspectRatio(16 / 9, contentMode: .fit)
-                .frame(maxWidth: 640)
+                .frame(maxWidth: 960)
                 .clipShape(RoundedRectangle(cornerRadius: 8))
                 // Carry the relevant phase instruction through its continuation clips.
                 if let direction = section.steps.prefix(index + 1).reversed().compactMap(\.direction).first,
@@ -121,7 +137,7 @@ struct CaveGIFWalkthrough: View {
                                 Button { withAnimation { selectedIndex = card } } label: {
                                     VStack(alignment: .leading, spacing: 8) {
                                         ZStack(alignment: .topLeading) {
-                                            if let poster = item.posterImage {
+                                            if let poster = item.posterThumbnail {
                                                 Image(uiImage: poster).resizable().scaledToFill()
                                                     .frame(width: 140, height: 79).clipped()
                                             }
@@ -170,8 +186,11 @@ struct AutoCaveGIF: View {
             if let poster = step.posterImage {
                 Image(uiImage: poster).resizable().scaledToFit()
             }
-            LocalCaveGIF(url: url) { isReady = true }
-                .opacity(isReady ? 1 : 0)
+            if url.pathExtension == "mp4" {
+                LocalCaveLoop(url: url) { isReady = true }.opacity(isReady ? 1 : 0)
+            } else {
+                LocalCaveGIF(url: url) { isReady = true }.opacity(isReady ? 1 : 0)
+            }
         }
     }
 }
@@ -210,5 +229,50 @@ private struct LocalCaveGIF: UIViewRepresentable {
         view.navigationDelegate = nil
         view.stopLoading()
         view.loadHTMLString("", baseURL: nil)
+    }
+}
+
+
+private final class CaveLoopSurface: UIView {
+    override class var layerClass: AnyClass { AVPlayerLayer.self }
+    var playerLayer: AVPlayerLayer { layer as! AVPlayerLayer }
+}
+
+private struct LocalCaveLoop: UIViewRepresentable {
+    let url: URL
+    let onReady: () -> Void
+    final class Coordinator {
+        var player: AVQueuePlayer?
+        var looper: AVPlayerLooper?
+        var observation: NSKeyValueObservation?
+        func stop() {
+            observation?.invalidate(); observation = nil
+            player?.pause(); looper?.disableLooping(); looper = nil
+            player?.removeAllItems(); player = nil
+        }
+    }
+    func makeCoordinator() -> Coordinator { Coordinator() }
+    func makeUIView(context: Context) -> CaveLoopSurface {
+        let surface = CaveLoopSurface()
+        surface.backgroundColor = .clear
+        surface.isUserInteractionEnabled = false
+        let player = AVQueuePlayer()
+        player.isMuted = true
+        player.allowsExternalPlayback = false
+        player.automaticallyWaitsToMinimizeStalling = false
+        let item = AVPlayerItem(url: url)
+        context.coordinator.player = player
+        context.coordinator.looper = AVPlayerLooper(player: player, templateItem: item)
+        surface.playerLayer.player = player
+        surface.playerLayer.videoGravity = .resizeAspect
+        context.coordinator.observation = surface.playerLayer.observe(\.isReadyForDisplay, options: [.initial, .new]) { layer, _ in
+            if layer.isReadyForDisplay { DispatchQueue.main.async { onReady() } }
+        }
+        player.play()
+        return surface
+    }
+    func updateUIView(_ surface: CaveLoopSurface, context: Context) {}
+    static func dismantleUIView(_ surface: CaveLoopSurface, coordinator: Coordinator) {
+        coordinator.stop(); surface.playerLayer.player = nil
     }
 }

@@ -1,0 +1,23 @@
+{
+  "ragnarok": {
+    "routes": 6,
+    "loops": 189
+  },
+  "the-island": {
+    "routes": 10,
+    "loops": 148
+  },
+  "the-center": {
+    "routes": 9,
+    "loops": 130
+  },
+  "totalLoops": 467,
+  "assetBytes": 5488874732,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "codec": "HEVC hvc1",
+  "audioStreams": 0,
+  "fullyDecoded": true
+}

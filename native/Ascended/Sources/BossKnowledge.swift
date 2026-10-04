@@ -9,8 +9,9 @@ struct BossKnowledge: View {
             if let route = ArkMap.ragnarok.exploration?.routes.first(where: { $0.id == routeID }) {
                 VStack(alignment: .leading, spacing: 14) {
                     Text("Đường tới boss").font(.title2.bold())
-                    Text(boss.id == "lava-elemental" ? "Khu arena tham khảo: LAT 21.60 · LON 26.90. Đây là vùng cuối Jungle Dungeon, không phải cửa hang." : "Đi qua " + route.name + " tới nhóm trận cuối. GPS dưới đây là cửa vào, chưa coi là GPS chính xác của boss trong arena.")
-                    ForEach(route.entrances) { Text($0.label + " · " + $0.coordinates).font(.subheadline).foregroundStyle(.orange) }
+                    if boss.id == "lava-elemental" { GPSBadge(coordinates: "LAT 21.60 · LON 26.90"); Label("Khu đấu", systemImage: "scope").font(.caption) }
+                    else { VisualBrief(text: "Đi qua " + route.name + " tới nhóm trận cuối. GPS dưới đây là cửa vào, chưa coi là GPS chính xác của boss trong arena.") }
+                    ForEach(route.entrances) { entrance in HStack { Text(entrance.label); GPSBadge(coordinates: entrance.coordinates) } }
                     NavigationLink("Mở hồ sơ hang & artifact", value: GuideDestination.cave(route.id))
                         .accessibilityIdentifier("bossCaveRoute")
                     NavigationLink("Xem lối tới boss trên bản đồ", value: GuideDestination.map(boss.id == "lava-elemental" ? "boss-lava-arena" : "entrance-" + (route.entrances.first?.id ?? "")))
@@ -36,7 +37,7 @@ struct BossKnowledge: View {
         }
     }
     private func info(_ title: String, _ text: String) -> some View {
-        VStack(alignment: .leading, spacing: 12) { Text(title).font(.title2.bold()); Text(text).foregroundStyle(.secondary).textSelection(.enabled) }.cardStyle()
+        VStack(alignment: .leading, spacing: 12) { Text(title).font(.title2.bold()); VisualBrief(text: text) }.cardStyle()
     }
 }
 
@@ -58,14 +59,14 @@ struct NunatakGuide: View {
                 HStack(alignment: .top) {
                     fact("HP nền", health[difficulty]); Spacer(); fact("Level vào trận", String([70,80,90][difficulty])); Spacer(); fact("Element", String(elements[difficulty]))
                 }
-                Text("HP nền, chưa áp dụng điều chỉnh Single Player. Phần thưởng còn có Nunatak Flag và trophy đúng cấp. Không tame, không cưỡi, không breed; miễn torpor.").font(.caption).foregroundStyle(.secondary)
+                VisualBrief(text: "HP nền, chưa áp dụng điều chỉnh Single Player. Phần thưởng còn có Nunatak Flag và trophy đúng cấp. Không tame, không cưỡi, không breed; miễn torpor.").font(.caption).foregroundStyle(.secondary)
             }.cardStyle()
             VStack(alignment: .leading, spacing: 14) {
                 Text("Điểm triệu hồi Nunatak").font(.title2.bold())
-                Text("Nunatak không đi lang thang ở một tọa độ ngoài bản đồ. Mang tribute tới Obelisk; trận diễn ra trong arena được dịch chuyển tới. Với Single Player, ưu tiên Obelisk và kiểm tra cổng trong game.")
+                VisualBrief(text: "Nunatak không đi lang thang ở một tọa độ ngoài bản đồ. Mang tribute tới Obelisk; trận diễn ra trong arena được dịch chuyển tới. Với Single Player, ưu tiên Obelisk và kiểm tra cổng trong game.")
                 ForEach(ArkMap.ragnarok.exploration?.obelisks ?? []) { point in
                     NavigationLink(value: GuideDestination.map(point.id)) {
-                        HStack { Text(point.label); Spacer(); Text(point.coordinates).monospacedDigit().foregroundStyle(.cyan); Image(systemName: "map") }
+                        HStack { Text(point.label); Spacer(); GPSBadge(coordinates: point.coordinates).monospacedDigit().foregroundStyle(.cyan); Image(systemName: "map") }
                     }.accessibilityIdentifier("summon-" + point.id)
                 }
             }.cardStyle()
@@ -81,26 +82,30 @@ struct NunatakGuide: View {
                     }.buttonStyle(.plain)
                 }
                 Text(difficulty == 0 ? "Gamma không cần các trophy nguyên liệu bên dưới." : "Thêm các nguyên liệu sau, mỗi loại ×" + String(difficulty == 1 ? 10 : 25)).font(.subheadline).foregroundStyle(.orange)
-                if difficulty > 0 { ForEach(tribute, id: \.self) { item in HStack { Text(item); Spacer(); Text(difficulty == 1 ? "×10" : "×25").monospacedDigit() } } }
+                if difficulty > 0 { ForEach(tribute, id: \.self) { item in VisualBrief(text: String(difficulty == 1 ? 10 : 25) + " " + item) } }
             }.cardStyle()
             VStack(alignment: .leading, spacing: 14) {
                 Text("Tekgram · " + levels[difficulty]).font(.title2.bold())
                 Text("Cấp cao gồm các unlock của cấp thấp.").font(.caption).foregroundStyle(.secondary)
-                ForEach(gammaTek + (difficulty > 0 ? betaAdds : []) + (difficulty > 1 ? alphaAdds : []), id: \.self) { Text("• " + $0) }
+                ForEach(gammaTek + (difficulty > 0 ? betaAdds : []) + (difficulty > 1 ? alphaAdds : []), id: \.self) { VisualBrief(text: $0) }
             }.cardStyle()
             VStack(alignment: .leading, spacing: 12) {
                 Text("Nhịp giao chiến").font(.title2.bold())
-                Text("Khi boss bay: dùng vũ khí tầm xa, xử lý các đợt Iceworm và giữ đội hình. Khi boss tiếp đất: tập trung damage; Nunatak không gọi Iceworm trong lúc ở mặt đất. Hơi băng làm chậm kết hợp minion gây áp lực lớn; nhiệt độ arena cũng cần tính vào bộ đồ.")
-                Text("Rex / Therizino là lựa chọn phổ biến; Yutyrannus hỗ trợ courage, Daeodon hồi máu cần đủ food. Therizino có thể dùng Sweet Vegetable Cake. Chuẩn bị tame đã breed/imprint và saddle tốt; không áp một ngưỡng HP/damage chung cho mọi settings.")
+                VisualBrief(text: "Khi boss bay: dùng vũ khí tầm xa, xử lý các đợt Iceworm và giữ đội hình. Khi boss tiếp đất: tập trung damage; Nunatak không gọi Iceworm trong lúc ở mặt đất. Hơi băng làm chậm kết hợp minion gây áp lực lớn; nhiệt độ arena cũng cần tính vào bộ đồ.")
+                VisualBrief(text: "Rex / Therizino là lựa chọn phổ biến; Yutyrannus hỗ trợ courage, Daeodon hồi máu cần đủ food. Therizino có thể dùng Sweet Vegetable Cake. Chuẩn bị tame đã breed/imprint và saddle tốt; không áp một ngưỡng HP/damage chung cho mọi settings.")
             }.cardStyle()
             VStack(alignment: .leading, spacing: 12) {
                 Text("Giới hạn & rủi ro trận").font(.title2.bold())
-                Text("Không mang flyer vào arena. Quy tắc arena: tối đa 20 tame và 10 survivor; cart gắn trên tame có thể ngăn dịch chuyển. Timer hiện trên game là nguồn quyết định của save anh, vì Single Player/non-dedicated có khác biệt. Chết hoặc hết giờ có thể mất tame và đồ; xếp đội hình trong vùng cổng trước khi bấm.")
+                VisualBrief(text: "Không mang flyer vào arena. Quy tắc arena: tối đa 20 tame và 10 survivor; cart gắn trên tame có thể ngăn dịch chuyển. Timer hiện trên game là nguồn quyết định của save anh, vì Single Player/non-dedicated có khác biệt. Chết hoặc hết giờ có thể mất tame và đồ; xếp đội hình trong vùng cổng trước khi bấm.")
             }.cardStyle()
             GuideChecklist(title: "Trước khi triệu hồi", items: ["Đủ 10 artifact và tribute đúng cấp", "Toàn đội hồi đầy HP / food", "Saddle, imprint và đội hình đã kiểm tra", "Shotgun + đạn, giáp lạnh dự phòng", "Medical Brew, food, nước", "Tame hỗ trợ có đủ food/cake", "Kiểm tra giới hạn tame, gỡ cart, đứng trong cổng", "Đọc timer và settings của save"], key: "nunatak")
         }
     }
     private func fact(_ title: String, _ value: String) -> some View {
-        VStack(alignment: .leading, spacing: 5) { Text(title).font(.caption).foregroundStyle(.secondary); Text(value).font(.title3.bold()).foregroundStyle(.cyan) }
+        VStack(alignment: .leading, spacing: 5) {
+            if title == "Element", let item = VisualFacts.matches("Element").first { FactPicture(fact: item.fact).frame(width: 40, height: 40) }
+            else { Label(title, systemImage: VisualFacts.symbol(for: title)).labelStyle(.iconOnly).accessibilityLabel(title).foregroundStyle(.secondary) }
+            Text(value).font(.title3.bold()).foregroundStyle(.cyan)
+        }
     }
 }

@@ -27,7 +27,6 @@ struct BaseLocationsScreen: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 22) {
                 Text("Base Location").font(.largeTitle.bold()).accessibilityIdentifier("baseLocationsTitle")
-                Text(map.name + " · 5 lựa chọn cho Single Player").foregroundStyle(.cyan)
                 if let catalogue = map.bases {
                     LazyVGrid(columns: [GridItem(.adaptive(minimum: 240, maximum: 340), spacing: 16)], spacing: 16) {
                         ForEach(catalogue.locations.sorted { $0.rank < $1.rank }) { spot in
@@ -72,12 +71,12 @@ struct BaseLocationDetail: View {
                 Text(spot.name).font(.largeTitle.bold())
                 Text(spot.tag).foregroundStyle(.cyan)
                 BaseTerrainPreview(spot: spot).frame(height: 250).clipShape(RoundedRectangle(cornerRadius: 20))
-                Text(spot.coordinates).font(.title2.bold()).monospacedDigit().foregroundStyle(.orange)
+                GPSBadge(coordinates: spot.coordinates).font(.title2.bold()).monospacedDigit().foregroundStyle(.orange)
                 HStack {
                     NavigationLink(value: GuideDestination.map("base-" + spot.id)) { Label("Xem trên bản đồ", systemImage: "map.fill") }.labelStyle(.iconOnly).accessibilityLabel("Xem trên bản đồ").accessibilityIdentifier("show-base-" + spot.id)
                     Link(destination: spot.videoURL) { Label("YouTube · " + spot.timestamp, systemImage: "play.rectangle.fill") }.labelStyle(.iconOnly).accessibilityLabel("Xem video").accessibilityIdentifier("baseVideo")
                 }.buttonStyle(.bordered)
-                Text(spot.why).font(.headline).cardStyle()
+                VisualBrief(text: spot.why).cardStyle()
                 block("Điểm mạnh", spot.pros)
                 block("Đánh đổi & nguy hiểm", spot.cons)
                 block("Bố trí base & chuẩn bị", spot.layout)
@@ -86,6 +85,6 @@ struct BaseLocationDetail: View {
         }.navigationTitle(spot.name).navigationBarTitleDisplayMode(.inline)
     }
     private func block(_ title: String, _ items: [String]) -> some View {
-        VStack(alignment: .leading, spacing: 12) { Text(title).font(.title2.bold()); ForEach(items, id: \.self) { Text($0).foregroundStyle(.secondary) } }.cardStyle()
+        VStack(alignment: .leading, spacing: 12) { Text(title).font(.title2.bold()); ForEach(items, id: \.self) { VisualBrief(text: $0) } }.cardStyle()
     }
 }

@@ -1,0 +1,95 @@
+{
+  "device": "iPad (A16)",
+  "bundleID": "com.tonytuanngoc.ascended",
+  "version": "0.10.0",
+  "build": "11",
+  "installationURL": "file:///private/var/containers/Bundle/Application/DF3C8826-C57B-4425-B7BF-F1ADD290C40E/Ascended.app/",
+  "finalInstall": {
+    "info": {
+      "arguments": [
+        "devicectl",
+        "device",
+        "install",
+        "app",
+        "--device",
+        "8FA117DA-854A-5EEB-AEFC-EE54036237A9",
+        "/Users/admin/Ascended-Build-Device/Build/Products/Debug-iphoneos/Ascended.app",
+        "--json-output",
+        "/Volumes/TONY SSD/ASCENDED_MEDIA/ipad-visual-final-install.json"
+      ],
+      "commandType": "devicectl.device.install.app",
+      "environment": {
+        "TERM": "dumb"
+      },
+      "jsonVersion": 3,
+      "outcome": "success",
+      "version": "518.31"
+    },
+    "result": {
+      "deviceIdentifier": "8FA117DA-854A-5EEB-AEFC-EE54036237A9",
+      "installedApplications": [
+        {
+          "bundleID": "com.tonytuanngoc.ascended",
+          "databaseSequenceNumber": 2732,
+          "databaseUUID": "CF1EF73B-08AD-4527-9C5C-89CB5C4DAADB",
+          "installationURL": "file:///private/var/containers/Bundle/Application/DF3C8826-C57B-4425-B7BF-F1ADD290C40E/Ascended.app/",
+          "launchServicesIdentifier": "unknown",
+          "options": {}
+        }
+      ]
+    }
+  },
+  "launch": {
+    "info": {
+      "arguments": [
+        "devicectl",
+        "device",
+        "process",
+        "launch",
+        "--device",
+        "8FA117DA-854A-5EEB-AEFC-EE54036237A9",
+        "com.tonytuanngoc.ascended",
+        "--json-output",
+        "/Volumes/TONY SSD/ASCENDED_MEDIA/ipad-visual-launch.json"
+      ],
+      "commandType": "devicectl.device.process.launch",
+      "environment": {
+        "TERM": "dumb"
+      },
+      "jsonVersion": 3,
+      "outcome": "success",
+      "version": "518.31"
+    },
+    "result": {
+      "deviceIdentifier": "8FA117DA-854A-5EEB-AEFC-EE54036237A9",
+      "launchOptions": {
+        "activatedWhenStarted": true,
+        "arguments": [],
+        "environmentVariables": {
+          "TERM": "dumb"
+        },
+        "platformSpecificOptions": {},
+        "startStopped": false,
+        "terminateExistingInstances": false,
+        "user": {
+          "active": true
+        }
+      },
+      "process": {
+        "auditToken": [
+          4294967295,
+          501,
+          501,
+          501,
+          501,
+          2108,
+          0,
+          5609
+        ],
+        "executable": "file:///private/var/containers/Bundle/Application/DF3C8826-C57B-4425-B7BF-F1ADD290C40E/Ascended.app/Ascended",
+        "processIdentifier": 2108
+      }
+    }
+  },
+  "interactionProof": "Simulator; physical install/version/direct launch only"
+}

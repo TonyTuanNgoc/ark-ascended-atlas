@@ -64,7 +64,7 @@ struct BossDetail: View {
     }
     private func block(_ title: String, _ body: String) -> some View {
         VStack(alignment: .leading, spacing: 12) {
-            Text(title).font(.title2.bold()); Text(body).foregroundStyle(.secondary)
+            Text(title).font(.title2.bold()); VisualBrief(text: body)
         }.cardStyle()
     }
 }

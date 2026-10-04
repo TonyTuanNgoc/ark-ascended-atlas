@@ -1,57 +1,5 @@
 import SwiftUI
 
-struct PlaySessionScreen: View {
-    @Environment(\.arkMap) private var map
-    let openBosses: () -> Void
-    @State private var routeID = ""
-    private var key: String { "ascended.\(map.rawValue).session.route.v1" }
-    private var routes: [CaveRoute] { map.exploration?.routes ?? [] }
-    private var route: CaveRoute? { routes.first { $0.id == routeID } ?? routes.first }
-    var body: some View {
-        ScrollView {
-            VStack(alignment: .leading, spacing: 20) {
-                Text("Hôm nay chinh phục gì?").font(.largeTitle.bold()).accessibilityIdentifier("session-title")
-                Text(map.name + " · Chuẩn bị → lên đường → lấy artifact → trở về").foregroundStyle(.cyan)
-                if let route {
-                    VStack(alignment: .leading, spacing: 16) {
-                        Label("Lấy artifact", systemImage: "diamond.fill").font(.title2.bold())
-                        Picker("Chọn tuyến", selection: $routeID) {
-                            ForEach(routes) { Text($0.name).tag($0.id) }
-                        }.pickerStyle(.menu).accessibilityIdentifier("session-route")
-                        Text(route.name).font(.headline)
-                        if let entrance = route.entrances.first {
-                            Text("Đi tới: " + entrance.coordinates).monospacedDigit()
-                            NavigationLink(value: GuideDestination.map("entrance-" + entrance.id)) { Label("Tìm cửa hang", systemImage: "map.fill") }
-                        }
-                        if map == .ragnarok && route.id == "jungle" {
-                            NavigationLink(value: GuideDestination.navigator) { Label("Bắt đầu dẫn đường Hunter", systemImage: "location.north.line.fill") }
-                                .buttonStyle(.borderedProminent).accessibilityIdentifier("session-navigate")
-                            Text("Lấy Hunter không cần đánh Lava Golem. Để flyer ngoài cửa; vào bằng đường bộ.").foregroundStyle(.secondary)
-                        } else {
-                            NavigationLink(value: GuideDestination.cave(route.id)) { Label("Mở đường đi & GIF", systemImage: "play.rectangle.fill") }.buttonStyle(.borderedProminent)
-                        }
-                        NavigationLink(value: GuideDestination.cave(route.id)) { Label("Xem toàn tuyến", systemImage: "list.bullet.rectangle") }
-                    }.cardStyle()
-                    GuideChecklist(title: "Xong đồ rồi mới xuất phát", items: route.kit, key: "cave-" + route.id).id(route.id)
-                }
-                if let spots = map.bases?.locations {
-                    VStack(alignment: .leading, spacing: 12) {
-                        Label("Xây căn cứ", systemImage: "house.fill").font(.title2.bold())
-                        Text("Chọn vị trí → xem đường tiếp cận → dựng theo bố cục của điểm đó.")
-                        ForEach(spots.sorted { $0.rank < $1.rank }) { spot in
-                            NavigationLink(value: GuideDestination.base(spot.id)) { Text("\(spot.rank). " + spot.name) }
-                        }
-                    }.cardStyle()
-                }
-                Button(action: openBosses) {
-                    HStack { Label("Chuẩn bị boss tiếp theo", systemImage: "shield.lefthalf.filled"); Spacer(); Image(systemName: "chevron.right") }
-                }.buttonStyle(.plain).cardStyle().accessibilityIdentifier("session-bosses")
-            }.padding(24).frame(maxWidth: 1000).frame(maxWidth: .infinity)
-        }.onAppear { routeID = UserDefaults.standard.string(forKey: key) ?? routes.first?.id ?? "" }
-            .onChange(of: routeID) { _, value in UserDefaults.standard.set(value, forKey: key) }
-    }
-}
-
 struct JungleLandmark: Identifiable {
     let id: Int
     let name: String
@@ -108,7 +56,7 @@ struct JungleNavigator: View {
                         ForEach(returning ? Array(landmarks.reversed()) : landmarks) { point in
                             Button { select(point.id) } label: {
                                 VStack(alignment: .leading, spacing: 8) {
-                                    if steps.indices.contains(point.clips[0]), let poster = steps[point.clips[0]].posterImage {
+                                    if steps.indices.contains(point.clips[0]), let poster = steps[point.clips[0]].posterThumbnail {
                                         Image(uiImage: poster).resizable().scaledToFill().frame(width: 126, height: 66).clipped().clipShape(RoundedRectangle(cornerRadius: 5))
                                     }
                                     Text("\(point.id + 1)").font(.headline)

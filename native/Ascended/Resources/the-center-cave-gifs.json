@@ -11,65 +11,75 @@
             "title": "Nhận ra cửa hang",
             "direction": "Tìm cửa thấp dưới vách đá, có cỏ ngay phía trước. Cửa này ở Lava Oasis, không phải Lava Cave.",
             "gif": "gif-the-center-lava-oasis-hunter-01",
-            "poster": "gif-the-center-lava-oasis-hunter-01"
+            "poster": "gif-the-center-lava-oasis-hunter-01",
+            "loop": "gif-the-center-lava-oasis-hunter-01"
           },
           {
             "id": "hunter-02",
             "title": "Qua gian hang đầu · 1/2",
             "direction": "Đi qua lối đá tới gian có cây phát sáng xanh và ánh cam. Clip dùng Thylacoleo; giữ thú trên nền chắc.",
             "gif": "gif-the-center-lava-oasis-hunter-02",
-            "poster": "gif-the-center-lava-oasis-hunter-02"
+            "poster": "gif-the-center-lava-oasis-hunter-02",
+            "loop": "gif-the-center-lava-oasis-hunter-02"
           },
           {
             "id": "hunter-03",
             "title": "Qua gian hang đầu · 2/2",
             "gif": "gif-the-center-lava-oasis-hunter-03",
-            "poster": "gif-the-center-lava-oasis-hunter-03"
+            "poster": "gif-the-center-lava-oasis-hunter-03",
+            "loop": "gif-the-center-lava-oasis-hunter-03"
           },
           {
             "id": "hunter-04",
             "title": "Theo đường quanh vách · 1/3",
             "direction": "Theo đường đá lên xuống quanh các mảng cây sáng. Nhìn hình dáng vách ở cuối mỗi GIF trước khi đi tiếp.",
             "gif": "gif-the-center-lava-oasis-hunter-04",
-            "poster": "gif-the-center-lava-oasis-hunter-04"
+            "poster": "gif-the-center-lava-oasis-hunter-04",
+            "loop": "gif-the-center-lava-oasis-hunter-04"
           },
           {
             "id": "hunter-05",
             "title": "Theo đường quanh vách · 2/3",
             "gif": "gif-the-center-lava-oasis-hunter-05",
-            "poster": "gif-the-center-lava-oasis-hunter-05"
+            "poster": "gif-the-center-lava-oasis-hunter-05",
+            "loop": "gif-the-center-lava-oasis-hunter-05"
           },
           {
             "id": "hunter-06",
             "title": "Theo đường quanh vách · 3/3",
             "gif": "gif-the-center-lava-oasis-hunter-06",
-            "poster": "gif-the-center-lava-oasis-hunter-06"
+            "poster": "gif-the-center-lava-oasis-hunter-06",
+            "loop": "gif-the-center-lava-oasis-hunter-06"
           },
           {
             "id": "hunter-07",
             "title": "Vào gian cuối · 1/3",
             "direction": "Theo lối đá xuyên qua đoạn tối rồi ra nền rộng có cây xanh. Dọn thú cản đường trước khi xuống lấy Artifact.",
             "gif": "gif-the-center-lava-oasis-hunter-07",
-            "poster": "gif-the-center-lava-oasis-hunter-07"
+            "poster": "gif-the-center-lava-oasis-hunter-07",
+            "loop": "gif-the-center-lava-oasis-hunter-07"
           },
           {
             "id": "hunter-08",
             "title": "Vào gian cuối · 2/3",
             "gif": "gif-the-center-lava-oasis-hunter-08",
-            "poster": "gif-the-center-lava-oasis-hunter-08"
+            "poster": "gif-the-center-lava-oasis-hunter-08",
+            "loop": "gif-the-center-lava-oasis-hunter-08"
           },
           {
             "id": "hunter-09",
             "title": "Vào gian cuối · 3/3",
             "gif": "gif-the-center-lava-oasis-hunter-09",
-            "poster": "gif-the-center-lava-oasis-hunter-09"
+            "poster": "gif-the-center-lava-oasis-hunter-09",
+            "loop": "gif-the-center-lava-oasis-hunter-09"
           },
           {
             "id": "hunter-10",
             "title": "Lấy Hunter",
             "direction": "Tới Artifact trên nền đá. Lấy Hunter rồi quay ra bằng đường vừa đi.",
             "gif": "gif-the-center-lava-oasis-hunter-10",
-            "poster": "gif-the-center-lava-oasis-hunter-10"
+            "poster": "gif-the-center-lava-oasis-hunter-10",
+            "loop": "gif-the-center-lava-oasis-hunter-10"
           }
         ]
       }
@@ -87,54 +97,62 @@
             "title": "Nhận ra cửa hang băng",
             "direction": "Tìm cửa băng rộng giữa các khối đá và tuyết. Mặc đồ giữ ấm trước khi vào.",
             "gif": "gif-the-center-south-ice-skylord-01",
-            "poster": "gif-the-center-south-ice-skylord-01"
+            "poster": "gif-the-center-south-ice-skylord-01",
+            "loop": "gif-the-center-south-ice-skylord-01"
           },
           {
             "id": "skylord-02",
             "title": "Lấy nhánh trái",
             "direction": "Vào hang, đi về bên trái. Tới chỗ chia đường thì tiếp tục lấy nhánh trái đi xuống.",
             "gif": "gif-the-center-south-ice-skylord-02",
-            "poster": "gif-the-center-south-ice-skylord-02"
+            "poster": "gif-the-center-south-ice-skylord-02",
+            "loop": "gif-the-center-south-ice-skylord-02"
           },
           {
             "id": "skylord-03",
             "title": "Bám phải rồi lên dốc · 1/2",
             "direction": "Từ nền thấp rẽ phải và bám mép phải. Đi qua con Rex đóng băng trong vách bên trái.",
             "gif": "gif-the-center-south-ice-skylord-03",
-            "poster": "gif-the-center-south-ice-skylord-03"
+            "poster": "gif-the-center-south-ice-skylord-03",
+            "loop": "gif-the-center-south-ice-skylord-03"
           },
           {
             "id": "skylord-04",
             "title": "Bám phải rồi lên dốc · 2/2",
             "gif": "gif-the-center-south-ice-skylord-04",
-            "poster": "gif-the-center-south-ice-skylord-04"
+            "poster": "gif-the-center-south-ice-skylord-04",
+            "loop": "gif-the-center-south-ice-skylord-04"
           },
           {
             "id": "skylord-05",
             "title": "Lên đường hầm",
             "direction": "Cuối đường rẽ trái lên đường hầm dốc. Loot có thể nằm ở phía trên, nhưng anh đang đi kiếm Artifact.",
             "gif": "gif-the-center-south-ice-skylord-05",
-            "poster": "gif-the-center-south-ice-skylord-05"
+            "poster": "gif-the-center-south-ice-skylord-05",
+            "loop": "gif-the-center-south-ice-skylord-05"
           },
           {
             "id": "skylord-06",
             "title": "Vòng mép đá · 1/2",
             "direction": "Theo lối hẹp hơi chếch trái, vòng quanh gờ đá. Artifact nằm cạnh các tảng đá phía trước.",
             "gif": "gif-the-center-south-ice-skylord-06",
-            "poster": "gif-the-center-south-ice-skylord-06"
+            "poster": "gif-the-center-south-ice-skylord-06",
+            "loop": "gif-the-center-south-ice-skylord-06"
           },
           {
             "id": "skylord-07",
             "title": "Vòng mép đá · 2/2",
             "gif": "gif-the-center-south-ice-skylord-07",
-            "poster": "gif-the-center-south-ice-skylord-07"
+            "poster": "gif-the-center-south-ice-skylord-07",
+            "loop": "gif-the-center-south-ice-skylord-07"
           },
           {
             "id": "skylord-08",
             "title": "Lấy Skylord",
             "direction": "Khi đã an toàn thì xuống thú và lấy Skylord. Quay lại gờ đá rồi đi ngược đường vừa vào.",
             "gif": "gif-the-center-south-ice-skylord-08",
-            "poster": "gif-the-center-south-ice-skylord-08"
+            "poster": "gif-the-center-south-ice-skylord-08",
+            "loop": "gif-the-center-south-ice-skylord-08"
           }
         ]
       }
@@ -152,66 +170,76 @@
             "title": "Tìm cây đơn độc trên gờ · 1/2",
             "direction": "Tìm cây đứng một mình trên gờ đá của đảo Center. Nhìn xuống dưới cây sẽ thấy cửa đường bộ.",
             "gif": "gif-the-center-floating-devious-01",
-            "poster": "gif-the-center-floating-devious-01"
+            "poster": "gif-the-center-floating-devious-01",
+            "loop": "gif-the-center-floating-devious-01"
           },
           {
             "id": "devious-02",
             "title": "Tìm cây đơn độc trên gờ · 2/2",
             "gif": "gif-the-center-floating-devious-02",
-            "poster": "gif-the-center-floating-devious-02"
+            "poster": "gif-the-center-floating-devious-02",
+            "loop": "gif-the-center-floating-devious-02"
           },
           {
             "id": "devious-03",
             "title": "Vào hành lang xanh",
             "direction": "Theo cửa vào lòng hang có cây phát sáng xanh. Chuẩn bị thuốc hồi máu trước khi xuống các dốc.",
             "gif": "gif-the-center-floating-devious-03",
-            "poster": "gif-the-center-floating-devious-03"
+            "poster": "gif-the-center-floating-devious-03",
+            "loop": "gif-the-center-floating-devious-03"
           },
           {
             "id": "devious-04",
             "title": "Xuống dốc đầu · 1/2",
             "direction": "Đi tới gờ đá rồi xuống dốc đầu tiên. Tới cuối dốc quay ngược lại để xuống dốc thứ hai.",
             "gif": "gif-the-center-floating-devious-04",
-            "poster": "gif-the-center-floating-devious-04"
+            "poster": "gif-the-center-floating-devious-04",
+            "loop": "gif-the-center-floating-devious-04"
           },
           {
             "id": "devious-05",
             "title": "Xuống dốc đầu · 2/2",
             "gif": "gif-the-center-floating-devious-05",
-            "poster": "gif-the-center-floating-devious-05"
+            "poster": "gif-the-center-floating-devious-05",
+            "loop": "gif-the-center-floating-devious-05"
           },
           {
             "id": "devious-06",
             "title": "Xuống dốc thứ hai · 1/2",
             "direction": "Theo dốc xuống nền thấp. Artifact ở gờ bên kia; đừng nhảy tắt qua khoảng hở nếu chưa chắc.",
             "gif": "gif-the-center-floating-devious-06",
-            "poster": "gif-the-center-floating-devious-06"
+            "poster": "gif-the-center-floating-devious-06",
+            "loop": "gif-the-center-floating-devious-06"
           },
           {
             "id": "devious-07",
             "title": "Xuống dốc thứ hai · 2/2",
             "gif": "gif-the-center-floating-devious-07",
-            "poster": "gif-the-center-floating-devious-07"
+            "poster": "gif-the-center-floating-devious-07",
+            "loop": "gif-the-center-floating-devious-07"
           },
           {
             "id": "devious-08",
             "title": "Vòng trái tới Artifact · 1/2",
             "direction": "Vòng theo lối bên trái và đi hết đường quanh vách, thay vì nhảy thẳng qua vực.",
             "gif": "gif-the-center-floating-devious-08",
-            "poster": "gif-the-center-floating-devious-08"
+            "poster": "gif-the-center-floating-devious-08",
+            "loop": "gif-the-center-floating-devious-08"
           },
           {
             "id": "devious-09",
             "title": "Vòng trái tới Artifact · 2/2",
             "gif": "gif-the-center-floating-devious-09",
-            "poster": "gif-the-center-floating-devious-09"
+            "poster": "gif-the-center-floating-devious-09",
+            "loop": "gif-the-center-floating-devious-09"
           },
           {
             "id": "devious-10",
             "title": "Lấy Devious",
             "direction": "Artifact nằm trên nền đá ở cuối lối vòng. Xuống thú và lấy Devious, rồi quay về hai đoạn dốc.",
             "gif": "gif-the-center-floating-devious-10",
-            "poster": "gif-the-center-floating-devious-10"
+            "poster": "gif-the-center-floating-devious-10",
+            "loop": "gif-the-center-floating-devious-10"
           }
         ]
       }
@@ -229,76 +257,88 @@
             "title": "Bắt đầu lặn · 1/2",
             "direction": "Ở điểm rãnh biển phía đông nam, trang bị SCUBA và kiểm tra oxygen. Clip dùng thú biển để xuống sâu.",
             "gif": "gif-the-center-trench-brute-01",
-            "poster": "gif-the-center-trench-brute-01"
+            "poster": "gif-the-center-trench-brute-01",
+            "loop": "gif-the-center-trench-brute-01"
           },
           {
             "id": "brute-02",
             "title": "Bắt đầu lặn · 2/2",
             "gif": "gif-the-center-trench-brute-02",
-            "poster": "gif-the-center-trench-brute-02"
+            "poster": "gif-the-center-trench-brute-02",
+            "loop": "gif-the-center-trench-brute-02"
           },
           {
             "id": "brute-03",
             "title": "Theo khe xuống sâu · 1/4",
             "direction": "Bám khe giữa các khối đá lớn và tiếp tục lặn xuống. Để ý đàn cá và sinh vật biển quanh anh.",
             "gif": "gif-the-center-trench-brute-03",
-            "poster": "gif-the-center-trench-brute-03"
+            "poster": "gif-the-center-trench-brute-03",
+            "loop": "gif-the-center-trench-brute-03"
           },
           {
             "id": "brute-04",
             "title": "Theo khe xuống sâu · 2/4",
             "gif": "gif-the-center-trench-brute-04",
-            "poster": "gif-the-center-trench-brute-04"
+            "poster": "gif-the-center-trench-brute-04",
+            "loop": "gif-the-center-trench-brute-04"
           },
           {
             "id": "brute-05",
             "title": "Theo khe xuống sâu · 3/4",
             "gif": "gif-the-center-trench-brute-05",
-            "poster": "gif-the-center-trench-brute-05"
+            "poster": "gif-the-center-trench-brute-05",
+            "loop": "gif-the-center-trench-brute-05"
           },
           {
             "id": "brute-06",
             "title": "Theo khe xuống sâu · 4/4",
             "gif": "gif-the-center-trench-brute-06",
-            "poster": "gif-the-center-trench-brute-06"
+            "poster": "gif-the-center-trench-brute-06",
+            "loop": "gif-the-center-trench-brute-06"
           },
           {
             "id": "brute-07",
             "title": "Tìm gian cây hồng · 1/4",
             "direction": "Theo rãnh tới gian có cây hồng và xanh phát sáng. Đi sát đáy như trong GIF để tìm lối vào gian Artifact.",
             "gif": "gif-the-center-trench-brute-07",
-            "poster": "gif-the-center-trench-brute-07"
+            "poster": "gif-the-center-trench-brute-07",
+            "loop": "gif-the-center-trench-brute-07"
           },
           {
             "id": "brute-08",
             "title": "Tìm gian cây hồng · 2/4",
             "gif": "gif-the-center-trench-brute-08",
-            "poster": "gif-the-center-trench-brute-08"
+            "poster": "gif-the-center-trench-brute-08",
+            "loop": "gif-the-center-trench-brute-08"
           },
           {
             "id": "brute-09",
             "title": "Tìm gian cây hồng · 3/4",
             "gif": "gif-the-center-trench-brute-09",
-            "poster": "gif-the-center-trench-brute-09"
+            "poster": "gif-the-center-trench-brute-09",
+            "loop": "gif-the-center-trench-brute-09"
           },
           {
             "id": "brute-10",
             "title": "Tìm gian cây hồng · 4/4",
             "gif": "gif-the-center-trench-brute-10",
-            "poster": "gif-the-center-trench-brute-10"
+            "poster": "gif-the-center-trench-brute-10",
+            "loop": "gif-the-center-trench-brute-10"
           },
           {
             "id": "brute-11",
             "title": "Tới nền Artifact · 1/2",
             "direction": "Tới nền đá có ánh Artifact trong gian hang. Xuống thú khi an toàn để lấy Brute; giữ đủ oxygen cho đường về.",
             "gif": "gif-the-center-trench-brute-11",
-            "poster": "gif-the-center-trench-brute-11"
+            "poster": "gif-the-center-trench-brute-11",
+            "loop": "gif-the-center-trench-brute-11"
           },
           {
             "id": "brute-12",
             "title": "Tới nền Artifact · 2/2",
             "gif": "gif-the-center-trench-brute-12",
-            "poster": "gif-the-center-trench-brute-12"
+            "poster": "gif-the-center-trench-brute-12",
+            "loop": "gif-the-center-trench-brute-12"
           }
         ]
       }
@@ -316,64 +356,74 @@
             "title": "Xuống dưới vách đá · 1/2",
             "direction": "Từ vùng Obelisk xanh, bay xuống dưới vách đá theo đường trong clip. Giữ stamina trước khi bay vào lòng hang lớn.",
             "gif": "gif-the-center-cliffside-cunning-01",
-            "poster": "gif-the-center-cliffside-cunning-01"
+            "poster": "gif-the-center-cliffside-cunning-01",
+            "loop": "gif-the-center-cliffside-cunning-01"
           },
           {
             "id": "cunning-02",
             "title": "Xuống dưới vách đá · 2/2",
             "gif": "gif-the-center-cliffside-cunning-02",
-            "poster": "gif-the-center-cliffside-cunning-02"
+            "poster": "gif-the-center-cliffside-cunning-02",
+            "loop": "gif-the-center-cliffside-cunning-02"
           },
           {
             "id": "cunning-03",
             "title": "Vào lòng hang rộng · 1/4",
             "direction": "Theo cửa dưới vách vào gian hang lớn. Lấy tháp đá và các khối nhũ làm mốc để giữ hướng.",
             "gif": "gif-the-center-cliffside-cunning-03",
-            "poster": "gif-the-center-cliffside-cunning-03"
+            "poster": "gif-the-center-cliffside-cunning-03",
+            "loop": "gif-the-center-cliffside-cunning-03"
           },
           {
             "id": "cunning-04",
             "title": "Vào lòng hang rộng · 2/4",
             "gif": "gif-the-center-cliffside-cunning-04",
-            "poster": "gif-the-center-cliffside-cunning-04"
+            "poster": "gif-the-center-cliffside-cunning-04",
+            "loop": "gif-the-center-cliffside-cunning-04"
           },
           {
             "id": "cunning-05",
             "title": "Vào lòng hang rộng · 3/4",
             "gif": "gif-the-center-cliffside-cunning-05",
-            "poster": "gif-the-center-cliffside-cunning-05"
+            "poster": "gif-the-center-cliffside-cunning-05",
+            "loop": "gif-the-center-cliffside-cunning-05"
           },
           {
             "id": "cunning-06",
             "title": "Vào lòng hang rộng · 4/4",
             "gif": "gif-the-center-cliffside-cunning-06",
-            "poster": "gif-the-center-cliffside-cunning-06"
+            "poster": "gif-the-center-cliffside-cunning-06",
+            "loop": "gif-the-center-cliffside-cunning-06"
           },
           {
             "id": "cunning-07",
             "title": "Tới khu phế tích · 1/2",
             "direction": "Đi qua các gờ có cây, hướng tới phế tích màu sáng ở phía dưới.",
             "gif": "gif-the-center-cliffside-cunning-07",
-            "poster": "gif-the-center-cliffside-cunning-07"
+            "poster": "gif-the-center-cliffside-cunning-07",
+            "loop": "gif-the-center-cliffside-cunning-07"
           },
           {
             "id": "cunning-08",
             "title": "Tới khu phế tích · 2/2",
             "gif": "gif-the-center-cliffside-cunning-08",
-            "poster": "gif-the-center-cliffside-cunning-08"
+            "poster": "gif-the-center-cliffside-cunning-08",
+            "loop": "gif-the-center-cliffside-cunning-08"
           },
           {
             "id": "cunning-09",
             "title": "Lấy Cunning · 1/2",
             "direction": "Qua phế tích, vào hốc sáng tím phía sau. Artifact nằm ngay ở nền cỏ tím trong hốc này.",
             "gif": "gif-the-center-cliffside-cunning-09",
-            "poster": "gif-the-center-cliffside-cunning-09"
+            "poster": "gif-the-center-cliffside-cunning-09",
+            "loop": "gif-the-center-cliffside-cunning-09"
           },
           {
             "id": "cunning-10",
             "title": "Lấy Cunning · 2/2",
             "gif": "gif-the-center-cliffside-cunning-10",
-            "poster": "gif-the-center-cliffside-cunning-10"
+            "poster": "gif-the-center-cliffside-cunning-10",
+            "loop": "gif-the-center-cliffside-cunning-10"
           }
         ]
       }
@@ -391,72 +441,83 @@
             "title": "Tìm cửa ở biển nông · 1/2",
             "direction": "Bơi từ bãi biển vào cửa nằm sát mặt nước. Tuyến này dùng cửa biển nông; các cửa khác không nối vào cùng bước đầu.",
             "gif": "gif-the-center-jungle-immune-01",
-            "poster": "gif-the-center-jungle-immune-01"
+            "poster": "gif-the-center-jungle-immune-01",
+            "loop": "gif-the-center-jungle-immune-01"
           },
           {
             "id": "immune-02",
             "title": "Tìm cửa ở biển nông · 2/2",
             "gif": "gif-the-center-jungle-immune-02",
-            "poster": "gif-the-center-jungle-immune-02"
+            "poster": "gif-the-center-jungle-immune-02",
+            "loop": "gif-the-center-jungle-immune-02"
           },
           {
             "id": "immune-03",
             "title": "Lên nền đá và rẽ phải · 1/2",
             "direction": "Lên cầu đất, đi tới khoảng mở có cột đá nhỏ rồi lấy lối bên phải.",
             "gif": "gif-the-center-jungle-immune-03",
-            "poster": "gif-the-center-jungle-immune-03"
+            "poster": "gif-the-center-jungle-immune-03",
+            "loop": "gif-the-center-jungle-immune-03"
           },
           {
             "id": "immune-04",
             "title": "Lên nền đá và rẽ phải · 2/2",
             "gif": "gif-the-center-jungle-immune-04",
-            "poster": "gif-the-center-jungle-immune-04"
+            "poster": "gif-the-center-jungle-immune-04",
+            "loop": "gif-the-center-jungle-immune-04"
           },
           {
             "id": "immune-05",
             "title": "Tới hồ trong hang · 1/2",
             "direction": "Theo lối phủ cây tới hồ sâu. Đứng ở mép hồ, trang bị SCUBA trước đoạn lặn tiếp theo.",
             "gif": "gif-the-center-jungle-immune-05",
-            "poster": "gif-the-center-jungle-immune-05"
+            "poster": "gif-the-center-jungle-immune-05",
+            "loop": "gif-the-center-jungle-immune-05"
           },
           {
             "id": "immune-06",
             "title": "Tới hồ trong hang · 2/2",
             "gif": "gif-the-center-jungle-immune-06",
-            "poster": "gif-the-center-jungle-immune-06"
+            "poster": "gif-the-center-jungle-immune-06",
+            "loop": "gif-the-center-jungle-immune-06"
           },
           {
             "id": "immune-07",
             "title": "Lặn xoáy xuống đáy · 1/2",
             "direction": "Bơi vào vùng nước xanh, tìm chỗ nền tụt sâu rồi lặn vòng xuống tới đáy.",
             "gif": "gif-the-center-jungle-immune-07",
-            "poster": "gif-the-center-jungle-immune-07"
+            "poster": "gif-the-center-jungle-immune-07",
+            "loop": "gif-the-center-jungle-immune-07"
           },
           {
             "id": "immune-08",
             "title": "Lặn xoáy xuống đáy · 2/2",
             "gif": "gif-the-center-jungle-immune-08",
-            "poster": "gif-the-center-jungle-immune-08"
+            "poster": "gif-the-center-jungle-immune-08",
+            "loop": "gif-the-center-jungle-immune-08"
           },
           {
             "id": "immune-09",
             "title": "Tìm ánh Artifact trong rong · 1/2",
             "direction": "Tìm ánh Artifact giữa rong và cỏ biển sát đáy. Khu này khó nhìn; đi chậm và đối chiếu vị trí các vách đá.",
             "gif": "gif-the-center-jungle-immune-09",
-            "poster": "gif-the-center-jungle-immune-09"
+            "poster": "gif-the-center-jungle-immune-09",
+            "loop": "gif-the-center-jungle-immune-09"
           },
           {
             "id": "immune-10",
             "title": "Tìm ánh Artifact trong rong · 2/2",
             "gif": "gif-the-center-jungle-immune-10",
-            "poster": "gif-the-center-jungle-immune-10"
+            "poster": "gif-the-center-jungle-immune-10",
+            "loop": "gif-the-center-jungle-immune-10"
           },
           {
             "id": "immune-11",
             "title": "Lấy Immune",
             "direction": "Tới sát Artifact và lấy Immune. Quay lên theo đường xoáy vừa lặn xuống.",
             "gif": "gif-the-center-jungle-immune-11",
-            "poster": "gif-the-center-jungle-immune-11"
+            "poster": "gif-the-center-jungle-immune-11",
+            "loop": "gif-the-center-jungle-immune-11"
           }
         ]
       }
@@ -474,97 +535,112 @@
             "title": "Nhận ra cửa hang",
             "direction": "Tìm cửa có lối đá và ánh cam như trong clip. Tuyến này dùng Thylacoleo để leo vách ở đoạn cuối.",
             "gif": "gif-the-center-underworld-pack-01",
-            "poster": "gif-the-center-underworld-pack-01"
+            "poster": "gif-the-center-underworld-pack-01",
+            "loop": "gif-the-center-underworld-pack-01"
           },
           {
             "id": "pack-02",
             "title": "Đi vào gian đầu · 1/2",
             "direction": "Theo đường hầm xanh tới gian mở có cây. Dọn sinh vật cản đường rồi đi tiếp.",
             "gif": "gif-the-center-underworld-pack-02",
-            "poster": "gif-the-center-underworld-pack-02"
+            "poster": "gif-the-center-underworld-pack-02",
+            "loop": "gif-the-center-underworld-pack-02"
           },
           {
             "id": "pack-03",
             "title": "Đi vào gian đầu · 2/2",
             "gif": "gif-the-center-underworld-pack-03",
-            "poster": "gif-the-center-underworld-pack-03"
+            "poster": "gif-the-center-underworld-pack-03",
+            "loop": "gif-the-center-underworld-pack-03"
           },
           {
             "id": "pack-04",
             "title": "Qua gian tinh thể · 1/3",
             "direction": "Qua gian có tinh thể trắng và nền phủ cây, theo lối xuống nước phía trước.",
             "gif": "gif-the-center-underworld-pack-04",
-            "poster": "gif-the-center-underworld-pack-04"
+            "poster": "gif-the-center-underworld-pack-04",
+            "loop": "gif-the-center-underworld-pack-04"
           },
           {
             "id": "pack-05",
             "title": "Qua gian tinh thể · 2/3",
             "gif": "gif-the-center-underworld-pack-05",
-            "poster": "gif-the-center-underworld-pack-05"
+            "poster": "gif-the-center-underworld-pack-05",
+            "loop": "gif-the-center-underworld-pack-05"
           },
           {
             "id": "pack-06",
             "title": "Qua gian tinh thể · 3/3",
             "gif": "gif-the-center-underworld-pack-06",
-            "poster": "gif-the-center-underworld-pack-06"
+            "poster": "gif-the-center-underworld-pack-06",
+            "loop": "gif-the-center-underworld-pack-06"
           },
           {
             "id": "pack-07",
             "title": "Qua nước tới cầu · 1/3",
             "direction": "Bơi qua đoạn nước, lên lối đá và đi tiếp tới cầu gỗ.",
             "gif": "gif-the-center-underworld-pack-07",
-            "poster": "gif-the-center-underworld-pack-07"
+            "poster": "gif-the-center-underworld-pack-07",
+            "loop": "gif-the-center-underworld-pack-07"
           },
           {
             "id": "pack-08",
             "title": "Qua nước tới cầu · 2/3",
             "gif": "gif-the-center-underworld-pack-08",
-            "poster": "gif-the-center-underworld-pack-08"
+            "poster": "gif-the-center-underworld-pack-08",
+            "loop": "gif-the-center-underworld-pack-08"
           },
           {
             "id": "pack-09",
             "title": "Qua nước tới cầu · 3/3",
             "gif": "gif-the-center-underworld-pack-09",
-            "poster": "gif-the-center-underworld-pack-09"
+            "poster": "gif-the-center-underworld-pack-09",
+            "loop": "gif-the-center-underworld-pack-09"
           },
           {
             "id": "pack-10",
             "title": "Qua cầu tới phòng cột · 1/3",
             "direction": "Qua cầu, nhảy đoạn hở nhỏ rồi đi về bên phải dưới các cột. Xuống tầng dưới tới hồ nước xanh.",
             "gif": "gif-the-center-underworld-pack-10",
-            "poster": "gif-the-center-underworld-pack-10"
+            "poster": "gif-the-center-underworld-pack-10",
+            "loop": "gif-the-center-underworld-pack-10"
           },
           {
             "id": "pack-11",
             "title": "Qua cầu tới phòng cột · 2/3",
             "gif": "gif-the-center-underworld-pack-11",
-            "poster": "gif-the-center-underworld-pack-11"
+            "poster": "gif-the-center-underworld-pack-11",
+            "loop": "gif-the-center-underworld-pack-11"
           },
           {
             "id": "pack-12",
             "title": "Qua cầu tới phòng cột · 3/3",
             "gif": "gif-the-center-underworld-pack-12",
-            "poster": "gif-the-center-underworld-pack-12"
+            "poster": "gif-the-center-underworld-pack-12",
+            "loop": "gif-the-center-underworld-pack-12"
           },
           {
             "id": "pack-13",
             "title": "Leo vách bằng Thyla · 1/2",
             "direction": "Tìm đúng phần vách ở bên trái hồ trong clip, dùng Thylacoleo leo lên. Đây là đường leo vách để bỏ qua bài nhảy cột; không áp dụng cho thú không leo được.",
             "gif": "gif-the-center-underworld-pack-13",
-            "poster": "gif-the-center-underworld-pack-13"
+            "poster": "gif-the-center-underworld-pack-13",
+            "loop": "gif-the-center-underworld-pack-13"
           },
           {
             "id": "pack-14",
             "title": "Leo vách bằng Thyla · 2/2",
             "gif": "gif-the-center-underworld-pack-14",
-            "poster": "gif-the-center-underworld-pack-14"
+            "poster": "gif-the-center-underworld-pack-14",
+            "loop": "gif-the-center-underworld-pack-14"
           },
           {
             "id": "pack-15",
             "title": "Vào phòng lấy Pack",
             "direction": "Trên gờ, đi về bên phải rồi vào phòng ở bên trái. Pack nằm trước chiếc rương trong phòng này.",
             "gif": "gif-the-center-underworld-pack-15",
-            "poster": "gif-the-center-underworld-pack-15"
+            "poster": "gif-the-center-underworld-pack-15",
+            "loop": "gif-the-center-underworld-pack-15"
           }
         ]
       }
@@ -582,109 +658,126 @@
             "title": "Nhận ra cửa băng",
             "direction": "Tìm cửa băng rộng ở miền bắc. Mang SCUBA và Grappling Hook cho cả đường vào lẫn đường quay lại.",
             "gif": "gif-the-center-north-ice-clever-01",
-            "poster": "gif-the-center-north-ice-clever-01"
+            "poster": "gif-the-center-north-ice-clever-01",
+            "loop": "gif-the-center-north-ice-clever-01"
           },
           {
             "id": "clever-02",
             "title": "Xuống hồ đầu tiên · 1/2",
             "direction": "Theo lối vào xuống hồ trong hang. Dọn sinh vật quanh hồ trước khi mặc SCUBA.",
             "gif": "gif-the-center-north-ice-clever-02",
-            "poster": "gif-the-center-north-ice-clever-02"
+            "poster": "gif-the-center-north-ice-clever-02",
+            "loop": "gif-the-center-north-ice-clever-02"
           },
           {
             "id": "clever-03",
             "title": "Xuống hồ đầu tiên · 2/2",
             "gif": "gif-the-center-north-ice-clever-03",
-            "poster": "gif-the-center-north-ice-clever-03"
+            "poster": "gif-the-center-north-ice-clever-03",
+            "loop": "gif-the-center-north-ice-clever-03"
           },
           {
             "id": "clever-04",
             "title": "Lặn qua nhánh trái · 1/3",
             "direction": "Dưới hồ có hai lối qua nhũ băng. Lấy nhánh trái để tới Clever, bơi theo đường hầm một chiều.",
             "gif": "gif-the-center-north-ice-clever-04",
-            "poster": "gif-the-center-north-ice-clever-04"
+            "poster": "gif-the-center-north-ice-clever-04",
+            "loop": "gif-the-center-north-ice-clever-04"
           },
           {
             "id": "clever-05",
             "title": "Lặn qua nhánh trái · 2/3",
             "gif": "gif-the-center-north-ice-clever-05",
-            "poster": "gif-the-center-north-ice-clever-05"
+            "poster": "gif-the-center-north-ice-clever-05",
+            "loop": "gif-the-center-north-ice-clever-05"
           },
           {
             "id": "clever-06",
             "title": "Lặn qua nhánh trái · 3/3",
             "gif": "gif-the-center-north-ice-clever-06",
-            "poster": "gif-the-center-north-ice-clever-06"
+            "poster": "gif-the-center-north-ice-clever-06",
+            "loop": "gif-the-center-north-ice-clever-06"
           },
           {
             "id": "clever-07",
             "title": "Lên gian có cột · 1/2",
             "direction": "Trồi lên gian băng có cột đá. Chờ an toàn trước khi lên bờ.",
             "gif": "gif-the-center-north-ice-clever-07",
-            "poster": "gif-the-center-north-ice-clever-07"
+            "poster": "gif-the-center-north-ice-clever-07",
+            "loop": "gif-the-center-north-ice-clever-07"
           },
           {
             "id": "clever-08",
             "title": "Lên gian có cột · 2/2",
             "gif": "gif-the-center-north-ice-clever-08",
-            "poster": "gif-the-center-north-ice-clever-08"
+            "poster": "gif-the-center-north-ice-clever-08",
+            "loop": "gif-the-center-north-ice-clever-08"
           },
           {
             "id": "clever-09",
             "title": "Theo đường nền thấp · 1/4",
             "direction": "Đi tới chỗ chia đường gần phía trái. Chọn lối trên nền thấp đi tiếp; lối dốc bên phải là nhánh loot.",
             "gif": "gif-the-center-north-ice-clever-09",
-            "poster": "gif-the-center-north-ice-clever-09"
+            "poster": "gif-the-center-north-ice-clever-09",
+            "loop": "gif-the-center-north-ice-clever-09"
           },
           {
             "id": "clever-10",
             "title": "Theo đường nền thấp · 2/4",
             "gif": "gif-the-center-north-ice-clever-10",
-            "poster": "gif-the-center-north-ice-clever-10"
+            "poster": "gif-the-center-north-ice-clever-10",
+            "loop": "gif-the-center-north-ice-clever-10"
           },
           {
             "id": "clever-11",
             "title": "Theo đường nền thấp · 3/4",
             "gif": "gif-the-center-north-ice-clever-11",
-            "poster": "gif-the-center-north-ice-clever-11"
+            "poster": "gif-the-center-north-ice-clever-11",
+            "loop": "gif-the-center-north-ice-clever-11"
           },
           {
             "id": "clever-12",
             "title": "Theo đường nền thấp · 4/4",
             "gif": "gif-the-center-north-ice-clever-12",
-            "poster": "gif-the-center-north-ice-clever-12"
+            "poster": "gif-the-center-north-ice-clever-12",
+            "loop": "gif-the-center-north-ice-clever-12"
           },
           {
             "id": "clever-13",
             "title": "Xuống vực bằng Grapple · 1/3",
             "direction": "Tới mép vực thì xuống thú. Dùng Grapple hạ người xuống, sau đó theo hành lang về phía trước. Anh còn cần Grapple để leo lại lên.",
             "gif": "gif-the-center-north-ice-clever-13",
-            "poster": "gif-the-center-north-ice-clever-13"
+            "poster": "gif-the-center-north-ice-clever-13",
+            "loop": "gif-the-center-north-ice-clever-13"
           },
           {
             "id": "clever-14",
             "title": "Xuống vực bằng Grapple · 2/3",
             "gif": "gif-the-center-north-ice-clever-14",
-            "poster": "gif-the-center-north-ice-clever-14"
+            "poster": "gif-the-center-north-ice-clever-14",
+            "loop": "gif-the-center-north-ice-clever-14"
           },
           {
             "id": "clever-15",
             "title": "Xuống vực bằng Grapple · 3/3",
             "gif": "gif-the-center-north-ice-clever-15",
-            "poster": "gif-the-center-north-ice-clever-15"
+            "poster": "gif-the-center-north-ice-clever-15",
+            "loop": "gif-the-center-north-ice-clever-15"
           },
           {
             "id": "clever-16",
             "title": "Lấy Clever ở nền cao · 1/2",
             "direction": "Vòng qua hồ tới phòng có nền cao, lên bậc để tìm Clever. Nếu chưa thấy trên nền, kiểm tra nước ngay phía dưới vị trí đó.",
             "gif": "gif-the-center-north-ice-clever-16",
-            "poster": "gif-the-center-north-ice-clever-16"
+            "poster": "gif-the-center-north-ice-clever-16",
+            "loop": "gif-the-center-north-ice-clever-16"
           },
           {
             "id": "clever-17",
             "title": "Lấy Clever ở nền cao · 2/2",
             "gif": "gif-the-center-north-ice-clever-17",
-            "poster": "gif-the-center-north-ice-clever-17"
+            "poster": "gif-the-center-north-ice-clever-17",
+            "loop": "gif-the-center-north-ice-clever-17"
           }
         ]
       },
@@ -697,77 +790,89 @@
             "title": "Leo lại lên đường cũ · 1/3",
             "direction": "Đi ngược hành lang tới đáy vực, bắn Grapple lên gờ để quay lại chỗ để thú.",
             "gif": "gif-the-center-north-ice-devourer-01",
-            "poster": "gif-the-center-north-ice-devourer-01"
+            "poster": "gif-the-center-north-ice-devourer-01",
+            "loop": "gif-the-center-north-ice-devourer-01"
           },
           {
             "id": "devourer-02",
             "title": "Leo lại lên đường cũ · 2/3",
             "gif": "gif-the-center-north-ice-devourer-02",
-            "poster": "gif-the-center-north-ice-devourer-02"
+            "poster": "gif-the-center-north-ice-devourer-02",
+            "loop": "gif-the-center-north-ice-devourer-02"
           },
           {
             "id": "devourer-03",
             "title": "Leo lại lên đường cũ · 3/3",
             "gif": "gif-the-center-north-ice-devourer-03",
-            "poster": "gif-the-center-north-ice-devourer-03"
+            "poster": "gif-the-center-north-ice-devourer-03",
+            "loop": "gif-the-center-north-ice-devourer-03"
           },
           {
             "id": "devourer-04",
             "title": "Trở về hồ và lấy nhánh phải · 1/4",
             "direction": "Quay về hồ đầu tiên rồi lặn qua lối bên phải giữa các nhũ băng để tới Devourer.",
             "gif": "gif-the-center-north-ice-devourer-04",
-            "poster": "gif-the-center-north-ice-devourer-04"
+            "poster": "gif-the-center-north-ice-devourer-04",
+            "loop": "gif-the-center-north-ice-devourer-04"
           },
           {
             "id": "devourer-05",
             "title": "Trở về hồ và lấy nhánh phải · 2/4",
             "gif": "gif-the-center-north-ice-devourer-05",
-            "poster": "gif-the-center-north-ice-devourer-05"
+            "poster": "gif-the-center-north-ice-devourer-05",
+            "loop": "gif-the-center-north-ice-devourer-05"
           },
           {
             "id": "devourer-06",
             "title": "Trở về hồ và lấy nhánh phải · 3/4",
             "gif": "gif-the-center-north-ice-devourer-06",
-            "poster": "gif-the-center-north-ice-devourer-06"
+            "poster": "gif-the-center-north-ice-devourer-06",
+            "loop": "gif-the-center-north-ice-devourer-06"
           },
           {
             "id": "devourer-07",
             "title": "Trở về hồ và lấy nhánh phải · 4/4",
             "gif": "gif-the-center-north-ice-devourer-07",
-            "poster": "gif-the-center-north-ice-devourer-07"
+            "poster": "gif-the-center-north-ice-devourer-07",
+            "loop": "gif-the-center-north-ice-devourer-07"
           },
           {
             "id": "devourer-08",
             "title": "Lên gờ bên trái · 1/2",
             "direction": "Lên khỏi nước, dọn sinh vật rồi tới gờ bên trái. Nhảy qua nền nhỏ để lên lối cao.",
             "gif": "gif-the-center-north-ice-devourer-08",
-            "poster": "gif-the-center-north-ice-devourer-08"
+            "poster": "gif-the-center-north-ice-devourer-08",
+            "loop": "gif-the-center-north-ice-devourer-08"
           },
           {
             "id": "devourer-09",
             "title": "Lên gờ bên trái · 2/2",
             "gif": "gif-the-center-north-ice-devourer-09",
-            "poster": "gif-the-center-north-ice-devourer-09"
+            "poster": "gif-the-center-north-ice-devourer-09",
+            "loop": "gif-the-center-north-ice-devourer-09"
           },
           {
             "id": "devourer-10",
             "title": "Lấy lối bên phải · 1/2",
             "direction": "Tới chỗ chia đường thì lấy nhánh bên phải. Nhánh bên trái là đường loot.",
             "gif": "gif-the-center-north-ice-devourer-10",
-            "poster": "gif-the-center-north-ice-devourer-10"
+            "poster": "gif-the-center-north-ice-devourer-10",
+            "loop": "gif-the-center-north-ice-devourer-10"
           },
           {
             "id": "devourer-11",
             "title": "Lấy lối bên phải · 2/2",
             "gif": "gif-the-center-north-ice-devourer-11",
-            "poster": "gif-the-center-north-ice-devourer-11"
+            "poster": "gif-the-center-north-ice-devourer-11",
+            "loop": "gif-the-center-north-ice-devourer-11"
           },
           {
             "id": "devourer-12",
             "title": "Lên bậc lấy Devourer",
             "direction": "Tìm các bậc bị vùi một phần ở bên trái, nhảy lên rồi theo lối tới Devourer.",
             "gif": "gif-the-center-north-ice-devourer-12",
-            "poster": "gif-the-center-north-ice-devourer-12"
+            "poster": "gif-the-center-north-ice-devourer-12",
+            "loop": "gif-the-center-north-ice-devourer-12"
           }
         ]
       }
@@ -785,90 +890,104 @@
             "title": "Nhận ra cửa Lava Cave",
             "direction": "Tìm cửa đá rộng có cỏ phía trước. Mang Parachute, Grapple và đồ chịu nóng.",
             "gif": "gif-the-center-lava-strong-01",
-            "poster": "gif-the-center-lava-strong-01"
+            "poster": "gif-the-center-lava-strong-01",
+            "loop": "gif-the-center-lava-strong-01"
           },
           {
             "id": "strong-02",
             "title": "Hạ xuống nền dưới · 1/2",
             "direction": "Tới mép lối vào thì xuống thú trước khi hạ xuống. Dùng Parachute đúng lúc; clip có lần mở dù hơi sớm.",
             "gif": "gif-the-center-lava-strong-02",
-            "poster": "gif-the-center-lava-strong-02"
+            "poster": "gif-the-center-lava-strong-02",
+            "loop": "gif-the-center-lava-strong-02"
           },
           {
             "id": "strong-03",
             "title": "Hạ xuống nền dưới · 2/2",
             "gif": "gif-the-center-lava-strong-03",
-            "poster": "gif-the-center-lava-strong-03"
+            "poster": "gif-the-center-lava-strong-03",
+            "loop": "gif-the-center-lava-strong-03"
           },
           {
             "id": "strong-04",
             "title": "Lên dốc tới ngã ba · 1/2",
             "direction": "Theo lối về phía phải rồi đi lên dốc. Tới ngã ba, lấy nhánh trái để đi Strong.",
             "gif": "gif-the-center-lava-strong-04",
-            "poster": "gif-the-center-lava-strong-04"
+            "poster": "gif-the-center-lava-strong-04",
+            "loop": "gif-the-center-lava-strong-04"
           },
           {
             "id": "strong-05",
             "title": "Lên dốc tới ngã ba · 2/2",
             "gif": "gif-the-center-lava-strong-05",
-            "poster": "gif-the-center-lava-strong-05"
+            "poster": "gif-the-center-lava-strong-05",
+            "loop": "gif-the-center-lava-strong-05"
           },
           {
             "id": "strong-06",
             "title": "Vòng qua các cột · 1/3",
             "direction": "Theo đường cong bên phải tới chỗ chia lối tiếp theo. Lấy nhánh trái xuống bậc đá.",
             "gif": "gif-the-center-lava-strong-06",
-            "poster": "gif-the-center-lava-strong-06"
+            "poster": "gif-the-center-lava-strong-06",
+            "loop": "gif-the-center-lava-strong-06"
           },
           {
             "id": "strong-07",
             "title": "Vòng qua các cột · 2/3",
             "gif": "gif-the-center-lava-strong-07",
-            "poster": "gif-the-center-lava-strong-07"
+            "poster": "gif-the-center-lava-strong-07",
+            "loop": "gif-the-center-lava-strong-07"
           },
           {
             "id": "strong-08",
             "title": "Vòng qua các cột · 3/3",
             "gif": "gif-the-center-lava-strong-08",
-            "poster": "gif-the-center-lava-strong-08"
+            "poster": "gif-the-center-lava-strong-08",
+            "loop": "gif-the-center-lava-strong-08"
           },
           {
             "id": "strong-09",
             "title": "Qua khoảng hở và đường hầm · 1/3",
             "direction": "Nhảy khoảng hở, tới gian sáng rồi qua các trụ. Đi lên đường bên trái và xuyên qua hành lang.",
             "gif": "gif-the-center-lava-strong-09",
-            "poster": "gif-the-center-lava-strong-09"
+            "poster": "gif-the-center-lava-strong-09",
+            "loop": "gif-the-center-lava-strong-09"
           },
           {
             "id": "strong-10",
             "title": "Qua khoảng hở và đường hầm · 2/3",
             "gif": "gif-the-center-lava-strong-10",
-            "poster": "gif-the-center-lava-strong-10"
+            "poster": "gif-the-center-lava-strong-10",
+            "loop": "gif-the-center-lava-strong-10"
           },
           {
             "id": "strong-11",
             "title": "Qua khoảng hở và đường hầm · 3/3",
             "gif": "gif-the-center-lava-strong-11",
-            "poster": "gif-the-center-lava-strong-11"
+            "poster": "gif-the-center-lava-strong-11",
+            "loop": "gif-the-center-lava-strong-11"
           },
           {
             "id": "strong-12",
             "title": "Qua bộ xương tới Strong · 1/3",
             "direction": "Đi qua bệ lửa về bên trái. Tới cột xương sống thì lấy đường bên trái đi xuống; Strong nằm cạnh một cây ở cuối lối.",
             "gif": "gif-the-center-lava-strong-12",
-            "poster": "gif-the-center-lava-strong-12"
+            "poster": "gif-the-center-lava-strong-12",
+            "loop": "gif-the-center-lava-strong-12"
           },
           {
             "id": "strong-13",
             "title": "Qua bộ xương tới Strong · 2/3",
             "gif": "gif-the-center-lava-strong-13",
-            "poster": "gif-the-center-lava-strong-13"
+            "poster": "gif-the-center-lava-strong-13",
+            "loop": "gif-the-center-lava-strong-13"
           },
           {
             "id": "strong-14",
             "title": "Qua bộ xương tới Strong · 3/3",
             "gif": "gif-the-center-lava-strong-14",
-            "poster": "gif-the-center-lava-strong-14"
+            "poster": "gif-the-center-lava-strong-14",
+            "loop": "gif-the-center-lava-strong-14"
           }
         ]
       },
@@ -881,69 +1000,80 @@
             "title": "Quay về ngã ba · 1/4",
             "direction": "Quay lại qua bộ xương và đường hầm, đi qua các cột để về ngã ba cũ. Lần này lấy nhánh phải.",
             "gif": "gif-the-center-lava-massive-01",
-            "poster": "gif-the-center-lava-massive-01"
+            "poster": "gif-the-center-lava-massive-01",
+            "loop": "gif-the-center-lava-massive-01"
           },
           {
             "id": "massive-02",
             "title": "Quay về ngã ba · 2/4",
             "gif": "gif-the-center-lava-massive-02",
-            "poster": "gif-the-center-lava-massive-02"
+            "poster": "gif-the-center-lava-massive-02",
+            "loop": "gif-the-center-lava-massive-02"
           },
           {
             "id": "massive-03",
             "title": "Quay về ngã ba · 3/4",
             "gif": "gif-the-center-lava-massive-03",
-            "poster": "gif-the-center-lava-massive-03"
+            "poster": "gif-the-center-lava-massive-03",
+            "loop": "gif-the-center-lava-massive-03"
           },
           {
             "id": "massive-04",
             "title": "Quay về ngã ba · 4/4",
             "gif": "gif-the-center-lava-massive-04",
-            "poster": "gif-the-center-lava-massive-04"
+            "poster": "gif-the-center-lava-massive-04",
+            "loop": "gif-the-center-lava-massive-04"
           },
           {
             "id": "massive-05",
             "title": "Theo đường tới cây xanh · 1/3",
             "direction": "Đi tiếp, tới các cây phát sáng xanh thì rẽ trái theo lối đá.",
             "gif": "gif-the-center-lava-massive-05",
-            "poster": "gif-the-center-lava-massive-05"
+            "poster": "gif-the-center-lava-massive-05",
+            "loop": "gif-the-center-lava-massive-05"
           },
           {
             "id": "massive-06",
             "title": "Theo đường tới cây xanh · 2/3",
             "gif": "gif-the-center-lava-massive-06",
-            "poster": "gif-the-center-lava-massive-06"
+            "poster": "gif-the-center-lava-massive-06",
+            "loop": "gif-the-center-lava-massive-06"
           },
           {
             "id": "massive-07",
             "title": "Theo đường tới cây xanh · 3/3",
             "gif": "gif-the-center-lava-massive-07",
-            "poster": "gif-the-center-lava-massive-07"
+            "poster": "gif-the-center-lava-massive-07",
+            "loop": "gif-the-center-lava-massive-07"
           },
           {
             "id": "massive-08",
             "title": "Lên phế tích lấy Massive · 1/4",
             "direction": "Tới công trình phế tích bên phải, lên bậc. Trên nền cao rẽ trái rồi sang phải tới nền giữa để lấy Massive.",
             "gif": "gif-the-center-lava-massive-08",
-            "poster": "gif-the-center-lava-massive-08"
+            "poster": "gif-the-center-lava-massive-08",
+            "loop": "gif-the-center-lava-massive-08"
           },
           {
             "id": "massive-09",
             "title": "Lên phế tích lấy Massive · 2/4",
             "gif": "gif-the-center-lava-massive-09",
-            "poster": "gif-the-center-lava-massive-09"
+            "poster": "gif-the-center-lava-massive-09",
+            "loop": "gif-the-center-lava-massive-09"
           },
           {
             "id": "massive-10",
             "title": "Lên phế tích lấy Massive · 3/4",
             "gif": "gif-the-center-lava-massive-10",
-            "poster": "gif-the-center-lava-massive-10"
+            "poster": "gif-the-center-lava-massive-10",
+            "loop": "gif-the-center-lava-massive-10"
           },
           {
             "id": "massive-11",
             "title": "Lên phế tích lấy Massive · 4/4",
             "gif": "gif-the-center-lava-massive-11",
-            "poster": "gif-the-center-lava-massive-11"
+            "poster": "gif-the-center-lava-massive-11",
+            "loop": "gif-the-center-lava-massive-11"
           }
         ]
       }

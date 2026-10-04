@@ -39,10 +39,9 @@ struct BossCampaignScreen: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 22) {
                 Text("Lộ trình Boss").font(.largeTitle.bold()).accessibilityIdentifier("bossCampaignTitle")
-                Text(map.name + " · Single Player").font(.headline).foregroundStyle(.cyan)
                 if map == .ragnarok { Text("1 boss chính · 4 mini-boss có tên · 3 nhóm trận hang động").font(.caption).foregroundStyle(.secondary) }
                 if let campaign = map.campaign {
-                    Text(campaign.summary).font(.title3).cardStyle()
+                    VisualBrief(text: campaign.summary).cardStyle()
                     NavigationLink(value: GuideDestination.preparation) {
                         Label("Level, breed, imprint & cách lên điểm", systemImage: "graduationcap.fill").font(.headline).frame(maxWidth: .infinity, alignment: .leading).padding(8).contentShape(Rectangle())
                     }.cardStyle().accessibilityIdentifier("bossPreparation")
@@ -50,7 +49,7 @@ struct BossCampaignScreen: View {
                         VStack(alignment: .leading, spacing: 16) {
                             Text(step.kind.uppercased()).font(.caption.bold()).foregroundStyle(.cyan)
                             Text(step.title).font(.title2.bold()).accessibilityIdentifier("boss-step-" + step.id)
-                            Text(step.reason).foregroundStyle(.secondary)
+                            VisualBrief(text: step.reason)
                             ForEach(step.bossIDs, id: \.self) { id in
                                 HStack(spacing: 18) {
                                     CreatureAvatar(asset: map.bossImage(id)).frame(width: 100, height: 80)
@@ -76,7 +75,7 @@ struct BossPreparationScreen: View {
                 Text("Xây đội boss").font(.largeTitle.bold())
                 Text(map.name + " · level không thay thế HP / melee / saddle").foregroundStyle(.cyan)
                 ForEach(Array((map.campaign?.sharedPreparation ?? []).enumerated()), id: \.offset) { index, text in
-                    VStack(alignment: .leading, spacing: 10) { Text("\(index + 1)").font(.title2.bold()).foregroundStyle(.cyan); Text(text).textSelection(.enabled) }.cardStyle()
+                    VStack(alignment: .leading, spacing: 10) { Text("\(index + 1)").font(.title2.bold()).foregroundStyle(.cyan); VisualBrief(text: text) }.cardStyle()
                 }
             }.padding(24).frame(maxWidth: 1000).frame(maxWidth: .infinity)
         }.navigationTitle("Breed & lên điểm")
@@ -92,7 +91,7 @@ struct BossArmyScreen: View {
                 Text("Đội hình · " + map.bossName(bossID)).font(.largeTitle.bold()).accessibilityIdentifier("armyTitle")
                 Text(map.name).foregroundStyle(.cyan)
                 if let guide = map.campaign?.loadouts.first(where: { $0.bossID == bossID }), !guide.options.isEmpty {
-                    Text(guide.entry).cardStyle()
+                    VisualBrief(text: guide.entry).cardStyle()
                     Picker("Chọn đội hình", selection: $selected) {
                         ForEach(Array(guide.options.enumerated()), id: \.offset) { index, option in Text(option.title).tag(index) }
                     }.pickerStyle(.menu).accessibilityIdentifier("armyOptions")
@@ -101,8 +100,8 @@ struct BossArmyScreen: View {
                     VStack(alignment: .leading, spacing: 14) {
                         if UIImage(named: option.imageAsset) != nil { CreatureAvatar(asset: option.imageAsset).frame(height: 150).frame(maxWidth: .infinity) }
                         Text(option.title).font(.title2.bold()).accessibilityIdentifier("armyOptionTitle")
-                        Text(option.team).font(.headline).foregroundStyle(.cyan)
-                        Text(option.why)
+                        VisualTeam(text: option.team)
+                        VisualBrief(text: option.why)
                     }.cardStyle()
                     VStack(alignment: .leading, spacing: 18) {
                         Text("Mốc chuẩn bị sau imprint & lên XP").font(.title2.bold())
@@ -112,12 +111,12 @@ struct BossArmyScreen: View {
                                 LazyVGrid(columns: [GridItem(.adaptive(minimum: 180), alignment: .leading)], alignment: .leading, spacing: 14) {
                                     stat("HP", target.hp); stat("Melee", target.melee); stat("Saddle armor", target.saddle)
                                 }
-                                if !target.extra.isEmpty { Text(target.extra).font(.subheadline).foregroundStyle(.secondary) }
+                                if !target.extra.isEmpty { VisualBrief(text: target.extra) }
                             }.padding(16).background(.white.opacity(0.04), in: RoundedRectangle(cornerRadius: 14))
                         }
                     }.cardStyle()
                     VStack(alignment: .leading, spacing: 12) {
-                        Text("Điều khiển & rủi ro").font(.title2.bold()); Text(option.play)
+                        Text("Điều khiển & rủi ro").font(.title2.bold()); VisualBrief(text: option.play)
                     }.cardStyle()
                     NavigationLink(value: GuideDestination.preparation) { Label("Cách chọn level, breed và lên điểm", systemImage: "graduationcap.fill") }
                     NavigationLink(value: GuideDestination.boss(bossID)) { Label("Hồ sơ, tribute & đường tới boss", systemImage: "shield.lefthalf.filled") }
@@ -126,7 +125,7 @@ struct BossArmyScreen: View {
         }.navigationTitle("Đội Dino").navigationBarTitleDisplayMode(.inline)
     }
     private func stat(_ name: String, _ value: String) -> some View {
-        VStack(alignment: .leading, spacing: 5) { Text(name).font(.caption).foregroundStyle(.secondary); Text(value).font(.headline).textSelection(.enabled) }.frame(maxWidth: .infinity, alignment: .leading)
+        VStack(alignment: .leading, spacing: 5) { Label(name, systemImage: VisualFacts.symbol(for: name)).labelStyle(.iconOnly).accessibilityLabel(name).foregroundStyle(.cyan); Text(value).font(.headline).textSelection(.enabled) }.frame(maxWidth: .infinity, alignment: .leading)
     }
 }
 // Research provenance is retained in bundled data and developer reports.

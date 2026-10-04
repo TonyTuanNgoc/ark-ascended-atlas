@@ -33,15 +33,13 @@ struct MapInformationScreen: View {
                     }
                     LinearGradient(colors: [.clear, .black.opacity(0.95)], startPoint: .top, endPoint: .bottom)
                     VStack(alignment: .leading, spacing: 10) {
-                        Text("ARK: SURVIVAL ASCENDED · SINGLE PLAYER").font(.caption.bold()).foregroundStyle(.cyan)
                         Text(map.name).font(.system(size: 46, weight: .bold, design: .rounded)).accessibilityIdentifier("mapInformationTitle")
-                        Text(map.information?.subtitle ?? map.summary).font(.headline)
                     }.padding(24)
                 }.frame(height: 310).clipShape(RoundedRectangle(cornerRadius: 22))
                 LazyVGrid(columns: [GridItem(.adaptive(minimum: 150))], spacing: 14) {
-                    metric("\((try? map.creatures.get().creatures.count) ?? 0)", "Dino & biến thể")
+                    metric("\((try? map.creatures.get().creatures.count) ?? 0)", "Dino")
                     metric("\(map.exploration?.artifacts.count ?? 0)", "Artifact")
-                    metric(map == .ragnarok ? "5" : "\(map.bosses.count)", "Boss có tên")
+                    metric(map == .ragnarok ? "5" : "\(map.bosses.count)", "Boss")
                 }
                 HStack {
                     Button(action: openMap) { Label("Mở bản đồ", systemImage: "map.fill") }.labelStyle(.iconOnly).accessibilityLabel("Mở bản đồ").accessibilityIdentifier("openRagnarokMap")
@@ -52,13 +50,13 @@ struct MapInformationScreen: View {
                     ForEach(info.sections.filter { search.isEmpty || $0.title.localizedStandardContains(search) || $0.items.contains { $0.localizedStandardContains(search) } }) { section in
                         VStack(alignment: .leading, spacing: 14) {
                             Text(section.title).font(.title2.bold())
-                            ForEach(section.items, id: \.self) { Text($0).foregroundStyle(.secondary).textSelection(.enabled) }
+                            ForEach(section.items, id: \.self) { VisualBrief(text: $0) }
                         }.cardStyle().accessibilityIdentifier("information-" + section.id)
                     }
                     if search.isEmpty || "tài nguyên resources".localizedStandardContains(search) {
                         VStack(alignment: .leading, spacing: 12) {
                             Text("Tài nguyên").font(.title2.bold())
-                            ForEach(info.resources) { resource in HStack { Text(resource.name); Spacer(); Image(systemName: "cube.fill").foregroundStyle(.cyan) } }
+                            ForEach(info.resources) { resource in VisualBrief(text: resource.name) }
                         }.cardStyle()
                     }
                 } else {
