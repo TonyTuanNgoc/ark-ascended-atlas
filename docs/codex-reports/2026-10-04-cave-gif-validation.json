@@ -1,0 +1,19 @@
+{
+  "ragnarok": {
+    "routes": 6,
+    "gifs": 189,
+    "maxSeconds": 16.01
+  },
+  "the-island": {
+    "routes": 10,
+    "gifs": 148,
+    "maxSeconds": 14.01
+  },
+  "the-center": {
+    "routes": 9,
+    "gifs": 130,
+    "maxSeconds": 14.01
+  },
+  "totalGIFs": 467,
+  "assetBytes": 2457032172
+}

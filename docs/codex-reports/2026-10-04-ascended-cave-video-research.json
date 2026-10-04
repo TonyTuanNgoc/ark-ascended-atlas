@@ -817,5 +817,17 @@
       ],
       "fullMetadataDurationSeconds": 1296.55
     }
-  ]
+  ],
+  "gifRelease": {
+    "version": "0.7.0",
+    "build": 8,
+    "status": "cable-installed-and-launched",
+    "completeUsedSources": 25,
+    "gifs": 467,
+    "artifactBearingRoutes": 25,
+    "receipt": "2026-10-04-ascended-offline-cave-gifs.md",
+    "sourceIntegrity": "2026-10-04-cave-source-integrity.json",
+    "physicalAutomation": "initialization-timeout; no physical interaction claim",
+    "historicalAcquisitionBlock": "resolved by isolated public downloader; retained earlier evidence"
+  }
 }

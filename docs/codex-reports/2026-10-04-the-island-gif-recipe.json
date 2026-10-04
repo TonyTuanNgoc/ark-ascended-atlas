@@ -1,0 +1,1807 @@
+{
+  "map": "the-island",
+  "rights": "user-confirmed-licensed",
+  "guides": [
+    {
+      "routeID": "lower-south",
+      "sections": [
+        {
+          "id": "hunter",
+          "title": "Đi bộ từ cửa hang → Hunter",
+          "steps": [
+            {
+              "id": "hunter-01",
+              "title": "Vào cửa đá thấp",
+              "videoID": "fwffA3aJrlA",
+              "start": 32,
+              "end": 46,
+              "visuallyReviewed": true,
+              "direction": "Tìm hốc đá thấp giữa các cây. Đi vào đường hầm; đồ Ghillie và Cactus Broth trong clip giúp giảm khả năng bị phát hiện, nhưng đừng chạm vào thú.",
+              "gif": "gif-the-island-lower-south-hunter-01",
+              "poster": "gif-the-island-lower-south-hunter-01",
+              "renderKey": "68d756ca8525d0c2afc1eea6136a1c7dfa82bf9e6af604155fee587055dc2066"
+            },
+            {
+              "id": "hunter-02",
+              "title": "Theo đường xuống · 1/2",
+              "videoID": "fwffA3aJrlA",
+              "start": 46,
+              "end": 60,
+              "visuallyReviewed": true,
+              "direction": "Theo đường hầm xuống gian có cây sáng. Đối chiếu gờ đá trong GIF kế tiếp trước khi rẽ.",
+              "gif": "gif-the-island-lower-south-hunter-02",
+              "poster": "gif-the-island-lower-south-hunter-02",
+              "renderKey": "a5a8c3d209adc9f2311a32d885b68654a5636a5a70df7e303fd7f3d574539600"
+            },
+            {
+              "id": "hunter-03",
+              "title": "Theo đường xuống · 2/2",
+              "videoID": "fwffA3aJrlA",
+              "start": 60,
+              "end": 74,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-lower-south-hunter-03",
+              "poster": "gif-the-island-lower-south-hunter-03",
+              "renderKey": "f8d2ea571e40e09a83a7634dcca0d3144f52a7ac962096b5ae4fbadc958e00bc"
+            },
+            {
+              "id": "hunter-04",
+              "title": "Qua gian có nước · 1/2",
+              "videoID": "fwffA3aJrlA",
+              "start": 74,
+              "end": 88,
+              "visuallyReviewed": true,
+              "direction": "Đi tiếp trên nền đá, qua gian có nước và cây sáng xanh. Giữ khoảng cách với sinh vật trong hang.",
+              "gif": "gif-the-island-lower-south-hunter-04",
+              "poster": "gif-the-island-lower-south-hunter-04",
+              "renderKey": "274a1e0e706f6e401b14c66f0b4c6fa6c64e360cb473cfb640e14119eb2e24ce"
+            },
+            {
+              "id": "hunter-05",
+              "title": "Qua gian có nước · 2/2",
+              "videoID": "fwffA3aJrlA",
+              "start": 88,
+              "end": 100,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-lower-south-hunter-05",
+              "poster": "gif-the-island-lower-south-hunter-05",
+              "renderKey": "76e80e51f8d10779311c099c1ee68e1b6473ad56a1595338575bf5d756afb0ee"
+            },
+            {
+              "id": "hunter-06",
+              "title": "Lấy Hunter · 1/2",
+              "videoID": "fwffA3aJrlA",
+              "start": 100,
+              "end": 114,
+              "visuallyReviewed": true,
+              "direction": "Theo nền đá tới Artifact phát sáng xanh. Lấy Hunter rồi quay ra đường vừa vào.",
+              "gif": "gif-the-island-lower-south-hunter-06",
+              "poster": "gif-the-island-lower-south-hunter-06",
+              "renderKey": "dfe27277330803efc6f14a045321e4fdf1b5c72ab3cf5b47e3eda548de9cb5b9"
+            },
+            {
+              "id": "hunter-07",
+              "title": "Lấy Hunter · 2/2",
+              "videoID": "fwffA3aJrlA",
+              "start": 114,
+              "end": 115,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-lower-south-hunter-07",
+              "poster": "gif-the-island-lower-south-hunter-07",
+              "renderKey": "6229d1ab1085a09ec8b3f7fd62643e8eab76c62e3ce3860b217f2b0cc4978416"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "routeID": "central",
+      "sections": [
+        {
+          "id": "clever",
+          "title": "Đi bộ từ cửa hang → Clever",
+          "steps": [
+            {
+              "id": "clever-01",
+              "title": "Vào cửa Central Cave",
+              "videoID": "TxnfOx_ZW3c",
+              "start": 25,
+              "end": 39,
+              "visuallyReviewed": true,
+              "direction": "Tìm cửa đá dưới vách như trong GIF. Đi bộ vào hành lang có ánh xanh và cam.",
+              "gif": "gif-the-island-central-clever-01",
+              "poster": "gif-the-island-central-clever-01",
+              "renderKey": "339d95e6fb13968169e57413617515ee20af9914eb8ca2d915e00370ddf7977d"
+            },
+            {
+              "id": "clever-02",
+              "title": "Theo hành lang tới gian cuối · 1/2",
+              "videoID": "TxnfOx_ZW3c",
+              "start": 39,
+              "end": 53,
+              "visuallyReviewed": true,
+              "direction": "Theo lối đá xuyên qua các gian có cây sáng. Dừng lại ở cuối mỗi GIF để nhận ra lối tiếp theo.",
+              "gif": "gif-the-island-central-clever-02",
+              "poster": "gif-the-island-central-clever-02",
+              "renderKey": "8d27cf05e21fe251e37a6acdcb850f2f19ebe137dab9b8b78ba548272baa6c77"
+            },
+            {
+              "id": "clever-03",
+              "title": "Theo hành lang tới gian cuối · 2/2",
+              "videoID": "TxnfOx_ZW3c",
+              "start": 53,
+              "end": 65,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-central-clever-03",
+              "poster": "gif-the-island-central-clever-03",
+              "renderKey": "8c0f8c74c1b0ca6b958043811d7c8cb1ec26935cc35466b6d5e31a78d3523514"
+            },
+            {
+              "id": "clever-04",
+              "title": "Tới nền đá lấy Clever",
+              "videoID": "TxnfOx_ZW3c",
+              "start": 65,
+              "end": 79,
+              "visuallyReviewed": true,
+              "direction": "Tiến tới nền đá trong gian cuối và lấy Clever. Đừng đi sâu thêm khi đã có Artifact.",
+              "gif": "gif-the-island-central-clever-04",
+              "poster": "gif-the-island-central-clever-04",
+              "renderKey": "7c00960435535062552460494813f01cc445ab74c896707e61c9fbf20d16a39d"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "routeID": "lava",
+      "sections": [
+        {
+          "id": "massive",
+          "title": "Đi bộ và Grapple → Massive",
+          "steps": [
+            {
+              "id": "massive-01",
+              "title": "Vào cửa giữa cây · 1/2",
+              "videoID": "hJZAngyesnM",
+              "start": 37,
+              "end": 51,
+              "visuallyReviewed": true,
+              "direction": "Qua cửa dưới vách đá có dây leo, xuống đường hầm tới vùng dung nham. Chuẩn bị Grapple và Parachute trước các vực.",
+              "gif": "gif-the-island-lava-massive-01",
+              "poster": "gif-the-island-lava-massive-01",
+              "renderKey": "dbceaaa95c7058981e7033c4dc56cb5c7276a11c1c658bd48e1dede0f0fa7935"
+            },
+            {
+              "id": "massive-02",
+              "title": "Vào cửa giữa cây · 2/2",
+              "videoID": "hJZAngyesnM",
+              "start": 51,
+              "end": 65,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-lava-massive-02",
+              "poster": "gif-the-island-lava-massive-02",
+              "renderKey": "8a87ab8fd376696dd639e55a2bb86f047548ea109b2392c5578931a8fc565492"
+            },
+            {
+              "id": "massive-03",
+              "title": "Grapple qua vực đầu · 1/2",
+              "videoID": "hJZAngyesnM",
+              "start": 65,
+              "end": 79,
+              "visuallyReviewed": true,
+              "direction": "Bắn Grapple vào phần đá chắc phía trên để qua khoảng hở. Đừng nhảy xuống dung nham.",
+              "gif": "gif-the-island-lava-massive-03",
+              "poster": "gif-the-island-lava-massive-03",
+              "renderKey": "33ddc95eab4a9d1e44b34134c2d05a08eb97a02b4cd9c951d75f8e9d2c207122"
+            },
+            {
+              "id": "massive-04",
+              "title": "Grapple qua vực đầu · 2/2",
+              "videoID": "hJZAngyesnM",
+              "start": 79,
+              "end": 89,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-lava-massive-04",
+              "poster": "gif-the-island-lava-massive-04",
+              "renderKey": "248187fecd911b085663b22792a4cdcf5c505c68af0453aa804b8214b41ea31b"
+            },
+            {
+              "id": "massive-05",
+              "title": "Theo gờ hẹp · 1/2",
+              "videoID": "hJZAngyesnM",
+              "start": 89,
+              "end": 103,
+              "visuallyReviewed": true,
+              "direction": "Theo gờ đá vòng quanh dung nham, bám đường như trong GIF. Dừng ở nền an toàn trước khi sang đoạn tiếp.",
+              "gif": "gif-the-island-lava-massive-05",
+              "poster": "gif-the-island-lava-massive-05",
+              "renderKey": "32080b7add44a7032a112a98a80ef01fd79c7b346a43602f4c900f7e2a6ca494"
+            },
+            {
+              "id": "massive-06",
+              "title": "Theo gờ hẹp · 2/2",
+              "videoID": "hJZAngyesnM",
+              "start": 103,
+              "end": 117,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-lava-massive-06",
+              "poster": "gif-the-island-lava-massive-06",
+              "renderKey": "a8ef1b1fd62a1e7cad8c6b684ef2c9bdf5f973eb0234d2cdef09879d2463bc9a"
+            },
+            {
+              "id": "massive-07",
+              "title": "Qua các lối đá · 1/3",
+              "videoID": "hJZAngyesnM",
+              "start": 117,
+              "end": 131,
+              "visuallyReviewed": true,
+              "direction": "Đi và nhảy qua các gờ thấp, xuyên qua đường hầm đá đỏ. Chỉ nhảy khi đã nhìn rõ nền đáp.",
+              "gif": "gif-the-island-lava-massive-07",
+              "poster": "gif-the-island-lava-massive-07",
+              "renderKey": "d36e1e574db8b97ae69b1b662a126ad1ab78a2e1912c00da1f87433f4ca7c80a"
+            },
+            {
+              "id": "massive-08",
+              "title": "Qua các lối đá · 2/3",
+              "videoID": "hJZAngyesnM",
+              "start": 131,
+              "end": 145,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-lava-massive-08",
+              "poster": "gif-the-island-lava-massive-08",
+              "renderKey": "953d02f929f55af72e28af415b9e211c8f8e14bf3b1ce76cfc79fe9559ff1167"
+            },
+            {
+              "id": "massive-09",
+              "title": "Qua các lối đá · 3/3",
+              "videoID": "hJZAngyesnM",
+              "start": 145,
+              "end": 159,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-lava-massive-09",
+              "poster": "gif-the-island-lava-massive-09",
+              "renderKey": "f6236a4545a9728d9e0f2ec49af1fc4e583bf20aa4f0babeab74999005ba3c16"
+            },
+            {
+              "id": "massive-10",
+              "title": "Tới gian Artifact · 1/2",
+              "videoID": "hJZAngyesnM",
+              "start": 159,
+              "end": 173,
+              "visuallyReviewed": true,
+              "direction": "Theo lối đá vào gian có cây và nấm. Vòng theo nền chắc về phía ánh Artifact.",
+              "gif": "gif-the-island-lava-massive-10",
+              "poster": "gif-the-island-lava-massive-10",
+              "renderKey": "0d8ba7ae17af204faf78c99da08d6d43de54183b7e6bf8c8c608fafdb9e5031c"
+            },
+            {
+              "id": "massive-11",
+              "title": "Tới gian Artifact · 2/2",
+              "videoID": "hJZAngyesnM",
+              "start": 173,
+              "end": 184,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-lava-massive-11",
+              "poster": "gif-the-island-lava-massive-11",
+              "renderKey": "dd0e365880b3dfd753ef84e29adb88052f8cd52777804b04722a716be1f8ec6a"
+            },
+            {
+              "id": "massive-12",
+              "title": "Lấy Massive",
+              "videoID": "hJZAngyesnM",
+              "start": 184,
+              "end": 198,
+              "visuallyReviewed": true,
+              "direction": "Tiếp cận Artifact trên gờ cạnh dung nham và lấy Massive. Mang sẵn Grapple để quay lại các khoảng hở.",
+              "gif": "gif-the-island-lava-massive-12",
+              "poster": "gif-the-island-lava-massive-12",
+              "renderKey": "043f9206ccae346daefc903065577d26a2c5aa0e8d5b53e20f69c53cc79e4b8e"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "routeID": "upper-south",
+      "sections": [
+        {
+          "id": "pack",
+          "title": "Đi bộ, Parachute và SCUBA → Pack",
+          "steps": [
+            {
+              "id": "pack-01",
+              "title": "Vào cửa Upper South · 1/2",
+              "videoID": "xMdSyIWtuHI",
+              "start": 12,
+              "end": 26,
+              "visuallyReviewed": true,
+              "direction": "Vào cửa đá thấp rồi theo đường hầm có cây sáng. Clip đi bộ; anh cần Parachute, Grapple và SCUBA cho các tầng phía trong.",
+              "gif": "gif-the-island-upper-south-pack-01",
+              "poster": "gif-the-island-upper-south-pack-01",
+              "renderKey": "08e22bed9250e4fc4c16054a9e3cef8cd0a19ab4a57b42e58ee7dc189a7c7ffe"
+            },
+            {
+              "id": "pack-02",
+              "title": "Vào cửa Upper South · 2/2",
+              "videoID": "xMdSyIWtuHI",
+              "start": 26,
+              "end": 40,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-upper-south-pack-02",
+              "poster": "gif-the-island-upper-south-pack-02",
+              "renderKey": "75269bb962fc01d37e3d10630b7075b9c42334636acc006e61da6fc8223168a6"
+            },
+            {
+              "id": "pack-03",
+              "title": "Xuống gian lớn · 1/3",
+              "videoID": "xMdSyIWtuHI",
+              "start": 40,
+              "end": 54,
+              "visuallyReviewed": true,
+              "direction": "Theo lối quanh cây và cột đá tới gian rộng có ánh sáng từ trên cao.",
+              "gif": "gif-the-island-upper-south-pack-03",
+              "poster": "gif-the-island-upper-south-pack-03",
+              "renderKey": "0372deebdc808e1ab7b3b728d193219d4c4308781acfa16bfe56558c7ae5b9b8"
+            },
+            {
+              "id": "pack-04",
+              "title": "Xuống gian lớn · 2/3",
+              "videoID": "xMdSyIWtuHI",
+              "start": 54,
+              "end": 68,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-upper-south-pack-04",
+              "poster": "gif-the-island-upper-south-pack-04",
+              "renderKey": "a47d5ca6ceb66d795f843e2b2c0c82b83395eeda2a7332b18327837b07e093ca"
+            },
+            {
+              "id": "pack-05",
+              "title": "Xuống gian lớn · 3/3",
+              "videoID": "xMdSyIWtuHI",
+              "start": 68,
+              "end": 82,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-upper-south-pack-05",
+              "poster": "gif-the-island-upper-south-pack-05",
+              "renderKey": "aa8154dcc3faae4c34a4c00d0fa2da91afa1d19cdd6fba361a121a5f469fbb36"
+            },
+            {
+              "id": "pack-06",
+              "title": "Hạ xuống bằng Parachute · 1/2",
+              "videoID": "xMdSyIWtuHI",
+              "start": 82,
+              "end": 96,
+              "visuallyReviewed": true,
+              "direction": "Mở Parachute khi xuống tầng dưới, đáp vào nền đá có cây. Nhìn nền đáp trong GIF trước khi bước khỏi mép.",
+              "gif": "gif-the-island-upper-south-pack-06",
+              "poster": "gif-the-island-upper-south-pack-06",
+              "renderKey": "9c1c7c23a0f261695a02ea67a496251e85865049d7d1a6d4f4968305969f42c4"
+            },
+            {
+              "id": "pack-07",
+              "title": "Hạ xuống bằng Parachute · 2/2",
+              "videoID": "xMdSyIWtuHI",
+              "start": 96,
+              "end": 110,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-upper-south-pack-07",
+              "poster": "gif-the-island-upper-south-pack-07",
+              "renderKey": "d553b4c90b319db1ddadcf28c6adcfe9a0594d2dbb15791ae67341b14499bf98"
+            },
+            {
+              "id": "pack-08",
+              "title": "Theo đường quanh vách · 1/4",
+              "videoID": "xMdSyIWtuHI",
+              "start": 110,
+              "end": 124,
+              "visuallyReviewed": true,
+              "direction": "Tiếp tục qua những hành lang có cây sáng, bám nền đá quanh vách tới vùng có nước.",
+              "gif": "gif-the-island-upper-south-pack-08",
+              "poster": "gif-the-island-upper-south-pack-08",
+              "renderKey": "90982431e143e3ced6108087168ed34f4c77439ba2b134883b295527bf29d0a6"
+            },
+            {
+              "id": "pack-09",
+              "title": "Theo đường quanh vách · 2/4",
+              "videoID": "xMdSyIWtuHI",
+              "start": 124,
+              "end": 138,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-upper-south-pack-09",
+              "poster": "gif-the-island-upper-south-pack-09",
+              "renderKey": "4b574130648c83ed2f4d6d08e2f90b710cf9ffb4a23c56cee2b8067ae87f8497"
+            },
+            {
+              "id": "pack-10",
+              "title": "Theo đường quanh vách · 3/4",
+              "videoID": "xMdSyIWtuHI",
+              "start": 138,
+              "end": 152,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-upper-south-pack-10",
+              "poster": "gif-the-island-upper-south-pack-10",
+              "renderKey": "443869aa359f69132a4ea8ab09ac0866ededb0986f64bb854774e7222b69f1e6"
+            },
+            {
+              "id": "pack-11",
+              "title": "Theo đường quanh vách · 4/4",
+              "videoID": "xMdSyIWtuHI",
+              "start": 152,
+              "end": 166,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-upper-south-pack-11",
+              "poster": "gif-the-island-upper-south-pack-11",
+              "renderKey": "93f9031c0107a451ace746bcdf40255ffe75b0f029488e6b08789c8ad382925f"
+            },
+            {
+              "id": "pack-12",
+              "title": "Grapple và xuống hồ · 1/3",
+              "videoID": "xMdSyIWtuHI",
+              "start": 166,
+              "end": 180,
+              "visuallyReviewed": true,
+              "direction": "Dùng Grapple ở đoạn gờ cao như trong GIF, rồi đi xuống hồ. Kiểm tra đồ SCUBA trước khi lặn.",
+              "gif": "gif-the-island-upper-south-pack-12",
+              "poster": "gif-the-island-upper-south-pack-12",
+              "renderKey": "afd7dd9d3d0dc2298a6dd3f8b8a3ad3fd5119c209891bfa2d9a60086ba9e23b4"
+            },
+            {
+              "id": "pack-13",
+              "title": "Grapple và xuống hồ · 2/3",
+              "videoID": "xMdSyIWtuHI",
+              "start": 180,
+              "end": 194,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-upper-south-pack-13",
+              "poster": "gif-the-island-upper-south-pack-13",
+              "renderKey": "39bf49f2445f0fc02befbdcdbde75a7ad66816b8aec58eb6b1a0d42ed50cf7bf"
+            },
+            {
+              "id": "pack-14",
+              "title": "Grapple và xuống hồ · 3/3",
+              "videoID": "xMdSyIWtuHI",
+              "start": 194,
+              "end": 208,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-upper-south-pack-14",
+              "poster": "gif-the-island-upper-south-pack-14",
+              "renderKey": "927e5591325328189c2460e8afe40904a3567bf1266a6413644343fa3b919c3f"
+            },
+            {
+              "id": "pack-15",
+              "title": "Qua lối dưới nước · 1/2",
+              "videoID": "xMdSyIWtuHI",
+              "start": 208,
+              "end": 222,
+              "visuallyReviewed": true,
+              "direction": "Bơi qua đường hầm dưới nước, trồi lên rồi theo khe phủ cây sáng xanh.",
+              "gif": "gif-the-island-upper-south-pack-15",
+              "poster": "gif-the-island-upper-south-pack-15",
+              "renderKey": "2b05c27f77870faeb24fb18696fb56f296abefedcfd561394c53c83c5137c621"
+            },
+            {
+              "id": "pack-16",
+              "title": "Qua lối dưới nước · 2/2",
+              "videoID": "xMdSyIWtuHI",
+              "start": 222,
+              "end": 236,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-upper-south-pack-16",
+              "poster": "gif-the-island-upper-south-pack-16",
+              "renderKey": "4d2ea0a31fddbdba62f0f4d98b0f9e60a02227b43ae6854cf91524d1c2932af0"
+            },
+            {
+              "id": "pack-17",
+              "title": "Lấy Pack",
+              "videoID": "xMdSyIWtuHI",
+              "start": 236,
+              "end": 250,
+              "visuallyReviewed": true,
+              "direction": "Tới Artifact ở cuối khe và lấy Pack. Giữ đủ đồ lặn và Grapple cho đường về.",
+              "gif": "gif-the-island-upper-south-pack-17",
+              "poster": "gif-the-island-upper-south-pack-17",
+              "renderKey": "58031f85fee24ca910afddacd1dc78c7ad2dccc6ed4cf8c5e1bdcf5709a79d00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "routeID": "north-west",
+      "sections": [
+        {
+          "id": "skylord",
+          "title": "Đi bộ và Grapple → Skylord",
+          "steps": [
+            {
+              "id": "skylord-01",
+              "title": "Qua cửa hang tuyết · 1/2",
+              "videoID": "YshQfBPB6Vs",
+              "start": 32,
+              "end": 46,
+              "visuallyReviewed": true,
+              "direction": "Tìm cửa nhỏ giữa đá và tuyết. Cúi người qua các lối thấp, theo hành lang tối vào hang.",
+              "gif": "gif-the-island-north-west-skylord-01",
+              "poster": "gif-the-island-north-west-skylord-01",
+              "renderKey": "8b37361432784a1f8831fdd8a235854651accfb1f296e89ccbc46cd0391a556a"
+            },
+            {
+              "id": "skylord-02",
+              "title": "Qua cửa hang tuyết · 2/2",
+              "videoID": "YshQfBPB6Vs",
+              "start": 46,
+              "end": 60,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-north-west-skylord-02",
+              "poster": "gif-the-island-north-west-skylord-02",
+              "renderKey": "ece52ae907539677286024ca31bd52e2334388557c97a7ea4334e2f99817906b"
+            },
+            {
+              "id": "skylord-03",
+              "title": "Theo khe đá hẹp · 1/2",
+              "videoID": "YshQfBPB6Vs",
+              "start": 60,
+              "end": 74,
+              "visuallyReviewed": true,
+              "direction": "Theo đường hẹp giữa các khối đá. Mang đuốc để nhận ra lối; đừng chạy vội qua các chỗ nền tụt.",
+              "gif": "gif-the-island-north-west-skylord-03",
+              "poster": "gif-the-island-north-west-skylord-03",
+              "renderKey": "f60f88f7a3b1970045e60f0fa33171620bedd67c0824f455c29b2f5f6b6614c5"
+            },
+            {
+              "id": "skylord-04",
+              "title": "Theo khe đá hẹp · 2/2",
+              "videoID": "YshQfBPB6Vs",
+              "start": 74,
+              "end": 78,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-north-west-skylord-04",
+              "poster": "gif-the-island-north-west-skylord-04",
+              "renderKey": "56b1502d6bba557d62dc203110d8c85ec92bd91f20c45fc5436a2ab9a6797219"
+            },
+            {
+              "id": "skylord-05",
+              "title": "Grapple qua khoảng hở",
+              "videoID": "YshQfBPB6Vs",
+              "start": 78,
+              "end": 92,
+              "visuallyReviewed": true,
+              "direction": "Bắn Grapple vào vách đối diện như trong GIF để qua vực. Nhìn vị trí đáp trước khi thả dây.",
+              "gif": "gif-the-island-north-west-skylord-05",
+              "poster": "gif-the-island-north-west-skylord-05",
+              "renderKey": "0505cacc004a36cd75957e3a2b19989d8c4e84d9bbe9a620a5cd727ecf472156"
+            },
+            {
+              "id": "skylord-06",
+              "title": "Lấy Skylord",
+              "videoID": "YshQfBPB6Vs",
+              "start": 92,
+              "end": 101,
+              "visuallyReviewed": true,
+              "direction": "Artifact ở hốc đá phía trước. Lấy Skylord, rồi quay ra bằng Grapple và đường hẹp vừa đi.",
+              "gif": "gif-the-island-north-west-skylord-06",
+              "poster": "gif-the-island-north-west-skylord-06",
+              "renderKey": "9704661372191c5f35f9838ed14c61ad5ddc98712574baf3728f6cb80590152c"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "routeID": "lost-faith",
+      "sections": [
+        {
+          "id": "brute",
+          "title": "Bơi với SCUBA và Cactus Broth → Brute",
+          "steps": [
+            {
+              "id": "brute-01",
+              "title": "Lặn tới cửa phía tây · 1/2",
+              "videoID": "EvabtfQzktw",
+              "start": 52,
+              "end": 66,
+              "visuallyReviewed": true,
+              "direction": "Từ bờ biển phía tây, trang bị SCUBA và dùng Cactus Broth trước khi lặn. Công trình trên bờ trong clip là nhà người chơi.",
+              "gif": "gif-the-island-lost-faith-brute-01",
+              "poster": "gif-the-island-lost-faith-brute-01",
+              "renderKey": "ac25c74e92c0e3cb059635825fd2f186f13ead03514cc17d4e0ccd255497be6d"
+            },
+            {
+              "id": "brute-02",
+              "title": "Lặn tới cửa phía tây · 2/2",
+              "videoID": "EvabtfQzktw",
+              "start": 66,
+              "end": 80,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-lost-faith-brute-02",
+              "poster": "gif-the-island-lost-faith-brute-02",
+              "renderKey": "71276fc17048b241d6d0f6c63f26357e98a83134a3cfb81899f3528b882d3ca2"
+            },
+            {
+              "id": "brute-03",
+              "title": "Theo khe có cây vàng · 1/3",
+              "videoID": "EvabtfQzktw",
+              "start": 80,
+              "end": 94,
+              "visuallyReviewed": true,
+              "direction": "Bơi xuống khe giữa các khối đá, theo cây phát sáng vàng tới vùng tinh thể trắng.",
+              "gif": "gif-the-island-lost-faith-brute-03",
+              "poster": "gif-the-island-lost-faith-brute-03",
+              "renderKey": "5577ba7441df0dc8bfeb25bdbdd1d74d432847839088c3d6cb4026b7e5aeaef6"
+            },
+            {
+              "id": "brute-04",
+              "title": "Theo khe có cây vàng · 2/3",
+              "videoID": "EvabtfQzktw",
+              "start": 94,
+              "end": 108,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-lost-faith-brute-04",
+              "poster": "gif-the-island-lost-faith-brute-04",
+              "renderKey": "39b81ac3a41babe2a1c3f29d3228b1f31b2e78b0d092c4fca3fe1566eaa12357"
+            },
+            {
+              "id": "brute-05",
+              "title": "Theo khe có cây vàng · 3/3",
+              "videoID": "EvabtfQzktw",
+              "start": 108,
+              "end": 122,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-lost-faith-brute-05",
+              "poster": "gif-the-island-lost-faith-brute-05",
+              "renderKey": "77697d8e111389b669894b991042418485a2ff619bc229088fe47f9936e56e59"
+            },
+            {
+              "id": "brute-06",
+              "title": "Qua đường hầm tinh thể · 1/3",
+              "videoID": "EvabtfQzktw",
+              "start": 122,
+              "end": 136,
+              "visuallyReviewed": true,
+              "direction": "Theo lối dưới nước giữa các cụm tinh thể trắng. Tránh chạm vào sinh vật; Cactus Broth không làm anh bất tử.",
+              "gif": "gif-the-island-lost-faith-brute-06",
+              "poster": "gif-the-island-lost-faith-brute-06",
+              "renderKey": "61a26db8604dd40cfef85eaeff32844da3dc7f0fd9d8be12a04c37f316d08ef7"
+            },
+            {
+              "id": "brute-07",
+              "title": "Qua đường hầm tinh thể · 2/3",
+              "videoID": "EvabtfQzktw",
+              "start": 136,
+              "end": 150,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-lost-faith-brute-07",
+              "poster": "gif-the-island-lost-faith-brute-07",
+              "renderKey": "b009a93b4c2c69e2491af0c0b15a27a93fdbc28649f7da2f2a568928295cc713"
+            },
+            {
+              "id": "brute-08",
+              "title": "Qua đường hầm tinh thể · 3/3",
+              "videoID": "EvabtfQzktw",
+              "start": 150,
+              "end": 164,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-lost-faith-brute-08",
+              "poster": "gif-the-island-lost-faith-brute-08",
+              "renderKey": "e1468d1a03984e440bb95e0a1e3f20610ca20868cd2709295b9bbcdd815d24c9"
+            },
+            {
+              "id": "brute-09",
+              "title": "Vòng quanh các cột · 1/4",
+              "videoID": "EvabtfQzktw",
+              "start": 164,
+              "end": 178,
+              "visuallyReviewed": true,
+              "direction": "Bơi theo đường quanh những cột đá lớn và cây vàng. Đối chiếu từng khúc quanh trong GIF trước khi đi tiếp.",
+              "gif": "gif-the-island-lost-faith-brute-09",
+              "poster": "gif-the-island-lost-faith-brute-09",
+              "renderKey": "e10b850491b64fe93ca68b3e324ec0effbf7e669ff598cd67108236524d5a651"
+            },
+            {
+              "id": "brute-10",
+              "title": "Vòng quanh các cột · 2/4",
+              "videoID": "EvabtfQzktw",
+              "start": 178,
+              "end": 192,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-lost-faith-brute-10",
+              "poster": "gif-the-island-lost-faith-brute-10",
+              "renderKey": "63a3958dcc2203ea05aab0a508c75eedcd4583623b63d9b98d16ea6a7b3ab09b"
+            },
+            {
+              "id": "brute-11",
+              "title": "Vòng quanh các cột · 3/4",
+              "videoID": "EvabtfQzktw",
+              "start": 192,
+              "end": 206,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-lost-faith-brute-11",
+              "poster": "gif-the-island-lost-faith-brute-11",
+              "renderKey": "362ac2c18e514f53d2f2d4d96e864b7656e939ce1fbacb1b985561d31620b1f9"
+            },
+            {
+              "id": "brute-12",
+              "title": "Vòng quanh các cột · 4/4",
+              "videoID": "EvabtfQzktw",
+              "start": 206,
+              "end": 220,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-lost-faith-brute-12",
+              "poster": "gif-the-island-lost-faith-brute-12",
+              "renderKey": "8d16d4fe55aae254ba6947aaca7168e0daab540b122de2fefd78e28347a7aec4"
+            },
+            {
+              "id": "brute-13",
+              "title": "Lên gian có không khí · 1/2",
+              "videoID": "EvabtfQzktw",
+              "start": 220,
+              "end": 234,
+              "visuallyReviewed": true,
+              "direction": "Trồi lên gian đá đỏ, lên nền nghỉ và kiểm tra bình SCUBA. Hồi stamina trước đợt lặn tiếp theo.",
+              "gif": "gif-the-island-lost-faith-brute-13",
+              "poster": "gif-the-island-lost-faith-brute-13",
+              "renderKey": "1778a6f051fc7e9f6c7ad50ea880f223286da5c8694501fd8da89eac7125f593"
+            },
+            {
+              "id": "brute-14",
+              "title": "Lên gian có không khí · 2/2",
+              "videoID": "EvabtfQzktw",
+              "start": 234,
+              "end": 243,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-lost-faith-brute-14",
+              "poster": "gif-the-island-lost-faith-brute-14",
+              "renderKey": "fc541c17b0e7bbc1276d34b3507e75f0956e1ff9fbc371eae0221a4438eebf4c"
+            },
+            {
+              "id": "brute-15",
+              "title": "Lặn qua gian rong sáng · 1/3",
+              "videoID": "EvabtfQzktw",
+              "start": 253,
+              "end": 267,
+              "visuallyReviewed": true,
+              "direction": "Quay xuống nước ở hồ trước mặt, theo lối có cây xanh vàng cao và tinh thể trắng.",
+              "gif": "gif-the-island-lost-faith-brute-15",
+              "poster": "gif-the-island-lost-faith-brute-15",
+              "renderKey": "e0611bc9d34a303a92637711432276da36276732365de0edb9ddb85d6b09023e"
+            },
+            {
+              "id": "brute-16",
+              "title": "Lặn qua gian rong sáng · 2/3",
+              "videoID": "EvabtfQzktw",
+              "start": 267,
+              "end": 281,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-lost-faith-brute-16",
+              "poster": "gif-the-island-lost-faith-brute-16",
+              "renderKey": "cbf56a8dac162fabb3be89dd5a54e0be08e84035a3a2a3353f5dad4751dfce42"
+            },
+            {
+              "id": "brute-17",
+              "title": "Lặn qua gian rong sáng · 3/3",
+              "videoID": "EvabtfQzktw",
+              "start": 281,
+              "end": 295,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-lost-faith-brute-17",
+              "poster": "gif-the-island-lost-faith-brute-17",
+              "renderKey": "14c53573c83ed53db79824f1c1635bbbb95630a470fe5350a68c55cd1da0e594"
+            },
+            {
+              "id": "brute-18",
+              "title": "Bám vách tới Artifact · 1/3",
+              "videoID": "EvabtfQzktw",
+              "start": 295,
+              "end": 309,
+              "visuallyReviewed": true,
+              "direction": "Qua khe dưới vòm đá, bám nền đá đi tới ánh Artifact. Canh stamina và oxygen trước khi xuống sát nền.",
+              "gif": "gif-the-island-lost-faith-brute-18",
+              "poster": "gif-the-island-lost-faith-brute-18",
+              "renderKey": "57153bbe8cda5763d77fb46338f409039080cb523dc4446e66e49997da15056d"
+            },
+            {
+              "id": "brute-19",
+              "title": "Bám vách tới Artifact · 2/3",
+              "videoID": "EvabtfQzktw",
+              "start": 309,
+              "end": 323,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-lost-faith-brute-19",
+              "poster": "gif-the-island-lost-faith-brute-19",
+              "renderKey": "8bba3cdf950d513fe8fb3484b86be7c3d9b33f8e62d03b69a2810e9ba8558ade"
+            },
+            {
+              "id": "brute-20",
+              "title": "Bám vách tới Artifact · 3/3",
+              "videoID": "EvabtfQzktw",
+              "start": 323,
+              "end": 337,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-lost-faith-brute-20",
+              "poster": "gif-the-island-lost-faith-brute-20",
+              "renderKey": "d56850e07b504998762c4c96ac7669f5eef6c8549361c12d3216c6e93069122b"
+            },
+            {
+              "id": "brute-21",
+              "title": "Lấy Brute",
+              "videoID": "EvabtfQzktw",
+              "start": 337,
+              "end": 349,
+              "visuallyReviewed": true,
+              "direction": "Tới Artifact và lấy Brute, rồi quay về gian có không khí theo đúng đường vừa bơi.",
+              "gif": "gif-the-island-lost-faith-brute-21",
+              "poster": "gif-the-island-lost-faith-brute-21",
+              "renderKey": "e081c6c4aa5efe2bf631cfb73a8f730a5b9144afae14c30f4906d61f57a83418"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "routeID": "lost-hope",
+      "sections": [
+        {
+          "id": "cunning",
+          "title": "Bơi với SCUBA và Cactus Broth → Cunning",
+          "steps": [
+            {
+              "id": "cunning-01",
+              "title": "Tìm cửa dưới vách phía đông · 1/2",
+              "videoID": "ySKckimZSGM",
+              "start": 137,
+              "end": 151,
+              "visuallyReviewed": true,
+              "direction": "Lặn xuống cửa hang sát vách biển phía đông. Cánh cổng trong clip do người chơi đặt; anh tìm cửa đá tự nhiên phía sau nó.",
+              "gif": "gif-the-island-lost-hope-cunning-01",
+              "poster": "gif-the-island-lost-hope-cunning-01",
+              "renderKey": "5d33b43c7ba3d819289bf5099768e7a821f5e9f86002cd7af8c6d2edcc8f4674"
+            },
+            {
+              "id": "cunning-02",
+              "title": "Tìm cửa dưới vách phía đông · 2/2",
+              "videoID": "ySKckimZSGM",
+              "start": 151,
+              "end": 165,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-lost-hope-cunning-02",
+              "poster": "gif-the-island-lost-hope-cunning-02",
+              "renderKey": "2f59196f8130c2fb7a03e79011e6b90148690e5e32933279038dbc7e9fcfebfb"
+            },
+            {
+              "id": "cunning-03",
+              "title": "Theo đường giữa cây sáng · 1/4",
+              "videoID": "ySKckimZSGM",
+              "start": 165,
+              "end": 179,
+              "visuallyReviewed": true,
+              "direction": "Bơi vào đường hầm có cây sáng vàng và xanh. Clip dùng Cactus Broth; tránh va vào sinh vật để không bị kéo vào giao chiến.",
+              "gif": "gif-the-island-lost-hope-cunning-03",
+              "poster": "gif-the-island-lost-hope-cunning-03",
+              "renderKey": "b37913a539d6745496b89c3d3d00d5b6cef8877b44f5d86ea41d164bfc7a2e5b"
+            },
+            {
+              "id": "cunning-04",
+              "title": "Theo đường giữa cây sáng · 2/4",
+              "videoID": "ySKckimZSGM",
+              "start": 179,
+              "end": 193,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-lost-hope-cunning-04",
+              "poster": "gif-the-island-lost-hope-cunning-04",
+              "renderKey": "5b26a883d365ce719c9aa3270e6d01e98c7b8ffd278df055a034a6409f7d028d"
+            },
+            {
+              "id": "cunning-05",
+              "title": "Theo đường giữa cây sáng · 3/4",
+              "videoID": "ySKckimZSGM",
+              "start": 193,
+              "end": 207,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-lost-hope-cunning-05",
+              "poster": "gif-the-island-lost-hope-cunning-05",
+              "renderKey": "62ed7a621b7329b74f0f5ceaf4200521cb1373f88b6219244b696313baa5c6e0"
+            },
+            {
+              "id": "cunning-06",
+              "title": "Theo đường giữa cây sáng · 4/4",
+              "videoID": "ySKckimZSGM",
+              "start": 207,
+              "end": 221,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-lost-hope-cunning-06",
+              "poster": "gif-the-island-lost-hope-cunning-06",
+              "renderKey": "d4ebef204898a6092042767c7fcaad7826242a2ffd9ea14d7f58f507550214f4"
+            },
+            {
+              "id": "cunning-07",
+              "title": "Qua các khúc quanh · 1/3",
+              "videoID": "ySKckimZSGM",
+              "start": 221,
+              "end": 235,
+              "visuallyReviewed": true,
+              "direction": "Theo các cột đá và cây vàng qua những khúc quanh trong GIF. Đừng đổi sang nhánh khác khi chưa nhận ra đúng vách.",
+              "gif": "gif-the-island-lost-hope-cunning-07",
+              "poster": "gif-the-island-lost-hope-cunning-07",
+              "renderKey": "38d7165507e1783b450798c188b3419e632ed43612a33460940a419ff1c76942"
+            },
+            {
+              "id": "cunning-08",
+              "title": "Qua các khúc quanh · 2/3",
+              "videoID": "ySKckimZSGM",
+              "start": 235,
+              "end": 249,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-lost-hope-cunning-08",
+              "poster": "gif-the-island-lost-hope-cunning-08",
+              "renderKey": "bf99be62356bddd6b12282565e013f6998800b79accbb21f3c04ec5f35851fcb"
+            },
+            {
+              "id": "cunning-09",
+              "title": "Qua các khúc quanh · 3/3",
+              "videoID": "ySKckimZSGM",
+              "start": 249,
+              "end": 263,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-lost-hope-cunning-09",
+              "poster": "gif-the-island-lost-hope-cunning-09",
+              "renderKey": "9f3158a465b913f047bdf4a4ece785d556c552dc93a596c95924232254a24cdf"
+            },
+            {
+              "id": "cunning-10",
+              "title": "Tới vùng nước nông · 1/3",
+              "videoID": "ySKckimZSGM",
+              "start": 263,
+              "end": 277,
+              "visuallyReviewed": true,
+              "direction": "Qua khe giữa các khối đá tới vùng nước nông, tìm đường lên nền có không khí.",
+              "gif": "gif-the-island-lost-hope-cunning-10",
+              "poster": "gif-the-island-lost-hope-cunning-10",
+              "renderKey": "9f64d8be11c4b21fd4ba2ef238e3487915135ddd0e873bbb938a268f45fc68e4"
+            },
+            {
+              "id": "cunning-11",
+              "title": "Tới vùng nước nông · 2/3",
+              "videoID": "ySKckimZSGM",
+              "start": 277,
+              "end": 291,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-lost-hope-cunning-11",
+              "poster": "gif-the-island-lost-hope-cunning-11",
+              "renderKey": "4450a3f3e7ad9356137ea284a700c461c90b649362e7ebd245dff04b40b0c6f2"
+            },
+            {
+              "id": "cunning-12",
+              "title": "Tới vùng nước nông · 3/3",
+              "videoID": "ySKckimZSGM",
+              "start": 291,
+              "end": 305,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-lost-hope-cunning-12",
+              "poster": "gif-the-island-lost-hope-cunning-12",
+              "renderKey": "0a6d7cf4f52ae7c4aa82eab675551832ca53875a8d09b80ba65185dad00c0c20"
+            },
+            {
+              "id": "cunning-13",
+              "title": "Lên nền nghỉ",
+              "videoID": "ySKckimZSGM",
+              "start": 305,
+              "end": 318,
+              "visuallyReviewed": true,
+              "direction": "Lên nền đá dưới cây vàng, hồi stamina và kiểm tra SCUBA. Ghế trong video là đồ người chơi đặt, không phải mốc có sẵn của hang.",
+              "gif": "gif-the-island-lost-hope-cunning-13",
+              "poster": "gif-the-island-lost-hope-cunning-13",
+              "renderKey": "22f22a01af0e820d99f438e6ef538e397595c712d9b93f9e97871fb9f7ae756c"
+            },
+            {
+              "id": "cunning-14",
+              "title": "Đi qua khe xanh lấy Cunning · 1/2",
+              "videoID": "ySKckimZSGM",
+              "start": 355,
+              "end": 369,
+              "visuallyReviewed": true,
+              "direction": "Khi đã sẵn sàng, đi từ nền nghỉ qua khe có ánh xanh. Cunning nằm trong hốc sáng tím ngay phía sau.",
+              "gif": "gif-the-island-lost-hope-cunning-14",
+              "poster": "gif-the-island-lost-hope-cunning-14",
+              "renderKey": "a55e5fedc7897d27c835d736510f1bf5e602cecd3201deecba93b3559ec3b51f"
+            },
+            {
+              "id": "cunning-15",
+              "title": "Đi qua khe xanh lấy Cunning · 2/2",
+              "videoID": "ySKckimZSGM",
+              "start": 369,
+              "end": 376,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-lost-hope-cunning-15",
+              "poster": "gif-the-island-lost-hope-cunning-15",
+              "renderKey": "cbb6c5ac2dbeafd269808dd45cd3cfa94d143f9bca9d3efae7bd475ded41a8f6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "routeID": "north-east",
+      "sections": [
+        {
+          "id": "devourer",
+          "title": "Thylacoleo và Grapple → Devourer",
+          "steps": [
+            {
+              "id": "devourer-01",
+              "title": "Vào cửa trên đảo Carnivore · 1/3",
+              "videoID": "sk1h5BGeKZ0",
+              "start": 274,
+              "end": 288,
+              "visuallyReviewed": true,
+              "direction": "Tìm cửa đá trên đảo Carnivore phía đông bắc. Nhà ở miệng hang trong clip do người chơi xây; cửa tự nhiên nằm phía sau nhà.",
+              "gif": "gif-the-island-north-east-devourer-01",
+              "poster": "gif-the-island-north-east-devourer-01",
+              "renderKey": "fcde4fcdde2b5d4f325a2b45159aa2fd7d8269042deeaf09f8a3f2ad4c07eab0"
+            },
+            {
+              "id": "devourer-02",
+              "title": "Vào cửa trên đảo Carnivore · 2/3",
+              "videoID": "sk1h5BGeKZ0",
+              "start": 288,
+              "end": 302,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-north-east-devourer-02",
+              "poster": "gif-the-island-north-east-devourer-02",
+              "renderKey": "dc13e47ad7796d6c745066cbaae307294d28bc7f690de19bdde266cfb36db89f"
+            },
+            {
+              "id": "devourer-03",
+              "title": "Vào cửa trên đảo Carnivore · 3/3",
+              "videoID": "sk1h5BGeKZ0",
+              "start": 302,
+              "end": 310,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-north-east-devourer-03",
+              "poster": "gif-the-island-north-east-devourer-03",
+              "renderKey": "6533451db53bf48919c4f0ea203e9d942c2d01fbef9b869a6af38aa156f61cc2"
+            },
+            {
+              "id": "devourer-04",
+              "title": "Xuống hồ và tới vực · 1/3",
+              "videoID": "sk1h5BGeKZ0",
+              "start": 310,
+              "end": 324,
+              "visuallyReviewed": true,
+              "direction": "Qua đoạn nước, lên lối đá tới gian vực lớn có cây sáng xanh. Clip dùng Thylacoleo để đi trên các gờ.",
+              "gif": "gif-the-island-north-east-devourer-04",
+              "poster": "gif-the-island-north-east-devourer-04",
+              "renderKey": "bf60ca6f15e82f030df10212c5841b8eb0f006b4e262b626af33685aa4f83b6f"
+            },
+            {
+              "id": "devourer-05",
+              "title": "Xuống hồ và tới vực · 2/3",
+              "videoID": "sk1h5BGeKZ0",
+              "start": 324,
+              "end": 338,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-north-east-devourer-05",
+              "poster": "gif-the-island-north-east-devourer-05",
+              "renderKey": "3686d8c138df4b6ecce1387f2c8d891ceee50e039c1b29d488303325f96d48fc"
+            },
+            {
+              "id": "devourer-06",
+              "title": "Xuống hồ và tới vực · 3/3",
+              "videoID": "sk1h5BGeKZ0",
+              "start": 338,
+              "end": 346,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-north-east-devourer-06",
+              "poster": "gif-the-island-north-east-devourer-06",
+              "renderKey": "895d13163eab65f6a584362908e4ad95c6c5607b7053511f9de7d735f8538ade"
+            },
+            {
+              "id": "devourer-07",
+              "title": "Theo gờ quanh vực · 1/5",
+              "videoID": "sk1h5BGeKZ0",
+              "start": 346,
+              "end": 360,
+              "visuallyReviewed": true,
+              "direction": "Bám nền đá vòng quanh vực. Dọn thú cản đường, không nhảy thẳng từ mép cao xuống đáy.",
+              "gif": "gif-the-island-north-east-devourer-07",
+              "poster": "gif-the-island-north-east-devourer-07",
+              "renderKey": "747ee0033b66632a1bc9f6ea902a806cec72c04f480167ca713d857af1cabaaf"
+            },
+            {
+              "id": "devourer-08",
+              "title": "Theo gờ quanh vực · 2/5",
+              "videoID": "sk1h5BGeKZ0",
+              "start": 360,
+              "end": 374,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-north-east-devourer-08",
+              "poster": "gif-the-island-north-east-devourer-08",
+              "renderKey": "25b2295374c51a7d3cdf539ca025a6861bdb1bebe24d12008b37d52518aadb19"
+            },
+            {
+              "id": "devourer-09",
+              "title": "Theo gờ quanh vực · 3/5",
+              "videoID": "sk1h5BGeKZ0",
+              "start": 374,
+              "end": 388,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-north-east-devourer-09",
+              "poster": "gif-the-island-north-east-devourer-09",
+              "renderKey": "66eb1dcd0db797e953b69aedadb3853dfc9c4874363340bf92c39476d81606a7"
+            },
+            {
+              "id": "devourer-10",
+              "title": "Theo gờ quanh vực · 4/5",
+              "videoID": "sk1h5BGeKZ0",
+              "start": 388,
+              "end": 402,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-north-east-devourer-10",
+              "poster": "gif-the-island-north-east-devourer-10",
+              "renderKey": "9a12a3e63e3fa646134ba8b4c6fdddce5aff4c7b81c240faa9f25b603d3af049"
+            },
+            {
+              "id": "devourer-11",
+              "title": "Theo gờ quanh vực · 5/5",
+              "videoID": "sk1h5BGeKZ0",
+              "start": 402,
+              "end": 403,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-north-east-devourer-11",
+              "poster": "gif-the-island-north-east-devourer-11",
+              "renderKey": "0e66fa77916cab13697ab90cebea1ec9aac6a5cdaf2736cfcba8f94264d2b2b4"
+            },
+            {
+              "id": "devourer-12",
+              "title": "Dùng Grapple qua gờ · 1/4",
+              "videoID": "sk1h5BGeKZ0",
+              "start": 403,
+              "end": 417,
+              "visuallyReviewed": true,
+              "direction": "Xuống thú tại nền an toàn, dùng Grapple qua các gờ và tầng dưới như trong GIF. Giữ Grapple dự phòng cho chiều về.",
+              "gif": "gif-the-island-north-east-devourer-12",
+              "poster": "gif-the-island-north-east-devourer-12",
+              "renderKey": "b473161b3cbdcf8aa5b0655660baeb087f62cd1a2432880dc9483241b07f67df"
+            },
+            {
+              "id": "devourer-13",
+              "title": "Dùng Grapple qua gờ · 2/4",
+              "videoID": "sk1h5BGeKZ0",
+              "start": 417,
+              "end": 431,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-north-east-devourer-13",
+              "poster": "gif-the-island-north-east-devourer-13",
+              "renderKey": "52e8e8d537a04cda1cd1a03a8279bf1cddba4234377c6479ebe6328253d9c571"
+            },
+            {
+              "id": "devourer-14",
+              "title": "Dùng Grapple qua gờ · 3/4",
+              "videoID": "sk1h5BGeKZ0",
+              "start": 431,
+              "end": 445,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-north-east-devourer-14",
+              "poster": "gif-the-island-north-east-devourer-14",
+              "renderKey": "15e38538ead4adc3a4a8a847f04c2f83d1f57a4fb8710964c2fab56ec77789c0"
+            },
+            {
+              "id": "devourer-15",
+              "title": "Dùng Grapple qua gờ · 4/4",
+              "videoID": "sk1h5BGeKZ0",
+              "start": 445,
+              "end": 449,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-north-east-devourer-15",
+              "poster": "gif-the-island-north-east-devourer-15",
+              "renderKey": "dc3631d78a46a9c706a658d098dd7d4ffd2178af81c70049b137007d58e8da59"
+            },
+            {
+              "id": "devourer-16",
+              "title": "Đi qua gian phía dưới · 1/4",
+              "videoID": "sk1h5BGeKZ0",
+              "start": 449,
+              "end": 463,
+              "visuallyReviewed": true,
+              "direction": "Tiếp tục bằng Thyla qua gian thấp có cây sáng và tinh thể. Xử lý bọ, nhện trước khi tiến vào khu Artifact.",
+              "gif": "gif-the-island-north-east-devourer-16",
+              "poster": "gif-the-island-north-east-devourer-16",
+              "renderKey": "2ec2852c81cc23d059ff94c9a401d1b21210fbc14388b882c91e9228410b62fc"
+            },
+            {
+              "id": "devourer-17",
+              "title": "Đi qua gian phía dưới · 2/4",
+              "videoID": "sk1h5BGeKZ0",
+              "start": 463,
+              "end": 477,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-north-east-devourer-17",
+              "poster": "gif-the-island-north-east-devourer-17",
+              "renderKey": "623bc51a2a62bf24e1464347961c13155ea2f4a6158eac7a868df698a7533bc0"
+            },
+            {
+              "id": "devourer-18",
+              "title": "Đi qua gian phía dưới · 3/4",
+              "videoID": "sk1h5BGeKZ0",
+              "start": 477,
+              "end": 491,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-north-east-devourer-18",
+              "poster": "gif-the-island-north-east-devourer-18",
+              "renderKey": "e62057aa85dbab5fc8b164ae13c2ce57a13e5466f6f8acc0baa4d63d666c88a3"
+            },
+            {
+              "id": "devourer-19",
+              "title": "Đi qua gian phía dưới · 4/4",
+              "videoID": "sk1h5BGeKZ0",
+              "start": 491,
+              "end": 493,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-north-east-devourer-19",
+              "poster": "gif-the-island-north-east-devourer-19",
+              "renderKey": "1c07b913818d29935f67e2520d9a3f7bbf9cc6da0e4c50e211c6c2f07b254ffa"
+            },
+            {
+              "id": "devourer-20",
+              "title": "Tới phế tích trong hang · 1/3",
+              "videoID": "sk1h5BGeKZ0",
+              "start": 493,
+              "end": 507,
+              "visuallyReviewed": true,
+              "direction": "Qua đường giữa cột đá tới phế tích có khung cửa cao. Dọn hết sinh vật quanh vị trí xuống thú.",
+              "gif": "gif-the-island-north-east-devourer-20",
+              "poster": "gif-the-island-north-east-devourer-20",
+              "renderKey": "df9664d0ebfdc3a65bd37fc9bbf9ca2d9a16efe84080f16b92b0a121badc2f70"
+            },
+            {
+              "id": "devourer-21",
+              "title": "Tới phế tích trong hang · 2/3",
+              "videoID": "sk1h5BGeKZ0",
+              "start": 507,
+              "end": 521,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-north-east-devourer-21",
+              "poster": "gif-the-island-north-east-devourer-21",
+              "renderKey": "90e07bdaef1cc9c340b1c6db16e5af5495010da08ffae05f5e47daa8e61ef00e"
+            },
+            {
+              "id": "devourer-22",
+              "title": "Tới phế tích trong hang · 3/3",
+              "videoID": "sk1h5BGeKZ0",
+              "start": 521,
+              "end": 525,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-north-east-devourer-22",
+              "poster": "gif-the-island-north-east-devourer-22",
+              "renderKey": "b13bbbcd3bef54755bc39f1a01c53401b335122c21106113de153ecf3201feed"
+            },
+            {
+              "id": "devourer-23",
+              "title": "Lấy Devourer · 1/2",
+              "videoID": "sk1h5BGeKZ0",
+              "start": 525,
+              "end": 539,
+              "visuallyReviewed": true,
+              "direction": "Artifact phát sáng tím nằm sát phế tích. Tới gần, xuống thú khi an toàn rồi lấy Devourer.",
+              "gif": "gif-the-island-north-east-devourer-23",
+              "poster": "gif-the-island-north-east-devourer-23",
+              "renderKey": "573c07e3bcb1d31b9d004e4ecd0b31634b8cb06fa06dfe7670a37e5fe3f70b3b"
+            },
+            {
+              "id": "devourer-24",
+              "title": "Lấy Devourer · 2/2",
+              "videoID": "sk1h5BGeKZ0",
+              "start": 539,
+              "end": 553,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-north-east-devourer-24",
+              "poster": "gif-the-island-north-east-devourer-24",
+              "renderKey": "a9c1e2520902ce97d55292bb16e152c3f82fd1ff0eecd42224e98359518629df"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "routeID": "swamp",
+      "sections": [
+        {
+          "id": "immune",
+          "title": "Baryonyx từ cửa hang → Immune",
+          "steps": [
+            {
+              "id": "immune-01",
+              "title": "Tìm cửa đá thấp",
+              "videoID": "7zfExIvGJzI",
+              "start": 172,
+              "end": 178,
+              "visuallyReviewed": true,
+              "direction": "Tìm hốc đá nhỏ trong Redwoods tại GPS cửa hang phía trên. Mang bộ chống khí độc đầy đủ và đồ dự phòng trước khi vào; kiểm tra checklist trang bị của hang.",
+              "gif": "gif-the-island-swamp-immune-01",
+              "poster": "gif-the-island-swamp-immune-01",
+              "renderKey": "c3b6e5c37e32e2547f5132268b44f21865e92d7a8f05662933f5d750d81fdf45"
+            },
+            {
+              "id": "immune-02",
+              "title": "Cưỡi Baryonyx vào hang · 1/2",
+              "videoID": "7zfExIvGJzI",
+              "start": 194,
+              "end": 208,
+              "visuallyReviewed": true,
+              "direction": "Đi vào đường hầm thấp, theo nền đá tới gian phủ cây xanh. Công trình ngoài cửa trong clip do người chơi xây.",
+              "gif": "gif-the-island-swamp-immune-02",
+              "poster": "gif-the-island-swamp-immune-02",
+              "renderKey": "99e9ca26ddc14a68686881d72eb16b9301b86d384eefacbff18a78db0d8fcded"
+            },
+            {
+              "id": "immune-03",
+              "title": "Cưỡi Baryonyx vào hang · 2/2",
+              "videoID": "7zfExIvGJzI",
+              "start": 208,
+              "end": 222,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-swamp-immune-03",
+              "poster": "gif-the-island-swamp-immune-03",
+              "renderKey": "d2b828292a6b7a4d5163ce0e3932bf1acabdacef9f566111016ff066ecd992f6"
+            },
+            {
+              "id": "immune-04",
+              "title": "Qua gian đầu · 1/3",
+              "videoID": "7zfExIvGJzI",
+              "start": 222,
+              "end": 236,
+              "visuallyReviewed": true,
+              "direction": "Dọn bọ và Arthropleura cản đường rồi theo lối trong GIF. Arthro có thể phá giáp; kiểm tra bộ chống khí độc sau giao chiến.",
+              "gif": "gif-the-island-swamp-immune-04",
+              "poster": "gif-the-island-swamp-immune-04",
+              "renderKey": "c9da1f5a6292bd4da648a1d13b4a68333c2a4ac6338781fbb0b6e4eaf59b0954"
+            },
+            {
+              "id": "immune-05",
+              "title": "Qua gian đầu · 2/3",
+              "videoID": "7zfExIvGJzI",
+              "start": 236,
+              "end": 250,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-swamp-immune-05",
+              "poster": "gif-the-island-swamp-immune-05",
+              "renderKey": "5d07e2ddd102db2e9956a259e27ab60cc834d7e3806583e07ac8683fb6cd36e4"
+            },
+            {
+              "id": "immune-06",
+              "title": "Qua gian đầu · 3/3",
+              "videoID": "7zfExIvGJzI",
+              "start": 250,
+              "end": 263,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-swamp-immune-06",
+              "poster": "gif-the-island-swamp-immune-06",
+              "renderKey": "b1ecd69d0f56b8758509818b7362f4b18928938b5594e4e4d4ef7b6c074c13ef"
+            },
+            {
+              "id": "immune-07",
+              "title": "Theo lối quanh vách · 1/3",
+              "videoID": "7zfExIvGJzI",
+              "start": 263,
+              "end": 277,
+              "visuallyReviewed": true,
+              "direction": "Bám nền đá quanh vách qua các gian nối nhau. Sơ đồ góc trên của clip giúp đối chiếu đoạn đường đang đi.",
+              "gif": "gif-the-island-swamp-immune-07",
+              "poster": "gif-the-island-swamp-immune-07",
+              "renderKey": "5cfd351222363a34cceb2c007477024033aca3bbc074f8cb63e802f234d641e3"
+            },
+            {
+              "id": "immune-08",
+              "title": "Theo lối quanh vách · 2/3",
+              "videoID": "7zfExIvGJzI",
+              "start": 277,
+              "end": 291,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-swamp-immune-08",
+              "poster": "gif-the-island-swamp-immune-08",
+              "renderKey": "c3aa678173e633a4d0a581093ccfbb8fb643a49e7ed00d1b3a0f9a43b97cc755"
+            },
+            {
+              "id": "immune-09",
+              "title": "Theo lối quanh vách · 3/3",
+              "videoID": "7zfExIvGJzI",
+              "start": 291,
+              "end": 300,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-swamp-immune-09",
+              "poster": "gif-the-island-swamp-immune-09",
+              "renderKey": "e2638cf610095395023389787d0dbf6d4e3e0653332074da44a1a1c6812ea721"
+            },
+            {
+              "id": "immune-10",
+              "title": "Vòng qua gian rộng · 1/3",
+              "videoID": "7zfExIvGJzI",
+              "start": 300,
+              "end": 314,
+              "visuallyReviewed": true,
+              "direction": "Dọn sinh vật trong gian rộng rồi tiếp tục theo lối đá. Dừng ở cuối từng đoạn để đối chiếu vách và cửa tiếp theo.",
+              "gif": "gif-the-island-swamp-immune-10",
+              "poster": "gif-the-island-swamp-immune-10",
+              "renderKey": "83c3b7403d6a93a1a817e0795c4a06f7e0d43fe8af0da713e103e0fae45d3cf0"
+            },
+            {
+              "id": "immune-11",
+              "title": "Vòng qua gian rộng · 2/3",
+              "videoID": "7zfExIvGJzI",
+              "start": 314,
+              "end": 328,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-swamp-immune-11",
+              "poster": "gif-the-island-swamp-immune-11",
+              "renderKey": "54bd332d21f487320b7cccda62f84fa1c29943f90f8cc47c558b655c5f16d1c8"
+            },
+            {
+              "id": "immune-12",
+              "title": "Vòng qua gian rộng · 3/3",
+              "videoID": "7zfExIvGJzI",
+              "start": 328,
+              "end": 342,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-swamp-immune-12",
+              "poster": "gif-the-island-swamp-immune-12",
+              "renderKey": "57f7ca28f204594241284499957a0e41af98675e91e2503bbd4b2550e2e94519"
+            },
+            {
+              "id": "immune-13",
+              "title": "Tìm khe dẫn vào hốc · 1/2",
+              "videoID": "7zfExIvGJzI",
+              "start": 342,
+              "end": 356,
+              "visuallyReviewed": true,
+              "direction": "Theo đường tới khe nhỏ phủ lá như trong GIF. Xuống thú khi đã dọn an toàn và qua lối hẹp.",
+              "gif": "gif-the-island-swamp-immune-13",
+              "poster": "gif-the-island-swamp-immune-13",
+              "renderKey": "d1e22907f444c4f8ed65fd015940a9d5a05f0b0b127d320c4b2732fba59fdf55"
+            },
+            {
+              "id": "immune-14",
+              "title": "Tìm khe dẫn vào hốc · 2/2",
+              "videoID": "7zfExIvGJzI",
+              "start": 356,
+              "end": 365,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-swamp-immune-14",
+              "poster": "gif-the-island-swamp-immune-14",
+              "renderKey": "d620bad186f748e73803856ecdccee24af3b6bc916c5fffb258d870dca855cf0"
+            },
+            {
+              "id": "immune-15",
+              "title": "Tới Immune",
+              "videoID": "7zfExIvGJzI",
+              "start": 365,
+              "end": 371,
+              "visuallyReviewed": true,
+              "direction": "Immune nằm trong hốc phủ lá vàng, phát sáng cam. Tới sát Artifact để lấy rồi quay về theo các đoạn vừa đi.",
+              "gif": "gif-the-island-swamp-immune-15",
+              "poster": "gif-the-island-swamp-immune-15",
+              "renderKey": "c09ec51982f936331e653b57cb5e764de3ad1471b61e247cb0980b09fa0f61f8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "routeID": "snow",
+      "sections": [
+        {
+          "id": "strong-tek",
+          "title": "Đã có Tek → Strong",
+          "steps": [
+            {
+              "id": "strong-tek-01",
+              "title": "Tìm cửa hang trong tuyết",
+              "videoID": "8ZXBXGNPSUU",
+              "start": 47,
+              "end": 58,
+              "visuallyReviewed": true,
+              "direction": "Tuyến này dùng Tek Chestpiece, Tek Boots và Tek Rifle cùng Element: chỉ làm theo khi anh đã mở và có đủ bộ đó. Chưa có Tek thì mở Video đầy đủ để xem tuyến dùng Yutyrannus.",
+              "gif": "gif-the-island-snow-strong-tek-01",
+              "poster": "gif-the-island-snow-strong-tek-01",
+              "renderKey": "4e2229c548ba5c00012141b007572287b3cbf657536affbb00158cd94e7e5119"
+            },
+            {
+              "id": "strong-tek-02",
+              "title": "Vào cửa và qua hồ đầu · 1/2",
+              "videoID": "8ZXBXGNPSUU",
+              "start": 58,
+              "end": 72,
+              "visuallyReviewed": true,
+              "direction": "Vào khe đá giữa tuyết, theo hành lang tới hồ đầu tiên. Kiểm tra bộ giữ ấm và lượng Element trước khi đi sâu.",
+              "gif": "gif-the-island-snow-strong-tek-02",
+              "poster": "gif-the-island-snow-strong-tek-02",
+              "renderKey": "a5c8c4dce085f0380ba24e6c6b860b7037343d4f373c70bb6a654e449295938f"
+            },
+            {
+              "id": "strong-tek-03",
+              "title": "Vào cửa và qua hồ đầu · 2/2",
+              "videoID": "8ZXBXGNPSUU",
+              "start": 72,
+              "end": 84,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-snow-strong-tek-03",
+              "poster": "gif-the-island-snow-strong-tek-03",
+              "renderKey": "880789877e5431549952f2002423fa88fc7abb0a9220ad5ad34f095e0ca3a4b9"
+            },
+            {
+              "id": "strong-tek-04",
+              "title": "Bay qua gian đầu · 1/3",
+              "videoID": "8ZXBXGNPSUU",
+              "start": 84,
+              "end": 98,
+              "visuallyReviewed": true,
+              "direction": "Dùng Tek Chestpiece bay theo lối của người chơi. Đừng áp dụng đoạn bay này bằng thú đi bộ; luôn giữ đủ Element để trở về.",
+              "gif": "gif-the-island-snow-strong-tek-04",
+              "poster": "gif-the-island-snow-strong-tek-04",
+              "renderKey": "8a016bb58fb44378e4fd433d72643292d0840c7bcde22aaa78cf8f6c9577fdb9"
+            },
+            {
+              "id": "strong-tek-05",
+              "title": "Bay qua gian đầu · 2/3",
+              "videoID": "8ZXBXGNPSUU",
+              "start": 98,
+              "end": 112,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-snow-strong-tek-05",
+              "poster": "gif-the-island-snow-strong-tek-05",
+              "renderKey": "75a62cf619bef5500a10e6001d11b836c6790b99ea6577842176198d5f752a7c"
+            },
+            {
+              "id": "strong-tek-06",
+              "title": "Bay qua gian đầu · 3/3",
+              "videoID": "8ZXBXGNPSUU",
+              "start": 112,
+              "end": 126,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-snow-strong-tek-06",
+              "poster": "gif-the-island-snow-strong-tek-06",
+              "renderKey": "fd50ca85f0677c74b9a2558c46606fcf26cfa55fa06f2e84c313c06733ada443"
+            },
+            {
+              "id": "strong-tek-07",
+              "title": "Tới gờ trước gian rộng · 1/2",
+              "videoID": "8ZXBXGNPSUU",
+              "start": 126,
+              "end": 140,
+              "visuallyReviewed": true,
+              "direction": "Theo hành lang băng tới gờ nhìn xuống gian lớn. Dừng tại nền chắc trước khi giao chiến.",
+              "gif": "gif-the-island-snow-strong-tek-07",
+              "poster": "gif-the-island-snow-strong-tek-07",
+              "renderKey": "8aaee1fe74114332d6057dc4b9a4dac074820dea0a299bbf7333365988b84bcd"
+            },
+            {
+              "id": "strong-tek-08",
+              "title": "Tới gờ trước gian rộng · 2/2",
+              "videoID": "8ZXBXGNPSUU",
+              "start": 140,
+              "end": 153,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-snow-strong-tek-08",
+              "poster": "gif-the-island-snow-strong-tek-08",
+              "renderKey": "d3ad529ee2e8fc9e08633c4e4e4848b8c3e4247b6d5306bb43cc6bcdf06cbdf5"
+            },
+            {
+              "id": "strong-tek-09",
+              "title": "Dọn thú từ gờ cao · 1/2",
+              "videoID": "8ZXBXGNPSUU",
+              "start": 153,
+              "end": 167,
+              "visuallyReviewed": true,
+              "direction": "Dùng Tek Rifle dọn sinh vật từ gờ cao. Tiếp tục đoạn sau khi lối xuống đã an toàn; đoạn đánh kéo dài được rút gọn.",
+              "gif": "gif-the-island-snow-strong-tek-09",
+              "poster": "gif-the-island-snow-strong-tek-09",
+              "renderKey": "3d0baadc732bf343922612cb05a6cd5b05989e824c7f7fe650350723d4aaea0a"
+            },
+            {
+              "id": "strong-tek-10",
+              "title": "Dọn thú từ gờ cao · 2/2",
+              "videoID": "8ZXBXGNPSUU",
+              "start": 167,
+              "end": 169,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-snow-strong-tek-10",
+              "poster": "gif-the-island-snow-strong-tek-10",
+              "renderKey": "5144ea22990b6f8597608872eb0a0ddc59f73f1cef1d7b997a79abc233f314f2"
+            },
+            {
+              "id": "strong-tek-11",
+              "title": "Đi tiếp qua gian băng · 1/4",
+              "videoID": "8ZXBXGNPSUU",
+              "start": 202,
+              "end": 216,
+              "visuallyReviewed": true,
+              "direction": "Rời gờ, theo nền và đường bay xuyên qua gian rộng. Dọn thú cản đường trước khi tới hành lang kế tiếp.",
+              "gif": "gif-the-island-snow-strong-tek-11",
+              "poster": "gif-the-island-snow-strong-tek-11",
+              "renderKey": "dc45f05225e203e23968c2c3945adfd3adde46401e113c06970e8a097a9da659"
+            },
+            {
+              "id": "strong-tek-12",
+              "title": "Đi tiếp qua gian băng · 2/4",
+              "videoID": "8ZXBXGNPSUU",
+              "start": 216,
+              "end": 230,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-snow-strong-tek-12",
+              "poster": "gif-the-island-snow-strong-tek-12",
+              "renderKey": "0542b7a987a9ecaeb3b0768d500c356d6c757f74dbe8fed22e2f6155540aec20"
+            },
+            {
+              "id": "strong-tek-13",
+              "title": "Đi tiếp qua gian băng · 3/4",
+              "videoID": "8ZXBXGNPSUU",
+              "start": 230,
+              "end": 244,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-snow-strong-tek-13",
+              "poster": "gif-the-island-snow-strong-tek-13",
+              "renderKey": "60308a41b4bb73de37a9301de400978302f940132bbbd23af55a5a0924581322"
+            },
+            {
+              "id": "strong-tek-14",
+              "title": "Đi tiếp qua gian băng · 4/4",
+              "videoID": "8ZXBXGNPSUU",
+              "start": 244,
+              "end": 255,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-snow-strong-tek-14",
+              "poster": "gif-the-island-snow-strong-tek-14",
+              "renderKey": "53ff37f9262cda21be435975d624e45b82018e393db7f6c6510ed217b126f87d"
+            },
+            {
+              "id": "strong-tek-15",
+              "title": "Qua cụm tinh thể xanh · 1/3",
+              "videoID": "8ZXBXGNPSUU",
+              "start": 255,
+              "end": 269,
+              "visuallyReviewed": true,
+              "direction": "Theo lối cạnh tinh thể xanh tới cửa hẹp. Dọn thú trong hành lang trước khi vào sâu.",
+              "gif": "gif-the-island-snow-strong-tek-15",
+              "poster": "gif-the-island-snow-strong-tek-15",
+              "renderKey": "1cd2ca2a4fd507cd411a149f758a54413262d247e7fa0ce1c3275d61e769e99b"
+            },
+            {
+              "id": "strong-tek-16",
+              "title": "Qua cụm tinh thể xanh · 2/3",
+              "videoID": "8ZXBXGNPSUU",
+              "start": 269,
+              "end": 283,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-snow-strong-tek-16",
+              "poster": "gif-the-island-snow-strong-tek-16",
+              "renderKey": "eaacd7e19c7b737b69313058a5ca1937a2408bb3c07b773c33999985b79b1bc8"
+            },
+            {
+              "id": "strong-tek-17",
+              "title": "Qua cụm tinh thể xanh · 3/3",
+              "videoID": "8ZXBXGNPSUU",
+              "start": 283,
+              "end": 292,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-snow-strong-tek-17",
+              "poster": "gif-the-island-snow-strong-tek-17",
+              "renderKey": "c4cff4efd95422235cb587ae8ff2a5a3d62a7c6ec5e698faf740e6146a3d6e31"
+            },
+            {
+              "id": "strong-tek-18",
+              "title": "Tới gian có Yeti · 1/4",
+              "videoID": "8ZXBXGNPSUU",
+              "start": 292,
+              "end": 306,
+              "visuallyReviewed": true,
+              "direction": "Theo đường hầm băng mở ra gian có Yeti. Quan sát nền đáp, giữ khoảng cách khi dùng Tek Rifle.",
+              "gif": "gif-the-island-snow-strong-tek-18",
+              "poster": "gif-the-island-snow-strong-tek-18",
+              "renderKey": "5c71a86b6c57be7a77e30eecb5f154844c6733f6db77197c82bcffb4163de72a"
+            },
+            {
+              "id": "strong-tek-19",
+              "title": "Tới gian có Yeti · 2/4",
+              "videoID": "8ZXBXGNPSUU",
+              "start": 306,
+              "end": 320,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-snow-strong-tek-19",
+              "poster": "gif-the-island-snow-strong-tek-19",
+              "renderKey": "ede747e50c1a8371c0ba97a83347a24b6e1ef181eb55ac11ae9264c056669e98"
+            },
+            {
+              "id": "strong-tek-20",
+              "title": "Tới gian có Yeti · 3/4",
+              "videoID": "8ZXBXGNPSUU",
+              "start": 320,
+              "end": 334,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-snow-strong-tek-20",
+              "poster": "gif-the-island-snow-strong-tek-20",
+              "renderKey": "164a94731f2875f6e8f9b3b275eba0a7881f8fb081ef7c782eaed8f4ba16f770"
+            },
+            {
+              "id": "strong-tek-21",
+              "title": "Tới gian có Yeti · 4/4",
+              "videoID": "8ZXBXGNPSUU",
+              "start": 334,
+              "end": 337,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-snow-strong-tek-21",
+              "poster": "gif-the-island-snow-strong-tek-21",
+              "renderKey": "c5099c28dc16edf2a7d2a7015cb9e191863c6155bad80713ccfea4b25f9f5189"
+            },
+            {
+              "id": "strong-tek-22",
+              "title": "Dọn Yeti trước lối vào",
+              "videoID": "8ZXBXGNPSUU",
+              "start": 337,
+              "end": 349,
+              "visuallyReviewed": true,
+              "direction": "Dọn sinh vật ở gian này trước khi tiến tới Artifact. Đoạn giao chiến đứng tại chỗ được rút gọn; không bỏ qua việc dọn đường.",
+              "gif": "gif-the-island-snow-strong-tek-22",
+              "poster": "gif-the-island-snow-strong-tek-22",
+              "renderKey": "e9d296ebf2e3abf051042e8168140c35d62587c481edce87bbd2d64e32001aba"
+            },
+            {
+              "id": "strong-tek-23",
+              "title": "Theo đường tới hốc Artifact · 1/3",
+              "videoID": "8ZXBXGNPSUU",
+              "start": 364,
+              "end": 378,
+              "visuallyReviewed": true,
+              "direction": "Khi gian đã an toàn, theo các hành lang băng trong GIF. Đối chiếu từng khúc quanh và nền đá trước khi bay tiếp.",
+              "gif": "gif-the-island-snow-strong-tek-23",
+              "poster": "gif-the-island-snow-strong-tek-23",
+              "renderKey": "c6c1e003fcc20f96a4f22f22343d78fb2659e9374d0bfad5d7808c17830c661a"
+            },
+            {
+              "id": "strong-tek-24",
+              "title": "Theo đường tới hốc Artifact · 2/3",
+              "videoID": "8ZXBXGNPSUU",
+              "start": 378,
+              "end": 392,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-snow-strong-tek-24",
+              "poster": "gif-the-island-snow-strong-tek-24",
+              "renderKey": "0206ee79d0f28080ce07f3243facba7abc375ade6a4f1aab6e0ee4eb191fbd61"
+            },
+            {
+              "id": "strong-tek-25",
+              "title": "Theo đường tới hốc Artifact · 3/3",
+              "videoID": "8ZXBXGNPSUU",
+              "start": 392,
+              "end": 405,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-snow-strong-tek-25",
+              "poster": "gif-the-island-snow-strong-tek-25",
+              "renderKey": "e7f4868d9e48f7457ebb952daad1b67ff04a6609651f4b71d937977127264710"
+            },
+            {
+              "id": "strong-tek-26",
+              "title": "Lấy Strong · 1/2",
+              "videoID": "8ZXBXGNPSUU",
+              "start": 405,
+              "end": 419,
+              "visuallyReviewed": true,
+              "direction": "Strong nằm trong hốc ở cuối tuyến. Tới Artifact Container có đèn xanh và lấy Artifact; giữ đủ Element, đồ giữ ấm và đạn cho đường về.",
+              "gif": "gif-the-island-snow-strong-tek-26",
+              "poster": "gif-the-island-snow-strong-tek-26",
+              "renderKey": "2c8219109bd435ecb6293eae9f1e105445e68eb8f1df3345310858b0b798ea64"
+            },
+            {
+              "id": "strong-tek-27",
+              "title": "Lấy Strong · 2/2",
+              "videoID": "8ZXBXGNPSUU",
+              "start": 419,
+              "end": 421,
+              "visuallyReviewed": true,
+              "gif": "gif-the-island-snow-strong-tek-27",
+              "poster": "gif-the-island-snow-strong-tek-27",
+              "renderKey": "7e85c3edfa511a84fa25bb52980e0f82267c2616c90b7d0c2ac0deb8e60f0b9a"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

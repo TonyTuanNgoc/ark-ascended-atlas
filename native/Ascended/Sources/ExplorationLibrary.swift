@@ -46,6 +46,7 @@ struct ExplorationLibrary: View {
 }
 struct CaveRouteDetail: View {
     @Environment(\.arkMap) private var map
+    @State private var showFullVideo = false
     let route: CaveRoute
     var body: some View {
         ScrollView {
@@ -53,7 +54,6 @@ struct CaveRouteDetail: View {
                 Image(route.imageAsset).resizable().scaledToFit().frame(maxHeight: 240).frame(maxWidth: .infinity).clipShape(RoundedRectangle(cornerRadius: 8))
                 Text(route.name).font(.largeTitle.bold())
                 Text(route.notes).textSelection(.enabled).cardStyle()
-                if let video = map.caveVideos.first(where: { $0.routeID == route.id }) { CaveVideoTimeline(guide: video) }
                 VStack(alignment: .leading, spacing: 14) {
                     Text("Artifact trong tuyến").font(.title2.bold())
                     if route.artifactIDs.isEmpty { Text("Tuyến này không có artifact; đọc điều kiện trophy trong mục Boss.").foregroundStyle(.secondary) }
@@ -84,6 +84,23 @@ struct CaveRouteDetail: View {
                 }.cardStyle()
                 GuideChecklist(title: "Chuẩn bị cho tuyến", items: route.kit, key: "cave-" + route.id)
                 if !route.boss.isEmpty { Label(route.boss, systemImage: "shield.lefthalf.filled").foregroundStyle(.cyan) }
+                if let video = map.caveVideos.first(where: { $0.routeID == route.id }) {
+                    Button {
+                        showFullVideo.toggle()
+                    } label: {
+                        HStack {
+                            Label("Video đầy đủ", systemImage: "play.rectangle")
+                            Spacer()
+                            Image(systemName: showFullVideo ? "chevron.up" : "chevron.down")
+                        }.contentShape(Rectangle())
+                    }.buttonStyle(.plain)
+                        .accessibilityIdentifier("full-cave-video-" + route.id)
+                        .accessibilityValue(showFullVideo ? "Đã mở" : "Đã đóng")
+                    if showFullVideo { CaveVideoTimeline(guide: video) }
+                }
+                if let guide = map.caveGIFs.first(where: { $0.routeID == route.id }) {
+                    CaveGIFWalkthrough(guide: guide).id(map.rawValue + route.id)
+                }
             }.padding(24).frame(maxWidth: 1000).frame(maxWidth: .infinity)
         }.navigationTitle(route.name).navigationBarTitleDisplayMode(.inline)
     }

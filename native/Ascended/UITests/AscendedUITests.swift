@@ -268,6 +268,9 @@ final class AscendedUITests: XCTestCase {
         XCTAssertTrue(cave.waitForExistence(timeout: 5))
         XCTAssertEqual(cave.frame.width, cave.frame.height, accuracy: 2)
         cave.tap()
+        let fullVideo = app.buttons["full-cave-video-jungle"]
+        for _ in 0..<6 { if fullVideo.isHittable { break }; app.swipeUp() }
+        XCTAssertTrue(fullVideo.isHittable); fullVideo.tap()
         let chapter = app.buttons["cave-video-jungle-134"]
         for _ in 0..<4 { if chapter.isHittable { break }; app.swipeUp() }
         XCTAssertTrue(chapter.isHittable)
@@ -283,13 +286,71 @@ final class AscendedUITests: XCTestCase {
         app.buttons["choose-the-island"].tap()
         app.buttons["section-Artifact & Hang"].tap()
         app.buttons["route-central"].tap()
+        let islandVideo = app.buttons["full-cave-video-central"]
+        for _ in 0..<6 { if islandVideo.isHittable { break }; app.swipeUp() }
+        XCTAssertTrue(islandVideo.isHittable); islandVideo.tap()
         XCTAssertTrue(app.buttons["cave-video-central-196"].waitForExistence(timeout: 5))
         XCTAssertFalse(app.buttons["cave-video-jungle-134"].exists)
         app.buttons["changeMap"].tap()
         app.buttons["choose-the-center"].tap()
         app.buttons["section-Artifact & Hang"].tap()
         app.buttons["route-north-ice"].tap()
+        let centerVideo = app.buttons["full-cave-video-north-ice"]
+        for _ in 0..<6 { if centerVideo.isHittable { break }; app.swipeUp() }
+        XCTAssertTrue(centerVideo.isHittable); centerVideo.tap()
         XCTAssertTrue(app.buttons["cave-video-north-ice-325"].waitForExistence(timeout: 5))
+    }
+
+    @MainActor func testLocalGIFPlaybackAndMapIsolation() throws {
+        let app = XCUIApplication()
+        XCUIDevice.shared.orientation = .landscapeLeft
+        app.launch()
+        XCTAssertTrue(app.buttons["choose-the-island"].waitForExistence(timeout: 8))
+        app.buttons["choose-the-island"].tap()
+        app.buttons["section-Artifact & Hang"].tap()
+        app.buttons["route-central"].tap()
+        func reveal(_ element: XCUIElement) {
+            for _ in 0..<10 { if element.isHittable { break }; app.swipeUp() }
+            for _ in 0..<4 {
+                let delta = element.frame.maxY - (app.frame.maxY - 150)
+                if delta <= 0 { break }
+                let origin = app.coordinate(withNormalizedOffset: CGVector(dx: 0, dy: 0))
+                let x = app.frame.maxX - 90, y = app.frame.maxY - 100
+                origin.withOffset(CGVector(dx: x, dy: y)).press(forDuration: 0.1,
+                    thenDragTo: origin.withOffset(CGVector(dx: x, dy: y - min(delta, 350))))
+            }
+        }
+        let clip = app.buttons["cave-gif-central-clever-01"]
+        reveal(clip)
+        XCTAssertTrue(clip.isHittable)
+        XCTAssertEqual(clip.value as? String, "Đã dừng")
+        clip.tap()
+        XCTAssertEqual(clip.value as? String, "Đang phát")
+        Thread.sleep(forTimeInterval: 2)
+        let first = clip.screenshot().pngRepresentation
+        Thread.sleep(forTimeInterval: 1.5)
+        XCTAssertNotEqual(first, clip.screenshot().pngRepresentation, "GIF must animate after loading")
+        let playing = XCTAttachment(screenshot: XCUIScreen.main.screenshot())
+        playing.name = "Local-GIF-playing"; playing.lifetime = .keepAlways; add(playing)
+        clip.tap()
+        XCTAssertEqual(clip.value as? String, "Đã dừng")
+        app.buttons["changeMap"].tap(); app.buttons["choose-ragnarok"].tap()
+        app.buttons["section-Artifact & Hang"].tap(); app.buttons["route-jungle"].tap()
+        let rag = app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "cave-gif-jungle-")).firstMatch
+        reveal(rag)
+        XCTAssertTrue(rag.isHittable)
+        XCTAssertEqual(rag.value as? String, "Đã dừng")
+        XCTAssertFalse(clip.exists)
+        rag.tap(); XCTAssertEqual(rag.value as? String, "Đang phát")
+        app.buttons["changeMap"].tap(); app.buttons["choose-the-center"].tap()
+        app.buttons["section-Artifact & Hang"].tap(); app.buttons["route-north-ice"].tap()
+        let center = app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "cave-gif-north-ice-")).firstMatch
+        reveal(center)
+        XCTAssertTrue(center.isHittable)
+        XCTAssertEqual(center.value as? String, "Đã dừng")
+        XCTAssertFalse(rag.exists)
+        let shot = XCTAttachment(screenshot: XCUIScreen.main.screenshot())
+        shot.name = "Center-GIF-directions"; shot.lifetime = .keepAlways; add(shot)
     }
 
 }

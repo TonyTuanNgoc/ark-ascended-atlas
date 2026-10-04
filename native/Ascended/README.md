@@ -19,7 +19,7 @@ Single Player · Ragnarok / The Island / The Center. Independent app `com.tonytu
 - Nunatak Gamma/Beta/Alpha HP, entry levels, artifacts/apex tributes, Element, Tekgrams, arena rules and preparation; dungeon boss route/mechanics/gear notes with source-dependent values identified.
 - 23 additional offline images: ten artifact icons, three Nunatak renders, four mini-boss icons and six attributed Ragnarok illustrations. Cave illustrations are not exact entrance photographs.
 - Persistent artifact collection and preparation checklists.
-- Local autosaved notes and source links. Core content works offline; links require network.
+- Core content and local GIF walkthroughs work offline; full-video links require network. Notes/source navigation is removed; existing stored values are preserved.
 
 ## Build and install
 Requires Xcode, xcodegen, a paired/unlocked iPad with Developer Mode and authorized signing team HP5W6N9V3N.
@@ -57,3 +57,8 @@ Dino and icon-based Boss portraits share explicit white template rendering acros
 
 ### 0.6.0 (7) compact guide
 Square Base/Hang cards, compact corners, icon actions and player-focused copy. Notes and research/source UI are removed; internal provenance and stored progress remain. All 26 cave routes have 119 online YouTube chapter links via native Safari presentation. This release does not contain GIF walkthroughs: media reuse confirmation and actual route-footage verification remain pending.
+
+### 0.7.0 (8) offline cave GIFs
+467 local GIFs across all 25 artifact-bearing routes: Ragnarok 189 / six routes, The Island 148 / ten routes, The Center 130 / nine routes. Play/pause one clip at a time; moving away releases playback. Short player-style Vietnamese directions identify landmarks, interactions and requirements below useful steps. Full-video chapters are collapsible above GIFs. Tek Cave retains full-video guidance because it has no Artifact.
+
+The Snow GIF option requires unlocked Tek gear/Element; the full Yutyrannus video remains available. Frozen Dungeon Pack placement is a labelled Creative demonstration after the survival Queen route; Pyromane usage needs its paid DLC. These are reviewed video routes, not a survival completion test on Tony's save. Originals are retained outside Git; 512×288 GIFs occupy 2.46 GB and can be re-rendered from source. Tools, source hashes, time ranges and verification live under `tools/` and `docs/codex-reports/`; attribution remains outside player-facing UI.

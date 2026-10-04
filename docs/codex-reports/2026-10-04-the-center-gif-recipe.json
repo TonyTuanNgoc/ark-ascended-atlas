@@ -1,0 +1,1606 @@
+{
+  "map": "the-center",
+  "rights": "user-confirmed-licensed",
+  "guides": [
+    {
+      "routeID": "lava-oasis",
+      "sections": [
+        {
+          "id": "hunter",
+          "title": "Từ cửa hang → Hunter",
+          "steps": [
+            {
+              "id": "hunter-01",
+              "title": "Nhận ra cửa hang",
+              "videoID": "kLkqpo_VrSU",
+              "start": 0,
+              "end": 6,
+              "visuallyReviewed": true,
+              "direction": "Tìm cửa thấp dưới vách đá, có cỏ ngay phía trước. Cửa này ở Lava Oasis, không phải Lava Cave.",
+              "gif": "gif-the-center-lava-oasis-hunter-01",
+              "poster": "gif-the-center-lava-oasis-hunter-01",
+              "renderKey": "e6e97845fbf707f095356f9695b6d5b76055eccb460ca847ff4d2e36e659e39d"
+            },
+            {
+              "id": "hunter-02",
+              "title": "Qua gian hang đầu · 1/2",
+              "videoID": "kLkqpo_VrSU",
+              "start": 30,
+              "end": 44,
+              "visuallyReviewed": true,
+              "direction": "Đi qua lối đá tới gian có cây phát sáng xanh và ánh cam. Clip dùng Thylacoleo; giữ thú trên nền chắc.",
+              "gif": "gif-the-center-lava-oasis-hunter-02",
+              "poster": "gif-the-center-lava-oasis-hunter-02",
+              "renderKey": "ebb06591d583ff21289b43f0b82bb60d217990d74bb0692b9e9831a75cdb7c01"
+            },
+            {
+              "id": "hunter-03",
+              "title": "Qua gian hang đầu · 2/2",
+              "videoID": "kLkqpo_VrSU",
+              "start": 44,
+              "end": 46,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-lava-oasis-hunter-03",
+              "poster": "gif-the-center-lava-oasis-hunter-03",
+              "renderKey": "0f55dfa9b78a68e32f0f985c50d0ec3b97bb5b8b80d7d4158b9dc7ad184b9314"
+            },
+            {
+              "id": "hunter-04",
+              "title": "Theo đường quanh vách · 1/3",
+              "videoID": "kLkqpo_VrSU",
+              "start": 46,
+              "end": 60,
+              "visuallyReviewed": true,
+              "direction": "Theo đường đá lên xuống quanh các mảng cây sáng. Nhìn hình dáng vách ở cuối mỗi GIF trước khi đi tiếp.",
+              "gif": "gif-the-center-lava-oasis-hunter-04",
+              "poster": "gif-the-center-lava-oasis-hunter-04",
+              "renderKey": "213844052670bcd3773f69d7097e6efedea00831f49e0103379dbc0dff320934"
+            },
+            {
+              "id": "hunter-05",
+              "title": "Theo đường quanh vách · 2/3",
+              "videoID": "kLkqpo_VrSU",
+              "start": 60,
+              "end": 74,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-lava-oasis-hunter-05",
+              "poster": "gif-the-center-lava-oasis-hunter-05",
+              "renderKey": "f85c2bc1689ceac80340c39cd9b29dfc462a9153b69e35f263521137d15d709d"
+            },
+            {
+              "id": "hunter-06",
+              "title": "Theo đường quanh vách · 3/3",
+              "videoID": "kLkqpo_VrSU",
+              "start": 74,
+              "end": 78,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-lava-oasis-hunter-06",
+              "poster": "gif-the-center-lava-oasis-hunter-06",
+              "renderKey": "337061945c94d32909e1cb8c42191e90883175d528bdfcf5411440f12745d121"
+            },
+            {
+              "id": "hunter-07",
+              "title": "Vào gian cuối · 1/3",
+              "videoID": "kLkqpo_VrSU",
+              "start": 78,
+              "end": 92,
+              "visuallyReviewed": true,
+              "direction": "Theo lối đá xuyên qua đoạn tối rồi ra nền rộng có cây xanh. Dọn thú cản đường trước khi xuống lấy Artifact.",
+              "gif": "gif-the-center-lava-oasis-hunter-07",
+              "poster": "gif-the-center-lava-oasis-hunter-07",
+              "renderKey": "2b920eaec02adb8de367b5e7b81b878b331369c63f9b3dacf4dc657f249064f6"
+            },
+            {
+              "id": "hunter-08",
+              "title": "Vào gian cuối · 2/3",
+              "videoID": "kLkqpo_VrSU",
+              "start": 92,
+              "end": 106,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-lava-oasis-hunter-08",
+              "poster": "gif-the-center-lava-oasis-hunter-08",
+              "renderKey": "1556fd041922019bc224a2f9d7214c2fae51fe893ed9daf23184b0ca625551d5"
+            },
+            {
+              "id": "hunter-09",
+              "title": "Vào gian cuối · 3/3",
+              "videoID": "kLkqpo_VrSU",
+              "start": 106,
+              "end": 110,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-lava-oasis-hunter-09",
+              "poster": "gif-the-center-lava-oasis-hunter-09",
+              "renderKey": "8e476820efd0a2657b6992c91e4e34d163c504eddb5ec7f1f21042084b7f1dd0"
+            },
+            {
+              "id": "hunter-10",
+              "title": "Lấy Hunter",
+              "videoID": "kLkqpo_VrSU",
+              "start": 120,
+              "end": 132,
+              "visuallyReviewed": true,
+              "direction": "Tới Artifact trên nền đá. Lấy Hunter rồi quay ra bằng đường vừa đi.",
+              "gif": "gif-the-center-lava-oasis-hunter-10",
+              "poster": "gif-the-center-lava-oasis-hunter-10",
+              "renderKey": "8a1ae6c5d1317680d8b5dd078cad7133d180d57b215d3066191db3801851a135"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "routeID": "south-ice",
+      "sections": [
+        {
+          "id": "skylord",
+          "title": "Từ cửa hang → Skylord",
+          "steps": [
+            {
+              "id": "skylord-01",
+              "title": "Nhận ra cửa hang băng",
+              "videoID": "q1wySPqhl2E",
+              "start": 0,
+              "end": 6,
+              "visuallyReviewed": true,
+              "direction": "Tìm cửa băng rộng giữa các khối đá và tuyết. Mặc đồ giữ ấm trước khi vào.",
+              "gif": "gif-the-center-south-ice-skylord-01",
+              "poster": "gif-the-center-south-ice-skylord-01",
+              "renderKey": "1e3ef383a974fe5c0a0266e65117210db59e0f7a73aa6c5e2518ae867efa4f96"
+            },
+            {
+              "id": "skylord-02",
+              "title": "Lấy nhánh trái",
+              "videoID": "q1wySPqhl2E",
+              "start": 39,
+              "end": 53,
+              "visuallyReviewed": true,
+              "direction": "Vào hang, đi về bên trái. Tới chỗ chia đường thì tiếp tục lấy nhánh trái đi xuống.",
+              "gif": "gif-the-center-south-ice-skylord-02",
+              "poster": "gif-the-center-south-ice-skylord-02",
+              "renderKey": "5b5931a87b1026864e87dff169aeba738fa87e811844df3d92b77b7b151d6edf"
+            },
+            {
+              "id": "skylord-03",
+              "title": "Bám phải rồi lên dốc · 1/2",
+              "videoID": "q1wySPqhl2E",
+              "start": 53,
+              "end": 67,
+              "visuallyReviewed": true,
+              "direction": "Từ nền thấp rẽ phải và bám mép phải. Đi qua con Rex đóng băng trong vách bên trái.",
+              "gif": "gif-the-center-south-ice-skylord-03",
+              "poster": "gif-the-center-south-ice-skylord-03",
+              "renderKey": "2766fc9e7f2676482a27bc0191d049ecd2273947fe27ce956c28a960662cb268"
+            },
+            {
+              "id": "skylord-04",
+              "title": "Bám phải rồi lên dốc · 2/2",
+              "videoID": "q1wySPqhl2E",
+              "start": 67,
+              "end": 73,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-south-ice-skylord-04",
+              "poster": "gif-the-center-south-ice-skylord-04",
+              "renderKey": "4694e23a91a43cd01a72813b4ee56d2ade81df5a3d6f6e68af4dbe1828206462"
+            },
+            {
+              "id": "skylord-05",
+              "title": "Lên đường hầm",
+              "videoID": "q1wySPqhl2E",
+              "start": 73,
+              "end": 87,
+              "visuallyReviewed": true,
+              "direction": "Cuối đường rẽ trái lên đường hầm dốc. Loot có thể nằm ở phía trên, nhưng anh đang đi kiếm Artifact.",
+              "gif": "gif-the-center-south-ice-skylord-05",
+              "poster": "gif-the-center-south-ice-skylord-05",
+              "renderKey": "3ac2065a0d844b2ad68857acfe88493719e1174aee198194453a4f5d57e231db"
+            },
+            {
+              "id": "skylord-06",
+              "title": "Vòng mép đá · 1/2",
+              "videoID": "q1wySPqhl2E",
+              "start": 87,
+              "end": 101,
+              "visuallyReviewed": true,
+              "direction": "Theo lối hẹp hơi chếch trái, vòng quanh gờ đá. Artifact nằm cạnh các tảng đá phía trước.",
+              "gif": "gif-the-center-south-ice-skylord-06",
+              "poster": "gif-the-center-south-ice-skylord-06",
+              "renderKey": "351f2adb19f258886252d81c41e2f7f94783f1123ec27fbeae98c41e282108eb"
+            },
+            {
+              "id": "skylord-07",
+              "title": "Vòng mép đá · 2/2",
+              "videoID": "q1wySPqhl2E",
+              "start": 101,
+              "end": 102,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-south-ice-skylord-07",
+              "poster": "gif-the-center-south-ice-skylord-07",
+              "renderKey": "85f77694388a853ded09d567d672c60038d45c95c4f009ede7a67a58ef875146"
+            },
+            {
+              "id": "skylord-08",
+              "title": "Lấy Skylord",
+              "videoID": "q1wySPqhl2E",
+              "start": 114,
+              "end": 118,
+              "visuallyReviewed": true,
+              "direction": "Khi đã an toàn thì xuống thú và lấy Skylord. Quay lại gờ đá rồi đi ngược đường vừa vào.",
+              "gif": "gif-the-center-south-ice-skylord-08",
+              "poster": "gif-the-center-south-ice-skylord-08",
+              "renderKey": "b4fbb12e0ef6f8b90dbd333fbbdd707df9371f59061ed2ab0c2db451723d5a3b"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "routeID": "floating",
+      "sections": [
+        {
+          "id": "devious",
+          "title": "Cửa đường bộ → Devious",
+          "steps": [
+            {
+              "id": "devious-01",
+              "title": "Tìm cây đơn độc trên gờ · 1/2",
+              "videoID": "yUDLixRTcaM",
+              "start": 7,
+              "end": 21,
+              "visuallyReviewed": true,
+              "direction": "Tìm cây đứng một mình trên gờ đá của đảo Center. Nhìn xuống dưới cây sẽ thấy cửa đường bộ.",
+              "gif": "gif-the-center-floating-devious-01",
+              "poster": "gif-the-center-floating-devious-01",
+              "renderKey": "fc2421678fc564eb9952ff524e03bad99dff1b3b0ef3704ad567a6a0f9571049"
+            },
+            {
+              "id": "devious-02",
+              "title": "Tìm cây đơn độc trên gờ · 2/2",
+              "videoID": "yUDLixRTcaM",
+              "start": 21,
+              "end": 27,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-floating-devious-02",
+              "poster": "gif-the-center-floating-devious-02",
+              "renderKey": "1359ac7e45ab295179c42e94b35446861c6a85c8d4dfe6f58af544b7b65fd639"
+            },
+            {
+              "id": "devious-03",
+              "title": "Vào hành lang xanh",
+              "videoID": "yUDLixRTcaM",
+              "start": 39,
+              "end": 51,
+              "visuallyReviewed": true,
+              "direction": "Theo cửa vào lòng hang có cây phát sáng xanh. Chuẩn bị thuốc hồi máu trước khi xuống các dốc.",
+              "gif": "gif-the-center-floating-devious-03",
+              "poster": "gif-the-center-floating-devious-03",
+              "renderKey": "6f41a263741de1bde3fa42d5c6b43a0459b8c9a3ccf05eac315e3c766669c45f"
+            },
+            {
+              "id": "devious-04",
+              "title": "Xuống dốc đầu · 1/2",
+              "videoID": "yUDLixRTcaM",
+              "start": 56,
+              "end": 70,
+              "visuallyReviewed": true,
+              "direction": "Đi tới gờ đá rồi xuống dốc đầu tiên. Tới cuối dốc quay ngược lại để xuống dốc thứ hai.",
+              "gif": "gif-the-center-floating-devious-04",
+              "poster": "gif-the-center-floating-devious-04",
+              "renderKey": "72880902f76ddfb95d7f94780cb035e5dd2ea3eabbd5f453b9ecc2ea7204f7d0"
+            },
+            {
+              "id": "devious-05",
+              "title": "Xuống dốc đầu · 2/2",
+              "videoID": "yUDLixRTcaM",
+              "start": 70,
+              "end": 79,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-floating-devious-05",
+              "poster": "gif-the-center-floating-devious-05",
+              "renderKey": "45354c171887256979e4b755eaa86e4060e3064c37a71c7da9b29945f463f6c0"
+            },
+            {
+              "id": "devious-06",
+              "title": "Xuống dốc thứ hai · 1/2",
+              "videoID": "yUDLixRTcaM",
+              "start": 79,
+              "end": 93,
+              "visuallyReviewed": true,
+              "direction": "Theo dốc xuống nền thấp. Artifact ở gờ bên kia; đừng nhảy tắt qua khoảng hở nếu chưa chắc.",
+              "gif": "gif-the-center-floating-devious-06",
+              "poster": "gif-the-center-floating-devious-06",
+              "renderKey": "e3886594dc435dcb1e1dceca8e818e2d04159bb2106a0595cac85a8fe76f6d98"
+            },
+            {
+              "id": "devious-07",
+              "title": "Xuống dốc thứ hai · 2/2",
+              "videoID": "yUDLixRTcaM",
+              "start": 93,
+              "end": 99,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-floating-devious-07",
+              "poster": "gif-the-center-floating-devious-07",
+              "renderKey": "a078cf1d0f8da2985d9ebeff3d21654d89c3ec370ca5b56b8818834bb4e16c2d"
+            },
+            {
+              "id": "devious-08",
+              "title": "Vòng trái tới Artifact · 1/2",
+              "videoID": "yUDLixRTcaM",
+              "start": 99,
+              "end": 113,
+              "visuallyReviewed": true,
+              "direction": "Vòng theo lối bên trái và đi hết đường quanh vách, thay vì nhảy thẳng qua vực.",
+              "gif": "gif-the-center-floating-devious-08",
+              "poster": "gif-the-center-floating-devious-08",
+              "renderKey": "c629dcbd0be08949cfa389440aec1d1a2daf174c4662b1f9b554233f3dab433a"
+            },
+            {
+              "id": "devious-09",
+              "title": "Vòng trái tới Artifact · 2/2",
+              "videoID": "yUDLixRTcaM",
+              "start": 113,
+              "end": 121,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-floating-devious-09",
+              "poster": "gif-the-center-floating-devious-09",
+              "renderKey": "f232f275ba79c5407b241c2f983013de76ae95a296393ac659cecf3fbb019506"
+            },
+            {
+              "id": "devious-10",
+              "title": "Lấy Devious",
+              "videoID": "yUDLixRTcaM",
+              "start": 121,
+              "end": 134,
+              "visuallyReviewed": true,
+              "direction": "Artifact nằm trên nền đá ở cuối lối vòng. Xuống thú và lấy Devious, rồi quay về hai đoạn dốc.",
+              "gif": "gif-the-center-floating-devious-10",
+              "poster": "gif-the-center-floating-devious-10",
+              "renderKey": "6bcae10d98af080f058ad43ada617918c94e24ed91b7b6e282ae722da38ee450"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "routeID": "trench",
+      "sections": [
+        {
+          "id": "brute",
+          "title": "Từ mặt nước → Brute",
+          "steps": [
+            {
+              "id": "brute-01",
+              "title": "Bắt đầu lặn · 1/2",
+              "videoID": "4FjhqFYpQK0",
+              "start": 62,
+              "end": 76,
+              "visuallyReviewed": true,
+              "direction": "Ở điểm rãnh biển phía đông nam, trang bị SCUBA và kiểm tra oxygen. Clip dùng thú biển để xuống sâu.",
+              "gif": "gif-the-center-trench-brute-01",
+              "poster": "gif-the-center-trench-brute-01",
+              "renderKey": "3438778ae31d482df9d64bd59a44a7c43914309bece889a93a60fda724576f40"
+            },
+            {
+              "id": "brute-02",
+              "title": "Bắt đầu lặn · 2/2",
+              "videoID": "4FjhqFYpQK0",
+              "start": 76,
+              "end": 78,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-trench-brute-02",
+              "poster": "gif-the-center-trench-brute-02",
+              "renderKey": "509de242b9b0f1c3a522d3d27b4534d80875446e2846c931688dca074aadf6e4"
+            },
+            {
+              "id": "brute-03",
+              "title": "Theo khe xuống sâu · 1/4",
+              "videoID": "4FjhqFYpQK0",
+              "start": 78,
+              "end": 92,
+              "visuallyReviewed": true,
+              "direction": "Bám khe giữa các khối đá lớn và tiếp tục lặn xuống. Để ý đàn cá và sinh vật biển quanh anh.",
+              "gif": "gif-the-center-trench-brute-03",
+              "poster": "gif-the-center-trench-brute-03",
+              "renderKey": "80e6f46265ae6315ebfc25b34e91614d37fcd0d85689f1f60334019a073f3390"
+            },
+            {
+              "id": "brute-04",
+              "title": "Theo khe xuống sâu · 2/4",
+              "videoID": "4FjhqFYpQK0",
+              "start": 92,
+              "end": 106,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-trench-brute-04",
+              "poster": "gif-the-center-trench-brute-04",
+              "renderKey": "3ad668118c836a79792b44f21aa11bfb80ff15100c4269ec42e9850867660978"
+            },
+            {
+              "id": "brute-05",
+              "title": "Theo khe xuống sâu · 3/4",
+              "videoID": "4FjhqFYpQK0",
+              "start": 106,
+              "end": 120,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-trench-brute-05",
+              "poster": "gif-the-center-trench-brute-05",
+              "renderKey": "cdcaac205154fe9f4bc8087e1b459d91cde5d817418a3abf2033ab756db9dbc2"
+            },
+            {
+              "id": "brute-06",
+              "title": "Theo khe xuống sâu · 4/4",
+              "videoID": "4FjhqFYpQK0",
+              "start": 120,
+              "end": 134,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-trench-brute-06",
+              "poster": "gif-the-center-trench-brute-06",
+              "renderKey": "e2332be86af377960a8f8ea9a0e4116edcd2e833d678ed36af82a3c71433d68c"
+            },
+            {
+              "id": "brute-07",
+              "title": "Tìm gian cây hồng · 1/4",
+              "videoID": "4FjhqFYpQK0",
+              "start": 134,
+              "end": 148,
+              "visuallyReviewed": true,
+              "direction": "Theo rãnh tới gian có cây hồng và xanh phát sáng. Đi sát đáy như trong GIF để tìm lối vào gian Artifact.",
+              "gif": "gif-the-center-trench-brute-07",
+              "poster": "gif-the-center-trench-brute-07",
+              "renderKey": "7c37a5cf99adab5cf79ee1cf0799f1429e8eac990efea278b29cbd5e73f237f0"
+            },
+            {
+              "id": "brute-08",
+              "title": "Tìm gian cây hồng · 2/4",
+              "videoID": "4FjhqFYpQK0",
+              "start": 148,
+              "end": 162,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-trench-brute-08",
+              "poster": "gif-the-center-trench-brute-08",
+              "renderKey": "b3093cd67d19d89e0ef87175874eaa76aff7aaa3419c00a6f1694fda85a0c593"
+            },
+            {
+              "id": "brute-09",
+              "title": "Tìm gian cây hồng · 3/4",
+              "videoID": "4FjhqFYpQK0",
+              "start": 162,
+              "end": 176,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-trench-brute-09",
+              "poster": "gif-the-center-trench-brute-09",
+              "renderKey": "77dddf4f5c6f2bb9f6092420fcf5a99f3736ca2f46c4b1e60d5f89bb39d09bd7"
+            },
+            {
+              "id": "brute-10",
+              "title": "Tìm gian cây hồng · 4/4",
+              "videoID": "4FjhqFYpQK0",
+              "start": 176,
+              "end": 190,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-trench-brute-10",
+              "poster": "gif-the-center-trench-brute-10",
+              "renderKey": "f4b0ec5bf250135b2c8af45de680c778d11830f6f336893fead010ffe5b307f4"
+            },
+            {
+              "id": "brute-11",
+              "title": "Tới nền Artifact · 1/2",
+              "videoID": "4FjhqFYpQK0",
+              "start": 190,
+              "end": 204,
+              "visuallyReviewed": true,
+              "direction": "Tới nền đá có ánh Artifact trong gian hang. Xuống thú khi an toàn để lấy Brute; giữ đủ oxygen cho đường về.",
+              "gif": "gif-the-center-trench-brute-11",
+              "poster": "gif-the-center-trench-brute-11",
+              "renderKey": "6eacf8a6259ff8fa8269e4db1133bfd61dbe1221e7271b36c0869be3c6cfc064"
+            },
+            {
+              "id": "brute-12",
+              "title": "Tới nền Artifact · 2/2",
+              "videoID": "4FjhqFYpQK0",
+              "start": 204,
+              "end": 218,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-trench-brute-12",
+              "poster": "gif-the-center-trench-brute-12",
+              "renderKey": "d055e8ceebd9396434549c16f6e73aeb26d1b70f79b397a1a573f1a32de2ed09"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "routeID": "cliffside",
+      "sections": [
+        {
+          "id": "cunning",
+          "title": "Từ vùng Obelisk xanh → Cunning",
+          "steps": [
+            {
+              "id": "cunning-01",
+              "title": "Xuống dưới vách đá · 1/2",
+              "videoID": "Ok14ok1T1YY",
+              "start": 72,
+              "end": 86,
+              "visuallyReviewed": true,
+              "direction": "Từ vùng Obelisk xanh, bay xuống dưới vách đá theo đường trong clip. Giữ stamina trước khi bay vào lòng hang lớn.",
+              "gif": "gif-the-center-cliffside-cunning-01",
+              "poster": "gif-the-center-cliffside-cunning-01",
+              "renderKey": "320070f14084d29ac28bcee3d550560f697cbd1139d7ff1db049880726f621c4"
+            },
+            {
+              "id": "cunning-02",
+              "title": "Xuống dưới vách đá · 2/2",
+              "videoID": "Ok14ok1T1YY",
+              "start": 86,
+              "end": 99,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-cliffside-cunning-02",
+              "poster": "gif-the-center-cliffside-cunning-02",
+              "renderKey": "63c2331cea60bcdcb66412c96eccdf020f5a91827ce77058030948090cdaa62c"
+            },
+            {
+              "id": "cunning-03",
+              "title": "Vào lòng hang rộng · 1/4",
+              "videoID": "Ok14ok1T1YY",
+              "start": 99,
+              "end": 113,
+              "visuallyReviewed": true,
+              "direction": "Theo cửa dưới vách vào gian hang lớn. Lấy tháp đá và các khối nhũ làm mốc để giữ hướng.",
+              "gif": "gif-the-center-cliffside-cunning-03",
+              "poster": "gif-the-center-cliffside-cunning-03",
+              "renderKey": "91f0ed668abf24b7e919256c0d8cd012737bee4e0735eb72b6131c16a655afb8"
+            },
+            {
+              "id": "cunning-04",
+              "title": "Vào lòng hang rộng · 2/4",
+              "videoID": "Ok14ok1T1YY",
+              "start": 113,
+              "end": 127,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-cliffside-cunning-04",
+              "poster": "gif-the-center-cliffside-cunning-04",
+              "renderKey": "412221e39b955bb0e82fd37389c39d4f170e7fba216afb36e5b61ac245c0992f"
+            },
+            {
+              "id": "cunning-05",
+              "title": "Vào lòng hang rộng · 3/4",
+              "videoID": "Ok14ok1T1YY",
+              "start": 127,
+              "end": 141,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-cliffside-cunning-05",
+              "poster": "gif-the-center-cliffside-cunning-05",
+              "renderKey": "de5269e5680812f9edbcd43e97bf4229c89b7a5232fb5ccc40d870b95040e35a"
+            },
+            {
+              "id": "cunning-06",
+              "title": "Vào lòng hang rộng · 4/4",
+              "videoID": "Ok14ok1T1YY",
+              "start": 141,
+              "end": 143,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-cliffside-cunning-06",
+              "poster": "gif-the-center-cliffside-cunning-06",
+              "renderKey": "32b506dc7fa78541eaaa3a876e042696e7e998fafb12d696baa68abb60ceceee"
+            },
+            {
+              "id": "cunning-07",
+              "title": "Tới khu phế tích · 1/2",
+              "videoID": "Ok14ok1T1YY",
+              "start": 143,
+              "end": 157,
+              "visuallyReviewed": true,
+              "direction": "Đi qua các gờ có cây, hướng tới phế tích màu sáng ở phía dưới.",
+              "gif": "gif-the-center-cliffside-cunning-07",
+              "poster": "gif-the-center-cliffside-cunning-07",
+              "renderKey": "eb1f3d11aa6b3d321e7d33d2b9f8c7a3bf30a028fc030eb67051efaf06deb024"
+            },
+            {
+              "id": "cunning-08",
+              "title": "Tới khu phế tích · 2/2",
+              "videoID": "Ok14ok1T1YY",
+              "start": 157,
+              "end": 171,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-cliffside-cunning-08",
+              "poster": "gif-the-center-cliffside-cunning-08",
+              "renderKey": "e6c97d74b328688d65688531b4dcb06ec2e99b97632b0d2c0e3487e52f146190"
+            },
+            {
+              "id": "cunning-09",
+              "title": "Lấy Cunning · 1/2",
+              "videoID": "Ok14ok1T1YY",
+              "start": 171,
+              "end": 185,
+              "visuallyReviewed": true,
+              "direction": "Qua phế tích, vào hốc sáng tím phía sau. Artifact nằm ngay ở nền cỏ tím trong hốc này.",
+              "gif": "gif-the-center-cliffside-cunning-09",
+              "poster": "gif-the-center-cliffside-cunning-09",
+              "renderKey": "eb0f135bcbbf17c4803ca27dc3fc9e7e98d433f2da53ee9f1c27e15a34c91698"
+            },
+            {
+              "id": "cunning-10",
+              "title": "Lấy Cunning · 2/2",
+              "videoID": "Ok14ok1T1YY",
+              "start": 185,
+              "end": 190,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-cliffside-cunning-10",
+              "poster": "gif-the-center-cliffside-cunning-10",
+              "renderKey": "f1ab4cb927cde583870a2b79d89e4e9b248f298417660a0993e9ea4305b28ca4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "routeID": "jungle",
+      "sections": [
+        {
+          "id": "immune",
+          "title": "Cửa biển nông → Immune",
+          "steps": [
+            {
+              "id": "immune-01",
+              "title": "Tìm cửa ở biển nông · 1/2",
+              "videoID": "8xIKrYlyeBQ",
+              "start": 63,
+              "end": 77,
+              "visuallyReviewed": true,
+              "direction": "Bơi từ bãi biển vào cửa nằm sát mặt nước. Tuyến này dùng cửa biển nông; các cửa khác không nối vào cùng bước đầu.",
+              "gif": "gif-the-center-jungle-immune-01",
+              "poster": "gif-the-center-jungle-immune-01",
+              "renderKey": "240fc603222f1196d2a9e04b40c58d6dcec46bf03c7862b1e35f9026fc9c0b6b"
+            },
+            {
+              "id": "immune-02",
+              "title": "Tìm cửa ở biển nông · 2/2",
+              "videoID": "8xIKrYlyeBQ",
+              "start": 77,
+              "end": 83,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-jungle-immune-02",
+              "poster": "gif-the-center-jungle-immune-02",
+              "renderKey": "2bf809715f165f7cf677d6f2724ec74ba6f97f3b90a9a922c12284bfde251dfa"
+            },
+            {
+              "id": "immune-03",
+              "title": "Lên nền đá và rẽ phải · 1/2",
+              "videoID": "8xIKrYlyeBQ",
+              "start": 83,
+              "end": 97,
+              "visuallyReviewed": true,
+              "direction": "Lên cầu đất, đi tới khoảng mở có cột đá nhỏ rồi lấy lối bên phải.",
+              "gif": "gif-the-center-jungle-immune-03",
+              "poster": "gif-the-center-jungle-immune-03",
+              "renderKey": "4ee05c1323bc329f426d552305e68a1c3d5da636b3f789d688b76edcd26e9ef5"
+            },
+            {
+              "id": "immune-04",
+              "title": "Lên nền đá và rẽ phải · 2/2",
+              "videoID": "8xIKrYlyeBQ",
+              "start": 97,
+              "end": 100,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-jungle-immune-04",
+              "poster": "gif-the-center-jungle-immune-04",
+              "renderKey": "952fa558f16e55384665ed7aa0e833fa5df8766349b48dcdbe92c2c055be7bae"
+            },
+            {
+              "id": "immune-05",
+              "title": "Tới hồ trong hang · 1/2",
+              "videoID": "8xIKrYlyeBQ",
+              "start": 100,
+              "end": 114,
+              "visuallyReviewed": true,
+              "direction": "Theo lối phủ cây tới hồ sâu. Đứng ở mép hồ, trang bị SCUBA trước đoạn lặn tiếp theo.",
+              "gif": "gif-the-center-jungle-immune-05",
+              "poster": "gif-the-center-jungle-immune-05",
+              "renderKey": "be6719d34010067f82464ede82e9b49a117f4ca5660d6206df3c697532313407"
+            },
+            {
+              "id": "immune-06",
+              "title": "Tới hồ trong hang · 2/2",
+              "videoID": "8xIKrYlyeBQ",
+              "start": 114,
+              "end": 124,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-jungle-immune-06",
+              "poster": "gif-the-center-jungle-immune-06",
+              "renderKey": "a5e3b445fafe587486af8e8ed633a678c59627f4576ef03b896fbcc94d7bc43c"
+            },
+            {
+              "id": "immune-07",
+              "title": "Lặn xoáy xuống đáy · 1/2",
+              "videoID": "8xIKrYlyeBQ",
+              "start": 188,
+              "end": 202,
+              "visuallyReviewed": true,
+              "direction": "Bơi vào vùng nước xanh, tìm chỗ nền tụt sâu rồi lặn vòng xuống tới đáy.",
+              "gif": "gif-the-center-jungle-immune-07",
+              "poster": "gif-the-center-jungle-immune-07",
+              "renderKey": "3eb429d43e4526d759ac2f07eb49af61906a6dab686f4ad3a3dbcaff7c9c2048"
+            },
+            {
+              "id": "immune-08",
+              "title": "Lặn xoáy xuống đáy · 2/2",
+              "videoID": "8xIKrYlyeBQ",
+              "start": 202,
+              "end": 205,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-jungle-immune-08",
+              "poster": "gif-the-center-jungle-immune-08",
+              "renderKey": "599d991f8e9659cc90666aca0d02cda0f783a5ea3e226f599cd61def4f7863bd"
+            },
+            {
+              "id": "immune-09",
+              "title": "Tìm ánh Artifact trong rong · 1/2",
+              "videoID": "8xIKrYlyeBQ",
+              "start": 205,
+              "end": 219,
+              "visuallyReviewed": true,
+              "direction": "Tìm ánh Artifact giữa rong và cỏ biển sát đáy. Khu này khó nhìn; đi chậm và đối chiếu vị trí các vách đá.",
+              "gif": "gif-the-center-jungle-immune-09",
+              "poster": "gif-the-center-jungle-immune-09",
+              "renderKey": "6808fa2e96744cadd91fc718f0aa18cb13893b6af5b7ad38a817cad1d85a5fd5"
+            },
+            {
+              "id": "immune-10",
+              "title": "Tìm ánh Artifact trong rong · 2/2",
+              "videoID": "8xIKrYlyeBQ",
+              "start": 219,
+              "end": 230,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-jungle-immune-10",
+              "poster": "gif-the-center-jungle-immune-10",
+              "renderKey": "3c1974dd98c5480eae2592dfd31e25ba5910807b2f4cbebf57866a9d3c80b5b0"
+            },
+            {
+              "id": "immune-11",
+              "title": "Lấy Immune",
+              "videoID": "8xIKrYlyeBQ",
+              "start": 230,
+              "end": 244,
+              "visuallyReviewed": true,
+              "direction": "Tới sát Artifact và lấy Immune. Quay lên theo đường xoáy vừa lặn xuống.",
+              "gif": "gif-the-center-jungle-immune-11",
+              "poster": "gif-the-center-jungle-immune-11",
+              "renderKey": "5f64338d84f89a9319073e06d58b7a0c28480c5c8c6495828f2ec8b802cf94c4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "routeID": "underworld",
+      "sections": [
+        {
+          "id": "pack",
+          "title": "Cửa phía nam → Pack bằng Thylacoleo",
+          "steps": [
+            {
+              "id": "pack-01",
+              "title": "Nhận ra cửa hang",
+              "videoID": "lbUpWgyqjRI",
+              "start": 0,
+              "end": 6,
+              "visuallyReviewed": true,
+              "direction": "Tìm cửa có lối đá và ánh cam như trong clip. Tuyến này dùng Thylacoleo để leo vách ở đoạn cuối.",
+              "gif": "gif-the-center-underworld-pack-01",
+              "poster": "gif-the-center-underworld-pack-01",
+              "renderKey": "f82c47d9050b78a8f90627f46e2508411df879c9957e592805a700e0913dce81"
+            },
+            {
+              "id": "pack-02",
+              "title": "Đi vào gian đầu · 1/2",
+              "videoID": "lbUpWgyqjRI",
+              "start": 31,
+              "end": 45,
+              "visuallyReviewed": true,
+              "direction": "Theo đường hầm xanh tới gian mở có cây. Dọn sinh vật cản đường rồi đi tiếp.",
+              "gif": "gif-the-center-underworld-pack-02",
+              "poster": "gif-the-center-underworld-pack-02",
+              "renderKey": "4be31f394f1897154bd817b9df8eb616e5cfc6fc8bb17bce49cca68ec8634a39"
+            },
+            {
+              "id": "pack-03",
+              "title": "Đi vào gian đầu · 2/2",
+              "videoID": "lbUpWgyqjRI",
+              "start": 45,
+              "end": 46,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-underworld-pack-03",
+              "poster": "gif-the-center-underworld-pack-03",
+              "renderKey": "dff2f3d869eb066646dea54a7bddf19474904f023d230713713d3ebb3fad5544"
+            },
+            {
+              "id": "pack-04",
+              "title": "Qua gian tinh thể · 1/3",
+              "videoID": "lbUpWgyqjRI",
+              "start": 54,
+              "end": 68,
+              "visuallyReviewed": true,
+              "direction": "Qua gian có tinh thể trắng và nền phủ cây, theo lối xuống nước phía trước.",
+              "gif": "gif-the-center-underworld-pack-04",
+              "poster": "gif-the-center-underworld-pack-04",
+              "renderKey": "bc6776a3ca859113d5fbc7bf2eff597b7bf7ae9ef3a85db047c21c9f1e9d1bc6"
+            },
+            {
+              "id": "pack-05",
+              "title": "Qua gian tinh thể · 2/3",
+              "videoID": "lbUpWgyqjRI",
+              "start": 68,
+              "end": 82,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-underworld-pack-05",
+              "poster": "gif-the-center-underworld-pack-05",
+              "renderKey": "d1d52871bc2a7f25bf2cc031bb5dffd27ab6a57109b37aee445ba4e952d49e15"
+            },
+            {
+              "id": "pack-06",
+              "title": "Qua gian tinh thể · 3/3",
+              "videoID": "lbUpWgyqjRI",
+              "start": 82,
+              "end": 89,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-underworld-pack-06",
+              "poster": "gif-the-center-underworld-pack-06",
+              "renderKey": "53c320ff84a083f0fb676ce42107b39f925ba61917bd6d1eaba645565f24c5ef"
+            },
+            {
+              "id": "pack-07",
+              "title": "Qua nước tới cầu · 1/3",
+              "videoID": "lbUpWgyqjRI",
+              "start": 89,
+              "end": 103,
+              "visuallyReviewed": true,
+              "direction": "Bơi qua đoạn nước, lên lối đá và đi tiếp tới cầu gỗ.",
+              "gif": "gif-the-center-underworld-pack-07",
+              "poster": "gif-the-center-underworld-pack-07",
+              "renderKey": "2b55292dc1ef540f6c2a4d039d23eda0ddacf203f6a85ed4b3dd1b7464ef58eb"
+            },
+            {
+              "id": "pack-08",
+              "title": "Qua nước tới cầu · 2/3",
+              "videoID": "lbUpWgyqjRI",
+              "start": 103,
+              "end": 117,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-underworld-pack-08",
+              "poster": "gif-the-center-underworld-pack-08",
+              "renderKey": "35a23a0db242bdd0873ac3b6b5e0acf5a738633737bc387c2f9897bc8c185665"
+            },
+            {
+              "id": "pack-09",
+              "title": "Qua nước tới cầu · 3/3",
+              "videoID": "lbUpWgyqjRI",
+              "start": 117,
+              "end": 121,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-underworld-pack-09",
+              "poster": "gif-the-center-underworld-pack-09",
+              "renderKey": "1b5cd131cbbf387b68cc56650475d031e3bd70e9529e3538f37509deabccc92f"
+            },
+            {
+              "id": "pack-10",
+              "title": "Qua cầu tới phòng cột · 1/3",
+              "videoID": "lbUpWgyqjRI",
+              "start": 121,
+              "end": 135,
+              "visuallyReviewed": true,
+              "direction": "Qua cầu, nhảy đoạn hở nhỏ rồi đi về bên phải dưới các cột. Xuống tầng dưới tới hồ nước xanh.",
+              "gif": "gif-the-center-underworld-pack-10",
+              "poster": "gif-the-center-underworld-pack-10",
+              "renderKey": "dac8151a1693c7dc823c3760c1660610d99518df0335d4c10ce050a84e621875"
+            },
+            {
+              "id": "pack-11",
+              "title": "Qua cầu tới phòng cột · 2/3",
+              "videoID": "lbUpWgyqjRI",
+              "start": 135,
+              "end": 149,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-underworld-pack-11",
+              "poster": "gif-the-center-underworld-pack-11",
+              "renderKey": "3ac2f3747347ac805a5f208dddbd13d9ef4124078e60ee636e543ef010028840"
+            },
+            {
+              "id": "pack-12",
+              "title": "Qua cầu tới phòng cột · 3/3",
+              "videoID": "lbUpWgyqjRI",
+              "start": 149,
+              "end": 155,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-underworld-pack-12",
+              "poster": "gif-the-center-underworld-pack-12",
+              "renderKey": "701dd659951f2d4cc16166c15f5cfeccf0512a7c50ac89c1020106809969a92c"
+            },
+            {
+              "id": "pack-13",
+              "title": "Leo vách bằng Thyla · 1/2",
+              "videoID": "lbUpWgyqjRI",
+              "start": 155,
+              "end": 169,
+              "visuallyReviewed": true,
+              "direction": "Tìm đúng phần vách ở bên trái hồ trong clip, dùng Thylacoleo leo lên. Đây là đường leo vách để bỏ qua bài nhảy cột; không áp dụng cho thú không leo được.",
+              "gif": "gif-the-center-underworld-pack-13",
+              "poster": "gif-the-center-underworld-pack-13",
+              "renderKey": "21239f107e1ee8b59f80db53b90028dbdeccf0e1f202b06513d030c58e292a63"
+            },
+            {
+              "id": "pack-14",
+              "title": "Leo vách bằng Thyla · 2/2",
+              "videoID": "lbUpWgyqjRI",
+              "start": 169,
+              "end": 173,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-underworld-pack-14",
+              "poster": "gif-the-center-underworld-pack-14",
+              "renderKey": "8e7e659c5f150fb55844a8fb71f7184077fb834b672e5a01715fb5c4f4aa51ab"
+            },
+            {
+              "id": "pack-15",
+              "title": "Vào phòng lấy Pack",
+              "videoID": "lbUpWgyqjRI",
+              "start": 173,
+              "end": 186,
+              "visuallyReviewed": true,
+              "direction": "Trên gờ, đi về bên phải rồi vào phòng ở bên trái. Pack nằm trước chiếc rương trong phòng này.",
+              "gif": "gif-the-center-underworld-pack-15",
+              "poster": "gif-the-center-underworld-pack-15",
+              "renderKey": "7f90b2455ca6efe9066b4cd8b77bd25982b67296831f5df2653d9f042ed816a6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "routeID": "north-ice",
+      "sections": [
+        {
+          "id": "clever",
+          "title": "Từ cửa hang → Clever",
+          "steps": [
+            {
+              "id": "clever-01",
+              "title": "Nhận ra cửa băng",
+              "videoID": "lwyGQA72nrk",
+              "start": 0,
+              "end": 6,
+              "visuallyReviewed": true,
+              "direction": "Tìm cửa băng rộng ở miền bắc. Mang SCUBA và Grappling Hook cho cả đường vào lẫn đường quay lại.",
+              "gif": "gif-the-center-north-ice-clever-01",
+              "poster": "gif-the-center-north-ice-clever-01",
+              "renderKey": "9be760eb6ebc3c45c3f643141435e96d316730eeed9eb9d26876ff91edb520f0"
+            },
+            {
+              "id": "clever-02",
+              "title": "Xuống hồ đầu tiên · 1/2",
+              "videoID": "lwyGQA72nrk",
+              "start": 54,
+              "end": 68,
+              "visuallyReviewed": true,
+              "direction": "Theo lối vào xuống hồ trong hang. Dọn sinh vật quanh hồ trước khi mặc SCUBA.",
+              "gif": "gif-the-center-north-ice-clever-02",
+              "poster": "gif-the-center-north-ice-clever-02",
+              "renderKey": "70410069d87ec67e38f8d418bc1b5af44c667de65f458b53e1bc606040eda1a4"
+            },
+            {
+              "id": "clever-03",
+              "title": "Xuống hồ đầu tiên · 2/2",
+              "videoID": "lwyGQA72nrk",
+              "start": 68,
+              "end": 74,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-north-ice-clever-03",
+              "poster": "gif-the-center-north-ice-clever-03",
+              "renderKey": "68fc3a9212bc9b8b558af0acdf7a92662739ca55f8b3b4838808dfc0f9c2652d"
+            },
+            {
+              "id": "clever-04",
+              "title": "Lặn qua nhánh trái · 1/3",
+              "videoID": "lwyGQA72nrk",
+              "start": 80,
+              "end": 94,
+              "visuallyReviewed": true,
+              "direction": "Dưới hồ có hai lối qua nhũ băng. Lấy nhánh trái để tới Clever, bơi theo đường hầm một chiều.",
+              "gif": "gif-the-center-north-ice-clever-04",
+              "poster": "gif-the-center-north-ice-clever-04",
+              "renderKey": "ed481e60fb5c6d6885061c3e26dcc6e49a54bfed2d5bf5c576493726ea6abdbf"
+            },
+            {
+              "id": "clever-05",
+              "title": "Lặn qua nhánh trái · 2/3",
+              "videoID": "lwyGQA72nrk",
+              "start": 94,
+              "end": 108,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-north-ice-clever-05",
+              "poster": "gif-the-center-north-ice-clever-05",
+              "renderKey": "5ffbd779c8a007ac4bb3171d4f3da3485ffae1d58983e440636ef825318f338d"
+            },
+            {
+              "id": "clever-06",
+              "title": "Lặn qua nhánh trái · 3/3",
+              "videoID": "lwyGQA72nrk",
+              "start": 108,
+              "end": 111,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-north-ice-clever-06",
+              "poster": "gif-the-center-north-ice-clever-06",
+              "renderKey": "32a349391c2a95760089f81cf4e6d2bcc626931938baeb72c8f5c57260c5fb7c"
+            },
+            {
+              "id": "clever-07",
+              "title": "Lên gian có cột · 1/2",
+              "videoID": "lwyGQA72nrk",
+              "start": 111,
+              "end": 125,
+              "visuallyReviewed": true,
+              "direction": "Trồi lên gian băng có cột đá. Chờ an toàn trước khi lên bờ.",
+              "gif": "gif-the-center-north-ice-clever-07",
+              "poster": "gif-the-center-north-ice-clever-07",
+              "renderKey": "fa0a328851aa3b450a3d5d34e8cfafff4bb0957c35bf584aa095030baf005419"
+            },
+            {
+              "id": "clever-08",
+              "title": "Lên gian có cột · 2/2",
+              "videoID": "lwyGQA72nrk",
+              "start": 125,
+              "end": 126,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-north-ice-clever-08",
+              "poster": "gif-the-center-north-ice-clever-08",
+              "renderKey": "1c4c0316bbe5ade31a6b10a9021c71ee5599f8cea3a5739a4238c7687f7938b1"
+            },
+            {
+              "id": "clever-09",
+              "title": "Theo đường nền thấp · 1/4",
+              "videoID": "lwyGQA72nrk",
+              "start": 140,
+              "end": 154,
+              "visuallyReviewed": true,
+              "direction": "Đi tới chỗ chia đường gần phía trái. Chọn lối trên nền thấp đi tiếp; lối dốc bên phải là nhánh loot.",
+              "gif": "gif-the-center-north-ice-clever-09",
+              "poster": "gif-the-center-north-ice-clever-09",
+              "renderKey": "5d58a8091e06a5fffa53c503e13edfe2b37dfbccb0911ee90a512a649834d74a"
+            },
+            {
+              "id": "clever-10",
+              "title": "Theo đường nền thấp · 2/4",
+              "videoID": "lwyGQA72nrk",
+              "start": 154,
+              "end": 168,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-north-ice-clever-10",
+              "poster": "gif-the-center-north-ice-clever-10",
+              "renderKey": "19b2e1223dc125c659462b85e918442445526d073c6290f8f41173c904bf545b"
+            },
+            {
+              "id": "clever-11",
+              "title": "Theo đường nền thấp · 3/4",
+              "videoID": "lwyGQA72nrk",
+              "start": 168,
+              "end": 182,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-north-ice-clever-11",
+              "poster": "gif-the-center-north-ice-clever-11",
+              "renderKey": "ac9c9ea862723a6d8a41bded18d6a452c2039af962c1c74b0bda891261740335"
+            },
+            {
+              "id": "clever-12",
+              "title": "Theo đường nền thấp · 4/4",
+              "videoID": "lwyGQA72nrk",
+              "start": 182,
+              "end": 183,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-north-ice-clever-12",
+              "poster": "gif-the-center-north-ice-clever-12",
+              "renderKey": "3b181ecc240efe308d0cd2c9acd5ba6823f1120811065a9ca5ad8b88ac55ea79"
+            },
+            {
+              "id": "clever-13",
+              "title": "Xuống vực bằng Grapple · 1/3",
+              "videoID": "lwyGQA72nrk",
+              "start": 183,
+              "end": 197,
+              "visuallyReviewed": true,
+              "direction": "Tới mép vực thì xuống thú. Dùng Grapple hạ người xuống, sau đó theo hành lang về phía trước. Anh còn cần Grapple để leo lại lên.",
+              "gif": "gif-the-center-north-ice-clever-13",
+              "poster": "gif-the-center-north-ice-clever-13",
+              "renderKey": "c263bfedf5eb0aa39f9b48643b8a7d0e1d49c172d1925e79e6d4a4ef78d6e9b3"
+            },
+            {
+              "id": "clever-14",
+              "title": "Xuống vực bằng Grapple · 2/3",
+              "videoID": "lwyGQA72nrk",
+              "start": 197,
+              "end": 211,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-north-ice-clever-14",
+              "poster": "gif-the-center-north-ice-clever-14",
+              "renderKey": "528d3d26fcb542058aec8da3e6a82b024ab2a625608718f58cbe399836327e3a"
+            },
+            {
+              "id": "clever-15",
+              "title": "Xuống vực bằng Grapple · 3/3",
+              "videoID": "lwyGQA72nrk",
+              "start": 211,
+              "end": 219,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-north-ice-clever-15",
+              "poster": "gif-the-center-north-ice-clever-15",
+              "renderKey": "f6240968b939246c7f84f0a260235ff7b303954244f62df0029d5f5bcdc92f9a"
+            },
+            {
+              "id": "clever-16",
+              "title": "Lấy Clever ở nền cao · 1/2",
+              "videoID": "lwyGQA72nrk",
+              "start": 219,
+              "end": 233,
+              "visuallyReviewed": true,
+              "direction": "Vòng qua hồ tới phòng có nền cao, lên bậc để tìm Clever. Nếu chưa thấy trên nền, kiểm tra nước ngay phía dưới vị trí đó.",
+              "gif": "gif-the-center-north-ice-clever-16",
+              "poster": "gif-the-center-north-ice-clever-16",
+              "renderKey": "dd214bb5c136a8e27c2e94e802fe7e09e7b466093d4b11877c1a06cbd44ca6b9"
+            },
+            {
+              "id": "clever-17",
+              "title": "Lấy Clever ở nền cao · 2/2",
+              "videoID": "lwyGQA72nrk",
+              "start": 233,
+              "end": 246,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-north-ice-clever-17",
+              "poster": "gif-the-center-north-ice-clever-17",
+              "renderKey": "a570a3c72f1712f78e58ae033376ad95c7b70b30fed2889e5406e4f58954c1e3"
+            }
+          ]
+        },
+        {
+          "id": "devourer",
+          "title": "Sau Clever → Devourer",
+          "steps": [
+            {
+              "id": "devourer-01",
+              "title": "Leo lại lên đường cũ · 1/3",
+              "videoID": "lwyGQA72nrk",
+              "start": 246,
+              "end": 260,
+              "visuallyReviewed": true,
+              "direction": "Đi ngược hành lang tới đáy vực, bắn Grapple lên gờ để quay lại chỗ để thú.",
+              "gif": "gif-the-center-north-ice-devourer-01",
+              "poster": "gif-the-center-north-ice-devourer-01",
+              "renderKey": "a443ee5db7366e7c9f7d02cb8dd5eee5ece293e17b1e9bc698de6a50a12aa656"
+            },
+            {
+              "id": "devourer-02",
+              "title": "Leo lại lên đường cũ · 2/3",
+              "videoID": "lwyGQA72nrk",
+              "start": 260,
+              "end": 274,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-north-ice-devourer-02",
+              "poster": "gif-the-center-north-ice-devourer-02",
+              "renderKey": "da039d4deada3e18b6a0829471594e745319b6ef91bad5deeece579a3cd79f70"
+            },
+            {
+              "id": "devourer-03",
+              "title": "Leo lại lên đường cũ · 3/3",
+              "videoID": "lwyGQA72nrk",
+              "start": 274,
+              "end": 279,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-north-ice-devourer-03",
+              "poster": "gif-the-center-north-ice-devourer-03",
+              "renderKey": "43a53fef1b6615016f51d9d3f7e785c9524d13d0a66225c33f39415aa587a32f"
+            },
+            {
+              "id": "devourer-04",
+              "title": "Trở về hồ và lấy nhánh phải · 1/4",
+              "videoID": "lwyGQA72nrk",
+              "start": 279,
+              "end": 293,
+              "visuallyReviewed": true,
+              "direction": "Quay về hồ đầu tiên rồi lặn qua lối bên phải giữa các nhũ băng để tới Devourer.",
+              "gif": "gif-the-center-north-ice-devourer-04",
+              "poster": "gif-the-center-north-ice-devourer-04",
+              "renderKey": "c1e8ce1491a66571f095eea43320476eae9788778b1c50866639d18f704f2753"
+            },
+            {
+              "id": "devourer-05",
+              "title": "Trở về hồ và lấy nhánh phải · 2/4",
+              "videoID": "lwyGQA72nrk",
+              "start": 293,
+              "end": 307,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-north-ice-devourer-05",
+              "poster": "gif-the-center-north-ice-devourer-05",
+              "renderKey": "32a4b3f7bcc2e7d3d75af0881b9219788831e05ddae7c69bd50aed0411a192a7"
+            },
+            {
+              "id": "devourer-06",
+              "title": "Trở về hồ và lấy nhánh phải · 3/4",
+              "videoID": "lwyGQA72nrk",
+              "start": 307,
+              "end": 321,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-north-ice-devourer-06",
+              "poster": "gif-the-center-north-ice-devourer-06",
+              "renderKey": "1398f120ec9a950a216f2d7a9c1e33a16e1f386c3fb83c4eccc9eb33397274ca"
+            },
+            {
+              "id": "devourer-07",
+              "title": "Trở về hồ và lấy nhánh phải · 4/4",
+              "videoID": "lwyGQA72nrk",
+              "start": 321,
+              "end": 322,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-north-ice-devourer-07",
+              "poster": "gif-the-center-north-ice-devourer-07",
+              "renderKey": "a3b6593c3400cc2c281ecfcaeba7b95b920c2067c0d25634cb96e9d1b4735621"
+            },
+            {
+              "id": "devourer-08",
+              "title": "Lên gờ bên trái · 1/2",
+              "videoID": "lwyGQA72nrk",
+              "start": 330,
+              "end": 344,
+              "visuallyReviewed": true,
+              "direction": "Lên khỏi nước, dọn sinh vật rồi tới gờ bên trái. Nhảy qua nền nhỏ để lên lối cao.",
+              "gif": "gif-the-center-north-ice-devourer-08",
+              "poster": "gif-the-center-north-ice-devourer-08",
+              "renderKey": "4defa47c01cbfdd19da9cbfca345bd17bd369dc3841ce1f503b1c3a5341cf002"
+            },
+            {
+              "id": "devourer-09",
+              "title": "Lên gờ bên trái · 2/2",
+              "videoID": "lwyGQA72nrk",
+              "start": 344,
+              "end": 356,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-north-ice-devourer-09",
+              "poster": "gif-the-center-north-ice-devourer-09",
+              "renderKey": "b56eb721013d01909a62d9a824038bdba75dc3b428ee8e2e0ed89f8e214c8aee"
+            },
+            {
+              "id": "devourer-10",
+              "title": "Lấy lối bên phải · 1/2",
+              "videoID": "lwyGQA72nrk",
+              "start": 356,
+              "end": 370,
+              "visuallyReviewed": true,
+              "direction": "Tới chỗ chia đường thì lấy nhánh bên phải. Nhánh bên trái là đường loot.",
+              "gif": "gif-the-center-north-ice-devourer-10",
+              "poster": "gif-the-center-north-ice-devourer-10",
+              "renderKey": "24c18100c9ee136330129f8d79c56ff26a507b1e121d9ec02997dd1f20929af1"
+            },
+            {
+              "id": "devourer-11",
+              "title": "Lấy lối bên phải · 2/2",
+              "videoID": "lwyGQA72nrk",
+              "start": 370,
+              "end": 371,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-north-ice-devourer-11",
+              "poster": "gif-the-center-north-ice-devourer-11",
+              "renderKey": "0a4ec43524bfbfb7f759fcf5b1766276176c11050e0578038b605b35e104e9dc"
+            },
+            {
+              "id": "devourer-12",
+              "title": "Lên bậc lấy Devourer",
+              "videoID": "lwyGQA72nrk",
+              "start": 371,
+              "end": 385,
+              "visuallyReviewed": true,
+              "direction": "Tìm các bậc bị vùi một phần ở bên trái, nhảy lên rồi theo lối tới Devourer.",
+              "gif": "gif-the-center-north-ice-devourer-12",
+              "poster": "gif-the-center-north-ice-devourer-12",
+              "renderKey": "1bd2430144bd3e7e700b653653af5dac157af31c7afb2a1f05e1caa5534981fd"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "routeID": "lava",
+      "sections": [
+        {
+          "id": "strong",
+          "title": "Từ cửa hang → Strong",
+          "steps": [
+            {
+              "id": "strong-01",
+              "title": "Nhận ra cửa Lava Cave",
+              "videoID": "usGTm3jkFH8",
+              "start": 0,
+              "end": 6,
+              "visuallyReviewed": true,
+              "direction": "Tìm cửa đá rộng có cỏ phía trước. Mang Parachute, Grapple và đồ chịu nóng.",
+              "gif": "gif-the-center-lava-strong-01",
+              "poster": "gif-the-center-lava-strong-01",
+              "renderKey": "82e04d2a19e3a0ebc07565a48eebd61948ea66908d7af838bfe194d3004551e4"
+            },
+            {
+              "id": "strong-02",
+              "title": "Hạ xuống nền dưới · 1/2",
+              "videoID": "usGTm3jkFH8",
+              "start": 54,
+              "end": 68,
+              "visuallyReviewed": true,
+              "direction": "Tới mép lối vào thì xuống thú trước khi hạ xuống. Dùng Parachute đúng lúc; clip có lần mở dù hơi sớm.",
+              "gif": "gif-the-center-lava-strong-02",
+              "poster": "gif-the-center-lava-strong-02",
+              "renderKey": "df78b11ae397652735849e30b77fcb1e5a494291439eaef311d2a980afd5866a"
+            },
+            {
+              "id": "strong-03",
+              "title": "Hạ xuống nền dưới · 2/2",
+              "videoID": "usGTm3jkFH8",
+              "start": 68,
+              "end": 79,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-lava-strong-03",
+              "poster": "gif-the-center-lava-strong-03",
+              "renderKey": "03bf5043814ec2f880f477fbccb9eed9d0a61b46b01f31713d68311e63ebb88b"
+            },
+            {
+              "id": "strong-04",
+              "title": "Lên dốc tới ngã ba · 1/2",
+              "videoID": "usGTm3jkFH8",
+              "start": 79,
+              "end": 93,
+              "visuallyReviewed": true,
+              "direction": "Theo lối về phía phải rồi đi lên dốc. Tới ngã ba, lấy nhánh trái để đi Strong.",
+              "gif": "gif-the-center-lava-strong-04",
+              "poster": "gif-the-center-lava-strong-04",
+              "renderKey": "6b470f21cb4b4643929f198f7eef939d075c76a0cfe9760c52567590bb7c828e"
+            },
+            {
+              "id": "strong-05",
+              "title": "Lên dốc tới ngã ba · 2/2",
+              "videoID": "usGTm3jkFH8",
+              "start": 93,
+              "end": 103,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-lava-strong-05",
+              "poster": "gif-the-center-lava-strong-05",
+              "renderKey": "b373a6c96f07883e09e7bf9d6baa93fc1b64d6e3868a34bc80761df82cd8f9ba"
+            },
+            {
+              "id": "strong-06",
+              "title": "Vòng qua các cột · 1/3",
+              "videoID": "usGTm3jkFH8",
+              "start": 103,
+              "end": 117,
+              "visuallyReviewed": true,
+              "direction": "Theo đường cong bên phải tới chỗ chia lối tiếp theo. Lấy nhánh trái xuống bậc đá.",
+              "gif": "gif-the-center-lava-strong-06",
+              "poster": "gif-the-center-lava-strong-06",
+              "renderKey": "48a4feeda7a73aae13fd1136b0a7741a83d3fcce833b0789d8333f035a24f577"
+            },
+            {
+              "id": "strong-07",
+              "title": "Vòng qua các cột · 2/3",
+              "videoID": "usGTm3jkFH8",
+              "start": 117,
+              "end": 131,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-lava-strong-07",
+              "poster": "gif-the-center-lava-strong-07",
+              "renderKey": "c3994b6b065bfee9d40e4249541236aef6c11893f5a0a253911ad59fa242095c"
+            },
+            {
+              "id": "strong-08",
+              "title": "Vòng qua các cột · 3/3",
+              "videoID": "usGTm3jkFH8",
+              "start": 131,
+              "end": 133,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-lava-strong-08",
+              "poster": "gif-the-center-lava-strong-08",
+              "renderKey": "8e04503482eb827067cd91346dc848283dc427b6c441596d3b81bfe6474a5ad0"
+            },
+            {
+              "id": "strong-09",
+              "title": "Qua khoảng hở và đường hầm · 1/3",
+              "videoID": "usGTm3jkFH8",
+              "start": 133,
+              "end": 147,
+              "visuallyReviewed": true,
+              "direction": "Nhảy khoảng hở, tới gian sáng rồi qua các trụ. Đi lên đường bên trái và xuyên qua hành lang.",
+              "gif": "gif-the-center-lava-strong-09",
+              "poster": "gif-the-center-lava-strong-09",
+              "renderKey": "839b0617b905119726fb40601cf63265532f957ac7cde2bfdc1468fd935eaf92"
+            },
+            {
+              "id": "strong-10",
+              "title": "Qua khoảng hở và đường hầm · 2/3",
+              "videoID": "usGTm3jkFH8",
+              "start": 147,
+              "end": 161,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-lava-strong-10",
+              "poster": "gif-the-center-lava-strong-10",
+              "renderKey": "52760f9f2bb935aa596734b67bcf0c19a538699ac2713e09f3a02b51f7bd0309"
+            },
+            {
+              "id": "strong-11",
+              "title": "Qua khoảng hở và đường hầm · 3/3",
+              "videoID": "usGTm3jkFH8",
+              "start": 161,
+              "end": 163,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-lava-strong-11",
+              "poster": "gif-the-center-lava-strong-11",
+              "renderKey": "d6cd382a0763dd35986a1f28a2631fc071fee2cec654b7662356dad89d869605"
+            },
+            {
+              "id": "strong-12",
+              "title": "Qua bộ xương tới Strong · 1/3",
+              "videoID": "usGTm3jkFH8",
+              "start": 163,
+              "end": 177,
+              "visuallyReviewed": true,
+              "direction": "Đi qua bệ lửa về bên trái. Tới cột xương sống thì lấy đường bên trái đi xuống; Strong nằm cạnh một cây ở cuối lối.",
+              "gif": "gif-the-center-lava-strong-12",
+              "poster": "gif-the-center-lava-strong-12",
+              "renderKey": "b1ca473f0c8fdf56f522a2484671198b5c817dff597a3a987d12f45ed66d28f4"
+            },
+            {
+              "id": "strong-13",
+              "title": "Qua bộ xương tới Strong · 2/3",
+              "videoID": "usGTm3jkFH8",
+              "start": 177,
+              "end": 191,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-lava-strong-13",
+              "poster": "gif-the-center-lava-strong-13",
+              "renderKey": "4574ac7a4cd07987d914b40c2e32c97128ae76b0955d7372028f5a8187679773"
+            },
+            {
+              "id": "strong-14",
+              "title": "Qua bộ xương tới Strong · 3/3",
+              "videoID": "usGTm3jkFH8",
+              "start": 191,
+              "end": 201,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-lava-strong-14",
+              "poster": "gif-the-center-lava-strong-14",
+              "renderKey": "cbc6ab8723c687d62b5ccca56e6fc4facce2ca8a2d382da1f8140a3608ba93f7"
+            }
+          ]
+        },
+        {
+          "id": "massive",
+          "title": "Sau Strong → Massive",
+          "steps": [
+            {
+              "id": "massive-01",
+              "title": "Quay về ngã ba · 1/4",
+              "videoID": "usGTm3jkFH8",
+              "start": 201,
+              "end": 215,
+              "visuallyReviewed": true,
+              "direction": "Quay lại qua bộ xương và đường hầm, đi qua các cột để về ngã ba cũ. Lần này lấy nhánh phải.",
+              "gif": "gif-the-center-lava-massive-01",
+              "poster": "gif-the-center-lava-massive-01",
+              "renderKey": "45f44a7dd22554bf896e758a60c91bf061b2af70b67b0114720db67e7e43142f"
+            },
+            {
+              "id": "massive-02",
+              "title": "Quay về ngã ba · 2/4",
+              "videoID": "usGTm3jkFH8",
+              "start": 215,
+              "end": 229,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-lava-massive-02",
+              "poster": "gif-the-center-lava-massive-02",
+              "renderKey": "7adf8647ad4035b0613fb1ec3e807fb46748d8e64fd4ad46959b592687a1df5f"
+            },
+            {
+              "id": "massive-03",
+              "title": "Quay về ngã ba · 3/4",
+              "videoID": "usGTm3jkFH8",
+              "start": 229,
+              "end": 243,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-lava-massive-03",
+              "poster": "gif-the-center-lava-massive-03",
+              "renderKey": "df6f9969e1667c1a485dadb242ea2ed69f25d6b2133dda4b2bd58ed7b90d16d2"
+            },
+            {
+              "id": "massive-04",
+              "title": "Quay về ngã ba · 4/4",
+              "videoID": "usGTm3jkFH8",
+              "start": 243,
+              "end": 254,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-lava-massive-04",
+              "poster": "gif-the-center-lava-massive-04",
+              "renderKey": "bc14df64d70d0d06726a95c8c05b457fcb27c23008952441e055dbfe0fef1c85"
+            },
+            {
+              "id": "massive-05",
+              "title": "Theo đường tới cây xanh · 1/3",
+              "videoID": "usGTm3jkFH8",
+              "start": 254,
+              "end": 268,
+              "visuallyReviewed": true,
+              "direction": "Đi tiếp, tới các cây phát sáng xanh thì rẽ trái theo lối đá.",
+              "gif": "gif-the-center-lava-massive-05",
+              "poster": "gif-the-center-lava-massive-05",
+              "renderKey": "fd88ab1af4d781be6ca083f65cc3e3b38a5205ea2cc7a4a5660e3e2f312a1746"
+            },
+            {
+              "id": "massive-06",
+              "title": "Theo đường tới cây xanh · 2/3",
+              "videoID": "usGTm3jkFH8",
+              "start": 268,
+              "end": 282,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-lava-massive-06",
+              "poster": "gif-the-center-lava-massive-06",
+              "renderKey": "44c229557cc544e7f51eab00344169ca8c0991d95808c52bbf3369bd641c3bd1"
+            },
+            {
+              "id": "massive-07",
+              "title": "Theo đường tới cây xanh · 3/3",
+              "videoID": "usGTm3jkFH8",
+              "start": 282,
+              "end": 291,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-lava-massive-07",
+              "poster": "gif-the-center-lava-massive-07",
+              "renderKey": "8300780e1379af0fb70a9daf6dd998eb43ef40345b884a8b3a75867f142e8623"
+            },
+            {
+              "id": "massive-08",
+              "title": "Lên phế tích lấy Massive · 1/4",
+              "videoID": "usGTm3jkFH8",
+              "start": 291,
+              "end": 305,
+              "visuallyReviewed": true,
+              "direction": "Tới công trình phế tích bên phải, lên bậc. Trên nền cao rẽ trái rồi sang phải tới nền giữa để lấy Massive.",
+              "gif": "gif-the-center-lava-massive-08",
+              "poster": "gif-the-center-lava-massive-08",
+              "renderKey": "1c18823446e8dad11936c849ac187bf589eb06c37f6e6e23a2a20e74b148d934"
+            },
+            {
+              "id": "massive-09",
+              "title": "Lên phế tích lấy Massive · 2/4",
+              "videoID": "usGTm3jkFH8",
+              "start": 305,
+              "end": 319,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-lava-massive-09",
+              "poster": "gif-the-center-lava-massive-09",
+              "renderKey": "9e5a941bd9a191d48a4ed397dd557aed7b2276eb4ed71b3f60ef540987fa482e"
+            },
+            {
+              "id": "massive-10",
+              "title": "Lên phế tích lấy Massive · 3/4",
+              "videoID": "usGTm3jkFH8",
+              "start": 319,
+              "end": 333,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-lava-massive-10",
+              "poster": "gif-the-center-lava-massive-10",
+              "renderKey": "9721b14c99b2e7b70856a6f7d96c2b438ebd3e895a09b5e5f30ed8dfcfba4547"
+            },
+            {
+              "id": "massive-11",
+              "title": "Lên phế tích lấy Massive · 4/4",
+              "videoID": "usGTm3jkFH8",
+              "start": 333,
+              "end": 334,
+              "visuallyReviewed": true,
+              "gif": "gif-the-center-lava-massive-11",
+              "poster": "gif-the-center-lava-massive-11",
+              "renderKey": "71aa225affc7eebb1ef944dc214ddd2aa54492497c4cf4420bb8bf4f72c1f20b"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
