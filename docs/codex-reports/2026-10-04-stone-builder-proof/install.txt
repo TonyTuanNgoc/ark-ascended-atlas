@@ -1,0 +1,10 @@
+22:28:01  Acquired tunnel connection to device.
+22:28:01  Enabling developer disk image services.
+22:28:04  Acquired usage assertion.
+App installed:
+• bundleID: com.tonytuanngoc.ascended
+• installationURL: file:///private/var/containers/Bundle/Application/D6FEB71E-94BD-4002-A75F-B1EAB80342D6/Ascended.app/
+• launchServicesIdentifier: unknown
+• databaseUUID: 19CF7B10-CBC0-413B-8917-89A5A54D31EF
+• databaseSequenceNumber: 1532
+• options: 

@@ -51,12 +51,15 @@ enum BaseBill {
 }
 struct BaseSpatialPlanner: View {
     let select: (String) -> Void
+    @Environment(\.arkMap) private var map
+    @State private var buildStone = false
     @AppStorage("ascended.base-layout.v1") private var saved = ""
     @State private var houses = BaseHouse.defaults
     @State private var selectedID = "main"
     @State private var threeD = false
     var body: some View {
         VStack(alignment: .leading, spacing: 14) {
+            Button { buildStone=true } label: { Label("Xây từng cấu kiện Stone",systemImage:"square.stack.3d.up") }.buttonStyle(.borderedProminent).accessibilityIdentifier("open-stone-builder")
             HStack {
                 Picker("Góc nhìn", selection: $threeD) { Text("Bản đồ base").tag(false); Text("Không gian 3D").tag(true) }.pickerStyle(.segmented)
                 Button { houses = BaseHouse.defaults; persist() } label: { Image(systemName: "arrow.counterclockwise") }.accessibilityLabel("Đặt lại bố trí base")
@@ -80,7 +83,8 @@ struct BaseSpatialPlanner: View {
                     }
                 }.padding(.vertical, 10)
             } label: { Text("Vật liệu khung 5 nhà").accessibilityIdentifier("base-materials") }
-        }.onAppear { if let data = saved.data(using:.utf8), let values = try? JSONDecoder().decode([BaseHouse].self,from:data), values.count == 5 { houses = values } }
+        }.fullScreenCover(isPresented:$buildStone) { StoneBuilder(mapID:map.id) }
+        .onAppear { if let data = saved.data(using:.utf8), let values = try? JSONDecoder().decode([BaseHouse].self,from:data), values.count == 5 { houses = values } }
         .onChange(of: houses.map { "\($0.width)-\($0.depth)-\($0.levels)" }) { _,_ in persist() }
     }
     private func persist() { if let data = try? JSONEncoder().encode(houses) { saved = String(decoding:data,as:UTF8.self) } }

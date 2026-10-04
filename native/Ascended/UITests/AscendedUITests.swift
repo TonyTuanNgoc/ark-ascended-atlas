@@ -1,6 +1,48 @@
 import XCTest
 
 final class AscendedUITests: XCTestCase {
+    @MainActor func testStoneBuilderEditingBudgetAndPersistence() throws {
+        let app=XCUIApplication();XCUIDevice.shared.orientation = .landscapeLeft;app.launch()
+        func open() {
+            let base=app.buttons["section-Xây base"]
+            for _ in 0..<10 {if base.isHittable {break};app.collectionViews.firstMatch.swipeUp()}
+            base.tap()
+            let entry=app.buttons["open-stone-builder"]
+            for _ in 0..<6 {if entry.isHittable {break};app.scrollViews["basePlanning"].swipeUp()}
+            entry.tap();XCTAssertTrue(app.buttons["builder-place"].waitForExistence(timeout:5))
+        }
+        open()
+        if app.staticTexts["builder-count"].value as? String != "0" {
+            app.buttons["Xóa bản thiết kế"].tap();app.buttons.matching(identifier:"Xóa").allElementsBoundByIndex.last!.tap()
+        }
+        app.buttons["builder-place"].tap()
+        XCTAssertEqual(app.staticTexts["builder-count"].value as? String,"1")
+        app.buttons["builder-bill"].tap()
+        XCTAssertEqual(app.staticTexts["builder-material-Stone"].value as? String,"80")
+        app.buttons["Xong"].tap()
+        app.buttons["builder-copy"].tap()
+        XCTAssertEqual(app.staticTexts["builder-count"].value as? String,"2")
+        app.buttons["builder-rotate"].tap()
+        app.buttons["builder-x-Increment"].tap()
+        app.buttons["builder-place"].tap()
+        app.buttons["builder-delete"].tap()
+        XCTAssertEqual(app.staticTexts["builder-count"].value as? String,"1")
+        app.buttons["builder-undo"].tap()
+        XCTAssertEqual(app.staticTexts["builder-count"].value as? String,"2")
+        app.buttons["builder-kind-stone-wall"].tap();app.buttons["builder-place"].tap()
+        XCTAssertEqual(app.staticTexts["builder-count"].value as? String,"3")
+        app.buttons["builder-kind-stone-wall"].tap();app.buttons["builder-place"].tap()
+        XCTAssertEqual(app.staticTexts["builder-count"].value as? String,"3")
+        XCTAssertTrue(app.staticTexts["builder-message"].exists)
+        let shot=XCTAttachment(screenshot:XCUIScreen.main.screenshot());shot.name="Stone-builder-models";shot.lifetime = .keepAlways;add(shot)
+        app.buttons["builder-bill"].tap()
+        XCTAssertEqual(app.staticTexts["builder-material-Stone"].value as? String,"200")
+        XCTAssertEqual(app.staticTexts["builder-material-Wood"].value as? String,"100")
+        XCTAssertEqual(app.staticTexts["builder-material-Thatch"].value as? String,"75")
+        app.buttons["Xong"].tap()
+        app.terminate();app.launch();open()
+        XCTAssertEqual(app.staticTexts["builder-count"].value as? String,"3")
+    }
     @MainActor func testStoryBaseAndEquipmentLibrary() throws {
         let app = XCUIApplication(); XCUIDevice.shared.orientation = .landscapeLeft; app.launch()
         func sidebar(_ id: String) {
@@ -43,6 +85,7 @@ final class AscendedUITests: XCTestCase {
         XCTAssertEqual(app.buttons["layer-Artifact"].value as? String, "Ẩn")
         let base = app.buttons["section-Xây base"]
         for _ in 0..<8 { if base.isHittable { break }; app.collectionViews.firstMatch.swipeUp() }; base.tap()
+        app.buttons["Đặt lại bố trí base"].tap()
         app.buttons["Không gian 3D"].tap()
         XCTAssertTrue(app.descendants(matching: .any)["base3D"].firstMatch.waitForExistence(timeout: 5))
         app.buttons["Bản đồ base"].tap()

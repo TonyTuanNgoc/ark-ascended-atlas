@@ -56,3 +56,6 @@ Responded to rejection of primitive visual quality with two reference-guided rec
 
 ## 2026-10-04 — Angular stone reconstruction revision
 Replaced regular rounded stones with angular chipped polygon meshes, varied stone proportions, dark rough surface and deeper irregular joints. Reopened in Blender and reviewed render against game inventory reference. Original game fidelity and measured dimensions remain unverified; other assets unchanged.
+
+## 2026-10-04 — Ascended individual Stone builder 0.16.0 (17)
+Added eleven Blender mesh reconstructions and a native SceneKit construction editor: half-module placement, rotation, move/copy/delete/undo, stable camera, map-scoped saves and actual-piece ASA material bills. Existing five-house overview preserved. Two relevant Simulator tests and mesh/recipe validators passed; visual scene reviewed. Final signed cable install, physical inventory0.16.0(17) and direct launch succeeded; physical touch/performance unverified. Approximate appearance/scale and no ARK structural physics. See codex-reports/2026-10-04-ascended-stone-builder.md. No Tony OS/TestFlight/web/domain changes.

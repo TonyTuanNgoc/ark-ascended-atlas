@@ -1,0 +1,4 @@
+22:31:15  Acquired tunnel connection to device.
+22:31:15  Enabling developer disk image services.
+22:31:15  Acquired usage assertion.
+Launched application with com.tonytuanngoc.ascended bundle identifier.

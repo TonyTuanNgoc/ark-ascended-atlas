@@ -1,0 +1,123 @@
+{
+  "version": "0.16.0",
+  "build": 17,
+  "models": 11,
+  "triangles": 12942,
+  "approximate": true,
+  "recipes": [
+    {
+      "id": "stone-foundation",
+      "ingredients": {
+        "Stone": 80,
+        "Wood": 40,
+        "Thatch": 30
+      },
+      "sourceURL": "https://wikily.gg/ark-survival-ascended/items/stone-foundation/"
+    },
+    {
+      "id": "stone-triangle-foundation",
+      "ingredients": {
+        "Stone": 40,
+        "Wood": 20,
+        "Thatch": 15
+      },
+      "sourceURL": "https://wikily.gg/ark-survival-ascended/items/stone-triangle-quarter-foundation/"
+    },
+    {
+      "id": "stone-wall",
+      "ingredients": {
+        "Stone": 40,
+        "Wood": 20,
+        "Thatch": 15
+      },
+      "sourceURL": "https://wikily.gg/ark-survival-ascended/items/stone-wall-doorways-windowframe/"
+    },
+    {
+      "id": "stone-doorframe",
+      "ingredients": {
+        "Stone": 40,
+        "Wood": 20,
+        "Thatch": 15
+      },
+      "sourceURL": "https://wikily.gg/ark-survival-ascended/items/stone-wall-doorways-windowframe/"
+    },
+    {
+      "id": "reinforced-wooden-door",
+      "ingredients": {
+        "Stone": 20,
+        "Wood": 14,
+        "Thatch": 8
+      },
+      "sourceURL": "https://wikily.gg/ark-survival-ascended/items/stone-reinforced-doors-windows/"
+    },
+    {
+      "id": "stone-ceiling",
+      "ingredients": {
+        "Stone": 60,
+        "Wood": 30,
+        "Thatch": 20
+      },
+      "sourceURL": "https://wikily.gg/ark-survival-ascended/items/stone-ceiling-hatchframe/"
+    },
+    {
+      "id": "stone-triangle-ceiling",
+      "ingredients": {
+        "Stone": 30,
+        "Wood": 15,
+        "Thatch": 10
+      },
+      "sourceURL": "https://wikily.gg/ark-survival-ascended/items/stone-quarter-triangle-ceiling/"
+    },
+    {
+      "id": "sloped-stone-roof",
+      "ingredients": {
+        "Stone": 60,
+        "Wood": 30,
+        "Thatch": 20
+      },
+      "sourceURL": "https://wikily.gg/ark-survival-ascended/items/stone-roof-ramp-stairs/"
+    },
+    {
+      "id": "stone-stairs",
+      "ingredients": {
+        "Stone": 60,
+        "Wood": 30,
+        "Thatch": 20
+      },
+      "sourceURL": "https://wikily.gg/ark-survival-ascended/items/stone-roof-ramp-stairs/"
+    },
+    {
+      "id": "stone-pillar",
+      "ingredients": {
+        "Stone": 30,
+        "Wood": 15,
+        "Thatch": 10
+      },
+      "sourceURL": "https://wikily.gg/ark-survival-ascended/items/stone-pillar/"
+    },
+    {
+      "id": "stone-railing",
+      "ingredients": {
+        "Stone": 20,
+        "Wood": 10,
+        "Thatch": 7
+      },
+      "sourceURL": "https://wikily.gg/ark-survival-ascended/items/stone-quarter-wall-railing/"
+    }
+  ],
+  "sha256": {
+    "native/Ascended/Resources/stone-building-kit.json": "5432a11ed71b2476097e1b8b226a6be37a7c5542eda9eaee9fd6df646f76242a",
+    "native/Ascended/Resources/stone-builder-grain.png": "5213bc53fc65d604b6713a49376b6a9774079cf784836639f0fd7bceec8281bf",
+    "artifacts/blender/stone-builder/Ascended-Stone-Building-Kit.blend": "2ee56047fb3c81edbd3478c1043b1423b60327e8fb6e4f1de565666e54b4ddec"
+  },
+  "simulatorResult": "/Volumes/TONY SSD/ASCENDED_MEDIA/builds/Ascended-0.14.0-Simulator/Logs/Test/Test-Ascended-2026.10.04_22-25-53-+0700.xcresult",
+  "tests": {
+    "testStoneBuilderEditingBudgetAndPersistence": "passed",
+    "testPracticalBase3DAndMapLayerChecks": "passed"
+  },
+  "reviewFixes": [
+    "Bundle procedural grain PNG",
+    "Duplicate includes available half-step boundary position",
+    "Roof normalized to one-unit rise/run"
+  ]
+}
