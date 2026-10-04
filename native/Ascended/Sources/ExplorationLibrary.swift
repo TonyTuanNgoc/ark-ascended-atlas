@@ -82,6 +82,9 @@ struct CaveRouteDetail: View {
                         }
                     }
                 }.cardStyle()
+                if map == .ragnarok && route.id == "jungle" {
+                    NavigationLink(value: GuideDestination.navigator) { Label("Dẫn đường Hunter", systemImage: "location.north.line.fill") }.buttonStyle(.borderedProminent).accessibilityIdentifier("open-jungle-navigator")
+                }
                 GuideChecklist(title: "Chuẩn bị cho tuyến", items: route.kit, key: "cave-" + route.id)
                 if !route.boss.isEmpty { Label(route.boss, systemImage: "shield.lefthalf.filled").foregroundStyle(.cyan) }
                 if let video = map.caveVideos.first(where: { $0.routeID == route.id }) {
@@ -171,7 +174,7 @@ extension ToggleStyle where Self == ChecklistToggleStyle { static var checkboxCo
 
 
 enum GuideDestination: Hashable {
-    case cave(String), artifact(String), map(String), boss(String), army(String), base(String), preparation
+    case navigator, cave(String), artifact(String), map(String), boss(String), army(String), base(String), preparation
     var screen: some View { GuideDestinationScreen(destination: self) }
 }
 struct GuideDestinationScreen: View {
@@ -179,6 +182,7 @@ struct GuideDestinationScreen: View {
     @Environment(\.arkMap) private var map
     @ViewBuilder var body: some View {
         switch destination {
+        case .navigator: JungleNavigator()
         case .cave(let id):
             if let route = map.exploration?.routes.first(where: { $0.id == id }) { CaveRouteDetail(route: route) }
         case .artifact(let id):

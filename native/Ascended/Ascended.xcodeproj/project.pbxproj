@@ -202,6 +202,7 @@
 		348F4A87A35FCDC93F7961C5 /* gif-the-island-lava-massive-04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B94B0BC7578E50EFA0160E90 /* gif-the-island-lava-massive-04.jpg */; };
 		356EEF562F148128B8DE1A1E /* gif-the-center-underworld-pack-02.gif in Resources */ = {isa = PBXBuildFile; fileRef = DB28C82EF272BFD7F0E7FD01 /* gif-the-center-underworld-pack-02.gif */; };
 		359060637E74A3A01C899BC1 /* gif-ragnarok-labyrinth-final-05.gif in Resources */ = {isa = PBXBuildFile; fileRef = FDF468504DC8D779E3A47526 /* gif-ragnarok-labyrinth-final-05.gif */; };
+		35ECE29D36A5AE74EA2CDFE1 /* PlaySession.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EC0DA80489BE5AF2377411 /* PlaySession.swift */; };
 		3677157378663B8F591A2D29 /* gif-the-island-lost-hope-cunning-05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A91B27D0B8B150049F4FAB46 /* gif-the-island-lost-hope-cunning-05.jpg */; };
 		36C30F6F7254DFDD66C7715B /* gif-ragnarok-labyrinth-clever-15.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C38DE295F4E5B51C79034454 /* gif-ragnarok-labyrinth-clever-15.jpg */; };
 		371D7DC93098E80095852166 /* gif-the-island-north-east-devourer-11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BA406B9C4A973EF0B0B1B1EF /* gif-the-island-north-east-devourer-11.jpg */; };
@@ -1957,6 +1958,7 @@
 		F9155B52F73D6F35FBFF7DAB /* gif-the-island-swamp-immune-12.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "gif-the-island-swamp-immune-12.gif"; sourceTree = "<group>"; };
 		F94C42B749600AE01CDD038E /* gif-ragnarok-labyrinth-skylord-38.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "gif-ragnarok-labyrinth-skylord-38.gif"; sourceTree = "<group>"; };
 		F98114D58C5B8D69F55319EE /* gif-the-island-lower-south-hunter-06.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "gif-the-island-lower-south-hunter-06.gif"; sourceTree = "<group>"; };
+		F9EC0DA80489BE5AF2377411 /* PlaySession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySession.swift; sourceTree = "<group>"; };
 		FA4460A7977C5E5F058ACA48 /* gif-the-center-north-ice-devourer-11.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "gif-the-center-north-ice-devourer-11.gif"; sourceTree = "<group>"; };
 		FA721D924B021ADBDCE3921D /* gif-the-center-north-ice-clever-05.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "gif-the-center-north-ice-clever-05.gif"; sourceTree = "<group>"; };
 		FA8DC9E214DC91A0FF42940B /* BossKnowledge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BossKnowledge.swift; sourceTree = "<group>"; };
@@ -2005,6 +2007,7 @@
 				581C5F29B7758B1F0B5757B5 /* MapInformation.swift */,
 				AFC77A3D4453B51810381610 /* MapLocations.swift */,
 				DA5F0090FAB489BD7EBA78AB /* MapScreen.swift */,
+				F9EC0DA80489BE5AF2377411 /* PlaySession.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -4078,6 +4081,7 @@
 				DF2C49BD8906310FA9E3024C /* MapInformation.swift in Sources */,
 				970368C456790EEA2DB24199 /* MapLocations.swift in Sources */,
 				94B10C2D9AA4F824C5659E54 /* MapScreen.swift in Sources */,
+				35ECE29D36A5AE74EA2CDFE1 /* PlaySession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4165,7 +4169,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 10;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = HP5W6N9V3N;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -4185,7 +4189,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MARKETING_VERSION = 0.8.0;
+				MARKETING_VERSION = 0.9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -4252,7 +4256,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 10;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = HP5W6N9V3N;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -4266,7 +4270,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MARKETING_VERSION = 0.8.0;
+				MARKETING_VERSION = 0.9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";

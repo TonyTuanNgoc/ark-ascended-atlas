@@ -160,7 +160,7 @@ struct CaveGIFWalkthrough: View {
     }
 }
 
-private struct AutoCaveGIF: View {
+struct AutoCaveGIF: View {
     let step: CaveGIFStep
     let url: URL
     @State private var isReady = false

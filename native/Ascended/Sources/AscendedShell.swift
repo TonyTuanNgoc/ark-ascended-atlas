@@ -1,10 +1,11 @@
 import SwiftUI
 
 enum Destination: String, CaseIterable, Identifiable {
-    case information = "Thông tin map", bases = "Base Location", map = "Bản đồ", dinos = "Dino", bosses = "Boss", exploration = "Artifact & Hang"
+    case session = "Hôm nay", information = "Thông tin map", bases = "Base Location", map = "Bản đồ", dinos = "Dino", bosses = "Boss", exploration = "Artifact & Hang"
     var id: String { rawValue }
     var symbol: String {
         switch self {
+        case .session: "scope"
         case .information: "mountain.2.fill"
         case .bases: "house.fill"
         case .map: "map.fill"
@@ -18,7 +19,7 @@ enum Destination: String, CaseIterable, Identifiable {
 struct MapSessionShell: View {
     let map: ArkMap
     let changeMap: () -> Void
-    @State private var selection: Destination? = .information
+    @State private var selection: Destination? = .session
     @State private var visibility: NavigationSplitViewVisibility = .all
     var body: some View {
         NavigationSplitView(columnVisibility: $visibility) {
@@ -45,6 +46,7 @@ struct MapSessionShell: View {
             NavigationStack {
                 Group {
                     switch selection ?? .information {
+                    case .session: PlaySessionScreen(openBosses: { selection = .bosses })
                     case .information: MapInformationScreen(openMap: { selection = .map }, openDinos: { selection = .dinos }, openBosses: { selection = .bosses })
                     case .bases: BaseLocationsScreen()
                     case .map: MapScreen()
