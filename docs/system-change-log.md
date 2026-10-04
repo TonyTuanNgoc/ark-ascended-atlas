@@ -17,3 +17,6 @@ Unified Dino and icon-based Boss avatars as white across cards, profiles, campai
 
 ## 2026-10-04 — Ascended compact guide 0.6.0 (7)
 Added square Base/Hang cards and compact corners, replaced familiar actions with icons, removed Notes/source navigation and player-facing provenance/technical metadata. Preserved white avatars and stored map progress. Added 119 YouTube chapter links covering all 26 map-scoped cave routes, presented in native Safari. Initial five-test regression and final two targeted UI tests passed; final signed cable install and launch succeeded. GIFs/verified per-turn walkthroughs remain unfinished pending media reuse confirmation; no downloaded media or invented directions. Report: codex-reports/2026-10-04-ascended-compact-ui-cave-videos.md.
+
+## 2026-10-04 — GIF media authorization and description requirement
+User confirmed licensed reuse of the 13 selected walkthrough videos. Recorded natural Vietnamese player-style guidance below each useful GIF, with mandatory visual verification. Official licensed downloads and one retry failed HTTP 403; actual packet scans prove the three downloaded prefixes end after 52–76 seconds. Complete GIF routes remain blocked on complete source media. No native code/media changed; current app remains 0.6.0 (7). Receipt: codex-reports/2026-10-04-ascended-gif-acquisition.md.

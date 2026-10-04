@@ -1,5 +1,5 @@
 {
-  "status": "Metadata/chapters only; no downloaded or visually verified media. GIF work pending human rights confirmation. All inspected licences unknown; no verified CC licence.",
+  "status": "User explicitly confirmed licensed reuse for the selected videos. Complete source acquisition is blocked by HTTP 403. Downloaded prefixes are incomplete; no complete route or GIF has been visually verified.",
   "videos": [
     {
       "videoId": "dB3V_7-s92s",
@@ -7,7 +7,7 @@
       "channel": "Frodo the Dodo",
       "normalizedUrl": "https://www.youtube.com/watch?v=dB3V_7-s92s",
       "license": null,
-      "rightsStatus": "analysis-only",
+      "rightsStatus": "user-confirmed-licensed",
       "inspectedAt": "2026-10-04T02:06:30.453629Z",
       "chapters": [
         {
@@ -154,7 +154,7 @@
       "channel": "Kittykatlapurr",
       "normalizedUrl": "https://www.youtube.com/watch?v=vD4U9Hyi1WY",
       "license": null,
-      "rightsStatus": "analysis-only",
+      "rightsStatus": "user-confirmed-licensed",
       "inspectedAt": "2026-10-04T02:06:31.121569Z",
       "chapters": [
         {
@@ -316,7 +316,7 @@
       "channel": "Arindam Gaming",
       "normalizedUrl": "https://www.youtube.com/watch?v=0f1o5yfh27M",
       "license": null,
-      "rightsStatus": "analysis-only",
+      "rightsStatus": "user-confirmed-licensed",
       "inspectedAt": "2026-10-04T02:09:56.334343Z",
       "chapters": [
         {
@@ -348,7 +348,7 @@
       "channel": "Arindam Gaming",
       "normalizedUrl": "https://www.youtube.com/watch?v=Z4CfGBNbmlA",
       "license": null,
-      "rightsStatus": "analysis-only",
+      "rightsStatus": "user-confirmed-licensed",
       "inspectedAt": "2026-10-04T02:09:58.018656Z",
       "chapters": [
         {
@@ -395,7 +395,7 @@
       "channel": "Arindam Gaming",
       "normalizedUrl": "https://www.youtube.com/watch?v=VuuzjEkkh1c",
       "license": null,
-      "rightsStatus": "analysis-only",
+      "rightsStatus": "user-confirmed-licensed",
       "inspectedAt": "2026-10-04T02:09:56.541997Z",
       "chapters": [
         {
@@ -447,7 +447,7 @@
       "channel": "Arindam Gaming",
       "normalizedUrl": "https://www.youtube.com/watch?v=IXTBYrjc5Ks",
       "license": null,
-      "rightsStatus": "analysis-only",
+      "rightsStatus": "user-confirmed-licensed",
       "inspectedAt": "2026-10-04T02:09:59.211014Z",
       "chapters": [
         {
@@ -484,7 +484,7 @@
       "channel": "Arindam Gaming",
       "normalizedUrl": "https://www.youtube.com/watch?v=sk1h5BGeKZ0",
       "license": null,
-      "rightsStatus": "analysis-only",
+      "rightsStatus": "user-confirmed-licensed",
       "inspectedAt": "2026-10-04T02:09:59.161532Z",
       "chapters": [],
       "description": "SOLO 2024 guide on How to Get the Artifact of the Devourer from the North East Cave on The Island Map in ARK: Survival Ascended.\n\n➤ Subscribe to Arindam Gaming: https://www.youtube.com/c/ArindamChatterjee_Gaming\nTURN ON NOTIFICATIONS BY CLICKING THE 'BELL' ICON AFTER SUBSCRIBING!\n\n🎮 If you want to beat ARK SURVIVAL ASCENDED 100%, check the Completionist Guides below ::\n➤ ARK Survival Ascended Season 3 All maps 100%: https://www.youtube.com/playlist?list=PL5C0uP4MYXh5bcuAwWExK78R8pE7IgeRM \n➤ Painting & Dyes Reference Guide: https://www.youtube.com/playlist?list=PL5C0uP4MYXh7zrgwZugpN6hwDSY1u_V-9 \n➤ Island: https://www.youtube.com/playlist?list=PL5C0uP4MYXh6qw82U6CPxKj7vyqqDwSNK\n\n🎮 If you want to beat ARK SURVIVAL EVOLVED 100%, check the Completionist Guides below ::\n➤ Ark Season 2 All maps 100%: https://www.youtube.com/playlist?list=PL5C0uP4MYXh6nzm66Bu5XpdzYLl8ClH91\n➤ Island: https://www.youtube.com/playlist?list=PL5C0uP4MYXh74CmgT_mQvMKq4ISmYUJUB\n➤ Scorched Earth: https://www.youtube.com/playlist?list=PL5C0uP4MYXh5PB8yKpQDeK6Z6xsdDdwpX\n➤ Aberration: https://www.youtube.com/playlist?list=PL5C0uP4MYXh7W8C5OgE99VCgwZ1aK2dCt\n➤ Extinction: https://www.youtube.com/playlist?list=PL5C0uP4MYXh7hfL6a1QHCjGDQBDhgRonX\n➤ Genesis 1: https://www.youtube.com/playlist?list=PL5C0uP4MYXh4IpwJ_icDPRdCQP0rMc7wR\n➤ Genesis 2: https://www.youtube.com/playlist?list=PL5C0uP4MYXh4qsB5MRK7-YW-XrA_wXDTw\n➤ Center: https://www.youtube.com/playlist?list=PL5C0uP4MYXh7aSiUTdCuJ8eWmE0du7rYu\n➤ Ragnarok: https://www.youtube.com/playlist?list=PL5C0uP4MYXh47OjY6tiW7PsRcVTxiVz9g\n➤ Valguero: https://www.youtube.com/playlist?list=PL5C0uP4MYXh7nMIq2nt-QVziEOcNWyp9D\n➤ Crystal Isles: https://www.youtube.com/playlist?list=PL5C0uP4MYXh58lzpj9McDeTXwmU7wW2x-\n➤ Lost Island: https://www.youtube.com/playlist?list=PL5C0uP4MYXh5vFp0lPhEfZ3q66BAq5DAp\n➤ Fjordur: https://www.youtube.com/playlist?list=PL5C0uP4MYXh6Cs2BdBAC9AYhdj32_lZIy\n\nDinos Used: Baryonyx & Otter\nArtifact: Artifact of the Devourer\nCave: North East Cave\nMap: The Island\nDated: 2024.11.10 - 23.26.57.11\nArk Survival Ascended (Season 3) Video: 18\n\n#ark #playark #arkguides #arksurvivalevolved #arksurvivalascended"
@@ -495,7 +495,7 @@
       "channel": "Arindam Gaming",
       "normalizedUrl": "https://www.youtube.com/watch?v=7sTXUDfH568",
       "license": null,
-      "rightsStatus": "analysis-only",
+      "rightsStatus": "user-confirmed-licensed",
       "inspectedAt": "2026-10-04T02:10:00.872608Z",
       "chapters": [
         {
@@ -542,7 +542,7 @@
       "channel": "Arindam Gaming",
       "normalizedUrl": "https://www.youtube.com/watch?v=iUVghdmjCvc",
       "license": null,
-      "rightsStatus": "analysis-only",
+      "rightsStatus": "user-confirmed-licensed",
       "inspectedAt": "2026-10-04T02:10:01.469075Z",
       "chapters": [
         {
@@ -579,7 +579,7 @@
       "channel": "Arindam Gaming",
       "normalizedUrl": "https://www.youtube.com/watch?v=23yX8Hibsvw",
       "license": null,
-      "rightsStatus": "analysis-only",
+      "rightsStatus": "user-confirmed-licensed",
       "inspectedAt": "2026-10-04T02:10:00.770199Z",
       "chapters": [
         {
@@ -626,7 +626,7 @@
       "channel": "Arindam Gaming",
       "normalizedUrl": "https://www.youtube.com/watch?v=zC3DF5Mmxpc",
       "license": null,
-      "rightsStatus": "analysis-only",
+      "rightsStatus": "user-confirmed-licensed",
       "inspectedAt": "2026-10-04T02:10:03.252083Z",
       "chapters": [
         {
@@ -678,7 +678,7 @@
       "channel": "Arindam Gaming",
       "normalizedUrl": "https://www.youtube.com/watch?v=3s6_U2B5hfw",
       "license": null,
-      "rightsStatus": "analysis-only",
+      "rightsStatus": "user-confirmed-licensed",
       "inspectedAt": "2026-10-04T02:10:03.933123Z",
       "chapters": [
         {
@@ -730,7 +730,7 @@
       "channel": "Arindam Gaming",
       "normalizedUrl": "https://www.youtube.com/watch?v=kZqr1m1SOR8",
       "license": null,
-      "rightsStatus": "analysis-only",
+      "rightsStatus": "user-confirmed-licensed",
       "inspectedAt": "2026-10-04T02:10:04.096282Z",
       "chapters": [
         {
@@ -770,6 +770,52 @@
         }
       ],
       "description": "A Comprehensive 2025 Official Server Difficulty SOLO Guide on How to easily, efficiently and reliably complete the Gamma Tek Cave, kill Gamma Overseer & achieve Gamma Ascension on The Island Map in ARK: Survival Ascended using 1x Carcharodontosaurus for clearing the Tek Cave and using only a Shotgun & Tek Cave to kill the Gamma Overseer.\n\n➤ Subscribe to Arindam Gaming: https://www.youtube.com/c/ArindamChatterjee_Gaming\nTURN ON NOTIFICATIONS BY CLICKING THE 'BELL' ICON AFTER SUBSCRIBING!\n\n🎮 If you want to beat ARK SURVIVAL ASCENDED 100%, check the Completionist Guides below ::\n➤ ARK Survival Ascended Season 3 All maps 100%: https://www.youtube.com/playlist?list=PL5C0uP4MYXh5bcuAwWExK78R8pE7IgeRM \n➤ Painting & Dyes Reference Guide: https://www.youtube.com/playlist?list=PL5C0uP4MYXh7zrgwZugpN6hwDSY1u_V-9 \n➤ Island: https://www.youtube.com/playlist?list=PL5C0uP4MYXh6qw82U6CPxKj7vyqqDwSNK\n➤ Island Caves: https://www.youtube.com/playlist?list=PL5C0uP4MYXh7bZHkwpRG9rt1CiUb8KE2n\n\n🎮 If you want to beat ARK SURVIVAL EVOLVED 100%, check the Completionist Guides below ::\n➤ Ark Season 2 All maps 100%: https://www.youtube.com/playlist?list=PL5C0uP4MYXh6nzm66Bu5XpdzYLl8ClH91\n➤ Island: https://www.youtube.com/playlist?list=PL5C0uP4MYXh74CmgT_mQvMKq4ISmYUJUB\n➤ Scorched Earth: https://www.youtube.com/playlist?list=PL5C0uP4MYXh5PB8yKpQDeK6Z6xsdDdwpX\n➤ Aberration: https://www.youtube.com/playlist?list=PL5C0uP4MYXh7W8C5OgE99VCgwZ1aK2dCt\n➤ Extinction: https://www.youtube.com/playlist?list=PL5C0uP4MYXh7hfL6a1QHCjGDQBDhgRonX\n➤ Genesis 1: https://www.youtube.com/playlist?list=PL5C0uP4MYXh4IpwJ_icDPRdCQP0rMc7wR\n➤ Genesis 2: https://www.youtube.com/playlist?list=PL5C0uP4MYXh4qsB5MRK7-YW-XrA_wXDTw\n➤ Center: https://www.youtube.com/playlist?list=PL5C0uP4MYXh7aSiUTdCuJ8eWmE0du7rYu\n➤ Ragnarok: https://www.youtube.com/playlist?list=PL5C0uP4MYXh47OjY6tiW7PsRcVTxiVz9g\n➤ Valguero: https://www.youtube.com/playlist?list=PL5C0uP4MYXh7nMIq2nt-QVziEOcNWyp9D\n➤ Crystal Isles: https://www.youtube.com/playlist?list=PL5C0uP4MYXh58lzpj9McDeTXwmU7wW2x-\n➤ Lost Island: https://www.youtube.com/playlist?list=PL5C0uP4MYXh5vFp0lPhEfZ3q66BAq5DAp\n➤ Fjordur: https://www.youtube.com/playlist?list=PL5C0uP4MYXh6Cs2BdBAC9AYhdj32_lZIy\n\n⏱ Timestamps:\n00:00 Intro & Preparation\n04:20 Tek Cave\n10:10 Overseer Boss Fight\n39:38 Boss Defeated\n40:20 Ascension Cinematic\n43:20 My Server Settings\n48:00 Post Ascension Spawn in + Outro\n\nDinos Used: 1x Carcharodontosaurus, 1x Otter\nCave: Gamma Tek Cave\nBoss: Gamma Overseer\nMap: The Island\nDated: 2024.11.24 - 16.32.29.03\nArk Survival Ascended (Season 3) Video: 33\n\n#ark #playark #arkguides #arksurvivalevolved #arksurvivalascended #bossfight"
+    }
+  ],
+  "reuseAuthorization": {
+    "basis": "licensed",
+    "scope": "All 13 selected walkthrough videos",
+    "userConfirmation": "Duyệt, a có giấy phép hết",
+    "confirmedDate": "2026-10-04"
+  },
+  "gifDescriptionRequirement": {
+    "language": "Vietnamese",
+    "placement": "Below each GIF when guidance is needed",
+    "voice": "Short natural player-to-player directions",
+    "content": [
+      "Recognizable landmark",
+      "Next movement or turn",
+      "Relevant hazard or interaction"
+    ],
+    "verification": "Every instruction must match visually inspected source frames; chapter metadata is insufficient."
+  },
+  "acquisitionEvidence": [
+    {
+      "videoId": "dB3V_7-s92s",
+      "download": "HTTP 403; retry also HTTP 403",
+      "decodedPacketRangeSeconds": [
+        0,
+        54.65
+      ],
+      "fullMetadataDurationSeconds": 1388.05
+    },
+    {
+      "videoId": "vD4U9Hyi1WY",
+      "download": "HTTP 403",
+      "decodedPacketRangeSeconds": [
+        0,
+        75.6
+      ],
+      "fullMetadataDurationSeconds": 1148.666667
+    },
+    {
+      "videoId": "0f1o5yfh27M",
+      "download": "HTTP 403",
+      "decodedPacketRangeSeconds": [
+        0,
+        52.3
+      ],
+      "fullMetadataDurationSeconds": 1296.55
     }
   ]
 }
