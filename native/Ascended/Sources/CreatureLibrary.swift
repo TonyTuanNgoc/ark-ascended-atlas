@@ -58,13 +58,7 @@ struct CreatureLibrary: View {
 struct CreaturePortrait: View {
     let creature: Creature
     var body: some View {
-        Group {
-            if UIImage(named: creature.iconAsset) != nil {
-                CreatureAvatar(asset: creature.iconAsset)
-            } else {
-                Image(systemName: "pawprint.fill").resizable().scaledToFit().foregroundStyle(.cyan.opacity(0.6)).padding(18)
-            }
-        }
+        CreatureAvatar(asset: creature.iconAsset)
     }
 }
 struct CreatureCard: View {
@@ -158,32 +152,29 @@ extension View {
     }
 }
 
-/// Library cards retain the game's familiar species avatar.
+/// Species dossier silhouettes remain white in every creature context.
+struct CreatureSilhouetteAliases: Decodable {
+    let aliases: [String:String]
+    static let shared = (try? ArkMap.load(CreatureSilhouetteAliases.self, name: "creature-silhouette-aliases")) ?? CreatureSilhouetteAliases(aliases: [:])
+}
 struct CreatureAvatar: View {
     let asset: String
+    private var silhouette: UIImage? {
+        if let image = UIImage(named: asset) { return image }
+        if let name = CreatureSilhouetteAliases.shared.aliases[asset.replacingOccurrences(of: "Dino-", with: "")], let image = UIImage(named: name) { return image }
+        let parts = asset.replacingOccurrences(of: "Dino-", with: "").split(separator: "-").map(String.init)
+        let variants: Set<String> = ["aberrant", "alpha", "corrupted", "tek", "x", "r", "spirit", "brute", "skeletal", "zombie", "malfunctioned", "polar", "summoned"]
+        let base = parts.filter { !variants.contains($0) }.joined(separator: "-")
+        return UIImage(named: "Dino-" + base)
+    }
     var body: some View {
-        if let image = UIImage(named: "Game-" + asset) {
-            Image(uiImage: image).resizable().scaledToFit()
-        } else if !asset.hasPrefix("Dino-") && !asset.hasPrefix("Boss-") {
-            Image(asset).resizable().scaledToFit()
-        } else {
-            Image(systemName: "photo").resizable().scaledToFit().foregroundStyle(.secondary).padding(18)
-        }
+        if let image = silhouette { Image(uiImage: image).renderingMode(.template).resizable().scaledToFit().foregroundStyle(.white) }
+        else { Image(systemName: "pawprint.fill").resizable().scaledToFit().foregroundStyle(.white).padding(18) }
     }
 }
-
-/// Contextual creature pictures keep the full body's original game colours.
 struct CreatureCutout: View {
     let asset: String
-    var body: some View {
-        if let image = UIImage(named: "Cutout-" + asset) {
-            Image(uiImage: image).resizable().scaledToFit()
-        } else if !asset.hasPrefix("Dino-") && !asset.hasPrefix("Boss-") {
-            Image(asset).resizable().scaledToFit()
-        } else {
-            Image(asset).renderingMode(.template).resizable().scaledToFit().foregroundStyle(.white)
-        }
-    }
+    var body: some View { CreatureAvatar(asset: asset) }
 }
 
 struct SquareGuideTile<Preview: View>: View {

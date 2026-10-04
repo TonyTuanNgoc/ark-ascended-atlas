@@ -9,7 +9,7 @@ from PIL import Image
 ROOT=Path(__file__).resolve().parents[1]
 RES=ROOT/'native/Ascended/Resources'; ASSETS=ROOT/'native/Ascended/Assets.xcassets'
 def fetch(url):
- p=subprocess.run(['curl','--fail','--location','--silent','--show-error','--retry','3','--retry-delay','2','--max-time','35',url if '/images/' in url else url+ ('&' if '?' in url else '?')+'x=1'],capture_output=True)
+ p=subprocess.run(['curl','--user-agent','AscendedPersonalFieldGuide/1.0 (personal offline ARK reference)','--fail','--location','--silent','--show-error','--retry','3','--retry-delay','2','--max-time','35',url if '/images/' in url else url+ ('&' if '?' in url else '?')+'x=1'],capture_output=True)
  if p.returncode:raise RuntimeError(p.stderr.decode()[:180])
  return p.stdout
 def table_records(page):
@@ -155,7 +155,7 @@ def main():
    records[name]=(item,row)
  # Reuse real existing item facts as a supplemental consumables / tribute catalog.
  # Pseudo node labels, generic armor placeholders and non-item guide symbols excluded.
- pseudo={'Base Seeds','Base Veggie','Beaver Dam','Cactus with few berries','Captains Hat','Carrots','Corn','Gem Bio','Little Ratfish Treats!','Mushrooms','Potatoes','Rare Flowers','Rare Mushrooms','Rich Metal','Rich Oil','Saddle','Sandpile','Black Pearls'}
+ pseudo={'Exceptional Dinosaur Egg','Extraordinary Dinosaur Egg','Regular Dinosaur Egg','Superior Dinosaur Egg','Base Seeds','Base Veggie','Beaver Dam','Cactus with few berries','Captains Hat','Carrots','Corn','Gem Bio','Little Ratfish Treats!','Mushrooms','Potatoes','Rare Flowers','Rare Mushrooms','Rich Metal','Rich Oil','Saddle','Sandpile','Black Pearls'}
  for fact in visual.values():
   name=fact['name']
   if fact.get('category')!='item' or name in records or name in pseudo:continue
@@ -188,7 +188,7 @@ def main():
   if '--key-only' in sys.argv and item['name'] not in PURPOSE:return dict(name=item['name'],status='no-local-artwork',sourceURL=row['sourceURL'])
   if '--no-download' in sys.argv or (item['category']!='machines' and not ('--base-art' in sys.argv and item['name'] in base_art)) or not row.get('imageURL'):return dict(name=item['name'],status='no-local-artwork',sourceURL=row['sourceURL'])
   try:
-   time.sleep(6.5)
+   time.sleep(1.25)
    data=fetch(row['imageURL']);im=Image.open(io.BytesIO(data));im.verify()
    aid='Equipment-'+item['id'];folder=ASSETS/(aid+'.imageset');folder.mkdir(exist_ok=True)
    (folder/'image.png').write_bytes(data);(folder/'Contents.json').write_text(json.dumps({'images':[{'filename':'image.png','idiom':'universal'}],'info':{'author':'xcode','version':1}},indent=2)+'\n');item['asset']=aid
@@ -201,4 +201,51 @@ def main():
  report=dict(date='2026-10-04',method='Full published catalog tables; no handpicked quantity target. Excludes explicit namespaces, Primitive Plus, obsolete ASA wiring/pipes and decorative trophies.',scope='Source-enumerated cross-edition reference, not a claim every entry is obtainable in current ASA. Availability, levels and DLC ownership remain explicit verification conditions; mapIDs empty means not verified, not universal spawn.',asaMechanicsSource='https://ark.wiki.gg/wiki/ARK_Survival_Ascended',asaVerificationSources=['https://ark.wiki.gg/wiki/Engrams','https://ark.wiki.gg/wiki/Electricity','https://ark.wiki.gg/wiki/Water_Reservoir','https://ark.wiki.gg/wiki/Stone_Irrigation_Pipe_-_Intake','https://ark.wiki.gg/wiki/Water_Well','https://ark.wiki.gg/wiki/Cryofridge','https://ark.wiki.gg/wiki/Feeding_Trough','https://ark.wiki.gg/wiki/ARK:_Survival_Ascended/Patch/85.0','https://ark.wiki.gg/wiki/Water_Reservoir_(Frontier_Showdown)'],counts={c:sum(x['category']==c for x in items) for c in ['resources','tools','machines','structures','supplies']},catalogSources=sources,engramEvidenceCount=len(engrams),mapResourceEvidenceCount=len(map_types),availabilityCounts={k:sum(x.get('availability')==k for x in items) for k in sorted({x.get('availability') for x in items})},excluded=sorted(set(excluded)),artwork=images,limitations=['Wiki catalogs combine ASE and ASA; individual availability is not asserted without edition evidence.','No fabricated recipes or level values.','No mod/Primitive Plus/ATLAS namespace imports.','Source game icon edition may be ASE shared art; artwork is never claimed as an ASA screenshot.','Supplemental supplies enumerate existing source-linked real item facts; skins, saddles and cosmetic variants are not claimed complete.'])
  (ROOT/'docs/codex-reports/2026-10-04-equipment-sources.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
  print(report['counts']);print('Artwork downloaded',sum(x['status']=='downloaded-original' for x in images),'reused',sum(x['status']=='reused-exact' for x in images));print('unavailable',[x['name'] for x in images if x['status']=='unavailable'])
-if __name__=='__main__':main()
+def acquire_existing_icons():
+ """Backfill artwork only; preserve all reviewed text, IDs and catalog membership.
+ Read exact filenames from public catalog tables. Checkpoint per image so interrupted
+ runs retain progress. No different-item matches or generated substitutes are allowed.
+ """
+ library_path=RES/'equipment-library.json';report_path=ROOT/'docs/codex-reports/2026-10-04-equipment-sources.json'
+ library=json.loads(library_path.read_text());report=json.loads(report_path.read_text())
+ rows={}
+ for page in ['Resources','Item_IDs/Tools','Item_IDs/Weapons','Item_IDs/Armor','Item_IDs/Ammunition','Structures']:
+  for row in table_records(page):rows[row['name']]=row
+ old={x['name']:x for x in report['artwork']}
+ categories=sys.argv[sys.argv.index('--category')+1].split(',') if '--category' in sys.argv else ['resources','machines','tools','structures','supplies']
+ selected=[x for c in categories for x in library['items'] if x['category']==c and not x.get('asset')]
+ def save():
+  report['artwork']=[old.get(x['name'],dict(name=x['name'],status='no-local-artwork',sourceURL=x['sourceURL'])) for x in library['items']]
+  report['artworkCounts']={c:dict(total=sum(x['category']==c for x in library['items']),pictured=sum(x['category']==c and bool(x.get('asset')) for x in library['items'])) for c in ['resources','machines','tools','structures','supplies']}
+  report['artworkUpdate']='2026-10-04: exact catalog icons backfilled; original public game PNGs only, no generated substitutes.'
+  library_path.write_text(json.dumps(library,ensure_ascii=False,indent=2)+'\n')
+  report_path.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+ print('Backfill missing',len(selected),'categories',categories,flush=True)
+ for index,item in enumerate(selected):
+  name=item['name'];original='Electrical Generator' if name=='Power Generator' else 'Stone Fireplace' if name=='Fireplace' else 'Empty Cryopod' if name=='Cryopod' else name
+  row=rows.get(original);url=row.get('imageURL') if row else None
+  if not url and name=='Airplane':url='https://ark.wiki.gg/images/Airplane.jpg' # exact infobox game-model image, visually verified
+  if not url:
+   old[name]=dict(name=name,status='source-icon-unavailable',sourceURL=item['sourceURL']);save();continue
+  if re.search(r'No[_ ]image|Unknown|Placeholder|No[_ ]icon',url,re.I):
+   old[name]=dict(name=name,status='source-placeholder-rejected',imageURL=url,sourceURL=item['sourceURL']);save();continue
+  try:
+   time.sleep(1.25)
+   data=fetch(url);im=Image.open(io.BytesIO(data));im.load()
+   source_data=data;source_format=im.format
+   if im.format=='JPEG' and name=='Airplane':
+    encoded=io.BytesIO();im.save(encoded,format='PNG');data=encoded.getvalue()
+   elif im.format!='PNG':raise ValueError('Not a full original game PNG')
+   if im.width<24 or im.height<24:raise ValueError('Source image too small')
+   if len(im.convert('RGBA').getcolors(maxcolors=2000000) or [])<4:raise ValueError('Empty/flat image rejected')
+   aid='Equipment-'+item['id'];folder=ASSETS/(aid+'.imageset');folder.mkdir(exist_ok=True)
+   (folder/'image.png').write_bytes(data);(folder/'Contents.json').write_text(json.dumps({'images':[{'filename':'image.png','idiom':'universal'}],'info':{'author':'xcode','version':1}},indent=2)+'\n')
+   item['asset']=aid;old[name]=dict(name=name,asset=aid,status='downloaded-original',imageURL=url,sourceURL=item['sourceURL'],sha256=hashlib.sha256(data).hexdigest(),dimensions=[im.width,im.height],bytes=len(data),attribution='ARK Official Community Wiki; original game artwork belongs to Studio Wildcard; personal reference use')
+   if source_format!='PNG':old[name].update(status='downloaded-source-converted',sourceSHA256=hashlib.sha256(source_data).hexdigest(),sourceFormat=source_format,storedFormat='PNG',conversion='Lossless PNG encoding of exact-source game image; no pixel edits.')
+  except Exception as e:old[name]=dict(name=name,status='unavailable',imageURL=url,sourceURL=item['sourceURL'],error=str(e))
+  save()
+  if (index+1)%5==0 or index+1==len(selected):print(index+1,'/',len(selected),report['artworkCounts'],flush=True)
+ print('Done',report['artworkCounts'],flush=True)
+if __name__=='__main__':
+ if '--icons-only' in sys.argv:acquire_existing_icons()
+ else:main()

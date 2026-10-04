@@ -1,15 +1,15 @@
 {
   "storySections": 26,
-  "equipmentItems": 732,
+  "equipmentItems": 728,
   "categories": {
     "machines": 79,
     "resources": 78,
     "structures": 299,
-    "supplies": 92,
+    "supplies": 88,
     "tools": 184
   },
-  "uniqueEquipmentArtwork": 208,
-  "baseZones": 9,
+  "uniqueEquipmentArtwork": 728,
+  "baseZones": 5,
   "basePhases": 5,
   "verifiedPlayableMapBadges": 10,
   "availability": {
@@ -18,7 +18,7 @@
     "asa-dlc-verified": 1,
     "asa-core-resource-reference": 33,
     "asa-map-resource-verified": 18,
-    "source-item-reference": 87
+    "source-item-reference": 83
   },
   "result": "passed"
 }

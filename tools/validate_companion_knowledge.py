@@ -23,7 +23,7 @@ for x in items:
   for im in metadata['images']:
    if 'filename' in im:Image.open(folder/im['filename']).verify()
   checked.add(x['asset'])
-assert len(base['zones'])==9 and len(base['phases'])==5
+assert len(base['zones'])==5 and len(base['phases'])==5
 names={x['name'].lower() for x in items};zoneids={x['id'] for x in base['zones']}
 assert all(name.lower() in names for z in base['zones'] for name in z['items'])
 assert all(x in zoneids for p in base['phases'] for x in p['zoneIDs'])

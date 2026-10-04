@@ -1,5 +1,5 @@
 {
-  "intro": "Xây từng khu theo nhu cầu. Kích thước gợi ý; chỉnh theo địa hình và đàn Dino của anh.",
+  "intro": "5 nhà đặt cạnh nhau. Xưởng sát lối dỡ hàng; nhà nuôi con cạnh bếp. Xây đủ dùng, mở rộng khi cần.",
   "phases": [
     {
       "id": "starter",
@@ -7,7 +7,7 @@
       "goal": "Ổn định hồi sinh, đồ ăn và dụng cụ trước khi xây lớn.",
       "zoneIDs": [
         "main",
-        "storage"
+        "industry"
       ],
       "exit": [
         "Có chỗ ngủ và bộ đồ dự phòng.",
@@ -19,10 +19,8 @@
       "title": "2 · Base sản xuất",
       "goal": "Đưa tài nguyên về, xử lý và cất thành chuỗi ngắn.",
       "zoneIDs": [
-        "storage",
         "industry",
-        "power",
-        "kitchen"
+        "garden"
       ],
       "exit": [
         "Smithy/forge hoạt động; nguyên liệu được phân kho.",
@@ -35,7 +33,6 @@
       "goal": "Tự duy trì rau, kibble, thức ăn và phương tiện vận chuyển.",
       "zoneIDs": [
         "garden",
-        "kitchen",
         "dino"
       ],
       "exit": [
@@ -49,7 +46,7 @@
       "goal": "Giảm thao tác lặp lại, tập trung breeding và chuẩn bị hành trình.",
       "zoneIDs": [
         "breeding",
-        "expedition"
+        "main"
       ],
       "exit": [
         "Có dòng giống, thức ăn cho con và không gian imprint.",
@@ -61,9 +58,7 @@
       "title": "5 · Nâng cấp Tek",
       "goal": "Nâng cấp chỗ nghẽn sau khi mở engram; giữ chuỗi dự phòng.",
       "zoneIDs": [
-        "storage",
-        "industry",
-        "power"
+        "industry"
       ],
       "exit": [
         "Chỉ dùng công nghệ đã mở đúng boss/map.",
@@ -76,8 +71,8 @@
       "id": "main",
       "name": "Nhà chính",
       "symbol": "house.fill",
-      "purpose": "Điểm hồi sinh, thay đồ và chuẩn bị trước khi rời base.",
-      "placement": "Gần cửa sân và kho; tránh đặt giữa luồng Dino.",
+      "purpose": "Hồi sinh, cất đồ cá nhân và chuẩn bị chuyến đi.",
+      "placement": "Nằm cạnh các nhà khác, chừa lối vận chuyển ở giữa.",
       "flow": "Giường → trang bị → đồ ăn → cửa ra",
       "size": "Gợi ý 4×4 móng, 2 tầng",
       "items": [
@@ -85,39 +80,27 @@
         "Storage Box",
         "Smithy",
         "Preserving Bin",
-        "Mortar and Pestle"
+        "Mortar and Pestle",
+        "Grappling Hook",
+        "Medical Brew",
+        "Pump-Action Shotgun",
+        "SCUBA Tank"
       ],
       "steps": [
         "Tầng dưới để đồ đang dùng; tầng trên để giường và đồ dự phòng.",
         "Tách bộ đồ đi hang, đi biển và lạnh thành các kho dễ nhận.",
-        "Một điểm hồi sinh dự phòng đặt cách nhà chính một khoảng."
-      ]
-    },
-    {
-      "id": "storage",
-      "name": "Kho & điểm dỡ hàng",
-      "symbol": "shippingbox.fill",
-      "purpose": "Nhận vật liệu từ chuyến farm và phân loại trước khi chế tạo.",
-      "placement": "Giữa bãi đáp Argy, xưởng và bếp.",
-      "flow": "Bãi đáp → kho nguyên liệu → máy tương ứng",
-      "size": "Gợi ý 4×4; chừa sân dỡ hàng",
-      "items": [
-        "Large Storage Box",
-        "Vault",
-        "Tek Dedicated Storage"
-      ],
-      "steps": [
-        "Tách kho kim loại/đá, gỗ/sợi, đồ hữu cơ và blueprint.",
-        "Đặt nguyên liệu nặng gần máy dùng chúng để giảm đi lại.",
-        "Tek Dedicated Storage là nâng cấp cuối game; không chờ Tek mới xây kho."
+        "Một điểm hồi sinh dự phòng đặt cách nhà chính một khoảng.",
+        "Tiền đồn giữ giường, đồ dự phòng và phương tiện quay lại.",
+        "Kiểm tra quyền build từng map/hang và settings trước khi đặt.",
+        "Không chặn artifact, spawn tài nguyên hoặc cửa hang."
       ]
     },
     {
       "id": "industry",
-      "name": "Khu công nghiệp",
+      "name": "Xưởng & kho tài nguyên",
       "symbol": "gearshape.2.fill",
-      "purpose": "Luyện kim loại, sản xuất polymer và hóa chất, chế tạo trang bị.",
-      "placement": "Kề kho, tách khu nghỉ và chuồng.",
+      "purpose": "Nhận tài nguyên, luyện kim, chế tạo; điện nước chung đặt tại đây.",
+      "placement": "Nằm cạnh các nhà khác, chừa lối vận chuyển ở giữa.",
       "flow": "Metal → Forge → Ingot → Fabricator; vật liệu hóa chất → Chemistry Bench",
       "size": "Gợi ý 6×6, trần cao; thử footprint máy trước",
       "items": [
@@ -127,70 +110,10 @@
         "Industrial Forge",
         "Chemistry Bench",
         "Industrial Grinder",
-        "Tek Replicator"
-      ],
-      "steps": [
-        "Đầu game dùng Smithy và Refining Forge; chừa chỗ nâng cấp.",
-        "Làm Fabricator khi chuỗi metal, paste và dầu đã ổn.",
-        "Industrial Forge/Chemistry Bench tùy điểm nghẽn; không có thứ tự tối ưu cho mọi save.",
-        "Chừa lối Dino vận chuyển và khoảng trống cho máy lớn."
-      ]
-    },
-    {
-      "id": "garden",
-      "name": "Nhà vườn & nhà kính",
-      "symbol": "leaf.fill",
-      "purpose": "Trồng rau cho kibble và cake, sản xuất narcotic và nguyên liệu thức ăn.",
-      "placement": "Gần nước, bếp và kho phân; tránh lối Dino lớn.",
-      "flow": "Nước + phân → Crop Plot → rau → bếp",
-      "size": "Gợi ý 4×6; mở rộng theo tiêu thụ",
-      "items": [
-        "Large Crop Plot",
-        "Medium Crop Plot",
-        "Small Crop Plot",
-        "Compost Bin",
-        "Water Reservoir",
-        "Greenhouse Ceiling",
-        "Greenhouse Wall"
-      ],
-      "steps": [
-        "Kiểm tra tưới nước hoạt động trước khi gieo hạt.",
-        "Duy trì phân và kiểm tra greenhouse effect; mái phải đáp ứng cơ chế nhà kính.",
-        "Trồng bốn loại rau cơ bản; thêm cây phòng thủ ở vòng ngoài nếu cần.",
-        "Nguồn phân có thể từ Dino; Dung Beetle là lựa chọn hỗ trợ, không điều kiện bắt buộc."
-      ]
-    },
-    {
-      "id": "kitchen",
-      "name": "Bếp & kho lạnh",
-      "symbol": "fork.knife",
-      "purpose": "Nấu thịt, kibble, medical brew và chuẩn bị đồ cho chuyến đi.",
-      "placement": "Giữa vườn, kho và nhà chính.",
-      "flow": "Rau + trứng + thịt → Cooker → Refrigerator",
-      "size": "Gợi ý 4×4; đường nước rõ ràng",
-      "items": [
-        "Campfire",
-        "Cooking Pot",
-        "Preserving Bin",
-        "Industrial Grill",
-        "Industrial Cooker",
-        "Refrigerator"
-      ],
-      "steps": [
-        "Đầu game Cooking Pot và Preserving Bin đủ khởi đầu.",
-        "Bếp công nghiệp chỉ nâng cấp khi có nhu cầu sản xuất hàng loạt.",
-        "Giữ nguyên liệu và thành phẩm riêng; kiểm tra điện, nước và thời hạn đồ ăn."
-      ]
-    },
-    {
-      "id": "power",
-      "name": "Điện, nước & nhiên liệu",
-      "symbol": "bolt.fill",
-      "purpose": "Giữ máy, kho lạnh, tưới cây và điều hòa hoạt động ổn định.",
-      "placement": "Dễ bảo trì; kiểm tra vùng phủ tới từng khu.",
-      "flow": "Dầu + da → Gasoline → Generator → máy; nước → bếp/vườn",
-      "size": "Gợi ý phòng kỹ thuật 3×3, không khóa kín lối bảo trì",
-      "items": [
+        "Tek Replicator",
+        "Large Storage Box",
+        "Vault",
+        "Tek Dedicated Storage",
         "Power Generator",
         "Tek Generator",
         "Stone Irrigation Pipe - Intake",
@@ -200,6 +123,13 @@
         "Gasoline"
       ],
       "steps": [
+        "Đầu game dùng Smithy và Refining Forge; chừa chỗ nâng cấp.",
+        "Làm Fabricator khi chuỗi metal, paste và dầu đã ổn.",
+        "Industrial Forge/Chemistry Bench tùy điểm nghẽn; không có thứ tự tối ưu cho mọi save.",
+        "Chừa lối Dino vận chuyển và khoảng trống cho máy lớn.",
+        "Tách kho kim loại/đá, gỗ/sợi, đồ hữu cơ và blueprint.",
+        "Đặt nguyên liệu nặng gần máy dùng chúng để giảm đi lại.",
+        "Tek Dedicated Storage là nâng cấp cuối game; không chờ Tek mới xây kho.",
         "ASA dùng vùng phủ điện/nước; không sao chép hệ dây/ống của ASE.",
         "Kiểm tra trạng thái máy tại mép phủ, không chỉ nhìn khoảng cách.",
         "Chừa nhiên liệu dự phòng và điểm nước dự phòng.",
@@ -207,11 +137,44 @@
       ]
     },
     {
+      "id": "garden",
+      "name": "Bếp & nhà vườn",
+      "symbol": "leaf.fill",
+      "purpose": "Trồng rau, nấu kibble và giữ đồ ăn trong cùng một nhà.",
+      "placement": "Nằm cạnh các nhà khác, chừa lối vận chuyển ở giữa.",
+      "flow": "Nước + phân → Crop Plot → rau → bếp",
+      "size": "Gợi ý 4×6; mở rộng theo tiêu thụ",
+      "items": [
+        "Large Crop Plot",
+        "Medium Crop Plot",
+        "Small Crop Plot",
+        "Compost Bin",
+        "Water Reservoir",
+        "Greenhouse Ceiling",
+        "Greenhouse Wall",
+        "Campfire",
+        "Cooking Pot",
+        "Preserving Bin",
+        "Industrial Grill",
+        "Industrial Cooker",
+        "Refrigerator"
+      ],
+      "steps": [
+        "Kiểm tra tưới nước hoạt động trước khi gieo hạt.",
+        "Duy trì phân và kiểm tra greenhouse effect; mái phải đáp ứng cơ chế nhà kính.",
+        "Trồng bốn loại rau cơ bản; thêm cây phòng thủ ở vòng ngoài nếu cần.",
+        "Nguồn phân có thể từ Dino; Dung Beetle là lựa chọn hỗ trợ, không điều kiện bắt buộc.",
+        "Đầu game Cooking Pot và Preserving Bin đủ khởi đầu.",
+        "Bếp công nghiệp chỉ nâng cấp khi có nhu cầu sản xuất hàng loạt.",
+        "Giữ nguyên liệu và thành phẩm riêng; kiểm tra điện, nước và thời hạn đồ ăn."
+      ]
+    },
+    {
       "id": "dino",
-      "name": "Sân Dino & trạm tame",
+      "name": "Nhà Dino",
       "symbol": "pawprint.fill",
-      "purpose": "Đỗ Dino vận chuyển, chuẩn bị tame và giữ đàn được cho ăn.",
-      "placement": "Cạnh cửa lớn và bãi đáp; xa khu sơ sinh.",
+      "purpose": "Đỗ và cho ăn Dino farm; có lối thẳng từ cổng tới kho.",
+      "placement": "Nằm cạnh các nhà khác, chừa lối vận chuyển ở giữa.",
       "flow": "Tame → kiểm tra saddle/đồ ăn → sân → chuyến farm",
       "size": "Kích thước theo Dino lớn nhất; thử quay đầu",
       "items": [
@@ -231,10 +194,10 @@
     },
     {
       "id": "breeding",
-      "name": "Nhà ấp & khu nuôi con",
+      "name": "Nhà nuôi con",
       "symbol": "heart.fill",
-      "purpose": "Ấp trứng, chăm con và giữ dòng giống cho đội boss.",
-      "placement": "Gần bếp và kho lạnh; tách đàn bố mẹ và con.",
+      "purpose": "Ấp trứng, nuôi con và imprint; nằm sát bếp để lấy thức ăn nhanh.",
+      "placement": "Nằm cạnh các nhà khác, chừa lối vận chuyển ở giữa.",
       "flow": "Bố mẹ → trứng → ấp → con non → imprint → đội boss",
       "size": "Gợi ý 6×6; sân bên ngoài cho loài lớn",
       "items": [
@@ -249,28 +212,6 @@
         "Con quá nhỏ cần thức ăn trong inventory theo cơ chế loài; không mặc định trough nuôi mọi con từ lúc sinh.",
         "Đánh dấu bố mẹ và chỉ số gốc; chừa khu riêng cho mutation.",
         "Khu nuôi boss phải đủ chỗ trưởng thành và đi ra cổng."
-      ]
-    },
-    {
-      "id": "expedition",
-      "name": "Trạm xuất phát & tiền đồn",
-      "symbol": "flag.fill",
-      "purpose": "Đóng gói chuyến đi hang, đi biển và đánh boss; có điểm phục hồi nếu mất đồ.",
-      "placement": "Main base gần kho; tiền đồn ở vùng an toàn ngoài tuyến.",
-      "flow": "Chuẩn bị → kiểm tra kit → chuyến đi → trả đồ → bổ sung",
-      "size": "Gợi ý main 3×3; tiền đồn nhỏ tùy quyền build",
-      "items": [
-        "Simple Bed",
-        "Storage Box",
-        "Grappling Hook",
-        "Medical Brew",
-        "Pump-Action Shotgun",
-        "SCUBA Tank"
-      ],
-      "steps": [
-        "Tiền đồn giữ giường, đồ dự phòng và phương tiện quay lại.",
-        "Kiểm tra quyền build từng map/hang và settings trước khi đặt.",
-        "Không chặn artifact, spawn tài nguyên hoặc cửa hang."
       ]
     }
   ]

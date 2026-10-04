@@ -1,0 +1,390 @@
+{
+  "reviewedAt": "2026-10-04",
+  "scope": "Recipes and original-game asset acquisition research only; no Swift edits or commits.",
+  "recipeSummary": {
+    "total": 12,
+    "buildingVariants": 5,
+    "verifiedMachines": 6,
+    "otherFurniture": 1,
+    "verifiedAgainstASEOnly": 0,
+    "formulaContract": "Quantity is per one ordinary engram craft. Multiply by each counted physical part; sum identical ingredient names. This is direct inventory ingredient cost, not recursive raw-resource expansion. Machines exclude operating fuel, ammunition and crafted contents. Unknown recipe entries must be omitted from totals and visibly counted as unknown; do not silently use zero.",
+    "doorframeCorrection": "ASA ordinary doorway is a placement variant of Stone Wall, Doorways & Windowframe: 40 Stone, 20 Wood, 15 Thatch. ASE separate Stone Doorframe 30/16/12 is not the recipe for this ASA combined item."
+  },
+  "recipes": [
+    {
+      "itemID": "stone-foundation",
+      "name": "Stone Foundation",
+      "sourceURL": "https://wikily.gg/ark-survival-ascended/items/stone-foundation/",
+      "sourceKind": "ASA-specific Wikily item page",
+      "verifiedFields": [
+        "exact direct ingredient names and integer quantities for one ordinary engram craft",
+        "ASA item/blueprint class context"
+      ],
+      "ingredients": [
+        {
+          "name": "Stone",
+          "amount": 80
+        },
+        {
+          "name": "Wood",
+          "amount": 40
+        },
+        {
+          "name": "Thatch",
+          "amount": 30
+        }
+      ],
+      "verificationStatus": "source-verified; not verified in personal game save",
+      "editionNote": "Nguồn ASA riêng, công thức engram thường cho 1 vật phẩm; không gồm nhiên liệu chạy máy hoặc nguyên liệu craft trung gian. Chưa đo trong save cá nhân; mod/override có thể đổi công thức."
+    },
+    {
+      "itemID": "stone-wall",
+      "name": "Stone Wall",
+      "sourceURL": "https://wikily.gg/ark-survival-ascended/items/stone-wall-doorways-windowframe/",
+      "sourceKind": "ASA-specific Wikily item page",
+      "verifiedFields": [
+        "exact direct ingredient names and integer quantities for one ordinary engram craft",
+        "ASA item/blueprint class context"
+      ],
+      "ingredients": [
+        {
+          "name": "Stone",
+          "amount": 40
+        },
+        {
+          "name": "Wood",
+          "amount": 20
+        },
+        {
+          "name": "Thatch",
+          "amount": 15
+        }
+      ],
+      "verificationStatus": "source-verified; not verified in personal game save",
+      "editionNote": "ASA: biến thể Wall của Stone Wall, Doorways & Windowframe; 1 vật phẩm cho 1 đoạn tường thường. Nguồn ASA riêng, công thức engram thường cho 1 vật phẩm; không gồm nhiên liệu chạy máy hoặc nguyên liệu craft trung gian. Chưa đo trong save cá nhân; mod/override có thể đổi công thức."
+    },
+    {
+      "itemID": "stone-ceiling",
+      "name": "Stone Ceiling",
+      "sourceURL": "https://wikily.gg/ark-survival-ascended/items/stone-ceiling-hatchframe/",
+      "sourceKind": "ASA-specific Wikily item page",
+      "verifiedFields": [
+        "exact direct ingredient names and integer quantities for one ordinary engram craft",
+        "ASA item/blueprint class context"
+      ],
+      "ingredients": [
+        {
+          "name": "Stone",
+          "amount": 60
+        },
+        {
+          "name": "Wood",
+          "amount": 30
+        },
+        {
+          "name": "Thatch",
+          "amount": 20
+        }
+      ],
+      "verificationStatus": "source-verified; not verified in personal game save",
+      "editionNote": "ASA: biến thể Ceiling của Stone Ceiling & Hatchframe; 1 vật phẩm cho 1 ô trần thường. Nguồn ASA riêng, công thức engram thường cho 1 vật phẩm; không gồm nhiên liệu chạy máy hoặc nguyên liệu craft trung gian. Chưa đo trong save cá nhân; mod/override có thể đổi công thức."
+    },
+    {
+      "itemID": "stone-doorframe",
+      "name": "Stone Doorframe",
+      "sourceURL": "https://wikily.gg/ark-survival-ascended/items/stone-wall-doorways-windowframe/",
+      "sourceKind": "ASA-specific Wikily item page",
+      "verifiedFields": [
+        "exact direct ingredient names and integer quantities for one ordinary engram craft",
+        "ASA item/blueprint class context"
+      ],
+      "ingredients": [
+        {
+          "name": "Stone",
+          "amount": 40
+        },
+        {
+          "name": "Wood",
+          "amount": 20
+        },
+        {
+          "name": "Thatch",
+          "amount": 15
+        }
+      ],
+      "verificationStatus": "source-verified; not verified in personal game save",
+      "editionNote": "ASA: biến thể Doorway của Stone Wall, Doorways & Windowframe. Không dùng công thức Doorframe riêng của ASE (30 Stone/16 Wood/12 Thatch). Nguồn ASA riêng, công thức engram thường cho 1 vật phẩm; không gồm nhiên liệu chạy máy hoặc nguyên liệu craft trung gian. Chưa đo trong save cá nhân; mod/override có thể đổi công thức."
+    },
+    {
+      "itemID": "reinforced-wooden-door",
+      "name": "Reinforced Wooden Door",
+      "sourceURL": "https://wikily.gg/ark-survival-ascended/items/stone-reinforced-doors-windows/",
+      "sourceKind": "ASA-specific Wikily item page",
+      "verifiedFields": [
+        "exact direct ingredient names and integer quantities for one ordinary engram craft",
+        "ASA item/blueprint class context"
+      ],
+      "ingredients": [
+        {
+          "name": "Stone",
+          "amount": 20
+        },
+        {
+          "name": "Wood",
+          "amount": 14
+        },
+        {
+          "name": "Thatch",
+          "amount": 8
+        }
+      ],
+      "verificationStatus": "source-verified; not verified in personal game save",
+      "editionNote": "ASA: biến thể cửa thường của Stone Reinforced Doors & Windows; không phải cổng Dino hoặc cửa cellar. Nguồn ASA riêng, công thức engram thường cho 1 vật phẩm; không gồm nhiên liệu chạy máy hoặc nguyên liệu craft trung gian. Chưa đo trong save cá nhân; mod/override có thể đổi công thức."
+    },
+    {
+      "itemID": "smithy",
+      "name": "Smithy",
+      "sourceURL": "https://wikily.gg/ark-survival-ascended/items/smithy/",
+      "sourceKind": "ASA-specific Wikily item page",
+      "verifiedFields": [
+        "exact direct ingredient names and integer quantities for one ordinary engram craft",
+        "ASA item/blueprint class context"
+      ],
+      "ingredients": [
+        {
+          "name": "Metal Ingot",
+          "amount": 5
+        },
+        {
+          "name": "Stone",
+          "amount": 50
+        },
+        {
+          "name": "Wood",
+          "amount": 30
+        },
+        {
+          "name": "Hide",
+          "amount": 20
+        }
+      ],
+      "verificationStatus": "source-verified; not verified in personal game save",
+      "editionNote": "Nguồn ASA riêng, công thức engram thường cho 1 vật phẩm; không gồm nhiên liệu chạy máy hoặc nguyên liệu craft trung gian. Chưa đo trong save cá nhân; mod/override có thể đổi công thức."
+    },
+    {
+      "itemID": "fabricator",
+      "name": "Fabricator",
+      "sourceURL": "https://wikily.gg/ark-survival-ascended/items/fabricator/",
+      "sourceKind": "ASA-specific Wikily item page",
+      "verifiedFields": [
+        "exact direct ingredient names and integer quantities for one ordinary engram craft",
+        "ASA item/blueprint class context"
+      ],
+      "ingredients": [
+        {
+          "name": "Metal Ingot",
+          "amount": 35
+        },
+        {
+          "name": "Cementing Paste",
+          "amount": 20
+        },
+        {
+          "name": "Sparkpowder",
+          "amount": 50
+        },
+        {
+          "name": "Crystal",
+          "amount": 15
+        },
+        {
+          "name": "Oil",
+          "amount": 10
+        }
+      ],
+      "verificationStatus": "source-verified; not verified in personal game save",
+      "editionNote": "Nguồn ASA riêng, công thức engram thường cho 1 vật phẩm; không gồm nhiên liệu chạy máy hoặc nguyên liệu craft trung gian. Chưa đo trong save cá nhân; mod/override có thể đổi công thức."
+    },
+    {
+      "itemID": "power-generator",
+      "name": "Power Generator",
+      "sourceURL": "https://wikily.gg/ark-survival-ascended/items/power-generator/",
+      "sourceKind": "ASA-specific Wikily item page",
+      "verifiedFields": [
+        "exact direct ingredient names and integer quantities for one ordinary engram craft",
+        "ASA item/blueprint class context"
+      ],
+      "ingredients": [
+        {
+          "name": "Metal Ingot",
+          "amount": 25
+        },
+        {
+          "name": "Electronics",
+          "amount": 10
+        }
+      ],
+      "verificationStatus": "source-verified; not verified in personal game save",
+      "editionNote": "Nguồn ASA riêng, công thức engram thường cho 1 vật phẩm; không gồm nhiên liệu chạy máy hoặc nguyên liệu craft trung gian. Chưa đo trong save cá nhân; mod/override có thể đổi công thức."
+    },
+    {
+      "itemID": "refining-forge",
+      "name": "Refining Forge",
+      "sourceURL": "https://wikily.gg/ark-survival-ascended/items/refining-forge/",
+      "sourceKind": "ASA-specific Wikily item page",
+      "verifiedFields": [
+        "exact direct ingredient names and integer quantities for one ordinary engram craft",
+        "ASA item/blueprint class context"
+      ],
+      "ingredients": [
+        {
+          "name": "Stone",
+          "amount": 125
+        },
+        {
+          "name": "Flint",
+          "amount": 5
+        },
+        {
+          "name": "Hide",
+          "amount": 65
+        },
+        {
+          "name": "Wood",
+          "amount": 20
+        },
+        {
+          "name": "Fiber",
+          "amount": 40
+        }
+      ],
+      "verificationStatus": "source-verified; not verified in personal game save",
+      "editionNote": "Nguồn ASA riêng, công thức engram thường cho 1 vật phẩm; không gồm nhiên liệu chạy máy hoặc nguyên liệu craft trung gian. Chưa đo trong save cá nhân; mod/override có thể đổi công thức."
+    },
+    {
+      "itemID": "mortar-and-pestle",
+      "name": "Mortar and Pestle",
+      "sourceURL": "https://wikily.gg/ark-survival-ascended/items/mortar-and-pestle/",
+      "sourceKind": "ASA-specific Wikily item page",
+      "verifiedFields": [
+        "exact direct ingredient names and integer quantities for one ordinary engram craft",
+        "ASA item/blueprint class context"
+      ],
+      "ingredients": [
+        {
+          "name": "Stone",
+          "amount": 65
+        },
+        {
+          "name": "Hide",
+          "amount": 15
+        }
+      ],
+      "verificationStatus": "source-verified; not verified in personal game save",
+      "editionNote": "Nguồn ASA riêng, công thức engram thường cho 1 vật phẩm; không gồm nhiên liệu chạy máy hoặc nguyên liệu craft trung gian. Chưa đo trong save cá nhân; mod/override có thể đổi công thức."
+    },
+    {
+      "itemID": "preserving-bin",
+      "name": "Preserving Bin",
+      "sourceURL": "https://wikily.gg/ark-survival-ascended/items/preserving-bin/",
+      "sourceKind": "ASA-specific Wikily item page",
+      "verifiedFields": [
+        "exact direct ingredient names and integer quantities for one ordinary engram craft",
+        "ASA item/blueprint class context"
+      ],
+      "ingredients": [
+        {
+          "name": "Stone",
+          "amount": 30
+        },
+        {
+          "name": "Wood",
+          "amount": 30
+        },
+        {
+          "name": "Thatch",
+          "amount": 10
+        },
+        {
+          "name": "Fiber",
+          "amount": 20
+        }
+      ],
+      "verificationStatus": "source-verified; not verified in personal game save",
+      "editionNote": "Nguồn ASA riêng, công thức engram thường cho 1 vật phẩm; không gồm nhiên liệu chạy máy hoặc nguyên liệu craft trung gian. Chưa đo trong save cá nhân; mod/override có thể đổi công thức."
+    },
+    {
+      "itemID": "simple-bed",
+      "name": "Simple Bed",
+      "sourceURL": "https://wikily.gg/ark-survival-ascended/items/simple-bed/",
+      "sourceKind": "ASA-specific Wikily item page",
+      "verifiedFields": [
+        "exact direct ingredient names and integer quantities for one ordinary engram craft",
+        "ASA item/blueprint class context"
+      ],
+      "ingredients": [
+        {
+          "name": "Wood",
+          "amount": 15
+        },
+        {
+          "name": "Thatch",
+          "amount": 80
+        },
+        {
+          "name": "Fiber",
+          "amount": 30
+        },
+        {
+          "name": "Hide",
+          "amount": 40
+        }
+      ],
+      "verificationStatus": "source-verified; not verified in personal game save",
+      "editionNote": "Nguồn ASA riêng, công thức engram thường cho 1 vật phẩm; không gồm nhiên liệu chạy máy hoặc nguyên liệu craft trung gian. Chưa đo trong save cá nhân; mod/override có thể đổi công thức."
+    }
+  ],
+  "remainingRecipeCoverage": {
+    "status": "not yet source-verified in this subtask",
+    "note": "Only the listed 12 recipes have verified amounts. No figures have been invented for other machines, structures, foundations of other materials, gates, furnishings or DLC structures. Remaining base-plan item names should appear as unverified in any aggregate until a source recipe is added."
+  },
+  "original3DAssets": {
+    "repositoryBlendInspection": {
+      "status": "no .blend found in repository at time of inspection",
+      "method": "repository file inventory searched for .blend, Blender and 3D references; existing walkable-cave report is a design/data-dependency document, not an exported model"
+    },
+    "assetsAvailableToThisTask": false,
+    "gameMeshExportPerformed": false,
+    "devkitDownloaded": false,
+    "facts": [
+      {
+        "sourceURL": "https://store.epicgames.com/p/ark-survival-ascended--devkit?lang=en-US",
+        "finding": "Wildcard ASA DevKit is a customized Unreal Engine 5 editor, listed for Windows, and includes full-game content. Its store page lists 1.5 TB SSD minimum and 4 TB SSD recommended; this is an installation dependency, not evidence that any particular structure was exported."
+      },
+      {
+        "sourceURL": "https://devkit.studiowildcard.com/getting-started/installing-the-devkit",
+        "finding": "Official installation guide uses Epic Games Launcher, recommends SSD and 1.2–1.5 TB available space, and distinguishes stable/LKG and beta editors."
+      },
+      {
+        "sourceURL": "https://dev.epicgames.com/documentation/unreal-engine/working-with-assets-in-unreal-engine",
+        "finding": "Generic Unreal asset workflow: select a supported asset in Content Browser, right-click Asset Actions > Export; static meshes can expose FBX or OBJ export. Epic states not every asset can be exported. These generic editor instructions have not been tested against ASA structure blueprints in this task."
+      },
+      {
+        "sourceURL": "https://devkit.studiowildcard.com/guides/legacy-female-armor-conversion",
+        "finding": "Wildcard documents an armor-specific Blender .blend tool and FBX import/export workflow. It does not provide a Blender pack containing all structure or machine meshes, and is not evidence of a completed structure export."
+      }
+    ],
+    "candidateWorkflow": [
+      "On an available Windows ASA DevKit installation, locate each actual item structure blueprint and its rendered mesh components; record original package paths, variants, transforms and units. Do not treat inventory icons as models.",
+      "Attempt a small verified ordinary Stone Foundation/static-mesh export through the editor-supported Export action. Export dependent textures separately and record material slots; export moving skeletal components/animations only where the tool actually supports them.",
+      "Import the verified interchange assets into Blender, check scale/orientation/materials and geometry against the current game, then place each exact asset instance using the planner layout. Preserve a manifest mapping item ID to original package and imported object.",
+      "Bake/simplify for iPad while preserving recognizable appearance, physical bounds and collision. An authored schematic proxy must be labeled as an approximate proxy until actual game assets replace it."
+    ],
+    "unconfirmed": [
+      "Whether individual ASA blueprint/mesh export is enabled and complete in the current DevKit for every required item.",
+      "Exact game meshes/materials/collision/animation and real dimensions for the proposed base.",
+      "A current .blend containing original ASA structures or all machine items; none was supplied or found in this repository.",
+      "Whether a 44-item installation layout uses ordinary engrams, structure variants, skins or quality blueprint recipes; primary agent owns layout quantities."
+    ]
+  }
+}

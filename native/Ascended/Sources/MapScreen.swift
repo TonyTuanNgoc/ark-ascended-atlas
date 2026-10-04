@@ -5,7 +5,7 @@ struct MapScreen: View {
     @Environment(\.arkMap) private var map
     var initialFocus: String? = nil
     var initialResources = false
-    @State private var visibleLayers: Set<MapLayer> = Set(MapLayer.allCases.filter { $0 != .resource })
+    @State private var visibleLayers: Set<MapLayer> = Set([MapLayer.cave, MapLayer.obelisk])
     @State private var resourceTypes: Set<String> = []
     private var allPoints: [MapLocation] { MapLocation.all(in: map) }
     private var availableLayers: [MapLayer] { MapLayer.allCases.filter { $0 != .base || map.bases != nil } }
@@ -82,6 +82,7 @@ struct MapScreen: View {
                             Image(systemName: layer.symbol).frame(width: 22)
                             Text(layer.rawValue).font(.caption.bold())
                             Spacer(minLength: 0)
+                            Image(systemName: visibleLayers.contains(layer) ? "checkmark.circle.fill" : "circle").font(.caption)
                         }.padding(.horizontal, 8).frame(height: 40)
                             .background(visibleLayers.contains(layer) ? Color.cyan.opacity(0.16) : Color.clear, in: RoundedRectangle(cornerRadius: 8))
                     }.tint(visibleLayers.contains(layer) ? .cyan : .gray)
@@ -100,6 +101,7 @@ struct MapScreen: View {
                                 }.frame(width: 24, height: 24)
                                 Text(MapResources.label(for: type)).font(.system(size: 10, weight: .medium)).multilineTextAlignment(.leading)
                                 Spacer(minLength: 0)
+                                Image(systemName: resourceTypes.contains(type) ? "checkmark.circle.fill" : "circle").font(.system(size: 10))
                             }.padding(5).frame(minHeight: 34)
                                 .background(resourceTypes.contains(type) ? Color.cyan.opacity(0.13) : Color.clear, in: RoundedRectangle(cornerRadius: 6))
                         }.tint(resourceTypes.contains(type) ? .white : .gray).accessibilityIdentifier("resource-" + type)
@@ -223,20 +225,18 @@ final class MapScrollView: UIScrollView {
         locations = points; locationIDs = points.map(\.id); menuMemberships.removeAll()
         for point in points {
             let button = UIButton(type: .system)
-            button.bounds = CGRect(x: 0, y: 0, width: 36, height: 36)
-            let artwork = point.imageAsset.flatMap { UIImage(named: $0) }
-            button.setImage(artwork?.withRenderingMode(point.imageAsset == "Map-Obelisk" ? .alwaysTemplate : .alwaysOriginal) ?? UIImage(systemName: point.symbol), for: .normal)
+            button.bounds = CGRect(x: 0, y: 0, width: 32, height: 32)
+            let asset: String? = point.layer == .resource ? point.resourceNames.first.map { MapResources.asset(for: $0) } : point.layer == .cave || point.layer == .base ? nil : point.imageAsset
+            let artwork = asset.flatMap { UIImage(named: $0) }
+            button.setImage(artwork?.withRenderingMode(point.layer == .obelisk || point.layer == .boss ? .alwaysTemplate : .alwaysOriginal) ?? UIImage(systemName: point.symbol), for: .normal)
             button.imageView?.contentMode = .scaleAspectFit
-            if let artwork, point.farmID != nil || point.imageAsset?.hasPrefix("Entrance-") == true {
-                button.setImage(nil, for: .normal)
-                let photo = UIImageView(image: artwork)
-                photo.frame = button.bounds; photo.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-                photo.contentMode = .scaleAspectFill; photo.clipsToBounds = true
-                button.addSubview(photo)
-            }
-            button.contentEdgeInsets = point.layer == .cave ? .zero : UIEdgeInsets(top: 3, left: 3, bottom: 3, right: 3)
-            button.tintColor = point.imageAsset == "Map-Obelisk" ? point.color : .white; button.backgroundColor = artwork != nil ? UIColor.black.withAlphaComponent(0.8) : point.color
-            button.layer.cornerRadius = 18; button.clipsToBounds = true; button.layer.borderWidth = 2; button.layer.borderColor = UIColor.white.cgColor
+            button.contentEdgeInsets = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
+            button.tintColor = point.layer == .obelisk ? point.color : .white
+            button.backgroundColor = UIColor.black.withAlphaComponent(0.85)
+            button.layer.cornerRadius = 16; button.layer.borderWidth = 1.5; button.layer.borderColor = point.color.cgColor
+            let badge = UILabel(frame: CGRect(x: 21, y: -4, width: 17, height: 17))
+            badge.tag = 88; badge.font = .systemFont(ofSize: 10, weight: .bold); badge.textColor = .black; badge.backgroundColor = .white; badge.textAlignment = .center; badge.layer.cornerRadius = 8.5; badge.clipsToBounds = true; badge.isHidden = true
+            button.addSubview(badge)
             button.accessibilityIdentifier = "pin-" + point.id
             button.accessibilityLabel = point.name + ", " + point.coordinates
 
@@ -286,14 +286,20 @@ final class MapScrollView: UIScrollView {
     }
     func centerMap() {
         var labelFrames: [CGRect] = []
-        for (index, button) in markerButtons.enumerated() {
+        var occupied: [CGPoint] = []
+        let order = markerButtons.indices.sorted { locations[$0].id == focusID && locations[$1].id != focusID ? true : locations[$1].id == focusID ? false : $0 < $1 }
+        for index in order {
+            let button = markerButtons[index]
             button.center = pixelPoint(locations[index])
             button.transform = CGAffineTransform(scaleX: 1 / max(zoomScale, 0.001), y: 1 / max(zoomScale, 0.001))
             let label = markerLabels[index]
             label.center = CGPoint(x: button.center.x, y: button.center.y + 34 / max(zoomScale, 0.001))
             label.transform = button.transform
             let labelFrame = imageView.convert(label.frame, to: self)
-            label.isHidden = labelFrames.contains { $0.intersects(labelFrame.insetBy(dx: -3, dy: -2)) }
+            let center = imageView.convert(button.center, to: self)
+            button.isHidden = occupied.contains { hypot($0.x - center.x, $0.y - center.y) < 40 }
+            if !button.isHidden { occupied.append(center) }
+            label.isHidden = button.isHidden || (locations[index].id != focusID && zoomScale < minimumZoomScale * 1.6) || labelFrames.contains { $0.intersects(labelFrame.insetBy(dx: -3, dy: -2)) }
             if !label.isHidden { labelFrames.append(labelFrame) }
             let point = locations[index]
             let nearby = locations.filter {
@@ -301,6 +307,7 @@ final class MapScrollView: UIScrollView {
                 let deltaY = (pixelPoint($0).y - button.center.y) * zoomScale
                 return hypot(deltaX, deltaY) < 40
             }
+            if let badge = button.viewWithTag(88) as? UILabel { badge.text = String(nearby.count); badge.isHidden = nearby.count < 2 }
             if menuMemberships[point.id] != nearby.map(\.id) {
                 menuMemberships[point.id] = nearby.map(\.id)
                 let actionID = UIAction.Identifier("select-marker")

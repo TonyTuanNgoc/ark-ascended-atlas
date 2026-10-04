@@ -1,0 +1,2013 @@
+{
+  "checkedAt": "2026-10-04",
+  "catalogCount": 11,
+  "uniqueCreatureCount": 348,
+  "existingBefore": 158,
+  "newOriginalHeadAssets": 22,
+  "sameSpeciesAliasCount": 106,
+  "unresolvedCount": 62,
+  "records": [
+    {
+      "creatureID": "basilisk",
+      "name": "Basilisk",
+      "asset": "Dino-basilisk",
+      "sourceURL": "https://r2.wikily.gg/images/ark/icons/Empty_BasiliskHead_Icon.webp",
+      "sourceSHA256": "e6a0d6b87c197d1d10e1ed79749c4a6eedff7b16084264e6440fa0b53e1bcdd1",
+      "pngSHA256": "1af2b61e13ff2d50fbdb6e0f1c5db9f01037eecca3284c22cfccc4ca3323d3ce",
+      "pixels": [
+        256,
+        256
+      ],
+      "transparency": true,
+      "transformation": "Lossless RGBA PNG conversion; original alpha and pixel colors retained. Swift template tint supplies white.",
+      "maxRGBChannelDifference": 0,
+      "originalMonochrome": true
+    },
+    {
+      "creatureID": "bulbdog",
+      "name": "Bulbdog",
+      "asset": "Dino-bulbdog",
+      "sourceURL": "https://r2.wikily.gg/images/ark/icons/Empty_LanternPetPug_Icon.webp",
+      "sourceSHA256": "636e3de7ca25cefdcea89a0f2f5c3564c4212c384cda8075bf38ce3188fd4d86",
+      "pngSHA256": "d2c9833b2d2d267ae7bdfde56c6b3e20e037cd69b58e2f716ede9aff7a86bce4",
+      "pixels": [
+        256,
+        256
+      ],
+      "transparency": true,
+      "transformation": "Lossless RGBA PNG conversion; original alpha and pixel colors retained. Swift template tint supplies white.",
+      "maxRGBChannelDifference": 0,
+      "originalMonochrome": true
+    },
+    {
+      "creatureID": "glowtail",
+      "name": "Glowtail",
+      "asset": "Dino-glowtail",
+      "sourceURL": "https://r2.wikily.gg/images/ark/icons/Empty_LanternPetLizard_Icon.webp",
+      "sourceSHA256": "e5b4d1c05a8852d3958ee79d865ef81ea563183f7d8737b73612c0c924b3cfb0",
+      "pngSHA256": "a3ef330f82665dd2e0e23070a73ae432c2292d734913c2617c69e2c666ffb388",
+      "pixels": [
+        256,
+        256
+      ],
+      "transparency": true,
+      "transformation": "Lossless RGBA PNG conversion; original alpha and pixel colors retained. Swift template tint supplies white.",
+      "maxRGBChannelDifference": 0,
+      "originalMonochrome": true
+    },
+    {
+      "creatureID": "lamprey",
+      "name": "Lamprey",
+      "asset": "Dino-lamprey",
+      "sourceURL": "https://r2.wikily.gg/images/ark/icons/Empty_LampreyHead_Icon.webp",
+      "sourceSHA256": "c818cbb89a73061fc7feb7d5e18fba4a937e3a8bc9b0636a32d3a8905d9711fb",
+      "pngSHA256": "2bf160aaac411d497a10bfbe5708630e2fc7bad5e1186542784e1dc9b938cf48",
+      "pixels": [
+        256,
+        256
+      ],
+      "transparency": true,
+      "transformation": "Lossless RGBA PNG conversion; original alpha and pixel colors retained. Swift template tint supplies white.",
+      "maxRGBChannelDifference": 0,
+      "originalMonochrome": true
+    },
+    {
+      "creatureID": "nameless",
+      "name": "Nameless",
+      "asset": "Dino-nameless",
+      "sourceURL": "https://r2.wikily.gg/images/ark/icons/Empty_NamelessHead_Icon.webp",
+      "sourceSHA256": "3b690014f843f8c06cd1d6c776f2553b9b7a7dc1408b44e5fe3eb00a5ea31e1d",
+      "pngSHA256": "19816809f3c60b1566d33808ac616954cd7e733d8b9b195b4853292253e42104",
+      "pixels": [
+        256,
+        256
+      ],
+      "transparency": true,
+      "transformation": "Lossless RGBA PNG conversion; original alpha and pixel colors retained. Swift template tint supplies white.",
+      "maxRGBChannelDifference": 0,
+      "originalMonochrome": true
+    },
+    {
+      "creatureID": "rock-drake",
+      "name": "Rock Drake",
+      "asset": "Dino-rock-drake",
+      "sourceURL": "https://r2.wikily.gg/images/ark/icons/Empty_RockDrakeHead_Icon.webp",
+      "sourceSHA256": "5d6f366f98c5a2430c285ac57837f0df80c70bff7833993120c5207f14010490",
+      "pngSHA256": "0e29e46587d12bf631a5ab2e12cdd7812491c6f58ae51c97f62158cd3e0dba1b",
+      "pixels": [
+        256,
+        256
+      ],
+      "transparency": true,
+      "transformation": "Lossless RGBA PNG conversion; original alpha and pixel colors retained. Swift template tint supplies white.",
+      "maxRGBChannelDifference": 0,
+      "originalMonochrome": true
+    },
+    {
+      "creatureID": "roll-rat",
+      "name": "Roll Rat",
+      "asset": "Dino-roll-rat",
+      "sourceURL": "https://r2.wikily.gg/images/ark/icons/Empty_MoleRatHead_Icon.webp",
+      "sourceSHA256": "67d7bfa63e1265623a47c9d378a1a50ffab092e2372d8e5fb6acf0168298cc2b",
+      "pngSHA256": "8c95db4b91a40f3cfe773cfdb8f61398cd1496736684227e112e848152e68526",
+      "pixels": [
+        256,
+        256
+      ],
+      "transparency": true,
+      "transformation": "Lossless RGBA PNG conversion; original alpha and pixel colors retained. Swift template tint supplies white.",
+      "maxRGBChannelDifference": 0,
+      "originalMonochrome": true
+    },
+    {
+      "creatureID": "cosmo",
+      "name": "Cosmo",
+      "asset": "Dino-cosmo",
+      "sourceURL": "https://r2.wikily.gg/images/ark/icons/Empty_Cosmo_Icon.webp",
+      "sourceSHA256": "a5c18f2f81eea8e046d4ea086360e281300aa0f59345157cb2dc35918dd6bf6a",
+      "pngSHA256": "62fd71253073619300d53131591954f6101dff58083314211e31099ecab425cc",
+      "pixels": [
+        256,
+        256
+      ],
+      "transparency": true,
+      "transformation": "Lossless RGBA PNG conversion; original alpha and pixel colors retained. Swift template tint supplies white.",
+      "maxRGBChannelDifference": 0,
+      "originalMonochrome": true
+    },
+    {
+      "creatureID": "enforcer",
+      "name": "Enforcer",
+      "asset": "Dino-enforcer",
+      "sourceURL": "https://r2.wikily.gg/images/ark/icons/Empty_EnforcerHead_Icon.webp",
+      "sourceSHA256": "4fb416c0a9cbba704db1d9e36a5168894d22d6f19be11940c6bb206cbbe7b14d",
+      "pngSHA256": "0c6d7dba47672bb95c94394dfc308465cc78a0871fe263bd4146e585ae7487be",
+      "pixels": [
+        256,
+        256
+      ],
+      "transparency": true,
+      "transformation": "Lossless RGBA PNG conversion; original alpha and pixel colors retained. Swift template tint supplies white.",
+      "maxRGBChannelDifference": 0,
+      "originalMonochrome": true
+    },
+    {
+      "creatureID": "gacha",
+      "name": "Gacha",
+      "asset": "Dino-gacha",
+      "sourceURL": "https://r2.wikily.gg/images/ark/icons/Empty_GachaHead_Icon.webp",
+      "sourceSHA256": "99e77ee194d6c1ca94bb1ec6d7cfcbc0197bd5f6b0f055b5547883b385077f4e",
+      "pngSHA256": "bcbfbeda3ef56b3c45e6b499dc4681ce69b7d8cbfb7f886048e6e5260b1235c5",
+      "pixels": [
+        256,
+        256
+      ],
+      "transparency": true,
+      "transformation": "Lossless RGBA PNG conversion; original alpha and pixel colors retained. Swift template tint supplies white.",
+      "maxRGBChannelDifference": 0,
+      "originalMonochrome": true
+    },
+    {
+      "creatureID": "scout",
+      "name": "Scout",
+      "asset": "Dino-scout",
+      "sourceURL": "https://r2.wikily.gg/images/ark/icons/Empty_ScoutHead_Icon.webp",
+      "sourceSHA256": "fea385012bf46c517af79b98ecb1942bdafce32f13de39fdd3d00708a506ecda",
+      "pngSHA256": "9c4176a1fe723fb77903dd6f7cc9a3424047dd0d38ba0f4b804df6259e86a901",
+      "pixels": [
+        256,
+        256
+      ],
+      "transparency": true,
+      "transformation": "Lossless RGBA PNG conversion; original alpha and pixel colors retained. Swift template tint supplies white.",
+      "maxRGBChannelDifference": 0,
+      "originalMonochrome": true
+    },
+    {
+      "creatureID": "snow-owl",
+      "name": "Snow Owl",
+      "asset": "Dino-snow-owl",
+      "sourceURL": "https://r2.wikily.gg/images/ark/icons/Empty_SnowOwlHead_Icon.webp",
+      "sourceSHA256": "f09209797dfe7663ecdc57aae2f4a468176de407b07ca8f87ed6b5de3875dc0f",
+      "pngSHA256": "dd238a25e1e4c0ec801a3bad7b5f4ffdb810f5295defde4dfd57f1230f43f27d",
+      "pixels": [
+        256,
+        256
+      ],
+      "transparency": true,
+      "transformation": "Lossless RGBA PNG conversion; original alpha and pixel colors retained. Swift template tint supplies white.",
+      "maxRGBChannelDifference": 0,
+      "originalMonochrome": true
+    },
+    {
+      "creatureID": "phoenix",
+      "name": "Phoenix",
+      "asset": "Dino-phoenix",
+      "sourceURL": "https://r2.wikily.gg/images/ark/icons/Empty_PhoenixHead_Icon.webp",
+      "sourceSHA256": "a407f150db038c3e8e8545b970e697a6713386e03ad5735c5bad450314b14666",
+      "pngSHA256": "00ec0f6657818d9494dda90f6723a07a51dffa17d2b7eab96390a0f78f971c01",
+      "pixels": [
+        256,
+        256
+      ],
+      "transparency": true,
+      "transformation": "Lossless RGBA PNG conversion; original alpha and pixel colors retained. Swift template tint supplies white.",
+      "maxRGBChannelDifference": 0,
+      "originalMonochrome": true
+    },
+    {
+      "creatureID": "armadoggo",
+      "name": "Armadoggo",
+      "asset": "Dino-armadoggo",
+      "sourceURL": "https://r2.wikily.gg/images/ark/icons/Empty_Armadoggo_Icon.webp",
+      "sourceSHA256": "2e8e615685b06d132b6610a6ec699a879377cf0e41f425ac91b9738a0db74b77",
+      "pngSHA256": "608909e96f17b2b932895a662b958236b15ea969fe7728e6be8c2f21beed1596",
+      "pixels": [
+        256,
+        256
+      ],
+      "transparency": true,
+      "transformation": "Lossless RGBA PNG conversion; original alpha and pixel colors retained. Swift template tint supplies white.",
+      "maxRGBChannelDifference": 0,
+      "originalMonochrome": true
+    },
+    {
+      "creatureID": "oasisaur",
+      "name": "Oasisaur",
+      "asset": "Dino-oasisaur",
+      "sourceURL": "https://r2.wikily.gg/images/ark/icons/Empty_OasisaurHead_Icon.webp",
+      "sourceSHA256": "2ef9edaf02931b99f92f8ecef2199df335f39348bfab1074be26915ee02c29d0",
+      "pngSHA256": "225a395cc4cdb767f0dea6506d455af4601af216e7253a30dadae4356520f9ae",
+      "pixels": [
+        256,
+        256
+      ],
+      "transparency": true,
+      "transformation": "Lossless RGBA PNG conversion; original alpha and pixel colors retained. Swift template tint supplies white.",
+      "maxRGBChannelDifference": 0,
+      "originalMonochrome": true
+    },
+    {
+      "creatureID": "water-jug-bug",
+      "name": "Water Jug Bug",
+      "asset": "Dino-water-jug-bug",
+      "sourceURL": "https://r2.wikily.gg/images/ark/icons/Empty_JugBugHead_Icon.webp",
+      "sourceSHA256": "7b309099ad99da56584a116c895470e9fdd4d79fc92eb1efd24cff99e0e72e67",
+      "pngSHA256": "ecf2d74893f2f109b3bef5c7ee5a4cd1a0db8e1adebab6beb33881c5750a6b72",
+      "pixels": [
+        256,
+        256
+      ],
+      "transparency": true,
+      "transformation": "Lossless RGBA PNG conversion; original alpha and pixel colors retained. Swift template tint supplies white.",
+      "maxRGBChannelDifference": 0,
+      "originalMonochrome": true
+    },
+    {
+      "creatureID": "oil-jug-bug",
+      "name": "Oil Jug Bug",
+      "asset": "Dino-oil-jug-bug",
+      "sourceURL": "https://r2.wikily.gg/images/ark/icons/Empty_JugBugHead_Icon.webp",
+      "sourceSHA256": "7b309099ad99da56584a116c895470e9fdd4d79fc92eb1efd24cff99e0e72e67",
+      "pngSHA256": "ecf2d74893f2f109b3bef5c7ee5a4cd1a0db8e1adebab6beb33881c5750a6b72",
+      "pixels": [
+        256,
+        256
+      ],
+      "transparency": true,
+      "transformation": "Lossless RGBA PNG conversion; original alpha and pixel colors retained. Swift template tint supplies white.",
+      "maxRGBChannelDifference": 0,
+      "originalMonochrome": true
+    },
+    {
+      "creatureID": "ravager",
+      "name": "Ravager",
+      "asset": "Dino-ravager",
+      "sourceURL": "https://r2.wikily.gg/images/ark/icons/Empty_CaveWolfHead_Icon.webp",
+      "sourceSHA256": "ab649e95c1194e54e1602280a33fb225d8462d650db5629c6ead7a2eb1e8180d",
+      "pngSHA256": "74048c9ad20184093fd4e0001824115601706e46ef1bdc6a966f396b755f6520",
+      "pixels": [
+        256,
+        256
+      ],
+      "transparency": true,
+      "transformation": "Lossless RGBA PNG conversion; original alpha and pixel colors retained. Swift template tint supplies white.",
+      "maxRGBChannelDifference": 0,
+      "originalMonochrome": true
+    },
+    {
+      "creatureID": "gasbags",
+      "name": "Gasbags",
+      "asset": "Dino-gasbags",
+      "sourceURL": "https://r2.wikily.gg/images/ark/icons/Empty_GasbagsHead_Icon.webp",
+      "sourceSHA256": "57e60ebe6e6b0d6b32cec6f40d010786be3c6beae90247a1636f865377ee7c0d",
+      "pngSHA256": "04641401c4a39a53ba43e9366b785e0c4d1aadd5840dccd16a8ca97aa7cae87a",
+      "pixels": [
+        256,
+        256
+      ],
+      "transparency": true,
+      "transformation": "Lossless RGBA PNG conversion; original alpha and pixel colors retained. Swift template tint supplies white.",
+      "maxRGBChannelDifference": 0,
+      "originalMonochrome": true
+    },
+    {
+      "creatureID": "managarmr",
+      "name": "Managarmr",
+      "asset": "Dino-managarmr",
+      "sourceURL": "https://r2.wikily.gg/images/ark/icons/Empty_IceJumperHead_Icon.webp",
+      "sourceSHA256": "ae6d31004bfec44126708ee0664be72dc44a0ee72ecf72e12ae20ab4cbfcd7b8",
+      "pngSHA256": "fcd97a34dcc29510f9455bfc67323158bb57a9c25c9ba187f59895032075c25f",
+      "pixels": [
+        256,
+        256
+      ],
+      "transparency": true,
+      "transformation": "Lossless RGBA PNG conversion; original alpha and pixel colors retained. Swift template tint supplies white.",
+      "maxRGBChannelDifference": 0,
+      "originalMonochrome": true
+    },
+    {
+      "creatureID": "velonasaur",
+      "name": "Velonasaur",
+      "asset": "Dino-velonasaur",
+      "sourceURL": "https://r2.wikily.gg/images/ark/icons/Empty_SpindlesHead_Icon.webp",
+      "sourceSHA256": "18e8fa7578abec56daf6b71d54c3a8082273d15597c0b7dcdad4198ccf071ea7",
+      "pngSHA256": "4e975d7976e359726394fd3f71c62734b83fa6319f055669e725eaf06e269053",
+      "pixels": [
+        256,
+        256
+      ],
+      "transparency": true,
+      "transformation": "Lossless RGBA PNG conversion; original alpha and pixel colors retained. Swift template tint supplies white.",
+      "maxRGBChannelDifference": 0,
+      "originalMonochrome": true
+    },
+    {
+      "creatureID": "dreadnoughtus",
+      "name": "Dreadnoughtus",
+      "asset": "Dino-dreadnoughtus",
+      "sourceURL": "https://r2.wikily.gg/images/ark/icons/Empty_Dreadnoughtus_Icon.webp",
+      "sourceSHA256": "49be6ea2390f1ff42be953d17f9795c950078672dc5dd11492da5987523ce5e8",
+      "pngSHA256": "0c51b3916e59893a7fee712afbc9e5c0088ec0505fad21700c82129b78d88ea7",
+      "pixels": [
+        256,
+        256
+      ],
+      "transparency": true,
+      "transformation": "Lossless RGBA PNG conversion; original alpha and pixel colors retained. Swift template tint supplies white.",
+      "maxRGBChannelDifference": 0,
+      "originalMonochrome": true
+    }
+  ],
+  "aliases": [
+    {
+      "creatureID": "x-dunkleosteus",
+      "name": "X-Dunkleosteus",
+      "parentSpeciesID": "dunkleosteus",
+      "asset": "Dino-dunkleosteus",
+      "variantPrefixes": [
+        "x"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/genesis/",
+      "rosterSource": "Wikily GenesisOcean"
+    },
+    {
+      "creatureID": "x-helicoprion",
+      "name": "X-Helicoprion",
+      "parentSpeciesID": "helicoprion",
+      "asset": "Dino-helicoprion",
+      "variantPrefixes": [
+        "x"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/genesis/",
+      "rosterSource": "Wikily GenesisOcean"
+    },
+    {
+      "creatureID": "x-megalodon",
+      "name": "X-Megalodon",
+      "parentSpeciesID": "megalodon",
+      "asset": "Dino-megalodon",
+      "variantPrefixes": [
+        "x"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/genesis/",
+      "rosterSource": "Wikily GenesisOcean"
+    },
+    {
+      "creatureID": "x-mosasaurus",
+      "name": "X-Mosasaurus",
+      "parentSpeciesID": "mosasaurus",
+      "asset": "Dino-mosasaurus",
+      "variantPrefixes": [
+        "x"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/genesis/",
+      "rosterSource": "Wikily GenesisOcean"
+    },
+    {
+      "creatureID": "x-xiphactinus",
+      "name": "X-Xiphactinus",
+      "parentSpeciesID": "xiphactinus",
+      "asset": "Dino-xiphactinus",
+      "variantPrefixes": [
+        "x"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/genesis/",
+      "rosterSource": "Wikily GenesisOcean"
+    },
+    {
+      "creatureID": "aberrant-achatina",
+      "name": "Aberrant Achatina",
+      "parentSpeciesID": "achatina",
+      "asset": "Dino-achatina",
+      "variantPrefixes": [
+        "aberrant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/aberration/",
+      "rosterSource": "Wikily Aberration"
+    },
+    {
+      "creatureID": "aberrant-anglerfish",
+      "name": "Aberrant Anglerfish",
+      "parentSpeciesID": "anglerfish",
+      "asset": "Dino-anglerfish",
+      "variantPrefixes": [
+        "aberrant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/aberration/",
+      "rosterSource": "Wikily Aberration"
+    },
+    {
+      "creatureID": "aberrant-ankylosaurus",
+      "name": "Aberrant Ankylosaurus",
+      "parentSpeciesID": "ankylosaurus",
+      "asset": "Dino-ankylosaurus",
+      "variantPrefixes": [
+        "aberrant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/aberration/",
+      "rosterSource": "Wikily Aberration"
+    },
+    {
+      "creatureID": "aberrant-araneo",
+      "name": "Aberrant Araneo",
+      "parentSpeciesID": "araneo",
+      "asset": "Dino-araneo",
+      "variantPrefixes": [
+        "aberrant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/aberration/",
+      "rosterSource": "Wikily Aberration"
+    },
+    {
+      "creatureID": "aberrant-arthropluera",
+      "name": "Aberrant Arthropluera",
+      "parentSpeciesID": "arthropluera",
+      "asset": "Dino-arthropluera",
+      "variantPrefixes": [
+        "aberrant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/aberration/",
+      "rosterSource": "Wikily Aberration"
+    },
+    {
+      "creatureID": "aberrant-baryonyx",
+      "name": "Aberrant Baryonyx",
+      "parentSpeciesID": "baryonyx",
+      "asset": "Dino-baryonyx",
+      "variantPrefixes": [
+        "aberrant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/aberration/",
+      "rosterSource": "Wikily Aberration"
+    },
+    {
+      "creatureID": "aberrant-beelzebufo",
+      "name": "Aberrant Beelzebufo",
+      "parentSpeciesID": "beelzebufo",
+      "asset": "Dino-beelzebufo",
+      "variantPrefixes": [
+        "aberrant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/aberration/",
+      "rosterSource": "Wikily Aberration"
+    },
+    {
+      "creatureID": "aberrant-carbonemys",
+      "name": "Aberrant Carbonemys",
+      "parentSpeciesID": "carbonemys",
+      "asset": "Dino-carbonemys",
+      "variantPrefixes": [
+        "aberrant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/aberration/",
+      "rosterSource": "Wikily Aberration"
+    },
+    {
+      "creatureID": "aberrant-carnotaurus",
+      "name": "Aberrant Carnotaurus",
+      "parentSpeciesID": "carnotaurus",
+      "asset": "Dino-carnotaurus",
+      "variantPrefixes": [
+        "aberrant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/aberration/",
+      "rosterSource": "Wikily Aberration"
+    },
+    {
+      "creatureID": "aberrant-cnidaria",
+      "name": "Aberrant Cnidaria",
+      "parentSpeciesID": "cnidaria",
+      "asset": "Dino-cnidaria",
+      "variantPrefixes": [
+        "aberrant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/aberration/",
+      "rosterSource": "Wikily Aberration"
+    },
+    {
+      "creatureID": "aberrant-coelacanth",
+      "name": "Aberrant Coelacanth",
+      "parentSpeciesID": "coelacanth",
+      "asset": "Dino-coelacanth",
+      "variantPrefixes": [
+        "aberrant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/aberration/",
+      "rosterSource": "Wikily Aberration"
+    },
+    {
+      "creatureID": "aberrant-concavenator",
+      "name": "Aberrant Concavenator",
+      "parentSpeciesID": "concavenator",
+      "asset": "Dino-concavenator",
+      "variantPrefixes": [
+        "aberrant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/aberration/",
+      "rosterSource": "Wikily Aberration"
+    },
+    {
+      "creatureID": "aberrant-dimetrodon",
+      "name": "Aberrant Dimetrodon",
+      "parentSpeciesID": "dimetrodon",
+      "asset": "Dino-dimetrodon",
+      "variantPrefixes": [
+        "aberrant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/aberration/",
+      "rosterSource": "Wikily Aberration"
+    },
+    {
+      "creatureID": "aberrant-dimorphodon",
+      "name": "Aberrant Dimorphodon",
+      "parentSpeciesID": "dimorphodon",
+      "asset": "Dino-dimorphodon",
+      "variantPrefixes": [
+        "aberrant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/aberration/",
+      "rosterSource": "Wikily Aberration"
+    },
+    {
+      "creatureID": "aberrant-diplocaulus",
+      "name": "Aberrant Diplocaulus",
+      "parentSpeciesID": "diplocaulus",
+      "asset": "Dino-diplocaulus",
+      "variantPrefixes": [
+        "aberrant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/aberration/",
+      "rosterSource": "Wikily Aberration"
+    },
+    {
+      "creatureID": "aberrant-diplodocus",
+      "name": "Aberrant Diplodocus",
+      "parentSpeciesID": "diplodocus",
+      "asset": "Dino-diplodocus",
+      "variantPrefixes": [
+        "aberrant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/aberration/",
+      "rosterSource": "Wikily Aberration"
+    },
+    {
+      "creatureID": "aberrant-dire-bear",
+      "name": "Aberrant Dire Bear",
+      "parentSpeciesID": "dire-bear",
+      "asset": "Dino-dire-bear",
+      "variantPrefixes": [
+        "aberrant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/aberration/",
+      "rosterSource": "Wikily Aberration"
+    },
+    {
+      "creatureID": "aberrant-doedicurus",
+      "name": "Aberrant Doedicurus",
+      "parentSpeciesID": "doedicurus",
+      "asset": "Dino-doedicurus",
+      "variantPrefixes": [
+        "aberrant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/aberration/",
+      "rosterSource": "Wikily Aberration"
+    },
+    {
+      "creatureID": "aberrant-dung-beetle",
+      "name": "Aberrant Dung Beetle",
+      "parentSpeciesID": "dung-beetle",
+      "asset": "Dino-dung-beetle",
+      "variantPrefixes": [
+        "aberrant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/aberration/",
+      "rosterSource": "Wikily Aberration"
+    },
+    {
+      "creatureID": "aberrant-electrophorus",
+      "name": "Aberrant Electrophorus",
+      "parentSpeciesID": "electrophorus",
+      "asset": "Dino-electrophorus",
+      "variantPrefixes": [
+        "aberrant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/aberration/",
+      "rosterSource": "Wikily Aberration"
+    },
+    {
+      "creatureID": "aberrant-equus",
+      "name": "Aberrant Equus",
+      "parentSpeciesID": "equus",
+      "asset": "Dino-equus",
+      "variantPrefixes": [
+        "aberrant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/aberration/",
+      "rosterSource": "Wikily Aberration"
+    },
+    {
+      "creatureID": "aberrant-fasolasuchus",
+      "name": "Aberrant Fasolasuchus",
+      "parentSpeciesID": "fasolasuchus",
+      "asset": "Dino-fasolasuchus",
+      "variantPrefixes": [
+        "aberrant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/aberration/",
+      "rosterSource": "Wikily Aberration"
+    },
+    {
+      "creatureID": "aberrant-gigantopithecus",
+      "name": "Aberrant Gigantopithecus",
+      "parentSpeciesID": "gigantopithecus",
+      "asset": "Dino-gigantopithecus",
+      "variantPrefixes": [
+        "aberrant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/aberration/",
+      "rosterSource": "Wikily Aberration"
+    },
+    {
+      "creatureID": "aberrant-gigantoraptor",
+      "name": "Aberrant Gigantoraptor",
+      "parentSpeciesID": "gigantoraptor",
+      "asset": "Dino-gigantoraptor",
+      "variantPrefixes": [
+        "aberrant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/aberration/",
+      "rosterSource": "Wikily Aberration"
+    },
+    {
+      "creatureID": "aberrant-iguanodon",
+      "name": "Aberrant Iguanodon",
+      "parentSpeciesID": "iguanodon",
+      "asset": "Dino-iguanodon",
+      "variantPrefixes": [
+        "aberrant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/aberration/",
+      "rosterSource": "Wikily Aberration"
+    },
+    {
+      "creatureID": "aberrant-lystrosaurus",
+      "name": "Aberrant Lystrosaurus",
+      "parentSpeciesID": "lystrosaurus",
+      "asset": "Dino-lystrosaurus",
+      "variantPrefixes": [
+        "aberrant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/aberration/",
+      "rosterSource": "Wikily Aberration"
+    },
+    {
+      "creatureID": "aberrant-manta",
+      "name": "Aberrant Manta",
+      "parentSpeciesID": "manta",
+      "asset": "Dino-manta",
+      "variantPrefixes": [
+        "aberrant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/aberration/",
+      "rosterSource": "Wikily Aberration"
+    },
+    {
+      "creatureID": "aberrant-megalosaurus",
+      "name": "Aberrant Megalosaurus",
+      "parentSpeciesID": "megalosaurus",
+      "asset": "Dino-megalosaurus",
+      "variantPrefixes": [
+        "aberrant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/aberration/",
+      "rosterSource": "Wikily Aberration"
+    },
+    {
+      "creatureID": "aberrant-meganeura",
+      "name": "Aberrant Meganeura",
+      "parentSpeciesID": "meganeura",
+      "asset": "Dino-meganeura",
+      "variantPrefixes": [
+        "aberrant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/aberration/",
+      "rosterSource": "Wikily Aberration"
+    },
+    {
+      "creatureID": "aberrant-moschops",
+      "name": "Aberrant Moschops",
+      "parentSpeciesID": "moschops",
+      "asset": "Dino-moschops",
+      "variantPrefixes": [
+        "aberrant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/aberration/",
+      "rosterSource": "Wikily Aberration"
+    },
+    {
+      "creatureID": "aberrant-otter",
+      "name": "Aberrant Otter",
+      "parentSpeciesID": "otter",
+      "asset": "Dino-otter",
+      "variantPrefixes": [
+        "aberrant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/aberration/",
+      "rosterSource": "Wikily Aberration"
+    },
+    {
+      "creatureID": "aberrant-oviraptor",
+      "name": "Aberrant Oviraptor",
+      "parentSpeciesID": "oviraptor",
+      "asset": "Dino-oviraptor",
+      "variantPrefixes": [
+        "aberrant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/aberration/",
+      "rosterSource": "Wikily Aberration"
+    },
+    {
+      "creatureID": "aberrant-ovis",
+      "name": "Aberrant Ovis",
+      "parentSpeciesID": "ovis",
+      "asset": "Dino-ovis",
+      "variantPrefixes": [
+        "aberrant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/aberration/",
+      "rosterSource": "Wikily Aberration"
+    },
+    {
+      "creatureID": "aberrant-paraceratherium",
+      "name": "Aberrant Paraceratherium",
+      "parentSpeciesID": "paraceratherium",
+      "asset": "Dino-paraceratherium",
+      "variantPrefixes": [
+        "aberrant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/aberration/",
+      "rosterSource": "Wikily Aberration"
+    },
+    {
+      "creatureID": "aberrant-parasaur",
+      "name": "Aberrant Parasaur",
+      "parentSpeciesID": "parasaur",
+      "asset": "Dino-parasaur",
+      "variantPrefixes": [
+        "aberrant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/aberration/",
+      "rosterSource": "Wikily Aberration"
+    },
+    {
+      "creatureID": "aberrant-piranha",
+      "name": "Aberrant Piranha",
+      "parentSpeciesID": "piranha",
+      "asset": "Dino-piranha",
+      "variantPrefixes": [
+        "aberrant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/aberration/",
+      "rosterSource": "Wikily Aberration"
+    },
+    {
+      "creatureID": "aberrant-pulmonoscorpius",
+      "name": "Aberrant Pulmonoscorpius",
+      "parentSpeciesID": "pulmonoscorpius",
+      "asset": "Dino-pulmonoscorpius",
+      "variantPrefixes": [
+        "aberrant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/aberration/",
+      "rosterSource": "Wikily Aberration"
+    },
+    {
+      "creatureID": "aberrant-purlovia",
+      "name": "Aberrant Purlovia",
+      "parentSpeciesID": "purlovia",
+      "asset": "Dino-purlovia",
+      "variantPrefixes": [
+        "aberrant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/aberration/",
+      "rosterSource": "Wikily Aberration"
+    },
+    {
+      "creatureID": "aberrant-raptor",
+      "name": "Aberrant Raptor",
+      "parentSpeciesID": "raptor",
+      "asset": "Dino-raptor",
+      "variantPrefixes": [
+        "aberrant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/aberration/",
+      "rosterSource": "Wikily Aberration"
+    },
+    {
+      "creatureID": "aberrant-salmon",
+      "name": "Aberrant Salmon",
+      "parentSpeciesID": "sabertooth-salmon",
+      "asset": "Dino-sabertooth-salmon",
+      "variantPrefixes": [
+        "aberrant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/aberration/",
+      "rosterSource": "Wikily Aberration"
+    },
+    {
+      "creatureID": "aberrant-sarco",
+      "name": "Aberrant Sarco",
+      "parentSpeciesID": "sarco",
+      "asset": "Dino-sarco",
+      "variantPrefixes": [
+        "aberrant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/aberration/",
+      "rosterSource": "Wikily Aberration"
+    },
+    {
+      "creatureID": "aberrant-spino",
+      "name": "Aberrant Spino",
+      "parentSpeciesID": "spino",
+      "asset": "Dino-spino",
+      "variantPrefixes": [
+        "aberrant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/aberration/",
+      "rosterSource": "Wikily Aberration"
+    },
+    {
+      "creatureID": "aberrant-stegosaurus",
+      "name": "Aberrant Stegosaurus",
+      "parentSpeciesID": "stegosaurus",
+      "asset": "Dino-stegosaurus",
+      "variantPrefixes": [
+        "aberrant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/aberration/",
+      "rosterSource": "Wikily Aberration"
+    },
+    {
+      "creatureID": "aberrant-titanoboa",
+      "name": "Aberrant Titanoboa",
+      "parentSpeciesID": "titanoboa",
+      "asset": "Dino-titanoboa",
+      "variantPrefixes": [
+        "aberrant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/aberration/",
+      "rosterSource": "Wikily Aberration"
+    },
+    {
+      "creatureID": "aberrant-triceratops",
+      "name": "Aberrant Triceratops",
+      "parentSpeciesID": "triceratops",
+      "asset": "Dino-triceratops",
+      "variantPrefixes": [
+        "aberrant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/aberration/",
+      "rosterSource": "Wikily Aberration"
+    },
+    {
+      "creatureID": "aberrant-trilobite",
+      "name": "Aberrant Trilobite",
+      "parentSpeciesID": "trilobite",
+      "asset": "Dino-trilobite",
+      "variantPrefixes": [
+        "aberrant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/aberration/",
+      "rosterSource": "Wikily Aberration"
+    },
+    {
+      "creatureID": "corrupted-arthropluera",
+      "name": "Corrupted Arthropluera",
+      "parentSpeciesID": "arthropluera",
+      "asset": "Dino-arthropluera",
+      "variantPrefixes": [
+        "corrupted"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/extinction/",
+      "rosterSource": "Wikily Extinction"
+    },
+    {
+      "creatureID": "corrupted-carnotaurus",
+      "name": "Corrupted Carnotaurus",
+      "parentSpeciesID": "carnotaurus",
+      "asset": "Dino-carnotaurus",
+      "variantPrefixes": [
+        "corrupted"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/extinction/",
+      "rosterSource": "Wikily Extinction"
+    },
+    {
+      "creatureID": "corrupted-chalicotherium",
+      "name": "Corrupted Chalicotherium",
+      "parentSpeciesID": "chalicotherium",
+      "asset": "Dino-chalicotherium",
+      "variantPrefixes": [
+        "corrupted"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/extinction/",
+      "rosterSource": "Wikily Extinction"
+    },
+    {
+      "creatureID": "corrupted-dilophosaur",
+      "name": "Corrupted Dilophosaur",
+      "parentSpeciesID": "dilophosaur",
+      "asset": "Dino-dilophosaur",
+      "variantPrefixes": [
+        "corrupted"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/extinction/",
+      "rosterSource": "Wikily Extinction"
+    },
+    {
+      "creatureID": "corrupted-giganotosaurus",
+      "name": "Corrupted Giganotosaurus",
+      "parentSpeciesID": "giganotosaurus",
+      "asset": "Dino-giganotosaurus",
+      "variantPrefixes": [
+        "corrupted"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/extinction/",
+      "rosterSource": "Wikily Extinction"
+    },
+    {
+      "creatureID": "corrupted-paraceratherium",
+      "name": "Corrupted Paraceratherium",
+      "parentSpeciesID": "paraceratherium",
+      "asset": "Dino-paraceratherium",
+      "variantPrefixes": [
+        "corrupted"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/extinction/",
+      "rosterSource": "Wikily Extinction"
+    },
+    {
+      "creatureID": "corrupted-pteranodon",
+      "name": "Corrupted Pteranodon",
+      "parentSpeciesID": "pteranodon",
+      "asset": "Dino-pteranodon",
+      "variantPrefixes": [
+        "corrupted"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/extinction/",
+      "rosterSource": "Wikily Extinction"
+    },
+    {
+      "creatureID": "corrupted-raptor",
+      "name": "Corrupted Raptor",
+      "parentSpeciesID": "raptor",
+      "asset": "Dino-raptor",
+      "variantPrefixes": [
+        "corrupted"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/extinction/",
+      "rosterSource": "Wikily Extinction"
+    },
+    {
+      "creatureID": "corrupted-rex",
+      "name": "Corrupted Rex",
+      "parentSpeciesID": "rex",
+      "asset": "Dino-rex",
+      "variantPrefixes": [
+        "corrupted"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/extinction/",
+      "rosterSource": "Wikily Extinction"
+    },
+    {
+      "creatureID": "corrupted-rock-drake",
+      "name": "Corrupted Rock Drake",
+      "parentSpeciesID": "rock-drake",
+      "asset": "Dino-rock-drake",
+      "variantPrefixes": [
+        "corrupted"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/extinction/",
+      "rosterSource": "Wikily Extinction"
+    },
+    {
+      "creatureID": "corrupted-spino",
+      "name": "Corrupted Spino",
+      "parentSpeciesID": "spino",
+      "asset": "Dino-spino",
+      "variantPrefixes": [
+        "corrupted"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/extinction/",
+      "rosterSource": "Wikily Extinction"
+    },
+    {
+      "creatureID": "corrupted-stegosaurus",
+      "name": "Corrupted Stegosaurus",
+      "parentSpeciesID": "stegosaurus",
+      "asset": "Dino-stegosaurus",
+      "variantPrefixes": [
+        "corrupted"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/extinction/",
+      "rosterSource": "Wikily Extinction"
+    },
+    {
+      "creatureID": "corrupted-triceratops",
+      "name": "Corrupted Triceratops",
+      "parentSpeciesID": "triceratops",
+      "asset": "Dino-triceratops",
+      "variantPrefixes": [
+        "corrupted"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/extinction/",
+      "rosterSource": "Wikily Extinction"
+    },
+    {
+      "creatureID": "tek-parasaur",
+      "name": "Tek Parasaur",
+      "parentSpeciesID": "parasaur",
+      "asset": "Dino-parasaur",
+      "variantPrefixes": [
+        "tek"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/genesis/",
+      "rosterSource": "Wikily Genesis"
+    },
+    {
+      "creatureID": "tek-raptor",
+      "name": "Tek Raptor",
+      "parentSpeciesID": "raptor",
+      "asset": "Dino-raptor",
+      "variantPrefixes": [
+        "tek"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/genesis/",
+      "rosterSource": "Wikily Genesis"
+    },
+    {
+      "creatureID": "tek-rex",
+      "name": "Tek Rex",
+      "parentSpeciesID": "rex",
+      "asset": "Dino-rex",
+      "variantPrefixes": [
+        "tek"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/genesis/",
+      "rosterSource": "Wikily Genesis"
+    },
+    {
+      "creatureID": "tek-stegosaurus",
+      "name": "Tek Stegosaurus",
+      "parentSpeciesID": "stegosaurus",
+      "asset": "Dino-stegosaurus",
+      "variantPrefixes": [
+        "tek"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/genesis/",
+      "rosterSource": "Wikily Genesis"
+    },
+    {
+      "creatureID": "tek-triceratops",
+      "name": "Tek Triceratops",
+      "parentSpeciesID": "triceratops",
+      "asset": "Dino-triceratops",
+      "variantPrefixes": [
+        "tek"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/genesis/",
+      "rosterSource": "Wikily Genesis"
+    },
+    {
+      "creatureID": "x-acrocanthosaurus",
+      "name": "X-Acrocanthosaurus",
+      "parentSpeciesID": "acrocanthosaurus",
+      "asset": "Dino-acrocanthosaurus",
+      "variantPrefixes": [
+        "x"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/genesis/",
+      "rosterSource": "Wikily Genesis"
+    },
+    {
+      "creatureID": "x-allosaurus",
+      "name": "X-Allosaurus",
+      "parentSpeciesID": "allosaurus",
+      "asset": "Dino-allosaurus",
+      "variantPrefixes": [
+        "x"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/genesis/",
+      "rosterSource": "Wikily Genesis"
+    },
+    {
+      "creatureID": "x-ankylosaurus",
+      "name": "X-Ankylosaurus",
+      "parentSpeciesID": "ankylosaurus",
+      "asset": "Dino-ankylosaurus",
+      "variantPrefixes": [
+        "x"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/genesis/",
+      "rosterSource": "Wikily Genesis"
+    },
+    {
+      "creatureID": "x-argentavis",
+      "name": "X-Argentavis",
+      "parentSpeciesID": "argentavis",
+      "asset": "Dino-argentavis",
+      "variantPrefixes": [
+        "x"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/genesis/",
+      "rosterSource": "Wikily Genesis"
+    },
+    {
+      "creatureID": "x-concavenator",
+      "name": "X-Concavenator",
+      "parentSpeciesID": "concavenator",
+      "asset": "Dino-concavenator",
+      "variantPrefixes": [
+        "x"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/genesis/",
+      "rosterSource": "Wikily Genesis"
+    },
+    {
+      "creatureID": "x-cryolophosaurus",
+      "name": "X-Cryolophosaurus",
+      "parentSpeciesID": "cryolophosaurus",
+      "asset": "Dino-cryolophosaurus",
+      "variantPrefixes": [
+        "x"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/genesis/",
+      "rosterSource": "Wikily Genesis"
+    },
+    {
+      "creatureID": "x-deinosuchus",
+      "name": "X-Deinosuchus",
+      "parentSpeciesID": "deinosuchus",
+      "asset": "Dino-deinosuchus",
+      "variantPrefixes": [
+        "x"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/genesis/",
+      "rosterSource": "Wikily Genesis"
+    },
+    {
+      "creatureID": "x-otter",
+      "name": "X-Otter",
+      "parentSpeciesID": "otter",
+      "asset": "Dino-otter",
+      "variantPrefixes": [
+        "x"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/genesis/",
+      "rosterSource": "Wikily Genesis"
+    },
+    {
+      "creatureID": "x-paraceratherium",
+      "name": "X-Paraceratherium",
+      "parentSpeciesID": "paraceratherium",
+      "asset": "Dino-paraceratherium",
+      "variantPrefixes": [
+        "x"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/genesis/",
+      "rosterSource": "Wikily Genesis"
+    },
+    {
+      "creatureID": "x-parasaur",
+      "name": "X-Parasaur",
+      "parentSpeciesID": "parasaur",
+      "asset": "Dino-parasaur",
+      "variantPrefixes": [
+        "x"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/genesis/",
+      "rosterSource": "Wikily Genesis"
+    },
+    {
+      "creatureID": "x-raptor",
+      "name": "X-Raptor",
+      "parentSpeciesID": "raptor",
+      "asset": "Dino-raptor",
+      "variantPrefixes": [
+        "x"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/genesis/",
+      "rosterSource": "Wikily Genesis"
+    },
+    {
+      "creatureID": "x-rex",
+      "name": "X-Rex",
+      "parentSpeciesID": "rex",
+      "asset": "Dino-rex",
+      "variantPrefixes": [
+        "x"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/genesis/",
+      "rosterSource": "Wikily Genesis"
+    },
+    {
+      "creatureID": "x-rock-elemental",
+      "name": "X-Rock Elemental",
+      "parentSpeciesID": "rock-elemental",
+      "asset": "Dino-rock-elemental",
+      "variantPrefixes": [
+        "x"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/genesis/",
+      "rosterSource": "Wikily Genesis"
+    },
+    {
+      "creatureID": "x-sabertooth",
+      "name": "X-Sabertooth",
+      "parentSpeciesID": "sabertooth",
+      "asset": "Dino-sabertooth",
+      "variantPrefixes": [
+        "x"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/genesis/",
+      "rosterSource": "Wikily Genesis"
+    },
+    {
+      "creatureID": "x-sabertooth-salmon",
+      "name": "X-Sabertooth Salmon",
+      "parentSpeciesID": "sabertooth-salmon",
+      "asset": "Dino-sabertooth-salmon",
+      "variantPrefixes": [
+        "x"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/genesis/",
+      "rosterSource": "Wikily Genesis"
+    },
+    {
+      "creatureID": "x-spino",
+      "name": "X-Spino",
+      "parentSpeciesID": "spino",
+      "asset": "Dino-spino",
+      "variantPrefixes": [
+        "x"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/genesis/",
+      "rosterSource": "Wikily Genesis"
+    },
+    {
+      "creatureID": "x-tapejara",
+      "name": "X-Tapejara",
+      "parentSpeciesID": "tapejara",
+      "asset": "Dino-tapejara",
+      "variantPrefixes": [
+        "x"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/genesis/",
+      "rosterSource": "Wikily Genesis"
+    },
+    {
+      "creatureID": "x-triceratops",
+      "name": "X-Triceratops",
+      "parentSpeciesID": "triceratops",
+      "asset": "Dino-triceratops",
+      "variantPrefixes": [
+        "x"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/genesis/",
+      "rosterSource": "Wikily Genesis"
+    },
+    {
+      "creatureID": "x-woolly-rhino",
+      "name": "X-Woolly Rhino",
+      "parentSpeciesID": "woolly-rhino",
+      "asset": "Dino-woolly-rhino",
+      "variantPrefixes": [
+        "x"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/genesis/",
+      "rosterSource": "Wikily Genesis"
+    },
+    {
+      "creatureID": "x-yutyrannus",
+      "name": "X-Yutyrannus",
+      "parentSpeciesID": "yutyrannus",
+      "asset": "Dino-yutyrannus",
+      "variantPrefixes": [
+        "x"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/genesis/",
+      "rosterSource": "Wikily Genesis"
+    },
+    {
+      "creatureID": "revenant-brontosaurus",
+      "name": "Revenant Brontosaurus",
+      "parentSpeciesID": "brontosaurus",
+      "asset": "Dino-brontosaurus",
+      "variantPrefixes": [
+        "revenant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/lost-colony/",
+      "rosterSource": "Wikily LostColony"
+    },
+    {
+      "creatureID": "revenant-carnotaurus",
+      "name": "Revenant Carnotaurus",
+      "parentSpeciesID": "carnotaurus",
+      "asset": "Dino-carnotaurus",
+      "variantPrefixes": [
+        "revenant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/lost-colony/",
+      "rosterSource": "Wikily LostColony"
+    },
+    {
+      "creatureID": "revenant-dilophosaur",
+      "name": "Revenant Dilophosaur",
+      "parentSpeciesID": "dilophosaur",
+      "asset": "Dino-dilophosaur",
+      "variantPrefixes": [
+        "revenant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/lost-colony/",
+      "rosterSource": "Wikily LostColony"
+    },
+    {
+      "creatureID": "revenant-dimorphodon",
+      "name": "Revenant Dimorphodon",
+      "parentSpeciesID": "dimorphodon",
+      "asset": "Dino-dimorphodon",
+      "variantPrefixes": [
+        "revenant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/lost-colony/",
+      "rosterSource": "Wikily LostColony"
+    },
+    {
+      "creatureID": "revenant-direwolf",
+      "name": "Revenant Direwolf",
+      "parentSpeciesID": "direwolf",
+      "asset": "Dino-direwolf",
+      "variantPrefixes": [
+        "revenant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/lost-colony/",
+      "rosterSource": "Wikily LostColony"
+    },
+    {
+      "creatureID": "revenant-iguanodon",
+      "name": "Revenant Iguanodon",
+      "parentSpeciesID": "iguanodon",
+      "asset": "Dino-iguanodon",
+      "variantPrefixes": [
+        "revenant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/lost-colony/",
+      "rosterSource": "Wikily LostColony"
+    },
+    {
+      "creatureID": "revenant-mammoth",
+      "name": "Revenant Mammoth",
+      "parentSpeciesID": "mammoth",
+      "asset": "Dino-mammoth",
+      "variantPrefixes": [
+        "revenant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/lost-colony/",
+      "rosterSource": "Wikily LostColony"
+    },
+    {
+      "creatureID": "revenant-parasaur",
+      "name": "Revenant Parasaur",
+      "parentSpeciesID": "parasaur",
+      "asset": "Dino-parasaur",
+      "variantPrefixes": [
+        "revenant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/lost-colony/",
+      "rosterSource": "Wikily LostColony"
+    },
+    {
+      "creatureID": "revenant-pteranodon",
+      "name": "Revenant Pteranodon",
+      "parentSpeciesID": "pteranodon",
+      "asset": "Dino-pteranodon",
+      "variantPrefixes": [
+        "revenant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/lost-colony/",
+      "rosterSource": "Wikily LostColony"
+    },
+    {
+      "creatureID": "revenant-raptor",
+      "name": "Revenant Raptor",
+      "parentSpeciesID": "raptor",
+      "asset": "Dino-raptor",
+      "variantPrefixes": [
+        "revenant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/lost-colony/",
+      "rosterSource": "Wikily LostColony"
+    },
+    {
+      "creatureID": "revenant-rex",
+      "name": "Revenant Rex",
+      "parentSpeciesID": "rex",
+      "asset": "Dino-rex",
+      "variantPrefixes": [
+        "revenant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/lost-colony/",
+      "rosterSource": "Wikily LostColony"
+    },
+    {
+      "creatureID": "revenant-sabertooth",
+      "name": "Revenant Sabertooth",
+      "parentSpeciesID": "sabertooth",
+      "asset": "Dino-sabertooth",
+      "variantPrefixes": [
+        "revenant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/lost-colony/",
+      "rosterSource": "Wikily LostColony"
+    },
+    {
+      "creatureID": "revenant-spino",
+      "name": "Revenant Spino",
+      "parentSpeciesID": "spino",
+      "asset": "Dino-spino",
+      "variantPrefixes": [
+        "revenant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/lost-colony/",
+      "rosterSource": "Wikily LostColony"
+    },
+    {
+      "creatureID": "revenant-stegosaurus",
+      "name": "Revenant Stegosaurus",
+      "parentSpeciesID": "stegosaurus",
+      "asset": "Dino-stegosaurus",
+      "variantPrefixes": [
+        "revenant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/lost-colony/",
+      "rosterSource": "Wikily LostColony"
+    },
+    {
+      "creatureID": "revenant-therizinosaur",
+      "name": "Revenant Therizinosaur",
+      "parentSpeciesID": "therizinosaur",
+      "asset": "Dino-therizinosaur",
+      "variantPrefixes": [
+        "revenant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/lost-colony/",
+      "rosterSource": "Wikily LostColony"
+    },
+    {
+      "creatureID": "revenant-troodon",
+      "name": "Revenant Troodon",
+      "parentSpeciesID": "troodon",
+      "asset": "Dino-troodon",
+      "variantPrefixes": [
+        "revenant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/lost-colony/",
+      "rosterSource": "Wikily LostColony"
+    },
+    {
+      "creatureID": "revenant-yutyrannus",
+      "name": "Revenant Yutyrannus",
+      "parentSpeciesID": "yutyrannus",
+      "asset": "Dino-yutyrannus",
+      "variantPrefixes": [
+        "revenant"
+      ],
+      "basis": "Exact parent species remains after explicit game variant prefix removal; aliases mosasaur/mosasaurus, salmon/Sabertooth Salmon, T-Rex/Rex normalize game names only.",
+      "rosterSourceURL": "https://wikily.gg/ark-survival-ascended/maps/lost-colony/",
+      "rosterSource": "Wikily LostColony"
+    }
+  ],
+  "missing": [
+    {
+      "creatureID": "iceworm-male",
+      "name": "Iceworm Male",
+      "iconURL": "https://ark.wiki.gg/images/Iceworm_Male.png",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "light-bug",
+      "name": "Glowbug",
+      "iconURL": "https://ark.wiki.gg/images/Glowbug.png",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "titanomyrma-drone",
+      "name": "Titanomyrma Drone",
+      "iconURL": "https://ark.wiki.gg/images/Titanomyrma_Drone.png",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "titanomyrma-soldier",
+      "name": "Titanomyrma Soldier",
+      "iconURL": "https://ark.wiki.gg/images/Titanomyrma_Soldier.png",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "unicorn",
+      "name": "Unicorn",
+      "iconURL": "https://ark.wiki.gg/images/Unicorn.png",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "megachelon",
+      "name": "Megachelon",
+      "iconURL": "",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "megaraptor",
+      "name": "Megaraptor",
+      "iconURL": "",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "palaeoctopus",
+      "name": "Palaeoctopus",
+      "iconURL": "",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "parakeet-fish-school",
+      "name": "Parakeet Fish School",
+      "iconURL": "",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "parrot",
+      "name": "Parrot",
+      "iconURL": "",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "pirate-brigantine",
+      "name": "Pirate Brigantine",
+      "iconURL": "",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "pirate-fleet-admiral-brigantine",
+      "name": "Pirate Fleet Admiral Brigantine",
+      "iconURL": "",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "pirate-sloop",
+      "name": "Pirate Sloop",
+      "iconURL": "",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "tidepup",
+      "name": "Tidepup",
+      "iconURL": "",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "reaper-queen",
+      "name": "Reaper Queen",
+      "iconURL": "",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "seeker",
+      "name": "Seeker",
+      "iconURL": "",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "surface-reaper-king",
+      "name": "Surface Reaper King",
+      "iconURL": "",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "yi-ling",
+      "name": "Yi Ling",
+      "iconURL": "",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "corrupted-reaper-king",
+      "name": "Corrupted Reaper King",
+      "iconURL": "",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "corrupted-wyvern",
+      "name": "Corrupted Wyvern",
+      "iconURL": "",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "defense-unit",
+      "name": "Defense Unit",
+      "iconURL": "",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "king-titan",
+      "name": "King Titan",
+      "iconURL": "",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "rubble-golem",
+      "name": "Rubble Golem",
+      "iconURL": "",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "broodmother-lysrix",
+      "name": "Broodmother Lysrix",
+      "iconURL": "",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "chalk-elemental",
+      "name": "Chalk Elemental",
+      "iconURL": "",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "deinonychus",
+      "name": "Deinonychus",
+      "iconURL": "",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "ice-elemental",
+      "name": "Ice Elemental",
+      "iconURL": "",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "astrocetus",
+      "name": "Astrocetus",
+      "iconURL": "",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "attack-drone",
+      "name": "Attack Drone",
+      "iconURL": "",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "bloodstalker",
+      "name": "Bloodstalker",
+      "iconURL": "",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "ferox",
+      "name": "Ferox",
+      "iconURL": "",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "insect-swarm",
+      "name": "Insect Swarm",
+      "iconURL": "",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "magmasaur",
+      "name": "Magmasaur",
+      "iconURL": "",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "alpha-hulking-revenant",
+      "name": "Alpha Hulking Revenant",
+      "iconURL": "",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "aureliax",
+      "name": "Aureliax",
+      "iconURL": "",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "bloated-revenant",
+      "name": "Bloated Revenant",
+      "iconURL": "",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "desmodus",
+      "name": "Desmodus",
+      "iconURL": "",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "gloon",
+      "name": "Gloon",
+      "iconURL": "",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "hulking-revenant",
+      "name": "Hulking Revenant",
+      "iconURL": "",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "ossidon",
+      "name": "Ossidon",
+      "iconURL": "",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "revenant",
+      "name": "Revenant",
+      "iconURL": "",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "revenant-malwyn",
+      "name": "Revenant Malwyn",
+      "iconURL": "",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "revenant-ossidon",
+      "name": "Revenant Ossidon",
+      "iconURL": "",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "revenant-veilwyn",
+      "name": "Revenant Veilwyn",
+      "iconURL": "",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "solwyn",
+      "name": "Solwyn",
+      "iconURL": "",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "thrall-gunslinger",
+      "name": "Thrall Gunslinger",
+      "iconURL": "",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "thrall-marauder",
+      "name": "Thrall Marauder",
+      "iconURL": "",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "thrall-warden",
+      "name": "Thrall Warden",
+      "iconURL": "",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "veilwyn",
+      "name": "Veilwyn",
+      "iconURL": "",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "boaratos",
+      "name": "Boaratos",
+      "iconURL": "",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "cave-minotaur",
+      "name": "Cave Minotaur",
+      "iconURL": "",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "grand-tortugar",
+      "name": "Grand Tortugar",
+      "iconURL": "",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "kirayli",
+      "name": "Kirayli",
+      "iconURL": "",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "maeguana",
+      "name": "Maeguana",
+      "iconURL": "",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "pirate-fleet-admiral-trireme",
+      "name": "Pirate Fleet Admiral Trireme",
+      "iconURL": "",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "pirate-trireme",
+      "name": "Pirate Trireme",
+      "iconURL": "",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "rhyniognatha-drone",
+      "name": "Rhyniognatha Drone",
+      "iconURL": "",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "scorpionking",
+      "name": "ScorpionKing",
+      "iconURL": "",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "skeleton-piercer",
+      "name": "Skeleton Piercer",
+      "iconURL": "",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "skeleton-snarer",
+      "name": "Skeleton Snarer",
+      "iconURL": "",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "skeleton-warden",
+      "name": "Skeleton Warden",
+      "iconURL": "",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    },
+    {
+      "creatureID": "thanatos",
+      "name": "Thanatos",
+      "iconURL": "",
+      "reason": "No verified original transparent dossier-head asset. Colored full-body source renders excluded; no different-species substitute."
+    }
+  ],
+  "policy": "Only original transparent game dossier head artwork. PNGs preserve source RGBA pixels; app template tint supplies white. Prefix aliases share the exact parent species head. No colored creature photos or invented heads.",
+  "verification": "All22neworiginalheadsdecoded, transparentalphaverified,nontransparentRGBchannelsmonochrome(maxchannelgap<=2),sourceandPNGSHA256recorded,white-tintcontactsheetvisuallyinspected."
+}

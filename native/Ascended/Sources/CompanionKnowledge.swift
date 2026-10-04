@@ -5,12 +5,12 @@ struct MapBadge: View {
     let id: String
     var body: some View {
         Group {
-            if UIImage(named: "MapBadge-" + id) != nil {
-                Image("MapBadge-" + id).resizable().scaledToFit()
+            if UIImage(named: "MapLogo-" + id) != nil {
+                Image("MapLogo-" + id).resizable().scaledToFit()
             } else if let map = ArkMap(rawValue: id) {
                 Image(map.imageAsset).resizable().scaledToFit()
             } else { Image("ArkLogo").resizable().scaledToFit() }
-        }.frame(width: 22, height: 22).accessibilityHidden(true)
+        }.frame(width: 64, height: 38).accessibilityHidden(true)
     }
 }
 struct StoryGuide: Decodable {
@@ -153,12 +153,10 @@ struct BasePlanningScreen: View {
                         } label: { Text(phase.title).font(.headline) }.padding(.vertical, 8)
                     }
                 } label: { Label("Thứ tự xây", systemImage: "arrow.triangle.branch").font(.headline) }.cardStyle().accessibilityIdentifier("base-phases")
-                DisclosureGroup {
-                    BaseLayout { id in
-                        openZone = id
-                        withAnimation { proxy.scrollTo("zone-" + id, anchor: .top) }
-                    }
-                } label: { Label("Bố trí các khu", systemImage: "square.grid.3x3.fill").font(.headline) }.cardStyle()
+                BaseSpatialPlanner { id in
+                    openZone = id
+                    withAnimation { proxy.scrollTo("zone-" + id, anchor: .top) }
+                }.cardStyle()
                 ForEach(BasePlan.shared.zones) { zone in
                     DisclosureGroup(isExpanded: Binding(get: { openZone == zone.id }, set: { openZone = $0 ? zone.id : nil })) {
                         Text(zone.purpose).frame(maxWidth: .infinity, alignment: .leading).padding(.vertical, 8)
@@ -185,25 +183,5 @@ struct BasePlanningScreen: View {
             }.padding(24).frame(maxWidth: 1100).frame(maxWidth: .infinity)
         }.accessibilityIdentifier("basePlanning")
         }
-    }
-}
-
-private struct BaseLayout: View {
-    let select: (String) -> Void
-    private let layout = ["garden", "kitchen", "main", "breeding", "dino", "storage", "expedition", "power", "industry"]
-    var body: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            Text("Gợi ý vị trí tương đối · bấm một khu để mở").font(.caption).foregroundStyle(.secondary)
-            LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 10), count: 3), spacing: 10) {
-                ForEach(layout, id: \.self) { id in
-                    if let zone = BasePlan.shared.zones.first(where: { $0.id == id }) {
-                        Button { select(id) } label: {
-                            VStack(spacing: 8) { Image(systemName: zone.symbol).font(.title2); Text(zone.name).font(.caption.bold()) }
-                                .frame(maxWidth: .infinity).frame(height: 90).background(.cyan.opacity(0.08), in: RoundedRectangle(cornerRadius: 10))
-                        }.buttonStyle(.plain).accessibilityIdentifier("base-layout-" + id)
-                    }
-                }
-            }
-        }.padding(.vertical, 12)
     }
 }

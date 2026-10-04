@@ -3,7 +3,7 @@ import UIKit
 
 enum MapLayer: String, CaseIterable { case artifact = "Artifact", cave = "Cửa hang", obelisk = "Obelisk", boss = "Boss", base = "Base", resource = "Resources" }
 extension MapLayer {
-    var symbol: String { switch self { case .artifact: "diamond.fill"; case .cave: "mountain.2.fill"; case .obelisk: "triangle.fill"; case .boss: "shield.lefthalf.filled"; case .base: "house.fill"; case .resource: "shippingbox.fill" } }
+    var symbol: String { switch self { case .artifact: "diamond.fill"; case .cave: "door.left.hand.open"; case .obelisk: "triangle.fill"; case .boss: "shield.lefthalf.filled"; case .base: "house.fill"; case .resource: "shippingbox.fill" } }
 }
 struct MapLocation: Identifiable {
     let id: String; let name: String; let lat: Double; let lon: Double; let layer: MapLayer
@@ -27,7 +27,7 @@ struct MapLocation: Identifiable {
             else if point.layer == .cave, point.routeID != nil { list[index].imageAsset = UIImage(named: "Entrance-" + map.rawValue + "-" + point.id.replacingOccurrences(of: "entrance-", with: "")) != nil ? "Entrance-" + map.rawValue + "-" + point.id.replacingOccurrences(of: "entrance-", with: "") : nil }
             else if point.layer == .base { list[index].imageAsset = "Base-" + point.id.replacingOccurrences(of: "base-", with: "") }
             else if point.id.hasPrefix("obelisk-") { list[index].imageAsset = "Map-Obelisk" }
-            else if point.id == "boss-lava-arena" { list[index].imageAsset = "Cutout-Boss-lava-elemental" }
+            else if point.id == "boss-lava-arena" { list[index].imageAsset = "Boss-lava-elemental" }
         }
         return list + MapResources.points(in: map) + ResourceFarmCatalog.spots(in: map).map(\.point)
     }

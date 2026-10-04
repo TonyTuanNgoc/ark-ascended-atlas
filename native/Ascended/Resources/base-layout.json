@@ -1,0 +1,42 @@
+[
+  {
+    "id": "main",
+    "width": 4,
+    "depth": 4,
+    "x": 0,
+    "z": 0,
+    "levels": 1
+  },
+  {
+    "id": "garden",
+    "width": 6,
+    "depth": 6,
+    "x": 6,
+    "z": 0,
+    "levels": 1
+  },
+  {
+    "id": "industry",
+    "width": 6,
+    "depth": 6,
+    "x": 14,
+    "z": 0,
+    "levels": 2
+  },
+  {
+    "id": "dino",
+    "width": 8,
+    "depth": 6,
+    "x": 0,
+    "z": 10,
+    "levels": 2
+  },
+  {
+    "id": "breeding",
+    "width": 8,
+    "depth": 6,
+    "x": 12,
+    "z": 10,
+    "levels": 2
+  }
+]
