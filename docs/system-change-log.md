@@ -50,3 +50,6 @@ Five functional adjacent houses with native floorplan/3D layout proxies and dire
 
 ## 2026-10-04 — Blender approximate practical building kit
 Prepared and opened a separate 378-asset construction/machinery library for Mac-only practical planning: 241 primitive family representations and 137 explicit footprint placeholders. Shared foundation-module scale,31 common viewport examples, preserved existing five-house plan. No app change; delivered Blender file, generator and manifest. See codex-reports/2026-10-04-blender-building-kit.md.
+
+## 2026-10-04 — Blender stone visual fidelity sample
+Responded to rejection of primitive visual quality with two reference-guided reconstruction samples and procedural stone materials. Opened separate Blender sample, preserved existing files; whole-library upgrade and identical game appearance remain incomplete. See codex-reports/2026-10-04-blender-stone-visual-sample.md.
