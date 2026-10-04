@@ -7,4 +7,4 @@ App installed:
 • launchServicesIdentifier: unknown
 • databaseUUID: 19CF7B10-CBC0-413B-8917-89A5A54D31EF
 • databaseSequenceNumber: 1548
-• options: 
+• options:
