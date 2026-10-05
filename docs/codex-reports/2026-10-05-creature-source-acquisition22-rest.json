@@ -1,0 +1,91 @@
+[
+  {
+    "id": "boaratos",
+    "url": "https://ark.wiki.gg/wiki/Boaratos",
+    "status": "200",
+    "path": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/boaratos.html",
+    "sha256": "afb541a0fd4414ea40025a887d72bd032b4ca84f46d9dc76f45371c650f411af"
+  },
+  {
+    "id": "grand-tortugar",
+    "url": "https://ark.wiki.gg/wiki/Grand_Tortugar",
+    "status": "200",
+    "path": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/grand-tortugar.html",
+    "sha256": "379cec90214c2b08dcb4e789045ae75482c66a383bd26fe6e3c47fb5f1f184df"
+  },
+  {
+    "id": "maeguana",
+    "url": "https://ark.wiki.gg/wiki/Maeguana",
+    "status": "200",
+    "path": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/maeguana.html",
+    "sha256": "a9ab1f930487bc66f62d9ecda5debfb92f83ab108504410ea7ec7c443beed2da"
+  },
+  {
+    "id": "kirayli",
+    "url": "https://ark.wiki.gg/wiki/Kirayli",
+    "status": "200",
+    "path": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/kirayli.html",
+    "sha256": "c395c56bf9ee5ca09567de719fb0efc167b5ac2fd9934e04fd4288af62418374"
+  },
+  {
+    "id": "thanatos",
+    "url": "https://ark.wiki.gg/wiki/Thanatos",
+    "status": "200",
+    "path": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/thanatos.html",
+    "sha256": "cee1d434c4027b38b0d03d0eca6ca09204684abefa034e98e269253cc76c9bf9"
+  },
+  {
+    "id": "cosmo",
+    "url": "https://ark.wiki.gg/wiki/Cosmo",
+    "status": "200",
+    "path": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/cosmo.html",
+    "sha256": "085744c7dc8ddf58d2bb555f432301efd17fcbe80bf69503050ca8f9fb32e4cb"
+  },
+  {
+    "id": "armadoggo",
+    "url": "https://ark.wiki.gg/wiki/Armadoggo",
+    "status": "200",
+    "path": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/armadoggo.html",
+    "sha256": "4f45434b428b70988e0eb8f5da5e4d1e3d0ab687e2b38eb78861a5a093c57d39"
+  },
+  {
+    "id": "oasisaur",
+    "url": "https://ark.wiki.gg/wiki/Oasisaur",
+    "status": "200",
+    "path": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/oasisaur.html",
+    "sha256": "ada1972b2271b0ea5a6f800e576a3644673294d1e2c0cbe055aadcc77f884514"
+  },
+  {
+    "id": "dreadnoughtus",
+    "url": "https://ark.wiki.gg/wiki/Dreadnoughtus",
+    "status": "200",
+    "path": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/dreadnoughtus.html",
+    "sha256": "b8c012fa189cbb562995f2fbf22b6c905df5c7fb466cc32476675c13739c4f99"
+  },
+  {
+    "id": "rock-drake",
+    "url": "https://ark.wiki.gg/wiki/Rock_Drake",
+    "status": "200",
+    "path": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/rock-drake.html",
+    "sha256": "781a4c1e0ca28bdf12c61fdf261fb2c4911ed4f47322e7e96a901967d05b747f"
+  },
+  {
+    "id": "ravager",
+    "url": "https://ark.wiki.gg/wiki/Ravager",
+    "status": "200",
+    "path": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/ravager.html",
+    "sha256": "10abdf2983d2d643939022a399f94902d26aedf8a1e00dd450587b6aeb97233f"
+  },
+  {
+    "id": "roll-rat",
+    "url": "https://ark.wiki.gg/wiki/Roll_Rat",
+    "status": "200",
+    "path": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/roll-rat.html",
+    "sha256": "3fd044ea6701f5124589e523c8cb29245fe4f8877ec746938d364c91e999c211"
+  },
+  {
+    "id": "basilisk",
+    "url": "https://ark.wiki.gg/wiki/Basilisk",
+    "status": "429"
+  }
+]

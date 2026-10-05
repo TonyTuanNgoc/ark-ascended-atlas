@@ -1,1 +1,282 @@
-{"reviewedAt":"04/10/2026","artifacts":[{"id":"shadows","name":"Artifact of the Shadows","lat":50.557,"lon":72.659,"routeID":"","imageAsset":"Artifact-shadows","sourceURL":"https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=1&layer=artifacts"},{"id":"stalker","name":"Artifact of the Stalker","lat":91.702,"lon":51.395,"routeID":"","imageAsset":"Artifact-stalker","sourceURL":"https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=1&layer=artifacts"},{"id":"lost","name":"Artifact of the Lost","lat":28.597,"lon":29.963,"routeID":"","imageAsset":"Artifact-lost","sourceURL":"https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=1&layer=artifacts"},{"id":"depths","name":"Artifact of the Depths","lat":51.24,"lon":23.801,"routeID":"","imageAsset":"Artifact-depths","sourceURL":"https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=1&layer=artifacts"}],"routes":[],"obelisks":[]}
+{
+  "reviewedAt": "05/10/2026",
+  "artifacts": [
+    {
+      "id": "shadows",
+      "name": "Artifact of the Shadows",
+      "lat": 50.557,
+      "lon": 72.659,
+      "routeID": "reference-aberration-hidden-grotto-cave",
+      "imageAsset": "Artifact-shadows",
+      "sourceURL": "https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=1&layer=artifacts"
+    },
+    {
+      "id": "stalker",
+      "name": "Artifact of the Stalker",
+      "lat": 91.702,
+      "lon": 51.395,
+      "routeID": "reference-aberration-element-vault-cave",
+      "imageAsset": "Artifact-stalker",
+      "sourceURL": "https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=1&layer=artifacts"
+    },
+    {
+      "id": "lost",
+      "name": "Artifact of the Lost",
+      "lat": 28.597,
+      "lon": 29.963,
+      "routeID": "",
+      "imageAsset": "Artifact-lost",
+      "sourceURL": "https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=1&layer=artifacts"
+    },
+    {
+      "id": "depths",
+      "name": "Artifact of the Depths",
+      "lat": 51.24,
+      "lon": 23.801,
+      "routeID": "reference-aberration-old-railway-cave",
+      "imageAsset": "Artifact-depths",
+      "sourceURL": "https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=1&layer=artifacts"
+    }
+  ],
+  "routes": [
+    {
+      "id": "reference-aberration-old-railway-cave",
+      "name": "Old Railway Cave",
+      "artifactIDs": [
+        "depths"
+      ],
+      "entrances": [
+        {
+          "id": "reference-aberration-old-railway-cave",
+          "label": "Entrance",
+          "lat": 48.338,
+          "lon": 27.23,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Aberration",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=80703&revid=601077&format=json&layers=obelisk-blue%7Cobelisk-green%7Cobelisk-red%7Crockwell-terminal%7Ccave-entrance",
+      "imageAsset": "Map-aberration",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Aberration_Old_Railway_Cave_Entrance.jpg/288px-ASA_Aberration_Old_Railway_Cave_Entrance.jpg?a139c4",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-aberration-hidden-grotto-cave",
+      "name": "Hidden Grotto Cave",
+      "artifactIDs": [
+        "shadows"
+      ],
+      "entrances": [
+        {
+          "id": "reference-aberration-hidden-grotto-cave",
+          "label": "Entrance",
+          "lat": 55.3,
+          "lon": 65.866,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Aberration",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=80703&revid=601077&format=json&layers=obelisk-blue%7Cobelisk-green%7Cobelisk-red%7Crockwell-terminal%7Ccave-entrance",
+      "imageAsset": "Map-aberration",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Aberration_Hidden_Grotto_Cave_Entrance.jpg/288px-ASA_Aberration_Hidden_Grotto_Cave_Entrance.jpg?16d4ff",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-aberration-element-vault-cave",
+      "name": "Element Vault Cave",
+      "artifactIDs": [
+        "stalker"
+      ],
+      "entrances": [
+        {
+          "id": "reference-aberration-element-vault-cave",
+          "label": "Entrance",
+          "lat": 80.805,
+          "lon": 46.764,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Aberration",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=80703&revid=601077&format=json&layers=obelisk-blue%7Cobelisk-green%7Cobelisk-red%7Crockwell-terminal%7Ccave-entrance",
+      "imageAsset": "Map-aberration",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Aberration_Element_Vault_Cave_Entrance.jpg/288px-ASA_Aberration_Element_Vault_Cave_Entrance.jpg?4ec5cf",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-aberration-north-west-surface-entrance-4",
+      "name": "North West Surface entrance",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-aberration-north-west-surface-entrance-4",
+          "label": "Entrance",
+          "lat": 19.475,
+          "lon": 26.863,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Aberration",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=80703&revid=601077&format=json&layers=obelisk-blue%7Cobelisk-green%7Cobelisk-red%7Crockwell-terminal%7Ccave-entrance",
+      "imageAsset": "Map-aberration",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Aberration_NW_Surface_entrance.jpg/288px-ASA_Aberration_NW_Surface_entrance.jpg?4947a2",
+      "videoURL": "https://www.youtube.com/watch?v=IzKTaVjnciA",
+      "walkthroughStatus": "externalLinkOnly"
+    },
+    {
+      "id": "reference-aberration-north-east-surface-entrance-5",
+      "name": "North East Surface entrance",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-aberration-north-east-surface-entrance-5",
+          "label": "Entrance",
+          "lat": 38.375,
+          "lon": 79.643,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Aberration",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=80703&revid=601077&format=json&layers=obelisk-blue%7Cobelisk-green%7Cobelisk-red%7Crockwell-terminal%7Ccave-entrance",
+      "imageAsset": "Map-aberration",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Aberration_NE_Surface_entrance_1.jpg/288px-ASA_Aberration_NE_Surface_entrance_1.jpg?7895b9",
+      "videoURL": "https://www.youtube.com/watch?v=IzKTaVjnciA",
+      "walkthroughStatus": "externalLinkOnly"
+    },
+    {
+      "id": "reference-aberration-north-east-surface-entrance-6",
+      "name": "North East Surface entrance",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-aberration-north-east-surface-entrance-6",
+          "label": "Entrance",
+          "lat": 26.861,
+          "lon": 63.066,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Aberration",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=80703&revid=601077&format=json&layers=obelisk-blue%7Cobelisk-green%7Cobelisk-red%7Crockwell-terminal%7Ccave-entrance",
+      "imageAsset": "Map-aberration",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Aberration_NE_Surface_entrance_2.jpg/288px-ASA_Aberration_NE_Surface_entrance_2.jpg?602bb3",
+      "videoURL": "https://www.youtube.com/watch?v=IzKTaVjnciA",
+      "walkthroughStatus": "externalLinkOnly"
+    },
+    {
+      "id": "reference-aberration-south-west-surface-entrance-7",
+      "name": "South West Surface entrance",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-aberration-south-west-surface-entrance-7",
+          "label": "Entrance",
+          "lat": 78.784,
+          "lon": 28.369,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Aberration",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=80703&revid=601077&format=json&layers=obelisk-blue%7Cobelisk-green%7Cobelisk-red%7Crockwell-terminal%7Ccave-entrance",
+      "imageAsset": "Map-aberration",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Aberration_SW_Surface_entrance_1.jpg/288px-ASA_Aberration_SW_Surface_entrance_1.jpg?30fdeb",
+      "videoURL": "https://www.youtube.com/watch?v=IzKTaVjnciA",
+      "walkthroughStatus": "externalLinkOnly"
+    },
+    {
+      "id": "reference-aberration-south-west-surface-entrance-8",
+      "name": "South West Surface entrance",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-aberration-south-west-surface-entrance-8",
+          "label": "Entrance",
+          "lat": 52.122,
+          "lon": 22.551,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Aberration",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=80703&revid=601077&format=json&layers=obelisk-blue%7Cobelisk-green%7Cobelisk-red%7Crockwell-terminal%7Ccave-entrance",
+      "imageAsset": "Map-aberration",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Aberration_SW_Surface_entrance_2.jpg/288px-ASA_Aberration_SW_Surface_entrance_2.jpg?6a1b1e",
+      "videoURL": "https://www.youtube.com/watch?v=IzKTaVjnciA",
+      "walkthroughStatus": "externalLinkOnly"
+    }
+  ],
+  "obelisks": []
+}

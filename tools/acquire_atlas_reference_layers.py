@@ -4,8 +4,8 @@ from pathlib import Path
 CACHE=Path('/Volumes/TONY SSD/ASCENDED_MEDIA/reference-locations-20261005')
 MAPS={'the-island':'The_Island','ragnarok':'Ragnarok','the-center':'The_Center','scorched-earth':'Scorched_Earth','aberration':'Aberration','extinction':'Extinction','lost-colony':'Lost_Colony','genesis-part-1':'Genesis:_Part_1','valguero':'Valguero','astraeos':'Astraeos'}
 def fetch(url):
- p=subprocess.run(['curl','-fLs','--max-time','40',url],capture_output=True)
- if p.returncode:raise RuntimeError(f'Public source request failed: {url} ({p.returncode})')
+ p=subprocess.run(['curl','-fLsS','--max-time','40',url],capture_output=True)
+ if p.returncode:raise RuntimeError(f'Public source request failed: {url} ({p.returncode}): {p.stderr.decode().strip()}')
  return p.stdout
 
 def acquire(pair):
@@ -31,11 +31,13 @@ def acquire(pair):
   (CACHE/(slug+'-wiki-asa-markers.json')).write_text(json.dumps(record,ensure_ascii=False,indent=2)+'\n');results.append({k:record[k] for k in ('mapID','sourceURL','pageID','title','revisionID','requests','pageSHA256')})
  return slug,results
 if __name__=='__main__':
+ import sys
  CACHE.mkdir(exist_ok=True);manifest=[]
- with concurrent.futures.ThreadPoolExecutor(4) as pool:
-  futures={pool.submit(acquire,p):p[0] for p in MAPS.items()}
-  for f in concurrent.futures.as_completed(futures):
-   try:
-    slug,records=f.result();manifest+=records;print(slug,'ASA datasets',len(records),flush=True)
-   except Exception as e:print(futures[f],'ERROR',str(e),flush=True)
+ # Sequential source requests; a rate limit ends this run, without a bypass.
+ pairs=[(slug,MAPS[slug]) for slug in sys.argv[1:]] if len(sys.argv)>1 else list(MAPS.items())
+ for pair in pairs:
+  try:
+   slug,records=acquire(pair);manifest+=records;print(slug,'ASA datasets',len(records),flush=True)
+  except Exception as e:
+   print(pair[0],'ERROR',str(e),flush=True);break
  (CACHE/'wiki-asa-acquisition-manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')

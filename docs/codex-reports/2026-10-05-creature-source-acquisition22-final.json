@@ -1,0 +1,131 @@
+{
+  "stopReason": "Parent requested network pause for icon acquisition; no more requests after process stopped.",
+  "successful": [
+    {
+      "id": "basilisk",
+      "url": "https://ark.wiki.gg/wiki/Basilisk",
+      "status": "cached-success",
+      "path": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/basilisk.html",
+      "sha256": "a50c69a6e06f1d3bbec54966000a30a69c7fb74c68ec5ca016753712edeed949"
+    },
+    {
+      "id": "bulbdog",
+      "url": "https://ark.wiki.gg/wiki/Bulbdog",
+      "status": "cached-success",
+      "path": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/bulbdog.html",
+      "sha256": "6fade81b383435afc2a2e632a60837c1db84c8ef3b34a97128bbb06c69b5b3e6"
+    },
+    {
+      "id": "glowtail",
+      "url": "https://ark.wiki.gg/wiki/Glowtail",
+      "status": "cached-success",
+      "path": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/glowtail.html",
+      "sha256": "ee39873d794b0647df0627fb05f4d9199e93f795b1335604ca0cd40e21e6b333"
+    },
+    {
+      "id": "lamprey",
+      "url": "https://ark.wiki.gg/wiki/Lamprey",
+      "status": "cached-success",
+      "path": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/lamprey.html",
+      "sha256": "62f35c8f8c9d255750f6d49fa01270efc70432c2624d55ed887ca9d794c4afd5"
+    },
+    {
+      "id": "nameless",
+      "url": "https://ark.wiki.gg/wiki/Nameless",
+      "status": "cached-success",
+      "path": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/nameless.html",
+      "sha256": "bbb3e33f740c655a499209c6244bbb4104d9b10569a6b8c2ca2cfe99fbcc7936"
+    },
+    {
+      "id": "seeker",
+      "url": "https://ark.wiki.gg/wiki/Seeker",
+      "status": "cached-success",
+      "path": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/seeker.html",
+      "sha256": "a8dc19a497b791feafee043d768f45cc8d1ca4b2f6dbe58c76082223f81958cf"
+    },
+    {
+      "id": "surface-reaper-king",
+      "url": "https://ark.wiki.gg/wiki/Surface_Reaper_King",
+      "status": "cached-success",
+      "path": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/surface-reaper-king.html",
+      "sha256": "430136ca21c7ffb8ee73ec14d2849d76af35a5a833ba70a3f16c7b5a665ae58a"
+    },
+    {
+      "id": "snow-owl",
+      "url": "https://ark.wiki.gg/wiki/Snow_Owl",
+      "status": "cached-success",
+      "path": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/snow-owl.html",
+      "sha256": "cb4c100fbf01350034b78e25c3cc3eafe412d4aeb38a5ebaf3d396a5092cfbf5"
+    },
+    {
+      "id": "velonasaur",
+      "url": "https://ark.wiki.gg/wiki/Velonasaur",
+      "status": "cached-success",
+      "path": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/velonasaur.html",
+      "sha256": "294810768ab1113cb2179efe697714e36d10ac3ecf6c326614ccb72ab525d79e"
+    },
+    {
+      "id": "managarmr",
+      "url": "https://ark.wiki.gg/wiki/Managarmr",
+      "status": "cached-success",
+      "path": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/managarmr.html",
+      "sha256": "bb4f92e2f78b61e10c19fc691cd075cabf944fb11d526c54f3ac26221a4f94b4"
+    },
+    {
+      "id": "phoenix",
+      "url": "https://ark.wiki.gg/wiki/Phoenix",
+      "status": "cached-success",
+      "path": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/phoenix.html",
+      "sha256": "fc53d351ccee66f199399f89f20392dd5de514c757314fd7653dfcb8d07d6b6d"
+    },
+    {
+      "id": "bloodstalker",
+      "url": "https://ark.wiki.gg/wiki/Bloodstalker",
+      "status": "cached-success",
+      "path": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/bloodstalker.html",
+      "sha256": "4db22a18cffe810d7b3197871214dba15b57108ba808036a81163f1cb2266189"
+    },
+    {
+      "id": "astrocetus",
+      "url": "https://ark.wiki.gg/wiki/Astrocetus",
+      "status": "cached-success",
+      "path": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/astrocetus.html",
+      "sha256": "57166dd7d3f2c7a68e00eed58820577c621dd19b4d08e948a1458b43edb6de9b"
+    },
+    {
+      "id": "deinonychus",
+      "url": "https://ark.wiki.gg/wiki/Deinonychus",
+      "status": "cached-success",
+      "path": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/deinonychus.html",
+      "sha256": "550c4894d1529c1bac5f1cd3ecfe98b1debd67aab6822d392be89d3031cae8e1"
+    },
+    {
+      "id": "jug-bug",
+      "url": "https://ark.wiki.gg/wiki/Jug_Bug",
+      "status": "cached-success",
+      "path": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/jug-bug.html",
+      "sha256": "8762370695ba171f6b2667ba511b305e2bd1aa42861f90afd6518aadc0508e91"
+    },
+    {
+      "id": "deathworm",
+      "url": "https://ark.wiki.gg/wiki/Deathworm",
+      "status": "cached-success",
+      "path": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/deathworm.html",
+      "sha256": "07aa646ead4962b65762bf3b20a0327327167787ff0af15984bc268c7da12946"
+    },
+    {
+      "id": "polar-bear",
+      "url": "https://ark.wiki.gg/wiki/Polar_Bear",
+      "status": "cached-success",
+      "path": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/polar-bear.html",
+      "sha256": "f60395a092edd127d92e6aebf96a34fd597939d08570c4fca6d18e3e648b96d6"
+    },
+    {
+      "id": "diseased-leech",
+      "url": "https://ark.wiki.gg/wiki/Diseased_Leech",
+      "status": "cached-success",
+      "path": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/diseased-leech.html",
+      "sha256": "213a3b573b3eff460ba838e8f7106bc45efc77de3cd6c5a39e2df53e17dce24e"
+    }
+  ]
+}

@@ -40,7 +40,7 @@ struct MapLocation: Identifiable, Equatable {
             }
             return MapLocation(id:id,name:source.name,lat:source.lat,lon:source.lon,layer:source.layer,note:note,routeID:source.routeID,artifactID:source.artifactID,imageAsset:source.imageAsset,symbolOverride:source.symbolOverride,colorOverride:color)
         }
-        let replacedRoutes = Set(references.filter { $0.point != nil && $0.kind == .caveEntrance }.compactMap(\.routeID))
+        let replacedRoutes = Set(references.filter { $0.kind == .caveEntrance }.compactMap(\.routeID))
         var list = data.artifacts.map { MapLocation(id: "artifact-" + $0.id, name: $0.name, lat: $0.lat, lon: $0.lon, layer: .artifact, note: "Artifact collection location", routeID: $0.routeID, artifactID: $0.id) }
         list += data.routes.filter { !replacedRoutes.contains($0.id) }.flatMap { route in route.entrances.map { MapLocation(id: "entrance-" + $0.id, name: route.name + " · " + $0.label, lat: $0.lat, lon: $0.lon, layer: .cave, note: $0.kind == "area" ? "Approach area; use the terrain to locate the entrance" : "Cave entrance · use the terrain to identify it", routeID: route.id, artifactID: nil) } }
         list += data.obelisks.filter { obelisk in !referencePoints.contains(where: { $0.id == obelisk.id }) }.map { MapLocation(id: $0.id, name: $0.label, lat: $0.lat, lon: $0.lon, layer: .obelisk, note: "Summoning terminal; the arena is a separate location", routeID: nil, artifactID: nil) }
@@ -61,6 +61,8 @@ struct MapLocation: Identifiable, Equatable {
             else if point.id.hasPrefix("obelisk-") { list[index].imageAsset = "Map-Obelisk" }
             else if point.id == "boss-lava-arena" { list[index].imageAsset = "Boss-lava-elemental" }
         }
-        return list + ResourceFarmCatalog.spots(in: map).map(\.point)
+        return (list + ResourceFarmCatalog.spots(in: map).map(\.point)).filter {
+            $0.lat.isFinite && $0.lon.isFinite && (0...100).contains($0.lat) && (0...100).contains($0.lon)
+        }
     }
 }

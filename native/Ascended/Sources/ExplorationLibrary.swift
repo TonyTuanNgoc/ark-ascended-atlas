@@ -3,6 +3,7 @@ import SwiftUI
 struct GPSPoint: Decodable, Identifiable {
     let id: String; let label: String; let lat: Double; let lon: Double; let kind: String?
     var coordinates: String { String(format: "LAT %.2f · LON %.2f", lat, lon) }
+    var isInsideAtlas: Bool { lat.isFinite && lon.isFinite && (0...100).contains(lat) && (0...100).contains(lon) }
 }
 struct ArtifactRecord: Decodable, Identifiable {
     let id: String; let name: String; let lat: Double; let lon: Double
@@ -26,11 +27,14 @@ struct ExplorationLibrary: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 22) {
-                Text("Artifact & Hang").font(.largeTitle.bold())
+                Text("Artifacts & caves").font(.largeTitle.bold())
                 Text("\(map.exploration?.artifacts.count ?? 0) artifacts · \(map.exploration?.routes.count ?? 0) exploration routes · " + map.name + " Ascended").font(.headline).foregroundStyle(.cyan)
-                Text("Artifact GPS marks the item pickup location. Cave-entrance GPS marks the approach, rather than the artifact. Community entrance coordinates may differ by a few tenths; identify the entrance using the terrain.").foregroundStyle(.secondary)
-                if map.exploration?.routes.isEmpty == true {
-                    ForEach(map.exploration?.artifacts ?? []) { artifact in
+                Text("Entrance and artifact coordinates mark different locations. Match the surrounding terrain to confirm your approach.").foregroundStyle(.secondary)
+                let unlinked = (map.exploration?.artifacts ?? []).filter { artifact in
+                    !(map.exploration?.routes.contains { $0.id == artifact.routeID } ?? false)
+                }.filter { search.isEmpty || $0.name.localizedStandardContains(search) }
+                if !unlinked.isEmpty {
+                    ForEach(unlinked) { artifact in
                         HStack(spacing: 14) {
                             if !artifact.imageAsset.isEmpty { Image(artifact.imageAsset).resizable().scaledToFit().frame(width: 52, height: 64) }
                             VStack(alignment: .leading, spacing: 6) { Text(artifact.name).font(.headline); GPSBadge(coordinates: artifact.coordinates).foregroundStyle(.cyan) }
@@ -38,9 +42,9 @@ struct ExplorationLibrary: View {
                             NavigationLink(value: GuideDestination.map("artifact-" + artifact.id)) { Image(systemName: "map.fill") }.accessibilityLabel("Show artifact on map")
                         }.cardStyle()
                     }
-                    if map.exploration?.artifacts.isEmpty == true, let record = map.expansion {
-                        ExpansionProfile(record: record).cardStyle()
-                    }
+                }
+                if map.exploration?.routes.isEmpty == true, map.exploration?.artifacts.isEmpty == true, let record = map.expansion {
+                    ExpansionProfile(record: record).cardStyle()
                 }
                 LazyVGrid(columns: [GridItem(.adaptive(minimum: 240, maximum: 340), spacing: 16)], spacing: 16) {
                 ForEach((map.exploration?.routes ?? []).filter { search.isEmpty || $0.name.localizedStandardContains(search) || $0.artifacts(in: map).contains { $0.name.localizedStandardContains(search) } }) { route in
@@ -64,7 +68,12 @@ struct CaveRouteDetail: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 22) {
                 HStack(alignment: .top, spacing: 18) {
-                    routePhoto.frame(width: 230, height: 160)
+                    VStack(alignment: .leading, spacing: 6) {
+                        routePhoto.frame(width: 230, height: 160)
+                        if route.imageAsset.hasPrefix("Map-") {
+                            Text("Terrain overview").font(.caption).foregroundStyle(.secondary)
+                        }
+                    }
                     VStack(alignment: .leading, spacing: 12) {
                         ForEach(route.artifacts(in: map)) { artifact in
                             HStack(spacing: 12) {
@@ -82,18 +91,31 @@ struct CaveRouteDetail: View {
                                     Text(entrance.label).font(.caption)
                                     GPSBadge(coordinates: entrance.coordinates)
                                 }
-                                NavigationLink(value: GuideDestination.map("entrance-" + entrance.id)) { Image(systemName: "map") }
+                                if entrance.isInsideAtlas {
+                                    NavigationLink(value: GuideDestination.map("entrance-" + entrance.id)) { Image(systemName: "map") }
                                     .accessibilityLabel("Show cave entrance on map").accessibilityIdentifier("show-entrance-" + entrance.id)
+                                } else {
+                                    Text("Outside this map image").font(.caption).foregroundStyle(.secondary)
+                                }
                             }
                         }
                     }
                     Spacer(minLength: 0)
+                }
+                if AtlasReferenceLocations.references(in: map).contains(where: { $0.routeID == route.id && $0.kind == .caveEntrance }) {
+                    Text("Atlas reference · confirm with in-game GPS").font(.caption).foregroundStyle(.secondary)
                 }
                 RoutePreparation(items: route.kit)
                 if let guide = map.caveGIFs.first(where: { $0.routeID == route.id }) {
                     CaveGIFWalkthrough(guide: guide).id(map.rawValue + route.id)
                 }
                 VisualBrief(text: route.notes).cardStyle()
+                if map.caveGIFs.first(where: { $0.routeID == route.id }) == nil,
+                   let reference = AtlasReferenceLocations.references(in: map).first(where: { $0.routeID == route.id }),
+                   let link = reference.walkthroughURL, let url = URL(string: link) {
+                    Link(destination: url) { Label("Watch walkthrough", systemImage: "play.rectangle.fill") }
+                        .accessibilityIdentifier("walkthrough-" + route.id)
+                }
 
                 if let video = map.caveVideos.first(where: { $0.routeID == route.id }) {
                     Button {

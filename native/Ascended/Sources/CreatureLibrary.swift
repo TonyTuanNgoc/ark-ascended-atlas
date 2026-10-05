@@ -95,7 +95,10 @@ struct CreatureDetail: View {
                         if !creature.dlc.isEmpty { Label(creature.dlc, systemImage: "lock.open.fill").font(.subheadline).foregroundStyle(.orange) }
                     }
                 }
-                if !creature.updateNote.isEmpty {
+                if let notes = creature.archive?.notes, !notes.isEmpty {
+                    section("Field guide", text: notes)
+                }
+                if !creature.updateNote.isEmpty && creature.updateNote != creature.archive?.notes {
                     section("Recent updates", text: creature.updateNote)
                 }
                 if creature.detailAvailable {

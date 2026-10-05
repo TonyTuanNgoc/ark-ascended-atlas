@@ -1,1 +1,732 @@
-{"reviewedAt":"04/10/2026","artifacts":[],"routes":[],"obelisks":[]}
+{
+  "reviewedAt": "05/10/2026",
+  "artifacts": [],
+  "routes": [
+    {
+      "id": "reference-lost-colony-ruins-of-the-ascendant-cavern-1",
+      "name": "Ruins of the Ascendant Cavern",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-lost-colony-ruins-of-the-ascendant-cavern-1",
+          "label": "Entrance",
+          "lat": 82.743,
+          "lon": 74.475,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Lost_Colony",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=86916&revid=600802&format=json&layers=cave-entrance%7Clost-colony-terminal%7CLC-city-teleporter",
+      "imageAsset": "Map-lost-colony",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Lost_Colony_Cave_Ascended_Cavern_entrance_1.jpg/288px-ASA_Lost_Colony_Cave_Ascended_Cavern_entrance_1.jpg?21ff7a",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-lost-colony-ruins-of-the-ascendant-cavern-2",
+      "name": "Ruins of the Ascendant Cavern",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-lost-colony-ruins-of-the-ascendant-cavern-2",
+          "label": "Entrance",
+          "lat": 98.113,
+          "lon": 76.834,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Lost_Colony",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=86916&revid=600802&format=json&layers=cave-entrance%7Clost-colony-terminal%7CLC-city-teleporter",
+      "imageAsset": "Map-lost-colony",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Lost_Colony_Cave_Ascended_Cavern_entrance_2.jpg/288px-ASA_Lost_Colony_Cave_Ascended_Cavern_entrance_2.jpg?39ace6",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-lost-colony-ruins-of-the-ascendant-cavern-3",
+      "name": "Ruins of the Ascendant Cavern",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-lost-colony-ruins-of-the-ascendant-cavern-3",
+          "label": "Entrance",
+          "lat": 82.563,
+          "lon": 68.095,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Lost_Colony",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=86916&revid=600802&format=json&layers=cave-entrance%7Clost-colony-terminal%7CLC-city-teleporter",
+      "imageAsset": "Map-lost-colony",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Lost_Colony_Cave_Ascended_Cavern_entrance_3.jpg/288px-ASA_Lost_Colony_Cave_Ascended_Cavern_entrance_3.jpg?41f185",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-lost-colony-cavern-of-the-whispering-needle-4",
+      "name": "Cavern of The Whispering Needle",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-lost-colony-cavern-of-the-whispering-needle-4",
+          "label": "Entrance",
+          "lat": 57.631,
+          "lon": 28.233,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Lost_Colony",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=86916&revid=600802&format=json&layers=cave-entrance%7Clost-colony-terminal%7CLC-city-teleporter",
+      "imageAsset": "Map-lost-colony",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Lost_Colony_Cave_Whispering_Needle_entrance_1.jpg/288px-ASA_Lost_Colony_Cave_Whispering_Needle_entrance_1.jpg?98be2b",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-lost-colony-cavern-of-the-whispering-needle-5",
+      "name": "Cavern of The Whispering Needle",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-lost-colony-cavern-of-the-whispering-needle-5",
+          "label": "Entrance",
+          "lat": 38.512,
+          "lon": 20.519,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Lost_Colony",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=86916&revid=600802&format=json&layers=cave-entrance%7Clost-colony-terminal%7CLC-city-teleporter",
+      "imageAsset": "Map-lost-colony",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Lost_Colony_Cave_Whispering_Needle_entrance_2.jpg/288px-ASA_Lost_Colony_Cave_Whispering_Needle_entrance_2.jpg?e2d557",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-lost-colony-cavern-of-the-saphire-cascades",
+      "name": "Cavern of The Saphire Cascades",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-lost-colony-cavern-of-the-saphire-cascades",
+          "label": "Entrance",
+          "lat": 2.736,
+          "lon": 30.131,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Lost_Colony",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=86916&revid=600802&format=json&layers=cave-entrance%7Clost-colony-terminal%7CLC-city-teleporter",
+      "imageAsset": "Map-lost-colony",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Lost_Colony_Cave_Saphire_Cascades_entrance.jpg/288px-ASA_Lost_Colony_Cave_Saphire_Cascades_entrance.jpg?58af81",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-lost-colony-tunel-to-big-city-bridge-7",
+      "name": "Tunel to big city bridge",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-lost-colony-tunel-to-big-city-bridge-7",
+          "label": "Entrance",
+          "lat": 48.569,
+          "lon": 92.667,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Lost_Colony",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=86916&revid=600802&format=json&layers=cave-entrance%7Clost-colony-terminal%7CLC-city-teleporter",
+      "imageAsset": "Map-lost-colony",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Lost_Colony_Cave_Tunnel_to_Bridge_entrance_1.jpg/288px-ASA_Lost_Colony_Cave_Tunnel_to_Bridge_entrance_1.jpg?865e27",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-lost-colony-tunel-to-big-city-bridge-8",
+      "name": "Tunel to big city bridge",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-lost-colony-tunel-to-big-city-bridge-8",
+          "label": "Entrance",
+          "lat": 37.19,
+          "lon": 83.339,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Lost_Colony",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=86916&revid=600802&format=json&layers=cave-entrance%7Clost-colony-terminal%7CLC-city-teleporter",
+      "imageAsset": "Map-lost-colony",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Lost_Colony_Cave_Tunnel_to_Bridge_entrance_2.jpg/288px-ASA_Lost_Colony_Cave_Tunnel_to_Bridge_entrance_2.jpg?46a8cb",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-lost-colony-stairway-passage-9",
+      "name": "Stairway Passage",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-lost-colony-stairway-passage-9",
+          "label": "Entrance",
+          "lat": 76.292,
+          "lon": 32.823,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Lost_Colony",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=86916&revid=600802&format=json&layers=cave-entrance%7Clost-colony-terminal%7CLC-city-teleporter",
+      "imageAsset": "Map-lost-colony",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": null,
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-lost-colony-stairway-passage-10",
+      "name": "Stairway Passage",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-lost-colony-stairway-passage-10",
+          "label": "Entrance",
+          "lat": 76.41,
+          "lon": 31.213,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Lost_Colony",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=86916&revid=600802&format=json&layers=cave-entrance%7Clost-colony-terminal%7CLC-city-teleporter",
+      "imageAsset": "Map-lost-colony",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": null,
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-lost-colony-mountain-cave-11",
+      "name": "Mountain Cave",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-lost-colony-mountain-cave-11",
+          "label": "Entrance",
+          "lat": 67.259,
+          "lon": 46.482,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Lost_Colony",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=86916&revid=600802&format=json&layers=cave-entrance%7Clost-colony-terminal%7CLC-city-teleporter",
+      "imageAsset": "Map-lost-colony",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": null,
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-lost-colony-mountain-cave-12",
+      "name": "Mountain Cave",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-lost-colony-mountain-cave-12",
+          "label": "Entrance",
+          "lat": 75.904,
+          "lon": 53.752,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Lost_Colony",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=86916&revid=600802&format=json&layers=cave-entrance%7Clost-colony-terminal%7CLC-city-teleporter",
+      "imageAsset": "Map-lost-colony",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": null,
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-lost-colony-mountain-cave-13",
+      "name": "Mountain Cave",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-lost-colony-mountain-cave-13",
+          "label": "Entrance",
+          "lat": 64.705,
+          "lon": 53.801,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Lost_Colony",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=86916&revid=600802&format=json&layers=cave-entrance%7Clost-colony-terminal%7CLC-city-teleporter",
+      "imageAsset": "Map-lost-colony",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": null,
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-lost-colony-mountain-passage-14",
+      "name": "Mountain Passage",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-lost-colony-mountain-passage-14",
+          "label": "Entrance",
+          "lat": 18.128,
+          "lon": 22.349,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Lost_Colony",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=86916&revid=600802&format=json&layers=cave-entrance%7Clost-colony-terminal%7CLC-city-teleporter",
+      "imageAsset": "Map-lost-colony",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": null,
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-lost-colony-mountain-passage-15",
+      "name": "Mountain Passage",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-lost-colony-mountain-passage-15",
+          "label": "Entrance",
+          "lat": 16.51,
+          "lon": 35.81,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Lost_Colony",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=86916&revid=600802&format=json&layers=cave-entrance%7Clost-colony-terminal%7CLC-city-teleporter",
+      "imageAsset": "Map-lost-colony",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": null,
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-lost-colony-city-exit-tunnel",
+      "name": "City Exit Tunnel",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-lost-colony-city-exit-tunnel",
+          "label": "Entrance",
+          "lat": 18.615,
+          "lon": 65.934,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Lost_Colony",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=86916&revid=600802&format=json&layers=cave-entrance%7Clost-colony-terminal%7CLC-city-teleporter",
+      "imageAsset": "Map-lost-colony",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": null,
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-lost-colony-city-entrance-tunnel",
+      "name": "City Entrance Tunnel",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-lost-colony-city-entrance-tunnel",
+          "label": "Entrance",
+          "lat": 6.333,
+          "lon": 58.753,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Lost_Colony",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=86916&revid=600802&format=json&layers=cave-entrance%7Clost-colony-terminal%7CLC-city-teleporter",
+      "imageAsset": "Map-lost-colony",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": null,
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-lost-colony-mountain-tunnel-18",
+      "name": "Mountain Tunnel",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-lost-colony-mountain-tunnel-18",
+          "label": "Entrance",
+          "lat": 17.495,
+          "lon": 12.681,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Lost_Colony",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=86916&revid=600802&format=json&layers=cave-entrance%7Clost-colony-terminal%7CLC-city-teleporter",
+      "imageAsset": "Map-lost-colony",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": null,
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-lost-colony-mountain-tunnel-19",
+      "name": "Mountain Tunnel",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-lost-colony-mountain-tunnel-19",
+          "label": "Entrance",
+          "lat": 16.899,
+          "lon": 10.103,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Lost_Colony",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=86916&revid=600802&format=json&layers=cave-entrance%7Clost-colony-terminal%7CLC-city-teleporter",
+      "imageAsset": "Map-lost-colony",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": null,
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-lost-colony-mountain-passage-20",
+      "name": "Mountain Passage",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-lost-colony-mountain-passage-20",
+          "label": "Entrance",
+          "lat": 2.655,
+          "lon": 36.751,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Lost_Colony",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=86916&revid=600802&format=json&layers=cave-entrance%7Clost-colony-terminal%7CLC-city-teleporter",
+      "imageAsset": "Map-lost-colony",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": null,
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-lost-colony-mountain-passage-21",
+      "name": "Mountain Passage",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-lost-colony-mountain-passage-21",
+          "label": "Entrance",
+          "lat": 2.672,
+          "lon": 40.644,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Lost_Colony",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=86916&revid=600802&format=json&layers=cave-entrance%7Clost-colony-terminal%7CLC-city-teleporter",
+      "imageAsset": "Map-lost-colony",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": null,
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-lost-colony-small-cave-22",
+      "name": "Small Cave",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-lost-colony-small-cave-22",
+          "label": "Entrance",
+          "lat": 30.15,
+          "lon": 55.207,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Lost_Colony",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=86916&revid=600802&format=json&layers=cave-entrance%7Clost-colony-terminal%7CLC-city-teleporter",
+      "imageAsset": "Map-lost-colony",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": null,
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-lost-colony-small-cave-23",
+      "name": "Small Cave",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-lost-colony-small-cave-23",
+          "label": "Entrance",
+          "lat": 84.741,
+          "lon": 76.444,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Lost_Colony",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=86916&revid=600802&format=json&layers=cave-entrance%7Clost-colony-terminal%7CLC-city-teleporter",
+      "imageAsset": "Map-lost-colony",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": null,
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-lost-colony-mountain-passage-24",
+      "name": "Mountain Passage",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-lost-colony-mountain-passage-24",
+          "label": "Entrance",
+          "lat": 47.859,
+          "lon": 75.781,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Lost_Colony",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=86916&revid=600802&format=json&layers=cave-entrance%7Clost-colony-terminal%7CLC-city-teleporter",
+      "imageAsset": "Map-lost-colony",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": null,
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-lost-colony-mountain-passage-25",
+      "name": "Mountain Passage",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-lost-colony-mountain-passage-25",
+          "label": "Entrance",
+          "lat": 54.004,
+          "lon": 71.387,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Lost_Colony",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=86916&revid=600802&format=json&layers=cave-entrance%7Clost-colony-terminal%7CLC-city-teleporter",
+      "imageAsset": "Map-lost-colony",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": null,
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    }
+  ],
+  "obelisks": []
+}

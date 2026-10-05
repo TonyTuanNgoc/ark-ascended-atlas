@@ -1,0 +1,24 @@
+[
+  {
+    "endpoint": "search",
+    "httpStatus": 400,
+    "errorStatus": "INVALID_ARGUMENT",
+    "reasons": [
+      "badRequest"
+    ],
+    "rpcReasons": [
+      "API_KEY_INVALID"
+    ]
+  },
+  {
+    "endpoint": "videos",
+    "httpStatus": 400,
+    "errorStatus": "INVALID_ARGUMENT",
+    "reasons": [
+      "badRequest"
+    ],
+    "rpcReasons": [
+      "API_KEY_INVALID"
+    ]
+  }
+]

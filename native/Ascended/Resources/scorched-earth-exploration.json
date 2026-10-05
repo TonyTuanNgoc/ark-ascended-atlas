@@ -1,1 +1,186 @@
-{"reviewedAt":"04/10/2026","artifacts":[{"id":"destroyer","name":"Artifact of the Destroyer","lat":80.299,"lon":81.761,"routeID":"","imageAsset":"Artifact-destroyer","sourceURL":"https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=16&layer=artifacts"},{"id":"gatekeeper","name":"Artifact of the Gatekeeper","lat":58.358,"lon":43.285,"routeID":"","imageAsset":"Artifact-gatekeeper","sourceURL":"https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=16&layer=artifacts"},{"id":"crag","name":"Artifact of the Crag","lat":34.905,"lon":27.708,"routeID":"","imageAsset":"Artifact-crag","sourceURL":"https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=16&layer=artifacts"}],"routes":[],"obelisks":[]}
+{
+  "reviewedAt": "05/10/2026",
+  "artifacts": [
+    {
+      "id": "destroyer",
+      "name": "Artifact of the Destroyer",
+      "lat": 80.299,
+      "lon": 81.761,
+      "routeID": "reference-scorched-earth-ruins-of-nosti",
+      "imageAsset": "Artifact-destroyer",
+      "sourceURL": "https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=16&layer=artifacts"
+    },
+    {
+      "id": "gatekeeper",
+      "name": "Artifact of the Gatekeeper",
+      "lat": 58.358,
+      "lon": 43.285,
+      "routeID": "reference-scorched-earth-the-old-tunnels",
+      "imageAsset": "Artifact-gatekeeper",
+      "sourceURL": "https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=16&layer=artifacts"
+    },
+    {
+      "id": "crag",
+      "name": "Artifact of the Crag",
+      "lat": 34.905,
+      "lon": 27.708,
+      "routeID": "reference-scorched-earth-grave-of-the-tyrants",
+      "imageAsset": "Artifact-crag",
+      "sourceURL": "https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=16&layer=artifacts"
+    }
+  ],
+  "routes": [
+    {
+      "id": "reference-scorched-earth-grave-of-the-tyrants",
+      "name": "Grave of the Tyrants",
+      "artifactIDs": [
+        "crag"
+      ],
+      "entrances": [
+        {
+          "id": "reference-scorched-earth-grave-of-the-tyrants",
+          "label": "Entrance",
+          "lat": 28.223,
+          "lon": 29.057,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Scorched_Earth",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=78055&revid=600987&format=json&layers=obelisk-blue%7Cobelisk-green%7Cobelisk-red%7Ccave-entrance",
+      "imageAsset": "ReferencePhoto-reference-scorched-earth-grave-of-the-tyrants",
+      "imageCaption": "ASA Wiki source entrance photograph.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_ScorchedEarth_CaveEntrance_Grave_of_the_Tyrants.jpg/288px-ASA_ScorchedEarth_CaveEntrance_Grave_of_the_Tyrants.jpg?67a7c1",
+      "videoURL": "https://www.youtube.com/watch?v=RP7bA_veAYc&t=50s",
+      "walkthroughStatus": "externalLinkOnly"
+    },
+    {
+      "id": "reference-scorched-earth-ruins-of-nosti",
+      "name": "Ruins of Nosti",
+      "artifactIDs": [
+        "destroyer"
+      ],
+      "entrances": [
+        {
+          "id": "reference-scorched-earth-ruins-of-nosti",
+          "label": "Entrance",
+          "lat": 78.899,
+          "lon": 76.091,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Scorched_Earth",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=78055&revid=600987&format=json&layers=obelisk-blue%7Cobelisk-green%7Cobelisk-red%7Ccave-entrance",
+      "imageAsset": "Map-scorched-earth",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_ScorchedEarth_CaveEntrance_Ruins_of_Nosti.jpg/288px-ASA_ScorchedEarth_CaveEntrance_Ruins_of_Nosti.jpg?aeeb6f",
+      "videoURL": "https://www.youtube.com/watch?v=RP7bA_veAYc&t=182s",
+      "walkthroughStatus": "externalLinkOnly"
+    },
+    {
+      "id": "reference-scorched-earth-the-old-tunnels",
+      "name": "The Old Tunnels",
+      "artifactIDs": [
+        "gatekeeper"
+      ],
+      "entrances": [
+        {
+          "id": "reference-scorched-earth-the-old-tunnels",
+          "label": "Entrance",
+          "lat": 58.775,
+          "lon": 47.741,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Scorched_Earth",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=78055&revid=600987&format=json&layers=obelisk-blue%7Cobelisk-green%7Cobelisk-red%7Ccave-entrance",
+      "imageAsset": "Map-scorched-earth",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_ScorchedEarth_CaveEntrance_The_Old_Tunnels.jpg/288px-ASA_ScorchedEarth_CaveEntrance_The_Old_Tunnels.jpg?1a80ca",
+      "videoURL": "https://www.youtube.com/watch?v=RP7bA_veAYc&t=121s",
+      "walkthroughStatus": "externalLinkOnly"
+    },
+    {
+      "id": "reference-scorched-earth-oasis-cave",
+      "name": "Oasis Cave",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-scorched-earth-oasis-cave",
+          "label": "Entrance",
+          "lat": 73.629,
+          "lon": 40.154,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Scorched_Earth",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=78055&revid=600987&format=json&layers=obelisk-blue%7Cobelisk-green%7Cobelisk-red%7Ccave-entrance",
+      "imageAsset": "Map-scorched-earth",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_ScorchedEarth_CaveEntrance_Oasis_Cave.jpg/288px-ASA_ScorchedEarth_CaveEntrance_Oasis_Cave.jpg?38317f",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-scorched-earth-trench-cave",
+      "name": "Trench Cave",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-scorched-earth-trench-cave",
+          "label": "Entrance",
+          "lat": 59.104,
+          "lon": 16.21,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Scorched_Earth",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=78055&revid=600987&format=json&layers=obelisk-blue%7Cobelisk-green%7Cobelisk-red%7Ccave-entrance",
+      "imageAsset": "Map-scorched-earth",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_ScorchedEarth_CaveEntrance_Trench_Cave.jpg/288px-ASA_ScorchedEarth_CaveEntrance_Trench_Cave.jpg?169398",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    }
+  ],
+  "obelisks": []
+}

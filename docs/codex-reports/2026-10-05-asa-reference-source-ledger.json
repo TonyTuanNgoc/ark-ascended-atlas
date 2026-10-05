@@ -1,0 +1,62 @@
+[
+  {
+    "mapID": "lost-colony",
+    "status": "retrieved",
+    "revisionID": 600802,
+    "requests": [
+      {
+        "url": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=86916&revid=600802&format=json&layers=cave-entrance%7Clost-colony-terminal%7CLC-city-teleporter",
+        "sha256": "38d3220d0778c15eb88974fefc7f365f2fafd2d372afe5225091f18a519395a1"
+      }
+    ],
+    "markerCounts": {
+      "cave-entrance": 25,
+      "lost-colony-terminal": 1,
+      "LC-city-teleporter": 6
+    }
+  },
+  {
+    "mapID": "astraeos",
+    "status": "retrieved",
+    "revisionID": 601078,
+    "requests": [
+      {
+        "url": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+        "sha256": "12cb19c95428b4b140370afd568ea016fdef02c89f7ae18b5a493c1a524766b0"
+      }
+    ],
+    "markerCounts": {
+      "cave-entrance": 65,
+      "obelisk-blue": 1,
+      "obelisk-green": 1,
+      "obelisk-red": 1,
+      "minotaur-terminal": 1,
+      "abyssanthos-terminal": 1,
+      "kalydonios-terminal": 1,
+      "colossus-terminal": 1,
+      "kroaratos-terminal": 1,
+      "shallocis-terminal": 1
+    }
+  },
+  {
+    "mapID": "valguero",
+    "status": "retrievedExplorerNoASAMarkerDataset",
+    "cache": "/Volumes/TONY SSD/ASCENDED_MEDIA/reference-locations-20261005/valguero-wiki-explorer.html"
+  },
+  {
+    "mapID": "extinction",
+    "status": "retrievedExplorerNoASAMarkerDataset",
+    "cache": "/Volumes/TONY SSD/ASCENDED_MEDIA/reference-locations-20261005/extinction-wiki-explorer.html"
+  },
+  {
+    "mapID": "genesis-part-1",
+    "status": "retrievedExplorerNoASAMarkerDataset",
+    "cache": "/Volumes/TONY SSD/ASCENDED_MEDIA/reference-locations-20261005/genesis-part-1-wiki-explorer.html"
+  },
+  {
+    "status": "photoRequestRefusedStop",
+    "recordID": "reference-scorched-earth-ruins-of-nosti",
+    "curlExit": 56,
+    "action": "No additional Wiki network requests after refusal"
+  }
+]

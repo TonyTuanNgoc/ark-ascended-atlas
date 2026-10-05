@@ -139,5 +139,25 @@
     "duration": 3.5,
     "sourceAcquisition": "Approved complete local source cache",
     "evidenceLimitations": "The source shows an installed Sap Tap and Sap in its inventory. A collection transfer or elapsed production time is not demonstrated."
+  },
+  "rag-blue-gem-cavern": {
+    "starts": [
+      1173,
+      1168,
+      1178
+    ],
+    "title": "Harvesting",
+    "duration": 3.5,
+    "sourceAcquisition": "Approved complete local source cache"
+  },
+  "rag-highland-wild-vegetables": {
+    "starts": [
+      786,
+      788,
+      795
+    ],
+    "title": "Harvesting",
+    "duration": 3.5,
+    "sourceAcquisition": "Approved complete local source cache"
   }
 }

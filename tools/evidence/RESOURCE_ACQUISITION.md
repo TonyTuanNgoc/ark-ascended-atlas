@@ -2,27 +2,27 @@
 
 The audit tracks 454 category entries across all 11 selectable map planes. It does not establish exhaustive filmed harvesting coverage. Raw resource labels are candidates only; they never become verified GPS pins.
 
-52 filmed regions have 156 distinct offline loops (three per region). 15 guides demonstrate harvesting or loot; 37 show location, resources, creatures, interaction or production inventory. The new Ragnarok Sap Tap at 22.4/26.7 shows Sap inventory, not a collection transfer or timed production.
+54 filmed regions have 162 distinct offline loops (three per region). 17 guides demonstrate harvesting or loot; 37 show location, resources, creatures, interaction or production inventory. The new Ragnarok Sap Tap at 22.4/26.7 shows Sap inventory, not a collection transfer or timed production.
 
 The original three maps have explicit acquisition/availability entries for the original 28 categories plus Sap. Additional candidate categories remain unresolved. Crafting and processing references are not local filmed ingredient routes.
 
 | Map plane | Regions | Harvest/loot guides | Categories | Pending source verification |
 |---|---:|---:|---:|---:|
 | aberration | 2 | 0 | 44 | 33 |
-| astraeos | 1 | 0 | 47 | 38 |
+| astraeos | 1 | 0 | 47 | 34 |
 | extinction | 1 | 0 | 42 | 31 |
 | genesis-part-1 | 1 | 0 | 38 | 27 |
 | genesis-part-1-ocean | 1 | 0 | 39 | 27 |
 | lost-colony | 1 | 0 | 49 | 40 |
-| ragnarok | 19 | 8 | 41 | 6 |
+| ragnarok | 21 | 10 | 41 | 1 |
 | scorched-earth | 2 | 1 | 36 | 26 |
 | the-center | 11 | 2 | 37 | 2 |
-| the-island | 12 | 4 | 37 | 2 |
-| valguero | 1 | 0 | 44 | 34 |
+| the-island | 12 | 4 | 37 | 1 |
+| valguero | 1 | 0 | 44 | 30 |
 
 ## Source completeness
 
-25 canonical videos have inspected metadata, including two no-GPS creature-method sources. The 23 videos supporting GPS-region guides are native 1920×1080; packaged loops are 1280×720, 24 fps, muted H.264. Rights basis is licensed under the user’s earlier confirmation.
+26 canonical videos have inspected metadata, including three no-GPS method/reference sources. The 23 videos supporting GPS-region guides are native 1920×1080; packaged loops are 1280×720, 24 fps, muted H.264. Rights basis is licensed under the user’s earlier confirmation.
 
 GPS is tied to the literal filmed camera or named waypoint and source map plane. It does not establish individual resource actors, current respawns or guaranteed yield. Separate Genesis Ocean and Arctic/source-map scopes are recorded on every guide.
 
@@ -54,6 +54,8 @@ GPS is tied to the literal filmed camera or named waypoint and source map plane.
 | [tj-7gfu6AHA](https://www.youtube.com/watch?v=tj-7gfu6AHA) | Kittykatlapurr | 3563 | approved-complete-local-cache |
 | [u_c-yTvCLek](https://www.youtube.com/watch?v=u_c-yTvCLek) | Jonna-X | 56879 | approved-complete-local-cache |
 
+| [vGqngPRx6po](https://www.youtube.com/watch?v=vGqngPRx6po) | Ark: Survival Guide | 84608 | partial-native-chunks/full-HTTP403; no GPS pin |
+
 ## Verified changes
 
 - Ragnarok plant third clip: actual ADDED32x Organic Polymer at730s; third loop728–731.5s. Amount is a creator example.
@@ -64,12 +66,25 @@ GPS is tied to the literal filmed camera or named waypoint and source map plane.
 ## Concrete acquisition blockers
 
 - Fresh licensed Scorched Earth full download ended HTTP403 Forbidden. Initial received ranges remain usable; unavailable later chapters cannot be rendered.
-- Fresh native YouTube Data API search rejected the parameters/API key. No key or credential was requested or changed.
+- Minimal official search.list and videos.list requests both returned HTTP400 INVALID_ARGUMENT / badRequest / API_KEY_INVALID. The configured Keychain key exists but is invalid; this is a credential configuration failure, not a query-parameter error. No key or credential was requested, exposed or changed.
 - Installed Cốc Cốc plays the public source, but its native Download video & audio panel remains Searching for Video/Audio without formats or a download control. Normal UI was attempted; no restriction bypass or security changes were made.
 - Wiki direct fetches sometimes return403; publicly indexed source excerpts were used for the explicitly identified mechanics/availability references.
 
-The ledger retains candidate chapter URLs and timestamps as chapter metadata only. 266 category entries still need source verification. All external acquisition limits must be resolved before claiming exhaustive three-clip GPS/harvest coverage.
+The ledger retains candidate chapter URLs and timestamps as chapter metadata only. 252 category entries still need source verification. All external acquisition limits must be resolved before claiming exhaustive three-clip GPS/harvest coverage.
 
 ## Validation
 
-All156 packaged loops fully decode, match recorded SHA-256 values, contain three distinct hashes per guide and have no audio track. Swift parsing passes; native build, device delivery and release are owned by the root task.
+All162 packaged loops fully decode, match recorded SHA-256 values, contain three distinct hashes per guide and have no audio track. Swift parsing passes; native build, device delivery and release are owned by the root task.
+
+## Build 22 source improvements
+
+- Ragnarok Blue Gem cavern: creator overlay51.3/45.5 at1175s, actual Metal Pick acquisition at1180s. Loops1173–1176.5,1168–1171.5,1178–1181.5s from Fynixmech Guides.
+- Ragnarok wild vegetables: literal camera crosshair21.2/84.0 at786s. Rockarrot/Savoroot collection visible792–804s. Loops786–789.5,788–791.5,795–798.5s from Frodo the Dodo. Longrass is not inferred from the wild vegetables.
+- Existing western flower region now includes Plant Species X Seed: seed icon added927s, Rare Flowers added931s, same source chapter915–949s and reviewed region.
+- Longrass has a documented crop-production route from https://ark.wiki.gg/wiki/Farming. This is a mechanics reference, not a filmed wild GPS route.
+- Alternative popular ASA Island Plant X guide vGqngPRx6po was inspected and licensed download attempted once. Native1080p AV1 chunks were received through56.2s beforeHTTP403. Opening plants and interaction were reviewed, but no readableGPS or completed seed acquisition was established; only a source-linked method is added.
+- Cốc Cốc was retried with the alternative public source through its ordinary Download video/audio control. Playback works; the native panel remainsSearching with no selectable formats. No bypass was attempted.
+
+The original three maps now have four pending candidate rows: generic mushroom type on each map, and Center Plant Species X Seed. The Island Plant X row is a non-GPS method reference; its GPS/three-clip gap remains. Generic raw-label mushrooms are not silently equated with Rare Mushrooms. Eight expansion planes still have many unresolved acquisition categories, and37region guides still lack demonstrated harvest/loot. Exhaustive harvesting coverage is not claimed.
+
+All162 MP4s passed full ffmpeg decode and SHA256 verification in this run. Both new region previews are bundled asset catalog image sets. ResourceFarming.swift was unchanged in this round; full unit/build verification and release remain coordinated by the root task.

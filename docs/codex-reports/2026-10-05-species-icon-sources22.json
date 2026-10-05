@@ -1,0 +1,190 @@
+[
+  {
+    "id": "veilwyn",
+    "sourcePage": "https://ark.wiki.gg/wiki/Veilwyn",
+    "sourceURL": "https://ark.wiki.gg/images/Veilwyn.png",
+    "filename": "Veilwyn.png",
+    "status": "ready",
+    "pixels": [
+      256,
+      256
+    ],
+    "sha256": "08e9331653820ab5fe5b9c8fe505899d097d93d1c686830e95b2fa25959e1fc4"
+  },
+  {
+    "id": "solwyn",
+    "sourcePage": "https://ark.wiki.gg/wiki/Solwyn",
+    "sourceURL": "https://ark.wiki.gg/images/Solwyn.png",
+    "filename": "Solwyn.png",
+    "status": "ready",
+    "pixels": [
+      256,
+      256
+    ],
+    "sha256": "87960e368640841259f28bb1a5a3462a4c65b835b99172c28547c4a2639c0bf7"
+  },
+  {
+    "id": "ossidon",
+    "sourcePage": "https://ark.wiki.gg/wiki/Ossidon",
+    "sourceURL": "https://ark.wiki.gg/images/Ossidon.png",
+    "filename": "Ossidon.png",
+    "status": "ready",
+    "pixels": [
+      256,
+      256
+    ],
+    "sha256": "4482e6ad0bc278bbae773f5926dbf2be1ff9713be76e4c0dafa2ed249f69a1b5"
+  },
+  {
+    "id": "gloon",
+    "sourcePage": "https://ark.wiki.gg/wiki/Gloon",
+    "sourceURL": "https://ark.wiki.gg/images/Gloon.png",
+    "filename": "Gloon.png",
+    "status": "ready",
+    "pixels": [
+      256,
+      256
+    ],
+    "sha256": "15784261906a9c9e877308ceba9e10ec7e68b90aebbc3fe367489782f130cd4a"
+  },
+  {
+    "id": "aureliax",
+    "sourcePage": "https://ark.wiki.gg/wiki/Aureliax",
+    "sourceURL": "https://ark.wiki.gg/images/Aureliax.png",
+    "filename": "Aureliax.png",
+    "status": "ready",
+    "pixels": [
+      256,
+      256
+    ],
+    "sha256": "12228f3fbfb4ab2c3ea2fcfd23a81fa9b68d42dd826ad9a30d853368f309d999"
+  },
+  {
+    "id": "boaratos",
+    "sourcePage": "https://ark.wiki.gg/wiki/Boaratos",
+    "sourceURL": "https://ark.wiki.gg/images/Daeodon.png",
+    "filename": "Daeodon.png",
+    "status": "ready",
+    "pixels": [
+      256,
+      256
+    ],
+    "sha256": "88cc8dd3f4affc763795405646ce4a3eecfc0bfab6725f77e9907210ac31a503"
+  },
+  {
+    "id": "grand-tortugar",
+    "sourcePage": "https://ark.wiki.gg/wiki/Grand_Tortugar",
+    "sourceURL": "https://ark.wiki.gg/images/Grand_Tortugar.png",
+    "filename": "Grand_Tortugar.png",
+    "status": "ready",
+    "pixels": [
+      256,
+      256
+    ],
+    "sha256": "acff4030826a1a990bf66c5bcae3db020e1d8b310772a4ced441b279f729bed7"
+  },
+  {
+    "id": "maeguana",
+    "sourcePage": "https://ark.wiki.gg/wiki/Maeguana",
+    "sourceURL": "https://ark.wiki.gg/images/Maewing.png",
+    "filename": "Maewing.png",
+    "status": "ready",
+    "pixels": [
+      256,
+      256
+    ],
+    "sha256": "d0eee66f5ac71a61c2007344935d07475e471c47ea2481314e96a73b9d61bd25"
+  },
+  {
+    "id": "kirayli",
+    "sourcePage": "https://ark.wiki.gg/wiki/Kirayli",
+    "sourceURL": "https://ark.wiki.gg/images/Ovis.png",
+    "filename": "Ovis.png",
+    "status": "ready",
+    "pixels": [
+      256,
+      256
+    ],
+    "sha256": "96caf06b2cb593fc976fc73ac642c170e6e2552b43f6fba2bf14847b680f1708"
+  },
+  {
+    "id": "thanatos",
+    "sourcePage": "https://ark.wiki.gg/wiki/Thanatos",
+    "sourceURL": "https://ark.wiki.gg/images/King_Titan.png",
+    "filename": "King_Titan.png",
+    "status": "ready",
+    "pixels": [
+      256,
+      256
+    ],
+    "sha256": "02fbe7382913b808807495ab0e9c6983e20216d04e7af8dc8ded3e6f3fa3d44c"
+  },
+  {
+    "id": "cosmo",
+    "sourcePage": "https://ark.wiki.gg/wiki/Cosmo",
+    "sourceURL": "https://ark.wiki.gg/images/Cosmo.png",
+    "filename": "Cosmo.png",
+    "status": "ready",
+    "pixels": [
+      256,
+      256
+    ],
+    "sha256": "6f147d8c645db10700f06a67b26d44b859e70c60ef9e914bd93309a768bc5eea"
+  },
+  {
+    "id": "armadoggo",
+    "sourcePage": "https://ark.wiki.gg/wiki/Armadoggo",
+    "sourceURL": "https://ark.wiki.gg/images/Armadoggo.png",
+    "filename": "Armadoggo.png",
+    "status": "ready",
+    "pixels": [
+      256,
+      256
+    ],
+    "sha256": "2e2a8c233ab8b088abfdcd87d57ac6aa9c4f06e4c1b9f5c7187c52545e55dda5"
+  },
+  {
+    "id": "oasisaur",
+    "sourcePage": "https://ark.wiki.gg/wiki/Oasisaur",
+    "sourceURL": "https://ark.wiki.gg/images/Oasisaur.png",
+    "filename": "Oasisaur.png",
+    "status": "ready",
+    "pixels": [
+      256,
+      256
+    ],
+    "sha256": "d8c1b5dc1a109657eb8a26af75f87ebd216fe9bd8aa50e60224f177c862c57ae"
+  },
+  {
+    "id": "dreadnoughtus",
+    "sourcePage": "https://ark.wiki.gg/wiki/Dreadnoughtus",
+    "sourceURL": "https://ark.wiki.gg/images/Dreadnoughtus.png",
+    "filename": "Dreadnoughtus.png",
+    "status": "ready",
+    "pixels": [
+      256,
+      256
+    ],
+    "sha256": "6f44c5a5d57a09ca8bed924966a506077a6f9b13f050306ee0958e2460c4ffd0"
+  },
+  {
+    "id": "rock-drake",
+    "sourcePage": "https://ark.wiki.gg/wiki/Rock_Drake",
+    "sourceURL": "https://ark.wiki.gg/images/Wyvern.png",
+    "filename": "Wyvern.png",
+    "status": "ready",
+    "pixels": [
+      256,
+      256
+    ],
+    "sha256": "f2ed68994dd20d985517e9bdc9d14d23247620a6e2b4f6a5c5512b15117277a2"
+  },
+  {
+    "id": "ravager",
+    "sourcePage": "https://ark.wiki.gg/wiki/Ravager",
+    "sourceURL": "https://ark.wiki.gg/images/Direwolf.png",
+    "filename": "Direwolf.png",
+    "status": "unavailable",
+    "reason": "HTTP 429, curl 56"
+  }
+]

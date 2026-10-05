@@ -27,3 +27,13 @@ User explicitly requested completion of all outstanding work on October 5. Track
 - [ ] Audit all missing library/artifact/creature artwork; preserve requested white creature icons.
 - [ ] Creator tutorial links and verified build counts for all fifteen house examples, preserving original source geometry and separating suggested fit-out from creator counts.
 - [x] Consolidated signed native build, actual iPad installed-version readback and launch evidence.0.20.0/build21 final install succeeded; report/systemlog and commit/push accompany this delivery. No TestFlight, Tony OS or web domain.
+
+## Build22 continuation
+
+-163ASA references/126entrances;103expansion entrance cards. Outside-plane records and uncalibrated source coordinates remain explicit.
+-95additional creature profile rows populated,215pending;15white species icons added/refreshed. Hidden archive guidance exposed.
+-54filmed regions/162loops,17actual acquisition guides;252category verification gaps remain.
+-Four campaign guides expanded with sourced mechanics and candid preparation options; unknown numerical targets remain unknown.
+-Final scoped QA and native delivery recorded in codex-reports/2026-10-05-ascended22-continuation.md. Full-content checkboxes above remain open.
+
+- [x] Build22 delivery:17unit+10scopedUI pass; signed resource parity; USB installed-version0.21.0(22) and launchPID1431 confirmed. Detailed pending content remains open above.

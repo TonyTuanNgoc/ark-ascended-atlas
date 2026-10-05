@@ -1,0 +1,19 @@
+# ASA reference continuation — 5 October 2026
+
+Checkout started clean at a724737; root fetched before delegation. No project/version, original Island/Ragnarok/Center exploration, map geometry, commit or deployment changes are owned by this task.
+
+After cooldown, sequential normal public source requests succeeded for Lost Colony ASA DataMap 86916 revision 600802 and Astraeos ASA DataMap 87859 revision 601078. These add 90 confirmed source entrances. Catalogue now contains 163 unique references: 126 entrances, 18 colored obelisks, 18 terminals and one outside-plane Chaos artifact. Source payloads and request URLs/hashes are cached in `/Volumes/TONY SSD/ASCENDED_MEDIA/reference-locations-20261005`; reproducible acquisition/generation tools are in `tools`.
+
+Lost Colony: 25 entrances, Boss Teleporter and six named City Teleporters. Boss Teleporter starts the encounter approach; it is not the final palace arena position. Astraeos: 65 entrances, three colored obelisks and named Minotarchos, Abyssalus, Kalydonios & Erymanthian, Colossus, Kroaratos and Shallocis terminals. Most named points agree with the unflipped extracted atlas orientation. No latitude inversion was applied.
+
+Six records are outside 0–100 and preserved without clamping: three Extinction terminals, Artifact of Chaos (101.206 / 94.425), Astraeos Verdant Underhollow entrance (29.274 / 100.232), and Shallocis (Wiki 47.14 / 116.27). Shallocis's actor-source latitude differs (52.865), so source disagreement is explicit. Root owns any extended-plane projection/calibration.
+
+Expansion cave cards now include Scorched Earth 5, Aberration 8, Lost Colony 25 and Astraeos 65. Stable route IDs equal source reference IDs, with each entrance ID retained. All three Scorched artifacts and depths/shadows/stalker on Aberration link to actual entrance cards; Aberration Lost has no verified entrance and remains unlinked. All 12 currently catalogued Astraeos artifacts have source-supported cave associations. Source descriptions, rather than name matching or cave actors, determine artifact associations.
+
+Preparation is concise and conservative: food/water, spare armor/healing, weapon ammunition, light and return route. Notes distinguish artifact sites from entrances and source atlas coordinates from calibrated GPS. Only Grave of the Tyrants among these expansion cards has a retrieved entrance photo; other cards explicitly use map terrain while retaining exact source photo URL. A photo request was refused (curl 56); the photo tool stops immediately instead of substituting images. No additional Wiki request was made afterward in this continuation.
+
+Scorched artifact routes retain canonical RP7bA_veAYc chapter links supported by inspected metadata. Aberration's five surface approach cards retain canonical IzKTaVjnciA. No artifact-cave video on Aberration was independently retrieved; those remain `notRetrieved`. Local walkthroughs are clearly unavailable. JSON fields `videoURL`, `photoURL`, `walkthroughStatus` supplement route data; typed reference fields `walkthroughURL`, `walkthroughStatus`, `artifactIDs` let root expose sources without claiming a local video. Existing CaveRoute UI integration belongs to root.
+
+Remaining source gaps: normal Valguero, Extinction and Genesis explorer-page retrievals completed but contain no ASA-specific entrance DataMap. Old Evolved inline maps and extracted cave centers remain excluded. Prior licensed YouTube downloads failed HTTP 403 and captions HTTP 429; no GPS frame evidence is claimed. Do not call lack of source proof a complete GPS catalogue.
+
+Validation: 163 unique source IDs; 103 unique expansion route IDs; every nonempty artifact route link resolves; all route image assets exist; source entrance IDs resolve to the corresponding reference record. Root owns full Swift/Xcode/native device validation.

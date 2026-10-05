@@ -44,12 +44,15 @@ struct AtlasReferenceLocation: Decodable, Identifiable {
     let note: String
     let routeID: String?
     let artifactID: String?
+    let artifactIDs: [String]?
     let bossIDs: [String]
     let color: String?
     let source: AtlasReferenceSource
     let photoURL: String?
     let photoStatus: String?
     let imageAsset: String?
+    let walkthroughURL: String?
+    let walkthroughStatus: String?
 
     /// Outside-plane records remain in the catalogue, without a misleading
     /// clamped marker. The caller controls map projection and source priority.

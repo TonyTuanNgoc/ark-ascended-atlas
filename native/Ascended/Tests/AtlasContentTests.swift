@@ -50,4 +50,19 @@ final class AtlasContentTests: XCTestCase {
         let manticore = try XCTUnwrap(ArkMap.scorchedEarth.bosses.first { $0.id == "manticore" })
         XCTAssertTrue(manticore.tribute.contains { ($0.quantities.first ?? 0) > 0 })
     }
+
+    func testExpansionEntrancesResolveAndOutsidePlaneStaysOffMap() throws {
+        for map in [ArkMap.scorchedEarth, .aberration, .lostColony, .astraeos] {
+            let routes = try XCTUnwrap(map.exploration).routes
+            XCTAssertFalse(routes.isEmpty, map.rawValue)
+            XCTAssertEqual(Set(routes.map(\.id)).count, routes.count)
+            for reference in AtlasReferenceLocations.references(in: map) where reference.kind == .caveEntrance {
+                let route = try XCTUnwrap(routes.first { $0.id == reference.routeID }, reference.id)
+                XCTAssertTrue(route.entrances.contains { abs($0.lat - reference.lat) < 0.001 && abs($0.lon - reference.lon) < 0.001 })
+                if reference.point == nil {
+                    XCTAssertFalse(MapLocation.all(in: map).contains { $0.routeID == route.id })
+                }
+            }
+        }
+    }
 }

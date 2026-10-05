@@ -1,0 +1,2260 @@
+{
+  "checkedAt": "2026-10-05",
+  "sources": [
+    {
+      "id": "veilwyn",
+      "sourceURL": "https://ark.wiki.gg/wiki/Veilwyn",
+      "cachedHTML": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/veilwyn.html",
+      "sha256": "2f50293767c2ffb61b1e1c9f00b65a78b718ad4211cf8cd5404a8a3b28bd7fba",
+      "fields": {
+        "diet": "infobox",
+        "tameable": "detailed Taming procedure; directly tameable rather than ownership possible",
+        "method": "Taming section",
+        "foods": "actual tame procedure; conflicts noted",
+        "drops": "Drops section",
+        "guidance": "Taming section"
+      },
+      "limitations": "Exceptional Kibble appears in the infobox, but the detailed tame procedure describes direct claiming; no food stack is required in this guide."
+    },
+    {
+      "id": "solwyn",
+      "sourceURL": "https://ark.wiki.gg/wiki/Solwyn",
+      "cachedHTML": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/solwyn.html",
+      "sha256": "7c3b523e1c8648fb7f0bf0e001b5528ac76f00ae3436ea46c3f5b078932d2cfe",
+      "fields": {
+        "diet": "infobox",
+        "tameable": "detailed Taming procedure; directly tameable rather than ownership possible",
+        "method": "Taming section",
+        "foods": "actual tame procedure; conflicts noted",
+        "drops": "Drops section",
+        "guidance": "Taming section"
+      },
+      "limitations": "Evolution is distinct from passive wild taming. Exact tier multipliers, interaction cooldowns and base stats are not copied."
+    },
+    {
+      "id": "ossidon",
+      "sourceURL": "https://ark.wiki.gg/wiki/Ossidon",
+      "cachedHTML": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/ossidon.html",
+      "sha256": "bfcac23f5ffbb10d617c683866405c3d9e791197f52994ec31b582ed749bcb4a",
+      "fields": {
+        "diet": "infobox",
+        "tameable": "detailed Taming procedure; directly tameable rather than ownership possible",
+        "method": "Taming section",
+        "foods": "actual tame procedure; conflicts noted",
+        "drops": "Drops section",
+        "guidance": "Taming section"
+      },
+      "limitations": "No final food is published in the inspected procedure. No minimum ammunition, precise number of cycles or stat target is assumed."
+    },
+    {
+      "id": "gloon",
+      "sourceURL": "https://ark.wiki.gg/wiki/Gloon",
+      "cachedHTML": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/gloon.html",
+      "sha256": "43c58c183cb1fc9b64b06452cb8074377b6b23aa74559903d2b42a307bdd183e",
+      "fields": {
+        "diet": "infobox",
+        "tameable": "detailed Taming procedure; directly tameable rather than ownership possible",
+        "method": "Taming section",
+        "foods": "actual tame procedure; conflicts noted",
+        "drops": "Drops section",
+        "guidance": "Taming section"
+      },
+      "limitations": "Requires setup before feeding; ordinary tranquilizer-and-food taming is not the inspected method. No precise shots or timer claimed."
+    },
+    {
+      "id": "aureliax",
+      "sourceURL": "https://ark.wiki.gg/wiki/Aureliax",
+      "cachedHTML": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/aureliax.html",
+      "sha256": "4431872d7c95c1b29d3c746249db375528d3dee60da4070a2fd3986f011fa432",
+      "fields": {
+        "diet": "infobox",
+        "tameable": "detailed Taming procedure; directly tameable rather than ownership possible",
+        "method": "Taming section",
+        "foods": "actual tame procedure; conflicts noted",
+        "drops": "Drops section",
+        "guidance": "Taming section"
+      },
+      "limitations": "Wild-adult ownership is obtained through the egg route, not knockout taming. Gift quality varies; no fixed recipe, incubation temperature or baby-food count assumed."
+    },
+    {
+      "id": "boaratos",
+      "sourceURL": "https://ark.wiki.gg/wiki/Boaratos",
+      "cachedHTML": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/boaratos.html",
+      "sha256": "afb541a0fd4414ea40025a887d72bd032b4ca84f46d9dc76f45371c650f411af",
+      "fields": {
+        "diet": "Infobox",
+        "tameable": "Infobox + adult/egg distinction",
+        "method": "Taming procedure",
+        "foods": "Infobox / procedure",
+        "drops": "Drops section; special loot separately considered",
+        "guidance": "Taming / behavior sections"
+      },
+      "limitations": "Base stats, tame times and exact supply quantities are not verified in this profile."
+    },
+    {
+      "id": "grand-tortugar",
+      "sourceURL": "https://ark.wiki.gg/wiki/Grand_Tortugar",
+      "cachedHTML": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/grand-tortugar.html",
+      "sha256": "379cec90214c2b08dcb4e789045ae75482c66a383bd26fe6e3c47fb5f1f184df",
+      "fields": {
+        "diet": "Infobox",
+        "tameable": "Infobox + adult/egg distinction",
+        "method": "Taming procedure",
+        "foods": "Infobox / procedure",
+        "drops": "Drops section; special loot separately considered",
+        "guidance": "Taming / behavior sections"
+      },
+      "limitations": "Base stats, tame times and exact supply quantities are not verified in this profile."
+    },
+    {
+      "id": "maeguana",
+      "sourceURL": "https://ark.wiki.gg/wiki/Maeguana",
+      "cachedHTML": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/maeguana.html",
+      "sha256": "a9ab1f930487bc66f62d9ecda5debfb92f83ab108504410ea7ec7c443beed2da",
+      "fields": {
+        "diet": "Infobox",
+        "tameable": "Infobox + adult/egg distinction",
+        "method": "Taming procedure",
+        "foods": "Infobox / procedure",
+        "drops": "Drops section; special loot separately considered",
+        "guidance": "Taming / behavior sections"
+      },
+      "limitations": "Base stats, tame times and exact supply quantities are not verified in this profile."
+    },
+    {
+      "id": "kirayli",
+      "sourceURL": "https://ark.wiki.gg/wiki/Kirayli",
+      "cachedHTML": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/kirayli.html",
+      "sha256": "c395c56bf9ee5ca09567de719fb0efc167b5ac2fd9934e04fd4288af62418374",
+      "fields": {
+        "diet": "Infobox",
+        "tameable": "Infobox + adult/egg distinction",
+        "method": "Taming procedure",
+        "foods": "Infobox / procedure",
+        "drops": "Drops section; special loot separately considered",
+        "guidance": "Taming / behavior sections"
+      },
+      "limitations": "Base stats, tame times and exact supply quantities are not verified in this profile."
+    },
+    {
+      "id": "thanatos",
+      "sourceURL": "https://ark.wiki.gg/wiki/Thanatos",
+      "cachedHTML": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/thanatos.html",
+      "sha256": "cee1d434c4027b38b0d03d0eca6ca09204684abefa034e98e269253cc76c9bf9",
+      "fields": {
+        "diet": "Infobox",
+        "tameable": "Infobox + adult/egg distinction",
+        "method": "Taming procedure",
+        "foods": "Infobox / procedure",
+        "drops": "Drops section; special loot separately considered",
+        "guidance": "Taming / behavior sections"
+      },
+      "limitations": "Base stats, tame times and exact supply quantities are not verified in this profile."
+    },
+    {
+      "id": "cosmo",
+      "sourceURL": "https://ark.wiki.gg/wiki/Cosmo",
+      "cachedHTML": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/cosmo.html",
+      "sha256": "085744c7dc8ddf58d2bb555f432301efd17fcbe80bf69503050ca8f9fb32e4cb",
+      "fields": {
+        "diet": "Infobox",
+        "tameable": "Infobox + adult/egg distinction",
+        "method": "Taming procedure",
+        "foods": "Infobox / procedure",
+        "drops": "Drops section; special loot separately considered",
+        "guidance": "Taming / behavior sections"
+      },
+      "limitations": "Base stats, tame times and exact supply quantities are not verified in this profile."
+    },
+    {
+      "id": "armadoggo",
+      "sourceURL": "https://ark.wiki.gg/wiki/Armadoggo",
+      "cachedHTML": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/armadoggo.html",
+      "sha256": "4f45434b428b70988e0eb8f5da5e4d1e3d0ab687e2b38eb78861a5a093c57d39",
+      "fields": {
+        "diet": "Infobox",
+        "tameable": "Infobox + adult/egg distinction",
+        "method": "Taming procedure",
+        "foods": "Infobox / procedure",
+        "drops": "Drops section; special loot separately considered",
+        "guidance": "Taming / behavior sections"
+      },
+      "limitations": "Base stats, tame times and exact supply quantities are not verified in this profile."
+    },
+    {
+      "id": "oasisaur",
+      "sourceURL": "https://ark.wiki.gg/wiki/Oasisaur",
+      "cachedHTML": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/oasisaur.html",
+      "sha256": "ada1972b2271b0ea5a6f800e576a3644673294d1e2c0cbe055aadcc77f884514",
+      "fields": {
+        "diet": "Infobox",
+        "tameable": "Infobox + adult/egg distinction",
+        "method": "Taming procedure",
+        "foods": "Infobox / procedure",
+        "drops": "Drops section; special loot separately considered",
+        "guidance": "Taming / behavior sections"
+      },
+      "limitations": "Base stats, tame times and exact supply quantities are not verified in this profile."
+    },
+    {
+      "id": "dreadnoughtus",
+      "sourceURL": "https://ark.wiki.gg/wiki/Dreadnoughtus",
+      "cachedHTML": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/dreadnoughtus.html",
+      "sha256": "b8c012fa189cbb562995f2fbf22b6c905df5c7fb466cc32476675c13739c4f99",
+      "fields": {
+        "diet": "Infobox",
+        "tameable": "Infobox + adult/egg distinction",
+        "method": "Taming procedure",
+        "foods": "Infobox / procedure",
+        "drops": "Drops section; special loot separately considered",
+        "guidance": "Taming / behavior sections"
+      },
+      "limitations": "Base stats, tame times and exact supply quantities are not verified in this profile."
+    },
+    {
+      "id": "rock-drake",
+      "sourceURL": "https://ark.wiki.gg/wiki/Rock_Drake",
+      "cachedHTML": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/rock-drake.html",
+      "sha256": "781a4c1e0ca28bdf12c61fdf261fb2c4911ed4f47322e7e96a901967d05b747f",
+      "fields": {
+        "diet": "Infobox",
+        "tameable": "Infobox + adult/egg distinction",
+        "method": "Taming procedure",
+        "foods": "Infobox / procedure",
+        "drops": "Drops section; special loot separately considered",
+        "guidance": "Taming / behavior sections"
+      },
+      "limitations": "Base stats, tame times and exact supply quantities are not verified in this profile."
+    },
+    {
+      "id": "ravager",
+      "sourceURL": "https://ark.wiki.gg/wiki/Ravager",
+      "cachedHTML": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/ravager.html",
+      "sha256": "10abdf2983d2d643939022a399f94902d26aedf8a1e00dd450587b6aeb97233f",
+      "fields": {
+        "diet": "Infobox",
+        "tameable": "Infobox + adult/egg distinction",
+        "method": "Taming procedure",
+        "foods": "Infobox / procedure",
+        "drops": "Drops section; special loot separately considered",
+        "guidance": "Taming / behavior sections"
+      },
+      "limitations": "Base stats, tame times and exact supply quantities are not verified in this profile."
+    },
+    {
+      "id": "roll-rat",
+      "sourceURL": "https://ark.wiki.gg/wiki/Roll_Rat",
+      "cachedHTML": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/roll-rat.html",
+      "sha256": "3fd044ea6701f5124589e523c8cb29245fe4f8877ec746938d364c91e999c211",
+      "fields": {
+        "diet": "Infobox",
+        "tameable": "Infobox + adult/egg distinction",
+        "method": "Taming procedure",
+        "foods": "Infobox / procedure",
+        "drops": "Drops section; special loot separately considered",
+        "guidance": "Taming / behavior sections"
+      },
+      "limitations": "Base stats, tame times and exact supply quantities are not verified in this profile."
+    },
+    {
+      "id": "basilisk",
+      "sourceURL": "https://ark.wiki.gg/wiki/Basilisk",
+      "cachedHTML": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/basilisk.html",
+      "sha256": "a50c69a6e06f1d3bbec54966000a30a69c7fb74c68ec5ca016753712edeed949",
+      "fields": {
+        "diet": "Infobox",
+        "tameable": "Infobox",
+        "method": "Taming / KO Strategy",
+        "foods": "Preferred Food / Taming",
+        "drops": "Drops",
+        "guidance": "Taming / Utility"
+      },
+      "limitations": "Shared-species facts only; current ASA food amounts, durations and base stats not inferred."
+    },
+    {
+      "id": "bulbdog",
+      "sourceURL": "https://ark.wiki.gg/wiki/Bulbdog",
+      "cachedHTML": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/bulbdog.html",
+      "sha256": "6fade81b383435afc2a2e632a60837c1db84c8ef3b34a97128bbb06c69b5b3e6",
+      "fields": {
+        "diet": "Infobox",
+        "tameable": "Infobox",
+        "method": "Taming / KO Strategy",
+        "foods": "Preferred Food / Taming",
+        "drops": "Drops",
+        "guidance": "Taming / Utility"
+      },
+      "limitations": "Shared-species facts only; current ASA food amounts, durations and base stats not inferred."
+    },
+    {
+      "id": "glowtail",
+      "sourceURL": "https://ark.wiki.gg/wiki/Glowtail",
+      "cachedHTML": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/glowtail.html",
+      "sha256": "ee39873d794b0647df0627fb05f4d9199e93f795b1335604ca0cd40e21e6b333",
+      "fields": {
+        "diet": "Infobox",
+        "tameable": "Infobox",
+        "method": "Taming / KO Strategy",
+        "foods": "Preferred Food / Taming",
+        "drops": "Drops",
+        "guidance": "Taming / Utility"
+      },
+      "limitations": "Shared-species facts only; current ASA food amounts, durations and base stats not inferred."
+    },
+    {
+      "id": "lamprey",
+      "sourceURL": "https://ark.wiki.gg/wiki/Lamprey",
+      "cachedHTML": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/lamprey.html",
+      "sha256": "62f35c8f8c9d255750f6d49fa01270efc70432c2624d55ed887ca9d794c4afd5",
+      "fields": {
+        "diet": "Infobox",
+        "tameable": "Infobox/procedure",
+        "method": "Taming/KO Strategy",
+        "foods": "Preferred Food / Taming",
+        "drops": "Drops",
+        "guidance": "Taming/Behavior/Dangers/Utility"
+      },
+      "limitations": "No base stats, timers, exact supplies or per-kill yields copied."
+    },
+    {
+      "id": "nameless",
+      "sourceURL": "https://ark.wiki.gg/wiki/Nameless",
+      "cachedHTML": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/nameless.html",
+      "sha256": "bbb3e33f740c655a499209c6244bbb4104d9b10569a6b8c2ca2cfe99fbcc7936",
+      "fields": {
+        "diet": "Infobox",
+        "tameable": "Infobox/procedure",
+        "method": "Taming/KO Strategy",
+        "foods": "Preferred Food / Taming",
+        "drops": "Drops",
+        "guidance": "Taming/Behavior/Dangers/Utility"
+      },
+      "limitations": "No base stats, timers, exact supplies or per-kill yields copied."
+    },
+    {
+      "id": "seeker",
+      "sourceURL": "https://ark.wiki.gg/wiki/Seeker",
+      "cachedHTML": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/seeker.html",
+      "sha256": "a8dc19a497b791feafee043d768f45cc8d1ca4b2f6dbe58c76082223f81958cf",
+      "fields": {
+        "diet": "Infobox",
+        "tameable": "Infobox/procedure",
+        "method": "Taming/KO Strategy",
+        "foods": "Preferred Food / Taming",
+        "drops": "Drops",
+        "guidance": "Taming/Behavior/Dangers/Utility"
+      },
+      "limitations": "No base stats, timers, exact supplies or per-kill yields copied."
+    },
+    {
+      "id": "surface-reaper-king",
+      "sourceURL": "https://ark.wiki.gg/wiki/Surface_Reaper_King",
+      "cachedHTML": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/surface-reaper-king.html",
+      "sha256": "430136ca21c7ffb8ee73ec14d2849d76af35a5a833ba70a3f16c7b5a665ae58a",
+      "fields": {
+        "diet": "Infobox",
+        "tameable": "Infobox/procedure",
+        "method": "Taming/KO Strategy",
+        "foods": "Preferred Food / Taming",
+        "drops": "Drops",
+        "guidance": "Taming/Behavior/Dangers/Utility"
+      },
+      "limitations": "No base stats, timers, exact supplies or per-kill yields copied."
+    },
+    {
+      "id": "snow-owl",
+      "sourceURL": "https://ark.wiki.gg/wiki/Snow_Owl",
+      "cachedHTML": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/snow-owl.html",
+      "sha256": "cb4c100fbf01350034b78e25c3cc3eafe412d4aeb38a5ebaf3d396a5092cfbf5",
+      "fields": {
+        "diet": "Infobox",
+        "tameable": "Infobox/procedure",
+        "method": "Taming/KO Strategy",
+        "foods": "Preferred Food / Taming",
+        "drops": "Drops",
+        "guidance": "Taming/Behavior/Dangers/Utility"
+      },
+      "limitations": "No base stats, timers, exact supplies or per-kill yields copied."
+    },
+    {
+      "id": "velonasaur",
+      "sourceURL": "https://ark.wiki.gg/wiki/Velonasaur",
+      "cachedHTML": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/velonasaur.html",
+      "sha256": "294810768ab1113cb2179efe697714e36d10ac3ecf6c326614ccb72ab525d79e",
+      "fields": {
+        "diet": "Infobox",
+        "tameable": "Infobox/procedure",
+        "method": "Taming/KO Strategy",
+        "foods": "Preferred Food / Taming",
+        "drops": "Drops",
+        "guidance": "Taming/Behavior/Dangers/Utility"
+      },
+      "limitations": "No base stats, timers, exact supplies or per-kill yields copied."
+    },
+    {
+      "id": "managarmr",
+      "sourceURL": "https://ark.wiki.gg/wiki/Managarmr",
+      "cachedHTML": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/managarmr.html",
+      "sha256": "bb4f92e2f78b61e10c19fc691cd075cabf944fb11d526c54f3ac26221a4f94b4",
+      "fields": {
+        "diet": "Infobox",
+        "tameable": "Infobox/procedure",
+        "method": "Taming/KO Strategy",
+        "foods": "Preferred Food / Taming",
+        "drops": "Drops",
+        "guidance": "Taming/Behavior/Dangers/Utility"
+      },
+      "limitations": "No base stats, timers, exact supplies or per-kill yields copied."
+    },
+    {
+      "id": "phoenix",
+      "sourceURL": "https://ark.wiki.gg/wiki/Phoenix",
+      "cachedHTML": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/phoenix.html",
+      "sha256": "fc53d351ccee66f199399f89f20392dd5de514c757314fd7653dfcb8d07d6b6d",
+      "fields": {
+        "diet": "Infobox",
+        "tameable": "Infobox/procedure",
+        "method": "Taming/KO Strategy",
+        "foods": "Preferred Food / Taming",
+        "drops": "Drops",
+        "guidance": "Taming/Behavior/Dangers/Utility"
+      },
+      "limitations": "No base stats, timers, exact supplies or per-kill yields copied."
+    },
+    {
+      "id": "bloodstalker",
+      "sourceURL": "https://ark.wiki.gg/wiki/Bloodstalker",
+      "cachedHTML": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/bloodstalker.html",
+      "sha256": "4db22a18cffe810d7b3197871214dba15b57108ba808036a81163f1cb2266189",
+      "fields": {
+        "diet": "Infobox",
+        "tameable": "Infobox/procedure",
+        "method": "Taming/KO Strategy",
+        "foods": "Preferred Food / Taming",
+        "drops": "Drops",
+        "guidance": "Taming/Behavior/Dangers/Utility"
+      },
+      "limitations": "No base stats, timers, exact supplies or per-kill yields copied."
+    },
+    {
+      "id": "astrocetus",
+      "sourceURL": "https://ark.wiki.gg/wiki/Astrocetus",
+      "cachedHTML": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/astrocetus.html",
+      "sha256": "57166dd7d3f2c7a68e00eed58820577c621dd19b4d08e948a1458b43edb6de9b",
+      "fields": {
+        "diet": "Infobox",
+        "tameable": "Infobox/procedure",
+        "method": "Taming/KO Strategy",
+        "foods": "Preferred Food / Taming",
+        "drops": "Drops",
+        "guidance": "Taming/Behavior/Dangers/Utility"
+      },
+      "limitations": "No base stats, timers, exact supplies or per-kill yields copied."
+    },
+    {
+      "id": "deinonychus",
+      "sourceURL": "https://ark.wiki.gg/wiki/Deinonychus",
+      "cachedHTML": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/deinonychus.html",
+      "sha256": "550c4894d1529c1bac5f1cd3ecfe98b1debd67aab6822d392be89d3031cae8e1",
+      "fields": {
+        "diet": "Infobox",
+        "tameable": "Infobox/procedure",
+        "method": "Taming/KO Strategy",
+        "foods": "Preferred Food / Taming",
+        "drops": "Drops",
+        "guidance": "Taming/Behavior/Dangers/Utility"
+      },
+      "limitations": "No base stats, timers, exact supplies or per-kill yields copied."
+    },
+    {
+      "id": "oil-jug-bug",
+      "sourceURL": "https://ark.wiki.gg/wiki/Jug_Bug",
+      "cachedHTML": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/jug-bug.html",
+      "sha256": "8762370695ba171f6b2667ba511b305e2bd1aa42861f90afd6518aadc0508e91",
+      "fields": {
+        "diet": "Infobox",
+        "tameable": "Infobox/procedure",
+        "method": "Taming/KO Strategy",
+        "foods": "Preferred Food / Taming",
+        "drops": "Drops",
+        "guidance": "Taming/Behavior/Dangers/Utility"
+      },
+      "limitations": "No base stats, timers, exact supplies or per-kill yields copied."
+    },
+    {
+      "id": "water-jug-bug",
+      "sourceURL": "https://ark.wiki.gg/wiki/Jug_Bug",
+      "cachedHTML": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/jug-bug.html",
+      "sha256": "8762370695ba171f6b2667ba511b305e2bd1aa42861f90afd6518aadc0508e91",
+      "fields": {
+        "diet": "Infobox",
+        "tameable": "Infobox/procedure",
+        "method": "Taming/KO Strategy",
+        "foods": "Preferred Food / Taming",
+        "drops": "Drops",
+        "guidance": "Taming/Behavior/Dangers/Utility"
+      },
+      "limitations": "No base stats, timers, exact supplies or per-kill yields copied."
+    },
+    {
+      "id": "deathworm",
+      "sourceURL": "https://ark.wiki.gg/wiki/Deathworm",
+      "cachedHTML": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/deathworm.html",
+      "sha256": "07aa646ead4962b65762bf3b20a0327327167787ff0af15984bc268c7da12946",
+      "fields": {
+        "diet": "Infobox",
+        "tameable": "Infobox/procedure",
+        "method": "Taming/KO Strategy",
+        "foods": "Preferred Food / Taming",
+        "drops": "Drops",
+        "guidance": "Taming/Behavior/Dangers/Utility"
+      },
+      "limitations": "No base stats, timers, exact supplies or per-kill yields copied."
+    },
+    {
+      "id": "diseased-leech",
+      "sourceURL": "https://ark.wiki.gg/wiki/Diseased_Leech",
+      "cachedHTML": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/diseased-leech.html",
+      "sha256": "213a3b573b3eff460ba838e8f7106bc45efc77de3cd6c5a39e2df53e17dce24e",
+      "fields": {
+        "diet": "Infobox",
+        "tameable": "Infobox/procedure",
+        "method": "Taming/KO Strategy",
+        "foods": "Preferred Food / Taming",
+        "drops": "Drops",
+        "guidance": "Taming/Behavior/Dangers/Utility"
+      },
+      "limitations": "No base stats, timers, exact supplies or per-kill yields copied."
+    },
+    {
+      "id": "dire-polar-bear",
+      "sourceURL": "https://ark.wiki.gg/wiki/Dire_Bear",
+      "cachedHTML": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/polar-bear.html",
+      "sha256": "f60395a092edd127d92e6aebf96a34fd597939d08570c4fca6d18e3e648b96d6",
+      "fields": {
+        "diet": "Infobox",
+        "tameable": "Infobox/procedure",
+        "method": "Taming/KO Strategy",
+        "foods": "Preferred Food / Taming",
+        "drops": "Drops",
+        "guidance": "Taming/Behavior/Dangers/Utility"
+      },
+      "limitations": "No base stats, timers, exact supplies or per-kill yields copied."
+    },
+    {
+      "id": "polar-bear",
+      "sourceURL": "https://ark.wiki.gg/wiki/Dire_Bear",
+      "cachedHTML": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/polar-bear.html",
+      "sha256": "f60395a092edd127d92e6aebf96a34fd597939d08570c4fca6d18e3e648b96d6",
+      "fields": {
+        "diet": "Infobox",
+        "tameable": "Infobox/procedure",
+        "method": "Taming/KO Strategy",
+        "foods": "Preferred Food / Taming",
+        "drops": "Drops",
+        "guidance": "Taming/Behavior/Dangers/Utility"
+      },
+      "limitations": "No base stats, timers, exact supplies or per-kill yields copied."
+    }
+  ],
+  "updated": [
+    {
+      "file": "lost-colony-creatures.json",
+      "id": "veilwyn"
+    },
+    {
+      "file": "lost-colony-creatures.json",
+      "id": "solwyn"
+    },
+    {
+      "file": "lost-colony-creatures.json",
+      "id": "ossidon"
+    },
+    {
+      "file": "lost-colony-creatures.json",
+      "id": "gloon"
+    },
+    {
+      "file": "lost-colony-creatures.json",
+      "id": "aureliax"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "boaratos"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "grand-tortugar"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "maeguana"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "kirayli"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "thanatos"
+    },
+    {
+      "file": "aberration-creatures.json",
+      "id": "cosmo"
+    },
+    {
+      "file": "valguero-creatures.json",
+      "id": "cosmo"
+    },
+    {
+      "file": "genesis-part-1-creatures.json",
+      "id": "cosmo"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "cosmo"
+    },
+    {
+      "file": "genesis-part-1-ocean-creatures.json",
+      "id": "armadoggo"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "armadoggo"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "armadoggo"
+    },
+    {
+      "file": "scorched-earth-creatures.json",
+      "id": "oasisaur"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "oasisaur"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "dreadnoughtus"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "dreadnoughtus"
+    },
+    {
+      "file": "aberration-creatures.json",
+      "id": "rock-drake"
+    },
+    {
+      "file": "valguero-creatures.json",
+      "id": "rock-drake"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "rock-drake"
+    },
+    {
+      "file": "aberration-creatures.json",
+      "id": "ravager"
+    },
+    {
+      "file": "valguero-creatures.json",
+      "id": "ravager"
+    },
+    {
+      "file": "genesis-part-1-creatures.json",
+      "id": "ravager"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "ravager"
+    },
+    {
+      "file": "aberration-creatures.json",
+      "id": "roll-rat"
+    },
+    {
+      "file": "valguero-creatures.json",
+      "id": "roll-rat"
+    },
+    {
+      "file": "genesis-part-1-creatures.json",
+      "id": "roll-rat"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "roll-rat"
+    },
+    {
+      "file": "aberration-creatures.json",
+      "id": "basilisk"
+    },
+    {
+      "file": "valguero-creatures.json",
+      "id": "basilisk"
+    },
+    {
+      "file": "genesis-part-1-creatures.json",
+      "id": "basilisk"
+    },
+    {
+      "file": "aberration-creatures.json",
+      "id": "bulbdog"
+    },
+    {
+      "file": "valguero-creatures.json",
+      "id": "bulbdog"
+    },
+    {
+      "file": "genesis-part-1-creatures.json",
+      "id": "bulbdog"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "bulbdog"
+    },
+    {
+      "file": "aberration-creatures.json",
+      "id": "glowtail"
+    },
+    {
+      "file": "valguero-creatures.json",
+      "id": "glowtail"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "glowtail"
+    },
+    {
+      "file": "aberration-creatures.json",
+      "id": "lamprey"
+    },
+    {
+      "file": "valguero-creatures.json",
+      "id": "lamprey"
+    },
+    {
+      "file": "genesis-part-1-creatures.json",
+      "id": "lamprey"
+    },
+    {
+      "file": "lost-colony-creatures.json",
+      "id": "lamprey"
+    },
+    {
+      "file": "aberration-creatures.json",
+      "id": "nameless"
+    },
+    {
+      "file": "valguero-creatures.json",
+      "id": "nameless"
+    },
+    {
+      "file": "lost-colony-creatures.json",
+      "id": "nameless"
+    },
+    {
+      "file": "aberration-creatures.json",
+      "id": "seeker"
+    },
+    {
+      "file": "valguero-creatures.json",
+      "id": "seeker"
+    },
+    {
+      "file": "genesis-part-1-creatures.json",
+      "id": "seeker"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "seeker"
+    },
+    {
+      "file": "aberration-creatures.json",
+      "id": "surface-reaper-king"
+    },
+    {
+      "file": "genesis-part-1-creatures.json",
+      "id": "surface-reaper-king"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "snow-owl"
+    },
+    {
+      "file": "lost-colony-creatures.json",
+      "id": "snow-owl"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "snow-owl"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "velonasaur"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "velonasaur"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "managarmr"
+    },
+    {
+      "file": "lost-colony-creatures.json",
+      "id": "managarmr"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "managarmr"
+    },
+    {
+      "file": "scorched-earth-creatures.json",
+      "id": "phoenix"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "phoenix"
+    },
+    {
+      "file": "genesis-part-1-creatures.json",
+      "id": "bloodstalker"
+    },
+    {
+      "file": "genesis-part-1-creatures.json",
+      "id": "astrocetus"
+    },
+    {
+      "file": "valguero-creatures.json",
+      "id": "deinonychus"
+    },
+    {
+      "file": "ragnarok-creatures.json",
+      "id": "oil-jug-bug"
+    },
+    {
+      "file": "genesis-part-1-ocean-creatures.json",
+      "id": "oil-jug-bug"
+    },
+    {
+      "file": "genesis-part-1-creatures.json",
+      "id": "oil-jug-bug"
+    },
+    {
+      "file": "scorched-earth-creatures.json",
+      "id": "oil-jug-bug"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "oil-jug-bug"
+    },
+    {
+      "file": "ragnarok-creatures.json",
+      "id": "water-jug-bug"
+    },
+    {
+      "file": "genesis-part-1-ocean-creatures.json",
+      "id": "water-jug-bug"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "water-jug-bug"
+    },
+    {
+      "file": "genesis-part-1-creatures.json",
+      "id": "water-jug-bug"
+    },
+    {
+      "file": "scorched-earth-creatures.json",
+      "id": "water-jug-bug"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "water-jug-bug"
+    },
+    {
+      "file": "ragnarok-creatures.json",
+      "id": "deathworm"
+    },
+    {
+      "file": "scorched-earth-creatures.json",
+      "id": "deathworm"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "deathworm"
+    },
+    {
+      "file": "ragnarok-creatures.json",
+      "id": "diseased-leech"
+    },
+    {
+      "file": "the-center-creatures.json",
+      "id": "diseased-leech"
+    },
+    {
+      "file": "valguero-creatures.json",
+      "id": "diseased-leech"
+    },
+    {
+      "file": "the-island-creatures.json",
+      "id": "diseased-leech"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "diseased-leech"
+    },
+    {
+      "file": "ragnarok-creatures.json",
+      "id": "dire-polar-bear"
+    },
+    {
+      "file": "valguero-creatures.json",
+      "id": "dire-polar-bear"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "polar-bear"
+    },
+    {
+      "file": "valguero-creatures.json",
+      "id": "polar-bear"
+    },
+    {
+      "file": "genesis-part-1-creatures.json",
+      "id": "polar-bear"
+    },
+    {
+      "file": "the-island-creatures.json",
+      "id": "polar-bear"
+    },
+    {
+      "file": "lost-colony-creatures.json",
+      "id": "polar-bear"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "polar-bear"
+    }
+  ],
+  "guidanceMadeVisible": [
+    {
+      "file": "ragnarok-creatures.json",
+      "id": "iceworm-male"
+    },
+    {
+      "file": "ragnarok-creatures.json",
+      "id": "light-bug"
+    },
+    {
+      "file": "ragnarok-creatures.json",
+      "id": "titanomyrma-drone"
+    },
+    {
+      "file": "ragnarok-creatures.json",
+      "id": "titanomyrma-soldier"
+    },
+    {
+      "file": "ragnarok-creatures.json",
+      "id": "unicorn"
+    },
+    {
+      "file": "genesis-part-1-ocean-creatures.json",
+      "id": "megachelon"
+    },
+    {
+      "file": "genesis-part-1-ocean-creatures.json",
+      "id": "megaraptor"
+    },
+    {
+      "file": "genesis-part-1-ocean-creatures.json",
+      "id": "palaeoctopus"
+    },
+    {
+      "file": "genesis-part-1-ocean-creatures.json",
+      "id": "parakeet-fish-school"
+    },
+    {
+      "file": "genesis-part-1-ocean-creatures.json",
+      "id": "parrot"
+    },
+    {
+      "file": "genesis-part-1-ocean-creatures.json",
+      "id": "tidepup"
+    },
+    {
+      "file": "genesis-part-1-ocean-creatures.json",
+      "id": "titanomyrma-drone"
+    },
+    {
+      "file": "genesis-part-1-ocean-creatures.json",
+      "id": "titanomyrma-soldier"
+    },
+    {
+      "file": "aberration-creatures.json",
+      "id": "light-bug"
+    },
+    {
+      "file": "aberration-creatures.json",
+      "id": "reaper-queen"
+    },
+    {
+      "file": "aberration-creatures.json",
+      "id": "yi-ling"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "corrupted-arthropluera"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "corrupted-carnotaurus"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "corrupted-chalicotherium"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "corrupted-dilophosaur"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "corrupted-giganotosaurus"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "corrupted-paraceratherium"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "corrupted-pteranodon"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "corrupted-raptor"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "corrupted-reaper-king"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "corrupted-rex"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "corrupted-rock-drake"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "corrupted-spino"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "corrupted-stegosaurus"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "corrupted-triceratops"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "corrupted-wyvern"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "enforcer"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "gacha"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "gasbags"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "titanomyrma-drone"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "titanomyrma-soldier"
+    },
+    {
+      "file": "the-center-creatures.json",
+      "id": "titanomyrma-drone"
+    },
+    {
+      "file": "the-center-creatures.json",
+      "id": "titanomyrma-soldier"
+    },
+    {
+      "file": "valguero-creatures.json",
+      "id": "iceworm-male"
+    },
+    {
+      "file": "valguero-creatures.json",
+      "id": "light-bug"
+    },
+    {
+      "file": "valguero-creatures.json",
+      "id": "megaraptor"
+    },
+    {
+      "file": "valguero-creatures.json",
+      "id": "reaper-queen"
+    },
+    {
+      "file": "valguero-creatures.json",
+      "id": "titanomyrma-drone"
+    },
+    {
+      "file": "valguero-creatures.json",
+      "id": "titanomyrma-soldier"
+    },
+    {
+      "file": "valguero-creatures.json",
+      "id": "unicorn"
+    },
+    {
+      "file": "genesis-part-1-creatures.json",
+      "id": "ferox"
+    },
+    {
+      "file": "genesis-part-1-creatures.json",
+      "id": "gasbags"
+    },
+    {
+      "file": "genesis-part-1-creatures.json",
+      "id": "light-bug"
+    },
+    {
+      "file": "genesis-part-1-creatures.json",
+      "id": "magmasaur"
+    },
+    {
+      "file": "genesis-part-1-creatures.json",
+      "id": "titanomyrma-drone"
+    },
+    {
+      "file": "genesis-part-1-creatures.json",
+      "id": "titanomyrma-soldier"
+    },
+    {
+      "file": "genesis-part-1-creatures.json",
+      "id": "yi-ling"
+    },
+    {
+      "file": "scorched-earth-creatures.json",
+      "id": "titanomyrma-drone"
+    },
+    {
+      "file": "scorched-earth-creatures.json",
+      "id": "titanomyrma-soldier"
+    },
+    {
+      "file": "the-island-creatures.json",
+      "id": "titanomyrma-drone"
+    },
+    {
+      "file": "the-island-creatures.json",
+      "id": "titanomyrma-soldier"
+    },
+    {
+      "file": "the-island-creatures.json",
+      "id": "unicorn"
+    },
+    {
+      "file": "lost-colony-creatures.json",
+      "id": "megaraptor"
+    },
+    {
+      "file": "lost-colony-creatures.json",
+      "id": "reaper-queen"
+    },
+    {
+      "file": "lost-colony-creatures.json",
+      "id": "titanomyrma-drone"
+    },
+    {
+      "file": "lost-colony-creatures.json",
+      "id": "titanomyrma-soldier"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "corrupted-arthropluera"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "corrupted-carnotaurus"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "corrupted-chalicotherium"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "corrupted-dilophosaur"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "corrupted-giganotosaurus"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "corrupted-paraceratherium"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "corrupted-pteranodon"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "corrupted-raptor"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "corrupted-rex"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "corrupted-rock-drake"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "corrupted-spino"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "corrupted-stegosaurus"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "corrupted-triceratops"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "gacha"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "gasbags"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "light-bug"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "megaraptor"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "palaeoctopus"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "tidepup"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "titanomyrma-drone"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "titanomyrma-soldier"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "unicorn"
+    }
+  ],
+  "remaining": {
+    "ragnarok-creatures": [
+      "aberrant-dodo",
+      "aberrant-megalania",
+      "alpha-carnotaurus",
+      "alpha-fire-wyvern",
+      "alpha-megalodon",
+      "alpha-mosasaur",
+      "alpha-raptor",
+      "alpha-t-rex",
+      "alpha-tusoteuthis"
+    ],
+    "genesis-part-1-ocean-creatures": [
+      "pirate-brigantine",
+      "pirate-fleet-admiral-brigantine",
+      "pirate-sloop",
+      "x-dunkleosteus",
+      "x-helicoprion",
+      "x-megalodon",
+      "x-mosasaurus",
+      "x-xiphactinus"
+    ],
+    "aberration-creatures": [
+      "aberrant-achatina",
+      "aberrant-anglerfish",
+      "aberrant-ankylosaurus",
+      "aberrant-araneo",
+      "aberrant-arthropluera",
+      "aberrant-baryonyx",
+      "aberrant-beelzebufo",
+      "aberrant-carbonemys",
+      "aberrant-carnotaurus",
+      "aberrant-cnidaria",
+      "aberrant-coelacanth",
+      "aberrant-concavenator",
+      "aberrant-dimetrodon",
+      "aberrant-dimorphodon",
+      "aberrant-diplocaulus",
+      "aberrant-diplodocus",
+      "aberrant-dire-bear",
+      "aberrant-dodo",
+      "aberrant-doedicurus",
+      "aberrant-dung-beetle",
+      "aberrant-electrophorus",
+      "aberrant-equus",
+      "aberrant-fasolasuchus",
+      "aberrant-gigantopithecus",
+      "aberrant-gigantoraptor",
+      "aberrant-iguanodon",
+      "aberrant-lystrosaurus",
+      "aberrant-manta",
+      "aberrant-megalania",
+      "aberrant-megalosaurus",
+      "aberrant-meganeura",
+      "aberrant-moschops",
+      "aberrant-otter",
+      "aberrant-oviraptor",
+      "aberrant-ovis",
+      "aberrant-paraceratherium",
+      "aberrant-parasaur",
+      "aberrant-piranha",
+      "aberrant-pulmonoscorpius",
+      "aberrant-purlovia",
+      "aberrant-raptor",
+      "aberrant-salmon",
+      "aberrant-sarco",
+      "aberrant-spino",
+      "aberrant-stegosaurus",
+      "aberrant-titanoboa",
+      "aberrant-triceratops",
+      "aberrant-trilobite"
+    ],
+    "extinction-creatures": [
+      "defense-unit",
+      "king-titan",
+      "rubble-golem",
+      "scout"
+    ],
+    "the-center-creatures": [
+      "alpha-carnotaurus",
+      "alpha-megalodon",
+      "alpha-mosasaur",
+      "alpha-raptor",
+      "alpha-t-rex",
+      "alpha-tusoteuthis"
+    ],
+    "valguero-creatures": [
+      "aberrant-anglerfish",
+      "aberrant-araneo",
+      "aberrant-baryonyx",
+      "aberrant-beelzebufo",
+      "aberrant-carbonemys",
+      "aberrant-carnotaurus",
+      "aberrant-dimetrodon",
+      "aberrant-dimorphodon",
+      "aberrant-diplocaulus",
+      "aberrant-diplodocus",
+      "aberrant-dire-bear",
+      "aberrant-dodo",
+      "aberrant-doedicurus",
+      "aberrant-electrophorus",
+      "aberrant-equus",
+      "aberrant-iguanodon",
+      "aberrant-lystrosaurus",
+      "aberrant-meganeura",
+      "aberrant-moschops",
+      "aberrant-otter",
+      "aberrant-ovis",
+      "aberrant-paraceratherium",
+      "aberrant-parasaur",
+      "aberrant-pulmonoscorpius",
+      "aberrant-raptor",
+      "aberrant-salmon",
+      "aberrant-sarco",
+      "aberrant-spino",
+      "aberrant-stegosaurus",
+      "aberrant-titanoboa",
+      "aberrant-triceratops",
+      "aberrant-trilobite",
+      "broodmother-lysrix",
+      "chalk-elemental",
+      "ice-elemental"
+    ],
+    "genesis-part-1-creatures": [
+      "attack-drone",
+      "defense-unit",
+      "ice-elemental",
+      "insect-swarm",
+      "tek-parasaur",
+      "tek-raptor",
+      "tek-rex",
+      "tek-stegosaurus",
+      "tek-triceratops",
+      "x-acrocanthosaurus",
+      "x-allosaurus",
+      "x-ankylosaurus",
+      "x-argentavis",
+      "x-concavenator",
+      "x-cryolophosaurus",
+      "x-deinosuchus",
+      "x-otter",
+      "x-paraceratherium",
+      "x-parasaur",
+      "x-raptor",
+      "x-rex",
+      "x-rock-elemental",
+      "x-sabertooth",
+      "x-sabertooth-salmon",
+      "x-spino",
+      "x-tapejara",
+      "x-triceratops",
+      "x-woolly-rhino",
+      "x-yutyrannus"
+    ],
+    "scorched-earth-creatures": [
+      "rubble-golem"
+    ],
+    "the-island-creatures": [
+      "alpha-carnotaurus",
+      "alpha-megalodon",
+      "alpha-mosasaur",
+      "alpha-raptor",
+      "alpha-t-rex",
+      "alpha-tusoteuthis"
+    ],
+    "lost-colony-creatures": [
+      "alpha-hulking-revenant",
+      "bloated-revenant",
+      "desmodus",
+      "hulking-revenant",
+      "revenant",
+      "revenant-brontosaurus",
+      "revenant-carnotaurus",
+      "revenant-dilophosaur",
+      "revenant-dimorphodon",
+      "revenant-direwolf",
+      "revenant-iguanodon",
+      "revenant-malwyn",
+      "revenant-mammoth",
+      "revenant-ossidon",
+      "revenant-parasaur",
+      "revenant-pteranodon",
+      "revenant-raptor",
+      "revenant-rex",
+      "revenant-sabertooth",
+      "revenant-spino",
+      "revenant-stegosaurus",
+      "revenant-therizinosaur",
+      "revenant-troodon",
+      "revenant-veilwyn",
+      "revenant-yutyrannus",
+      "thrall-gunslinger",
+      "thrall-marauder",
+      "thrall-warden"
+    ],
+    "astraeos-creatures": [
+      "aberrant-araneo",
+      "aberrant-arthropluera",
+      "aberrant-carbonemys",
+      "aberrant-carnotaurus",
+      "aberrant-coelacanth",
+      "aberrant-dimorphodon",
+      "aberrant-diplodocus",
+      "aberrant-dire-bear",
+      "aberrant-dodo",
+      "aberrant-doedicurus",
+      "aberrant-equus",
+      "aberrant-gigantoraptor",
+      "aberrant-iguanodon",
+      "aberrant-lystrosaurus",
+      "aberrant-manta",
+      "aberrant-meganeura",
+      "aberrant-moschops",
+      "aberrant-otter",
+      "aberrant-oviraptor",
+      "aberrant-ovis",
+      "aberrant-paraceratherium",
+      "aberrant-parasaur",
+      "aberrant-piranha",
+      "aberrant-pulmonoscorpius",
+      "aberrant-raptor",
+      "aberrant-salmon",
+      "aberrant-sarco",
+      "aberrant-spino",
+      "aberrant-stegosaurus",
+      "aberrant-titanoboa",
+      "aberrant-triceratops",
+      "cave-minotaur",
+      "desmodus",
+      "pirate-fleet-admiral-trireme",
+      "pirate-trireme",
+      "rhyniognatha-drone",
+      "rubble-golem",
+      "scorpionking",
+      "skeleton-piercer",
+      "skeleton-snarer",
+      "skeleton-warden"
+    ]
+  },
+  "limitations": [
+    "No variant/base stats imported.",
+    "Normal public acquisition stopped on429; use successfully acquired HTML only."
+  ],
+  "duplicateGuidanceRemoved": [
+    {
+      "file": "ragnarok-creatures.json",
+      "id": "deathworm"
+    },
+    {
+      "file": "ragnarok-creatures.json",
+      "id": "dire-polar-bear"
+    },
+    {
+      "file": "ragnarok-creatures.json",
+      "id": "diseased-leech"
+    },
+    {
+      "file": "ragnarok-creatures.json",
+      "id": "iceworm-male"
+    },
+    {
+      "file": "ragnarok-creatures.json",
+      "id": "light-bug"
+    },
+    {
+      "file": "ragnarok-creatures.json",
+      "id": "oil-jug-bug"
+    },
+    {
+      "file": "ragnarok-creatures.json",
+      "id": "titanomyrma-drone"
+    },
+    {
+      "file": "ragnarok-creatures.json",
+      "id": "titanomyrma-soldier"
+    },
+    {
+      "file": "ragnarok-creatures.json",
+      "id": "unicorn"
+    },
+    {
+      "file": "ragnarok-creatures.json",
+      "id": "water-jug-bug"
+    },
+    {
+      "file": "genesis-part-1-ocean-creatures.json",
+      "id": "armadoggo"
+    },
+    {
+      "file": "genesis-part-1-ocean-creatures.json",
+      "id": "megachelon"
+    },
+    {
+      "file": "genesis-part-1-ocean-creatures.json",
+      "id": "megaraptor"
+    },
+    {
+      "file": "genesis-part-1-ocean-creatures.json",
+      "id": "oil-jug-bug"
+    },
+    {
+      "file": "genesis-part-1-ocean-creatures.json",
+      "id": "palaeoctopus"
+    },
+    {
+      "file": "genesis-part-1-ocean-creatures.json",
+      "id": "parakeet-fish-school"
+    },
+    {
+      "file": "genesis-part-1-ocean-creatures.json",
+      "id": "parrot"
+    },
+    {
+      "file": "genesis-part-1-ocean-creatures.json",
+      "id": "tidepup"
+    },
+    {
+      "file": "genesis-part-1-ocean-creatures.json",
+      "id": "titanomyrma-drone"
+    },
+    {
+      "file": "genesis-part-1-ocean-creatures.json",
+      "id": "titanomyrma-soldier"
+    },
+    {
+      "file": "genesis-part-1-ocean-creatures.json",
+      "id": "water-jug-bug"
+    },
+    {
+      "file": "aberration-creatures.json",
+      "id": "basilisk"
+    },
+    {
+      "file": "aberration-creatures.json",
+      "id": "bulbdog"
+    },
+    {
+      "file": "aberration-creatures.json",
+      "id": "cosmo"
+    },
+    {
+      "file": "aberration-creatures.json",
+      "id": "glowtail"
+    },
+    {
+      "file": "aberration-creatures.json",
+      "id": "lamprey"
+    },
+    {
+      "file": "aberration-creatures.json",
+      "id": "light-bug"
+    },
+    {
+      "file": "aberration-creatures.json",
+      "id": "nameless"
+    },
+    {
+      "file": "aberration-creatures.json",
+      "id": "ravager"
+    },
+    {
+      "file": "aberration-creatures.json",
+      "id": "reaper-queen"
+    },
+    {
+      "file": "aberration-creatures.json",
+      "id": "rock-drake"
+    },
+    {
+      "file": "aberration-creatures.json",
+      "id": "roll-rat"
+    },
+    {
+      "file": "aberration-creatures.json",
+      "id": "seeker"
+    },
+    {
+      "file": "aberration-creatures.json",
+      "id": "surface-reaper-king"
+    },
+    {
+      "file": "aberration-creatures.json",
+      "id": "yi-ling"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "armadoggo"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "corrupted-arthropluera"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "corrupted-carnotaurus"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "corrupted-chalicotherium"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "corrupted-dilophosaur"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "corrupted-giganotosaurus"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "corrupted-paraceratherium"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "corrupted-pteranodon"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "corrupted-raptor"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "corrupted-reaper-king"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "corrupted-rex"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "corrupted-rock-drake"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "corrupted-spino"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "corrupted-stegosaurus"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "corrupted-triceratops"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "corrupted-wyvern"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "dreadnoughtus"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "enforcer"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "gacha"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "gasbags"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "managarmr"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "polar-bear"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "snow-owl"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "titanomyrma-drone"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "titanomyrma-soldier"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "velonasaur"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "water-jug-bug"
+    },
+    {
+      "file": "the-center-creatures.json",
+      "id": "diseased-leech"
+    },
+    {
+      "file": "the-center-creatures.json",
+      "id": "titanomyrma-drone"
+    },
+    {
+      "file": "the-center-creatures.json",
+      "id": "titanomyrma-soldier"
+    },
+    {
+      "file": "valguero-creatures.json",
+      "id": "basilisk"
+    },
+    {
+      "file": "valguero-creatures.json",
+      "id": "bulbdog"
+    },
+    {
+      "file": "valguero-creatures.json",
+      "id": "cosmo"
+    },
+    {
+      "file": "valguero-creatures.json",
+      "id": "deinonychus"
+    },
+    {
+      "file": "valguero-creatures.json",
+      "id": "dire-polar-bear"
+    },
+    {
+      "file": "valguero-creatures.json",
+      "id": "diseased-leech"
+    },
+    {
+      "file": "valguero-creatures.json",
+      "id": "glowtail"
+    },
+    {
+      "file": "valguero-creatures.json",
+      "id": "iceworm-male"
+    },
+    {
+      "file": "valguero-creatures.json",
+      "id": "lamprey"
+    },
+    {
+      "file": "valguero-creatures.json",
+      "id": "light-bug"
+    },
+    {
+      "file": "valguero-creatures.json",
+      "id": "megaraptor"
+    },
+    {
+      "file": "valguero-creatures.json",
+      "id": "nameless"
+    },
+    {
+      "file": "valguero-creatures.json",
+      "id": "polar-bear"
+    },
+    {
+      "file": "valguero-creatures.json",
+      "id": "ravager"
+    },
+    {
+      "file": "valguero-creatures.json",
+      "id": "reaper-queen"
+    },
+    {
+      "file": "valguero-creatures.json",
+      "id": "rock-drake"
+    },
+    {
+      "file": "valguero-creatures.json",
+      "id": "roll-rat"
+    },
+    {
+      "file": "valguero-creatures.json",
+      "id": "seeker"
+    },
+    {
+      "file": "valguero-creatures.json",
+      "id": "titanomyrma-drone"
+    },
+    {
+      "file": "valguero-creatures.json",
+      "id": "titanomyrma-soldier"
+    },
+    {
+      "file": "valguero-creatures.json",
+      "id": "unicorn"
+    },
+    {
+      "file": "genesis-part-1-creatures.json",
+      "id": "astrocetus"
+    },
+    {
+      "file": "genesis-part-1-creatures.json",
+      "id": "basilisk"
+    },
+    {
+      "file": "genesis-part-1-creatures.json",
+      "id": "bloodstalker"
+    },
+    {
+      "file": "genesis-part-1-creatures.json",
+      "id": "bulbdog"
+    },
+    {
+      "file": "genesis-part-1-creatures.json",
+      "id": "cosmo"
+    },
+    {
+      "file": "genesis-part-1-creatures.json",
+      "id": "ferox"
+    },
+    {
+      "file": "genesis-part-1-creatures.json",
+      "id": "gasbags"
+    },
+    {
+      "file": "genesis-part-1-creatures.json",
+      "id": "lamprey"
+    },
+    {
+      "file": "genesis-part-1-creatures.json",
+      "id": "light-bug"
+    },
+    {
+      "file": "genesis-part-1-creatures.json",
+      "id": "magmasaur"
+    },
+    {
+      "file": "genesis-part-1-creatures.json",
+      "id": "oil-jug-bug"
+    },
+    {
+      "file": "genesis-part-1-creatures.json",
+      "id": "polar-bear"
+    },
+    {
+      "file": "genesis-part-1-creatures.json",
+      "id": "ravager"
+    },
+    {
+      "file": "genesis-part-1-creatures.json",
+      "id": "roll-rat"
+    },
+    {
+      "file": "genesis-part-1-creatures.json",
+      "id": "seeker"
+    },
+    {
+      "file": "genesis-part-1-creatures.json",
+      "id": "surface-reaper-king"
+    },
+    {
+      "file": "genesis-part-1-creatures.json",
+      "id": "titanomyrma-drone"
+    },
+    {
+      "file": "genesis-part-1-creatures.json",
+      "id": "titanomyrma-soldier"
+    },
+    {
+      "file": "genesis-part-1-creatures.json",
+      "id": "water-jug-bug"
+    },
+    {
+      "file": "genesis-part-1-creatures.json",
+      "id": "yi-ling"
+    },
+    {
+      "file": "scorched-earth-creatures.json",
+      "id": "deathworm"
+    },
+    {
+      "file": "scorched-earth-creatures.json",
+      "id": "oasisaur"
+    },
+    {
+      "file": "scorched-earth-creatures.json",
+      "id": "oil-jug-bug"
+    },
+    {
+      "file": "scorched-earth-creatures.json",
+      "id": "phoenix"
+    },
+    {
+      "file": "scorched-earth-creatures.json",
+      "id": "titanomyrma-drone"
+    },
+    {
+      "file": "scorched-earth-creatures.json",
+      "id": "titanomyrma-soldier"
+    },
+    {
+      "file": "scorched-earth-creatures.json",
+      "id": "water-jug-bug"
+    },
+    {
+      "file": "the-island-creatures.json",
+      "id": "diseased-leech"
+    },
+    {
+      "file": "the-island-creatures.json",
+      "id": "polar-bear"
+    },
+    {
+      "file": "the-island-creatures.json",
+      "id": "titanomyrma-drone"
+    },
+    {
+      "file": "the-island-creatures.json",
+      "id": "titanomyrma-soldier"
+    },
+    {
+      "file": "the-island-creatures.json",
+      "id": "unicorn"
+    },
+    {
+      "file": "lost-colony-creatures.json",
+      "id": "aureliax"
+    },
+    {
+      "file": "lost-colony-creatures.json",
+      "id": "gloon"
+    },
+    {
+      "file": "lost-colony-creatures.json",
+      "id": "lamprey"
+    },
+    {
+      "file": "lost-colony-creatures.json",
+      "id": "managarmr"
+    },
+    {
+      "file": "lost-colony-creatures.json",
+      "id": "megaraptor"
+    },
+    {
+      "file": "lost-colony-creatures.json",
+      "id": "nameless"
+    },
+    {
+      "file": "lost-colony-creatures.json",
+      "id": "ossidon"
+    },
+    {
+      "file": "lost-colony-creatures.json",
+      "id": "polar-bear"
+    },
+    {
+      "file": "lost-colony-creatures.json",
+      "id": "reaper-queen"
+    },
+    {
+      "file": "lost-colony-creatures.json",
+      "id": "snow-owl"
+    },
+    {
+      "file": "lost-colony-creatures.json",
+      "id": "solwyn"
+    },
+    {
+      "file": "lost-colony-creatures.json",
+      "id": "titanomyrma-drone"
+    },
+    {
+      "file": "lost-colony-creatures.json",
+      "id": "titanomyrma-soldier"
+    },
+    {
+      "file": "lost-colony-creatures.json",
+      "id": "veilwyn"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "armadoggo"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "boaratos"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "bulbdog"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "corrupted-arthropluera"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "corrupted-carnotaurus"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "corrupted-chalicotherium"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "corrupted-dilophosaur"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "corrupted-giganotosaurus"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "corrupted-paraceratherium"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "corrupted-pteranodon"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "corrupted-raptor"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "corrupted-rex"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "corrupted-rock-drake"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "corrupted-spino"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "corrupted-stegosaurus"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "corrupted-triceratops"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "cosmo"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "deathworm"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "diseased-leech"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "dreadnoughtus"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "gacha"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "gasbags"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "glowtail"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "grand-tortugar"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "kirayli"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "light-bug"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "maeguana"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "managarmr"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "megaraptor"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "oasisaur"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "oil-jug-bug"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "palaeoctopus"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "phoenix"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "polar-bear"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "ravager"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "rock-drake"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "roll-rat"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "seeker"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "snow-owl"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "thanatos"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "tidepup"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "titanomyrma-drone"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "titanomyrma-soldier"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "unicorn"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "velonasaur"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "water-jug-bug"
+    }
+  ],
+  "remainingCounts": {
+    "ragnarok-creatures": 9,
+    "genesis-part-1-ocean-creatures": 8,
+    "aberration-creatures": 48,
+    "extinction-creatures": 4,
+    "the-center-creatures": 6,
+    "valguero-creatures": 35,
+    "genesis-part-1-creatures": 29,
+    "scorched-earth-creatures": 1,
+    "the-island-creatures": 6,
+    "lost-colony-creatures": 28,
+    "astraeos-creatures": 41
+  },
+  "newlyPopulatedRows": 95,
+  "remainingTotal": 215,
+  "partialFieldLimitations": {
+    "baseStats": "No new base stat arrays; all new profiles explicitly state this gap.",
+    "polarBear": "Cave untameability verified on Island/Extinction; other-map directly tameable is null and local eligibility remains unverified.",
+    "dreadnoughtus": "Extinction vein procedure verified; Astraeos acquisition remains explicitly unverified.",
+    "sharedSpecies": "Current species wiki facts are distinguished from independent current-patch ASA gameplay proof."
+  },
+  "validation": [
+    "Roster IDs and order match HEAD for all11catalogs",
+    "ProductionCreatureCatalog decoding and uniqueIDs check",
+    "No stats arrays copied for newly populated profiles",
+    "No Swift/campaign/boss edits in this continuation"
+  ]
+}

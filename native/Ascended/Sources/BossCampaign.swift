@@ -99,6 +99,7 @@ struct BossArmyScreen: View {
                 Text(map.name).foregroundStyle(.cyan)
                 if let guide = map.campaign?.loadouts.first(where: { $0.bossID == bossID }), !guide.options.isEmpty {
                     VisualBrief(text: guide.entry).cardStyle()
+                    if !guide.warning.isEmpty { Text(guide.warning).font(.caption).foregroundStyle(.orange) }
                     Picker("Choose army", selection: $selected) {
                         ForEach(Array(guide.options.enumerated()), id: \.offset) { index, option in Text(option.title).tag(index) }
                     }.pickerStyle(.menu).accessibilityIdentifier("armyOptions")
@@ -109,8 +110,9 @@ struct BossArmyScreen: View {
                         Text(option.title).font(.title2.bold()).accessibilityIdentifier("armyOptionTitle")
                         VisualTeam(text: option.team)
                         VisualBrief(text: option.why)
+                        if !option.confidence.isEmpty { Text(option.confidence).font(.caption).foregroundStyle(.secondary) }
                     }.cardStyle()
-                    VStack(alignment: .leading, spacing: 18) {
+                    if !option.targets.isEmpty { VStack(alignment: .leading, spacing: 18) {
                         Text("Preparation targets after imprinting & XP leveling").font(.title2.bold())
                         ForEach(option.targets) { target in
                             VStack(alignment: .leading, spacing: 12) {
@@ -121,7 +123,7 @@ struct BossArmyScreen: View {
                                 if !target.extra.isEmpty { VisualBrief(text: target.extra) }
                             }.padding(16).background(.white.opacity(0.04), in: RoundedRectangle(cornerRadius: 14))
                         }
-                    }.cardStyle()
+                    }.cardStyle() }
                     VStack(alignment: .leading, spacing: 12) {
                         Text("Controls & risks").font(.title2.bold()); VisualBrief(text: option.play)
                     }.cardStyle()

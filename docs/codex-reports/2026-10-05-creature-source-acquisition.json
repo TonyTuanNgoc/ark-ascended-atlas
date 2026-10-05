@@ -1,0 +1,47 @@
+[
+  {
+    "id": "veilwyn",
+    "url": "https://ark.wiki.gg/wiki/Veilwyn",
+    "status": "200",
+    "path": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/veilwyn.html",
+    "sha256": "2f50293767c2ffb61b1e1c9f00b65a78b718ad4211cf8cd5404a8a3b28bd7fba"
+  },
+  {
+    "id": "solwyn",
+    "url": "https://ark.wiki.gg/wiki/Solwyn",
+    "status": "200",
+    "path": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/solwyn.html",
+    "sha256": "7c3b523e1c8648fb7f0bf0e001b5528ac76f00ae3436ea46c3f5b078932d2cfe"
+  },
+  {
+    "id": "ossidon",
+    "url": "https://ark.wiki.gg/wiki/Ossidon",
+    "status": "200",
+    "path": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/ossidon.html",
+    "sha256": "bfcac23f5ffbb10d617c683866405c3d9e791197f52994ec31b582ed749bcb4a"
+  },
+  {
+    "id": "gloon",
+    "url": "https://ark.wiki.gg/wiki/Gloon",
+    "status": "200",
+    "path": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/gloon.html",
+    "sha256": "43c58c183cb1fc9b64b06452cb8074377b6b23aa74559903d2b42a307bdd183e"
+  },
+  {
+    "id": "aureliax",
+    "url": "https://ark.wiki.gg/wiki/Aureliax",
+    "status": "200",
+    "path": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/aureliax.html",
+    "sha256": "4431872d7c95c1b29d3c746249db375528d3dee60da4070a2fd3986f011fa432"
+  },
+  {
+    "id": "revenants",
+    "url": "https://ark.wiki.gg/wiki/Revenants",
+    "status": "404"
+  },
+  {
+    "id": "thralls",
+    "url": "https://ark.wiki.gg/wiki/Thralls",
+    "status": "429"
+  }
+]

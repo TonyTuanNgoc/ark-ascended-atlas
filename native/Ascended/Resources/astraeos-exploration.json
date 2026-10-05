@@ -1,1 +1,2024 @@
-{"reviewedAt":"04/10/2026","artifacts":[{"id":"immune","name":"Artifact of the Immune","lat":29.78,"lon":85.334,"routeID":"","imageAsset":"Artifact-immune","sourceURL":"https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=6&layer=artifacts"},{"id":"skylord","name":"Artifact of the Skylord","lat":1.925,"lon":99.93,"routeID":"","imageAsset":"Artifact-skylord","sourceURL":"https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=6&layer=artifacts"},{"id":"cunning","name":"Artifact of the Cunning","lat":83.707,"lon":70.795,"routeID":"","imageAsset":"Artifact-cunning","sourceURL":"https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=6&layer=artifacts"},{"id":"destroyer","name":"Artifact of the Destroyer","lat":95.31,"lon":94.34,"routeID":"","imageAsset":"Artifact-destroyer","sourceURL":"https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=6&layer=artifacts"},{"id":"crag","name":"Artifact of the Crag","lat":93.008,"lon":76.446,"routeID":"","imageAsset":"Artifact-crag","sourceURL":"https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=6&layer=artifacts"},{"id":"gatekeeper","name":"Artifact of the Gatekeeper","lat":92.051,"lon":77.571,"routeID":"","imageAsset":"Artifact-gatekeeper","sourceURL":"https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=6&layer=artifacts"},{"id":"devourer","name":"Artifact of the Devourer","lat":23.268,"lon":43.08,"routeID":"","imageAsset":"Artifact-devourer","sourceURL":"https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=6&layer=artifacts"},{"id":"hunter","name":"Artifact of the Hunter","lat":29.375,"lon":12.365,"routeID":"","imageAsset":"Artifact-hunter","sourceURL":"https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=6&layer=artifacts"},{"id":"clever","name":"Artifact of the Clever","lat":26.789,"lon":26.072,"routeID":"","imageAsset":"Artifact-clever","sourceURL":"https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=6&layer=artifacts"},{"id":"brute","name":"Artifact of the Brute","lat":44.801,"lon":56.927,"routeID":"","imageAsset":"Artifact-brute","sourceURL":"https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=6&layer=artifacts"},{"id":"massive","name":"Artifact of the Massive","lat":37.183,"lon":21.699,"routeID":"","imageAsset":"Artifact-massive","sourceURL":"https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=6&layer=artifacts"},{"id":"pack","name":"Artifact of the Pack","lat":62.397,"lon":62.287,"routeID":"","imageAsset":"Artifact-pack","sourceURL":"https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=6&layer=artifacts"}],"routes":[],"obelisks":[]}
+{
+  "reviewedAt": "05/10/2026",
+  "artifacts": [
+    {
+      "id": "immune",
+      "name": "Artifact of the Immune",
+      "lat": 29.78,
+      "lon": 85.334,
+      "routeID": "reference-astraeos-the-overgrown-tomb",
+      "imageAsset": "Artifact-immune",
+      "sourceURL": "https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=6&layer=artifacts"
+    },
+    {
+      "id": "skylord",
+      "name": "Artifact of the Skylord",
+      "lat": 1.925,
+      "lon": 99.93,
+      "routeID": "reference-astraeos-icicle-caverns",
+      "imageAsset": "Artifact-skylord",
+      "sourceURL": "https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=6&layer=artifacts"
+    },
+    {
+      "id": "cunning",
+      "name": "Artifact of the Cunning",
+      "lat": 83.707,
+      "lon": 70.795,
+      "routeID": "reference-astraeos-coral-depths",
+      "imageAsset": "Artifact-cunning",
+      "sourceURL": "https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=6&layer=artifacts"
+    },
+    {
+      "id": "destroyer",
+      "name": "Artifact of the Destroyer",
+      "lat": 95.31,
+      "lon": 94.34,
+      "routeID": "reference-astraeos-the-buried-city",
+      "imageAsset": "Artifact-destroyer",
+      "sourceURL": "https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=6&layer=artifacts"
+    },
+    {
+      "id": "crag",
+      "name": "Artifact of the Crag",
+      "lat": 93.008,
+      "lon": 76.446,
+      "routeID": "reference-astraeos-sunburied-hollow",
+      "imageAsset": "Artifact-crag",
+      "sourceURL": "https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=6&layer=artifacts"
+    },
+    {
+      "id": "gatekeeper",
+      "name": "Artifact of the Gatekeeper",
+      "lat": 92.051,
+      "lon": 77.571,
+      "routeID": "reference-astraeos-sunburied-hollow",
+      "imageAsset": "Artifact-gatekeeper",
+      "sourceURL": "https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=6&layer=artifacts"
+    },
+    {
+      "id": "devourer",
+      "name": "Artifact of the Devourer",
+      "lat": 23.268,
+      "lon": 43.08,
+      "routeID": "reference-astraeos-artemis-tomb",
+      "imageAsset": "Artifact-devourer",
+      "sourceURL": "https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=6&layer=artifacts"
+    },
+    {
+      "id": "hunter",
+      "name": "Artifact of the Hunter",
+      "lat": 29.375,
+      "lon": 12.365,
+      "routeID": "reference-astraeos-forgotten-temple",
+      "imageAsset": "Artifact-hunter",
+      "sourceURL": "https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=6&layer=artifacts"
+    },
+    {
+      "id": "clever",
+      "name": "Artifact of the Clever",
+      "lat": 26.789,
+      "lon": 26.072,
+      "routeID": "reference-astraeos-sunken-caverns",
+      "imageAsset": "Artifact-clever",
+      "sourceURL": "https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=6&layer=artifacts"
+    },
+    {
+      "id": "brute",
+      "name": "Artifact of the Brute",
+      "lat": 44.801,
+      "lon": 56.927,
+      "routeID": "reference-astraeos-sunken-temple",
+      "imageAsset": "Artifact-brute",
+      "sourceURL": "https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=6&layer=artifacts"
+    },
+    {
+      "id": "massive",
+      "name": "Artifact of the Massive",
+      "lat": 37.183,
+      "lon": 21.699,
+      "routeID": "reference-astraeos-old-tomb",
+      "imageAsset": "Artifact-massive",
+      "sourceURL": "https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=6&layer=artifacts"
+    },
+    {
+      "id": "pack",
+      "name": "Artifact of the Pack",
+      "lat": 62.397,
+      "lon": 62.287,
+      "routeID": "reference-astraeos-vulcano-cave",
+      "imageAsset": "Artifact-pack",
+      "sourceURL": "https://wikily.gg/api/ark/maps/v2/layer-data/?mapId=6&layer=artifacts"
+    }
+  ],
+  "routes": [
+    {
+      "id": "reference-astraeos-snow-forests-cave",
+      "name": "Snow Forests Cave",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-astraeos-snow-forests-cave",
+          "label": "Entrance",
+          "lat": 5.507,
+          "lon": 92.35,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Snow_Forests_Cave.jpg/288px-ASA_Astraeos_Snow_Forests_Cave.jpg?5bca2f",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-tundra-lands-cave",
+      "name": "Tundra Lands Cave",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-astraeos-tundra-lands-cave",
+          "label": "Entrance",
+          "lat": 8.956,
+          "lon": 71.676,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Tundra_Lands_Cave.jpg/288px-ASA_Astraeos_Tundra_Lands_Cave.jpg?a57648",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-snow-forests-cave-2",
+      "name": "Snow Forests Cave 2",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-astraeos-snow-forests-cave-2",
+          "label": "Entrance",
+          "lat": 1.819,
+          "lon": 75.041,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Snow_Forests_Cave_2.jpg/288px-ASA_Astraeos_Snow_Forests_Cave_2.jpg?7db489",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-snow-forests-cave-3",
+      "name": "Snow Forests Cave 3",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-astraeos-snow-forests-cave-3",
+          "label": "Entrance",
+          "lat": 1.326,
+          "lon": 89.784,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Snow_Forests_Cave_3.jpg/288px-ASA_Astraeos_Snow_Forests_Cave_3.jpg?6698de",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-snow-forests-cave-4",
+      "name": "Snow Forests Cave 4",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-astraeos-snow-forests-cave-4",
+          "label": "Entrance",
+          "lat": 4.695,
+          "lon": 98.817,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Snow_Forests_Cave_4.jpg/288px-ASA_Astraeos_Snow_Forests_Cave_4.jpg?8db7d1",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-snow-forests-cave-5",
+      "name": "Snow Forests Cave 5",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-astraeos-snow-forests-cave-5",
+          "label": "Entrance",
+          "lat": 9.816,
+          "lon": 99.16,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Snow_Forests_Cave_5.jpg/288px-ASA_Astraeos_Snow_Forests_Cave_5.jpg?a001d6",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-tundra-lands-cave-2",
+      "name": "Tundra Lands Cave 2",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-astraeos-tundra-lands-cave-2",
+          "label": "Entrance",
+          "lat": 9.373,
+          "lon": 90.327,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Tundra_Lands_Cave_2.jpg/288px-ASA_Astraeos_Tundra_Lands_Cave_2.jpg?a652f6",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-lemnokis-giant-cavern",
+      "name": "Lemnokis Giant Cavern",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-astraeos-lemnokis-giant-cavern",
+          "label": "Entrance",
+          "lat": 12.171,
+          "lon": 73.659,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Lemnokis_Giant_Cavern.jpg/288px-ASA_Astraeos_Lemnokis_Giant_Cavern.jpg?bfbee1",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-lemnokis-giant-cave",
+      "name": "Lemnokis Giant Cave",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-astraeos-lemnokis-giant-cave",
+          "label": "Entrance",
+          "lat": 14.752,
+          "lon": 78.588,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Lemnokis_Giant_Cave.jpg/288px-ASA_Astraeos_Lemnokis_Giant_Cave.jpg?82706c",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-lemnokis-cave-10",
+      "name": "Lemnokis Cave",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-astraeos-lemnokis-cave-10",
+          "label": "Entrance",
+          "lat": 16.584,
+          "lon": 76.05,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Lemnokis_Cave.jpg/288px-ASA_Astraeos_Lemnokis_Cave.jpg?e64ce3",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-lemnokis-cave-2",
+      "name": "Lemnokis Cave 2",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-astraeos-lemnokis-cave-2",
+          "label": "Entrance",
+          "lat": 20.297,
+          "lon": 69.683,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Lemnokis_Cave_2.jpg/288px-ASA_Astraeos_Lemnokis_Cave_2.jpg?a9d686",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-lemnokis-cavern",
+      "name": "Lemnokis Cavern",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-astraeos-lemnokis-cavern",
+          "label": "Entrance",
+          "lat": 28.195,
+          "lon": 77.371,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Lemnokis_Cavern.jpg/288px-ASA_Astraeos_Lemnokis_Cavern.jpg?21ca60",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-bonfire-ridge-cave-13",
+      "name": "Bonfire Ridge Cave",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-astraeos-bonfire-ridge-cave-13",
+          "label": "Entrance",
+          "lat": 19.083,
+          "lon": 78.635,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Bonfire_Ridge_Cave_1.jpg/288px-ASA_Astraeos_Bonfire_Ridge_Cave_1.jpg?741b9f",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-bonfire-ridge-cave-14",
+      "name": "Bonfire Ridge Cave",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-astraeos-bonfire-ridge-cave-14",
+          "label": "Entrance",
+          "lat": 20.598,
+          "lon": 80.37,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Bonfire_Ridge_Cave_2.jpg/288px-ASA_Astraeos_Bonfire_Ridge_Cave_2.jpg?487294",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-bonfire-ridge-ruins-cave-15",
+      "name": "Bonfire Ridge Ruins Cave",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-astraeos-bonfire-ridge-ruins-cave-15",
+          "label": "Entrance",
+          "lat": 18.002,
+          "lon": 84,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Bonfire_Ridge_Ruins_Cave_1.jpg/288px-ASA_Astraeos_Bonfire_Ridge_Ruins_Cave_1.jpg?5e101c",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-bonfire-ridge-ruins-cave-16",
+      "name": "Bonfire Ridge Ruins Cave",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-astraeos-bonfire-ridge-ruins-cave-16",
+          "label": "Entrance",
+          "lat": 19.942,
+          "lon": 84.2,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Bonfire_Ridge_Ruins_Cave_2.jpg/288px-ASA_Astraeos_Bonfire_Ridge_Ruins_Cave_2.jpg?3493c9",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-lemnokis-cave-3",
+      "name": "Lemnokis Cave 3",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-astraeos-lemnokis-cave-3",
+          "label": "Entrance",
+          "lat": 16.379,
+          "lon": 88.837,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Lemnokis_Cave_3.jpg/288px-ASA_Astraeos_Lemnokis_Cave_3.jpg?70706b",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-lemnokis-cave-18",
+      "name": "Lemnokis Cave",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-astraeos-lemnokis-cave-18",
+          "label": "Entrance",
+          "lat": 18.516,
+          "lon": 93.05,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Lemnokis_Cave_4.jpg/288px-ASA_Astraeos_Lemnokis_Cave_4.jpg?8b21f7",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-the-verdant-underhollow-19",
+      "name": "The Verdant Underhollow",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-astraeos-the-verdant-underhollow-19",
+          "label": "Entrance",
+          "lat": 22.603,
+          "lon": 98.909,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Verdant_Underhollow_1.jpg/288px-ASA_Astraeos_Verdant_Underhollow_1.jpg?952dca",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-the-verdant-underhollow-20",
+      "name": "The Verdant Underhollow",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-astraeos-the-verdant-underhollow-20",
+          "label": "Entrance",
+          "lat": 29.274,
+          "lon": 100.232,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Verdant_Underhollow_1.jpg/288px-ASA_Astraeos_Verdant_Underhollow_1.jpg?952dca",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-lemnokis-cave-5-21",
+      "name": "Lemnokis Cave 5",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-astraeos-lemnokis-cave-5-21",
+          "label": "Entrance",
+          "lat": 27.394,
+          "lon": 82.878,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Lemnokis_Cave_5_1.jpg/288px-ASA_Astraeos_Lemnokis_Cave_5_1.jpg?ba7d00",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-lemnokis-cave-5-22",
+      "name": "Lemnokis Cave 5",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-astraeos-lemnokis-cave-5-22",
+          "label": "Entrance",
+          "lat": 27.195,
+          "lon": 85.374,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Lemnokis_Cave_5_2.jpg/288px-ASA_Astraeos_Lemnokis_Cave_5_2.jpg?f25189",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-maelstrom-cave-23",
+      "name": "Maelstrom Cave",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-astraeos-maelstrom-cave-23",
+          "label": "Entrance",
+          "lat": 39.634,
+          "lon": 78.194,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Maelstrom_Cave_1.jpg/288px-ASA_Astraeos_Maelstrom_Cave_1.jpg?cde617",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-maelstrom-cave-24",
+      "name": "Maelstrom Cave",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-astraeos-maelstrom-cave-24",
+          "label": "Entrance",
+          "lat": 41.275,
+          "lon": 78.286,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Maelstrom_Cave_2.jpg/288px-ASA_Astraeos_Maelstrom_Cave_2.jpg?f4b518",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-maelstrom-cave-25",
+      "name": "Maelstrom Cave",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-astraeos-maelstrom-cave-25",
+          "label": "Entrance",
+          "lat": 41.894,
+          "lon": 78.044,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Maelstrom_Cave_3.jpg/288px-ASA_Astraeos_Maelstrom_Cave_3.jpg?a643b9",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-the-crawling-pit",
+      "name": "The Crawling Pit",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-astraeos-the-crawling-pit",
+          "label": "Entrance",
+          "lat": 84.113,
+          "lon": 98.842,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Crawling_Pit.jpg/288px-ASA_Astraeos_Crawling_Pit.jpg?6df29e",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-the-buried-city",
+      "name": "The Buried City",
+      "artifactIDs": [
+        "destroyer"
+      ],
+      "entrances": [
+        {
+          "id": "reference-astraeos-the-buried-city",
+          "label": "Entrance",
+          "lat": 94.352,
+          "lon": 96.054,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Buried_City.jpg/288px-ASA_Astraeos_Buried_City.jpg?88d8a4",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-sandspire-range-cave",
+      "name": "Sandspire Range Cave",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-astraeos-sandspire-range-cave",
+          "label": "Entrance",
+          "lat": 90.266,
+          "lon": 92.86,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Sandspire_Range_Cave.jpg/288px-ASA_Astraeos_Sandspire_Range_Cave.jpg?1210e9",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-pyranthos-cavern",
+      "name": "Pyranthos Cavern",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-astraeos-pyranthos-cavern",
+          "label": "Entrance",
+          "lat": 80.928,
+          "lon": 90.227,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Pyranthos_Cavern.jpg/288px-ASA_Astraeos_Pyranthos_Cavern.jpg?3a5fb5",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-suncrest-fields-cave-30",
+      "name": "Suncrest Fields Cave",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-astraeos-suncrest-fields-cave-30",
+          "label": "Entrance",
+          "lat": 84.986,
+          "lon": 80.506,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Suncrest_Fields_Cave_1.jpg/288px-ASA_Astraeos_Suncrest_Fields_Cave_1.jpg?eaf3ba",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-suncrest-fields-cave-31",
+      "name": "Suncrest Fields Cave",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-astraeos-suncrest-fields-cave-31",
+          "label": "Entrance",
+          "lat": 85.651,
+          "lon": 81.992,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Suncrest_Fields_Cave_2.jpg/288px-ASA_Astraeos_Suncrest_Fields_Cave_2.jpg?55646b",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-embercrest-mountains-cave",
+      "name": "Embercrest Mountains Cave",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-astraeos-embercrest-mountains-cave",
+          "label": "Entrance",
+          "lat": 89.734,
+          "lon": 77.123,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Embercrest_Mountains_Cave.jpg/288px-ASA_Astraeos_Embercrest_Mountains_Cave.jpg?a9ccea",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-suncrest-fields-cave-2-33",
+      "name": "Suncrest Fields Cave 2",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-astraeos-suncrest-fields-cave-2-33",
+          "label": "Entrance",
+          "lat": 92.032,
+          "lon": 84.666,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Suncrest_Fields_Cave_2_1.jpg/288px-ASA_Astraeos_Suncrest_Fields_Cave_2_1.jpg?765832",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-suncrest-fields-cave-2-34",
+      "name": "Suncrest Fields Cave 2",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-astraeos-suncrest-fields-cave-2-34",
+          "label": "Entrance",
+          "lat": 92.754,
+          "lon": 84.58,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Suncrest_Fields_Cave_2_2.jpg/288px-ASA_Astraeos_Suncrest_Fields_Cave_2_2.jpg?f6e099",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-suncrest-fields-cave-2-35",
+      "name": "Suncrest Fields Cave 2",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-astraeos-suncrest-fields-cave-2-35",
+          "label": "Entrance",
+          "lat": 92.339,
+          "lon": 84.157,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Suncrest_Fields_Cave_2_3.jpg/288px-ASA_Astraeos_Suncrest_Fields_Cave_2_3.jpg?d8a4ba",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-pyranthos-cave",
+      "name": "Pyranthos Cave",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-astraeos-pyranthos-cave",
+          "label": "Entrance",
+          "lat": 90.26,
+          "lon": 81.601,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Pyranthos_Cave.jpg/288px-ASA_Astraeos_Pyranthos_Cave.jpg?64f5dd",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-pyranthos-cave-2-37",
+      "name": "Pyranthos Cave 2",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-astraeos-pyranthos-cave-2-37",
+          "label": "Entrance",
+          "lat": 92.622,
+          "lon": 81.782,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Pyranthos_Cave_2_1.jpg/288px-ASA_Astraeos_Pyranthos_Cave_2_1.jpg?477ba3",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-pyranthos-cave-2-38",
+      "name": "Pyranthos Cave 2",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-astraeos-pyranthos-cave-2-38",
+          "label": "Entrance",
+          "lat": 94.887,
+          "lon": 81.765,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Pyranthos_Cave_2_2.jpg/288px-ASA_Astraeos_Pyranthos_Cave_2_2.jpg?6f8ccc",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-pyranthos-cave-3",
+      "name": "Pyranthos Cave 3",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-astraeos-pyranthos-cave-3",
+          "label": "Entrance",
+          "lat": 97.315,
+          "lon": 84.101,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Pyranthos_Cave_3.jpg/288px-ASA_Astraeos_Pyranthos_Cave_3.jpg?e7110a",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-sunburied-hollow",
+      "name": "Sunburied Hollow",
+      "artifactIDs": [
+        "crag",
+        "gatekeeper"
+      ],
+      "entrances": [
+        {
+          "id": "reference-astraeos-sunburied-hollow",
+          "label": "Entrance",
+          "lat": 94.002,
+          "lon": 79.136,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Sunburied_Hollow.jpg/288px-ASA_Astraeos_Sunburied_Hollow.jpg?32068f",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-hall-of-fame",
+      "name": "Hall of Fame",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-astraeos-hall-of-fame",
+          "label": "Entrance",
+          "lat": 94.3,
+          "lon": 65.65,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Hall_of_Fame.jpg/288px-ASA_Astraeos_Hall_of_Fame.jpg?b8e484",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-suncrest-fields-cave-3",
+      "name": "Suncrest Fields Cave 3",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-astraeos-suncrest-fields-cave-3",
+          "label": "Entrance",
+          "lat": 87.421,
+          "lon": 79.504,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Suncrest_Fields_Cave_3.jpg/288px-ASA_Astraeos_Suncrest_Fields_Cave_3.jpg?270cb0",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-pyranthos-cavern-2",
+      "name": "Pyranthos Cavern 2",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-astraeos-pyranthos-cavern-2",
+          "label": "Entrance",
+          "lat": 85.48,
+          "lon": 58.885,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Pyranthos_Cavern_2.jpg/288px-ASA_Astraeos_Pyranthos_Cavern_2.jpg?184340",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-embercrest-mountains-cave-2",
+      "name": "Embercrest Mountains Cave 2",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-astraeos-embercrest-mountains-cave-2",
+          "label": "Entrance",
+          "lat": 92.414,
+          "lon": 61.874,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Embercrest_Mountains_Cave_2.jpg/288px-ASA_Astraeos_Embercrest_Mountains_Cave_2.jpg?38269d",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-blistered-sands-cavern",
+      "name": "Blistered Sands Cavern",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-astraeos-blistered-sands-cavern",
+          "label": "Entrance",
+          "lat": 99.817,
+          "lon": 56.125,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Blistered_Sands_Cavern.jpg/288px-ASA_Astraeos_Blistered_Sands_Cavern.jpg?cd1b0c",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-pyranthos-cavern-3",
+      "name": "Pyranthos Cavern 3",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-astraeos-pyranthos-cavern-3",
+          "label": "Entrance",
+          "lat": 84.474,
+          "lon": 54.378,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Pyranthos_Cavern_3.jpg/288px-ASA_Astraeos_Pyranthos_Cavern_3.jpg?234d96",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-sanctum-of-the-horned-king",
+      "name": "Sanctum of the Horned King",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-astraeos-sanctum-of-the-horned-king",
+          "label": "Entrance",
+          "lat": 91.056,
+          "lon": 74.024,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Sanctum_of_the_Horned_King.jpg/288px-ASA_Astraeos_Sanctum_of_the_Horned_King.jpg?8743ad",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-pyranthos-cave-4-48",
+      "name": "Pyranthos Cave 4",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-astraeos-pyranthos-cave-4-48",
+          "label": "Entrance",
+          "lat": 83.313,
+          "lon": 49.266,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Pyranthos_Cave_4_1.jpg/288px-ASA_Astraeos_Pyranthos_Cave_4_1.jpg?e0441d",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-pyranthos-cave-4-49",
+      "name": "Pyranthos Cave 4",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-astraeos-pyranthos-cave-4-49",
+          "label": "Entrance",
+          "lat": 83.923,
+          "lon": 48.955,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Pyranthos_Cave_4_2.jpg/288px-ASA_Astraeos_Pyranthos_Cave_4_2.jpg?2960db",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-pyranthos-cave-5",
+      "name": "Pyranthos Cave 5",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-astraeos-pyranthos-cave-5",
+          "label": "Entrance",
+          "lat": 91.762,
+          "lon": 45.987,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Pyranthos_Cave_5.jpg/288px-ASA_Astraeos_Pyranthos_Cave_5.jpg?9dd353",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-coral-depths",
+      "name": "Coral Depths",
+      "artifactIDs": [
+        "cunning"
+      ],
+      "entrances": [
+        {
+          "id": "reference-astraeos-coral-depths",
+          "label": "Entrance",
+          "lat": 80.813,
+          "lon": 71.982,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Coral_Depths.jpg/288px-ASA_Astraeos_Coral_Depths.jpg?24fe01",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-the-overgrown-tomb",
+      "name": "The Overgrown Tomb",
+      "artifactIDs": [
+        "immune"
+      ],
+      "entrances": [
+        {
+          "id": "reference-astraeos-the-overgrown-tomb",
+          "label": "Entrance",
+          "lat": 30.669,
+          "lon": 85.649,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Overgrown_Tomb.jpg/288px-ASA_Astraeos_Overgrown_Tomb.jpg?1d54a2",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-icicle-caverns",
+      "name": "Icicle Caverns",
+      "artifactIDs": [
+        "skylord"
+      ],
+      "entrances": [
+        {
+          "id": "reference-astraeos-icicle-caverns",
+          "label": "Entrance",
+          "lat": 2.428,
+          "lon": 97.636,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Icicle_Caverns.jpg/288px-ASA_Astraeos_Icicle_Caverns.jpg?396dc8",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-starbloom-cavern",
+      "name": "Starbloom Cavern",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-astraeos-starbloom-cavern",
+          "label": "Entrance",
+          "lat": 13.929,
+          "lon": 16.732,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Starbloom_Cavern.jpg/288px-ASA_Astraeos_Starbloom_Cavern.jpg?d4c404",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-underwater-cave-1-55",
+      "name": "Underwater Cave 1",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-astraeos-underwater-cave-1-55",
+          "label": "Entrance",
+          "lat": 76.653,
+          "lon": 49.068,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Underwater_Cave_1.jpg/288px-ASA_Astraeos_Underwater_Cave_1.jpg?6db071",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-underwater-cave-2-56",
+      "name": "Underwater Cave 2",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-astraeos-underwater-cave-2-56",
+          "label": "Entrance",
+          "lat": 74.326,
+          "lon": 74.317,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Underwater_Cave_2.jpg/288px-ASA_Astraeos_Underwater_Cave_2.jpg?84ea2b",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-underwater-cave-3-57",
+      "name": "Underwater Cave 3",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-astraeos-underwater-cave-3-57",
+          "label": "Entrance",
+          "lat": 78.992,
+          "lon": 70.908,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Underwater_Cave_3.jpg/288px-ASA_Astraeos_Underwater_Cave_3.jpg?292bf1",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-underwater-cave-4-58",
+      "name": "Underwater Cave 4",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-astraeos-underwater-cave-4-58",
+          "label": "Entrance",
+          "lat": 71.067,
+          "lon": 87.007,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Underwater_Cave_4.jpg/288px-ASA_Astraeos_Underwater_Cave_4.jpg?213094",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-underwater-cave-5-59",
+      "name": "Underwater Cave 5",
+      "artifactIDs": [],
+      "entrances": [
+        {
+          "id": "reference-astraeos-underwater-cave-5-59",
+          "label": "Entrance",
+          "lat": 73.589,
+          "lon": 89.639,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Underwater_Cave_5.jpg/288px-ASA_Astraeos_Underwater_Cave_5.jpg?2adfd2",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-forgotten-temple",
+      "name": "Forgotten Temple",
+      "artifactIDs": [
+        "hunter"
+      ],
+      "entrances": [
+        {
+          "id": "reference-astraeos-forgotten-temple",
+          "label": "Entrance",
+          "lat": 30.054,
+          "lon": 9.618,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Forgotten_Temple.jpg/288px-ASA_Astraeos_Forgotten_Temple.jpg?64431c",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-old-tomb",
+      "name": "Old Tomb",
+      "artifactIDs": [
+        "massive"
+      ],
+      "entrances": [
+        {
+          "id": "reference-astraeos-old-tomb",
+          "label": "Entrance",
+          "lat": 37.398,
+          "lon": 22.53,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Old_Tomb.jpg/288px-ASA_Astraeos_Old_Tomb.jpg?e9c9c2",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-sunken-caverns",
+      "name": "Sunken Caverns",
+      "artifactIDs": [
+        "clever"
+      ],
+      "entrances": [
+        {
+          "id": "reference-astraeos-sunken-caverns",
+          "label": "Entrance",
+          "lat": 24.548,
+          "lon": 23.838,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Sunken_Caverns.jpg/288px-ASA_Astraeos_Sunken_Caverns.jpg?8896a3",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-sunken-temple",
+      "name": "Sunken Temple",
+      "artifactIDs": [
+        "brute"
+      ],
+      "entrances": [
+        {
+          "id": "reference-astraeos-sunken-temple",
+          "label": "Entrance",
+          "lat": 48.485,
+          "lon": 49.84,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Sunken_Temple.jpg/288px-ASA_Astraeos_Sunken_Temple.jpg?a83d49",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-vulcano-cave",
+      "name": "Vulcano Cave",
+      "artifactIDs": [
+        "pack"
+      ],
+      "entrances": [
+        {
+          "id": "reference-astraeos-vulcano-cave",
+          "label": "Entrance",
+          "lat": 67.753,
+          "lon": 63.047,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Vulcano_Cave.jpg/288px-ASA_Astraeos_Vulcano_Cave.jpg?73ea4a",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    },
+    {
+      "id": "reference-astraeos-artemis-tomb",
+      "name": "Artemis Tomb",
+      "artifactIDs": [
+        "devourer"
+      ],
+      "entrances": [
+        {
+          "id": "reference-astraeos-artemis-tomb",
+          "label": "Entrance",
+          "lat": 21.769,
+          "lon": 43.236,
+          "kind": "entrance"
+        }
+      ],
+      "boss": "",
+      "notes": "Match the opening to the surrounding terrain. Artifact pickup coordinates mark a different point deeper inside. Offline walkthrough unavailable. Terrain overview shown.",
+      "kit": [
+        "Food and water",
+        "Spare armor and healing supplies",
+        "Weapons and ammunition",
+        "Light source; identify a return route"
+      ],
+      "sourceURL": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos",
+      "entranceSourceURL": "https://ark.wiki.gg/api.php?action=queryDataMap&pageid=87859&revid=601078&format=json&layers=cave-entrance%7Cobelisk-blue%7Cobelisk-green%7Cobelisk-red%7Cminotaur-terminal%7Cabyssanthos-terminal%7Ckalydonios-terminal%7Ccolossus-terminal%7Ckroaratos-terminal%7Cshallocis-terminal",
+      "imageAsset": "Map-astraeos",
+      "imageCaption": "Map terrain overview; entrance photograph has not been downloaded.",
+      "photoURL": "https://ark.wiki.gg/images/thumb/ASA_Astraeos_Artemis_Tomb.jpg/288px-ASA_Astraeos_Artemis_Tomb.jpg?153184",
+      "videoURL": null,
+      "walkthroughStatus": "notRetrieved"
+    }
+  ],
+  "obelisks": []
+}

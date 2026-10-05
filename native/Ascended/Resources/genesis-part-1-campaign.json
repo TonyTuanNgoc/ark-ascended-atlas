@@ -4,7 +4,9 @@
     "Record difficulty, Single Player Settings and mods before comparing your army with official-server videos.",
     "Start with Gamma; measure health, ammunition and saddle losses before raising difficulty. Total creature level is not a substitute for actual stats.",
     "Keep a breeding pair and spare equipment at base. Fully heal the team and rehearse whistle groups before summoning.",
-    "Check tribute, permitted creatures, timer and rewards at the current ASA terminal; do not copy ASE requirements."
+    "Check tribute, permitted creatures, timer and rewards at the current ASA terminal; do not copy ASE requirements.",
+    "Assign Code-Key collection and Codebreaker delivery separately from enemy control. Rehearse returning to cover and the team before collecting on foot.",
+    "Pack spare armor, Medical Brews and ranged ammunition for the survivor phases; keep the arena movement lanes clear."
   ],
   "steps": [
     {
@@ -17,19 +19,54 @@
     {
       "id": "missions",
       "title": "2 · Missions and the Final Test",
-      "reason": "Follow the current ASA HLN-A completion requirements; do not assume ASE mission counts or skip methods.",
+      "reason": "Complete the current required missions, then select The Final Test through HLN-A. Check the ASA completion requirement in your save rather than importing an Evolved mission count.",
       "kind": "Missions",
       "bossIDs": []
     },
     {
       "id": "controller",
       "title": "3 · Corrupted Master Controller",
-      "reason": "The final test requires movement, add control and phase objectives. Tames cannot complete the mission mechanics by themselves. Current ASA solo army thresholds remain unverified.",
+      "reason": "Kill corrupted enemies, collect their Code-Keys on foot and deposit them at the Codebreaker. Deposits remove protection and create boss damage windows; keep runners protected while the team controls enemies.",
       "kind": "Final Test",
       "bossIDs": [
         "corrupted-master-controller"
       ]
     }
   ],
-  "loadouts": []
+  "loadouts": [
+    {
+      "bossID": "corrupted-master-controller",
+      "entry": "A tame team controls enemies while survivors complete the Code-Key objectives.",
+      "warning": "No numeric army thresholds are verified here. Check current encounter eligibility and your save settings.",
+      "options": [
+        {
+          "id": "runner-cover",
+          "title": "Enemy-control team + protected key runner",
+          "team": "Eligible combat tames hold the enemy group; a survivor collects and delivers Code-Keys with ranged backup and spare armor.",
+          "why": "The current controller reference separates tame combat from on-foot key collection. Positioning and deposits advance the encounter.",
+          "play": "Stay close enough to the controlled enemy group to collect drops. Deposit at the Codebreaker, avoid being cornered and use cover against the controller’s beam.",
+          "imageAsset": "Dino-rex",
+          "confidence": "Current shared Genesis Wiki mechanics reference; ASA access is established, but a specific ASA army composition and minimum stats are not independently verified.",
+          "targets": []
+        }
+      ],
+      "sources": [
+        {
+          "title": "Code-Key objective",
+          "url": "https://ark.wiki.gg/wiki/Code-Key",
+          "note": "Current reference describes drops and Codebreaker deposits; no Evolved key counts or carry caps are copied."
+        },
+        {
+          "title": "Controller · survivor and tame roles",
+          "url": "https://ark.wiki.gg/wiki/Corrupted_Master_Controller",
+          "note": "Shared ASE/ASA reference supports on-foot collection, enemy control, spare armor and ranged equipment. It is not evidence of an ASA solo army win."
+        },
+        {
+          "title": "Genesis ASA release",
+          "url": "https://ark.wiki.gg/wiki/ARK%3A_Survival_Ascended/Patch/89.24",
+          "note": "Confirms ASA Genesis release and legacy-content updates; do not infer unchanged numeric arena requirements from this changelog."
+        }
+      ]
+    }
+  ]
 }

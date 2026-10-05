@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "scope": "Every existing acquisition category, common processing recipe and normalized raw-label candidate is tracked for every selectable map. Raw labels are audit candidates only. Unknown coverage stays unverified.",
-  "sourceCount": 25,
+  "sourceCount": 26,
   "sources": [
     {
       "videoID": "-A6rpnfcqtw",
@@ -232,7 +232,8 @@
         "rag-silk-fields",
         "rag-sulfur-rocks",
         "rag-salt-columns",
-        "rag-river-sap-tap"
+        "rag-river-sap-tap",
+        "rag-blue-gem-cavern"
       ],
       "rightsBasis": "licensed",
       "rightsApproval": "User confirmed all source licenses",
@@ -425,7 +426,8 @@
         "rag-dam-lakes",
         "rag-cactus-route",
         "rag-coast-flowers",
-        "rag-lake-basic-hub"
+        "rag-lake-basic-hub",
+        "rag-highland-wild-vegetables"
       ],
       "rightsBasis": "licensed",
       "rightsApproval": "User confirmed all source licenses",
@@ -1557,6 +1559,56 @@
       "rightsApproval": "User confirmed all source licenses",
       "acquisitionState": "approved-complete-local-cache",
       "metadataState": "inspected"
+    },
+    {
+      "videoID": "vGqngPRx6po",
+      "canonicalURL": "https://www.youtube.com/watch?v=vGqngPRx6po",
+      "title": "The New Best Plant Species X Seed Locations in Ark Survival Ascended",
+      "channel": "Ark: Survival Guide",
+      "publishDate": "20231029",
+      "statistics": {
+        "views": 84608,
+        "likes": 882,
+        "comments": 32
+      },
+      "chapters": [
+        {
+          "title": "Intro",
+          "start": 0,
+          "end": 29
+        },
+        {
+          "title": "Plant X Seed Pods",
+          "start": 29,
+          "end": 201
+        },
+        {
+          "title": "Pitcher Plants",
+          "start": 201,
+          "end": 288
+        },
+        {
+          "title": "Rock Outcropping",
+          "start": 288,
+          "end": 351
+        },
+        {
+          "title": "Cattails",
+          "start": 351,
+          "end": 407
+        },
+        {
+          "title": "Conclusion",
+          "start": 407,
+          "end": 486
+        }
+      ],
+      "inspectedAt": "2026-10-05T02:55:31.390974Z",
+      "sourceSpots": [],
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed all source licenses",
+      "acquisitionState": "partial-native-chunks/full-HTTP403",
+      "metadataState": "inspected"
     }
   ],
   "rows": [
@@ -2157,12 +2209,13 @@
       "map": "astraeos",
       "resource": "Citronal",
       "spotIDs": [],
-      "status": "unverified",
-      "reason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
-      "evidenceState": "needs-source-verification",
-      "acquisitionClass": "region-harvest",
+      "status": "processing",
+      "reason": "Grow Citronal from its seed in a Medium or Large Crop Plot with water and fertilizer, then collect the ripe crop from the plot inventory.",
+      "evidenceState": "mechanics-reference",
+      "acquisitionClass": "crop-production",
       "harvestDemonstrated": false,
-      "limitations": "No GPS, availability, yield or harvesting footage is inferred from raw node labels."
+      "limitations": "Crop-production reference only. No filmed local seed route, wild plant GPS or crop-collection loop is claimed for this category.",
+      "sourceURL": "https://ark.wiki.gg/wiki/Farming"
     },
     {
       "map": "astraeos",
@@ -2321,12 +2374,13 @@
       "map": "astraeos",
       "resource": "Longrass",
       "spotIDs": [],
-      "status": "unverified",
-      "reason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
-      "evidenceState": "needs-source-verification",
-      "acquisitionClass": "region-harvest",
+      "status": "processing",
+      "reason": "Grow Longrass from its seed in a Medium or Large Crop Plot with water and fertilizer, then collect the ripe crop from the plot inventory.",
+      "evidenceState": "mechanics-reference",
+      "acquisitionClass": "crop-production",
       "harvestDemonstrated": false,
-      "limitations": "No GPS, availability, yield or harvesting footage is inferred from raw node labels."
+      "limitations": "Crop-production reference only. No filmed local seed route, wild plant GPS or crop-collection loop is claimed for this category.",
+      "sourceURL": "https://ark.wiki.gg/wiki/Farming"
     },
     {
       "map": "astraeos",
@@ -2479,12 +2533,13 @@
       "map": "astraeos",
       "resource": "Rockarrot",
       "spotIDs": [],
-      "status": "unverified",
-      "reason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
-      "evidenceState": "needs-source-verification",
-      "acquisitionClass": "region-harvest",
+      "status": "processing",
+      "reason": "Grow Rockarrot from its seed in a Medium or Large Crop Plot with water and fertilizer, then collect the ripe crop from the plot inventory.",
+      "evidenceState": "mechanics-reference",
+      "acquisitionClass": "crop-production",
       "harvestDemonstrated": false,
-      "limitations": "No GPS, availability, yield or harvesting footage is inferred from raw node labels."
+      "limitations": "Crop-production reference only. No filmed local seed route, wild plant GPS or crop-collection loop is claimed for this category.",
+      "sourceURL": "https://ark.wiki.gg/wiki/Farming"
     },
     {
       "map": "astraeos",
@@ -2523,12 +2578,13 @@
       "map": "astraeos",
       "resource": "Savoroot",
       "spotIDs": [],
-      "status": "unverified",
-      "reason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
-      "evidenceState": "needs-source-verification",
-      "acquisitionClass": "region-harvest",
+      "status": "processing",
+      "reason": "Grow Savoroot from its seed in a Medium or Large Crop Plot with water and fertilizer, then collect the ripe crop from the plot inventory.",
+      "evidenceState": "mechanics-reference",
+      "acquisitionClass": "crop-production",
       "harvestDemonstrated": false,
-      "limitations": "No GPS, availability, yield or harvesting footage is inferred from raw node labels."
+      "limitations": "Crop-production reference only. No filmed local seed route, wild plant GPS or crop-collection loop is claimed for this category.",
+      "sourceURL": "https://ark.wiki.gg/wiki/Farming"
     },
     {
       "map": "astraeos",
@@ -4884,13 +4940,15 @@
     {
       "map": "ragnarok",
       "resource": "Blue Gem",
-      "spotIDs": [],
-      "status": "unverified",
-      "reason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
-      "evidenceState": "needs-source-verification",
+      "spotIDs": [
+        "rag-blue-gem-cavern"
+      ],
+      "status": "verified",
+      "reason": "Source-video GPS region reviewed; open a region card for the actual filmed evidence.",
+      "evidenceState": "gps-region-reviewed",
       "acquisitionClass": "region-harvest",
-      "harvestDemonstrated": false,
-      "limitations": "No GPS, availability, yield or harvesting footage is inferred from raw node labels.",
+      "harvestDemonstrated": true,
+      "limitations": "A reviewed region does not establish every individual node, current respawn or fixed yield. Harvest actions are shown only when the region guide says so.",
       "candidateSourceChapters": [
         {
           "videoID": "0i0-XEV85m8",
@@ -4900,7 +4958,9 @@
           "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8&t=1166s",
           "evidenceState": "chapter-metadata-only"
         }
-      ]
+      ],
+      "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8",
+      "sourcePlane": "ragnarok filmed region"
     },
     {
       "map": "ragnarok",
@@ -4990,12 +5050,13 @@
       "resource": "Crystal",
       "status": "verified",
       "spotIDs": [
-        "rag-crystal-highland"
+        "rag-crystal-highland",
+        "rag-blue-gem-cavern"
       ],
       "reason": "Source-video GPS region reviewed; open a region card for the actual filmed evidence.",
       "evidenceState": "gps-region-reviewed",
       "acquisitionClass": "region-harvest",
-      "harvestDemonstrated": false,
+      "harvestDemonstrated": true,
       "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8",
       "sourcePlane": "ragnarok filmed region",
       "limitations": "A reviewed region does not establish every individual node, current respawn or fixed yield. Harvest actions are shown only when the region guide says so."
@@ -5115,12 +5176,13 @@
       "map": "ragnarok",
       "resource": "Longrass",
       "spotIDs": [],
-      "status": "unverified",
-      "reason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
-      "evidenceState": "needs-source-verification",
-      "acquisitionClass": "region-harvest",
+      "status": "processing",
+      "reason": "Grow Longrass from its seed in a Medium or Large Crop Plot with water and fertilizer, then collect the ripe crop from the plot inventory.",
+      "evidenceState": "mechanics-reference",
+      "acquisitionClass": "crop-production",
       "harvestDemonstrated": false,
-      "limitations": "No GPS, availability, yield or harvesting footage is inferred from raw node labels."
+      "limitations": "Crop-production reference only. No filmed local seed route, wild plant GPS or crop-collection loop is claimed for this category.",
+      "sourceURL": "https://ark.wiki.gg/wiki/Farming"
     },
     {
       "map": "ragnarok",
@@ -5210,13 +5272,17 @@
     {
       "map": "ragnarok",
       "resource": "Plant Species X Seed",
-      "spotIDs": [],
-      "status": "unverified",
-      "reason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
-      "evidenceState": "needs-source-verification",
+      "spotIDs": [
+        "rag-coast-flowers"
+      ],
+      "status": "verified",
+      "reason": "Source-video GPS region reviewed; open a region card for the actual filmed evidence.",
+      "evidenceState": "gps-region-reviewed",
       "acquisitionClass": "region-harvest",
-      "harvestDemonstrated": false,
-      "limitations": "No GPS, availability, yield or harvesting footage is inferred from raw node labels."
+      "harvestDemonstrated": true,
+      "limitations": "A reviewed region does not establish every individual node, current respawn or fixed yield. Harvest actions are shown only when the region guide says so.",
+      "sourceURL": "https://www.youtube.com/watch?v=5IhlD3yzqjU",
+      "sourcePlane": "ragnarok filmed region"
     },
     {
       "map": "ragnarok",
@@ -5281,13 +5347,15 @@
     {
       "map": "ragnarok",
       "resource": "Rockarrot",
-      "spotIDs": [],
-      "status": "unverified",
-      "reason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
-      "evidenceState": "needs-source-verification",
+      "spotIDs": [
+        "rag-highland-wild-vegetables"
+      ],
+      "status": "verified",
+      "reason": "Source-video GPS region reviewed; open a region card for the actual filmed evidence.",
+      "evidenceState": "gps-region-reviewed",
       "acquisitionClass": "region-harvest",
-      "harvestDemonstrated": false,
-      "limitations": "No GPS, availability, yield or harvesting footage is inferred from raw node labels.",
+      "harvestDemonstrated": true,
+      "limitations": "A reviewed region does not establish every individual node, current respawn or fixed yield. Harvest actions are shown only when the region guide says so.",
       "candidateSourceChapters": [
         {
           "videoID": "5IhlD3yzqjU",
@@ -5297,7 +5365,9 @@
           "sourceURL": "https://www.youtube.com/watch?v=5IhlD3yzqjU&t=782s",
           "evidenceState": "chapter-metadata-only"
         }
-      ]
+      ],
+      "sourceURL": "https://www.youtube.com/watch?v=5IhlD3yzqjU",
+      "sourcePlane": "ragnarok filmed region"
     },
     {
       "map": "ragnarok",
@@ -5348,13 +5418,15 @@
     {
       "map": "ragnarok",
       "resource": "Savoroot",
-      "spotIDs": [],
-      "status": "unverified",
-      "reason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
-      "evidenceState": "needs-source-verification",
+      "spotIDs": [
+        "rag-highland-wild-vegetables"
+      ],
+      "status": "verified",
+      "reason": "Source-video GPS region reviewed; open a region card for the actual filmed evidence.",
+      "evidenceState": "gps-region-reviewed",
       "acquisitionClass": "region-harvest",
-      "harvestDemonstrated": false,
-      "limitations": "No GPS, availability, yield or harvesting footage is inferred from raw node labels.",
+      "harvestDemonstrated": true,
+      "limitations": "A reviewed region does not establish every individual node, current respawn or fixed yield. Harvest actions are shown only when the region guide says so.",
       "candidateSourceChapters": [
         {
           "videoID": "5IhlD3yzqjU",
@@ -5364,7 +5436,9 @@
           "sourceURL": "https://www.youtube.com/watch?v=5IhlD3yzqjU&t=782s",
           "evidenceState": "chapter-metadata-only"
         }
-      ]
+      ],
+      "sourceURL": "https://www.youtube.com/watch?v=5IhlD3yzqjU",
+      "sourcePlane": "ragnarok filmed region"
     },
     {
       "map": "ragnarok",
@@ -5415,12 +5489,13 @@
       "resource": "Stone",
       "status": "verified",
       "spotIDs": [
-        "rag-lake-basic-hub"
+        "rag-lake-basic-hub",
+        "rag-blue-gem-cavern"
       ],
       "reason": "Source-video GPS region reviewed; open a region card for the actual filmed evidence.",
       "evidenceState": "gps-region-reviewed",
       "acquisitionClass": "region-harvest",
-      "harvestDemonstrated": false,
+      "harvestDemonstrated": true,
       "sourceURL": "https://www.youtube.com/watch?v=5IhlD3yzqjU",
       "sourcePlane": "ragnarok filmed region",
       "limitations": "A reviewed region does not establish every individual node, current respawn or fixed yield. Harvest actions are shown only when the region guide says so."
@@ -6839,12 +6914,15 @@
       "map": "the-island",
       "resource": "Plant Species X Seed",
       "spotIDs": [],
-      "status": "unverified",
-      "reason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
-      "evidenceState": "needs-source-verification",
-      "acquisitionClass": "region-harvest",
+      "status": "processing",
+      "reason": "The ASA seed guide demonstrates finding the Plant Species X seed-pod plants and hand interaction in the opening Plant X Seed Pods chapter. Use the source guide for the collection method.",
+      "evidenceState": "filmed-method",
+      "acquisitionClass": "processing",
       "harvestDemonstrated": false,
-      "limitations": "No GPS, availability, yield or harvesting footage is inferred from raw node labels."
+      "limitations": "The received source contains only0\u201356s and no readableGPS. No local pin, completed seed collection, yield or three-clip route is claimed.",
+      "videoID": "vGqngPRx6po",
+      "sourceURL": "https://www.youtube.com/watch?v=vGqngPRx6po&t=29s",
+      "method": "Collect Plant Species X Seed from the seed-pod plants; the linked ASA guide covers these plants and alternative harvest targets."
     },
     {
       "map": "the-island",
@@ -7130,12 +7208,13 @@
       "map": "valguero",
       "resource": "Citronal",
       "spotIDs": [],
-      "status": "unverified",
-      "reason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
-      "evidenceState": "needs-source-verification",
-      "acquisitionClass": "region-harvest",
+      "status": "processing",
+      "reason": "Grow Citronal from its seed in a Medium or Large Crop Plot with water and fertilizer, then collect the ripe crop from the plot inventory.",
+      "evidenceState": "mechanics-reference",
+      "acquisitionClass": "crop-production",
       "harvestDemonstrated": false,
-      "limitations": "No GPS, availability, yield or harvesting footage is inferred from raw node labels."
+      "limitations": "Crop-production reference only. No filmed local seed route, wild plant GPS or crop-collection loop is claimed for this category.",
+      "sourceURL": "https://ark.wiki.gg/wiki/Farming"
     },
     {
       "map": "valguero",
@@ -7278,12 +7357,13 @@
       "map": "valguero",
       "resource": "Longrass",
       "spotIDs": [],
-      "status": "unverified",
-      "reason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
-      "evidenceState": "needs-source-verification",
-      "acquisitionClass": "region-harvest",
+      "status": "processing",
+      "reason": "Grow Longrass from its seed in a Medium or Large Crop Plot with water and fertilizer, then collect the ripe crop from the plot inventory.",
+      "evidenceState": "mechanics-reference",
+      "acquisitionClass": "crop-production",
       "harvestDemonstrated": false,
-      "limitations": "No GPS, availability, yield or harvesting footage is inferred from raw node labels."
+      "limitations": "Crop-production reference only. No filmed local seed route, wild plant GPS or crop-collection loop is claimed for this category.",
+      "sourceURL": "https://ark.wiki.gg/wiki/Farming"
     },
     {
       "map": "valguero",
@@ -7473,12 +7553,13 @@
       "map": "valguero",
       "resource": "Rockarrot",
       "spotIDs": [],
-      "status": "unverified",
-      "reason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
-      "evidenceState": "needs-source-verification",
-      "acquisitionClass": "region-harvest",
+      "status": "processing",
+      "reason": "Grow Rockarrot from its seed in a Medium or Large Crop Plot with water and fertilizer, then collect the ripe crop from the plot inventory.",
+      "evidenceState": "mechanics-reference",
+      "acquisitionClass": "crop-production",
       "harvestDemonstrated": false,
-      "limitations": "No GPS, availability, yield or harvesting footage is inferred from raw node labels."
+      "limitations": "Crop-production reference only. No filmed local seed route, wild plant GPS or crop-collection loop is claimed for this category.",
+      "sourceURL": "https://ark.wiki.gg/wiki/Farming"
     },
     {
       "map": "valguero",
@@ -7518,12 +7599,13 @@
       "map": "valguero",
       "resource": "Savoroot",
       "spotIDs": [],
-      "status": "unverified",
-      "reason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
-      "evidenceState": "needs-source-verification",
-      "acquisitionClass": "region-harvest",
+      "status": "processing",
+      "reason": "Grow Savoroot from its seed in a Medium or Large Crop Plot with water and fertilizer, then collect the ripe crop from the plot inventory.",
+      "evidenceState": "mechanics-reference",
+      "acquisitionClass": "crop-production",
       "harvestDemonstrated": false,
-      "limitations": "No GPS, availability, yield or harvesting footage is inferred from raw node labels."
+      "limitations": "Crop-production reference only. No filmed local seed route, wild plant GPS or crop-collection loop is claimed for this category.",
+      "sourceURL": "https://ark.wiki.gg/wiki/Farming"
     },
     {
       "map": "valguero",
@@ -7636,8 +7718,8 @@
       "map": "astraeos",
       "categories": 47,
       "states": {
-        "needs-source-verification": 38,
-        "mechanics-reference": 8,
+        "needs-source-verification": 34,
+        "mechanics-reference": 12,
         "gps-region-reviewed": 1
       },
       "gpsRegions": 1,
@@ -7691,13 +7773,13 @@
       "map": "ragnarok",
       "categories": 41,
       "states": {
-        "gps-region-reviewed": 25,
-        "needs-source-verification": 6,
-        "mechanics-reference": 9,
-        "filmed-method": 1
+        "gps-region-reviewed": 29,
+        "mechanics-reference": 10,
+        "filmed-method": 1,
+        "needs-source-verification": 1
       },
-      "gpsRegions": 19,
-      "harvestClipGuides": 8
+      "gpsRegions": 21,
+      "harvestClipGuides": 10
     },
     {
       "map": "scorched-earth",
@@ -7730,8 +7812,8 @@
         "gps-region-reviewed": 19,
         "native-availability-reference": 6,
         "mechanics-reference": 9,
-        "filmed-method": 1,
-        "needs-source-verification": 2
+        "filmed-method": 2,
+        "needs-source-verification": 1
       },
       "gpsRegions": 12,
       "harvestClipGuides": 4
@@ -7740,8 +7822,8 @@
       "map": "valguero",
       "categories": 44,
       "states": {
-        "needs-source-verification": 34,
-        "mechanics-reference": 9,
+        "needs-source-verification": 30,
+        "mechanics-reference": 13,
         "gps-region-reviewed": 1
       },
       "gpsRegions": 1,
@@ -7750,14 +7832,19 @@
   ],
   "blockers": [
     {
+      "action": "Alternative popular Island Plant Species X guide vGqngPRx6po",
+      "result": "Licensed download received native1080pAV1 chunks through56.2s, thenHTTP403Forbidden. Reviewed opening footage has no readableGPS; no pin was added.",
+      "evidence": "resource-acquisition-round2/vGqngPRx6po-download.log"
+    },
+    {
       "action": "Fresh licensed Scorched Earth full download",
       "result": "HTTP403 Forbidden",
       "evidence": "resource-acquisition-audit/scorched-retry.log"
     },
     {
       "action": "Fresh native YouTube metadata search",
-      "result": "YouTube Data API rejected request parameters or API key",
-      "evidence": "resource-acquisition-audit/source-search.log"
+      "result": "Official search.list and videos.list both returnHTTP400 INVALID_ARGUMENT, badRequest, API_KEY_INVALID with minimal valid parameters. Keychain key exists but is invalid; this is a credential configuration failure.",
+      "evidence": "resource-acquisition-round2/api-diagnostic.json"
     },
     {
       "action": "Installed C\u1ed1c C\u1ed1c native media discovery",

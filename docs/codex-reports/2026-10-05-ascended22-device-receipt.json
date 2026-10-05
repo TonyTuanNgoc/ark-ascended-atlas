@@ -1,0 +1,29 @@
+{
+  "installOutcome": "success",
+  "application": {
+    "appClip": false,
+    "builtByDeveloper": true,
+    "bundleIdentifier": "com.tonytuanngoc.ascended",
+    "bundleVersion": "22",
+    "defaultApp": false,
+    "hidden": false,
+    "internalApp": false,
+    "name": "Ascended",
+    "removable": true,
+    "url": "file:///private/var/containers/Bundle/Application/749D9E98-090C-462B-89B7-AACC8E2BF45D/Ascended.app/",
+    "version": "0.21.0"
+  },
+  "installation": {
+    "bundleID": "com.tonytuanngoc.ascended",
+    "databaseSequenceNumber": 1624,
+    "databaseUUID": "19CF7B10-CBC0-413B-8917-89A5A54D31EF",
+    "installationURL": "file:///private/var/containers/Bundle/Application/749D9E98-090C-462B-89B7-AACC8E2BF45D/Ascended.app/",
+    "launchServicesIdentifier": "unknown",
+    "options": {}
+  },
+  "launchOutcome": "success",
+  "processIdentifier": 1431,
+  "deliveryPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/builds/Ascended-0.21.0-22-final-delivery/Ascended.app",
+  "connection": "wired",
+  "physicalInteractionVerified": false
+}

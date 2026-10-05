@@ -1,10 +1,12 @@
 {
-  "summary": "Lost Colony has its own ASA campaign and Red-Handed encounters with Lost King and Lost Queen. Map access requires the Lost Colony Expansion Pass.",
+  "summary": "Red-Handed leads through the Red Palace to Lost King, then Lost Queen. Both are required for Lost Colony ascension; the second fight changes from tame combat to an on-foot spear duel.",
   "sharedPreparation": [
     "Record difficulty, Single Player Settings and mods before comparing your army with official-server videos.",
     "Start with Gamma; measure health, ammunition and saddle losses before raising difficulty. Total creature level is not a substitute for actual stats.",
     "Keep a breeding pair and spare equipment at base. Fully heal the team and rehearse whistle groups before summoning.",
-    "Check tribute, permitted creatures, timer and rewards at the current ASA terminal; do not copy ASE requirements."
+    "Check tribute, permitted creatures, timer and rewards at the current ASA terminal; do not copy ASE requirements.",
+    "Prepare spare armor, Medical Brews and Blood Packs for the Queen; your tames will be unconscious during her fight.",
+    "Assign pole destruction and minion control before the King. Save ammunition and healing for vulnerability windows rather than firing at his airborne mount."
   ],
   "steps": [
     {
@@ -17,20 +19,82 @@
     {
       "id": "campaign",
       "title": "2 · Campaign access",
-      "reason": "Follow the current objectives and unlocks in your save; do not substitute artifact requirements from older maps.",
+      "reason": "Begin Red-Handed through the Red Terminal and complete the palace objectives. The terminal is the mission approach, not the final boss arena.",
       "kind": "Campaign",
       "bossIDs": []
     },
     {
-      "id": "redhand",
-      "title": "3 · Prepare for Red-Handed",
-      "reason": "Lost King and Lost Queen belong to the map endgame. This guide has no verified minimum army stats; check the current encounter requirements before risking your breeding army.",
-      "kind": "Endgame",
+      "id": "king",
+      "title": "3 · Ground Lost King",
+      "reason": "Destroy the power poles while controlling Thralls. His Gigadesmodus then lands and opens a damage window; nearby exploding crystals can stun him.",
+      "kind": "King",
       "bossIDs": [
-        "lost-king",
+        "lost-king"
+      ]
+    },
+    {
+      "id": "queen",
+      "title": "4 · Lost Queen and ascension",
+      "reason": "Tames fall unconscious. Fight on foot with the encounter’s Tek Spear, dodge her attacks and hit the Codex’s blue pulses to interrupt her healing.",
+      "kind": "Ascension",
+      "bossIDs": [
         "lost-queen"
       ]
     }
   ],
-  "loadouts": []
+  "loadouts": [
+    {
+      "bossID": "lost-king",
+      "entry": "Prepare pole destruction, add control and damage during landing windows.",
+      "warning": "No numeric army thresholds are verified here. Check current encounter eligibility and your save settings.",
+      "options": [
+        {
+          "id": "rex-support",
+          "title": "Rex army with courage and healing support",
+          "team": "Rex damage dealers; Yutyrannus courage support; Daeodon for recovery between landing phases.",
+          "why": "The Lost King Wiki recommends these roles; they do not remove his airborne invulnerability.",
+          "play": "Destroy poles first. Keep Thralls off the team, then attack the grounded boss; use exploding crystals for stun windows.",
+          "imageAsset": "Dino-rex",
+          "confidence": "Current Wiki encounter guidance; no independently measured ASA minimum stats or guaranteed win.",
+          "targets": []
+        }
+      ],
+      "sources": [
+        {
+          "title": "Lost King · encounter phases",
+          "url": "https://ark.wiki.gg/wiki/Lost_King",
+          "note": "ASA-only page confirms poles, landing vulnerability, crystals and recommended tame roles; no minimum army stats are imported."
+        }
+      ]
+    },
+    {
+      "bossID": "lost-queen",
+      "entry": "This is an on-foot encounter: bringing a stronger army will not replace the spear mechanics.",
+      "warning": "No numeric army thresholds are verified here. Check current encounter eligibility and your save settings.",
+      "options": [
+        {
+          "id": "spear",
+          "title": "Tek Spear and survivor supplies",
+          "team": "Survivors on foot with the encounter’s Tek Spear, spare armor, Medical Brews and Blood Packs.",
+          "why": "The Queen’s shielding rejects conventional weapons and tames remain unconscious.",
+          "play": "Dodge spear attacks. Interrupt Codex healing by attacking its blue pulses; maintain personal healing and replace damaged armor.",
+          "imageAsset": "",
+          "confidence": "Current Wiki encounter guidance; no independently measured ASA minimum stats or guaranteed win.",
+          "targets": []
+        }
+      ],
+      "sources": [
+        {
+          "title": "Lost Queen · on-foot mechanics",
+          "url": "https://ark.wiki.gg/wiki/Lost_Queen",
+          "note": "ASA-only page confirms unconscious tames, Tek Spear damage and Codex healing interruption. Numeric scaling claims are omitted."
+        },
+        {
+          "title": "Lost Colony paired ascension",
+          "url": "https://ark.wiki.gg/wiki/Ascension",
+          "note": "Current ASA section explicitly lists both Lost King and Lost Queen as the Lost Colony ascension requirement."
+        }
+      ]
+    }
+  ]
 }

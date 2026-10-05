@@ -1,10 +1,12 @@
 {
-  "summary": "Three Titans and King Titan form the Extinction progression. King Titan is an open-world encounter and cannot be planned as a standard 20-tame arena.",
+  "summary": "Forest, Desert and Ice Titan trophies lead into King Titan. In ASA, King Titan ascension increases the survivor level cap, and progression runs Gamma → Beta → Alpha. This is an open-world battle.",
   "sharedPreparation": [
     "Record difficulty, Single Player Settings and mods before comparing your army with official-server videos.",
     "Start with Gamma; measure health, ammunition and saddle losses before raising difficulty. Total creature level is not a substitute for actual stats.",
     "Keep a breeding pair and spare equipment at base. Fully heal the team and rehearse whistle groups before summoning.",
-    "Check tribute, permitted creatures, timer and rewards at the current ASA terminal; do not copy ASE requirements."
+    "Check tribute, permitted creatures, timer and rewards at the current ASA terminal; do not copy ASE requirements.",
+    "Separate trophy-kill and corruption-taming plans. Do not send an uncontrolled army into a Titan you intend to tame.",
+    "For King Titan, rehearse retreat commands and assign corrupted-creature control separately from boss damage. Plan Element and Mek supplies before starting."
   ],
   "steps": [
     {
@@ -17,7 +19,7 @@
     {
       "id": "titans",
       "title": "2 · Forest, Desert and Ice Titan",
-      "reason": "Plan each encounter separately. Killing and taming are different objectives; taming requires handling corruption rather than immediately killing the Titan.",
+      "reason": "Choose killing for trophies or taming for support. Taming requires removing body corruption while limiting damage to the Titan itself.",
       "kind": "Titans",
       "bossIDs": [
         "forest-titan",
@@ -28,12 +30,81 @@
     {
       "id": "king",
       "title": "3 · King Titan and ascension",
-      "reason": "Prepare Titan and tame support, and check difficulty access at the terminal. Assign open-world combat roles before summoning.",
+      "reason": "Retain the previous-difficulty King Titan trophy for the next summon. Prepare open-world support and the Alpha-only Mega Mek; the wandering King Titan event is a separate activity.",
       "kind": "Ascension",
       "bossIDs": [
         "king-titan"
       ]
     }
   ],
-  "loadouts": []
+  "loadouts": [
+    {
+      "bossID": "desert-titan",
+      "entry": "Decide whether this summon is a trophy kill or a tame.",
+      "warning": "No numeric army thresholds are verified here. Check current encounter eligibility and your save settings.",
+      "options": [
+        {
+          "id": "asa-hive",
+          "title": "Bladewasp Hive · ASA kill plan",
+          "team": "A Bladewasp Hive on an elevated pillar setup or a Quetzal platform.",
+          "why": "The Desert Titan page explicitly describes this ASA killing approach; it does not preserve a Titan for taming.",
+          "play": "Confirm access to Bladewasp content and building/platform rules. Use the setup for a kill, not for controlled corruption removal.",
+          "imageAsset": "Equipment-bladewasp-hive",
+          "confidence": "Current Wiki encounter guidance; no independently measured ASA minimum stats or guaranteed win.",
+          "targets": []
+        }
+      ],
+      "sources": [
+        {
+          "title": "Desert Titan · ASA kill option",
+          "url": "https://ark.wiki.gg/wiki/Desert_Titan",
+          "note": "The indexed page explicitly identifies the Bladewasp Hive approach as ASA. No numeric stat threshold or guaranteed time is claimed."
+        }
+      ]
+    },
+    {
+      "bossID": "king-titan",
+      "entry": "Use open-world combat roles; this is not a standard arena herd.",
+      "warning": "No numeric army thresholds are verified here. Check current encounter eligibility and your save settings.",
+      "options": [
+        {
+          "id": "titan-support",
+          "title": "Titans with coordinated support",
+          "team": "Tamed Titans and support damage dealers, with assigned corrupted-creature control.",
+          "why": "The current King Titan reference describes Titan support; protect the team from area attacks and knockback.",
+          "play": "Move out of meteor impact areas and retreat when the boss recovers from a downed phase. Keep support away from the immediate melee impact zone.",
+          "imageAsset": "Dino-giganotosaurus",
+          "confidence": "Current shared ASE/ASA Wiki mechanics reference; a planning guide, not an independently tested ASA army threshold.",
+          "targets": []
+        },
+        {
+          "id": "mega-mek",
+          "title": "Alpha · Mega Mek plan",
+          "team": "A piloted Mega Mek assembled using M.O.M.I. and Meks, with support roles as needed.",
+          "why": "Mega Mek deployment is restricted to Alpha King Titan; it changes the boss’s damage resistance.",
+          "play": "Prepare assembly and controls before Alpha. Keep the Mega Mek active and avoid getting trapped by terrain; do not apply this plan to Gamma or Beta.",
+          "imageAsset": "",
+          "confidence": "Current shared ASE/ASA Wiki reference with ASA Mek fixes; no solo-win guarantee or minimum blueprint stats.",
+          "targets": []
+        }
+      ],
+      "sources": [
+        {
+          "title": "King Titan · phases and support",
+          "url": "https://ark.wiki.gg/wiki/King_Titan",
+          "note": "Current shared reference describes open-world Titan/Mek roles and meteor/knockback hazards. Numeric damage percentages are omitted."
+        },
+        {
+          "title": "Mek · Alpha deployment and ASA fixes",
+          "url": "https://ark.wiki.gg/wiki/Mek",
+          "note": "Confirms Mega Mek assembly and Alpha restriction; ASA changelog includes a fix for King Titan targeting Mega Mek."
+        },
+        {
+          "title": "ASA King Titan progression",
+          "url": "https://ark.wiki.gg/wiki/Ascension",
+          "note": "Explicit ASA section confirms ordered difficulty access and ascension levels, unlike the Evolved level-cap behavior."
+        }
+      ]
+    }
+  ]
 }

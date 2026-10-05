@@ -1,35 +1,117 @@
 {
-  "summary": "Astraeos 1.0 Heaven & Abyss includes separate sea-surface and underwater Kraken encounters, guardians and minibosses. Prepare both land and sea teams.",
+  "summary": "Astraeos ascension requires both Abyssalus, the underwater Kraken, and Shallocis, the surface Kraken fought with ships. Defeating only one does not complete the ascension pair.",
   "sharedPreparation": [
     "Record difficulty, Single Player Settings and mods before comparing your army with official-server videos.",
     "Start with Gamma; measure health, ammunition and saddle losses before raising difficulty. Total creature level is not a substitute for actual stats.",
     "Keep a breeding pair and spare equipment at base. Fully heal the team and rehearse whistle groups before summoning.",
-    "Check tribute, permitted creatures, timer and rewards at the current ASA terminal; do not copy ASE requirements."
+    "Check tribute, permitted creatures, timer and rewards at the current ASA terminal; do not copy ASE requirements.",
+    "Abyssalus requires aquatic or amphibious creatures, cold protection and SCUBA; prepare spare diving gear.",
+    "Shallocis needs a prepared ship, cannon ammunition, steering practice and repair reserves. The underwater team is a separate project."
   ],
   "steps": [
     {
-      "id": "land",
-      "title": "1 · Land encounters and minibosses",
-      "reason": "Prepare separately for Medusa, Colossus and the other minibosses; they are not one combined arena.",
-      "kind": "Land",
-      "bossIDs": []
-    },
-    {
-      "id": "sea",
-      "title": "2 · Two Kraken encounters",
-      "reason": "Have diving equipment, spare gear and controlled sea tames ready. Sea-surface and underwater Kraken are separate encounters.",
-      "kind": "Sea",
+      "id": "souls",
+      "title": "1 · Astral Souls and minibosses",
+      "reason": "Collect Astral Souls from Astral creatures. Colossus and Kroaratos each require 10; Abyssalus requires 20 / 50 / 100 for Gamma / Beta / Alpha, alongside its other tributes.",
+      "kind": "Tribute",
       "bossIDs": [
-        "kraken"
+        "colossus",
+        "kroaratos"
       ]
     },
     {
       "id": "guardians",
-      "title": "3 · Guardian requirements",
-      "reason": "Hydraskos the Unbroken, Manticore and Medusa have their own requirements. Tribute and army thresholds are not verified here; do not directly copy the Scorched Manticore setup.",
+      "title": "2 · Guardian trophies",
+      "reason": "Prepare the difficulty-matched Natrix, Thodes and Hydraskos trophies required by both Kraken portals. Confirm the complete tribute set at the terminal.",
       "kind": "Guardians",
-      "bossIDs": []
+      "bossIDs": [
+        "natrix",
+        "thodes",
+        "hydraskos"
+      ]
+    },
+    {
+      "id": "abyssalus",
+      "title": "3 · Abyssalus underwater",
+      "reason": "Destroy every tentacle to remove the barrier, then damage the body. Control shark and squid minions while keeping the sea team together.",
+      "kind": "Underwater",
+      "bossIDs": [
+        "abyssalus"
+      ]
+    },
+    {
+      "id": "shallocis",
+      "title": "4 · Shallocis and paired ascension",
+      "reason": "Bring ships and clear tentacles to expose the body. Deal with hostile vessels and seeking orbs while positioning for the short damage window. Both Kraken victories complete ascension without a cutscene or upload.",
+      "kind": "Ascension",
+      "bossIDs": [
+        "shallocis"
+      ]
     }
   ],
-  "loadouts": []
+  "loadouts": [
+    {
+      "bossID": "abyssalus",
+      "entry": "Use a coordinated aquatic team in the cold underwater arena.",
+      "warning": "No numeric army thresholds are verified here. Check current encounter eligibility and your save settings.",
+      "options": [
+        {
+          "id": "shark-tuso",
+          "title": "Megalodon pack + ridden Tusoteuthis",
+          "team": "A bred Megalodon pack for damage; a ridden Tusoteuthis to resist squid grabs.",
+          "why": "The ASA-only boss page recommends the shark pack and Tusoteuthis rider role.",
+          "play": "Clear tentacles before attacking the body. Watch electrified tentacles and minions; protect isolated, low-health tames and your SCUBA supply.",
+          "imageAsset": "Dino-megalodon",
+          "confidence": "Current Wiki encounter guidance; no independently measured ASA minimum stats or guaranteed win.",
+          "targets": []
+        }
+      ],
+      "sources": [
+        {
+          "title": "Abyssalus · barrier and sea army",
+          "url": "https://ark.wiki.gg/wiki/Abyssalus",
+          "note": "Confirms tentacles, pack damage, grab-resistant rider and underwater hazards. Its example stats are not treated as a difficulty-specific minimum."
+        },
+        {
+          "title": "Abyssalus portal",
+          "url": "https://ark.wiki.gg/wiki/Abyssalus_Arena",
+          "note": "Confirms cold underwater arena, aquatic/amphibious eligibility and trophy requirements."
+        },
+        {
+          "title": "Astral Soul requirements",
+          "url": "https://ark.wiki.gg/wiki/Astral_Soul",
+          "note": "Current ASA page lists 20/50/100 for Abyssalus and 10 each for Colossus/Kroaratos."
+        }
+      ]
+    },
+    {
+      "bossID": "shallocis",
+      "entry": "Prepare a ship encounter, with steering and weapon roles rehearsed before summoning.",
+      "warning": "No numeric army thresholds are verified here. Check current encounter eligibility and your save settings.",
+      "options": [
+        {
+          "id": "ship",
+          "title": "Brigantine or Galleon combat ship",
+          "team": "An equipped Brigantine or Galleon with ship skills, cannon ammunition and repair supplies.",
+          "why": "The ASA-only page recommends these vessels; cannon and crew preparation replace a conventional tame army.",
+          "play": "Clear all tentacles, stay positioned for body damage and watch hostile ships and seeking orbs. Bring Corrosive and Reinforced Ship Cannonballs, spare armor and healing supplies.",
+          "imageAsset": "Equipment-brigantine",
+          "confidence": "Current Wiki encounter guidance; no independently measured ASA minimum stats or guaranteed win.",
+          "targets": []
+        }
+      ],
+      "sources": [
+        {
+          "title": "Shallocis · ship encounter",
+          "url": "https://ark.wiki.gg/wiki/Shallocis",
+          "note": "Confirms ship recommendations, tentacle barrier, hostile vessels and brief vulnerability. Unverified ammunition minimums are omitted."
+        },
+        {
+          "title": "ASA paired Kraken ascension",
+          "url": "https://ark.wiki.gg/wiki/ARK%3A_Survival_Ascended/Patch/93.0",
+          "note": "Official release changelog explicitly adds both ascension bosses and requires both victories for maximum-player-level rewards."
+        }
+      ]
+    }
+  ]
 }
