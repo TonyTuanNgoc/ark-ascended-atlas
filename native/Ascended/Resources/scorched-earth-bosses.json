@@ -1,0 +1,82 @@
+[
+  {
+    "id": "manticore",
+    "name": "Manticore",
+    "kind": "ASA guardian",
+    "imageAsset": "Boss-manticore",
+    "summary": "The Scorched Earth guardian alternates between airborne and grounded attack opportunities. This arena permits eligible flyers; it is separate from Astraeos and old ASE encounters.",
+    "location": "Summon the Scorched Earth arena through the current ASA Obelisk terminal; check entry conditions in your Single Player save.",
+    "artifactIDs": [],
+    "entranceID": null,
+    "levels": [
+      55,
+      70,
+      95
+    ],
+    "elements": [],
+    "tribute": [
+      {
+        "name": "Fire Talon",
+        "quantities": [
+          2,
+          10,
+          20
+        ]
+      },
+      {
+        "name": "Lightning Talon",
+        "quantities": [
+          2,
+          10,
+          20
+        ]
+      },
+      {
+        "name": "Poison Talon",
+        "quantities": [
+          2,
+          10,
+          20
+        ]
+      },
+      {
+        "name": "Artifact of the Gatekeeper",
+        "quantities": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "name": "Artifact of the Crag",
+        "quantities": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "name": "Artifact of the Destroyer",
+        "quantities": [
+          1,
+          1,
+          1
+        ]
+      }
+    ],
+    "rewardsNote": "Difficulty affects Tek unlocks and ascension. Exact reward amounts are not verified in this profile; check current ASA rewards in game.",
+    "strategy": [
+      "Keep the army controlled and watch landing windows; ranged backup reduces reliance on frequent landings.",
+      "Maintain rider protection and prepare for arena minions. Avoid letting the group become scattered while chasing flight phases.",
+      "Compare the terminal with this wiki-derived tribute table before summoning. Single Player and mod settings affect army performance."
+    ],
+    "kit": [
+      "Current difficulty-specific tribute set",
+      "Fully healed eligible tames with checked saddles",
+      "Spare armor and Medical Brew",
+      "Enough ammunition for phase control and ranged backup",
+      "Backup breeding pair safely left at base"
+    ],
+    "sourceURL": "https://ark.wiki.gg/wiki/Manticore_Arena_%28Scorched_Earth%29"
+  }
+]

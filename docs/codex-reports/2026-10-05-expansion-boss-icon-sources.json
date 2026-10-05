@@ -1,0 +1,22 @@
+[
+  {
+    "asset": "Boss-manticore",
+    "imageURL": "https://ark.wiki.gg/images/Manticore.png",
+    "sourceURL": "https://ark.wiki.gg/wiki/Manticore",
+    "pixels": [
+      256,
+      256
+    ],
+    "sha256": "00dd53163d14abccdf8c1959ced69f8c69784e28f089302d75b7ae9eb5b759ff"
+  },
+  {
+    "asset": "Boss-rockwell",
+    "imageURL": "https://ark.wiki.gg/images/Rockwell.png",
+    "sourceURL": "https://ark.wiki.gg/wiki/Rockwell",
+    "pixels": [
+      256,
+      256
+    ],
+    "sha256": "304a36f0cd4cf7e078c3c764b57b93ae923863b8de5cd324a50269a9026cc0b3"
+  }
+]

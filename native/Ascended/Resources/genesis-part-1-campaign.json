@@ -1,0 +1,35 @@
+{
+  "summary": "Genesis Part 1 is available free in ASA. Missions lead into Corrupted Master Controller; Tides of Fortune is optional paid content rather than a map-access requirement.",
+  "sharedPreparation": [
+    "Record difficulty, Single Player Settings and mods before comparing your army with official-server videos.",
+    "Start with Gamma; measure health, ammunition and saddle losses before raising difficulty. Total creature level is not a substitute for actual stats.",
+    "Keep a breeding pair and spare equipment at base. Fully heal the team and rehearse whistle groups before summoning.",
+    "Check tribute, permitted creatures, timer and rewards at the current ASA terminal; do not copy ASE requirements."
+  ],
+  "steps": [
+    {
+      "id": "biomes",
+      "title": "1 · Build biome equipment kits",
+      "reason": "Separate cold, heat and diving equipment. Establish supplies in several biomes before taking difficult missions.",
+      "kind": "Preparation",
+      "bossIDs": []
+    },
+    {
+      "id": "missions",
+      "title": "2 · Missions and the Final Test",
+      "reason": "Follow the current ASA HLN-A completion requirements; do not assume ASE mission counts or skip methods.",
+      "kind": "Missions",
+      "bossIDs": []
+    },
+    {
+      "id": "controller",
+      "title": "3 · Corrupted Master Controller",
+      "reason": "The final test requires movement, add control and phase objectives. Tames cannot complete the mission mechanics by themselves. Current ASA solo army thresholds remain unverified.",
+      "kind": "Final Test",
+      "bossIDs": [
+        "corrupted-master-controller"
+      ]
+    }
+  ],
+  "loadouts": []
+}

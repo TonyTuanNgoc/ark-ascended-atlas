@@ -1,0 +1,968 @@
+{
+  "checkedAt": "2026-10-05",
+  "sources": [
+    {
+      "id": "ferox",
+      "sourceURL": "https://ark.wiki.gg/wiki/Ferox",
+      "cachedHTML": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/ferox.html",
+      "sha256": "6d0f65ad9af1b7b0ef3088fa6afec1eaa2c053db44e22d5bd4aad143a17e629e",
+      "fields": [
+        "tameable",
+        "diet",
+        "method",
+        "foods",
+        "drops",
+        "immobilizedBy",
+        "archive.notes"
+      ],
+      "limitations": "Current wiki shared-species profile; legacy-only release metadata is not proof of an ASA-specific patch test."
+    },
+    {
+      "id": "magmasaur",
+      "sourceURL": "https://ark.wiki.gg/wiki/Magmasaur",
+      "cachedHTML": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/magmasaur.html",
+      "sha256": "5a27da1073a6d9a898733d00b78aa07fd40edde295af3eec5713876521512b27",
+      "fields": [
+        "tameable",
+        "diet",
+        "method",
+        "foods",
+        "drops",
+        "immobilizedBy",
+        "archive.notes"
+      ],
+      "limitations": "Adult tameable=false does not mean the species cannot be raised. Current wiki lists egg acquisition; no baby-food/stat values copied."
+    },
+    {
+      "id": "megachelon",
+      "sourceURL": "https://ark.wiki.gg/wiki/Megachelon",
+      "cachedHTML": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/megachelon.html",
+      "sha256": "33b254a42c3bc33cd7a65737060f1ee6b22122483d447d74c4248b8a2f432710",
+      "fields": [
+        "tameable",
+        "diet",
+        "method",
+        "foods",
+        "drops",
+        "immobilizedBy",
+        "archive.notes"
+      ],
+      "limitations": "Current cached infobox lists Parakeet Fish School; older indexed snippets listing Shell Fragment were not used."
+    },
+    {
+      "id": "megaraptor",
+      "sourceURL": "https://ark.wiki.gg/wiki/Megaraptor",
+      "cachedHTML": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/megaraptor.html",
+      "sha256": "e7dc09e143abc2c1d163189bd466cb43a983bae88d5af67d6438fc2346c116c0",
+      "fields": [
+        "tameable",
+        "diet",
+        "method",
+        "foods",
+        "drops",
+        "immobilizedBy",
+        "archive.notes"
+      ],
+      "limitations": "ASA-exclusive species. The infobox shorthand Knockout requires the altar/torch procedure described in the same page."
+    },
+    {
+      "id": "palaeoctopus",
+      "sourceURL": "https://ark.wiki.gg/wiki/Palaeoctopus",
+      "cachedHTML": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/palaeoctopus.html",
+      "sha256": "5165be184403092af6740cb4d06d36678b2d57a8e340468d1ec16c99677e5a9e",
+      "fields": [
+        "tameable",
+        "diet",
+        "method",
+        "foods",
+        "drops",
+        "immobilizedBy",
+        "archive.notes"
+      ],
+      "limitations": "ASA-exclusive species; special loot and harvest drops are listed together here, not guaranteed per-kill quantities. Torpor feed items are not tame food."
+    },
+    {
+      "id": "parrot",
+      "sourceURL": "https://ark.wiki.gg/wiki/Parrot",
+      "cachedHTML": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/parrot.html",
+      "sha256": "2c9206d30be1e626b6006f97af29be8d2e6c9feaa5357b40395d97cc4b82da5a",
+      "fields": [
+        "tameable",
+        "diet",
+        "method",
+        "foods",
+        "drops",
+        "immobilizedBy",
+        "archive.notes"
+      ],
+      "limitations": "ASA-exclusive Tides of Fortune shoulder pet; no food is listed because the inspected method awards progress through activities."
+    },
+    {
+      "id": "tidepup",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tidepup",
+      "cachedHTML": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/tidepup.html",
+      "sha256": "1fe27f0c9f25bf37b1eeaa01bb96875924965271798a5648fd7c949e27a51292",
+      "fields": [
+        "tameable",
+        "diet",
+        "method",
+        "foods",
+        "drops",
+        "immobilizedBy",
+        "archive.notes"
+      ],
+      "limitations": "ASA-exclusive Tides of Fortune creature; growth and healing mechanics are distinct from initial taming. No health threshold or item count claimed here."
+    },
+    {
+      "id": "light-bug",
+      "sourceURL": "https://ark.wiki.gg/wiki/Glowbug",
+      "cachedHTML": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/light-bug.html",
+      "sha256": "4357a605c33c24398e13bff74ebbdd7f8a4cd4d5c50015fd3b1b8d15a6a6a342",
+      "fields": [
+        "tameable",
+        "diet",
+        "method",
+        "foods",
+        "drops",
+        "immobilizedBy",
+        "archive.notes"
+      ],
+      "limitations": "No fabricated food or resource-drop values."
+    },
+    {
+      "id": "parakeet-fish-school",
+      "sourceURL": "https://ark.wiki.gg/wiki/Parakeet_Fish_School",
+      "cachedHTML": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/parakeet-fish-school.html",
+      "sha256": "e35ef6853bfd0d1b8d3515988ec818e4898590fbbac3f4b80c17b91f7ceef61f",
+      "fields": [
+        "tameable",
+        "diet",
+        "method",
+        "foods",
+        "drops",
+        "immobilizedBy",
+        "archive.notes"
+      ],
+      "limitations": "Utility school; no claimed harvest yield."
+    },
+    {
+      "id": "reaper-queen",
+      "sourceURL": "https://ark.wiki.gg/wiki/Reaper_Queen",
+      "cachedHTML": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/reaper-queen.html",
+      "sha256": "7ac7e24d222c7e661362dcbdad64cf090883d6aeb9430e1255fe04bdfd8bc874",
+      "fields": [
+        "tameable",
+        "diet",
+        "method",
+        "foods",
+        "drops",
+        "immobilizedBy",
+        "archive.notes"
+      ],
+      "limitations": "Adult and offspring status are deliberately separated. No unverified impregnation HP threshold or variant stats copied."
+    },
+    {
+      "id": "iceworm-male",
+      "sourceURL": "https://ark.wiki.gg/wiki/Iceworm_Male",
+      "cachedHTML": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/iceworm-male.html",
+      "sha256": "2d9a14107d4c8e73f7adc3ebe61cf01b9a3c94bcf35ca4fa2608222ed1cd7fa5",
+      "fields": [
+        "tameable",
+        "diet",
+        "method",
+        "foods",
+        "drops",
+        "immobilizedBy",
+        "archive.notes"
+      ],
+      "limitations": "Harvest and random special loot combined; no guaranteed Black Pearl quantity."
+    },
+    {
+      "id": "unicorn",
+      "sourceURL": "https://ark.wiki.gg/wiki/Unicorn",
+      "cachedHTML": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/unicorn.html",
+      "sha256": "14d876baf6959d8a0fd1254c11408cc1b6798d95be5b045d614bf8d11996f194",
+      "fields": [
+        "tameable",
+        "diet",
+        "method",
+        "foods",
+        "drops",
+        "immobilizedBy",
+        "archive.notes"
+      ],
+      "limitations": "Shared wiki infobox contains Mobile-specific food alongside normal food; Fresh Spinach and Griffin-Egg Kibble were excluded."
+    },
+    {
+      "id": "titanomyrma-drone",
+      "sourceURL": "https://ark.wiki.gg/wiki/Titanomyrma_Drone",
+      "cachedHTML": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/titanomyrma-drone.html",
+      "sha256": "7e299c8986fa77c9c05ec0216c991e1425079a5ae10ba7f84f313715382defe0",
+      "fields": [
+        "tameable",
+        "diet",
+        "method",
+        "foods",
+        "drops",
+        "immobilizedBy",
+        "archive.notes"
+      ],
+      "limitations": "The cached species page covers both drone and soldier. No variant base stats copied."
+    },
+    {
+      "id": "titanomyrma-soldier",
+      "sourceURL": "https://ark.wiki.gg/wiki/Titanomyrma_Soldier",
+      "cachedHTML": "/Volumes/TONY SSD/ASCENDED_MEDIA/species-icon-review/titanomyrma-soldier.html",
+      "sha256": "949fa9260607d52c4fc049846822cfbdcf9361ab880d1ed91d8acdd7759eafb8",
+      "fields": [
+        "tameable",
+        "diet",
+        "method",
+        "foods",
+        "drops",
+        "immobilizedBy",
+        "archive.notes"
+      ],
+      "limitations": "The cached species page covers both drone and soldier. No variant base stats copied."
+    },
+    {
+      "family": "corrupted",
+      "sourceURL": "https://ark.wiki.gg/wiki/Corrupted_Creatures",
+      "fields": [
+        "tameable=false",
+        "method=not tameable",
+        "Corrupt Heart chance",
+        "Corrupted Nodule"
+      ],
+      "limitations": "Indexed current wiki family evidence. No creature-specific diet or stat inheritance."
+    },
+    {
+      "id": "yi-ling",
+      "sourceURL": "https://ark.wiki.gg/wiki/Yi_Ling",
+      "fields": [
+        "tameable",
+        "diet",
+        "method",
+        "foods",
+        "archive.notes"
+      ],
+      "limitations": "ASA-specific procedure; Plant Species Z Fruit is distinct from the seed. No exact feather/feed count or stat target copied.",
+      "retrieval": "Current publicly indexed official community wiki; directHTTP429 not bypassed"
+    },
+    {
+      "id": "gacha",
+      "sourceURL": "https://ark.wiki.gg/wiki/Gacha",
+      "fields": [
+        "tameable",
+        "diet",
+        "method",
+        "foods",
+        "archive.notes"
+      ],
+      "limitations": "Shared-species current wiki mechanic; no exact costs, breeding shortcut or resource-production guarantees.",
+      "retrieval": "Current publicly indexed official community wiki; directHTTP429 not bypassed"
+    },
+    {
+      "id": "gasbags",
+      "sourceURL": "https://ark.wiki.gg/wiki/Gasbags",
+      "fields": [
+        "tameable",
+        "diet",
+        "method",
+        "foods",
+        "archive.notes"
+      ],
+      "limitations": "Current wiki includes ASA patch history; no legacy tame timers or ammo counts copied.",
+      "retrieval": "Current publicly indexed official community wiki; directHTTP429 not bypassed"
+    },
+    {
+      "id": "enforcer",
+      "sourceURL": "https://ark.wiki.gg/wiki/Enforcer",
+      "fields": [
+        "tameable",
+        "diet",
+        "method",
+        "foods",
+        "archive.notes"
+      ],
+      "limitations": "Crafted ownership is distinct from tameable=false. No blueprint level/stat distribution or breeding assumptions copied.",
+      "retrieval": "Current publicly indexed official community wiki; directHTTP429 not bypassed"
+    }
+  ],
+  "updated": [
+    {
+      "file": "genesis-part-1-creatures.json",
+      "id": "ferox"
+    },
+    {
+      "file": "genesis-part-1-creatures.json",
+      "id": "magmasaur"
+    },
+    {
+      "file": "genesis-part-1-ocean-creatures.json",
+      "id": "megachelon"
+    },
+    {
+      "file": "genesis-part-1-ocean-creatures.json",
+      "id": "megaraptor"
+    },
+    {
+      "file": "valguero-creatures.json",
+      "id": "megaraptor"
+    },
+    {
+      "file": "lost-colony-creatures.json",
+      "id": "megaraptor"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "megaraptor"
+    },
+    {
+      "file": "genesis-part-1-ocean-creatures.json",
+      "id": "palaeoctopus"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "palaeoctopus"
+    },
+    {
+      "file": "genesis-part-1-ocean-creatures.json",
+      "id": "parrot"
+    },
+    {
+      "file": "genesis-part-1-ocean-creatures.json",
+      "id": "tidepup"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "tidepup"
+    },
+    {
+      "file": "ragnarok-creatures.json",
+      "id": "light-bug"
+    },
+    {
+      "file": "aberration-creatures.json",
+      "id": "light-bug"
+    },
+    {
+      "file": "valguero-creatures.json",
+      "id": "light-bug"
+    },
+    {
+      "file": "genesis-part-1-creatures.json",
+      "id": "light-bug"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "light-bug"
+    },
+    {
+      "file": "genesis-part-1-ocean-creatures.json",
+      "id": "parakeet-fish-school"
+    },
+    {
+      "file": "aberration-creatures.json",
+      "id": "reaper-queen"
+    },
+    {
+      "file": "valguero-creatures.json",
+      "id": "reaper-queen"
+    },
+    {
+      "file": "lost-colony-creatures.json",
+      "id": "reaper-queen"
+    },
+    {
+      "file": "ragnarok-creatures.json",
+      "id": "iceworm-male"
+    },
+    {
+      "file": "valguero-creatures.json",
+      "id": "iceworm-male"
+    },
+    {
+      "file": "ragnarok-creatures.json",
+      "id": "unicorn"
+    },
+    {
+      "file": "valguero-creatures.json",
+      "id": "unicorn"
+    },
+    {
+      "file": "the-island-creatures.json",
+      "id": "unicorn"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "unicorn"
+    },
+    {
+      "file": "ragnarok-creatures.json",
+      "id": "titanomyrma-drone"
+    },
+    {
+      "file": "genesis-part-1-ocean-creatures.json",
+      "id": "titanomyrma-drone"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "titanomyrma-drone"
+    },
+    {
+      "file": "the-center-creatures.json",
+      "id": "titanomyrma-drone"
+    },
+    {
+      "file": "valguero-creatures.json",
+      "id": "titanomyrma-drone"
+    },
+    {
+      "file": "genesis-part-1-creatures.json",
+      "id": "titanomyrma-drone"
+    },
+    {
+      "file": "scorched-earth-creatures.json",
+      "id": "titanomyrma-drone"
+    },
+    {
+      "file": "the-island-creatures.json",
+      "id": "titanomyrma-drone"
+    },
+    {
+      "file": "lost-colony-creatures.json",
+      "id": "titanomyrma-drone"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "titanomyrma-drone"
+    },
+    {
+      "file": "ragnarok-creatures.json",
+      "id": "titanomyrma-soldier"
+    },
+    {
+      "file": "genesis-part-1-ocean-creatures.json",
+      "id": "titanomyrma-soldier"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "titanomyrma-soldier"
+    },
+    {
+      "file": "the-center-creatures.json",
+      "id": "titanomyrma-soldier"
+    },
+    {
+      "file": "valguero-creatures.json",
+      "id": "titanomyrma-soldier"
+    },
+    {
+      "file": "genesis-part-1-creatures.json",
+      "id": "titanomyrma-soldier"
+    },
+    {
+      "file": "scorched-earth-creatures.json",
+      "id": "titanomyrma-soldier"
+    },
+    {
+      "file": "the-island-creatures.json",
+      "id": "titanomyrma-soldier"
+    },
+    {
+      "file": "lost-colony-creatures.json",
+      "id": "titanomyrma-soldier"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "titanomyrma-soldier"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "corrupted-arthropluera"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "corrupted-carnotaurus"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "corrupted-chalicotherium"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "corrupted-dilophosaur"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "corrupted-giganotosaurus"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "corrupted-paraceratherium"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "corrupted-pteranodon"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "corrupted-raptor"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "corrupted-reaper-king"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "corrupted-rex"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "corrupted-rock-drake"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "corrupted-spino"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "corrupted-stegosaurus"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "corrupted-triceratops"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "corrupted-wyvern"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "corrupted-arthropluera"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "corrupted-carnotaurus"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "corrupted-chalicotherium"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "corrupted-dilophosaur"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "corrupted-giganotosaurus"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "corrupted-paraceratherium"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "corrupted-pteranodon"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "corrupted-raptor"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "corrupted-rex"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "corrupted-rock-drake"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "corrupted-spino"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "corrupted-stegosaurus"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "corrupted-triceratops"
+    },
+    {
+      "file": "aberration-creatures.json",
+      "id": "yi-ling"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "enforcer"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "gacha"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "gasbags"
+    },
+    {
+      "file": "genesis-part-1-creatures.json",
+      "id": "gasbags"
+    },
+    {
+      "file": "genesis-part-1-creatures.json",
+      "id": "yi-ling"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "gacha"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "gasbags"
+    }
+  ],
+  "remaining": {
+    "ragnarok-creatures": [
+      "aberrant-dodo",
+      "aberrant-megalania",
+      "alpha-carnotaurus",
+      "alpha-fire-wyvern",
+      "alpha-megalodon",
+      "alpha-mosasaur",
+      "alpha-raptor",
+      "alpha-t-rex",
+      "alpha-tusoteuthis",
+      "deathworm",
+      "dire-polar-bear",
+      "diseased-leech",
+      "oil-jug-bug",
+      "water-jug-bug"
+    ],
+    "genesis-part-1-ocean-creatures": [
+      "armadoggo",
+      "oil-jug-bug",
+      "pirate-brigantine",
+      "pirate-fleet-admiral-brigantine",
+      "pirate-sloop",
+      "water-jug-bug",
+      "x-dunkleosteus",
+      "x-helicoprion",
+      "x-megalodon",
+      "x-mosasaurus",
+      "x-xiphactinus"
+    ],
+    "aberration-creatures": [
+      "aberrant-achatina",
+      "aberrant-anglerfish",
+      "aberrant-ankylosaurus",
+      "aberrant-araneo",
+      "aberrant-arthropluera",
+      "aberrant-baryonyx",
+      "aberrant-beelzebufo",
+      "aberrant-carbonemys",
+      "aberrant-carnotaurus",
+      "aberrant-cnidaria",
+      "aberrant-coelacanth",
+      "aberrant-concavenator",
+      "aberrant-dimetrodon",
+      "aberrant-dimorphodon",
+      "aberrant-diplocaulus",
+      "aberrant-diplodocus",
+      "aberrant-dire-bear",
+      "aberrant-dodo",
+      "aberrant-doedicurus",
+      "aberrant-dung-beetle",
+      "aberrant-electrophorus",
+      "aberrant-equus",
+      "aberrant-fasolasuchus",
+      "aberrant-gigantopithecus",
+      "aberrant-gigantoraptor",
+      "aberrant-iguanodon",
+      "aberrant-lystrosaurus",
+      "aberrant-manta",
+      "aberrant-megalania",
+      "aberrant-megalosaurus",
+      "aberrant-meganeura",
+      "aberrant-moschops",
+      "aberrant-otter",
+      "aberrant-oviraptor",
+      "aberrant-ovis",
+      "aberrant-paraceratherium",
+      "aberrant-parasaur",
+      "aberrant-piranha",
+      "aberrant-pulmonoscorpius",
+      "aberrant-purlovia",
+      "aberrant-raptor",
+      "aberrant-salmon",
+      "aberrant-sarco",
+      "aberrant-spino",
+      "aberrant-stegosaurus",
+      "aberrant-titanoboa",
+      "aberrant-triceratops",
+      "aberrant-trilobite",
+      "basilisk",
+      "bulbdog",
+      "cosmo",
+      "glowtail",
+      "lamprey",
+      "nameless",
+      "ravager",
+      "rock-drake",
+      "roll-rat",
+      "seeker",
+      "surface-reaper-king"
+    ],
+    "extinction-creatures": [
+      "armadoggo",
+      "defense-unit",
+      "dreadnoughtus",
+      "king-titan",
+      "managarmr",
+      "polar-bear",
+      "rubble-golem",
+      "scout",
+      "snow-owl",
+      "velonasaur",
+      "water-jug-bug"
+    ],
+    "the-center-creatures": [
+      "alpha-carnotaurus",
+      "alpha-megalodon",
+      "alpha-mosasaur",
+      "alpha-raptor",
+      "alpha-t-rex",
+      "alpha-tusoteuthis",
+      "diseased-leech"
+    ],
+    "valguero-creatures": [
+      "aberrant-anglerfish",
+      "aberrant-araneo",
+      "aberrant-baryonyx",
+      "aberrant-beelzebufo",
+      "aberrant-carbonemys",
+      "aberrant-carnotaurus",
+      "aberrant-dimetrodon",
+      "aberrant-dimorphodon",
+      "aberrant-diplocaulus",
+      "aberrant-diplodocus",
+      "aberrant-dire-bear",
+      "aberrant-dodo",
+      "aberrant-doedicurus",
+      "aberrant-electrophorus",
+      "aberrant-equus",
+      "aberrant-iguanodon",
+      "aberrant-lystrosaurus",
+      "aberrant-meganeura",
+      "aberrant-moschops",
+      "aberrant-otter",
+      "aberrant-ovis",
+      "aberrant-paraceratherium",
+      "aberrant-parasaur",
+      "aberrant-pulmonoscorpius",
+      "aberrant-raptor",
+      "aberrant-salmon",
+      "aberrant-sarco",
+      "aberrant-spino",
+      "aberrant-stegosaurus",
+      "aberrant-titanoboa",
+      "aberrant-triceratops",
+      "aberrant-trilobite",
+      "basilisk",
+      "broodmother-lysrix",
+      "bulbdog",
+      "chalk-elemental",
+      "cosmo",
+      "deinonychus",
+      "dire-polar-bear",
+      "diseased-leech",
+      "glowtail",
+      "ice-elemental",
+      "lamprey",
+      "nameless",
+      "polar-bear",
+      "ravager",
+      "rock-drake",
+      "roll-rat",
+      "seeker"
+    ],
+    "genesis-part-1-creatures": [
+      "astrocetus",
+      "attack-drone",
+      "basilisk",
+      "bloodstalker",
+      "bulbdog",
+      "cosmo",
+      "defense-unit",
+      "ice-elemental",
+      "insect-swarm",
+      "lamprey",
+      "oil-jug-bug",
+      "polar-bear",
+      "ravager",
+      "roll-rat",
+      "seeker",
+      "surface-reaper-king",
+      "tek-parasaur",
+      "tek-raptor",
+      "tek-rex",
+      "tek-stegosaurus",
+      "tek-triceratops",
+      "water-jug-bug",
+      "x-acrocanthosaurus",
+      "x-allosaurus",
+      "x-ankylosaurus",
+      "x-argentavis",
+      "x-concavenator",
+      "x-cryolophosaurus",
+      "x-deinosuchus",
+      "x-otter",
+      "x-paraceratherium",
+      "x-parasaur",
+      "x-raptor",
+      "x-rex",
+      "x-rock-elemental",
+      "x-sabertooth",
+      "x-sabertooth-salmon",
+      "x-spino",
+      "x-tapejara",
+      "x-triceratops",
+      "x-woolly-rhino",
+      "x-yutyrannus"
+    ],
+    "scorched-earth-creatures": [
+      "deathworm",
+      "oasisaur",
+      "oil-jug-bug",
+      "phoenix",
+      "rubble-golem",
+      "water-jug-bug"
+    ],
+    "the-island-creatures": [
+      "alpha-carnotaurus",
+      "alpha-megalodon",
+      "alpha-mosasaur",
+      "alpha-raptor",
+      "alpha-t-rex",
+      "alpha-tusoteuthis",
+      "diseased-leech",
+      "polar-bear"
+    ],
+    "lost-colony-creatures": [
+      "alpha-hulking-revenant",
+      "aureliax",
+      "bloated-revenant",
+      "desmodus",
+      "gloon",
+      "hulking-revenant",
+      "lamprey",
+      "managarmr",
+      "nameless",
+      "ossidon",
+      "polar-bear",
+      "revenant",
+      "revenant-brontosaurus",
+      "revenant-carnotaurus",
+      "revenant-dilophosaur",
+      "revenant-dimorphodon",
+      "revenant-direwolf",
+      "revenant-iguanodon",
+      "revenant-malwyn",
+      "revenant-mammoth",
+      "revenant-ossidon",
+      "revenant-parasaur",
+      "revenant-pteranodon",
+      "revenant-raptor",
+      "revenant-rex",
+      "revenant-sabertooth",
+      "revenant-spino",
+      "revenant-stegosaurus",
+      "revenant-therizinosaur",
+      "revenant-troodon",
+      "revenant-veilwyn",
+      "revenant-yutyrannus",
+      "snow-owl",
+      "solwyn",
+      "thrall-gunslinger",
+      "thrall-marauder",
+      "thrall-warden",
+      "veilwyn"
+    ],
+    "astraeos-creatures": [
+      "aberrant-araneo",
+      "aberrant-arthropluera",
+      "aberrant-carbonemys",
+      "aberrant-carnotaurus",
+      "aberrant-coelacanth",
+      "aberrant-dimorphodon",
+      "aberrant-diplodocus",
+      "aberrant-dire-bear",
+      "aberrant-dodo",
+      "aberrant-doedicurus",
+      "aberrant-equus",
+      "aberrant-gigantoraptor",
+      "aberrant-iguanodon",
+      "aberrant-lystrosaurus",
+      "aberrant-manta",
+      "aberrant-meganeura",
+      "aberrant-moschops",
+      "aberrant-otter",
+      "aberrant-oviraptor",
+      "aberrant-ovis",
+      "aberrant-paraceratherium",
+      "aberrant-parasaur",
+      "aberrant-piranha",
+      "aberrant-pulmonoscorpius",
+      "aberrant-raptor",
+      "aberrant-salmon",
+      "aberrant-sarco",
+      "aberrant-spino",
+      "aberrant-stegosaurus",
+      "aberrant-titanoboa",
+      "aberrant-triceratops",
+      "armadoggo",
+      "boaratos",
+      "bulbdog",
+      "cave-minotaur",
+      "cosmo",
+      "deathworm",
+      "desmodus",
+      "diseased-leech",
+      "dreadnoughtus",
+      "glowtail",
+      "grand-tortugar",
+      "kirayli",
+      "maeguana",
+      "managarmr",
+      "oasisaur",
+      "oil-jug-bug",
+      "phoenix",
+      "pirate-fleet-admiral-trireme",
+      "pirate-trireme",
+      "polar-bear",
+      "ravager",
+      "rhyniognatha-drone",
+      "rock-drake",
+      "roll-rat",
+      "rubble-golem",
+      "scorpionking",
+      "seeker",
+      "skeleton-piercer",
+      "skeleton-snarer",
+      "skeleton-warden",
+      "snow-owl",
+      "thanatos",
+      "velonasaur",
+      "water-jug-bug"
+    ]
+  },
+  "validation": "All11catalogs decoded with productionCreatureCatalog and uniqueID checks; no base stat rows added.",
+  "limitations": [
+    "Normal public curl429 deferred; used parent successful cachedHTML only.",
+    "No base stat rows added; no variant stat inheritance.",
+    "A populated practical profile is not physical-device or current-patch gameplay proof.",
+    "Drops include harvest/specialloot where clearly noted; no quantities inferred."
+  ],
+  "paidCreatureOwnershipSource": "https://store.steampowered.com/app/4558480/"
+}

@@ -1,0 +1,496 @@
+[
+  {
+    "id": "iceworm-male",
+    "name": "Iceworm Male",
+    "page": "https://ark.wiki.gg/wiki/Iceworm_Male",
+    "status": "unavailable",
+    "reason": "No exact named dossier icon on source page"
+  },
+  {
+    "id": "light-bug",
+    "name": "Glowbug",
+    "page": "https://ark.wiki.gg/wiki/Glowbug",
+    "status": "ready",
+    "imageURL": "https://ark.wiki.gg/images/Glowbug.png",
+    "pixels": [
+      256,
+      256
+    ],
+    "sha256": "aaf661e3ca25b20a09e6a961dde290edd09be555649b85aa007497fa36123c00"
+  },
+  {
+    "id": "titanomyrma-drone",
+    "name": "Titanomyrma Drone",
+    "page": "https://ark.wiki.gg/wiki/Titanomyrma",
+    "status": "ready",
+    "imageURL": "https://ark.wiki.gg/images/Titanomyrma.png",
+    "pixels": [
+      256,
+      256
+    ],
+    "sha256": "f8c7e509ed866f22322d60ad9af8da7e9d371f510b997a4b283e61968deb5fe3"
+  },
+  {
+    "id": "titanomyrma-soldier",
+    "name": "Titanomyrma Soldier",
+    "page": "https://ark.wiki.gg/wiki/Titanomyrma",
+    "status": "ready",
+    "imageURL": "https://ark.wiki.gg/images/Titanomyrma.png",
+    "pixels": [
+      256,
+      256
+    ],
+    "sha256": "f8c7e509ed866f22322d60ad9af8da7e9d371f510b997a4b283e61968deb5fe3"
+  },
+  {
+    "id": "unicorn",
+    "name": "Unicorn",
+    "page": "https://ark.wiki.gg/wiki/Unicorn",
+    "status": "ready",
+    "imageURL": "https://ark.wiki.gg/images/Unicorn.png",
+    "pixels": [
+      256,
+      256
+    ],
+    "sha256": "e3d4da315beb99f78c561ab20d1b0cb1fb8106ff73be7e69173d76b5c4989cfa"
+  },
+  {
+    "id": "megachelon",
+    "name": "Megachelon",
+    "page": "https://ark.wiki.gg/wiki/Megachelon",
+    "status": "ready",
+    "imageURL": "https://ark.wiki.gg/images/Megachelon.png",
+    "pixels": [
+      256,
+      256
+    ],
+    "sha256": "a32a8fd9a8e05938ba6ab85dcf3426bab75f3af7f14209cd2b0edc4df65e2f29"
+  },
+  {
+    "id": "megaraptor",
+    "name": "Megaraptor",
+    "page": "https://ark.wiki.gg/wiki/Megaraptor",
+    "status": "ready",
+    "imageURL": "https://ark.wiki.gg/images/Megaraptor.png",
+    "pixels": [
+      256,
+      256
+    ],
+    "sha256": "985afcc9db92eb011c39c25c91f9b4104659721cd4864bdfe90f65b5a2ca6276"
+  },
+  {
+    "id": "palaeoctopus",
+    "name": "Palaeoctopus",
+    "page": "https://ark.wiki.gg/wiki/Palaeoctopus",
+    "status": "ready",
+    "imageURL": "https://ark.wiki.gg/images/Palaeoctopus.png",
+    "pixels": [
+      256,
+      256
+    ],
+    "sha256": "0c3051419f28e6770d18adc5d6e5c06d5b28ffc0e1469a6233a5454ee2eac594"
+  },
+  {
+    "id": "parakeet-fish-school",
+    "name": "Parakeet Fish School",
+    "page": "https://ark.wiki.gg/wiki/Parakeet_Fish_School",
+    "status": "ready",
+    "imageURL": "https://ark.wiki.gg/images/Parakeet_Fish_School.png",
+    "pixels": [
+      256,
+      256
+    ],
+    "sha256": "043084a3e35adf0168edc94ea98c649fed69030fc5aee2b2a28400eb78e2e1e0"
+  },
+  {
+    "id": "parrot",
+    "name": "Parrot",
+    "page": "https://ark.wiki.gg/wiki/Parrot",
+    "status": "ready",
+    "imageURL": "https://ark.wiki.gg/images/Parrot.png",
+    "pixels": [
+      256,
+      256
+    ],
+    "sha256": "c36a160648e0e084c54a50a73676c9fa6ba14123bde0b68d5b149eaa89490cf6"
+  },
+  {
+    "id": "pirate-brigantine",
+    "name": "Pirate Brigantine",
+    "page": "https://ark.wiki.gg/wiki/Pirate_Brigantine",
+    "status": "unavailable",
+    "reason": "Public source unavailable: HTTP 404, curl 56"
+  },
+  {
+    "id": "pirate-fleet-admiral-brigantine",
+    "name": "Pirate Fleet Admiral Brigantine",
+    "page": "https://ark.wiki.gg/wiki/Pirate_Fleet_Admiral_Brigantine",
+    "status": "unavailable",
+    "reason": "Deferred after source rate limit or transport refusal"
+  },
+  {
+    "id": "pirate-sloop",
+    "name": "Pirate Sloop",
+    "page": "https://ark.wiki.gg/wiki/Pirate_Sloop",
+    "status": "unavailable",
+    "reason": "Deferred after source rate limit or transport refusal"
+  },
+  {
+    "id": "tidepup",
+    "name": "Tidepup",
+    "page": "https://ark.wiki.gg/wiki/Tidepup",
+    "status": "ready",
+    "imageURL": "https://ark.wiki.gg/images/Tidepup.png",
+    "pixels": [
+      256,
+      256
+    ],
+    "sha256": "5696fa15c3ed20f8e69f9e6c52ce2faa5411b5fbb55ee02801b6bd82707b4940"
+  },
+  {
+    "id": "reaper-queen",
+    "name": "Reaper Queen",
+    "page": "https://ark.wiki.gg/wiki/Reaper_Queen",
+    "status": "unavailable",
+    "reason": "No exact named dossier icon on source page"
+  },
+  {
+    "id": "seeker",
+    "name": "Seeker",
+    "page": "https://ark.wiki.gg/wiki/Seeker",
+    "status": "unavailable",
+    "reason": "Deferred after source rate limit or transport refusal"
+  },
+  {
+    "id": "surface-reaper-king",
+    "name": "Surface Reaper King",
+    "page": "https://ark.wiki.gg/wiki/Surface_Reaper_King",
+    "status": "unavailable",
+    "reason": "Deferred after source rate limit or transport refusal"
+  },
+  {
+    "id": "yi-ling",
+    "name": "Yi Ling",
+    "page": "https://ark.wiki.gg/wiki/Yi_Ling",
+    "status": "unavailable",
+    "reason": "Deferred after source rate limit or transport refusal"
+  },
+  {
+    "id": "corrupted-reaper-king",
+    "name": "Corrupted Reaper King",
+    "page": "https://ark.wiki.gg/wiki/Corrupted_Reaper_King",
+    "status": "unavailable",
+    "reason": "Deferred after source rate limit or transport refusal"
+  },
+  {
+    "id": "corrupted-wyvern",
+    "name": "Corrupted Wyvern",
+    "page": "https://ark.wiki.gg/wiki/Corrupted_Wyvern",
+    "status": "unavailable",
+    "reason": "Deferred after source rate limit or transport refusal"
+  },
+  {
+    "id": "defense-unit",
+    "name": "Defense Unit",
+    "page": "https://ark.wiki.gg/wiki/Defense_Unit",
+    "status": "unavailable",
+    "reason": "Deferred after source rate limit or transport refusal"
+  },
+  {
+    "id": "king-titan",
+    "name": "King Titan",
+    "page": "https://ark.wiki.gg/wiki/King_Titan",
+    "status": "unavailable",
+    "reason": "Deferred after source rate limit or transport refusal"
+  },
+  {
+    "id": "rubble-golem",
+    "name": "Rubble Golem",
+    "page": "https://ark.wiki.gg/wiki/Rubble_Golem",
+    "status": "unavailable",
+    "reason": "Deferred after source rate limit or transport refusal"
+  },
+  {
+    "id": "broodmother-lysrix",
+    "name": "Broodmother Lysrix",
+    "page": "https://ark.wiki.gg/wiki/Broodmother_Lysrix",
+    "status": "unavailable",
+    "reason": "Deferred after source rate limit or transport refusal"
+  },
+  {
+    "id": "chalk-elemental",
+    "name": "Chalk Elemental",
+    "page": "https://ark.wiki.gg/wiki/Chalk_Elemental",
+    "status": "unavailable",
+    "reason": "Deferred after source rate limit or transport refusal"
+  },
+  {
+    "id": "deinonychus",
+    "name": "Deinonychus",
+    "page": "https://ark.wiki.gg/wiki/Deinonychus",
+    "status": "unavailable",
+    "reason": "Deferred after source rate limit or transport refusal"
+  },
+  {
+    "id": "ice-elemental",
+    "name": "Ice Elemental",
+    "page": "https://ark.wiki.gg/wiki/Ice_Elemental",
+    "status": "unavailable",
+    "reason": "Deferred after source rate limit or transport refusal"
+  },
+  {
+    "id": "astrocetus",
+    "name": "Astrocetus",
+    "page": "https://ark.wiki.gg/wiki/Astrocetus",
+    "status": "unavailable",
+    "reason": "Deferred after source rate limit or transport refusal"
+  },
+  {
+    "id": "attack-drone",
+    "name": "Attack Drone",
+    "page": "https://ark.wiki.gg/wiki/Attack_Drone",
+    "status": "unavailable",
+    "reason": "Deferred after source rate limit or transport refusal"
+  },
+  {
+    "id": "bloodstalker",
+    "name": "Bloodstalker",
+    "page": "https://ark.wiki.gg/wiki/Bloodstalker",
+    "status": "unavailable",
+    "reason": "Deferred after source rate limit or transport refusal"
+  },
+  {
+    "id": "ferox",
+    "name": "Ferox",
+    "page": "https://ark.wiki.gg/wiki/Ferox",
+    "status": "ready",
+    "imageURL": "https://ark.wiki.gg/images/Ferox.png",
+    "pixels": [
+      256,
+      256
+    ],
+    "sha256": "93ab6911d1909983f939b999d7c0383d2cbd0fe243b803b91dfa782722f68d83"
+  },
+  {
+    "id": "insect-swarm",
+    "name": "Insect Swarm",
+    "page": "https://ark.wiki.gg/wiki/Insect_Swarm",
+    "status": "unavailable",
+    "reason": "Deferred after source rate limit or transport refusal"
+  },
+  {
+    "id": "magmasaur",
+    "name": "Magmasaur",
+    "page": "https://ark.wiki.gg/wiki/Magmasaur",
+    "status": "ready",
+    "imageURL": "https://ark.wiki.gg/images/Magmasaur.png",
+    "pixels": [
+      256,
+      256
+    ],
+    "sha256": "ae49546de9f6f0d1c77bbf25712b45b79ae5231dba903882ac85beb1510ed491"
+  },
+  {
+    "id": "alpha-hulking-revenant",
+    "name": "Alpha Hulking Revenant",
+    "page": "https://ark.wiki.gg/wiki/Alpha_Hulking_Revenant",
+    "status": "unavailable",
+    "reason": "Deferred after source rate limit or transport refusal"
+  },
+  {
+    "id": "aureliax",
+    "name": "Aureliax",
+    "page": "https://ark.wiki.gg/wiki/Aureliax",
+    "status": "unavailable",
+    "reason": "Deferred after source rate limit or transport refusal"
+  },
+  {
+    "id": "bloated-revenant",
+    "name": "Bloated Revenant",
+    "page": "https://ark.wiki.gg/wiki/Bloated_Revenant",
+    "status": "unavailable",
+    "reason": "Deferred after source rate limit or transport refusal"
+  },
+  {
+    "id": "desmodus",
+    "name": "Desmodus",
+    "page": "https://ark.wiki.gg/wiki/Desmodus",
+    "status": "unavailable",
+    "reason": "Deferred after source rate limit or transport refusal"
+  },
+  {
+    "id": "gloon",
+    "name": "Gloon",
+    "page": "https://ark.wiki.gg/wiki/Gloon",
+    "status": "unavailable",
+    "reason": "Deferred after source rate limit or transport refusal"
+  },
+  {
+    "id": "hulking-revenant",
+    "name": "Hulking Revenant",
+    "page": "https://ark.wiki.gg/wiki/Hulking_Revenant",
+    "status": "unavailable",
+    "reason": "Deferred after source rate limit or transport refusal"
+  },
+  {
+    "id": "ossidon",
+    "name": "Ossidon",
+    "page": "https://ark.wiki.gg/wiki/Ossidon",
+    "status": "unavailable",
+    "reason": "Deferred after source rate limit or transport refusal"
+  },
+  {
+    "id": "revenant",
+    "name": "Revenant",
+    "page": "https://ark.wiki.gg/wiki/Revenant",
+    "status": "unavailable",
+    "reason": "Deferred after source rate limit or transport refusal"
+  },
+  {
+    "id": "revenant-malwyn",
+    "name": "Revenant Malwyn",
+    "page": "https://ark.wiki.gg/wiki/Revenant_Malwyn",
+    "status": "unavailable",
+    "reason": "Deferred after source rate limit or transport refusal"
+  },
+  {
+    "id": "revenant-ossidon",
+    "name": "Revenant Ossidon",
+    "page": "https://ark.wiki.gg/wiki/Revenant_Ossidon",
+    "status": "unavailable",
+    "reason": "Deferred after source rate limit or transport refusal"
+  },
+  {
+    "id": "revenant-veilwyn",
+    "name": "Revenant Veilwyn",
+    "page": "https://ark.wiki.gg/wiki/Revenant_Veilwyn",
+    "status": "unavailable",
+    "reason": "Deferred after source rate limit or transport refusal"
+  },
+  {
+    "id": "solwyn",
+    "name": "Solwyn",
+    "page": "https://ark.wiki.gg/wiki/Solwyn",
+    "status": "unavailable",
+    "reason": "Deferred after source rate limit or transport refusal"
+  },
+  {
+    "id": "thrall-gunslinger",
+    "name": "Thrall Gunslinger",
+    "page": "https://ark.wiki.gg/wiki/Thrall_Gunslinger",
+    "status": "unavailable",
+    "reason": "Deferred after source rate limit or transport refusal"
+  },
+  {
+    "id": "thrall-marauder",
+    "name": "Thrall Marauder",
+    "page": "https://ark.wiki.gg/wiki/Thrall_Marauder",
+    "status": "unavailable",
+    "reason": "Deferred after source rate limit or transport refusal"
+  },
+  {
+    "id": "thrall-warden",
+    "name": "Thrall Warden",
+    "page": "https://ark.wiki.gg/wiki/Thrall_Warden",
+    "status": "unavailable",
+    "reason": "Deferred after source rate limit or transport refusal"
+  },
+  {
+    "id": "veilwyn",
+    "name": "Veilwyn",
+    "page": "https://ark.wiki.gg/wiki/Veilwyn",
+    "status": "unavailable",
+    "reason": "Deferred after source rate limit or transport refusal"
+  },
+  {
+    "id": "boaratos",
+    "name": "Boaratos",
+    "page": "https://ark.wiki.gg/wiki/Boaratos",
+    "status": "unavailable",
+    "reason": "Deferred after source rate limit or transport refusal"
+  },
+  {
+    "id": "cave-minotaur",
+    "name": "Cave Minotaur",
+    "page": "https://ark.wiki.gg/wiki/Cave_Minotaur",
+    "status": "unavailable",
+    "reason": "Deferred after source rate limit or transport refusal"
+  },
+  {
+    "id": "grand-tortugar",
+    "name": "Grand Tortugar",
+    "page": "https://ark.wiki.gg/wiki/Grand_Tortugar",
+    "status": "unavailable",
+    "reason": "Deferred after source rate limit or transport refusal"
+  },
+  {
+    "id": "kirayli",
+    "name": "Kirayli",
+    "page": "https://ark.wiki.gg/wiki/Kirayli",
+    "status": "unavailable",
+    "reason": "Deferred after source rate limit or transport refusal"
+  },
+  {
+    "id": "maeguana",
+    "name": "Maeguana",
+    "page": "https://ark.wiki.gg/wiki/Maeguana",
+    "status": "unavailable",
+    "reason": "Deferred after source rate limit or transport refusal"
+  },
+  {
+    "id": "pirate-fleet-admiral-trireme",
+    "name": "Pirate Fleet Admiral Trireme",
+    "page": "https://ark.wiki.gg/wiki/Pirate_Fleet_Admiral_Trireme",
+    "status": "unavailable",
+    "reason": "Deferred after source rate limit or transport refusal"
+  },
+  {
+    "id": "pirate-trireme",
+    "name": "Pirate Trireme",
+    "page": "https://ark.wiki.gg/wiki/Pirate_Trireme",
+    "status": "unavailable",
+    "reason": "Deferred after source rate limit or transport refusal"
+  },
+  {
+    "id": "rhyniognatha-drone",
+    "name": "Rhyniognatha Drone",
+    "page": "https://ark.wiki.gg/wiki/Rhyniognatha_Drone",
+    "status": "unavailable",
+    "reason": "Deferred after source rate limit or transport refusal"
+  },
+  {
+    "id": "scorpionking",
+    "name": "ScorpionKing",
+    "page": "https://ark.wiki.gg/wiki/ScorpionKing",
+    "status": "unavailable",
+    "reason": "Deferred after source rate limit or transport refusal"
+  },
+  {
+    "id": "skeleton-piercer",
+    "name": "Skeleton Piercer",
+    "page": "https://ark.wiki.gg/wiki/Skeleton_Piercer",
+    "status": "unavailable",
+    "reason": "Deferred after source rate limit or transport refusal"
+  },
+  {
+    "id": "skeleton-snarer",
+    "name": "Skeleton Snarer",
+    "page": "https://ark.wiki.gg/wiki/Skeleton_Snarer",
+    "status": "unavailable",
+    "reason": "Deferred after source rate limit or transport refusal"
+  },
+  {
+    "id": "skeleton-warden",
+    "name": "Skeleton Warden",
+    "page": "https://ark.wiki.gg/wiki/Skeleton_Warden",
+    "status": "unavailable",
+    "reason": "Deferred after source rate limit or transport refusal"
+  },
+  {
+    "id": "thanatos",
+    "name": "Thanatos",
+    "page": "https://ark.wiki.gg/wiki/Thanatos",
+    "status": "unavailable",
+    "reason": "Deferred after source rate limit or transport refusal"
+  }
+]

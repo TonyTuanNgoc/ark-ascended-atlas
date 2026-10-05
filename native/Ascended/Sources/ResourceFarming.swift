@@ -16,12 +16,21 @@ struct ResourceCoverage: Decodable, Identifiable {
     let sourceURL: String?
     let method: String?
     let kit: [String]?
+    let acquisitionClass: String?
+    let evidenceState: String?
+    let limitations: String?
+    let candidateSourceChapters: [ResourceSourceChapter]?
     let risks: [String]?
     var videoURL: URL? {
         guard let videoID else { return sourceURL.flatMap(URL.init(string:)) }
         return URL(string: "https://www.youtube.com/watch?v=\(videoID)&t=\(Int(seconds ?? 0))s")
     }
     var id: String { map + ":" + resource }
+}
+struct ResourceSourceChapter: Decodable, Identifiable {
+    let videoID, title, sourceURL: String
+    let startSeconds: Double
+    var id: String { videoID + ":" + String(startSeconds) }
 }
 struct VerifiedResourceSpot: Decodable, Identifiable {
     let id, map, name, imageAsset, videoID, direction, method, sourceURL: String
@@ -75,6 +84,7 @@ struct FarmDetails: View {
 struct ResourceFarmingScreen: View {
     @Environment(\.arkMap) private var map
     @State private var search = ""
+    @State private var showUnverified = false
     private var spots: [VerifiedResourceSpot] { ResourceFarmCatalog.spots(in: map).filter { search.isEmpty || ($0.name + " " + $0.resources.joined(separator: " ")).localizedStandardContains(search) } }
     var body: some View {
         ScrollView {
@@ -87,19 +97,19 @@ struct ResourceFarmingScreen: View {
                 }
             }.padding(20)
             VStack(alignment: .leading, spacing: 14) {
+                Text("Acquisition methods").font(.title2.bold())
                 ForEach((ResourceFarmCatalog.shared.coverage ?? []).filter { $0.map == map.rawValue && ["crafted", "crafting", "boss", "processing", "creature"].contains($0.status) && (search.isEmpty || ($0.resource + " " + $0.reason).localizedStandardContains(search)) }) { row in
-                    VStack(alignment: .leading, spacing: 8) {
-                        if let asset = row.imageAsset, UIImage(named: asset) != nil {
-                            Image(asset).resizable().scaledToFit().frame(maxHeight: 220).clipShape(RoundedRectangle(cornerRadius: 12))
-                        }
-                        VisualBrief(text: row.resource)
-                        Text(row.reason).font(.callout)
-                        if let method = row.method, !method.isEmpty { Text(method).font(.callout) }
-                        if let kit = row.kit, !kit.isEmpty { ScrollView(.horizontal, showsIndicators: false) { HStack { ForEach(VisualFacts.items(kit)) { FactTile(match: $0) } } } }
-                        if let risks = row.risks, !risks.isEmpty { Label(risks.joined(separator: " · "), systemImage: "exclamationmark.triangle.fill").font(.caption).foregroundStyle(.orange) }
-                        if let url = row.videoURL { Link(destination: url) { Label("Watch harvesting guide", systemImage: "play.rectangle.fill") }.buttonStyle(.bordered) }
-                        if row.status == "boss" { NavigationLink { BossCampaignScreen() } label: { Label("Boss", systemImage: "shield.lefthalf.filled") }.buttonStyle(.bordered) }
-                    }.cardStyle().accessibilityElement(children: .contain).accessibilityIdentifier("acquisition-" + row.map + "-" + row.resource)
+                    ResourceAcquisitionCard(row: row)
+                }
+                let otherRows = (ResourceFarmCatalog.shared.coverage ?? []).filter { $0.map == map.rawValue && ["unavailable", "unverified"].contains($0.status) && (search.isEmpty || ($0.resource + " " + $0.reason).localizedStandardContains(search)) }
+                if !otherRows.isEmpty {
+                    DisclosureGroup("Availability and video gaps (" + String(otherRows.count) + ")", isExpanded: $showUnverified) {
+                        VStack(alignment: .leading, spacing: 12) {
+                            ForEach(otherRows) { row in
+                                ResourceCoverageGapCard(row: row)
+                            }
+                        }.padding(.top, 8)
+                    }.cardStyle().accessibilityIdentifier("resourceCoverageGaps")
                 }
                 if spots.isEmpty {
                     Text("Resources on " + map.name).font(.title2.bold())
@@ -116,6 +126,44 @@ struct ResourceFarmingScreen: View {
             }.padding(20)
 
         }.searchable(text: $search, prompt: "Search resources")
+    }
+}
+
+private struct ResourceAcquisitionCard: View {
+    let row: ResourceCoverage
+    var body: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            if let asset = row.imageAsset, UIImage(named: asset) != nil {
+                Image(asset).resizable().scaledToFit().frame(maxHeight: 220).clipShape(RoundedRectangle(cornerRadius: 12))
+            }
+            VisualBrief(text: row.resource)
+            Text(row.acquisitionClass?.replacingOccurrences(of: "-", with: " ").capitalized ?? row.status.capitalized).font(.caption.bold()).foregroundStyle(.secondary)
+            Text(row.reason).font(.callout)
+            if let method = row.method, !method.isEmpty, method != row.reason { Text(method).font(.callout) }
+            if let kit = row.kit, !kit.isEmpty { ScrollView(.horizontal, showsIndicators: false) { HStack { ForEach(VisualFacts.items(kit)) { FactTile(match: $0) } } } }
+            if let risks = row.risks, !risks.isEmpty { Label(risks.joined(separator: " · "), systemImage: "exclamationmark.triangle.fill").font(.caption).foregroundStyle(.orange) }
+            if let url = row.videoURL { Link(destination: url) { Label(row.videoID == nil ? "Read acquisition reference" : "Watch acquisition guide", systemImage: row.videoID == nil ? "book" : "play.rectangle.fill") }.buttonStyle(.bordered) }
+            if let limitation = row.limitations, !limitation.isEmpty { Text(limitation).font(.caption2).foregroundStyle(.secondary) }
+            if row.status == "boss" { NavigationLink { BossCampaignScreen() } label: { Label("Boss", systemImage: "shield.lefthalf.filled") }.buttonStyle(.bordered) }
+        }.cardStyle().accessibilityElement(children: .contain).accessibilityIdentifier("acquisition-" + row.map + "-" + row.resource)
+    }
+}
+
+private struct ResourceCoverageGapCard: View {
+    let row: ResourceCoverage
+    var body: some View {
+        VStack(alignment: .leading, spacing: 4) {
+            Text(MapResources.label(for: row.resource)).font(.headline)
+            Text(row.status == "unavailable" ? "Not a native gathering source" : "Video verification pending").font(.caption.bold()).foregroundStyle(row.status == "unavailable" ? Color.secondary : Color.orange)
+            Text(row.reason).font(.caption)
+            if let url = row.videoURL { Link("Read reference", destination: url).font(.caption) }
+            if let chapters = row.candidateSourceChapters, !chapters.isEmpty {
+                Text("Candidate video chapters · footage not verified").font(.caption2).foregroundStyle(.secondary)
+                ForEach(Array(chapters.prefix(2))) { chapter in
+                    if let url = URL(string: chapter.sourceURL) { Link(chapter.title, destination: url).font(.caption) }
+                }
+            }
+        }.accessibilityIdentifier("coverage-" + row.map + "-" + row.resource)
     }
 }
 

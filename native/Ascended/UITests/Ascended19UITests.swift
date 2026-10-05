@@ -41,15 +41,30 @@ final class Ascended19UITests:XCTestCase {
         XCTAssertTrue(firstRow.allSatisfy {abs($0.minY-firstRow[0].minY)<2})
         let library=XCTAttachment(screenshot:XCUIScreen.main.screenshot());library.name="Seven-column-English-library";library.lifetime = .keepAlways;add(library)
     }
-    @MainActor func testPortraitHeaderGeometry() throws {
+    @MainActor func testPortraitHeaderGeometry() {
         let app=XCUIApplication();XCUIDevice.shared.orientation = .landscapeLeft;app.launch()
+        let landscape=XCTNSPredicateExpectation(predicate:NSPredicate { _,_ in app.frame.width > app.frame.height },object:app)
+        guard XCTWaiter.wait(for:[landscape],timeout:8) == .completed else {
+            XCTFail("Landscape precondition was not delivered: app frame \(app.frame)"); return
+        }
         XCUIDevice.shared.orientation = .portrait
         let rotated=XCTNSPredicateExpectation(predicate:NSPredicate { _,_ in app.frame.width < app.frame.height },object:app)
         guard XCTWaiter.wait(for:[rotated],timeout:8) == .completed else {
-            throw XCTSkip("Simulator UI remains landscape after sensor rotation; portrait geometry is not verified in this environment.")
+            XCTFail("Portrait sensor rotation was not delivered: app frame \(app.frame). Portrait geometry is unverified."); return
         }
-        XCTAssertTrue(app.buttons["map-group-Cốt truyện"].isHittable)
-        XCTAssertTrue(app.buttons["map-group-Khám phá"].isHittable)
-        let portrait=XCTAttachment(screenshot:XCUIScreen.main.screenshot());portrait.name="Portrait-map-header";portrait.lifetime = .keepAlways;add(portrait)
+        let story=app.buttons["map-group-Cốt truyện"],exploration=app.buttons["map-group-Khám phá"]
+        XCTAssertTrue(story.isHittable);XCTAssertTrue(exploration.isHittable)
+        XCTAssertTrue(app.frame.contains(story.frame));XCTAssertTrue(app.frame.contains(exploration.frame))
+        XCTAssertFalse(story.frame.intersects(exploration.frame))
+        for layer in ["Cửa hang","Resources","My Locations"] {
+            let label=app.buttons["expand-layer-"+layer]
+            XCTAssertTrue(label.exists,"Expected portrait layer label: \(layer)")
+            if label.exists {XCTAssertLessThanOrEqual(label.frame.height,50,"Layer label should use at most two readable lines: \(layer)")}
+        }
+        let screenshot=XCUIScreen.main.screenshot()
+        XCTAssertLessThan(screenshot.image.size.width,screenshot.image.size.height,"Screenshot pixels must prove portrait, not just a sensor command")
+        let geometry=XCTAttachment(string:"App: \(app.frame); screenshot: \(screenshot.image.size); Story Maps: \(story.frame); Exploration Maps: \(exploration.frame)")
+        geometry.name="Portrait-verified-geometry";geometry.lifetime = .keepAlways;add(geometry)
+        let portrait=XCTAttachment(screenshot:screenshot);portrait.name="Portrait-map-header";portrait.lifetime = .keepAlways;add(portrait)
     }
 }

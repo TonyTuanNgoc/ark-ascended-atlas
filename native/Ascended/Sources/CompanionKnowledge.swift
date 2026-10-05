@@ -7,7 +7,9 @@ struct MapBadge: View {
     var height: CGFloat = 48
     var body: some View {
         Group {
-            if UIImage(named: "MapLogo-" + id) != nil {
+            if id == "the-island", let map = ArkMap(rawValue: id) {
+                Image(map.imageAsset).resizable().scaledToFill()
+            } else if UIImage(named: "MapLogo-" + id) != nil {
                 Image("MapLogo-" + id).resizable().scaledToFit()
             } else if let map = ArkMap(rawValue: id) {
                 Image(map.imageAsset).resizable().scaledToFit()

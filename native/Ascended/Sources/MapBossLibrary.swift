@@ -24,8 +24,18 @@ struct MapBossLibrary: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 22) {
                 Text("Boss · " + map.name).font(.largeTitle.bold())
-                Text(map == .island ? "3 separate guardians + Overseer through Tek Cave" : "2 guardians in one The Center Arena encounter").font(.headline).foregroundStyle(.cyan)
-                Text(map == .island ? "Single Player: Broodmother at the Green Obelisk, Megapithecus at the Blue Obelisk, Dragon at the Red Obelisk; reach Overseer through Tek Cave." : "Broodmother Lysrix and Megapithecus are summoned together. This map does not include Dragon, Overseer or The Island ascension.").foregroundStyle(.secondary)
+                if map == .island {
+                    Text("3 separate guardians + Overseer through Tek Cave").font(.headline).foregroundStyle(.cyan)
+                    Text("Single Player: Broodmother at the Green Obelisk, Megapithecus at the Blue Obelisk, Dragon at the Red Obelisk; reach Overseer through Tek Cave.").foregroundStyle(.secondary)
+                } else if map == .center {
+                    Text("2 guardians in one The Center Arena encounter").font(.headline).foregroundStyle(.cyan)
+                    Text("Broodmother Lysrix and Megapithecus are summoned together. This map does not include Dragon, Overseer or The Island ascension.").foregroundStyle(.secondary)
+                } else if let campaign = map.campaign {
+                    VisualBrief(text: campaign.summary).foregroundStyle(.secondary)
+                }
+                if map.bosses.isEmpty {
+                    Text("Detailed ASA tribute and difficulty tables have not been verified for this map yet.").foregroundStyle(.secondary)
+                }
                 ForEach(map.bosses) { boss in
                     NavigationLink(value: GuideDestination.boss(boss.id)) {
                         HStack(spacing: 18) {
@@ -73,7 +83,7 @@ struct MapBossDetail: View {
                         }
                     }
                     ForEach(boss.tribute.filter { $0.quantities[difficulty] > 0 }) { item in VisualBrief(text: "\(item.quantities[difficulty]) " + item.name) }
-                    if difficulty == 0 && !boss.artifactIDs.isEmpty { Text("Gamma: no additional apex tribute is required beyond the artifact set.").font(.caption) }
+                    if difficulty == 0 && !boss.artifactIDs.isEmpty && !boss.tribute.contains(where: { ($0.quantities.first ?? 0) > 0 }) { Text("Gamma: no additional apex tribute is required beyond the artifact set.").font(.caption) }
                 }.cardStyle()
                 VStack(alignment: .leading, spacing: 14) { Text("Strategy & limits").font(.title2.bold()); ForEach(boss.strategy, id: \.self) { VisualBrief(text: $0) } }.cardStyle()
                 GuideChecklist(title: "Before entering the arena", items: boss.kit, key: boss.id)

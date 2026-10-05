@@ -1,0 +1,87 @@
+{
+  "summary": "Manticore is the Scorched Earth guardian. Establish desert supplies before moving from artifact caves to the arena.",
+  "sharedPreparation": [
+    "Record difficulty, Single Player Settings and mods before comparing your army with official-server videos.",
+    "Start with Gamma; measure health, ammunition and saddle losses before raising difficulty. Total creature level is not a substitute for actual stats.",
+    "Keep a breeding pair and spare equipment at base. Fully heal the team and rehearse whistle groups before summoning.",
+    "Check tribute, permitted creatures, timer and rewards at the current ASA terminal; do not copy ASE requirements."
+  ],
+  "steps": [
+    {
+      "id": "supply",
+      "title": "1 · Desert supplies",
+      "reason": "Secure water, heat protection and spare equipment so cave trips do not consume the army budget.",
+      "kind": "Preparation",
+      "bossIDs": []
+    },
+    {
+      "id": "artifact",
+      "title": "2 · Artifacts and army",
+      "reason": "Collect the difficulty-specific tribute set. Prepare ranged damage for the flying phases.",
+      "kind": "Arena",
+      "bossIDs": [
+        "manticore"
+      ]
+    },
+    {
+      "id": "ascend",
+      "title": "3 · Manticore: Gamma → Beta → Alpha",
+      "reason": "Raise difficulty after a clean win with health and time to spare; keep the same save settings for meaningful comparisons.",
+      "kind": "Ascension",
+      "bossIDs": [
+        "manticore"
+      ]
+    }
+  ],
+  "loadouts": [
+    {
+      "bossID": "manticore",
+      "entry": "Check current ASA tribute and creature eligibility at the terminal before committing your team.",
+      "warning": "The Stego + Velonasaur example needs transfers or a compatible cluster. The native-team options below are planning suggestions, not independently measured Alpha wins.",
+      "options": [
+        {
+          "id": "stego-velo",
+          "title": "Stego + Velonasaur · ASA solo Alpha example",
+          "team": "Stegosaurus provides a protected riding position; Velonasaur supplies ranged damage.",
+          "why": "The creator explicitly describes this combination in a full ASA solo Alpha guide. No minimum stats are inferred from its description.",
+          "play": "Review setup at 00:20, flight cycles, positioning and safe damage windows. Avoid chasing the boss through the arena.",
+          "imageAsset": "Dino-stegosaurus",
+          "confidence": "ASA creator metadata confirms the setup; stats and saddles have not been independently measured.",
+          "targets": []
+        },
+        {
+          "id": "rex",
+          "title": "Native Rex army + Yutyrannus",
+          "team": "Build a bred, imprinted Rex line with a ridden Yutyrannus if eligible.",
+          "why": "A conventional land team provides a practical local breeding project; this is a suggested Gamma starting plan.",
+          "play": "Keep the herd together, maintain courage and use landing windows; bring a ranged backup rather than relying on frequent landings.",
+          "imageAsset": "Dino-rex",
+          "confidence": "Planning suggestion based on arena mechanics; no verified minimum stats or guaranteed win.",
+          "targets": []
+        },
+        {
+          "id": "wyvern",
+          "title": "Native Wyvern team",
+          "team": "Prepare a controlled Wyvern group; check flyer eligibility at the ASA terminal.",
+          "why": "A flyer plan can follow aerial phases, but a different composition changes positioning and landing behavior.",
+          "play": "Rehearse movement and attack control before entry; keep team composition consistent when judging the flight cycle.",
+          "imageAsset": "Dino-lightning-wyvern",
+          "confidence": "Planning suggestion based on arena mechanics; no verified minimum stats or guaranteed win.",
+          "targets": []
+        }
+      ],
+      "sources": [
+        {
+          "title": "Latte Larry · solo Alpha Manticore ASA",
+          "url": "https://www.youtube.com/watch?v=aryb0sRDQUw",
+          "note": "Direct creator description confirms Stego + Velonasaur, flight cycles and positioning; setup00:20, kill08:40. No unobserved stats are claimed."
+        },
+        {
+          "title": "Manticore arena mechanics",
+          "url": "https://ark.wiki.gg/wiki/Manticore_Arena_%28Scorched_Earth%29",
+          "note": "Reference for land/flyer composition and arena behavior. Local Rex/Wyvern plans are suggestions; current terminal eligibility takes precedence."
+        }
+      ]
+    }
+  ]
+}

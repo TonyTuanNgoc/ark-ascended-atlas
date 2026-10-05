@@ -1,0 +1,70 @@
+{
+  "summary": "ASA Valguero uses Grendel, the new Megaraptor guardian. The roaming Broodmother is a separate encounter; the ASE triple-boss arena does not apply.",
+  "sharedPreparation": [
+    "Record difficulty, Single Player Settings and mods before comparing your army with official-server videos.",
+    "Start with Gamma; measure health, ammunition and saddle losses before raising difficulty. Total creature level is not a substitute for actual stats.",
+    "Keep a breeding pair and spare equipment at base. Fully heal the team and rehearse whistle groups before summoning.",
+    "Check tribute, permitted creatures, timer and rewards at the current ASA terminal; do not copy ASE requirements."
+  ],
+  "steps": [
+    {
+      "id": "breed",
+      "title": "1 · Prepare for sustained pressure",
+      "reason": "Stock herbivore cakes, suitable saddles and backup breeding pairs; account for bleed and minions separately.",
+      "kind": "Preparation",
+      "bossIDs": []
+    },
+    {
+      "id": "world",
+      "title": "2 · World boss versus guardian",
+      "reason": "A roaming Broodmother encounter is not completion of the Valguero guardian arena.",
+      "kind": "World encounter",
+      "bossIDs": []
+    },
+    {
+      "id": "guardian",
+      "title": "3 · Grendel: Gamma → Beta → Alpha",
+      "reason": "Practice focused whistles and keep the team together. Watch minions as well as boss health.",
+      "kind": "Guardian",
+      "bossIDs": [
+        "grendel"
+      ]
+    }
+  ],
+  "loadouts": [
+    {
+      "bossID": "grendel",
+      "entry": "Check current ASA tribute and creature eligibility at the terminal before committing your team.",
+      "warning": "A creator describes a five-tame solo win, but the team species and stats were not verified here; it is not presented as a victory recipe.",
+      "options": [
+        {
+          "id": "herbivore-prep",
+          "title": "Herbivores and cakes · Gamma practice plan",
+          "team": "Prepare a saddled herbivore breeding line, cakes in each inventory and eligible rider support.",
+          "why": "Recovery supplies help sustain pressure from bleed and adds. Test the proposal in your save; it is not the creator’s verified team.",
+          "play": "Keep the army together and watch bleed and vultures. Raise difficulty only after Gamma leaves a supply margin.",
+          "imageAsset": "Dino-therizinosaur",
+          "confidence": "Conservative planning proposal; no minimum health, melee or saddle values and no independently verified win for this team.",
+          "targets": []
+        }
+      ],
+      "sources": [
+        {
+          "title": "Wildcard · Valguero Ascended release",
+          "url": "https://survivetheark.com/index.php?/forums/topic/772919-valguero-ascended-and-fantastic-tames-elderclaw-are-now-live/",
+          "note": "Confirms the new ASA guardian Grendel and Megaraptor; excludes the ASE triple-boss arena."
+        },
+        {
+          "title": "Creator · solo Grendel 5 tames",
+          "url": "https://www.youtube.com/watch?v=xWKSS78GeIs",
+          "note": "Creator description confirms ASA, five tames, bleed and vultures. Species/stats unspecified; captions returned429, no recipe inferred."
+        },
+        {
+          "title": "Gingarella · solo Alpha Grendel official PvE",
+          "url": "https://www.youtube.com/watch?v=RpRzhihou9k",
+          "note": "Creator publishes a full team and fight reference; unreviewed stat values are not copied."
+        }
+      ]
+    }
+  ]
+}

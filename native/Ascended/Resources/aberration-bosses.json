@@ -1,0 +1,114 @@
+[
+  {
+    "id": "rockwell",
+    "name": "Rockwell",
+    "kind": "ASA guardian",
+    "imageAsset": "Boss-rockwell",
+    "summary": "Rockwell stays in the central Element pool. Tentacle phases open damage opportunities on the heart; survivor movement and aim remain essential.",
+    "location": "Enter the Aberration Rockwell encounter through the current ASA boss terminal; verify access and tribute before moving the army.",
+    "artifactIDs": [],
+    "entranceID": null,
+    "levels": [
+      60,
+      75,
+      100
+    ],
+    "elements": [],
+    "tribute": [
+      {
+        "name": "Artifact of the Depths",
+        "quantities": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "name": "Artifact of the Shadows",
+        "quantities": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "name": "Artifact of the Stalker",
+        "quantities": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "name": "Basilisk Scale",
+        "quantities": [
+          0,
+          4,
+          8
+        ]
+      },
+      {
+        "name": "Nameless Venom",
+        "quantities": [
+          0,
+          12,
+          20
+        ]
+      },
+      {
+        "name": "Reaper Pheromone Gland",
+        "quantities": [
+          0,
+          2,
+          7
+        ]
+      },
+      {
+        "name": "Rock Drake Feather",
+        "quantities": [
+          0,
+          2,
+          7
+        ]
+      },
+      {
+        "name": "Alpha Basilisk Fang",
+        "quantities": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "name": "Alpha Karkinos Claw",
+        "quantities": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "name": "Alpha Reaper King Barb",
+        "quantities": [
+          0,
+          0,
+          1
+        ]
+      }
+    ],
+    "rewardsNote": "Difficulty affects Tek unlocks and ascension. Exact reward amounts are not verified in this profile; check current ASA rewards in game.",
+    "strategy": [
+      "Destroy tentacles to open the heart phase; stay mobile while managing adds and orb pressure.",
+      "Prepare ammunition, healing and spare armor as separate supplies. Do not assume an ASE cactus-broth method still works on the current patch.",
+      "Use the terminal to confirm allowed tames and this wiki-derived tribute table. No Alpha solo army threshold is claimed here."
+    ],
+    "kit": [
+      "Current difficulty-specific tribute set",
+      "Fully healed eligible tames with checked saddles",
+      "Spare armor and Medical Brew",
+      "Enough ammunition for phase control and ranged backup",
+      "Backup breeding pair safely left at base"
+    ],
+    "sourceURL": "https://ark.wiki.gg/wiki/Rockwell_%28Gamma%29"
+  }
+]

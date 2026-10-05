@@ -1,0 +1,62 @@
+{
+  "summary": "Rockwell requires the survivor to handle tentacles and exposed-heart phases. A strong tame army does not replace phase control.",
+  "sharedPreparation": [
+    "Record difficulty, Single Player Settings and mods before comparing your army with official-server videos.",
+    "Start with Gamma; measure health, ammunition and saddle losses before raising difficulty. Total creature level is not a substitute for actual stats.",
+    "Keep a breeding pair and spare equipment at base. Fully heal the team and rehearse whistle groups before summoning.",
+    "Check tribute, permitted creatures, timer and rewards at the current ASA terminal; do not copy ASE requirements."
+  ],
+  "steps": [
+    {
+      "id": "survive",
+      "title": "1 · Underground survival",
+      "reason": "Prepare charge light, spare hazard equipment and reliable transport before descending into dangerous regions.",
+      "kind": "Preparation",
+      "bossIDs": []
+    },
+    {
+      "id": "artifact",
+      "title": "2 · Artifacts and combat kit",
+      "reason": "Collect Depths, Shadows and Stalker. Check the terminal tribute and organize ammunition, Medical Brew and spare armor.",
+      "kind": "Preparation",
+      "bossIDs": [
+        "rockwell"
+      ]
+    },
+    {
+      "id": "phases",
+      "title": "3 · Rockwell: tentacles → heart → repeat",
+      "reason": "Destroy tentacles to open the heart phase; stay mobile and control pressure from adds and orbs. Assign a clear role to every tame.",
+      "kind": "Ascension",
+      "bossIDs": [
+        "rockwell"
+      ]
+    }
+  ],
+  "loadouts": [
+    {
+      "bossID": "rockwell",
+      "entry": "Check current ASA tribute and creature eligibility at the terminal before committing your team.",
+      "warning": "Cactus-broth or no-tame cheese from ASE is not verified for the current ASA patch.",
+      "options": [
+        {
+          "id": "phase-plan",
+          "title": "Survivor phase control + supporting tames",
+          "team": "The survivor handles tentacles and heart; select supporting tames only after checking ASA arena eligibility.",
+          "why": "Phase control determines progress. This is a preparation plan rather than a measured Alpha army.",
+          "play": "Practice aiming, reloads and movement at Gamma. Separate whistle groups so you can command tames while shooting.",
+          "imageAsset": "Dino-rock-drake",
+          "confidence": "Suggested phase-control preparation; current ASA solo army and stat thresholds are not verified.",
+          "targets": []
+        }
+      ],
+      "sources": [
+        {
+          "title": "Wildcard · Aberration Ascended",
+          "url": "https://store.steampowered.com/app/3059650/",
+          "note": "Confirms the ASA expansion. This plan does not copy ASE stat requirements."
+        }
+      ]
+    }
+  ]
+}

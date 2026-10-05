@@ -1,0 +1,364 @@
+{
+  "checkedAt": "2026-10-05",
+  "files": [
+    "/Users/admin/Ascended-iPad-Dev/native/Ascended/Resources/scorched-earth-campaign.json",
+    "/Users/admin/Ascended-iPad-Dev/native/Ascended/Resources/aberration-campaign.json",
+    "/Users/admin/Ascended-iPad-Dev/native/Ascended/Resources/valguero-campaign.json",
+    "/Users/admin/Ascended-iPad-Dev/native/Ascended/Resources/extinction-campaign.json",
+    "/Users/admin/Ascended-iPad-Dev/native/Ascended/Resources/lost-colony-campaign.json",
+    "/Users/admin/Ascended-iPad-Dev/native/Ascended/Resources/genesis-part-1-campaign.json",
+    "/Users/admin/Ascended-iPad-Dev/native/Ascended/Resources/astraeos-campaign.json"
+  ],
+  "paidCreatureCorrections": [
+    {
+      "file": "genesis-part-1-ocean-creatures.json",
+      "id": "armadoggo"
+    },
+    {
+      "file": "aberration-creatures.json",
+      "id": "cosmo"
+    },
+    {
+      "file": "extinction-creatures.json",
+      "id": "armadoggo"
+    },
+    {
+      "file": "valguero-creatures.json",
+      "id": "cosmo"
+    },
+    {
+      "file": "genesis-part-1-creatures.json",
+      "id": "cosmo"
+    },
+    {
+      "file": "scorched-earth-creatures.json",
+      "id": "oasisaur"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "armadoggo"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "cosmo"
+    },
+    {
+      "file": "astraeos-creatures.json",
+      "id": "oasisaur"
+    }
+  ],
+  "sources": [
+    {
+      "mapID": "scorched-earth",
+      "urls": [
+        "https://store.steampowered.com/app/2849450/",
+        "https://ark.wiki.gg/wiki/Scorched_Earth"
+      ]
+    },
+    {
+      "mapID": "aberration",
+      "urls": [
+        "https://store.steampowered.com/app/3059650/",
+        "https://ark.wiki.gg/wiki/Aberration"
+      ]
+    },
+    {
+      "mapID": "valguero",
+      "urls": [
+        "https://store.steampowered.com/app/3982310/",
+        "https://survivetheark.com/index.php?/forums/topic/772919-valguero-ascended-and-fantastic-tames-elderclaw-are-now-live/",
+        "https://ark.wiki.gg/wiki/Valguero_Ascended",
+        "https://ark.wiki.gg/wiki/Forsaken_Oasis_%28Valguero%29"
+      ]
+    },
+    {
+      "mapID": "extinction",
+      "urls": [
+        "https://store.steampowered.com/app/3349320/",
+        "https://ark.wiki.gg/wiki/Extinction"
+      ]
+    },
+    {
+      "mapID": "lost-colony",
+      "urls": [
+        "https://store.steampowered.com/app/3583650/",
+        "https://ark.wiki.gg/wiki/Red-Handed_%28Lost_Colony%29",
+        "https://survivetheark.com/index.php?/forums/topic/773849-community-crunch-505-deep-dives-technical-strides-what%E2%80%99s-surfacing-next/"
+      ]
+    },
+    {
+      "mapID": "genesis-part-1",
+      "urls": [
+        "https://store.steampowered.com/app/4558470/",
+        "https://ark.wiki.gg/wiki/Ascension"
+      ]
+    },
+    {
+      "mapID": "astraeos",
+      "urls": [
+        "https://store.steampowered.com/app/3483400/",
+        "https://survivetheark.com/index.php?/forums/topic/773697-astraeos-mega-update-is-now-live/"
+      ]
+    }
+  ],
+  "limitations": [
+    "Full profiles added only for Manticore and Rockwell; other expansion tribute tables remain unverified.",
+    "Chưa có independent gameplay QA; HP/melee/saddle targets để rỗng thay vì đoán.",
+    "Manticore solo creator metadata xác nhận setup; chưa trích toàn bộ combat. Grendel captions429, không bypass.",
+    "Giữ nguyên icon assets và rendering trắng."
+  ],
+  "remainingMissingCreatureProfiles": {
+    "ragnarok-creatures": 19,
+    "genesis-part-1-ocean-creatures": 19,
+    "aberration-creatures": 62,
+    "extinction-creatures": 31,
+    "the-center-creatures": 9,
+    "valguero-creatures": 56,
+    "genesis-part-1-creatures": 49,
+    "scorched-earth-creatures": 8,
+    "the-island-creatures": 11,
+    "lost-colony-creatures": 42,
+    "astraeos-creatures": 87
+  },
+  "unresolvedSilhouettes": {
+    "iceworm-male": {
+      "name": "Iceworm Male",
+      "sourcePage": "https://ark.wiki.gg/wiki/Iceworm_Male"
+    },
+    "palaeoctopus": {
+      "name": "Palaeoctopus",
+      "sourcePage": "https://ark.wiki.gg/wiki/Palaeoctopus"
+    },
+    "parakeet-fish-school": {
+      "name": "Parakeet Fish School",
+      "sourcePage": "https://ark.wiki.gg/wiki/Parakeet_Fish_School"
+    },
+    "parrot": {
+      "name": "Parrot",
+      "sourcePage": "https://ark.wiki.gg/wiki/Parrot"
+    },
+    "pirate-brigantine": {
+      "name": "Pirate Brigantine",
+      "sourcePage": "https://ark.wiki.gg/wiki/Pirate_Brigantine"
+    },
+    "pirate-fleet-admiral-brigantine": {
+      "name": "Pirate Fleet Admiral Brigantine",
+      "sourcePage": "https://ark.wiki.gg/wiki/Pirate_Fleet_Admiral_Brigantine"
+    },
+    "pirate-sloop": {
+      "name": "Pirate Sloop",
+      "sourcePage": "https://ark.wiki.gg/wiki/Pirate_Sloop"
+    },
+    "tidepup": {
+      "name": "Tidepup",
+      "sourcePage": "https://ark.wiki.gg/wiki/Tidepup"
+    },
+    "reaper-queen": {
+      "name": "Reaper Queen",
+      "sourcePage": "https://ark.wiki.gg/wiki/Reaper_Queen"
+    },
+    "seeker": {
+      "name": "Seeker",
+      "sourcePage": "https://ark.wiki.gg/wiki/Seeker"
+    },
+    "surface-reaper-king": {
+      "name": "Surface Reaper King",
+      "sourcePage": "https://ark.wiki.gg/wiki/Surface_Reaper_King"
+    },
+    "yi-ling": {
+      "name": "Yi Ling",
+      "sourcePage": "https://ark.wiki.gg/wiki/Yi_Ling"
+    },
+    "corrupted-reaper-king": {
+      "name": "Corrupted Reaper King",
+      "sourcePage": "https://ark.wiki.gg/wiki/Corrupted_Reaper_King"
+    },
+    "corrupted-wyvern": {
+      "name": "Corrupted Wyvern",
+      "sourcePage": "https://ark.wiki.gg/wiki/Corrupted_Wyvern"
+    },
+    "defense-unit": {
+      "name": "Defense Unit",
+      "sourcePage": "https://ark.wiki.gg/wiki/Defense_Unit"
+    },
+    "king-titan": {
+      "name": "King Titan",
+      "sourcePage": "https://ark.wiki.gg/wiki/King_Titan"
+    },
+    "rubble-golem": {
+      "name": "Rubble Golem",
+      "sourcePage": "https://ark.wiki.gg/wiki/Rubble_Golem"
+    },
+    "broodmother-lysrix": {
+      "name": "Broodmother Lysrix",
+      "sourcePage": "https://ark.wiki.gg/wiki/Broodmother_Lysrix"
+    },
+    "chalk-elemental": {
+      "name": "Chalk Elemental",
+      "sourcePage": "https://ark.wiki.gg/wiki/Chalk_Elemental"
+    },
+    "deinonychus": {
+      "name": "Deinonychus",
+      "sourcePage": "https://ark.wiki.gg/wiki/Deinonychus"
+    },
+    "ice-elemental": {
+      "name": "Ice Elemental",
+      "sourcePage": "https://ark.wiki.gg/wiki/Ice_Elemental"
+    },
+    "astrocetus": {
+      "name": "Astrocetus",
+      "sourcePage": "https://ark.wiki.gg/wiki/Astrocetus"
+    },
+    "attack-drone": {
+      "name": "Attack Drone",
+      "sourcePage": "https://ark.wiki.gg/wiki/Attack_Drone"
+    },
+    "bloodstalker": {
+      "name": "Bloodstalker",
+      "sourcePage": "https://ark.wiki.gg/wiki/Bloodstalker"
+    },
+    "ferox": {
+      "name": "Ferox",
+      "sourcePage": "https://ark.wiki.gg/wiki/Ferox"
+    },
+    "insect-swarm": {
+      "name": "Insect Swarm",
+      "sourcePage": "https://ark.wiki.gg/wiki/Insect_Swarm"
+    },
+    "alpha-hulking-revenant": {
+      "name": "Alpha Hulking Revenant",
+      "sourcePage": "https://ark.wiki.gg/wiki/Alpha_Hulking_Revenant"
+    },
+    "aureliax": {
+      "name": "Aureliax",
+      "sourcePage": "https://ark.wiki.gg/wiki/Aureliax"
+    },
+    "bloated-revenant": {
+      "name": "Bloated Revenant",
+      "sourcePage": "https://ark.wiki.gg/wiki/Bloated_Revenant"
+    },
+    "desmodus": {
+      "name": "Desmodus",
+      "sourcePage": "https://ark.wiki.gg/wiki/Desmodus"
+    },
+    "gloon": {
+      "name": "Gloon",
+      "sourcePage": "https://ark.wiki.gg/wiki/Gloon"
+    },
+    "hulking-revenant": {
+      "name": "Hulking Revenant",
+      "sourcePage": "https://ark.wiki.gg/wiki/Hulking_Revenant"
+    },
+    "ossidon": {
+      "name": "Ossidon",
+      "sourcePage": "https://ark.wiki.gg/wiki/Ossidon"
+    },
+    "revenant": {
+      "name": "Revenant",
+      "sourcePage": "https://ark.wiki.gg/wiki/Revenant"
+    },
+    "revenant-malwyn": {
+      "name": "Revenant Malwyn",
+      "sourcePage": "https://ark.wiki.gg/wiki/Revenant_Malwyn"
+    },
+    "revenant-ossidon": {
+      "name": "Revenant Ossidon",
+      "sourcePage": "https://ark.wiki.gg/wiki/Revenant_Ossidon"
+    },
+    "revenant-veilwyn": {
+      "name": "Revenant Veilwyn",
+      "sourcePage": "https://ark.wiki.gg/wiki/Revenant_Veilwyn"
+    },
+    "solwyn": {
+      "name": "Solwyn",
+      "sourcePage": "https://ark.wiki.gg/wiki/Solwyn"
+    },
+    "thrall-gunslinger": {
+      "name": "Thrall Gunslinger",
+      "sourcePage": "https://ark.wiki.gg/wiki/Thrall_Gunslinger"
+    },
+    "thrall-marauder": {
+      "name": "Thrall Marauder",
+      "sourcePage": "https://ark.wiki.gg/wiki/Thrall_Marauder"
+    },
+    "thrall-warden": {
+      "name": "Thrall Warden",
+      "sourcePage": "https://ark.wiki.gg/wiki/Thrall_Warden"
+    },
+    "veilwyn": {
+      "name": "Veilwyn",
+      "sourcePage": "https://ark.wiki.gg/wiki/Veilwyn"
+    },
+    "boaratos": {
+      "name": "Boaratos",
+      "sourcePage": "https://ark.wiki.gg/wiki/Boaratos"
+    },
+    "cave-minotaur": {
+      "name": "Cave Minotaur",
+      "sourcePage": "https://ark.wiki.gg/wiki/Cave_Minotaur"
+    },
+    "grand-tortugar": {
+      "name": "Grand Tortugar",
+      "sourcePage": "https://ark.wiki.gg/wiki/Grand_Tortugar"
+    },
+    "kirayli": {
+      "name": "Kirayli",
+      "sourcePage": "https://ark.wiki.gg/wiki/Kirayli"
+    },
+    "maeguana": {
+      "name": "Maeguana",
+      "sourcePage": "https://ark.wiki.gg/wiki/Maeguana"
+    },
+    "pirate-fleet-admiral-trireme": {
+      "name": "Pirate Fleet Admiral Trireme",
+      "sourcePage": "https://ark.wiki.gg/wiki/Pirate_Fleet_Admiral_Trireme"
+    },
+    "pirate-trireme": {
+      "name": "Pirate Trireme",
+      "sourcePage": "https://ark.wiki.gg/wiki/Pirate_Trireme"
+    },
+    "rhyniognatha-drone": {
+      "name": "Rhyniognatha Drone",
+      "sourcePage": "https://ark.wiki.gg/wiki/Rhyniognatha_Drone"
+    },
+    "scorpionking": {
+      "name": "ScorpionKing",
+      "sourcePage": "https://ark.wiki.gg/wiki/ScorpionKing"
+    },
+    "skeleton-piercer": {
+      "name": "Skeleton Piercer",
+      "sourcePage": "https://ark.wiki.gg/wiki/Skeleton_Piercer"
+    },
+    "skeleton-snarer": {
+      "name": "Skeleton Snarer",
+      "sourcePage": "https://ark.wiki.gg/wiki/Skeleton_Snarer"
+    },
+    "skeleton-warden": {
+      "name": "Skeleton Warden",
+      "sourcePage": "https://ark.wiki.gg/wiki/Skeleton_Warden"
+    },
+    "thanatos": {
+      "name": "Thanatos",
+      "sourcePage": "https://ark.wiki.gg/wiki/Thanatos"
+    }
+  },
+  "uiChanges": [
+    "Guard absent ASA boss profile links",
+    "Guard absent army guides",
+    "Show sources and limitations in army screens",
+    "Remove expansion maps inheriting Center arena explanatory text"
+  ],
+  "bossProfiles": [
+    {
+      "mapID": "scorched-earth",
+      "source": "https://ark.wiki.gg/wiki/Manticore_Arena_%28Scorched_Earth%29",
+      "verification": "Current wiki arena page includes ASA and distinguishes Scorched ascension from Astraeos; levels and talon/artifact table verified via indexed source."
+    },
+    {
+      "mapID": "aberration",
+      "source": "https://ark.wiki.gg/wiki/Rockwell_%28Gamma%29",
+      "verification": "Current official community wiki indexed tribute table; ASA/Evolved page, no separate ASA quantities published. Current terminal takes precedence."
+    }
+  ],
+  "validation": "xcrun swift decoded all10 campaign files with production Decodable models and unique step/option IDs. All4 boss JSON decoded with production MapBoss models; arrays have3difficulty values; bothSwift files frontendparse and diff--check passed. Army option images reference existing white silhouettes."
+}

@@ -47,7 +47,9 @@
           "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g&t=25s",
           "sha256": "b6841538d85e6a83307f1916496a945877ec038fdd7807d4a6135f92791d7cc5"
         }
-      ]
+      ],
+      "sourcePlane": "the-center filmed region",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
     },
     {
       "sourceAcquisition": "Approved complete local source cache",
@@ -94,7 +96,9 @@
           "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g&t=64s",
           "sha256": "792bddc8c2eb0ded14a6d803a818d63491a5852a060f81be4b870047eb4972a0"
         }
-      ]
+      ],
+      "sourcePlane": "the-center filmed region",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
     },
     {
       "sourceAcquisition": "Approved complete local source cache",
@@ -141,7 +145,9 @@
           "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g&t=194s",
           "sha256": "a094bb3ff688a540b77c65543f804441929e75e1d2c8a196b12f05a837053549"
         }
-      ]
+      ],
+      "sourcePlane": "the-center filmed region",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
     },
     {
       "sourceAcquisition": "Approved complete local source cache",
@@ -188,7 +194,9 @@
           "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g&t=303s",
           "sha256": "82c39cfa3d28bfdcebf4c39b368e2714ae5de7ecc985f41abf201ec761fb9642"
         }
-      ]
+      ],
+      "sourcePlane": "the-center filmed region",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
     },
     {
       "sourceAcquisition": "Approved complete local source cache",
@@ -235,7 +243,9 @@
           "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g&t=517s",
           "sha256": "f24015aebe43f2d5707977f1807205e6e2bc2b0c65a04cea8cb655b99ba22ff3"
         }
-      ]
+      ],
+      "sourcePlane": "the-center filmed region",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
     },
     {
       "sourceAcquisition": "Approved complete local source cache",
@@ -282,7 +292,9 @@
           "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g&t=551s",
           "sha256": "4622f237f002bdca298e251a212e5e458905e300b70abbd51deb9258e26156d7"
         }
-      ]
+      ],
+      "sourcePlane": "the-center filmed region",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
     },
     {
       "sourceAcquisition": "Approved complete local source cache",
@@ -329,7 +341,9 @@
           "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g&t=655s",
           "sha256": "928b6544ec3cc24c415d5af119c0d16850bc78c5c2aa9b592f9df21de8ecfcc9"
         }
-      ]
+      ],
+      "sourcePlane": "the-center filmed region",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
     },
     {
       "sourceAcquisition": "Approved complete local source cache",
@@ -376,7 +390,9 @@
           "sourceURL": "https://www.youtube.com/watch?v=5IhlD3yzqjU&t=111s",
           "sha256": "8e6d82bd2e07d4e2d09b8f0a453e9b33d3fec141afc59f629817f3c2d9c6a508"
         }
-      ]
+      ],
+      "sourcePlane": "ragnarok filmed region",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
     },
     {
       "sourceAcquisition": "Approved complete local source cache",
@@ -423,7 +439,9 @@
           "sourceURL": "https://www.youtube.com/watch?v=5IhlD3yzqjU&t=515s",
           "sha256": "6e8f9a0ffe5b9188af20550b3904c176973059eae0f1e4b50b547d7331f0093b"
         }
-      ]
+      ],
+      "sourcePlane": "ragnarok filmed region",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
     },
     {
       "sourceAcquisition": "Approved complete local source cache",
@@ -470,7 +488,9 @@
           "sourceURL": "https://www.youtube.com/watch?v=5IhlD3yzqjU&t=746s",
           "sha256": "44f4fded27266df5e059e6f2b48b8a5dbd3136b58336e4f9dd714451dae4bd01"
         }
-      ]
+      ],
+      "sourcePlane": "ragnarok filmed region",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
     },
     {
       "sourceAcquisition": "Approved complete local source cache",
@@ -517,7 +537,9 @@
           "sourceURL": "https://www.youtube.com/watch?v=5IhlD3yzqjU&t=931s",
           "sha256": "8a402d78933f93ceac4ab9e7e5ab6133a0b08a3cfb826f98dd5ad2a1eec09e05"
         }
-      ]
+      ],
+      "sourcePlane": "ragnarok filmed region",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
     },
     {
       "sourceAcquisition": "Approved complete local source cache",
@@ -564,7 +586,9 @@
           "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM&t=205s",
           "sha256": "bf9be713760bea9d8bb881d4abfd402e7719423c7c78fab20e663a7f6a1dc5c0"
         }
-      ]
+      ],
+      "sourcePlane": "the-island filmed region",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
     },
     {
       "sourceAcquisition": "Approved complete local source cache",
@@ -611,7 +635,9 @@
           "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM&t=317s",
           "sha256": "105918d6e29294c179cb7a8f1957172453589069ba3c97597570b6dd17097513"
         }
-      ]
+      ],
+      "sourcePlane": "the-island filmed region",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
     },
     {
       "sourceAcquisition": "Approved complete local source cache",
@@ -658,7 +684,9 @@
           "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM&t=427s",
           "sha256": "6ea94aea9af761a5678d754a7fb5a77e1dfe3eb0fd689c1cb9d0bd66190903db"
         }
-      ]
+      ],
+      "sourcePlane": "the-island filmed region",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
     },
     {
       "sourceAcquisition": "Approved complete local source cache",
@@ -705,7 +733,9 @@
           "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM&t=511s",
           "sha256": "e0606e1aec2c4f01e4f78286a06d085dbc1cf989b3544c0c3c47a3591d2ba903"
         }
-      ]
+      ],
+      "sourcePlane": "the-island filmed region",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
     },
     {
       "sourceAcquisition": "Approved complete local source cache",
@@ -752,7 +782,9 @@
           "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM&t=574s",
           "sha256": "7efde235bf5aba80b3b7c935fb1f2d625dd4159334d2a65848f2aa1d9b4565af"
         }
-      ]
+      ],
+      "sourcePlane": "the-island filmed region",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
     },
     {
       "sourceAcquisition": "Approved complete local source cache",
@@ -765,9 +797,9 @@
       "sourceWidth": 1920,
       "sourceHeight": 1080,
       "coordinateEvidence": "In-game map camera GPS visible at 654s: latitude 55.2, longitude 25.7. Pin identifies the filmed farming region, not every individual resource actor.",
-      "inventoryEvidence": "CP chapter629\u2013720s; camera GPS654s identifies this river segment, active beaver dam sequence662s.",
-      "harvestDemonstrated": false,
-      "evidenceLimitations": "The source shows this region and resource or method. A completed harvest and measured yield are not demonstrated in these clips.",
+      "inventoryEvidence": "CP chapter629\u2013720s; camera GPS654s identifies this river segment, active beaver dam sequence662s. At660s the dam inventory visibly contains Wood, Cementing Paste and Rare Flowers; the clip demonstrates actual dam loot.",
+      "harvestDemonstrated": true,
+      "evidenceLimitations": "",
       "steps": [
         {
           "id": "Resource-island-redwood-paste-1",
@@ -784,22 +816,24 @@
           "title": "Approach / surroundings",
           "loop": "Resource-island-redwood-paste-2",
           "poster": "Resource-island-redwood-paste-2",
-          "startSeconds": 658,
-          "endSeconds": 661.5,
-          "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM&t=658s",
-          "sha256": "de4e1fa5a9984c2bf3bb5f12ad182cf768608e8f644db4c1089a729ffd4ecbaa"
+          "startSeconds": 657,
+          "endSeconds": 660.5,
+          "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM&t=657s",
+          "sha256": "ffda8318d5f331c60661837dab9aab7dc14bc99b3c64bb7ca8e66d45d2b3b8e6"
         },
         {
           "id": "Resource-island-redwood-paste-3",
-          "title": "Dam view",
+          "title": "Dam loot",
           "loop": "Resource-island-redwood-paste-3",
           "poster": "Resource-island-redwood-paste-3",
-          "startSeconds": 662,
-          "endSeconds": 665.5,
-          "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM&t=662s",
-          "sha256": "e173be0658857e552482c4fe90029d6e09e16453b92139d97f69a37f37c14e56"
+          "startSeconds": 659,
+          "endSeconds": 662.5,
+          "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM&t=659s",
+          "sha256": "d2918605a11d6cb3c15944cadc2ec4d9dcfa77fb0c0da2dcfdc90253c97588b1"
         }
-      ]
+      ],
+      "sourcePlane": "the-island filmed region",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
     },
     {
       "sourceAcquisition": "Approved complete local source cache",
@@ -846,7 +880,9 @@
           "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM&t=745s",
           "sha256": "9638e50f2b30141f665482830c835edfe4c68422ab4d0c305e6afb4b9544f16b"
         }
-      ]
+      ],
+      "sourcePlane": "the-island filmed region",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
     },
     {
       "sourceAcquisition": "Approved complete local source cache",
@@ -893,7 +929,9 @@
           "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8&t=184s",
           "sha256": "0324cd8c97f26b6f3752fb74df0165961ccc8c9ffc41b7e66d52dcc713a45264"
         }
-      ]
+      ],
+      "sourcePlane": "ragnarok filmed region",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
     },
     {
       "sourceAcquisition": "Approved complete local source cache",
@@ -940,7 +978,9 @@
           "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8&t=388s",
           "sha256": "c54ef1d7b44f437926c2c4358a6f7c77ba64191d38d54fbba40763e4c954c325"
         }
-      ]
+      ],
+      "sourcePlane": "ragnarok filmed region",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
     },
     {
       "sourceAcquisition": "Approved complete local source cache",
@@ -987,7 +1027,9 @@
           "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8&t=526s",
           "sha256": "4758db63e64e2ef0c77359cfdebaa96454a28cd54cdcc19274ec95e49aab7e48"
         }
-      ]
+      ],
+      "sourcePlane": "ragnarok filmed region",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
     },
     {
       "sourceAcquisition": "Approved complete local source cache",
@@ -1034,7 +1076,9 @@
           "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8&t=594s",
           "sha256": "b11c59bb33e236946f550c0f80bdd7d7ab96b8d3b62ab6c0be65d7431d33f3de"
         }
-      ]
+      ],
+      "sourcePlane": "ragnarok filmed region",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
     },
     {
       "sourceAcquisition": "Approved complete local source cache",
@@ -1047,9 +1091,9 @@
       "sourceWidth": 1920,
       "sourceHeight": 1080,
       "coordinateEvidence": "Creator coordinate caption visible at 717.5s: latitude 22.7, longitude 29.5. Pin identifies the filmed farming region, not every individual resource actor.",
-      "inventoryEvidence": "Polymer chapter711\u2013817s; overlay22.7/29.5 at717.5s; plant closeup727.5s. Resource is Organic Polymer from plants, not crafted Polymer.",
-      "harvestDemonstrated": false,
-      "evidenceLimitations": "The source shows this region and resource or method. A completed harvest and measured yield are not demonstrated in these clips.",
+      "inventoryEvidence": "Polymer chapter711\u2013817s; overlay22.7/29.5 at717.5s; plant closeup727.5s. Resource is Organic Polymer from plants, not crafted Polymer. At730s an ADDED32x Organic Polymer overlay appears while the filmed plant is harvested; the amount is a creator example, not a guaranteed yield.",
+      "harvestDemonstrated": true,
+      "evidenceLimitations": "",
       "steps": [
         {
           "id": "Resource-rag-polymer-plants-1",
@@ -1073,15 +1117,17 @@
         },
         {
           "id": "Resource-rag-polymer-plants-3",
-          "title": "Resource view",
+          "title": "Harvesting",
           "loop": "Resource-rag-polymer-plants-3",
           "poster": "Resource-rag-polymer-plants-3",
-          "startSeconds": 726,
-          "endSeconds": 729.5,
-          "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8&t=726s",
-          "sha256": "d5bbc43e476a48596514db48ad7587f501c63e74ac9478747fc5501ac87daebf"
+          "startSeconds": 728,
+          "endSeconds": 731.5,
+          "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8&t=728s",
+          "sha256": "6990d49bf5c3a286c1a273ccd48fc9987db085e0a9de2eaa6df2b745f16c3c7c"
         }
-      ]
+      ],
+      "sourcePlane": "ragnarok filmed region",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
     },
     {
       "sourceAcquisition": "Approved complete local source cache",
@@ -1128,7 +1174,9 @@
           "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8&t=837s",
           "sha256": "d3a61a39de973a033b5e6f1b202857d8c19b17cb882dd914170437f29503d51c"
         }
-      ]
+      ],
+      "sourcePlane": "ragnarok filmed region",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
     },
     {
       "sourceAcquisition": "Approved complete local source cache",
@@ -1175,7 +1223,9 @@
           "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8&t=1001s",
           "sha256": "e5f75857bc82d00a2eaf77a70a4da74d9ddfcc37b1e42d38393ea714cb6d69b7"
         }
-      ]
+      ],
+      "sourcePlane": "ragnarok filmed region",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
     },
     {
       "sourceAcquisition": "Approved complete local source cache",
@@ -1222,7 +1272,9 @@
           "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8&t=1077s",
           "sha256": "2ca745e723a146095a379933dad71b0f3ee4abd010d4a9090ae79c2b1e0bcdc4"
         }
-      ]
+      ],
+      "sourcePlane": "ragnarok filmed region",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
     },
     {
       "sourceAcquisition": "Approved complete local source cache",
@@ -1269,7 +1321,9 @@
           "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8&t=1126s",
           "sha256": "0633f52252ac10872908694deda131e345be1f500d24ad9a51a25128acf5fc31"
         }
-      ]
+      ],
+      "sourcePlane": "ragnarok filmed region",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
     },
     {
       "sourceAcquisition": "Approved complete local source cache",
@@ -1316,7 +1370,9 @@
           "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8&t=1232s",
           "sha256": "77637cb6b6ca10ed99999371bcda7f22920ee2086d338755a59738a278a8005d"
         }
-      ]
+      ],
+      "sourcePlane": "ragnarok filmed region",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
     },
     {
       "sourceAcquisition": "Approved complete local source cache",
@@ -1363,7 +1419,9 @@
           "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM&t=780s",
           "sha256": "bb4c862e14ada52015e92e1c89684234c70bc68da7e15fa138f8bb862aa233df"
         }
-      ]
+      ],
+      "sourcePlane": "the-island filmed region",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
     },
     {
       "sourceAcquisition": "Approved complete local source cache",
@@ -1410,7 +1468,9 @@
           "sourceURL": "https://www.youtube.com/watch?v=5IhlD3yzqjU&t=536s",
           "sha256": "d209bae32e46d21ca0c3d8d8cea36a72987ddbac0fbefa60548dedfaad5c9cc7"
         }
-      ]
+      ],
+      "sourcePlane": "ragnarok filmed region",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
     },
     {
       "sourceAcquisition": "Approved complete local source cache",
@@ -1457,7 +1517,9 @@
           "sourceURL": "https://www.youtube.com/watch?v=0JqFIlmuq9o&t=204s",
           "sha256": "dad0d535d5392237f03f3465ca4a6b42c8c0b43c2f059486aa93208dc7ae34fd"
         }
-      ]
+      ],
+      "sourcePlane": "the-island filmed region",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
     },
     {
       "sourceAcquisition": "Approved complete local source cache",
@@ -1504,7 +1566,9 @@
           "sourceURL": "https://www.youtube.com/watch?v=Xlsuehsu9oQ&t=101s",
           "sha256": "3c36c37e000de1df9aeee6b69968fbcd9ba1dced97e7625e506a15661a0b7ab1"
         }
-      ]
+      ],
+      "sourcePlane": "ragnarok filmed region",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
     },
     {
       "sourceAcquisition": "Approved complete local source cache",
@@ -1551,7 +1615,9 @@
           "sourceURL": "https://www.youtube.com/watch?v=DgvNoRqz4EE&t=134s",
           "sha256": "d58d3f3d7694e847af6ee27b384e0e495df92f45799de0bfd512704328577bad"
         }
-      ]
+      ],
+      "sourcePlane": "the-center filmed region",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
     },
     {
       "sourceAcquisition": "Approved complete local source cache",
@@ -1598,7 +1664,9 @@
           "sourceURL": "https://www.youtube.com/watch?v=biZPGe9eD5Y&t=44s",
           "sha256": "0534c484f2d40d60afd8a1e603fba8a92a4760471f6b055bfccac3a5df199a96"
         }
-      ]
+      ],
+      "sourcePlane": "the-island filmed region",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
     },
     {
       "sourceAcquisition": "Approved complete local source cache",
@@ -1645,7 +1713,9 @@
           "sourceURL": "https://www.youtube.com/watch?v=u_c-yTvCLek&t=164s",
           "sha256": "5ee8e51b92ecf9b5b27444b22b172ef0210207058a62741de5fc0791df613781"
         }
-      ]
+      ],
+      "sourcePlane": "ragnarok filmed region",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
     },
     {
       "sourceAcquisition": "Approved complete local source cache",
@@ -1692,7 +1762,9 @@
           "sourceURL": "https://www.youtube.com/watch?v=jkMVN1exw74&t=18s",
           "sha256": "6a1b7fcc0eb88222bd56d4619f231e7b6a314fc02719249dce8a9ef5b2b06e32"
         }
-      ]
+      ],
+      "sourcePlane": "ragnarok filmed region",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
     },
     {
       "sourceAcquisition": "Approved complete local source cache",
@@ -1739,7 +1811,9 @@
           "sourceURL": "https://www.youtube.com/watch?v=3oUZ_AoRLmg&t=97s",
           "sha256": "6dd9a1bde1e6cdbac765d1b5385eba1cefd61ac85f6a4a85a324ab6ccbdb7713"
         }
-      ]
+      ],
+      "sourcePlane": "the-island filmed region",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
     },
     {
       "sourceAcquisition": "Approved complete local source cache",
@@ -1786,7 +1860,9 @@
           "sourceURL": "https://www.youtube.com/watch?v=tj-7gfu6AHA&t=119s",
           "sha256": "96f1cf67af1a7ddca6b9fe46a86352d88840ce2f51873ba7fd5769861e732a00"
         }
-      ]
+      ],
+      "sourcePlane": "the-center filmed region",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
     },
     {
       "sourceAcquisition": "Approved complete local source cache",
@@ -1833,7 +1909,9 @@
           "sourceURL": "https://www.youtube.com/watch?v=6d_iRk7tFBk&t=321s",
           "sha256": "8a964ff21df34613f41fd877898c1704ffd330f3766d831ce97c2e09bc3a30fb"
         }
-      ]
+      ],
+      "sourcePlane": "the-island filmed region",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
     },
     {
       "sourceAcquisition": "Approved complete local source cache",
@@ -1847,8 +1925,8 @@
       "sourceHeight": 1080,
       "coordinateEvidence": "Same continuous ASA cave-farming sequence: HUD literally shows N19.36 47.68 at555s during Megatherium inventory after kills. The earlier100s map53.26/58.05 belongs to a different cave and is not used. Pin is interior farming region, not entrance or fixed creature spawn.",
       "inventoryEvidence": "Actual Megatherium attacks on Pulmonoscorpius/Araneo visible480\u2013540s. At550\u2013555s inventory contains Chitin icons in stacks10000/10000/242. These are creator/server totals, not promised yields; footage uses modified stack sizes.",
-      "harvestDemonstrated": false,
-      "evidenceLimitations": "The source shows this region and resource or method. A completed harvest and measured yield are not demonstrated in these clips.",
+      "harvestDemonstrated": true,
+      "evidenceLimitations": "",
       "steps": [
         {
           "id": "Resource-center-extra-lava-chitin-1",
@@ -1872,15 +1950,17 @@
         },
         {
           "id": "Resource-center-extra-lava-chitin-3",
-          "title": "Creature combat",
+          "title": "Creature loot",
           "loop": "Resource-center-extra-lava-chitin-3",
           "poster": "Resource-center-extra-lava-chitin-3",
-          "startSeconds": 527,
-          "endSeconds": 530.5,
-          "sourceURL": "https://www.youtube.com/watch?v=YU-ZCfZF8gk&t=527s",
-          "sha256": "578a026579d0e0fb6e70d8f44de99e5ba51eb41f9cf4fd7faa4cbe604cfe9155"
+          "startSeconds": 549,
+          "endSeconds": 552.5,
+          "sourceURL": "https://www.youtube.com/watch?v=YU-ZCfZF8gk&t=549s",
+          "sha256": "0f583cf2526c1a7672f37bb2ec018495fde8c0b8e3cf8dccad0ef029041b1815"
         }
-      ]
+      ],
+      "sourcePlane": "the-center filmed region",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
     },
     {
       "sourceAcquisition": "Approved complete local source cache",
@@ -1927,7 +2007,9 @@
           "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g&t=25s",
           "sha256": "b6841538d85e6a83307f1916496a945877ec038fdd7807d4a6135f92791d7cc5"
         }
-      ]
+      ],
+      "sourcePlane": "the-center filmed region",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
     },
     {
       "sourceAcquisition": "Initial native video chunks received through licensed tony-youtube download; full download ended with HTTP 403. Only fully decoded received ranges are used.",
@@ -1974,7 +2056,9 @@
           "sourceURL": "https://www.youtube.com/watch?v=k9IOWvnWMdg&t=30s",
           "sha256": "2b4010336ff890f1a40d8fc175754e68bb3974e852744067ba03b9669c64a432"
         }
-      ]
+      ],
+      "sourcePlane": "scorched-earth filmed region",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
     },
     {
       "sourceAcquisition": "Initial native video chunks received through licensed tony-youtube download; full download ended with HTTP 403. Only fully decoded received ranges are used.",
@@ -2021,7 +2105,9 @@
           "sourceURL": "https://www.youtube.com/watch?v=k9IOWvnWMdg&t=47s",
           "sha256": "60c74d054ce632136e34326704283cb939d05dbc0b2959adefe71764166be69f"
         }
-      ]
+      ],
+      "sourcePlane": "scorched-earth filmed region",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
     },
     {
       "sourceAcquisition": "Initial native video chunks received through licensed tony-youtube download; full download ended with HTTP 403. Only fully decoded received ranges are used.",
@@ -2068,7 +2154,9 @@
           "sourceURL": "https://www.youtube.com/watch?v=85xkdr_UYAo&t=19s",
           "sha256": "38909740fc7f05bcd574d2f538c5ca801828070d1794b924a055fda941760d47"
         }
-      ]
+      ],
+      "sourcePlane": "extinction filmed region",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
     },
     {
       "sourceAcquisition": "Initial native video chunks received through licensed tony-youtube download; full download ended with HTTP 403. Only fully decoded received ranges are used.",
@@ -2115,7 +2203,9 @@
           "sourceURL": "https://www.youtube.com/watch?v=WKNYEAeuSDA&t=28s",
           "sha256": "1e217dc8c536f6ad5f5769974c5ff2ed204f4b632ac8609d596590a9fd6225a9"
         }
-      ]
+      ],
+      "sourcePlane": "lost-colony filmed region",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
     },
     {
       "sourceAcquisition": "Initial native video chunks received through licensed tony-youtube download; full download ended with HTTP 403. Only fully decoded received ranges are used.",
@@ -2162,7 +2252,9 @@
           "sourceURL": "https://www.youtube.com/watch?v=boGcZ2neH6g&t=43s",
           "sha256": "db9b9479fa35e09fd6bbed74e52366f850dac2126132b46dfde73d90500454be"
         }
-      ]
+      ],
+      "sourcePlane": "valguero filmed region",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
     },
     {
       "sourceAcquisition": "Initial native video chunks received through licensed tony-youtube download; full download ended with HTTP 403. Only fully decoded received ranges are used.",
@@ -2209,7 +2301,9 @@
           "sourceURL": "https://www.youtube.com/watch?v=k73mk3nz0wI&t=15s",
           "sha256": "cc655320f559b01c02af4bcf629cf884ccc81e5f7bf33abcc4e9ff649dd2dbcf"
         }
-      ]
+      ],
+      "sourcePlane": "Astraeos: Phokintos region in the source revision",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
     },
     {
       "sourceAcquisition": "Initial native video chunks received through licensed tony-youtube download; full download ended with HTTP 403. Only fully decoded received ranges are used.",
@@ -2256,7 +2350,9 @@
           "sourceURL": "https://www.youtube.com/watch?v=BZVk5xrksxk&t=22s",
           "sha256": "e4f2615cf4d467a7bb0fb7dffa5fdca275746eb835bc9986a4a4cc8b2bee5f86"
         }
-      ]
+      ],
+      "sourcePlane": "Aberration: green/blue-zone filmed region",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
     },
     {
       "sourceAcquisition": "Initial native video chunks received through licensed tony-youtube download; full download ended with HTTP 403. Only fully decoded received ranges are used.",
@@ -2303,7 +2399,9 @@
           "sourceURL": "https://www.youtube.com/watch?v=a_Os1QOHqkE&t=29s",
           "sha256": "68695aba7d339c3d2078968154edd4b75adf18998d3b28d7d2ccfce0aa88a97a"
         }
-      ]
+      ],
+      "sourcePlane": "Aberration: green/blue-zone filmed region",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
     },
     {
       "sourceAcquisition": "Initial native video chunks received through licensed tony-youtube download; full download ended with HTTP 403. Only fully decoded received ranges are used.",
@@ -2350,7 +2448,9 @@
           "sourceURL": "https://www.youtube.com/watch?v=YTpXmtVTGNs&t=79s",
           "sha256": "ceff74a5e50f9fe711e66b47b3de2430d6ef77c91ff2d10c1020bd32e447ff89"
         }
-      ]
+      ],
+      "sourcePlane": "Genesis Part 1: Ocean biome, selected in the creator in-game map",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
     },
     {
       "sourceAcquisition": "Initial native video chunks received through licensed tony-youtube download; full download ended with HTTP 403. Only fully decoded received ranges are used.",
@@ -2397,7 +2497,58 @@
           "sourceURL": "https://www.youtube.com/watch?v=-A6rpnfcqtw&t=35s",
           "sha256": "d7b5694b3643babecb8646d2f85eb910194fb38458bd6636b92b9b10b5be678e"
         }
-      ]
+      ],
+      "sourcePlane": "Genesis Part 1: filmed Arctic biome; coordinates belong to the creator in-game map",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
+    },
+    {
+      "sourceAcquisition": "Approved complete local source cache",
+      "spotID": "rag-river-sap-tap",
+      "map": "ragnarok",
+      "videoID": "0i0-XEV85m8",
+      "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "coordinateEvidence": "Literal in-game camera map at 935\u2013938s reads latitude22.4,longitude26.7. Same tapped tree appears before and after the map. Pin marks the filmed tree region.",
+      "inventoryEvidence": "The source opens the installed Tree Sap Tap at932s; its inventory visibly contains the orange Sap item. This is collected production, not a promised fixed yield or timing.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "The source shows an installed Sap Tap and Sap in its inventory. A collection transfer or elapsed production time is not demonstrated.",
+      "steps": [
+        {
+          "id": "Resource-rag-river-sap-tap-1",
+          "title": "Area / coordinates",
+          "loop": "Resource-rag-river-sap-tap-1",
+          "poster": "Resource-rag-river-sap-tap-1",
+          "startSeconds": 934.5,
+          "endSeconds": 938.0,
+          "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8&t=934s",
+          "sha256": "bebf7d23f183b057a4b9d2a59f20ca747a29c9cc749846add58af1475e4f68fa"
+        },
+        {
+          "id": "Resource-rag-river-sap-tap-2",
+          "title": "Approach / surroundings",
+          "loop": "Resource-rag-river-sap-tap-2",
+          "poster": "Resource-rag-river-sap-tap-2",
+          "startSeconds": 927.5,
+          "endSeconds": 931.0,
+          "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8&t=927s",
+          "sha256": "6ec3c60cf1fe02110f13bfedd76b0526c5ad414042239241f93c345cf671e2ae"
+        },
+        {
+          "id": "Resource-rag-river-sap-tap-3",
+          "title": "Tap inventory",
+          "loop": "Resource-rag-river-sap-tap-3",
+          "poster": "Resource-rag-river-sap-tap-3",
+          "startSeconds": 931,
+          "endSeconds": 934.5,
+          "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8&t=931s",
+          "sha256": "0fa40171916ca8475cd979e086bb37365327d9e00cff66f4da0c56c215014e55"
+        }
+      ],
+      "sourcePlane": "ragnarok filmed region",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
     }
   ],
   "coverage": [
@@ -2415,7 +2566,7 @@
     },
     {
       "map": "ragnarok",
-      "verifiedRegions": 18,
+      "verifiedRegions": 19,
       "status": "source-verified",
       "reason": "Filmed GPS regions reviewed against source footage; individual actors and respawns vary."
     },

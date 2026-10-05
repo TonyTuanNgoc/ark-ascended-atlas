@@ -29,7 +29,7 @@ struct ArmyTarget: Decodable, Identifiable {
 extension ArkMap {
     var campaign: BossCampaign? { Self.campaigns[self] ?? nil }
     private static let campaigns = Dictionary(uniqueKeysWithValues: allCases.map { ($0, try? load(BossCampaign.self, name: $0.rawValue + "-campaign")) })
-    func bossName(_ id: String) -> String { self == .ragnarok ? RagnarokBoss.all.first { $0.id == id }?.name ?? id : bosses.first { $0.id == id }?.name ?? id }
+    func bossName(_ id: String) -> String { self == .ragnarok ? RagnarokBoss.all.first { $0.id == id }?.name ?? id : bosses.first { $0.id == id }?.name ?? id.replacingOccurrences(of: "-", with: " ").capitalized }
     func bossImage(_ id: String) -> String { id == "nunatak" ? "Nunatak-Gamma" : "Boss-" + id }
 }
 
@@ -54,8 +54,15 @@ struct BossCampaignScreen: View {
                                 HStack(spacing: 18) {
                                     CreatureCutout(asset: map.bossImage(id)).frame(width: 100, height: 80)
                                     VStack(alignment: .leading, spacing: 10) {
-                                        NavigationLink(value: GuideDestination.boss(id)) { Label(map.bossName(id), systemImage: "chevron.right") }.accessibilityIdentifier("boss-" + id)
-                                        NavigationLink(value: GuideDestination.army(id)) { Label("Creature army & preparation stats", systemImage: "pawprint.fill") }.labelStyle(.iconOnly).accessibilityLabel("Creature army & preparation stats").frame(width: 44, height: 44).accessibilityIdentifier("army-" + id)
+                                        if map.bosses.contains(where: { $0.id == id }) || map == .ragnarok {
+                                            NavigationLink(value: GuideDestination.boss(id)) { Label(map.bossName(id), systemImage: "chevron.right") }.accessibilityIdentifier("boss-" + id)
+                                        } else {
+                                            Text(map.bossName(id)).font(.headline)
+                                            Text("Detailed ASA requirements are being verified.").font(.caption).foregroundStyle(.secondary)
+                                        }
+                                        if campaign.loadouts.contains(where: { $0.bossID == id && !$0.options.isEmpty }) {
+                                            NavigationLink(value: GuideDestination.army(id)) { Label("Creature army & preparation stats", systemImage: "pawprint.fill") }.labelStyle(.iconOnly).accessibilityLabel("Creature army & preparation stats").frame(width: 44, height: 44).accessibilityIdentifier("army-" + id)
+                                        }
                                     }.font(.headline)
                                     Spacer(minLength: 0)
                                 }.padding(.vertical, 6)
@@ -119,7 +126,16 @@ struct BossArmyScreen: View {
                         Text("Controls & risks").font(.title2.bold()); VisualBrief(text: option.play)
                     }.cardStyle()
                     NavigationLink(value: GuideDestination.preparation) { Label("Choosing levels, breeding and stat allocation", systemImage: "graduationcap.fill") }
-                    NavigationLink(value: GuideDestination.boss(bossID)) { Label("Profile, tribute & route to the boss", systemImage: "shield.lefthalf.filled") }
+                    if map.bosses.contains(where: { $0.id == bossID }) || map == .ragnarok {
+                        NavigationLink(value: GuideDestination.boss(bossID)) { Label("Profile, tribute & route to the boss", systemImage: "shield.lefthalf.filled") }
+                    }
+                    VStack(alignment: .leading, spacing: 12) {
+                        Text("Evidence & limits").font(.title2.bold())
+                        ForEach(guide.sources, id: \.url) { source in
+                            if let url = URL(string: source.url) { Link(source.title, destination: url) }
+                            VisualBrief(text: source.note).font(.caption)
+                        }
+                    }.cardStyle()
                 } else { Text("No army guide is available for this boss yet.") }
             }.padding(24).frame(maxWidth: 1000).frame(maxWidth: .infinity)
         }.navigationTitle("Creature army").navigationBarTitleDisplayMode(.inline)

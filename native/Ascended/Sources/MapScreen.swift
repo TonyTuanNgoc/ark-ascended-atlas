@@ -51,6 +51,9 @@ struct MapScreen: View {
                         } else if let id = point.routeID, map.exploration?.routes.contains(where: { $0.id == id }) == true {
                             NavigationLink(value: GuideDestination.cave(id)) { Image(systemName: "mountain.2.fill") }.accessibilityLabel("Cave")
                         }
+                        if let id = point.bossID, map.bosses.contains(where: { $0.id == id }) {
+                            NavigationLink(value: GuideDestination.boss(id)) { Image(systemName: "shield.lefthalf.filled") }.accessibilityLabel("Boss profile")
+                        }
                         if point.layer == .base, let spot = map.bases?.locations.first(where: { "base-" + $0.id == point.id }) {
                             NavigationLink(value: GuideDestination.base(spot.id)) { Image(systemName: "house.fill") }.accessibilityLabel("Base profile").accessibilityIdentifier("mapBaseProfile")
                         }
@@ -62,7 +65,7 @@ struct MapScreen: View {
                     }
                 }
             }
-            controls.frame(width: min(240, max(190, geometry.size.width * 0.24)))
+            controls.frame(width: 240)
         }.padding(8)
         .onAppear {
             if initialResources {filters.resources=Set(resourceTypes)}

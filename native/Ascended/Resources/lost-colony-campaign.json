@@ -1,0 +1,36 @@
+{
+  "summary": "Lost Colony has its own ASA campaign and Red-Handed encounters with Lost King and Lost Queen. Map access requires the Lost Colony Expansion Pass.",
+  "sharedPreparation": [
+    "Record difficulty, Single Player Settings and mods before comparing your army with official-server videos.",
+    "Start with Gamma; measure health, ammunition and saddle losses before raising difficulty. Total creature level is not a substitute for actual stats.",
+    "Keep a breeding pair and spare equipment at base. Fully heal the team and rehearse whistle groups before summoning.",
+    "Check tribute, permitted creatures, timer and rewards at the current ASA terminal; do not copy ASE requirements."
+  ],
+  "steps": [
+    {
+      "id": "establish",
+      "title": "1 · Establish a cold-weather base",
+      "reason": "Cold protection, supply reserves and transport sustain longer mission routes.",
+      "kind": "Preparation",
+      "bossIDs": []
+    },
+    {
+      "id": "campaign",
+      "title": "2 · Campaign access",
+      "reason": "Follow the current objectives and unlocks in your save; do not substitute artifact requirements from older maps.",
+      "kind": "Campaign",
+      "bossIDs": []
+    },
+    {
+      "id": "redhand",
+      "title": "3 · Prepare for Red-Handed",
+      "reason": "Lost King and Lost Queen belong to the map endgame. This guide has no verified minimum army stats; check the current encounter requirements before risking your breeding army.",
+      "kind": "Endgame",
+      "bossIDs": [
+        "lost-king",
+        "lost-queen"
+      ]
+    }
+  ],
+  "loadouts": []
+}

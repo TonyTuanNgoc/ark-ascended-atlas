@@ -1,0 +1,39 @@
+{
+  "summary": "Three Titans and King Titan form the Extinction progression. King Titan is an open-world encounter and cannot be planned as a standard 20-tame arena.",
+  "sharedPreparation": [
+    "Record difficulty, Single Player Settings and mods before comparing your army with official-server videos.",
+    "Start with Gamma; measure health, ammunition and saddle losses before raising difficulty. Total creature level is not a substitute for actual stats.",
+    "Keep a breeding pair and spare equipment at base. Fully heal the team and rehearse whistle groups before summoning.",
+    "Check tribute, permitted creatures, timer and rewards at the current ASA terminal; do not copy ASE requirements."
+  ],
+  "steps": [
+    {
+      "id": "economy",
+      "title": "1 · City supplies and defense events",
+      "reason": "Build ammunition, saddle and resource reserves. Choose OSD or Element Vein difficulty your team can sustain through the waves.",
+      "kind": "Preparation",
+      "bossIDs": []
+    },
+    {
+      "id": "titans",
+      "title": "2 · Forest, Desert and Ice Titan",
+      "reason": "Plan each encounter separately. Killing and taming are different objectives; taming requires handling corruption rather than immediately killing the Titan.",
+      "kind": "Titans",
+      "bossIDs": [
+        "forest-titan",
+        "desert-titan",
+        "ice-titan"
+      ]
+    },
+    {
+      "id": "king",
+      "title": "3 · King Titan and ascension",
+      "reason": "Prepare Titan and tame support, and check difficulty access at the terminal. Assign open-world combat roles before summoning.",
+      "kind": "Ascension",
+      "bossIDs": [
+        "king-titan"
+      ]
+    }
+  ],
+  "loadouts": []
+}

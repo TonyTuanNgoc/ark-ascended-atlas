@@ -98,5 +98,46 @@
     "title": "Resource view",
     "duration": 3.5,
     "sourceAcquisition": "Initial native video chunks received through licensed tony-youtube download; full download ended with HTTP 403. Only fully decoded received ranges are used."
+  },
+  "rag-polymer-plants": {
+    "starts": [
+      716,
+      721,
+      728
+    ],
+    "title": "Harvesting",
+    "duration": 3.5,
+    "sourceAcquisition": "Approved complete local source cache"
+  },
+  "island-redwood-paste": {
+    "starts": [
+      652,
+      657,
+      659
+    ],
+    "title": "Dam loot",
+    "duration": 3.5,
+    "sourceAcquisition": "Approved complete local source cache"
+  },
+  "center-extra-lava-chitin": {
+    "starts": [
+      553,
+      479,
+      549
+    ],
+    "title": "Creature loot",
+    "duration": 3.5,
+    "sourceAcquisition": "Approved complete local source cache"
+  },
+  "rag-river-sap-tap": {
+    "starts": [
+      934.5,
+      927.5,
+      931
+    ],
+    "title": "Tap inventory",
+    "duration": 3.5,
+    "sourceAcquisition": "Approved complete local source cache",
+    "evidenceLimitations": "The source shows an installed Sap Tap and Sap in its inventory. A collection transfer or elapsed production time is not demonstrated."
   }
 }

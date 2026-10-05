@@ -11,4 +11,19 @@ Authorized standalone native cable delivery, no TestFlight/Tony OS/web. Keep use
 - [x] All-map source-layer inventory and precise-location audits.
 - [x] Video-source inventories, genuine 3-loop sets and remaining source restrictions.
 - [x] Build/workshop audit, GPS/selection/save tests, visual and scoped UI QA, independent review.
-- [ ] Signed build passes; two device-install attempts interrupted. Final02:04:18 readback remains0.18.0/build19. USB/unlock check and version20 install/launch awaiting external connection change. Implementation/report committed and pushed; strict portrait check separately skipped for Simulator rotation limitation.
+- [x] Native delivery recovered after USB reconnection: signed0.20.0/build21 installed and launched with fresh version readback. Earlier20network install failures remain recorded in their report; genuine portrait QA now passes after Ascended-only Simulator restart.
+
+## Continuing unfinished work
+
+User explicitly requested completion of all outstanding work on October 5. Track evidence separately from UI implementation; earlier source inventories are not exhaustive content delivery.
+
+- [ ] Add ASA-specific verified cave entrances, obelisks and terminals for all available map planes; link existing cave details where applicable; distinguish approach points from remote boss arenas.
+- [ ] Audit out-of-plane Extinction markers and terrain calibration; never clamp a source coordinate or promise runtime GPS accuracy based only on atlas pixel math.
+- [x] Acquisition coverage audit ledger for454category entries across11planes, including creature drops and crafted intermediates;52filmed regions/156loops and15harvest/loot guides.266source verification gaps remain explicitly tracked below.
+- [ ] Exhaustive verified video-backed harvesting locations and three actual harvesting loops per supported resource spot. Track rights-authorized source download failures explicitly.
+- [x] Real portrait framebuffer proof and readable expanded map rail; landscape regression passed.
+- [ ] Complete expansion-map cave walkthrough media, entrance photographs and concise route preparations.
+- [ ] Complete expansion-map creatures and boss army campaigns with current ASA source evidence.
+- [ ] Audit all missing library/artifact/creature artwork; preserve requested white creature icons.
+- [ ] Creator tutorial links and verified build counts for all fifteen house examples, preserving original source geometry and separating suggested fit-out from creator counts.
+- [x] Consolidated signed native build, actual iPad installed-version readback and launch evidence.0.20.0/build21 final install succeeded; report/systemlog and commit/push accompany this delivery. No TestFlight, Tony OS or web domain.
