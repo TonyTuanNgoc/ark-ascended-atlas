@@ -1,0 +1,119 @@
+[
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "20C9346D-B0E6-4239-8152-1D85ADD57BA6",
+        "deviceName" : "Ascended iPad QA",
+        "exportedFileName" : "7D98B0D8-CA10-45EC-809C-F3F36300F146.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Farming-clean-footage-LAT-LON_0_FE2DEFB5-08F5-4DE4-83FF-603F9FDB4EFB.png",
+        "timestamp" : 1791391312.174
+      }
+    ],
+    "testIdentifier" : "Ascended24UITests/testFarmingResourceFirstLayoutAndSingleClip()",
+    "testIdentifierURL" : "test://com.apple.xcode/Ascended/AscendedUITests/Ascended24UITests/testFarmingResourceFirstLayoutAndSingleClip"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "20C9346D-B0E6-4239-8152-1D85ADD57BA6",
+        "deviceName" : "Ascended iPad QA",
+        "exportedFileName" : "12ACD750-8A4F-4629-8D80-3AD29E27EE3C.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "One-row-navigation-Ragnarok_0_EFE935E2-8B33-4908-A05D-4EFF381B5932.png",
+        "timestamp" : 1791391322.806
+      }
+    ],
+    "testIdentifier" : "Ascended24UITests/testSingleRowCombinedMapPickerAndNames()",
+    "testIdentifierURL" : "test://com.apple.xcode/Ascended/AscendedUITests/Ascended24UITests/testSingleRowCombinedMapPickerAndNames"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "20C9346D-B0E6-4239-8152-1D85ADD57BA6",
+        "deviceName" : "Ascended iPad QA",
+        "exportedFileName" : "D5D4DF87-39B4-495E-ACB7-ED51F984DC52.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Atlas-full-square-map_0_C32834D8-F2A1-4CAF-815E-6049BD1C7E96.png",
+        "timestamp" : 1791391328.863
+      }
+    ],
+    "testIdentifier" : "Ascended28UITests/testAtlasFitsWholeImageAndHasOnlyDedicatedLayers()",
+    "testIdentifierURL" : "test://com.apple.xcode/Ascended/AscendedUITests/Ascended28UITests/testAtlasFitsWholeImageAndHasOnlyDedicatedLayers"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "20C9346D-B0E6-4239-8152-1D85ADD57BA6",
+        "deviceName" : "Ascended iPad QA",
+        "exportedFileName" : "87FD781C-4330-4AB7-9829-E1B72664E2CD.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Base-Locations-ragnarok_0_BDBA7574-431C-491D-9CCA-C98600B30EA7.png",
+        "timestamp" : 1791391353.307
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "20C9346D-B0E6-4239-8152-1D85ADD57BA6",
+        "deviceName" : "Ascended iPad QA",
+        "exportedFileName" : "9CAA875A-BCFB-42B8-AEA8-FA0C1D5EB4B7.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Base-Locations-the-center_0_E8FD1B6F-C38F-4EA7-A3FE-5061CDD0D874.png",
+        "timestamp" : 1791391347.024
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "20C9346D-B0E6-4239-8152-1D85ADD57BA6",
+        "deviceName" : "Ascended iPad QA",
+        "exportedFileName" : "86DE7B52-4D19-4A8F-81B1-F7FB6A0F12AA.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Base-Locations-the-island_0_EC3D7A41-FFED-479C-96B2-046E1AC869BC.png",
+        "timestamp" : 1791391339.709
+      }
+    ],
+    "testIdentifier" : "Ascended28UITests/testBaseLocationsHasTenChoicesForEachMainMap()",
+    "testIdentifierURL" : "test://com.apple.xcode/Ascended/AscendedUITests/Ascended28UITests/testBaseLocationsHasTenChoicesForEachMainMap"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "20C9346D-B0E6-4239-8152-1D85ADD57BA6",
+        "deviceName" : "Ascended iPad QA",
+        "exportedFileName" : "98F9502D-E5B3-487B-B823-613017FEB3F2.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Farming-selected-pin-single-clip_0_CF10515A-AC5D-450E-A2C6-CD72E2DF6313.png",
+        "timestamp" : 1791391368.913
+      }
+    ],
+    "testIdentifier" : "Ascended28UITests/testPinSelectsExactlyOneClipAndHighlightsWithoutZoom()",
+    "testIdentifierURL" : "test://com.apple.xcode/Ascended/AscendedUITests/Ascended28UITests/testPinSelectsExactlyOneClipAndHighlightsWithoutZoom"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "20C9346D-B0E6-4239-8152-1D85ADD57BA6",
+        "deviceName" : "Ascended iPad QA",
+        "exportedFileName" : "86D0290B-2511-497F-9C7A-E596C27C8CE5.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Compact-Achatina-profile_0_A90ED208-FC9B-407C-ABDF-5D47B483BD49.png",
+        "timestamp" : 1791391383.493
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "20C9346D-B0E6-4239-8152-1D85ADD57BA6",
+        "deviceName" : "Ascended iPad QA",
+        "exportedFileName" : "76B13718-7E7C-4FF3-82AD-52569B69392C.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Bright-Alpha-creatures_0_81A0CBD5-2264-4429-85F6-DEF0CB023524.png",
+        "timestamp" : 1791391380.74
+      }
+    ],
+    "testIdentifier" : "Ascended29UITests/testGroupedNavigationAndCompactCreatureProfile()",
+    "testIdentifierURL" : "test://com.apple.xcode/Ascended/AscendedUITests/Ascended29UITests/testGroupedNavigationAndCompactCreatureProfile"
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "version": "0.28.0",
+  "build": "29",
+  "simulatorUUID": "20C9346D-B0E6-4239-8152-1D85ADD57BA6",
+  "installedApp": "/Volumes/TONY SSD/APP_DATA/Xcode/CoreSimulator/Devices/20C9346D-B0E6-4239-8152-1D85ADD57BA6/data/Containers/Bundle/Application/361C66EB-7437-4F8F-9B35-0C80CA3F2135/Ascended.app",
+  "launchPID": 85281,
+  "unitTestsPassed": 25,
+  "uniqueScopedUITestsPassed": 9,
+  "finalResults": [
+    "Test-Ascended-2026.10.07_23-40-12-+0700.xcresult",
+    "Test-Ascended-2026.10.07_23-43-47-+0700.xcresult"
+  ],
+  "physicalInstall": false,
+  "testFlight": false,
+  "webDeployment": false,
+  "sourceDetailRetained": true,
+  "tileFadeDuration": 0,
+  "remotePushStatus": "Blocked: GitHub receive-pack Internal Server Error on three attempts; remote remains build28 commit2c5d2ce"
+}

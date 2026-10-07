@@ -104,3 +104,7 @@ Centered full-card map selector and chevron, larger centered module headings and
 ## 2026-10-07 — Ascended 0.27.0 (28)
 
 Removed Field Guide from the module rail; replaced Base Building entry with three-column Base Locations and10 genuine photographed candidates each forRagnarok/Island/Center. CenterGPS remains explicitly provisional;25new images preserve source320×180. Atlas excludesResources/Bases, fits originalimageaspect and widensfilterrail; fixedfull-rowexpansiontapregion. Farming selects exactlyone matchingclip withoutzoom, withlargerheading, contrastinghighlightedpins andseparatezoomcontrols.24unit+9unique scopedUIcases pass; finalSimulatorbuild28/cataloguebytes readback+PID77043verified. Commit/push andSimulator-onlydelivery; noTonyOS/TestFlight/hardware/webdomain. Report:codex-reports/2026-10-07-ascended28-selected-resource-pin.md.
+
+## 2026-10-07 — Ascended 0.28.0 (29)
+
+Grouped one-row rail in requestedStory/Atlas → Farming/Equipment/BaseLocations → Creatures/ArtifactsCaves/Bosses order. SingleDinosaurs&Creatures heading/count, categoryicons, brightAlpha/Corrupted/elementalWyvern recognition accents andthree-column landscapeprofiles. Synchronous decodedmapoverview undertransparent detailtiles withzero fade preservesoriginalsourcezoom/GPS andremovesmissing blacktiles.25unit+9unique scopedUIcases pass; first-framepixel/cropGPS andpersonalpersistence verified. Simulator29readback+launchPID85281; standalone scope, noTonyOS/TestFlight/hardware/webdomain. Report:codex-reports/2026-10-07-ascended29-creatures-navigation-rendering.md.

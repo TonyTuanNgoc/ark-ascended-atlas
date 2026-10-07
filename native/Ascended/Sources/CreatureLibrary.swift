@@ -18,18 +18,10 @@ struct CreatureLibrary: View {
                 }
                 ScrollView {
                     VStack(alignment: .leading, spacing: 20) {
-                        HStack(alignment: .firstTextBaseline) {
-                            VStack(alignment: .leading, spacing: 6) {
-                                Text("Dinosaurs & creatures").font(.largeTitle.bold())
-                                Text(map.name).foregroundStyle(.secondary)
-                            }
-                            Spacer()
-                            Text("\(items.count)").font(.largeTitle.bold()).foregroundStyle(.cyan)
-                        }
                         ScrollView(.horizontal, showsIndicators: false) {
                             HStack(spacing: 8) {
                                 ForEach(filters, id: \.self) { item in
-                                    Button(item) { filter = item }
+                                    Button { filter = item } label: { Label(item, systemImage: Self.filterIcon(item)).font(.system(size: 15, weight: .semibold)) }
                                         .buttonStyle(.bordered).tint(filter == item ? .cyan : .gray)
                                         .accessibilityIdentifier("filter-" + (["All": "Tất cả", "Land": "Trên cạn", "Flying": "Bay", "Aquatic": "Dưới nước"][item] ?? item))
                                 }
@@ -48,11 +40,15 @@ struct CreatureLibrary: View {
                         }
                     }.padding(24)
                 }
-                .searchable(text: $search, placement: .navigationBarDrawer(displayMode: .always), prompt: "Search creatures on " + map.name)
+                .searchable(text: $search, placement: .navigationBarDrawer(displayMode: .always), prompt: "Search dinosaurs & creatures")
                 .accessibilityIdentifier("creatureLibrary")
             }
         }.background(Color(red: 0.025, green: 0.045, blue: 0.065))
     }
+    static func filterIcon(_ name: String) -> String {
+        switch name { case "Land": "pawprint.fill"; case "Flying": "bird.fill"; case "Aquatic": "fish.fill"; case "Alpha": "flame.fill"; case "DLC": "sparkles"; default: "square.grid.2x2.fill" }
+    }
+
 }
 
 struct CreaturePortrait: View {
@@ -85,66 +81,68 @@ struct CreatureDetail: View {
     @Environment(\.arkMap) private var map
     let creature: Creature
     var body: some View {
-        ScrollView {
-            VStack(alignment: .leading, spacing: 22) {
-                HStack(spacing: 22) {
-                    CreaturePortrait(creature: creature).frame(width: 120, height: 120)
-                    VStack(alignment: .leading, spacing: 8) {
-                        Text(creature.name).font(.largeTitle.bold())
-                        Text(map.name + " · " + creature.group).foregroundStyle(.secondary)
-                        if !creature.dlc.isEmpty { Label(creature.dlc, systemImage: "lock.open.fill").font(.subheadline).foregroundStyle(.orange) }
-                    }
-                }
-                if let notes = creature.archive?.notes, !notes.isEmpty {
-                    section("Field guide", text: notes)
-                }
-                if !creature.updateNote.isEmpty && creature.updateNote != creature.archive?.notes {
-                    section("Recent updates", text: creature.updateNote)
-                }
-                if creature.detailAvailable {
-                    VStack(alignment: .leading, spacing: 12) {
-                        Text("Taming").font(.title2.bold())
-                        if !creature.diet.isEmpty { row("Diet", creature.diet) }
-                        if let tameable = creature.tameable { row("Directly tameable", tameable ? "Yes" : "No") }
-                        if creature.tameable == true {
-                            if !creature.method.isEmpty && creature.method != "X" { row("Method", translatedMethod(creature.method)) }
-                            if !creature.foods.isEmpty { FactGrid(matches: VisualFacts.items(creature.foods)) }
+        GeometryReader { geometry in
+            ScrollView {
+                VStack(alignment: .leading, spacing: 16) {
+                    HStack(spacing: 18) {
+                        CreaturePortrait(creature: creature).frame(width: 84, height: 84)
+                        VStack(alignment: .leading, spacing: 7) {
+                            Text(creature.name).font(.system(size: 28, weight: .bold, design: .rounded))
+                            Label(creature.group, systemImage: CreatureLibrary.filterIcon(creature.group)).font(.subheadline).foregroundStyle(.secondary)
+                            if !creature.dlc.isEmpty { Label(creature.dlc, systemImage: "sparkles").font(.caption).foregroundStyle(.orange) }
                         }
-                    }.cardStyle()
-                    if !creature.stats.isEmpty {
-                        VStack(alignment: .leading, spacing: 14) {
-                            Text("Base stats").font(.title2.bold())
-                            ForEach(creature.stats, id: \.label) { stat in
-                                row(stat.label, stat.value.formatted(.number.precision(.fractionLength(0...2))))
-                            }
-                        }.cardStyle()
                     }
-                    if !creature.drops.isEmpty { itemSection("Loot", items: creature.drops) }
-                    if !creature.immobilizedBy.isEmpty { itemSection("Immobilization", items: creature.immobilizedBy) }
-                } else {
-                    section("Listed on " + map.name, text: "Taming details are being added.")
-                }
-            }.padding(24).frame(maxWidth: 1000).frame(maxWidth: .infinity)
+                    let columns = geometry.size.width > 750 ? 3 : 1
+                    LazyVGrid(columns: Array(repeating: GridItem(.flexible(), alignment: .top), count: columns), alignment: .leading, spacing: 14) {
+                        if creature.detailAvailable {
+                            panel("Taming", symbol: "hand.raised.fill") {
+                                HStack(spacing: 8) {
+                                    if !creature.diet.isEmpty { fact("Diet", value: creature.diet, icon: creature.diet.contains("Herbivore") ? "leaf.fill" : creature.diet.contains("Carnivore") ? "fish.fill" : "fork.knife") }
+                                    if let tameable = creature.tameable { fact("Tameable", value: tameable ? "Tameable" : "Untameable", icon: tameable ? "checkmark.seal.fill" : "xmark.seal.fill") }
+                                }
+                                if creature.tameable == true {
+                                    if !creature.method.isEmpty && creature.method != "X" { fact("Method", value: creature.method, icon: creature.method.contains("Knockout") ? "zzz" : "hand.draw.fill") }
+                                    if !creature.foods.isEmpty { Text("Preferred food").font(.caption.bold()).foregroundStyle(.secondary); FactGrid(matches: VisualFacts.items(creature.foods)) }
+                                }
+                            }.accessibilityIdentifier("creature-taming-panel")
+                            panel("Base stats", symbol: "chart.bar.fill") {
+                                LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 8) {
+                                    ForEach(creature.stats, id: \.label) { stat in
+                                        fact(stat.label, value: stat.value.formatted(.number.precision(.fractionLength(0...2))), icon: VisualFacts.symbol(for: stat.label))
+                                    }
+                                }
+                                Text("Wild base values · level and server settings affect final stats.").font(.caption2).foregroundStyle(.secondary)
+                            }.accessibilityIdentifier("creature-stats-panel")
+                            panel("Loot & immobilization", symbol: "shippingbox.fill") {
+                                if !creature.drops.isEmpty { Text("Loot").font(.caption.bold()).foregroundStyle(.secondary); FactGrid(matches: VisualFacts.items(creature.drops)) }
+                                if !creature.immobilizedBy.isEmpty { Text("Immobilization").font(.caption.bold()).foregroundStyle(.secondary); FactGrid(matches: VisualFacts.items(creature.immobilizedBy)) }
+                            }.accessibilityIdentifier("creature-loot-panel")
+                        } else {
+                            panel("Profile", symbol: "book.closed.fill") { Text("Taming details are being added.").font(.subheadline).foregroundStyle(.secondary) }
+                        }
+                    }.accessibilityIdentifier("creature-profile-columns")
+                    if let notes = creature.archive?.notes, !notes.isEmpty { notePanel("Practical notes", text: notes) }
+                    if !creature.updateNote.isEmpty && creature.updateNote != creature.archive?.notes { notePanel("Recent updates", text: creature.updateNote) }
+                    Link(destination: URL(string: creature.sourceURL)!) { Label("Creature reference", systemImage: "book.closed") }.font(.caption).foregroundStyle(.cyan)
+                }.padding(20)
+            }
         }.navigationTitle(creature.name).navigationBarTitleDisplayMode(.inline)
             .background(Color(red: 0.025, green: 0.045, blue: 0.065))
     }
-    private func translatedMethod(_ value: String) -> String {
-        switch value { case "Knockout": "Knockout"; case "Passive": "Passive taming"; case "Special": "Special method"; default: value }
+    private func fact(_ label: String, value: String, icon: String) -> some View {
+        VStack(alignment: .leading, spacing: 6) {
+            Label(label, systemImage: icon).font(.caption).foregroundStyle(.cyan)
+            Text(value).font(.system(size: 16, weight: .semibold)).fixedSize(horizontal: false, vertical: true)
+        }.padding(10).frame(maxWidth: .infinity, alignment: .leading).background(.white.opacity(0.04), in: RoundedRectangle(cornerRadius: 10))
     }
-    private func itemSection(_ title: String, items: [String]) -> some View {
-        VStack(alignment: .leading, spacing: 12) { Text(title).font(.title2.bold()); FactGrid(matches: VisualFacts.items(items)) }.cardStyle()
-    }
-    private func row(_ label: String, _ value: String) -> some View {
-        VStack(alignment: .leading, spacing: 4) {
-            Label(label, systemImage: VisualFacts.symbol(for: label)).labelStyle(.iconOnly).accessibilityLabel(label).foregroundStyle(.cyan)
-            if VisualFacts.matches(value).isEmpty { Text(value).textSelection(.enabled) }
-            else { FactGrid(matches: VisualFacts.matches(value)) }
-        }
-    }
-    private func section(_ title: String, text: String) -> some View {
+    private func panel<Content: View>(_ title: String, symbol: String, @ViewBuilder content: () -> Content) -> some View {
         VStack(alignment: .leading, spacing: 12) {
-            Text(title).font(.title2.bold()); VisualBrief(text: text)
-        }.frame(maxWidth: .infinity, alignment: .leading).cardStyle()
+            Label(title, systemImage: symbol).font(.headline).foregroundStyle(.cyan)
+            content()
+        }.padding(14).frame(maxWidth: .infinity, alignment: .leading).background(.white.opacity(0.055), in: RoundedRectangle(cornerRadius: 14))
+    }
+    private func notePanel(_ title: String, text: String) -> some View {
+        panel(title, symbol: "lightbulb.fill") { Text(text).font(.subheadline).fixedSize(horizontal: false, vertical: true) }
     }
 }
 
@@ -155,13 +153,23 @@ extension View {
     }
 }
 
-/// Species dossier silhouettes remain white in every creature context.
+/// White dossier silhouettes use bright, source-backed accents for recognizable variants.
 struct CreatureSilhouetteAliases: Decodable {
     let aliases: [String:String]
     static let shared = (try? ArkMap.load(CreatureSilhouetteAliases.self, name: "creature-silhouette-aliases")) ?? CreatureSilhouetteAliases(aliases: [:])
 }
 struct CreatureAvatar: View {
     let asset: String
+    static func accent(for asset: String) -> Color {
+        let id = asset.lowercased()
+        if id.contains("alpha-") { return Color(red: 1, green: 0.30, blue: 0.34) }
+        if id.contains("corrupted-") { return Color(red: 0.86, green: 0.48, blue: 1) }
+        if id.contains("fire-wyvern") { return Color(red: 1, green: 0.60, blue: 0.27) }
+        if id.contains("lightning-wyvern") { return Color(red: 0.63, green: 0.66, blue: 1) }
+        if id.contains("poison-wyvern") { return Color(red: 0.58, green: 1, blue: 0.40) }
+        if id.contains("ice-wyvern") { return Color(red: 0.65, green: 0.92, blue: 1) }
+        return .white
+    }
     private var silhouette: UIImage? {
         if let image = UIImage(named: asset) { return image }
         if let name = CreatureSilhouetteAliases.shared.aliases[asset.replacingOccurrences(of: "Dino-", with: "")], let image = UIImage(named: name) { return image }
@@ -171,8 +179,8 @@ struct CreatureAvatar: View {
         return UIImage(named: "Dino-" + base)
     }
     var body: some View {
-        if let image = silhouette { Image(uiImage: image).renderingMode(.template).resizable().scaledToFit().foregroundStyle(.white) }
-        else { Image(systemName: "pawprint.fill").resizable().scaledToFit().foregroundStyle(.white).padding(18) }
+        if let image = silhouette { Image(uiImage: image).renderingMode(.template).resizable().scaledToFit().foregroundStyle(Self.accent(for: asset)) }
+        else { Image(systemName: "pawprint.fill").resizable().scaledToFit().foregroundStyle(Self.accent(for: asset)).padding(18) }
     }
 }
 struct CreatureCutout: View {

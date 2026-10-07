@@ -6,8 +6,8 @@ final class Ascended24UITests: XCTestCase {
         let app = XCUIApplication(); app.launch()
         let picker = app.buttons["maps-picker"]
         let logo = app.images["ascended-header-logo"]
-        let ids = ["Cốt truyện ARK", "Thư viện", "Khai thác", "Xây base", "Bản đồ", "Dino", "Boss", "Artifact & Hang"]
-        let titles = ["ASA Story", "Equipment", "Farming", "Base Locations", "Atlas", "Creatures", "Bosses", "Artifacts & Caves"]
+        let ids = ["Cốt truyện ARK", "Bản đồ", "Khai thác", "Thư viện", "Xây base", "Dino", "Artifact & Hang", "Boss"]
+        let titles = ["Story", "Atlas", "Farming", "Equipment", "Base Locations", "Creatures", "Artifacts & Caves", "Bosses"]
         XCTAssertTrue(picker.isHittable)
         for (id, title) in zip(ids, titles) {
             let button = app.buttons["section-" + id]
@@ -40,7 +40,7 @@ final class Ascended24UITests: XCTestCase {
         XCTAssertEqual(app.buttons["farm-resource-Metal"].value as? String, "Selected")
         XCTAssertFalse(app.buttons["farm-resource-Wood"].exists)
         XCTAssertFalse(app.buttons["farm-resource-Stone"].exists)
-        let miniMap = app.scrollViews["farming-mini-map"]
+        let miniMap = app.descendants(matching: .any).matching(identifier: "farming-mini-map").firstMatch
         let sideBySide = XCTNSPredicateExpectation(predicate: NSPredicate { _, _ in
             miniMap.exists && abs(miniMap.frame.width - ((app.frame.width - 64) / 3)) < 2
         }, object: miniMap)
@@ -72,7 +72,7 @@ final class Ascended24UITests: XCTestCase {
         app.buttons["maps-picker"].tap()
         XCTAssertTrue(app.scrollViews["maps-list"].waitForExistence(timeout: 8))
         app.buttons["choose-scorched-earth"].tap()
-        let viewport = app.scrollViews["ragnarokMapViewport"]
+        let viewport = app.descendants(matching: .any).matching(identifier: "ragnarokMapViewport").firstMatch
         XCTAssertTrue(viewport.waitForExistence(timeout: 8))
         for _ in 0..<5 { if app.buttons["zoomIn"].isHittable { break }; app.scrollViews["mapFilterRail"].swipeUp() }
         for _ in 0..<5 { app.buttons["zoomIn"].tap() }

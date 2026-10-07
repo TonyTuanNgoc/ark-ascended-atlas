@@ -591,6 +591,7 @@
 		7A8D3CFC81D04BE75FEE0935 /* Resource-center-ice-polymer-1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C629D3F6B5FE11156CD53BF3 /* Resource-center-ice-polymer-1.mp4 */; };
 		7AB19B126FB4AC5CB67747EA /* scorched-earth-resources.json in Resources */ = {isa = PBXBuildFile; fileRef = EA31534E2031735338B4BF17 /* scorched-earth-resources.json */; };
 		7B6CA43092CF3238046C525F /* gif-the-center-underworld-pack-09.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ED75463E77FF0C0AB0EEC1BF /* gif-the-center-underworld-pack-09.jpg */; };
+		7BA9D7A375880A1BAA597B9B /* Ascended29UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2B42FDC35EA91AFF1F3909 /* Ascended29UITests.swift */; };
 		7BE90690A715B02DF422169C /* gif-the-island-snow-strong-tek-18.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B70187FBF42F06C2ACDA6113 /* gif-the-island-snow-strong-tek-18.jpg */; };
 		7C14A0E8DE562FD5EFFAF837 /* ragnarok-cave-videos.json in Resources */ = {isa = PBXBuildFile; fileRef = E34210F58C86583687405A90 /* ragnarok-cave-videos.json */; };
 		7C880B7D1D9567DF5AD90FE1 /* gif-the-island-upper-south-pack-07.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 310EC1E5D0AC592BBDA6A288 /* gif-the-island-upper-south-pack-07.jpg */; };
@@ -2233,6 +2234,7 @@
 		DA63CF510004920F711766A7 /* Resource-center-extra-lava-chitin-1.mp4 */ = {isa = PBXFileReference; path = "Resource-center-extra-lava-chitin-1.mp4"; sourceTree = "<group>"; };
 		DAB470FC4334A144ACE986B1 /* Resource-rag-crystal-highland-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Resource-rag-crystal-highland-1.jpg"; sourceTree = "<group>"; };
 		DAFE33FC4AE12180E308316B /* gif-ragnarok-jungle-10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "gif-ragnarok-jungle-10.jpg"; sourceTree = "<group>"; };
+		DB2B42FDC35EA91AFF1F3909 /* Ascended29UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ascended29UITests.swift; sourceTree = "<group>"; };
 		DBD7640A9A401A0618C969CD /* lost-colony-campaign.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "lost-colony-campaign.json"; sourceTree = "<group>"; };
 		DC14BB63EAC8FDE1AAA961DB /* gif-the-island-upper-south-pack-05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "gif-the-island-upper-south-pack-05.jpg"; sourceTree = "<group>"; };
 		DC31C3A0A55645560EF2EA9B /* gif-the-island-north-east-devourer-20.mp4 */ = {isa = PBXFileReference; path = "gif-the-island-north-east-devourer-20.mp4"; sourceTree = "<group>"; };
@@ -2431,6 +2433,7 @@
 				570B8D87F42EBE7F76B88D83 /* Ascended25UITests.swift */,
 				025C75F21D45FFEF80C75E32 /* Ascended27UITests.swift */,
 				9E05CDE114629AF77A82B820 /* Ascended28UITests.swift */,
+				DB2B42FDC35EA91AFF1F3909 /* Ascended29UITests.swift */,
 				95BD787F9B5473F20F11212D /* AscendedUITests.swift */,
 			);
 			path = UITests;
@@ -4945,6 +4948,7 @@
 				F2C7BCDF1F4E2DBFBC4CD0BC /* Ascended25UITests.swift in Sources */,
 				CB7DFECEE7113E573052F04D /* Ascended27UITests.swift in Sources */,
 				64D141AAF3166195B442DD7C /* Ascended28UITests.swift in Sources */,
+				7BA9D7A375880A1BAA597B9B /* Ascended29UITests.swift in Sources */,
 				F3647652931C6D99937FDF38 /* AscendedUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -5127,7 +5131,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 28;
+				CURRENT_PROJECT_VERSION = 29;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = HP5W6N9V3N;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -5147,7 +5151,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MARKETING_VERSION = 0.27.0;
+				MARKETING_VERSION = 0.28.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -5214,7 +5218,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 28;
+				CURRENT_PROJECT_VERSION = 29;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = HP5W6N9V3N;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -5228,7 +5232,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MARKETING_VERSION = 0.27.0;
+				MARKETING_VERSION = 0.28.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";

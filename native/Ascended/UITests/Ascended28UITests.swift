@@ -9,7 +9,7 @@ final class Ascended28UITests: XCTestCase {
         let rag = app.buttons["choose-ragnarok"]
         for _ in 0..<8 { if rag.isHittable { break }; app.scrollViews["maps-list"].swipeUp() }
         rag.tap(); app.buttons["section-Khai thác"].tap()
-        let map = app.scrollViews["farming-mini-map"]
+        let map = app.descendants(matching: .any).matching(identifier: "farming-mini-map").firstMatch
         XCTAssertTrue(map.waitForExistence(timeout: 5))
         let pins = app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "pin-farm-"))
         XCTAssertGreaterThanOrEqual(pins.count, 2)
@@ -32,10 +32,11 @@ final class Ascended28UITests: XCTestCase {
     @MainActor func testAtlasFitsWholeImageAndHasOnlyDedicatedLayers() {
         XCUIDevice.shared.orientation = .landscapeLeft
         let app = XCUIApplication(); app.launch()
+        app.buttons["section-Bản đồ"].tap()
         XCTAssertFalse(app.buttons["section-Thông tin map"].exists)
         XCTAssertFalse(app.buttons["layer-Resources"].exists)
         XCTAssertFalse(app.buttons["layer-Base"].exists)
-        let map = app.scrollViews["ragnarokMapViewport"]
+        let map = app.descendants(matching: .any).matching(identifier: "ragnarokMapViewport").firstMatch
         XCTAssertTrue(map.waitForExistence(timeout: 5))
         XCTAssertEqual(map.frame.width, map.frame.height, accuracy: 2)
         XCTAssertGreaterThan(app.scrollViews["mapFilterRail"].frame.width, 240)

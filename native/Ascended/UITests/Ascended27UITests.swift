@@ -51,7 +51,7 @@ final class Ascended27UITests: XCTestCase {
         XCTAssertTrue(app.scrollViews["maps-list"].waitForExistence(timeout: 5))
         app.buttons["choose-the-island"].tap()
         app.buttons["section-Khai thác"].tap()
-        let map = app.scrollViews["farming-mini-map"]
+        let map = app.descendants(matching: .any).matching(identifier: "farming-mini-map").firstMatch
         let locations = app.descendants(matching: .any).matching(identifier: "farming-location-panel").firstMatch
         let harvest = app.scrollViews["farming-harvesting-column"]
         XCTAssertTrue(map.waitForExistence(timeout: 5))

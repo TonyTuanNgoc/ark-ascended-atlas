@@ -2,10 +2,11 @@ import SwiftUI
 
 enum Destination: String, CaseIterable, Identifiable {
     case story = "Cốt truyện ARK", equipment = "Thư viện", expansions = "Map & DLC", farming = "Khai thác", information = "Thông tin map", bases = "Xây base", map = "Bản đồ", dinos = "Dino", bosses = "Boss", exploration = "Artifact & Hang"
+    static let navigationGroups: [[Destination]] = [[.story, .map], [.farming, .equipment, .bases], [.dinos, .exploration, .bosses]]
     var id: String { rawValue }
     var title: String {
         switch self {
-        case .story: "ASA Story"
+        case .story: "Story"
         case .equipment: "Equipment"
         case .expansions: "Maps & DLC"
         case .farming: "Farming"
@@ -84,9 +85,11 @@ struct MapSessionShell: View {
                     .navigationTitle(selection == .map ? map.name : selection.title)
                     .navigationBarTitleDisplayMode(.inline)
                     .toolbar { ToolbarItem(placement: .principal) {
-                        Text(selection == .map ? map.name : selection.title)
+                        HStack(spacing: 12) {
+                            Text(selection == .dinos ? "Dinosaurs & Creatures" : selection == .map ? map.name : selection.title).accessibilityIdentifier("module-screen-title")
+                            if selection == .dinos, case .success(let catalogue) = map.creatures { Text("\(catalogue.creatures.count)").foregroundStyle(.cyan).accessibilityIdentifier("creature-total-count") }
+                        }
                             .font(.system(size: 32, weight: .bold, design: .rounded))
-                            .accessibilityIdentifier("module-screen-title")
                     } }
             }.id(map.rawValue + "-" + selection.rawValue)
         }.background(Color(red: 0.035, green: 0.05, blue: 0.065))
@@ -106,7 +109,10 @@ struct MapSessionShell: View {
             ScrollViewReader { reader in
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 4) {
-                        ForEach(Destination.allCases.filter { $0 != .expansions && $0 != .information }) { item in
+                        ForEach(Array(Destination.navigationGroups.enumerated()), id: \.offset) { groupIndex, group in
+                            if groupIndex > 0 { Rectangle().fill(.white.opacity(0.20)).frame(width: 1, height: 48).padding(.horizontal, 8).accessibilityIdentifier("module-group-divider-\(groupIndex)") }
+                            HStack(spacing: 4) {
+                            ForEach(group) { item in
                             Button {
                                 selection = item
                                 withAnimation(.easeInOut(duration: 0.2)) { reader.scrollTo(item.id, anchor: .center) }
@@ -124,6 +130,8 @@ struct MapSessionShell: View {
                                 .accessibilityIdentifier("section-" + item.rawValue)
                                 .accessibilityValue(selection == item ? "Selected" : "Not selected")
                                 .id(item.id)
+                            }
+                            }.padding(4).background(.white.opacity(0.025), in: RoundedRectangle(cornerRadius: 14))
                         }
                     }
                 }.padding(5).background(Color.cyan.opacity(0.025), in: RoundedRectangle(cornerRadius: 15)).accessibilityIdentifier("top-module-navigation")
