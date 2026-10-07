@@ -5,7 +5,7 @@ final class Ascended22UITests: XCTestCase {
         XCUIDevice.shared.orientation = .landscapeLeft
         let app = XCUIApplication()
         app.launch()
-        app.buttons["map-group-Cốt truyện"].tap()
+        app.buttons["maps-picker"].tap()
         app.buttons["choose-aberration"].tap()
         app.buttons["section-Artifact & Hang"].tap()
         XCTAssertTrue(app.staticTexts["Artifact of the Lost"].waitForExistence(timeout: 5))
@@ -16,7 +16,7 @@ final class Ascended22UITests: XCTestCase {
         XCUIDevice.shared.orientation = .landscapeLeft
         let app = XCUIApplication()
         app.launch()
-        app.buttons["map-group-Cốt truyện"].tap()
+        app.buttons["maps-picker"].tap()
         app.buttons["choose-scorched-earth"].tap()
         app.buttons["section-Artifact & Hang"].tap()
         let route = app.buttons["route-reference-scorched-earth-grave-of-the-tyrants"]
@@ -26,7 +26,7 @@ final class Ascended22UITests: XCTestCase {
         let walkthrough = app.descendants(matching: .any)["walkthrough-reference-scorched-earth-grave-of-the-tyrants"].firstMatch
         for _ in 0..<5 {
             if walkthrough.isHittable { break }
-            app.scrollViews.firstMatch.swipeUp()
+            app.scrollViews.matching(NSPredicate(format: "identifier != %@", "top-module-navigation")).firstMatch.swipeUp()
         }
         XCTAssertTrue(walkthrough.exists)
         let shot = XCTAttachment(screenshot: XCUIScreen.main.screenshot())

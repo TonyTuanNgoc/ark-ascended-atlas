@@ -2,7 +2,7 @@ import XCTest
 final class Ascended19UITests:XCTestCase {
     @MainActor func testTopMapsAndReadableRail() {
         let app=XCUIApplication();XCUIDevice.shared.orientation = .landscapeLeft;app.launch()
-        app.buttons["map-group-Cốt truyện"].tap()
+        app.buttons["maps-picker"].tap()
         XCTAssertTrue(app.buttons["choose-the-island"].waitForExistence(timeout:5));app.buttons["choose-the-island"].tap()
         XCTAssertFalse(app.buttons["section-Map & DLC"].exists)
         XCTAssertTrue(app.buttons["layer-Cửa hang"].waitForExistence(timeout:5))
@@ -52,10 +52,11 @@ final class Ascended19UITests:XCTestCase {
         guard XCTWaiter.wait(for:[rotated],timeout:8) == .completed else {
             XCTFail("Portrait sensor rotation was not delivered: app frame \(app.frame). Portrait geometry is unverified."); return
         }
-        let story=app.buttons["map-group-Cốt truyện"],exploration=app.buttons["map-group-Khám phá"]
-        XCTAssertTrue(story.isHittable);XCTAssertTrue(exploration.isHittable)
-        XCTAssertTrue(app.frame.contains(story.frame));XCTAssertTrue(app.frame.contains(exploration.frame))
-        XCTAssertFalse(story.frame.intersects(exploration.frame))
+        let maps=app.buttons["maps-picker"]
+        XCTAssertTrue(maps.isHittable);XCTAssertTrue(app.frame.contains(maps.frame))
+        let logo=app.images["ascended-header-logo"]
+        XCTAssertTrue(logo.exists)
+        XCTAssertEqual(logo.frame.midX,app.frame.midX,accuracy:2)
         for layer in ["Cửa hang","Resources","My Locations"] {
             let label=app.buttons["expand-layer-"+layer]
             XCTAssertTrue(label.exists,"Expected portrait layer label: \(layer)")
@@ -63,7 +64,7 @@ final class Ascended19UITests:XCTestCase {
         }
         let screenshot=XCUIScreen.main.screenshot()
         XCTAssertLessThan(screenshot.image.size.width,screenshot.image.size.height,"Screenshot pixels must prove portrait, not just a sensor command")
-        let geometry=XCTAttachment(string:"App: \(app.frame); screenshot: \(screenshot.image.size); Story Maps: \(story.frame); Exploration Maps: \(exploration.frame)")
+        let geometry=XCTAttachment(string:"App: \(app.frame); screenshot: \(screenshot.image.size); Maps: \(maps.frame); centered logo: \(logo.frame)")
         geometry.name="Portrait-verified-geometry";geometry.lifetime = .keepAlways;add(geometry)
         let portrait=XCTAttachment(screenshot:screenshot);portrait.name="Portrait-map-header";portrait.lifetime = .keepAlways;add(portrait)
     }

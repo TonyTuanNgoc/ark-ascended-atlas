@@ -1,0 +1,152 @@
+[
+  {
+    "id": "Nav-story",
+    "path": "/Users/admin/.codex/generated_images/01a101c6-c5a3-7f01-a88d-7439e1f7c5e0/exec-e71122a0-5d28-44be-8d59-14822af27023.png",
+    "pixels": [
+      1254,
+      1254
+    ],
+    "sha256": "67a53ed8e9ad05ae7884e4b9e1776367354a3ff893d8d7bb1a4975f62f47d47b",
+    "alphaPreserved": true
+  },
+  {
+    "id": "Nav-equipment",
+    "path": "/Users/admin/.codex/generated_images/01a101c6-c5a3-7f01-a88d-7439e1f7c5e0/exec-15501a1a-fefe-4ce2-8bea-da04601733fd.png",
+    "pixels": [
+      1254,
+      1254
+    ],
+    "sha256": "649bc4136eb57a58f72ef420021d65c24688876125acceb4fc5d4938356ea76d",
+    "alphaPreserved": true
+  },
+  {
+    "id": "Nav-farming",
+    "path": "/Users/admin/.codex/generated_images/01a101c6-c5a3-7f01-a88d-7439e1f7c5e0/exec-a70a409d-0eaf-42d6-b93a-72725106da4d.png",
+    "pixels": [
+      1254,
+      1254
+    ],
+    "sha256": "8c3ba448a0ee2428660b9ba735f1f3228e7039f05e9e0719f70daa89214caebd",
+    "alphaPreserved": true
+  },
+  {
+    "id": "Nav-information",
+    "path": "/Users/admin/.codex/generated_images/01a101c6-c5a3-7f01-a88d-7439e1f7c5e0/exec-7b906bf5-21c7-4f77-b3e8-c5064eb1a2b3.png",
+    "pixels": [
+      1254,
+      1254
+    ],
+    "sha256": "aec1869226c8fecbf2ea6cd12972cd274747132d731c8bf03789b7c84469b835",
+    "alphaPreserved": true
+  },
+  {
+    "id": "Nav-base",
+    "path": "/Users/admin/.codex/generated_images/01a101c6-c5a3-7f01-a88d-7439e1f7c5e0/exec-19851b46-6d67-4939-9837-ae2f7d87eaa2.png",
+    "pixels": [
+      1254,
+      1254
+    ],
+    "sha256": "99562f14a9032f0b7e1fb2ae962891b0aa5183eebec4603b60f42c22a2060cf2",
+    "alphaPreserved": true
+  },
+  {
+    "id": "Nav-map",
+    "path": "/Users/admin/.codex/generated_images/01a101c6-c5a3-7f01-a88d-7439e1f7c5e0/exec-5f14eff1-83b6-433b-9830-a793462d59a3.png",
+    "pixels": [
+      1254,
+      1254
+    ],
+    "sha256": "daf6084a5fe3969d3a49dc38cc6efd0c8bc13aa8c5d004288628c002a47dd3cc",
+    "alphaPreserved": true
+  },
+  {
+    "id": "Nav-creatures",
+    "path": "/Users/admin/.codex/generated_images/01a101c6-c5a3-7f01-a88d-7439e1f7c5e0/exec-623ca10b-35ce-4a7b-a448-ac357e637a01.png",
+    "pixels": [
+      1254,
+      1254
+    ],
+    "sha256": "b74fdcc8ffd59b42a6ee7c35d022ff6410dbfb70106a30dd95281620ed0b9f82",
+    "alphaPreserved": true
+  },
+  {
+    "id": "Nav-bosses",
+    "path": "/Users/admin/.codex/generated_images/01a101c6-c5a3-7f01-a88d-7439e1f7c5e0/exec-2247e874-db67-4365-91f0-baea41226f7b.png",
+    "pixels": [
+      1254,
+      1254
+    ],
+    "sha256": "c1defd89293757c7b1d431a7f3d58a5a5c44c80c618525cc480d64c701296ab6",
+    "alphaPreserved": true
+  },
+  {
+    "id": "Nav-caves",
+    "path": "/Users/admin/.codex/generated_images/01a101c6-c5a3-7f01-a88d-7439e1f7c5e0/exec-355ba2d9-6ab8-4b99-b127-95027d938d80.png",
+    "pixels": [
+      1254,
+      1254
+    ],
+    "sha256": "2545561c170ea4b92b586520cb039151a085836cfb0db4b7314ab50d7027f909",
+    "alphaPreserved": true
+  },
+  {
+    "id": "Nav-maps",
+    "path": "/Users/admin/.codex/generated_images/01a101c6-c5a3-7f01-a88d-7439e1f7c5e0/exec-aed129e8-1f9c-43d2-b55b-d6b83da8763c.png",
+    "pixels": [
+      1254,
+      1254
+    ],
+    "sha256": "378ff960a1eaf4d61cb89e08eaae86b4cdbcd7e50720355c31d4a96f1307fb6b",
+    "alphaPreserved": true
+  },
+  {
+    "id": "Library-resources",
+    "path": "/Users/admin/.codex/generated_images/01a101c6-c5a3-7f01-a88d-7439e1f7c5e0/exec-7f68019b-2e5d-4de4-b645-755136b7ed2b.png",
+    "pixels": [
+      1254,
+      1254
+    ],
+    "sha256": "7b36bdca43e76fea2438cfcfcdb9b15324619e66c31181e43bf2b27b5205dd24",
+    "alphaPreserved": true
+  },
+  {
+    "id": "Library-tools",
+    "path": "/Users/admin/.codex/generated_images/01a101c6-c5a3-7f01-a88d-7439e1f7c5e0/exec-16b7c3cc-ed6b-458f-a97e-57d86a8b8f1b.png",
+    "pixels": [
+      1254,
+      1254
+    ],
+    "sha256": "6bb66605a72e0c25769c24107425221e236f4f264988517b36dcb1b56b35fab3",
+    "alphaPreserved": true
+  },
+  {
+    "id": "Library-machines",
+    "path": "/Users/admin/.codex/generated_images/01a101c6-c5a3-7f01-a88d-7439e1f7c5e0/exec-39e940db-8fda-4248-bc9b-b0822751ccbf.png",
+    "pixels": [
+      1254,
+      1254
+    ],
+    "sha256": "c97f0056232e02cfd0f0b4267655416ebb91c600ce78a88de3541d16a3c13946",
+    "alphaPreserved": true
+  },
+  {
+    "id": "Library-structures",
+    "path": "/Users/admin/.codex/generated_images/01a101c6-c5a3-7f01-a88d-7439e1f7c5e0/exec-409e8691-6762-42cc-ba1c-c58fa1ec30d4.png",
+    "pixels": [
+      1254,
+      1254
+    ],
+    "sha256": "f2b7c2bd22573f7bb873f69893e0e4e6c30e3034008f23e0f433386d756cb6de",
+    "alphaPreserved": true
+  },
+  {
+    "id": "Library-supplies",
+    "path": "/Users/admin/.codex/generated_images/01a101c6-c5a3-7f01-a88d-7439e1f7c5e0/exec-7e71530b-0997-483f-b49d-4d451c0db2a0.png",
+    "pixels": [
+      1254,
+      1254
+    ],
+    "sha256": "f8291a7c2471c69c7d1569c9340b397cc264e2880fd573aa2d1c7c639572c65e",
+    "alphaPreserved": true
+  }
+]

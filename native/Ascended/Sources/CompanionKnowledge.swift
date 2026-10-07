@@ -89,44 +89,69 @@ struct EquipmentItem: Decodable, Identifiable {
     let mapIDs: [String]; let asset: String?; let availability: String?; let editionNote: String?
     var fact: VisualFact { VisualFact(id: id, name: name, aliases: [name], asset: asset, symbol: category == "tools" ? "wrench.and.screwdriver.fill" : category == "machines" ? "gearshape.2.fill" : "shippingbox.fill", category: "item") }
 }
+extension EquipmentCategory {
+    var avatarAsset: String { "Library-" + id }
+}
 struct EquipmentLibraryScreen: View {
     @State private var search = ""
+    @State private var selectedCategory = "resources"
+    @FocusState private var searchFocused: Bool
+    private var items: [EquipmentItem] {
+        EquipmentCatalogue.shared.items.filter {
+            $0.category == selectedCategory && (search.isEmpty || ($0.name + " " + $0.summary + " " + $0.use).localizedStandardContains(search))
+        }
+    }
     var body: some View {
         GeometryReader { geometry in
-            let columnCount = max(1, min(7, Int(max(0, min(geometry.size.width, 1150) - 48) / 110)))
-        ScrollView {
-            VStack(alignment: .leading, spacing: 16) {
-                ForEach(EquipmentCatalogue.shared.categories) { category in
-                    let items = EquipmentCatalogue.shared.items.filter { $0.category == category.id && (search.isEmpty || ($0.name + " " + $0.summary + " " + $0.use).localizedStandardContains(search)) }
-                    if !items.isEmpty {
-                        EquipmentCategoryGroup(category: category, items: items, searching: !search.isEmpty, columnCount: columnCount)
+            let contentWidth = min(geometry.size.width, 1150)
+            let columnCount = max(1, min(7, Int(max(0, contentWidth - 48) / 110)))
+            let categoryWidth = max(110, (contentWidth - 80) / CGFloat(max(1, EquipmentCatalogue.shared.categories.count)))
+            VStack(spacing: 14) {
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 8) {
+                        ForEach(EquipmentCatalogue.shared.categories) { category in
+                            Button { selectedCategory = category.id } label: {
+                                VStack(spacing: 6) {
+                                    NavigationAvatar(asset: category.avatarAsset, size: 42)
+                                    Text(category.title).font(.system(size: 14, weight: .semibold))
+                                        .multilineTextAlignment(.center).lineLimit(2)
+                                        .fixedSize(horizontal: false, vertical: true).frame(height: 36)
+                                }.frame(width: categoryWidth, height: 88).padding(.vertical, 8)
+                                    .background(selectedCategory == category.id ? Color.cyan.opacity(0.12) : .white.opacity(0.035), in: RoundedRectangle(cornerRadius: 14))
+                                    .overlay { RoundedRectangle(cornerRadius: 14).strokeBorder(selectedCategory == category.id ? Color.cyan.opacity(0.45) : .clear) }
+                            }.buttonStyle(.plain)
+                                .accessibilityIdentifier("equipment-category-" + category.id)
+                                .accessibilityValue(selectedCategory == category.id ? "Selected" : "Not selected")
+                        }
+                    }.padding(.horizontal, 24)
+                }.accessibilityIdentifier("equipment-category-navigation")
+                HStack(spacing: 12) {
+                    Image(systemName: "magnifyingglass").foregroundStyle(.secondary)
+                    TextField("Search " + (EquipmentCatalogue.shared.categories.first { $0.id == selectedCategory }?.title.lowercased() ?? "equipment"), text: $search)
+                        .textInputAutocapitalization(.never).autocorrectionDisabled()
+                        .focused($searchFocused).submitLabel(.search).onSubmit { searchFocused = false }
+                        .accessibilityIdentifier("equipment-search")
+                    if !search.isEmpty { Button { search = "" } label: { Image(systemName: "xmark.circle.fill") }.accessibilityLabel("Clear search") }
+                }.padding(14).background(.white.opacity(0.055), in: RoundedRectangle(cornerRadius: 12)).padding(.horizontal, 24)
+                ScrollView {
+                    if items.isEmpty { ContentUnavailableView.search(text: search).padding(.top, 50) }
+                    else {
+                        LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 8), count: columnCount), spacing: 10) {
+                            ForEach(items) { item in
+                                NavigationLink { EquipmentDetail(item: item) } label: {
+                                    VStack(spacing: 8) {
+                                        FactPicture(fact: item.fact).frame(height: 54)
+                                        Text(item.name).font(.caption.bold()).fixedSize(horizontal: false, vertical: true)
+                                            .multilineTextAlignment(.center).frame(maxWidth: .infinity)
+                                    }.padding(8).frame(maxWidth: .infinity).frame(minHeight: 108, alignment: .top)
+                                        .background(.white.opacity(0.045), in: RoundedRectangle(cornerRadius: 12))
+                                }.buttonStyle(.plain).accessibilityIdentifier("equipment-" + item.id)
+                            }
+                        }.padding(.horizontal, 24).padding(.bottom, 24)
                     }
-                }
-                if !search.isEmpty && !EquipmentCatalogue.shared.items.contains(where: { ($0.name + " " + $0.summary + " " + $0.use).localizedStandardContains(search) }) {
-                    ContentUnavailableView.search(text: search)
-                }
-            }.padding(24).frame(maxWidth: 1150).frame(maxWidth: .infinity)
+                }.scrollDismissesKeyboard(.interactively).accessibilityIdentifier("equipment-results")
+            }.padding(.top, 8).frame(maxWidth: 1150).frame(maxWidth: .infinity)
         }
-        }.searchable(text: $search, prompt: "Search resources, tools and machines")
-            .accessibilityIdentifier("equipmentLibrary")
-    }
-}
-private struct EquipmentCategoryGroup: View {
-    let category: EquipmentCategory; let items: [EquipmentItem]; let searching: Bool
-    let columnCount: Int
-    @State private var expanded = false
-    var body: some View {
-        DisclosureGroup(isExpanded: Binding(get: { expanded || searching }, set: { expanded = $0 })) {
-            LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 8), count: columnCount), spacing: 10) {
-                ForEach(items) { item in
-                    NavigationLink { EquipmentDetail(item: item) } label: {
-                        VStack(spacing: 8) { FactPicture(fact: item.fact).frame(height: 54); Text(item.name).font(.caption.bold()).fixedSize(horizontal: false, vertical: true).multilineTextAlignment(.center).frame(maxWidth: .infinity) }
-                        .padding(8).frame(maxWidth: .infinity).frame(minHeight: 108, alignment: .top).background(.white.opacity(0.045), in: RoundedRectangle(cornerRadius: 12))
-                    }.buttonStyle(.plain).accessibilityIdentifier("equipment-" + item.id)
-                }
-            }.padding(.top, 14)
-        } label: { Label(category.title + " · \(items.count)", systemImage: category.symbol).font(.headline) }
-        .cardStyle().accessibilityIdentifier("equipment-category-" + category.id)
     }
 }
 struct EquipmentDetail: View {

@@ -62,7 +62,7 @@ final class AscendedUITests: XCTestCase {
         XCTAssertTrue(app.buttons["template-bill"].exists)
         let baseShot = XCTAttachment(screenshot: XCUIScreen.main.screenshot()); baseShot.name = "House-template-workshop"; baseShot.lifetime = .keepAlways; add(baseShot)
         sidebar("section-Thư viện")
-        XCTAssertTrue(app.scrollViews["equipmentLibrary"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.scrollViews["equipment-results"].waitForExistence(timeout: 5))
         let search = app.searchFields.firstMatch; search.tap(); search.typeText("Chemistry Bench")
         let item = app.buttons.matching(NSPredicate(format: "label CONTAINS %@", "Chemistry Bench")).firstMatch
         XCTAssertTrue(item.waitForExistence(timeout: 5)); item.tap()

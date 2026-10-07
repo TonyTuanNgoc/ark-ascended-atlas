@@ -1,6 +1,6 @@
 import XCTest
 final class Ascended20UITests:XCTestCase {
-    @MainActor private func start()->XCUIApplication {XCUIDevice.shared.orientation = .landscapeLeft;let app=XCUIApplication();app.launch();app.buttons["map-group-Khám phá"].tap();app.buttons["choose-ragnarok"].tap();return app}
+    @MainActor private func start()->XCUIApplication {XCUIDevice.shared.orientation = .landscapeLeft;let app=XCUIApplication();app.launch();app.buttons["maps-picker"].tap();let rag=app.buttons["choose-ragnarok"];for _ in 0..<8 {if rag.isHittable {break};app.scrollViews["maps-list"].swipeUp()};rag.tap();return app}
     @MainActor func testEmptyHierarchicalFiltersAndThreeResourceClips() {
         let app=start()
         for id in ["Artifact","Cửa hang","Obelisk","Boss","Base","Resources","My Locations"] {XCTAssertEqual(app.buttons["layer-"+id].value as? String,"Hidden")}
@@ -32,12 +32,12 @@ final class Ascended20UITests:XCTestCase {
         app.buttons["Close location"].tap();app.terminate();app.launch();app.buttons["expand-layer-My Locations"].tap()
         let row=app.buttons.matching(NSPredicate(format:"identifier BEGINSWITH %@ AND label CONTAINS %@","location-filter-custom-","QA field camp")).firstMatch
         XCTAssertTrue(row.waitForExistence(timeout:5))
-        app.buttons["map-group-Cốt truyện"].tap();app.buttons["choose-the-island"].tap();app.buttons["expand-layer-My Locations"].tap();XCTAssertFalse(app.buttons.matching(NSPredicate(format:"label CONTAINS %@","QA field camp")).firstMatch.exists)
+        app.buttons["maps-picker"].tap();app.buttons["choose-the-island"].tap();app.buttons["expand-layer-My Locations"].tap();XCTAssertFalse(app.buttons.matching(NSPredicate(format:"label CONTAINS %@","QA field camp")).firstMatch.exists)
     }
     @MainActor func testScorchedGoalsKeepFullMeaningInDetailPage() {
-        let app=start();app.buttons["map-group-Cốt truyện"].tap();app.buttons["choose-scorched-earth"].tap();app.buttons["section-Thông tin map"].tap()
+        let app=start();app.buttons["maps-picker"].tap();app.buttons["choose-scorched-earth"].tap();app.buttons["section-Thông tin map"].tap()
         let goals=app.buttons["expansion-goals"]
-        for _ in 0..<5 {if goals.isHittable {break};app.scrollViews.firstMatch.swipeUp()}
+        for _ in 0..<5 {if goals.isHittable {break};app.scrollViews.matching(NSPredicate(format: "identifier != %@", "top-module-navigation")).firstMatch.swipeUp()}
         XCTAssertTrue(goals.waitForExistence(timeout:5));goals.tap();XCTAssertTrue(app.scrollViews["information-detail-goals"].waitForExistence(timeout:5))
         XCTAssertTrue(app.staticTexts.containing(NSPredicate(format:"label CONTAINS[c] %@","Wyvern")).firstMatch.exists)
         let shot=XCTAttachment(screenshot:XCUIScreen.main.screenshot());shot.name="Scorched-goals-full-instructions";shot.lifetime = .keepAlways;add(shot)

@@ -5,11 +5,11 @@ final class Ascended21UITests: XCTestCase {
         XCUIDevice.shared.orientation = .landscapeLeft
         let app = XCUIApplication()
         app.launch()
-        app.buttons["map-group-Cốt truyện"].tap()
+        app.buttons["maps-picker"].tap()
         app.buttons["choose-scorched-earth"].tap()
         app.buttons["section-Boss"].tap()
         let boss = app.buttons["boss-manticore"].firstMatch
-        for _ in 0..<4 { if boss.isHittable { break }; app.scrollViews.firstMatch.swipeUp() }
+        for _ in 0..<4 { if boss.isHittable { break }; app.scrollViews.matching(NSPredicate(format: "identifier != %@", "top-module-navigation")).firstMatch.swipeUp() }
         XCTAssertTrue(boss.waitForExistence(timeout: 5))
         boss.tap()
         XCTAssertTrue(app.buttons["bossArmy"].waitForExistence(timeout: 5))

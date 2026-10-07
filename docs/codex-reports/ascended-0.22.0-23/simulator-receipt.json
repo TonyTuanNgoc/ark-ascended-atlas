@@ -1,0 +1,9 @@
+{
+  "simulator": "Ascended iPad QA",
+  "deviceID": "20C9346D-B0E6-4239-8152-1D85ADD57BA6",
+  "bundleID": "com.tonytuanngoc.ascended",
+  "version": "0.22.0",
+  "build": "23",
+  "launchPID": 8145,
+  "physicalDeviceInstalled": false
+}
