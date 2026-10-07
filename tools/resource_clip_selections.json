@@ -1438,13 +1438,19 @@
     }
   },
   "rag-black-pearl-bed": {
-    "startSeconds": 183,
-    "duration": 4.5,
+    "startSeconds": 181.5,
+    "duration": 6,
     "sourceAcquisition": "Approved complete local source cache",
     "evidenceLimitations": "This clip shows the filmed region and approach/resource view; no measured harvest yield or permanent spawn guarantee. Existing coordinate/inventory evidence remains source evidence outside this clean preview. The clean reviewed interval is shorter than six seconds because nearby map/inventory overlays or a change of filmed region prevent an honest longer preview.",
     "visualReview": {
       "method": "Manual source context review at 1 fps; encoded interval review at 4 fps",
       "sourceFrameSeconds": [
+        181.5,
+        181.75,
+        182.0,
+        182.25,
+        182.5,
+        182.75,
         183.0,
         183.25,
         183.5,
@@ -1467,7 +1473,9 @@
       "reviewedAt": "2026-10-07",
       "result": "Clean terrain/resource/approach; no map or inventory obstruction",
       "samplingLimit": "Sampled review at 0.25-second intervals, not every-frame certification.",
-      "contextSheet": "tools/evidence/resource-media26/18-rag-black-pearl-bed-context.jpg"
+      "contextSheet": "tools/evidence/resource-media26/18-rag-black-pearl-bed-context.jpg",
+      "reviewSheet": "tools/evidence/resource-media26-extended/rag-black-pearl-bed-proposed.jpg",
+      "sameGPSRegionReason": "6.2/63.0 wreck is visibly continuous with the coordinate overlay immediately before the clean interval; no different GPS scene is used."
     }
   },
   "rag-crystal-highland": {
@@ -1701,13 +1709,33 @@
     }
   },
   "rag-sulfur-rocks": {
-    "startSeconds": 1117.5,
-    "duration": 2,
+    "startSeconds": 1112.5,
+    "duration": 7,
     "sourceAcquisition": "Approved complete local source cache",
     "evidenceLimitations": "This clip shows the filmed region and approach/resource view; no measured harvest yield or permanent spawn guarantee. Existing coordinate/inventory evidence remains source evidence outside this clean preview. The clean reviewed interval is shorter than six seconds because nearby map/inventory overlays or a change of filmed region prevent an honest longer preview.",
     "visualReview": {
       "method": "Manual source context review at 1 fps; encoded interval review at 4 fps",
       "sourceFrameSeconds": [
+        1112.5,
+        1112.75,
+        1113.0,
+        1113.25,
+        1113.5,
+        1113.75,
+        1114.0,
+        1114.25,
+        1114.5,
+        1114.75,
+        1115.0,
+        1115.25,
+        1115.5,
+        1115.75,
+        1116.0,
+        1116.25,
+        1116.5,
+        1116.75,
+        1117.0,
+        1117.25,
         1117.5,
         1117.75,
         1118.0,
@@ -1720,7 +1748,9 @@
       "reviewedAt": "2026-10-07",
       "result": "Clean terrain/resource/approach; no map or inventory obstruction",
       "samplingLimit": "Sampled review at 0.25-second intervals, not every-frame certification.",
-      "contextSheet": "tools/evidence/resource-media26/26-rag-sulfur-rocks-context.jpg"
+      "contextSheet": "tools/evidence/resource-media26/26-rag-sulfur-rocks-context.jpg",
+      "reviewSheet": "tools/evidence/resource-media26-extended/rag-sulfur-rocks-proposed.jpg",
+      "sameGPSRegionReason": "Same rocky sulfur plateau continuously shown before the 22.7/64.1 overlay at 1120; 1112.0 crossfade is excluded."
     }
   },
   "rag-salt-columns": {
@@ -2221,36 +2251,50 @@
     }
   },
   "island-east-dam-rares": {
-    "startSeconds": 290,
-    "duration": 4.5,
+    "startSeconds": 303,
+    "duration": 7.5,
     "sourceAcquisition": "Approved complete local source cache",
     "evidenceLimitations": "This clip shows the filmed region and approach/resource view; no measured harvest yield or permanent spawn guarantee. Existing coordinate/inventory evidence remains source evidence outside this clean preview. The clean reviewed interval is shorter than six seconds because nearby map/inventory overlays or a change of filmed region prevent an honest longer preview.",
     "visualReview": {
       "method": "Manual source context review at 1 fps; encoded interval review at 4 fps",
       "sourceFrameSeconds": [
-        290.0,
-        290.25,
-        290.5,
-        290.75,
-        291.0,
-        291.25,
-        291.5,
-        291.75,
-        292.0,
-        292.25,
-        292.5,
-        292.75,
-        293.0,
-        293.25,
-        293.5,
-        293.75,
-        294.0,
-        294.25
+        303.0,
+        303.25,
+        303.5,
+        303.75,
+        304.0,
+        304.25,
+        304.5,
+        304.75,
+        305.0,
+        305.25,
+        305.5,
+        305.75,
+        306.0,
+        306.25,
+        306.5,
+        306.75,
+        307.0,
+        307.25,
+        307.5,
+        307.75,
+        308.0,
+        308.25,
+        308.5,
+        308.75,
+        309.0,
+        309.25,
+        309.5,
+        309.75,
+        310.0,
+        310.25
       ],
       "reviewedAt": "2026-10-07",
       "result": "Clean terrain/resource/approach; no map or inventory obstruction",
       "samplingLimit": "Sampled review at 0.25-second intervals, not every-frame certification.",
-      "contextSheet": "tools/evidence/resource-media26/38-island-east-dam-rares-context.jpg"
+      "contextSheet": "tools/evidence/resource-media26/38-island-east-dam-rares-context.jpg",
+      "reviewSheet": "tools/evidence/resource-media26-extended/island-east-dam-rares-proposed.jpg",
+      "sameGPSRegionReason": "After harvesting inventory closes, camera remains at the same eastern pond and shore, mounts the same creature and moves through adjacent terrain. Dam and shoreline match preceding 32.5/83.5 descent; end excludes crossfade at 310.75."
     }
   },
   "center-extra-blue-basics": {

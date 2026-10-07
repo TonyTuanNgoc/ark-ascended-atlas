@@ -2,12 +2,22 @@
   "version": "0.25.0",
   "build": "26",
   "unitTestsPassed": 23,
-  "uiTestsPassed": 4,
-  "xcresult": "/Volumes/TONY SSD/ASCENDED_MEDIA/builds/Ascended-0.14.0-Simulator/Logs/Test/Test-Ascended-2026.10.07_19-38-34-+0700.xcresult",
+  "uiTestsPassed": 2,
+  "xcresult": "/Volumes/TONY SSD/ASCENDED_MEDIA/builds/Ascended-0.14.0-Simulator/Logs/Test/Test-Ascended-2026.10.07_20-44-38-+0700.xcresult",
   "simulatorUUID": "20C9346D-B0E6-4239-8152-1D85ADD57BA6",
-  "simulatorLaunchPID": 7856,
+  "simulatorLaunchPID": 29343,
   "physicalInstall": "Not completed: device locked; user then requested Simulator only",
   "physicalPreviousVersion": "0.21.0 (22), prior receipt; not independently read back in this task",
   "testFlight": false,
-  "webDeployment": false
+  "webDeployment": false,
+  "initialQA": {
+    "unitTestsPassed": 23,
+    "uiTestsPassed": 4,
+    "xcresult": "/Volumes/TONY SSD/ASCENDED_MEDIA/builds/Ascended-0.14.0-Simulator/Logs/Test/Test-Ascended-2026.10.07_19-38-34-+0700.xcresult"
+  },
+  "simulatorVisibleScreen": "Farming: independently opened and observed via Simulator UI after fresh launch",
+  "signedHardwareDraft": "Predates final responsive layout and 3 extended clips; rebuild before hardware installation",
+  "verifiedRegions": 63,
+  "resourceFamilies": 137,
+  "shortClipsUnderSixSeconds": 6
 }

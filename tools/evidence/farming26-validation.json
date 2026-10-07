@@ -135,10 +135,10 @@
     },
     {
       "spotID": "rag-black-pearl-bed",
-      "duration": 4.5,
+      "duration": 6.0,
       "width": 1920,
       "height": 1080,
-      "sha256": "f38715e7fb4050c5d39881e53c6268037628c76b57400c31de02d408f8832435"
+      "sha256": "678977daeb48e25eae224d2e4a953006d605435ba94668ed5c25879011838d7d"
     },
     {
       "spotID": "rag-crystal-highland",
@@ -191,10 +191,10 @@
     },
     {
       "spotID": "rag-sulfur-rocks",
-      "duration": 2.0,
+      "duration": 7.0,
       "width": 1920,
       "height": 1080,
-      "sha256": "d046ecf4dd3c6db4a0388b70b06f6cd1123a69554b519541d4ac0d993489f407"
+      "sha256": "cc9e3576d0b1f482e54709162847df6ffd24e9c08ed33a0e346fd94018f2de50"
     },
     {
       "spotID": "rag-salt-columns",
@@ -275,10 +275,10 @@
     },
     {
       "spotID": "island-east-dam-rares",
-      "duration": 4.5,
+      "duration": 7.5,
       "width": 1920,
       "height": 1080,
-      "sha256": "a2ef5af6aae412039b6599f944f18fa27857c34593639a53130c1d3c62011db1"
+      "sha256": "42f48f49d39aedbb91f08664103510a91a23c18e461bc9f58dbdc61a37e1e75a"
     },
     {
       "spotID": "center-extra-lava-chitin",

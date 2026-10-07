@@ -1,0 +1,32 @@
+[
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "20C9346D-B0E6-4239-8152-1D85ADD57BA6",
+        "deviceName" : "Ascended iPad QA",
+        "exportedFileName" : "23F51AB4-7322-4ED0-9DEB-7E6710F6E5F5.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Map-hierarchical-filter-resource-loops_0_1DA14038-88E6-4B26-B6EC-7AD871AC442D.png",
+        "timestamp" : 1791380769.376
+      }
+    ],
+    "testIdentifier" : "Ascended20UITests/testEmptyHierarchicalFiltersAndSingleResourceClip()",
+    "testIdentifierURL" : "test://com.apple.xcode/Ascended/AscendedUITests/Ascended20UITests/testEmptyHierarchicalFiltersAndSingleResourceClip"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "20C9346D-B0E6-4239-8152-1D85ADD57BA6",
+        "deviceName" : "Ascended iPad QA",
+        "exportedFileName" : "0C534960-B492-4CFC-80B2-93D9FCE4EC82.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Farming-clean-footage-LAT-LON_0_DCD548D7-3B44-4569-B5DC-E70D0D8BAA8E.png",
+        "timestamp" : 1791380788.683
+      }
+    ],
+    "testIdentifier" : "Ascended24UITests/testFarmingResourceFirstLayoutAndSingleClip()",
+    "testIdentifierURL" : "test://com.apple.xcode/Ascended/AscendedUITests/Ascended24UITests/testFarmingResourceFirstLayoutAndSingleClip"
+  }
+]

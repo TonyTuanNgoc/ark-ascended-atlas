@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Targeted extended chapter review only; proposed intervals are not integrated into app media.",
+  "existingFilesMutated": false,
+  "newDownloads": false,
+  "proposedCount": 3,
+  "rejectedCount": 6,
+  "reviewLimitations": [
+    "Chapter sheets reviewed at one frame per second, proposed windows additionally at four frames per second. Not every source frame was visually inspected.",
+    "Proposed start/end exclude visible transition samples; parent must render, inspect encoded boundary frames and ffprobe/decode outputs before integration.",
+    "Reviewed bounded relevant chapter regions within the requested five-minute targeted review budget; not all complete videos."
+  ],
+  "entries": [
+    {
+      "spotID": "rag-cactus-route",
+      "reviewedSourceRangeSeconds": [
+        739,
+        777
+      ],
+      "chapterContactSheet": "tools/evidence/resource-media26-extended/rag-cactus-route-chapter.jpg",
+      "status": "rejected",
+      "rejectedLimit": "Cactus clean interval ends before map; later longer palm sap scene is a different resource demonstration, not a faithful cactus approach."
+    },
+    {
+      "spotID": "island-redwood-fiber",
+      "reviewedSourceRangeSeconds": [
+        400,
+        469
+      ],
+      "chapterContactSheet": "tools/evidence/resource-media26-extended/island-redwood-fiber-chapter.jpg",
+      "status": "rejected",
+      "rejectedLimit": "Same redwood field is clean briefly at 425\u2013426 and 466\u2013468, separated by persistent map; earlier dark cave is not a faithful redwood GPS approach."
+    },
+    {
+      "spotID": "rag-black-pearl-bed",
+      "reviewedSourceRangeSeconds": [
+        150,
+        189
+      ],
+      "chapterContactSheet": "tools/evidence/resource-media26-extended/rag-black-pearl-bed-chapter.jpg",
+      "status": "proposed",
+      "proposedStartSeconds": 181.5,
+      "proposedDurationSeconds": 6,
+      "sameGPSRegionReason": "6.2/63.0 wreck is visibly continuous with the coordinate overlay immediately before the clean interval; no different GPS scene is used.",
+      "denseContactSheet": "tools/evidence/resource-media26-extended/rag-black-pearl-bed-proposed.jpg",
+      "denseReviewFPS": 4,
+      "reviewResult": "Continuous scene, no obstructing map or inventory in reviewed samples; normal gameplay HUD remains."
+    },
+    {
+      "spotID": "rag-cave-metal-obsidian",
+      "reviewedSourceRangeSeconds": [
+        516,
+        546
+      ],
+      "chapterContactSheet": "tools/evidence/resource-media26-extended/rag-cave-metal-obsidian-chapter.jpg",
+      "status": "rejected",
+      "rejectedLimit": "Later correct cave GPS 21.3/24.6 has only about five clean seconds at 528\u2013532 before cutting to cave GPS 23.2/62.6."
+    },
+    {
+      "spotID": "rag-silk-fields",
+      "reviewedSourceRangeSeconds": [
+        1057,
+        1110
+      ],
+      "chapterContactSheet": "tools/evidence/resource-media26-extended/rag-silk-fields-chapter.jpg",
+      "status": "rejected",
+      "rejectedLimit": "Correct GPS 11.7/83.7 clean field has about five seconds at 1078\u20131083 before crossfade to GPS 61.7/17.6."
+    },
+    {
+      "spotID": "rag-sulfur-rocks",
+      "reviewedSourceRangeSeconds": [
+        1110,
+        1166
+      ],
+      "chapterContactSheet": "tools/evidence/resource-media26-extended/rag-sulfur-rocks-chapter.jpg",
+      "status": "proposed",
+      "proposedStartSeconds": 1112.5,
+      "proposedDurationSeconds": 7,
+      "sameGPSRegionReason": "Same rocky sulfur plateau continuously shown before the 22.7/64.1 overlay at 1120; 1112.0 crossfade is excluded.",
+      "denseContactSheet": "tools/evidence/resource-media26-extended/rag-sulfur-rocks-proposed.jpg",
+      "denseReviewFPS": 4,
+      "reviewResult": "Continuous scene, no obstructing map or inventory in reviewed samples; normal gameplay HUD remains."
+    },
+    {
+      "spotID": "island-east-dam-rares",
+      "reviewedSourceRangeSeconds": [
+        276,
+        336
+      ],
+      "chapterContactSheet": "tools/evidence/resource-media26-extended/island-east-dam-rares-chapter.jpg",
+      "status": "proposed",
+      "proposedStartSeconds": 303,
+      "proposedDurationSeconds": 7.5,
+      "sameGPSRegionReason": "After harvesting inventory closes, camera remains at the same eastern pond and shore, mounts the same creature and moves through adjacent terrain. Dam and shoreline match preceding 32.5/83.5 descent; end excludes crossfade at 310.75.",
+      "denseContactSheet": "tools/evidence/resource-media26-extended/island-east-dam-rares-proposed.jpg",
+      "denseReviewFPS": 4,
+      "reviewResult": "Continuous scene, no obstructing map or inventory in reviewed samples; normal gameplay HUD remains."
+    },
+    {
+      "spotID": "extinction-oil-lake",
+      "reviewedSourceRangeSeconds": [
+        0,
+        47
+      ],
+      "chapterContactSheet": "tools/evidence/resource-media26-extended/extinction-oil-lake-chapter.jpg",
+      "status": "rejected",
+      "rejectedLimit": "Correct 16.5/66.6 snow lake is shown around 15\u201320 then map; surrounding footage belongs to other GPS regions. Cached source ends at 47 seconds; no new download or restriction bypass."
+    },
+    {
+      "spotID": "rag-blue-gem-cavern",
+      "reviewedSourceRangeSeconds": [
+        1166,
+        1208
+      ],
+      "chapterContactSheet": "tools/evidence/resource-media26-extended/rag-blue-gem-cavern-chapter.jpg",
+      "status": "rejected",
+      "rejectedLimit": "Correct blue gem approach at 1167\u20131171 is followed by map, brief harvest and cut. Later 1183\u20131188 is fungal wood scene, so rejected for gem clip."
+    }
+  ]
+}

@@ -152,6 +152,7 @@ struct ResourceFarmingScreen: View {
     private var selectedSpot: VerifiedResourceSpot? { spots.first { $0.id == selectedID } ?? spots.first }
     private var acquisition: [ResourceCoverage] { (ResourceFarmCatalog.shared.coverage ?? []).filter { $0.map == map.rawValue && ["crafted", "crafting", "boss", "processing", "creature"].contains($0.status) && (search.isEmpty || $0.resource.localizedStandardContains(search)) } }
     var body: some View {
+        GeometryReader { geometry in
         ScrollView {
             VStack(alignment: .leading, spacing: 18) {
                 ScrollViewReader { proxy in
@@ -179,12 +180,13 @@ struct ResourceFarmingScreen: View {
                         Spacer()
                         Label(String(spots.count), systemImage: "mappin.and.ellipse").font(.subheadline.monospacedDigit()).foregroundStyle(.cyan).accessibilityLabel("\(spots.count) verified locations").accessibilityIdentifier("farm-location-count")
                     }
-                    ViewThatFits(in: .horizontal) {
+                    if geometry.size.width >= 1000 {
                         HStack(alignment: .top, spacing: 16) {
                             miniMap.frame(width: 380, height: 380)
-                            spotPreview.frame(minWidth: 360, maxWidth: .infinity)
+                            spotPreview.frame(maxWidth: .infinity)
                         }
-                        VStack(spacing: 14) { miniMap.frame(height: 340); spotPreview }
+                    } else {
+                        VStack(spacing: 14) { miniMap.frame(height: 300); spotPreview }
                     }
                     if !spots.isEmpty {
                         ScrollView(.horizontal, showsIndicators: false) {
@@ -222,6 +224,7 @@ struct ResourceFarmingScreen: View {
             }.padding(20)
         }.searchable(text: $search, prompt: "Search resources")
             .onChange(of: search) { _, _ in if let resource, !names.contains(resource) { self.resource = nil; selectedID = nil; focusedID = nil; action = .fit; resetToken = UUID() } }
+    }
     }
     private var miniMap: some View {
         ZoomableMap(imageAsset: map.imageAsset, mapName: map.name, resetToken: resetToken, action: action, locations: spots.map(\.point), focusID: focusedID, select: { point in selectedID = point.farmID; focusedID = point.id })

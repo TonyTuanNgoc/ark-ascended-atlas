@@ -30,6 +30,8 @@ final class Ascended24UITests: XCTestCase {
     @MainActor func testFarmingResourceFirstLayoutAndSingleClip() {
         XCUIDevice.shared.orientation = .landscapeLeft
         let app = XCUIApplication(); app.launch()
+        XCUIDevice.shared.orientation = .portrait
+        XCUIDevice.shared.orientation = .landscapeLeft
         app.buttons["maps-picker"].tap()
         XCTAssertTrue(app.scrollViews["maps-list"].waitForExistence(timeout: 8))
         let rag = app.buttons["choose-ragnarok"]
@@ -40,6 +42,11 @@ final class Ascended24UITests: XCTestCase {
         XCTAssertEqual(app.buttons["farm-resource-Metal"].value as? String, "Selected")
         XCTAssertFalse(app.buttons["farm-resource-Wood"].exists)
         XCTAssertFalse(app.buttons["farm-resource-Stone"].exists)
+        let miniMap = app.scrollViews["farming-mini-map"]
+        let sideBySide = XCTNSPredicateExpectation(predicate: NSPredicate { _, _ in
+            miniMap.exists && abs(miniMap.frame.width - (app.frame.width >= 1000 ? 380 : app.frame.width - 40)) < 2
+        }, object: miniMap)
+        XCTAssertEqual(XCTWaiter.wait(for: [sideBySide], timeout: 8), .completed)
         XCTAssertFalse(app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "farmClipSelect-")).firstMatch.exists)
         XCTAssertTrue(app.links["farmClipSource"].firstMatch.exists || app.buttons["farmClipSource"].firstMatch.exists)
         XCTAssertFalse(app.staticTexts["Area / coordinates"].exists)
