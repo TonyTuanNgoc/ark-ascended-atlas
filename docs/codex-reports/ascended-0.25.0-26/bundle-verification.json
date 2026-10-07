@@ -1,0 +1,18 @@
+{
+  "simulator": {
+    "version": "0.25.0",
+    "build": "26",
+    "resourceFiles": 1138,
+    "flattenedFiles": 1060,
+    "mismatches": [],
+    "app": "/Volumes/TONY SSD/ASCENDED_MEDIA/builds/Ascended-0.14.0-Simulator/Build/Products/Debug-iphonesimulator/Ascended.app"
+  },
+  "ipad": {
+    "version": "0.25.0",
+    "build": "26",
+    "resourceFiles": 1138,
+    "flattenedFiles": 1060,
+    "mismatches": [],
+    "app": "/Volumes/TONY SSD/ASCENDED_MEDIA/builds/Ascended-0.25.0-26-device/Build/Products/Debug-iphoneos/Ascended.app"
+  }
+}

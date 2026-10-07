@@ -1,97 +1,73 @@
-"""Create licensed, timestamped resource loops from approved local source videos.
-No download is performed. Each selection is manually reviewed against source frames.
+"""Render one clean continuous source interval per guide from licensed local caches.
+No downloading, interpolation, concatenation, catalog/photo writes, or restriction bypass.
+Run from any directory; selections and per-file ffprobe/decode results are reproducible.
 """
-import json, subprocess, hashlib
-from functools import lru_cache
-from pathlib import Path
+import argparse
+import hashlib
+import io
+import json
+import subprocess
 from concurrent.futures import ThreadPoolExecutor
-ROOT=Path(__file__).resolve().parents[1]
-MEDIA=Path('/Volumes/TONY SSD/ASCENDED_MEDIA')
-OUT=ROOT/'native/Ascended/Resources/ResourceClips'
-# Distinct sequences in the SAME filmed region. Third title reports exactly the demonstrated evidence.
-SELECTIONS={
-'center-blue-metal':(15,21,25,'Resource view'),
-'center-spire-obsidian':(46,56,64,'Resource view'),
-'center-lava-metal':(177,186,194,'Resource view'),
-'center-snow-crystal':(273,295,303,'Resource view'),
-'center-beaver-pond':(489,509,517,'Dam loot'),
-'center-ring-pearls':(534,546,551,'Resource view'),
-'center-ice-polymer':(638,647,655,'Resource view'),
-'rag-underwater-metal':(98,105,111,'Harvesting'),
-'rag-dam-lakes':(506,523,515,'Dam loot'),
-'rag-cactus-route':(755,741,746,'Harvesting'),
-'rag-coast-flowers':(917,926,931,'Harvesting'),
-'island-volcano-ore':(180,197,205,'Resource view'),
-'island-west-black-pearls':(292,313,317,'Resource view'),
-'island-redwood-fiber':(417,422,427,'Resource view'),
-'island-west-starter':(480,489,511,'Creature view'),
-'island-carno-crystal':(565,569,574,'Resource view'),
-'island-redwood-paste':(652,658,662,'Dam view'),
-'island-nw-oil':(728,741,745,'Harvesting'),
-'rag-black-pearl-bed':(176,180,184,'Resource view'),
-'rag-crystal-highland':(378,383,388,'Resource view'),
-'rag-cave-metal-obsidian':(436,443,526,'Resource view'),
-'rag-oil-north-shore':(597,590,594,'Resource view'),
-'rag-polymer-plants':(716,721,726,'Resource view'),
-'rag-flowers-nw':(829,833,837,'Resource view'),
-'rag-pearls-cave':(1006,1011,1001,'Harvesting'),
-'rag-silk-fields':(1069,1073,1077,'Resource view'),
-'rag-sulfur-rocks':(1118,1122,1126,'Resource view'),
-'rag-salt-columns':(1236,1228,1232,'Resource view'),
-'island-ice-polymer':(775,767,780,'Resource view'),
-'rag-lake-basic-hub':(506,532,536,'Resource view'),
-'island-surface-pearls':(194,199,204,'Resource view'),
-'rag-whale-keratin':(97,89,101,'Harvesting'),
-'honey-center-redwoods':(143,126,134,'Hive view'),
-'honey-island-redwoods':(37,31,44,'Hive view'),
-'honey-ragnarok-queen-region':(83,154,164,'Queen interaction'),
-'rag-shore-sand':(50,10,18,'Harvesting'),
-'island-swamp-mushrooms':(77,89,97,'Harvesting'),
-'center-extra-swamp-mushrooms':(135,112,119,'Tool demonstration'),
-'island-east-dam-rares':(285,291,321,'Dam loot'),
-'center-extra-lava-chitin':(553,479,527,'Creature combat'),
-'center-extra-blue-basics':(15,21,25,'Resource view')
-}
-@lru_cache(maxsize=None)
+from pathlib import Path
+from PIL import Image, ImageDraw
+ROOT = Path(__file__).resolve().parents[1]
+MEDIA = Path('/Volumes/TONY SSD/ASCENDED_MEDIA')
+OUT = ROOT / 'native/Ascended/Resources/ResourceClips'
+EVIDENCE = ROOT / 'tools/evidence/resource-media26'
+
+def run(args):
+    return subprocess.run(args, capture_output=True, check=True)
+
 def probe(path):
- q=subprocess.run(['ffprobe','-v','error','-show_streams','-show_format','-of','json',str(path)],capture_output=True,check=True);return json.loads(q.stdout)
+    return json.loads(run(['ffprobe','-v','error','-show_streams','-show_format','-of','json',str(path)]).stdout)
+
 def main():
- OUT.mkdir(parents=True,exist_ok=True)
- paths=json.loads((MEDIA/'resource-clip-review/paths.json').read_text())
- catalog=json.loads((ROOT/'native/Ascended/Resources/verified-resource-spots.json').read_text()); spots=catalog['spots']
- extra=json.loads((ROOT/'tools/resource_clip_selections.json').read_text())
- jobs=[]; guides=[]
- for s in spots:
-  selection=extra.get(s['id']); a,b,c=selection['starts'] if selection else SELECTIONS[s['id']][:3]; title=selection['title'] if selection else SELECTIONS[s['id']][3]; source=Path(paths[s['videoID']]); stream=next(x for x in probe(source)['streams'] if x['codec_type']=='video');steps=[]
-  for idx,(start,label) in enumerate(zip([a,b,c],selection.get('labels',['Terrain','Route',title]) if selection else ['Terrain','Route',title])):
-   name='Resource-'+s['id']+'-'+str(idx+1);duration=selection['duration'] if selection else 3.5
-   step=dict(id=name,title=label,loop=name,poster=name,startSeconds=start,endSeconds=start+duration,sourceURL=f"https://www.youtube.com/watch?v={s['videoID']}&t={int(start)}s")
-   steps.append(step);jobs.append((source,start,duration,name))
-   assert selection and selection.get("visualReview"), f"Unreviewed selection: {s['id']}"
-   step["mapOverlayVisible"]=False
-   step["visualReview"]=selection["visualReview"][idx]
-  demonstrated=title in ['Harvesting','Dam loot','Creature loot']
-  guides.append(dict(sourceAcquisition=selection['sourceAcquisition'] if selection else 'Approved complete local source cache',spotID=s['id'],map=s['map'],sourcePlane=s.get('sourcePlane',s['map']),sourceCoordinateScope=s.get('sourceCoordinateScope','Filmed camera/waypoint region'),videoID=s['videoID'],sourceURL=s['sourceURL'],rightsBasis='licensed',rightsApproval='User confirmed licenses for all source videos',sourceWidth=stream['width'],sourceHeight=stream['height'],coordinateEvidence=s['coordinateEvidence'],inventoryEvidence=s['inventoryEvidence'],harvestDemonstrated=demonstrated,evidenceLimitations=selection.get('evidenceLimitations','') if selection and selection.get('evidenceLimitations') else '' if demonstrated else 'The source shows this region and resource or method. A completed harvest and measured yield are not demonstrated in these clips.',steps=steps))
- def render(job):
-  source,start,duration,name=job;movie=OUT/(name+'.mp4');poster=OUT/(name+'.jpg')
-  # Always regenerate: a same-duration file can belong to a different source/interval.
-  subprocess.run(['ffmpeg','-v','error','-y','-ss',str(start),'-i',str(source),'-t',str(duration),'-an','-vf',"scale=w='min(1920,iw)':h='min(1080,ih)':force_original_aspect_ratio=decrease:force_divisible_by=2,fps=24",'-c:v','libx264','-preset','veryfast','-crf','20','-pix_fmt','yuv420p','-movflags','+faststart',str(movie)],check=True)
-  subprocess.run(['ffmpeg','-v','error','-y','-i',str(movie),'-frames:v','1','-q:v','3',str(poster)],check=True)
-  info=probe(movie);assert not any(x['codec_type']=='audio' for x in info['streams']);assert abs(float(info['format']['duration'])-duration)<.15
-  return name,hashlib.sha256(movie.read_bytes()).hexdigest()
- hashes=dict(ThreadPoolExecutor(max_workers=4).map(render,jobs))
- for spot,g in zip(spots,guides):
-  # FarmPhoto stills share the reviewed terrain start rather than an old map screen.
-  asset=ROOT/'native/Ascended/Assets.xcassets'/(spot['imageAsset']+'.imageset')/'photo.jpg'
-  asset.write_bytes((OUT/(g['steps'][0]['poster']+'.jpg')).read_bytes())
-  spot['photoSHA256']=hashlib.sha256(asset.read_bytes()).hexdigest()
-  spot['photoSourceSeconds']=g['steps'][0]['startSeconds']
-  spot['photoMapOverlayVisible']=False
-  for step in g['steps']:step['sha256']=hashes[step['loop']]
-  assert len({step['sha256'] for step in g['steps']})==3
- allmaps=['the-island','the-center','ragnarok','scorched-earth','aberration','extinction','valguero','astraeos','lost-colony','genesis-part-1','genesis-part-1-ocean']
- doc=dict(schemaVersion=1,mediaFormat='Muted H.264 offline loops, native source resolution capped at 1920x1080 without upscaling, CRF 20, 24 fps',guides=guides,coverage=[dict(map=m,verifiedRegions=sum(g['map']==m for g in guides),status='source-verified' if any(g['map']==m for g in guides) else 'needs-video-verification',reason='Filmed GPS regions reviewed against source footage; individual actors and respawns vary.' if any(g['map']==m for g in guides) else 'No licensed source sequence with verified map, GPS, approach and harvest has been validated for this map.') for m in allmaps])
- (ROOT/'native/Ascended/Resources/verified-resource-spots.json').write_text(json.dumps(catalog,indent=2)+'\n')
- (ROOT/'native/Ascended/Resources/resource-guides.json').write_text(json.dumps(doc,indent=2)+'\n')
- print(json.dumps(dict(guides=len(guides),clips=len(jobs),bytes=sum(p.stat().st_size for p in OUT.iterdir()),harvestDemonstrated=sum(g['harvestDemonstrated'] for g in guides))))
+    OUT.mkdir(parents=True,exist_ok=True)
+    EVIDENCE.mkdir(parents=True,exist_ok=True)
+    paths=json.loads((MEDIA/'resource-clip-review/paths.json').read_text())
+    selections=json.loads((ROOT/'tools/resource_clip_selections.json').read_text())
+    doc=json.loads((ROOT/'native/Ascended/Resources/resource-guides.json').read_text())
+    parser=argparse.ArgumentParser();parser.add_argument('--only',nargs='+',help='Re-render selected spot ids and retain the other validated results');args=parser.parse_args()
+    guides=[g for g in doc['guides'] if g['spotID'] in selections and (not args.only or g['spotID'] in args.only)]
+    def render(g):
+        s=selections[g['spotID']]; start=s['startSeconds']; duration=s['duration']
+        assert 0<duration<=10 and s['visualReview']['result']=='Clean terrain/resource/approach; no map or inventory obstruction'
+        source=Path(paths[g['videoID']]); stream=next(x for x in probe(source)['streams'] if x['codec_type']=='video')
+        name='Resource-'+g['spotID']+'-1'; movie=OUT/(name+'.mp4'); poster=OUT/(name+'.jpg')
+        run(['ffmpeg','-v','error','-y','-ss',str(start),'-i',str(source),'-t',str(duration),'-an','-vf',"scale=w='min(1920,iw)':h='min(1080,ih)':force_original_aspect_ratio=decrease:force_divisible_by=2,fps=24",'-c:v','libx264','-preset','veryfast','-crf','20','-pix_fmt','yuv420p','-movflags','+faststart',str(movie)])
+        run(['ffmpeg','-v','error','-y','-i',str(movie),'-frames:v','1','-q:v','3',str(poster)])
+        info=probe(movie); actual=float(info['format']['duration']); video=next(x for x in info['streams'] if x['codec_type']=='video')
+        assert not any(x['codec_type']=='audio' for x in info['streams'])
+        assert abs(actual-duration)<.15 and actual<=10.05 and video['codec_name']=='h264'
+        decoded=run(['ffmpeg','-v','error','-xerror','-i',str(movie),'-f','null','-'])
+        assert not decoded.stderr,decoded.stderr.decode()
+        raw=run(['ffmpeg','-v','error','-i',str(movie),'-vf','fps=4,scale=240:135','-f','image2pipe','-vcodec','mjpeg','-']).stdout
+        frames=raw.split(b'\xff\xd8')[1:]; sheet=Image.new('RGB',(1200,155*((len(frames)+4)//5))); draw=ImageDraw.Draw(sheet)
+        for i,b in enumerate(frames):
+            x=i%5*240;y=i//5*155;sheet.paste(Image.open(io.BytesIO(b'\xff\xd8'+b)),(x,y));draw.text((x+3,y+136),f'{start+i/4:.2f}s',fill='white')
+        sheet.save(EVIDENCE/(g['spotID']+'-selected.jpg'))
+        sha=hashlib.sha256(movie.read_bytes()).hexdigest()
+        g['steps']=[dict(id=name,title='Terrain & approach',loop=name,poster=name,startSeconds=start,endSeconds=start+duration,sourceURL=f"https://www.youtube.com/watch?v={g['videoID']}&t={int(start)}s",mapOverlayVisible=False,inventoryOverlayVisible=False,visualReview=s['visualReview'],sha256=sha)]
+        g['harvestDemonstrated']=s.get('harvestDemonstrated',False)
+        g['evidenceLimitations']=s['evidenceLimitations']
+        g['sourceWidth']=stream['width'];g['sourceHeight']=stream['height']
+        g['sourceAcquisition']=s['sourceAcquisition']
+        return dict(spotID=g['spotID'],videoID=g['videoID'],sourcePath=str(source),sourceBytes=source.stat().st_size,startSeconds=start,endSeconds=start+duration,continuousSourceInterval=True,spliced=False,durationSeconds=actual,width=video['width'],height=video['height'],codec=video['codec_name'],frameRate=video['avg_frame_rate'],audioStreams=0,fullDecodePassed=True,sha256=sha,bytes=movie.stat().st_size,reviewSheet=str((EVIDENCE/(g['spotID']+'-selected.jpg')).relative_to(ROOT)),limitation=s['evidenceLimitations'])
+    validation=list(ThreadPoolExecutor(max_workers=4).map(render,guides))
+    if args.only:
+        previous=json.loads((EVIDENCE/'validation.json').read_text())['results']
+        updated={v['spotID']:v for v in validation}
+        validation=[updated.get(v['spotID'],v) for v in previous]
+    # Retain the established first step id; retire only the superseded reviewed guide loops.
+    for g in guides:
+        for i in (2,3):
+            for ext in ('mp4','jpg'):
+                p=OUT/f"Resource-{g['spotID']}-{i}.{ext}"
+                if p.exists():p.unlink()
+    doc['schemaVersion']=2
+    doc['mediaFormat']='One continuous muted H.264 offline autoplay clip per guide, <=10 seconds; source resolution capped at 1920x1080 without upscaling; CRF 20, 24 fps'
+    (ROOT/'native/Ascended/Resources/resource-guides.json').write_text(json.dumps(doc,indent=2)+'\n')
+    manifest=dict(guides=len(validation),clips=len(validation),reviewMethod='Manually reviewed 20-second context sheets at 1 fps and encoded interval sheets at 4 fps; sampled visual review is not frame-by-frame certification.',durationUnder6Seconds=[v['spotID'] for v in validation if v['durationSeconds']<6],restrictions='Only existing approved local received media used. Partial sources previously ended HTTP 403; no download or bypass attempted.',results=validation)
+    (EVIDENCE/'validation.json').write_text(json.dumps(manifest,indent=2)+'\n')
+    print(json.dumps(dict(guides=len(validation),clips=len(validation),bytes=sum(v['bytes'] for v in validation),shorterThan6=len(manifest['durationUnder6Seconds']))))
 if __name__=='__main__':main()

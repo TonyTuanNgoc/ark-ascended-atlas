@@ -1,0 +1,62 @@
+[
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "20C9346D-B0E6-4239-8152-1D85ADD57BA6",
+        "deviceName" : "Ascended iPad QA",
+        "exportedFileName" : "1FDAA571-E1D2-4F70-9927-5F17D4FCE459.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Map-hierarchical-filter-resource-loops_0_228C161F-BC2C-4CD5-8903-E8571BD7634F.png",
+        "timestamp" : 1791376892.342
+      }
+    ],
+    "testIdentifier" : "Ascended20UITests/testEmptyHierarchicalFiltersAndSingleResourceClip()",
+    "testIdentifierURL" : "test://com.apple.xcode/Ascended/AscendedUITests/Ascended20UITests/testEmptyHierarchicalFiltersAndSingleResourceClip"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "20C9346D-B0E6-4239-8152-1D85ADD57BA6",
+        "deviceName" : "Ascended iPad QA",
+        "exportedFileName" : "4312DF8F-33AD-49A7-B701-E60542E9704B.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Farming-clean-footage-LAT-LON_0_C1ACE6F5-2FB8-4488-9829-636CDD5C2E10.png",
+        "timestamp" : 1791376910.632
+      }
+    ],
+    "testIdentifier" : "Ascended24UITests/testFarmingResourceFirstLayoutAndSingleClip()",
+    "testIdentifierURL" : "test://com.apple.xcode/Ascended/AscendedUITests/Ascended24UITests/testFarmingResourceFirstLayoutAndSingleClip"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "20C9346D-B0E6-4239-8152-1D85ADD57BA6",
+        "deviceName" : "Ascended iPad QA",
+        "exportedFileName" : "46678A8B-ACC4-44C8-8390-7B1376F54305.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "One-row-navigation-Ragnarok_0_443F99A8-77B1-4EF3-80D3-3EA4DB2CB1DB.png",
+        "timestamp" : 1791376920.959
+      }
+    ],
+    "testIdentifier" : "Ascended24UITests/testSingleRowCombinedMapPickerAndNames()",
+    "testIdentifierURL" : "test://com.apple.xcode/Ascended/AscendedUITests/Ascended24UITests/testSingleRowCombinedMapPickerAndNames"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "20C9346D-B0E6-4239-8152-1D85ADD57BA6",
+        "deviceName" : "Ascended iPad QA",
+        "exportedFileName" : "247634C6-BB4A-43C4-9FC7-E2301D7ECB91.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Source-tiles-deep-zoom_0_C026AA34-7848-43B1-8A88-A8E2E3F47B58.png",
+        "timestamp" : 1791376932.566
+      }
+    ],
+    "testIdentifier" : "Ascended24UITests/testSourceTilesDeepZoomAndFit()",
+    "testIdentifierURL" : "test://com.apple.xcode/Ascended/AscendedUITests/Ascended24UITests/testSourceTilesDeepZoomAndFit"
+  }
+]

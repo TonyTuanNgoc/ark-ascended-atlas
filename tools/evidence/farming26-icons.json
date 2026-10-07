@@ -1,0 +1,1376 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-07",
+  "total": 137,
+  "mapped": 137,
+  "missing": [],
+  "entries": [
+    {
+      "name": "Absorbent Substrate",
+      "asset": "Item-absorbent-substrate",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Absorbent_Substrate",
+      "assetFileSha256": "eddfbcb6d202878240366f3b3eb10a3f134ee518f18682c867452b0ae35c0af9"
+    },
+    {
+      "name": "Achatina Paste",
+      "asset": "Equipment-achatina-paste",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Achatina_Paste",
+      "assetFileSha256": "49754a4a7e64b2d84cf428303f9123c161d2f26925eefcc653ecf02f92157ee1"
+    },
+    {
+      "name": "Acro Adrenal Gland",
+      "asset": "Item-acro-adrenal-gland",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Acro_Adrenal_Gland",
+      "assetFileSha256": "d654d21b949b66fc28491c015cb7658a84752bc9bb8c628f9ae59e0f279f4bbe"
+    },
+    {
+      "name": "Aggeravic Mushroom",
+      "asset": "Item-aggeravic-mushroom",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Aggeravic_Mushroom",
+      "assetFileSha256": "a9240f42194d7ab13b77af5b3e4df4bb40111eb6e98457e4cf09751ee82fef42"
+    },
+    {
+      "name": "Allosaurus Brain",
+      "asset": "Item-allosaurus-brain",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Allosaurus_Brain",
+      "assetFileSha256": "c99930e16488ad6e702942a80a75f21856c61e249e7ed7e25dde00fb82b281e5"
+    },
+    {
+      "name": "Alpha Leedsichthys Blubber",
+      "asset": "Item-alpha-leedsichthys-blubber",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Alpha_Leedsichthys_Blubber",
+      "assetFileSha256": "046e98707c37c1ee69ff813ca442ab50b43638404301219bd58624a50fb8f8e9"
+    },
+    {
+      "name": "Amarberry",
+      "asset": "Item-amarberry",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Amarberry",
+      "assetFileSha256": "c929e7e9f00ee322edb8eaf22987b47c527d9b86a417acb0f787a1592183652c"
+    },
+    {
+      "name": "Amarberry Seed",
+      "asset": "FarmResource-amarberry-seed",
+      "status": "acquired",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Amarberry_Seed",
+      "assetFileSha256": "b88da4aea6b28f4d4ef1e7bdcc74e8e3dcf2e417dcf108258b79d886423917eb",
+      "representedItem": "Amarberry Seed",
+      "imageURL": "https://ark.wiki.gg/images/Amarberry_Seed.png",
+      "pixels": [
+        256,
+        256
+      ]
+    },
+    {
+      "name": "Ambergris",
+      "asset": "Equipment-ambergris",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Ambergris",
+      "assetFileSha256": "3a0a7f8247c9d73059b32c63758156c9c5f0dc9cd6f5b9bacb38bcfb6cddddc3"
+    },
+    {
+      "name": "Ammonite Bile",
+      "asset": "Item-ammonite-bile",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Ammonite_Bile",
+      "assetFileSha256": "053846626ed75c1e2cfce512b99ff91b3a4eae2e787a73c3574e0cc4432f784f"
+    },
+    {
+      "name": "AnglerGel",
+      "asset": "Item-anglergel",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/AnglerGel",
+      "assetFileSha256": "21619388be6db798e0212b805bf8ae7a31dc75a9f7568e66309feb75ccd9cbaa"
+    },
+    {
+      "name": "Aquatic Mushroom",
+      "asset": "FarmResource-aquatic-mushroom",
+      "status": "acquired",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Aquatic_Mushroom",
+      "assetFileSha256": "9cf56ae5e7a1267f49d7ad396757fb0990b0ef355985e614dc935e98ac73078a",
+      "representedItem": "Aquatic Mushroom",
+      "imageURL": "https://ark.wiki.gg/images/Aquatic_Mushroom.png",
+      "pixels": [
+        256,
+        256
+      ]
+    },
+    {
+      "name": "Archelon Algae",
+      "asset": "FarmResource-archelon-algae",
+      "status": "acquired",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Archelon_Algae",
+      "assetFileSha256": "7066eeca18762da9d709acaf70793089e474397b1bdf32186058ab803be8d1fc",
+      "representedItem": "Archelon Algae",
+      "imageURL": "https://ark.wiki.gg/images/Archelon_Algae.png",
+      "pixels": [
+        512,
+        512
+      ]
+    },
+    {
+      "name": "Argentavis Talon",
+      "asset": "Item-argentavis-talon",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Argentavis_Talon",
+      "assetFileSha256": "6b8386f49069e2df02c9eec64b96b8597ce7bb0a01aaa93ca24f571a1b1f677d"
+    },
+    {
+      "name": "Ascerbic Mushroom",
+      "asset": "FarmResource-ascerbic-mushroom",
+      "status": "acquired",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Ascerbic_Mushroom",
+      "assetFileSha256": "c8f0d360e192500706b6f1973d352233c0d2f6e2d3a6bf7f2deec64c237c1433",
+      "representedItem": "Ascerbic Mushroom",
+      "imageURL": "https://ark.wiki.gg/images/Ascerbic_Mushroom.png",
+      "pixels": [
+        256,
+        256
+      ]
+    },
+    {
+      "name": "Auric Mushroom",
+      "asset": "Item-auric-mushroom",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Auric_Mushroom",
+      "assetFileSha256": "69c162b2292b8ba8932f7684c1c96bb9d15e9f1893e0237dda3fe526fab8f13f"
+    },
+    {
+      "name": "Azulberry",
+      "asset": "Item-azulberry",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Azulberry",
+      "assetFileSha256": "4cfde0c16bac51c5ef0862b2bdf23dfc4b33b4020059d53e7ba4f36a6d60f60e"
+    },
+    {
+      "name": "Azulberry Seed",
+      "asset": "FarmResource-azulberry-seed",
+      "status": "acquired",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Azulberry_Seed",
+      "assetFileSha256": "05e91c0f06ef6f497feb6a1312022bc075b49c5ed9dc48369d744efc54f19723",
+      "representedItem": "Azulberry Seed",
+      "imageURL": "https://ark.wiki.gg/images/Azulberry_Seed.png",
+      "pixels": [
+        256,
+        256
+      ]
+    },
+    {
+      "name": "Bacon",
+      "asset": "FarmResource-bacon",
+      "status": "acquired",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Bacon",
+      "assetFileSha256": "7569bc32ca8167f563307f2e516b92621bff9753e16edfa96f93f0e82589650a",
+      "representedItem": "Bacon",
+      "imageURL": "https://ark.wiki.gg/images/Bacon.png",
+      "pixels": [
+        256,
+        256
+      ]
+    },
+    {
+      "name": "Basilisk Scale",
+      "asset": "FarmResource-basilisk-scale",
+      "status": "acquired",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Basilisk_Scale",
+      "assetFileSha256": "ebd00ead4f12ecfe67c4f9d1853b41ac152bbf6926fc3beb7498d7725724cc65",
+      "representedItem": "Basilisk Scale",
+      "imageURL": "https://ark.wiki.gg/images/Basilisk_Scale.png",
+      "pixels": [
+        512,
+        512
+      ]
+    },
+    {
+      "name": "Basilosaurus Blubber",
+      "asset": "Item-basilosaurus-blubber",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Basilosaurus_Blubber",
+      "assetFileSha256": "fd94c1b389ed10f0fad205098711eed22fc27f97b99ac33123392b085d50a42b"
+    },
+    {
+      "name": "Berries",
+      "asset": "Item-mejoberry",
+      "status": "existing",
+      "representative": true,
+      "sourceURL": "https://ark.wiki.gg/wiki/Berries",
+      "assetFileSha256": "724600dc1cd6f1c1a07e5972c50e84dcf0c07e2232ab8c8825c1c3041dd9bb98",
+      "representedItem": "Mejoberry"
+    },
+    {
+      "name": "Bio Toxin",
+      "asset": "Item-bio-toxin",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Bio_Toxin",
+      "assetFileSha256": "35a1c30c3ed5f19d95d05cc52c6aadf934f4d73426088cd296830175c4377c6e"
+    },
+    {
+      "name": "Black Pearls",
+      "asset": "Item-black-pearls",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Black_Pearls",
+      "assetFileSha256": "be372c64a5ff74f3cbd9ae7863df999e2430461f4409acfaa8465a9d755453d9"
+    },
+    {
+      "name": "Blood Pack",
+      "asset": "FarmResource-blood-pack",
+      "status": "acquired",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Blood_Pack",
+      "assetFileSha256": "db97c15bc71588c8de4bb60d0a0739f8013b0ce9dbe34033f5775bb2cf07fc26",
+      "representedItem": "Blood Pack",
+      "imageURL": "https://ark.wiki.gg/images/Blood_Pack.png",
+      "pixels": [
+        256,
+        256
+      ]
+    },
+    {
+      "name": "Blood Sap",
+      "asset": "FarmResource-blood-sap",
+      "status": "acquired",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Blood_Sap",
+      "assetFileSha256": "2eb352e4b82d1ce96a519a1d1459a19c3970e74be83a685925bda52685b98473",
+      "representedItem": "Blood Sap",
+      "imageURL": "https://ark.wiki.gg/images/Blood_Sap.png",
+      "pixels": [
+        256,
+        256
+      ]
+    },
+    {
+      "name": "Blue Crystalized Sap",
+      "asset": "Equipment-blue-crystalized-sap",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Blue_Crystalized_Sap",
+      "assetFileSha256": "08a60739531a4450e3b66a25abaaf8520feef0dd9a420011e2278a933987fcdf"
+    },
+    {
+      "name": "Blue Gem",
+      "asset": "Equipment-blue-gem",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Blue_Gem",
+      "assetFileSha256": "4177fe3e007bc10f5b2368ae83560fc00c7b16935d3a76b5c0e9baab1e7c7438"
+    },
+    {
+      "name": "Boaratos Tusk",
+      "asset": "FarmResource-boaratos-tusk",
+      "status": "acquired",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Boaratos_Tusk",
+      "assetFileSha256": "9a61a6d1b95c38c95331f733ffd4a6534429d017b8962f412c1453c8c68bde54",
+      "representedItem": "Boaratos Tusk",
+      "imageURL": "https://ark.wiki.gg/images/Boaratos_Tusk.png",
+      "pixels": [
+        256,
+        256
+      ]
+    },
+    {
+      "name": "Cactus Sap",
+      "asset": "Item-cactus-sap",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Cactus_Sap",
+      "assetFileSha256": "42c4e62051a9d624d9e56a277d8503c5358574e3da68e62b1f7d2be0ac36b182"
+    },
+    {
+      "name": "Cementing Paste",
+      "asset": "Item-cementing-paste",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Cementing_Paste",
+      "assetFileSha256": "49754a4a7e64b2d84cf428303f9123c161d2f26925eefcc653ecf02f92157ee1"
+    },
+    {
+      "name": "Cerato Venom Spine",
+      "asset": "Item-cerato-venom-spine",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Cerato_Venom_Spine",
+      "assetFileSha256": "3e28feb4fd1e5c2b4ab87fbaef6a93ae6441ee9584dc3e0b8bc9b5187b547cb6"
+    },
+    {
+      "name": "Charcoal",
+      "asset": "Equipment-charcoal",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Charcoal",
+      "assetFileSha256": "9ed8afb500f03c872fac1f5c1cc8c810e16a1984382d9cbbef16436ba07d5e3e"
+    },
+    {
+      "name": "Chitin",
+      "asset": "Item-chitin",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Chitin",
+      "assetFileSha256": "c0c1fec902ef9f64fe388ee5d0a1074d89ff7ed83cbe69f454ee52f203715f1e"
+    },
+    {
+      "name": "Cianberry",
+      "asset": "Item-cianberry",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Cianberry",
+      "assetFileSha256": "5f3098ff2e2a42137cb00620cbcea717a52aa78a467687d4d4e094c913c0f7cb"
+    },
+    {
+      "name": "Cianberry Seed",
+      "asset": "FarmResource-cianberry-seed",
+      "status": "acquired",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Cianberry_Seed",
+      "assetFileSha256": "d7f4c738dea6c166f95d34f426b16747e154c5408ad80b666bb89e5c5412e880",
+      "representedItem": "Cianberry Seed",
+      "imageURL": "https://ark.wiki.gg/images/Cianberry_Seed.png",
+      "pixels": [
+        256,
+        256
+      ]
+    },
+    {
+      "name": "Citronal",
+      "asset": "FarmResource-citronal",
+      "status": "acquired",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Citronal",
+      "assetFileSha256": "0e7588a242ee6bf1b10074db9c6dc025767b9656b9e28cae200e8709c47db79c",
+      "representedItem": "Citronal",
+      "imageURL": "https://ark.wiki.gg/images/Citronal.png",
+      "pixels": [
+        256,
+        256
+      ]
+    },
+    {
+      "name": "Citronal Seed",
+      "asset": "FarmResource-citronal-seed",
+      "status": "acquired",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Citronal_Seed",
+      "assetFileSha256": "42802016b911d904395c4a6b1bc9a141da41f81b718623f024c59a90ba4389a3",
+      "representedItem": "Citronal Seed",
+      "imageURL": "https://ark.wiki.gg/images/Citronal_Seed.png",
+      "pixels": [
+        256,
+        256
+      ]
+    },
+    {
+      "name": "Clay",
+      "asset": "Item-clay",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Clay",
+      "assetFileSha256": "847d43118efd9cbdaace1356d2c60c720d8c20cd23f336d3c3f95dcd5946fc4f"
+    },
+    {
+      "name": "Common Mushroom",
+      "asset": "FarmResource-common-mushroom",
+      "status": "acquired",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Common_Mushroom",
+      "assetFileSha256": "9c019db6359328b4faeea6c570574401bfdc9de9de5b03854129abd8809518df",
+      "representedItem": "Common Mushroom",
+      "imageURL": "https://ark.wiki.gg/images/Common_Mushroom.png",
+      "pixels": [
+        256,
+        256
+      ]
+    },
+    {
+      "name": "Condensed Gas",
+      "asset": "Equipment-condensed-gas",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Condensed_Gas",
+      "assetFileSha256": "285e8526504afa81fcf48356835f9b2156d16e27000a02ac868d0f465f1c3582"
+    },
+    {
+      "name": "Congealed Gas Ball",
+      "asset": "Equipment-congealed-gas-ball",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Congealed_Gas_Ball",
+      "assetFileSha256": "292e0a8c2a083423758b8f3059997ebfb084de3bf3d0935350d4bb4ef1037709"
+    },
+    {
+      "name": "Corrupt Heart",
+      "asset": "FarmResource-corrupt-heart",
+      "status": "acquired",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Corrupt_Heart",
+      "assetFileSha256": "ea80b12f7a7c886c27336ba83aca9683595407f4c791d65ff0fd9d97245f1b00",
+      "representedItem": "Corrupt Heart",
+      "imageURL": "https://ark.wiki.gg/images/Corrupt_Heart.png",
+      "pixels": [
+        256,
+        256
+      ]
+    },
+    {
+      "name": "Corrupted Nodule",
+      "asset": "Equipment-corrupted-nodule",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Corrupted_Nodule",
+      "assetFileSha256": "a2b4786f58d0c8ab1e25121bdf094d26c554c8e512e6de994ecc509e980095ac"
+    },
+    {
+      "name": "Corrupted Wood",
+      "asset": "Equipment-corrupted-wood",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Corrupted_Wood",
+      "assetFileSha256": "12b24051fd01c1df8188aabc752695f1cba8decdca4774d3e6b1d42876a55b80"
+    },
+    {
+      "name": "Crystal",
+      "asset": "Item-crystal",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Crystal",
+      "assetFileSha256": "88b1e3e40e3489600c6f39fc36d5fbf6bd8e347013967443e7f8fd0ce58e4900"
+    },
+    {
+      "name": "Deathworm Horn",
+      "asset": "Item-deathworm-horn",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Deathworm_Horn",
+      "assetFileSha256": "64ee8912cebc5b0a017c915a807470780e73caff5225bc767994df195c81299c"
+    },
+    {
+      "name": "Deinonychus Egg",
+      "asset": "FarmResource-deinonychus-egg",
+      "status": "acquired",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Deinonychus_Egg",
+      "assetFileSha256": "c7b67e29b9bab94f465e0f70b31d08a5ec96bd967507ac5376171de7735d04bc",
+      "representedItem": "Deinonychus Egg",
+      "imageURL": "https://ark.wiki.gg/images/Deinonychus_Egg.png",
+      "pixels": [
+        256,
+        256
+      ]
+    },
+    {
+      "name": "Eggs",
+      "asset": "FarmResource-eggs",
+      "status": "acquired",
+      "representative": true,
+      "sourceURL": "https://ark.wiki.gg/wiki/Dodo_Egg",
+      "assetFileSha256": "4e028312b77f0a656e3070c8438cd57731c530198fde856c2d287b1dcd341cf2",
+      "representedItem": "Dodo Egg",
+      "imageURL": "https://ark.wiki.gg/images/Dodo_Egg.png",
+      "pixels": [
+        256,
+        256
+      ]
+    },
+    {
+      "name": "Electronics",
+      "asset": "Equipment-electronics",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Electronics",
+      "assetFileSha256": "5f460fd217bc450a136061afa5a890e25499940e24c3d07cca3945af17a1d0fd"
+    },
+    {
+      "name": "Element",
+      "asset": "Item-element",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Element",
+      "assetFileSha256": "d1def72a9c8cef64df940afde39a78f41f0f129768ba0295acec210014638568"
+    },
+    {
+      "name": "Element Dust",
+      "asset": "Equipment-element-dust",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Element_Dust",
+      "assetFileSha256": "9b1acd73aa0a21e897ed77432f3761272066faf7d8367fac9fca756802be9320"
+    },
+    {
+      "name": "Element Ore",
+      "asset": "Equipment-element-ore",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Element_Ore",
+      "assetFileSha256": "47dcc9e15b6ddf54dff65c06fd67b98def7db2e627518f721fe3898386a7e636"
+    },
+    {
+      "name": "Element Shard",
+      "asset": "Equipment-element-shard",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Element_Shard",
+      "assetFileSha256": "9fc9de3df3d763a292dcff153a76be77e7af29850ea985e622e4af078bec6fa9"
+    },
+    {
+      "name": "Feces",
+      "asset": "Item-medium-animal-feces",
+      "status": "existing",
+      "representative": true,
+      "sourceURL": "https://ark.wiki.gg/wiki/Feces",
+      "assetFileSha256": "14be6f74c704899a8d8eba883e4b21ff33a9053cb43c9709a371a2d48ceef1ff",
+      "representedItem": "Medium Animal Feces"
+    },
+    {
+      "name": "Fire Talon",
+      "asset": "Item-fire-talon",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Fire_Talon",
+      "assetFileSha256": "a84a354dcac2f0dd9d13f93613d58a52d515290e7013f6e71fc65c5c8cb5d405"
+    },
+    {
+      "name": "Fragmented Green Gem",
+      "asset": "Equipment-fragmented-green-gem",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Fragmented_Green_Gem",
+      "assetFileSha256": "dd3e0f4b415eb3126089928d25ed3a52afbc8e3820c0df5aabcc3a1c0ea9c81f"
+    },
+    {
+      "name": "Fungal Wood",
+      "asset": "Equipment-fungal-wood",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Fungal_Wood",
+      "assetFileSha256": "08c855cc2148073224ec7ad10dc7948450fd68ffc891feebbaabcd5afb63eda8"
+    },
+    {
+      "name": "Gacha Crystal",
+      "asset": "FarmResource-gacha-crystal",
+      "status": "acquired",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Gacha_Crystal",
+      "assetFileSha256": "4a2ffe140167a9f329a7caa5620d3afda5a1031d04935a8f6a04e156522b1ec5",
+      "representedItem": "Gacha Crystal",
+      "imageURL": "https://ark.wiki.gg/images/Gacha_Crystal.png",
+      "pixels": [
+        256,
+        256
+      ]
+    },
+    {
+      "name": "Giant Bee Honey",
+      "asset": "Item-giant-bee-honey",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Giant_Bee_Honey",
+      "assetFileSha256": "ac7e06b36b610421248f14a8936ea876cfa4695464c44c22f32e565661daad5f"
+    },
+    {
+      "name": "Giganotosaurus Heart",
+      "asset": "Item-giganotosaurus-heart",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Giganotosaurus_Heart",
+      "assetFileSha256": "b2d6e83be12ba3adc49345fc71f167a50b7b3782c91d02105a8d636c1945c40d"
+    },
+    {
+      "name": "Gigantoraptor Feather",
+      "asset": "Equipment-gigantoraptor-feather",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Gigantoraptor_Feather",
+      "assetFileSha256": "7557d15e3003df4c73e37136433afc75a52caf5aeb4054a9f20d0392214978df"
+    },
+    {
+      "name": "Golden Hesperornis Egg",
+      "asset": "FarmResource-golden-hesperornis-egg",
+      "status": "acquired",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Golden_Hesperornis_Egg",
+      "assetFileSha256": "bf223eddb41198c30e0fa2eefdf0e7192a4c243fa67a720768c21b5c1c730d44",
+      "representedItem": "Golden Hesperornis Egg",
+      "imageURL": "https://ark.wiki.gg/images/Golden_Hesperornis_Egg.png",
+      "pixels": [
+        256,
+        256
+      ]
+    },
+    {
+      "name": "Green Gem",
+      "asset": "Equipment-green-gem",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Green_Gem",
+      "assetFileSha256": "d37d538226303154a9c974e5790d7cbee1df241fba52a4c7c50f5c88f659ca93"
+    },
+    {
+      "name": "Hide",
+      "asset": "Item-hide",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Hide",
+      "assetFileSha256": "844449d4f6d0db96471e681ff95492795f2f6b2776838e03f4fe4e3d17b7f5a7"
+    },
+    {
+      "name": "Keratin",
+      "asset": "Item-keratin",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Keratin",
+      "assetFileSha256": "7f03a658f5b87fbaa98e3c0d83b5aaf60b0fe699d48dd774e87c75b82db9e8ce"
+    },
+    {
+      "name": "Leech Blood",
+      "asset": "Item-leech-blood",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Leech_Blood",
+      "assetFileSha256": "8799a93811609b00630e029e206f6c31121d87e1e7be3be39d329785581d2442"
+    },
+    {
+      "name": "Lightning Talon",
+      "asset": "Item-lightning-talon",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Lightning_Talon",
+      "assetFileSha256": "b0cb77e8ee1fc67811b2ef176196fe6391fd090b85fcd45c5390b2d08421c78d"
+    },
+    {
+      "name": "Longrass",
+      "asset": "FarmResource-longrass",
+      "status": "acquired",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Longrass",
+      "assetFileSha256": "c41819eb019ce9876bb3486d722f607d8c9b996485dbaa4fe02d2b6b5d0b35bb",
+      "representedItem": "Longrass",
+      "imageURL": "https://ark.wiki.gg/images/Longrass.png",
+      "pixels": [
+        256,
+        256
+      ]
+    },
+    {
+      "name": "Longrass Seed",
+      "asset": "FarmResource-longrass-seed",
+      "status": "acquired",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Longrass_Seed",
+      "assetFileSha256": "5356ea81cae8721e8213bc318a0be95f5709bd63fc50f035bd236f33f469ba1c",
+      "representedItem": "Longrass Seed",
+      "imageURL": "https://ark.wiki.gg/images/Longrass_Seed.png",
+      "pixels": [
+        256,
+        256
+      ]
+    },
+    {
+      "name": "Magenberry",
+      "asset": "Item-magenberry",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Magenberry",
+      "assetFileSha256": "1ba3470648a6928f454b1102f5524f5e5f9f93df6280bc425ecc60c8f95054ee"
+    },
+    {
+      "name": "Magenberry Seed",
+      "asset": "FarmResource-magenberry-seed",
+      "status": "acquired",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Magenberry_Seed",
+      "assetFileSha256": "11908dea6159135d71212ed6d7c0fd9839f288a33cd3f0596ce6383de53a96d7",
+      "representedItem": "Magenberry Seed",
+      "imageURL": "https://ark.wiki.gg/images/Magenberry_Seed.png",
+      "pixels": [
+        256,
+        256
+      ]
+    },
+    {
+      "name": "Magmasaur Egg",
+      "asset": "FarmResource-magmasaur-egg",
+      "status": "acquired",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Magmasaur_Egg",
+      "assetFileSha256": "b47dad3f168298b6dbc54fad6ccc909d52b3f5e00c3b08fb70fd4950a1541808",
+      "representedItem": "Magmasaur Egg",
+      "imageURL": "https://ark.wiki.gg/images/Magmasaur_Egg.png",
+      "pixels": [
+        256,
+        256
+      ]
+    },
+    {
+      "name": "Megalodon Tooth",
+      "asset": "Item-megalodon-tooth",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Megalodon_Tooth",
+      "assetFileSha256": "c6267f7a6c057fba5bdf51e30644291eeb9a252220df42fa704ffec27eefe4f5"
+    },
+    {
+      "name": "Mejoberry",
+      "asset": "Item-mejoberry",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Mejoberry",
+      "assetFileSha256": "724600dc1cd6f1c1a07e5972c50e84dcf0c07e2232ab8c8825c1c3041dd9bb98"
+    },
+    {
+      "name": "Mejoberry Seed",
+      "asset": "FarmResource-mejoberry-seed",
+      "status": "acquired",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Mejoberry_Seed",
+      "assetFileSha256": "5a1207a6b7a677b8aedd4d43bc6638948d95bcbd04144f7604eab79d793cc6b5",
+      "representedItem": "Mejoberry Seed",
+      "imageURL": "https://ark.wiki.gg/images/Mejoberry_Seed.png",
+      "pixels": [
+        256,
+        256
+      ]
+    },
+    {
+      "name": "Metal",
+      "asset": "Item-metal",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Metal",
+      "assetFileSha256": "366859db497636f50fc90ca4f53c184f5cb30529d8fe6eb640cc2baa76e0a794"
+    },
+    {
+      "name": "Nameless Venom",
+      "asset": "FarmResource-nameless-venom",
+      "status": "acquired",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Nameless_Venom",
+      "assetFileSha256": "698e0fa53f4bce6576f873dbbf02411f8a50ca96fd999a488cc909b33fd5a425",
+      "representedItem": "Nameless Venom",
+      "imageURL": "https://ark.wiki.gg/images/Nameless_Venom.png",
+      "pixels": [
+        256,
+        256
+      ]
+    },
+    {
+      "name": "Narcoberry",
+      "asset": "FarmResource-narcoberry",
+      "status": "acquired",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Narcoberry",
+      "assetFileSha256": "090036c6eeefd7173f99930daba7f72b07bbdafa4cccf21a687cf5663371fce9",
+      "representedItem": "Narcoberry",
+      "imageURL": "https://ark.wiki.gg/images/Narcoberry.png",
+      "pixels": [
+        256,
+        256
+      ]
+    },
+    {
+      "name": "Narcoberry Seed",
+      "asset": "FarmResource-narcoberry-seed",
+      "status": "acquired",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Narcoberry_Seed",
+      "assetFileSha256": "ae6b61e07731f5ae0e1bf4ed38c3e65685af5b921c5449485d3575cb12d51db6",
+      "representedItem": "Narcoberry Seed",
+      "imageURL": "https://ark.wiki.gg/images/Narcoberry_Seed.png",
+      "pixels": [
+        256,
+        256
+      ]
+    },
+    {
+      "name": "Obsidian",
+      "asset": "Item-obsidian",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Obsidian",
+      "assetFileSha256": "441700497362b974942afef2dec887b82c5d210104975546634c5f7df83669b3"
+    },
+    {
+      "name": "Oil",
+      "asset": "Item-oil",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Oil",
+      "assetFileSha256": "00aaf2ffe3cadb9f61c8f496a03672b6f229fbe0859eb6e806da172ddc9b5494"
+    },
+    {
+      "name": "Organic Polymer",
+      "asset": "Item-organic-polymer",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Organic_Polymer",
+      "assetFileSha256": "9eeacde28214b4d797e443b0e841d97965aee4f4577e7e73ef12bc372e1df40d"
+    },
+    {
+      "name": "Pelt",
+      "asset": "Item-pelt",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Pelt",
+      "assetFileSha256": "acad368f6043b56a0890514ab34ac2da8d9853425c18321dc28c24a8d4939953"
+    },
+    {
+      "name": "Plant Species X Seed",
+      "asset": "Item-plant-species-x-seed",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Plant_Species_X_Seed",
+      "assetFileSha256": "82a669368fa66fefbfd49dc40229460a5a029c266674018bcc9cba52c07515dd"
+    },
+    {
+      "name": "Plant Species Z Fruit",
+      "asset": "Equipment-plant-species-z-fruit",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Plant_Species_Z_Fruit",
+      "assetFileSha256": "8cc23a77d7895d762ba5696321d980d2a4a4e3c2d0a525252244ddc8fbee16f2"
+    },
+    {
+      "name": "Plant Species Z Seed",
+      "asset": "Item-plant-species-z-seed",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Plant_Species_Z_Seed",
+      "assetFileSha256": "5756cc000b3a1d87cab8eb007f5216100eaece6ca26b1f06d2cb041fa204a107"
+    },
+    {
+      "name": "Poison Talon",
+      "asset": "Item-poison-talon",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Poison_Talon",
+      "assetFileSha256": "cf57a16554e33dcdb20fd0ee09f913f9a90c32b1ca172be48d1f853589d17a60"
+    },
+    {
+      "name": "Prismatic Ink",
+      "asset": "Equipment-prismatic-ink",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Prismatic_Ink",
+      "assetFileSha256": "de59028a4b8274a811c7f8a1396c19c1c00004e671c75f5f55cb5328afed30f7"
+    },
+    {
+      "name": "Pristine Vulpite",
+      "asset": "FarmResource-pristine-vulpite",
+      "status": "acquired",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Pristine_Vulpite",
+      "assetFileSha256": "2cdc39db6310c9af8d10d9c148d200bfcb90b60c3e2a6ba716477f2241987939",
+      "representedItem": "Pristine Vulpite",
+      "imageURL": "https://ark.wiki.gg/images/Pristine_Vulpite.png",
+      "pixels": [
+        256,
+        256
+      ]
+    },
+    {
+      "name": "Rare Flowers",
+      "asset": "Item-rare-flowers",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Rare_Flowers",
+      "assetFileSha256": "8951314ace08b5805358e8fd18953d8ad8726548f5c1f2c6d6989c1435d05978"
+    },
+    {
+      "name": "Rare Mushrooms",
+      "asset": "Item-rare-mushrooms",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Rare_Mushrooms",
+      "assetFileSha256": "0b2801f52af414b0455efb8b128b7a1c6e5d50e0e64e974d80d3f1e510fe8cfe"
+    },
+    {
+      "name": "Raw Fish Meat",
+      "asset": "Item-raw-fish-meat",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Raw_Fish_Meat",
+      "assetFileSha256": "6d7d6dea57c60b98c0afa3a3d0a2cf4b691b48afe8436750db55e7602b30b574"
+    },
+    {
+      "name": "Raw Meat",
+      "asset": "Item-raw-meat",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Raw_Meat",
+      "assetFileSha256": "9341f74a561c2de2ddf7761aac373aa8662f3e0e49706069789197541b7237a9"
+    },
+    {
+      "name": "Raw Mutton",
+      "asset": "Item-raw-mutton",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Raw_Mutton",
+      "assetFileSha256": "48ef14bfcd49a39d37ed1a278a0d4538d995ee5e8a1f7772070a57efe91283d2"
+    },
+    {
+      "name": "Raw Prime Fish Meat",
+      "asset": "Item-raw-prime-fish-meat",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Raw_Prime_Fish_Meat",
+      "assetFileSha256": "4e7b4e90e7faadf09fd1bca0c2857bc4b16ed6c2bfa993d82330cd0091ae7a53"
+    },
+    {
+      "name": "Raw Prime Meat",
+      "asset": "Item-raw-prime-meat",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Raw_Prime_Meat",
+      "assetFileSha256": "a73b5246c4d87b28132aae847fe90d9a7dfa34122c01294621ae27922bb5641f"
+    },
+    {
+      "name": "Raw Salt",
+      "asset": "Item-raw-salt",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Raw_Salt",
+      "assetFileSha256": "677f431148bd9a8266aebb527b9b3ec6c14d8e115e24dd11a7cc090a776e9b6e"
+    },
+    {
+      "name": "Reaper Pheromone Gland",
+      "asset": "FarmResource-reaper-pheromone-gland",
+      "status": "acquired",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Reaper_Pheromone_Gland",
+      "assetFileSha256": "8e357f0a3765e7137c67933f484f17d7431a7e2b04d2087ea2ebb320bf64de31",
+      "representedItem": "Reaper Pheromone Gland",
+      "imageURL": "https://ark.wiki.gg/images/Reaper_Pheromone_Gland.png",
+      "pixels": [
+        512,
+        512
+      ]
+    },
+    {
+      "name": "Red Crystalized Sap",
+      "asset": "Equipment-red-crystalized-sap",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Red_Crystalized_Sap",
+      "assetFileSha256": "705ba663ce932bb7b48af3eb501dcd2cb06ec94b0d8e82415779d82c666b15ec"
+    },
+    {
+      "name": "Red Element",
+      "asset": "FarmResource-red-element",
+      "status": "acquired",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Red_Element",
+      "assetFileSha256": "2dd0bb0adde585dfe59514ad7c071ef41e4818b0895ffad31a6e336978fd33cc",
+      "representedItem": "Red Element",
+      "imageURL": "https://ark.wiki.gg/images/Red_Element.png",
+      "pixels": [
+        256,
+        256
+      ]
+    },
+    {
+      "name": "Red Gem",
+      "asset": "Equipment-red-gem",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Red_Gem",
+      "assetFileSha256": "22fdef50d1ecdc3a905e4c5a33006abb73398f2d3d12d65dd455b61045faa5cc"
+    },
+    {
+      "name": "Rich Metal",
+      "asset": "Item-rich-metal",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Rich_Metal",
+      "assetFileSha256": "366859db497636f50fc90ca4f53c184f5cb30529d8fe6eb640cc2baa76e0a794"
+    },
+    {
+      "name": "Rock Drake Egg",
+      "asset": "FarmResource-rock-drake-egg",
+      "status": "acquired",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Rock_Drake_Egg",
+      "assetFileSha256": "9a127e9653f4836a49f6574db476f42af6193216efbc03956704741b2fd77d6e",
+      "representedItem": "Rock Drake Egg",
+      "imageURL": "https://ark.wiki.gg/images/Rock_Drake_Egg.png",
+      "pixels": [
+        256,
+        256
+      ]
+    },
+    {
+      "name": "Rock Drake Feather",
+      "asset": "FarmResource-rock-drake-feather",
+      "status": "acquired",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Rock_Drake_Feather",
+      "assetFileSha256": "826ceac46ad85085de788b2a1cba4db1bc9b1d07fd5cd4f39a40b1f9ade53ece",
+      "representedItem": "Rock Drake Feather",
+      "imageURL": "https://ark.wiki.gg/images/Rock_Drake_Feather.png",
+      "pixels": [
+        256,
+        256
+      ]
+    },
+    {
+      "name": "Rockarrot",
+      "asset": "Item-rockarrot",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Rockarrot",
+      "assetFileSha256": "d21e2de634afd9f918b46a1f15ea07c099808c78441f3d135eee3664d5111ee3"
+    },
+    {
+      "name": "Rockarrot Seed",
+      "asset": "FarmResource-rockarrot-seed",
+      "status": "acquired",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Rockarrot_Seed",
+      "assetFileSha256": "f3e083dc2c6284a85615309935513150f41b2bc0112ffff566b2b35b2b5f4f36",
+      "representedItem": "Rockarrot Seed",
+      "imageURL": "https://ark.wiki.gg/images/Rockarrot_Seed.png",
+      "pixels": [
+        256,
+        256
+      ]
+    },
+    {
+      "name": "Sand",
+      "asset": "Equipment-sand",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Sand",
+      "assetFileSha256": "292f39e5446309a9ce369cc12bede106e0e8929c19ae97b973d4c87a3622c008"
+    },
+    {
+      "name": "Sap",
+      "asset": "Equipment-sap",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Sap",
+      "assetFileSha256": "0b9d8cd4cc3616486efcbb0596b2a8bc78d4a0873405034273af37358030c46f"
+    },
+    {
+      "name": "Sarcosuchus Skin",
+      "asset": "Item-sarcosuchus-skin",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Sarcosuchus_Skin",
+      "assetFileSha256": "8221e03836852642c945f81606501f5f6c3d4ecf04e82c3cc60c6906168733af"
+    },
+    {
+      "name": "Sauropod Vertebra",
+      "asset": "Item-sauropod-vertebra",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Sauropod_Vertebra",
+      "assetFileSha256": "0333a2482239f4d1f8caf277d62e045d40292472fea5a0c29db7ac608e007bdf"
+    },
+    {
+      "name": "Savoroot",
+      "asset": "FarmResource-savoroot",
+      "status": "acquired",
+      "representative": false,
+      "representedItem": "Savoroot",
+      "sourceURL": "https://ark.wiki.gg/wiki/Savoroot",
+      "imageURL": "https://ark.wiki.gg/images/Savoroot.png",
+      "pixels": [
+        256,
+        256
+      ],
+      "sha256": "84c4f403b61bb4ebe44b37e6f6b2d7f2ab4159b57eadc4692837e1fe20812862",
+      "assetFileSha256": "849dba70cde0e0ce8940a00ebb3fd65c86e3847de9338537d2c99383cf1c150b"
+    },
+    {
+      "name": "Savoroot Seed",
+      "asset": "FarmResource-savoroot-seed",
+      "status": "acquired",
+      "representative": false,
+      "representedItem": "Savoroot Seed",
+      "sourceURL": "https://ark.wiki.gg/wiki/Savoroot_Seed",
+      "imageURL": "https://ark.wiki.gg/images/Savoroot_Seed.png",
+      "pixels": [
+        256,
+        256
+      ],
+      "sha256": "9892bd6915dd83cf40b1537d0ef157db699f7f7a6e4c0fa6b787701dcf5fec7b",
+      "assetFileSha256": "d206534c2cdb79e710dd8aeb27b791acb4726e791dbbf9ddd4860a7d7a603024"
+    },
+    {
+      "name": "Scrap Metal",
+      "asset": "Equipment-scrap-metal",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Scrap_Metal",
+      "assetFileSha256": "0ecfcf19a130548ba51d3dead2f3ae0bc5faeaf69e5e4310289fb60d4f30610c"
+    },
+    {
+      "name": "Silica Pearls",
+      "asset": "Item-silica-pearls",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Silica_Pearls",
+      "assetFileSha256": "5ee15973715dca14d1d91517cdf3b9e9053ad5e27646a21278eef8b01d3577c2"
+    },
+    {
+      "name": "Silicate",
+      "asset": "Equipment-silicate",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Silicate",
+      "assetFileSha256": "69aedaf01203c431d6ca877ef432d0c98b6d38dfb330c61fd3ccb0fa02b5cd5a"
+    },
+    {
+      "name": "Silk",
+      "asset": "Item-silk",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Silk",
+      "assetFileSha256": "7c617b16dd95cf9d3c91062a4fac28ea6b6af4b7af843e420395d25c3ea240e2"
+    },
+    {
+      "name": "Snow Owl Pellet",
+      "asset": "FarmResource-snow-owl-pellet",
+      "status": "acquired",
+      "representative": false,
+      "representedItem": "Snow Owl Pellet",
+      "sourceURL": "https://ark.wiki.gg/wiki/Snow_Owl_Pellet",
+      "imageURL": "https://ark.wiki.gg/images/Snow_Owl_Pellet.png",
+      "pixels": [
+        256,
+        256
+      ],
+      "sha256": "b408876c3c1c1453db6b2d61901ed43f3fa78977c7b1d84ec79800b7b35e2b32",
+      "assetFileSha256": "1b732bc15f2ff2c7505f608cb2b431bb05235eb4aabf66505e86bbbdeea28c15"
+    },
+    {
+      "name": "Spinosaurus Sail",
+      "asset": "Item-spinosaurus-sail",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Spinosaurus_Sail",
+      "assetFileSha256": "1d9cbf7726b0e938797b786771ea924cdde061f0296fc4ae203fb090e7c22a21"
+    },
+    {
+      "name": "Spoiled Meat",
+      "asset": "Item-spoiled-meat",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Spoiled_Meat",
+      "assetFileSha256": "2c9734fc162fceca78658252c598700f726ac53cefd334c51dbea3b9787b170f"
+    },
+    {
+      "name": "Stimberry",
+      "asset": "Item-stimberry",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Stimberry",
+      "assetFileSha256": "ca3fcc34db491c0f8a55df3af3b8916282d61450f2eb6c9b7b68fd64fdd5d2f0"
+    },
+    {
+      "name": "Stimberry Seed",
+      "asset": "FarmResource-stimberry-seed",
+      "status": "acquired",
+      "representative": false,
+      "representedItem": "Stimberry Seed",
+      "sourceURL": "https://ark.wiki.gg/wiki/Stimberry_Seed",
+      "imageURL": "https://ark.wiki.gg/images/Stimberry_Seed.png",
+      "pixels": [
+        256,
+        256
+      ],
+      "sha256": "154041c9bce7f11430a98cf45389cfe660b84705352e049520ee9d9fe7e94b7b",
+      "assetFileSha256": "c394ae4f781cbba3e9f9ca7d2625f7343796831bc4511f6f8d9d8850b5897f81"
+    },
+    {
+      "name": "Sulfur",
+      "asset": "Item-sulfur",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Sulfur",
+      "assetFileSha256": "ad03390765cefbf03e711e80861e080aaca3e16f8dfebce35e7fd9ff4893081d"
+    },
+    {
+      "name": "Therizino Claws",
+      "asset": "Item-therizino-claws",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Therizino_Claws",
+      "assetFileSha256": "d6342007b3b28bf46edad3e45e79a1c6d4151b8cd5d1c0917d3568fb9e15ec82"
+    },
+    {
+      "name": "Thylacoleo Hook-Claw",
+      "asset": "Item-thylacoleo-hook-claw",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Thylacoleo_Hook-Claw",
+      "assetFileSha256": "0a852e5bc82d01a5d67063b41582a43b57578bab571b703ab459999584c1bdd5"
+    },
+    {
+      "name": "Tintoberry",
+      "asset": "FarmResource-tintoberry",
+      "status": "acquired",
+      "representative": false,
+      "representedItem": "Tintoberry",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tintoberry",
+      "imageURL": "https://ark.wiki.gg/images/Tintoberry.png",
+      "pixels": [
+        256,
+        256
+      ],
+      "sha256": "931dfa37b528ddfa04fdbc9edfa182bfdf7710dccac71322a704e139e50b05ef",
+      "assetFileSha256": "ef2b4c8e44923e7d397fd80851adb85103473ff2fe043dacbe40ab8f1a88f185"
+    },
+    {
+      "name": "Tintoberry Seed",
+      "asset": "FarmResource-tintoberry-seed",
+      "status": "acquired",
+      "representative": false,
+      "representedItem": "Tintoberry Seed",
+      "sourceURL": "https://ark.wiki.gg/wiki/Tintoberry_Seed",
+      "imageURL": "https://ark.wiki.gg/images/Tintoberry_Seed.png",
+      "pixels": [
+        256,
+        256
+      ],
+      "sha256": "395437fc69d94fe1fc883ef7ae882e9acdebc3447c1cc331773f5deddec372ee",
+      "assetFileSha256": "644b3e8c7d59b1492ff9a2a50cc7c96ad748b4c6dbc4cbe375c481f9e6dc8ce5"
+    },
+    {
+      "name": "Titanoboa Venom",
+      "asset": "Item-titanoboa-venom",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Titanoboa_Venom",
+      "assetFileSha256": "61d123324a26afbcc600927f014af8a120b531bb630e762f7d9394667696a467"
+    },
+    {
+      "name": "Tusoteuthis Tentacle",
+      "asset": "Item-tusoteuthis-tentacle",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Tusoteuthis_Tentacle",
+      "assetFileSha256": "ceb741c56e70661ee00eaef9382eba09d2f6f3425abdc834d385d1ebc1a79f88"
+    },
+    {
+      "name": "Tyrannosaurus Arm",
+      "asset": "Item-tyrannosaurus-arm",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Tyrannosaurus_Arm",
+      "assetFileSha256": "1daed21cf50c1007758e9b4e5f0910e33de5d5a115f9d4f7d04683ae06ae83b2"
+    },
+    {
+      "name": "Verdberry",
+      "asset": "Item-verdberry",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Verdberry",
+      "assetFileSha256": "2d20cf027124b140a7793dbb6ef7e5ea7ac7cc0babb1f5cd1f9dbdbfd81e89e6"
+    },
+    {
+      "name": "Verdberry Seed",
+      "asset": "FarmResource-verdberry-seed",
+      "status": "acquired",
+      "representative": false,
+      "representedItem": "Verdberry Seed",
+      "sourceURL": "https://ark.wiki.gg/wiki/Verdberry_Seed",
+      "imageURL": "https://ark.wiki.gg/images/Verdberry_Seed.png",
+      "pixels": [
+        256,
+        256
+      ],
+      "sha256": "e8e20b979aa9cfb58327c7014154086f15183f219248f26c7d79d05cddae1172",
+      "assetFileSha256": "b797f77d028d9b536a63c6612d99878eb1e90e976de0e3fde750c52c811b4522"
+    },
+    {
+      "name": "Wool",
+      "asset": "Equipment-wool",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Wool",
+      "assetFileSha256": "9931b1ab79f15a507f4a62a871684d6f33f59547bdf6bf2d3b2e6be9ca024b5e"
+    },
+    {
+      "name": "Wyvern Egg",
+      "asset": "FarmResource-wyvern-egg",
+      "status": "acquired",
+      "representative": false,
+      "representedItem": "Wyvern Egg",
+      "sourceURL": "https://ark.wiki.gg/wiki/Wyvern_Egg",
+      "imageURL": "https://ark.wiki.gg/images/Wyvern_Egg.png",
+      "pixels": [
+        256,
+        256
+      ],
+      "sha256": "f8694e112bcb7f4f10d9b737636fd62bf2721b0c46ade00a1f7e45fc26c3e72d",
+      "assetFileSha256": "c0ffe030d39b49e00aa8d11bcaf876f411c57a9884798c66335fe8563cbfd8ed"
+    },
+    {
+      "name": "Wyvern Milk",
+      "asset": "Item-wyvern-milk",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Wyvern_Milk",
+      "assetFileSha256": "b8ec31573c4ecedfb5e8e5adc60dc4fa1bb91646dab0d0c4569965d4e082bf96"
+    },
+    {
+      "name": "Yutyrannus Lungs",
+      "asset": "Item-yutyrannus-lungs",
+      "status": "existing",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Yutyrannus_Lungs",
+      "assetFileSha256": "481baeb0035cdc85e14efb35b46071e0ba4d61c8525d3f7c48a1ebb15221f425"
+    },
+    {
+      "name": "Water",
+      "asset": "FarmResource-water",
+      "status": "acquired",
+      "representedItem": "Water hydration stat",
+      "representative": false,
+      "sourceURL": "https://ark.wiki.gg/wiki/Water",
+      "imageURL": "https://ark.wiki.gg/images/Water.png",
+      "pixels": [
+        128,
+        128
+      ],
+      "assetFileSha256": "1fff3d10a1cfb7250b22f997603bef57ad811a0e1fc5ffe01ea36842b9bcfafb",
+      "note": "Genuine ARK hydration-stat icon, a turquoise water glass. Water is a stat/natural source rather than a separate stackable inventory item; no container item substituted."
+    }
+  ],
+  "newAssets": 42,
+  "existingAssets": 95,
+  "limitations": [
+    "Berries uses Mejoberry; Eggs uses Dodo Egg; Feces uses Medium Animal Feces. These are representative family icons, not incorrect exact-item claims.",
+    "All new images use exact public Wiki item filenames, decoded and validated as images. Existing assets reuse the project\u2019s item artwork.",
+    "Game artwork copyright remains with its respective owners; Wiki/source attribution is retained.",
+    "Two CDN HTTP 429 cooldowns were respected; retries completed every missing asset."
+  ]
+}

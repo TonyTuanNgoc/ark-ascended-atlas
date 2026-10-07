@@ -1,0 +1,1067 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-10-07",
+  "spots": [
+    {
+      "map": "the-center",
+      "videoID": "bAqRvM-080g",
+      "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g",
+      "sourcePlane": "the-center filmed region",
+      "sourceCoordinateScope": "Camera GPS at the waterfall approach; nearby cavern is reached continuously from this position.",
+      "coordinateEvidence": "In-game camera GPS visible at 120s: latitude 88.8, longitude 63.2. Camera GPS at the waterfall approach; nearby cavern is reached continuously from this position. Evidence frame: tools/evidence/farming26-sources/bAqRvM-080g-120.jpg",
+      "inventoryEvidence": "Metal and Crystal chapter114–187s; white crystal clusters and ore rocks visible inside the cavern.",
+      "id": "center-waterfall-cavern",
+      "name": "Southern waterfall cavern",
+      "lat": 88.8,
+      "lon": 63.2,
+      "resources": [
+        "Metal",
+        "Crystal"
+      ],
+      "imageAsset": "Farm26-center-waterfall-cavern",
+      "seconds": 132,
+      "direction": "Follow the waterfall passage into the cavern and examine the rock ledges.",
+      "method": "Metal Pick; bring a mount for transport.",
+      "kit": [
+        "Metal Pick",
+        "Argentavis"
+      ],
+      "risks": [
+        "Dark cave",
+        "Fall",
+        "Predators"
+      ],
+      "verified": true,
+      "photoSHA256": "d7dabf0c4b9274a9d7cbead7eed966ba0d9b8d8987a36b7fdebbbe300b824743",
+      "photoSourceSeconds": 133,
+      "photoMapOverlayVisible": false
+    },
+    {
+      "map": "the-center",
+      "videoID": "bAqRvM-080g",
+      "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g",
+      "sourcePlane": "the-center filmed region",
+      "sourceCoordinateScope": "Camera GPS above the pond approach.",
+      "coordinateEvidence": "In-game camera GPS visible at 348s: latitude 30.9, longitude 52.5. Camera GPS above the pond approach. Evidence frame: tools/evidence/farming26-sources/bAqRvM-080g-348.jpg",
+      "inventoryEvidence": "Cementing Paste chapter345–534s; creator follows this pond and its dams. Individual loot is not measured.",
+      "id": "center-north-pond-west",
+      "name": "Northern western beaver pond",
+      "lat": 30.9,
+      "lon": 52.5,
+      "resources": [
+        "Beaver Dam",
+        "Cementing Paste"
+      ],
+      "imageAsset": "Farm26-center-north-pond-west",
+      "seconds": 356,
+      "direction": "Descend into the small waterfall pond and inspect its banks for dams.",
+      "method": "Inspect Beaver Dam inventories; clear unwanted contents after collecting.",
+      "kit": [
+        "Flying mount"
+      ],
+      "risks": [
+        "Angry beavers",
+        "Variable dam spawns"
+      ],
+      "verified": true,
+      "photoSHA256": "45b7552943843caad6a730432c0d92c427b1554792bba88bb86a5030ba0a9220",
+      "photoSourceSeconds": 357,
+      "photoMapOverlayVisible": false
+    },
+    {
+      "map": "the-center",
+      "videoID": "bAqRvM-080g",
+      "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g",
+      "sourcePlane": "the-center filmed region",
+      "sourceCoordinateScope": "Camera GPS above this distinct pond.",
+      "coordinateEvidence": "In-game camera GPS visible at 408s: latitude 31.1, longitude 57.6. Camera GPS above this distinct pond. Evidence frame: tools/evidence/farming26-sources/bAqRvM-080g-408.jpg",
+      "inventoryEvidence": "Beaver Dam inventory opened at428s; Cementing Paste, Silica Pearls, Rare Flower and Wood are shown. No transfer or yield measurement is claimed.",
+      "id": "center-north-pond-east",
+      "name": "Northern eastern beaver pond",
+      "lat": 31.1,
+      "lon": 57.6,
+      "resources": [
+        "Beaver Dam",
+        "Cementing Paste",
+        "Silica Pearls",
+        "Rare Flowers",
+        "Wood"
+      ],
+      "imageAsset": "Farm26-center-north-pond-east",
+      "seconds": 414,
+      "direction": "Follow the water into the pond, then inspect the dam on the bank.",
+      "method": "Inspect Beaver Dam inventories; clear unwanted contents after collecting.",
+      "kit": [
+        "Flying mount"
+      ],
+      "risks": [
+        "Angry beavers",
+        "Variable dam spawns"
+      ],
+      "verified": true,
+      "photoSHA256": "b832036eb5c7018cef1f5fc9d3e2d05bc645709cf3e4c7cf397ce2ff3784a54f",
+      "photoSourceSeconds": 415,
+      "photoMapOverlayVisible": false
+    },
+    {
+      "map": "the-center",
+      "videoID": "bAqRvM-080g",
+      "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g",
+      "sourcePlane": "the-center filmed region",
+      "sourceCoordinateScope": "Camera GPS above the jungle pond.",
+      "coordinateEvidence": "In-game camera GPS visible at 435s: latitude 42.5, longitude 60.3. Camera GPS above the jungle pond. Evidence frame: tools/evidence/farming26-sources/bAqRvM-080g-435.jpg",
+      "inventoryEvidence": "Cementing Paste chapter345–534s; filmed pond approach and dam habitat. No specific loot yield is measured.",
+      "id": "center-middle-pond",
+      "name": "Central jungle beaver pond",
+      "lat": 42.5,
+      "lon": 60.3,
+      "resources": [
+        "Beaver Dam",
+        "Cementing Paste"
+      ],
+      "imageAsset": "Farm26-center-middle-pond",
+      "seconds": 441,
+      "direction": "Descend between the rock walls to the shallow pond and check the banks.",
+      "method": "Inspect Beaver Dam inventories; clear unwanted contents after collecting.",
+      "kit": [
+        "Flying mount"
+      ],
+      "risks": [
+        "Angry beavers",
+        "Variable dam spawns"
+      ],
+      "verified": true,
+      "photoSHA256": "5a4875b37d0493ce6507e2c3ef9525b07da9543de98c0a66e98654fa40f9b3b7",
+      "photoSourceSeconds": 442,
+      "photoMapOverlayVisible": false
+    },
+    {
+      "map": "the-center",
+      "videoID": "bAqRvM-080g",
+      "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g",
+      "sourcePlane": "the-center filmed region",
+      "sourceCoordinateScope": "Camera GPS above the southern eastern pond.",
+      "coordinateEvidence": "In-game camera GPS visible at 471s: latitude 51.7, longitude 60.8. Camera GPS above the southern eastern pond. Evidence frame: tools/evidence/farming26-sources/center-pond4-gps471.jpg",
+      "inventoryEvidence": "Cementing Paste chapter345–534s; shallow pond, beaver and dam habitat shown. No specific loot yield is measured.",
+      "id": "center-south-east-pond",
+      "name": "Southern eastern beaver pond",
+      "lat": 51.7,
+      "lon": 60.8,
+      "resources": [
+        "Beaver Dam",
+        "Cementing Paste"
+      ],
+      "imageAsset": "Farm26-center-south-east-pond",
+      "seconds": 478,
+      "direction": "Descend into the shallow pond and search along the shoreline.",
+      "method": "Inspect Beaver Dam inventories; clear unwanted contents after collecting.",
+      "kit": [
+        "Flying mount"
+      ],
+      "risks": [
+        "Angry beavers",
+        "Variable dam spawns"
+      ],
+      "verified": true,
+      "photoSHA256": "e0980dc107d2b019051a55daa8e07bf58436a103a6363b7e06e67606dd8ab48c",
+      "photoSourceSeconds": 479,
+      "photoMapOverlayVisible": false
+    },
+    {
+      "map": "the-center",
+      "videoID": "bAqRvM-080g",
+      "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g",
+      "sourcePlane": "the-center filmed region",
+      "sourceCoordinateScope": "Camera GPS longitude is displayed as51 without fractional digits, not a guessed decimal.",
+      "coordinateEvidence": "In-game camera GPS visible at 505s: latitude 53.1, longitude 51.0. Camera GPS longitude is displayed as51 without fractional digits, not a guessed decimal. Evidence frame: tools/evidence/farming26-sources/center-gps505.jpg",
+      "inventoryEvidence": "Beaver Dam inventory at519s shows312 Cementing Paste,12 Silica Pearls,20 Rare Flower and700 Wood in this source sample. These are not guaranteed yields.",
+      "id": "center-south-west-pond",
+      "name": "Southern western beaver pond",
+      "lat": 53.1,
+      "lon": 51.0,
+      "resources": [
+        "Beaver Dam",
+        "Cementing Paste",
+        "Silica Pearls",
+        "Rare Flowers",
+        "Wood"
+      ],
+      "imageAsset": "Farm26-center-south-west-pond",
+      "seconds": 510,
+      "direction": "Descend into the narrow pond and inspect the dam beside the shoreline.",
+      "method": "Inspect Beaver Dam inventories; clear unwanted contents after collecting.",
+      "kit": [
+        "Flying mount"
+      ],
+      "risks": [
+        "Angry beavers",
+        "Variable dam spawns"
+      ],
+      "verified": true,
+      "photoSHA256": "5fa31afb46610a67f47d528ac87de48107ad30bc377e43497c45a8c5fdf20ed1",
+      "photoSourceSeconds": 511,
+      "photoMapOverlayVisible": false
+    },
+    {
+      "map": "valguero",
+      "videoID": "boGcZ2neH6g",
+      "sourceURL": "https://www.youtube.com/watch?v=boGcZ2neH6g",
+      "sourcePlane": "valguero filmed region",
+      "sourceCoordinateScope": "Camera GPS is shown underwater at this second pearl bed.",
+      "coordinateEvidence": "In-game camera GPS visible at 73s: latitude 44.4, longitude 30.4. Camera GPS is shown underwater at this second pearl bed. Evidence frame: tools/evidence/farming26-sources/boGcZ2neH6g-73.jpg",
+      "inventoryEvidence": "Silica Pearls opening chapter; glowing pearl shells are shown on the lake floor. Harvest yield is not measured.",
+      "id": "valguero-west-pearl-bed",
+      "name": "Western lake second pearl bed",
+      "lat": 44.4,
+      "lon": 30.4,
+      "resources": [
+        "Silica Pearls"
+      ],
+      "imageAsset": "Farm26-valguero-west-pearl-bed",
+      "seconds": 64.5,
+      "direction": "Swim to the lake floor and look around the glowing pearl shells.",
+      "method": "Collect pearls from the visible shells.",
+      "kit": [
+        "SCUBA"
+      ],
+      "risks": [
+        "Drowning",
+        "Aquatic predators"
+      ],
+      "verified": true,
+      "photoSHA256": "7edde2f0f47c3355c0b83639f0f4b51bd70b7150254fa1c6d028eec35c08ed11",
+      "photoSourceSeconds": 65.5,
+      "photoMapOverlayVisible": false
+    },
+    {
+      "map": "ragnarok",
+      "videoID": "0i0-XEV85m8",
+      "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8",
+      "sourcePlane": "ragnarok filmed region",
+      "sourceCoordinateScope": "Actual camera GPS90.2/72.1 is used; the earlier creator caption79/71.1 is a different region and is not copied.",
+      "coordinateEvidence": "In-game camera GPS visible at 681s: latitude 90.2, longitude 72.1. Actual camera GPS90.2/72.1 is used; the earlier creator caption79/71.1 is a different region and is not copied. Evidence frame: tools/evidence/farming26-sources/rag-oil-gps681.jpg",
+      "inventoryEvidence": "Oil chapter579–711s; oil rocks on the seabed shown directly before the GPS view. No harvest yield is measured.",
+      "id": "rag-south-seabed-oil",
+      "name": "Southern seabed oil field",
+      "lat": 90.2,
+      "lon": 72.1,
+      "resources": [
+        "Oil"
+      ],
+      "imageAsset": "Farm26-rag-south-seabed-oil",
+      "seconds": 670,
+      "direction": "Dive to the southern seabed and examine the scattered oil rocks.",
+      "method": "Mine the oil rocks with a suitable tool.",
+      "kit": [
+        "SCUBA",
+        "Metal Pick"
+      ],
+      "risks": [
+        "Drowning",
+        "Aquatic predators"
+      ],
+      "verified": true,
+      "photoSHA256": "d4771793c0158a4f2fe5694725adaf72be5ba6a98745f5006e9a8e26cb191039",
+      "photoSourceSeconds": 671,
+      "photoMapOverlayVisible": false
+    },
+    {
+      "map": "the-island",
+      "videoID": "IOCye6IYUCM",
+      "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM",
+      "sourcePlane": "the-island filmed region",
+      "sourceCoordinateScope": "GPS is recorded inside the filmed cave at140s; the creator revisits its black pearl chamber in316–346s. This is an interior camera coordinate, not an independently verified entrance.",
+      "coordinateEvidence": "In-game camera GPS visible at 140s: latitude 45.1, longitude 76.3. GPS is recorded inside the filmed cave at140s; the creator revisits its black pearl chamber in316–346s. This is an interior camera coordinate, not an independently verified entrance. Evidence frame: tools/evidence/farming26-sources/IOCye6IYUCM-140.jpg",
+      "inventoryEvidence": "Black Pearls chapter272–370s; glowing black pearl clusters and collection indicator shown in the chamber around326s.",
+      "id": "island-cave-black-pearls",
+      "name": "Eastern cave black pearl chamber",
+      "lat": 45.1,
+      "lon": 76.3,
+      "resources": [
+        "Black Pearls"
+      ],
+      "imageAsset": "Farm26-island-cave-black-pearls",
+      "seconds": 320,
+      "direction": "Use the source walkthrough to find the cave; explore the chamber with glowing pearl clusters.",
+      "method": "Collect the black pearl clusters shown in the cave.",
+      "kit": [
+        "SCUBA"
+      ],
+      "risks": [
+        "Cave predators",
+        "Drowning",
+        "Interior GPS does not identify the entrance"
+      ],
+      "verified": true,
+      "photoSHA256": "95e838b748e45c4aa43dda6891a34d420de72f9669d02373d3be9a2136447beb",
+      "photoSourceSeconds": 321,
+      "photoMapOverlayVisible": false
+    }
+  ],
+  "guides": [
+    {
+      "map": "the-center",
+      "videoID": "bAqRvM-080g",
+      "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g",
+      "sourcePlane": "the-center filmed region",
+      "sourceCoordinateScope": "Camera GPS at the waterfall approach; nearby cavern is reached continuously from this position.",
+      "coordinateEvidence": "In-game camera GPS visible at 120s: latitude 88.8, longitude 63.2. Camera GPS at the waterfall approach; nearby cavern is reached continuously from this position. Evidence frame: tools/evidence/farming26-sources/bAqRvM-080g-120.jpg",
+      "inventoryEvidence": "Metal and Crystal chapter114–187s; white crystal clusters and ore rocks visible inside the cavern.",
+      "sourceAcquisition": "Approved complete local source cache",
+      "spotID": "center-waterfall-cavern",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "Filmed region and resource view, not exact actor positions, guaranteed spawns or measured harvest yields. Coordinate view remains outside the clean preview. Camera GPS at the waterfall approach; nearby cavern is reached continuously from this position.",
+      "steps": [
+        {
+          "id": "farm26-new-center-waterfall-cavern",
+          "title": "Terrain & approach",
+          "loop": "farm26-new-center-waterfall-cavern",
+          "poster": "farm26-new-center-waterfall-cavern",
+          "startSeconds": 132,
+          "endSeconds": 138,
+          "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g&t=132s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "sha256": "00101b352da52bb9d9da50d2326fa4e1c8e447407ed560c838de9749207f5854",
+          "visualReview": {
+            "method": "Manual source context and encoded interval review at4fps",
+            "sourceFrameSeconds": [
+              132.0,
+              132.25,
+              132.5,
+              132.75,
+              133.0,
+              133.25,
+              133.5,
+              133.75,
+              134.0,
+              134.25,
+              134.5,
+              134.75,
+              135.0,
+              135.25,
+              135.5,
+              135.75,
+              136.0,
+              136.25,
+              136.5,
+              136.75,
+              137.0,
+              137.25,
+              137.5,
+              137.75
+            ],
+            "reviewedAt": "2026-10-07",
+            "result": "Clean continuous terrain/resource/approach; no map, inventory or console obstruction in4fps sampled review",
+            "samplingLimit": "0.25-second sample review, not every-frame certification",
+            "contextSheet": "tools/evidence/farming26-sources/center-waterfall-cavern-review4fps.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "map": "the-center",
+      "videoID": "bAqRvM-080g",
+      "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g",
+      "sourcePlane": "the-center filmed region",
+      "sourceCoordinateScope": "Camera GPS above the pond approach.",
+      "coordinateEvidence": "In-game camera GPS visible at 348s: latitude 30.9, longitude 52.5. Camera GPS above the pond approach. Evidence frame: tools/evidence/farming26-sources/bAqRvM-080g-348.jpg",
+      "inventoryEvidence": "Cementing Paste chapter345–534s; creator follows this pond and its dams. Individual loot is not measured.",
+      "sourceAcquisition": "Approved complete local source cache",
+      "spotID": "center-north-pond-west",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "Filmed region and resource view, not exact actor positions, guaranteed spawns or measured harvest yields. Coordinate view remains outside the clean preview. Camera GPS above the pond approach.",
+      "steps": [
+        {
+          "id": "farm26-new-center-north-pond-west",
+          "title": "Terrain & approach",
+          "loop": "farm26-new-center-north-pond-west",
+          "poster": "farm26-new-center-north-pond-west",
+          "startSeconds": 356,
+          "endSeconds": 364,
+          "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g&t=356s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "sha256": "d8311dea51f89786d10ef81173c5e8c4f4e1a427bac038e23b17ff954aeddf8d",
+          "visualReview": {
+            "method": "Manual source context and encoded interval review at4fps",
+            "sourceFrameSeconds": [
+              356.0,
+              356.25,
+              356.5,
+              356.75,
+              357.0,
+              357.25,
+              357.5,
+              357.75,
+              358.0,
+              358.25,
+              358.5,
+              358.75,
+              359.0,
+              359.25,
+              359.5,
+              359.75,
+              360.0,
+              360.25,
+              360.5,
+              360.75,
+              361.0,
+              361.25,
+              361.5,
+              361.75,
+              362.0,
+              362.25,
+              362.5,
+              362.75,
+              363.0,
+              363.25,
+              363.5,
+              363.75
+            ],
+            "reviewedAt": "2026-10-07",
+            "result": "Clean continuous terrain/resource/approach; no map, inventory or console obstruction in4fps sampled review",
+            "samplingLimit": "0.25-second sample review, not every-frame certification",
+            "contextSheet": "tools/evidence/farming26-sources/center-north-pond-west-review4fps.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "map": "the-center",
+      "videoID": "bAqRvM-080g",
+      "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g",
+      "sourcePlane": "the-center filmed region",
+      "sourceCoordinateScope": "Camera GPS above this distinct pond.",
+      "coordinateEvidence": "In-game camera GPS visible at 408s: latitude 31.1, longitude 57.6. Camera GPS above this distinct pond. Evidence frame: tools/evidence/farming26-sources/bAqRvM-080g-408.jpg",
+      "inventoryEvidence": "Beaver Dam inventory opened at428s; Cementing Paste, Silica Pearls, Rare Flower and Wood are shown. No transfer or yield measurement is claimed.",
+      "sourceAcquisition": "Approved complete local source cache",
+      "spotID": "center-north-pond-east",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "Filmed region and resource view, not exact actor positions, guaranteed spawns or measured harvest yields. Coordinate view remains outside the clean preview. Camera GPS above this distinct pond.",
+      "steps": [
+        {
+          "id": "farm26-new-center-north-pond-east",
+          "title": "Terrain & approach",
+          "loop": "farm26-new-center-north-pond-east",
+          "poster": "farm26-new-center-north-pond-east",
+          "startSeconds": 414,
+          "endSeconds": 422,
+          "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g&t=414s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "sha256": "a964eb335c7eca938ea43bb9f3017a114b846be2eb3c47ab4dceb8501e80fb21",
+          "visualReview": {
+            "method": "Manual source context and encoded interval review at4fps",
+            "sourceFrameSeconds": [
+              414.0,
+              414.25,
+              414.5,
+              414.75,
+              415.0,
+              415.25,
+              415.5,
+              415.75,
+              416.0,
+              416.25,
+              416.5,
+              416.75,
+              417.0,
+              417.25,
+              417.5,
+              417.75,
+              418.0,
+              418.25,
+              418.5,
+              418.75,
+              419.0,
+              419.25,
+              419.5,
+              419.75,
+              420.0,
+              420.25,
+              420.5,
+              420.75,
+              421.0,
+              421.25,
+              421.5,
+              421.75
+            ],
+            "reviewedAt": "2026-10-07",
+            "result": "Clean continuous terrain/resource/approach; no map, inventory or console obstruction in4fps sampled review",
+            "samplingLimit": "0.25-second sample review, not every-frame certification",
+            "contextSheet": "tools/evidence/farming26-sources/center-north-pond-east-review4fps.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "map": "the-center",
+      "videoID": "bAqRvM-080g",
+      "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g",
+      "sourcePlane": "the-center filmed region",
+      "sourceCoordinateScope": "Camera GPS above the jungle pond.",
+      "coordinateEvidence": "In-game camera GPS visible at 435s: latitude 42.5, longitude 60.3. Camera GPS above the jungle pond. Evidence frame: tools/evidence/farming26-sources/bAqRvM-080g-435.jpg",
+      "inventoryEvidence": "Cementing Paste chapter345–534s; filmed pond approach and dam habitat. No specific loot yield is measured.",
+      "sourceAcquisition": "Approved complete local source cache",
+      "spotID": "center-middle-pond",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "Filmed region and resource view, not exact actor positions, guaranteed spawns or measured harvest yields. Coordinate view remains outside the clean preview. Camera GPS above the jungle pond.",
+      "steps": [
+        {
+          "id": "farm26-new-center-middle-pond",
+          "title": "Terrain & approach",
+          "loop": "farm26-new-center-middle-pond",
+          "poster": "farm26-new-center-middle-pond",
+          "startSeconds": 441,
+          "endSeconds": 449,
+          "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g&t=441s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "sha256": "19ebb9862a0d73f16b24a780f270e90c9a46f94b6012c44feadfb6ff2a479d99",
+          "visualReview": {
+            "method": "Manual source context and encoded interval review at4fps",
+            "sourceFrameSeconds": [
+              441.0,
+              441.25,
+              441.5,
+              441.75,
+              442.0,
+              442.25,
+              442.5,
+              442.75,
+              443.0,
+              443.25,
+              443.5,
+              443.75,
+              444.0,
+              444.25,
+              444.5,
+              444.75,
+              445.0,
+              445.25,
+              445.5,
+              445.75,
+              446.0,
+              446.25,
+              446.5,
+              446.75,
+              447.0,
+              447.25,
+              447.5,
+              447.75,
+              448.0,
+              448.25,
+              448.5,
+              448.75
+            ],
+            "reviewedAt": "2026-10-07",
+            "result": "Clean continuous terrain/resource/approach; no map, inventory or console obstruction in4fps sampled review",
+            "samplingLimit": "0.25-second sample review, not every-frame certification",
+            "contextSheet": "tools/evidence/farming26-sources/center-middle-pond-review4fps.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "map": "the-center",
+      "videoID": "bAqRvM-080g",
+      "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g",
+      "sourcePlane": "the-center filmed region",
+      "sourceCoordinateScope": "Camera GPS above the southern eastern pond.",
+      "coordinateEvidence": "In-game camera GPS visible at 471s: latitude 51.7, longitude 60.8. Camera GPS above the southern eastern pond. Evidence frame: tools/evidence/farming26-sources/center-pond4-gps471.jpg",
+      "inventoryEvidence": "Cementing Paste chapter345–534s; shallow pond, beaver and dam habitat shown. No specific loot yield is measured.",
+      "sourceAcquisition": "Approved complete local source cache",
+      "spotID": "center-south-east-pond",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "Filmed region and resource view, not exact actor positions, guaranteed spawns or measured harvest yields. Coordinate view remains outside the clean preview. Camera GPS above the southern eastern pond.",
+      "steps": [
+        {
+          "id": "farm26-new-center-south-east-pond",
+          "title": "Terrain & approach",
+          "loop": "farm26-new-center-south-east-pond",
+          "poster": "farm26-new-center-south-east-pond",
+          "startSeconds": 478,
+          "endSeconds": 486,
+          "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g&t=478s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "sha256": "fdfd77057e4d0de5b806a1abe1830366dbcf3007b5ea80e967e2b1286ce69f9c",
+          "visualReview": {
+            "method": "Manual source context and encoded interval review at4fps",
+            "sourceFrameSeconds": [
+              478.0,
+              478.25,
+              478.5,
+              478.75,
+              479.0,
+              479.25,
+              479.5,
+              479.75,
+              480.0,
+              480.25,
+              480.5,
+              480.75,
+              481.0,
+              481.25,
+              481.5,
+              481.75,
+              482.0,
+              482.25,
+              482.5,
+              482.75,
+              483.0,
+              483.25,
+              483.5,
+              483.75,
+              484.0,
+              484.25,
+              484.5,
+              484.75,
+              485.0,
+              485.25,
+              485.5,
+              485.75
+            ],
+            "reviewedAt": "2026-10-07",
+            "result": "Clean continuous terrain/resource/approach; no map, inventory or console obstruction in4fps sampled review",
+            "samplingLimit": "0.25-second sample review, not every-frame certification",
+            "contextSheet": "tools/evidence/farming26-sources/center-south-east-pond-review4fps.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "map": "the-center",
+      "videoID": "bAqRvM-080g",
+      "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g",
+      "sourcePlane": "the-center filmed region",
+      "sourceCoordinateScope": "Camera GPS longitude is displayed as51 without fractional digits, not a guessed decimal.",
+      "coordinateEvidence": "In-game camera GPS visible at 505s: latitude 53.1, longitude 51.0. Camera GPS longitude is displayed as51 without fractional digits, not a guessed decimal. Evidence frame: tools/evidence/farming26-sources/center-gps505.jpg",
+      "inventoryEvidence": "Beaver Dam inventory at519s shows312 Cementing Paste,12 Silica Pearls,20 Rare Flower and700 Wood in this source sample. These are not guaranteed yields.",
+      "sourceAcquisition": "Approved complete local source cache",
+      "spotID": "center-south-west-pond",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "Filmed region and resource view, not exact actor positions, guaranteed spawns or measured harvest yields. Coordinate view remains outside the clean preview. Camera GPS longitude is displayed as51 without fractional digits, not a guessed decimal.",
+      "steps": [
+        {
+          "id": "farm26-new-center-south-west-pond",
+          "title": "Terrain & approach",
+          "loop": "farm26-new-center-south-west-pond",
+          "poster": "farm26-new-center-south-west-pond",
+          "startSeconds": 510,
+          "endSeconds": 518,
+          "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g&t=510s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "sha256": "70630bf06064b5f69b2112f5a819bfc2830cea3ee350389002bed30680aa8aaa",
+          "visualReview": {
+            "method": "Manual source context and encoded interval review at4fps",
+            "sourceFrameSeconds": [
+              510.0,
+              510.25,
+              510.5,
+              510.75,
+              511.0,
+              511.25,
+              511.5,
+              511.75,
+              512.0,
+              512.25,
+              512.5,
+              512.75,
+              513.0,
+              513.25,
+              513.5,
+              513.75,
+              514.0,
+              514.25,
+              514.5,
+              514.75,
+              515.0,
+              515.25,
+              515.5,
+              515.75,
+              516.0,
+              516.25,
+              516.5,
+              516.75,
+              517.0,
+              517.25,
+              517.5,
+              517.75
+            ],
+            "reviewedAt": "2026-10-07",
+            "result": "Clean continuous terrain/resource/approach; no map, inventory or console obstruction in4fps sampled review",
+            "samplingLimit": "0.25-second sample review, not every-frame certification",
+            "contextSheet": "tools/evidence/farming26-sources/center-south-west-pond-review4fps.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "map": "valguero",
+      "videoID": "boGcZ2neH6g",
+      "sourceURL": "https://www.youtube.com/watch?v=boGcZ2neH6g",
+      "sourcePlane": "valguero filmed region",
+      "sourceCoordinateScope": "Camera GPS is shown underwater at this second pearl bed.",
+      "coordinateEvidence": "In-game camera GPS visible at 73s: latitude 44.4, longitude 30.4. Camera GPS is shown underwater at this second pearl bed. Evidence frame: tools/evidence/farming26-sources/boGcZ2neH6g-73.jpg",
+      "inventoryEvidence": "Silica Pearls opening chapter; glowing pearl shells are shown on the lake floor. Harvest yield is not measured.",
+      "sourceAcquisition": "Approved local source cache; partial files used only within complete decodable intervals",
+      "spotID": "valguero-west-pearl-bed",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "Filmed region and resource view, not exact actor positions, guaranteed spawns or measured harvest yields. Coordinate view remains outside the clean preview. Camera GPS is shown underwater at this second pearl bed.",
+      "steps": [
+        {
+          "id": "farm26-new-valguero-west-pearl-bed",
+          "title": "Terrain & approach",
+          "loop": "farm26-new-valguero-west-pearl-bed",
+          "poster": "farm26-new-valguero-west-pearl-bed",
+          "startSeconds": 64.5,
+          "endSeconds": 70.5,
+          "sourceURL": "https://www.youtube.com/watch?v=boGcZ2neH6g&t=64.5s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "sha256": "6cc72a2c73499f9d6f563e9ad28de04c2053ba0683a3ea4caadec4e049e9591f",
+          "visualReview": {
+            "method": "Manual source context and encoded interval review at4fps",
+            "sourceFrameSeconds": [
+              64.5,
+              64.75,
+              65.0,
+              65.25,
+              65.5,
+              65.75,
+              66.0,
+              66.25,
+              66.5,
+              66.75,
+              67.0,
+              67.25,
+              67.5,
+              67.75,
+              68.0,
+              68.25,
+              68.5,
+              68.75,
+              69.0,
+              69.25,
+              69.5,
+              69.75,
+              70.0,
+              70.25
+            ],
+            "reviewedAt": "2026-10-07",
+            "result": "Clean continuous terrain/resource/approach; no map, inventory or console obstruction in4fps sampled review",
+            "samplingLimit": "0.25-second sample review, not every-frame certification",
+            "contextSheet": "tools/evidence/farming26-sources/valguero-west-pearl-bed-review4fps.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "map": "ragnarok",
+      "videoID": "0i0-XEV85m8",
+      "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8",
+      "sourcePlane": "ragnarok filmed region",
+      "sourceCoordinateScope": "Actual camera GPS90.2/72.1 is used; the earlier creator caption79/71.1 is a different region and is not copied.",
+      "coordinateEvidence": "In-game camera GPS visible at 681s: latitude 90.2, longitude 72.1. Actual camera GPS90.2/72.1 is used; the earlier creator caption79/71.1 is a different region and is not copied. Evidence frame: tools/evidence/farming26-sources/rag-oil-gps681.jpg",
+      "inventoryEvidence": "Oil chapter579–711s; oil rocks on the seabed shown directly before the GPS view. No harvest yield is measured.",
+      "sourceAcquisition": "Approved complete local source cache",
+      "spotID": "rag-south-seabed-oil",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "Filmed region and resource view, not exact actor positions, guaranteed spawns or measured harvest yields. Coordinate view remains outside the clean preview. Actual camera GPS90.2/72.1 is used; the earlier creator caption79/71.1 is a different region and is not copied.",
+      "steps": [
+        {
+          "id": "farm26-new-rag-south-seabed-oil",
+          "title": "Terrain & approach",
+          "loop": "farm26-new-rag-south-seabed-oil",
+          "poster": "farm26-new-rag-south-seabed-oil",
+          "startSeconds": 670,
+          "endSeconds": 678,
+          "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8&t=670s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "sha256": "1665e55b4915b491be29490f7d8377900b2cddf32b99a5a9e0ad19a664407522",
+          "visualReview": {
+            "method": "Manual source context and encoded interval review at4fps",
+            "sourceFrameSeconds": [
+              670.0,
+              670.25,
+              670.5,
+              670.75,
+              671.0,
+              671.25,
+              671.5,
+              671.75,
+              672.0,
+              672.25,
+              672.5,
+              672.75,
+              673.0,
+              673.25,
+              673.5,
+              673.75,
+              674.0,
+              674.25,
+              674.5,
+              674.75,
+              675.0,
+              675.25,
+              675.5,
+              675.75,
+              676.0,
+              676.25,
+              676.5,
+              676.75,
+              677.0,
+              677.25,
+              677.5,
+              677.75
+            ],
+            "reviewedAt": "2026-10-07",
+            "result": "Clean continuous terrain/resource/approach; no map, inventory or console obstruction in4fps sampled review",
+            "samplingLimit": "0.25-second sample review, not every-frame certification",
+            "contextSheet": "tools/evidence/farming26-sources/rag-south-seabed-oil-review4fps.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "map": "the-island",
+      "videoID": "IOCye6IYUCM",
+      "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM",
+      "sourcePlane": "the-island filmed region",
+      "sourceCoordinateScope": "GPS is recorded inside the filmed cave at140s; the creator revisits its black pearl chamber in316–346s. This is an interior camera coordinate, not an independently verified entrance.",
+      "coordinateEvidence": "In-game camera GPS visible at 140s: latitude 45.1, longitude 76.3. GPS is recorded inside the filmed cave at140s; the creator revisits its black pearl chamber in316–346s. This is an interior camera coordinate, not an independently verified entrance. Evidence frame: tools/evidence/farming26-sources/IOCye6IYUCM-140.jpg",
+      "inventoryEvidence": "Black Pearls chapter272–370s; glowing black pearl clusters and collection indicator shown in the chamber around326s.",
+      "sourceAcquisition": "Approved complete local source cache",
+      "spotID": "island-cave-black-pearls",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1920,
+      "sourceHeight": 1080,
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "Filmed region and resource view, not exact actor positions, guaranteed spawns or measured harvest yields. Coordinate view remains outside the clean preview. GPS is recorded inside the filmed cave at140s; the creator revisits its black pearl chamber in316–346s. This is an interior camera coordinate, not an independently verified entrance.",
+      "steps": [
+        {
+          "id": "farm26-new-island-cave-black-pearls",
+          "title": "Terrain & approach",
+          "loop": "farm26-new-island-cave-black-pearls",
+          "poster": "farm26-new-island-cave-black-pearls",
+          "startSeconds": 320,
+          "endSeconds": 328,
+          "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM&t=320s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "sha256": "1948366b75b72472f4127b2716c112264b3943ee02fcb954a8f880ea6ad8aa82",
+          "visualReview": {
+            "method": "Manual source context and encoded interval review at4fps",
+            "sourceFrameSeconds": [
+              320.0,
+              320.25,
+              320.5,
+              320.75,
+              321.0,
+              321.25,
+              321.5,
+              321.75,
+              322.0,
+              322.25,
+              322.5,
+              322.75,
+              323.0,
+              323.25,
+              323.5,
+              323.75,
+              324.0,
+              324.25,
+              324.5,
+              324.75,
+              325.0,
+              325.25,
+              325.5,
+              325.75,
+              326.0,
+              326.25,
+              326.5,
+              326.75,
+              327.0,
+              327.25,
+              327.5,
+              327.75
+            ],
+            "reviewedAt": "2026-10-07",
+            "result": "Clean continuous terrain/resource/approach; no map, inventory or console obstruction in4fps sampled review",
+            "samplingLimit": "0.25-second sample review, not every-frame certification",
+            "contextSheet": "tools/evidence/farming26-sources/island-cave-black-pearls-review4fps.jpg"
+          }
+        }
+      ]
+    }
+  ],
+  "researchLimitations": [
+    "YouTube search connector API requests failed with API-key/parameter errors; saved search responses document this.",
+    "Authorized Extinction download returned HTTP403; no access controls were bypassed.",
+    "Partial source caches for other maps decode only opening sections; incomplete or map-obstructed extra regions were rejected.",
+    "Creator-caption-only coordinates were not promoted to new verified pins.",
+    "No ASE resource-map coordinates were copied into ASA pins.",
+    "All11 map planes were considered; this batch does not claim exhaustive verified coverage."
+  ],
+  "captionOnlyCandidates": [
+    {
+      "map": "astraeos",
+      "videoID": "k73mk3nz0wI",
+      "coordinates": [
+        [
+          27.6,
+          46.5
+        ],
+        [
+          34.5,
+          45.6
+        ]
+      ],
+      "resource": "Crystal",
+      "reason": "Creator labels; raw camera GPS not readable"
+    },
+    {
+      "map": "ragnarok",
+      "videoID": "0i0-XEV85m8",
+      "resources": [
+        "Black Pearls",
+        "Crystal",
+        "Metal",
+        "Obsidian",
+        "Organic Polymer",
+        "Silica Pearls",
+        "Sulfur"
+      ],
+      "reason": "Multiple extra chapters have creator-label coordinates only; excluded from pins"
+    }
+  ],
+  "rejectedCandidates": [
+    {
+      "map": "scorched-earth",
+      "videoID": "k9IOWvnWMdg",
+      "lat": 36.8,
+      "lon": 68.9,
+      "gpsSeconds": 59,
+      "reason": "Hard cut at57s to the new region, source ends around61s; cannot supply continuous6sec clean clip"
+    }
+  ],
+  "mapPlaneCoverage": [
+    {
+      "map": "the-island",
+      "verifiedAdditions": 1,
+      "status": "New camera-GPS additions",
+      "caveat": "Existing source is ASA footage; additional chapters require complete decodable source and readable GPS."
+    },
+    {
+      "map": "the-center",
+      "verifiedAdditions": 6,
+      "status": "New camera-GPS additions",
+      "caveat": "Existing source is ASA footage; additional chapters require complete decodable source and readable GPS."
+    },
+    {
+      "map": "ragnarok",
+      "verifiedAdditions": 1,
+      "status": "New camera-GPS additions",
+      "caveat": "Existing source is ASA footage; additional chapters require complete decodable source and readable GPS."
+    },
+    {
+      "map": "scorched-earth",
+      "verifiedAdditions": 0,
+      "status": "No further new camera-GPS plus clean6sec clip pair accepted from accessible footage",
+      "caveat": "Existing source is ASA footage; additional chapters require complete decodable source and readable GPS."
+    },
+    {
+      "map": "aberration",
+      "verifiedAdditions": 0,
+      "status": "No further new camera-GPS plus clean6sec clip pair accepted from accessible footage",
+      "caveat": "Existing source is ASA footage; additional chapters require complete decodable source and readable GPS."
+    },
+    {
+      "map": "extinction",
+      "verifiedAdditions": 0,
+      "status": "No further new camera-GPS plus clean6sec clip pair accepted from accessible footage",
+      "caveat": "Existing source is ASA footage; additional chapters require complete decodable source and readable GPS."
+    },
+    {
+      "map": "valguero",
+      "verifiedAdditions": 1,
+      "status": "New camera-GPS additions",
+      "caveat": "Existing source is ASA footage; additional chapters require complete decodable source and readable GPS."
+    },
+    {
+      "map": "astraeos",
+      "verifiedAdditions": 0,
+      "status": "No further new camera-GPS plus clean6sec clip pair accepted from accessible footage",
+      "caveat": "Existing source is ASA footage; additional chapters require complete decodable source and readable GPS."
+    },
+    {
+      "map": "lost-colony",
+      "verifiedAdditions": 0,
+      "status": "No further new camera-GPS plus clean6sec clip pair accepted from accessible footage",
+      "caveat": "Existing source is ASA footage; additional chapters require complete decodable source and readable GPS."
+    },
+    {
+      "map": "genesis-part-1",
+      "verifiedAdditions": 0,
+      "status": "No further new camera-GPS plus clean6sec clip pair accepted from accessible footage",
+      "caveat": "Existing Genesis footage is ASE, not proof of ASA availability or identical ASA resources. No new additions accepted."
+    },
+    {
+      "map": "genesis-part-1-ocean",
+      "verifiedAdditions": 0,
+      "status": "No further new camera-GPS plus clean6sec clip pair accepted from accessible footage",
+      "caveat": "Existing Genesis footage is ASE, not proof of ASA availability or identical ASA resources. No new additions accepted."
+    }
+  ],
+  "primarySupport": [
+    {
+      "url": "https://ark.wiki.gg/wiki/Beaver_dam",
+      "scope": "General dam loot and angry beaver behavior only; no wiki map coordinates copied."
+    },
+    {
+      "url": "https://ark.wiki.gg/wiki/Silica_Pearls",
+      "scope": "General harvesting/resource identity only; page includes ASE content."
+    },
+    {
+      "url": "https://ark.wiki.gg/wiki/Resource_Map/The_Island",
+      "scope": "ASA map-coordinate-system caveat; no coordinate tables copied."
+    }
+  ]
+}

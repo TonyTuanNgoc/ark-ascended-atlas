@@ -49,6 +49,33 @@ final class MapFieldTests:XCTestCase {
         XCTAssertTrue(PersonalMapLocation.decode("bad json").isEmpty)
         XCTAssertEqual([a,b].filter {$0.map==ArkMap.island.rawValue},[a])
     }
+    func testFarmingRosterAndResourceSpecificPins() {
+        for map in ArkMap.allCases {
+            let names = FarmingResourceCatalogue.names(in: map)
+            XCTAssertFalse(names.isEmpty, map.rawValue)
+            XCTAssertTrue(Set(names).isDisjoint(with: FarmingResourceCatalogue.excluded), map.rawValue)
+            for resource in names {
+                let spots = FarmingResourceCatalogue.spots(for: resource, in: map)
+                XCTAssertTrue(spots.allSatisfy { $0.map == map.rawValue && $0.verified && $0.resources.compactMap(FarmingResourceCatalogue.canonical).contains(resource) })
+            }
+        }
+        XCTAssertTrue(FarmingResourceCatalogue.names(in: .island).contains("Raw Meat"))
+        XCTAssertTrue(FarmingResourceCatalogue.names(in: .island).contains("Hide"))
+        XCTAssertTrue(FarmingResourceCatalogue.names(in: .aberration).contains("Green Gem"))
+        XCTAssertFalse(FarmingResourceCatalogue.names(in: .island).contains("Cactus Sap"))
+        let iconRows = try! ArkMap.load(FarmIconTestRows.self, name: "farming-resource-icons")
+        for map in ArkMap.allCases {
+            for name in FarmingResourceCatalogue.names(in: map) {
+                let asset = iconRows.assets[name]
+                XCTAssertNotNil(asset, map.rawValue + ":" + name)
+                XCTAssertNotNil(asset.flatMap(UIImage.init(named:)), name)
+            }
+        }
+        let extinction = FarmingResourceCatalogue.shared.maps.first { $0.map == ArkMap.extinction.rawValue }!
+        XCTAssertTrue(extinction.resources.first { $0.name == "Congealed Gas Ball" }!.method.contains("Gacha"))
+        XCTAssertEqual(extinction.resources.first { $0.name == "Congealed Gas Ball" }!.availability, "production")
+        XCTAssertEqual(extinction.resources.first { $0.name == "Blue Crystalized Sap" }!.availability, "gatherable")
+    }
     func testVerifiedResourceMediaAndMapCoverage() {
         let spots=ResourceFarmCatalog.shared.spots.filter(\.verified);let guides=ResourceClipCatalog.shared.guides
         XCTAssertEqual(Set(spots.map(\.id)).count,spots.count)
@@ -57,11 +84,13 @@ final class MapFieldTests:XCTestCase {
             XCTAssertTrue((0...100).contains(spot.lat));XCTAssertTrue((0...100).contains(spot.lon))
             XCTAssertNotNil(UIImage(named:spot.imageAsset),spot.id)
             let guide=ResourceClipCatalog.guide(for:spot.id);XCTAssertNotNil(guide,spot.id)
-            XCTAssertEqual(guide?.steps.count,3);XCTAssertEqual(Set(guide?.steps.map(\.loop) ?? []).count,3)
-            for step in guide?.steps ?? [] {XCTAssertEqual(step.mapOverlayVisible, false, step.id);XCTAssertFalse(step.title.localizedCaseInsensitiveContains("coordinates"), step.id);XCTAssertNotNil(step.url,step.id);XCTAssertNotNil(step.caveStep.posterImage,step.id);XCTAssertGreaterThan(step.endSeconds,step.startSeconds);XCTAssertTrue(step.sourceURL.hasPrefix("https://www.youtube.com/watch?v="))}
+            XCTAssertEqual(guide?.steps.count,1);XCTAssertEqual(Set(guide?.steps.map(\.loop) ?? []).count,1)
+            for step in guide?.steps ?? [] {XCTAssertEqual(step.mapOverlayVisible, false, step.id);XCTAssertFalse(step.title.localizedCaseInsensitiveContains("coordinates"), step.id);XCTAssertNotNil(step.url,step.id);XCTAssertNotNil(step.caveStep.posterImage,step.id);XCTAssertGreaterThan(step.endSeconds,step.startSeconds);XCTAssertLessThanOrEqual(step.endSeconds-step.startSeconds,10.001);XCTAssertTrue(step.sourceURL.hasPrefix("https://www.youtube.com/watch?v="))}
         }
         XCTAssertEqual(spots.count,guides.count)
         let coverage = ResourceFarmCatalog.shared.coverage ?? []
         for map in ArkMap.allCases { XCTAssertFalse(coverage.filter { $0.map == map.rawValue }.isEmpty, "Missing acquisition coverage: " + map.rawValue) }
     }
 }
+
+private struct FarmIconTestRows: Decodable { let assets: [String: String] }

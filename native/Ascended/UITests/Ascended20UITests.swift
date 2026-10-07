@@ -1,7 +1,7 @@
 import XCTest
 final class Ascended20UITests:XCTestCase {
     @MainActor private func start()->XCUIApplication {XCUIDevice.shared.orientation = .landscapeLeft;let app=XCUIApplication();app.launch();app.buttons["maps-picker"].tap();let rag=app.buttons["choose-ragnarok"];for _ in 0..<8 {if rag.isHittable {break};app.scrollViews["maps-list"].swipeUp()};rag.tap();return app}
-    @MainActor func testEmptyHierarchicalFiltersAndThreeResourceClips() {
+    @MainActor func testEmptyHierarchicalFiltersAndSingleResourceClip() {
         let app=start()
         for id in ["Artifact","Cửa hang","Obelisk","Boss","Base","Resources","My Locations"] {XCTAssertEqual(app.buttons["layer-"+id].value as? String,"Hidden")}
         app.buttons["expand-layer-Artifact"].tap()
@@ -18,8 +18,8 @@ final class Ascended20UITests:XCTestCase {
         farm.tap()
         if !app.staticTexts["selectedMapLocation"].exists {app.buttons[name].tap()}
         XCTAssertTrue(app.staticTexts["selectedMapLocation"].waitForExistence(timeout:5))
-        let selectors=app.buttons.matching(NSPredicate(format:"identifier BEGINSWITH %@","farmClipSelect-"));XCTAssertEqual(selectors.count,3)
-        for i in 0..<3 {selectors.element(boundBy:i).tap();XCTAssertTrue(app.links["farmClipSource"].exists || app.buttons["farmClipSource"].exists)}
+        let selectors=app.buttons.matching(NSPredicate(format:"identifier BEGINSWITH %@","farmClipSelect-"));XCTAssertEqual(selectors.count,0)
+        XCTAssertTrue(app.links["farmClipSource"].exists || app.buttons["farmClipSource"].exists)
         let shot=XCTAttachment(screenshot:XCUIScreen.main.screenshot());shot.name="Map-hierarchical-filter-resource-loops";shot.lifetime = .keepAlways;add(shot)
     }
     @MainActor func testLongPressPersonalLocationPersistsAndMapIsolation() {

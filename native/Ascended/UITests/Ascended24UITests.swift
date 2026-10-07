@@ -27,7 +27,7 @@ final class Ascended24UITests: XCTestCase {
         screenshot.name = "One-row-navigation-Ragnarok"; screenshot.lifetime = .keepAlways; add(screenshot)
     }
 
-    @MainActor func testFarmingRectangularFilmstripAndCoordinates() {
+    @MainActor func testFarmingResourceFirstLayoutAndSingleClip() {
         XCUIDevice.shared.orientation = .landscapeLeft
         let app = XCUIApplication(); app.launch()
         app.buttons["maps-picker"].tap()
@@ -35,12 +35,22 @@ final class Ascended24UITests: XCTestCase {
         let rag = app.buttons["choose-ragnarok"]
         for _ in 0..<8 { if rag.isHittable { break }; app.scrollViews["maps-list"].swipeUp() }
         rag.tap(); app.buttons["section-Khai thác"].tap()
-        let selectors = app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "farmClipSelect-"))
-        XCTAssertTrue(selectors.firstMatch.waitForExistence(timeout: 8))
-        XCTAssertGreaterThanOrEqual(selectors.count, 3)
-        for index in 0..<3 { selectors.element(boundBy: index).tap() }
+        let strip = app.scrollViews["farming-resource-strip"]
+        XCTAssertTrue(strip.waitForExistence(timeout: 8))
+        XCTAssertEqual(app.buttons["farm-resource-Metal"].value as? String, "Selected")
+        XCTAssertFalse(app.buttons["farm-resource-Wood"].exists)
+        XCTAssertFalse(app.buttons["farm-resource-Stone"].exists)
+        XCTAssertFalse(app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "farmClipSelect-")).firstMatch.exists)
         XCTAssertTrue(app.links["farmClipSource"].firstMatch.exists || app.buttons["farmClipSource"].firstMatch.exists)
         XCTAssertFalse(app.staticTexts["Area / coordinates"].exists)
+        XCTAssertFalse(app.buttons["Watch the route"].exists)
+        let search = app.searchFields.firstMatch
+        search.tap(); search.typeText("Black Pearls"); app.keyboards.buttons["Search"].tap()
+        let resource = app.buttons["farm-resource-Black Pearls"]
+        XCTAssertTrue(resource.waitForExistence(timeout: 5)); resource.tap()
+        XCTAssertEqual(resource.value as? String, "Selected")
+        XCTAssertFalse(app.buttons["farm-resource-Metal"].exists)
+        XCTAssertTrue(app.scrollViews["farming-location-strip"].exists)
         let screenshot = XCTAttachment(screenshot: XCUIScreen.main.screenshot())
         screenshot.name = "Farming-clean-footage-LAT-LON"; screenshot.lifetime = .keepAlways; add(screenshot)
     }
