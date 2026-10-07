@@ -83,6 +83,11 @@ struct MapSessionShell: View {
                 }.navigationDestination(for: GuideDestination.self) { $0.screen }
                     .navigationTitle(selection == .map ? map.name : selection.title)
                     .navigationBarTitleDisplayMode(.inline)
+                    .toolbar { ToolbarItem(placement: .principal) {
+                        Text(selection == .map ? map.name : selection.title)
+                            .font(.system(size: 24, weight: .bold, design: .rounded))
+                            .accessibilityIdentifier("module-screen-title")
+                    } }
             }.id(map.rawValue + "-" + selection.rawValue)
         }.background(Color(red: 0.035, green: 0.05, blue: 0.065))
     }
@@ -107,8 +112,8 @@ struct MapSessionShell: View {
                                 withAnimation(.easeInOut(duration: 0.2)) { reader.scrollTo(item.id, anchor: .center) }
                             } label: {
                                 VStack(spacing: 4) {
-                                    NavigationAvatar(asset: item.avatarAsset, size: 28)
-                                    Text(item.title).font(.system(size: 11, weight: .semibold))
+                                    NavigationAvatar(asset: item.avatarAsset, size: 38)
+                                    Text(item.title).font(.system(size: 12, weight: .semibold))
                                         .multilineTextAlignment(.center).lineLimit(2)
                                         .fixedSize(horizontal: false, vertical: true).frame(height: 28)
                                 }.frame(width: 82, height: 72)
@@ -139,7 +144,7 @@ private struct CurrentMapArtwork: View {
         if let image {
             Image(uiImage: image).resizable().aspectRatio(image.size.width / image.size.height, contentMode: .fit)
                 .clipShape(RoundedRectangle(cornerRadius: 10))
-                .frame(maxHeight: 68, alignment: .leading)
+                .frame(maxWidth: .infinity, maxHeight: 68, alignment: .center)
                 .accessibilityHidden(true)
         }
     }
@@ -159,16 +164,19 @@ private struct UnifiedMapsPicker: View {
     let choose: (ArkMap) -> Void
     @State private var presented = false
     var body: some View {
-        Button { presented.toggle() } label: {
-            VStack(alignment: .leading, spacing: 7) {
-                CurrentMapArtwork(map: map).frame(width: 94, height: 38, alignment: .leading)
-                HStack(spacing: 6) {
-                    Text(map.name).font(.system(size: 13, weight: .bold)).lineLimit(1).minimumScaleFactor(0.7)
+        Button { presented = true } label: {
+            VStack(spacing: 6) {
+                CurrentMapArtwork(map: map).frame(width: 94, height: 40)
+                HStack(spacing: 5) {
+                    Text(map.name).font(.system(size: 14, weight: .semibold, design: .rounded))
+                        .lineLimit(1).minimumScaleFactor(0.75)
                     Image(systemName: "chevron.down").font(.system(size: 10, weight: .bold))
-                        .frame(width: 22, height: 22).background(Color.cyan.opacity(0.16), in: Circle())
-                }.foregroundStyle(.cyan)
-            }.frame(width: 116, height: 80, alignment: .leading)
-                .contentShape(RoundedRectangle(cornerRadius: 10))
+                        .accessibilityHidden(true)
+                }.foregroundStyle(.white)
+            }.frame(width: 124, height: 80)
+                .background(Color.cyan.opacity(0.07), in: RoundedRectangle(cornerRadius: 14))
+                .overlay { RoundedRectangle(cornerRadius: 14).strokeBorder(.cyan.opacity(0.22), lineWidth: 1) }
+                .contentShape(Rectangle())
 
         }.buttonStyle(.plain).accessibilityIdentifier("maps-picker").accessibilityLabel("Maps · " + map.name)
             .popover(isPresented: $presented) {

@@ -1,0 +1,32 @@
+[
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "20C9346D-B0E6-4239-8152-1D85ADD57BA6",
+        "deviceName" : "Ascended iPad QA",
+        "exportedFileName" : "66A1FC57-250E-4E4F-9703-3258BF447B9B.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Farming-clean-footage-LAT-LON_0_71747D40-0CCA-4627-A953-30D4996615E2.png",
+        "timestamp" : 1791387718.258
+      }
+    ],
+    "testIdentifier" : "Ascended24UITests/testFarmingResourceFirstLayoutAndSingleClip()",
+    "testIdentifierURL" : "test://com.apple.xcode/Ascended/AscendedUITests/Ascended24UITests/testFarmingResourceFirstLayoutAndSingleClip"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "20C9346D-B0E6-4239-8152-1D85ADD57BA6",
+        "deviceName" : "Ascended iPad QA",
+        "exportedFileName" : "C2DEE70B-EC7D-4A31-ADA5-D1EF24315F76.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Farming-three-columns-Rich-Metal_0_7F999FAE-0456-4AD5-9E55-3983FCAFE044.png",
+        "timestamp" : 1791387732.167
+      }
+    ],
+    "testIdentifier" : "Ascended27UITests/testFocusedFarmingHasThreeFixedColumnsAndSmallLocationCards()",
+    "testIdentifierURL" : "test://com.apple.xcode/Ascended/AscendedUITests/Ascended27UITests/testFocusedFarmingHasThreeFixedColumnsAndSmallLocationCards"
+  }
+]

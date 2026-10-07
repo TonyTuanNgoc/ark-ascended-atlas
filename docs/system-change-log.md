@@ -97,3 +97,6 @@ Resource-first Farming: horizontal137-family illustrated selector,959map/categor
 
 ### Build 26 Simulator follow-up
 Actual window-width-responsive compact Farming map, corrected viewport UI-test query, and three longer clean same-region source loops (sulfur, black pearls, eastern dam). Six short clean clips remain. Final Simulator-only proof is in the build26 receipt; the prior signed iPad draft requires rebuild before later hardware use.
+
+## 2026-10-07 — Ascended 0.26.0 (27)
+Centered full-card map selector and chevron, larger centered module headings and navigation artwork. Story becomes a horizontal illustrated topic selector with chapter/character rows and preserved text. Farming now shows exactly the requested 14 resources and fixed three-column map / small horizontal location loops / creature-tool guidance. Preserves verified footage, GPS and broader library data. Corrected lazy-card source-link accessibility and genuine species icon lookup. 23 unit + 4 scoped UI cases passed; Simulator-only launch verified. No Tony OS, TestFlight, hardware or web/domain deployment. Report: codex-reports/2026-10-07-ascended27-navigation-story-farming.md.

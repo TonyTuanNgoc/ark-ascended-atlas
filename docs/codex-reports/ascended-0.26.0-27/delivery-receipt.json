@@ -1,0 +1,18 @@
+{
+  "version": "0.26.0",
+  "build": "27",
+  "unitTestsPassed": 23,
+  "uiTestsPassed": 4,
+  "xcresult": "/Volumes/TONY SSD/ASCENDED_MEDIA/builds/Ascended-0.14.0-Simulator/Logs/Test/Test-Ascended-2026.10.07_22-31-04-+0700.xcresult",
+  "simulatorUUID": "20C9346D-B0E6-4239-8152-1D85ADD57BA6",
+  "simulatorLaunchPID": 61905,
+  "physicalInstall": false,
+  "testFlight": false,
+  "webDeployment": false,
+  "resourceSelectionCount": 14,
+  "finalAffectedQA": {
+    "uiTestsPassed": 2,
+    "xcresult": "/Volumes/TONY SSD/ASCENDED_MEDIA/builds/Ascended-0.14.0-Simulator/Logs/Test/Test-Ascended-2026.10.07_22-41-27-+0700.xcresult"
+  },
+  "visibleWindow": "Ascended iPad QA, The Island Atlas; independently observed via Simulator UI after final launch"
+}

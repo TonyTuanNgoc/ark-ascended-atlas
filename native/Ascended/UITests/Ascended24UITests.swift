@@ -30,8 +30,6 @@ final class Ascended24UITests: XCTestCase {
     @MainActor func testFarmingResourceFirstLayoutAndSingleClip() {
         XCUIDevice.shared.orientation = .landscapeLeft
         let app = XCUIApplication(); app.launch()
-        XCUIDevice.shared.orientation = .portrait
-        XCUIDevice.shared.orientation = .landscapeLeft
         app.buttons["maps-picker"].tap()
         XCTAssertTrue(app.scrollViews["maps-list"].waitForExistence(timeout: 8))
         let rag = app.buttons["choose-ragnarok"]
@@ -44,15 +42,22 @@ final class Ascended24UITests: XCTestCase {
         XCTAssertFalse(app.buttons["farm-resource-Stone"].exists)
         let miniMap = app.scrollViews["farming-mini-map"]
         let sideBySide = XCTNSPredicateExpectation(predicate: NSPredicate { _, _ in
-            miniMap.exists && abs(miniMap.frame.width - (app.frame.width >= 1000 ? 380 : app.frame.width - 40)) < 2
+            miniMap.exists && abs(miniMap.frame.width - ((app.frame.width - 64) / 3)) < 2
         }, object: miniMap)
         XCTAssertEqual(XCTWaiter.wait(for: [sideBySide], timeout: 8), .completed)
         XCTAssertFalse(app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "farmClipSelect-")).firstMatch.exists)
-        XCTAssertTrue(app.links["farmClipSource"].firstMatch.exists || app.buttons["farmClipSource"].firstMatch.exists)
+        let source = app.descendants(matching: .any).matching(identifier: "farmClipSource").firstMatch
+        if !source.waitForExistence(timeout: 5) {
+            print("FARM-SOURCE-DEBUG " + app.debugDescription)
+            let shot = XCTAttachment(screenshot: XCUIScreen.main.screenshot()); shot.name = "Farming-source-debug"; shot.lifetime = .keepAlways; add(shot)
+        }
+        XCTAssertTrue(source.exists)
         XCTAssertFalse(app.staticTexts["Area / coordinates"].exists)
         XCTAssertFalse(app.buttons["Watch the route"].exists)
         let search = app.searchFields.firstMatch
-        search.tap(); search.typeText("Black Pearls"); app.keyboards.buttons["Search"].tap()
+        search.tap()
+        XCTAssertTrue(app.keyboards.firstMatch.waitForExistence(timeout: 5))
+        search.typeText("Black Pearls"); app.keyboards.buttons["Search"].tap()
         let resource = app.buttons["farm-resource-Black Pearls"]
         XCTAssertTrue(resource.waitForExistence(timeout: 5)); resource.tap()
         XCTAssertEqual(resource.value as? String, "Selected")

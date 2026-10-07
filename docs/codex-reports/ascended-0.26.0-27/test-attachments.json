@@ -1,0 +1,62 @@
+[
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "20C9346D-B0E6-4239-8152-1D85ADD57BA6",
+        "deviceName" : "Ascended iPad QA",
+        "exportedFileName" : "480DAC2A-3A82-4F52-A389-2FBDE646EF5B.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Farming-clean-footage-LAT-LON_0_E4521636-E4A4-4019-B424-360BE4B92CF0.png",
+        "timestamp" : 1791387159.814
+      }
+    ],
+    "testIdentifier" : "Ascended24UITests/testFarmingResourceFirstLayoutAndSingleClip()",
+    "testIdentifierURL" : "test://com.apple.xcode/Ascended/AscendedUITests/Ascended24UITests/testFarmingResourceFirstLayoutAndSingleClip"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "20C9346D-B0E6-4239-8152-1D85ADD57BA6",
+        "deviceName" : "Ascended iPad QA",
+        "exportedFileName" : "CE2544D1-FC9A-40C2-A998-5442AFD78A09.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "One-row-navigation-Ragnarok_0_0233CB68-E4B5-4234-A55B-AE5156D27E8D.png",
+        "timestamp" : 1791387170.72
+      }
+    ],
+    "testIdentifier" : "Ascended24UITests/testSingleRowCombinedMapPickerAndNames()",
+    "testIdentifierURL" : "test://com.apple.xcode/Ascended/AscendedUITests/Ascended24UITests/testSingleRowCombinedMapPickerAndNames"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "20C9346D-B0E6-4239-8152-1D85ADD57BA6",
+        "deviceName" : "Ascended iPad QA",
+        "exportedFileName" : "5A010149-EE4D-42F4-9799-6FEDC44E17A7.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Farming-three-columns-Rich-Metal_0_11DA09B6-EAF5-424F-9627-BF1BDAA50736.png",
+        "timestamp" : 1791387183.056
+      }
+    ],
+    "testIdentifier" : "Ascended27UITests/testFocusedFarmingHasThreeFixedColumnsAndSmallLocationCards()",
+    "testIdentifierURL" : "test://com.apple.xcode/Ascended/AscendedUITests/Ascended27UITests/testFocusedFarmingHasThreeFixedColumnsAndSmallLocationCards"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "20C9346D-B0E6-4239-8152-1D85ADD57BA6",
+        "deviceName" : "Ascended iPad QA",
+        "exportedFileName" : "E90C98D0-D42E-4BEE-84F1-CBFFDF66000E.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Story-horizontal-topics-Island-picker_0_39CFF746-6EB5-4999-AFC5-939DE371714C.png",
+        "timestamp" : 1791387202.518
+      }
+    ],
+    "testIdentifier" : "Ascended27UITests/testMapPickerWholeCardOpensOnceAndStoryTopicsAreHorizontal()",
+    "testIdentifierURL" : "test://com.apple.xcode/Ascended/AscendedUITests/Ascended27UITests/testMapPickerWholeCardOpensOnceAndStoryTopicsAreHorizontal"
+  }
+]

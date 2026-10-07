@@ -140,112 +140,133 @@ private struct FarmResourcePicture: View {
 struct ResourceFarmingScreen: View {
     @Environment(\.arkMap) private var map
     @State private var search = ""
-    @State private var resource: String? = nil
-    @State private var selectedID: String? = nil
-    @State private var focusedID: String? = nil
+    @State private var resource = "Metal"
+    @State private var selectedID: String?
+    @State private var focusedID: String?
     @State private var resetToken = UUID()
     @State private var action: MapAction = .fit
-    private var names: [String] { FarmingResourceCatalogue.names(in: map).filter { search.isEmpty || MapResources.label(for: $0).localizedStandardContains(search) } }
-    private var selectedEntry: FarmingResourceCatalogue.Entry? { FarmingResourceCatalogue.shared.maps.first { $0.map == map.rawValue }?.resources.first { $0.name == selectedResource } }
-    private var selectedResource: String? { resource ?? names.first(where: { $0 == "Metal" }) ?? names.first }
-    private var spots: [VerifiedResourceSpot] { selectedResource.map { FarmingResourceCatalogue.spots(for: $0, in: map) } ?? [] }
-    private var selectedSpot: VerifiedResourceSpot? { spots.first { $0.id == selectedID } ?? spots.first }
-    private var acquisition: [ResourceCoverage] { (ResourceFarmCatalog.shared.coverage ?? []).filter { $0.map == map.rawValue && ["crafted", "crafting", "boss", "processing", "creature"].contains($0.status) && (search.isEmpty || $0.resource.localizedStandardContains(search)) } }
+    static let resourceSelection = ["Black Pearls", "Cementing Paste", "Chitin", "Crystal", "Giant Bee Honey", "Metal", "Obsidian", "Oil", "Organic Polymer", "Rare Flowers", "Rare Mushrooms", "Rich Metal", "Sap", "Silica Pearls"]
+    private var names: [String] { Self.resourceSelection.filter { search.isEmpty || $0.localizedStandardContains(search) } }
+    private var spots: [VerifiedResourceSpot] { FarmingResourceCatalogue.spots(for: resource, in: map) }
     var body: some View {
         GeometryReader { geometry in
-        ScrollView {
-            VStack(alignment: .leading, spacing: 18) {
+            VStack(alignment: .leading, spacing: 14) {
                 ScrollViewReader { proxy in
-                ScrollView(.horizontal, showsIndicators: false) {
-                    HStack(alignment: .top, spacing: 8) {
-                        ForEach(names, id: \.self) { name in
-                            Button { resource = name; selectedID = nil; focusedID = nil; action = .fit; resetToken = UUID() } label: {
-                                VStack(spacing: 6) {
-                                    FarmResourcePicture(name: name).frame(width: 46, height: 46)
-                                    Text(MapResources.label(for: name)).font(.caption.weight(.medium)).multilineTextAlignment(.center).fixedSize(horizontal: false, vertical: true)
-                                }.frame(width: 92).frame(minHeight: 86).padding(8)
-                                    .background(selectedResource == name ? Color.cyan.opacity(0.15) : Color.white.opacity(0.045), in: RoundedRectangle(cornerRadius: 12))
-                                    .overlay { RoundedRectangle(cornerRadius: 12).strokeBorder(selectedResource == name ? .cyan.opacity(0.65) : .white.opacity(0.06), lineWidth: 1) }
-                            }.buttonStyle(.plain).foregroundStyle(selectedResource == name ? .cyan : .primary)
-                                .id(name).accessibilityLabel(MapResources.label(for: name)).accessibilityValue(selectedResource == name ? "Selected" : "Not selected").accessibilityIdentifier("farm-resource-" + name)
-                        }
-                    }
-                }.accessibilityIdentifier("farming-resource-strip")
-                    .onAppear { if let name = selectedResource { proxy.scrollTo(name, anchor: .center) } }
-                }
-                if let name = selectedResource {
-                    HStack(spacing: 10) {
-                        FarmResourcePicture(name: name).frame(width: 34, height: 34)
-                        Text(MapResources.label(for: name)).font(.title2.bold())
-                        Spacer()
-                        Label(String(spots.count), systemImage: "mappin.and.ellipse").font(.subheadline.monospacedDigit()).foregroundStyle(.cyan).accessibilityLabel("\(spots.count) verified locations").accessibilityIdentifier("farm-location-count")
-                    }
-                    if geometry.size.width >= 1000 {
-                        HStack(alignment: .top, spacing: 16) {
-                            miniMap.frame(width: 380, height: 380)
-                            spotPreview.frame(maxWidth: .infinity)
-                        }
-                    } else {
-                        VStack(spacing: 14) { miniMap.frame(height: 300); spotPreview }
-                    }
-                    if !spots.isEmpty {
-                        ScrollView(.horizontal, showsIndicators: false) {
-                            HStack(alignment: .top, spacing: 10) {
-                                ForEach(spots) { spot in
-                                    Button { selectedID = spot.id; focusedID = spot.point.id } label: {
-                                        VStack(alignment: .leading, spacing: 8) {
-                                            Image(spot.imageAsset).resizable().scaledToFill().frame(width: 188, height: 106).clipped().clipShape(RoundedRectangle(cornerRadius: 8))
-                                            Text(spot.name).font(.caption.weight(.medium)).multilineTextAlignment(.leading).lineLimit(3).frame(height: 46, alignment: .top)
-                                            GPSBadge(coordinates: spot.point.coordinates).font(.caption2)
-                                        }.padding(8).background(selectedSpot?.id == spot.id ? Color.cyan.opacity(0.13) : Color.white.opacity(0.04), in: RoundedRectangle(cornerRadius: 12))
-                                            .overlay { RoundedRectangle(cornerRadius: 12).strokeBorder(selectedSpot?.id == spot.id ? .cyan.opacity(0.6) : .clear, lineWidth: 1) }
-                                    }.buttonStyle(.plain).accessibilityIdentifier("farm-site-" + spot.id).accessibilityValue(selectedSpot?.id == spot.id ? "Selected" : "Not selected")
-                                }
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack(spacing: 8) {
+                            ForEach(names, id: \.self) { name in
+                                Button {
+                                    resource = name; selectedID = nil; focusedID = nil; action = .fit; resetToken = UUID()
+                                } label: {
+                                    VStack(spacing: 5) {
+                                        FarmResourcePicture(name: name).frame(width: 38, height: 38)
+                                        Text(name).font(.system(size: 12, weight: .semibold)).multilineTextAlignment(.center)
+                                            .lineLimit(2).frame(height: 30)
+                                    }.frame(width: 94, height: 78).padding(6)
+                                        .background(resource == name ? Color.cyan.opacity(0.14) : .white.opacity(0.04), in: RoundedRectangle(cornerRadius: 12))
+                                        .overlay { RoundedRectangle(cornerRadius: 12).strokeBorder(resource == name ? .cyan.opacity(0.5) : .clear) }
+                                        .contentShape(Rectangle())
+                                }.buttonStyle(.plain).id(name).accessibilityIdentifier("farm-resource-" + name)
+                                    .accessibilityValue(resource == name ? "Selected" : "Not selected")
                             }
-                        }.accessibilityIdentifier("farming-location-strip")
-                    }
-                    if let entry = selectedEntry {
-                        HStack(alignment: .top, spacing: 12) {
-                            FarmResourcePicture(name: entry.name).frame(width: 44, height: 44)
-                            Text(entry.method).font(.callout).fixedSize(horizontal: false, vertical: true)
-                        }.frame(maxWidth: .infinity, alignment: .leading).cardStyle().accessibilityIdentifier("farming-resource-method")
-                    }
-                    if selectedEntry?.availability != "production", selectedEntry?.availability != "boss", let gathering = HarvestingCatalogue.shared.resource(name) {
-                        HarvestingReferencePanel(reference: gathering).cardStyle().accessibilityIdentifier("farming-harvesting-reference")
-                    }
+                        }
+                    }.accessibilityIdentifier("farming-resource-strip")
+                        .onAppear { proxy.scrollTo(resource, anchor: .center) }
                 }
-                if !acquisition.isEmpty {
-                    Divider().padding(.vertical, 8)
-                    HStack { Image(systemName: "gearshape.2.fill").foregroundStyle(.cyan); Text("Production & crafting").font(.title3.bold()) }
-                    LazyVGrid(columns: [GridItem(.adaptive(minimum: 300), alignment: .top)], alignment: .leading, spacing: 14) {
-                        ForEach(acquisition) { row in ResourceAcquisitionCard(row: row) }
-                    }
+                HStack(spacing: 10) {
+                    FarmResourcePicture(name: resource).frame(width: 28, height: 28)
+                    Text(resource).font(.title3.bold())
+                    Spacer()
+                    Label(String(spots.count), systemImage: "mappin.and.ellipse").font(.caption.monospacedDigit()).foregroundStyle(.cyan)
+                        .accessibilityLabel("\(spots.count) verified locations").accessibilityIdentifier("farm-location-count")
                 }
+                let columnWidth = max(1, (geometry.size.width - 64) / 3)
+                HStack(alignment: .top, spacing: 12) {
+                    miniMap.frame(width: columnWidth).frame(maxHeight: .infinity)
+                    locations(width: columnWidth).frame(width: columnWidth).frame(maxHeight: .infinity, alignment: .top)
+                    harvesting.frame(width: columnWidth).frame(maxHeight: .infinity, alignment: .top)
+                }.frame(maxHeight: .infinity)
             }.padding(20)
         }.searchable(text: $search, prompt: "Search resources")
-            .onChange(of: search) { _, _ in if let resource, !names.contains(resource) { self.resource = nil; selectedID = nil; focusedID = nil; action = .fit; resetToken = UUID() } }
-    }
     }
     private var miniMap: some View {
         ZoomableMap(imageAsset: map.imageAsset, mapName: map.name, resetToken: resetToken, action: action, locations: spots.map(\.point), focusID: focusedID, select: { point in selectedID = point.farmID; focusedID = point.id })
             .clipShape(RoundedRectangle(cornerRadius: 16))
             .overlay(alignment: .bottomTrailing) {
                 HStack(spacing: 2) {
-                    Button { action = .out; resetToken = UUID() } label: { Image(systemName: "minus").frame(width: 38, height: 38) }.accessibilityLabel("Zoom out farming map")
-                    Button { action = .inside; resetToken = UUID() } label: { Image(systemName: "plus").frame(width: 38, height: 38) }.accessibilityLabel("Zoom in farming map")
-                    Button { focusedID = nil; action = .fit; resetToken = UUID() } label: { Image(systemName: "arrow.counterclockwise").frame(width: 38, height: 38) }.accessibilityLabel("Fit farming map")
-                }.buttonStyle(.plain).padding(4).background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 10)).padding(10)
+                    Button { action = .out; resetToken = UUID() } label: { Image(systemName: "minus").frame(width: 34, height: 34) }.accessibilityLabel("Zoom out farming map")
+                    Button { action = .inside; resetToken = UUID() } label: { Image(systemName: "plus").frame(width: 34, height: 34) }.accessibilityLabel("Zoom in farming map")
+                    Button { focusedID = nil; action = .fit; resetToken = UUID() } label: { Image(systemName: "arrow.counterclockwise").frame(width: 34, height: 34) }.accessibilityLabel("Fit farming map")
+                }.buttonStyle(.plain).padding(4).background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 10)).padding(8)
             }.accessibilityIdentifier("farming-mini-map")
     }
-    @ViewBuilder private var spotPreview: some View {
-        if let spot = selectedSpot {
-            FarmDetails(spot: spot, showGathering: false).cardStyle().accessibilityElement(children: .contain).accessibilityIdentifier("farm-card-" + spot.id)
-        } else {
-            VStack(spacing: 14) {
-                if let name = selectedResource { FarmResourcePicture(name: name).frame(width: 80, height: 80) }
-                Label("No verified location video yet", systemImage: "mappin.slash").font(.headline)
-                Text("Gathering advice is below. Pins appear only after the location and footage are checked.").font(.callout).foregroundStyle(.secondary).multilineTextAlignment(.center)
-            }.frame(maxWidth: .infinity, minHeight: 320).padding(18).background(.white.opacity(0.035), in: RoundedRectangle(cornerRadius: 16)).accessibilityIdentifier("farm-no-verified-locations")
+    private func locations(width: CGFloat) -> some View {
+        VStack(alignment: .leading, spacing: 12) {
+            Text("Locations").font(.headline)
+            if spots.isEmpty {
+                VStack(spacing: 12) {
+                    Image(systemName: "mappin.slash").font(.title2).foregroundStyle(.secondary)
+                    Text("No verified location yet").font(.subheadline).multilineTextAlignment(.center)
+                }.frame(maxWidth: .infinity).padding(24).accessibilityIdentifier("farm-no-verified-locations")
+            } else {
+                ScrollView(.horizontal, showsIndicators: false) {
+                    LazyHStack(alignment: .top, spacing: 12) {
+                        ForEach(spots) { spot in
+                            VStack(alignment: .leading, spacing: 10) {
+                                if let guide = ResourceClipCatalog.guide(for: spot.id) {
+                                    ResourceClipWalkthrough(guide: guide).id(spot.id)
+                                }
+                                Text(spot.name).font(.subheadline.bold()).fixedSize(horizontal: false, vertical: true)
+                                GPSBadge(coordinates: spot.point.coordinates).font(.caption)
+                                Text(spot.coordinateHint).font(.caption2).foregroundStyle(.secondary)
+                                Text(spot.direction).font(.caption).foregroundStyle(.secondary).lineLimit(4)
+                            }.padding(10).frame(width: max(1, width - 2), alignment: .topLeading)
+                                .background(.white.opacity(0.04), in: RoundedRectangle(cornerRadius: 14))
+                                .id(spot.id).accessibilityElement(children: .contain).accessibilityIdentifier("farm-card-" + spot.id)
+                        }
+                    }.scrollTargetLayout()
+                }.scrollTargetBehavior(.viewAligned).scrollPosition(id: $selectedID, anchor: .center)
+                    .frame(height: min(360, width * 9 / 16 + 174))
+                    .accessibilityIdentifier("farming-location-strip")
+                HStack(spacing: 5) {
+                    Image(systemName: "arrow.left.and.right")
+                    Text("Swipe for locations").font(.caption)
+                }.foregroundStyle(.secondary)
+            }
+            Spacer(minLength: 0)
+        }
+    }
+    private var harvesting: some View {
+        ScrollView {
+            VStack(alignment: .leading, spacing: 14) {
+                Text("Harvesting").font(.headline)
+                if let reference = HarvestingCatalogue.shared.resource(resource) {
+                    if !reference.creatures.isEmpty {
+                        Text("Creatures").font(.caption.bold()).foregroundStyle(.cyan)
+                        ForEach(reference.creatures) { choice in harvestChoice(choice, creature: true) }
+                    }
+                    if !reference.tools.isEmpty {
+                        Text("Tools").font(.caption.bold()).foregroundStyle(.cyan)
+                        ForEach(reference.tools) { choice in harvestChoice(choice, creature: false) }
+                    }
+                    Text(reference.summary).font(.caption).foregroundStyle(.secondary)
+                    ForEach(reference.cautions, id: \.self) { Text($0).font(.caption2).foregroundStyle(.secondary) }
+                } else {
+                    Text("Harvesting guidance is being verified.").font(.caption).foregroundStyle(.secondary)
+                }
+            }.padding(14).frame(maxWidth: .infinity, alignment: .leading)
+        }.background(.white.opacity(0.035), in: RoundedRectangle(cornerRadius: 14))
+            .accessibilityIdentifier("farming-harvesting-column")
+    }
+    private func harvestChoice(_ choice: HarvestingChoice, creature: Bool) -> some View {
+        HStack(alignment: .center, spacing: 10) {
+            if creature {
+                CreatureAvatar(asset: choice.name == "Giant Bee" ? "Dino-giant-queen-bee" : "Dino-" + choice.name.lowercased().replacingOccurrences(of: " ", with: "-")).frame(width: 46, height: 46)
+            } else { ReferencePicture(name: choice.name).frame(width: 46, height: 46) }
+            VStack(alignment: .leading, spacing: 3) {
+                Text(choice.name).font(.subheadline.weight(.semibold))
+                Text(choice.role).font(.caption).foregroundStyle(.secondary).fixedSize(horizontal: false, vertical: true)
+            }
         }
     }
 }

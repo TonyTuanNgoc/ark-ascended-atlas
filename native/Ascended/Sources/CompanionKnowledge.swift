@@ -27,55 +27,109 @@ struct StoryGuide: Decodable {
 }
 struct StorySection: Decodable, Identifiable { let id, title, symbol: String; let paragraphs: [String] }
 struct StoryChapter: Decodable, Identifiable { let id, title, summary, playGoal: String; let mapID: String?; let paragraphs: [String] }
+private struct StoryTopic: Identifiable {
+    let id, title, asset: String
+    static let all: [Self] = [
+        .init(id: "start", title: "Start here", asset: "Nav-information"),
+        .init(id: "loop", title: "Game loop", asset: "Nav-creatures"),
+        .init(id: "notes", title: "Explorer notes", asset: "Nav-story"),
+        .init(id: "reading-order", title: "Reading order", asset: "Equipment-compass"),
+        .init(id: "asa-order", title: "ASA timeline", asset: "Nav-maps"),
+        .init(id: "full", title: "Full story", asset: "Nav-map"),
+        .init(id: "characters", title: "Characters", asset: "Nav-bosses")
+    ]
+}
 struct StoryGuideScreen: View {
+    @State private var selected = "start"
+    @State private var chapterID = StoryGuide.shared.chapters.first?.id ?? ""
+    @State private var characterID = StoryGuide.shared.characters.first?.id ?? ""
     var body: some View {
         ScrollView {
-            VStack(alignment: .leading, spacing: 20) {
-                VStack(alignment: .leading, spacing: 10) {
-                    Label("ARK STORY GUIDE", systemImage: "book.closed.fill").font(.caption.bold()).foregroundStyle(.cyan)
-                    Text("Understand the world of ARK").font(.largeTitle.bold())
-                    Text("Explore the setting, follow the story across the ARKs, and meet the people behind the journey.").font(.title3).foregroundStyle(.secondary)
+            VStack(alignment: .leading, spacing: 24) {
+                HStack(spacing: 20) {
+                    NavigationAvatar(asset: "Nav-story", size: 90)
+                    VStack(alignment: .leading, spacing: 8) {
+                        Text("Understand the world of ARK").font(.system(size: 32, weight: .bold, design: .rounded))
+                        Text("The world, the journey, and the people behind it.").font(.title3).foregroundStyle(.secondary)
+                    }
                 }.padding(.vertical, 8)
-                Text("The world & its mysteries").font(.title2.bold())
-                ForEach(StoryGuide.shared.overview) { section in
-                    DisclosureGroup { paragraphs(section.paragraphs) } label: {
-                        Label(section.title, systemImage: section.symbol).font(.headline).padding(.vertical, 6)
-                    }.cardStyle().accessibilityIdentifier("story-" + section.id)
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 10) {
+                        ForEach(StoryTopic.all) { topic in
+                            topicButton(id: topic.id, title: topic.title, asset: topic.asset)
+                        }
+                    }.padding(.vertical, 2)
+                }.accessibilityIdentifier("story-topic-navigation")
+                Group {
+                    if let section = StoryGuide.shared.overview.first(where: { $0.id == selected }) {
+                        readingPanel(title: section.title, paragraphs: section.paragraphs)
+                    } else if selected == "full" {
+                        VStack(alignment: .leading, spacing: 18) {
+                            Label("Contains story spoilers", systemImage: "eye").font(.caption).foregroundStyle(.orange)
+                            ScrollView(.horizontal, showsIndicators: false) {
+                                HStack(spacing: 10) {
+                                    ForEach(StoryGuide.shared.chapters) { chapter in
+                                        Button { chapterID = chapter.id } label: {
+                                            VStack(spacing: 8) {
+                                                if let id = chapter.mapID { MapBadge(id: id, width: 110, height: 68) }
+                                                else { NavigationAvatar(asset: "Nav-story", size: 68) }
+                                                Text(chapter.title.replacingOccurrences(of: "SPOILER — ", with: "")).font(.caption.weight(.semibold)).lineLimit(3).frame(height: 48)
+                                            }.frame(width: 130).padding(10)
+                                                .background(chapterID == chapter.id ? Color.cyan.opacity(0.13) : .white.opacity(0.035), in: RoundedRectangle(cornerRadius: 14))
+                                        }.buttonStyle(.plain).accessibilityIdentifier("chapter-" + chapter.id)
+                                            .accessibilityValue(chapterID == chapter.id ? "Selected" : "Not selected")
+                                    }
+                                }
+                            }
+                            if let chapter = StoryGuide.shared.chapters.first(where: { $0.id == chapterID }) {
+                                readingPanel(title: chapter.summary, paragraphs: chapter.paragraphs)
+                                Label(chapter.playGoal, systemImage: "flag.checkered").font(.callout).foregroundStyle(.cyan)
+                                    .fixedSize(horizontal: false, vertical: true).padding(18)
+                            }
+                        }
+                    } else if selected == "characters" {
+                        VStack(alignment: .leading, spacing: 18) {
+                            ScrollView(.horizontal, showsIndicators: false) {
+                                HStack(spacing: 10) {
+                                    ForEach(StoryGuide.shared.characters) { person in
+                                        Button { characterID = person.id } label: {
+                                            Text(person.title).font(.subheadline.weight(.semibold)).padding(14)
+                                                .background(characterID == person.id ? Color.cyan.opacity(0.15) : .white.opacity(0.04), in: RoundedRectangle(cornerRadius: 12))
+                                        }.buttonStyle(.plain)
+                                    }
+                                }
+                            }
+                            if let person = StoryGuide.shared.characters.first(where: { $0.id == characterID }) {
+                                readingPanel(title: person.title, paragraphs: person.paragraphs)
+                            }
+                        }
+                    }
                 }
-                VStack(alignment: .leading, spacing: 6) {
-                    Text("The complete journey").font(.title2.bold())
-                    Text("Story spoilers · Open a chapter to read its events and gameplay goal.").font(.subheadline).foregroundStyle(.secondary)
-                }.padding(.top, 8)
-                DisclosureGroup {
-                    VStack(spacing: 12) {
-                        ForEach(StoryGuide.shared.chapters) { chapter in
-                            DisclosureGroup {
-                                Text(chapter.summary).font(.headline).foregroundStyle(.cyan).fixedSize(horizontal: false, vertical: true).padding(.top, 12)
-                                paragraphs(chapter.paragraphs)
-                                Label(chapter.playGoal, systemImage: "flag.checkered").font(.callout).fixedSize(horizontal: false, vertical: true)
-                                    .padding(14).frame(maxWidth: .infinity, alignment: .leading)
-                                    .background(Color.cyan.opacity(0.08), in: RoundedRectangle(cornerRadius: 10))
-                            } label: {
-                                HStack(spacing: 12) { if let id = chapter.mapID { MapBadge(id: id) }; Text(chapter.title).font(.headline).fixedSize(horizontal: false, vertical: true) }.padding(.vertical, 6)
-                            }.padding(16).background(Color.white.opacity(0.035), in: RoundedRectangle(cornerRadius: 12))
-                                .accessibilityIdentifier("chapter-" + chapter.id)
-                        }
-                    }.padding(.top, 14)
-                } label: { Label("Full story · contains spoilers", systemImage: "book.closed.fill").font(.headline).padding(.vertical, 6) }
-                    .cardStyle().accessibilityIdentifier("story-full")
-                DisclosureGroup {
-                    VStack(spacing: 12) {
-                        ForEach(StoryGuide.shared.characters) { section in
-                            DisclosureGroup { paragraphs(section.paragraphs) } label: { Label(section.title, systemImage: section.symbol).font(.headline).padding(.vertical, 6) }
-                                .padding(16).background(Color.white.opacity(0.035), in: RoundedRectangle(cornerRadius: 12))
-                        }
-                    }.padding(.top, 14)
-                } label: { Label("Characters & concepts", systemImage: "person.2.fill").font(.headline).padding(.vertical, 6) }.cardStyle()
-            }.padding(24).frame(maxWidth: 1050).frame(maxWidth: .infinity)
+            }.padding(24).frame(maxWidth: 1150).frame(maxWidth: .infinity)
         }.accessibilityIdentifier("storyGuide")
     }
-    private func paragraphs(_ values: [String]) -> some View {
-        VStack(alignment: .leading, spacing: 16) { ForEach(values, id: \.self) { Text($0).font(.body).lineSpacing(5).fixedSize(horizontal: false, vertical: true).frame(maxWidth: .infinity, alignment: .leading) } }.padding(.vertical, 16)
+    private func topicButton(id: String, title: String, asset: String) -> some View {
+        Button { selected = id } label: {
+            VStack(spacing: 10) {
+                NavigationAvatar(asset: asset, size: 60)
+                    .shadow(color: .cyan.opacity(selected == id ? 0.28 : 0.08), radius: 12)
+                Text(title).font(.system(size: 14, weight: .semibold, design: .rounded)).multilineTextAlignment(.center)
+                    .lineLimit(2).frame(height: 34)
+            }.frame(width: 126, height: 120).padding(6)
+                .background(LinearGradient(colors: [Color.cyan.opacity(selected == id ? 0.16 : 0.035), Color.white.opacity(0.025)], startPoint: .top, endPoint: .bottom), in: RoundedRectangle(cornerRadius: 16))
+                .overlay { RoundedRectangle(cornerRadius: 16).strokeBorder(selected == id ? .cyan.opacity(0.55) : .white.opacity(0.08)) }
+                .contentShape(Rectangle())
+        }.buttonStyle(.plain).foregroundStyle(selected == id ? .white : .secondary)
+            .accessibilityIdentifier("story-" + id).accessibilityValue(selected == id ? "Selected" : "Not selected")
+    }
+    private func readingPanel(title: String, paragraphs: [String]) -> some View {
+        VStack(alignment: .leading, spacing: 18) {
+            Text(title).font(.title2.bold()).accessibilityIdentifier("story-content-title")
+            ForEach(paragraphs, id: \.self) {
+                Text($0).font(.body).lineSpacing(5).fixedSize(horizontal: false, vertical: true).frame(maxWidth: .infinity, alignment: .leading)
+            }
+        }.padding(24).frame(maxWidth: .infinity, alignment: .leading)
+            .background(.white.opacity(0.035), in: RoundedRectangle(cornerRadius: 18))
     }
 }
 struct EquipmentCatalogue: Decodable {
