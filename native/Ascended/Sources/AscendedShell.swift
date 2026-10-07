@@ -82,11 +82,11 @@ struct MapSessionShell: View {
                     case .exploration: ExplorationLibrary()
                     }
                 }.navigationDestination(for: GuideDestination.self) { $0.screen }
-                    .navigationTitle(selection == .map ? map.name : selection.title)
+                    .navigationTitle(selection == .map ? map.name + " Atlas" : selection.title)
                     .navigationBarTitleDisplayMode(.inline)
                     .toolbar { ToolbarItem(placement: .principal) {
                         HStack(spacing: 12) {
-                            Text(selection == .dinos ? "Dinosaurs & Creatures" : selection == .map ? map.name : selection.title).accessibilityIdentifier("module-screen-title")
+                            Text(selection == .dinos ? "Dinosaurs & Creatures" : selection == .map ? map.name + " Atlas" : selection.title).accessibilityIdentifier("module-screen-title")
                             if selection == .dinos, case .success(let catalogue) = map.creatures { Text("\(catalogue.creatures.count)").foregroundStyle(.cyan).accessibilityIdentifier("creature-total-count") }
                         }
                             .font(.system(size: 32, weight: .bold, design: .rounded))

@@ -1,0 +1,16 @@
+{
+  "manticore": {
+    "asset": "Portrait-Boss-manticore",
+    "kind": "AI illustrated portrait",
+    "source": "imagegen built-in",
+    "reference": "ARK Manticore inspired, not extracted mesh",
+    "alphaVerified": true
+  },
+  "rockwell": {
+    "asset": "Portrait-Boss-rockwell",
+    "kind": "AI illustrated portrait",
+    "source": "imagegen built-in",
+    "reference": "ARK Aberration Rockwell inspired, not extracted mesh",
+    "alphaVerified": true
+  }
+}

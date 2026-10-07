@@ -34,46 +34,9 @@ extension ArkMap {
 }
 
 struct BossCampaignScreen: View {
-    @Environment(\.arkMap) private var map
-    var body: some View {
-        ScrollView {
-            VStack(alignment: .leading, spacing: 22) {
-                Text("Boss campaign").font(.largeTitle.bold()).accessibilityIdentifier("bossCampaignTitle")
-                if map == .ragnarok { Text("1 main boss · 4 named mini-bosses · 3 dungeon encounter groups").font(.caption).foregroundStyle(.secondary) }
-                if let campaign = map.campaign {
-                    VisualBrief(text: campaign.summary).cardStyle()
-                    NavigationLink(value: GuideDestination.preparation) {
-                        Label("Levels, breeding, imprinting & stat allocation", systemImage: "graduationcap.fill").font(.headline).frame(maxWidth: .infinity, alignment: .leading).padding(8).contentShape(Rectangle())
-                    }.cardStyle().accessibilityIdentifier("bossPreparation")
-                    ForEach(campaign.steps) { step in
-                        VStack(alignment: .leading, spacing: 16) {
-                            Text(step.kind.uppercased()).font(.caption.bold()).foregroundStyle(.cyan)
-                            Text(step.title).font(.title2.bold()).accessibilityIdentifier("boss-step-" + step.id)
-                            VisualBrief(text: step.reason)
-                            ForEach(step.bossIDs, id: \.self) { id in
-                                HStack(spacing: 18) {
-                                    CreatureCutout(asset: map.bossImage(id)).frame(width: 100, height: 80)
-                                    VStack(alignment: .leading, spacing: 10) {
-                                        if map.bosses.contains(where: { $0.id == id }) || map == .ragnarok {
-                                            NavigationLink(value: GuideDestination.boss(id)) { Label(map.bossName(id), systemImage: "chevron.right") }.accessibilityIdentifier("boss-" + id)
-                                        } else {
-                                            Text(map.bossName(id)).font(.headline)
-                                            Text("Detailed ASA requirements are being verified.").font(.caption).foregroundStyle(.secondary)
-                                        }
-                                        if campaign.loadouts.contains(where: { $0.bossID == id && !$0.options.isEmpty }) {
-                                            NavigationLink(value: GuideDestination.army(id)) { Label("Creature army & preparation stats", systemImage: "pawprint.fill") }.labelStyle(.iconOnly).accessibilityLabel("Creature army & preparation stats").frame(width: 44, height: 44).accessibilityIdentifier("army-" + id)
-                                        }
-                                    }.font(.headline)
-                                    Spacer(minLength: 0)
-                                }.padding(.vertical, 6)
-                            }
-                        }.cardStyle()
-                    }
-                } else if let record = map.expansion { ExpansionProfile(record: record).cardStyle() }
-            }.padding(24).frame(maxWidth: 1100).frame(maxWidth: .infinity)
-        }.background(Color(red: 0.025, green: 0.045, blue: 0.065))
-    }
+    var body: some View { BossGalleryScreen() }
 }
+
 struct BossPreparationScreen: View {
     @Environment(\.arkMap) private var map
     var body: some View {

@@ -1,9 +1,9 @@
-# Ascended — native iPad development 0.28.0 (29)
+# Ascended — native iPad development 0.29.0 (30)
 Single Player · Ragnarok / The Island / The Center. Independent app `com.tonytuanngoc.ascended`, installed by cable without TestFlight.
 
-## Current Simulator release — 0.28.0 (29)
+## Current Simulator release — 0.29.0 (30)
 
-Grouped module rail: Story / Atlas; Farming / Equipment / Base Locations; Creatures / Artifacts & Caves / Bosses. Creature library has one centered Dinosaurs & Creatures heading/count, icon-led filters and bright recognizable variant accents. Landscape creature profiles use three compact columns. Maps render a complete decoded overview immediately under transparent detail tiles, with tile fading disabled. See [build 29 report](../../docs/codex-reports/2026-10-07-ascended29-creatures-navigation-rendering.md).
+Atlas uses map-specific headings, Find location above filters, consistent cave pins and bright individual Obelisks. A map-scoped photo registry supplies real cave popup photographs where verified. Bosses use a fitted gallery and in-place Army / Tribute / Location / Combat details, with existing difficulty tables and honest missing-data states. Eleven boss PNG portraits are available, including two labeled illustrations. Photo coverage is partial; individual Obelisk photographs and some expansion boss portraits remain pending. See [build 30 report](../../docs/codex-reports/2026-10-08-ascended30-atlas-boss-gallery.md).
 
 One horizontal module rail; Field Guide removed. Base Locations presents ten photographed scouting candidates each for Ragnarok, The Island and The Center with map / selected location / practical information columns. Atlas owns artifacts, cave entrances, obelisks, bosses and personal pins; Resources and Bases live in their dedicated tabs. Atlas defaults to the complete image at its original aspect ratio. Farming displays only the selected pin's continuous clip with visible highlighting and separate zoom controls.
 

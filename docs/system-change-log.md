@@ -108,3 +108,6 @@ Removed Field Guide from the module rail; replaced Base Building entry with thre
 ## 2026-10-07 — Ascended 0.28.0 (29)
 
 Grouped one-row rail in requestedStory/Atlas → Farming/Equipment/BaseLocations → Creatures/ArtifactsCaves/Bosses order. SingleDinosaurs&Creatures heading/count, categoryicons, brightAlpha/Corrupted/elementalWyvern recognition accents andthree-column landscapeprofiles. Synchronous decodedmapoverview undertransparent detailtiles withzero fade preservesoriginalsourcezoom/GPS andremovesmissing blacktiles.25unit+9unique scopedUIcases pass; first-framepixel/cropGPS andpersonalpersistence verified. Simulator29readback+launchPID85281; standalone scope, noTonyOS/TestFlight/hardware/webdomain. Report:codex-reports/2026-10-07-ascended29-creatures-navigation-rendering.md.
+
+## 2026-10-08 — Ascended Atlas and boss gallery 0.29.0 (30)
+Map-specific Atlas headings, top Find location, shared cave icons and coloured Obelisk markers. Photo registry reuses 32 genuine cave assets and 11 boss PNGs, including two labeled illustrations. Boss progression becomes a fitted gallery with in-place Army/Tribute/Location/Combat details using existing structured data. UI applies to all maps; verified-photo/expansion boss data coverage remains partial and visibly disclosed. Simulator-only release; report: codex-reports/2026-10-08-ascended30-atlas-boss-gallery.md.

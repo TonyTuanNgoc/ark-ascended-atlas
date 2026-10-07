@@ -50,7 +50,24 @@ struct MapLocation: Identifiable, Equatable {
                 list.append(MapLocation(id:"boss-summon-"+boss,name:boss.capitalized+" · summon point",lat:reference.lat,lon:reference.lon,layer:.boss,note:"Enter the boss encounter here; this is not the remote arena position.",routeID:reference.routeID,artifactID:nil,bossID:boss))
             }
         }
-        if map == .ragnarok { list.append(MapLocation(id: "boss-lava-arena", name: "Lava Elemental · arena", lat: 21.6, lon: 26.9, layer: .boss, note: "End of Jungle Dungeon · optional loot encounter", routeID: "jungle", artifactID: nil)) }
+        // Verified Single Player entry terminals use existing atlas coordinates.
+        // These markers deliberately describe summoning/approach, not arena GPS.
+        let entryIDs: [String: [String]]
+        switch map {
+        case .island: entryIDs = ["broodmother":["obelisk-green"], "megapithecus":["obelisk-blue"], "dragon":["obelisk-red"], "overseer":["entrance-tek-0"]]
+        case .center: entryIDs = ["broodmother":["obelisk-blue","obelisk-green","obelisk-red"], "megapithecus":["obelisk-blue","obelisk-green","obelisk-red"]]
+        case .scorchedEarth: entryIDs = ["manticore":["obelisk-blue","obelisk-green","obelisk-red"]]
+        case .ragnarok: entryIDs = ["nunatak":["obelisk-blue","obelisk-green","obelisk-red"]]
+        default: entryIDs = [:]
+        }
+        for (boss, ids) in entryIDs where !list.contains(where: { $0.bossID == boss }) {
+            for id in ids {
+                if let entry = list.first(where: { $0.id == id }) {
+                    list.append(MapLocation(id:"boss-summon-"+boss+"-"+id, name:map.bossName(boss)+" · "+entry.name, lat:entry.lat, lon:entry.lon, layer:.boss, note:"Summoning terminal or cave approach; the boss arena is separate.", routeID:entry.routeID, artifactID:nil, bossID:boss))
+                }
+            }
+        }
+        if map == .ragnarok { list.append(MapLocation(id: "boss-lava-arena", name: "Lava Elemental · arena", lat: 21.6, lon: 26.9, layer: .boss, note: "End of Jungle Dungeon · optional loot encounter", routeID: "jungle", artifactID: nil, bossID: "lava-elemental")) }
         list += (map.bases?.locations ?? []).map { MapLocation(id: "base-" + $0.id, name: $0.name, lat: $0.lat, lon: $0.lon, layer: .base, note: "Base scouting location · check the terrain before building", routeID: nil, artifactID: nil) }
         for index in list.indices {
             let point = list[index]

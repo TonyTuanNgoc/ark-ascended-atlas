@@ -1,0 +1,13 @@
+{
+  "version": "0.29.0",
+  "build": "30",
+  "bundleID": "com.tonytuanngoc.ascended",
+  "simulatorID": "20C9346D-B0E6-4239-8152-1D85ADD57BA6",
+  "freshLaunchPID": 10264,
+  "scope": "Simulator only",
+  "uniqueUnitChecks": 14,
+  "uniqueUIFlows": 3,
+  "physicalDeviceQA": false,
+  "testFlight": false,
+  "webDomain": null
+}

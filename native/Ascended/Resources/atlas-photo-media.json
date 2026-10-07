@@ -1,0 +1,338 @@
+[
+  {
+    "pointID": "entrance-jungle-0",
+    "asset": "Entrance-ragnarok-jungle-0",
+    "sourceURL": "https://thegameslayer.com/guides/all-ragnarok-artifact-locations-ark-ragnarok-ascended/",
+    "caption": "Actual ASA game frame \u00b7 entrance terrain reference",
+    "mapID": "ragnarok"
+  },
+  {
+    "pointID": "entrance-jungle-1",
+    "asset": "Entrance-ragnarok-jungle-1",
+    "sourceURL": "https://www.youtube.com/watch?v=G4VegTRuLvA&t=40s",
+    "caption": "Actual ASA game frame \u00b7 entrance terrain reference",
+    "mapID": "ragnarok"
+  },
+  {
+    "pointID": "entrance-carnivorous-0",
+    "asset": "Entrance-ragnarok-carnivorous-0",
+    "sourceURL": "https://www.youtube.com/watch?v=zP7O_qm6IbQ&t=24s",
+    "caption": "Actual ASA game frame \u00b7 entrance terrain reference",
+    "mapID": "ragnarok"
+  },
+  {
+    "pointID": "entrance-frozen-1",
+    "asset": "Entrance-ragnarok-frozen-1",
+    "sourceURL": "https://www.youtube.com/watch?v=mviS4xnbHe8&t=39s",
+    "caption": "Actual ASA game frame \u00b7 entrance terrain reference",
+    "mapID": "ragnarok"
+  },
+  {
+    "pointID": "entrance-labyrinth-0",
+    "asset": "Entrance-ragnarok-labyrinth-0",
+    "sourceURL": "https://www.youtube.com/watch?v=VXjyhH-yt4I&t=0s",
+    "caption": "Actual ASA game frame \u00b7 entrance terrain reference",
+    "mapID": "ragnarok"
+  },
+  {
+    "pointID": "entrance-central-0",
+    "asset": "Entrance-the-island-central-0",
+    "sourceURL": "https://www.youtube.com/watch?v=TxnfOx_ZW3c&t=28s",
+    "caption": "Actual ASA game frame \u00b7 entrance terrain reference",
+    "mapID": "the-island"
+  },
+  {
+    "pointID": "entrance-lava-0",
+    "asset": "Entrance-the-island-lava-0",
+    "sourceURL": "https://www.youtube.com/watch?v=hJZAngyesnM&t=37s",
+    "caption": "Actual ASA game frame \u00b7 entrance terrain reference",
+    "mapID": "the-island"
+  },
+  {
+    "pointID": "entrance-upper-south-0",
+    "asset": "Entrance-the-island-upper-south-0",
+    "sourceURL": "https://www.youtube.com/watch?v=xMdSyIWtuHI&t=16s",
+    "caption": "Actual ASA game frame \u00b7 entrance terrain reference",
+    "mapID": "the-island"
+  },
+  {
+    "pointID": "entrance-north-west-0",
+    "asset": "Entrance-the-island-north-west-0",
+    "sourceURL": "https://www.youtube.com/watch?v=YshQfBPB6Vs&t=32s",
+    "caption": "Actual ASA game frame \u00b7 entrance terrain reference",
+    "mapID": "the-island"
+  },
+  {
+    "pointID": "entrance-swamp-0",
+    "asset": "Entrance-the-island-swamp-0",
+    "sourceURL": "https://www.youtube.com/watch?v=7zfExIvGJzI&t=172s",
+    "caption": "Actual ASA game frame \u00b7 entrance terrain reference",
+    "mapID": "the-island"
+  },
+  {
+    "pointID": "entrance-south-ice-0",
+    "asset": "Entrance-the-center-south-ice-0",
+    "sourceURL": "https://www.youtube.com/watch?v=q1wySPqhl2E&t=20s",
+    "caption": "Actual ASA game frame \u00b7 entrance terrain reference",
+    "mapID": "the-center"
+  },
+  {
+    "pointID": "entrance-north-ice-0",
+    "asset": "Entrance-the-center-north-ice-0",
+    "sourceURL": "https://www.youtube.com/watch?v=lwyGQA72nrk&t=18s",
+    "caption": "Actual ASA game frame \u00b7 entrance terrain reference",
+    "mapID": "the-center"
+  },
+  {
+    "pointID": "entrance-lava-0",
+    "asset": "Entrance-the-center-lava-0",
+    "sourceURL": "https://www.youtube.com/watch?v=usGTm3jkFH8&t=18s",
+    "caption": "Actual ASA game frame \u00b7 entrance terrain reference",
+    "mapID": "the-center"
+  },
+  {
+    "pointID": "entrance-lava-oasis-0",
+    "asset": "Entrance-the-center-lava-oasis-0",
+    "sourceURL": "https://www.youtube.com/watch?v=kLkqpo_VrSU&t=14s",
+    "caption": "Actual ASA game frame \u00b7 entrance terrain reference",
+    "mapID": "the-center"
+  },
+  {
+    "pointID": "entrance-jungle-0",
+    "asset": "Entrance-the-center-jungle-0",
+    "sourceURL": "https://www.youtube.com/watch?v=vD4U9Hyi1WY&t=214s",
+    "caption": "Actual ASA game frame \u00b7 entrance terrain reference",
+    "mapID": "the-center"
+  },
+  {
+    "pointID": "entrance-jungle-2",
+    "asset": "Entrance-the-center-jungle-2",
+    "sourceURL": "https://www.youtube.com/watch?v=vD4U9Hyi1WY&t=130s",
+    "caption": "Actual ASA game frame \u00b7 entrance terrain reference",
+    "mapID": "the-center"
+  },
+  {
+    "pointID": "entrance-jungle-3",
+    "asset": "Entrance-the-center-jungle-3",
+    "sourceURL": "https://www.youtube.com/watch?v=vD4U9Hyi1WY&t=100s",
+    "caption": "Actual ASA game frame \u00b7 entrance terrain reference",
+    "mapID": "the-center"
+  },
+  {
+    "pointID": "entrance-jungle-1",
+    "asset": "Entrance-the-center-jungle-1",
+    "sourceURL": "https://www.youtube.com/watch?v=vD4U9Hyi1WY&t=185s",
+    "caption": "Actual ASA game frame \u00b7 entrance terrain reference",
+    "mapID": "the-center"
+  },
+  {
+    "pointID": "entrance-snow-0",
+    "asset": "Entrance-the-island-snow-0",
+    "sourceURL": "https://www.youtube.com/watch?v=3s6_U2B5hfw&t=34s",
+    "caption": "Actual ASA game frame \u00b7 entrance terrain reference",
+    "mapID": "the-island"
+  },
+  {
+    "pointID": "entrance-tek-0",
+    "asset": "Entrance-the-island-tek-0",
+    "sourceURL": "https://www.youtube.com/watch?v=kZqr1m1SOR8&t=242s",
+    "caption": "Actual ASA game frame \u00b7 entrance terrain reference",
+    "mapID": "the-island"
+  },
+  {
+    "pointID": "reference-the-island-central-cave",
+    "asset": "ReferencePhoto-reference-the-island-central-cave",
+    "sourceURL": "https://ark.wiki.gg/images/thumb/ASA_TheIsland_CaveEntrance_Central_Cave.jpg/288px-ASA_TheIsland_CaveEntrance_Central_Cave.jpg?33968b",
+    "caption": "ASA Wiki cave entrance reference image",
+    "mapID": "the-island"
+  },
+  {
+    "pointID": "reference-the-island-north-west-cave",
+    "asset": "ReferencePhoto-reference-the-island-north-west-cave",
+    "sourceURL": "https://ark.wiki.gg/images/thumb/ASA_TheIsland_CaveEntrance_North_West_Cave.jpg/288px-ASA_TheIsland_CaveEntrance_North_West_Cave.jpg?438f60",
+    "caption": "ASA Wiki cave entrance reference image",
+    "mapID": "the-island"
+  },
+  {
+    "pointID": "reference-the-island-lower-south-cave",
+    "asset": "ReferencePhoto-reference-the-island-lower-south-cave",
+    "sourceURL": "https://ark.wiki.gg/images/thumb/ASA_TheIsland_CaveEntrance_Lower_South_Cave.jpg/288px-ASA_TheIsland_CaveEntrance_Lower_South_Cave.jpg?8d3ea6",
+    "caption": "ASA Wiki cave entrance reference image",
+    "mapID": "the-island"
+  },
+  {
+    "pointID": "entrance-lower-south-0",
+    "asset": "ReferencePhoto-reference-the-island-lower-south-cave",
+    "sourceURL": "https://ark.wiki.gg/images/thumb/ASA_TheIsland_CaveEntrance_Lower_South_Cave.jpg/288px-ASA_TheIsland_CaveEntrance_Lower_South_Cave.jpg?8d3ea6",
+    "caption": "ASA Wiki cave entrance reference image",
+    "mapID": "the-island"
+  },
+  {
+    "pointID": "reference-the-island-north-east-cave",
+    "asset": "ReferencePhoto-reference-the-island-north-east-cave",
+    "sourceURL": "https://ark.wiki.gg/images/thumb/ASA_TheIsland_CaveEntrance_North_East_Cave.jpg/288px-ASA_TheIsland_CaveEntrance_North_East_Cave.jpg?6b9596",
+    "caption": "ASA Wiki cave entrance reference image",
+    "mapID": "the-island"
+  },
+  {
+    "pointID": "entrance-north-east-0",
+    "asset": "ReferencePhoto-reference-the-island-north-east-cave",
+    "sourceURL": "https://ark.wiki.gg/images/thumb/ASA_TheIsland_CaveEntrance_North_East_Cave.jpg/288px-ASA_TheIsland_CaveEntrance_North_East_Cave.jpg?6b9596",
+    "caption": "ASA Wiki cave entrance reference image",
+    "mapID": "the-island"
+  },
+  {
+    "pointID": "reference-the-island-upper-south-cave",
+    "asset": "ReferencePhoto-reference-the-island-upper-south-cave",
+    "sourceURL": "https://ark.wiki.gg/images/thumb/ASA_TheIsland_CaveEntrance_Upper_South_Cave.jpg/288px-ASA_TheIsland_CaveEntrance_Upper_South_Cave.jpg?50c309",
+    "caption": "ASA Wiki cave entrance reference image",
+    "mapID": "the-island"
+  },
+  {
+    "pointID": "reference-the-island-south-east-cave",
+    "asset": "ReferencePhoto-reference-the-island-south-east-cave",
+    "sourceURL": "https://ark.wiki.gg/images/thumb/ASA_TheIsland_CaveEntrance_South_East_Cave.jpg/288px-ASA_TheIsland_CaveEntrance_South_East_Cave.jpg?786d03",
+    "caption": "ASA Wiki cave entrance reference image",
+    "mapID": "the-island"
+  },
+  {
+    "pointID": "reference-the-island-swamp-cave",
+    "asset": "ReferencePhoto-reference-the-island-swamp-cave",
+    "sourceURL": "https://ark.wiki.gg/images/thumb/ASA_TheIsland_CaveEntrance_Swamp_Cave.jpg/288px-ASA_TheIsland_CaveEntrance_Swamp_Cave.jpg?1bf8f1",
+    "caption": "ASA Wiki cave entrance reference image",
+    "mapID": "the-island"
+  },
+  {
+    "pointID": "reference-the-island-snow-cave",
+    "asset": "ReferencePhoto-reference-the-island-snow-cave",
+    "sourceURL": "https://ark.wiki.gg/images/thumb/ASA_TheIsland_CaveEntrance_Snow_Cave.jpg/288px-ASA_TheIsland_CaveEntrance_Snow_Cave.jpg?2692cf",
+    "caption": "ASA Wiki cave entrance reference image",
+    "mapID": "the-island"
+  },
+  {
+    "pointID": "reference-the-island-the-caverns-of-lost-faith",
+    "asset": "ReferencePhoto-reference-the-island-the-caverns-of-lost-faith",
+    "sourceURL": "https://ark.wiki.gg/images/thumb/ASA_TheIsland_CaveEntrance_The_Caverns_of_Lost_Faith.jpg/288px-ASA_TheIsland_CaveEntrance_The_Caverns_of_Lost_Faith.jpg?c39565",
+    "caption": "ASA Wiki cave entrance reference image",
+    "mapID": "the-island"
+  },
+  {
+    "pointID": "entrance-lost-faith-0",
+    "asset": "ReferencePhoto-reference-the-island-the-caverns-of-lost-faith",
+    "sourceURL": "https://ark.wiki.gg/images/thumb/ASA_TheIsland_CaveEntrance_The_Caverns_of_Lost_Faith.jpg/288px-ASA_TheIsland_CaveEntrance_The_Caverns_of_Lost_Faith.jpg?c39565",
+    "caption": "ASA Wiki cave entrance reference image",
+    "mapID": "the-island"
+  },
+  {
+    "pointID": "reference-the-island-the-caverns-of-lost-hope",
+    "asset": "ReferencePhoto-reference-the-island-the-caverns-of-lost-hope",
+    "sourceURL": "https://ark.wiki.gg/images/thumb/ASA_TheIsland_CaveEntrance_The_Caverns_of_Lost_Hope.jpg/288px-ASA_TheIsland_CaveEntrance_The_Caverns_of_Lost_Hope.jpg?720b15",
+    "caption": "ASA Wiki cave entrance reference image",
+    "mapID": "the-island"
+  },
+  {
+    "pointID": "entrance-lost-hope-0",
+    "asset": "ReferencePhoto-reference-the-island-the-caverns-of-lost-hope",
+    "sourceURL": "https://ark.wiki.gg/images/thumb/ASA_TheIsland_CaveEntrance_The_Caverns_of_Lost_Hope.jpg/288px-ASA_TheIsland_CaveEntrance_The_Caverns_of_Lost_Hope.jpg?720b15",
+    "caption": "ASA Wiki cave entrance reference image",
+    "mapID": "the-island"
+  },
+  {
+    "pointID": "reference-the-island-tek-cave",
+    "asset": "ReferencePhoto-reference-the-island-tek-cave",
+    "sourceURL": "https://ark.wiki.gg/images/thumb/ASA_TheIsland_CaveEntrance_Tek_Cave.jpg/288px-ASA_TheIsland_CaveEntrance_Tek_Cave.jpg?bb5c7d",
+    "caption": "ASA Wiki cave entrance reference image",
+    "mapID": "the-island"
+  },
+  {
+    "pointID": "reference-scorched-earth-grave-of-the-tyrants",
+    "asset": "ReferencePhoto-reference-scorched-earth-grave-of-the-tyrants",
+    "sourceURL": "https://ark.wiki.gg/images/thumb/ASA_ScorchedEarth_CaveEntrance_Grave_of_the_Tyrants.jpg/288px-ASA_ScorchedEarth_CaveEntrance_Grave_of_the_Tyrants.jpg?67a7c1",
+    "caption": "ASA Wiki cave entrance reference image",
+    "mapID": "scorched-earth"
+  },
+  {
+    "pointID": "entrance-reference-scorched-earth-grave-of-the-tyrants",
+    "asset": "ReferencePhoto-reference-scorched-earth-grave-of-the-tyrants",
+    "sourceURL": "https://ark.wiki.gg/images/thumb/ASA_ScorchedEarth_CaveEntrance_Grave_of_the_Tyrants.jpg/288px-ASA_ScorchedEarth_CaveEntrance_Grave_of_the_Tyrants.jpg?67a7c1",
+    "caption": "ASA Wiki cave entrance reference image",
+    "mapID": "scorched-earth"
+  },
+  {
+    "pointID": "boss-portrait-iceworm-queen",
+    "asset": "Cutout-Boss-iceworm-queen",
+    "sourceURL": "https://ark.wiki.gg/images/IcewormQueenASA.jpeg",
+    "caption": "Authentic game body \u00b7 background extracted from source frame",
+    "bossID": "iceworm-queen"
+  },
+  {
+    "pointID": "boss-portrait-megapithecus",
+    "asset": "Cutout-Boss-megapithecus",
+    "sourceURL": "https://ark.wiki.gg/images/Last_Stand_Promo.jpg",
+    "caption": "Authentic game body \u00b7 background extracted from source frame",
+    "bossID": "megapithecus"
+  },
+  {
+    "pointID": "boss-portrait-spirit-dire-bear",
+    "asset": "Cutout-Boss-spirit-dire-bear",
+    "sourceURL": "https://www.youtube.com/watch?v=dB3V_7-s92s&t=1340s",
+    "caption": "Authentic game body \u00b7 background extracted from source frame",
+    "bossID": "spirit-dire-bear"
+  },
+  {
+    "pointID": "boss-portrait-spirit-direwolf",
+    "asset": "Cutout-Boss-spirit-direwolf",
+    "sourceURL": "https://www.youtube.com/watch?v=dB3V_7-s92s&t=1358s",
+    "caption": "Authentic game body \u00b7 background extracted from source frame",
+    "bossID": "spirit-direwolf"
+  },
+  {
+    "pointID": "boss-portrait-overseer",
+    "asset": "Cutout-Boss-overseer",
+    "sourceURL": "https://ark.wiki.gg/images/Overseer_Model_with_Shield.jpg",
+    "caption": "Authentic game body \u00b7 background extracted from source frame",
+    "bossID": "overseer"
+  },
+  {
+    "pointID": "boss-portrait-lava-elemental",
+    "asset": "Cutout-Boss-lava-elemental",
+    "sourceURL": "https://ark.wiki.gg/images/Lava_Elemental_Image.png",
+    "caption": "Authentic game body \u00b7 background extracted from source frame",
+    "bossID": "lava-elemental"
+  },
+  {
+    "pointID": "boss-portrait-broodmother",
+    "asset": "Cutout-Boss-broodmother",
+    "sourceURL": "https://ark.wiki.gg/images/BroodmotherSize.png",
+    "caption": "Authentic game body \u00b7 background extracted from source frame",
+    "bossID": "broodmother"
+  },
+  {
+    "pointID": "boss-portrait-dragon",
+    "asset": "Cutout-Boss-dragon",
+    "sourceURL": "https://ark.wiki.gg/images/ARK10.jpg",
+    "caption": "Authentic game body \u00b7 background extracted from source frame; wing tips limited by source crop",
+    "bossID": "dragon"
+  },
+  {
+    "pointID": "boss-portrait-nunatak",
+    "asset": "Nunatak-Gamma",
+    "sourceURL": "https://ark.wiki.gg/wiki/Nunatak",
+    "caption": "Nunatak Gamma \u00b7 bundled transparent full-body portrait",
+    "bossID": "nunatak"
+  },
+  {
+    "pointID": "boss-portrait-manticore",
+    "bossID": "manticore",
+    "asset": "Portrait-Boss-manticore",
+    "sourceURL": "",
+    "caption": "AI illustrated boss portrait \u2022 not an extracted game asset"
+  },
+  {
+    "pointID": "boss-portrait-rockwell",
+    "bossID": "rockwell",
+    "asset": "Portrait-Boss-rockwell",
+    "sourceURL": "",
+    "caption": "AI illustrated boss portrait \u2022 not an extracted game asset"
+  }
+]

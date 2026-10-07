@@ -34,17 +34,19 @@ struct MapScreen: View {
                             ScrollView { FarmDetails(spot: spot) }.frame(maxHeight: 490)
                         }.padding(14).frame(maxWidth: 440).background(.black.opacity(0.94), in: RoundedRectangle(cornerRadius: 16)).padding(12)
                     } else {
-                    HStack(alignment: .top, spacing: 12) {
-                        if let asset = point.imageAsset, UIImage(named: asset) != nil {
-                            Image(asset).renderingMode(asset == "Map-Obelisk" ? .template : .original).resizable().scaledToFit().foregroundStyle(Color(uiColor: point.color)).frame(width: 54, height: 64)
+                    VStack(alignment:.leading, spacing:10) {
+                        HStack {
+                            Text(point.name).font(.headline).accessibilityIdentifier("selectedMapLocation")
+                            Spacer(minLength:8)
+                            Button { selected=nil;focusedID=nil } label:{Image(systemName:"xmark")}.accessibilityLabel("Close location")
                         }
-                        VStack(alignment: .leading, spacing: 4) {
-                            Text(point.layer == .resource ? MapResources.label(for: point.name) : point.name).font(.headline).accessibilityIdentifier("selectedMapLocation")
-                            GPSBadge(coordinates: point.coordinates).foregroundStyle(.cyan).monospacedDigit()
+                        GPSBadge(coordinates:point.coordinates).foregroundStyle(.cyan).monospacedDigit()
+                        HStack(alignment:.top,spacing:12) {
+                            AtlasLocationImage(point:point).frame(width:150,height:115)
                             Text(point.layer == .artifact ? "Collect at these coordinates. " + (map.exploration?.routes.first { $0.id == point.routeID }?.name ?? "") : point.note)
-                                .font(.caption).foregroundStyle(.secondary).fixedSize(horizontal: false, vertical: true)
+                                .font(.caption).foregroundStyle(.secondary).fixedSize(horizontal:false,vertical:true).frame(maxWidth:.infinity,alignment:.leading)
                         }
-                        Spacer()
+                        HStack {
                         if point.layer == .custom,let saved=personal.first(where:{"custom-"+$0.id==point.id}) {
                             Button {draft=saved} label:{Image(systemName:"pencil")}.accessibilityLabel("Edit location")
                             Button {personalJSON=PersonalMapLocation.encode(personal.filter {$0.id != saved.id});filters.locations.remove(point.id);selected=nil;focusedID=nil} label:{Image(systemName:"trash")}.accessibilityLabel("Delete location").accessibilityIdentifier("deletePersonalLocation")
@@ -60,7 +62,7 @@ struct MapScreen: View {
                         if point.layer == .base, let spot = map.bases?.locations.first(where: { "base-" + $0.id == point.id }) {
                             NavigationLink(value: GuideDestination.base(spot.id)) { Image(systemName: "house.fill") }.accessibilityLabel("Base profile").accessibilityIdentifier("mapBaseProfile")
                         }
-                        Button { selected = nil; focusedID = nil } label: { Image(systemName: "xmark") }.accessibilityLabel("Close location")
+                        }
                     }.buttonStyle(.bordered).padding(14)
                         .frame(maxWidth: 430).background(.black.opacity(0.94), in: RoundedRectangle(cornerRadius: 16))
                         .overlay(RoundedRectangle(cornerRadius: 16).stroke(.white.opacity(0.16)))
@@ -87,6 +89,12 @@ struct MapScreen: View {
     private var controls:some View {
         ScrollView(.vertical,showsIndicators:false) {
             VStack(alignment:.leading,spacing:10) {
+                Menu {
+                    ForEach(allPoints) {point in
+                        Button(point.name) {if point.layer == .resource {filters.resources.formUnion(point.resourceNames)} else {filters.locations.insert(point.id)};selected=point;focusedID=point.id}.accessibilityIdentifier("find-"+point.id)
+                    }
+                } label:{Label("Find location",systemImage:"magnifyingglass").font(.caption).frame(height:38)}.accessibilityIdentifier("findMapLocation")
+                Divider()
                 ForEach(availableLayers,id:\.self) {layer in
                     let count=filters.selectedCount(layer,points:allPoints,types:resourceTypes)
                     let total=filters.total(layer,points:allPoints,types:resourceTypes)
@@ -114,7 +122,7 @@ struct MapScreen: View {
                                 }
                             } else {
                                 ForEach(allPoints.filter {$0.layer==layer}) {point in
-                                    Button {filters.togglePoint(point.id);if !filters.locations.contains(point.id) && selected?.id==point.id {selected=nil;focusedID=nil}} label:{
+                                    Button {filters.togglePoint(point.id);if filters.locations.contains(point.id) { selected=point;focusedID=point.id } else if selected?.id==point.id {selected=nil;focusedID=nil}} label:{
                                         HStack(spacing:8) {pointPicture(point);Text(point.name.replacingOccurrences(of:"Artifact of the ",with:"" )).font(.caption).multilineTextAlignment(.leading).fixedSize(horizontal:false,vertical:true);Spacer(minLength:0);Image(systemName:filters.locations.contains(point.id) ? "checkmark.square.fill":"square")}
                                             .padding(7).background(filters.locations.contains(point.id) ? Color.cyan.opacity(0.12):Color.white.opacity(0.035),in:RoundedRectangle(cornerRadius:8))
                                     }.accessibilityIdentifier("location-filter-"+point.id).accessibilityValue(filters.locations.contains(point.id) ? "Visible":"Hidden")
@@ -125,11 +133,6 @@ struct MapScreen: View {
                     }.padding(8).background(count>0 ? Color.cyan.opacity(0.06):Color.white.opacity(0.03),in:RoundedRectangle(cornerRadius:12))
                 }
                 Divider()
-                Menu {
-                    ForEach(allPoints) {point in
-                        Button(point.name) {if point.layer == .resource {filters.resources.formUnion(point.resourceNames)} else {filters.locations.insert(point.id)};selected=point;focusedID=point.id}.accessibilityIdentifier("find-"+point.id)
-                    }
-                } label:{Label("Find location",systemImage:"magnifyingglass").font(.caption).frame(height:38)}.accessibilityIdentifier("findMapLocation")
                 HStack {Button {action = .out;resetToken=UUID()} label:{Image(systemName:"minus").frame(width:38,height:38)}.accessibilityLabel("Zoom out").accessibilityIdentifier("zoomOut");Button {action = .inside;resetToken=UUID()} label:{Image(systemName:"plus").frame(width:38,height:38)}.accessibilityLabel("Zoom in").accessibilityIdentifier("zoomIn");Button {focusedID=nil;action = .fit;resetToken=UUID()} label:{Image(systemName:"arrow.counterclockwise").frame(width:38,height:38)}.accessibilityLabel("Fit map").accessibilityIdentifier("resetMap")}
                 Text("Hold to add your own location").font(.caption2).foregroundStyle(.secondary)
             }.padding(8)
@@ -138,11 +141,8 @@ struct MapScreen: View {
     private func resourcePicture(_ name:String)->some View {
         Image(UIImage(named:MapResources.asset(for:name)) != nil ? MapResources.asset(for:name):MapLayer.resource.illustration).resizable().scaledToFit().frame(width:28,height:30)
     }
-    @ViewBuilder private func pointPicture(_ point:MapLocation)->some View {
-        if let asset=point.imageAsset,UIImage(named:asset) != nil {
-            Image(asset).renderingMode(point.layer == .obelisk ? .template:.original).resizable().scaledToFit().foregroundStyle(Color(uiColor:point.color)).frame(width:28,height:30).clipShape(RoundedRectangle(cornerRadius:5))
-        } else if point.layer == .custom {Image(systemName:point.symbol).foregroundStyle(Color(uiColor:point.color)).frame(width:28,height:30)}
-        else {Image(point.layer.illustration).resizable().scaledToFit().frame(width:28,height:30)}
+    private func pointPicture(_ point: MapLocation) -> some View {
+        Image(uiImage: AtlasMarkerArt.image(for: point)).resizable().scaledToFit().frame(width: 30, height: 34)
     }
 
 }
@@ -262,9 +262,7 @@ final class MapScrollView: UIScrollView {
         for point in points {
             let button = UIButton(type: .system)
             button.bounds = CGRect(x: 0, y: 0, width: 32, height: 32)
-            let asset: String? = point.layer == .resource ? point.resourceNames.first.map { MapResources.asset(for: $0) } : point.layer == .cave || point.layer == .base ? nil : point.imageAsset
-            let artwork = asset.flatMap { UIImage(named: $0) }
-            button.setImage(artwork?.withRenderingMode(point.layer == .obelisk || point.layer == .boss ? .alwaysTemplate : .alwaysOriginal) ?? UIImage(systemName: point.symbol), for: .normal)
+            button.setImage(AtlasMarkerArt.image(for: point).withRenderingMode(.alwaysOriginal), for: .normal)
             button.imageView?.contentMode = .scaleAspectFit
             button.contentEdgeInsets = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
             button.tintColor = point.layer == .base ? .darkGray : point.layer == .obelisk || point.layer == .custom ? point.color : .white
