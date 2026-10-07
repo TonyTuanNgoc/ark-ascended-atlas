@@ -1,0 +1,1861 @@
+{
+  "schemaVersion": 1,
+  "verifiedAt": "2026-10-07",
+  "editionScope": "ARK: Survival Ascended companion; shared wiki harvesting mechanics, with explicit ASA/ASE differences retained.",
+  "limitations": [
+    "Curated practical coverage, not an exhaustive whole-game harvest database.",
+    "Wiki ratings are qualitative; no star ranking or fixed yield is presented as measured production.",
+    "Node type, source species, tool quality, melee and server settings affect results.",
+    "Creature availability, variant tamability and expansion access must be checked for the selected ASA map.",
+    "General mechanics from shared ASE/ASA wiki pages are reference facts, not local gameplay measurements."
+  ],
+  "entries": [
+    {
+      "resource": "Raw Meat",
+      "aliases": [
+        "Meat",
+        "Dino Corpse"
+      ],
+      "summary": "For a hand harvest, choose Metal Pick over Metal Hatchet. A meat-harvesting carnivore is the practical bulk option.",
+      "tools": [
+        {
+          "name": "Metal Pick",
+          "role": "Favors meat when harvesting a corpse."
+        },
+        {
+          "name": "Stone Pick",
+          "role": "Early pick option before metal tools."
+        },
+        {
+          "name": "Metal Hatchet",
+          "role": "Harvests meat too, but favors hide."
+        }
+      ],
+      "creatures": [
+        {
+          "name": "Rex",
+          "role": "Bulk corpse harvesting."
+        },
+        {
+          "name": "Carnotaurus",
+          "role": "Meat harvesting option."
+        },
+        {
+          "name": "Allosaurus",
+          "role": "Meat harvesting option."
+        },
+        {
+          "name": "Giganotosaurus",
+          "role": "Bulk option once available and safely tamed."
+        },
+        {
+          "name": "Argentavis",
+          "role": "Mobile corpse-harvesting option."
+        }
+      ],
+      "targets": [
+        "Ordinary land-creature corpses",
+        "Phiomia: useful early meat and hide; it flees when attacked"
+      ],
+      "cautions": [
+        "Yield varies with harvester stats, tool quality and harvest settings.",
+        "Fish meat and prime meat require their own source choices."
+      ],
+      "weightReductions": [],
+      "sourceURLs": [
+        "https://ark.wiki.gg/wiki/Raw_Meat",
+        "https://ark.wiki.gg/wiki/Metal_Pick",
+        "https://ark.wiki.gg/wiki/Metal_Hatchet",
+        "https://ark.wiki.gg/wiki/Hide"
+      ],
+      "verifiedAt": "2026-10-07"
+    },
+    {
+      "resource": "Raw Prime Meat",
+      "aliases": [
+        "Prime Meat"
+      ],
+      "summary": "Harvest prime-dropping larger creatures. ASA also has wild babies that yield prime meat.",
+      "tools": [
+        {
+          "name": "Metal Pick",
+          "role": "Hand tool option."
+        },
+        {
+          "name": "Chainsaw",
+          "role": "Listed corpse-harvesting option."
+        }
+      ],
+      "creatures": [
+        {
+          "name": "Rex",
+          "role": "Prime corpse harvester."
+        },
+        {
+          "name": "Carnotaurus",
+          "role": "Prime corpse harvester."
+        },
+        {
+          "name": "Allosaurus",
+          "role": "Prime corpse harvester."
+        },
+        {
+          "name": "Ichthyornis",
+          "role": "Hunt eligible small animals to make prime available."
+        }
+      ],
+      "targets": [
+        "Brontosaurus",
+        "Diplodocus",
+        "Paraceratherium",
+        "Stegosaurus",
+        "Argentavis",
+        "Mammoth",
+        "Rex",
+        "Spino",
+        "Alpha creatures",
+        "Non-adult creatures; ASA includes wild babies"
+      ],
+      "cautions": [
+        "Targets are source examples, not a yield ranking.",
+        "Prime spoils quickly; collect it near the intended tame.",
+        "A hungry carnivore can consume prime in its inventory.",
+        "Ichthyornis enhancement applies to hunted eligible small prey, not every corpse."
+      ],
+      "weightReductions": [],
+      "sourceURLs": [
+        "https://ark.wiki.gg/wiki/Raw_Prime_Meat",
+        "https://ark.wiki.gg/wiki/Metal_Pick"
+      ],
+      "verifiedAt": "2026-10-07"
+    },
+    {
+      "resource": "Raw Fish Meat",
+      "aliases": [
+        "Fish Meat"
+      ],
+      "summary": "Harvest fish corpses; use a water-capable collector for bulk trips.",
+      "tools": [
+        {
+          "name": "Metal Pick",
+          "role": "Listed hand tool for fish corpses."
+        }
+      ],
+      "creatures": [
+        {
+          "name": "Spino",
+          "role": "Fish corpse collector."
+        },
+        {
+          "name": "Pelagornis",
+          "role": "Fish-harvesting option."
+        },
+        {
+          "name": "Otter",
+          "role": "Can kill fish and collect fish meat."
+        },
+        {
+          "name": "Ichthyornis",
+          "role": "Can hunt fish near water."
+        }
+      ],
+      "targets": [
+        "Coelacanth",
+        "Piranha",
+        "Sabertooth Salmon",
+        "Manta",
+        "Megalodon",
+        "Dunkleosteus"
+      ],
+      "cautions": [
+        "Manta groups around Basilosaurus are a wiki-listed bulk source, with combat risk.",
+        "Normal fish meat is distinct from prime fish meat."
+      ],
+      "weightReductions": [],
+      "sourceURLs": [
+        "https://ark.wiki.gg/wiki/Raw_Fish_Meat"
+      ],
+      "verifiedAt": "2026-10-07"
+    },
+    {
+      "resource": "Raw Prime Fish Meat",
+      "aliases": [
+        "Prime Fish Meat"
+      ],
+      "summary": "Use Metal Sickle on eligible fish. Hand-tool choice can change with the species.",
+      "tools": [
+        {
+          "name": "Metal Sickle",
+          "role": "Recommended for prime fish harvests."
+        },
+        {
+          "name": "Metal Hatchet",
+          "role": "Resource page favors hatchet for dead Dunkleosteus or Megalodon."
+        },
+        {
+          "name": "Metal Pick",
+          "role": "Alternative listed tool."
+        },
+        {
+          "name": "Fishing Rod",
+          "role": "Can obtain small amounts by fishing."
+        },
+        {
+          "name": "Chainsaw",
+          "role": "Use only on a corpse accessible on land; cannot operate underwater."
+        }
+      ],
+      "creatures": [
+        {
+          "name": "Spino",
+          "role": "Prime fish harvesting option."
+        },
+        {
+          "name": "Ichthyornis",
+          "role": "Fish hunting and land-delivery option."
+        },
+        {
+          "name": "Moschops",
+          "role": "Invest prime-fish harvesting levels for Leedsichthys."
+        }
+      ],
+      "targets": [
+        "Sabertooth Salmon",
+        "Megalodon",
+        "Dunkleosteus",
+        "Tusoteuthis",
+        "Leedsichthys",
+        "Alpha Megalodon",
+        "Alpha Tusoteuthis"
+      ],
+      "cautions": [
+        "Metal Sickle can scrape Leedsichthys without making it aggressive.",
+        "Do not apply the general pick-for-meat rule blindly to every fish.",
+        "Scorched Earth source page identifies fishing as the route to prime fish."
+      ],
+      "weightReductions": [],
+      "sourceURLs": [
+        "https://ark.wiki.gg/wiki/Raw_Prime_Fish_Meat",
+        "https://ark.wiki.gg/wiki/Metal_Sickle"
+      ],
+      "verifiedAt": "2026-10-07"
+    },
+    {
+      "resource": "Raw Mutton",
+      "aliases": [
+        "Mutton"
+      ],
+      "summary": "Harvest an Ovis corpse. Ovis health affects the amount received.",
+      "tools": [
+        {
+          "name": "Chainsaw",
+          "role": "Preferred tool listed for mutton."
+        },
+        {
+          "name": "Sword / Metal Sickle / Metal Pick",
+          "role": "Held tool enabling the tamed Ovis Slaughter radial action."
+        }
+      ],
+      "creatures": [
+        {
+          "name": "Direwolf",
+          "role": "Listed mutton corpse collector."
+        }
+      ],
+      "targets": [
+        "Ovis"
+      ],
+      "cautions": [
+        "Ovis can be rare; this is a specific prey source, not ordinary meat.",
+        "Hungry harvesting carnivores can eat the mutton."
+      ],
+      "weightReductions": [],
+      "sourceURLs": [
+        "https://ark.wiki.gg/wiki/Raw_Mutton",
+        "https://ark.wiki.gg/wiki/Ovis"
+      ],
+      "verifiedAt": "2026-10-07"
+    },
+    {
+      "resource": "Hide",
+      "aliases": [],
+      "summary": "Use Metal Hatchet rather than Metal Pick when hide is the priority; Chainsaw is the wiki-preferred hand tool.",
+      "tools": [
+        {
+          "name": "Metal Hatchet",
+          "role": "Favors hide over meat."
+        },
+        {
+          "name": "Chainsaw",
+          "role": "Preferred hand tool for hide."
+        }
+      ],
+      "creatures": [
+        {
+          "name": "Direwolf",
+          "role": "Hide collection option."
+        },
+        {
+          "name": "Sabertooth",
+          "role": "Hide collection option."
+        },
+        {
+          "name": "Therizinosaur",
+          "role": "Bite attack favors hide; attack choice matters."
+        },
+        {
+          "name": "Thylacoleo",
+          "role": "Hide collection option."
+        }
+      ],
+      "targets": [
+        "Most non-fish, non-invertebrate corpses",
+        "Phiomia",
+        "Early game: Dodo, Lystrosaurus, Parasaur",
+        "Ovis: hide amount increases with its health"
+      ],
+      "cautions": [
+        "Tool choice and prey choice are separate decisions.",
+        "Phiomia and Parasaur flee when attacked."
+      ],
+      "weightReductions": [],
+      "sourceURLs": [
+        "https://ark.wiki.gg/wiki/Hide",
+        "https://ark.wiki.gg/wiki/Metal_Hatchet",
+        "https://ark.wiki.gg/wiki/Therizinosaur",
+        "https://ark.wiki.gg/wiki/Ovis"
+      ],
+      "verifiedAt": "2026-10-07"
+    },
+    {
+      "resource": "Chitin",
+      "aliases": [],
+      "summary": "Harvest arthropod corpses. Megatherium and Metal Hatchet are useful dedicated choices.",
+      "tools": [
+        {
+          "name": "Metal Hatchet",
+          "role": "Useful hand tool."
+        },
+        {
+          "name": "Pike",
+          "role": "Precision option for small insect corpses."
+        }
+      ],
+      "creatures": [
+        {
+          "name": "Megatherium",
+          "role": "Chitin gathering specialist."
+        },
+        {
+          "name": "Sabertooth",
+          "role": "Chitin corpse collector."
+        },
+        {
+          "name": "Direwolf",
+          "role": "Chitin corpse collector."
+        },
+        {
+          "name": "Therizinosaur",
+          "role": "Bite/head harvest favors chitin; delicate harvesting investment affects it."
+        },
+        {
+          "name": "Diplocaulus",
+          "role": "Specialist for Trilobites."
+        }
+      ],
+      "targets": [
+        "Trilobite",
+        "Meganeura",
+        "Titanomyrma",
+        "Pulmonoscorpius",
+        "Araneo",
+        "Karkinos"
+      ],
+      "cautions": [
+        "Karkinos farming needs a strong enough tame.",
+        "Cave insect density is useful, but route danger still matters."
+      ],
+      "weightReductions": [
+        {
+          "name": "Equus",
+          "percent": 50
+        },
+        {
+          "name": "Unicorn",
+          "percent": 50
+        }
+      ],
+      "sourceURLs": [
+        "https://ark.wiki.gg/wiki/Chitin",
+        "https://ark.wiki.gg/wiki/Therizinosaur",
+        "https://ark.wiki.gg/wiki/Trilobite"
+      ],
+      "verifiedAt": "2026-10-07"
+    },
+    {
+      "resource": "Keratin",
+      "aliases": [],
+      "summary": "Harvest horned, plated or shelled animals with Metal Hatchet or an appropriate corpse collector.",
+      "tools": [
+        {
+          "name": "Metal Hatchet",
+          "role": "Useful hand tool."
+        },
+        {
+          "name": "Stone Hatchet",
+          "role": "Early alternative."
+        }
+      ],
+      "creatures": [
+        {
+          "name": "Sabertooth",
+          "role": "Keratin corpse collector."
+        },
+        {
+          "name": "Direwolf",
+          "role": "Keratin corpse collector."
+        },
+        {
+          "name": "Therizinosaur",
+          "role": "Listed harvesting option."
+        }
+      ],
+      "targets": [
+        "Carbonemys",
+        "Triceratops",
+        "Stegosaurus",
+        "Ankylosaurus",
+        "Doedicurus",
+        "Mammoth"
+      ],
+      "cautions": [
+        "Not every creature drops keratin.",
+        "Chitin substitutes for keratin in recipes that explicitly accept either."
+      ],
+      "weightReductions": [
+        {
+          "name": "Equus",
+          "percent": 50
+        },
+        {
+          "name": "Unicorn",
+          "percent": 50
+        }
+      ],
+      "sourceURLs": [
+        "https://ark.wiki.gg/wiki/Keratin"
+      ],
+      "verifiedAt": "2026-10-07"
+    },
+    {
+      "resource": "Pelt",
+      "aliases": [],
+      "summary": "Harvest furry animals. Metal Hatchet or Direwolf are useful options.",
+      "tools": [
+        {
+          "name": "Metal Hatchet",
+          "role": "Effective hand harvest."
+        }
+      ],
+      "creatures": [
+        {
+          "name": "Direwolf",
+          "role": "Pelt collector."
+        },
+        {
+          "name": "Sabertooth",
+          "role": "Alternative pelt collector."
+        },
+        {
+          "name": "Thylacoleo",
+          "role": "Alternative pelt collector."
+        }
+      ],
+      "targets": [
+        "Mammoth",
+        "Megaloceros",
+        "Castoroides",
+        "Dire Bear",
+        "Equus",
+        "Ovis",
+        "Megatherium",
+        "Procoptodon"
+      ],
+      "cautions": [
+        "Pelt can be collected outside snow from eligible mammals."
+      ],
+      "weightReductions": [],
+      "sourceURLs": [
+        "https://ark.wiki.gg/wiki/Pelt"
+      ],
+      "verifiedAt": "2026-10-07"
+    },
+    {
+      "resource": "Wool",
+      "aliases": [],
+      "summary": "Shear Ovis without killing it; food stat affects wool regrowth.",
+      "tools": [
+        {
+          "name": "Scissors",
+          "role": "Shear wild or tamed Ovis."
+        }
+      ],
+      "creatures": [],
+      "targets": [
+        "Ovis"
+      ],
+      "cautions": [
+        "Ovis produces wool; it does not gather resources itself."
+      ],
+      "weightReductions": [],
+      "sourceURLs": [
+        "https://ark.wiki.gg/wiki/Ovis"
+      ],
+      "verifiedAt": "2026-10-07"
+    },
+    {
+      "resource": "Organic Polymer",
+      "aliases": [
+        "Polymer"
+      ],
+      "summary": "Harvest eligible carcasses or map-specific polymer plants. Use a suitable tool for the source.",
+      "tools": [
+        {
+          "name": "Wooden Club",
+          "role": "Accessible Kairuku harvesting option."
+        },
+        {
+          "name": "Chainsaw",
+          "role": "Listed high-efficiency corpse option."
+        },
+        {
+          "name": "Sword",
+          "role": "Listed polymer harvesting option."
+        }
+      ],
+      "creatures": [
+        {
+          "name": "Pelagornis",
+          "role": "Polymer corpse harvester and carrier."
+        },
+        {
+          "name": "Moschops",
+          "role": "Invest organic-polymer harvesting points."
+        },
+        {
+          "name": "Therizinosaur",
+          "role": "Can gather from eligible polymer plants and corpses."
+        },
+        {
+          "name": "Achatina",
+          "role": "Passive production, not corpse harvesting."
+        }
+      ],
+      "targets": [
+        "Kairuku",
+        "Hesperornis",
+        "Mantis",
+        "Karkinos",
+        "Aberration: white bulb-like plants in the elemental area"
+      ],
+      "cautions": [
+        "Spoils; harvesting and passive production are different mechanics.",
+        "Map-specific alternate sources must exist on the selected ASA map."
+      ],
+      "weightReductions": [
+        {
+          "name": "Achatina",
+          "percent": 90
+        },
+        {
+          "name": "Pelagornis",
+          "percent": 80
+        },
+        {
+          "name": "Argentavis",
+          "percent": 50
+        }
+      ],
+      "sourceURLs": [
+        "https://ark.wiki.gg/wiki/Organic_Polymer"
+      ],
+      "verifiedAt": "2026-10-07"
+    },
+    {
+      "resource": "Wood",
+      "aliases": [],
+      "summary": "Choose Metal Hatchet over Metal Pick for trees; Chainsaw is a dedicated tool.",
+      "tools": [
+        {
+          "name": "Metal Hatchet",
+          "role": "Favors wood."
+        },
+        {
+          "name": "Chainsaw",
+          "role": "Wood gathering tool."
+        }
+      ],
+      "creatures": [
+        {
+          "name": "Castoroides",
+          "role": "Wood harvester."
+        },
+        {
+          "name": "Mammoth",
+          "role": "Wood harvester and carrier."
+        },
+        {
+          "name": "Therizinosaur",
+          "role": "Power harvest favors wood."
+        },
+        {
+          "name": "Roll Rat",
+          "role": "Listed wood harvesting option."
+        },
+        {
+          "name": "Thorny Dragon",
+          "role": "Listed wood harvesting option."
+        }
+      ],
+      "targets": [
+        "Trees"
+      ],
+      "cautions": [
+        "Destroying a tree with a creature does not always mean collecting it."
+      ],
+      "weightReductions": [
+        {
+          "name": "Mammoth",
+          "percent": 75
+        },
+        {
+          "name": "Roll Rat",
+          "percent": 80
+        },
+        {
+          "name": "Castoroides",
+          "percent": 50
+        },
+        {
+          "name": "Thorny Dragon",
+          "percent": 50
+        }
+      ],
+      "sourceURLs": [
+        "https://ark.wiki.gg/wiki/Metal_Hatchet",
+        "https://ark.wiki.gg/wiki/Trees",
+        "https://ark.wiki.gg/wiki/Mammoth",
+        "https://ark.wiki.gg/wiki/Gathering_and_Weight_Reduction",
+        "https://ark.wiki.gg/wiki/Therizinosaur"
+      ],
+      "verifiedAt": "2026-10-07"
+    },
+    {
+      "resource": "Thatch",
+      "aliases": [],
+      "summary": "Picks favor thatch from trees; larger area harvesters are bulk options.",
+      "tools": [
+        {
+          "name": "Metal Pick",
+          "role": "Favors thatch over wood."
+        },
+        {
+          "name": "Stone Pick",
+          "role": "Early thatch tool."
+        },
+        {
+          "name": "Industrial Grinder",
+          "role": "Converts gathered wood to thatch."
+        }
+      ],
+      "creatures": [
+        {
+          "name": "Brontosaurus",
+          "role": "Tree harvesting option."
+        },
+        {
+          "name": "Triceratops",
+          "role": "Listed thatch collector."
+        },
+        {
+          "name": "Megatherium",
+          "role": "Listed thatch collector."
+        }
+      ],
+      "targets": [
+        "Trees"
+      ],
+      "cautions": [],
+      "weightReductions": [
+        {
+          "name": "Castoroides",
+          "percent": 50
+        },
+        {
+          "name": "Ravager",
+          "percent": 50
+        },
+        {
+          "name": "Thorny Dragon",
+          "percent": 50
+        }
+      ],
+      "sourceURLs": [
+        "https://ark.wiki.gg/wiki/Thatch",
+        "https://ark.wiki.gg/wiki/Metal_Pick"
+      ],
+      "verifiedAt": "2026-10-07"
+    },
+    {
+      "resource": "Stone",
+      "aliases": [],
+      "summary": "Metal Hatchet favors stone; Doedicurus specializes in bulk stone.",
+      "tools": [
+        {
+          "name": "Metal Hatchet",
+          "role": "Favors stone over flint."
+        },
+        {
+          "name": "Hands",
+          "role": "Pick up small loose stones."
+        }
+      ],
+      "creatures": [
+        {
+          "name": "Doedicurus",
+          "role": "Tail swing; ASA has Stone/Sand Harvest Only selection."
+        },
+        {
+          "name": "Magmasaur",
+          "role": "Listed stone gathering option."
+        }
+      ],
+      "targets": [
+        "Rocks",
+        "Loose ground stones"
+      ],
+      "cautions": [
+        "Doedicurus is a stone collector, not a substitute for Ankylo metal farming."
+      ],
+      "weightReductions": [
+        {
+          "name": "Doedicurus",
+          "percent": 75
+        }
+      ],
+      "sourceURLs": [
+        "https://ark.wiki.gg/wiki/Metal_Hatchet",
+        "https://ark.wiki.gg/wiki/Hands",
+        "https://ark.wiki.gg/wiki/Doedicurus",
+        "https://ark.wiki.gg/wiki/Stone"
+      ],
+      "verifiedAt": "2026-10-07"
+    },
+    {
+      "resource": "Flint",
+      "aliases": [],
+      "summary": "Metal Pick favors flint from ordinary rocks; Ankylo is a bulk option.",
+      "tools": [
+        {
+          "name": "Metal Pick",
+          "role": "Favors flint."
+        },
+        {
+          "name": "Stone Pick",
+          "role": "Early flint tool."
+        },
+        {
+          "name": "Industrial Grinder",
+          "role": "Converts stone into flint."
+        }
+      ],
+      "creatures": [
+        {
+          "name": "Ankylosaurus",
+          "role": "Tail swing harvests rocks; ASA Harvest Only can select flint."
+        },
+        {
+          "name": "Fasolasuchus",
+          "role": "Listed flint collector."
+        }
+      ],
+      "targets": [
+        "Rocks"
+      ],
+      "cautions": [],
+      "weightReductions": [],
+      "sourceURLs": [
+        "https://ark.wiki.gg/wiki/Flint",
+        "https://ark.wiki.gg/wiki/Ankylosaurus",
+        "https://ark.wiki.gg/wiki/Metal_Pick"
+      ],
+      "verifiedAt": "2026-10-07"
+    },
+    {
+      "resource": "Metal",
+      "aliases": [
+        "Rich Metal",
+        "Raw Metal"
+      ],
+      "summary": "Target ore rocks instead of relying on the small metal yield of ordinary rocks.",
+      "tools": [
+        {
+          "name": "Metal Pick",
+          "role": "Ore hand tool."
+        },
+        {
+          "name": "Stone Pick",
+          "role": "Possible early option, poor for rare resources."
+        }
+      ],
+      "creatures": [
+        {
+          "name": "Ankylosaurus",
+          "role": "Tail swing; ASA Harvest Only can select metal."
+        },
+        {
+          "name": "Magmasaur",
+          "role": "Listed metal collector."
+        },
+        {
+          "name": "Dunkleosteus",
+          "role": "Listed underwater mining option."
+        }
+      ],
+      "targets": [
+        "Metal-bearing rocks",
+        "Rich metal rocks",
+        "Aberration: blue-striped ore rocks in the luminous region"
+      ],
+      "cautions": [
+        "Metal ore weight reduction does not automatically apply to metal ingots.",
+        "Actual yield depends on the node, melee/tool quality and server settings."
+      ],
+      "weightReductions": [
+        {
+          "name": "Ankylosaurus",
+          "percent": 85
+        },
+        {
+          "name": "Magmasaur",
+          "percent": 75
+        },
+        {
+          "name": "Argentavis",
+          "percent": 50
+        }
+      ],
+      "sourceURLs": [
+        "https://ark.wiki.gg/wiki/Metal",
+        "https://ark.wiki.gg/wiki/Ankylosaurus",
+        "https://ark.wiki.gg/wiki/Metal_Pick"
+      ],
+      "verifiedAt": "2026-10-07"
+    },
+    {
+      "resource": "Crystal",
+      "aliases": [],
+      "summary": "Use Metal Pick or Ankylo on crystalline nodes.",
+      "tools": [
+        {
+          "name": "Metal Pick",
+          "role": "Crystal node tool."
+        }
+      ],
+      "creatures": [
+        {
+          "name": "Ankylosaurus",
+          "role": "Tail swing collects crystalline nodes."
+        }
+      ],
+      "targets": [
+        "Crystal formations"
+      ],
+      "cautions": [],
+      "weightReductions": [
+        {
+          "name": "Argentavis",
+          "percent": 50
+        },
+        {
+          "name": "Dunkleosteus",
+          "percent": 50
+        },
+        {
+          "name": "Ravager",
+          "percent": 50
+        }
+      ],
+      "sourceURLs": [
+        "https://ark.wiki.gg/wiki/Metal_Pick",
+        "https://ark.wiki.gg/wiki/Ankylosaurus",
+        "https://ark.wiki.gg/wiki/Weight_Reduction"
+      ],
+      "verifiedAt": "2026-10-07"
+    },
+    {
+      "resource": "Obsidian",
+      "aliases": [],
+      "summary": "Mine obsidian nodes with Metal Pick or Ankylo.",
+      "tools": [
+        {
+          "name": "Metal Pick",
+          "role": "Hand mining option."
+        }
+      ],
+      "creatures": [
+        {
+          "name": "Ankylosaurus",
+          "role": "Ore collector."
+        },
+        {
+          "name": "Magmasaur",
+          "role": "Listed mining option."
+        }
+      ],
+      "targets": [
+        "Glossy dark obsidian rocks"
+      ],
+      "cautions": [
+        "Doedicurus can gather from some obsidian node types but cannot gather from all visually similar rocks.",
+        "ASA obsidian nodes look more jagged than ASE nodes."
+      ],
+      "weightReductions": [
+        {
+          "name": "Dunkleosteus",
+          "percent": 75
+        },
+        {
+          "name": "Argentavis",
+          "percent": 50
+        },
+        {
+          "name": "Ravager",
+          "percent": 50
+        }
+      ],
+      "sourceURLs": [
+        "https://ark.wiki.gg/wiki/Obsidian"
+      ],
+      "verifiedAt": "2026-10-07"
+    },
+    {
+      "resource": "Fiber",
+      "aliases": [],
+      "summary": "Use Metal Sickle on plants, or a dedicated fiber collector.",
+      "tools": [
+        {
+          "name": "Metal Sickle",
+          "role": "Dedicated plant fiber tool."
+        },
+        {
+          "name": "Hands",
+          "role": "Early manual collection."
+        }
+      ],
+      "creatures": [
+        {
+          "name": "Therizinosaur",
+          "role": "Use delicate harvesting on plants."
+        },
+        {
+          "name": "Dire Bear",
+          "role": "Listed fiber collector."
+        },
+        {
+          "name": "Gigantopithecus",
+          "role": "Can gather fiber autonomously."
+        }
+      ],
+      "targets": [
+        "Bushes and seed plants"
+      ],
+      "cautions": [
+        "Ankylosaurus does not collect fiber."
+      ],
+      "weightReductions": [],
+      "sourceURLs": [
+        "https://ark.wiki.gg/wiki/Metal_Sickle",
+        "https://ark.wiki.gg/wiki/Hands",
+        "https://ark.wiki.gg/wiki/Gathering_and_Weight_Reduction",
+        "https://ark.wiki.gg/wiki/Therizinosaur",
+        "https://ark.wiki.gg/wiki/Ankylosaurus"
+      ],
+      "verifiedAt": "2026-10-07"
+    },
+    {
+      "resource": "Berries",
+      "aliases": [],
+      "summary": "Collect by hand or with a berry-harvesting tame; a pick/hatchet is not the default berry tool.",
+      "tools": [
+        {
+          "name": "Hands",
+          "role": "Manual bushes."
+        },
+        {
+          "name": "Whip",
+          "role": "Manual collection alternative."
+        }
+      ],
+      "creatures": [
+        {
+          "name": "Brontosaurus",
+          "role": "Wide plant collection."
+        },
+        {
+          "name": "Triceratops",
+          "role": "Berry collection option."
+        },
+        {
+          "name": "Stegosaurus",
+          "role": "Backplate mode changes harvesting; berry mode matters."
+        },
+        {
+          "name": "Ankylosaurus",
+          "role": "Bite collects bushes, unlike its rock tail swing."
+        }
+      ],
+      "targets": [
+        "Bushes"
+      ],
+      "cautions": [
+        "Stegosaurus does not collect fiber."
+      ],
+      "weightReductions": [],
+      "sourceURLs": [
+        "https://ark.wiki.gg/wiki/Hands",
+        "https://ark.wiki.gg/wiki/Gathering_and_Weight_Reduction",
+        "https://ark.wiki.gg/wiki/Stegosaurus",
+        "https://ark.wiki.gg/wiki/Ankylosaurus"
+      ],
+      "verifiedAt": "2026-10-07"
+    },
+    {
+      "resource": "Oil",
+      "aliases": [
+        "Rich Oil",
+        "Oil Meat"
+      ],
+      "summary": "Separate mining oil rocks from tame production and oil-vein pumping.",
+      "tools": [
+        {
+          "name": "Metal Pick",
+          "role": "Mine oil rocks."
+        },
+        {
+          "name": "Oil Pump",
+          "role": "Automatic production from an oil vein, where available."
+        }
+      ],
+      "creatures": [
+        {
+          "name": "Dunkleosteus",
+          "role": "Underwater oil-node collector."
+        },
+        {
+          "name": "Ankylosaurus",
+          "role": "Oil-node collector."
+        },
+        {
+          "name": "Dung Beetle",
+          "role": "Converts feces while wandering; ASA automatically collects feces."
+        },
+        {
+          "name": "Basilosaurus",
+          "role": "Passively makes oil in its inventory."
+        }
+      ],
+      "targets": [
+        "Oil rocks",
+        "Oil veins with a pump",
+        "Trilobite corpses: alternative, low and inconsistent pearl/oil drops"
+      ],
+      "cautions": [
+        "Basilosaurus-produced oil is the spoilable creature variant.",
+        "Mining, passive production and vein extraction are distinct methods."
+      ],
+      "weightReductions": [],
+      "sourceURLs": [
+        "https://ark.wiki.gg/wiki/Oil/id",
+        "https://ark.wiki.gg/wiki/Dung_Beetle",
+        "https://ark.wiki.gg/wiki/Basilosaurus",
+        "https://ark.wiki.gg/wiki/Trilobite"
+      ],
+      "verifiedAt": "2026-10-07"
+    },
+    {
+      "resource": "Silica Pearls",
+      "aliases": [
+        "Pearls"
+      ],
+      "summary": "Hand-pick pearl clams or use Anglerfish bite to collect them.",
+      "tools": [
+        {
+          "name": "Hands",
+          "role": "Collect clam nodes; no mining tool needed."
+        },
+        {
+          "name": "Whip",
+          "role": "Scorched Earth exposed pearls."
+        }
+      ],
+      "creatures": [
+        {
+          "name": "Anglerfish",
+          "role": "Bite harvests clam nodes."
+        },
+        {
+          "name": "Otter",
+          "role": "Harvest fish to obtain small amounts."
+        }
+      ],
+      "targets": [
+        "Pearl clams",
+        "Giant Beaver Dams",
+        "Trilobite / Leech / Eurypterid / Ammonite corpses"
+      ],
+      "cautions": [
+        "Corpse harvesting and clam gathering are different contexts.",
+        "The resource page says player melee does not increase hand-picked clam pearls."
+      ],
+      "weightReductions": [],
+      "sourceURLs": [
+        "https://ark.wiki.gg/wiki/Silica_Pearls",
+        "https://ark.wiki.gg/wiki/Anglerfish"
+      ],
+      "verifiedAt": "2026-10-07"
+    },
+    {
+      "resource": "Black Pearls",
+      "aliases": [
+        "Black Pearl"
+      ],
+      "summary": "Choose actual black-pearl sources; ordinary silica clams are a different resource.",
+      "tools": [
+        {
+          "name": "Metal Pick",
+          "role": "Listed corpse tool."
+        },
+        {
+          "name": "Chainsaw",
+          "role": "Listed tool, only where corpse access permits it."
+        }
+      ],
+      "creatures": [
+        {
+          "name": "Megalodon",
+          "role": "Harvest pearl-dropping sea corpses."
+        },
+        {
+          "name": "Otter",
+          "role": "Rare black pearls from fish corpses."
+        },
+        {
+          "name": "Beelzebufo",
+          "role": "Increased harvesting from Eurypterid."
+        },
+        {
+          "name": "Gacha",
+          "role": "Production only when that individual has Black Pearl in its production choices."
+        }
+      ],
+      "targets": [
+        "Eurypterid",
+        "Ammonite",
+        "Tusoteuthis",
+        "Alpha Tusoteuthis",
+        "Alpha Mosasaur",
+        "Deathworm",
+        "Trilobite"
+      ],
+      "cautions": [
+        "Eurypterid rapidly drains tame stamina.",
+        "Gacha being listed as a gatherer does not mean every Gacha can produce this resource."
+      ],
+      "weightReductions": [
+        {
+          "name": "Argentavis",
+          "percent": 50
+        },
+        {
+          "name": "Dunkleosteus",
+          "percent": 50
+        }
+      ],
+      "sourceURLs": [
+        "https://ark.wiki.gg/wiki/Black_Pearl",
+        "https://ark.wiki.gg/wiki/Weight_Reduction"
+      ],
+      "verifiedAt": "2026-10-07"
+    },
+    {
+      "resource": "Sap",
+      "aliases": [],
+      "summary": "Tap eligible redwoods; Joshua trees use a different harvest method.",
+      "tools": [
+        {
+          "name": "Tree Sap Tap",
+          "role": "Attach to a supported Redwood tree."
+        },
+        {
+          "name": "Chainsaw",
+          "role": "Harvest Joshua trees."
+        },
+        {
+          "name": "Pick / Hatchet",
+          "role": "Joshua-tree alternative."
+        }
+      ],
+      "creatures": [
+        {
+          "name": "Moschops",
+          "role": "Invest sap harvesting points for Joshua trees."
+        },
+        {
+          "name": "Archaeopteryx",
+          "role": "Slow wandering sap collection from Redwood/Joshua trees."
+        }
+      ],
+      "targets": [
+        "Redwood trees",
+        "Joshua trees on desert maps"
+      ],
+      "cautions": [
+        "Ordinary sap and cactus sap are separate resources.",
+        "Archaeopteryx does not gather sap in stasis and can wander out of range."
+      ],
+      "weightReductions": [],
+      "sourceURLs": [
+        "https://ark.wiki.gg/wiki/Sap",
+        "https://ark.wiki.gg/wiki/Archaeopteryx"
+      ],
+      "verifiedAt": "2026-10-07"
+    },
+    {
+      "resource": "Cactus Sap",
+      "aliases": [
+        "Cactus",
+        "Cactus with few berries"
+      ],
+      "summary": "Small and large cactus nodes need different methods.",
+      "tools": [
+        {
+          "name": "Hands",
+          "role": "Small cacti."
+        },
+        {
+          "name": "Whip",
+          "role": "Efficient small-cactus tool."
+        },
+        {
+          "name": "Chainsaw",
+          "role": "Preferred large-cactus tool."
+        },
+        {
+          "name": "Pick / Hatchet",
+          "role": "Large cactus alternative."
+        }
+      ],
+      "creatures": [
+        {
+          "name": "Therizinosaur",
+          "role": "Delicate harvest on bush cactus nodes."
+        }
+      ],
+      "targets": [
+        "Small cacti",
+        "Large cacti"
+      ],
+      "cautions": [
+        "ASA hydration comes from consuming cactus sap; ASE hydration came from harvesting the plant."
+      ],
+      "weightReductions": [
+        {
+          "name": "Equus",
+          "percent": 80
+        },
+        {
+          "name": "Stegosaurus",
+          "percent": 75
+        }
+      ],
+      "sourceURLs": [
+        "https://ark.wiki.gg/wiki/Cactus_Sap",
+        "https://ark.wiki.gg/wiki/Therizinosaur"
+      ],
+      "verifiedAt": "2026-10-07"
+    },
+    {
+      "resource": "Rare Flowers",
+      "aliases": [
+        "Rare Flower"
+      ],
+      "summary": "Use the correct special plants, or loot a Beaver Dam.",
+      "tools": [
+        {
+          "name": "Metal Sickle",
+          "role": "Rare-flower patches."
+        }
+      ],
+      "creatures": [
+        {
+          "name": "Therizinosaur",
+          "role": "Delicate/fiber attack for rare-flower plants."
+        },
+        {
+          "name": "Moschops",
+          "role": "Can specialize in rare-flower harvesting."
+        },
+        {
+          "name": "Ankylosaurus",
+          "role": "Listed rare-flower collector."
+        }
+      ],
+      "targets": [
+        "Swamp cattails / pitcher plants / brambles",
+        "Snow shrubs",
+        "Giant Beaver Dams",
+        "Aberration poison mushroom patches"
+      ],
+      "cautions": [
+        "Eating one attracts nearby wild creatures.",
+        "Not every plant is a rare-flower node."
+      ],
+      "weightReductions": [],
+      "sourceURLs": [
+        "https://ark.wiki.gg/wiki/Rare_Flower",
+        "https://ark.wiki.gg/wiki/Metal_Sickle",
+        "https://ark.wiki.gg/wiki/Therizinosaur"
+      ],
+      "verifiedAt": "2026-10-07"
+    },
+    {
+      "resource": "Rare Mushrooms",
+      "aliases": [
+        "Rare Mushroom"
+      ],
+      "summary": "Chop swamp trees or gather map-specific mushroom sources; crystal mining can also drop them.",
+      "tools": [
+        {
+          "name": "Metal Hatchet",
+          "role": "Swamp-tree wood harvest."
+        },
+        {
+          "name": "Metal Pick",
+          "role": "Crystal mining alternative."
+        }
+      ],
+      "creatures": [
+        {
+          "name": "Therizinosaur",
+          "role": "Power harvest for swamp trees."
+        },
+        {
+          "name": "Mammoth",
+          "role": "Listed mushroom collector."
+        },
+        {
+          "name": "Ankylosaurus",
+          "role": "Aberration mushroom bite harvest."
+        },
+        {
+          "name": "Roll Rat",
+          "role": "Aberration hallucinogenic mushroom collection."
+        }
+      ],
+      "targets": [
+        "Swamp mangrove trees",
+        "Giant Beaver Dams",
+        "Crystal nodes",
+        "Aberration hallucinogenic mushrooms"
+      ],
+      "cautions": [
+        "Rare Mushroom is not the same item as the four Aberration mushroom types."
+      ],
+      "weightReductions": [],
+      "sourceURLs": [
+        "https://ark.wiki.gg/wiki/Rare_Mushroom",
+        "https://ark.wiki.gg/wiki/Trees",
+        "https://ark.wiki.gg/wiki/Ankylosaurus",
+        "https://ark.wiki.gg/wiki/Therizinosaur"
+      ],
+      "verifiedAt": "2026-10-07"
+    },
+    {
+      "resource": "Mushrooms",
+      "aliases": [],
+      "summary": "Aberration ground mushrooms are efficiently collected with Metal Sickle.",
+      "tools": [
+        {
+          "name": "Metal Sickle",
+          "role": "Ground mushroom patches."
+        }
+      ],
+      "creatures": [
+        {
+          "name": "Triceratops",
+          "role": "Berry-type gathering also collects mushrooms."
+        },
+        {
+          "name": "Stegosaurus",
+          "role": "Berry-type gathering also collects mushrooms."
+        }
+      ],
+      "targets": [
+        "Aberration small ground mushroom patches"
+      ],
+      "cautions": [
+        "Each mushroom type has different consumption effects; do not treat all as Rare Mushroom."
+      ],
+      "weightReductions": [],
+      "sourceURLs": [
+        "https://ark.wiki.gg/wiki/Mushrooms",
+        "https://ark.wiki.gg/wiki/Metal_Sickle"
+      ],
+      "verifiedAt": "2026-10-07"
+    },
+    {
+      "resource": "Fungal Wood",
+      "aliases": [],
+      "summary": "Harvest large mushrooms; Chainsaw is the resource page preferred tool.",
+      "tools": [
+        {
+          "name": "Chainsaw",
+          "role": "Large mushroom harvest."
+        },
+        {
+          "name": "Metal Hatchet",
+          "role": "Wood-style tool alternative."
+        }
+      ],
+      "creatures": [
+        {
+          "name": "Roll Rat",
+          "role": "Carrier with fungal-wood reduction."
+        }
+      ],
+      "targets": [
+        "Large mushroom trees"
+      ],
+      "cautions": [
+        "Some recipes specifically require fungal wood."
+      ],
+      "weightReductions": [
+        {
+          "name": "Roll Rat",
+          "percent": 80
+        },
+        {
+          "name": "Ravager",
+          "percent": 50
+        }
+      ],
+      "sourceURLs": [
+        "https://ark.wiki.gg/wiki/Fungal_Wood",
+        "https://ark.wiki.gg/wiki/Aberration"
+      ],
+      "verifiedAt": "2026-10-07"
+    },
+    {
+      "resource": "Silk",
+      "aliases": [],
+      "summary": "Harvest desert flowers or Lymantria corpses with source-appropriate tools.",
+      "tools": [
+        {
+          "name": "Metal Sickle",
+          "role": "Purple/white desert flower patches."
+        },
+        {
+          "name": "Metal Hatchet",
+          "role": "Lymantria corpses."
+        }
+      ],
+      "creatures": [
+        {
+          "name": "Therizinosaur",
+          "role": "Delicate plant harvest."
+        },
+        {
+          "name": "Sabertooth",
+          "role": "Lymantria corpse harvest."
+        }
+      ],
+      "targets": [
+        "Purple and white desert flowers",
+        "Lymantria"
+      ],
+      "cautions": [
+        "Hand collection is low yield; wiki marks its edition scope as uncertain."
+      ],
+      "weightReductions": [],
+      "sourceURLs": [
+        "https://ark.wiki.gg/wiki/Silk",
+        "https://ark.wiki.gg/wiki/Metal_Sickle",
+        "https://ark.wiki.gg/wiki/Therizinosaur"
+      ],
+      "verifiedAt": "2026-10-07"
+    },
+    {
+      "resource": "Sulfur",
+      "aliases": [],
+      "summary": "Mine yellow-streaked sulfur rocks on maps with these nodes.",
+      "tools": [
+        {
+          "name": "Metal Pick",
+          "role": "Sulfur mining."
+        },
+        {
+          "name": "Stone Pick",
+          "role": "Early mining option."
+        }
+      ],
+      "creatures": [
+        {
+          "name": "Ankylosaurus",
+          "role": "Listed sulfur collector."
+        },
+        {
+          "name": "Phoenix",
+          "role": "Listed collector when tame/map is available."
+        }
+      ],
+      "targets": [
+        "Yellow-streaked sulfur rocks",
+        "Rock Elemental / Wyvern / Magmasaur corpses"
+      ],
+      "cautions": [],
+      "weightReductions": [],
+      "sourceURLs": [
+        "https://ark.wiki.gg/wiki/Sulfur"
+      ],
+      "verifiedAt": "2026-10-07"
+    },
+    {
+      "resource": "Raw Salt",
+      "aliases": [
+        "Bones"
+      ],
+      "summary": "Mine salt pillars or eligible fossil deposits.",
+      "tools": [
+        {
+          "name": "Metal Pick",
+          "role": "Salt mining."
+        },
+        {
+          "name": "Stone Pick",
+          "role": "Early salt mining."
+        }
+      ],
+      "creatures": [],
+      "targets": [
+        "Salt pillars",
+        "Small fossil/bone deposits"
+      ],
+      "cautions": [
+        "Bones on a resource map are deposit types, not automatically the event Dinosaur Bone item."
+      ],
+      "weightReductions": [],
+      "sourceURLs": [
+        "https://ark.wiki.gg/wiki/Raw_Salt"
+      ],
+      "verifiedAt": "2026-10-07"
+    },
+    {
+      "resource": "Sand",
+      "aliases": [
+        "Sandpile"
+      ],
+      "summary": "Collect sand from appropriate rocks or ground nodes.",
+      "tools": [
+        {
+          "name": "Metal Hatchet",
+          "role": "Rock harvest."
+        },
+        {
+          "name": "Whip",
+          "role": "Loose ground sand."
+        },
+        {
+          "name": "Hands",
+          "role": "Loose ground sand."
+        }
+      ],
+      "creatures": [
+        {
+          "name": "Doedicurus",
+          "role": "Bulk sand collection; ASA Harvest Only includes sand."
+        }
+      ],
+      "targets": [
+        "Sand-bearing rocks",
+        "Loose ground sand"
+      ],
+      "cautions": [
+        "Sand is heavy; plan hauling."
+      ],
+      "weightReductions": [
+        {
+          "name": "Equus",
+          "percent": 80
+        }
+      ],
+      "sourceURLs": [
+        "https://ark.wiki.gg/wiki/Sand",
+        "https://ark.wiki.gg/wiki/Doedicurus"
+      ],
+      "verifiedAt": "2026-10-07"
+    },
+    {
+      "resource": "Cementing Paste",
+      "aliases": [
+        "Beaver Dam"
+      ],
+      "summary": "Farm small insects with a frog, loot dams, or use Achatina production.",
+      "tools": [
+        {
+          "name": "Mortar and Pestle / Chemistry Bench",
+          "role": "Craft from stone and chitin/keratin."
+        }
+      ],
+      "creatures": [
+        {
+          "name": "Beelzebufo",
+          "role": "Tongue harvest of Meganeura, Titanomyrma, Glowbug or Jug Bug corpses yields paste."
+        },
+        {
+          "name": "Achatina",
+          "role": "Produces Achatina Paste, a crafting substitute."
+        }
+      ],
+      "targets": [
+        "Eligible small insect corpses",
+        "Giant Beaver Dams"
+      ],
+      "cautions": [
+        "Beavers become hostile when a dam is accessed.",
+        "Do not assume every chitin-dropping corpse produces paste with a frog."
+      ],
+      "weightReductions": [],
+      "sourceURLs": [
+        "https://ark.wiki.gg/wiki/Cementing_Paste",
+        "https://ark.wiki.gg/wiki/Beelzebufo",
+        "https://ark.wiki.gg/wiki/Giant_Beaver_Dam"
+      ],
+      "verifiedAt": "2026-10-07"
+    },
+    {
+      "resource": "Giant Bee Honey",
+      "aliases": [
+        "Honey",
+        "Bee Hive"
+      ],
+      "summary": "Collect from a hive; Dire Bear alternate attack avoids harming a wild hive.",
+      "tools": [
+        {
+          "name": "Hands",
+          "role": "Access hive, with bee risk."
+        }
+      ],
+      "creatures": [
+        {
+          "name": "Dire Bear",
+          "role": "Alternate attack on a reachable hive collects honey without angering bees."
+        },
+        {
+          "name": "Giant Bee",
+          "role": "Tamed bee creates a honey-producing hive."
+        }
+      ],
+      "targets": [
+        "Wild bee hives",
+        "Tamed Bee Hive"
+      ],
+      "cautions": [
+        "A honey-harvesting attack differs from destroying the hive to tame the queen.",
+        "Map-specific honey rocks are a separate node context."
+      ],
+      "weightReductions": [],
+      "sourceURLs": [
+        "https://ark.wiki.gg/wiki/Giant_Bee_Honey",
+        "https://ark.wiki.gg/wiki/Dire_Bear"
+      ],
+      "verifiedAt": "2026-10-07"
+    },
+    {
+      "resource": "Green Gem",
+      "aliases": [
+        "Gem",
+        "Gem Light"
+      ],
+      "summary": "Mine green crystalline nodes or collect debris.",
+      "tools": [
+        {
+          "name": "Metal Pick",
+          "role": "Gem mining."
+        },
+        {
+          "name": "Stone Pick",
+          "role": "Early gem mining."
+        }
+      ],
+      "creatures": [],
+      "targets": [
+        "Green crystalline formations",
+        "Earthquake debris",
+        "Roll Rat diggings"
+      ],
+      "cautions": [
+        "Taking Roll Rat debris makes it hostile."
+      ],
+      "weightReductions": [
+        {
+          "name": "Ravager",
+          "percent": 50
+        }
+      ],
+      "sourceURLs": [
+        "https://ark.wiki.gg/wiki/Green_Gem"
+      ],
+      "verifiedAt": "2026-10-07"
+    },
+    {
+      "resource": "Blue Gem",
+      "aliases": [
+        "Gem Bio"
+      ],
+      "summary": "Mine blue crystalline formations; Roll Rat debris is another source.",
+      "tools": [
+        {
+          "name": "Stone Pick",
+          "role": "Source-listed mining tool."
+        }
+      ],
+      "creatures": [],
+      "targets": [
+        "Blue crystalline formations",
+        "Roll Rat diggings"
+      ],
+      "cautions": [
+        "Taking Roll Rat debris makes it hostile."
+      ],
+      "weightReductions": [],
+      "sourceURLs": [
+        "https://ark.wiki.gg/wiki/Blue_Gem"
+      ],
+      "verifiedAt": "2026-10-07"
+    },
+    {
+      "resource": "Red Gem",
+      "aliases": [
+        "Gem Element"
+      ],
+      "summary": "Metal Pick is a practical choice for red/purple gem formations.",
+      "tools": [
+        {
+          "name": "Metal Pick",
+          "role": "Source-recommended gem mining."
+        }
+      ],
+      "creatures": [
+        {
+          "name": "Aberrant Ankylosaurus",
+          "role": "ASA source states radiation immunity; do not apply the ASE warning to ASA."
+        }
+      ],
+      "targets": [
+        "Red / purple crystalline formations",
+        "Rare earthquake debris",
+        "Rare Roll Rat diggings"
+      ],
+      "cautions": [
+        "Radioactive regions require survivor protection.",
+        "Taking Roll Rat debris makes it hostile."
+      ],
+      "weightReductions": [],
+      "sourceURLs": [
+        "https://ark.wiki.gg/wiki/Red_Gem"
+      ],
+      "verifiedAt": "2026-10-07"
+    },
+    {
+      "resource": "Element Ore",
+      "aliases": [],
+      "summary": "Mine the small dark rocks containing a purple crystal.",
+      "tools": [],
+      "creatures": [],
+      "targets": [
+        "Aberration surface",
+        "Aberration Grave of the Lost"
+      ],
+      "cautions": [
+        "This entry verifies the node source, not an optimal tool or creature.",
+        "Element Ore is distinct from Element, Element Dust and Element Shard."
+      ],
+      "weightReductions": [],
+      "sourceURLs": [
+        "https://ark.wiki.gg/wiki/Element_Ore"
+      ],
+      "verifiedAt": "2026-10-07"
+    },
+    {
+      "resource": "Blue Crystalized Sap",
+      "aliases": [],
+      "summary": "Harvest pale fungal trees on Extinction for a Blue Gem substitute.",
+      "tools": [
+        {
+          "name": "Metal Pick",
+          "role": "Source-listed tree harvest."
+        },
+        {
+          "name": "Chainsaw",
+          "role": "Source-listed tree harvest."
+        }
+      ],
+      "creatures": [
+        {
+          "name": "Therizinosaur",
+          "role": "Source-listed tree harvest."
+        }
+      ],
+      "targets": [
+        "Extinction pale/white-leaf fungal trees"
+      ],
+      "cautions": [],
+      "weightReductions": [],
+      "sourceURLs": [
+        "https://ark.wiki.gg/wiki/Blue_Crystalized_Sap"
+      ],
+      "verifiedAt": "2026-10-07"
+    },
+    {
+      "resource": "Red Crystalized Sap",
+      "aliases": [],
+      "summary": "Harvest blood-ridden red-leaf trees on Extinction for a Red Gem substitute.",
+      "tools": [
+        {
+          "name": "Metal Hatchet",
+          "role": "Source-recommended tool."
+        },
+        {
+          "name": "Chainsaw",
+          "role": "Source-recommended tool."
+        }
+      ],
+      "creatures": [
+        {
+          "name": "Gacha",
+          "role": "Only individuals with the appropriate production choice."
+        }
+      ],
+      "targets": [
+        "Extinction blood-ridden trees"
+      ],
+      "cautions": [],
+      "weightReductions": [],
+      "sourceURLs": [
+        "https://ark.wiki.gg/wiki/Red_Crystalized_Sap"
+      ],
+      "verifiedAt": "2026-10-07"
+    }
+  ]
+}

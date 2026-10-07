@@ -69,6 +69,13 @@ struct FarmDetails: View {
                     }
                 }
             }
+            ForEach(spot.resources, id: \.self) { resource in
+                if let gathering = HarvestingCatalogue.shared.resource(resource) {
+                    DisclosureGroup("Gathering · " + resource) {
+                        HarvestingReferencePanel(reference: gathering).padding(.top, 8)
+                    }.font(.subheadline).accessibilityIdentifier("farm-gathering-" + resource)
+                }
+            }
             Text(spot.direction).font(.callout)
             if !spot.method.isEmpty { Text(spot.method).font(.caption).foregroundStyle(.secondary) }
             if !spot.kit.isEmpty { ScrollView(.horizontal, showsIndicators: false) {

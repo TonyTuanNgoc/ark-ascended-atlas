@@ -158,7 +158,7 @@
       "name": "Chemistry Bench",
       "category": "machines",
       "summary": "Chemistry station for batch production.",
-      "use": "Craft Narcotic, Cementing Paste, Sparkpowder, and Gunpowder; in ASA, only electricity is required.",
+      "use": "Craft chemical recipes in batches; check power and fuel requirements in the current game/server.",
       "station": "Fabricator",
       "unlock": "Level 82 • 65 EP according to the Engrams catalogue; varies by server configuration.",
       "mapIDs": [],

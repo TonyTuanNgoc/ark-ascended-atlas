@@ -91,26 +91,27 @@ struct MapSessionShell: View {
         chooseMap(map)
     }
     private var header: some View {
-        HStack(spacing: 12) {
+        HStack(spacing: 10) {
             Image("ArkLogo").resizable().scaledToFit()
-                .frame(width: 64, height: 70)
+                .frame(width: 100, height: 88)
                 .accessibilityIdentifier("ascended-header-logo")
                 .accessibilityLabel("ARK Survival Ascended")
+            Rectangle().fill(.white.opacity(0.10)).frame(width: 1, height: 50)
             UnifiedMapsPicker(map: map, choose: selectMap)
             ScrollViewReader { reader in
                 ScrollView(.horizontal, showsIndicators: false) {
-                    HStack(spacing: 5) {
+                    HStack(spacing: 4) {
                         ForEach(Destination.allCases.filter { $0 != .expansions }) { item in
                             Button {
                                 selection = item
                                 withAnimation(.easeInOut(duration: 0.2)) { reader.scrollTo(item.id, anchor: .center) }
                             } label: {
                                 VStack(spacing: 4) {
-                                    NavigationAvatar(asset: item.avatarAsset, size: 30)
+                                    NavigationAvatar(asset: item.avatarAsset, size: 28)
                                     Text(item.title).font(.system(size: 11, weight: .semibold))
                                         .multilineTextAlignment(.center).lineLimit(2)
                                         .fixedSize(horizontal: false, vertical: true).frame(height: 28)
-                                }.frame(width: 84, height: 68)
+                                }.frame(width: 82, height: 72)
                                     .background(selection == item ? Color.cyan.opacity(0.12) : Color.white.opacity(0.025), in: RoundedRectangle(cornerRadius: 12))
                                     .overlay { RoundedRectangle(cornerRadius: 12).strokeBorder(selection == item ? Color.cyan.opacity(0.5) : .clear, lineWidth: 1) }
                                     .contentShape(RoundedRectangle(cornerRadius: 12))
@@ -120,9 +121,9 @@ struct MapSessionShell: View {
                                 .id(item.id)
                         }
                     }
-                }.accessibilityIdentifier("top-module-navigation")
+                }.padding(5).background(Color.cyan.opacity(0.025), in: RoundedRectangle(cornerRadius: 15)).accessibilityIdentifier("top-module-navigation")
             }
-        }.frame(height: 70).padding(.horizontal, 14).padding(.vertical, 8)
+        }.frame(height: 90).padding(.horizontal, 14).padding(.vertical, 6)
             .background(LinearGradient(colors: [Color(red: 0.07, green: 0.10, blue: 0.12), Color(red: 0.035, green: 0.05, blue: 0.065)], startPoint: .top, endPoint: .bottom))
             .overlay(alignment: .bottom) { Rectangle().fill(.white.opacity(0.08)).frame(height: 1) }
     }
@@ -159,13 +160,14 @@ private struct UnifiedMapsPicker: View {
     @State private var presented = false
     var body: some View {
         Button { presented.toggle() } label: {
-            VStack(alignment: .leading, spacing: 4) {
-                CurrentMapArtwork(map: map).frame(width: 114, height: 46, alignment: .leading)
-                HStack(spacing: 5) {
-                    Text(map.name).font(.system(size: 12, weight: .semibold)).lineLimit(1).minimumScaleFactor(0.75)
-                    Image(systemName: "chevron.down").font(.system(size: 9, weight: .bold))
-                }
-            }.frame(width: 128, height: 68, alignment: .leading)
+            VStack(alignment: .leading, spacing: 7) {
+                CurrentMapArtwork(map: map).frame(width: 94, height: 38, alignment: .leading)
+                HStack(spacing: 6) {
+                    Text(map.name).font(.system(size: 13, weight: .bold)).lineLimit(1).minimumScaleFactor(0.7)
+                    Image(systemName: "chevron.down").font(.system(size: 10, weight: .bold))
+                        .frame(width: 22, height: 22).background(Color.cyan.opacity(0.16), in: Circle())
+                }.foregroundStyle(.cyan)
+            }.frame(width: 116, height: 80, alignment: .leading)
                 .contentShape(RoundedRectangle(cornerRadius: 10))
 
         }.buttonStyle(.plain).accessibilityIdentifier("maps-picker").accessibilityLabel("Maps · " + map.name)

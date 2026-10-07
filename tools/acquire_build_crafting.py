@@ -75,3 +75,6 @@ for name,output,ingredients,station in processes:
  processRows.append({'name':name,'output':output,'ingredients':ingredients,'station':station,'sourceURL':'https://ark.wiki.gg/wiki/'+name.replace(' ','_'),'asaSourceURL':(found or {}).get('sourceURL'),'variant':'standard process; no Chemistry Bench discount or fuel included'})
 (R/'build-crafting.json').write_text(json.dumps({'items':records,'processes':processRows},ensure_ascii=False,separators=(',',':'))+'\n')
 print('DONE',len(records),'verified',sum(x['recipeVerified'] for x in records),'source recipes',len(recipes),flush=True)
+if (R/'equipment-details.json').exists():
+ from apply_equipment_reference_corrections import apply
+ apply()

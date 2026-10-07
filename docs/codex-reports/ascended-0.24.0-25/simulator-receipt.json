@@ -1,0 +1,15 @@
+{
+  "platform": "iOS Simulator",
+  "deviceUDID": "20C9346D-B0E6-4239-8152-1D85ADD57BA6",
+  "appContainer": "/Volumes/TONY SSD/APP_DATA/Xcode/CoreSimulator/Devices/20C9346D-B0E6-4239-8152-1D85ADD57BA6/data/Containers/Bundle/Application/16841FD1-BAB3-47AA-90B5-4A0B7792EBC4/Ascended.app",
+  "version": "0.24.0",
+  "build": "25",
+  "resourceSHA256": {
+    "equipment-details": "b37c6c586255c5048ea8d9d30bbab11e173b21bb214bbafc09d1b553eaaa8da3",
+    "harvesting-guide": "9f0292b5fd1dc64bbe2147ca5dae5bf7634fbab4254176affc9e425f4e3760cc",
+    "build-crafting": "6ba02c704ca0dfb5a05395d2f6720daf1c09711bd9f312490224642222cc298e",
+    "equipment-library": "77def7a4fa73fb154b0bcf0b42a24333ea168a1b569f6d89e4fefcafa33b6eb1"
+  },
+  "physicalDeviceInstalled": false,
+  "launchPID": 75084
+}

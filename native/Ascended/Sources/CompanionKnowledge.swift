@@ -163,15 +163,18 @@ struct EquipmentDetail: View {
                 FactPicture(fact: item.fact).frame(height: 170).frame(maxWidth: .infinity)
                 Text(item.name).font(.largeTitle.bold())
                 if BuildCraftCatalogue.shared.item(item.id)?.recipeVerified == true {Button {craft=true} label: {Label("Craft",systemImage:"hammer.fill")}.buttonStyle(.bordered)}
-                Text(item.summary)
-                Label(item.use, systemImage: "hand.point.up.left.fill")
-                if let recipe = BuildCraftCatalogue.shared.item(item.id), recipe.recipeVerified {
-                    Label(recipe.stations.isEmpty ? "Crafting station not specified in the source" : recipe.stations.joined(separator: " · "), systemImage: "gearshape.fill")
-                } else if !item.station.isEmpty {
-                    Label(item.station, systemImage: "gearshape.fill")
+                let reference = EquipmentReferenceCatalogue.shared.item(item.id)
+                Text(reference?.purpose ?? item.summary).font(.callout)
+                if reference?.purpose == nil && !item.use.isEmpty { Text(item.use).font(.callout).foregroundStyle(.secondary) }
+                if let reference {
+                    EquipmentReferencePanel(item: item, reference: reference)
                 }
-                if item.category != "resources" && item.category != "supplies" {
-                    if !item.unlock.isEmpty { Label(item.unlock, systemImage: "lock.open.fill") }
+                if let gathering = HarvestingCatalogue.shared.resource(item.name) {
+                    HarvestingReferencePanel(reference: gathering)
+                } else {
+                    ForEach(HarvestingCatalogue.shared.uses(item.name)) { gathering in
+                        HarvestingReferencePanel(reference: gathering)
+                    }
                 }
                 if item.availability == "source-catalog-check-asa" { Label("Unconfirmed in ASA · check Engrams or DLC", systemImage: "questionmark.circle").font(.callout).foregroundStyle(.orange) }
                 if !item.mapIDs.isEmpty {

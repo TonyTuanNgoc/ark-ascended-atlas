@@ -7,6 +7,7 @@ struct BuildCraftCatalogue:Decodable {
 }
 struct BuildCraftItem:Decodable,Identifiable {
     let id,name,category:String;let asset:String?;let ingredients:[String:Int];let stations:[String];let recipeVerified:Bool
+    let output: Int?
 }
 struct BuildProcess:Decodable,Identifiable {
     let name:String;let output:Int;let ingredients:[String:Int];let station:String
@@ -19,7 +20,15 @@ enum BuildBill {
         return StoneKit.shared.models.first {$0.id==id && !($0.ingredients.isEmpty)}?.ingredients
     }
     static func direct(_ pieces:[StonePlacement])->[String:Int] {
-        var sum:[String:Int]=[:];for p in pieces {for (n,v) in ingredient(p.kind) ?? [:] {sum[n,default:0]+=v}};return sum
+        let counts = Dictionary(pieces.map { ($0.kind, 1) }, uniquingKeysWith: +)
+        var sum:[String:Int]=[:]
+        for (id, count) in counts { for (n,v) in requirement(id, count: count) {sum[n,default:0]+=v} }
+        return sum
+    }
+    static func requirement(_ id: String, count: Int) -> [String: Int] {
+        let output = max(1, BuildCraftCatalogue.shared.item(id)?.output ?? 1)
+        let batches = (max(0, count) + output - 1) / output
+        return (ingredient(id) ?? [:]).mapValues { $0 * batches }
     }
     static func expand(_ direct:[String:Int])->(raw:[String:Int],steps:[BuildCraftStep]) {
         // Expand the deepest dependencies first so shared ingredients are combined before batch rounding.
@@ -55,8 +64,9 @@ struct BuildBillView:View {
                                 if let asset=item?.asset ?? model?.asset {Image(asset).resizable().scaledToFit().frame(width:48,height:42)}
                                 Text(item?.name ?? model?.name ?? id).font(.headline);Spacer();Text("×\(n)").monospacedDigit()
                             }
-                            if let recipe=BuildBill.ingredient(id) {
-                                materialStrip(recipe.mapValues {$0*n})
+                            if BuildBill.ingredient(id) != nil {
+                                materialStrip(BuildBill.requirement(id, count: n))
+                                if let output = item?.output, output > 1 { Text("Crafted in batches of \(output)").font(.caption).foregroundStyle(.cyan) }
                                 Label(item?.stations.first ?? "Station not verified",systemImage:"hammer.fill").font(.caption).foregroundStyle(.secondary)
                             } else {Text("Recipe not verified").font(.caption).foregroundStyle(.orange)}
                         }.padding(12).background(Color.white.opacity(0.05),in:RoundedRectangle(cornerRadius:10)).accessibilityElement(children:.contain).accessibilityIdentifier("bill-piece-"+id)
