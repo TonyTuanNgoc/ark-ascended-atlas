@@ -15,5 +15,6 @@
   "webDeployment": false,
   "sourceDetailRetained": true,
   "tileFadeDuration": 0,
-  "remotePushStatus": "Blocked: GitHub receive-pack Internal Server Error on three attempts; remote remains build28 commit2c5d2ce"
+  "remotePushStatus": "Succeeded after transient GitHub server errors",
+  "implementationCommit": "5780e84"
 }

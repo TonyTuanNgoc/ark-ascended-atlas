@@ -15,3 +15,5 @@ Initial UI checks exposed two test selectors that incorrectly counted the map-pi
 Final QA:25unit+9unique scopedUIcases passed across the release and map follow-up runs. The pixel test confirms green overview pixels in the first frame before detail completion. Existing Farming single-loop/pin selection, all30 base choices, native header, complete Atlas frame, hierarchical filters, personal-location persistence and map isolation passed. InstalledInfo.plist readback0.28.0/build29; freshSimulatorlaunchPID85281. No physical-device rendering claim.
 
 Remote delivery limit: GitHub rejected three push attempts with receive-pack Internal Server Error, including HTTP/1.1 retry. ls-remote still shows2c5d2ce for this branch. Native Simulator delivery succeeded; repository changes are committed locally and remote push remains pending.
+
+Remote recovery: the final retry successfully pushed implementation commit5780e84 to codex/ascended-ipad-dev-20261003. The server errors above are resolved; Simulator and GitHub delivery are complete.
