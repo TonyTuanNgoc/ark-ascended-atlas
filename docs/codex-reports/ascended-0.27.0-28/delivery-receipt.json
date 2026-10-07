@@ -1,0 +1,21 @@
+{
+  "version": "0.27.0",
+  "build": "28",
+  "simulatorUUID": "20C9346D-B0E6-4239-8152-1D85ADD57BA6",
+  "installedApp": "/Volumes/TONY SSD/APP_DATA/Xcode/CoreSimulator/Devices/20C9346D-B0E6-4239-8152-1D85ADD57BA6/data/Containers/Bundle/Application/8CDCCA33-F402-4DA1-94CB-865D1538CFA2/Ascended.app",
+  "launchPID": 77043,
+  "unitTestsPassed": 24,
+  "uniqueScopedUITestsPassed": 9,
+  "finalResults": [
+    "Test-Ascended-2026.10.07_23-16-21-+0700.xcresult",
+    "Test-Ascended-2026.10.07_23-21-09-+0700.xcresult"
+  ],
+  "baseLocationsPerMap": 10,
+  "basePhotos": 30,
+  "newPhotosOriginalSize": "320x180",
+  "centerGPSStatus": "Provisional creator auto-caption coordinates; no visual/in-game GPS measurement",
+  "installedBaseCatalogueBytesMatch": true,
+  "physicalInstall": false,
+  "testFlight": false,
+  "webDeployment": false
+}

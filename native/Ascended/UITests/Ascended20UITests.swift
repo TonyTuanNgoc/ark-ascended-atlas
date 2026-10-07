@@ -1,26 +1,18 @@
 import XCTest
 final class Ascended20UITests:XCTestCase {
     @MainActor private func start()->XCUIApplication {XCUIDevice.shared.orientation = .landscapeLeft;let app=XCUIApplication();app.launch();app.buttons["maps-picker"].tap();let rag=app.buttons["choose-ragnarok"];for _ in 0..<8 {if rag.isHittable {break};app.scrollViews["maps-list"].swipeUp()};rag.tap();return app}
-    @MainActor func testEmptyHierarchicalFiltersAndSingleResourceClip() {
+    @MainActor func testEmptyHierarchicalFiltersExcludeDedicatedLayers() {
         let app=start()
-        for id in ["Artifact","Cửa hang","Obelisk","Boss","Base","Resources","My Locations"] {XCTAssertEqual(app.buttons["layer-"+id].value as? String,"Hidden")}
+        for id in ["Artifact","Cửa hang","Obelisk","Boss","My Locations"] {XCTAssertEqual(app.buttons["layer-"+id].value as? String,"Hidden")}
         app.buttons["expand-layer-Artifact"].tap()
-        let artifacts=app.buttons.matching(NSPredicate(format:"identifier BEGINSWITH %@","location-filter-artifact-"));XCTAssertGreaterThan(artifacts.count,0)
+        let artifacts=app.buttons.matching(NSPredicate(format:"identifier BEGINSWITH %@","location-filter-artifact-"));XCTAssertTrue(artifacts.firstMatch.waitForExistence(timeout:5));XCTAssertGreaterThan(artifacts.count,0)
         let a=artifacts.element(boundBy:0);a.tap();XCTAssertEqual(a.value as? String,"Visible");XCTAssertEqual(app.buttons["layer-Artifact"].value as? String,"Partially visible")
         app.buttons["layer-Artifact"].tap();XCTAssertEqual(app.buttons["layer-Artifact"].value as? String,"Visible")
         app.buttons["layer-Artifact"].tap();XCTAssertEqual(a.value as? String,"Hidden");app.buttons["expand-layer-Artifact"].tap()
         app.buttons["expand-layer-Obelisk"].tap();let obelisk=app.buttons["location-filter-obelisk-red"];XCTAssertTrue(obelisk.waitForExistence(timeout:3));obelisk.tap();XCTAssertEqual(app.buttons["layer-Obelisk"].value as? String,"Partially visible");app.buttons["expand-layer-Obelisk"].tap()
-        app.buttons["layer-Resources"].tap()
-        let pins=app.buttons.matching(NSPredicate(format:"identifier BEGINSWITH %@","pin-farm-"))
-        XCTAssertTrue(pins.firstMatch.waitForExistence(timeout:5))
-        let farm=pins.allElementsBoundByIndex.first(where:{$0.isHittable})!
-        let name=farm.label.components(separatedBy:", LAT").first!
-        farm.tap()
-        if !app.staticTexts["selectedMapLocation"].exists {app.buttons[name].tap()}
-        XCTAssertTrue(app.staticTexts["selectedMapLocation"].waitForExistence(timeout:5))
-        let selectors=app.buttons.matching(NSPredicate(format:"identifier BEGINSWITH %@","farmClipSelect-"));XCTAssertEqual(selectors.count,0)
-        XCTAssertTrue(app.links["farmClipSource"].exists || app.buttons["farmClipSource"].exists)
-        let shot=XCTAttachment(screenshot:XCUIScreen.main.screenshot());shot.name="Map-hierarchical-filter-resource-loops";shot.lifetime = .keepAlways;add(shot)
+        XCTAssertFalse(app.buttons["layer-Resources"].exists)
+        XCTAssertFalse(app.buttons["layer-Base"].exists)
+        let shot=XCTAttachment(screenshot:XCUIScreen.main.screenshot());shot.name="Map-hierarchical-dedicated-filters";shot.lifetime = .keepAlways;add(shot)
     }
     @MainActor func testLongPressPersonalLocationPersistsAndMapIsolation() {
         let app=start();let map=app.descendants(matching:.any)["ragnarokMapViewport"].firstMatch;XCTAssertTrue(map.waitForExistence(timeout:5))
@@ -34,12 +26,11 @@ final class Ascended20UITests:XCTestCase {
         XCTAssertTrue(row.waitForExistence(timeout:5))
         app.buttons["maps-picker"].tap();app.buttons["choose-the-island"].tap();app.buttons["expand-layer-My Locations"].tap();XCTAssertFalse(app.buttons.matching(NSPredicate(format:"label CONTAINS %@","QA field camp")).firstMatch.exists)
     }
-    @MainActor func testScorchedGoalsKeepFullMeaningInDetailPage() {
-        let app=start();app.buttons["maps-picker"].tap();app.buttons["choose-scorched-earth"].tap();app.buttons["section-Thông tin map"].tap()
-        let goals=app.buttons["expansion-goals"]
-        for _ in 0..<5 {if goals.isHittable {break};app.scrollViews.matching(NSPredicate(format: "identifier != %@", "top-module-navigation")).firstMatch.swipeUp()}
-        XCTAssertTrue(goals.waitForExistence(timeout:5));goals.tap();XCTAssertTrue(app.scrollViews["information-detail-goals"].waitForExistence(timeout:5))
-        XCTAssertTrue(app.staticTexts.containing(NSPredicate(format:"label CONTAINS[c] %@","Wyvern")).firstMatch.exists)
-        let shot=XCTAttachment(screenshot:XCUIScreen.main.screenshot());shot.name="Scorched-goals-full-instructions";shot.lifetime = .keepAlways;add(shot)
+    @MainActor func testRemovedFieldGuideIsAbsentOnExpansionMaps() {
+        let app = start(); app.buttons["maps-picker"].tap(); app.buttons["choose-scorched-earth"].tap()
+        XCTAssertFalse(app.buttons["section-Thông tin map"].exists)
+        XCTAssertTrue(app.buttons["section-Xây base"].exists)
+        XCTAssertFalse(app.buttons["layer-Resources"].exists)
+        XCTAssertFalse(app.buttons["layer-Base"].exists)
     }
 }

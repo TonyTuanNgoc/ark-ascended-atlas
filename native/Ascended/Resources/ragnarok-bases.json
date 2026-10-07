@@ -1,46 +1,26 @@
 {
-  "reviewedAt": "2026-10-03",
-  "methodology": "5 locations ranked for Single Player balance: travel, Dino/breeding space, safety, resources, and clarity of ASA sources. This is not a YouTube-wide top 5 vote. Likes/views belong to the whole video; forum votes are comment snapshots that sometimes include multiple locations. The order is an assessment, not a poll result.",
-  "limits": "Matched in-game images: three regional images from NoobFeed and two video chapter images with GPS matching the pins. The two storyboard images are only 320×180 because the full video returned HTTP 403. Regional images do not confirm the same foundation footprint or build permissions in your save. Votes/likes remain snapshots, not a community-wide poll.",
+  "reviewedAt": "2026-10-07",
+  "methodology": "Ten distinct ASA base candidates. Display order groups practical single-player/PvE choices; it is an editorial order, not a vote, raid guarantee or measured resource score. Coordinates retain creator precision. Layout advice is Codex planning inference; source evidence is identified per spot.",
+  "limits": "Five existing matched images retained. Five new entries have matched genuine 320\u00d7180 public creator storyboard frames; full video section extraction failed. Primary ASA chapter GPS is confirmed in metadata; wiki regional guidance is secondary contextual support and not a measured footprint. No claim of build permission or current spawn safety.",
   "videos": [
-    {
-      "id": "5mYGGM_bIhs",
-      "title": "Best Base Locations on Ark's Ragnarok Ascended Map",
-      "channel": "Phlinger Phoo",
-      "url": "https://www.youtube.com/watch?v=5mYGGM_bIhs",
-      "thumbnailURL": "https://i.ytimg.com/vi/5mYGGM_bIhs/maxresdefault.jpg",
-      "views": 21207,
-      "likes": 617,
-      "observedAt": "2026-10-03"
-    },
     {
       "id": "2-qtw1pdg2A",
       "title": "The Top 20 Base Locations in Ark Ragnarok Ascended",
       "channel": "Ark: Survival Guide",
       "url": "https://www.youtube.com/watch?v=2-qtw1pdg2A",
       "thumbnailURL": "https://i.ytimg.com/vi/2-qtw1pdg2A/maxresdefault.jpg",
-      "views": 42474,
-      "likes": 534,
-      "observedAt": "2026-10-03"
+      "views": 42631,
+      "likes": 535,
+      "observedAt": "2026-10-07"
     },
     {
-      "id": "7L82DkFipzU",
-      "title": "TOP 25 BEST BASE LOCATIONS on RAGNAROK ASCENDED! | ARK: Survival Ascended",
-      "channel": "The Outcasts",
-      "url": "https://www.youtube.com/watch?v=7L82DkFipzU",
-      "thumbnailURL": "https://i.ytimg.com/vi/7L82DkFipzU/maxresdefault.jpg",
-      "views": 15848,
-      "likes": 166,
-      "observedAt": "2026-10-03"
-    },
-    {
-      "id": "gK_j-65oX8w",
-      "title": "Top 10 PVE Base Locations On Ragnarok Ascended",
-      "channel": "Inter",
-      "url": "https://www.youtube.com/watch?v=gK_j-65oX8w",
-      "thumbnailURL": "https://i.ytimg.com/vi/gK_j-65oX8w/maxresdefault.jpg",
-      "views": 642,
-      "likes": 7,
+      "id": "5mYGGM_bIhs",
+      "title": "Best Base Locations on Ark's Ragnarok Ascended Map",
+      "channel": "Phlinger Phoo",
+      "url": "https://www.youtube.com/watch?v=5mYGGM_bIhs",
+      "thumbnailURL": "https://i.ytimg.com/vi/5mYGGM_bIhs/maxresdefault.jpg",
+      "views": 21224,
+      "likes": 617,
       "observedAt": "2026-10-03"
     }
   ],
@@ -51,7 +31,7 @@
       "rank": 1,
       "lat": 39.8,
       "lon": 44.8,
-      "tag": "Main base · balanced mid/end game",
+      "tag": "Main base \u00b7 balanced mid/end game",
       "why": "Suggested number 1 main base: central location, convenient production/breeding zones, and routes in multiple directions.",
       "pros": [
         "Plateau is suitable for dividing houses and yards Dino; The video shows many premises in the area.",
@@ -70,17 +50,17 @@
       "support": "An ASA 06/2026 Grand Canyon comment had +3 votes. These support the region, not the exact 39.8/44.8 pin.",
       "sources": [
         {
-          "title": "YouTube · chapterCanyon",
+          "title": "YouTube \u00b7 chapterCanyon",
           "url": "https://www.youtube.com/watch?v=5mYGGM_bIhs&t=899s",
           "note": "Creator has chapter Canyon; The same plateau has not yet been confirmed."
         },
         {
-          "title": "Forum · canyon recommendation",
+          "title": "Forum \u00b7 canyon recommendation",
           "url": "https://www.reddit.com/r/ARK/comments/1tu6s8z/base_locations_ragnarok/",
           "note": "Vote +3 cho khu Grand Canyon."
         },
         {
-          "title": "Guide · canyon",
+          "title": "Guide \u00b7 canyon",
           "url": "https://www.noobfeed.com/articles/ark-survival-ascended-guide-best-base-locations-on-ragnarok",
           "note": "Landmark 39.9/45.0 confirms the same area, not the same floor."
         }
@@ -99,15 +79,18 @@
         ],
         "asset": "Base-canyon",
         "sha256": "a65eae5d3feea3ce08ea96981320aeb42510e3d429d7b059615de472e7f4d092"
-      }
+      },
+      "coordinateEvidence": "Existing researched ASA source pin retained; region image may not be the exact build footprint. Read original photoSource scope.",
+      "adviceScope": "Planning guidance; building permissions and current spawns require checking in your save.",
+      "photoStatus": "Existing matched regional/storyboard photo; see photoSource for resolution and scope."
     },
     {
       "id": "falls",
-      "name": "Ragnarok Falls · Large Waterfall Cave",
+      "name": "Ragnarok Falls \u00b7 Large Waterfall Cave",
       "rank": 2,
       "lat": 28.1,
       "lon": 48.3,
-      "tag": "Main base · water & compact base",
+      "tag": "Main base \u00b7 water & compact base",
       "why": "A balanced choice for water and a compact base; survey the waterfall area before choosing a cave entrance.",
       "pros": [
         "The system of waterfalls, caves and lakes is suitable for multi-storey designs.",
@@ -126,17 +109,17 @@
       "support": "A 06/2026 forum comment had +2 for the waterfall/Griffin area near the volcano. Its description does not confirm this exact entrance.",
       "sources": [
         {
-          "title": "YouTube · Waterfall cave",
+          "title": "YouTube \u00b7 Waterfall cave",
           "url": "https://www.youtube.com/watch?v=5mYGGM_bIhs&t=1163s",
           "note": "Creator has chapter Waterfall cave; Compare the correct terrain."
         },
         {
-          "title": "Guide · Ragnarok Falls",
+          "title": "Guide \u00b7 Ragnarok Falls",
           "url": "https://www.noobfeed.com/articles/ark-survival-ascended-guide-best-base-locations-on-ragnarok",
           "note": "The guide says 28.2/49.0 for the waterfall area."
         },
         {
-          "title": "Forum · waterfall discussion",
+          "title": "Forum \u00b7 waterfall discussion",
           "url": "https://www.reddit.com/r/ARK/comments/1tu6s8z/base_locations_ragnarok/",
           "note": "Supports the terrain type; no separate votes for this pin."
         }
@@ -155,15 +138,18 @@
         ],
         "asset": "Base-falls",
         "sha256": "603f3b66b44f64a75d38bb079d88924474b91b81db3c48c4d4eca5428283243b"
-      }
+      },
+      "coordinateEvidence": "Existing researched ASA source pin retained; region image may not be the exact build footprint. Read original photoSource scope.",
+      "adviceScope": "Planning guidance; building permissions and current spawns require checking in your save.",
+      "photoStatus": "Existing matched regional/storyboard photo; see photoSource for resolution and scope."
     },
     {
       "id": "viking",
-      "name": "Viking Bay · Ribcage Cave",
+      "name": "Viking Bay \u00b7 Ribcage Cave",
       "rank": 3,
       "lat": 22.8,
       "lon": 30.9,
-      "tag": "Starter → mid game",
+      "tag": "Starter \u2192 mid game",
       "why": "Suitable for starting and expanding; choose access to land and water, rather than just a small PvP rathole.",
       "pros": [
         "Chapter ASA has GPS for the Viking Bay/Ribcage Cave area.",
@@ -182,17 +168,17 @@
       "support": "An ASA 06/2026 comment had +4 and recommended Viking Bay alongside a desert island. Those 4 votes cannot be assigned solely to Viking Bay.",
       "sources": [
         {
-          "title": "YouTube · VikingBay",
+          "title": "YouTube \u00b7 VikingBay",
           "url": "https://www.youtube.com/watch?v=5mYGGM_bIhs&t=961s",
           "note": "The Viking Bay Chapter provides regional support."
         },
         {
-          "title": "Wiki · Viking Bay",
+          "title": "Wiki \u00b7 Viking Bay",
           "url": "https://ark.wiki.gg/wiki/Viking_Bay",
           "note": "Region description; Ascended difference test."
         },
         {
-          "title": "Forum · VikingBay",
+          "title": "Forum \u00b7 VikingBay",
           "url": "https://www.reddit.com/r/ARK/comments/1tu6s8z/base_locations_ragnarok/",
           "note": "The +4 comment includes multiple locations, not votes specifically for this pin."
         }
@@ -211,7 +197,10 @@
         ],
         "asset": "Base-viking",
         "sha256": "72345026597fb5e7b4cf197eee08ce8c49c57037d3958e5aded1ebf4a7d39e8e"
-      }
+      },
+      "coordinateEvidence": "Existing researched ASA source pin retained; region image may not be the exact build footprint. Read original photoSource scope.",
+      "adviceScope": "Planning guidance; building permissions and current spawns require checking in your save.",
+      "photoStatus": "Existing matched regional/storyboard photo; see photoSource for resolution and scope."
     },
     {
       "id": "highlands",
@@ -219,7 +208,7 @@
       "rank": 4,
       "lat": 18.0,
       "lon": 78.9,
-      "tag": "Main base · beautiful scenery / Wyvern nearby",
+      "tag": "Main base \u00b7 beautiful scenery / Wyvern nearby",
       "why": "For players who like Highlands and tame/egg expeditions; a cave with entrances and water is easier to organize than an open field.",
       "pros": [
         "There is a specific chapter GPS ASA; Phlinger also lists Highland cave.",
@@ -238,12 +227,12 @@
       "support": "Two videos ASA have the Highlands chapter. No separate votes have been found for cave 18.0/78.9.",
       "sources": [
         {
-          "title": "YouTube · Highlandcave",
+          "title": "YouTube \u00b7 Highlandcave",
           "url": "https://www.youtube.com/watch?v=5mYGGM_bIhs&t=115s",
           "note": "Chapter Northeast Highland cave, no second GPS yet."
         },
         {
-          "title": "Forum · Highlands tradeoff",
+          "title": "Forum \u00b7 Highlands tradeoff",
           "url": "https://www.reddit.com/r/ArkSurvivalAscended/comments/1qzfkyz/",
           "note": "Comments +1 warns of grassland lack of trees; This is the trade-off."
         }
@@ -262,15 +251,18 @@
         ],
         "asset": "Base-highlands",
         "sha256": "0237d1dc0e9eb5255477e5a5970eea7031b6f9a2aa1bc5281bdafe03ca2fe298"
-      }
+      },
+      "coordinateEvidence": "Existing researched ASA source pin retained; region image may not be the exact build footprint. Read original photoSource scope.",
+      "adviceScope": "Planning guidance; building permissions and current spawns require checking in your save.",
+      "photoStatus": "Existing matched regional/storyboard photo; see photoSource for resolution and scope."
     },
     {
       "id": "herbivore",
-      "name": "Herbivore Island · northeast",
+      "name": "Herbivore Island \u00b7 northeast",
       "rank": 5,
       "lat": 8.7,
       "lon": 96.7,
-      "tag": "Safe · breeding / quiet base",
+      "tag": "Safe \u00b7 breeding / quiet base",
       "why": "Prioritizes safety and quiet breeding space; resources must be transported from the mainland.",
       "pros": [
         "Guide ASA and Wikily both mention the northeast island.",
@@ -289,17 +281,17 @@
       "support": "A 02/2026 forum comment had +1 and confirmed moving the main base to Herbivore Island for resources and space; not a community-wide poll.",
       "sources": [
         {
-          "title": "Guide · HerbivoreIsland",
+          "title": "Guide \u00b7 HerbivoreIsland",
           "url": "https://www.noobfeed.com/articles/ark-survival-ascended-guide-best-base-locations-on-ragnarok",
           "note": "GPS 8.7/96.7 and clearly states missing wood."
         },
         {
-          "title": "Wikily · ASA region",
+          "title": "Wikily \u00b7 ASA region",
           "url": "https://wikily.gg/ark-survival-ascended/maps/ragnarok/",
           "note": "Landmark 8/96 for the northeast island."
         },
         {
-          "title": "Forum · mainbase move",
+          "title": "Forum \u00b7 mainbase move",
           "url": "https://www.reddit.com/r/ArkSurvivalAscended/comments/1qzfkyz/",
           "note": "Own experience +1, no leaderboard."
         }
@@ -318,6 +310,234 @@
         ],
         "asset": "Base-herbivore",
         "sha256": "083fc720bfe6ab0318e7468065c550b7aa8890409d9abaec963ae3e76a553389"
+      },
+      "coordinateEvidence": "Existing researched ASA source pin retained; region image may not be the exact build footprint. Read original photoSource scope.",
+      "adviceScope": "Planning guidance; building permissions and current spawns require checking in your save.",
+      "photoStatus": "Existing matched regional/storyboard photo; see photoSource for resolution and scope."
+    },
+    {
+      "id": "jungle-cave",
+      "name": "Northwest Jungle Cave",
+      "rank": 6,
+      "lat": 21.7,
+      "lon": 24.6,
+      "tag": "Large cave \u00b7 main base",
+      "why": "A large cave candidate near the northwest jungle for a protected workshop and organised tribe space.",
+      "pros": [
+        "ASA creator explicitly lists it as a large PvE jungle cave.",
+        "An enclosed terrain type can support a compact workshop perimeter."
+      ],
+      "cons": [
+        "Cave building permission and damage rules vary by server.",
+        "Measure entrance clearance and ventilation/light before moving large breeding lines."
+      ],
+      "layout": [
+        "Put beds and repair storage near the exit before expanding.",
+        "Keep creature traffic outside the crafting aisle; reserve an exterior staging yard."
+      ],
+      "videoID": "2-qtw1pdg2A",
+      "seconds": 49,
+      "support": "Creator ASA chapter metadata gives this GPS and timestamp; not independently measured in game.",
+      "sources": [
+        {
+          "title": "ASA creator \u00b7 Ark: Survival Guide",
+          "url": "https://www.youtube.com/watch?v=2-qtw1pdg2A&t=49s",
+          "note": "Creator ASA chapter metadata gives this GPS and timestamp; not independently measured in game."
+        }
+      ],
+      "coordinateEvidence": "Primary ASA chapter metadata and visible GPS caption in the genuine terrain still match this pin.",
+      "adviceScope": "Layout and preparation are planning suggestions inferred from the named terrain; validate footprint, current spawns and server rules in your save.",
+      "photoStatus": "Genuine ASA location-chapter still; original 320\u00d7180 resolution",
+      "photoSource": {
+        "pageURL": "https://www.youtube.com/watch?v=2-qtw1pdg2A",
+        "seconds": 49.39,
+        "scope": "Public ASA creator storyboard still from the exact location chapter; actual terrain visually reviewed. Original 320\u00d7180 resolution; no artificial upscale. GPS not visually readable unless stated. GPS caption visibly matches the catalogue latitude and longitude.",
+        "dimensions": [
+          320,
+          180
+        ],
+        "asset": "Base-jungle-cave",
+        "sha256": "30a290239daf5b92f84d349e7b7678f6e81be3574ebd829ec5619250531b7a5c"
+      }
+    },
+    {
+      "id": "lighthouse",
+      "name": "Herbivore Lighthouse",
+      "rank": 7,
+      "lat": 57.6,
+      "lon": 19.4,
+      "tag": "Coastal landmark \u00b7 outpost",
+      "why": "A distinct lighthouse candidate on the western side; useful as a coastal staging point rather than assuming it is the northeast herbivore island.",
+      "pros": [
+        "Creator chapter identifies the lighthouse and GPS.",
+        "A recognisable landmark simplifies navigation back to supplies."
+      ],
+      "cons": [
+        "This is not the northeast island at 8.7/96.7.",
+        "Survey dock depth, wild spawns and the slope before treating it as a full breeding base."
+      ],
+      "layout": [
+        "Build a compact workshop and landing space on surveyed flat ground.",
+        "Keep shoreline access open and put large pens on an independently checked yard."
+      ],
+      "videoID": "2-qtw1pdg2A",
+      "seconds": 312,
+      "support": "Creator ASA chapter metadata gives this GPS and timestamp; not independently measured in game.",
+      "sources": [
+        {
+          "title": "ASA creator \u00b7 Ark: Survival Guide",
+          "url": "https://www.youtube.com/watch?v=2-qtw1pdg2A&t=312s",
+          "note": "Creator ASA chapter metadata gives this GPS and timestamp; not independently measured in game."
+        }
+      ],
+      "coordinateEvidence": "Primary ASA chapter metadata and visible GPS caption in the genuine terrain still match this pin.",
+      "adviceScope": "Layout and preparation are planning suggestions inferred from the named terrain; validate footprint, current spawns and server rules in your save.",
+      "photoStatus": "Genuine ASA location-chapter still; original 320\u00d7180 resolution",
+      "photoSource": {
+        "pageURL": "https://www.youtube.com/watch?v=2-qtw1pdg2A",
+        "seconds": 316.12,
+        "scope": "Public ASA creator storyboard still from the exact location chapter; actual terrain visually reviewed. Original 320\u00d7180 resolution; no artificial upscale. GPS not visually readable unless stated. GPS caption visibly matches the catalogue latitude and longitude.",
+        "dimensions": [
+          320,
+          180
+        ],
+        "asset": "Base-lighthouse",
+        "sha256": "9ef6c7f4b16b6e448af056e793fd637fe46e52ec81d25b50a57240db21f8eb91"
+      }
+    },
+    {
+      "id": "ice-lake",
+      "name": "Ice Lake Cave",
+      "rank": 8,
+      "lat": 40.1,
+      "lon": 62.7,
+      "tag": "Cold region \u00b7 prepared mid game",
+      "why": "A cold-region cave option for players who can support insulation and supply runs.",
+      "pros": [
+        "ASA chapter explicitly marks an Ice Lake Cave candidate.",
+        "Cave walls may make it easier to organise a compact protected core."
+      ],
+      "cons": [
+        "Carry cold protection and spare gear; temperature is not verified in the current game patch.",
+        "Check cave access and large-dino clearance rather than assuming every mount fits."
+      ],
+      "layout": [
+        "Place recovery beds and fuel supplies first.",
+        "Separate a warm living/workshop core from creature staging outside."
+      ],
+      "videoID": "2-qtw1pdg2A",
+      "seconds": 401,
+      "support": "Creator ASA chapter metadata gives this GPS and timestamp; not independently measured in game.",
+      "sources": [
+        {
+          "title": "ASA creator \u00b7 Ark: Survival Guide",
+          "url": "https://www.youtube.com/watch?v=2-qtw1pdg2A&t=401s",
+          "note": "Creator ASA chapter metadata gives this GPS and timestamp; not independently measured in game."
+        }
+      ],
+      "coordinateEvidence": "Primary ASA chapter metadata and visible GPS caption in the genuine terrain still match this pin.",
+      "adviceScope": "Layout and preparation are planning suggestions inferred from the named terrain; validate footprint, current spawns and server rules in your save.",
+      "photoStatus": "Genuine ASA location-chapter still; original 320\u00d7180 resolution",
+      "photoSource": {
+        "pageURL": "https://www.youtube.com/watch?v=2-qtw1pdg2A",
+        "seconds": 405.03,
+        "scope": "Public ASA creator storyboard still from the exact location chapter; actual terrain visually reviewed. Original 320\u00d7180 resolution; no artificial upscale. GPS not visually readable unless stated. GPS caption visibly matches the catalogue latitude and longitude.",
+        "dimensions": [
+          320,
+          180
+        ],
+        "asset": "Base-ice-lake",
+        "sha256": "35a840fdd66bbb82baa8dfdc772687c5d1ee3374ff89113b9d89df706c26a082"
+      }
+    },
+    {
+      "id": "redwoods-castle",
+      "name": "Redwoods Castle",
+      "rank": 9,
+      "lat": 43.6,
+      "lon": 86.6,
+      "tag": "Castle terrain \u00b7 advanced build",
+      "why": "A castle candidate for a themed base and distinct crafting levels.",
+      "pros": [
+        "ASA creator chapter lists an alpha-size castle candidate.",
+        "The castle landmark supports a memorable build concept."
+      ],
+      "cons": [
+        "Survey predators, build collision and resource respawn radius around the ruin.",
+        "Stairs and uneven ruins can complicate large breeding rows."
+      ],
+      "layout": [
+        "Test foundation placement and gate routes before committing materials.",
+        "Use measured courtyards for pens and keep crafting levels close to storage."
+      ],
+      "videoID": "2-qtw1pdg2A",
+      "seconds": 453,
+      "support": "Creator ASA chapter metadata gives this GPS and timestamp; not independently measured in game.",
+      "sources": [
+        {
+          "title": "ASA creator \u00b7 Ark: Survival Guide",
+          "url": "https://www.youtube.com/watch?v=2-qtw1pdg2A&t=453s",
+          "note": "Creator ASA chapter metadata gives this GPS and timestamp; not independently measured in game."
+        }
+      ],
+      "coordinateEvidence": "Primary ASA chapter metadata and visible GPS caption in the genuine terrain still match this pin.",
+      "adviceScope": "Layout and preparation are planning suggestions inferred from the named terrain; validate footprint, current spawns and server rules in your save.",
+      "photoStatus": "Genuine ASA location-chapter still; original 320\u00d7180 resolution",
+      "photoSource": {
+        "pageURL": "https://www.youtube.com/watch?v=2-qtw1pdg2A",
+        "seconds": 454.42,
+        "scope": "Public ASA creator storyboard still from the exact location chapter; actual terrain visually reviewed. Original 320\u00d7180 resolution; no artificial upscale. GPS not visually readable unless stated. GPS caption visibly matches the catalogue latitude and longitude.",
+        "dimensions": [
+          320,
+          180
+        ],
+        "asset": "Base-redwoods-castle",
+        "sha256": "d0188cc115f875187f35ca0be8db061410b7bc7e7666c72b63eebea4c7bf2335"
+      }
+    },
+    {
+      "id": "egyptian-ruins",
+      "name": "Desert Egyptian Ruins",
+      "rank": 10,
+      "lat": 71.5,
+      "lon": 68.9,
+      "tag": "Desert ruins \u00b7 builder base",
+      "why": "A desert ruins candidate for builders who prefer a large landmark-led home.",
+      "pros": [
+        "Creator identifies the ruins as a large PvE base location.",
+        "The ruins provide a clear visual destination for return flights."
+      ],
+      "cons": [
+        "Plan water, heat protection and shade before a main-base move.",
+        "Building collision and actual usable yard size must be tested locally."
+      ],
+      "layout": [
+        "Stage water, backup armour and beds in a small supply core.",
+        "Survey flat space for breeding and keep a clear flyer/material arrival lane."
+      ],
+      "videoID": "2-qtw1pdg2A",
+      "seconds": 676,
+      "support": "Creator ASA chapter metadata gives this GPS and timestamp; not independently measured in game.",
+      "sources": [
+        {
+          "title": "ASA creator \u00b7 Ark: Survival Guide",
+          "url": "https://www.youtube.com/watch?v=2-qtw1pdg2A&t=676s",
+          "note": "Creator ASA chapter metadata gives this GPS and timestamp; not independently measured in game."
+        }
+      ],
+      "coordinateEvidence": "Primary ASA chapter metadata and visible GPS caption in the genuine terrain still match this pin.",
+      "adviceScope": "Layout and preparation are planning suggestions inferred from the named terrain; validate footprint, current spawns and server rules in your save.",
+      "photoStatus": "Genuine ASA location-chapter still; original 320\u00d7180 resolution",
+      "photoSource": {
+        "pageURL": "https://www.youtube.com/watch?v=2-qtw1pdg2A",
+        "seconds": 681.64,
+        "scope": "Public ASA creator storyboard still from the exact location chapter; actual terrain visually reviewed. Original 320\u00d7180 resolution; no artificial upscale. GPS not visually readable unless stated. GPS caption visibly matches the catalogue latitude and longitude.",
+        "dimensions": [
+          320,
+          180
+        ],
+        "asset": "Base-egyptian-ruins",
+        "sha256": "0683a2ed2fb901cd63ea519bc52a5df69e0736acaa93036aba6bda86bc8a2a3a"
       }
     }
   ]

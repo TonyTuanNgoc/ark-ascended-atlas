@@ -1,0 +1,519 @@
+{
+  "reviewedAt": "2026-10-07",
+  "methodology": "Ten distinct ASA base candidates. Display order groups practical single-player/PvE choices; it is an editorial order, not a vote, raid guarantee or measured resource score. Coordinates retain creator precision. Layout advice is Codex planning inference; source evidence is identified per spot.",
+  "limits": "Primary metadata confirms ASA video identity and exact chapter starts. Coordinates come from a third-party mirror of creator auto captions and remain provisional navigation pins. No in-game or visual GPS proof. Ten genuine 320\u00d7180 stills from exact ASA chapters are bundled and visually reviewed for terrain. Official wiki maps are contextual references and do not validate these footprints.",
+  "videos": [
+    {
+      "id": "xMvC4paEUwE",
+      "title": "TOP 20 PVE Base Locations | THE CENTER | ARK: Survival Ascended",
+      "channel": "BEYPlaysGames",
+      "url": "https://www.youtube.com/watch?v=xMvC4paEUwE",
+      "thumbnailURL": "https://i.ytimg.com/vi/xMvC4paEUwE/maxresdefault.jpg",
+      "views": 192779,
+      "likes": 2995,
+      "observedAt": "2026-10-07"
+    }
+  ],
+  "locations": [
+    {
+      "id": "center-redwood-waterfall",
+      "name": "Redwood Edge Waterfall",
+      "rank": 1,
+      "lat": 74.6,
+      "lon": 30.1,
+      "tag": "Waterside \u00b7 advanced build",
+      "why": "A southern waterside candidate for a shore workshop and aquatic staging.",
+      "pros": [
+        "Waterfall beside redwoods is described in the creator transcript.",
+        "Planning suggestion: use the terrain as a starting concept, then survey the footprint."
+      ],
+      "cons": [
+        "Current spawns, usable ground and build permission have not been independently tested.",
+        "Check GPS with the same coordinate display before moving your main supplies."
+      ],
+      "layout": [
+        "Fence the shore workshop; keep a separate measured water pen.",
+        "Place backup beds and storage first; test a loaded creature route before expanding."
+      ],
+      "videoID": "xMvC4paEUwE",
+      "seconds": 13,
+      "support": "ASA creator chapter timestamp confirmed in primary metadata. GPS pair is spoken in an auto-caption transcript mirrored by Scribe; lower confidence until checked against the video GPS/in-game. No visual GPS verification.",
+      "sources": [
+        {
+          "title": "ASA creator \u00b7 BEYPlaysGames",
+          "url": "https://www.youtube.com/watch?v=xMvC4paEUwE&t=13s",
+          "note": "ASA creator chapter timestamp confirmed in primary metadata. GPS pair is spoken in an auto-caption transcript mirrored by Scribe; lower confidence until checked against the video GPS/in-game. No visual GPS verification."
+        },
+        {
+          "title": "Scribe \u00b7 mirrored creator auto captions",
+          "url": "https://pickscribe.com/ru/v/xMvC4paEUwE",
+          "note": "Fallback transcript because direct YouTube captions returned HTTP 429. Names are descriptive editorial labels, not claimed official region names."
+        }
+      ],
+      "coordinateEvidence": "ASA creator chapter timestamp confirmed in primary metadata. GPS pair is spoken in an auto-caption transcript mirrored by Scribe; lower confidence until checked against the video GPS/in-game. No visual GPS verification.",
+      "adviceScope": "Layout and preparation are planning suggestions inferred from the named terrain; validate footprint, current spawns and server rules in your save.",
+      "photoStatus": "Genuine ASA location-chapter still; original 320\u00d7180 resolution",
+      "photoSource": {
+        "pageURL": "https://www.youtube.com/watch?v=xMvC4paEUwE",
+        "seconds": 29.53,
+        "scope": "Public ASA creator storyboard still from the exact location chapter; actual terrain visually reviewed. Original 320\u00d7180 resolution; no artificial upscale. GPS not visually readable unless stated.",
+        "dimensions": [
+          320,
+          180
+        ],
+        "asset": "Base-center-redwood-waterfall",
+        "sha256": "542b17b9f63cb0f12ef2e359488219d4edd7b808a3825ecc7b8614ebb8f62776"
+      }
+    },
+    {
+      "id": "center-north-channel",
+      "name": "Snow\u2013Lava Channel Shore",
+      "rank": 2,
+      "lat": 15.4,
+      "lon": 39.9,
+      "tag": "Northern coast \u00b7 resource staging",
+      "why": "A northern coastal candidate for expedition supplies and a prepared main base.",
+      "pros": [
+        "Between northern snow and lava regions is described in the creator transcript.",
+        "Planning suggestion: use the terrain as a starting concept, then survey the footprint."
+      ],
+      "cons": [
+        "Current spawns, usable ground and build permission have not been independently tested.",
+        "Check GPS with the same coordinate display before moving your main supplies."
+      ],
+      "layout": [
+        "Keep expedition gear by the loading dock; use a compact fenced land yard.",
+        "Place backup beds and storage first; test a loaded creature route before expanding."
+      ],
+      "videoID": "xMvC4paEUwE",
+      "seconds": 51,
+      "support": "ASA creator chapter timestamp confirmed in primary metadata. GPS pair is spoken in an auto-caption transcript mirrored by Scribe; lower confidence until checked against the video GPS/in-game. No visual GPS verification.",
+      "sources": [
+        {
+          "title": "ASA creator \u00b7 BEYPlaysGames",
+          "url": "https://www.youtube.com/watch?v=xMvC4paEUwE&t=51s",
+          "note": "ASA creator chapter timestamp confirmed in primary metadata. GPS pair is spoken in an auto-caption transcript mirrored by Scribe; lower confidence until checked against the video GPS/in-game. No visual GPS verification."
+        },
+        {
+          "title": "Scribe \u00b7 mirrored creator auto captions",
+          "url": "https://pickscribe.com/ru/v/xMvC4paEUwE",
+          "note": "Fallback transcript because direct YouTube captions returned HTTP 429. Names are descriptive editorial labels, not claimed official region names."
+        }
+      ],
+      "coordinateEvidence": "ASA creator chapter timestamp confirmed in primary metadata. GPS pair is spoken in an auto-caption transcript mirrored by Scribe; lower confidence until checked against the video GPS/in-game. No visual GPS verification.",
+      "adviceScope": "Layout and preparation are planning suggestions inferred from the named terrain; validate footprint, current spawns and server rules in your save.",
+      "photoStatus": "Genuine ASA location-chapter still; original 320\u00d7180 resolution",
+      "photoSource": {
+        "pageURL": "https://www.youtube.com/watch?v=xMvC4paEUwE",
+        "seconds": 68.89,
+        "scope": "Public ASA creator storyboard still from the exact location chapter; actual terrain visually reviewed. Original 320\u00d7180 resolution; no artificial upscale. GPS not visually readable unless stated.",
+        "dimensions": [
+          320,
+          180
+        ],
+        "asset": "Base-center-north-channel",
+        "sha256": "034371aa27c7d316e72df1f869f7d8009889ecef8df027d756cb58844bab95c3"
+      }
+    },
+    {
+      "id": "center-northwest-bay",
+      "name": "Far Northwest Coastal Bay",
+      "rank": 3,
+      "lat": 7.2,
+      "lon": 26.7,
+      "tag": "Remote coast \u00b7 scenic solo",
+      "why": "A remote northwestern candidate suited to a deliberate outpost or quieter home.",
+      "pros": [
+        "Remote northwestern waterfront is described in the creator transcript.",
+        "Planning suggestion: use the terrain as a starting concept, then survey the footprint."
+      ],
+      "cons": [
+        "Current spawns, usable ground and build permission have not been independently tested.",
+        "Check GPS with the same coordinate display before moving your main supplies."
+      ],
+      "layout": [
+        "Build a supply dock and recovery bed first; maintain spare travel supplies.",
+        "Place backup beds and storage first; test a loaded creature route before expanding."
+      ],
+      "videoID": "xMvC4paEUwE",
+      "seconds": 88,
+      "support": "ASA creator chapter timestamp confirmed in primary metadata. GPS pair is spoken in an auto-caption transcript mirrored by Scribe; lower confidence until checked against the video GPS/in-game. No visual GPS verification.",
+      "sources": [
+        {
+          "title": "ASA creator \u00b7 BEYPlaysGames",
+          "url": "https://www.youtube.com/watch?v=xMvC4paEUwE&t=88s",
+          "note": "ASA creator chapter timestamp confirmed in primary metadata. GPS pair is spoken in an auto-caption transcript mirrored by Scribe; lower confidence until checked against the video GPS/in-game. No visual GPS verification."
+        },
+        {
+          "title": "Scribe \u00b7 mirrored creator auto captions",
+          "url": "https://pickscribe.com/ru/v/xMvC4paEUwE",
+          "note": "Fallback transcript because direct YouTube captions returned HTTP 429. Names are descriptive editorial labels, not claimed official region names."
+        }
+      ],
+      "coordinateEvidence": "ASA creator chapter timestamp confirmed in primary metadata. GPS pair is spoken in an auto-caption transcript mirrored by Scribe; lower confidence until checked against the video GPS/in-game. No visual GPS verification.",
+      "adviceScope": "Layout and preparation are planning suggestions inferred from the named terrain; validate footprint, current spawns and server rules in your save.",
+      "photoStatus": "Genuine ASA location-chapter still; original 320\u00d7180 resolution",
+      "photoSource": {
+        "pageURL": "https://www.youtube.com/watch?v=xMvC4paEUwE",
+        "seconds": 98.42,
+        "scope": "Public ASA creator storyboard still from the exact location chapter; actual terrain visually reviewed. Original 320\u00d7180 resolution; no artificial upscale. GPS not visually readable unless stated.",
+        "dimensions": [
+          320,
+          180
+        ],
+        "asset": "Base-center-northwest-bay",
+        "sha256": "00284f5d64982a702915746148e41d4bacc93f6770ef0436560347904fbbed71"
+      }
+    },
+    {
+      "id": "center-green-river",
+      "name": "Green Obelisk River Plateau",
+      "rank": 4,
+      "lat": 41.1,
+      "lon": 11.2,
+      "tag": "Cold riverside \u00b7 late game",
+      "why": "A western cold-region riverside candidate for prepared players.",
+      "pros": [
+        "Waterfall and river near green obelisk is described in the creator transcript.",
+        "Planning suggestion: use the terrain as a starting concept, then survey the footprint."
+      ],
+      "cons": [
+        "Current spawns, usable ground and build permission have not been independently tested.",
+        "Check GPS with the same coordinate display before moving your main supplies."
+      ],
+      "layout": [
+        "Start with an insulated recovery core and put creature traffic away from cliff edges.",
+        "Place backup beds and storage first; test a loaded creature route before expanding."
+      ],
+      "videoID": "xMvC4paEUwE",
+      "seconds": 125,
+      "support": "ASA creator chapter timestamp confirmed in primary metadata. GPS pair is spoken in an auto-caption transcript mirrored by Scribe; lower confidence until checked against the video GPS/in-game. No visual GPS verification.",
+      "sources": [
+        {
+          "title": "ASA creator \u00b7 BEYPlaysGames",
+          "url": "https://www.youtube.com/watch?v=xMvC4paEUwE&t=125s",
+          "note": "ASA creator chapter timestamp confirmed in primary metadata. GPS pair is spoken in an auto-caption transcript mirrored by Scribe; lower confidence until checked against the video GPS/in-game. No visual GPS verification."
+        },
+        {
+          "title": "Scribe \u00b7 mirrored creator auto captions",
+          "url": "https://pickscribe.com/ru/v/xMvC4paEUwE",
+          "note": "Fallback transcript because direct YouTube captions returned HTTP 429. Names are descriptive editorial labels, not claimed official region names."
+        }
+      ],
+      "coordinateEvidence": "ASA creator chapter timestamp confirmed in primary metadata. GPS pair is spoken in an auto-caption transcript mirrored by Scribe; lower confidence until checked against the video GPS/in-game. No visual GPS verification.",
+      "adviceScope": "Layout and preparation are planning suggestions inferred from the named terrain; validate footprint, current spawns and server rules in your save.",
+      "photoStatus": "Genuine ASA location-chapter still; original 320\u00d7180 resolution",
+      "photoSource": {
+        "pageURL": "https://www.youtube.com/watch?v=xMvC4paEUwE",
+        "seconds": 167.32,
+        "scope": "Public ASA creator storyboard still from the exact location chapter; actual terrain visually reviewed. Original 320\u00d7180 resolution; no artificial upscale. GPS not visually readable unless stated.",
+        "dimensions": [
+          320,
+          180
+        ],
+        "asset": "Base-center-green-river",
+        "sha256": "f78767563190371a4edad456c125c98b73e3a251e9a47b03ac44429e409fee7c"
+      }
+    },
+    {
+      "id": "center-under-island",
+      "name": "Island Below the Floating Center",
+      "rank": 5,
+      "lat": 36.3,
+      "lon": 35.5,
+      "tag": "Central water \u00b7 main base",
+      "why": "A central island candidate for a workshop with water staging.",
+      "pros": [
+        "Small island beneath the floating landmass is described in the creator transcript.",
+        "Planning suggestion: use the terrain as a starting concept, then survey the footprint."
+      ],
+      "cons": [
+        "Current spawns, usable ground and build permission have not been independently tested.",
+        "Check GPS with the same coordinate display before moving your main supplies."
+      ],
+      "layout": [
+        "Set a land workshop back from the shore; test pen depth and safe dock entry.",
+        "Place backup beds and storage first; test a loaded creature route before expanding."
+      ],
+      "videoID": "xMvC4paEUwE",
+      "seconds": 173,
+      "support": "ASA creator chapter timestamp confirmed in primary metadata. GPS pair is spoken in an auto-caption transcript mirrored by Scribe; lower confidence until checked against the video GPS/in-game. No visual GPS verification.",
+      "sources": [
+        {
+          "title": "ASA creator \u00b7 BEYPlaysGames",
+          "url": "https://www.youtube.com/watch?v=xMvC4paEUwE&t=173s",
+          "note": "ASA creator chapter timestamp confirmed in primary metadata. GPS pair is spoken in an auto-caption transcript mirrored by Scribe; lower confidence until checked against the video GPS/in-game. No visual GPS verification."
+        },
+        {
+          "title": "Scribe \u00b7 mirrored creator auto captions",
+          "url": "https://pickscribe.com/ru/v/xMvC4paEUwE",
+          "note": "Fallback transcript because direct YouTube captions returned HTTP 429. Names are descriptive editorial labels, not claimed official region names."
+        }
+      ],
+      "coordinateEvidence": "ASA creator chapter timestamp confirmed in primary metadata. GPS pair is spoken in an auto-caption transcript mirrored by Scribe; lower confidence until checked against the video GPS/in-game. No visual GPS verification.",
+      "adviceScope": "Layout and preparation are planning suggestions inferred from the named terrain; validate footprint, current spawns and server rules in your save.",
+      "photoStatus": "Genuine ASA location-chapter still; original 320\u00d7180 resolution",
+      "photoSource": {
+        "pageURL": "https://www.youtube.com/watch?v=xMvC4paEUwE",
+        "seconds": 196.84,
+        "scope": "Public ASA creator storyboard still from the exact location chapter; actual terrain visually reviewed. Original 320\u00d7180 resolution; no artificial upscale. GPS not visually readable unless stated.",
+        "dimensions": [
+          320,
+          180
+        ],
+        "asset": "Base-center-under-island",
+        "sha256": "dc046e1d76a0f472c92621932d40a94680e4d81a489abb0f2e6062e43ce07ba3"
+      }
+    },
+    {
+      "id": "center-east-bridge",
+      "name": "Eastern Island Bridge",
+      "rank": 6,
+      "lat": 27.9,
+      "lon": 71.4,
+      "tag": "Bridge terrain \u00b7 compact build",
+      "why": "A bridge candidate for a compact build that keeps crossing routes usable.",
+      "pros": [
+        "Bridge to the eastern island is described in the creator transcript.",
+        "Planning suggestion: use the terrain as a starting concept, then survey the footprint."
+      ],
+      "cons": [
+        "Current spawns, usable ground and build permission have not been independently tested.",
+        "Check GPS with the same coordinate display before moving your main supplies."
+      ],
+      "layout": [
+        "Keep a narrow workshop core and leave the bridge approach open for movement.",
+        "Place backup beds and storage first; test a loaded creature route before expanding."
+      ],
+      "videoID": "xMvC4paEUwE",
+      "seconds": 238,
+      "support": "ASA creator chapter timestamp confirmed in primary metadata. GPS pair is spoken in an auto-caption transcript mirrored by Scribe; lower confidence until checked against the video GPS/in-game. No visual GPS verification.",
+      "sources": [
+        {
+          "title": "ASA creator \u00b7 BEYPlaysGames",
+          "url": "https://www.youtube.com/watch?v=xMvC4paEUwE&t=238s",
+          "note": "ASA creator chapter timestamp confirmed in primary metadata. GPS pair is spoken in an auto-caption transcript mirrored by Scribe; lower confidence until checked against the video GPS/in-game. No visual GPS verification."
+        },
+        {
+          "title": "Scribe \u00b7 mirrored creator auto captions",
+          "url": "https://pickscribe.com/ru/v/xMvC4paEUwE",
+          "note": "Fallback transcript because direct YouTube captions returned HTTP 429. Names are descriptive editorial labels, not claimed official region names."
+        }
+      ],
+      "coordinateEvidence": "ASA creator chapter timestamp confirmed in primary metadata. GPS pair is spoken in an auto-caption transcript mirrored by Scribe; lower confidence until checked against the video GPS/in-game. No visual GPS verification.",
+      "adviceScope": "Layout and preparation are planning suggestions inferred from the named terrain; validate footprint, current spawns and server rules in your save.",
+      "photoStatus": "Genuine ASA location-chapter still; original 320\u00d7180 resolution",
+      "photoSource": {
+        "pageURL": "https://www.youtube.com/watch?v=xMvC4paEUwE",
+        "seconds": 255.89,
+        "scope": "Public ASA creator storyboard still from the exact location chapter; actual terrain visually reviewed. Original 320\u00d7180 resolution; no artificial upscale. GPS not visually readable unless stated.",
+        "dimensions": [
+          320,
+          180
+        ],
+        "asset": "Base-center-east-bridge",
+        "sha256": "bcf4403fb12ce0ecb566a89676781c31f78d7e5d1116d35a634ba133a00abe98"
+      }
+    },
+    {
+      "id": "center-east-flat",
+      "name": "Eastern Flat Ground",
+      "rank": 7,
+      "lat": 31.7,
+      "lon": 79.2,
+      "tag": "Flat terrain \u00b7 builder yard",
+      "why": "An eastern open-ground candidate for a planned workshop and breeding yard.",
+      "pros": [
+        "Large flat area is described in the creator transcript.",
+        "Planning suggestion: use the terrain as a starting concept, then survey the footprint."
+      ],
+      "cons": [
+        "Current spawns, usable ground and build permission have not been independently tested.",
+        "Check GPS with the same coordinate display before moving your main supplies."
+      ],
+      "layout": [
+        "Measure breeding rows and landing space before creating a broad perimeter.",
+        "Place backup beds and storage first; test a loaded creature route before expanding."
+      ],
+      "videoID": "xMvC4paEUwE",
+      "seconds": 284,
+      "support": "ASA creator chapter timestamp confirmed in primary metadata. GPS pair is spoken in an auto-caption transcript mirrored by Scribe; lower confidence until checked against the video GPS/in-game. No visual GPS verification.",
+      "sources": [
+        {
+          "title": "ASA creator \u00b7 BEYPlaysGames",
+          "url": "https://www.youtube.com/watch?v=xMvC4paEUwE&t=284s",
+          "note": "ASA creator chapter timestamp confirmed in primary metadata. GPS pair is spoken in an auto-caption transcript mirrored by Scribe; lower confidence until checked against the video GPS/in-game. No visual GPS verification."
+        },
+        {
+          "title": "Scribe \u00b7 mirrored creator auto captions",
+          "url": "https://pickscribe.com/ru/v/xMvC4paEUwE",
+          "note": "Fallback transcript because direct YouTube captions returned HTTP 429. Names are descriptive editorial labels, not claimed official region names."
+        }
+      ],
+      "coordinateEvidence": "ASA creator chapter timestamp confirmed in primary metadata. GPS pair is spoken in an auto-caption transcript mirrored by Scribe; lower confidence until checked against the video GPS/in-game. No visual GPS verification.",
+      "adviceScope": "Layout and preparation are planning suggestions inferred from the named terrain; validate footprint, current spawns and server rules in your save.",
+      "photoStatus": "Genuine ASA location-chapter still; original 320\u00d7180 resolution",
+      "photoSource": {
+        "pageURL": "https://www.youtube.com/watch?v=xMvC4paEUwE",
+        "seconds": 295.26,
+        "scope": "Public ASA creator storyboard still from the exact location chapter; actual terrain visually reviewed. Original 320\u00d7180 resolution; no artificial upscale. GPS not visually readable unless stated.",
+        "dimensions": [
+          320,
+          180
+        ],
+        "asset": "Base-center-east-flat",
+        "sha256": "3734ed32ed41809968db083927aee9a05603796f717db03ad36ed44fb1a4f187"
+      }
+    },
+    {
+      "id": "center-central-ruin",
+      "name": "Central Stepped Ruin",
+      "rank": 8,
+      "lat": 48.2,
+      "lon": 52.2,
+      "tag": "Ruin \u00b7 main base",
+      "why": "A central ruin candidate for builders who want a landmark-led workshop.",
+      "pros": [
+        "Large stepped ruin is described in the creator transcript.",
+        "Planning suggestion: use the terrain as a starting concept, then survey the footprint."
+      ],
+      "cons": [
+        "Current spawns, usable ground and build permission have not been independently tested.",
+        "Check GPS with the same coordinate display before moving your main supplies."
+      ],
+      "layout": [
+        "Test foundation collision on each tier; connect crafting and storage with clear stairs.",
+        "Place backup beds and storage first; test a loaded creature route before expanding."
+      ],
+      "videoID": "xMvC4paEUwE",
+      "seconds": 413,
+      "support": "ASA creator chapter timestamp confirmed in primary metadata. GPS pair is spoken in an auto-caption transcript mirrored by Scribe; lower confidence until checked against the video GPS/in-game. No visual GPS verification.",
+      "sources": [
+        {
+          "title": "ASA creator \u00b7 BEYPlaysGames",
+          "url": "https://www.youtube.com/watch?v=xMvC4paEUwE&t=413s",
+          "note": "ASA creator chapter timestamp confirmed in primary metadata. GPS pair is spoken in an auto-caption transcript mirrored by Scribe; lower confidence until checked against the video GPS/in-game. No visual GPS verification."
+        },
+        {
+          "title": "Scribe \u00b7 mirrored creator auto captions",
+          "url": "https://pickscribe.com/ru/v/xMvC4paEUwE",
+          "note": "Fallback transcript because direct YouTube captions returned HTTP 429. Names are descriptive editorial labels, not claimed official region names."
+        }
+      ],
+      "coordinateEvidence": "ASA creator chapter timestamp confirmed in primary metadata. GPS pair is spoken in an auto-caption transcript mirrored by Scribe; lower confidence until checked against the video GPS/in-game. No visual GPS verification.",
+      "adviceScope": "Layout and preparation are planning suggestions inferred from the named terrain; validate footprint, current spawns and server rules in your save.",
+      "photoStatus": "Genuine ASA location-chapter still; original 320\u00d7180 resolution",
+      "photoSource": {
+        "pageURL": "https://www.youtube.com/watch?v=xMvC4paEUwE",
+        "seconds": 423.21,
+        "scope": "Public ASA creator storyboard still from the exact location chapter; actual terrain visually reviewed. Original 320\u00d7180 resolution; no artificial upscale. GPS not visually readable unless stated.",
+        "dimensions": [
+          320,
+          180
+        ],
+        "asset": "Base-center-central-ruin",
+        "sha256": "bb595c107ccbe1bf423eb01d0e766f6d5906eb4b5a3a54d2a027acad4038f96f"
+      }
+    },
+    {
+      "id": "center-central-flat",
+      "name": "Central Flat Ground",
+      "rank": 9,
+      "lat": 46.3,
+      "lon": 42.7,
+      "tag": "Central yard \u00b7 main base",
+      "why": "An open central candidate for a simple, clearly divided production base.",
+      "pros": [
+        "Large flat area near map centre is described in the creator transcript.",
+        "Planning suggestion: use the terrain as a starting concept, then survey the footprint."
+      ],
+      "cons": [
+        "Current spawns, usable ground and build permission have not been independently tested.",
+        "Check GPS with the same coordinate display before moving your main supplies."
+      ],
+      "layout": [
+        "Reserve distinct breeding rows, workshop and landing lanes on tested ground.",
+        "Place backup beds and storage first; test a loaded creature route before expanding."
+      ],
+      "videoID": "xMvC4paEUwE",
+      "seconds": 453,
+      "support": "ASA creator chapter timestamp confirmed in primary metadata. GPS pair is spoken in an auto-caption transcript mirrored by Scribe; lower confidence until checked against the video GPS/in-game. No visual GPS verification.",
+      "sources": [
+        {
+          "title": "ASA creator \u00b7 BEYPlaysGames",
+          "url": "https://www.youtube.com/watch?v=xMvC4paEUwE&t=453s",
+          "note": "ASA creator chapter timestamp confirmed in primary metadata. GPS pair is spoken in an auto-caption transcript mirrored by Scribe; lower confidence until checked against the video GPS/in-game. No visual GPS verification."
+        },
+        {
+          "title": "Scribe \u00b7 mirrored creator auto captions",
+          "url": "https://pickscribe.com/ru/v/xMvC4paEUwE",
+          "note": "Fallback transcript because direct YouTube captions returned HTTP 429. Names are descriptive editorial labels, not claimed official region names."
+        }
+      ],
+      "coordinateEvidence": "ASA creator chapter timestamp confirmed in primary metadata. GPS pair is spoken in an auto-caption transcript mirrored by Scribe; lower confidence until checked against the video GPS/in-game. No visual GPS verification.",
+      "adviceScope": "Layout and preparation are planning suggestions inferred from the named terrain; validate footprint, current spawns and server rules in your save.",
+      "photoStatus": "Genuine ASA location-chapter still; original 320\u00d7180 resolution",
+      "photoSource": {
+        "pageURL": "https://www.youtube.com/watch?v=xMvC4paEUwE",
+        "seconds": 462.58,
+        "scope": "Public ASA creator storyboard still from the exact location chapter; actual terrain visually reviewed. Original 320\u00d7180 resolution; no artificial upscale. GPS not visually readable unless stated.",
+        "dimensions": [
+          320,
+          180
+        ],
+        "asset": "Base-center-central-flat",
+        "sha256": "81b927ac0b54049a9b9064f7efee33a17a37f232c664453443c97865a9f813d5"
+      }
+    },
+    {
+      "id": "center-open-roof-ruin",
+      "name": "Central Open-Roof Ruin",
+      "rank": 10,
+      "lat": 52.8,
+      "lon": 42.2,
+      "tag": "Ruin \u00b7 vertical build",
+      "why": "A central ruin candidate for a compact home and optional elevated build.",
+      "pros": [
+        "Open-roof ruin is described in the creator transcript.",
+        "Planning suggestion: use the terrain as a starting concept, then survey the footprint."
+      ],
+      "cons": [
+        "Current spawns, usable ground and build permission have not been independently tested.",
+        "Check GPS with the same coordinate display before moving your main supplies."
+      ],
+      "layout": [
+        "Test supports and an ordinary stair escape route before adding elevators or upper floors.",
+        "Place backup beds and storage first; test a loaded creature route before expanding."
+      ],
+      "videoID": "xMvC4paEUwE",
+      "seconds": 477,
+      "support": "ASA creator chapter timestamp confirmed in primary metadata. GPS pair is spoken in an auto-caption transcript mirrored by Scribe; lower confidence until checked against the video GPS/in-game. No visual GPS verification.",
+      "sources": [
+        {
+          "title": "ASA creator \u00b7 BEYPlaysGames",
+          "url": "https://www.youtube.com/watch?v=xMvC4paEUwE&t=477s",
+          "note": "ASA creator chapter timestamp confirmed in primary metadata. GPS pair is spoken in an auto-caption transcript mirrored by Scribe; lower confidence until checked against the video GPS/in-game. No visual GPS verification."
+        },
+        {
+          "title": "Scribe \u00b7 mirrored creator auto captions",
+          "url": "https://pickscribe.com/ru/v/xMvC4paEUwE",
+          "note": "Fallback transcript because direct YouTube captions returned HTTP 429. Names are descriptive editorial labels, not claimed official region names."
+        }
+      ],
+      "coordinateEvidence": "ASA creator chapter timestamp confirmed in primary metadata. GPS pair is spoken in an auto-caption transcript mirrored by Scribe; lower confidence until checked against the video GPS/in-game. No visual GPS verification.",
+      "adviceScope": "Layout and preparation are planning suggestions inferred from the named terrain; validate footprint, current spawns and server rules in your save.",
+      "photoStatus": "Genuine ASA location-chapter still; original 320\u00d7180 resolution",
+      "photoSource": {
+        "pageURL": "https://www.youtube.com/watch?v=xMvC4paEUwE",
+        "seconds": 482.26,
+        "scope": "Public ASA creator storyboard still from the exact location chapter; actual terrain visually reviewed. Original 320\u00d7180 resolution; no artificial upscale. GPS not visually readable unless stated.",
+        "dimensions": [
+          320,
+          180
+        ],
+        "asset": "Base-center-open-roof-ruin",
+        "sha256": "302f34d3db67bdc4d965b5e34a906e66f80d933fbb86faa881aea2c4615e916c"
+      }
+    }
+  ]
+}

@@ -10,7 +10,7 @@ enum Destination: String, CaseIterable, Identifiable {
         case .expansions: "Maps & DLC"
         case .farming: "Farming"
         case .information: "Field Guide"
-        case .bases: "Base Building"
+        case .bases: "Base Locations"
         case .map: "Atlas"
         case .dinos: "Creatures"
         case .bosses: "Bosses"
@@ -74,7 +74,7 @@ struct MapSessionShell: View {
                     case .expansions: ExpansionCatalogScreen(chooseMap: selectMap)
                     case .farming: ResourceFarmingScreen()
                     case .information: MapInformationScreen(openMap: { selection = .map }, openDinos: { selection = .dinos }, openBosses: { selection = .bosses })
-                    case .bases: BasePlanningScreen()
+                    case .bases: BaseLocationsScreen()
                     case .map: MapScreen()
                     case .dinos: CreatureLibrary()
                     case .bosses: BossCampaignScreen()
@@ -85,7 +85,7 @@ struct MapSessionShell: View {
                     .navigationBarTitleDisplayMode(.inline)
                     .toolbar { ToolbarItem(placement: .principal) {
                         Text(selection == .map ? map.name : selection.title)
-                            .font(.system(size: 24, weight: .bold, design: .rounded))
+                            .font(.system(size: 32, weight: .bold, design: .rounded))
                             .accessibilityIdentifier("module-screen-title")
                     } }
             }.id(map.rawValue + "-" + selection.rawValue)
@@ -106,7 +106,7 @@ struct MapSessionShell: View {
             ScrollViewReader { reader in
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 4) {
-                        ForEach(Destination.allCases.filter { $0 != .expansions }) { item in
+                        ForEach(Destination.allCases.filter { $0 != .expansions && $0 != .information }) { item in
                             Button {
                                 selection = item
                                 withAnimation(.easeInOut(duration: 0.2)) { reader.scrollTo(item.id, anchor: .center) }

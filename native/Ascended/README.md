@@ -1,7 +1,13 @@
-# Ascended — native iPad development 0.11.0 (12)
+# Ascended — native iPad development 0.27.0 (28)
 Single Player · Ragnarok / The Island / The Center. Independent app `com.tonytuanngoc.ascended`, installed by cable without TestFlight.
 
-## Included
+## Current Simulator release — 0.27.0 (28)
+
+One horizontal module rail; Field Guide removed. Base Locations presents ten photographed scouting candidates each for Ragnarok, The Island and The Center with map / selected location / practical information columns. Atlas owns artifacts, cave entrances, obelisks, bosses and personal pins; Resources and Bases live in their dedicated tabs. Atlas defaults to the complete image at its original aspect ratio. Farming displays only the selected pin's continuous clip with visible highlighting and separate zoom controls.
+
+New base imagery retains its genuine source resolution (25 storyboard stills at 320×180). Center GPS remains provisional auto-caption evidence, visibly labelled. See [build 28 report](../../docs/codex-reports/2026-10-07-ascended28-selected-resource-pin.md). Delivery is Simulator-only; this is separate from the existing physical iPad build and from web hosting.
+
+## Historical 0.11 inclusion notes
 - Ordered boss campaigns for all three maps; 27 army options across every named boss, with composition, level/breed/imprint/XP explanation, planning HP/melee/saddle targets, source confidence and patch caveats. Existing boss profiles remain accessible.
 - Ragnarok-only Base Location: five SP-balanced choices, offline in-game region photos, timestamped YouTube links and actual per-video popularity snapshots. Per-location forum signals are explicitly qualified; ranking is an editorial balance assessment, not a public vote leaderboard. Five base pins link map focus back to profiles.
 - Persistent three-map selection in the left sidebar. Selecting a map opens its full map and clears previous detail navigation; Hôm nay is removed.

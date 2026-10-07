@@ -1,0 +1,47 @@
+[
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "20C9346D-B0E6-4239-8152-1D85ADD57BA6",
+        "deviceName" : "Ascended iPad QA",
+        "exportedFileName" : "1CA9DCC4-9BF5-4E41-BBD7-8FE965C25C33.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Farming-clean-footage-LAT-LON_0_0EB1D145-3214-4527-AA1A-40A81FBA6BD7.png",
+        "timestamp" : 1791388517.16
+      }
+    ],
+    "testIdentifier" : "Ascended24UITests/testFarmingResourceFirstLayoutAndSingleClip()",
+    "testIdentifierURL" : "test://com.apple.xcode/Ascended/AscendedUITests/Ascended24UITests/testFarmingResourceFirstLayoutAndSingleClip"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "20C9346D-B0E6-4239-8152-1D85ADD57BA6",
+        "deviceName" : "Ascended iPad QA",
+        "exportedFileName" : "FE3BDC69-72DD-4223-8B61-8498085C196E.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Farming-three-columns-Rich-Metal_0_F4CF6E87-CE21-48A7-85FA-43C652318B58.png",
+        "timestamp" : 1791388530.602
+      }
+    ],
+    "testIdentifier" : "Ascended27UITests/testFocusedFarmingHasThreeFixedColumnsAndSmallLocationCards()",
+    "testIdentifierURL" : "test://com.apple.xcode/Ascended/AscendedUITests/Ascended27UITests/testFocusedFarmingHasThreeFixedColumnsAndSmallLocationCards"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "20C9346D-B0E6-4239-8152-1D85ADD57BA6",
+        "deviceName" : "Ascended iPad QA",
+        "exportedFileName" : "C8BB8E03-BDAC-442A-AEBA-F34ACD33E86D.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Farming-selected-pin-single-clip_0_2A4E3F90-A392-42E2-9E58-DCEC8D1AA7B4.png",
+        "timestamp" : 1791388545.939
+      }
+    ],
+    "testIdentifier" : "Ascended28UITests/testPinSelectsExactlyOneClipAndHighlightsWithoutZoom()",
+    "testIdentifierURL" : "test://com.apple.xcode/Ascended/AscendedUITests/Ascended28UITests/testPinSelectsExactlyOneClipAndHighlightsWithoutZoom"
+  }
+]

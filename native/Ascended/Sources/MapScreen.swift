@@ -10,18 +10,21 @@ struct MapScreen: View {
     @AppStorage("ascended.map.personal-locations.v1") private var personalJSON="[]"
     @State private var draft:PersonalMapLocation?
     private var personal:[PersonalMapLocation] {PersonalMapLocation.decode(personalJSON)}
-    private var allPoints:[MapLocation] {MapLocation.all(in:map)+personal.filter {$0.map==map.rawValue}.map(\.point)}
+    private var allPoints:[MapLocation] {(MapLocation.all(in:map)+personal.filter {$0.map==map.rawValue}.map(\.point)).filter {$0.layer != .resource && $0.layer != .base}}
     private var resourceTypes:[String] {MapResources.types(in:map)}
-    private var availableLayers:[MapLayer] {MapLayer.allCases}
+    private var availableLayers:[MapLayer] {MapLayer.allCases.filter {$0 != .resource && $0 != .base}}
     @State private var selected: MapLocation?
     @State private var focusedID: String?
     @State private var resetToken = UUID()
     @State private var action: MapAction = .fit
     var body: some View {
         GeometryReader { geometry in
-        HStack(alignment: .top, spacing: 8) {
+        let imageSize = UIImage(named: map.imageAsset)?.size ?? CGSize(width: 1, height: 1)
+        let aspect = imageSize.width / max(1, imageSize.height)
+        let mapWidth = min(max(1, geometry.size.width - 320), max(1, geometry.size.height - 16) * aspect)
+        HStack(alignment: .top, spacing: 16) {
         ZoomableMap(imageAsset: map.imageAsset, mapName: map.name, resetToken: resetToken, action: action, locations: allPoints.filter {filters.includes($0)}, focusID: focusedID, select: { selected = $0; focusedID = $0.id }, addLocation:{gps in draft=PersonalMapLocation(map:map.rawValue,name:"",lat:gps.lat,lon:gps.lon)})
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .frame(width: mapWidth, height: mapWidth / aspect)
             .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
             .overlay(alignment: .bottomTrailing) {
                 if let point = selected {
@@ -65,10 +68,10 @@ struct MapScreen: View {
                     }
                 }
             }
-            controls.frame(width: 240)
+            controls.frame(maxWidth: .infinity, maxHeight: .infinity)
         }.padding(8)
         .onAppear {
-            if initialResources {filters.resources=Set(resourceTypes)}
+            // Farming and Base Locations own their dedicated map layers.
             if let id=initialFocus,let point=allPoints.first(where:{$0.id==id}) {
                 if point.layer == .resource {filters.resources.formUnion(point.resourceNames)} else {filters.locations.insert(id)}
                 selected=point;focusedID=id
@@ -95,7 +98,7 @@ struct MapScreen: View {
                                     Text(layer.title).font(.subheadline.bold()).multilineTextAlignment(.leading).fixedSize(horizontal:false,vertical:true)
                                     Spacer(minLength:0)
                                     Image(systemName:expandedLayers.contains(layer) ? "chevron.up":"chevron.down").font(.system(size:9,weight:.semibold))
-                                }.frame(maxWidth:.infinity,alignment:.leading)
+                                }.frame(maxWidth:.infinity,alignment:.leading).contentShape(Rectangle())
                             }.accessibilityIdentifier("expand-layer-"+layer.rawValue).accessibilityLabel("Show "+layer.title)
                             Button {filters.toggle(layer,points:allPoints,types:resourceTypes);if let point=selected,!filters.includes(point) {selected=nil;focusedID=nil}} label:{
                                 Image(systemName:count==0 ? "square":count==total ? "checkmark.square.fill":"minus.square.fill").font(.title3).frame(width:32,height:42)
@@ -155,6 +158,7 @@ struct ZoomableMap: UIViewRepresentable {
     let focusID: String?
     let select: (MapLocation) -> Void
     var addLocation:((MapGPS)->Void)? = nil
+    var highlightID: String? = nil
     func makeUIView(context: Context) -> MapScrollView {
         let view = MapScrollView()
         view.delegate = context.coordinator
@@ -175,6 +179,7 @@ struct ZoomableMap: UIViewRepresentable {
         view.imageView.layer.allowsEdgeAntialiasing = true
         view.imageView.contentMode = .scaleAspectFit
         view.imageView.isUserInteractionEnabled = true
+        view.highlightID = highlightID
         view.updateLocations(locations, select: select)
         view.focusID = focusID
         view.addSubview(view.imageView)
@@ -190,7 +195,9 @@ struct ZoomableMap: UIViewRepresentable {
     }
     func updateUIView(_ uiView: MapScrollView, context: Context) {
         context.coordinator.addLocation=addLocation
+        uiView.highlightID = highlightID
         uiView.updateLocations(locations, select: select)
+        uiView.centerMap()
         if uiView.focusID != focusID {
             uiView.focusID = focusID
             uiView.focusMap(animated: true)
@@ -234,6 +241,7 @@ final class MapScrollView: UIScrollView {
     private let resourceSurface = ResourceSurface()
     private var resources: [MapLocation] = []
     var focusID: String?
+    var highlightID: String?
     private var locationIDs: [String] = []
     private var locations: [MapLocation] = []
     private var markerButtons: [UIButton] = []
@@ -259,7 +267,7 @@ final class MapScrollView: UIScrollView {
             button.setImage(artwork?.withRenderingMode(point.layer == .obelisk || point.layer == .boss ? .alwaysTemplate : .alwaysOriginal) ?? UIImage(systemName: point.symbol), for: .normal)
             button.imageView?.contentMode = .scaleAspectFit
             button.contentEdgeInsets = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
-            button.tintColor = point.layer == .obelisk || point.layer == .custom ? point.color : .white
+            button.tintColor = point.layer == .base ? .darkGray : point.layer == .obelisk || point.layer == .custom ? point.color : .white
             button.backgroundColor = UIColor.black.withAlphaComponent(0.85)
             button.layer.cornerRadius = 16; button.layer.borderWidth = 1.5; button.layer.borderColor = point.color.cgColor
             let badge = UILabel(frame: CGRect(x: 21, y: -4, width: 17, height: 17))
@@ -315,9 +323,23 @@ final class MapScrollView: UIScrollView {
     func centerMap() {
         var labelFrames: [CGRect] = []
         var occupied: [CGPoint] = []
-        let order = markerButtons.indices.sorted { locations[$0].id == focusID && locations[$1].id != focusID ? true : locations[$1].id == focusID ? false : $0 < $1 }
+        let order = markerButtons.indices.sorted { locations[$0].id == (highlightID ?? focusID) && locations[$1].id != (highlightID ?? focusID) ? true : locations[$1].id == (highlightID ?? focusID) ? false : $0 < $1 }
         for index in order {
             let button = markerButtons[index]
+            let pointIsSelected = locations[index].id == highlightID
+            if locations[index].farmID != nil || locations[index].layer == .base {
+                let diameter: CGFloat = pointIsSelected ? 44 : 36
+                button.bounds.size = CGSize(width: diameter, height: diameter)
+                button.layer.cornerRadius = diameter / 2
+                button.backgroundColor = pointIsSelected ? UIColor(red: 0.82, green: 0.97, blue: 1, alpha: 1) : UIColor(white: 0.94, alpha: 0.96)
+                button.layer.borderColor = (pointIsSelected ? UIColor.systemCyan : UIColor.darkGray).cgColor
+                button.layer.borderWidth = pointIsSelected ? 3 : 1.5
+                button.layer.shadowColor = UIColor.black.cgColor
+                button.layer.shadowOpacity = 0.45
+                button.layer.shadowRadius = pointIsSelected ? 5 : 2
+                button.layer.shadowOffset = CGSize(width: 0, height: 1)
+                button.accessibilityValue = pointIsSelected ? "Selected" : "Not selected"
+            }
             button.center = pixelPoint(locations[index])
             button.transform = CGAffineTransform(scaleX: 1 / max(zoomScale, 0.001), y: 1 / max(zoomScale, 0.001))
             let label = markerLabels[index]

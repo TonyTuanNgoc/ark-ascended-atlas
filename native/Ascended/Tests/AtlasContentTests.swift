@@ -3,6 +3,22 @@ import UIKit
 @testable import Ascended
 
 final class AtlasContentTests: XCTestCase {
+    func testMainMapBaseCataloguesHaveTenDistinctSourceBackedCandidates() throws {
+        for map in [ArkMap.ragnarok, .island, .center] {
+            let catalogue = try XCTUnwrap(map.bases, map.rawValue)
+            XCTAssertEqual(catalogue.locations.count, 10)
+            XCTAssertEqual(Set(catalogue.locations.map(\.id)).count, 10)
+            for spot in catalogue.locations {
+                XCTAssertTrue((0...100).contains(spot.lat) && (0...100).contains(spot.lon), spot.id)
+                XCTAssertTrue(catalogue.videos.contains { $0.id == spot.videoID }, spot.id)
+                XCTAssertNotNil(UIImage(named: "Base-" + spot.id), spot.id)
+                XCTAssertFalse(spot.sources.isEmpty, spot.id)
+                XCTAssertFalse(spot.support.isEmpty, spot.id)
+                XCTAssertFalse(spot.pros.isEmpty || spot.cons.isEmpty || spot.layout.isEmpty, spot.id)
+            }
+        }
+    }
+
     func testReferenceCatalogueAndStableMapIdentifiers() throws {
         let catalogue = try XCTUnwrap(AtlasReferenceLocations.catalogue)
         XCTAssertGreaterThan(catalogue.locations.count, 60)

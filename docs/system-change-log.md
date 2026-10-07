@@ -100,3 +100,7 @@ Actual window-width-responsive compact Farming map, corrected viewport UI-test q
 
 ## 2026-10-07 — Ascended 0.26.0 (27)
 Centered full-card map selector and chevron, larger centered module headings and navigation artwork. Story becomes a horizontal illustrated topic selector with chapter/character rows and preserved text. Farming now shows exactly the requested 14 resources and fixed three-column map / small horizontal location loops / creature-tool guidance. Preserves verified footage, GPS and broader library data. Corrected lazy-card source-link accessibility and genuine species icon lookup. 23 unit + 4 scoped UI cases passed; Simulator-only launch verified. No Tony OS, TestFlight, hardware or web/domain deployment. Report: codex-reports/2026-10-07-ascended27-navigation-story-farming.md.
+
+## 2026-10-07 — Ascended 0.27.0 (28)
+
+Removed Field Guide from the module rail; replaced Base Building entry with three-column Base Locations and10 genuine photographed candidates each forRagnarok/Island/Center. CenterGPS remains explicitly provisional;25new images preserve source320×180. Atlas excludesResources/Bases, fits originalimageaspect and widensfilterrail; fixedfull-rowexpansiontapregion. Farming selects exactlyone matchingclip withoutzoom, withlargerheading, contrastinghighlightedpins andseparatezoomcontrols.24unit+9unique scopedUIcases pass; finalSimulatorbuild28/cataloguebytes readback+PID77043verified. Commit/push andSimulator-onlydelivery; noTonyOS/TestFlight/hardware/webdomain. Report:codex-reports/2026-10-07-ascended28-selected-resource-pin.md.

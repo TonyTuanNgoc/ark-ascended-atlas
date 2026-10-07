@@ -52,14 +52,14 @@ final class Ascended27UITests: XCTestCase {
         app.buttons["choose-the-island"].tap()
         app.buttons["section-Khai thác"].tap()
         let map = app.scrollViews["farming-mini-map"]
-        let locations = app.scrollViews["farming-location-strip"]
+        let locations = app.descendants(matching: .any).matching(identifier: "farming-location-panel").firstMatch
         let harvest = app.scrollViews["farming-harvesting-column"]
         XCTAssertTrue(map.waitForExistence(timeout: 5))
         XCTAssertTrue(locations.exists); XCTAssertTrue(harvest.exists)
         XCTAssertLessThan(map.frame.maxX, locations.frame.minX)
         XCTAssertLessThan(locations.frame.maxX, harvest.frame.minX)
         XCTAssertEqual(map.frame.width, harvest.frame.width, accuracy: 3)
-        XCTAssertLessThan(locations.frame.height, 365)
+        XCTAssertLessThanOrEqual(locations.frame.maxY, app.frame.maxY)
         XCTAssertLessThanOrEqual(harvest.frame.maxY, app.frame.maxY)
         XCTAssertTrue(app.staticTexts["Ankylosaurus"].isHittable)
         XCTAssertTrue(app.staticTexts["Metal Pick"].isHittable)

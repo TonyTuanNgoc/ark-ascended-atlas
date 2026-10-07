@@ -142,12 +142,18 @@ struct ResourceFarmingScreen: View {
     @State private var search = ""
     @State private var resource = "Metal"
     @State private var selectedID: String?
-    @State private var focusedID: String?
     @State private var resetToken = UUID()
     @State private var action: MapAction = .fit
     static let resourceSelection = ["Black Pearls", "Cementing Paste", "Chitin", "Crystal", "Giant Bee Honey", "Metal", "Obsidian", "Oil", "Organic Polymer", "Rare Flowers", "Rare Mushrooms", "Rich Metal", "Sap", "Silica Pearls"]
     private var names: [String] { Self.resourceSelection.filter { search.isEmpty || $0.localizedStandardContains(search) } }
     private var spots: [VerifiedResourceSpot] { FarmingResourceCatalogue.spots(for: resource, in: map) }
+    private var selectedSpot: VerifiedResourceSpot? { spots.first { $0.id == selectedID } ?? spots.first }
+    private var mapPoints: [MapLocation] {
+        spots.map { spot in
+            let point = spot.point
+            return MapLocation(id: point.id, name: point.name, lat: point.lat, lon: point.lon, layer: point.layer, note: point.note, routeID: point.routeID, artifactID: point.artifactID, imageAsset: point.imageAsset, farmID: point.farmID, resourceNames: [resource])
+        }
+    }
     var body: some View {
         GeometryReader { geometry in
             VStack(alignment: .leading, spacing: 14) {
@@ -156,7 +162,7 @@ struct ResourceFarmingScreen: View {
                         HStack(spacing: 8) {
                             ForEach(names, id: \.self) { name in
                                 Button {
-                                    resource = name; selectedID = nil; focusedID = nil; action = .fit; resetToken = UUID()
+                                    resource = name; selectedID = nil; action = .fit; resetToken = UUID()
                                 } label: {
                                     VStack(spacing: 5) {
                                         FarmResourcePicture(name: name).frame(width: 38, height: 38)
@@ -190,15 +196,16 @@ struct ResourceFarmingScreen: View {
         }.searchable(text: $search, prompt: "Search resources")
     }
     private var miniMap: some View {
-        ZoomableMap(imageAsset: map.imageAsset, mapName: map.name, resetToken: resetToken, action: action, locations: spots.map(\.point), focusID: focusedID, select: { point in selectedID = point.farmID; focusedID = point.id })
-            .clipShape(RoundedRectangle(cornerRadius: 16))
-            .overlay(alignment: .bottomTrailing) {
-                HStack(spacing: 2) {
-                    Button { action = .out; resetToken = UUID() } label: { Image(systemName: "minus").frame(width: 34, height: 34) }.accessibilityLabel("Zoom out farming map")
-                    Button { action = .inside; resetToken = UUID() } label: { Image(systemName: "plus").frame(width: 34, height: 34) }.accessibilityLabel("Zoom in farming map")
-                    Button { focusedID = nil; action = .fit; resetToken = UUID() } label: { Image(systemName: "arrow.counterclockwise").frame(width: 34, height: 34) }.accessibilityLabel("Fit farming map")
-                }.buttonStyle(.plain).padding(4).background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 10)).padding(8)
-            }.accessibilityIdentifier("farming-mini-map")
+        VStack(spacing: 0) {
+            ZoomableMap(imageAsset: map.imageAsset, mapName: map.name, resetToken: resetToken, action: action, locations: mapPoints, focusID: nil, select: { point in selectedID = point.farmID }, highlightID: selectedSpot.map { "farm-" + $0.id })
+                .frame(maxHeight: .infinity)
+            HStack(spacing: 2) {
+                Spacer()
+                Button { action = .out; resetToken = UUID() } label: { Image(systemName: "minus").frame(width: 40, height: 40) }.accessibilityLabel("Zoom out farming map")
+                Button { action = .inside; resetToken = UUID() } label: { Image(systemName: "plus").frame(width: 40, height: 40) }.accessibilityLabel("Zoom in farming map")
+                Button { action = .fit; resetToken = UUID() } label: { Image(systemName: "arrow.counterclockwise").frame(width: 40, height: 40) }.accessibilityLabel("Fit farming map")
+            }.buttonStyle(.plain).padding(.horizontal, 8).background(Color(red: 0.045, green: 0.075, blue: 0.085))
+        }.clipShape(RoundedRectangle(cornerRadius: 16)).accessibilityIdentifier("farming-mini-map")
     }
     private func locations(width: CGFloat) -> some View {
         VStack(alignment: .leading, spacing: 12) {
@@ -208,33 +215,21 @@ struct ResourceFarmingScreen: View {
                     Image(systemName: "mappin.slash").font(.title2).foregroundStyle(.secondary)
                     Text("No verified location yet").font(.subheadline).multilineTextAlignment(.center)
                 }.frame(maxWidth: .infinity).padding(24).accessibilityIdentifier("farm-no-verified-locations")
-            } else {
-                ScrollView(.horizontal, showsIndicators: false) {
-                    LazyHStack(alignment: .top, spacing: 12) {
-                        ForEach(spots) { spot in
-                            VStack(alignment: .leading, spacing: 10) {
-                                if let guide = ResourceClipCatalog.guide(for: spot.id) {
-                                    ResourceClipWalkthrough(guide: guide).id(spot.id)
-                                }
-                                Text(spot.name).font(.subheadline.bold()).fixedSize(horizontal: false, vertical: true)
-                                GPSBadge(coordinates: spot.point.coordinates).font(.caption)
-                                Text(spot.coordinateHint).font(.caption2).foregroundStyle(.secondary)
-                                Text(spot.direction).font(.caption).foregroundStyle(.secondary).lineLimit(4)
-                            }.padding(10).frame(width: max(1, width - 2), alignment: .topLeading)
-                                .background(.white.opacity(0.04), in: RoundedRectangle(cornerRadius: 14))
-                                .id(spot.id).accessibilityElement(children: .contain).accessibilityIdentifier("farm-card-" + spot.id)
-                        }
-                    }.scrollTargetLayout()
-                }.scrollTargetBehavior(.viewAligned).scrollPosition(id: $selectedID, anchor: .center)
-                    .frame(height: min(360, width * 9 / 16 + 174))
-                    .accessibilityIdentifier("farming-location-strip")
-                HStack(spacing: 5) {
-                    Image(systemName: "arrow.left.and.right")
-                    Text("Swipe for locations").font(.caption)
-                }.foregroundStyle(.secondary)
+            } else if let spot = selectedSpot {
+                VStack(alignment: .leading, spacing: 10) {
+                    if let guide = ResourceClipCatalog.guide(for: spot.id) {
+                        ResourceClipWalkthrough(guide: guide).id(spot.id)
+                    }
+                    Text(spot.name).font(.subheadline.bold()).fixedSize(horizontal: false, vertical: true)
+                    GPSBadge(coordinates: spot.point.coordinates).font(.caption)
+                    Text(spot.coordinateHint).font(.caption2).foregroundStyle(.secondary)
+                    Text(spot.direction).font(.caption).foregroundStyle(.secondary).lineLimit(4)
+                }.padding(10).frame(width: max(1, width - 2), alignment: .topLeading)
+                    .background(.white.opacity(0.04), in: RoundedRectangle(cornerRadius: 14))
+                    .accessibilityElement(children: .contain).accessibilityIdentifier("farm-card-" + spot.id)
             }
             Spacer(minLength: 0)
-        }
+        }.accessibilityElement(children: .contain).accessibilityIdentifier("farming-location-panel")
     }
     private var harvesting: some View {
         ScrollView {

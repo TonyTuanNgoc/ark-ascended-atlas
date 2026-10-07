@@ -1,0 +1,474 @@
+{
+  "reviewedAt": "2026-10-07",
+  "methodology": "Ten distinct ASA base candidates. Display order groups practical single-player/PvE choices; it is an editorial order, not a vote, raid guarantee or measured resource score. Coordinates retain creator precision. Layout advice is Codex planning inference; source evidence is identified per spot.",
+  "limits": "All ten GPS pairs and timestamps are in primary ASA creator chapter metadata. Ten genuine 320\u00d7180 stills from exact ASA creator chapters are bundled; they were visually reviewed for terrain, not readable GPS. Chapter names support terrain and suggested use, not current spawn safety, foundation footprint or server build permission. The wiki warns ASA single-M minimap coordinates can differ from waypoints/double-M map coordinates.",
+  "videos": [
+    {
+      "id": "vMGnAfe9E3g",
+      "title": "Top 10 Best PVE Base Locations in Ark: Survival Ascended The Island Map",
+      "channel": "Ark: Survival Guide",
+      "url": "https://www.youtube.com/watch?v=vMGnAfe9E3g",
+      "thumbnailURL": "https://i.ytimg.com/vi/vMGnAfe9E3g/maxresdefault.jpg",
+      "views": 145122,
+      "likes": 2202,
+      "observedAt": "2026-10-07"
+    }
+  ],
+  "locations": [
+    {
+      "id": "island-herbivore",
+      "name": "Herbivore Island \u00b7 South Haven",
+      "rank": 1,
+      "lat": 88.8,
+      "lon": 90.1,
+      "tag": "Quiet island \u00b7 starter / breeding",
+      "why": "An offshore base candidate for controlled creature space and a separate supply dock.",
+      "pros": [
+        "Wiki describes the region as having no aggressive terrestrial carnivore spawns.",
+        "The primary ASA guide supplies this approach GPS."
+      ],
+      "cons": [
+        "Ocean transit and hostile sea creatures remain risks.",
+        "Do not substitute older wiki region-centre coordinates for this ASA creator pin."
+      ],
+      "layout": [
+        "Keep the workshop beside the dock for arriving materials.",
+        "Fence measured breeding space and preserve the hill resource spawns."
+      ],
+      "videoID": "vMGnAfe9E3g",
+      "seconds": 47,
+      "support": "Creator ASA chapter metadata gives this GPS and timestamp; not independently measured in game.",
+      "sources": [
+        {
+          "title": "ASA creator \u00b7 Ark: Survival Guide",
+          "url": "https://www.youtube.com/watch?v=vMGnAfe9E3g&t=47s",
+          "note": "Creator ASA chapter metadata gives this GPS and timestamp; not independently measured in game."
+        },
+        {
+          "title": "ARK Official Community Wiki \u00b7 South Haven",
+          "url": "https://ark.wiki.gg/wiki/South_Haven",
+          "note": "Confirms region identity and general terrestrial-carnivore context. Wiki centre 84/85 is not the ASA chapter approach pin 88.8/90.1."
+        }
+      ],
+      "coordinateEvidence": "Creator ASA chapter metadata gives this GPS and timestamp; not independently measured in game.",
+      "adviceScope": "Layout and preparation are planning suggestions inferred from the named terrain; validate footprint, current spawns and server rules in your save.",
+      "photoStatus": "Genuine ASA location-chapter still; original 320\u00d7180 resolution",
+      "photoSource": {
+        "pageURL": "https://www.youtube.com/watch?v=vMGnAfe9E3g",
+        "seconds": 49.12,
+        "scope": "Public ASA creator storyboard still from the exact location chapter; actual terrain visually reviewed. Original 320\u00d7180 resolution; no artificial upscale. GPS not visually readable unless stated.",
+        "dimensions": [
+          320,
+          180
+        ],
+        "asset": "Base-island-herbivore",
+        "sha256": "df48fdfee767905232a661b89887eb0d34c7e610dc72121d8f83f7828bf1e9dc"
+      }
+    },
+    {
+      "id": "island-south-cave",
+      "name": "South Zone 2 Starter Cave",
+      "rank": 2,
+      "lat": 93.8,
+      "lon": 52.1,
+      "tag": "Small cave \u00b7 starter",
+      "why": "A compact first shelter candidate on the southern coast.",
+      "pros": [
+        "Primary ASA chapter explicitly identifies a starter cave.",
+        "A compact footprint can reduce initial walls and supply hauling."
+      ],
+      "cons": [
+        "Check cave building permission and collision before claiming it.",
+        "Large breeding animals may need a separate outdoor yard."
+      ],
+      "layout": [
+        "Place bed, storage and basic crafting in a clear exit-side core.",
+        "Keep entrance clearance for transport and plan an exterior expansion."
+      ],
+      "videoID": "vMGnAfe9E3g",
+      "seconds": 138,
+      "support": "Creator ASA chapter metadata gives this GPS and timestamp; not independently measured in game.",
+      "sources": [
+        {
+          "title": "ASA creator \u00b7 Ark: Survival Guide",
+          "url": "https://www.youtube.com/watch?v=vMGnAfe9E3g&t=138s",
+          "note": "Creator ASA chapter metadata gives this GPS and timestamp; not independently measured in game."
+        }
+      ],
+      "coordinateEvidence": "Creator ASA chapter metadata gives this GPS and timestamp; not independently measured in game.",
+      "adviceScope": "Layout and preparation are planning suggestions inferred from the named terrain; validate footprint, current spawns and server rules in your save.",
+      "photoStatus": "Genuine ASA location-chapter still; original 320\u00d7180 resolution",
+      "photoSource": {
+        "pageURL": "https://www.youtube.com/watch?v=vMGnAfe9E3g",
+        "seconds": 147.37,
+        "scope": "Public ASA creator storyboard still from the exact location chapter; actual terrain visually reviewed. Original 320\u00d7180 resolution; no artificial upscale. GPS not visually readable unless stated.",
+        "dimensions": [
+          320,
+          180
+        ],
+        "asset": "Base-island-south-cave",
+        "sha256": "639d325125ae40bdb63cad34598708e53db5e952d8b2e2d11f369328b2c51617"
+      }
+    },
+    {
+      "id": "island-lagoon",
+      "name": "South Zone 2 Hidden Lagoon",
+      "rank": 3,
+      "lat": 93.4,
+      "lon": 57.8,
+      "tag": "Lagoon \u00b7 dock / small base",
+      "why": "A southern lagoon candidate for combining a home with shoreline staging.",
+      "pros": [
+        "ASA chapter supplies a specific lagoon pin.",
+        "Water-edge terrain offers a clear dock-oriented build concept."
+      ],
+      "cons": [
+        "Measure depth before choosing aquatic breeding animals.",
+        "Watch shoreline spawns and keep a safe evacuation route."
+      ],
+      "layout": [
+        "Use a shore workshop above the water line.",
+        "Test a small aquatic pen before investing in a larger enclosure."
+      ],
+      "videoID": "vMGnAfe9E3g",
+      "seconds": 157,
+      "support": "Creator ASA chapter metadata gives this GPS and timestamp; not independently measured in game.",
+      "sources": [
+        {
+          "title": "ASA creator \u00b7 Ark: Survival Guide",
+          "url": "https://www.youtube.com/watch?v=vMGnAfe9E3g&t=157s",
+          "note": "Creator ASA chapter metadata gives this GPS and timestamp; not independently measured in game."
+        }
+      ],
+      "coordinateEvidence": "Creator ASA chapter metadata gives this GPS and timestamp; not independently measured in game.",
+      "adviceScope": "Layout and preparation are planning suggestions inferred from the named terrain; validate footprint, current spawns and server rules in your save.",
+      "photoStatus": "Genuine ASA location-chapter still; original 320\u00d7180 resolution",
+      "photoSource": {
+        "pageURL": "https://www.youtube.com/watch?v=vMGnAfe9E3g",
+        "seconds": 157.2,
+        "scope": "Public ASA creator storyboard still from the exact location chapter; actual terrain visually reviewed. Original 320\u00d7180 resolution; no artificial upscale. GPS not visually readable unless stated.",
+        "dimensions": [
+          320,
+          180
+        ],
+        "asset": "Base-island-lagoon",
+        "sha256": "42a875c07cbd3463c319f113feb9008186e068a85f7738fc57f74f9627c01bc7"
+      }
+    },
+    {
+      "id": "island-small-plateau",
+      "name": "South Zone 2 Small Jungle Plateau",
+      "rank": 4,
+      "lat": 86.3,
+      "lon": 49.6,
+      "tag": "Compact plateau \u00b7 solo",
+      "why": "A small elevated southern candidate for a solo workshop and starter creature yard.",
+      "pros": [
+        "Creator identifies a small plateau rather than a massive tribe footprint.",
+        "An elevated platform may provide a natural separation from traffic below."
+      ],
+      "cons": [
+        "Capacity is limited for larger breeding lines.",
+        "Test slopes, cliff edges and access before walking loaded tames uphill."
+      ],
+      "layout": [
+        "Put storage and crafting together near the arrival path.",
+        "Fence edges and reserve a small flyer landing spot."
+      ],
+      "videoID": "vMGnAfe9E3g",
+      "seconds": 179,
+      "support": "Creator ASA chapter metadata gives this GPS and timestamp; not independently measured in game.",
+      "sources": [
+        {
+          "title": "ASA creator \u00b7 Ark: Survival Guide",
+          "url": "https://www.youtube.com/watch?v=vMGnAfe9E3g&t=179s",
+          "note": "Creator ASA chapter metadata gives this GPS and timestamp; not independently measured in game."
+        }
+      ],
+      "coordinateEvidence": "Creator ASA chapter metadata gives this GPS and timestamp; not independently measured in game.",
+      "adviceScope": "Layout and preparation are planning suggestions inferred from the named terrain; validate footprint, current spawns and server rules in your save.",
+      "photoStatus": "Genuine ASA location-chapter still; original 320\u00d7180 resolution",
+      "photoSource": {
+        "pageURL": "https://www.youtube.com/watch?v=vMGnAfe9E3g",
+        "seconds": 186.67,
+        "scope": "Public ASA creator storyboard still from the exact location chapter; actual terrain visually reviewed. Original 320\u00d7180 resolution; no artificial upscale. GPS not visually readable unless stated.",
+        "dimensions": [
+          320,
+          180
+        ],
+        "asset": "Base-island-small-plateau",
+        "sha256": "3b1a51da67e34b2b8e2abe6bf29b2b32746700208e16268a23847edadfefcc8f"
+      }
+    },
+    {
+      "id": "island-large-plateau",
+      "name": "South Zone 2 Large Jungle Plateau",
+      "rank": 5,
+      "lat": 86.4,
+      "lon": 54.5,
+      "tag": "Large plateau \u00b7 expansion",
+      "why": "A larger southern plateau candidate for a planned progression base.",
+      "pros": [
+        "Creator identifies a large plateau base location.",
+        "The distinct footprint offers an alternative to the nearby small plateau."
+      ],
+      "cons": [
+        "Actual foundation area and transport access require local measurement.",
+        "Do not cover important resource or spawn routes with a broad perimeter."
+      ],
+      "layout": [
+        "Lay out workshop, breeding rows and landing area before placing foundations.",
+        "Leave a wide creature lane between pens and storage."
+      ],
+      "videoID": "vMGnAfe9E3g",
+      "seconds": 242,
+      "support": "Creator ASA chapter metadata gives this GPS and timestamp; not independently measured in game.",
+      "sources": [
+        {
+          "title": "ASA creator \u00b7 Ark: Survival Guide",
+          "url": "https://www.youtube.com/watch?v=vMGnAfe9E3g&t=242s",
+          "note": "Creator ASA chapter metadata gives this GPS and timestamp; not independently measured in game."
+        }
+      ],
+      "coordinateEvidence": "Creator ASA chapter metadata gives this GPS and timestamp; not independently measured in game.",
+      "adviceScope": "Layout and preparation are planning suggestions inferred from the named terrain; validate footprint, current spawns and server rules in your save.",
+      "photoStatus": "Genuine ASA location-chapter still; original 320\u00d7180 resolution",
+      "photoSource": {
+        "pageURL": "https://www.youtube.com/watch?v=vMGnAfe9E3g",
+        "seconds": 245.62,
+        "scope": "Public ASA creator storyboard still from the exact location chapter; actual terrain visually reviewed. Original 320\u00d7180 resolution; no artificial upscale. GPS not visually readable unless stated.",
+        "dimensions": [
+          320,
+          180
+        ],
+        "asset": "Base-island-large-plateau",
+        "sha256": "2a539b7bce86789e21923381146d74a66354bfe1b28007500ea668aacfd16cd6"
+      }
+    },
+    {
+      "id": "island-west-falls",
+      "name": "West Coast Jungle Falls Plateau",
+      "rank": 6,
+      "lat": 49,
+      "lon": 11,
+      "tag": "West coast \u00b7 main base",
+      "why": "A western plateau candidate for a coast-facing workshop and flight staging.",
+      "pros": [
+        "ASA chapter pairs a plateau with the jungle falls landmark.",
+        "A western home can serve as a coastal expedition starting point."
+      ],
+      "cons": [
+        "Survey cliff safety and route lengths to your target resources.",
+        "Water access below a cliff is not the same as water access inside the base."
+      ],
+      "layout": [
+        "Keep production near the loading/landing area.",
+        "Use a separately measured shoreline outpost if dock access is awkward."
+      ],
+      "videoID": "vMGnAfe9E3g",
+      "seconds": 258,
+      "support": "Creator ASA chapter metadata gives this GPS and timestamp; not independently measured in game.",
+      "sources": [
+        {
+          "title": "ASA creator \u00b7 Ark: Survival Guide",
+          "url": "https://www.youtube.com/watch?v=vMGnAfe9E3g&t=258s",
+          "note": "Creator ASA chapter metadata gives this GPS and timestamp; not independently measured in game."
+        }
+      ],
+      "coordinateEvidence": "Creator ASA chapter metadata gives this GPS and timestamp; not independently measured in game.",
+      "adviceScope": "Layout and preparation are planning suggestions inferred from the named terrain; validate footprint, current spawns and server rules in your save.",
+      "photoStatus": "Genuine ASA location-chapter still; original 320\u00d7180 resolution",
+      "photoSource": {
+        "pageURL": "https://www.youtube.com/watch?v=vMGnAfe9E3g",
+        "seconds": 265.27,
+        "scope": "Public ASA creator storyboard still from the exact location chapter; actual terrain visually reviewed. Original 320\u00d7180 resolution; no artificial upscale. GPS not visually readable unless stated.",
+        "dimensions": [
+          320,
+          180
+        ],
+        "asset": "Base-island-west-falls",
+        "sha256": "863fcb161f4c737a47bd0464712b9f234e8de22eaa4d69de06fae0f476f6923a"
+      }
+    },
+    {
+      "id": "island-south-builder",
+      "name": "Southwest Builder Site",
+      "rank": 7,
+      "lat": 85.1,
+      "lon": 23.4,
+      "tag": "Southern builder \u00b7 large yard",
+      "why": "A southern site intended by the creator for both starting and larger builder projects.",
+      "pros": [
+        "Primary ASA chapter explicitly describes starter and large-builder uses.",
+        "A planned build can reserve space before early structures become permanent."
+      ],
+      "cons": [
+        "Do not assume alpha-size wording proves level terrain everywhere.",
+        "Plan longer farming flights as the base grows."
+      ],
+      "layout": [
+        "Start with a compact bed/workshop core on surveyed ground.",
+        "Reserve future breeding and flyer traffic corridors outside that core."
+      ],
+      "videoID": "vMGnAfe9E3g",
+      "seconds": 538,
+      "support": "Creator ASA chapter metadata gives this GPS and timestamp; not independently measured in game.",
+      "sources": [
+        {
+          "title": "ASA creator \u00b7 Ark: Survival Guide",
+          "url": "https://www.youtube.com/watch?v=vMGnAfe9E3g&t=538s",
+          "note": "Creator ASA chapter metadata gives this GPS and timestamp; not independently measured in game."
+        }
+      ],
+      "coordinateEvidence": "Creator ASA chapter metadata gives this GPS and timestamp; not independently measured in game.",
+      "adviceScope": "Layout and preparation are planning suggestions inferred from the named terrain; validate footprint, current spawns and server rules in your save.",
+      "photoStatus": "Genuine ASA location-chapter still; original 320\u00d7180 resolution",
+      "photoSource": {
+        "pageURL": "https://www.youtube.com/watch?v=vMGnAfe9E3g",
+        "seconds": 540.36,
+        "scope": "Public ASA creator storyboard still from the exact location chapter; actual terrain visually reviewed. Original 320\u00d7180 resolution; no artificial upscale. GPS not visually readable unless stated.",
+        "dimensions": [
+          320,
+          180
+        ],
+        "asset": "Base-island-south-builder",
+        "sha256": "a6e3b18ed1faed8dc7b53f11ca61524fa87aa4b1bc6a2759c26361f1e70bde14"
+      }
+    },
+    {
+      "id": "island-metal-plateau",
+      "name": "Central Jungle Falls Metal Plateau",
+      "rank": 8,
+      "lat": 43.8,
+      "lon": 68.5,
+      "tag": "Resource staging \u00b7 mid game",
+      "why": "A plateau candidate for a production-oriented midgame base.",
+      "pros": [
+        "ASA creator names it a metal plateau base location.",
+        "The named falls landmark helps organise exploration around the site."
+      ],
+      "cons": [
+        "Protect local resource respawns by avoiding a large foundation blanket.",
+        "Survey dangerous spawns and tame access before moving all supplies."
+      ],
+      "layout": [
+        "Set smelting/storage away from tested resource nodes.",
+        "Keep a broad loaded-Anky arrival lane and separate breeding yard."
+      ],
+      "videoID": "vMGnAfe9E3g",
+      "seconds": 570,
+      "support": "Creator ASA chapter metadata gives this GPS and timestamp; not independently measured in game.",
+      "sources": [
+        {
+          "title": "ASA creator \u00b7 Ark: Survival Guide",
+          "url": "https://www.youtube.com/watch?v=vMGnAfe9E3g&t=570s",
+          "note": "Creator ASA chapter metadata gives this GPS and timestamp; not independently measured in game."
+        }
+      ],
+      "coordinateEvidence": "Creator ASA chapter metadata gives this GPS and timestamp; not independently measured in game.",
+      "adviceScope": "Layout and preparation are planning suggestions inferred from the named terrain; validate footprint, current spawns and server rules in your save.",
+      "photoStatus": "Genuine ASA location-chapter still; original 320\u00d7180 resolution",
+      "photoSource": {
+        "pageURL": "https://www.youtube.com/watch?v=vMGnAfe9E3g",
+        "seconds": 579.66,
+        "scope": "Public ASA creator storyboard still from the exact location chapter; actual terrain visually reviewed. Original 320\u00d7180 resolution; no artificial upscale. GPS not visually readable unless stated.",
+        "dimensions": [
+          320,
+          180
+        ],
+        "asset": "Base-island-metal-plateau",
+        "sha256": "2b53c508c75a2cb690afaee23714da37ea5c092833922d616bf2893e4212695e"
+      }
+    },
+    {
+      "id": "island-mountain-ruins",
+      "name": "Northeast Mountain Ruins",
+      "rank": 9,
+      "lat": 34.1,
+      "lon": 83.9,
+      "tag": "Mountain ruins \u00b7 resource outpost",
+      "why": "A northeast ruins candidate for a small mountain production base.",
+      "pros": [
+        "ASA chapter supplies a mountain-ruins metal-base pin.",
+        "A distinct ruin is a practical return landmark."
+      ],
+      "cons": [
+        "A mountain site may need frequent water and bulk-material transport.",
+        "Check collision, predators and fall hazards across each level."
+      ],
+      "layout": [
+        "Use a compact forge/storage station after checking respawn distance.",
+        "Keep spare beds and parachutes; stage creatures on measured safe ground."
+      ],
+      "videoID": "vMGnAfe9E3g",
+      "seconds": 681,
+      "support": "Creator ASA chapter metadata gives this GPS and timestamp; not independently measured in game.",
+      "sources": [
+        {
+          "title": "ASA creator \u00b7 Ark: Survival Guide",
+          "url": "https://www.youtube.com/watch?v=vMGnAfe9E3g&t=681s",
+          "note": "Creator ASA chapter metadata gives this GPS and timestamp; not independently measured in game."
+        }
+      ],
+      "coordinateEvidence": "Creator ASA chapter metadata gives this GPS and timestamp; not independently measured in game.",
+      "adviceScope": "Layout and preparation are planning suggestions inferred from the named terrain; validate footprint, current spawns and server rules in your save.",
+      "photoStatus": "Genuine ASA location-chapter still; original 320\u00d7180 resolution",
+      "photoSource": {
+        "pageURL": "https://www.youtube.com/watch?v=vMGnAfe9E3g",
+        "seconds": 687.73,
+        "scope": "Public ASA creator storyboard still from the exact location chapter; actual terrain visually reviewed. Original 320\u00d7180 resolution; no artificial upscale. GPS not visually readable unless stated.",
+        "dimensions": [
+          320,
+          180
+        ],
+        "asset": "Base-island-mountain-ruins",
+        "sha256": "081d4a8a36b4e9b81706ebdd3e46811d553a360e43a6b81f7cc71bab0ab8471f"
+      }
+    },
+    {
+      "id": "island-crag",
+      "name": "Crag Island Solo Site",
+      "rank": 10,
+      "lat": 94.6,
+      "lon": 21.1,
+      "tag": "Southern island \u00b7 solo builder",
+      "why": "A southern island candidate for a separate solo home with organised shoreline access.",
+      "pros": [
+        "ASA creator provides a specific Crag Island solo-site GPS.",
+        "A distinct island is easy to treat as a self-contained build project."
+      ],
+      "cons": [
+        "Confirm sea transit safety before moving valuables by raft.",
+        "Its southerly position adds travel to northern expeditions."
+      ],
+      "layout": [
+        "Put the dock, beds and repair supplies close together.",
+        "Reserve a surveyed pen yard above the shoreline and plan farming transport."
+      ],
+      "videoID": "vMGnAfe9E3g",
+      "seconds": 739,
+      "support": "Creator ASA chapter metadata gives this GPS and timestamp; not independently measured in game.",
+      "sources": [
+        {
+          "title": "ASA creator \u00b7 Ark: Survival Guide",
+          "url": "https://www.youtube.com/watch?v=vMGnAfe9E3g&t=739s",
+          "note": "Creator ASA chapter metadata gives this GPS and timestamp; not independently measured in game."
+        }
+      ],
+      "coordinateEvidence": "Creator ASA chapter metadata gives this GPS and timestamp; not independently measured in game.",
+      "adviceScope": "Layout and preparation are planning suggestions inferred from the named terrain; validate footprint, current spawns and server rules in your save.",
+      "photoStatus": "Genuine ASA location-chapter still; original 320\u00d7180 resolution",
+      "photoSource": {
+        "pageURL": "https://www.youtube.com/watch?v=vMGnAfe9E3g",
+        "seconds": 746.68,
+        "scope": "Public ASA creator storyboard still from the exact location chapter; actual terrain visually reviewed. Original 320\u00d7180 resolution; no artificial upscale. GPS not visually readable unless stated.",
+        "dimensions": [
+          320,
+          180
+        ],
+        "asset": "Base-island-crag",
+        "sha256": "5a5848825f340697c7e0bd965804dd656fc41af2f97fb237101c4556defe6331"
+      }
+    }
+  ]
+}

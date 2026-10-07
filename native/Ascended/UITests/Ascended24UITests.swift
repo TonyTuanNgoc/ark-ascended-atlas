@@ -6,8 +6,8 @@ final class Ascended24UITests: XCTestCase {
         let app = XCUIApplication(); app.launch()
         let picker = app.buttons["maps-picker"]
         let logo = app.images["ascended-header-logo"]
-        let ids = ["Cốt truyện ARK", "Thư viện", "Khai thác", "Thông tin map", "Xây base", "Bản đồ", "Dino", "Boss", "Artifact & Hang"]
-        let titles = ["ASA Story", "Equipment", "Farming", "Field Guide", "Base Building", "Atlas", "Creatures", "Bosses", "Artifacts & Caves"]
+        let ids = ["Cốt truyện ARK", "Thư viện", "Khai thác", "Xây base", "Bản đồ", "Dino", "Boss", "Artifact & Hang"]
+        let titles = ["ASA Story", "Equipment", "Farming", "Base Locations", "Atlas", "Creatures", "Bosses", "Artifacts & Caves"]
         XCTAssertTrue(picker.isHittable)
         for (id, title) in zip(ids, titles) {
             let button = app.buttons["section-" + id]
@@ -62,7 +62,7 @@ final class Ascended24UITests: XCTestCase {
         XCTAssertTrue(resource.waitForExistence(timeout: 5)); resource.tap()
         XCTAssertEqual(resource.value as? String, "Selected")
         XCTAssertFalse(app.buttons["farm-resource-Metal"].exists)
-        XCTAssertTrue(app.scrollViews["farming-location-strip"].exists)
+        XCTAssertTrue(app.descendants(matching: .any).matching(identifier: "farming-location-panel").firstMatch.exists)
         let screenshot = XCTAttachment(screenshot: XCUIScreen.main.screenshot())
         screenshot.name = "Farming-clean-footage-LAT-LON"; screenshot.lifetime = .keepAlways; add(screenshot)
     }

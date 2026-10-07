@@ -1,0 +1,15 @@
+# Ascended 0.27.0 (28) — focused Farming, Base Locations and full Atlas
+
+The Field Guide module is removed from the top navigation. Base Locations replaces the Base Building entry screen: ten candidates each for Ragnarok, The Island and The Center, with horizontal illustrated choices and three fixed columns for the map, active location, and practical scouting guidance. Old construction models and recipes remain in the repository; this change replaces the player-facing entry screen rather than deleting that work.
+
+All thirty locations have genuine area images and timestamped source links. Twenty-five new images are exact-chapter public creator storyboard frames at their original 320×180 resolution; five existing matched Ragnarok photos remain. Ragnarok new pins have visible GPS evidence, Island coordinates come from primary creator chapter descriptions, and Center coordinates come from mirrored automatic captions and are explicitly provisional in the UI. None are a guarantee of current building permission, creature spawns or usable footprint. Detailed attribution and evidence limitations: ascended-0.27.0-28/base-location-evidence.md.
+
+Atlas excludes both Resources and Bases from its visible layers, point collection and Find menu. Those remain available in their dedicated modules. The native map frame follows the source image aspect ratio and fits within available screen height/width, so opening Atlas shows the complete square map with rounded corners. The remaining space goes to the filter rail; hierarchical selection and personal-location persistence remain intact.
+
+Centered screen headings grow from 24 to 32 points. Farming renders only the selected spot's card and one autoplay loop, defaulting to the first verified spot. Pin taps replace the card directly without changing camera zoom. Resource artwork matches the active resource. Pale resource pins, larger cyan selected pins and separate zoom controls make Metal legible and keep south-edge pins clear. Base pins also get a selection highlight and contrasting home artwork.
+
+Delivery is scoped to this standalone native app and the Ascended Simulator, per the user's instruction. No Tony OS, TestFlight, web hosting/domain or physical iPad installation. Final QA, screenshots and launch proof are recorded in the delivery receipt. A data-integrity test first caught a missing retained video metadata record; that record was added before final verification.
+
+Widening the Atlas rail exposed a real hit-area regression: taps in the spacer between the layer label and chevron did not expand a row. Explicit rectangular content shape now covers the entire expansion button. Additional hierarchical-filter and persisted personal-location UI checks validate this path.
+
+Final results: 24 unit tests and 9 unique scoped UI cases passed across the final release and Atlas hit-area follow-up runs. All 30 photos checked; 25 new source hashes matched. Final installed version 0.27.0/build28 and all three base catalogue bytes read back identically; fresh Simulator launch PID77043. Screenshots visually reviewed and saved with the receipt.
