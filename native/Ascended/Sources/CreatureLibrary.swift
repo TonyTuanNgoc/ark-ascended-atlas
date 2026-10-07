@@ -121,23 +121,24 @@ struct CreatureDetail: View {
                             panel("Profile", symbol: "book.closed.fill") { Text("Taming details are being added.").font(.subheadline).foregroundStyle(.secondary) }
                         }
                     }.accessibilityIdentifier("creature-profile-columns")
+                    CreatureSpawnMap(creature:creature)
                     if let notes = creature.archive?.notes, !notes.isEmpty { notePanel("Practical notes", text: notes) }
                     if !creature.updateNote.isEmpty && creature.updateNote != creature.archive?.notes { notePanel("Recent updates", text: creature.updateNote) }
                     Link(destination: URL(string: creature.sourceURL)!) { Label("Creature reference", systemImage: "book.closed") }.font(.caption).foregroundStyle(.cyan)
                 }.padding(20)
             }
-        }.navigationTitle(creature.name).navigationBarTitleDisplayMode(.inline)
+        }.navigationTitle("").navigationBarTitleDisplayMode(.inline)
             .background(Color(red: 0.025, green: 0.045, blue: 0.065))
     }
     private func fact(_ label: String, value: String, icon: String) -> some View {
         VStack(alignment: .leading, spacing: 6) {
-            Label(label, systemImage: icon).font(.caption).foregroundStyle(.cyan)
+            HStack(spacing:6) { GuideIcon(name:label=="Diet" ? value:label,size:23);Text(label) }.font(.caption).foregroundStyle(.cyan)
             Text(value).font(.system(size: 16, weight: .semibold)).fixedSize(horizontal: false, vertical: true)
         }.padding(10).frame(maxWidth: .infinity, alignment: .leading).background(.white.opacity(0.04), in: RoundedRectangle(cornerRadius: 10))
     }
     private func panel<Content: View>(_ title: String, symbol: String, @ViewBuilder content: () -> Content) -> some View {
         VStack(alignment: .leading, spacing: 12) {
-            Label(title, systemImage: symbol).font(.headline).foregroundStyle(.cyan)
+            HStack(spacing:8) {GuideIcon(name:title,size:29);Text(title)}.font(.headline).foregroundStyle(.cyan)
             content()
         }.padding(14).frame(maxWidth: .infinity, alignment: .leading).background(.white.opacity(0.055), in: RoundedRectangle(cornerRadius: 14))
     }

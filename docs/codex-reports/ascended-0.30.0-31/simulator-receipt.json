@@ -1,0 +1,12 @@
+{
+  "deviceUDID": "20C9346D-B0E6-4239-8152-1D85ADD57BA6",
+  "bundleID": "com.tonytuanngoc.ascended",
+  "version": "0.30.0",
+  "build": "31",
+  "installedAppPath": "/Volumes/TONY SSD/APP_DATA/Xcode/CoreSimulator/Devices/20C9346D-B0E6-4239-8152-1D85ADD57BA6/data/Containers/Bundle/Application/EFF6B5E8-395E-48C7-B7C3-C5BAF050578F/Ascended.app",
+  "freshLaunchPID": 23015,
+  "verifiedAt": "2026-10-08T01:21:11.627037+07:00",
+  "physicalDeviceVerified": false,
+  "testFlightUploaded": false,
+  "websiteDomain": null
+}

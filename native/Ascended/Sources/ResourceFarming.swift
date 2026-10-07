@@ -209,7 +209,7 @@ struct ResourceFarmingScreen: View {
     }
     private func locations(width: CGFloat) -> some View {
         VStack(alignment: .leading, spacing: 12) {
-            Text("Locations").font(.headline)
+            HStack(spacing:8) {GuideIcon(name:"Locations");Text("Locations").font(.headline)}
             if spots.isEmpty {
                 VStack(spacing: 12) {
                     Image(systemName: "mappin.slash").font(.title2).foregroundStyle(.secondary)
@@ -222,8 +222,6 @@ struct ResourceFarmingScreen: View {
                     }
                     Text(spot.name).font(.subheadline.bold()).fixedSize(horizontal: false, vertical: true)
                     GPSBadge(coordinates: spot.point.coordinates).font(.caption)
-                    Text(spot.coordinateHint).font(.caption2).foregroundStyle(.secondary)
-                    Text(spot.direction).font(.caption).foregroundStyle(.secondary).lineLimit(4)
                 }.padding(10).frame(width: max(1, width - 2), alignment: .topLeading)
                     .background(.white.opacity(0.04), in: RoundedRectangle(cornerRadius: 14))
                     .accessibilityElement(children: .contain).accessibilityIdentifier("farm-card-" + spot.id)
@@ -234,18 +232,16 @@ struct ResourceFarmingScreen: View {
     private var harvesting: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 14) {
-                Text("Harvesting").font(.headline)
+                HStack(spacing:8) {GuideIcon(name:"Harvesting");Text("Harvesting").font(.headline)}
                 if let reference = HarvestingCatalogue.shared.resource(resource) {
                     if !reference.creatures.isEmpty {
-                        Text("Creatures").font(.caption.bold()).foregroundStyle(.cyan)
+                        HStack(spacing:6) {GuideIcon(name:"Creatures",size:22);Text("Creatures")}.font(.caption.bold()).foregroundStyle(.cyan)
                         ForEach(reference.creatures) { choice in harvestChoice(choice, creature: true) }
                     }
                     if !reference.tools.isEmpty {
-                        Text("Tools").font(.caption.bold()).foregroundStyle(.cyan)
+                        HStack(spacing:6) {GuideIcon(name:"Tools",size:22);Text("Tools")}.font(.caption.bold()).foregroundStyle(.cyan)
                         ForEach(reference.tools) { choice in harvestChoice(choice, creature: false) }
                     }
-                    Text(reference.summary).font(.caption).foregroundStyle(.secondary)
-                    ForEach(reference.cautions, id: \.self) { Text($0).font(.caption2).foregroundStyle(.secondary) }
                 } else {
                     Text("Harvesting guidance is being verified.").font(.caption).foregroundStyle(.secondary)
                 }
@@ -260,7 +256,6 @@ struct ResourceFarmingScreen: View {
             } else { ReferencePicture(name: choice.name).frame(width: 46, height: 46) }
             VStack(alignment: .leading, spacing: 3) {
                 Text(choice.name).font(.subheadline.weight(.semibold))
-                Text(choice.role).font(.caption).foregroundStyle(.secondary).fixedSize(horizontal: false, vertical: true)
             }
         }
     }

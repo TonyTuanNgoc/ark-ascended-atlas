@@ -21,125 +21,142 @@ struct ExplorationCatalog: Decodable {
     let reviewedAt: String; let artifacts: [ArtifactRecord]; let routes: [CaveRoute]; let obelisks: [GPSPoint]
 }
 
+// Cave-only presentation: atlas entrance photos first, licensed walkthrough frames second.
+struct CaveRoutePhoto: View {
+    let route: CaveRoute
+    let map: ArkMap
+    private var photo: AtlasPhoto? {
+        let ids = Set(route.entrances.map { "entrance-" + $0.id })
+        return AtlasPhoto.all.first { $0.mapID == map.rawValue && ids.contains($0.pointID) }
+    }
+    var body: some View {
+        GeometryReader { geometry in
+            Group {
+                if let photo, UIImage(named: photo.asset) != nil {
+                    Image(photo.asset).resizable().scaledToFill()
+                } else if let frame = map.caveGIFs.first(where: { $0.routeID == route.id })?.sections.first?.steps.first?.posterImage {
+                    Image(uiImage: frame).resizable().scaledToFill()
+                } else if !route.imageAsset.hasPrefix("Map-") {
+                    Image(route.imageAsset).resizable().scaledToFill()
+                } else {
+                    ZStack { Color.white.opacity(0.04); Label("Photo pending", systemImage: "mountain.2").font(.caption).foregroundStyle(.secondary) }
+                }
+            }.frame(width: geometry.size.width, height: geometry.size.height).clipped()
+        }.accessibilityIdentifier("cave-photo-" + route.id)
+    }
+}
+
 struct ExplorationLibrary: View {
     @Environment(\.arkMap) private var map
-    @State private var search = ""
     var body: some View {
         ScrollView {
-            VStack(alignment: .leading, spacing: 22) {
-                Text("Artifacts & caves").font(.largeTitle.bold())
-                Text("\(map.exploration?.artifacts.count ?? 0) artifacts · \(map.exploration?.routes.count ?? 0) exploration routes · " + map.name + " Ascended").font(.headline).foregroundStyle(.cyan)
-                Text("Entrance and artifact coordinates mark different locations. Match the surrounding terrain to confirm your approach.").foregroundStyle(.secondary)
+            VStack(alignment: .leading, spacing: 12) {
                 let unlinked = (map.exploration?.artifacts ?? []).filter { artifact in
                     !(map.exploration?.routes.contains { $0.id == artifact.routeID } ?? false)
-                }.filter { search.isEmpty || $0.name.localizedStandardContains(search) }
+                }
                 if !unlinked.isEmpty {
-                    ForEach(unlinked) { artifact in
-                        HStack(spacing: 14) {
-                            if !artifact.imageAsset.isEmpty { Image(artifact.imageAsset).resizable().scaledToFit().frame(width: 52, height: 64) }
-                            VStack(alignment: .leading, spacing: 6) { Text(artifact.name).font(.headline); GPSBadge(coordinates: artifact.coordinates).foregroundStyle(.cyan) }
-                            Spacer()
-                            NavigationLink(value: GuideDestination.map("artifact-" + artifact.id)) { Image(systemName: "map.fill") }.accessibilityLabel("Show artifact on map")
-                        }.cardStyle()
+                    LazyVGrid(columns: [GridItem(.adaptive(minimum: 230), spacing: 12)], spacing: 12) {
+                        ForEach(unlinked) { artifact in
+                            NavigationLink(value: GuideDestination.artifact(artifact.id)) {
+                                HStack(spacing: 8) {
+                                    Image(artifact.imageAsset).resizable().scaledToFit().frame(width: 28, height: 34)
+                                    Text(artifact.name).font(.subheadline.bold()).multilineTextAlignment(.leading)
+                                }.frame(maxWidth: .infinity, alignment: .leading).padding(12)
+                            }.buttonStyle(.plain).background(.white.opacity(0.05), in: RoundedRectangle(cornerRadius: 12))
+                        }
                     }
                 }
                 if map.exploration?.routes.isEmpty == true, map.exploration?.artifacts.isEmpty == true, let record = map.expansion {
                     ExpansionProfile(record: record).cardStyle()
                 }
-                LazyVGrid(columns: [GridItem(.adaptive(minimum: 240, maximum: 340), spacing: 16)], spacing: 16) {
-                ForEach((map.exploration?.routes ?? []).filter { search.isEmpty || $0.name.localizedStandardContains(search) || $0.artifacts(in: map).contains { $0.name.localizedStandardContains(search) } }) { route in
-                    NavigationLink(value: GuideDestination.cave(route.id)) {
-                        SquareGuideTile(title: route.name, subtitle: route.artifacts(in: map).map { $0.name.replacingOccurrences(of: "Artifact of the ", with: "") }.joined(separator: " · "), gps: route.entrances.first?.coordinates ?? "Deep ocean") {
-                            Image(route.imageAsset).resizable().scaledToFill()
-                        }
-                    }.buttonStyle(.plain).accessibilityIdentifier("route-" + route.id)
+                LazyVGrid(columns: [GridItem(.adaptive(minimum: 180, maximum: 260), spacing: 12)], spacing: 12) {
+                    ForEach(map.exploration?.routes ?? []) { route in
+                        NavigationLink(value: GuideDestination.cave(route.id)) {
+                            VStack(alignment: .leading, spacing: 6) {
+                                CaveRoutePhoto(route: route, map: map).frame(height: 85).clipped()
+                                VStack(alignment: .leading, spacing: 5) {
+                                    Text(route.name).font(.subheadline.bold()).lineLimit(2)
+                                    ForEach(route.artifacts(in: map)) { artifact in
+                                        HStack(spacing: 5) {
+                                            Image(artifact.imageAsset).resizable().scaledToFit().frame(width: 20, height: 24)
+                                            Text(artifact.name).font(.system(size: 11, weight: .medium)).fixedSize(horizontal: false, vertical: true)
+                                        }
+                                    }
+                                }.padding(.horizontal, 9).padding(.bottom, 9)
+                            }.frame(maxWidth: .infinity, alignment: .leading)
+                                .background(.white.opacity(0.05), in: RoundedRectangle(cornerRadius: 12))
+                                .clipShape(RoundedRectangle(cornerRadius: 12))
+                        }.buttonStyle(.plain).accessibilityIdentifier("route-" + route.id)
+                    }
                 }
-                }
-            }.padding(24).frame(maxWidth: 1100).frame(maxWidth: .infinity)
-        }.searchable(text: $search, prompt: "Search caves or artifacts")
-            .background(Color(red: 0.025, green: 0.045, blue: 0.065))
+            }.padding(16).frame(maxWidth: 1200).frame(maxWidth: .infinity)
+        }.background(Color(red: 0.025, green: 0.045, blue: 0.065))
     }
 }
+
+struct CaveRouteAtlas: View {
+    let route: CaveRoute
+    let map: ArkMap
+    @State private var resetToken = UUID()
+    private var locations: [MapLocation] {
+        MapLocation.all(in: map).filter { $0.routeID == route.id && ($0.layer == .artifact || $0.layer == .cave) }
+    }
+    var body: some View {
+        let size = UIImage(named: map.imageAsset)?.size ?? CGSize(width: 1, height: 1)
+        ZoomableMap(imageAsset: map.imageAsset, mapName: map.name, resetToken: resetToken, action: .fit, locations: locations, focusID: nil, select: { _ in })
+            .aspectRatio(size.width / max(1, size.height), contentMode: .fit)
+            .clipShape(RoundedRectangle(cornerRadius: 14))
+            .overlay(alignment: .bottomLeading) {
+                if let entrance = locations.first(where: { $0.layer == .cave }) {
+                    HStack(spacing: 6) {
+                        Image(MapLayer.cave.illustration).resizable().scaledToFit().frame(width: 22, height: 22)
+                        GPSBadge(coordinates: entrance.coordinates).font(.caption).foregroundStyle(.cyan)
+                    }.padding(8).background(.black.opacity(0.82), in: RoundedRectangle(cornerRadius: 9)).padding(8)
+                }
+            }
+            .accessibilityIdentifier("cave-route-map-" + route.id)
+    }
+}
+
 struct CaveRouteDetail: View {
     @Environment(\.arkMap) private var map
     @State private var showFullVideo = false
     let route: CaveRoute
     var body: some View {
         ScrollView {
-            VStack(alignment: .leading, spacing: 22) {
+            VStack(alignment: .leading, spacing: 16) {
+                Text(route.name).font(.system(size: 32, weight: .bold)).accessibilityIdentifier("cave-detail-name")
                 HStack(alignment: .top, spacing: 18) {
-                    VStack(alignment: .leading, spacing: 6) {
-                        routePhoto.frame(width: 230, height: 160)
-                        if route.imageAsset.hasPrefix("Map-") {
-                            Text("Terrain overview").font(.caption).foregroundStyle(.secondary)
-                        }
-                    }
-                    VStack(alignment: .leading, spacing: 12) {
+                    VStack(alignment: .leading, spacing: 10) {
+                        CaveRoutePhoto(route: route, map: map).frame(height: 145).clipShape(RoundedRectangle(cornerRadius: 12))
                         ForEach(route.artifacts(in: map)) { artifact in
-                            HStack(spacing: 12) {
-                                Image(artifact.imageAsset).resizable().scaledToFit().frame(width: 56, height: 64)
-                                VStack(alignment: .leading, spacing: 6) {
-                                    Text(artifact.name.replacingOccurrences(of: "Artifact of the ", with: "")).font(.headline)
-                                    GPSBadge(coordinates: artifact.coordinates)
-                                }
-                            }
-                        }
-                        ForEach(route.entrances) { entrance in
                             HStack(spacing: 10) {
-                                Image(systemName: "mountain.2.fill").foregroundStyle(.orange)
-                                VStack(alignment: .leading, spacing: 4) {
-                                    Text(entrance.label).font(.caption)
-                                    GPSBadge(coordinates: entrance.coordinates)
-                                }
-                                if entrance.isInsideAtlas {
-                                    NavigationLink(value: GuideDestination.map("entrance-" + entrance.id)) { Image(systemName: "map") }
-                                    .accessibilityLabel("Show cave entrance on map").accessibilityIdentifier("show-entrance-" + entrance.id)
-                                } else {
-                                    Text("Outside this map image").font(.caption).foregroundStyle(.secondary)
+                                Image(artifact.imageAsset).resizable().scaledToFit().frame(width: 32, height: 38)
+                                VStack(alignment: .leading, spacing: 3) {
+                                    Text(artifact.name).font(.subheadline.bold())
+                                    GPSBadge(coordinates: artifact.coordinates).font(.caption).foregroundStyle(.cyan)
                                 }
                             }
                         }
-                    }
-                    Spacer(minLength: 0)
+                    }.frame(maxWidth: .infinity, alignment: .leading)
+                    CaveRouteAtlas(route: route, map: map).frame(maxWidth: .infinity)
                 }
-                if AtlasReferenceLocations.references(in: map).contains(where: { $0.routeID == route.id && $0.kind == .caveEntrance }) {
-                    Text("Atlas reference · confirm with in-game GPS").font(.caption).foregroundStyle(.secondary)
-                }
-                RoutePreparation(items: route.kit)
                 if let guide = map.caveGIFs.first(where: { $0.routeID == route.id }) {
                     CaveGIFWalkthrough(guide: guide).id(map.rawValue + route.id)
                 }
-                VisualBrief(text: route.notes).cardStyle()
-                if map.caveGIFs.first(where: { $0.routeID == route.id }) == nil,
-                   let reference = AtlasReferenceLocations.references(in: map).first(where: { $0.routeID == route.id }),
-                   let link = reference.walkthroughURL, let url = URL(string: link) {
-                    Link(destination: url) { Label("Watch walkthrough", systemImage: "play.rectangle.fill") }
-                        .accessibilityIdentifier("walkthrough-" + route.id)
-                }
-
+                RoutePreparation(items: route.kit)
                 if let video = map.caveVideos.first(where: { $0.routeID == route.id }) {
-                    Button {
-                        showFullVideo.toggle()
-                    } label: {
-                        HStack {
-                            Label("Full video", systemImage: "play.rectangle")
-                            Spacer()
-                            Image(systemName: showFullVideo ? "chevron.up" : "chevron.down")
-                        }.contentShape(Rectangle())
-                    }.buttonStyle(.plain)
-                        .accessibilityIdentifier("full-cave-video-" + route.id)
+                    Button { showFullVideo.toggle() } label: {
+                        HStack { Label("Source video", systemImage: "play.rectangle"); Spacer(); Image(systemName: showFullVideo ? "chevron.up" : "chevron.down") }
+                    }.buttonStyle(.plain).accessibilityIdentifier("full-cave-video-" + route.id)
                         .accessibilityValue(showFullVideo ? "Expanded" : "Collapsed")
                     if showFullVideo { CaveVideoTimeline(guide: video) }
+                } else if let reference = AtlasReferenceLocations.references(in: map).first(where: { $0.routeID == route.id }),
+                          let link = reference.walkthroughURL, let url = URL(string: link) {
+                    Link(destination: url) { Label("Watch source walkthrough", systemImage: "play.rectangle.fill") }.accessibilityIdentifier("walkthrough-" + route.id)
                 }
-
-            }.padding(24).frame(maxWidth: 1000).frame(maxWidth: .infinity)
-        }.navigationTitle(route.name).navigationBarTitleDisplayMode(.inline)
-    }
-    private var routePhoto: some View {
-        GeometryReader { geometry in
-            Image(route.imageAsset).resizable().scaledToFill()
-                .frame(width: geometry.size.width, height: geometry.size.height).clipped()
-        }.clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
+            }.padding(18).frame(maxWidth: 1100).frame(maxWidth: .infinity)
+        }.navigationTitle("").navigationBarTitleDisplayMode(.inline)
     }
 }
 struct ArtifactDetail: View {

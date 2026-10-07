@@ -56,6 +56,7 @@ struct CaveGIFWalkthrough: View {
     @State private var selectedSectionID: String?
     @State private var selectedIndex = 0
     @State private var isVisible = false
+    @State private var isPaused = false
 
     private var section: CaveGIFSection? {
         guide.sections.first(where: { $0.id == selectedSectionID }) ?? guide.sections.first
@@ -71,6 +72,7 @@ struct CaveGIFWalkthrough: View {
                         ForEach(guide.sections) { option in
                             Button(option.title) {
                                 selectedIndex = 0
+                                isPaused = false
                                 selectedSectionID = option.id
                             }.accessibilityIdentifier("gif-section-option-" + option.id)
                         }
@@ -86,7 +88,13 @@ struct CaveGIFWalkthrough: View {
                         ForEach(Array(section.steps.enumerated()), id: \.element.id) { page, item in
                             ZStack {
                                 if page == index && isVisible && scenePhase == .active, let url = item.gifURL {
-                                    AutoCaveGIF(step: item, url: url).id(item.gif)
+                                    AutoCaveGIF(step: item, url: url, isPaused: isPaused) {
+                                        if selectedIndex < section.steps.count - 1 { selectedIndex += 1 }
+                                        else if let current = guide.sections.firstIndex(where: { $0.id == section.id }), current + 1 < guide.sections.count {
+                                            selectedIndex = 0
+                                            selectedSectionID = guide.sections[current + 1].id
+                                        } else { isPaused = true }
+                                    }.id(item.gif)
                                 } else if abs(page - index) <= 1, let poster = item.posterImage {
                                     Image(uiImage: poster).resizable().scaledToFit()
                                 }
@@ -95,7 +103,11 @@ struct CaveGIFWalkthrough: View {
                             .background(.black)
                             .accessibilityElement(children: .ignore)
                             .accessibilityLabel(item.title)
-                            .accessibilityValue(page == index && isVisible && scenePhase == .active ? "Playing" : "Not selected")
+                            .contentShape(Rectangle())
+                            .onTapGesture { isPaused.toggle() }
+                            .accessibilityAddTraits(.isButton)
+                            .accessibilityAction { isPaused.toggle() }
+                            .accessibilityValue(page == index && isVisible && scenePhase == .active ? (isPaused ? "Paused" : "Playing") : "Not selected")
                             .accessibilityIdentifier("cave-gif-\(guide.routeID)-\(item.id)")
                             .tag(page)
                         }
@@ -116,7 +128,7 @@ struct CaveGIFWalkthrough: View {
                     ScrollView(.horizontal) {
                         LazyHStack(spacing: 12) {
                             ForEach(Array(section.steps.enumerated()), id: \.element.id) { card, item in
-                                Button { withAnimation { selectedIndex = card } } label: {
+                                Button { isPaused = false; withAnimation { selectedIndex = card } } label: {
                                     VStack(alignment: .leading, spacing: 8) {
                                         ZStack(alignment: .topLeading) {
                                             if let poster = item.posterThumbnail {
@@ -156,7 +168,13 @@ struct CaveGIFWalkthrough: View {
 struct AutoCaveGIF: View {
     let step: CaveGIFStep
     let url: URL
+    let isPaused: Bool
+    let onEnd: (() -> Void)?
     @State private var isReady = false
+
+    init(step: CaveGIFStep, url: URL, isPaused: Bool = false, onEnd: (() -> Void)? = nil) {
+        self.step = step; self.url = url; self.isPaused = isPaused; self.onEnd = onEnd
+    }
 
     var body: some View {
         ZStack {
@@ -164,9 +182,13 @@ struct AutoCaveGIF: View {
                 Image(uiImage: poster).resizable().scaledToFit()
             }
             if url.pathExtension == "mp4" {
-                LocalCaveLoop(url: url) { isReady = true }.opacity(isReady ? 1 : 0)
+                LocalCaveLoop(url: url, isPaused: isPaused, onEnd: onEnd) { isReady = true }.opacity(isReady ? 1 : 0)
             } else {
-                LocalCaveGIF(url: url) { isReady = true }.opacity(isReady ? 1 : 0)
+                LocalCaveGIF(url: url, isPaused: isPaused) { isReady = true }.opacity(isReady ? 1 : 0)
+            }
+            if isPaused {
+                Image(systemName: "play.fill").font(.title2).foregroundStyle(.white)
+                    .padding(16).background(.black.opacity(0.6), in: Circle()).allowsHitTesting(false)
             }
         }
     }
@@ -174,6 +196,7 @@ struct AutoCaveGIF: View {
 
 private struct LocalCaveGIF: UIViewRepresentable {
     let url: URL
+    let isPaused: Bool
     let onReady: () -> Void
 
     final class Coordinator: NSObject, WKNavigationDelegate {
@@ -195,13 +218,15 @@ private struct LocalCaveGIF: UIViewRepresentable {
             // One active clip; no source video, audio, network request or decoded UIImage frame array.
             let html = """
             <html><head><meta name="viewport" content="width=device-width, initial-scale=1"></head>
-            <body style="margin:0;background:#000;overflow:hidden"><img alt="" style="width:100%;height:100%;object-fit:contain" src="data:image/gif;base64,\(data.base64EncodedString())"></body></html>
+            <body style="margin:0;background:#000;overflow:hidden"><img id="clip" alt="" style="width:100%;height:100%;object-fit:contain" src="data:image/gif;base64,\(data.base64EncodedString())"><canvas id="paused" style="display:none;width:100%;height:100%;object-fit:contain"></canvas></body></html>
             """
             view.loadHTMLString(html, baseURL: nil)
         }
         return view
     }
-    func updateUIView(_ view: WKWebView, context: Context) {}
+    func updateUIView(_ view: WKWebView, context: Context) {
+        view.evaluateJavaScript("var i=document.getElementById('clip'),c=document.getElementById('paused');if(i&&c){if(" + String(isPaused) + "){c.width=i.naturalWidth;c.height=i.naturalHeight;c.getContext('2d').drawImage(i,0,0);c.style.display='block';i.style.display='none';}else{c.style.display='none';i.style.display='block';}}", completionHandler: nil)
+    }
     static func dismantleUIView(_ view: WKWebView, coordinator: Coordinator) {
         view.navigationDelegate = nil
         view.stopLoading()
@@ -217,15 +242,18 @@ private final class CaveLoopSurface: UIView {
 
 private struct LocalCaveLoop: UIViewRepresentable {
     let url: URL
+    let isPaused: Bool
+    let onEnd: (() -> Void)?
     let onReady: () -> Void
     final class Coordinator {
-        var player: AVQueuePlayer?
-        var looper: AVPlayerLooper?
+        var player: AVPlayer?
         var observation: NSKeyValueObservation?
+        var endObserver: NSObjectProtocol?
         func stop() {
             observation?.invalidate(); observation = nil
-            player?.pause(); looper?.disableLooping(); looper = nil
-            player?.removeAllItems(); player = nil
+            if let endObserver { NotificationCenter.default.removeObserver(endObserver) }
+            endObserver = nil
+            player?.pause(); player?.replaceCurrentItem(with: nil); player = nil
         }
     }
     func makeCoordinator() -> Coordinator { Coordinator() }
@@ -233,22 +261,30 @@ private struct LocalCaveLoop: UIViewRepresentable {
         let surface = CaveLoopSurface()
         surface.backgroundColor = .clear
         surface.isUserInteractionEnabled = false
-        let player = AVQueuePlayer()
+        let item = AVPlayerItem(url: url)
+        let player = AVPlayer(playerItem: item)
         player.isMuted = true
         player.allowsExternalPlayback = false
         player.automaticallyWaitsToMinimizeStalling = false
-        let item = AVPlayerItem(url: url)
         context.coordinator.player = player
-        context.coordinator.looper = AVPlayerLooper(player: player, templateItem: item)
+        context.coordinator.endObserver = NotificationCenter.default.addObserver(forName: .AVPlayerItemDidPlayToEndTime, object: item, queue: .main) { [weak player] _ in
+            if let onEnd { onEnd() } else { player?.seek(to: .zero); player?.play() }
+        }
         surface.playerLayer.player = player
         surface.playerLayer.videoGravity = .resizeAspect
         context.coordinator.observation = surface.playerLayer.observe(\.isReadyForDisplay, options: [.initial, .new]) { layer, _ in
             if layer.isReadyForDisplay { DispatchQueue.main.async { onReady() } }
         }
-        player.play()
+        if !isPaused { player.play() }
         return surface
     }
-    func updateUIView(_ surface: CaveLoopSurface, context: Context) {}
+    func updateUIView(_ surface: CaveLoopSurface, context: Context) {
+        guard let player = context.coordinator.player else { return }
+        if isPaused { player.pause() } else {
+            if let item = player.currentItem, player.currentTime() >= item.duration { player.seek(to: .zero) }
+            player.play()
+        }
+    }
     static func dismantleUIView(_ surface: CaveLoopSurface, coordinator: Coordinator) {
         coordinator.stop(); surface.playerLayer.player = nil
     }

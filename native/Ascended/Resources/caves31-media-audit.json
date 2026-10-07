@@ -1,0 +1,441 @@
+{
+  "reviewedAt": "2026-10-08",
+  "method": "Inspected first and final local poster contact sheets for all 32 existing sections; inspected provenance interval continuity. This is not a fresh full-motion review of all source videos.",
+  "walkthroughMode": "Automatically plays consecutive bundled MP4 clips then the next section in catalog order, tap pauses/resumes; final route clip finishes paused. Branch sections remain separately selectable. Existing source edit gaps and branch transitions remain.",
+  "maps": {
+    "ragnarok": {
+      "routes": [
+        {
+          "routeID": "wyvern",
+          "sections": 1,
+          "clips": 3,
+          "intervalGaps": [],
+          "walkingOnlyFreshlyVerified": false
+        },
+        {
+          "routeID": "ocean",
+          "sections": 1,
+          "clips": 3,
+          "intervalGaps": [],
+          "walkingOnlyFreshlyVerified": false
+        },
+        {
+          "routeID": "jungle",
+          "sections": 1,
+          "clips": 16,
+          "intervalGaps": [
+            {
+              "section": "hunter",
+              "omittedSourceSeconds": [
+                40,
+                60
+              ]
+            },
+            {
+              "section": "hunter",
+              "omittedSourceSeconds": [
+                243,
+                264
+              ]
+            }
+          ],
+          "walkingOnlyFreshlyVerified": false
+        },
+        {
+          "routeID": "carnivorous",
+          "sections": 2,
+          "clips": 18,
+          "intervalGaps": [
+            {
+              "section": "immune",
+              "omittedSourceSeconds": [
+                28,
+                37
+              ]
+            },
+            {
+              "section": "immune",
+              "omittedSourceSeconds": [
+                46,
+                67
+              ]
+            },
+            {
+              "section": "cunning",
+              "omittedSourceSeconds": [
+                39,
+                58
+              ]
+            },
+            {
+              "section": "cunning",
+              "omittedSourceSeconds": [
+                129,
+                139
+              ]
+            }
+          ],
+          "walkingOnlyFreshlyVerified": false
+        },
+        {
+          "routeID": "frozen",
+          "sections": 1,
+          "clips": 53,
+          "intervalGaps": [
+            {
+              "section": "pack",
+              "omittedSourceSeconds": [
+                585,
+                594
+              ]
+            },
+            {
+              "section": "pack",
+              "omittedSourceSeconds": [
+                618,
+                630
+              ]
+            },
+            {
+              "section": "pack",
+              "omittedSourceSeconds": [
+                644,
+                682
+              ]
+            },
+            {
+              "section": "pack",
+              "omittedSourceSeconds": [
+                696,
+                740
+              ]
+            }
+          ],
+          "walkingOnlyFreshlyVerified": false
+        },
+        {
+          "routeID": "labyrinth",
+          "sections": 5,
+          "clips": 96,
+          "intervalGaps": [
+            {
+              "section": "entry",
+              "omittedSourceSeconds": [
+                6,
+                24
+              ]
+            }
+          ],
+          "walkingOnlyFreshlyVerified": false
+        }
+      ],
+      "routeCount": 6,
+      "clipCount": 189
+    },
+    "the-island": {
+      "routes": [
+        {
+          "routeID": "lower-south",
+          "sections": 1,
+          "clips": 7,
+          "intervalGaps": [],
+          "walkingOnlyFreshlyVerified": false
+        },
+        {
+          "routeID": "central",
+          "sections": 1,
+          "clips": 4,
+          "intervalGaps": [],
+          "walkingOnlyFreshlyVerified": false
+        },
+        {
+          "routeID": "lava",
+          "sections": 1,
+          "clips": 12,
+          "intervalGaps": [],
+          "walkingOnlyFreshlyVerified": false
+        },
+        {
+          "routeID": "upper-south",
+          "sections": 1,
+          "clips": 17,
+          "intervalGaps": [],
+          "walkingOnlyFreshlyVerified": false
+        },
+        {
+          "routeID": "north-west",
+          "sections": 1,
+          "clips": 6,
+          "intervalGaps": [],
+          "walkingOnlyFreshlyVerified": false
+        },
+        {
+          "routeID": "lost-faith",
+          "sections": 1,
+          "clips": 21,
+          "intervalGaps": [
+            {
+              "section": "brute",
+              "omittedSourceSeconds": [
+                243,
+                253
+              ]
+            }
+          ],
+          "walkingOnlyFreshlyVerified": false
+        },
+        {
+          "routeID": "lost-hope",
+          "sections": 1,
+          "clips": 15,
+          "intervalGaps": [
+            {
+              "section": "cunning",
+              "omittedSourceSeconds": [
+                318,
+                355
+              ]
+            }
+          ],
+          "walkingOnlyFreshlyVerified": false
+        },
+        {
+          "routeID": "north-east",
+          "sections": 1,
+          "clips": 24,
+          "intervalGaps": [],
+          "walkingOnlyFreshlyVerified": false
+        },
+        {
+          "routeID": "swamp",
+          "sections": 1,
+          "clips": 15,
+          "intervalGaps": [
+            {
+              "section": "immune",
+              "omittedSourceSeconds": [
+                178,
+                194
+              ]
+            }
+          ],
+          "walkingOnlyFreshlyVerified": false
+        },
+        {
+          "routeID": "snow",
+          "sections": 1,
+          "clips": 27,
+          "intervalGaps": [
+            {
+              "section": "strong-tek",
+              "omittedSourceSeconds": [
+                169,
+                202
+              ]
+            },
+            {
+              "section": "strong-tek",
+              "omittedSourceSeconds": [
+                349,
+                364
+              ]
+            }
+          ],
+          "walkingOnlyFreshlyVerified": false
+        }
+      ],
+      "routeCount": 10,
+      "clipCount": 148
+    },
+    "the-center": {
+      "routes": [
+        {
+          "routeID": "lava-oasis",
+          "sections": 1,
+          "clips": 10,
+          "intervalGaps": [
+            {
+              "section": "hunter",
+              "omittedSourceSeconds": [
+                6,
+                30
+              ]
+            },
+            {
+              "section": "hunter",
+              "omittedSourceSeconds": [
+                110,
+                120
+              ]
+            }
+          ],
+          "walkingOnlyFreshlyVerified": false
+        },
+        {
+          "routeID": "south-ice",
+          "sections": 1,
+          "clips": 8,
+          "intervalGaps": [
+            {
+              "section": "skylord",
+              "omittedSourceSeconds": [
+                6,
+                39
+              ]
+            },
+            {
+              "section": "skylord",
+              "omittedSourceSeconds": [
+                102,
+                114
+              ]
+            }
+          ],
+          "walkingOnlyFreshlyVerified": false
+        },
+        {
+          "routeID": "floating",
+          "sections": 1,
+          "clips": 10,
+          "intervalGaps": [
+            {
+              "section": "devious",
+              "omittedSourceSeconds": [
+                27,
+                39
+              ]
+            },
+            {
+              "section": "devious",
+              "omittedSourceSeconds": [
+                51,
+                56
+              ]
+            }
+          ],
+          "walkingOnlyFreshlyVerified": false
+        },
+        {
+          "routeID": "trench",
+          "sections": 1,
+          "clips": 12,
+          "intervalGaps": [],
+          "walkingOnlyFreshlyVerified": false
+        },
+        {
+          "routeID": "cliffside",
+          "sections": 1,
+          "clips": 10,
+          "intervalGaps": [],
+          "walkingOnlyFreshlyVerified": false
+        },
+        {
+          "routeID": "jungle",
+          "sections": 1,
+          "clips": 11,
+          "intervalGaps": [
+            {
+              "section": "immune",
+              "omittedSourceSeconds": [
+                124,
+                188
+              ]
+            }
+          ],
+          "walkingOnlyFreshlyVerified": false
+        },
+        {
+          "routeID": "underworld",
+          "sections": 1,
+          "clips": 15,
+          "intervalGaps": [
+            {
+              "section": "pack",
+              "omittedSourceSeconds": [
+                6,
+                31
+              ]
+            },
+            {
+              "section": "pack",
+              "omittedSourceSeconds": [
+                46,
+                54
+              ]
+            }
+          ],
+          "walkingOnlyFreshlyVerified": false
+        },
+        {
+          "routeID": "north-ice",
+          "sections": 2,
+          "clips": 29,
+          "intervalGaps": [
+            {
+              "section": "clever",
+              "omittedSourceSeconds": [
+                6,
+                54
+              ]
+            },
+            {
+              "section": "clever",
+              "omittedSourceSeconds": [
+                74,
+                80
+              ]
+            },
+            {
+              "section": "clever",
+              "omittedSourceSeconds": [
+                126,
+                140
+              ]
+            },
+            {
+              "section": "devourer",
+              "omittedSourceSeconds": [
+                322,
+                330
+              ]
+            }
+          ],
+          "walkingOnlyFreshlyVerified": false
+        },
+        {
+          "routeID": "lava",
+          "sections": 2,
+          "clips": 25,
+          "intervalGaps": [
+            {
+              "section": "strong",
+              "omittedSourceSeconds": [
+                6,
+                54
+              ]
+            }
+          ],
+          "walkingOnlyFreshlyVerified": false
+        }
+      ],
+      "routeCount": 9,
+      "clipCount": 130
+    }
+  },
+  "newSourceResearch": {
+    "searchCLI": "tony-youtube doctor ready; search rejected API parameters/key. Used public web search fallback.",
+    "selectedCandidate": {
+      "url": "https://www.youtube.com/watch?v=IqSiyoFUtn8",
+      "title": "Ragnarok: How To Complete Lifes Labyrinth Puzzle Cave in ARK Survival Ascended",
+      "channel": "Jonna-X",
+      "durationSeconds": 2101,
+      "status": "Metadata inspected; licensed section 0-90s acquisition failed: ffmpeg exited with code 8. No new source footage imported, no bypass attempted. Walking-only status unverified."
+    },
+    "limitations": "Search did not establish replacement walking-only footage for every Ragnarok and Center route."
+  },
+  "limits": [
+    "Ragnarok contact sheets visibly include flyer approach, swimming and Creative Pack demonstration; The Center visibly includes mount and flyer footage. Existing labels/prerequisites remain.",
+    "Island snow guide requires Tek; underwater routes require swimming. No assertion that all routes are uninterrupted walking survival runs.",
+    "Expansion-map cave routes without verified photos now show Photo pending rather than duplicate map-thumbnail imagery."
+  ]
+}
