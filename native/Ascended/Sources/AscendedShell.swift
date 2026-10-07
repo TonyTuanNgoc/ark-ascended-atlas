@@ -5,15 +5,15 @@ enum Destination: String, CaseIterable, Identifiable {
     var id: String { rawValue }
     var title: String {
         switch self {
-        case .story: "ARK Story"
-        case .equipment: "Equipment Library"
+        case .story: "ASA Story"
+        case .equipment: "Equipment"
         case .expansions: "Maps & DLC"
-        case .farming: "Resource Farming"
-        case .information: "Map Information"
-        case .bases: "Build a Base"
-        case .map: "Map"
+        case .farming: "Farming"
+        case .information: "Field Guide"
+        case .bases: "Base Building"
+        case .map: "Atlas"
         case .dinos: "Creatures"
-        case .bosses: "Boss Campaign"
+        case .bosses: "Bosses"
         case .exploration: "Artifacts & Caves"
         }
     }
@@ -91,53 +91,42 @@ struct MapSessionShell: View {
         chooseMap(map)
     }
     private var header: some View {
-        VStack(spacing: 8) {
-            ZStack {
-                Image("ArkLogo").resizable().scaledToFit()
-                    .frame(width: 146, height: 106)
-                    .accessibilityIdentifier("ascended-header-logo")
-                    .accessibilityLabel("ARK Survival Ascended")
-                HStack {
-                    currentMapHeader
-                    Spacer(minLength: 154)
-                    UnifiedMapsPicker(map: map, choose: selectMap)
-                }
-            }.frame(height: 110)
+        HStack(spacing: 12) {
+            Image("ArkLogo").resizable().scaledToFit()
+                .frame(width: 64, height: 70)
+                .accessibilityIdentifier("ascended-header-logo")
+                .accessibilityLabel("ARK Survival Ascended")
+            UnifiedMapsPicker(map: map, choose: selectMap)
             ScrollViewReader { reader in
                 ScrollView(.horizontal, showsIndicators: false) {
-                    HStack(spacing: 6) {
+                    HStack(spacing: 5) {
                         ForEach(Destination.allCases.filter { $0 != .expansions }) { item in
                             Button {
                                 selection = item
                                 withAnimation(.easeInOut(duration: 0.2)) { reader.scrollTo(item.id, anchor: .center) }
                             } label: {
                                 VStack(spacing: 4) {
-                                    NavigationAvatar(asset: item.avatarAsset, size: 34)
-                                    Text(item.title).font(.system(size: 12, weight: .semibold))
+                                    NavigationAvatar(asset: item.avatarAsset, size: 30)
+                                    Text(item.title).font(.system(size: 11, weight: .semibold))
                                         .multilineTextAlignment(.center).lineLimit(2)
-                                        .fixedSize(horizontal: false, vertical: true).frame(height: 34)
-                                }.frame(width: 98, height: 72).padding(5)
-                                    .background(selection == item ? Color.cyan.opacity(0.12) : Color.white.opacity(0.025), in: RoundedRectangle(cornerRadius: 14))
-                                    .overlay { RoundedRectangle(cornerRadius: 14).strokeBorder(selection == item ? Color.cyan.opacity(0.5) : .clear, lineWidth: 1) }
-                                    .contentShape(RoundedRectangle(cornerRadius: 14))
+                                        .fixedSize(horizontal: false, vertical: true).frame(height: 28)
+                                }.frame(width: 84, height: 68)
+                                    .background(selection == item ? Color.cyan.opacity(0.12) : Color.white.opacity(0.025), in: RoundedRectangle(cornerRadius: 12))
+                                    .overlay { RoundedRectangle(cornerRadius: 12).strokeBorder(selection == item ? Color.cyan.opacity(0.5) : .clear, lineWidth: 1) }
+                                    .contentShape(RoundedRectangle(cornerRadius: 12))
                             }.buttonStyle(.plain).foregroundStyle(selection == item ? .white : .white.opacity(0.78))
                                 .accessibilityIdentifier("section-" + item.rawValue)
                                 .accessibilityValue(selection == item ? "Selected" : "Not selected")
                                 .id(item.id)
                         }
-                    }.padding(.horizontal, 2)
+                    }
                 }.accessibilityIdentifier("top-module-navigation")
             }
-        }.padding(.horizontal, 16).padding(.top, 4).padding(.bottom, 12)
+        }.frame(height: 70).padding(.horizontal, 14).padding(.vertical, 8)
             .background(LinearGradient(colors: [Color(red: 0.07, green: 0.10, blue: 0.12), Color(red: 0.035, green: 0.05, blue: 0.065)], startPoint: .top, endPoint: .bottom))
             .overlay(alignment: .bottom) { Rectangle().fill(.white.opacity(0.08)).frame(height: 1) }
     }
-    private var currentMapHeader: some View {
-        VStack(alignment: .leading, spacing: 5) {
-            CurrentMapArtwork(map: map).frame(width: 132)
-            Text(map.name).font(.subheadline.weight(.semibold)).lineLimit(1)
-        }.frame(width: 150, alignment: .leading).accessibilityIdentifier("current-map-header")
-    }
+
 }
 
 private struct CurrentMapArtwork: View {
@@ -170,14 +159,16 @@ private struct UnifiedMapsPicker: View {
     @State private var presented = false
     var body: some View {
         Button { presented.toggle() } label: {
-            VStack(spacing: 4) {
-                NavigationAvatar(asset: "Nav-maps", size: 34)
-                HStack(spacing: 4) { Text("Maps"); Image(systemName: "chevron.down").font(.system(size: 9, weight: .bold)) }
-                    .font(.caption.weight(.semibold)).frame(height: 30)
-            }.frame(width: 88, height: 72).padding(5)
-                .background(.white.opacity(0.065), in: RoundedRectangle(cornerRadius: 14))
-                .contentShape(RoundedRectangle(cornerRadius: 14))
-        }.buttonStyle(.plain).accessibilityIdentifier("maps-picker")
+            VStack(alignment: .leading, spacing: 4) {
+                CurrentMapArtwork(map: map).frame(width: 114, height: 46, alignment: .leading)
+                HStack(spacing: 5) {
+                    Text(map.name).font(.system(size: 12, weight: .semibold)).lineLimit(1).minimumScaleFactor(0.75)
+                    Image(systemName: "chevron.down").font(.system(size: 9, weight: .bold))
+                }
+            }.frame(width: 128, height: 68, alignment: .leading)
+                .contentShape(RoundedRectangle(cornerRadius: 10))
+
+        }.buttonStyle(.plain).accessibilityIdentifier("maps-picker").accessibilityLabel("Maps · " + map.name)
             .popover(isPresented: $presented) {
                 ScrollView {
                     VStack(alignment: .leading, spacing: 18) {

@@ -2,6 +2,7 @@
 No download is performed. Each selection is manually reviewed against source frames.
 """
 import json, subprocess, hashlib
+from functools import lru_cache
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
 ROOT=Path(__file__).resolve().parents[1]
@@ -51,35 +52,46 @@ SELECTIONS={
 'center-extra-lava-chitin':(553,479,527,'Creature combat'),
 'center-extra-blue-basics':(15,21,25,'Resource view')
 }
+@lru_cache(maxsize=None)
 def probe(path):
  q=subprocess.run(['ffprobe','-v','error','-show_streams','-show_format','-of','json',str(path)],capture_output=True,check=True);return json.loads(q.stdout)
 def main():
  OUT.mkdir(parents=True,exist_ok=True)
  paths=json.loads((MEDIA/'resource-clip-review/paths.json').read_text())
- spots=json.loads((ROOT/'native/Ascended/Resources/verified-resource-spots.json').read_text())['spots']
+ catalog=json.loads((ROOT/'native/Ascended/Resources/verified-resource-spots.json').read_text()); spots=catalog['spots']
  extra=json.loads((ROOT/'tools/resource_clip_selections.json').read_text())
  jobs=[]; guides=[]
  for s in spots:
   selection=extra.get(s['id']); a,b,c=selection['starts'] if selection else SELECTIONS[s['id']][:3]; title=selection['title'] if selection else SELECTIONS[s['id']][3]; source=Path(paths[s['videoID']]); stream=next(x for x in probe(source)['streams'] if x['codec_type']=='video');steps=[]
-  for idx,(start,label) in enumerate(zip([a,b,c],['Area / coordinates','Approach / surroundings',title])):
+  for idx,(start,label) in enumerate(zip([a,b,c],selection.get('labels',['Terrain','Route',title]) if selection else ['Terrain','Route',title])):
    name='Resource-'+s['id']+'-'+str(idx+1);duration=selection['duration'] if selection else 3.5
    step=dict(id=name,title=label,loop=name,poster=name,startSeconds=start,endSeconds=start+duration,sourceURL=f"https://www.youtube.com/watch?v={s['videoID']}&t={int(start)}s")
    steps.append(step);jobs.append((source,start,duration,name))
+   assert selection and selection.get("visualReview"), f"Unreviewed selection: {s['id']}"
+   step["mapOverlayVisible"]=False
+   step["visualReview"]=selection["visualReview"][idx]
   demonstrated=title in ['Harvesting','Dam loot','Creature loot']
   guides.append(dict(sourceAcquisition=selection['sourceAcquisition'] if selection else 'Approved complete local source cache',spotID=s['id'],map=s['map'],sourcePlane=s.get('sourcePlane',s['map']),sourceCoordinateScope=s.get('sourceCoordinateScope','Filmed camera/waypoint region'),videoID=s['videoID'],sourceURL=s['sourceURL'],rightsBasis='licensed',rightsApproval='User confirmed licenses for all source videos',sourceWidth=stream['width'],sourceHeight=stream['height'],coordinateEvidence=s['coordinateEvidence'],inventoryEvidence=s['inventoryEvidence'],harvestDemonstrated=demonstrated,evidenceLimitations=selection.get('evidenceLimitations','') if selection and selection.get('evidenceLimitations') else '' if demonstrated else 'The source shows this region and resource or method. A completed harvest and measured yield are not demonstrated in these clips.',steps=steps))
  def render(job):
   source,start,duration,name=job;movie=OUT/(name+'.mp4');poster=OUT/(name+'.jpg')
   # Always regenerate: a same-duration file can belong to a different source/interval.
-  subprocess.run(['ffmpeg','-v','error','-y','-ss',str(start),'-i',str(source),'-t',str(duration),'-an','-vf','scale=1280:720:force_original_aspect_ratio=decrease,pad=1280:720:(ow-iw)/2:(oh-ih)/2,fps=24','-c:v','libx264','-preset','veryfast','-crf','23','-pix_fmt','yuv420p','-movflags','+faststart',str(movie)],check=True)
+  subprocess.run(['ffmpeg','-v','error','-y','-ss',str(start),'-i',str(source),'-t',str(duration),'-an','-vf',"scale=w='min(1920,iw)':h='min(1080,ih)':force_original_aspect_ratio=decrease:force_divisible_by=2,fps=24",'-c:v','libx264','-preset','veryfast','-crf','20','-pix_fmt','yuv420p','-movflags','+faststart',str(movie)],check=True)
   subprocess.run(['ffmpeg','-v','error','-y','-i',str(movie),'-frames:v','1','-q:v','3',str(poster)],check=True)
   info=probe(movie);assert not any(x['codec_type']=='audio' for x in info['streams']);assert abs(float(info['format']['duration'])-duration)<.15
   return name,hashlib.sha256(movie.read_bytes()).hexdigest()
  hashes=dict(ThreadPoolExecutor(max_workers=4).map(render,jobs))
- for g in guides:
+ for spot,g in zip(spots,guides):
+  # FarmPhoto stills share the reviewed terrain start rather than an old map screen.
+  asset=ROOT/'native/Ascended/Assets.xcassets'/(spot['imageAsset']+'.imageset')/'photo.jpg'
+  asset.write_bytes((OUT/(g['steps'][0]['poster']+'.jpg')).read_bytes())
+  spot['photoSHA256']=hashlib.sha256(asset.read_bytes()).hexdigest()
+  spot['photoSourceSeconds']=g['steps'][0]['startSeconds']
+  spot['photoMapOverlayVisible']=False
   for step in g['steps']:step['sha256']=hashes[step['loop']]
   assert len({step['sha256'] for step in g['steps']})==3
  allmaps=['the-island','the-center','ragnarok','scorched-earth','aberration','extinction','valguero','astraeos','lost-colony','genesis-part-1','genesis-part-1-ocean']
- doc=dict(schemaVersion=1,mediaFormat='Muted H.264 offline loops, 1280x720, 24 fps',guides=guides,coverage=[dict(map=m,verifiedRegions=sum(g['map']==m for g in guides),status='source-verified' if any(g['map']==m for g in guides) else 'needs-video-verification',reason='Filmed GPS regions reviewed against source footage; individual actors and respawns vary.' if any(g['map']==m for g in guides) else 'No licensed source sequence with verified map, GPS, approach and harvest has been validated for this map.') for m in allmaps])
+ doc=dict(schemaVersion=1,mediaFormat='Muted H.264 offline loops, native source resolution capped at 1920x1080 without upscaling, CRF 20, 24 fps',guides=guides,coverage=[dict(map=m,verifiedRegions=sum(g['map']==m for g in guides),status='source-verified' if any(g['map']==m for g in guides) else 'needs-video-verification',reason='Filmed GPS regions reviewed against source footage; individual actors and respawns vary.' if any(g['map']==m for g in guides) else 'No licensed source sequence with verified map, GPS, approach and harvest has been validated for this map.') for m in allmaps])
+ (ROOT/'native/Ascended/Resources/verified-resource-spots.json').write_text(json.dumps(catalog,indent=2)+'\n')
  (ROOT/'native/Ascended/Resources/resource-guides.json').write_text(json.dumps(doc,indent=2)+'\n')
  print(json.dumps(dict(guides=len(guides),clips=len(jobs),bytes=sum(p.stat().st_size for p in OUT.iterdir()),harvestDemonstrated=sum(g['harvestDemonstrated'] for g in guides))))
 if __name__=='__main__':main()

@@ -146,19 +146,19 @@ struct VisualBrief: View {
 struct GPSBadge: View {
     let coordinates: String
     private var numbers: [String] {
-        guard let regex = try? NSRegularExpression(pattern: "[0-9]+\\.[0-9]+") else { return [] }
+        guard let regex = try? NSRegularExpression(pattern: "-?[0-9]+(?:\\.[0-9]+)?") else { return [] }
         let source = coordinates as NSString
         return regex.matches(in: coordinates, range: NSRange(location: 0, length: source.length)).map { source.substring(with: $0.range) }
     }
     var body: some View {
         HStack(spacing: 8) {
             if numbers.count == 2 {
-                Image(systemName: "arrow.up.arrow.down").font(.caption)
+                Text("LAT").font(.caption2.weight(.semibold)).foregroundStyle(.secondary)
                 Text(numbers[0]).monospacedDigit()
                 Divider().frame(height: 16)
-                Image(systemName: "arrow.left.arrow.right").font(.caption)
+                Text("LON").font(.caption2.weight(.semibold)).foregroundStyle(.secondary)
                 Text(numbers[1]).monospacedDigit()
-            } else { Label(coordinates, systemImage: "water.waves") }
+            } else { Text(coordinates) }
         }.font(.subheadline.weight(.semibold)).foregroundStyle(.cyan)
             .padding(.horizontal, 10).padding(.vertical, 7)
             .background(.cyan.opacity(0.08), in: RoundedRectangle(cornerRadius: 9))

@@ -1,0 +1,1306 @@
+{
+  "guides": 54,
+  "clips": 162,
+  "stills": 54,
+  "allDecode": true,
+  "allHashesMatch": true,
+  "allPosterStillsMatch": true,
+  "results": [
+    {
+      "loop": "Resource-center-blue-metal-1",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 4864339,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-center-blue-metal-2",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 4976817,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-center-blue-metal-3",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 4912190,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-center-spire-obsidian-1",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 3894390,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-center-spire-obsidian-2",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 5199664,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-center-spire-obsidian-3",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 5357670,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-center-lava-metal-1",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 3326449,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-center-lava-metal-2",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 5902763,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-center-lava-metal-3",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 8230419,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-center-snow-crystal-1",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 9883491,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-center-snow-crystal-2",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 9488599,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-center-snow-crystal-3",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 8432458,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-center-beaver-pond-1",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 8345531,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-center-beaver-pond-2",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 5388586,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-center-beaver-pond-3",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 5005641,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-center-ring-pearls-1",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 4685665,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-center-ring-pearls-2",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 3068748,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-center-ring-pearls-3",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 2807779,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-center-ice-polymer-1",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 3243941,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-center-ice-polymer-2",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 3543338,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-center-ice-polymer-3",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 6315281,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-underwater-metal-1",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 4867720,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-underwater-metal-2",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 5121279,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-underwater-metal-3",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 4422840,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-dam-lakes-1",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 4059588,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-dam-lakes-2",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 2181984,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-dam-lakes-3",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 699643,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-cactus-route-1",
+      "width": 1920,
+      "height": 1080,
+      "duration": "1.000000",
+      "bytes": 2201091,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-cactus-route-2",
+      "width": 1920,
+      "height": 1080,
+      "duration": "1.000000",
+      "bytes": 2669312,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-cactus-route-3",
+      "width": 1920,
+      "height": 1080,
+      "duration": "1.000000",
+      "bytes": 2402712,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-coast-flowers-1",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 4372029,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-coast-flowers-2",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 6130845,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-coast-flowers-3",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 5499829,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-island-volcano-ore-1",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 3967242,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-island-volcano-ore-2",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 3538901,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-island-volcano-ore-3",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 4458744,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-island-west-black-pearls-1",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 3249784,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-island-west-black-pearls-2",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 2293485,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-island-west-black-pearls-3",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 2430255,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-island-redwood-fiber-1",
+      "width": 1920,
+      "height": 1080,
+      "duration": "0.750000",
+      "bytes": 1155866,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-island-redwood-fiber-2",
+      "width": 1920,
+      "height": 1080,
+      "duration": "0.750000",
+      "bytes": 1326783,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-island-redwood-fiber-3",
+      "width": 1920,
+      "height": 1080,
+      "duration": "0.750000",
+      "bytes": 1351629,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-island-west-starter-1",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 4885143,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-island-west-starter-2",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 4037980,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-island-west-starter-3",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 6100951,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-island-carno-crystal-1",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 4170198,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-island-carno-crystal-2",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 2955325,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-island-carno-crystal-3",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 2467854,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-island-redwood-paste-1",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 4862835,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-island-redwood-paste-2",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 5627604,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-island-redwood-paste-3",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 4382212,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-island-nw-oil-1",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 5727051,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-island-nw-oil-2",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 2962939,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-island-nw-oil-3",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 3628129,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-black-pearl-bed-1",
+      "width": 1920,
+      "height": 1080,
+      "duration": "1.500000",
+      "bytes": 947183,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-black-pearl-bed-2",
+      "width": 1920,
+      "height": 1080,
+      "duration": "1.500000",
+      "bytes": 1066084,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-black-pearl-bed-3",
+      "width": 1920,
+      "height": 1080,
+      "duration": "1.500000",
+      "bytes": 1069340,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-crystal-highland-1",
+      "width": 1920,
+      "height": 1080,
+      "duration": "2.000000",
+      "bytes": 5319159,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-crystal-highland-2",
+      "width": 1920,
+      "height": 1080,
+      "duration": "2.000000",
+      "bytes": 6051267,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-crystal-highland-3",
+      "width": 1920,
+      "height": 1080,
+      "duration": "2.000000",
+      "bytes": 4293166,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-cave-metal-obsidian-1",
+      "width": 1920,
+      "height": 1080,
+      "duration": "1.000000",
+      "bytes": 1180658,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-cave-metal-obsidian-2",
+      "width": 1920,
+      "height": 1080,
+      "duration": "1.000000",
+      "bytes": 1103964,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-cave-metal-obsidian-3",
+      "width": 1920,
+      "height": 1080,
+      "duration": "1.000000",
+      "bytes": 1667235,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-oil-north-shore-1",
+      "width": 1920,
+      "height": 1080,
+      "duration": "2.000000",
+      "bytes": 3064719,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-oil-north-shore-2",
+      "width": 1920,
+      "height": 1080,
+      "duration": "2.000000",
+      "bytes": 2798129,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-oil-north-shore-3",
+      "width": 1920,
+      "height": 1080,
+      "duration": "2.000000",
+      "bytes": 1767996,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-polymer-plants-1",
+      "width": 1920,
+      "height": 1080,
+      "duration": "1.500000",
+      "bytes": 1441772,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-polymer-plants-2",
+      "width": 1920,
+      "height": 1080,
+      "duration": "1.500000",
+      "bytes": 923585,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-polymer-plants-3",
+      "width": 1920,
+      "height": 1080,
+      "duration": "1.500000",
+      "bytes": 2452853,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-flowers-nw-1",
+      "width": 1920,
+      "height": 1080,
+      "duration": "1.500000",
+      "bytes": 2403250,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-flowers-nw-2",
+      "width": 1920,
+      "height": 1080,
+      "duration": "1.500000",
+      "bytes": 2962884,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-flowers-nw-3",
+      "width": 1920,
+      "height": 1080,
+      "duration": "1.500000",
+      "bytes": 2800212,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-pearls-cave-1",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 3823766,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-pearls-cave-2",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 2630763,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-pearls-cave-3",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 3525715,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-silk-fields-1",
+      "width": 1920,
+      "height": 1080,
+      "duration": "1.000000",
+      "bytes": 2720618,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-silk-fields-2",
+      "width": 1920,
+      "height": 1080,
+      "duration": "1.000000",
+      "bytes": 2229897,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-silk-fields-3",
+      "width": 1920,
+      "height": 1080,
+      "duration": "1.000000",
+      "bytes": 2008313,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-sulfur-rocks-1",
+      "width": 1920,
+      "height": 1080,
+      "duration": "0.750000",
+      "bytes": 1294761,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-sulfur-rocks-2",
+      "width": 1920,
+      "height": 1080,
+      "duration": "0.750000",
+      "bytes": 1371479,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-sulfur-rocks-3",
+      "width": 1920,
+      "height": 1080,
+      "duration": "0.750000",
+      "bytes": 1012174,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-salt-columns-1",
+      "width": 1920,
+      "height": 1080,
+      "duration": "1.000000",
+      "bytes": 726683,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-salt-columns-2",
+      "width": 1920,
+      "height": 1080,
+      "duration": "1.000000",
+      "bytes": 697093,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-salt-columns-3",
+      "width": 1920,
+      "height": 1080,
+      "duration": "1.000000",
+      "bytes": 1545973,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-island-ice-polymer-1",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 3398988,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-island-ice-polymer-2",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 3431346,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-island-ice-polymer-3",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 2893895,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-lake-basic-hub-1",
+      "width": 1920,
+      "height": 1080,
+      "duration": "1.500000",
+      "bytes": 2465960,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-lake-basic-hub-2",
+      "width": 1920,
+      "height": 1080,
+      "duration": "1.500000",
+      "bytes": 1699138,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-lake-basic-hub-3",
+      "width": 1920,
+      "height": 1080,
+      "duration": "1.500000",
+      "bytes": 2979899,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-island-surface-pearls-1",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 2812151,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-island-surface-pearls-2",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 4048845,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-island-surface-pearls-3",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 6812907,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-whale-keratin-1",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 3642341,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-whale-keratin-2",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 5850219,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-whale-keratin-3",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 5979071,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-honey-center-redwoods-1",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 4743419,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-honey-center-redwoods-2",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 2537803,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-honey-center-redwoods-3",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 3430897,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-honey-island-redwoods-1",
+      "width": 1920,
+      "height": 1080,
+      "duration": "1.000000",
+      "bytes": 1153944,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-honey-island-redwoods-2",
+      "width": 1920,
+      "height": 1080,
+      "duration": "1.000000",
+      "bytes": 1252226,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-honey-island-redwoods-3",
+      "width": 1920,
+      "height": 1080,
+      "duration": "1.000000",
+      "bytes": 1527331,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-honey-ragnarok-queen-region-1",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 11808399,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-honey-ragnarok-queen-region-2",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 12938985,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-honey-ragnarok-queen-region-3",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 7531822,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-shore-sand-1",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 4047049,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-shore-sand-2",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 5510650,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-shore-sand-3",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 2271595,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-island-swamp-mushrooms-1",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 3462831,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-island-swamp-mushrooms-2",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 6190261,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-island-swamp-mushrooms-3",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 7514848,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-center-extra-swamp-mushrooms-1",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 5347745,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-center-extra-swamp-mushrooms-2",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 5055539,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-center-extra-swamp-mushrooms-3",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 4522301,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-island-east-dam-rares-1",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 5351105,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-island-east-dam-rares-2",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 2216130,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-island-east-dam-rares-3",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 2919388,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-center-extra-lava-chitin-1",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 4400914,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-center-extra-lava-chitin-2",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 4533669,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-center-extra-lava-chitin-3",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 2395643,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-center-extra-blue-basics-1",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 4864339,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-center-extra-blue-basics-2",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 4976817,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-center-extra-blue-basics-3",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 4912190,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-scorched-eastern-metal-1",
+      "width": 1920,
+      "height": 1080,
+      "duration": "1.958333",
+      "bytes": 2056831,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-scorched-eastern-metal-2",
+      "width": 1920,
+      "height": 1080,
+      "duration": "1.958333",
+      "bytes": 2024295,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-scorched-eastern-metal-3",
+      "width": 1920,
+      "height": 1080,
+      "duration": "2.000000",
+      "bytes": 2233611,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-scorched-central-metal-1",
+      "width": 1920,
+      "height": 1080,
+      "duration": "2.000000",
+      "bytes": 1744242,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-scorched-central-metal-2",
+      "width": 1920,
+      "height": 1080,
+      "duration": "2.000000",
+      "bytes": 1670529,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-scorched-central-metal-3",
+      "width": 1920,
+      "height": 1080,
+      "duration": "2.000000",
+      "bytes": 2424202,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-extinction-oil-lake-1",
+      "width": 1920,
+      "height": 1080,
+      "duration": "1.500000",
+      "bytes": 1059715,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-extinction-oil-lake-2",
+      "width": 1920,
+      "height": 1080,
+      "duration": "1.500000",
+      "bytes": 1094628,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-extinction-oil-lake-3",
+      "width": 1920,
+      "height": 1080,
+      "duration": "1.500000",
+      "bytes": 1027218,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-lost-colony-north-metal-1",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 4832003,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-lost-colony-north-metal-2",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 5544368,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-lost-colony-north-metal-3",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 4613370,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-valguero-nw-pearl-lake-1",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 1561534,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-valguero-nw-pearl-lake-2",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 1720477,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-valguero-nw-pearl-lake-3",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 1244863,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-astraeos-phokintos-crystal-1",
+      "width": 1920,
+      "height": 1080,
+      "duration": "1.500000",
+      "bytes": 1335304,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-astraeos-phokintos-crystal-2",
+      "width": 1920,
+      "height": 1080,
+      "duration": "1.500000",
+      "bytes": 1363710,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-astraeos-phokintos-crystal-3",
+      "width": 1920,
+      "height": 1080,
+      "duration": "1.500000",
+      "bytes": 1426047,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-aberration-green-metal-1",
+      "width": 1920,
+      "height": 1080,
+      "duration": "2.000000",
+      "bytes": 2958324,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-aberration-green-metal-2",
+      "width": 1920,
+      "height": 1080,
+      "duration": "2.000000",
+      "bytes": 2380244,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-aberration-green-metal-3",
+      "width": 1920,
+      "height": 1080,
+      "duration": "2.000000",
+      "bytes": 3530405,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-aberration-blue-metal-1",
+      "width": 1920,
+      "height": 1080,
+      "duration": "2.000000",
+      "bytes": 2977854,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-aberration-blue-metal-2",
+      "width": 1920,
+      "height": 1080,
+      "duration": "2.000000",
+      "bytes": 2302537,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-aberration-blue-metal-3",
+      "width": 1920,
+      "height": 1080,
+      "duration": "2.000000",
+      "bytes": 2219766,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-genesis-ocean-waterfall-cave-1",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 7372597,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-genesis-ocean-waterfall-cave-2",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 6702890,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-genesis-ocean-waterfall-cave-3",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 4055357,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-genesis-arctic-metal-field-1",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 6057619,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-genesis-arctic-metal-field-2",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 4579892,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-genesis-arctic-metal-field-3",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 5542673,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-river-sap-tap-1",
+      "width": 1920,
+      "height": 1080,
+      "duration": "1.500000",
+      "bytes": 1915246,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-river-sap-tap-2",
+      "width": 1920,
+      "height": 1080,
+      "duration": "1.500000",
+      "bytes": 1955867,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-river-sap-tap-3",
+      "width": 1920,
+      "height": 1080,
+      "duration": "1.500000",
+      "bytes": 967508,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-blue-gem-cavern-1",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 2526664,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-blue-gem-cavern-2",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 2627637,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-blue-gem-cavern-3",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 4106851,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-highland-wild-vegetables-1",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 5312852,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-highland-wild-vegetables-2",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 6124593,
+      "decoded": true
+    },
+    {
+      "loop": "Resource-rag-highland-wild-vegetables-3",
+      "width": 1920,
+      "height": 1080,
+      "duration": "3.000000",
+      "bytes": 6696192,
+      "decoded": true
+    }
+  ]
+}

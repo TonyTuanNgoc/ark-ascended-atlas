@@ -56,7 +56,8 @@ final class Ascended19UITests:XCTestCase {
         XCTAssertTrue(maps.isHittable);XCTAssertTrue(app.frame.contains(maps.frame))
         let logo=app.images["ascended-header-logo"]
         XCTAssertTrue(logo.exists)
-        XCTAssertEqual(logo.frame.midX,app.frame.midX,accuracy:2)
+        XCTAssertTrue(app.frame.contains(logo.frame))
+        XCTAssertEqual(logo.frame.midY, maps.frame.midY, accuracy: 4)
         for layer in ["Cửa hang","Resources","My Locations"] {
             let label=app.buttons["expand-layer-"+layer]
             XCTAssertTrue(label.exists,"Expected portrait layer label: \(layer)")
@@ -64,7 +65,7 @@ final class Ascended19UITests:XCTestCase {
         }
         let screenshot=XCUIScreen.main.screenshot()
         XCTAssertLessThan(screenshot.image.size.width,screenshot.image.size.height,"Screenshot pixels must prove portrait, not just a sensor command")
-        let geometry=XCTAttachment(string:"App: \(app.frame); screenshot: \(screenshot.image.size); Maps: \(maps.frame); centered logo: \(logo.frame)")
+        let geometry=XCTAttachment(string:"App: \(app.frame); screenshot: \(screenshot.image.size); Maps: \(maps.frame); single-row logo: \(logo.frame)")
         geometry.name="Portrait-verified-geometry";geometry.lifetime = .keepAlways;add(geometry)
         let portrait=XCTAttachment(screenshot:screenshot);portrait.name="Portrait-map-header";portrait.lifetime = .keepAlways;add(portrait)
     }

@@ -93,7 +93,7 @@ struct ResourceFarmingScreen: View {
                     VStack(alignment: .leading, spacing: 10) {
                         FarmDetails(spot: spot)
                         NavigationLink { MapScreen(initialFocus: "farm-" + spot.id) } label: { Label("Map", systemImage: "map.fill") }.buttonStyle(.bordered)
-                    }.cardStyle().accessibilityIdentifier("farm-card-" + spot.id)
+                    }.cardStyle().accessibilityElement(children: .contain).accessibilityIdentifier("farm-card-" + spot.id)
                 }
             }.padding(20)
             VStack(alignment: .leading, spacing: 14) {
@@ -181,6 +181,7 @@ struct ResourceClipGuide: Decodable {
 struct ResourceClipStep: Decodable, Identifiable {
     let id, title, loop, poster, sourceURL: String
     let startSeconds, endSeconds: Double
+    let mapOverlayVisible: Bool?
     private func mediaURL(_ name: String, extension ext: String) -> URL? {
         Bundle.main.url(forResource: name, withExtension: ext, subdirectory: "ResourceClips") ?? Bundle.main.url(forResource: name, withExtension: ext)
     }
@@ -207,7 +208,7 @@ private struct ResourceClipWalkthrough: View {
                         Image(uiImage: image).resizable().scaledToFit()
                     }
                     if step.url == nil { Text("Clip unavailable").font(.caption).foregroundStyle(.white) }
-                }.aspectRatio(16 / 9, contentMode: .fit).clipShape(RoundedRectangle(cornerRadius: 10))
+                }.aspectRatio(16 / 9, contentMode: .fit).clipShape(RoundedRectangle(cornerRadius: 12))
                     .accessibilityIdentifier("farmClip-" + step.id)
                 HStack(spacing: 6) {
                     ForEach(Array(guide.steps.enumerated()), id: \.element.id) { index, item in
@@ -215,9 +216,10 @@ private struct ResourceClipWalkthrough: View {
                             VStack(spacing:4) {
                                 if let image=item.caveStep.posterImage {Image(uiImage:image).resizable().scaledToFit().clipShape(RoundedRectangle(cornerRadius:6))}
                                 Text(item.title).font(.caption2).multilineTextAlignment(.center)
-                            }.frame(maxWidth:.infinity).padding(3)
-                                .background(selectedIndex==index ? Color.orange.opacity(0.15):Color.clear,in:RoundedRectangle(cornerRadius:8))
-                        }.buttonStyle(.bordered).tint(selectedIndex == index ? .orange : .gray)
+                            }.frame(maxWidth:.infinity).padding(6)
+                                .background(selectedIndex == index ? Color.cyan.opacity(0.12) : Color.white.opacity(0.04), in: RoundedRectangle(cornerRadius: 10))
+                                .overlay { RoundedRectangle(cornerRadius: 10).strokeBorder(selectedIndex == index ? Color.cyan.opacity(0.6) : Color.white.opacity(0.08), lineWidth: 1) }
+                        }.buttonStyle(.plain).foregroundStyle(selectedIndex == index ? .white : .secondary)
                             .accessibilityIdentifier("farmClipSelect-" + item.id)
                     }
                 }

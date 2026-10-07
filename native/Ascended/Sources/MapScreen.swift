@@ -230,7 +230,7 @@ struct ZoomableMap: UIViewRepresentable {
 }
 
 final class MapScrollView: UIScrollView {
-    let imageView = UIImageView()
+    let imageView = MapTerrainView(frame: .zero)
     private let resourceSurface = ResourceSurface()
     private var resources: [MapLocation] = []
     var focusID: String?
@@ -306,7 +306,7 @@ final class MapScrollView: UIScrollView {
         guard imageView.bounds.width > 0, bounds.width > 0, bounds.height > 0 else { return }
         let fit = max(bounds.width / imageView.bounds.width, bounds.height / imageView.bounds.height)
         minimumZoomScale = fit
-        maximumZoomScale = fit * 8
+        maximumZoomScale = max(fit * 32, 1)
         setZoomScale(fit, animated: animated)
         centerMap()
         let offset = CGPoint(x: max(0, (imageView.bounds.width * fit - bounds.width) / 2), y: max(0, (imageView.bounds.height * fit - bounds.height) / 2))

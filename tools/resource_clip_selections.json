@@ -1,163 +1,3794 @@
 {
   "scorched-eastern-metal": {
     "starts": [
-      23,
-      19,
-      30
+      30,
+      32,
+      34
     ],
-    "title": "Harvesting",
-    "duration": 3.5,
-    "sourceAcquisition": "Initial native video chunks received through licensed tony-youtube download; full download ended with HTTP 403. Only fully decoded received ranges are used."
+    "title": "Resource view",
+    "duration": 2,
+    "sourceAcquisition": "Initial native video chunks received through licensed tony-youtube download; full download ended with HTTP 403. Only fully decoded received ranges are used.",
+    "labels": [
+      "Terrain",
+      "Route",
+      "Resource view"
+    ],
+    "visualReview": [
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          30.0,
+          30.25,
+          30.5,
+          30.75,
+          31.0,
+          31.25,
+          31.5,
+          31.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          32.0,
+          32.25,
+          32.5,
+          32.75,
+          33.0,
+          33.25,
+          33.5,
+          33.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          34.0,
+          34.25,
+          34.5,
+          34.75,
+          35.0,
+          35.25,
+          35.5,
+          35.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      }
+    ]
   },
   "scorched-central-metal": {
     "starts": [
-      43,
-      39,
-      47
+      49,
+      51,
+      53
     ],
     "title": "Resource view",
-    "duration": 3.5,
-    "sourceAcquisition": "Initial native video chunks received through licensed tony-youtube download; full download ended with HTTP 403. Only fully decoded received ranges are used."
+    "duration": 2,
+    "sourceAcquisition": "Initial native video chunks received through licensed tony-youtube download; full download ended with HTTP 403. Only fully decoded received ranges are used.",
+    "labels": [
+      "Terrain",
+      "Route",
+      "Resource view"
+    ],
+    "visualReview": [
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          49.0,
+          49.25,
+          49.5,
+          49.75,
+          50.0,
+          50.25,
+          50.5,
+          50.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          51.0,
+          51.25,
+          51.5,
+          51.75,
+          52.0,
+          52.25,
+          52.5,
+          52.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          53.0,
+          53.25,
+          53.5,
+          53.75,
+          54.0,
+          54.25,
+          54.5,
+          54.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      }
+    ]
   },
   "extinction-oil-lake": {
     "starts": [
-      21,
-      17,
-      19
+      16,
+      18,
+      19.5
     ],
     "title": "Resource view",
     "duration": 1.5,
-    "sourceAcquisition": "Initial native video chunks received through licensed tony-youtube download; full download ended with HTTP 403. Only fully decoded received ranges are used."
+    "sourceAcquisition": "Initial native video chunks received through licensed tony-youtube download; full download ended with HTTP 403. Only fully decoded received ranges are used.",
+    "labels": [
+      "Terrain",
+      "Route",
+      "Resource view"
+    ],
+    "visualReview": [
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          16.0,
+          16.25,
+          16.5,
+          16.75,
+          17.0,
+          17.25
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          18.0,
+          18.25,
+          18.5,
+          18.75,
+          19.0,
+          19.25
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          19.5,
+          19.75,
+          20.0,
+          20.25,
+          20.5,
+          20.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      }
+    ]
   },
   "lost-colony-north-metal": {
     "starts": [
-      53,
       20,
-      28
+      24,
+      27
     ],
     "title": "Resource view",
-    "duration": 3.5,
-    "sourceAcquisition": "Initial native video chunks received through licensed tony-youtube download; full download ended with HTTP 403. Only fully decoded received ranges are used."
+    "duration": 3,
+    "sourceAcquisition": "Initial native video chunks received through licensed tony-youtube download; full download ended with HTTP 403. Only fully decoded received ranges are used.",
+    "labels": [
+      "Terrain",
+      "Route",
+      "Resource view"
+    ],
+    "visualReview": [
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          20.0,
+          20.25,
+          20.5,
+          20.75,
+          21.0,
+          21.25,
+          21.5,
+          21.75,
+          22.0,
+          22.25,
+          22.5,
+          22.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          24.0,
+          24.25,
+          24.5,
+          24.75,
+          25.0,
+          25.25,
+          25.5,
+          25.75,
+          26.0,
+          26.25,
+          26.5,
+          26.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          27.0,
+          27.25,
+          27.5,
+          27.75,
+          28.0,
+          28.25,
+          28.5,
+          28.75,
+          29.0,
+          29.25,
+          29.5,
+          29.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      }
+    ]
   },
   "valguero-nw-pearl-lake": {
     "starts": [
-      49,
-      34,
-      43
+      35,
+      38,
+      41
     ],
     "title": "Resource view",
-    "duration": 3.5,
-    "sourceAcquisition": "Initial native video chunks received through licensed tony-youtube download; full download ended with HTTP 403. Only fully decoded received ranges are used."
+    "duration": 3,
+    "sourceAcquisition": "Initial native video chunks received through licensed tony-youtube download; full download ended with HTTP 403. Only fully decoded received ranges are used.",
+    "labels": [
+      "Terrain",
+      "Route",
+      "Resource view"
+    ],
+    "visualReview": [
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          35.0,
+          35.25,
+          35.5,
+          35.75,
+          36.0,
+          36.25,
+          36.5,
+          36.75,
+          37.0,
+          37.25,
+          37.5,
+          37.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          38.0,
+          38.25,
+          38.5,
+          38.75,
+          39.0,
+          39.25,
+          39.5,
+          39.75,
+          40.0,
+          40.25,
+          40.5,
+          40.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          41.0,
+          41.25,
+          41.5,
+          41.75,
+          42.0,
+          42.25,
+          42.5,
+          42.75,
+          43.0,
+          43.25,
+          43.5,
+          43.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      }
+    ]
   },
   "astraeos-phokintos-crystal": {
     "starts": [
-      18,
-      12,
-      15
+      11,
+      12.5,
+      14
     ],
     "title": "Resource view",
-    "duration": 2.5,
-    "sourceAcquisition": "Initial native video chunks received through licensed tony-youtube download; full download ended with HTTP 403. Only fully decoded received ranges are used."
+    "duration": 1.5,
+    "sourceAcquisition": "Initial native video chunks received through licensed tony-youtube download; full download ended with HTTP 403. Only fully decoded received ranges are used.",
+    "labels": [
+      "Terrain",
+      "Route",
+      "Resource view"
+    ],
+    "visualReview": [
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          11.0,
+          11.25,
+          11.5,
+          11.75,
+          12.0,
+          12.25
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          12.5,
+          12.75,
+          13.0,
+          13.25,
+          13.5,
+          13.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          14.0,
+          14.25,
+          14.5,
+          14.75,
+          15.0,
+          15.25
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      }
+    ]
   },
   "aberration-green-metal": {
     "starts": [
-      28,
       17,
-      22
+      20,
+      23
     ],
     "title": "Resource view",
-    "duration": 3.5,
-    "sourceAcquisition": "Initial native video chunks received through licensed tony-youtube download; full download ended with HTTP 403. Only fully decoded received ranges are used."
+    "duration": 2,
+    "sourceAcquisition": "Initial native video chunks received through licensed tony-youtube download; full download ended with HTTP 403. Only fully decoded received ranges are used.",
+    "labels": [
+      "Terrain",
+      "Route",
+      "Resource view"
+    ],
+    "visualReview": [
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          17.0,
+          17.25,
+          17.5,
+          17.75,
+          18.0,
+          18.25,
+          18.5,
+          18.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          20.0,
+          20.25,
+          20.5,
+          20.75,
+          21.0,
+          21.25,
+          21.5,
+          21.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          23.0,
+          23.25,
+          23.5,
+          23.75,
+          24.0,
+          24.25,
+          24.5,
+          24.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      }
+    ]
   },
   "aberration-blue-metal": {
     "starts": [
-      19,
       11,
+      14,
       29
     ],
     "title": "Resource view",
-    "duration": 3.5,
-    "sourceAcquisition": "Initial native video chunks received through licensed tony-youtube download; full download ended with HTTP 403. Only fully decoded received ranges are used."
+    "duration": 2,
+    "sourceAcquisition": "Initial native video chunks received through licensed tony-youtube download; full download ended with HTTP 403. Only fully decoded received ranges are used.",
+    "labels": [
+      "Terrain",
+      "Route",
+      "Resource view"
+    ],
+    "visualReview": [
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          11.0,
+          11.25,
+          11.5,
+          11.75,
+          12.0,
+          12.25,
+          12.5,
+          12.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          14.0,
+          14.25,
+          14.5,
+          14.75,
+          15.0,
+          15.25,
+          15.5,
+          15.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          29.0,
+          29.25,
+          29.5,
+          29.75,
+          30.0,
+          30.25,
+          30.5,
+          30.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      }
+    ]
   },
   "genesis-ocean-waterfall-cave": {
     "starts": [
-      58,
       65,
+      69,
       79
     ],
     "title": "Resource view",
-    "duration": 3.5,
-    "sourceAcquisition": "Initial native video chunks received through licensed tony-youtube download; full download ended with HTTP 403. Only fully decoded received ranges are used."
+    "duration": 3,
+    "sourceAcquisition": "Initial native video chunks received through licensed tony-youtube download; full download ended with HTTP 403. Only fully decoded received ranges are used.",
+    "labels": [
+      "Terrain",
+      "Route",
+      "Resource view"
+    ],
+    "visualReview": [
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          65.0,
+          65.25,
+          65.5,
+          65.75,
+          66.0,
+          66.25,
+          66.5,
+          66.75,
+          67.0,
+          67.25,
+          67.5,
+          67.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          69.0,
+          69.25,
+          69.5,
+          69.75,
+          70.0,
+          70.25,
+          70.5,
+          70.75,
+          71.0,
+          71.25,
+          71.5,
+          71.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          79.0,
+          79.25,
+          79.5,
+          79.75,
+          80.0,
+          80.25,
+          80.5,
+          80.75,
+          81.0,
+          81.25,
+          81.5,
+          81.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      }
+    ]
   },
   "genesis-arctic-metal-field": {
     "starts": [
-      43.5,
       10,
+      14,
       35
     ],
     "title": "Resource view",
-    "duration": 3.5,
-    "sourceAcquisition": "Initial native video chunks received through licensed tony-youtube download; full download ended with HTTP 403. Only fully decoded received ranges are used."
+    "duration": 3,
+    "sourceAcquisition": "Initial native video chunks received through licensed tony-youtube download; full download ended with HTTP 403. Only fully decoded received ranges are used.",
+    "labels": [
+      "Terrain",
+      "Route",
+      "Resource view"
+    ],
+    "visualReview": [
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          10.0,
+          10.25,
+          10.5,
+          10.75,
+          11.0,
+          11.25,
+          11.5,
+          11.75,
+          12.0,
+          12.25,
+          12.5,
+          12.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          14.0,
+          14.25,
+          14.5,
+          14.75,
+          15.0,
+          15.25,
+          15.5,
+          15.75,
+          16.0,
+          16.25,
+          16.5,
+          16.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          35.0,
+          35.25,
+          35.5,
+          35.75,
+          36.0,
+          36.25,
+          36.5,
+          36.75,
+          37.0,
+          37.25,
+          37.5,
+          37.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      }
+    ]
   },
   "rag-polymer-plants": {
     "starts": [
-      716,
-      721,
-      728
+      725,
+      727,
+      729
     ],
     "title": "Harvesting",
-    "duration": 3.5,
-    "sourceAcquisition": "Approved complete local source cache"
+    "duration": 1.5,
+    "sourceAcquisition": "Approved complete local source cache",
+    "labels": [
+      "Terrain",
+      "Route",
+      "Harvesting"
+    ],
+    "visualReview": [
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          725.0,
+          725.25,
+          725.5,
+          725.75,
+          726.0,
+          726.25
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          727.0,
+          727.25,
+          727.5,
+          727.75,
+          728.0,
+          728.25
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          729.0,
+          729.25,
+          729.5,
+          729.75,
+          730.0,
+          730.25
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      }
+    ]
   },
   "island-redwood-paste": {
     "starts": [
-      652,
       657,
-      659
+      661,
+      665
     ],
-    "title": "Dam loot",
-    "duration": 3.5,
-    "sourceAcquisition": "Approved complete local source cache"
+    "title": "Dam view",
+    "duration": 3,
+    "sourceAcquisition": "Approved complete local source cache",
+    "evidenceLimitations": "The source shows dams and inventory access; these loops do not demonstrate an item transfer or measured yield.",
+    "labels": [
+      "Dam approach",
+      "Route",
+      "Dam view"
+    ],
+    "visualReview": [
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          657.0,
+          657.25,
+          657.5,
+          657.75,
+          658.0,
+          658.25,
+          658.5,
+          658.75,
+          659.0,
+          659.25,
+          659.5,
+          659.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          661.0,
+          661.25,
+          661.5,
+          661.75,
+          662.0,
+          662.25,
+          662.5,
+          662.75,
+          663.0,
+          663.25,
+          663.5,
+          663.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          665.0,
+          665.25,
+          665.5,
+          665.75,
+          666.0,
+          666.25,
+          666.5,
+          666.75,
+          667.0,
+          667.25,
+          667.5,
+          667.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      }
+    ]
   },
   "center-extra-lava-chitin": {
     "starts": [
-      553,
       479,
-      549
+      483,
+      527
     ],
-    "title": "Creature loot",
-    "duration": 3.5,
-    "sourceAcquisition": "Approved complete local source cache"
+    "title": "Creature combat",
+    "duration": 3,
+    "sourceAcquisition": "Approved complete local source cache",
+    "labels": [
+      "Creature combat",
+      "Creature combat",
+      "Creature combat"
+    ],
+    "visualReview": [
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          479.0,
+          479.25,
+          479.5,
+          479.75,
+          480.0,
+          480.25,
+          480.5,
+          480.75,
+          481.0,
+          481.25,
+          481.5,
+          481.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          483.0,
+          483.25,
+          483.5,
+          483.75,
+          484.0,
+          484.25,
+          484.5,
+          484.75,
+          485.0,
+          485.25,
+          485.5,
+          485.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          527.0,
+          527.25,
+          527.5,
+          527.75,
+          528.0,
+          528.25,
+          528.5,
+          528.75,
+          529.0,
+          529.25,
+          529.5,
+          529.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      }
+    ]
   },
   "rag-river-sap-tap": {
     "starts": [
-      934.5,
-      927.5,
-      931
+      928,
+      929.5,
+      932
     ],
     "title": "Tap inventory",
-    "duration": 3.5,
+    "duration": 1.5,
     "sourceAcquisition": "Approved complete local source cache",
-    "evidenceLimitations": "The source shows an installed Sap Tap and Sap in its inventory. A collection transfer or elapsed production time is not demonstrated."
+    "evidenceLimitations": "The source shows an installed Sap Tap and Sap in its inventory. A collection transfer or elapsed production time is not demonstrated.",
+    "labels": [
+      "Tree / tap view",
+      "Surroundings",
+      "Tap inventory"
+    ],
+    "visualReview": [
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          928.0,
+          928.25,
+          928.5,
+          928.75,
+          929.0,
+          929.25
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          929.5,
+          929.75,
+          930.0,
+          930.25,
+          930.5,
+          930.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          932.0,
+          932.25,
+          932.5,
+          932.75,
+          933.0,
+          933.25
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      }
+    ]
   },
   "rag-blue-gem-cavern": {
     "starts": [
-      1173,
-      1168,
-      1178
+      1167,
+      1169,
+      1179
     ],
     "title": "Harvesting",
-    "duration": 3.5,
-    "sourceAcquisition": "Approved complete local source cache"
+    "duration": 3,
+    "sourceAcquisition": "Approved complete local source cache",
+    "labels": [
+      "Terrain",
+      "Route",
+      "Harvesting"
+    ],
+    "visualReview": [
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          1167.0,
+          1167.25,
+          1167.5,
+          1167.75,
+          1168.0,
+          1168.25,
+          1168.5,
+          1168.75,
+          1169.0,
+          1169.25,
+          1169.5,
+          1169.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          1169.0,
+          1169.25,
+          1169.5,
+          1169.75,
+          1170.0,
+          1170.25,
+          1170.5,
+          1170.75,
+          1171.0,
+          1171.25,
+          1171.5,
+          1171.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          1179.0,
+          1179.25,
+          1179.5,
+          1179.75,
+          1180.0,
+          1180.25,
+          1180.5,
+          1180.75,
+          1181.0,
+          1181.25,
+          1181.5,
+          1181.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      }
+    ]
   },
   "rag-highland-wild-vegetables": {
     "starts": [
-      786,
-      788,
-      795
+      792,
+      796,
+      800
     ],
     "title": "Harvesting",
-    "duration": 3.5,
-    "sourceAcquisition": "Approved complete local source cache"
+    "duration": 3,
+    "sourceAcquisition": "Approved complete local source cache",
+    "labels": [
+      "Terrain",
+      "Route",
+      "Harvesting"
+    ],
+    "visualReview": [
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          792.0,
+          792.25,
+          792.5,
+          792.75,
+          793.0,
+          793.25,
+          793.5,
+          793.75,
+          794.0,
+          794.25,
+          794.5,
+          794.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          796.0,
+          796.25,
+          796.5,
+          796.75,
+          797.0,
+          797.25,
+          797.5,
+          797.75,
+          798.0,
+          798.25,
+          798.5,
+          798.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          800.0,
+          800.25,
+          800.5,
+          800.75,
+          801.0,
+          801.25,
+          801.5,
+          801.75,
+          802.0,
+          802.25,
+          802.5,
+          802.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      }
+    ]
+  },
+  "center-blue-metal": {
+    "starts": [
+      21,
+      25,
+      29
+    ],
+    "duration": 3,
+    "title": "Resource view",
+    "sourceAcquisition": "Approved complete local source cache",
+    "labels": [
+      "Terrain",
+      "Route",
+      "Resource view"
+    ],
+    "visualReview": [
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          21.0,
+          21.25,
+          21.5,
+          21.75,
+          22.0,
+          22.25,
+          22.5,
+          22.75,
+          23.0,
+          23.25,
+          23.5,
+          23.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          25.0,
+          25.25,
+          25.5,
+          25.75,
+          26.0,
+          26.25,
+          26.5,
+          26.75,
+          27.0,
+          27.25,
+          27.5,
+          27.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          29.0,
+          29.25,
+          29.5,
+          29.75,
+          30.0,
+          30.25,
+          30.5,
+          30.75,
+          31.0,
+          31.25,
+          31.5,
+          31.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      }
+    ]
+  },
+  "center-spire-obsidian": {
+    "starts": [
+      56,
+      60,
+      64
+    ],
+    "duration": 3,
+    "title": "Resource view",
+    "sourceAcquisition": "Approved complete local source cache",
+    "labels": [
+      "Terrain",
+      "Route",
+      "Resource view"
+    ],
+    "visualReview": [
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          56.0,
+          56.25,
+          56.5,
+          56.75,
+          57.0,
+          57.25,
+          57.5,
+          57.75,
+          58.0,
+          58.25,
+          58.5,
+          58.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          60.0,
+          60.25,
+          60.5,
+          60.75,
+          61.0,
+          61.25,
+          61.5,
+          61.75,
+          62.0,
+          62.25,
+          62.5,
+          62.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          64.0,
+          64.25,
+          64.5,
+          64.75,
+          65.0,
+          65.25,
+          65.5,
+          65.75,
+          66.0,
+          66.25,
+          66.5,
+          66.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      }
+    ]
+  },
+  "center-lava-metal": {
+    "starts": [
+      186,
+      190,
+      194
+    ],
+    "duration": 3,
+    "title": "Resource view",
+    "sourceAcquisition": "Approved complete local source cache",
+    "labels": [
+      "Terrain",
+      "Route",
+      "Resource view"
+    ],
+    "visualReview": [
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          186.0,
+          186.25,
+          186.5,
+          186.75,
+          187.0,
+          187.25,
+          187.5,
+          187.75,
+          188.0,
+          188.25,
+          188.5,
+          188.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          190.0,
+          190.25,
+          190.5,
+          190.75,
+          191.0,
+          191.25,
+          191.5,
+          191.75,
+          192.0,
+          192.25,
+          192.5,
+          192.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          194.0,
+          194.25,
+          194.5,
+          194.75,
+          195.0,
+          195.25,
+          195.5,
+          195.75,
+          196.0,
+          196.25,
+          196.5,
+          196.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      }
+    ]
+  },
+  "center-snow-crystal": {
+    "starts": [
+      295,
+      299,
+      303
+    ],
+    "duration": 3,
+    "title": "Resource view",
+    "sourceAcquisition": "Approved complete local source cache",
+    "labels": [
+      "Terrain",
+      "Route",
+      "Resource view"
+    ],
+    "visualReview": [
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          295.0,
+          295.25,
+          295.5,
+          295.75,
+          296.0,
+          296.25,
+          296.5,
+          296.75,
+          297.0,
+          297.25,
+          297.5,
+          297.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          299.0,
+          299.25,
+          299.5,
+          299.75,
+          300.0,
+          300.25,
+          300.5,
+          300.75,
+          301.0,
+          301.25,
+          301.5,
+          301.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          303.0,
+          303.25,
+          303.5,
+          303.75,
+          304.0,
+          304.25,
+          304.5,
+          304.75,
+          305.0,
+          305.25,
+          305.5,
+          305.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      }
+    ]
+  },
+  "center-beaver-pond": {
+    "starts": [
+      509,
+      513,
+      517
+    ],
+    "duration": 3,
+    "title": "Dam inventory",
+    "sourceAcquisition": "Approved complete local source cache",
+    "labels": [
+      "Terrain",
+      "Route",
+      "Dam inventory"
+    ],
+    "visualReview": [
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          509.0,
+          509.25,
+          509.5,
+          509.75,
+          510.0,
+          510.25,
+          510.5,
+          510.75,
+          511.0,
+          511.25,
+          511.5,
+          511.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          513.0,
+          513.25,
+          513.5,
+          513.75,
+          514.0,
+          514.25,
+          514.5,
+          514.75,
+          515.0,
+          515.25,
+          515.5,
+          515.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          517.0,
+          517.25,
+          517.5,
+          517.75,
+          518.0,
+          518.25,
+          518.5,
+          518.75,
+          519.0,
+          519.25,
+          519.5,
+          519.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      }
+    ],
+    "evidenceLimitations": "The source shows a dam and inventory access. A completed transfer and measured yield are not demonstrated in the selected loops."
+  },
+  "center-ring-pearls": {
+    "starts": [
+      546,
+      551,
+      555
+    ],
+    "duration": 3,
+    "title": "Resource view",
+    "sourceAcquisition": "Approved complete local source cache",
+    "labels": [
+      "Terrain",
+      "Route",
+      "Resource view"
+    ],
+    "visualReview": [
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          546.0,
+          546.25,
+          546.5,
+          546.75,
+          547.0,
+          547.25,
+          547.5,
+          547.75,
+          548.0,
+          548.25,
+          548.5,
+          548.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          551.0,
+          551.25,
+          551.5,
+          551.75,
+          552.0,
+          552.25,
+          552.5,
+          552.75,
+          553.0,
+          553.25,
+          553.5,
+          553.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          555.0,
+          555.25,
+          555.5,
+          555.75,
+          556.0,
+          556.25,
+          556.5,
+          556.75,
+          557.0,
+          557.25,
+          557.5,
+          557.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      }
+    ]
+  },
+  "center-ice-polymer": {
+    "starts": [
+      647,
+      651,
+      655
+    ],
+    "duration": 3,
+    "title": "Resource view",
+    "sourceAcquisition": "Approved complete local source cache",
+    "labels": [
+      "Terrain",
+      "Route",
+      "Resource view"
+    ],
+    "visualReview": [
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          647.0,
+          647.25,
+          647.5,
+          647.75,
+          648.0,
+          648.25,
+          648.5,
+          648.75,
+          649.0,
+          649.25,
+          649.5,
+          649.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          651.0,
+          651.25,
+          651.5,
+          651.75,
+          652.0,
+          652.25,
+          652.5,
+          652.75,
+          653.0,
+          653.25,
+          653.5,
+          653.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          655.0,
+          655.25,
+          655.5,
+          655.75,
+          656.0,
+          656.25,
+          656.5,
+          656.75,
+          657.0,
+          657.25,
+          657.5,
+          657.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      }
+    ]
+  },
+  "rag-underwater-metal": {
+    "starts": [
+      102,
+      106,
+      110
+    ],
+    "duration": 3,
+    "title": "Resource view",
+    "sourceAcquisition": "Approved complete local source cache",
+    "labels": [
+      "Terrain",
+      "Route",
+      "Resource view"
+    ],
+    "visualReview": [
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          102.0,
+          102.25,
+          102.5,
+          102.75,
+          103.0,
+          103.25,
+          103.5,
+          103.75,
+          104.0,
+          104.25,
+          104.5,
+          104.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          106.0,
+          106.25,
+          106.5,
+          106.75,
+          107.0,
+          107.25,
+          107.5,
+          107.75,
+          108.0,
+          108.25,
+          108.5,
+          108.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          110.0,
+          110.25,
+          110.5,
+          110.75,
+          111.0,
+          111.25,
+          111.5,
+          111.75,
+          112.0,
+          112.25,
+          112.5,
+          112.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      }
+    ],
+    "evidenceLimitations": "The loops show ore and underwater approach, without a completed harvest or measured yield."
+  },
+  "rag-dam-lakes": {
+    "starts": [
+      519,
+      523,
+      526
+    ],
+    "duration": 3,
+    "title": "Dam inventory",
+    "sourceAcquisition": "Approved complete local source cache",
+    "labels": [
+      "Terrain",
+      "Route",
+      "Dam inventory"
+    ],
+    "visualReview": [
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          519.0,
+          519.25,
+          519.5,
+          519.75,
+          520.0,
+          520.25,
+          520.5,
+          520.75,
+          521.0,
+          521.25,
+          521.5,
+          521.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          523.0,
+          523.25,
+          523.5,
+          523.75,
+          524.0,
+          524.25,
+          524.5,
+          524.75,
+          525.0,
+          525.25,
+          525.5,
+          525.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          526.0,
+          526.25,
+          526.5,
+          526.75,
+          527.0,
+          527.25,
+          527.5,
+          527.75,
+          528.0,
+          528.25,
+          528.5,
+          528.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      }
+    ],
+    "evidenceLimitations": "The source shows dam inventory contents. A completed transfer and measured yield are not demonstrated in the selected loops."
+  },
+  "rag-cactus-route": {
+    "starts": [
+      748,
+      749,
+      750
+    ],
+    "duration": 1,
+    "title": "Resource view",
+    "sourceAcquisition": "Approved complete local source cache",
+    "labels": [
+      "Terrain",
+      "Route",
+      "Resource view"
+    ],
+    "visualReview": [
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          748.0,
+          748.25,
+          748.5,
+          748.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          749.0,
+          749.25,
+          749.5,
+          749.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          750.0,
+          750.25,
+          750.5,
+          750.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      }
+    ]
+  },
+  "rag-coast-flowers": {
+    "starts": [
+      928,
+      932,
+      936
+    ],
+    "duration": 3,
+    "title": "Harvesting",
+    "sourceAcquisition": "Approved complete local source cache",
+    "labels": [
+      "Terrain",
+      "Route",
+      "Harvesting"
+    ],
+    "visualReview": [
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          928.0,
+          928.25,
+          928.5,
+          928.75,
+          929.0,
+          929.25,
+          929.5,
+          929.75,
+          930.0,
+          930.25,
+          930.5,
+          930.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          932.0,
+          932.25,
+          932.5,
+          932.75,
+          933.0,
+          933.25,
+          933.5,
+          933.75,
+          934.0,
+          934.25,
+          934.5,
+          934.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          936.0,
+          936.25,
+          936.5,
+          936.75,
+          937.0,
+          937.25,
+          937.5,
+          937.75,
+          938.0,
+          938.25,
+          938.5,
+          938.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      }
+    ]
+  },
+  "island-volcano-ore": {
+    "starts": [
+      197,
+      201,
+      205
+    ],
+    "duration": 3,
+    "title": "Resource view",
+    "sourceAcquisition": "Approved complete local source cache",
+    "labels": [
+      "Terrain",
+      "Route",
+      "Resource view"
+    ],
+    "visualReview": [
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          197.0,
+          197.25,
+          197.5,
+          197.75,
+          198.0,
+          198.25,
+          198.5,
+          198.75,
+          199.0,
+          199.25,
+          199.5,
+          199.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          201.0,
+          201.25,
+          201.5,
+          201.75,
+          202.0,
+          202.25,
+          202.5,
+          202.75,
+          203.0,
+          203.25,
+          203.5,
+          203.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          205.0,
+          205.25,
+          205.5,
+          205.75,
+          206.0,
+          206.25,
+          206.5,
+          206.75,
+          207.0,
+          207.25,
+          207.5,
+          207.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      }
+    ]
+  },
+  "island-west-black-pearls": {
+    "starts": [
+      312,
+      315,
+      318
+    ],
+    "duration": 3,
+    "title": "Resource view",
+    "sourceAcquisition": "Approved complete local source cache",
+    "labels": [
+      "Terrain",
+      "Route",
+      "Resource view"
+    ],
+    "visualReview": [
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          312.0,
+          312.25,
+          312.5,
+          312.75,
+          313.0,
+          313.25,
+          313.5,
+          313.75,
+          314.0,
+          314.25,
+          314.5,
+          314.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          315.0,
+          315.25,
+          315.5,
+          315.75,
+          316.0,
+          316.25,
+          316.5,
+          316.75,
+          317.0,
+          317.25,
+          317.5,
+          317.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          318.0,
+          318.25,
+          318.5,
+          318.75,
+          319.0,
+          319.25,
+          319.5,
+          319.75,
+          320.0,
+          320.25,
+          320.5,
+          320.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      }
+    ]
+  },
+  "island-redwood-fiber": {
+    "starts": [
+      466,
+      466.75,
+      467.5
+    ],
+    "duration": 0.75,
+    "title": "Resource view",
+    "sourceAcquisition": "Approved complete local source cache",
+    "labels": [
+      "Terrain",
+      "Route",
+      "Resource view"
+    ],
+    "visualReview": [
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          466.0,
+          466.25,
+          466.5
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          466.75,
+          467.0,
+          467.25
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          467.5,
+          467.75,
+          468.0
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      }
+    ]
+  },
+  "island-west-starter": {
+    "starts": [
+      489,
+      493,
+      511
+    ],
+    "duration": 3,
+    "title": "Shore view",
+    "sourceAcquisition": "Approved complete local source cache",
+    "labels": [
+      "Terrain",
+      "Route",
+      "Shore view"
+    ],
+    "visualReview": [
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          489.0,
+          489.25,
+          489.5,
+          489.75,
+          490.0,
+          490.25,
+          490.5,
+          490.75,
+          491.0,
+          491.25,
+          491.5,
+          491.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          493.0,
+          493.25,
+          493.5,
+          493.75,
+          494.0,
+          494.25,
+          494.5,
+          494.75,
+          495.0,
+          495.25,
+          495.5,
+          495.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          511.0,
+          511.25,
+          511.5,
+          511.75,
+          512.0,
+          512.25,
+          512.5,
+          512.75,
+          513.0,
+          513.25,
+          513.5,
+          513.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      }
+    ]
+  },
+  "island-carno-crystal": {
+    "starts": [
+      569,
+      574,
+      578
+    ],
+    "duration": 3,
+    "title": "Resource view",
+    "sourceAcquisition": "Approved complete local source cache",
+    "labels": [
+      "Terrain",
+      "Route",
+      "Resource view"
+    ],
+    "visualReview": [
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          569.0,
+          569.25,
+          569.5,
+          569.75,
+          570.0,
+          570.25,
+          570.5,
+          570.75,
+          571.0,
+          571.25,
+          571.5,
+          571.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          574.0,
+          574.25,
+          574.5,
+          574.75,
+          575.0,
+          575.25,
+          575.5,
+          575.75,
+          576.0,
+          576.25,
+          576.5,
+          576.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          578.0,
+          578.25,
+          578.5,
+          578.75,
+          579.0,
+          579.25,
+          579.5,
+          579.75,
+          580.0,
+          580.25,
+          580.5,
+          580.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      }
+    ]
+  },
+  "island-nw-oil": {
+    "starts": [
+      742,
+      745,
+      748
+    ],
+    "duration": 3,
+    "title": "Harvesting",
+    "sourceAcquisition": "Approved complete local source cache",
+    "labels": [
+      "Terrain",
+      "Route",
+      "Harvesting"
+    ],
+    "visualReview": [
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          742.0,
+          742.25,
+          742.5,
+          742.75,
+          743.0,
+          743.25,
+          743.5,
+          743.75,
+          744.0,
+          744.25,
+          744.5,
+          744.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          745.0,
+          745.25,
+          745.5,
+          745.75,
+          746.0,
+          746.25,
+          746.5,
+          746.75,
+          747.0,
+          747.25,
+          747.5,
+          747.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          748.0,
+          748.25,
+          748.5,
+          748.75,
+          749.0,
+          749.25,
+          749.5,
+          749.75,
+          750.0,
+          750.25,
+          750.5,
+          750.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      }
+    ]
+  },
+  "rag-black-pearl-bed": {
+    "starts": [
+      183,
+      184.5,
+      186
+    ],
+    "duration": 1.5,
+    "title": "Resource view",
+    "sourceAcquisition": "Approved complete local source cache",
+    "labels": [
+      "Terrain",
+      "Route",
+      "Resource view"
+    ],
+    "visualReview": [
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          183.0,
+          183.25,
+          183.5,
+          183.75,
+          184.0,
+          184.25
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          184.5,
+          184.75,
+          185.0,
+          185.25,
+          185.5,
+          185.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          186.0,
+          186.25,
+          186.5,
+          186.75,
+          187.0,
+          187.25
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      }
+    ]
+  },
+  "rag-crystal-highland": {
+    "starts": [
+      387,
+      390,
+      393
+    ],
+    "duration": 2,
+    "title": "Resource view",
+    "sourceAcquisition": "Approved complete local source cache",
+    "labels": [
+      "Terrain",
+      "Route",
+      "Resource view"
+    ],
+    "visualReview": [
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          387.0,
+          387.25,
+          387.5,
+          387.75,
+          388.0,
+          388.25,
+          388.5,
+          388.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          390.0,
+          390.25,
+          390.5,
+          390.75,
+          391.0,
+          391.25,
+          391.5,
+          391.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          393.0,
+          393.25,
+          393.5,
+          393.75,
+          394.0,
+          394.25,
+          394.5,
+          394.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      }
+    ]
+  },
+  "rag-cave-metal-obsidian": {
+    "starts": [
+      445,
+      446,
+      530
+    ],
+    "duration": 1,
+    "title": "Resource view",
+    "sourceAcquisition": "Approved complete local source cache",
+    "labels": [
+      "Terrain",
+      "Route",
+      "Resource view"
+    ],
+    "visualReview": [
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          445.0,
+          445.25,
+          445.5,
+          445.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          446.0,
+          446.25,
+          446.5,
+          446.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          530.0,
+          530.25,
+          530.5,
+          530.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      }
+    ]
+  },
+  "rag-oil-north-shore": {
+    "starts": [
+      590,
+      592,
+      594
+    ],
+    "duration": 2,
+    "title": "Resource view",
+    "sourceAcquisition": "Approved complete local source cache",
+    "labels": [
+      "Terrain",
+      "Route",
+      "Resource view"
+    ],
+    "visualReview": [
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          590.0,
+          590.25,
+          590.5,
+          590.75,
+          591.0,
+          591.25,
+          591.5,
+          591.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          592.0,
+          592.25,
+          592.5,
+          592.75,
+          593.0,
+          593.25,
+          593.5,
+          593.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          594.0,
+          594.25,
+          594.5,
+          594.75,
+          595.0,
+          595.25,
+          595.5,
+          595.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      }
+    ]
+  },
+  "rag-flowers-nw": {
+    "starts": [
+      833,
+      835,
+      837
+    ],
+    "duration": 1.5,
+    "title": "Resource view",
+    "sourceAcquisition": "Approved complete local source cache",
+    "labels": [
+      "Terrain",
+      "Route",
+      "Resource view"
+    ],
+    "visualReview": [
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          833.0,
+          833.25,
+          833.5,
+          833.75,
+          834.0,
+          834.25
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          835.0,
+          835.25,
+          835.5,
+          835.75,
+          836.0,
+          836.25
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          837.0,
+          837.25,
+          837.5,
+          837.75,
+          838.0,
+          838.25
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      }
+    ]
+  },
+  "rag-pearls-cave": {
+    "starts": [
+      1011,
+      1015,
+      1019
+    ],
+    "duration": 3,
+    "title": "Resource view",
+    "sourceAcquisition": "Approved complete local source cache",
+    "labels": [
+      "Terrain",
+      "Route",
+      "Resource view"
+    ],
+    "visualReview": [
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          1011.0,
+          1011.25,
+          1011.5,
+          1011.75,
+          1012.0,
+          1012.25,
+          1012.5,
+          1012.75,
+          1013.0,
+          1013.25,
+          1013.5,
+          1013.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          1015.0,
+          1015.25,
+          1015.5,
+          1015.75,
+          1016.0,
+          1016.25,
+          1016.5,
+          1016.75,
+          1017.0,
+          1017.25,
+          1017.5,
+          1017.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          1019.0,
+          1019.25,
+          1019.5,
+          1019.75,
+          1020.0,
+          1020.25,
+          1020.5,
+          1020.75,
+          1021.0,
+          1021.25,
+          1021.5,
+          1021.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      }
+    ]
+  },
+  "rag-silk-fields": {
+    "starts": [
+      1080,
+      1081,
+      1082
+    ],
+    "duration": 1,
+    "title": "Resource view",
+    "sourceAcquisition": "Approved complete local source cache",
+    "labels": [
+      "Terrain",
+      "Route",
+      "Resource view"
+    ],
+    "visualReview": [
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          1080.0,
+          1080.25,
+          1080.5,
+          1080.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          1081.0,
+          1081.25,
+          1081.5,
+          1081.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          1082.0,
+          1082.25,
+          1082.5,
+          1082.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      }
+    ]
+  },
+  "rag-sulfur-rocks": {
+    "starts": [
+      1117.5,
+      1118.25,
+      1119
+    ],
+    "duration": 0.75,
+    "title": "Resource view",
+    "sourceAcquisition": "Approved complete local source cache",
+    "labels": [
+      "Terrain",
+      "Route",
+      "Resource view"
+    ],
+    "visualReview": [
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          1117.5,
+          1117.75,
+          1118.0
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          1118.25,
+          1118.5,
+          1118.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          1119.0,
+          1119.25,
+          1119.5
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      }
+    ]
+  },
+  "rag-salt-columns": {
+    "starts": [
+      1231,
+      1233,
+      1235
+    ],
+    "duration": 1,
+    "title": "Resource view",
+    "sourceAcquisition": "Approved complete local source cache",
+    "labels": [
+      "Terrain",
+      "Route",
+      "Resource view"
+    ],
+    "visualReview": [
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          1231.0,
+          1231.25,
+          1231.5,
+          1231.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          1233.0,
+          1233.25,
+          1233.5,
+          1233.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          1235.0,
+          1235.25,
+          1235.5,
+          1235.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      }
+    ]
+  },
+  "island-ice-polymer": {
+    "starts": [
+      764,
+      767,
+      789
+    ],
+    "duration": 3,
+    "title": "Resource view",
+    "sourceAcquisition": "Approved complete local source cache",
+    "labels": [
+      "Terrain",
+      "Route",
+      "Resource view"
+    ],
+    "visualReview": [
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          764.0,
+          764.25,
+          764.5,
+          764.75,
+          765.0,
+          765.25,
+          765.5,
+          765.75,
+          766.0,
+          766.25,
+          766.5,
+          766.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          767.0,
+          767.25,
+          767.5,
+          767.75,
+          768.0,
+          768.25,
+          768.5,
+          768.75,
+          769.0,
+          769.25,
+          769.5,
+          769.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          789.0,
+          789.25,
+          789.5,
+          789.75,
+          790.0,
+          790.25,
+          790.5,
+          790.75,
+          791.0,
+          791.25,
+          791.5,
+          791.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      }
+    ]
+  },
+  "rag-lake-basic-hub": {
+    "starts": [
+      536,
+      537,
+      545
+    ],
+    "duration": 1.5,
+    "title": "Resource view",
+    "sourceAcquisition": "Approved complete local source cache",
+    "labels": [
+      "Terrain",
+      "Route",
+      "Resource view"
+    ],
+    "visualReview": [
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          536.0,
+          536.25,
+          536.5,
+          536.75,
+          537.0,
+          537.25
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          537.0,
+          537.25,
+          537.5,
+          537.75,
+          538.0,
+          538.25
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          545.0,
+          545.25,
+          545.5,
+          545.75,
+          546.0,
+          546.25
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      }
+    ]
+  },
+  "island-surface-pearls": {
+    "starts": [
+      194,
+      199,
+      204
+    ],
+    "duration": 3,
+    "title": "Resource view",
+    "sourceAcquisition": "Approved complete local source cache",
+    "labels": [
+      "Terrain",
+      "Route",
+      "Resource view"
+    ],
+    "visualReview": [
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          194.0,
+          194.25,
+          194.5,
+          194.75,
+          195.0,
+          195.25,
+          195.5,
+          195.75,
+          196.0,
+          196.25,
+          196.5,
+          196.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          199.0,
+          199.25,
+          199.5,
+          199.75,
+          200.0,
+          200.25,
+          200.5,
+          200.75,
+          201.0,
+          201.25,
+          201.5,
+          201.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          204.0,
+          204.25,
+          204.5,
+          204.75,
+          205.0,
+          205.25,
+          205.5,
+          205.75,
+          206.0,
+          206.25,
+          206.5,
+          206.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      }
+    ]
+  },
+  "rag-whale-keratin": {
+    "starts": [
+      89,
+      93,
+      94
+    ],
+    "duration": 3,
+    "title": "Harvesting",
+    "sourceAcquisition": "Approved complete local source cache",
+    "labels": [
+      "Creature view",
+      "Harvesting",
+      "Harvesting"
+    ],
+    "visualReview": [
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          89.0,
+          89.25,
+          89.5,
+          89.75,
+          90.0,
+          90.25,
+          90.5,
+          90.75,
+          91.0,
+          91.25,
+          91.5,
+          91.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          93.0,
+          93.25,
+          93.5,
+          93.75,
+          94.0,
+          94.25,
+          94.5,
+          94.75,
+          95.0,
+          95.25,
+          95.5,
+          95.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          94.0,
+          94.25,
+          94.5,
+          94.75,
+          95.0,
+          95.25,
+          95.5,
+          95.75,
+          96.0,
+          96.25,
+          96.5,
+          96.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      }
+    ]
+  },
+  "honey-center-redwoods": {
+    "starts": [
+      126,
+      134,
+      147
+    ],
+    "duration": 3,
+    "title": "Hive view",
+    "sourceAcquisition": "Approved complete local source cache",
+    "labels": [
+      "Terrain",
+      "Route",
+      "Hive view"
+    ],
+    "visualReview": [
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          126.0,
+          126.25,
+          126.5,
+          126.75,
+          127.0,
+          127.25,
+          127.5,
+          127.75,
+          128.0,
+          128.25,
+          128.5,
+          128.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          134.0,
+          134.25,
+          134.5,
+          134.75,
+          135.0,
+          135.25,
+          135.5,
+          135.75,
+          136.0,
+          136.25,
+          136.5,
+          136.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          147.0,
+          147.25,
+          147.5,
+          147.75,
+          148.0,
+          148.25,
+          148.5,
+          148.75,
+          149.0,
+          149.25,
+          149.5,
+          149.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      }
+    ]
+  },
+  "honey-island-redwoods": {
+    "starts": [
+      31,
+      44,
+      46
+    ],
+    "duration": 1,
+    "title": "Hive view",
+    "sourceAcquisition": "Approved complete local source cache",
+    "labels": [
+      "Route",
+      "Hive view",
+      "Hive view"
+    ],
+    "visualReview": [
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          31.0,
+          31.25,
+          31.5,
+          31.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          44.0,
+          44.25,
+          44.5,
+          44.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          46.0,
+          46.25,
+          46.5,
+          46.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      }
+    ]
+  },
+  "honey-ragnarok-queen-region": {
+    "starts": [
+      150,
+      154,
+      164
+    ],
+    "duration": 3,
+    "title": "Queen view",
+    "sourceAcquisition": "Approved complete local source cache",
+    "labels": [
+      "Terrain",
+      "Route",
+      "Queen view"
+    ],
+    "visualReview": [
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          150.0,
+          150.25,
+          150.5,
+          150.75,
+          151.0,
+          151.25,
+          151.5,
+          151.75,
+          152.0,
+          152.25,
+          152.5,
+          152.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          154.0,
+          154.25,
+          154.5,
+          154.75,
+          155.0,
+          155.25,
+          155.5,
+          155.75,
+          156.0,
+          156.25,
+          156.5,
+          156.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          164.0,
+          164.25,
+          164.5,
+          164.75,
+          165.0,
+          165.25,
+          165.5,
+          165.75,
+          166.0,
+          166.25,
+          166.5,
+          166.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      }
+    ]
+  },
+  "rag-shore-sand": {
+    "starts": [
+      10,
+      14,
+      18
+    ],
+    "duration": 3,
+    "title": "Sand view",
+    "sourceAcquisition": "Approved complete local source cache",
+    "labels": [
+      "Terrain",
+      "Route",
+      "Sand view"
+    ],
+    "visualReview": [
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          10.0,
+          10.25,
+          10.5,
+          10.75,
+          11.0,
+          11.25,
+          11.5,
+          11.75,
+          12.0,
+          12.25,
+          12.5,
+          12.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          14.0,
+          14.25,
+          14.5,
+          14.75,
+          15.0,
+          15.25,
+          15.5,
+          15.75,
+          16.0,
+          16.25,
+          16.5,
+          16.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          18.0,
+          18.25,
+          18.5,
+          18.75,
+          19.0,
+          19.25,
+          19.5,
+          19.75,
+          20.0,
+          20.25,
+          20.5,
+          20.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      }
+    ]
+  },
+  "island-swamp-mushrooms": {
+    "starts": [
+      89,
+      93,
+      97
+    ],
+    "duration": 3,
+    "title": "Resource view",
+    "sourceAcquisition": "Approved complete local source cache",
+    "labels": [
+      "Terrain",
+      "Route",
+      "Resource view"
+    ],
+    "visualReview": [
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          89.0,
+          89.25,
+          89.5,
+          89.75,
+          90.0,
+          90.25,
+          90.5,
+          90.75,
+          91.0,
+          91.25,
+          91.5,
+          91.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          93.0,
+          93.25,
+          93.5,
+          93.75,
+          94.0,
+          94.25,
+          94.5,
+          94.75,
+          95.0,
+          95.25,
+          95.5,
+          95.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          97.0,
+          97.25,
+          97.5,
+          97.75,
+          98.0,
+          98.25,
+          98.5,
+          98.75,
+          99.0,
+          99.25,
+          99.5,
+          99.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      }
+    ]
+  },
+  "center-extra-swamp-mushrooms": {
+    "starts": [
+      112,
+      116,
+      120
+    ],
+    "duration": 3,
+    "title": "Tool demonstration",
+    "sourceAcquisition": "Approved complete local source cache",
+    "labels": [
+      "Terrain",
+      "Route",
+      "Tool demonstration"
+    ],
+    "visualReview": [
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          112.0,
+          112.25,
+          112.5,
+          112.75,
+          113.0,
+          113.25,
+          113.5,
+          113.75,
+          114.0,
+          114.25,
+          114.5,
+          114.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          116.0,
+          116.25,
+          116.5,
+          116.75,
+          117.0,
+          117.25,
+          117.5,
+          117.75,
+          118.0,
+          118.25,
+          118.5,
+          118.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          120.0,
+          120.25,
+          120.5,
+          120.75,
+          121.0,
+          121.25,
+          121.5,
+          121.75,
+          122.0,
+          122.25,
+          122.5,
+          122.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      }
+    ]
+  },
+  "island-east-dam-rares": {
+    "starts": [
+      291,
+      295,
+      321
+    ],
+    "duration": 3,
+    "title": "Dam inventory",
+    "sourceAcquisition": "Approved complete local source cache",
+    "labels": [
+      "Dam approach",
+      "Dam inventory",
+      "Dam inventory"
+    ],
+    "visualReview": [
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          291.0,
+          291.25,
+          291.5,
+          291.75,
+          292.0,
+          292.25,
+          292.5,
+          292.75,
+          293.0,
+          293.25,
+          293.5,
+          293.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          295.0,
+          295.25,
+          295.5,
+          295.75,
+          296.0,
+          296.25,
+          296.5,
+          296.75,
+          297.0,
+          297.25,
+          297.5,
+          297.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          321.0,
+          321.25,
+          321.5,
+          321.75,
+          322.0,
+          322.25,
+          322.5,
+          322.75,
+          323.0,
+          323.25,
+          323.5,
+          323.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      }
+    ],
+    "evidenceLimitations": "The source shows dam inventory contents. A completed transfer and measured yield are not demonstrated in the selected loops."
+  },
+  "center-extra-blue-basics": {
+    "starts": [
+      21,
+      25,
+      29
+    ],
+    "duration": 3,
+    "title": "Resource view",
+    "sourceAcquisition": "Approved complete local source cache",
+    "labels": [
+      "Terrain",
+      "Route",
+      "Resource view"
+    ],
+    "visualReview": [
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          21.0,
+          21.25,
+          21.5,
+          21.75,
+          22.0,
+          22.25,
+          22.5,
+          22.75,
+          23.0,
+          23.25,
+          23.5,
+          23.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          25.0,
+          25.25,
+          25.5,
+          25.75,
+          26.0,
+          26.25,
+          26.5,
+          26.75,
+          27.0,
+          27.25,
+          27.5,
+          27.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      },
+      {
+        "method": "Manual inspection of source contact sheets sampled at 4 fps, plus reviewed interval boundary context",
+        "sourceFrameSeconds": [
+          29.0,
+          29.25,
+          29.5,
+          29.75,
+          30.0,
+          30.25,
+          30.5,
+          30.75,
+          31.0,
+          31.25,
+          31.5,
+          31.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Terrain, character, resource, combat, or inventory footage; no handheld or full-screen map overlay",
+        "samplingLimit": "Visual review sampled at 0.25-second spacing; this is not an automated map detector or frame-by-frame certification."
+      }
+    ]
   }
 }

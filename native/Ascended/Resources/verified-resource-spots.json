@@ -26,11 +26,13 @@
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g",
-      "photoSHA256": "9b75a223136a4ce67a53eb0e15fff0f36d0e562a20589441bdaa9b00b206268b",
+      "photoSHA256": "e619ee41b3d61ebd8ecdf66c887d0f5a7acbf2904f3e1a1a8394fb072dbddb22",
       "coordinateEvidence": "In-game map camera GPS visible at 17s: latitude 52.3, longitude 78.2. Pin identifies the filmed farming region, not every individual resource actor.",
       "inventoryEvidence": "Metal resource chapter 16\u201349s; ore rocks and metal overlay shown at 25s. Rich Metal describes high-yield ore appearance, not a guaranteed node count.",
       "sourcePlane": "the-center filmed region",
-      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 21,
+      "photoMapOverlayVisible": false
     },
     {
       "id": "center-spire-obsidian",
@@ -56,11 +58,13 @@
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g",
-      "photoSHA256": "ead87cf57fba73327e4a247010c20757f158a465d6d6895f1c8c6f6047d5a5cf",
+      "photoSHA256": "b7cf0899bdf91afb45b12fe4e5373295a0f7b4949aba7bbcd38c06578c9e8dbf",
       "coordinateEvidence": "In-game map camera GPS visible at 47s: latitude 63.0, longitude 60.3. Pin identifies the filmed farming region, not every individual resource actor.",
       "inventoryEvidence": "Obsidian chapter 49\u2013114s; dark obsidian rocks shown at 65s.",
       "sourcePlane": "the-center filmed region",
-      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 56,
+      "photoMapOverlayVisible": false
     },
     {
       "id": "center-lava-metal",
@@ -89,11 +93,13 @@
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g",
-      "photoSHA256": "881b83f37613175efac8efe5f3fae3663cc56008fe0b5ac19d26c91e114d63ea",
+      "photoSHA256": "bdd09ec3dd43ee6a3741642c0252116ed9ee9975523cb27568c37bf0105415bf",
       "coordinateEvidence": "In-game map camera GPS visible at 179s: latitude 16.5, longitude 60.9. Pin identifies the filmed farming region, not every individual resource actor.",
       "inventoryEvidence": "More Metal chapter 187\u2013273s; gold-rich ore visible at 195s.",
       "sourcePlane": "the-center filmed region",
-      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 186,
+      "photoMapOverlayVisible": false
     },
     {
       "id": "center-snow-crystal",
@@ -122,11 +128,13 @@
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g",
-      "photoSHA256": "54d66e7ddcaad95183aef8fb173582cb4b9d772e5ba05793c1995e4a6fb422dc",
+      "photoSHA256": "76b36fc5a22db91a72ca597831e749041e3680176d1f2852d7c33e2826944275",
       "coordinateEvidence": "In-game map camera GPS visible at 275s: latitude 58.0, longitude 18.5. Pin identifies the filmed farming region, not every individual resource actor.",
       "inventoryEvidence": "Metal and Crystal chapter 273\u2013345s; white crystal clusters shown at 305s. GPS is the route start camera position.",
       "sourcePlane": "the-center filmed region",
-      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 295,
+      "photoMapOverlayVisible": false
     },
     {
       "id": "center-beaver-pond",
@@ -156,11 +164,13 @@
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g",
-      "photoSHA256": "389d3782966a428d624502fa65109f62910d195bccc7f338cb34532a06baedc5",
+      "photoSHA256": "fb9cb3fc8bff820698ababcf5ba7b3bd766d8d5276edc7d615789f9da5b5811e",
       "coordinateEvidence": "In-game map camera GPS visible at 491s: latitude 53.1, longitude 57.2. Pin identifies the filmed farming region, not every individual resource actor.",
       "inventoryEvidence": "At519s Beaver Dam inventory visibly labels x700 Wood, x12 Silica Pearls, x312 Cementing Paste and x20 Rare Flower. This loot is shown in the filmed farm region.",
       "sourcePlane": "the-center filmed region",
-      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 509,
+      "photoMapOverlayVisible": false
     },
     {
       "id": "center-ring-pearls",
@@ -188,11 +198,13 @@
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g",
-      "photoSHA256": "d868821df56ef521e2e847fbce002c0d9b883730e6906e04848a8bc47b60bebf",
+      "photoSHA256": "c546d0e5f482e0fb14c15b6fc9b76b62efe02eeda1e2c2672cdd5d1f29fbf784",
       "coordinateEvidence": "In-game map camera GPS visible at 535s: latitude 36.7, longitude 35.5. Pin identifies the filmed farming region, not every individual resource actor.",
       "inventoryEvidence": "Silica Pearls/Oil chapter 534\u2013639s; seabed pearl clumps visible at 551s. GPS camera is the waterfall entry, not individual underwater nodes.",
       "sourcePlane": "the-center filmed region",
-      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 546,
+      "photoMapOverlayVisible": false
     },
     {
       "id": "center-ice-polymer",
@@ -219,11 +231,13 @@
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g",
-      "photoSHA256": "fb6fb30ca70cbfd8025b573fb8908ca282f0e6117662cba341bc89968173f249",
+      "photoSHA256": "dbd7f4a3e3c66f492fcb226f591f9df4e64b75cff6b98655b3af291609835974",
       "coordinateEvidence": "In-game map camera GPS visible at 639s: latitude 37.0, longitude 9.9. Pin identifies the filmed farming region, not every individual resource actor.",
       "inventoryEvidence": "Organic Polymer chapter 639\u2013720s; ice floe and Kairuku route footage, no universal guaranteed penguin spawn.",
       "sourcePlane": "the-center filmed region",
-      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 647,
+      "photoMapOverlayVisible": false
     },
     {
       "id": "rag-underwater-metal",
@@ -250,11 +264,13 @@
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=5IhlD3yzqjU",
-      "photoSHA256": "e7be4ef0b382ddb3f10ce2c2b1ed9498f703e7ba64004bd01dc32e558d6c21ec",
+      "photoSHA256": "49e907b82d6774ee8d005cbb14f7014073cdae81b4f4ebef7f9e113b084d455f",
       "coordinateEvidence": "In-game map camera GPS visible at 100s: latitude 94.8, longitude 73.6. Pin identifies the filmed farming region, not every individual resource actor.",
       "inventoryEvidence": "Metal chapter 83\u2013198s; GPS map at 100s crosshair beside Metal POI; harvesting footage and ore at 112s.",
       "sourcePlane": "ragnarok filmed region",
-      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 102,
+      "photoMapOverlayVisible": false
     },
     {
       "id": "rag-dam-lakes",
@@ -285,11 +301,13 @@
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=5IhlD3yzqjU",
-      "photoSHA256": "5c1328f06492d96ef8e8e41b8208f65ff14e231a53497b00548625c39940da22",
+      "photoSHA256": "4f9c2bcc9a7297035c9be578960ed55b21f0deefab8bfba261c2764212196b28",
       "coordinateEvidence": "In-game map camera GPS visible at 508s: latitude 24.8, longitude 42.3. Pin identifies the filmed farming region, not every individual resource actor.",
       "inventoryEvidence": "Beaver Dam inventory at 517s shows paste, flowers, mushrooms, pearls and wood; 525s shows the actual underwater dam. GPS at 508s labels the camera farm region.",
       "sourcePlane": "ragnarok filmed region",
-      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 519,
+      "photoMapOverlayVisible": false
     },
     {
       "id": "rag-cactus-route",
@@ -315,11 +333,13 @@
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=5IhlD3yzqjU",
-      "photoSHA256": "04cf5e734ca8a1ca51ba888fcaeb31f1068d9dddcad6115b76d8bce73267c8b8",
+      "photoSHA256": "25bba34b06ae3835294573256030de36847cea83c7079129a68f80403c502607",
       "coordinateEvidence": "In-game map camera GPS visible at 757s: latitude 62.6, longitude 59.6. Pin identifies the filmed farming region, not every individual resource actor.",
       "inventoryEvidence": "Cactus chapter 739\u2013752s and region map inset at 757s; cactus harvest shown at 748s. GPS identifies region shown by creator, not all plants.",
       "sourcePlane": "ragnarok filmed region",
-      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 748,
+      "photoMapOverlayVisible": false
     },
     {
       "id": "rag-coast-flowers",
@@ -345,11 +365,13 @@
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=5IhlD3yzqjU",
-      "photoSHA256": "358d1d50c1d104ed33ecf68be5ac7d16a5252d90dc57c7818fa26222069e4fda",
+      "photoSHA256": "e3ca26b69fff4ea62ff97bd2c9f77fdf18741027b4fa499470a6d82de1a357ab",
       "coordinateEvidence": "In-game map camera GPS visible at 919s: latitude 36.3, longitude 18.9. Pin identifies the filmed farming region, not every individual resource actor.",
       "inventoryEvidence": "Plant Species X & Rare Flowers chapter 915\u2013949s; literal creator map crosshair at 919s identifies this island; bushes and harvest scene at 932s. Plant Species X Seed icon visibly added at927s when picking the red plant; Rare Flowers icon added at931s.",
       "sourcePlane": "ragnarok filmed region",
-      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 928,
+      "photoMapOverlayVisible": false
     },
     {
       "id": "island-volcano-ore",
@@ -379,11 +401,13 @@
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM",
-      "photoSHA256": "9bfc5bd63304816eba21fbebe663d77b60e21973dc1b8babb4643075fe01c9d8",
+      "photoSHA256": "33821eb4bf41a5286e1850ddf87d3dda9ec9502e0ac9c0e605d20be3202cc31d",
       "coordinateEvidence": "In-game map camera GPS visible at 182s: latitude 40.1, longitude 37.5. Pin identifies the filmed farming region, not every individual resource actor.",
       "inventoryEvidence": "Metal Obsidian chapter 171\u2013270s; rich gold ore and black obsidian at 206s, crystals at 226s. GPS 182s is the route start.",
       "sourcePlane": "the-island filmed region",
-      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 197,
+      "photoMapOverlayVisible": false
     },
     {
       "id": "island-west-black-pearls",
@@ -411,11 +435,13 @@
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM",
-      "photoSHA256": "2461e14ec017d500da79b2b311cfd8fc45b5415ef67af787591aa715a817de00",
+      "photoSHA256": "2e621b5c47d89015342d54a81e08f43ab71ff14a654772bfa55e10f2727785c1",
       "coordinateEvidence": "In-game map camera GPS visible at 294s: latitude 57.0, longitude 5.6. Pin identifies the filmed farming region, not every individual resource actor.",
       "inventoryEvidence": "Black Pearls creator chapter270\u2013369s; in-game GPS294s and actual seabed farm-region footage318s. No measured harvest yield claimed.",
       "sourcePlane": "the-island filmed region",
-      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 312,
+      "photoMapOverlayVisible": false
     },
     {
       "id": "island-redwood-fiber",
@@ -441,11 +467,13 @@
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM",
-      "photoSHA256": "6650e8b0085bf6b068d628ce3d8ebae2cd4a7db2890acc2495be2b4b264fe00f",
+      "photoSHA256": "d1fd07b8f19dbddee793d27b5d59f50c88c2675f13956ec2891776239f9f8992",
       "coordinateEvidence": "In-game map camera GPS visible at 418s: latitude 64.8, longitude 35.2. Pin identifies the filmed farming region, not every individual resource actor.",
       "inventoryEvidence": "Berries Fiber chapter 369\u2013470s; GPS at418s and dense bushes at426s.",
       "sourcePlane": "the-island filmed region",
-      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 466,
+      "photoMapOverlayVisible": false
     },
     {
       "id": "island-west-starter",
@@ -478,11 +506,13 @@
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM",
-      "photoSHA256": "cbaf5fb56d70de3f66ce9a4a96799dfc5de7ca7884c20279588460563c6e7487",
+      "photoSHA256": "c2ddba3ff83375b505821cd6683ad611803af27ef327211704094906752cb7dc",
       "coordinateEvidence": "In-game map camera GPS visible at 482s: latitude 71.0, longitude 7.1. Pin identifies the filmed farming region, not every individual resource actor.",
       "inventoryEvidence": "Chitin chapter470\u2013551s, GPS482s and filmed shoreline494s; Trilobite demonstrated at514s. Trees, bushes and rocks visible make this a basic-material hub rather than exact individual tree pins. Water availability derives from actual visible water shoreline and Flint from visible harvestable ground rocks plus standard Metal Pick rock harvesting mechanics; no specific yield or extra GPS actor claimed.",
       "sourcePlane": "the-island filmed region",
-      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 489,
+      "photoMapOverlayVisible": false
     },
     {
       "id": "island-carno-crystal",
@@ -509,11 +539,13 @@
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM",
-      "photoSHA256": "a4ec08e98d682db4390d628061d949b3ee119575b3825024a9fa586b950f86b0",
+      "photoSHA256": "b0718837b868c5e160d9da72a7fddeb1a00448b3da514b1a1822e883d2a83258",
       "coordinateEvidence": "In-game map camera GPS visible at 566s: latitude 9.0, longitude 91.2. Pin identifies the filmed farming region, not every individual resource actor.",
       "inventoryEvidence": "Crystal creator chapter551\u2013629s; GPS in cave566s and visible white crystal clusters574s. GPS identifies the cave region, not exact every cluster.",
       "sourcePlane": "the-island filmed region",
-      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 569,
+      "photoMapOverlayVisible": false
     },
     {
       "id": "island-redwood-paste",
@@ -540,11 +572,13 @@
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM",
-      "photoSHA256": "574c7fbb2fc701f7a1a6a2f64623d7b86db70dfef6a112f5ea01cfa55d9aed7c",
+      "photoSHA256": "e3bc058868220e83c18c1b7f074abf4e853ed0bd5fc829a85668a878626174ff",
       "coordinateEvidence": "In-game map camera GPS visible at 654s: latitude 55.2, longitude 25.7. Pin identifies the filmed farming region, not every individual resource actor.",
       "inventoryEvidence": "CP chapter629\u2013720s; camera GPS654s identifies this river segment, active beaver dam sequence662s. At660s the dam inventory visibly contains Wood, Cementing Paste and Rare Flowers; the clip demonstrates actual dam loot.",
       "sourcePlane": "the-island filmed region",
-      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 657,
+      "photoMapOverlayVisible": false
     },
     {
       "id": "island-nw-oil",
@@ -571,11 +605,13 @@
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM",
-      "photoSHA256": "006395f979ef310ddaff66d0e142a5a97f08c2887bc064956adf6bdd13597153",
+      "photoSHA256": "9d82d3b72428ae7da52a76fd01cc0286fc759f41d8149cac92457d2fc3cae555",
       "coordinateEvidence": "In-game map camera GPS visible at 730s: latitude 28.7, longitude 10.1. Pin identifies the filmed farming region, not every individual resource actor.",
       "inventoryEvidence": "Oil Organic Polymer chapter720\u2013831s; camera GPS730s visible 28.7/10.1; oil rock harvesting shown746s. This pin covers oil, not an inferred penguin spawn.",
       "sourcePlane": "the-island filmed region",
-      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 742,
+      "photoMapOverlayVisible": false
     },
     {
       "id": "rag-black-pearl-bed",
@@ -601,11 +637,13 @@
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8",
-      "photoSHA256": "919558e94aad713d4c79c16b8b74229c1ccb141cc24439d95ea234523e7bc1e0",
+      "photoSHA256": "9b49e8c89fc5ea6c9ff3c8eda8ed63036b799afd65dea90dbdff0e4d26dd3ce4",
       "coordinateEvidence": "Creator coordinate caption visible at 177.5s: latitude 6.2, longitude 63.0. Pin identifies the filmed farming region, not every individual resource actor.",
       "inventoryEvidence": "Black Pearls chapter120\u2013253s; creator coordinate overlay6.2/63.0 at177.5s, black pearl clumps around wreck at182.5s.",
       "sourcePlane": "ragnarok filmed region",
-      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 183,
+      "photoMapOverlayVisible": false
     },
     {
       "id": "rag-crystal-highland",
@@ -631,11 +669,13 @@
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8",
-      "photoSHA256": "fc80f7757c3fd983e758ef723a780aae442c63e923d28bf3dbfc1a3e368b7bf5",
+      "photoSHA256": "49787693a7627651d8ccd2f0288937f8f3c4b42f23b0fe8232bd846939177449",
       "coordinateEvidence": "Creator coordinate caption visible at 382.5s: latitude 6.5, longitude 87.7. Pin identifies the filmed farming region, not every individual resource actor.",
       "inventoryEvidence": "Crystal chapter347\u2013424s; creator coordinates6.5/87.7 at382.5s; actual white crystal clusters387.5s.",
       "sourcePlane": "ragnarok filmed region",
-      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 387,
+      "photoMapOverlayVisible": false
     },
     {
       "id": "rag-cave-metal-obsidian",
@@ -664,11 +704,13 @@
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8",
-      "photoSHA256": "469e7680eade6dcadba86215fd1fbf6e89aa4791634a2fbcfe397793c7bb5d94",
+      "photoSHA256": "8674956e0d7132ec604e408a6d720e19cd1963702e8f00e3d213db54bd49ea39",
       "coordinateEvidence": "Creator coordinate caption visible at 437.5s: latitude 21.3, longitude 24.6. Pin identifies the filmed farming region, not every individual resource actor.",
       "inventoryEvidence": "Metal chapter424\u2013516s and Obsidian516\u2013579s share same cave; overlay21.3/24.6 at437.5s and527.5s; metal ores442.5s and dark obsidian527.5s.",
       "sourcePlane": "ragnarok filmed region",
-      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 445,
+      "photoMapOverlayVisible": false
     },
     {
       "id": "rag-oil-north-shore",
@@ -694,11 +736,13 @@
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8",
-      "photoSHA256": "0bb756aa7024ff7514c5ca7d63604c32af106228b3cb008d303759b8d2a927a8",
+      "photoSHA256": "c25a98e28672b46e1caf12ec50cc3cf0d5b9cafb3cb634ecfc7b6f28901b946d",
       "coordinateEvidence": "Creator coordinate caption visible at 597.5s: latitude 11.1, longitude 40.7. Pin identifies the filmed farming region, not every individual resource actor.",
       "inventoryEvidence": "Oil chapter579\u2013711s; source overlay11.1/40.7 at597.5s; clear harvestable oil rock at592.5s.",
       "sourcePlane": "ragnarok filmed region",
-      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 590,
+      "photoMapOverlayVisible": false
     },
     {
       "id": "rag-polymer-plants",
@@ -725,11 +769,13 @@
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8",
-      "photoSHA256": "76b961f20c6f838d6777afc5a671707032e4d078c19a609661190749115a090c",
+      "photoSHA256": "48941494251d7bf28c209493760fc46502340598ade81b914f29fd9089c77780",
       "coordinateEvidence": "Creator coordinate caption visible at 717.5s: latitude 22.7, longitude 29.5. Pin identifies the filmed farming region, not every individual resource actor.",
       "inventoryEvidence": "Polymer chapter711\u2013817s; overlay22.7/29.5 at717.5s; plant closeup727.5s. Resource is Organic Polymer from plants, not crafted Polymer. At730s an ADDED32x Organic Polymer overlay appears while the filmed plant is harvested; the amount is a creator example, not a guaranteed yield.",
       "sourcePlane": "ragnarok filmed region",
-      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 725,
+      "photoMapOverlayVisible": false
     },
     {
       "id": "rag-flowers-nw",
@@ -754,11 +800,13 @@
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8",
-      "photoSHA256": "92a9594b56d9daa544cea05ec34fb571eede526b03a974bc46f3b5b698c4959c",
+      "photoSHA256": "9bf3d7fcbc20980397ec3e8eb98240b83353a64fd4863f073014b4b775d758f5",
       "coordinateEvidence": "Creator coordinate caption visible at 832.5s: latitude 21.8, longitude 27.9. Pin identifies the filmed farming region, not every individual resource actor.",
       "inventoryEvidence": "Rare Flowers chapter817\u2013870s; explicit overlay21.8/27.9 and flowers in same832.5s frame.",
       "sourcePlane": "ragnarok filmed region",
-      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 833,
+      "photoMapOverlayVisible": false
     },
     {
       "id": "rag-pearls-cave",
@@ -784,11 +832,13 @@
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8",
-      "photoSHA256": "9a8e24804d6a2029d0b0e3dc58ffb66f325e63abbfc103997f6416389cfd0d2f",
+      "photoSHA256": "8cd804dbe1045dbc866119f1776e564e5ab04c28290e8e19261d5a4e72c21718",
       "coordinateEvidence": "Creator coordinate caption visible at 1007.5s: latitude 21.8, longitude 33.1. Pin identifies the filmed farming region, not every individual resource actor.",
       "inventoryEvidence": "Silica Pearls chapter1000\u20131057s; harvest ADDED Silica Pearls at1002.5s; coordinate overlay21.8/33.1 at1007.5s.",
       "sourcePlane": "ragnarok filmed region",
-      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 1011,
+      "photoMapOverlayVisible": false
     },
     {
       "id": "rag-silk-fields",
@@ -813,11 +863,13 @@
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8",
-      "photoSHA256": "07a4eef08c43f9852dd8b626b6ffaf0d88f5bb8190b43062b108cea87349351a",
+      "photoSHA256": "67c04e687e4bf6537cb079e071dd014e137710284fef7bf9b9c7208e29e90585",
       "coordinateEvidence": "Creator coordinate caption visible at 1072.5s: latitude 11.7, longitude 83.7. Pin identifies the filmed farming region, not every individual resource actor.",
       "inventoryEvidence": "Silk chapter1057\u20131110s; overlay11.7/83.7 and dense plants in same1072.5s frame.",
       "sourcePlane": "ragnarok filmed region",
-      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 1080,
+      "photoMapOverlayVisible": false
     },
     {
       "id": "rag-sulfur-rocks",
@@ -844,11 +896,13 @@
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8",
-      "photoSHA256": "7eabb28f64b9b7c08cffbc2a806da5f06b6fd72609ccf06f09da02b51ef0c3bc",
+      "photoSHA256": "d6921c114cf644276a68f9cbb9dcc4f63317ce25d45181330ecfeb8981c329f2",
       "coordinateEvidence": "Creator coordinate caption visible at 1122.5s: latitude 22.7, longitude 64.1. Pin identifies the filmed farming region, not every individual resource actor.",
       "inventoryEvidence": "Sulfur chapter1110\u20131166s; coordinate overlay22.7/64.1 at1122.5s; yellow sulfur nodes in same frame.",
       "sourcePlane": "ragnarok filmed region",
-      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 1117.5,
+      "photoMapOverlayVisible": false
     },
     {
       "id": "rag-salt-columns",
@@ -874,11 +928,13 @@
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8",
-      "photoSHA256": "d045ea659632a7653fe362039c014be85f2cd8ec8d7c6802b1ba898b5cb58474",
+      "photoSHA256": "1a198c27420087a433532d22f0ad7f80db974c170265bf67ef5056d0e574f8b8",
       "coordinateEvidence": "In-game map camera GPS visible at 1237.5s: latitude 86.2, longitude 39.1. Pin identifies the filmed farming region, not every individual resource actor.",
       "inventoryEvidence": "Raw Salt chapter1225\u20131270s; GPS86.2/39.1 at1237.5s; salt columns at1232.5s.",
       "sourcePlane": "ragnarok filmed region",
-      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 1231,
+      "photoMapOverlayVisible": false
     },
     {
       "id": "island-ice-polymer",
@@ -906,11 +962,13 @@
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM",
-      "photoSHA256": "858860b08bcfcd4ad21428c82d8da31f64f97b579efbc3d307a4bb2f5b573718",
+      "photoSHA256": "d67b5038c7f8cbeb5c9fe9e4f6305592fa133032b2b51bd0ee1ef1ebc708b8be",
       "coordinateEvidence": "In-game map camera GPS visible at 776s: latitude 25.8, longitude 6.5. Pin identifies the filmed farming region, not every individual resource actor.",
       "inventoryEvidence": "Oil Organic Polymer chapter720\u2013831s; exact camera GPS25.8/6.5 at776s and ice floe in same frame. No measured yield or permanent penguin spawn claimed.",
       "sourcePlane": "the-island filmed region",
-      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 764,
+      "photoMapOverlayVisible": false
     },
     {
       "id": "rag-lake-basic-hub",
@@ -943,11 +1001,13 @@
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=5IhlD3yzqjU",
-      "photoSHA256": "bc1b0205d2b4a36d4591fe5181a30faa9a2dba0d3f7ed7bbd2f9691627303e5e",
+      "photoSHA256": "2d67774f9831535658c403c50c6cacc36a075643b889ab29780ceecac6fec553",
       "coordinateEvidence": "In-game map camera GPS visible at 508s: latitude 24.8, longitude 42.3. Pin identifies the filmed farming region, not every individual resource actor.",
       "inventoryEvidence": "Camera GPS24.8/42.3 at508s; actual forested rocky shoreline535s. Basic materials described as a broad gatherable hub visible in scene, not individual raw actor exact pins. The same resource guide shows wood tree harvesting806\u2013867s elsewhere; no measured yield for this shoreline claimed. Water availability derives from actual visible water shoreline and Flint from visible harvestable ground rocks plus standard Metal Pick rock harvesting mechanics; no specific yield or extra GPS actor claimed.",
       "sourcePlane": "ragnarok filmed region",
-      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 536,
+      "photoMapOverlayVisible": false
     },
     {
       "id": "island-surface-pearls",
@@ -973,11 +1033,13 @@
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=0JqFIlmuq9o",
-      "photoSHA256": "5d5bbc0c1be01348b4066cd91b944acaf28bea572f72c14260fa98cb72c8f55d",
+      "photoSHA256": "554c9073e94787cbb070b51e36fa157916c39459c41d47f56a733de444d45388",
       "coordinateEvidence": "In-game map camera GPS visible at 195s: latitude 35.7, longitude 12.3. Pin identifies the filmed farming region, not every individual resource actor.",
       "inventoryEvidence": "Creator literal GPS overlay35.7/12.3 at195s; shoreline overview195s, actual white pearl clusters seabed209s. No measured yield claimed.",
       "sourcePlane": "the-island filmed region",
-      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 194,
+      "photoMapOverlayVisible": false
     },
     {
       "id": "rag-whale-keratin",
@@ -1003,11 +1065,13 @@
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=Xlsuehsu9oQ",
-      "photoSHA256": "79185335ef93ba8a29b19a92dbf6f947dbf980eeaf03a7141ded124f0dc8ecd6",
+      "photoSHA256": "82bf3c46eaa9673b63f913d3a22253c115555635dd11ba7626ab66bdd3acbfea",
       "coordinateEvidence": "In-game map camera GPS visible at 99s: latitude 9.85, longitude 92.05. Pin identifies the filmed farming region, not every individual resource actor.",
       "inventoryEvidence": "Actual whale carcass being struck with tool99s; persistent source camera coordinates9.85/92.05 in same frame. Creature/carcass farming region, not guaranteed permanent spawn. No fixed yield promised.",
       "sourcePlane": "ragnarok filmed region",
-      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 89,
+      "photoMapOverlayVisible": false
     },
     {
       "id": "honey-center-redwoods",
@@ -1035,11 +1099,13 @@
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=DgvNoRqz4EE",
-      "photoSHA256": "18db5cab729cbc94867f7987ae49e4652fa6fa282ddbf7ed175f79a8e6373245",
+      "photoSHA256": "bb8c68941be6e9f53437970ce1ce1e9edbc74b91ea33b93e095fbf8915b98032",
       "coordinateEvidence": "145s: creator overlay 77.1/65.3 and literal in-game map latitude77.1 longitude65.3; same tree shown135s. Region pin, not guaranteed hive actor.",
       "inventoryEvidence": "135s actual tree-mounted hive under player tree platform; video shows Giant Bee/Queen sequence and player inventory later. No fixed honey yield or guaranteed spawn asserted.",
       "sourcePlane": "the-center filmed region",
-      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 126,
+      "photoMapOverlayVisible": false
     },
     {
       "id": "honey-island-redwoods",
@@ -1067,11 +1133,13 @@
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=biZPGe9eD5Y",
-      "photoSHA256": "90857c107cfd18851de8191ee69e35074cffc3504cd04e39dbb27b923754c376",
+      "photoSHA256": "c639d78066e5fdfb611f8725ced9db7c71c5094fcfbde8744134cafbceb98c66",
       "coordinateEvidence": "38s and41s literal in-game M-map camera latitude63.3 longitude30.2; creator at same tree whose hive shown32s/45s. Keep source M-map coordinate convention; not estimated from minimap.",
       "inventoryEvidence": "45s hive closeup with visible honey comb; same source tree shown32s before coordinate map. Source is location demonstration, not a measured inventory yield.",
       "sourcePlane": "the-island filmed region",
-      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 31,
+      "photoMapOverlayVisible": false
     },
     {
       "id": "honey-ragnarok-queen-region",
@@ -1099,11 +1167,13 @@
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=u_c-yTvCLek",
-      "photoSHA256": "0c826cdef7bc7a12bc90dbf72bb017b1c3b3d12176e1bb7a7dda7b1adc5b24dc",
+      "photoSHA256": "d21499706d3b3f8dd32c91651659c70708bb5a0d08b2c87ebdcd2791c0056863",
       "coordinateEvidence": "85s literal in-game map crosshair latitude25.2 longitude40.0, matching creator overlay25.2 LAT40 LONG and Giant Queen Bee marker. This is search region; moving Queen location is not guaranteed.",
       "inventoryEvidence": "165s tame Giant Queen Bee with Obtain Bee Hive prompt;175s placed Bee Hive,185s hive inventory explicitly requests/provides Rare Flowers. Produced honey is not visibly measured; pin describes acquiring a Queen for honey production.",
       "sourcePlane": "ragnarok filmed region",
-      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 150,
+      "photoMapOverlayVisible": false
     },
     {
       "id": "rag-shore-sand",
@@ -1130,11 +1200,13 @@
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=jkMVN1exw74",
-      "photoSHA256": "5ce4158cb55110d887dabcf5fbd308ef4bc377d7362df375ea82609a53f3ba31",
+      "photoSHA256": "82c1f603738298ef4f4c20e77639ab4f54eef940a15a689ed14efca4c6fb2406",
       "coordinateEvidence": "In-game map camera GPS visible at 51s: latitude 24.2, longitude 33. Pin identifies the filmed farming region, not every individual resource actor.",
       "inventoryEvidence": "Literal M-map camera GPS24.2/33 at51s; same continuous shoreline chapter8\u201358s, actual golden Sandpile harvested19s with Sand+2 overlay.",
       "sourcePlane": "ragnarok filmed region",
-      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 10,
+      "photoMapOverlayVisible": false
     },
     {
       "id": "island-swamp-mushrooms",
@@ -1163,11 +1235,13 @@
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=3oUZ_AoRLmg",
-      "photoSHA256": "8a7ee056ac9fab8fc901bd8518e3d4e0354830164246f3cac97b82722423ee5e",
+      "photoSHA256": "83e8de45ac39d3e4487ed0ab1b4d97267d52e7e437809a3e596dac2c0b488875",
       "coordinateEvidence": "In-game map camera GPS visible at 79s: latitude 74.1, longitude 33.5. Pin identifies the filmed farming region, not every individual resource actor.",
       "inventoryEvidence": "Literal source M-map camera GPS74.1/33.5 at79s; continuous swamp route79\u2013103s and actual tree chopping99s. Wood+61 and Rare Mushroom+3 item-icon harvest overlays in source99s; mushroom inventory showcased103s. Pin is regional swamp entry/camera position, not an individual tree coordinate.",
       "sourcePlane": "the-island filmed region",
-      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 89,
+      "photoMapOverlayVisible": false
     },
     {
       "id": "center-extra-swamp-mushrooms",
@@ -1194,13 +1268,15 @@
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=tj-7gfu6AHA",
-      "photoSHA256": "bb981f3579c8c34a398eded2a71973906273df6eeb2cab8666a281b7d7645173",
+      "photoSHA256": "3500badc3d7d841c7f64d2d7d5ba7a75e42b74f5acc49fdefd36d96b53d4bcc0",
       "coordinateEvidence": "Actual ASA in-game map at135\u2013140s literally displays LATITUDE49.4 LONGITUDE37.4; local speech transcription of108\u2013145s independently repeats these coordinates. Pin marks filmed swamp tree-farming region.",
       "inventoryEvidence": "Dedicated ASA rare-mushroom guide chapter Swamp/Trees108\u2013145s shows exact swamp-tree scenery, equipped chainsaw120s and Therizinosaurus128\u2013131s. Creator explicitly names rare-mushroom harvesting with chainsaw/pick/Therizinosaurus in audio. No readable inventory yield/count shown here; this row verifies region and demonstrated method, not quantity.",
       "sourceApproval": "user-licensed-20261004",
       "rights": "licensed",
       "sourcePlane": "the-center filmed region",
-      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 112,
+      "photoMapOverlayVisible": false
     },
     {
       "id": "island-east-dam-rares",
@@ -1230,11 +1306,13 @@
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=6d_iRk7tFBk",
-      "photoSHA256": "b4769c1250b0c5b438d8b8ea6f605379157b948f5dbb873f17120a8b491c9956",
+      "photoSHA256": "86f77a53af54a6838c6f1fc35d5eb473dfde6cedb48e88d2e4b4af2ae87db5b7",
       "coordinateEvidence": "In-game map camera GPS visible at 286.5s: latitude 32.5, longitude 83.5. Pin identifies the filmed farming region, not every individual resource actor.",
       "inventoryEvidence": "Literal camera M-map GPS32.5/83.5 at286.5s, aerial regional locator then continuous descent to actual dam292.5s. Open dam322.5s shows Rare Flowers16, Rare Mushrooms8, Silica Pearls27, Cementing Paste370; wood visibly in earlier same dam inventory295.5s. Camera region rather than individual dam GPS; variable loot not promised fixed yield.",
       "sourcePlane": "the-island filmed region",
-      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 291,
+      "photoMapOverlayVisible": false
     },
     {
       "id": "center-extra-lava-chitin",
@@ -1262,14 +1340,16 @@
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=YU-ZCfZF8gk",
-      "photoSHA256": "5c1f2a517c32d7814245c0ba8f621eea18e9e46ce28e0df3d81267121f1f8aa2",
+      "photoSHA256": "1b32ac89fec08adf608530dc0c60855e96cc843ae3f89b2b4d300e71e835c7d2",
       "coordinateEvidence": "Same continuous ASA cave-farming sequence: HUD literally shows N19.36 47.68 at555s during Megatherium inventory after kills. The earlier100s map53.26/58.05 belongs to a different cave and is not used. Pin is interior farming region, not entrance or fixed creature spawn.",
       "inventoryEvidence": "Actual Megatherium attacks on Pulmonoscorpius/Araneo visible480\u2013540s. At550\u2013555s inventory contains Chitin icons in stacks10000/10000/242. These are creator/server totals, not promised yields; footage uses modified stack sizes.",
       "sourceApproval": "user-licensed-20261004",
       "rights": "licensed",
       "coordinateKind": "interior farm region",
       "sourcePlane": "the-center filmed region",
-      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 479,
+      "photoMapOverlayVisible": false
     },
     {
       "id": "center-extra-blue-basics",
@@ -1300,7 +1380,7 @@
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=bAqRvM-080g",
-      "photoSHA256": "31c02b7993a29710d9af8d1bc618cb861e53bcd046e36b0b6f974e297039ac4d",
+      "photoSHA256": "e619ee41b3d61ebd8ecdf66c887d0f5a7acbf2904f3e1a1a8394fb072dbddb22",
       "coordinateEvidence": "The same ASA Blue Obelisk sequence shows the in-game map at 17s with literal LATITUDE 52.3 and LONGITUDE 78.2. The source photograph at 25s shows forest trees, bush clusters and a distinct metal resource actor at the bottom right. No different GPS was inferred for the lower forest.",
       "inventoryEvidence": "Resource availability is inferred from the filmed terrain (tree trunks, bushes and a distinct ore actor) and the documented ARK Wiki harvesting mechanics: Trees provide Wood/Thatch and a Pick favors Thatch; Rocks provide Stone using a Hatchet; a Metal Sickle collects Fiber from plants. No inventory measurement or harvest count is claimed. Cliff geometry is not treated as a harvestable rock. Water availability derives from actual visible water shoreline and Flint from visible harvestable ground rocks plus standard Metal Pick rock harvesting mechanics; no specific yield or extra GPS actor claimed.",
       "mechanicsSources": [
@@ -1312,7 +1392,9 @@
       "rights": "licensed",
       "coordinateKind": "farm region hub",
       "sourcePlane": "the-center filmed region",
-      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 21,
+      "photoMapOverlayVisible": false
     },
     {
       "id": "scorched-eastern-metal",
@@ -1335,11 +1417,13 @@
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=k9IOWvnWMdg",
-      "photoSHA256": "a9013307b0f1f97f2393e669ffa840e299ae3f82228cfd042d107d9180b5fc25",
+      "photoSHA256": "a0e60c2fdeb12dd75abe787650c4927b6754391cd7c708537d14bf75bc074aa3",
       "coordinateEvidence": "In-game map reads latitude 53.8, longitude 78.7 at 25s. This is a filmed region, not every individual resource actor.",
       "inventoryEvidence": "Metal rocks and pick strikes are visible in the metal chapter.",
       "sourcePlane": "scorched-earth filmed region",
-      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 30,
+      "photoMapOverlayVisible": false
     },
     {
       "id": "scorched-central-metal",
@@ -1362,11 +1446,13 @@
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=k9IOWvnWMdg",
-      "photoSHA256": "0de0479375a34dff5dad1dc4082ca34eeb646b20d5f0e383a92090fc1e6f8f3b",
+      "photoSHA256": "069ea3a9afab4d6e3ea689600532f4b49ce45e94e2f08abacc89b8ddb28d6c8a",
       "coordinateEvidence": "In-game map reads latitude 48.2, longitude 63.0 at 45s. This is a filmed region, not every individual resource actor.",
       "inventoryEvidence": "The source shows a large metal ore rock and the surrounding ridge; these clips do not demonstrate a completed harvest.",
       "sourcePlane": "scorched-earth filmed region",
-      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 49,
+      "photoMapOverlayVisible": false
     },
     {
       "id": "extinction-oil-lake",
@@ -1389,11 +1475,13 @@
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=85xkdr_UYAo",
-      "photoSHA256": "dd9b2538d61505a5acb3cd68b6b2b73503c7f4c809b10f2fbee0f368ee132b95",
+      "photoSHA256": "d106d1fba7622fa5a264b9253111de290ea3fd9e245522c5066af9e2604d6c27",
       "coordinateEvidence": "In-game map and creator GPS overlay both read latitude 16.5, longitude 66.6 at 22s. This is a filmed region, not every individual resource actor.",
       "inventoryEvidence": "Oil chapter shows the lake and resource beds; harvesting is not demonstrated.",
       "sourcePlane": "extinction filmed region",
-      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 16,
+      "photoMapOverlayVisible": false
     },
     {
       "id": "lost-colony-north-metal",
@@ -1416,11 +1504,13 @@
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=WKNYEAeuSDA",
-      "photoSHA256": "e1d3d49de94be7de9957c25f8fbbe7305f689b76bcc99fad26b69bbe41912375",
+      "photoSHA256": "4c080b44892a2f583c7debb9c74fc11e7986befb0a246fad39f47031d899a1a0",
       "coordinateEvidence": "The source edits a waypoint named Metal to latitude 3.7, longitude 14.1 at 55s. Camera map coordinates nearby are 3.8,14.7. Pin follows the explicit resource waypoint. This is a filmed region, not every individual resource actor.",
       "inventoryEvidence": "Metal ore rocks are shown on the mountainside in the same resource chapter. Harvesting is not demonstrated.",
       "sourcePlane": "lost-colony filmed region",
-      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 20,
+      "photoMapOverlayVisible": false
     },
     {
       "id": "valguero-nw-pearl-lake",
@@ -1443,11 +1533,13 @@
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=boGcZ2neH6g",
-      "photoSHA256": "64f90174741f14dabfc706104e92236af96ae80261ab31f23595c0ba973a3f25",
+      "photoSHA256": "9fd62b36cc677eace0b0d8f75c674ad41f862ac718373697b5e2eeb44a99fd82",
       "coordinateEvidence": "In-game map cursor coincides with the green player arrow at latitude 43.9, longitude 22.5 at 50s. This is a filmed region, not every individual resource actor.",
       "inventoryEvidence": "The source enters the lake and shows submerged white pearl clusters. Harvesting is not demonstrated.",
       "sourcePlane": "valguero filmed region",
-      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 35,
+      "photoMapOverlayVisible": false
     },
     {
       "id": "astraeos-phokintos-crystal",
@@ -1470,11 +1562,13 @@
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=k73mk3nz0wI",
-      "photoSHA256": "3dce08f184baf17b5c86608fbf6db56f5b99489a2442996a5c48b0a7a7044f07",
+      "photoSHA256": "d9c7ba0e0892a090be7a0f69caf838f496fb8aaa9bf0e950bf584798e14f1b91",
       "coordinateEvidence": "Creator location 1 overlay reads latitude 16.8, longitude 28.3 at 20s; in-game map places this region in Phokintos. This is a filmed region, not every individual resource actor.",
       "inventoryEvidence": "Purple crystal formations are visible in the first filmed region. Harvesting is not demonstrated.",
       "sourcePlane": "Astraeos: Phokintos region in the source revision",
-      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 11,
+      "photoMapOverlayVisible": false
     },
     {
       "id": "aberration-green-metal",
@@ -1497,11 +1591,13 @@
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=BZVk5xrksxk",
-      "photoSHA256": "f90324a1367a5a2382ad789b18d910295481c9b29f5492147f3f8152654ff893",
+      "photoSHA256": "2dc773eae7cdc21e6d652a440bef5942c8277ebf817874d3dfafd5559ae1085c",
       "coordinateEvidence": "In-game map reads latitude 33.6, longitude 62.0 at 30s. This is a filmed region, not every individual resource actor.",
       "inventoryEvidence": "The green-zone metal guide shows ore rocks and the approach. Harvesting is not demonstrated.",
       "sourcePlane": "Aberration: green/blue-zone filmed region",
-      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 17,
+      "photoMapOverlayVisible": false
     },
     {
       "id": "aberration-blue-metal",
@@ -1524,11 +1620,13 @@
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=a_Os1QOHqkE",
-      "photoSHA256": "e506332fc4470e147ef2d4e5bfd00fee9682b77b8c87adaa3f41688b8133e068",
+      "photoSHA256": "a6ae096c754bea330c7810b07036e3481854ea2223fb3d55542a42b8f40b7c7a",
       "coordinateEvidence": "In-game map reads latitude 59.3, longitude 72.0 at 20s and 25s. This is a filmed region, not every individual resource actor.",
       "inventoryEvidence": "Blue-zone metallic rocks are visible beside the player. Harvesting is not demonstrated.",
       "sourcePlane": "Aberration: green/blue-zone filmed region",
-      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 11,
+      "photoMapOverlayVisible": false
     },
     {
       "id": "genesis-ocean-waterfall-cave",
@@ -1552,11 +1650,13 @@
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=YTpXmtVTGNs",
-      "photoSHA256": "bb8a6c261bc249afa83e56a4fb8f1aee938d9817bc0840b7a3a67f9a19cff8b8",
+      "photoSHA256": "c56b5ace6bd1ebb400f4fa89cc2f5e3088054def31a9c98e903857c908eb58d0",
       "coordinateEvidence": "In-game map has Ocean selected; cursor coincides with the green player arrow at latitude 50.7, longitude 65.6 at 60s. Pin identifies the filmed cave approach. This is a filmed region, not every individual resource actor.",
       "inventoryEvidence": "The source descends beside the waterfall into a cave with white crystal clusters and metallic ore rocks at 80s. Harvesting is not demonstrated.",
       "sourcePlane": "Genesis Part 1: Ocean biome, selected in the creator in-game map",
-      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 65,
+      "photoMapOverlayVisible": false
     },
     {
       "id": "genesis-arctic-metal-field",
@@ -1579,11 +1679,13 @@
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=-A6rpnfcqtw",
-      "photoSHA256": "3a701e8db9ec5926c800ea9ff7fed35ce3552be2583bbf475bdc26c14226363f",
+      "photoSHA256": "5f30551dba57de112f685eef6ec441e5258bb784694347d417cfbae7eb4be8f7",
       "coordinateEvidence": "In-game map reads latitude 76.2, longitude 27.6 at 45s in the snow-biome chapter. Pin identifies the filmed region, not every individual resource actor.",
       "inventoryEvidence": "The source shows metallic ore rocks in the snow biome and activates the resource scanner. Completed harvesting is not demonstrated.",
       "sourcePlane": "Genesis Part 1: filmed Arctic biome; coordinates belong to the creator in-game map",
-      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 10,
+      "photoMapOverlayVisible": false
     },
     {
       "id": "rag-river-sap-tap",
@@ -1608,11 +1710,13 @@
       ],
       "verified": true,
       "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8",
-      "photoSHA256": "5043a4373961b3fd1e2d845614cb5c7d2a18fbfd487c39b4e8cc0b5eaf9a7b82",
+      "photoSHA256": "2de431611515528fab1dbe23a62cf6ad9400e2c614174aab9145dd595b217b6c",
       "coordinateEvidence": "Literal in-game camera map at 935\u2013938s reads latitude22.4,longitude26.7. Same tapped tree appears before and after the map. Pin marks the filmed tree region.",
       "inventoryEvidence": "The source opens the installed Tree Sap Tap at932s; its inventory visibly contains the orange Sap item. This is collected production, not a promised fixed yield or timing.",
       "sourcePlane": "ragnarok filmed region",
-      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn."
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 928,
+      "photoMapOverlayVisible": false
     },
     {
       "id": "rag-blue-gem-cavern",
@@ -1644,7 +1748,9 @@
       "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
       "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8",
       "imageAsset": "FarmPhoto-rag-blue-gem-cavern",
-      "photoSHA256": "fbe118d2d602a715fe8d10ba03ee152e6f0c041336fd6783d813b957b3675309"
+      "photoSHA256": "2982efecc2892bc3b91170b34f788a41f69b0df5246d2c3a67fc84ff7561e5fe",
+      "photoSourceSeconds": 1167,
+      "photoMapOverlayVisible": false
     },
     {
       "id": "rag-highland-wild-vegetables",
@@ -1673,7 +1779,9 @@
       "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
       "sourceURL": "https://www.youtube.com/watch?v=5IhlD3yzqjU",
       "imageAsset": "FarmPhoto-rag-highland-wild-vegetables",
-      "photoSHA256": "48656ece80916a78aca2bd5843ec409cc5680d54e1d2ea745cd64df8b445a145"
+      "photoSHA256": "484b26ad819ca7964a41432fc3a8d881c18c60e511a3219b540df853fa82ebdf",
+      "photoSourceSeconds": 792,
+      "photoMapOverlayVisible": false
     }
   ],
   "coverage": [

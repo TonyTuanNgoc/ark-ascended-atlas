@@ -58,8 +58,10 @@ final class MapFieldTests:XCTestCase {
             XCTAssertNotNil(UIImage(named:spot.imageAsset),spot.id)
             let guide=ResourceClipCatalog.guide(for:spot.id);XCTAssertNotNil(guide,spot.id)
             XCTAssertEqual(guide?.steps.count,3);XCTAssertEqual(Set(guide?.steps.map(\.loop) ?? []).count,3)
-            for step in guide?.steps ?? [] {XCTAssertNotNil(step.url,step.id);XCTAssertNotNil(step.caveStep.posterImage,step.id);XCTAssertGreaterThan(step.endSeconds,step.startSeconds);XCTAssertTrue(step.sourceURL.hasPrefix("https://www.youtube.com/watch?v="))}
+            for step in guide?.steps ?? [] {XCTAssertEqual(step.mapOverlayVisible, false, step.id);XCTAssertFalse(step.title.localizedCaseInsensitiveContains("coordinates"), step.id);XCTAssertNotNil(step.url,step.id);XCTAssertNotNil(step.caveStep.posterImage,step.id);XCTAssertGreaterThan(step.endSeconds,step.startSeconds);XCTAssertTrue(step.sourceURL.hasPrefix("https://www.youtube.com/watch?v="))}
         }
         XCTAssertEqual(spots.count,guides.count)
+        let coverage = ResourceFarmCatalog.shared.coverage ?? []
+        for map in ArkMap.allCases { XCTAssertFalse(coverage.filter { $0.map == map.rawValue }.isEmpty, "Missing acquisition coverage: " + map.rawValue) }
     }
 }

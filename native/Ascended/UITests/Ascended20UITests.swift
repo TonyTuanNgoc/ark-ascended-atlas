@@ -29,7 +29,7 @@ final class Ascended20UITests:XCTestCase {
         app.buttons["custom-icon-tent.fill"].tap();app.buttons["custom-color-orange"].tap();app.buttons["custom-location-save"].tap()
         XCTAssertEqual(app.staticTexts["selectedMapLocation"].label,"QA field camp")
         let shot=XCTAttachment(screenshot:XCUIScreen.main.screenshot());shot.name="Personal-GPS-location";shot.lifetime = .keepAlways;add(shot)
-        app.buttons["Close location"].tap();app.terminate();app.launch();app.buttons["expand-layer-My Locations"].tap()
+        app.buttons["Close location"].tap();app.terminate();app.launch();for _ in 0..<6 {if app.buttons["expand-layer-My Locations"].isHittable {break};app.scrollViews["mapFilterRail"].swipeUp()};app.buttons["expand-layer-My Locations"].tap()
         let row=app.buttons.matching(NSPredicate(format:"identifier BEGINSWITH %@ AND label CONTAINS %@","location-filter-custom-","QA field camp")).firstMatch
         XCTAssertTrue(row.waitForExistence(timeout:5))
         app.buttons["maps-picker"].tap();app.buttons["choose-the-island"].tap();app.buttons["expand-layer-My Locations"].tap();XCTAssertFalse(app.buttons.matching(NSPredicate(format:"label CONTAINS %@","QA field camp")).firstMatch.exists)
