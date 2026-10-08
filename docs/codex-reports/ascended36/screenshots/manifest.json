@@ -1,0 +1,50 @@
+[
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "20C9346D-B0E6-4239-8152-1D85ADD57BA6",
+        "deviceName" : "Ascended iPad QA",
+        "exportedFileName" : "F3862D63-217E-4179-8813-E058F58E3B7F.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Argentavis-The-Island-spawn-regions_0_94EEF4BC-A921-4F37-924C-B76EC2C0D5F2.png",
+        "timestamp" : 1791461791.349
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "20C9346D-B0E6-4239-8152-1D85ADD57BA6",
+        "deviceName" : "Ascended iPad QA",
+        "exportedFileName" : "F3EE401A-7BC4-477F-A8DE-2F58D22A792A.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Creature-single-heading-and-custom-icons_0_DCB0D4A4-1952-49D6-B41D-02F790469E10.png",
+        "timestamp" : 1791461783.888
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "20C9346D-B0E6-4239-8152-1D85ADD57BA6",
+        "deviceName" : "Ascended iPad QA",
+        "exportedFileName" : "0B74C585-0473-461A-8EBA-EE75C9918532.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Atlas-horizontal-categories-and-cave-popup_0_B5CD4B29-A68E-419E-853A-620967BC11DD.png",
+        "timestamp" : 1791461777.913
+      }
+    ],
+    "testIdentifier" : "Ascended31UITests/testAtlasHorizontalCategoriesAndCreatureSpawn()",
+    "testIdentifierURL" : "test://com.apple.xcode/Ascended/AscendedUITests/Ascended31UITests/testAtlasHorizontalCategoriesAndCreatureSpawn"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "20C9346D-B0E6-4239-8152-1D85ADD57BA6",
+        "deviceName" : "Ascended iPad QA",
+        "exportedFileName" : "495B8F43-8CC3-4B2D-9853-F4B851E65A0D.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Artifact-anchored-GIF-popup_0_9C248A7C-06C7-4DAC-ADAD-A15262AAC8DB.png",
+        "timestamp" : 1791461807.916
+      }
+    ],
+    "testIdentifier" : "Atlas36UITests/testArtifactSelectionPreservesZoomAndOpensLinkedWalkthrough()",
+    "testIdentifierURL" : "test://com.apple.xcode/Ascended/AscendedUITests/Atlas36UITests/testArtifactSelectionPreservesZoomAndOpensLinkedWalkthrough"
+  }
+]

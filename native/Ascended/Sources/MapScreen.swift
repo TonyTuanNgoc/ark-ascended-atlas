@@ -17,6 +17,10 @@ struct MapScreen: View {
     @State private var focusedID: String?
     @State private var resetToken = UUID()
     @State private var action: MapAction = .fit
+    @State private var artifactViewport = AtlasPopupViewport(anchor: .zero, zoom: 1)
+    @State private var walkthrough: CaveGIFGuide?
+    @State private var pinchStartZoom: CGFloat?
+    @State private var requestedZoom: AtlasZoomRequest?
     var body: some View {
         GeometryReader { geometry in
         let imageSize = UIImage(named: map.imageAsset)?.size ?? CGSize(width: 1, height: 1)
@@ -25,11 +29,51 @@ struct MapScreen: View {
         VStack(spacing:12) {
         categoryBar
         HStack(alignment: .top, spacing: 16) {
-        ZoomableMap(imageAsset: map.imageAsset, mapName: map.name, resetToken: resetToken, action: action, locations: allPoints.filter {filters.includes($0)}, focusID: focusedID, select: { selected = $0; focusedID = $0.id }, addLocation:{gps in draft=PersonalMapLocation(map:map.rawValue,name:"",lat:gps.lat,lon:gps.lon)}, doubleTapResets:true, resetView:{focusedID=nil;selected=nil})
+        ZoomableMap(imageAsset: map.imageAsset, mapName: map.name, resetToken: resetToken, action: action, locations: allPoints.filter {filters.includes($0)}, focusID: focusedID, select: { selected = $0; focusedID = $0.id }, addLocation:{gps in draft=PersonalMapLocation(map:map.rawValue,name:"",lat:gps.lat,lon:gps.lon)}, automaticallyFocus:false, requestedZoom:requestedZoom, viewportChanged:{ artifactViewport = $0 }, highlightID: selected?.id, doubleTapResets:true, resetView:{focusedID=nil;selected=nil})
             .frame(width: mapWidth, height: mapWidth / aspect)
             .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
-            .overlay(alignment: .bottomTrailing) {
-                if let point = selected {
+            .overlay(alignment: .bottomTrailing) { legacyPopup }
+            .overlay(alignment: .topLeading) { artifactPopup(mapWidth: mapWidth, mapHeight: mapWidth / aspect) }
+            .simultaneousGesture(MagnifyGesture().onChanged { value in
+                if pinchStartZoom == nil { pinchStartZoom = artifactViewport.zoom }
+                requestedZoom = AtlasZoomRequest(ratio: (pinchStartZoom ?? 1) * value.magnification, anchor: CGPoint(x: value.startAnchor.x, y: value.startAnchor.y))
+            }.onEnded { _ in pinchStartZoom = nil; requestedZoom = nil })
+            .simultaneousGesture(TapGesture(count: 2).onEnded {
+                requestedZoom = nil; pinchStartZoom = nil
+                selected = nil; focusedID = nil; action = .fit; resetToken = UUID()
+            })
+            controls.frame(maxWidth: .infinity, maxHeight: .infinity)
+        }
+        }.padding(8)
+        .onAppear {
+            // Farming and Base Locations own their dedicated map layers.
+            if let id=initialFocus,let point=allPoints.first(where:{$0.id==id}) {
+                if point.layer == .resource {filters.resources.formUnion(point.resourceNames)} else {filters.locations.insert(id)}
+                selected=point;focusedID=id;selectedLayer=point.layer
+            }
+        }
+        .sheet(item: $walkthrough) { guide in
+            NavigationStack {
+                ScrollView {
+                    VStack(alignment: .leading, spacing: 16) {
+                        Text(map.exploration?.routes.first { $0.id == guide.routeID }?.name ?? "Cave walkthrough")
+                            .font(.largeTitle.bold()).accessibilityIdentifier("atlas-walkthrough-title")
+                        CaveGIFWalkthrough(guide: guide)
+                    }.padding(20)
+                }.background(Color(red: 0.025, green: 0.045, blue: 0.065))
+                    .toolbar { ToolbarItem(placement: .confirmationAction) { Button("Done") { walkthrough = nil } } }
+            }.preferredColorScheme(.dark)
+        }
+        .sheet(item:$draft) {value in PersonalLocationEditor(location:value) {saved in
+            var rows=personal;rows.removeAll {$0.id==saved.id};rows.append(saved)
+            personalJSON=PersonalMapLocation.encode(rows);filters.locations.insert(saved.point.id);selected=saved.point;focusedID=saved.point.id
+        }}
+        }
+    }
+
+    @ViewBuilder private var legacyPopup: some View {
+
+                if let point = selected, point.layer != .artifact {
                     if let farmID = point.farmID, let spot = ResourceFarmCatalog.spots(in: map).first(where: { $0.id == farmID }) {
                         VStack(alignment: .trailing, spacing: 4) {
                             Button { selected = nil; focusedID = nil } label: { Image(systemName: "xmark") }.accessibilityLabel("Close location")
@@ -71,21 +115,19 @@ struct MapScreen: View {
                         .padding(12)
                     }
                 }
-            }
-            controls.frame(maxWidth: .infinity, maxHeight: .infinity)
-        }
-        }.padding(8)
-        .onAppear {
-            // Farming and Base Locations own their dedicated map layers.
-            if let id=initialFocus,let point=allPoints.first(where:{$0.id==id}) {
-                if point.layer == .resource {filters.resources.formUnion(point.resourceNames)} else {filters.locations.insert(id)}
-                selected=point;focusedID=id;selectedLayer=point.layer
-            }
-        }
-        .sheet(item:$draft) {value in PersonalLocationEditor(location:value) {saved in
-            var rows=personal;rows.removeAll {$0.id==saved.id};rows.append(saved)
-            personalJSON=PersonalMapLocation.encode(rows);filters.locations.insert(saved.point.id);selected=saved.point;focusedID=saved.point.id
-        }}
+
+    }
+    @ViewBuilder private func artifactPopup(mapWidth: CGFloat, mapHeight: CGFloat) -> some View {
+        if let point = selected, point.layer == .artifact {
+            let desiredWidth = min(mapWidth - 16, 238 + min(max(artifactViewport.zoom - 1, 0), 4) * 22)
+            let desiredHeight = 100 + (desiredWidth - 24) * 9 / 16
+            let verticalRoom = max(artifactViewport.anchor.y, mapHeight - artifactViewport.anchor.y) - 44
+            let sideRoom = max(artifactViewport.anchor.x, mapWidth - artifactViewport.anchor.x) - 44
+            let width = verticalRoom >= desiredHeight ? desiredWidth : min(desiredWidth, max(150, sideRoom))
+            let height = 100 + (width - 24) * 9 / 16
+            let origin = AtlasPopupViewport.popupOrigin(anchor: artifactViewport.anchor, card: CGSize(width: width, height: height), viewport: CGSize(width: mapWidth, height: mapHeight))
+            AtlasArtifactPopup(point: point, guide: map.caveGIFs.first { $0.routeID == point.routeID }, playing: walkthrough == nil, close: { selected = nil; focusedID = nil }, open: { walkthrough = $0 })
+                .frame(width: width).accessibilityElement(children: .contain).accessibilityIdentifier("atlas-artifact-popup").offset(x: origin.x, y: origin.y).id(point.id)
         }
     }
 
@@ -153,6 +195,9 @@ struct ZoomableMap: UIViewRepresentable {
     let focusID: String?
     let select: (MapLocation) -> Void
     var addLocation:((MapGPS)->Void)? = nil
+    var automaticallyFocus = true
+    var requestedZoom: AtlasZoomRequest? = nil
+    var viewportChanged: ((AtlasPopupViewport) -> Void)? = nil
     var highlightID: String? = nil
     var doubleTapResets = false
     var resetView:(()->Void)? = nil
@@ -176,6 +221,9 @@ struct ZoomableMap: UIViewRepresentable {
         view.imageView.layer.allowsEdgeAntialiasing = true
         view.imageView.contentMode = .scaleAspectFit
         view.imageView.isUserInteractionEnabled = true
+        view.pinchGestureRecognizer?.isEnabled = automaticallyFocus
+        view.automaticallyFocus = automaticallyFocus
+        view.viewportChanged = viewportChanged
         view.highlightID = highlightID
         view.updateLocations(locations, select: select)
         view.focusID = focusID
@@ -196,12 +244,25 @@ struct ZoomableMap: UIViewRepresentable {
         context.coordinator.addLocation=addLocation
         context.coordinator.resetView=resetView
         context.coordinator.doubleTapResets = doubleTapResets
+        uiView.pinchGestureRecognizer?.isEnabled = automaticallyFocus
+        uiView.automaticallyFocus = automaticallyFocus
+        uiView.viewportChanged = viewportChanged
         uiView.highlightID = highlightID
         uiView.updateLocations(locations, select: select)
+        if let requestedZoom {
+            let scale = min(max(uiView.minimumZoomScale * requestedZoom.ratio, uiView.minimumZoomScale), uiView.maximumZoomScale)
+            if abs(uiView.zoomScale - scale) > 0.00001 {
+                let viewportPoint = CGPoint(x: uiView.bounds.minX + uiView.bounds.width * requestedZoom.anchor.x, y: uiView.bounds.minY + uiView.bounds.height * requestedZoom.anchor.y)
+                let pixel = uiView.imageView.convert(viewportPoint, from: uiView)
+                uiView.setZoomScale(scale, animated: false)
+                let after = uiView.imageView.convert(pixel, to: uiView)
+                uiView.setContentOffset(CGPoint(x: after.x - uiView.bounds.width * requestedZoom.anchor.x, y: after.y - uiView.bounds.height * requestedZoom.anchor.y), animated: false)
+            }
+        }
         uiView.centerMap()
         if uiView.focusID != focusID {
             uiView.focusID = focusID
-            uiView.focusMap(animated: true)
+            if automaticallyFocus { uiView.focusMap(animated: true) }
         }
         if context.coordinator.resetToken != resetToken {
             context.coordinator.resetToken = resetToken
@@ -244,6 +305,9 @@ final class MapScrollView: UIScrollView {
     let imageView = MapTerrainView(frame: .zero)
     private let resourceSurface = ResourceSurface()
     private var resources: [MapLocation] = []
+    var automaticallyFocus = true
+    var viewportChanged: ((AtlasPopupViewport) -> Void)?
+    private var lastViewport: AtlasPopupViewport?
     var focusID: String?
     var highlightID: String?
     private var locationIDs: [String] = []
@@ -308,7 +372,7 @@ final class MapScrollView: UIScrollView {
         if lastSize != bounds.size {
             lastSize = bounds.size
             fitMap(animated: false)
-            focusMap(animated: false)
+            if automaticallyFocus { focusMap(animated: false) }
         }
         centerMap()
     }
@@ -329,7 +393,7 @@ final class MapScrollView: UIScrollView {
         for index in order {
             let button = markerButtons[index]
             let pointIsSelected = locations[index].id == highlightID
-            if locations[index].farmID != nil || locations[index].layer == .base {
+            if locations[index].farmID != nil || locations[index].layer == .base || locations[index].layer == .artifact {
                 let diameter: CGFloat = pointIsSelected ? 44 : 36
                 button.bounds.size = CGSize(width: diameter, height: diameter)
                 button.layer.cornerRadius = diameter / 2
@@ -392,6 +456,88 @@ final class MapScrollView: UIScrollView {
             return CGPoint(x: pixel.x - bounds.minX, y: pixel.y - bounds.minY)
         }
         resourceSurface.refresh(on: self, avoiding: markers)
+        if let viewportChanged {
+            let pixel = locations.first(where: { $0.id == highlightID }).map { imageView.convert(pixelPoint($0), to: self) } ?? CGPoint(x: bounds.minX, y: bounds.minY)
+            let value = AtlasPopupViewport(anchor: CGPoint(x: pixel.x - bounds.minX, y: pixel.y - bounds.minY), zoom: zoomScale / max(minimumZoomScale, 0.001))
+            if lastViewport != value {
+                lastViewport = value
+                DispatchQueue.main.async { viewportChanged(value) }
+            }
+        }
     }
 
+}
+
+struct AtlasZoomRequest {
+    let ratio: CGFloat
+    let anchor: CGPoint
+}
+
+struct AtlasPopupViewport: Equatable {
+    let anchor: CGPoint
+    let zoom: CGFloat
+    static func popupOrigin(anchor: CGPoint, card: CGSize, viewport: CGSize) -> CGPoint {
+        let gap: CGFloat = 36
+        let x = min(max(anchor.x - card.width / 2, 8), max(8, viewport.width - card.width - 8))
+        let y = min(max(anchor.y - card.height / 2, 8), max(8, viewport.height - card.height - 8))
+        let candidates = [CGPoint(x: x, y: anchor.y + gap), CGPoint(x: anchor.x + gap, y: y), CGPoint(x: anchor.x - gap - card.width, y: y), CGPoint(x: x, y: anchor.y - gap - card.height)]
+        let bounds = CGRect(x: 8, y: 8, width: max(0, viewport.width - 16), height: max(0, viewport.height - 16))
+        if let origin = candidates.first(where: { bounds.contains(CGRect(origin: $0, size: card)) }) { return origin }
+        // At high zoom the pin can be outside the viewport; keep the card visible
+        // at the opposite edge without moving the map or hiding an on-screen pin.
+        let edgeX: CGFloat = anchor.x < viewport.width / 2 ? max(8, viewport.width - card.width - 8) : 8
+        let edgeY: CGFloat = anchor.y < viewport.height / 2 ? max(8, viewport.height - card.height - 8) : 8
+        return CGPoint(x: edgeX, y: edgeY)
+    }
+}
+
+private struct AtlasArtifactPopup: View {
+    let point: MapLocation
+    let guide: CaveGIFGuide?
+    let playing: Bool
+    let close: () -> Void
+    let open: (CaveGIFGuide) -> Void
+    @Environment(\.scenePhase) private var scenePhase
+    var body: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            HStack(spacing: 8) {
+                Image(uiImage: AtlasMarkerArt.image(for: point)).resizable().scaledToFit().frame(width: 30, height: 36)
+                VStack(alignment: .leading, spacing: 1) {
+                    Text("ARTIFACT OF THE").font(.system(size: 9, weight: .semibold)).tracking(1.2).foregroundStyle(.cyan)
+                    Text(point.name.replacingOccurrences(of: "Artifact of the ", with: ""))
+                        .font(.system(size: 22, weight: .bold, design: .rounded)).lineLimit(1).minimumScaleFactor(0.7)
+                        .accessibilityIdentifier("selectedMapLocation")
+                }
+                Spacer(minLength: 0)
+                if let routeID = point.routeID {
+                    NavigationLink(value: GuideDestination.cave(routeID)) {
+                        Image(systemName: "arrow.up.right.square").font(.title3).foregroundStyle(.cyan)
+                    }.accessibilityLabel("Open cave page").accessibilityIdentifier("atlas-open-cave-page")
+                }
+                Button(action: close) { Image(systemName: "xmark").font(.caption.bold()).padding(8).background(.white.opacity(0.1), in: Circle()) }.accessibilityLabel("Close location")
+            }
+            GPSBadge(coordinates: point.coordinates).font(.caption).foregroundStyle(.cyan).monospacedDigit()
+            if let guide, let step = guide.sections.first?.steps.first, let url = step.gifURL {
+                Button { open(guide) } label: {
+                    ZStack(alignment: .topTrailing) {
+                        if playing && scenePhase == .active {
+                            AutoCaveGIF(step: step, url: url)
+                        } else if let poster = step.posterThumbnail {
+                            Image(uiImage: poster).resizable().scaledToFit()
+                        }
+                        Image(systemName: "arrow.up.left.and.arrow.down.right").font(.caption.bold())
+                            .padding(8).background(.black.opacity(0.7), in: RoundedRectangle(cornerRadius: 8)).padding(6)
+                    }.aspectRatio(16 / 9, contentMode: .fit).clipShape(RoundedRectangle(cornerRadius: 10))
+                }.buttonStyle(.plain).accessibilityLabel("Open cave walkthrough").accessibilityIdentifier("atlas-cave-preview-" + guide.routeID)
+            } else {
+                AtlasLocationImage(point: point).frame(height: 112).clipShape(RoundedRectangle(cornerRadius: 10))
+                if let routeID = point.routeID {
+                    NavigationLink(value: GuideDestination.cave(routeID)) { Label("Cave route", systemImage: "map") }.font(.caption)
+                }
+            }
+        }.padding(12).foregroundStyle(.white)
+            .background(Color(red: 0.035, green: 0.075, blue: 0.09).opacity(0.97), in: RoundedRectangle(cornerRadius: 16))
+            .overlay(RoundedRectangle(cornerRadius: 16).stroke(.cyan.opacity(0.5)))
+            .shadow(color: .black.opacity(0.4), radius: 12, y: 4)
+    }
 }

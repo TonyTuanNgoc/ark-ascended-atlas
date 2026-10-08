@@ -128,3 +128,7 @@ Added23Center/14Ragnarok/13Aberration/2LostColony distinct filmed regions;146cur
 ## 2026-10-08 — Ascended 0.34.0 (35): reviewed Farming additions and research stop
 
 Saved16already-verified regions:6Valguero/3Extinction/7LostColony, now162curated-visible/172catalogue regions. Clean6–8.1second silent natural-speed loops, explicit regional coordinate/pickup evidence, corrected entrance label and demonstrated-harvest flags.11unique scoped tests pass; Simulator35installed/fresh launch/hash and visible landscape proof. User stopped further missing-region research; no more sources/captures/review scheduled. Raw audit25/154pairs reach3regions, without absence inferred from missing evidence. Standalone native app; no official webdomain/TonyOS/TestFlight/physicaliPad deployment. Report:codex-reports/2026-10-08-ascended35-farming-stop.md.
+
+## 2026-10-08 — Ascended 0.35.0 (36)
+
+Atlas selection preserves map zoom/pan. Artifact popup follows its highlighted pin without covering it, uses bold names and top-right cave-page navigation, and embeds existing map-specific cave loops with a larger walkthrough sheet. Fixed pinch-through-popup and double-tap reset gestures. All 10 Island artifacts have linked local clips. Nine scoped unit/UI tests passed; installed and launched build 36 on Ascended iPad QA. Existing saved media only; no additional Farming research. See `docs/codex-reports/2026-10-08-ascended36-atlas-artifacts.md`. Native Simulator delivery, no web domain.
