@@ -146,7 +146,7 @@ struct MapSessionShell: View {
 private struct CurrentMapArtwork: View {
     let map: ArkMap
     private var image: UIImage? {
-        UIImage(named: map == .island ? map.imageAsset : "MapLogo-" + map.expansionID) ?? UIImage(named: map.imageAsset)
+        UIImage(named: "MapLogo-" + map.expansionID) ?? UIImage(named: map.imageAsset)
     }
     var body: some View {
         if let image {

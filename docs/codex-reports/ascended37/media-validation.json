@@ -1,0 +1,127 @@
+{
+  "status": "passed",
+  "islandCounts": {
+    "Black Pearls": 1,
+    "Cementing Paste": 8,
+    "Chitin": 2,
+    "Crystal": 2,
+    "Giant Bee Honey": 1,
+    "Metal": 5,
+    "Obsidian": 6,
+    "Oil": 6,
+    "Organic Polymer": 5,
+    "Rare Flowers": 5,
+    "Rare Mushrooms": 2,
+    "Rich Metal": 1,
+    "Sap": 0,
+    "Silica Pearls": 5
+  },
+  "newMovies": [
+    {
+      "spotID": "island-rare-flower-red-peak",
+      "seconds": 8.0
+    },
+    {
+      "spotID": "island-paste-dam1-876-603",
+      "seconds": 6.08596
+    },
+    {
+      "spotID": "island-paste-dam2-753-418",
+      "seconds": 8.011461
+    },
+    {
+      "spotID": "island-paste-dam3-562-266",
+      "seconds": 8.011014
+    },
+    {
+      "spotID": "island-paste-dam4-485-652",
+      "seconds": 7.977077
+    },
+    {
+      "spotID": "island-paste-dam5-399-714",
+      "seconds": 7.977077
+    },
+    {
+      "spotID": "island-paste-dam6-172-728",
+      "seconds": 6.017192
+    },
+    {
+      "spotID": "island-paste-swamp-648-350",
+      "seconds": 7.977077
+    },
+    {
+      "spotID": "island-f37-metal-herbivore",
+      "seconds": 8.066016
+    },
+    {
+      "spotID": "island-f37-metal-metal-mountain",
+      "seconds": 7.066016
+    },
+    {
+      "spotID": "island-f37-metal-redwoods",
+      "seconds": 8.033333
+    },
+    {
+      "spotID": "island-f37-metal-frozen-peak",
+      "seconds": 8.033333
+    },
+    {
+      "spotID": "island-farming37-oil-north-beach",
+      "seconds": 8.033008
+    },
+    {
+      "spotID": "island-farming37-oil-far-northwest-iceberg",
+      "seconds": 7.266667
+    },
+    {
+      "spotID": "island-farming37-oil-south1-lagoon",
+      "seconds": 8.033333
+    },
+    {
+      "spotID": "island-farming37-oil-south2-lagoon",
+      "seconds": 8.033333
+    },
+    {
+      "spotID": "island-farming37-oil-herbivore-offshore",
+      "seconds": 6.233008
+    },
+    {
+      "spotID": "island-obsidian-blue-kittykat",
+      "seconds": 9.033008
+    },
+    {
+      "spotID": "island-obsidian-red-kittykat",
+      "seconds": 8.0
+    },
+    {
+      "spotID": "island-obsidian-ice-kittykat",
+      "seconds": 7.966667
+    },
+    {
+      "spotID": "island-obsidian-lucky-frozen",
+      "seconds": 4.578035
+    },
+    {
+      "spotID": "island-obsidian-lucky-far",
+      "seconds": 3.260116
+    },
+    {
+      "spotID": "island-farming37-polymer-snow-tropics",
+      "seconds": 6.233333
+    },
+    {
+      "spotID": "island-farming37-polymer-south-lagoon",
+      "seconds": 8.0
+    },
+    {
+      "spotID": "island-farming37-polymer-southwest-waterfall",
+      "seconds": 6.666667
+    },
+    {
+      "spotID": "island-farming37-polymer-west-inlet",
+      "seconds": 6.866667
+    }
+  ],
+  "islandVerifiedRegions": 43,
+  "otherMapEntriesUnchanged": true
+}

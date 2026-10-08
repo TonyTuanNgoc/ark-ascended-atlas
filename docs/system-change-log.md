@@ -132,3 +132,7 @@ Saved16already-verified regions:6Valguero/3Extinction/7LostColony, now162curated
 ## 2026-10-08 — Ascended 0.35.0 (36)
 
 Atlas selection preserves map zoom/pan. Artifact popup follows its highlighted pin without covering it, uses bold names and top-right cave-page navigation, and embeds existing map-specific cave loops with a larger walkthrough sheet. Fixed pinch-through-popup and double-tap reset gestures. All 10 Island artifacts have linked local clips. Nine scoped unit/UI tests passed; installed and launched build 36 on Ascended iPad QA. Existing saved media only; no additional Farming research. See `docs/codex-reports/2026-10-08-ascended36-atlas-artifacts.md`. Native Simulator delivery, no web domain.
+
+## 2026-10-08 — Ascended 0.36.0 (37)
+
+The Island supplied-video topics reach Metal 5 / Obsidian 6 / Oil 6 / Organic Polymer 5 / Cementing Paste 8 distinct regions. Added 26 clean loops, resource-specific cave mount notes, original Island cover, corrected mushroom GPS and excluded mismatched/superseded historical pins from coverage. Other maps preserved. Thirteen native cases, one packaging test and 26 full media-decode validations pass. Seven curated categories remain below five, including Sap with no reviewed pin; no blanket all-resource completion claim. Simulator build 37 installed/launched; no physical iPad/TestFlight/web domain. Report: codex-reports/2026-10-08-ascended37-island-farming.md.

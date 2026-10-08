@@ -1,7 +1,8 @@
 """Package reviewed location clips while retaining original coordinate provenance.
 
 Usage: python3 tools/integrate_farming32.py reviewed-additions.json
-Only continuous clean 6-10 second clips enter this release.
+Only reviewed clean clips enter this release. Default length is 6-10 seconds;
+an explicit shortClipReason allows a natural 3-6 second source shot.
 """
 import hashlib,json,shutil,subprocess,sys
 from pathlib import Path
@@ -18,7 +19,8 @@ for r in rows:
  if not movie.is_file():rejected.append([r['id'],'missing clip']);continue
  probe=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_streams','-show_format','-of','json',str(movie)]))
  video=next(x for x in probe['streams'] if x['codec_type']=='video');duration=float(probe['format']['duration'])
- if not 6<=duration<=10.05:rejected.append([r['id'],'duration outside 6-10 seconds']);continue
+ minimum=3 if r.get('shortClipReason') else 6
+ if not minimum<=duration<=10.05:rejected.append([r['id'],'duration outside reviewed range']);continue
  assert video['codec_name']=='h264' and not any(x['codec_type']=='audio' for x in probe['streams'])
  assert r.get('visualReviewStatus')=='verified' or 'verified' in r.get('status',''),r['id']
  assert r.get('mapOverlayVisible',r.get('cleanMapOverlayVisible',False)) is False
@@ -42,8 +44,8 @@ for r in rows:
  accepted.append(sid)
 spots['spots']=list(byspot.values());guides['guides']=list(byguide.values())
 for r in spots.get('coverage',[]):
- matches=[s['id'] for s in spots['spots'] if s['map']==r['map'] and r['resource'] in s['resources']]
+ matches=[s['id'] for s in spots['spots'] if s['verified'] and s['map']==r['map'] and r['resource'] in s['resources']]
  if matches:r.update(spotIDs=matches,status='verified',evidenceState='filmed-region-verified')
-for r in guides.get('coverage',[]):r['verifiedRegions']=sum(g['map']==r['map'] for g in guides['guides'])
+for r in guides.get('coverage',[]):r['verifiedRegions']=sum(g['map']==r['map'] and byspot.get(g['spotID'],{}).get('verified',False) for g in guides['guides'])
 write(RES/'verified-resource-spots.json',spots);write(RES/'resource-guides.json',guides)
 print(json.dumps({'accepted':accepted,'rejected':rejected,'totalSpots':len(byspot)},indent=2))

@@ -32,12 +32,22 @@ struct ResourceSourceChapter: Decodable, Identifiable {
     let startSeconds: Double
     var id: String { videoID + ":" + String(startSeconds) }
 }
+struct FarmMountRecommendation: Decodable {
+    let resource: String
+    let names: [String]
+    let note: String
+    let sourceURL: String
+}
 struct VerifiedResourceSpot: Decodable, Identifiable {
     let id, map, name, imageAsset, videoID, direction, method, sourceURL: String
     let lat, lon, seconds: Double
     let resources, kit, risks: [String]
     let verified: Bool
     let sourceCoordinateScope: String?
+    let mountRecommendations: [FarmMountRecommendation]?
+    func mounts(for resource: String) -> FarmMountRecommendation? {
+        mountRecommendations?.first { $0.resource == resource }
+    }
     var coordinateHint: String {
         let scope = sourceCoordinateScope ?? ""
         if scope.localizedCaseInsensitiveContains("cave-entrance") || scope.localizedCaseInsensitiveContains("cave entrance") {
@@ -237,6 +247,20 @@ struct ResourceFarmingScreen: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 14) {
                 HStack(spacing:8) {GuideIcon(name:"Harvesting");Text("Harvesting").font(.headline)}
+                if let recommendation = selectedSpot?.mounts(for: resource) {
+                    VStack(alignment: .leading, spacing: 8) {
+                        Text("For this location").font(.caption.bold()).foregroundStyle(.cyan)
+                        ForEach(recommendation.names, id: \.self) { name in
+                            HStack(spacing: 10) {
+                                CreatureAvatar(asset: "Dino-" + name.lowercased().replacingOccurrences(of: " ", with: "-")).frame(width: 42, height: 42)
+                                Text(name).font(.subheadline.weight(.semibold))
+                            }
+                        }
+                        Text(recommendation.note).font(.caption).foregroundStyle(.secondary)
+                    }.padding(10).frame(maxWidth: .infinity, alignment: .leading)
+                        .background(.cyan.opacity(0.06), in: RoundedRectangle(cornerRadius: 10))
+                        .accessibilityIdentifier("farm-location-mounts")
+                }
                 if let reference = HarvestingCatalogue.shared.resource(resource) {
                     if !reference.creatures.isEmpty {
                         HStack(spacing:6) {GuideIcon(name:"Creatures",size:22);Text("Creatures")}.font(.caption.bold()).foregroundStyle(.cyan)

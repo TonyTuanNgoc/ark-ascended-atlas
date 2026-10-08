@@ -1,0 +1,56 @@
+[
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "20C9346D-B0E6-4239-8152-1D85ADD57BA6",
+        "deviceName" : "Ascended iPad QA",
+        "exportedFileName" : "CDED9D2C-1AEE-445B-AF4D-941FDC32141E.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Artifact-anchored-GIF-popup_0_B236B42F-BACD-42F1-AEC5-CAD06D8838E2.png",
+        "timestamp" : 1791467966.198
+      }
+    ],
+    "testIdentifier" : "Atlas36UITests/testArtifactSelectionPreservesZoomAndOpensLinkedWalkthrough()",
+    "testIdentifierURL" : "test://com.apple.xcode/Ascended/AscendedUITests/Atlas36UITests/testArtifactSelectionPreservesZoomAndOpensLinkedWalkthrough"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "20C9346D-B0E6-4239-8152-1D85ADD57BA6",
+        "deviceName" : "Ascended iPad QA",
+        "exportedFileName" : "D7EF2694-A01B-46FE-BA11-5F9FCC781071.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Farming35-Extinction-Flowers_0_AF258BD7-ECC7-4322-98B9-1B1108D4CD77.png",
+        "timestamp" : 1791468044.671
+      }
+    ],
+    "testIdentifier" : "Farming35UITests/testNewValgueroAndExtinctionRegionsHaveMapScopedSingleClips()",
+    "testIdentifierURL" : "test://com.apple.xcode/Ascended/AscendedUITests/Farming35UITests/testNewValgueroAndExtinctionRegionsHaveMapScopedSingleClips"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "20C9346D-B0E6-4239-8152-1D85ADD57BA6",
+        "deviceName" : "Ascended iPad QA",
+        "exportedFileName" : "21773A1C-B0EA-4641-9027-83B1432DE7FB.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Farming37-Island-Cover_0_90607492-AC0D-4320-BA11-D1FA38B08C37.png",
+        "timestamp" : 1791468116.855
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "20C9346D-B0E6-4239-8152-1D85ADD57BA6",
+        "deviceName" : "Ascended iPad QA",
+        "exportedFileName" : "60EC4A7D-5641-4FFD-81D0-4C230143F25D.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Farming37-Island-Swamp-Mounts_0_80CFBF1C-679F-4B90-8657-DC298BFE3DCA.png",
+        "timestamp" : 1791468112.544
+      }
+    ],
+    "testIdentifier" : "Farming37UITests/testIslandFarmingPinsSwitchOneClipAndLocationMounts()",
+    "testIdentifierURL" : "test://com.apple.xcode/Ascended/AscendedUITests/Farming37UITests/testIslandFarmingPinsSwitchOneClipAndLocationMounts"
+  }
+]

@@ -1122,7 +1122,7 @@
       "coordinateEvidence": "In-game map camera GPS visible at 654s: latitude 55.2, longitude 25.7. Pin identifies the filmed farming region, not every individual resource actor.",
       "inventoryEvidence": "CP chapter629\u2013720s; camera GPS654s identifies this river segment, active beaver dam sequence662s. At660s the dam inventory visibly contains Wood, Cementing Paste and Rare Flowers; the clip demonstrates actual dam loot.",
       "harvestDemonstrated": false,
-      "evidenceLimitations": "This clip shows the filmed region and approach/resource view; no measured harvest yield or permanent spawn guarantee. Existing coordinate/inventory evidence remains source evidence outside this clean preview.",
+      "evidenceLimitations": "Historical western Redwoods river clip replaced by fresh island-paste-dam3-562-266; not counted as another distinct region.",
       "steps": [
         {
           "id": "Resource-island-redwood-paste-1",
@@ -1177,7 +1177,8 @@
           },
           "sha256": "82bd2a9030cfb6abc057f72998c942a04fbfff92d4a1c5fa3b8ef904658b0bdd"
         }
-      ]
+      ],
+      "verificationStatus": "superseded"
     },
     {
       "sourceAcquisition": "Approved complete local source cache",
@@ -2536,8 +2537,8 @@
       "rightsApproval": "User confirmed licenses for all source videos",
       "sourceWidth": 1920,
       "sourceHeight": 1080,
-      "coordinateEvidence": "In-game map camera GPS visible at 79s: latitude 74.1, longitude 33.5. Pin identifies the filmed farming region, not every individual resource actor.",
-      "inventoryEvidence": "Literal source M-map camera GPS74.1/33.5 at79s; continuous swamp route79\u2013103s and actual tree chopping99s. Wood+61 and Rare Mushroom+3 item-icon harvest overlays in source99s; mushroom inventory showcased103s. Pin is regional swamp entry/camera position, not an individual tree coordinate.",
+      "coordinateEvidence": "In-game M-map visible at79s and80s reads LATITUDE74.4 LONGITUDE23.5 (farming37 fresh full-resolution review).",
+      "inventoryEvidence": "Literal source M-map camera GPS74.4/23.5 at79s; continuous swamp route79\u2013103s and actual tree chopping99s. Wood+61 and Rare Mushroom+3 item-icon harvest overlays in source99s; mushroom inventory showcased103s. Pin is regional swamp entry/camera position, not an individual tree coordinate.",
       "harvestDemonstrated": false,
       "evidenceLimitations": "This clip shows the filmed region and approach/resource view; no measured harvest yield or permanent spawn guarantee. Existing coordinate/inventory evidence remains source evidence outside this clean preview.",
       "steps": [
@@ -4302,8 +4303,8 @@
       "sourceURL": "https://www.youtube.com/watch?v=IOCye6IYUCM",
       "sourcePlane": "the-island filmed region",
       "sourceCoordinateScope": "GPS is recorded inside the filmed cave at140s; the creator revisits its black pearl chamber in316\u2013346s. This is an interior camera coordinate, not an independently verified entrance.",
-      "coordinateEvidence": "In-game camera GPS visible at 140s: latitude 45.1, longitude 76.3. GPS is recorded inside the filmed cave at140s; the creator revisits its black pearl chamber in316\u2013346s. This is an interior camera coordinate, not an independently verified entrance. Evidence frame: tools/evidence/farming26-sources/IOCye6IYUCM-140.jpg",
-      "inventoryEvidence": "Black Pearls chapter272\u2013370s; glowing black pearl clusters and collection indicator shown in the chamber around326s.",
+      "coordinateEvidence": "INVALID historical association: cave camera45.1/76.3 at140s does not match western ocean footage320s. This guide is excluded from verified region counts.",
+      "inventoryEvidence": "No same-region eastern cave Black Pearl collection proof. Previous cave attribution rejected in fresh farming37 review.",
       "sourceAcquisition": "Approved complete local source cache",
       "spotID": "island-cave-black-pearls",
       "rightsBasis": "licensed",
@@ -4311,7 +4312,7 @@
       "sourceWidth": 1920,
       "sourceHeight": 1080,
       "harvestDemonstrated": false,
-      "evidenceLimitations": "Filmed region and resource view, not exact actor positions, guaranteed spawns or measured harvest yields. Coordinate view remains outside the clean preview. GPS is recorded inside the filmed cave at140s; the creator revisits its black pearl chamber in316\u2013346s. This is an interior camera coordinate, not an independently verified entrance.",
+      "evidenceLimitations": "Quarantined historical guide retained for audit only; excluded from runtime verified locations.",
       "steps": [
         {
           "id": "farm26-new-island-cave-black-pearls",
@@ -4366,7 +4367,8 @@
             "contextSheet": "tools/evidence/farming26-sources/island-cave-black-pearls-review4fps.jpg"
           }
         }
-      ]
+      ],
+      "verificationStatus": "quarantined"
     },
     {
       "sourceAcquisition": "approved-complete-local-cache",
@@ -9491,12 +9493,1176 @@
         },
         "clipConversion": "Continuous capture cut restored to natural 1x with setpts=2; no loop or interpolation."
       }
+    },
+    {
+      "sourceAcquisition": "Approved existing local source media",
+      "spotID": "island-rare-flower-red-peak",
+      "map": "the-island",
+      "sourcePlane": "the-island filmed region",
+      "sourceCoordinateScope": "Creator-labelled filmed Red Peak harvesting region; GPS is adjacent overview, not each individual plant node.",
+      "videoID": "6d_iRk7tFBk",
+      "sourceURL": "https://www.youtube.com/watch?v=6d_iRk7tFBk",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 960,
+      "sourceHeight": 540,
+      "coordinateEvidence": "Source raw map at 270s visibly reads Latitude 57.6 Longitude 47.7; creator names Redwoods mountain. Proof redpeak-gps-270.jpg.",
+      "inventoryEvidence": "Raw source at 247s shows Ankylosaurus inventory with 3 Rare Flower immediately following red-plant harvesting. Proof redpeak-inventory-247.jpg.",
+      "harvestDemonstrated": true,
+      "evidenceLimitations": "3 flowers shown in source inventory is demonstration, not guaranteed yield. GPS overview occurs later in same creator-labelled mountain segment.",
+      "steps": [
+        {
+          "id": "Resource-island-rare-flower-red-peak-1",
+          "title": "Terrain & approach",
+          "loop": "Resource-island-rare-flower-red-peak-1",
+          "poster": "Resource-island-rare-flower-red-peak-1",
+          "startSeconds": 233,
+          "endSeconds": 241,
+          "sourceURL": "https://www.youtube.com/watch?v=6d_iRk7tFBk&t=233s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "visualReview": {
+            "method": "Manual raw GPS/inventory frames plus encoded loop 4fps contact-sheet review",
+            "reviewedAt": "2026-10-08",
+            "contactSheet": "/Volumes/TONY SSD/ASCENDED_MEDIA/workspaces/Ascended-iPad-Dev/tools/evidence/farming37/source-c/redpeak-encoded-contact-4fps.jpg",
+            "result": "All 32 encoded samples show continuous Ankylosaurus approach/harvest on mountain slope; no map or inventory overlay; normal game HUD retained."
+          },
+          "sha256": "4203cc2018fd7e45e42b75ad9ce718e3936d6145cf808e2174a1fef0946169c8"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved existing local source media",
+      "spotID": "island-paste-dam1-876-603",
+      "map": "the-island",
+      "sourcePlane": "the-island filmed region",
+      "sourceCoordinateScope": "ASA regional beaver-dam search center, not permanent guaranteed spawn",
+      "videoID": "ThiYu0M6a_A",
+      "sourceURL": "https://www.youtube.com/watch?v=ThiYu0M6a_A",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1176,
+      "sourceHeight": 660,
+      "coordinateEvidence": "Raw capture 34s shows ASA map Latitude 87.6 Longitude 60.3. Proof dam1-gps-proof.jpg.",
+      "inventoryEvidence": "Dam structure and nearby beavers visibly shown in source region. No dam inventory opening or actual resource pickup shown.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "Dam location visually verified; actual loot not demonstrated. Source camera/edit transitions retained.",
+      "steps": [
+        {
+          "id": "Resource-island-paste-dam1-876-603-1",
+          "title": "Terrain & approach",
+          "loop": "Resource-island-paste-dam1-876-603-1",
+          "poster": "Resource-island-paste-dam1-876-603-1",
+          "startSeconds": 19,
+          "endSeconds": 25.1,
+          "sourceURL": "https://www.youtube.com/watch?v=ThiYu0M6a_A&t=19s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "visualReview": {
+            "method": "Manual rawGPS proof and encoded4fpscontact review",
+            "reviewedAt": "2026-10-08",
+            "contactSheet": "/Volumes/TONY SSD/ASCENDED_MEDIA/workspaces/Ascended-iPad-Dev/tools/evidence/farming37/source-c/paste-dam1-encoded4fps.jpg",
+            "result": "All encoded samples viewed: clean gameplay, no browser/player controls or map/inventory overlay. NormalHUD and creatorheadings retained. Black unused tile padding on6s contacts is not encodedvideo."
+          },
+          "sha256": "3dc0aac7c738f4d5c77c59f4b48b743686294b03f13250bb82a3a414222d0177"
+        }
+      ],
+      "sourceCapture": {
+        "captureStartSeconds": 37,
+        "captureEndSeconds": 43.1,
+        "sourceClockPrecision": "Approximate source time from UTC offset18.188s checked against creatorGPS/captions; approx\u00b11s",
+        "recordingFile": "ThiYu0M6a_A-farming37-1x.mp4"
+      }
+    },
+    {
+      "sourceAcquisition": "Approved existing local source media",
+      "spotID": "island-paste-dam2-753-418",
+      "map": "the-island",
+      "sourcePlane": "the-island filmed region",
+      "sourceCoordinateScope": "ASA regional beaver-dam search center, not permanent guaranteed spawn",
+      "videoID": "ThiYu0M6a_A",
+      "sourceURL": "https://www.youtube.com/watch?v=ThiYu0M6a_A",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1176,
+      "sourceHeight": 660,
+      "coordinateEvidence": "Raw capture 48s shows ASA map Latitude 75.3 Longitude 41.8. Proof dam2-gps-proof.jpg.",
+      "inventoryEvidence": "Dam structure and nearby beavers visibly shown in source region. No dam inventory opening or actual resource pickup shown.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "Dam location visually verified; actual loot not demonstrated. Source camera/edit transitions retained.",
+      "steps": [
+        {
+          "id": "Resource-island-paste-dam2-753-418-1",
+          "title": "Terrain & approach",
+          "loop": "Resource-island-paste-dam2-753-418-1",
+          "poster": "Resource-island-paste-dam2-753-418-1",
+          "startSeconds": 33,
+          "endSeconds": 41,
+          "sourceURL": "https://www.youtube.com/watch?v=ThiYu0M6a_A&t=33s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "visualReview": {
+            "method": "Manual rawGPS proof and encoded4fpscontact review",
+            "reviewedAt": "2026-10-08",
+            "contactSheet": "/Volumes/TONY SSD/ASCENDED_MEDIA/workspaces/Ascended-iPad-Dev/tools/evidence/farming37/source-c/paste-dam2-encoded4fps.jpg",
+            "result": "All encoded samples viewed: clean gameplay, no browser/player controls or map/inventory overlay. NormalHUD and creatorheadings retained. Black unused tile padding on6s contacts is not encodedvideo."
+          },
+          "sha256": "ab716110b0def6973831bebadd40435256f98282152d8342d051d131538448a8"
+        }
+      ],
+      "sourceCapture": {
+        "captureStartSeconds": 51,
+        "captureEndSeconds": 59,
+        "sourceClockPrecision": "Approximate source time from UTC offset18.188s checked against creatorGPS/captions; approx\u00b11s",
+        "recordingFile": "ThiYu0M6a_A-farming37-1x.mp4"
+      }
+    },
+    {
+      "sourceAcquisition": "Approved existing local source media",
+      "spotID": "island-paste-dam3-562-266",
+      "map": "the-island",
+      "sourcePlane": "the-island filmed region",
+      "sourceCoordinateScope": "ASA regional beaver-dam search center, not permanent guaranteed spawn",
+      "videoID": "ThiYu0M6a_A",
+      "sourceURL": "https://www.youtube.com/watch?v=ThiYu0M6a_A",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1176,
+      "sourceHeight": 660,
+      "coordinateEvidence": "Raw capture 62s shows ASA map Latitude 56.2 Longitude 26.6. Proof dam3-gps-proof.jpg.",
+      "inventoryEvidence": "Dam structure and nearby beavers visibly shown in source region. No dam inventory opening or actual resource pickup shown.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "Dam location visually verified; actual loot not demonstrated. Source camera/edit transitions retained.",
+      "steps": [
+        {
+          "id": "Resource-island-paste-dam3-562-266-1",
+          "title": "Terrain & approach",
+          "loop": "Resource-island-paste-dam3-562-266-1",
+          "poster": "Resource-island-paste-dam3-562-266-1",
+          "startSeconds": 52,
+          "endSeconds": 60,
+          "sourceURL": "https://www.youtube.com/watch?v=ThiYu0M6a_A&t=52s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "visualReview": {
+            "method": "Manual rawGPS proof and encoded4fpscontact review",
+            "reviewedAt": "2026-10-08",
+            "contactSheet": "/Volumes/TONY SSD/ASCENDED_MEDIA/workspaces/Ascended-iPad-Dev/tools/evidence/farming37/source-c/paste-dam3-encoded4fps.jpg",
+            "result": "All encoded samples viewed: clean gameplay, no browser/player controls or map/inventory overlay. NormalHUD and creatorheadings retained. Black unused tile padding on6s contacts is not encodedvideo."
+          },
+          "sha256": "1e1337f2a523a949ce19ddb65c43337b0151e5f3b1da511d0d092762e81dc461"
+        }
+      ],
+      "sourceCapture": {
+        "captureStartSeconds": 70,
+        "captureEndSeconds": 78,
+        "sourceClockPrecision": "Approximate source time from UTC offset18.188s checked against creatorGPS/captions; approx\u00b11s",
+        "recordingFile": "ThiYu0M6a_A-farming37-1x.mp4"
+      }
+    },
+    {
+      "sourceAcquisition": "Approved existing local source media",
+      "spotID": "island-paste-dam4-485-652",
+      "map": "the-island",
+      "sourcePlane": "the-island filmed region",
+      "sourceCoordinateScope": "ASA regional beaver-dam search center, not permanent guaranteed spawn",
+      "videoID": "ThiYu0M6a_A",
+      "sourceURL": "https://www.youtube.com/watch?v=ThiYu0M6a_A",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1176,
+      "sourceHeight": 660,
+      "coordinateEvidence": "Raw capture 96s shows ASA map Latitude 48.5 Longitude 65.2. Proof dam4-gps-proof.jpg.",
+      "inventoryEvidence": "Dam structure and nearby beavers visibly shown in source region. No dam inventory opening or actual resource pickup shown.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "Dam location visually verified; actual loot not demonstrated. Source camera/edit transitions retained.",
+      "steps": [
+        {
+          "id": "Resource-island-paste-dam4-485-652-1",
+          "title": "Terrain & approach",
+          "loop": "Resource-island-paste-dam4-485-652-1",
+          "poster": "Resource-island-paste-dam4-485-652-1",
+          "startSeconds": 83,
+          "endSeconds": 91,
+          "sourceURL": "https://www.youtube.com/watch?v=ThiYu0M6a_A&t=83s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "visualReview": {
+            "method": "Manual rawGPS proof and encoded4fpscontact review",
+            "reviewedAt": "2026-10-08",
+            "contactSheet": "/Volumes/TONY SSD/ASCENDED_MEDIA/workspaces/Ascended-iPad-Dev/tools/evidence/farming37/source-c/paste-dam4-encoded4fps.jpg",
+            "result": "All encoded samples viewed: clean gameplay, no browser/player controls or map/inventory overlay. NormalHUD and creatorheadings retained. Black unused tile padding on6s contacts is not encodedvideo."
+          },
+          "sha256": "05907aae4022fb853b29ebc15087c96f602baec4923a86f8c9d457d81309cdbd"
+        }
+      ],
+      "sourceCapture": {
+        "captureStartSeconds": 101,
+        "captureEndSeconds": 109,
+        "sourceClockPrecision": "Approximate source time from UTC offset18.188s checked against creatorGPS/captions; approx\u00b11s",
+        "recordingFile": "ThiYu0M6a_A-farming37-1x.mp4"
+      }
+    },
+    {
+      "sourceAcquisition": "Approved existing local source media",
+      "spotID": "island-paste-dam5-399-714",
+      "map": "the-island",
+      "sourcePlane": "the-island filmed region",
+      "sourceCoordinateScope": "ASA regional beaver-dam search center, not permanent guaranteed spawn",
+      "videoID": "ThiYu0M6a_A",
+      "sourceURL": "https://www.youtube.com/watch?v=ThiYu0M6a_A",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1176,
+      "sourceHeight": 660,
+      "coordinateEvidence": "Raw capture 118s shows ASA map Latitude 39.9 Longitude 71.4. Proof dam5-gps-proof.jpg.",
+      "inventoryEvidence": "Dam structure and nearby beavers visibly shown in source region. No dam inventory opening or actual resource pickup shown.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "Dam location visually verified; actual loot not demonstrated. Source camera/edit transitions retained.",
+      "steps": [
+        {
+          "id": "Resource-island-paste-dam5-399-714-1",
+          "title": "Terrain & approach",
+          "loop": "Resource-island-paste-dam5-399-714-1",
+          "poster": "Resource-island-paste-dam5-399-714-1",
+          "startSeconds": 105,
+          "endSeconds": 113,
+          "sourceURL": "https://www.youtube.com/watch?v=ThiYu0M6a_A&t=105s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "visualReview": {
+            "method": "Manual rawGPS proof and encoded4fpscontact review",
+            "reviewedAt": "2026-10-08",
+            "contactSheet": "/Volumes/TONY SSD/ASCENDED_MEDIA/workspaces/Ascended-iPad-Dev/tools/evidence/farming37/source-c/paste-dam5-encoded4fps.jpg",
+            "result": "All encoded samples viewed: clean gameplay, no browser/player controls or map/inventory overlay. NormalHUD and creatorheadings retained. Black unused tile padding on6s contacts is not encodedvideo."
+          },
+          "sha256": "b421f4a09a96cb9dbc40b6675679a35906ea15dcc421aeb8d1eedc9c866dc6f1"
+        }
+      ],
+      "sourceCapture": {
+        "captureStartSeconds": 123,
+        "captureEndSeconds": 131,
+        "sourceClockPrecision": "Approximate source time from UTC offset18.188s checked against creatorGPS/captions; approx\u00b11s",
+        "recordingFile": "ThiYu0M6a_A-farming37-1x.mp4"
+      }
+    },
+    {
+      "sourceAcquisition": "Approved existing local source media",
+      "spotID": "island-paste-dam6-172-728",
+      "map": "the-island",
+      "sourcePlane": "the-island filmed region",
+      "sourceCoordinateScope": "ASA regional beaver-dam search center, not permanent guaranteed spawn",
+      "videoID": "ThiYu0M6a_A",
+      "sourceURL": "https://www.youtube.com/watch?v=ThiYu0M6a_A",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1176,
+      "sourceHeight": 660,
+      "coordinateEvidence": "Raw capture 142s shows ASA map Latitude 17.2 Longitude 72.8. Proof dam6-gps-proof.jpg.",
+      "inventoryEvidence": "Dam structure and nearby beavers visibly shown in source region. No dam inventory opening or actual resource pickup shown.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "Dam location visually verified; actual loot not demonstrated. Source camera/edit transitions retained.",
+      "steps": [
+        {
+          "id": "Resource-island-paste-dam6-172-728-1",
+          "title": "Terrain & approach",
+          "loop": "Resource-island-paste-dam6-172-728-1",
+          "poster": "Resource-island-paste-dam6-172-728-1",
+          "startSeconds": 127,
+          "endSeconds": 133,
+          "sourceURL": "https://www.youtube.com/watch?v=ThiYu0M6a_A&t=127s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "visualReview": {
+            "method": "Manual rawGPS proof and encoded4fpscontact review",
+            "reviewedAt": "2026-10-08",
+            "contactSheet": "/Volumes/TONY SSD/ASCENDED_MEDIA/workspaces/Ascended-iPad-Dev/tools/evidence/farming37/source-c/paste-dam6-encoded4fps.jpg",
+            "result": "All encoded samples viewed: clean gameplay, no browser/player controls or map/inventory overlay. NormalHUD and creatorheadings retained. Black unused tile padding on6s contacts is not encodedvideo."
+          },
+          "sha256": "2154f363d70930836481e9e765109217da521d37a10a354ba2f8db02e9d3ce82"
+        }
+      ],
+      "sourceCapture": {
+        "captureStartSeconds": 145,
+        "captureEndSeconds": 151,
+        "sourceClockPrecision": "Approximate source time from UTC offset18.188s checked against creatorGPS/captions; approx\u00b11s",
+        "recordingFile": "ThiYu0M6a_A-farming37-1x.mp4"
+      }
+    },
+    {
+      "sourceAcquisition": "Approved existing local source media",
+      "spotID": "island-paste-swamp-648-350",
+      "map": "the-island",
+      "sourcePlane": "the-island filmed region",
+      "sourceCoordinateScope": "ASA cave entrance GPS; loop shows interior insect combat, not precise interior coordinate.",
+      "videoID": "ThiYu0M6a_A",
+      "sourceURL": "https://www.youtube.com/watch?v=ThiYu0M6a_A",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1176,
+      "sourceHeight": 660,
+      "coordinateEvidence": "Raw capture 162s shows ASA map Latitude 64.8 Longitude 35.0. Proof swamp-gps-proof.jpg.",
+      "inventoryEvidence": "Raw capture272s visibly shows Beelzebufo inventory with Cementing Paste and Chitin stacks after insect combat.",
+      "harvestDemonstrated": true,
+      "evidenceLimitations": "Final inventory shows resources; no guaranteed yield. GPS entrance differs from interior action.",
+      "steps": [
+        {
+          "id": "Resource-island-paste-swamp-648-350-1",
+          "title": "Terrain & approach",
+          "loop": "Resource-island-paste-swamp-648-350-1",
+          "poster": "Resource-island-paste-swamp-648-350-1",
+          "startSeconds": 198,
+          "endSeconds": 206,
+          "sourceURL": "https://www.youtube.com/watch?v=ThiYu0M6a_A&t=198s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "visualReview": {
+            "method": "Manual rawGPS proof and encoded4fpscontact review",
+            "reviewedAt": "2026-10-08",
+            "contactSheet": "/Volumes/TONY SSD/ASCENDED_MEDIA/workspaces/Ascended-iPad-Dev/tools/evidence/farming37/source-c/paste-swamp-encoded4fps.jpg",
+            "result": "All encoded samples viewed: clean gameplay, no browser/player controls or map/inventory overlay. NormalHUD and creatorheadings retained. Black unused tile padding on6s contacts is not encodedvideo."
+          },
+          "sha256": "7c38fb5c515e206c1d54f9daa630ce57201dd9a094a37e78c5ab2cfe57c37244"
+        }
+      ],
+      "sourceCapture": {
+        "captureStartSeconds": 216,
+        "captureEndSeconds": 224,
+        "sourceClockPrecision": "Approximate source time from UTC offset18.188s checked against creatorGPS/captions; approx\u00b11s",
+        "recordingFile": "ThiYu0M6a_A-farming37-1x.mp4"
+      }
+    },
+    {
+      "sourceAcquisition": "Licensed single-window browser capture, manually reviewed; no bypass",
+      "spotID": "island-f37-metal-herbivore",
+      "map": "the-island",
+      "sourcePlane": "the-island ASA filmed terrain",
+      "sourceCoordinateScope": "In-game M-map camera GPS region; not every actor or permanent spawn.",
+      "videoID": "PwRVGX3yWYA",
+      "sourceURL": "https://www.youtube.com/watch?v=PwRVGX3yWYA",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User licensed source videos in parent session",
+      "sourceWidth": 1176,
+      "sourceHeight": 660,
+      "coordinateEvidence": "Visually read in-game M-map camera coordinates at raw capture 55s: latitude 88.1, longitude 89.4. Proof frame: /Volumes/TONY SSD/ASCENDED_MEDIA/workspaces/Ascended-iPad-Dev/tools/evidence/farming37/source-a/metal-frames/gps-55.png. Adjacent clean terrain reviewed; region waypoint, not every ore rock.",
+      "inventoryEvidence": "Island palms, grassy crest, metal-veined ore rocks and shoreline landmarks.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "GPS proof is the in-game M-map camera latitude/longitude at capture 55s, scoped to filmed region; not every ore actor. Original playback was 2x but network stalls prevent exact source-time mapping. startSeconds/endSeconds are chapter seek hints (42-229s source chapter), not precise clip source boundaries. Actual clip comes from capture 30-34s. No measured yield, permanent node count, or independent Rich Metal/Crystal/Obsidian verification.",
+      "steps": [
+        {
+          "id": "Resource-island-f37-metal-herbivore-1",
+          "title": "Terrain & approach",
+          "loop": "Resource-island-f37-metal-herbivore-1",
+          "poster": "Resource-island-f37-metal-herbivore-1",
+          "startSeconds": 42,
+          "endSeconds": 50,
+          "sourceURL": "https://www.youtube.com/watch?v=PwRVGX3yWYA&t=42s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "visualReview": {
+            "method": "Manual full-resolution GPS proof plus encoded 4-fps contact-sheet review",
+            "reviewedAt": "2026-10-08",
+            "result": "Clean moving gameplay; no map or inventory overlay, browser spinner, black or blocked content in selected loop.",
+            "contactSheetPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/workspaces/Ascended-iPad-Dev/tools/evidence/farming37/source-a/metal-frames/review-herbivore.jpg"
+          },
+          "sha256": "19860dc8f8e0dc72bbddaf10dbf86cb053a22f9b64ef2539cf3ee2fd3f82e630"
+        }
+      ],
+      "sourceCapture": {
+        "captureStartSeconds": 30,
+        "captureEndSeconds": 34,
+        "sourceClockPrecision": "Chapter seek hint only; exact playback position lost to buffering; capture times below are exact.",
+        "sourcePlaybackRate": 2,
+        "captureFile": "PwRVGX3yWYA-farming37-2x.mp4"
+      }
+    },
+    {
+      "sourceAcquisition": "Licensed single-window browser capture, manually reviewed; no bypass",
+      "spotID": "island-f37-metal-metal-mountain",
+      "map": "the-island",
+      "sourcePlane": "the-island ASA filmed terrain",
+      "sourceCoordinateScope": "In-game M-map camera GPS region; not every actor or permanent spawn.",
+      "videoID": "PwRVGX3yWYA",
+      "sourceURL": "https://www.youtube.com/watch?v=PwRVGX3yWYA",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User licensed source videos in parent session",
+      "sourceWidth": 1176,
+      "sourceHeight": 660,
+      "coordinateEvidence": "Visually read in-game M-map camera coordinates at raw capture 135s: latitude 86.3, longitude 47.6. Proof frame: /Volumes/TONY SSD/ASCENDED_MEDIA/workspaces/Ascended-iPad-Dev/tools/evidence/farming37/source-a/metal-frames/gps-135.png. Adjacent clean terrain reviewed; region waypoint, not every ore rock.",
+      "inventoryEvidence": "Southern jungle hill with scattered ore rocks; region camera moves from map to clean hill approach.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "GPS proof is the in-game M-map camera latitude/longitude at capture 135s, scoped to filmed region; not every ore actor. Original playback was 2x but network stalls prevent exact source-time mapping. startSeconds/endSeconds are chapter seek hints (229-394s source chapter), not precise clip source boundaries. Actual clip comes from capture 136.4-139.9s. No measured yield, permanent node count, or independent Rich Metal/Crystal/Obsidian verification.",
+      "steps": [
+        {
+          "id": "Resource-island-f37-metal-metal-mountain-1",
+          "title": "Terrain & approach",
+          "loop": "Resource-island-f37-metal-metal-mountain-1",
+          "poster": "Resource-island-f37-metal-metal-mountain-1",
+          "startSeconds": 229,
+          "endSeconds": 236,
+          "sourceURL": "https://www.youtube.com/watch?v=PwRVGX3yWYA&t=229s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "visualReview": {
+            "method": "Manual full-resolution GPS proof plus encoded 4-fps contact-sheet review",
+            "reviewedAt": "2026-10-08",
+            "result": "Clean moving gameplay; no map or inventory overlay, browser spinner, black or blocked content in selected loop.",
+            "contactSheetPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/workspaces/Ascended-iPad-Dev/tools/evidence/farming37/source-a/metal-frames/review-metal-mountain.jpg"
+          },
+          "sha256": "b7b910af5ba7774d40b11bddda2649bf9a64c529e2a8d1b8cab045f42cda910c"
+        }
+      ],
+      "sourceCapture": {
+        "captureStartSeconds": 136.4,
+        "captureEndSeconds": 139.9,
+        "sourceClockPrecision": "Chapter seek hint only; exact playback position lost to buffering; capture times below are exact.",
+        "sourcePlaybackRate": 2,
+        "captureFile": "PwRVGX3yWYA-farming37-2x.mp4"
+      }
+    },
+    {
+      "sourceAcquisition": "Licensed single-window browser capture, manually reviewed; no bypass",
+      "spotID": "island-f37-metal-redwoods",
+      "map": "the-island",
+      "sourcePlane": "the-island ASA filmed terrain",
+      "sourceCoordinateScope": "In-game M-map camera GPS region; not every actor or permanent spawn.",
+      "videoID": "PwRVGX3yWYA",
+      "sourceURL": "https://www.youtube.com/watch?v=PwRVGX3yWYA",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User licensed source videos in parent session",
+      "sourceWidth": 1176,
+      "sourceHeight": 660,
+      "coordinateEvidence": "Visually read in-game M-map camera coordinates at raw capture 405s: latitude 58.4, longitude 49.0. Proof frame: /Volumes/TONY SSD/ASCENDED_MEDIA/workspaces/Ascended-iPad-Dev/tools/evidence/farming37/source-a/metal-frames/gps-405.png. Adjacent clean terrain reviewed; region waypoint, not every ore rock.",
+      "inventoryEvidence": "Rocky Redwoods mountain crest and exposed ore-bearing slopes; source map camera anchors the same crest.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "GPS proof is the in-game M-map camera latitude/longitude at capture 405s, scoped to filmed region; not every ore actor. Original playback was 2x but network stalls prevent exact source-time mapping. startSeconds/endSeconds are chapter seek hints (708-781s source chapter), not precise clip source boundaries. Actual clip comes from capture 396-400s. No measured yield, permanent node count, or independent Rich Metal/Crystal/Obsidian verification.",
+      "steps": [
+        {
+          "id": "Resource-island-f37-metal-redwoods-1",
+          "title": "Terrain & approach",
+          "loop": "Resource-island-f37-metal-redwoods-1",
+          "poster": "Resource-island-f37-metal-redwoods-1",
+          "startSeconds": 708,
+          "endSeconds": 716,
+          "sourceURL": "https://www.youtube.com/watch?v=PwRVGX3yWYA&t=708s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "visualReview": {
+            "method": "Manual full-resolution GPS proof plus encoded 4-fps contact-sheet review",
+            "reviewedAt": "2026-10-08",
+            "result": "Clean moving gameplay; no map or inventory overlay, browser spinner, black or blocked content in selected loop.",
+            "contactSheetPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/workspaces/Ascended-iPad-Dev/tools/evidence/farming37/source-a/metal-frames/review-redwoods.jpg"
+          },
+          "sha256": "ff5a98422eb4c459ef60a896f95c794ec51a54c7fd6cbad09f8d5496ab7a81f9"
+        }
+      ],
+      "sourceCapture": {
+        "captureStartSeconds": 396,
+        "captureEndSeconds": 400,
+        "sourceClockPrecision": "Chapter seek hint only; exact playback position lost to buffering; capture times below are exact.",
+        "sourcePlaybackRate": 2,
+        "captureFile": "PwRVGX3yWYA-farming37-2x.mp4"
+      }
+    },
+    {
+      "sourceAcquisition": "Licensed single-window browser capture, manually reviewed; no bypass",
+      "spotID": "island-f37-metal-frozen-peak",
+      "map": "the-island",
+      "sourcePlane": "the-island ASA filmed terrain",
+      "sourceCoordinateScope": "In-game M-map camera GPS region; not every actor or permanent spawn.",
+      "videoID": "PwRVGX3yWYA",
+      "sourceURL": "https://www.youtube.com/watch?v=PwRVGX3yWYA",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User licensed source videos in parent session",
+      "sourceWidth": 1176,
+      "sourceHeight": 660,
+      "coordinateEvidence": "Visually read in-game M-map camera coordinates at raw capture 515s: latitude 20.2, longitude 52.6. Proof frame: /Volumes/TONY SSD/ASCENDED_MEDIA/workspaces/Ascended-iPad-Dev/tools/evidence/farming37/source-a/metal-frames/gps-515.png. Adjacent clean terrain reviewed; region waypoint, not every ore rock.",
+      "inventoryEvidence": "Pickaxe mining a snow-covered ore rock followed by the rocky snow ridge and map camera position.",
+      "harvestDemonstrated": true,
+      "evidenceLimitations": "GPS proof is the in-game M-map camera latitude/longitude at capture 515s, scoped to filmed region; not every ore actor. Original playback was 2x but network stalls prevent exact source-time mapping. startSeconds/endSeconds are chapter seek hints (814-913s source chapter), not precise clip source boundaries. Actual clip comes from capture 507-511s. No measured yield, permanent node count, or independent Rich Metal/Crystal/Obsidian verification.",
+      "steps": [
+        {
+          "id": "Resource-island-f37-metal-frozen-peak-1",
+          "title": "Terrain & approach",
+          "loop": "Resource-island-f37-metal-frozen-peak-1",
+          "poster": "Resource-island-f37-metal-frozen-peak-1",
+          "startSeconds": 814,
+          "endSeconds": 822,
+          "sourceURL": "https://www.youtube.com/watch?v=PwRVGX3yWYA&t=814s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "visualReview": {
+            "method": "Manual full-resolution GPS proof plus encoded 4-fps contact-sheet review",
+            "reviewedAt": "2026-10-08",
+            "result": "Clean moving gameplay; no map or inventory overlay, browser spinner, black or blocked content in selected loop.",
+            "contactSheetPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/workspaces/Ascended-iPad-Dev/tools/evidence/farming37/source-a/metal-frames/review-frozen-peak.jpg"
+          },
+          "sha256": "6afa4c54b316e7a362c5c107794615367644747e1924757f6f277575e9d875a3"
+        }
+      ],
+      "sourceCapture": {
+        "captureStartSeconds": 507,
+        "captureEndSeconds": 511,
+        "sourceClockPrecision": "Chapter seek hint only; exact playback position lost to buffering; capture times below are exact.",
+        "sourcePlaybackRate": 2,
+        "captureFile": "PwRVGX3yWYA-farming37-2x.mp4"
+      }
+    },
+    {
+      "sourceAcquisition": "Licensed bounded browser recording; source reviewed; natural1x clip restored from2x playback",
+      "spotID": "island-farming37-oil-north-beach",
+      "map": "the-island",
+      "sourcePlane": "the-island filmed region",
+      "sourceCoordinateScope": "Literal in-game camera GPS for filmed area; nearby oil nodes vary.",
+      "videoID": "_v__ROnbjv8",
+      "sourceURL": "https://www.youtube.com/watch?v=_v__ROnbjv8",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 960,
+      "sourceHeight": 540,
+      "coordinateEvidence": "Capture32s literal in-game map shows LATITUDE8.4 LONGITUDE23.6; independently checked against creator captions.",
+      "inventoryEvidence": "Resource identity from explicit source narration in the same coordinate-labelled scene plus matching oil-node terrain. No guaranteed yield asserted.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "Filmed oil node region verified by literal camera GPS, caption narration and continuous terrain. No guaranteed current node count or measured yield. Original source clip seconds approximate; capture offsets exact.",
+      "steps": [
+        {
+          "id": "Resource-island-farming37-oil-north-beach-1",
+          "title": "Terrain & approach",
+          "loop": "Resource-island-farming37-oil-north-beach-1",
+          "poster": "Resource-island-farming37-oil-north-beach-1",
+          "startSeconds": 53.0,
+          "endSeconds": 61.0,
+          "sourceURL": "https://www.youtube.com/watch?v=_v__ROnbjv8&t=53.0s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "visualReview": {
+            "method": "Manual full-frame encoded first/middle/last review and original one-second frame inspection",
+            "reviewedAt": "2026-10-08",
+            "result": "Continuous clean gameplay; no map/inventory/YouTube control/spinner; creator watermark and normal game HUD preserved; H264960x540 silent natural1x"
+          },
+          "sha256": "2b337c1505b032655e942b892656167292b2cace85f5623c50e15b39e7da630b"
+        }
+      ],
+      "sourceCapture": {
+        "captureStartSeconds": 26.5,
+        "captureEndSeconds": 30.5,
+        "sourceClockPrecision": "Approximate original source seconds = capture offset times2; full-screen recording has no YouTube clock. Exact capture offsets retained; chapter/caption alignment reviewed.",
+        "sourcePlaybackRate": 2,
+        "captureFile": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/_v__ROnbjv8-farming37-2x.mp4"
+      }
+    },
+    {
+      "sourceAcquisition": "Licensed bounded browser recording; source reviewed; natural1x clip restored from2x playback",
+      "spotID": "island-farming37-oil-far-northwest-iceberg",
+      "map": "the-island",
+      "sourcePlane": "the-island filmed region",
+      "sourceCoordinateScope": "Literal in-game camera GPS for filmed area; nearby oil nodes vary.",
+      "videoID": "_v__ROnbjv8",
+      "sourceURL": "https://www.youtube.com/watch?v=_v__ROnbjv8",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 960,
+      "sourceHeight": 540,
+      "coordinateEvidence": "Capture48s literal in-game map shows LATITUDE5.8 LONGITUDE5.0; independently checked against creator captions.",
+      "inventoryEvidence": "Resource identity from explicit source narration in the same coordinate-labelled scene plus matching oil-node terrain. No guaranteed yield asserted.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "Filmed oil node region verified by literal camera GPS, caption narration and continuous terrain. No guaranteed current node count or measured yield. Original source clip seconds approximate; capture offsets exact.",
+      "steps": [
+        {
+          "id": "Resource-island-farming37-oil-far-northwest-iceberg-1",
+          "title": "Terrain & approach",
+          "loop": "Resource-island-farming37-oil-far-northwest-iceberg-1",
+          "poster": "Resource-island-farming37-oil-far-northwest-iceberg-1",
+          "startSeconds": 86.2,
+          "endSeconds": 93.4,
+          "sourceURL": "https://www.youtube.com/watch?v=_v__ROnbjv8&t=86.2s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "visualReview": {
+            "method": "Manual full-frame encoded first/middle/last review and original one-second frame inspection",
+            "reviewedAt": "2026-10-08",
+            "result": "Continuous clean gameplay; no map/inventory/YouTube control/spinner; creator watermark and normal game HUD preserved; H264960x540 silent natural1x"
+          },
+          "sha256": "13c15a5bcc9621a97c1c4083053c4fa9de0450e0e63761c9a851486782ea4591"
+        }
+      ],
+      "sourceCapture": {
+        "captureStartSeconds": 43.1,
+        "captureEndSeconds": 46.7,
+        "sourceClockPrecision": "Approximate original source seconds = capture offset times2; full-screen recording has no YouTube clock. Exact capture offsets retained; chapter/caption alignment reviewed.",
+        "sourcePlaybackRate": 2,
+        "captureFile": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/_v__ROnbjv8-farming37-2x.mp4"
+      }
+    },
+    {
+      "sourceAcquisition": "Licensed bounded browser recording; source reviewed; natural1x clip restored from2x playback",
+      "spotID": "island-farming37-oil-south1-lagoon",
+      "map": "the-island",
+      "sourcePlane": "the-island filmed region",
+      "sourceCoordinateScope": "Literal in-game camera GPS for filmed area; nearby oil nodes vary.",
+      "videoID": "_v__ROnbjv8",
+      "sourceURL": "https://www.youtube.com/watch?v=_v__ROnbjv8",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 960,
+      "sourceHeight": 540,
+      "coordinateEvidence": "Capture119s literal in-game map shows LATITUDE82.4 LONGITUDE34.1; independently checked against creator captions.",
+      "inventoryEvidence": "Resource identity from explicit source narration in the same coordinate-labelled scene plus matching oil-node terrain. No guaranteed yield asserted.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "Filmed oil node region verified by literal camera GPS, caption narration and continuous terrain. No guaranteed current node count or measured yield. Original source clip seconds approximate; capture offsets exact.",
+      "steps": [
+        {
+          "id": "Resource-island-farming37-oil-south1-lagoon-1",
+          "title": "Terrain & approach",
+          "loop": "Resource-island-farming37-oil-south1-lagoon-1",
+          "poster": "Resource-island-farming37-oil-south1-lagoon-1",
+          "startSeconds": 246,
+          "endSeconds": 254,
+          "sourceURL": "https://www.youtube.com/watch?v=_v__ROnbjv8&t=246s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "visualReview": {
+            "method": "Manual full-frame encoded first/middle/last review and original one-second frame inspection",
+            "reviewedAt": "2026-10-08",
+            "result": "Continuous clean gameplay; no map/inventory/YouTube control/spinner; creator watermark and normal game HUD preserved; H264960x540 silent natural1x"
+          },
+          "sha256": "82d9d423112e33b3d41bf49e570996965cbdd829942ae30e428d4c38e16245b8"
+        }
+      ],
+      "sourceCapture": {
+        "captureStartSeconds": 123,
+        "captureEndSeconds": 127,
+        "sourceClockPrecision": "Approximate original source seconds = capture offset times2; full-screen recording has no YouTube clock. Exact capture offsets retained; chapter/caption alignment reviewed.",
+        "sourcePlaybackRate": 2,
+        "captureFile": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/_v__ROnbjv8-farming37-2x.mp4"
+      }
+    },
+    {
+      "sourceAcquisition": "Licensed bounded browser recording; source reviewed; natural1x clip restored from2x playback",
+      "spotID": "island-farming37-oil-south2-lagoon",
+      "map": "the-island",
+      "sourcePlane": "the-island filmed region",
+      "sourceCoordinateScope": "Literal camera GPS94.0/57.1 above enclosed lagoon, continuous descent to oil corals. Neighbor94.8/56.1 peninsula counted as same region.",
+      "videoID": "_v__ROnbjv8",
+      "sourceURL": "https://www.youtube.com/watch?v=_v__ROnbjv8",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 960,
+      "sourceHeight": 540,
+      "coordinateEvidence": "Capture152s literal in-game map shows LATITUDE94.0 LONGITUDE57.1; independently checked against creator captions.",
+      "inventoryEvidence": "Resource identity from explicit source narration in the same coordinate-labelled scene plus matching oil-node terrain. No guaranteed yield asserted.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "Filmed oil node region verified by literal camera GPS, caption narration and continuous terrain. No guaranteed current node count or measured yield. Original source clip seconds approximate; capture offsets exact.",
+      "steps": [
+        {
+          "id": "Resource-island-farming37-oil-south2-lagoon-1",
+          "title": "Terrain & approach",
+          "loop": "Resource-island-farming37-oil-south2-lagoon-1",
+          "poster": "Resource-island-farming37-oil-south2-lagoon-1",
+          "startSeconds": 308,
+          "endSeconds": 316,
+          "sourceURL": "https://www.youtube.com/watch?v=_v__ROnbjv8&t=308s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "visualReview": {
+            "method": "Manual full-frame encoded first/middle/last review and original one-second frame inspection",
+            "reviewedAt": "2026-10-08",
+            "result": "Continuous clean gameplay; no map/inventory/YouTube control/spinner; creator watermark and normal game HUD preserved; H264960x540 silent natural1x"
+          },
+          "sha256": "f396a83b5790f7e3bf45abae81aa0284d9524236b4731406cdb06ae6f6b9281e"
+        }
+      ],
+      "sourceCapture": {
+        "captureStartSeconds": 154,
+        "captureEndSeconds": 158,
+        "sourceClockPrecision": "Approximate original source seconds = capture offset times2; full-screen recording has no YouTube clock. Exact capture offsets retained; chapter/caption alignment reviewed.",
+        "sourcePlaybackRate": 2,
+        "captureFile": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/_v__ROnbjv8-farming37-2x.mp4"
+      }
+    },
+    {
+      "sourceAcquisition": "Licensed bounded browser recording; source reviewed; natural1x clip restored from2x playback",
+      "spotID": "island-farming37-oil-herbivore-offshore",
+      "map": "the-island",
+      "sourcePlane": "the-island filmed region",
+      "sourceCoordinateScope": "Literal in-game camera GPS for filmed area; nearby oil nodes vary.",
+      "videoID": "_v__ROnbjv8",
+      "sourceURL": "https://www.youtube.com/watch?v=_v__ROnbjv8",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 960,
+      "sourceHeight": 540,
+      "coordinateEvidence": "Capture189s literal in-game map shows LATITUDE92.6 LONGITUDE91.5; independently checked against creator captions.",
+      "inventoryEvidence": "Resource identity from explicit source narration in the same coordinate-labelled scene plus matching oil-node terrain. No guaranteed yield asserted.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "Filmed oil node region verified by literal camera GPS, caption narration and continuous terrain. No guaranteed current node count or measured yield. Original source clip seconds approximate; capture offsets exact.",
+      "steps": [
+        {
+          "id": "Resource-island-farming37-oil-herbivore-offshore-1",
+          "title": "Terrain & approach",
+          "loop": "Resource-island-farming37-oil-herbivore-offshore-1",
+          "poster": "Resource-island-farming37-oil-herbivore-offshore-1",
+          "startSeconds": 385.4,
+          "endSeconds": 391.6,
+          "sourceURL": "https://www.youtube.com/watch?v=_v__ROnbjv8&t=385.4s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "visualReview": {
+            "method": "Manual full-frame encoded first/middle/last review and original one-second frame inspection",
+            "reviewedAt": "2026-10-08",
+            "result": "Continuous clean gameplay; no map/inventory/YouTube control/spinner; creator watermark and normal game HUD preserved; H264960x540 silent natural1x"
+          },
+          "sha256": "46daa5557766dd76b42b1746d2db49177737babfb1a6328e57905fd74faf28c2"
+        }
+      ],
+      "sourceCapture": {
+        "captureStartSeconds": 192.7,
+        "captureEndSeconds": 195.8,
+        "sourceClockPrecision": "Approximate original source seconds = capture offset times2; full-screen recording has no YouTube clock. Exact capture offsets retained; chapter/caption alignment reviewed.",
+        "sourcePlaybackRate": 2,
+        "captureFile": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/_v__ROnbjv8-farming37-2x.mp4"
+      }
+    },
+    {
+      "sourceAcquisition": "Approved existing local source media",
+      "spotID": "island-obsidian-blue-kittykat",
+      "map": "the-island",
+      "sourcePlane": "the-island filmed region",
+      "sourceCoordinateScope": "harvest region GPS; not cave entrance",
+      "videoID": "iWJFZOZQ8TY",
+      "sourceURL": "https://www.youtube.com/watch?v=iWJFZOZQ8TY",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 960,
+      "sourceHeight": 540,
+      "coordinateEvidence": "On-screen GPS at capture 17s reads 21.1/21.5.",
+      "inventoryEvidence": "Pick strikes black obsidian node; resource pickup HUD visible.",
+      "harvestDemonstrated": true,
+      "evidenceLimitations": "Filmed approach; no guaranteed yield or permanent node count.",
+      "steps": [
+        {
+          "id": "Resource-island-obsidian-blue-kittykat-1",
+          "title": "Terrain & approach",
+          "loop": "Resource-island-obsidian-blue-kittykat-1",
+          "poster": "Resource-island-obsidian-blue-kittykat-1",
+          "startSeconds": 0,
+          "endSeconds": 0,
+          "sourceURL": "https://www.youtube.com/watch?v=iWJFZOZQ8TY&t=0s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "visualReview": {
+            "method": "Manual encoded contact-sheet review",
+            "reviewedAt": "2026-10-08",
+            "result": "Clean terrain and approach with no map or inventory overlay"
+          },
+          "sha256": "257d91954560bbe2bdf53053bd43f0adf8ca214622e3f9fab9646b95732cce9c"
+        }
+      ],
+      "sourceCapture": {
+        "captureStartSeconds": 11,
+        "captureEndSeconds": 15.5,
+        "sourceClockPrecision": "actual unknown"
+      }
+    },
+    {
+      "sourceAcquisition": "Approved existing local source media",
+      "spotID": "island-obsidian-red-kittykat",
+      "map": "the-island",
+      "sourcePlane": "the-island filmed region",
+      "sourceCoordinateScope": "harvest region GPS; not cave entrance",
+      "videoID": "iWJFZOZQ8TY",
+      "sourceURL": "https://www.youtube.com/watch?v=iWJFZOZQ8TY",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 960,
+      "sourceHeight": 540,
+      "coordinateEvidence": "On-screen GPS at capture 32s reads 57.3/47.1.",
+      "inventoryEvidence": "Nodes visible; no readable obsidian pickup or inventory verification in reviewed slice.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "Filmed approach; no guaranteed yield or permanent node count.",
+      "steps": [
+        {
+          "id": "Resource-island-obsidian-red-kittykat-1",
+          "title": "Terrain & approach",
+          "loop": "Resource-island-obsidian-red-kittykat-1",
+          "poster": "Resource-island-obsidian-red-kittykat-1",
+          "startSeconds": 0,
+          "endSeconds": 0,
+          "sourceURL": "https://www.youtube.com/watch?v=iWJFZOZQ8TY&t=0s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "visualReview": {
+            "method": "Manual encoded contact-sheet review",
+            "reviewedAt": "2026-10-08",
+            "result": "Clean terrain and approach with no map or inventory overlay"
+          },
+          "sha256": "558665c56f64b878bf90c8b901b37192698b4de6d7c77527078cd4c1104d882c"
+        }
+      ],
+      "sourceCapture": {
+        "captureStartSeconds": 22,
+        "captureEndSeconds": 26,
+        "sourceClockPrecision": "actual unknown"
+      }
+    },
+    {
+      "sourceAcquisition": "Approved existing local source media",
+      "spotID": "island-obsidian-ice-kittykat",
+      "map": "the-island",
+      "sourcePlane": "the-island filmed region",
+      "sourceCoordinateScope": "harvest region GPS; not cave entrance",
+      "videoID": "iWJFZOZQ8TY",
+      "sourceURL": "https://www.youtube.com/watch?v=iWJFZOZQ8TY",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 960,
+      "sourceHeight": 540,
+      "coordinateEvidence": "On-screen GPS at capture 46s reads 24.9/9.2.",
+      "inventoryEvidence": "Nodes visible; no readable obsidian pickup or inventory verification in reviewed slice.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "Filmed approach; no guaranteed yield or permanent node count.",
+      "steps": [
+        {
+          "id": "Resource-island-obsidian-ice-kittykat-1",
+          "title": "Terrain & approach",
+          "loop": "Resource-island-obsidian-ice-kittykat-1",
+          "poster": "Resource-island-obsidian-ice-kittykat-1",
+          "startSeconds": 0,
+          "endSeconds": 0,
+          "sourceURL": "https://www.youtube.com/watch?v=iWJFZOZQ8TY&t=0s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "visualReview": {
+            "method": "Manual encoded contact-sheet review",
+            "reviewedAt": "2026-10-08",
+            "result": "Clean terrain and approach with no map or inventory overlay"
+          },
+          "sha256": "45bef24fb67ebebb3fc98342098e5f6aa5d04c032349823df6fb2cd8f4d4f3f1"
+        }
+      ],
+      "sourceCapture": {
+        "captureStartSeconds": 50,
+        "captureEndSeconds": 54,
+        "sourceClockPrecision": "actual unknown"
+      }
+    },
+    {
+      "sourceAcquisition": "Approved existing local source media",
+      "spotID": "island-obsidian-lucky-frozen",
+      "map": "the-island",
+      "sourcePlane": "the-island filmed region",
+      "sourceCoordinateScope": "resource-region coordinate shown on creator in-game map",
+      "videoID": "5aTpPyZRyZg",
+      "sourceURL": "https://www.youtube.com/watch?v=5aTpPyZRyZg",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 960,
+      "sourceHeight": 540,
+      "coordinateEvidence": "Creator opens in-game map: readable bottom GPS 34.5/60.9 at capture 85s; caption confirms the same location.",
+      "inventoryEvidence": "Black obsidian nodes shown in the named mountain region; no actual harvesting or readable inventory pickup.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "Filmed approach; no guaranteed yield or permanent node count.",
+      "steps": [
+        {
+          "id": "Resource-island-obsidian-lucky-frozen-1",
+          "title": "Terrain & approach",
+          "loop": "Resource-island-obsidian-lucky-frozen-1",
+          "poster": "Resource-island-obsidian-lucky-frozen-1",
+          "startSeconds": 99.68,
+          "endSeconds": 104.258035,
+          "sourceURL": "https://www.youtube.com/watch?v=5aTpPyZRyZg&t=99.68s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "visualReview": {
+            "method": "Manual encoded contact-sheet review",
+            "reviewedAt": "2026-10-08",
+            "result": "Clean terrain and approach with no map or inventory overlay"
+          },
+          "sha256": "3b66ccd3e06925eeb8b83db8f4b29019c6cda243828de5698d8359da8867366a"
+        }
+      ],
+      "sourceCapture": {
+        "captureStartSeconds": 79.7,
+        "captureEndSeconds": 84.2,
+        "sourceClockPrecision": "caption chapter seek hint; actual encoded clip alignment unknown"
+      },
+      "shortClipReason": "Source clean shot shorter than six seconds; adjacent M-map crossfade excluded."
+    },
+    {
+      "sourceAcquisition": "Approved existing local source media",
+      "spotID": "island-obsidian-lucky-far",
+      "map": "the-island",
+      "sourcePlane": "the-island filmed region",
+      "sourceCoordinateScope": "resource-region coordinate shown on creator in-game map",
+      "videoID": "5aTpPyZRyZg",
+      "sourceURL": "https://www.youtube.com/watch?v=5aTpPyZRyZg",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 960,
+      "sourceHeight": 540,
+      "coordinateEvidence": "Creator opens in-game map: readable bottom GPS 31.7/87.5 at capture 103s; caption confirms the same location.",
+      "inventoryEvidence": "Black obsidian nodes shown in the named mountain region; no actual harvesting or readable inventory pickup.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "Filmed approach; no guaranteed yield or permanent node count.",
+      "steps": [
+        {
+          "id": "Resource-island-obsidian-lucky-far-1",
+          "title": "Terrain & approach",
+          "loop": "Resource-island-obsidian-lucky-far-1",
+          "poster": "Resource-island-obsidian-lucky-far-1",
+          "startSeconds": 114.479,
+          "endSeconds": 117.739116,
+          "sourceURL": "https://www.youtube.com/watch?v=5aTpPyZRyZg&t=114.479s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "visualReview": {
+            "method": "Manual encoded contact-sheet review",
+            "reviewedAt": "2026-10-08",
+            "result": "Clean terrain and approach with no map or inventory overlay"
+          },
+          "sha256": "560d4b466a1067cae38f4df399f1a215f708712ced396b789bc80f5fd0b5e641"
+        }
+      ],
+      "sourceCapture": {
+        "captureStartSeconds": 94.8,
+        "captureEndSeconds": 98.0,
+        "sourceClockPrecision": "caption chapter seek hint; actual encoded clip alignment unknown"
+      },
+      "shortClipReason": "Source clean shot shorter than six seconds; adjacent M-map crossfade excluded."
+    },
+    {
+      "sourceAcquisition": "Acquired from manually recovered pre-interruption frames",
+      "spotID": "island-farming37-polymer-snow-tropics",
+      "map": "the-island",
+      "sourcePlane": "the-island filmed region",
+      "sourceCoordinateScope": "Literal camera GPS identifies a source-labelled Hesperornis hunting region; animals roam and spawns are dynamic.",
+      "videoID": "N5Qp_FNvIZI",
+      "sourceURL": "https://www.youtube.com/watch?v=N5Qp_FNvIZI",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 960,
+      "sourceHeight": 540,
+      "coordinateEvidence": "Literal in-game camera map at capture 78s shows latitude 36.4 longitude 14.0; same continuous regional terrain independently matches creator captions.",
+      "inventoryEvidence": "Creator explicitly labels this region as a Hesperornis hunting area in the Organic Polymer guide; actual terrain visually reviewed. No inventory yield or guaranteed current spawn asserted.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "Original capture remains rejected_partial_capture / usableMedia=false after ScreenCaptureKit stop-finalization errors -3805/-3808. Only manually recovered pre-interruption frames used. GPS and source-labelled hunting region verified; spawn certainty and measured harvest yield are unverified. Source timestamps are chapter seek hints.",
+      "steps": [
+        {
+          "id": "Resource-island-farming37-polymer-snow-tropics-1",
+          "title": "Terrain & approach",
+          "loop": "Resource-island-farming37-polymer-snow-tropics-1",
+          "poster": "Resource-island-farming37-polymer-snow-tropics-1",
+          "startSeconds": 183,
+          "endSeconds": 210,
+          "sourceURL": "https://www.youtube.com/watch?v=N5Qp_FNvIZI&t=183s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "visualReview": {
+            "method": "Manual inspection of every encoded frame via indexed full-frame 320x180 contact sheets, plus uncropped original GPS proof and regional continuity review",
+            "reviewedEncodedFrames": 187,
+            "contactSheetPaths": [
+              "/Volumes/TONY SSD/ASCENDED_MEDIA/workspaces/Ascended-iPad-Dev/tools/evidence/farming37/source-b/polymer-frames/snow-final-all-0.jpg",
+              "/Volumes/TONY SSD/ASCENDED_MEDIA/workspaces/Ascended-iPad-Dev/tools/evidence/farming37/source-b/polymer-frames/snow-final-all-1.jpg",
+              "/Volumes/TONY SSD/ASCENDED_MEDIA/workspaces/Ascended-iPad-Dev/tools/evidence/farming37/source-b/polymer-frames/snow-final-all-2.jpg",
+              "/Volumes/TONY SSD/ASCENDED_MEDIA/workspaces/Ascended-iPad-Dev/tools/evidence/farming37/source-b/polymer-frames/snow-final-all-3.jpg",
+              "/Volumes/TONY SSD/ASCENDED_MEDIA/workspaces/Ascended-iPad-Dev/tools/evidence/farming37/source-b/polymer-frames/snow-final-all-4.jpg",
+              "/Volumes/TONY SSD/ASCENDED_MEDIA/workspaces/Ascended-iPad-Dev/tools/evidence/farming37/source-b/polymer-frames/snow-final-all-5.jpg"
+            ],
+            "result": "Continuous gameplay; no map/inventory/player controls/spinner or source transition. No frozen capture extended. Creator watermark and normal game context preserved. Full frame scaled960x540; H264 silent natural1x.",
+            "reviewedAt": "2026-10-08"
+          },
+          "sha256": "eb42c036ff6151f1c0226cfd88b90db3f045ad85e202db891bd3ca2d51bc1797"
+        }
+      ],
+      "sourceCapture": {
+        "captureStartSeconds": 73.2,
+        "captureEndSeconds": 76.3,
+        "sourceClockPrecision": "Capture offsets exact. Original source chapter/caption seek hints retained because recording started after playback and buffering prevents a single linear clock mapping.",
+        "sourcePlaybackRate": 2,
+        "captureFile": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/N5Qp_FNvIZI-farming37-2x.mp4"
+      },
+      "sourceTimestampMeaning": "Original creator chapter seek hint identifying the region; not an exact reconstruction of the recovered clip clock.",
+      "sourceChapterStartSeconds": 183,
+      "sourceChapterEndSeconds": 210,
+      "recoveredSource": true
+    },
+    {
+      "sourceAcquisition": "Acquired from manually recovered pre-interruption frames",
+      "spotID": "island-farming37-polymer-south-lagoon",
+      "map": "the-island",
+      "sourcePlane": "the-island filmed region",
+      "sourceCoordinateScope": "Literal camera GPS identifies a source-labelled Hesperornis hunting region; animals roam and spawns are dynamic.",
+      "videoID": "N5Qp_FNvIZI",
+      "sourceURL": "https://www.youtube.com/watch?v=N5Qp_FNvIZI",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 960,
+      "sourceHeight": 540,
+      "coordinateEvidence": "Literal in-game camera map at capture 88s shows latitude 92.7 longitude 54.0; same continuous regional terrain independently matches creator captions.",
+      "inventoryEvidence": "Creator explicitly labels this region as a Hesperornis hunting area in the Organic Polymer guide; actual terrain visually reviewed. No inventory yield or guaranteed current spawn asserted.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "Original capture remains rejected_partial_capture / usableMedia=false after ScreenCaptureKit stop-finalization errors -3805/-3808. Only manually recovered pre-interruption frames used. GPS and source-labelled hunting region verified; spawn certainty and measured harvest yield are unverified. Source timestamps are chapter seek hints.",
+      "steps": [
+        {
+          "id": "Resource-island-farming37-polymer-south-lagoon-1",
+          "title": "Terrain & approach",
+          "loop": "Resource-island-farming37-polymer-south-lagoon-1",
+          "poster": "Resource-island-farming37-polymer-south-lagoon-1",
+          "startSeconds": 210,
+          "endSeconds": 229,
+          "sourceURL": "https://www.youtube.com/watch?v=N5Qp_FNvIZI&t=210s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "visualReview": {
+            "method": "Manual inspection of every encoded frame via indexed full-frame 320x180 contact sheets, plus uncropped original GPS proof and regional continuity review",
+            "reviewedEncodedFrames": 240,
+            "contactSheetPaths": [
+              "/Volumes/TONY SSD/ASCENDED_MEDIA/workspaces/Ascended-iPad-Dev/tools/evidence/farming37/source-b/polymer-frames/south-lagoon-all-0.jpg",
+              "/Volumes/TONY SSD/ASCENDED_MEDIA/workspaces/Ascended-iPad-Dev/tools/evidence/farming37/source-b/polymer-frames/south-lagoon-all-1.jpg",
+              "/Volumes/TONY SSD/ASCENDED_MEDIA/workspaces/Ascended-iPad-Dev/tools/evidence/farming37/source-b/polymer-frames/south-lagoon-all-2.jpg",
+              "/Volumes/TONY SSD/ASCENDED_MEDIA/workspaces/Ascended-iPad-Dev/tools/evidence/farming37/source-b/polymer-frames/south-lagoon-all-3.jpg",
+              "/Volumes/TONY SSD/ASCENDED_MEDIA/workspaces/Ascended-iPad-Dev/tools/evidence/farming37/source-b/polymer-frames/south-lagoon-all-4.jpg",
+              "/Volumes/TONY SSD/ASCENDED_MEDIA/workspaces/Ascended-iPad-Dev/tools/evidence/farming37/source-b/polymer-frames/south-lagoon-all-5.jpg",
+              "/Volumes/TONY SSD/ASCENDED_MEDIA/workspaces/Ascended-iPad-Dev/tools/evidence/farming37/source-b/polymer-frames/south-lagoon-all-6.jpg",
+              "/Volumes/TONY SSD/ASCENDED_MEDIA/workspaces/Ascended-iPad-Dev/tools/evidence/farming37/source-b/polymer-frames/south-lagoon-all-7.jpg"
+            ],
+            "result": "Continuous gameplay; no map/inventory/player controls/spinner or source transition. No frozen capture extended. Creator watermark and normal game context preserved. Full frame scaled960x540; H264 silent natural1x.",
+            "reviewedAt": "2026-10-08"
+          },
+          "sha256": "b679aee3cc84ec01a1703093346543ef2e48ac9cd873674011656c0e7c4ec3c7"
+        }
+      ],
+      "sourceCapture": {
+        "captureStartSeconds": 90.2,
+        "captureEndSeconds": 94.2,
+        "sourceClockPrecision": "Capture offsets exact. Original source chapter/caption seek hints retained because recording started after playback and buffering prevents a single linear clock mapping.",
+        "sourcePlaybackRate": 2,
+        "captureFile": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/N5Qp_FNvIZI-farming37-2x.mp4"
+      },
+      "sourceTimestampMeaning": "Original creator chapter seek hint identifying the region; not an exact reconstruction of the recovered clip clock.",
+      "sourceChapterStartSeconds": 210,
+      "sourceChapterEndSeconds": 229,
+      "recoveredSource": true
+    },
+    {
+      "sourceAcquisition": "Acquired from manually recovered pre-interruption frames",
+      "spotID": "island-farming37-polymer-southwest-waterfall",
+      "map": "the-island",
+      "sourcePlane": "the-island filmed region",
+      "sourceCoordinateScope": "Literal camera GPS identifies a source-labelled Hesperornis hunting region; animals roam and spawns are dynamic.",
+      "videoID": "N5Qp_FNvIZI",
+      "sourceURL": "https://www.youtube.com/watch?v=N5Qp_FNvIZI",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 960,
+      "sourceHeight": 540,
+      "coordinateEvidence": "Literal in-game camera map at capture 148s shows latitude 82.8 longitude 16.7; same continuous regional terrain independently matches creator captions.",
+      "inventoryEvidence": "Creator explicitly labels this region as a Hesperornis hunting area in the Organic Polymer guide; actual terrain visually reviewed. No inventory yield or guaranteed current spawn asserted.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "Original capture remains rejected_partial_capture / usableMedia=false after ScreenCaptureKit stop-finalization errors -3805/-3808. Only manually recovered pre-interruption frames used. GPS and source-labelled hunting region verified; spawn certainty and measured harvest yield are unverified. Source timestamps are chapter seek hints.",
+      "steps": [
+        {
+          "id": "Resource-island-farming37-polymer-southwest-waterfall-1",
+          "title": "Terrain & approach",
+          "loop": "Resource-island-farming37-polymer-southwest-waterfall-1",
+          "poster": "Resource-island-farming37-polymer-southwest-waterfall-1",
+          "startSeconds": 320,
+          "endSeconds": 348,
+          "sourceURL": "https://www.youtube.com/watch?v=N5Qp_FNvIZI&t=320s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "visualReview": {
+            "method": "Manual inspection of every encoded frame via indexed full-frame 320x180 contact sheets, plus uncropped original GPS proof and regional continuity review",
+            "reviewedEncodedFrames": 200,
+            "contactSheetPaths": [
+              "/Volumes/TONY SSD/ASCENDED_MEDIA/workspaces/Ascended-iPad-Dev/tools/evidence/farming37/source-b/polymer-frames/southwest-waterfall-all-0.jpg",
+              "/Volumes/TONY SSD/ASCENDED_MEDIA/workspaces/Ascended-iPad-Dev/tools/evidence/farming37/source-b/polymer-frames/southwest-waterfall-all-1.jpg",
+              "/Volumes/TONY SSD/ASCENDED_MEDIA/workspaces/Ascended-iPad-Dev/tools/evidence/farming37/source-b/polymer-frames/southwest-waterfall-all-2.jpg",
+              "/Volumes/TONY SSD/ASCENDED_MEDIA/workspaces/Ascended-iPad-Dev/tools/evidence/farming37/source-b/polymer-frames/southwest-waterfall-all-3.jpg",
+              "/Volumes/TONY SSD/ASCENDED_MEDIA/workspaces/Ascended-iPad-Dev/tools/evidence/farming37/source-b/polymer-frames/southwest-waterfall-all-4.jpg",
+              "/Volumes/TONY SSD/ASCENDED_MEDIA/workspaces/Ascended-iPad-Dev/tools/evidence/farming37/source-b/polymer-frames/southwest-waterfall-all-5.jpg",
+              "/Volumes/TONY SSD/ASCENDED_MEDIA/workspaces/Ascended-iPad-Dev/tools/evidence/farming37/source-b/polymer-frames/southwest-waterfall-all-6.jpg"
+            ],
+            "result": "Continuous gameplay; no map/inventory/player controls/spinner or source transition. No frozen capture extended. Creator watermark and normal game context preserved. Full frame scaled960x540; H264 silent natural1x.",
+            "reviewedAt": "2026-10-08"
+          },
+          "sha256": "151d6aaf592b90fc5df3dc328a6428a3584396dfa2c4fd9ec41a1e1ae062721f"
+        }
+      ],
+      "sourceCapture": {
+        "captureStartSeconds": 143.3,
+        "captureEndSeconds": 146.6,
+        "sourceClockPrecision": "Capture offsets exact. Original source chapter/caption seek hints retained because recording started after playback and buffering prevents a single linear clock mapping.",
+        "sourcePlaybackRate": 2,
+        "captureFile": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/N5Qp_FNvIZI-farming37-2x.mp4"
+      },
+      "sourceTimestampMeaning": "Original creator chapter seek hint identifying the region; not an exact reconstruction of the recovered clip clock.",
+      "sourceChapterStartSeconds": 320,
+      "sourceChapterEndSeconds": 348,
+      "recoveredSource": true
+    },
+    {
+      "sourceAcquisition": "Acquired from manually recovered pre-interruption frames",
+      "spotID": "island-farming37-polymer-west-inlet",
+      "map": "the-island",
+      "sourcePlane": "the-island filmed region",
+      "sourceCoordinateScope": "Literal camera GPS identifies a source-labelled Hesperornis hunting region; animals roam and spawns are dynamic.",
+      "videoID": "N5Qp_FNvIZI",
+      "sourceURL": "https://www.youtube.com/watch?v=N5Qp_FNvIZI",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 960,
+      "sourceHeight": 540,
+      "coordinateEvidence": "Literal in-game camera map at capture184s shows LATITUDE64.9 LONGITUDE9.7; adjacent continuous inlet terrain visually reviewed and matches creator location captions.",
+      "inventoryEvidence": "Creator explicitly identifies this inlet as a Hesperornis hunting region in the Organic Polymer guide around394\u2013416s. Filmed tropical lagoon/shoreline verified. No inventory yield or guaranteed present Hesperornis claimed.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "Original capture remains rejected_partial_capture / usableMedia=false after ScreenCaptureKit stop-finalization errors -3805/-3808. Only manually recovered pre-interruption frames used. GPS and source-labelled hunting region verified; spawn certainty and measured harvest yield are unverified. Source timestamps are chapter seek hints.",
+      "steps": [
+        {
+          "id": "Resource-island-farming37-polymer-west-inlet-1",
+          "title": "Terrain & approach",
+          "loop": "Resource-island-farming37-polymer-west-inlet-1",
+          "poster": "Resource-island-farming37-polymer-west-inlet-1",
+          "startSeconds": 394,
+          "endSeconds": 416,
+          "sourceURL": "https://www.youtube.com/watch?v=N5Qp_FNvIZI&t=394s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "visualReview": {
+            "method": "Manual inspection of every encoded frame via indexed full-frame 320x180 contact sheets, plus uncropped original GPS proof and regional continuity review",
+            "reviewedEncodedFrames": 206,
+            "contactSheetPaths": [
+              "/Volumes/TONY SSD/ASCENDED_MEDIA/workspaces/Ascended-iPad-Dev/tools/evidence/farming37/source-b/polymer-frames/west-inlet-all-0.jpg",
+              "/Volumes/TONY SSD/ASCENDED_MEDIA/workspaces/Ascended-iPad-Dev/tools/evidence/farming37/source-b/polymer-frames/west-inlet-all-1.jpg",
+              "/Volumes/TONY SSD/ASCENDED_MEDIA/workspaces/Ascended-iPad-Dev/tools/evidence/farming37/source-b/polymer-frames/west-inlet-all-2.jpg",
+              "/Volumes/TONY SSD/ASCENDED_MEDIA/workspaces/Ascended-iPad-Dev/tools/evidence/farming37/source-b/polymer-frames/west-inlet-all-3.jpg",
+              "/Volumes/TONY SSD/ASCENDED_MEDIA/workspaces/Ascended-iPad-Dev/tools/evidence/farming37/source-b/polymer-frames/west-inlet-all-4.jpg",
+              "/Volumes/TONY SSD/ASCENDED_MEDIA/workspaces/Ascended-iPad-Dev/tools/evidence/farming37/source-b/polymer-frames/west-inlet-all-5.jpg",
+              "/Volumes/TONY SSD/ASCENDED_MEDIA/workspaces/Ascended-iPad-Dev/tools/evidence/farming37/source-b/polymer-frames/west-inlet-all-6.jpg"
+            ],
+            "result": "All206 encoded frames manually reviewed. Continuous clean inlet gameplay; no map/inventory/player controls/spinner/source transition. No frozen capture extended. Creator watermark preserved. Fullframe960x540 H264 silent natural1x.",
+            "reviewedAt": "2026-10-08"
+          },
+          "sha256": "1a1da7b0dc2f8860ee8298333d71612faf321f3712d7880eb83c402a90c60a24"
+        }
+      ],
+      "sourceCapture": {
+        "captureStartSeconds": 185.2,
+        "captureEndSeconds": 188.6,
+        "sourceClockPrecision": "Capture offsets exact. Original source chapter/caption seek hints retained because recording started after playback and buffering prevents a single linear clock mapping.",
+        "sourcePlaybackRate": 2,
+        "captureFile": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/N5Qp_FNvIZI-farming37-2x.mp4"
+      },
+      "sourceTimestampMeaning": "Original creator chapter seek hint identifying the region; not an exact reconstruction of the recovered clip clock.",
+      "sourceChapterStartSeconds": 394,
+      "sourceChapterEndSeconds": 416,
+      "recoveredSource": true
     }
   ],
   "coverage": [
     {
       "map": "the-island",
-      "verifiedRegions": 19,
+      "verifiedRegions": 43,
       "status": "source-verified",
       "reason": "Filmed GPS regions reviewed against source footage; individual actors and respawns vary."
     },
