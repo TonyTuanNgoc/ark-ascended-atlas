@@ -1,0 +1,68 @@
+{
+  "candidates": [
+    {
+      "id": "valguero-waterfall-metal-60-40",
+      "map": "valguero",
+      "name": "Waterfall ridge metal deposit",
+      "resources": [
+        "Metal"
+      ],
+      "lat": 60.9,
+      "lon": 40.2,
+      "videoID": "GmVkxFGsUCg",
+      "startSeconds": 30,
+      "endSeconds": 38,
+      "coordinateEvidence": "Creator caption LOCATION1 LAT60.9 LON40.2 in the dedicated ASA Top10 Metal guide and the filmed first deposit chapter.",
+      "inventoryEvidence": "Creator identifies this ridge as the first metal deposit in the dedicated metal guide; no measured yield claim.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming33/root/valguero-waterfall-metal-60-40.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming33/root/valguero-waterfall-metal-60-40.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=GmVkxFGsUCg",
+      "sourcePlane": "valguero ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-labelled farming region",
+      "mapOverlayVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "Licensed partial opening acquired before403; no retry after denial",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming33/root/valguero-waterfall-metal-60-40-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming33/root/GmVkxFGsUCg-coordinate.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true
+      },
+      "evidenceLimitations": "Filmed regional waypoint; no permanent node count or guaranteed yield. Only licensed cached media acquired before source denial was used."
+    },
+    {
+      "id": "astraeos-korinthos-pearl-shallows-40-26",
+      "map": "astraeos",
+      "name": "Korinthos pearl shallows",
+      "resources": [
+        "Silica Pearls"
+      ],
+      "lat": 40.4,
+      "lon": 26.3,
+      "videoID": "kiURwc3JrEI",
+      "startSeconds": 22,
+      "endSeconds": 30,
+      "coordinateEvidence": "Creator explicitly labels pearl location40.4 LAT26.3 LONG at source49s, agreeing with the map latitude/longitude readout.",
+      "inventoryEvidence": "Pearl shells visible in the shallow underwater bed; no guaranteed yield claim.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming33/root/astraeos-korinthos-pearl-shallows-40-26.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming33/root/astraeos-korinthos-pearl-shallows-40-26.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=kiURwc3JrEI",
+      "sourcePlane": "astraeos ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-labelled farming region",
+      "mapOverlayVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "Licensed partial opening acquired before403; no retry after denial",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming33/root/astraeos-korinthos-pearl-shallows-40-26-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming33/root/kiURwc3JrEI-coordinate.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true
+      },
+      "evidenceLimitations": "Filmed regional waypoint; no permanent node count or guaranteed yield. Only licensed cached media acquired before source denial was used."
+    }
+  ]
+}

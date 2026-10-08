@@ -1,0 +1,3 @@
+usage: tony-youtube download [-h] --url URL [--apply] [--approval APPROVAL]
+                             [--rights {owned,permission,licensed,creative-commons}]
+tony-youtube download: error: argument --approval: expected one argument

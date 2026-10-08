@@ -1,0 +1,231 @@
+{
+  "reviewedAt": "2026-10-08",
+  "rightsBasis": "Prior explicit user authorization of licensed clips",
+  "records": [
+    {
+      "videoID": "6QM_aMBLf-0",
+      "acquisition": {
+        "status": "failed",
+        "videoId": "6QM_aMBLf-0",
+        "errorType": "YouTubeIntelligenceError",
+        "diagnostics": [
+          {
+            "processExitCode": 1,
+            "httpStatusCodes": [
+              "403"
+            ],
+            "ffmpegExitCodes": [],
+            "forbiddenMentioned": false,
+            "signedURLsLogged": false,
+            "restrictionMentioned": true,
+            "safeErrorClasses": [
+              "HTTP Error 403"
+            ]
+          }
+        ]
+      },
+      "decision": "Rejected: opening ends before source coordinate confirmation.",
+      "retryAfterDenial": false
+    },
+    {
+      "videoID": "CwLGCUlr4D8",
+      "acquisition": {
+        "status": "failed",
+        "videoId": "CwLGCUlr4D8",
+        "errorType": "YouTubeIntelligenceError",
+        "diagnostics": [
+          {
+            "processExitCode": 1,
+            "httpStatusCodes": [
+              "403"
+            ],
+            "ffmpegExitCodes": [],
+            "forbiddenMentioned": false,
+            "signedURLsLogged": false,
+            "restrictionMentioned": true,
+            "safeErrorClasses": [
+              "HTTP Error 403"
+            ]
+          }
+        ]
+      },
+      "decision": "Rejected: M-mapcursorcoordinates43.4/21.9 differ from player; independent exactGPSnotestablished.",
+      "retryAfterDenial": false
+    },
+    {
+      "videoID": "ERDJ3CUcuD8",
+      "acquisition": {
+        "status": "failed",
+        "videoId": "ERDJ3CUcuD8",
+        "errorType": "YouTubeIntelligenceError",
+        "diagnostics": [
+          {
+            "processExitCode": 1,
+            "httpStatusCodes": [
+              "403"
+            ],
+            "ffmpegExitCodes": [],
+            "forbiddenMentioned": false,
+            "signedURLsLogged": false,
+            "restrictionMentioned": true,
+            "safeErrorClasses": [
+              "HTTP Error 403"
+            ]
+          }
+        ]
+      },
+      "decision": "Acceptedcreatorcaption25.0/15.6 clean8s waterfall approach.",
+      "retryAfterDenial": false
+    },
+    {
+      "videoID": "GmVkxFGsUCg",
+      "acquisition": {
+        "status": "failed",
+        "videoId": "GmVkxFGsUCg",
+        "errorType": "YouTubeIntelligenceError",
+        "diagnostics": [
+          {
+            "processExitCode": 1,
+            "httpStatusCodes": [
+              "403"
+            ],
+            "ffmpegExitCodes": [],
+            "forbiddenMentioned": false,
+            "signedURLsLogged": false,
+            "restrictionMentioned": true,
+            "safeErrorClasses": [
+              "HTTP Error 403"
+            ]
+          }
+        ]
+      },
+      "decision": "Acceptedcreatorcaption60.9/40.2 clean8s regionalMetal approach.",
+      "retryAfterDenial": false
+    },
+    {
+      "videoID": "MlpYclD-Cqk",
+      "acquisition": {
+        "status": "failed",
+        "videoId": "MlpYclD-Cqk",
+        "errorType": "YouTubeIntelligenceError",
+        "diagnostics": [
+          {
+            "processExitCode": 1,
+            "httpStatusCodes": [
+              "403"
+            ],
+            "ffmpegExitCodes": [],
+            "forbiddenMentioned": false,
+            "signedURLsLogged": false,
+            "restrictionMentioned": true,
+            "safeErrorClasses": [
+              "HTTP Error 403"
+            ]
+          }
+        ]
+      },
+      "decision": "Rejected: opening ends before coordinate confirmation.",
+      "retryAfterDenial": false
+    },
+    {
+      "videoID": "UVsnbwhLBhk",
+      "acquisition": {
+        "status": "failed",
+        "videoId": "UVsnbwhLBhk",
+        "errorType": "YouTubeIntelligenceError",
+        "diagnostics": [
+          {
+            "processExitCode": 1,
+            "httpStatusCodes": [
+              "403"
+            ],
+            "ffmpegExitCodes": [],
+            "forbiddenMentioned": false,
+            "signedURLsLogged": false,
+            "restrictionMentioned": true,
+            "safeErrorClasses": [
+              "HTTP Error 403"
+            ]
+          }
+        ]
+      },
+      "decision": "Rejected: opening does not establish resource waypoint coordinates independently of mapcursor.",
+      "retryAfterDenial": false
+    },
+    {
+      "videoID": "ZaTQnWk7CME",
+      "acquisition": {
+        "status": "failed",
+        "videoId": "ZaTQnWk7CME",
+        "errorType": "YouTubeIntelligenceError",
+        "diagnostics": [
+          {
+            "processExitCode": 1,
+            "httpStatusCodes": [
+              "403"
+            ],
+            "ffmpegExitCodes": [],
+            "forbiddenMentioned": false,
+            "signedURLsLogged": false,
+            "restrictionMentioned": true,
+            "safeErrorClasses": [
+              "HTTP Error 403"
+            ]
+          }
+        ]
+      },
+      "decision": "Rejected: exactplayerGPS not established; M-map cursor ambiguity.",
+      "retryAfterDenial": false
+    },
+    {
+      "videoID": "kiURwc3JrEI",
+      "acquisition": {
+        "status": "failed",
+        "videoId": "kiURwc3JrEI",
+        "errorType": "YouTubeIntelligenceError",
+        "diagnostics": [
+          {
+            "processExitCode": 1,
+            "httpStatusCodes": [
+              "403"
+            ],
+            "ffmpegExitCodes": [],
+            "forbiddenMentioned": false,
+            "signedURLsLogged": false,
+            "restrictionMentioned": true,
+            "safeErrorClasses": [
+              "HTTP Error 403"
+            ]
+          }
+        ]
+      },
+      "decision": "Acceptedcreatorcaption40.4/26.3 clean8s pearl bed.",
+      "retryAfterDenial": false
+    },
+    {
+      "videoID": "nnvcJIm4mi8",
+      "acquisition": {
+        "status": "failed",
+        "videoId": "nnvcJIm4mi8",
+        "errorType": "YouTubeIntelligenceError",
+        "diagnostics": [
+          {
+            "processExitCode": 1,
+            "httpStatusCodes": [
+              "403"
+            ],
+            "ffmpegExitCodes": [],
+            "forbiddenMentioned": false,
+            "signedURLsLogged": false,
+            "restrictionMentioned": true,
+            "safeErrorClasses": [
+              "HTTP Error 403"
+            ]
+          }
+        ]
+      },
+      "decision": "Rejected: opening ends before coordinate confirmation.",
+      "retryAfterDenial": false
+    }
+  ]
+}

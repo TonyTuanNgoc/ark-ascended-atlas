@@ -1,0 +1,9 @@
+{
+  "videoID": "fR3h_YWlKhU",
+  "sourcePath": "/Users/admin/TonyOS_Workspace/tools/youtube-intelligence/data/downloads/fR3h_YWlKhU.f399.mp4.part",
+  "downloadStatus": "403-after-opening",
+  "rightsBasis": "licensed",
+  "approval": "fR3h_YWlKhU",
+  "apply": true,
+  "renderErrors": "[libdav1d @ 0x7725054700] Invalid OBU length: 28879, but only 24981 bytes remaining in fragment.\n[libdav1d @ 0x7725054700] Failed to parse temporal unit.\n[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7725024000] stream 0, offset 0x138b104: partial file\n[libdav1d @ 0x7725054e00] Error parsing OBU data\n[vist#0:0/av1 @ 0x7725018300] [dec:libdav1d @ 0x7725020500] Decoding error: Invalid data found when processing input\n"
+}

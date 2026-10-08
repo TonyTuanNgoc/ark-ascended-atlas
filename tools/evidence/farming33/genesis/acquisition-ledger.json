@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "videoID": "ABmBfT2pUss",
+      "result": {
+        "status": "error",
+        "error": "ERROR: unable to download video data: HTTP Error 403: Forbidden"
+      },
+      "retriedAfterDenial": false,
+      "approval": "ABmBfT2pUss",
+      "rights": "licensed",
+      "openingMediaUsedLocally": true
+    },
+    {
+      "videoID": "qfx6EJtISms",
+      "result": {
+        "status": "error",
+        "error": "ERROR: unable to download video data: HTTP Error 403: Forbidden"
+      },
+      "retriedAfterDenial": false,
+      "approval": "qfx6EJtISms",
+      "rights": "licensed",
+      "openingMediaUsedLocally": true
+    },
+    {
+      "videoID": "MA0U1vcwmp0",
+      "result": {
+        "status": "error",
+        "error": "ERROR: unable to download video data: HTTP Error 403: Forbidden"
+      },
+      "retriedAfterDenial": false,
+      "approval": "MA0U1vcwmp0",
+      "rights": "licensed",
+      "openingMediaUsedLocally": true
+    },
+    {
+      "videoID": "98L1-1JxyYo",
+      "result": {
+        "status": "error",
+        "error": "ERROR: unable to download video data: HTTP Error 403: Forbidden"
+      },
+      "retriedAfterDenial": false,
+      "approval": "98L1-1JxyYo",
+      "rights": "licensed",
+      "openingMediaUsedLocally": true
+    },
+    {
+      "videoID": "kE5WWK5GOS4",
+      "result": {
+        "status": "error",
+        "error": "ERROR: unable to download video data: HTTP Error 403: Forbidden"
+      },
+      "retriedAfterDenial": false,
+      "approval": "kE5WWK5GOS4",
+      "rights": "licensed",
+      "openingMediaUsedLocally": true
+    },
+    {
+      "videoID": "ZqRdXrq3XE8",
+      "result": {
+        "status": "ready",
+        "videoId": "ZqRdXrq3XE8",
+        "rights": "licensed",
+        "media": "/Volumes/TONY SSD/TONY_WORKSPACE/CODE/TonyOS_Workspace/tools/youtube-intelligence/data/downloads/ZqRdXrq3XE8.mp4",
+        "section": null
+      },
+      "retriedAfterDenial": false,
+      "approval": "ZqRdXrq3XE8",
+      "rights": "licensed",
+      "openingMediaUsedLocally": true
+    },
+    {
+      "videoID": "O7JlNBe_EoM",
+      "result": {
+        "status": "error",
+        "error": "ERROR: unable to download video data: HTTP Error 403: Forbidden"
+      },
+      "retriedAfterDenial": false,
+      "approval": "O7JlNBe_EoM",
+      "rights": "licensed",
+      "openingMediaUsedLocally": true
+    },
+    {
+      "videoID": "vs4wDTZgz2U",
+      "result": {
+        "status": "error",
+        "error": "ERROR: unable to download video data: HTTP Error 403: Forbidden"
+      },
+      "retriedAfterDenial": false,
+      "approval": "vs4wDTZgz2U",
+      "rights": "licensed",
+      "openingMediaUsedLocally": false
+    }
+  ],
+  "blocked": [
+    {
+      "videoID": "vs4wDTZgz2U",
+      "sourceURL": "https://www.youtube.com/watch?v=vs4wDTZgz2U",
+      "resource": "GiantBeeHoney",
+      "reason": "Numeric map 82.1/86.4 at45s belongs to cursor position rather than player position. Player arrow is near70/83 and cannot yield GPS precision from map image alone; no honest numeric filmed-site anchor before partial media end.",
+      "proofFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming33/genesis/vs4wDTZgz2U-full45.jpg",
+      "status": "blocked-coordinate-authority"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "candidates": [
+    {
+      "id": "genesis-ocean-pearl-island-38-66",
+      "map": "genesis-part-1-ocean",
+      "name": "Eastern pearl island shallows",
+      "resources": [
+        "Silica Pearls"
+      ],
+      "lat": 38.4,
+      "lon": 66.7,
+      "videoID": "tAwMBQDx4NI",
+      "sourceURL": "https://www.youtube.com/watch?v=tAwMBQDx4NI",
+      "startSeconds": 24,
+      "endSeconds": 32,
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming33/genesis/genesis-ocean-pearl-island-38-66.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming33/genesis/genesis-ocean-pearl-island-38-66.jpg",
+      "coordinateEvidence": "Creator caption at 40s explicitly reads 38.4 LAT 66.7 LONG adjoining same island aerial shot.",
+      "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming33/genesis/tAwMBQDx4NI-full40.jpg",
+      "inventoryEvidence": "Dedicated ASA Genesis silica guide identifies this filmed island as its first pearl location. Preview documents the island terrain; harvest yield not shown.",
+      "status": "verified-source-filmed-region",
+      "mapOverlayVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "rightsEvidence": "Trusted prior human confirmation: Duy\u1ec7t,a c\u00f3 gi\u1ea5y ph\u00e9p h\u1ebft; each new source triple-gated --apply --approval VIDEOID --rights licensed.",
+      "sourcePlane": "Genesis Part 1 ASA Ocean coordinate plane",
+      "sourceScope": "Dedicated ASA Genesis Part 1 resource guide; exact source title retained in inspect metadata.",
+      "asaCompatibility": "Source title explicitly identifies Ark Ascended Genesis 1",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming33/genesis/genesis-ocean-pearl-island-38-66-contact.jpg",
+        "continuousShot": true,
+        "fullEncodedDecode": true,
+        "decodedEveryFrame": true,
+        "mapOverlayVisible": false,
+        "inventoryOverlayVisible": false,
+        "reviewed": true,
+        "reviewNotes": "Nine frames reviewed across entire encoded clip: continuous terrain shot, no map or inventory overlays. Standard gameplay HUD remains visible. Separate coordinates frame verified. Small creator caption appears at 25\u201327s."
+      }
+    },
+    {
+      "id": "genesis-ocean-coral-pearl-basin-57-56",
+      "map": "genesis-part-1-ocean",
+      "name": "Central coral pearl basin",
+      "resources": [
+        "Silica Pearls"
+      ],
+      "lat": 57.6,
+      "lon": 56.62,
+      "videoID": "EPEUyHqQSqY",
+      "sourceURL": "https://www.youtube.com/watch?v=EPEUyHqQSqY",
+      "startSeconds": 52,
+      "endSeconds": 58,
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming33/genesis/genesis-ocean-coral-pearl-basin-57-56.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming33/genesis/genesis-ocean-coral-pearl-basin-57-56.jpg",
+      "coordinateEvidence": "Actual underwater GPS at 53s and 58s reads 57.60 / 56.62. The earlier surface map at 40s is excluded because a teleport separates it from this underwater basin.",
+      "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming33/genesis/EPEUyHqQSqY-full53.jpg",
+      "inventoryEvidence": "Dedicated ASA Genesis silica guide shows coral basin pearl farming terrain; nearby clam-like clusters appear around 60s. Harvest yield not shown; no resources beyond Silica Pearls claimed.",
+      "status": "verified-source-filmed-region",
+      "mapOverlayVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "rightsEvidence": "Trusted prior human confirmation: Duy\u1ec7t,a c\u00f3 gi\u1ea5y ph\u00e9p h\u1ebft; each new source triple-gated --apply --approval VIDEOID --rights licensed.",
+      "sourcePlane": "Genesis Part 1 ASA Ocean coordinate plane",
+      "sourceScope": "Dedicated ASA Genesis Part 1 resource guide; exact source title retained in inspect metadata.",
+      "asaCompatibility": "Source title explicitly identifies Ark Ascended Genesis 1",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming33/genesis/genesis-ocean-coral-pearl-basin-57-56-contact.jpg",
+        "continuousShot": true,
+        "fullEncodedDecode": true,
+        "decodedEveryFrame": true,
+        "mapOverlayVisible": false,
+        "inventoryOverlayVisible": false,
+        "reviewed": true,
+        "reviewNotes": "Nine frames reviewed across entire encoded clip: continuous terrain shot, no map or inventory overlays. Standard gameplay HUD remains visible. Separate coordinates frame verified. Camera pans rapidly between 52\u201354s; actual underwater GPS remains 57.60/56.62. Earlier map coordinates excluded."
+      }
+    },
+    {
+      "id": "genesis-ocean-southwest-shore-oil-89-15",
+      "map": "genesis-part-1-ocean",
+      "name": "Southwest island shore oil rocks",
+      "resources": [
+        "Oil"
+      ],
+      "lat": 89,
+      "lon": 15.4,
+      "videoID": "VeNGgP2eFj4",
+      "sourceURL": "https://www.youtube.com/watch?v=VeNGgP2eFj4",
+      "startSeconds": 35,
+      "endSeconds": 43,
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming33/genesis/genesis-ocean-southwest-shore-oil-89-15.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming33/genesis/genesis-ocean-southwest-shore-oil-89-15.jpg",
+      "coordinateEvidence": "In-game Ocean map at 30s reads LATITUDE 89 LONGITUDE 15.4 then closes to the same shoreline oil rocks.",
+      "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming33/genesis/VeNGgP2eFj4-full30.jpg",
+      "inventoryEvidence": "Dedicated ASA Genesis Oil guide shows dark oil rocks scattered across shore and cliff. Terrain preview documents the resource rocks; harvest yield not shown.",
+      "status": "verified-source-filmed-region",
+      "mapOverlayVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "rightsEvidence": "Trusted prior human confirmation: Duy\u1ec7t,a c\u00f3 gi\u1ea5y ph\u00e9p h\u1ebft; each new source triple-gated --apply --approval VIDEOID --rights licensed.",
+      "sourcePlane": "Genesis Part 1 ASA Ocean coordinate plane",
+      "sourceScope": "Dedicated ASA Genesis Part 1 resource guide; exact source title retained in inspect metadata.",
+      "asaCompatibility": "Source title explicitly identifies Ark Ascended Genesis 1",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming33/genesis/genesis-ocean-southwest-shore-oil-89-15-contact.jpg",
+        "continuousShot": true,
+        "fullEncodedDecode": true,
+        "decodedEveryFrame": true,
+        "mapOverlayVisible": false,
+        "inventoryOverlayVisible": false,
+        "reviewed": true,
+        "reviewNotes": "Nine frames reviewed across entire encoded clip: continuous terrain shot, no map or inventory overlays. Standard gameplay HUD remains visible. Separate coordinates frame verified."
+      }
+    }
+  ]
+}

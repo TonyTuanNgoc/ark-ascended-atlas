@@ -1,0 +1,9 @@
+{
+  "videoID": "VwVxQEG93yo",
+  "sourcePath": "/Users/admin/TonyOS_Workspace/tools/youtube-intelligence/data/downloads/VwVxQEG93yo.f299.mp4.part",
+  "downloadStatus": "403-after-opening",
+  "rightsBasis": "licensed",
+  "approval": "VwVxQEG93yo",
+  "apply": true,
+  "renderErrors": "[h264 @ 0x7609054700] Invalid NAL unit size (39696 > 35604).\n[h264 @ 0x7609054700] missing picture in access unit with size 35608\n[in#0/mov,mp4,m4a,3gp,3g2,mj2 @ 0x7609024000] stream 0, offset 0x275ad20: partial file\n[h264 @ 0x7609055c00] Invalid NAL unit size (39696 > 35604).\n[h264 @ 0x7609055c00] Error splitting the input into NAL units.\n[vist#0:0/h264 @ 0x7609018300] [dec:h264 @ 0x7609020500] Decoding error: Invalid data found when processing input\n"
+}

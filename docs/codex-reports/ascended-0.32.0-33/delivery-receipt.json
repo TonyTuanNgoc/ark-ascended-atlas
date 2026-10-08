@@ -1,0 +1,24 @@
+{
+  "version": "0.32.0",
+  "build": "33",
+  "simulatorName": "Ascended iPad QA",
+  "simulatorUDID": "20C9346D-B0E6-4239-8152-1D85ADD57BA6",
+  "bundleID": "com.tonytuanngoc.ascended",
+  "installedBundle": "/Volumes/TONY SSD/APP_DATA/Xcode/CoreSimulator/Devices/20C9346D-B0E6-4239-8152-1D85ADD57BA6/data/Containers/Bundle/Application/701CF4C6-E4FF-4E92-9E4F-E71BD17CA25B/Ascended.app",
+  "installedManifestSHA256": {
+    "verified-resource-spots.json": "2f48d046f4a0b2032ac7bf732be6a651e5a57fa12c5cc055596c75bf21fe069d",
+    "resource-guides.json": "75461e906c946a0e19cc6e2e657f1cef3c5692184eaf1cf9e03f2842b3baf371"
+  },
+  "verifiedLocations": 104,
+  "curatedResourceLocations": 94,
+  "newLocations": 25,
+  "newMediaFullyDecoded": true,
+  "unitTestsPassed": 7,
+  "uiFlowsPassed": 4,
+  "finalResultBundle": "/Volumes/TONY SSD/ASCENDED_MEDIA/builds/Ascended-0.14.0-Simulator/Logs/Test/Test-Ascended-2026.10.08_11-03-39-+0700.xcresult",
+  "freshLaunchProcessID": 55188,
+  "delivery": "Simulator",
+  "physicalDeviceInstall": false,
+  "testFlight": false,
+  "webDomain": null
+}

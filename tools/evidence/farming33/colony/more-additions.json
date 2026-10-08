@@ -1,0 +1,46 @@
+{
+  "entries": [
+    {
+      "id": "lost-colony-north-city-lamp-crystal",
+      "map": "lost-colony",
+      "name": "Northern city lamppost crystal farm",
+      "resources": [
+        "Crystal"
+      ],
+      "lat": 28,
+      "lon": 60.8,
+      "videoID": "rPvOB6L0YnE",
+      "sourceURL": "https://www.youtube.com/watch?v=rPvOB6L0YnE",
+      "startSeconds": 24,
+      "endSeconds": 32,
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming33/colony/lost-colony-north-city-lamp-crystal.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming33/colony/lost-colony-north-city-lamp-crystal.jpg",
+      "coordinateEvidence": "Exact source M-map camera GPS LAT28 LONG60.8 at48s, see /Users/admin/Ascended-iPad-Dev/tools/evidence/farming33/colony/rPvOB6L0YnE-48.jpg; camera has walked along same city lamppost street. Region GPS, not each actor. Camera arrow centered atGPS28/60.8; bottomGPS unchanged acrossdifferent mapzoom/pan at44,48,51s. Cyan Player marker is distinct from sourcecamera, so scope remains filmedcamera cityregion, not physicalpawn.",
+      "inventoryEvidence": "Doedicurus strikes citylamppost and source30s HUDwhiteCrystalicon +86x appears; see /Users/admin/Ascended-iPad-Dev/tools/evidence/farming33/colony/rPvOB6L0YnE-30.jpg. Otherlooticons notclassified.",
+      "status": "new-candidate-verified-camera-region",
+      "visualReview": {
+        "method": "Manual encoded4fps contact sheet; exactGPS at44,48,51s; source30s fullresolutionharvestHUD; allframe ffmpegdecode",
+        "result": "Continuous realDoedharvest and Crystal+86pickup; no M-map/inventory overlay",
+        "reviewedAt": "2026-10-08",
+        "samplingLimit": "4fpsvisualsamples plus everyframe integritydecode"
+      },
+      "mapOverlayVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "rightsApproval": "Prior explicit human approval: Duy\u1ec7t, a c\u00f3 gi\u1ea5y ph\u00e9p h\u1ebft; source triple gate applied.",
+      "sourcePlane": "lost-colony filmed city street region",
+      "sourceCoordinateScope": "Source camera cityblockregion, not each destructible lamppost actor.",
+      "sourcePath": "/Users/admin/TonyOS_Workspace/tools/youtube-intelligence/data/downloads/rPvOB6L0YnE.mp4",
+      "sourceSHA256": "210f6e8aa91d080a1da97fe872eb45a4158a1f6348741092c6ddeafe71024928",
+      "clipSHA256": "409e4646d73d4d1f6a926a7cf5dd090976a49e7c4875f219bcb92f4cb9ef0e63",
+      "actualDuration": 8.0,
+      "decodeExitCode": 0,
+      "decodeErrors": "",
+      "renderErrors": "",
+      "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming33/colony/lost-colony-north-city-lamp-crystal-encoded-review.jpg",
+      "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming33/colony/rPvOB6L0YnE-48.jpg",
+      "harvestDemonstrated": true,
+      "acquisition": "Normal licensed full download completed successfully; localsourcecut; no media requests in follow-up review."
+    }
+  ]
+}

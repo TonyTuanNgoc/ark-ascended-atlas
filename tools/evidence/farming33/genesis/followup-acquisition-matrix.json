@@ -1,0 +1,63 @@
+{
+  "candidates": [
+    {
+      "videoID": "uDDmWwwuEIs",
+      "sourceURL": "https://www.youtube.com/watch?v=uDDmWwwuEIs",
+      "result": "excluded",
+      "restriction": "HTTP403; available opening reviewed locally only; do not retry",
+      "reason": "Ocean Tuso spawn caption35/27.7 exists but available underwater shot is covered by a large creator caption and creature statistics; no clean six-second resource terrain preview accepted."
+    },
+    {
+      "videoID": "9qoIySzkzxU",
+      "sourceURL": "https://www.youtube.com/watch?v=9qoIySzkzxU",
+      "result": "excluded",
+      "restriction": "HTTP403; available opening reviewed locally only; do not retry",
+      "reason": "Volcanic land Black Pearls rather than requested Ocean coordinate plane."
+    },
+    {
+      "videoID": "njcxSDzSves",
+      "sourceURL": "https://www.youtube.com/watch?v=njcxSDzSves",
+      "result": "excluded",
+      "restriction": "HTTP403; available opening reviewed locally only; do not retry",
+      "reason": "Opening demonstrates Rhino mission and Hexagon exchange; no directly filmed Black Pearl farming coordinates."
+    },
+    {
+      "videoID": "tAwMBQDx4NI",
+      "sourceURL": "https://www.youtube.com/watch?v=tAwMBQDx4NI",
+      "result": "verified",
+      "restriction": "HTTP403; available opening reviewed locally only; do not retry",
+      "reason": "Accepted silica region38.4/66.7."
+    },
+    {
+      "videoID": "EPEUyHqQSqY",
+      "sourceURL": "https://www.youtube.com/watch?v=EPEUyHqQSqY",
+      "result": "verified",
+      "restriction": "HTTP403; available opening reviewed locally only; do not retry",
+      "reason": "Accepted underwater GPS57.60/56.62; surface52.8/52.5 excluded because of teleport."
+    },
+    {
+      "videoID": "VeNGgP2eFj4",
+      "sourceURL": "https://www.youtube.com/watch?v=VeNGgP2eFj4",
+      "result": "verified",
+      "restriction": "HTTP403; available opening reviewed locally only; do not retry",
+      "reason": "Accepted Ocean Oil89/15.4."
+    },
+    {
+      "videoID": "N5YixYyZOHA",
+      "sourceURL": "https://www.youtube.com/watch?v=N5YixYyZOHA",
+      "result": "excluded",
+      "restriction": "HTTP403; available opening reviewed locally only; do not retry",
+      "reason": "Volcanic land Oil vein rather than Ocean requested scope."
+    },
+    {
+      "videoID": "-A6rpnfcqtw",
+      "sourceURL": "https://www.youtube.com/watch?v=-A6rpnfcqtw",
+      "result": "excluded",
+      "restriction": "previous acquisition exists; no new network download",
+      "reason": "Already acquired earlier farming32 source: Arctic Metal76.2/27.6 is existing site. Local approval argument error caused no media request; no denial retry performed."
+    }
+  ],
+  "scope": "Genesis Ocean Black Pearls Oil Silica Pearls and land Metal",
+  "remaining": "Ocean Black Pearls still lacks a second additional clean verified site; Ocean Oil now gains one distinct site, still short of3 if baseline has1. Land Metal receives no new distinct site. Ocean Silica Pearls gains2 distinct sites.",
+  "noRestrictionBypass": true
+}

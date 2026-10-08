@@ -4924,6 +4924,992 @@
           "sha256": "0847607d7e76e829691b05ab65b99a1ca97b62edee9fef035b9a81aa95723102"
         }
       ]
+    },
+    {
+      "sourceAcquisition": "Approved existing local source media",
+      "spotID": "genesis-ocean-safe-beach-silica-90-15",
+      "map": "genesis-part-1-ocean",
+      "sourcePlane": "Genesis Part 1 ASA Ocean coordinate plane",
+      "sourceCoordinateScope": "Creator-labelled filmed farming region",
+      "videoID": "ABmBfT2pUss",
+      "sourceURL": "https://www.youtube.com/watch?v=ABmBfT2pUss",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 960,
+      "sourceHeight": 540,
+      "coordinateEvidence": "Creator caption LAT 90.6 LON 15.1 throughout the pearl shallows shot; source chapter names Ocean Safe Beach.",
+      "inventoryEvidence": "Silica pearl shells visibly clustered under shallow water; dedicated ASA silica guide. Harvest yield not shown.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "Source title explicitly identifies Ark Ascended Genesis 1",
+      "steps": [
+        {
+          "id": "Resource-genesis-ocean-safe-beach-silica-90-15-1",
+          "title": "Terrain & approach",
+          "loop": "Resource-genesis-ocean-safe-beach-silica-90-15-1",
+          "poster": "Resource-genesis-ocean-safe-beach-silica-90-15-1",
+          "startSeconds": 30,
+          "endSeconds": 36.5,
+          "sourceURL": "https://www.youtube.com/watch?v=ABmBfT2pUss&t=30s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "visualReview": {
+            "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming33/genesis/genesis-ocean-safe-beach-silica-90-15-contact.jpg",
+            "continuousShot": true,
+            "fullEncodedDecode": true,
+            "decodedEveryFrame": true,
+            "mapOverlayVisible": false,
+            "inventoryOverlayVisible": false,
+            "reviewed": true,
+            "reviewMethod": "Nine chronologically ordered contact frames plus source coordinate frame visually reviewed; complete encoded clip decoded with ffmpeg -xerror."
+          },
+          "sha256": "2bbb25bbf6082fa3df49800958aee44c6385ba60f05df36156afc90351ea3980"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved existing local source media",
+      "spotID": "genesis-ocean-dragon-bones-metal-5-94",
+      "map": "genesis-part-1-ocean",
+      "sourcePlane": "Genesis Part 1 ASA Ocean coordinate plane",
+      "sourceCoordinateScope": "Creator-labelled filmed farming region",
+      "videoID": "qfx6EJtISms",
+      "sourceURL": "https://www.youtube.com/watch?v=qfx6EJtISms",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 960,
+      "sourceHeight": 540,
+      "coordinateEvidence": "Creator caption LAT 5.3 LON 94.5 throughout the Dragon Bones island shot; Ocean specified by chapter.",
+      "inventoryEvidence": "Exposed metallic ore nodes on desert island plateau, dedicated ASA Metal guide. Harvest yield not shown.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "Source title explicitly identifies Ark Ascended Genesis 1",
+      "steps": [
+        {
+          "id": "Resource-genesis-ocean-dragon-bones-metal-5-94-1",
+          "title": "Terrain & approach",
+          "loop": "Resource-genesis-ocean-dragon-bones-metal-5-94-1",
+          "poster": "Resource-genesis-ocean-dragon-bones-metal-5-94-1",
+          "startSeconds": 30,
+          "endSeconds": 36,
+          "sourceURL": "https://www.youtube.com/watch?v=qfx6EJtISms&t=30s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "visualReview": {
+            "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming33/genesis/genesis-ocean-dragon-bones-metal-5-94-contact.jpg",
+            "continuousShot": true,
+            "fullEncodedDecode": true,
+            "decodedEveryFrame": true,
+            "mapOverlayVisible": false,
+            "inventoryOverlayVisible": false,
+            "reviewed": true,
+            "reviewMethod": "Nine chronologically ordered contact frames plus source coordinate frame visually reviewed; complete encoded clip decoded with ffmpeg -xerror."
+          },
+          "sha256": "8b24773245db85eb4fc8e664e255728a4a5a0ccc428d2ee81bbc47576510f3a9"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved existing local source media",
+      "spotID": "genesis-ocean-central-island-oil-45-63",
+      "map": "genesis-part-1-ocean",
+      "sourcePlane": "Genesis Part 1 ASA Ocean coordinate plane",
+      "sourceCoordinateScope": "Creator-labelled filmed farming region",
+      "videoID": "MA0U1vcwmp0",
+      "sourceURL": "https://www.youtube.com/watch?v=MA0U1vcwmp0",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 960,
+      "sourceHeight": 540,
+      "coordinateEvidence": "In-game Ocean map at 19s reads LATITUDE 45.5 LONGITUDE 63.1 before continuous dive to adjacent submerged rocks.",
+      "inventoryEvidence": "Dark underwater oil rock approached and mined with pick; dedicated ASA Oil guide.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "Source title explicitly identifies Ark Ascended Genesis 1",
+      "steps": [
+        {
+          "id": "Resource-genesis-ocean-central-island-oil-45-63-1",
+          "title": "Terrain & approach",
+          "loop": "Resource-genesis-ocean-central-island-oil-45-63-1",
+          "poster": "Resource-genesis-ocean-central-island-oil-45-63-1",
+          "startSeconds": 30,
+          "endSeconds": 38,
+          "sourceURL": "https://www.youtube.com/watch?v=MA0U1vcwmp0&t=30s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "visualReview": {
+            "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming33/genesis/genesis-ocean-central-island-oil-45-63-contact.jpg",
+            "continuousShot": true,
+            "fullEncodedDecode": true,
+            "decodedEveryFrame": true,
+            "mapOverlayVisible": false,
+            "inventoryOverlayVisible": false,
+            "reviewed": true,
+            "reviewMethod": "Nine chronologically ordered contact frames plus source coordinate frame visually reviewed; complete encoded clip decoded with ffmpeg -xerror."
+          },
+          "sha256": "0fce205c79ca5dfe0cbd456a1f2bf27accec11757b264b017a7a6265ce44d1ea"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved existing local source media",
+      "spotID": "genesis-arctic-crystal-76-26",
+      "map": "genesis-part-1",
+      "sourcePlane": "Genesis Part 1 ASA land coordinate plane: Arctic",
+      "sourceCoordinateScope": "Creator-labelled filmed farming region",
+      "videoID": "98L1-1JxyYo",
+      "sourceURL": "https://www.youtube.com/watch?v=98L1-1JxyYo",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 960,
+      "sourceHeight": 540,
+      "coordinateEvidence": "In-game land map at 35s reads LATITUDE 76 LONGITUDE 26.5 adjoining same crystal cluster.",
+      "inventoryEvidence": "White crystal cluster shown and struck with pick in the dedicated ASA Crystal guide.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "Source title explicitly identifies Ark Ascended Genesis 1",
+      "steps": [
+        {
+          "id": "Resource-genesis-arctic-crystal-76-26-1",
+          "title": "Terrain & approach",
+          "loop": "Resource-genesis-arctic-crystal-76-26-1",
+          "poster": "Resource-genesis-arctic-crystal-76-26-1",
+          "startSeconds": 24,
+          "endSeconds": 32,
+          "sourceURL": "https://www.youtube.com/watch?v=98L1-1JxyYo&t=24s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "visualReview": {
+            "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming33/genesis/genesis-arctic-crystal-76-26-contact.jpg",
+            "continuousShot": true,
+            "fullEncodedDecode": true,
+            "decodedEveryFrame": true,
+            "mapOverlayVisible": false,
+            "inventoryOverlayVisible": false,
+            "reviewed": true,
+            "reviewMethod": "Nine chronologically ordered contact frames plus source coordinate frame visually reviewed; complete encoded clip decoded with ffmpeg -xerror."
+          },
+          "sha256": "5db7161032d63a5ef1d62e53a5a1a6430a0090905c043cfc4ce448889e180c08"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved existing local source media",
+      "spotID": "genesis-arctic-obsidian-77-26",
+      "map": "genesis-part-1",
+      "sourcePlane": "Genesis Part 1 ASA land coordinate plane: Arctic",
+      "sourceCoordinateScope": "Creator-labelled filmed farming region",
+      "videoID": "kE5WWK5GOS4",
+      "sourceURL": "https://www.youtube.com/watch?v=kE5WWK5GOS4",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 960,
+      "sourceHeight": 540,
+      "coordinateEvidence": "In-game land map at 24s reads LATITUDE 77 LONGITUDE 26 before return to adjacent black outcrops.",
+      "inventoryEvidence": "Black angular obsidian outcrops shown and mined with pick in dedicated ASA Obsidian guide.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "Source title explicitly identifies Ark Ascended Genesis 1",
+      "steps": [
+        {
+          "id": "Resource-genesis-arctic-obsidian-77-26-1",
+          "title": "Terrain & approach",
+          "loop": "Resource-genesis-arctic-obsidian-77-26-1",
+          "poster": "Resource-genesis-arctic-obsidian-77-26-1",
+          "startSeconds": 28,
+          "endSeconds": 36,
+          "sourceURL": "https://www.youtube.com/watch?v=kE5WWK5GOS4&t=28s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "visualReview": {
+            "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming33/genesis/genesis-arctic-obsidian-77-26-contact.jpg",
+            "continuousShot": true,
+            "fullEncodedDecode": true,
+            "decodedEveryFrame": true,
+            "mapOverlayVisible": false,
+            "inventoryOverlayVisible": false,
+            "reviewed": true,
+            "reviewMethod": "Nine chronologically ordered contact frames plus source coordinate frame visually reviewed; complete encoded clip decoded with ffmpeg -xerror."
+          },
+          "sha256": "65787ee9a3a0c0e0e98798d6f290fe49aa1a1bddaf80b840a6e612e45fbdd7f2"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved existing local source media",
+      "spotID": "genesis-arctic-frozen-lake-polymer-74-14",
+      "map": "genesis-part-1",
+      "sourcePlane": "Genesis Part 1 ASA land coordinate plane: Arctic",
+      "sourceCoordinateScope": "Creator-labelled filmed farming region",
+      "videoID": "ZqRdXrq3XE8",
+      "sourceURL": "https://www.youtube.com/watch?v=ZqRdXrq3XE8",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 960,
+      "sourceHeight": 540,
+      "coordinateEvidence": "In-game land map at 10s reads LATITUDE 74.7 LONGITUDE 14 before Kairuku harvest on same frozen lake.",
+      "inventoryEvidence": "Kairuku harvested on frozen lake; green Organic Polymer acquisition notification visible around 25s. Dedicated ASA Polymer guide.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "Source title explicitly identifies Ark Ascended Genesis 1",
+      "steps": [
+        {
+          "id": "Resource-genesis-arctic-frozen-lake-polymer-74-14-1",
+          "title": "Terrain & approach",
+          "loop": "Resource-genesis-arctic-frozen-lake-polymer-74-14-1",
+          "poster": "Resource-genesis-arctic-frozen-lake-polymer-74-14-1",
+          "startSeconds": 18,
+          "endSeconds": 26,
+          "sourceURL": "https://www.youtube.com/watch?v=ZqRdXrq3XE8&t=18s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "visualReview": {
+            "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming33/genesis/genesis-arctic-frozen-lake-polymer-74-14-contact.jpg",
+            "continuousShot": true,
+            "fullEncodedDecode": true,
+            "decodedEveryFrame": true,
+            "mapOverlayVisible": false,
+            "inventoryOverlayVisible": false,
+            "reviewed": true,
+            "reviewMethod": "Nine chronologically ordered contact frames plus source coordinate frame visually reviewed; complete encoded clip decoded with ffmpeg -xerror."
+          },
+          "sha256": "b71020286365b3655c251298eacf3a5550c91a769e4028134ac32b84c82dceb3"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved existing local source media",
+      "spotID": "genesis-ocean-west-island-chitin-40-19",
+      "map": "genesis-part-1-ocean",
+      "sourcePlane": "Genesis Part 1 ASA Ocean coordinate plane",
+      "sourceCoordinateScope": "Creator-labelled filmed farming region",
+      "videoID": "O7JlNBe_EoM",
+      "sourceURL": "https://www.youtube.com/watch?v=O7JlNBe_EoM",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 960,
+      "sourceHeight": 540,
+      "coordinateEvidence": "In-game Ocean map at 30s reads LATITUDE 40.6 LONGITUDE 19.8 before adjacent island Beelzebufo demonstration.",
+      "inventoryEvidence": "Dedicated ASA Chitin farming guide; Beelzebufo inventory at 50s explicitly displays CHITIN tooltip and harvested stacks. Terrain clip shows the documented island cliffs.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "Source title explicitly identifies Ark Ascended Genesis 1",
+      "steps": [
+        {
+          "id": "Resource-genesis-ocean-west-island-chitin-40-19-1",
+          "title": "Terrain & approach",
+          "loop": "Resource-genesis-ocean-west-island-chitin-40-19-1",
+          "poster": "Resource-genesis-ocean-west-island-chitin-40-19-1",
+          "startSeconds": 5,
+          "endSeconds": 13,
+          "sourceURL": "https://www.youtube.com/watch?v=O7JlNBe_EoM&t=5s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "visualReview": {
+            "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming33/genesis/genesis-ocean-west-island-chitin-40-19-contact.jpg",
+            "continuousShot": true,
+            "fullEncodedDecode": true,
+            "decodedEveryFrame": true,
+            "mapOverlayVisible": false,
+            "inventoryOverlayVisible": false,
+            "reviewed": true,
+            "reviewMethod": "Nine chronologically ordered contact frames plus source coordinate frame visually reviewed; complete encoded clip decoded with ffmpeg -xerror."
+          },
+          "sha256": "a7f60ad77083ce65bfa039db45ed6651875372626bcba99959744e3dd168f8c1"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved existing local source media",
+      "spotID": "scorched-west-canyon-obsidian",
+      "map": "scorched-earth",
+      "sourcePlane": "scorched-earth filmed region",
+      "sourceCoordinateScope": "Filmed region / source camera position, not every resource actor.",
+      "videoID": "VwVxQEG93yo",
+      "sourceURL": "https://www.youtube.com/watch?v=VwVxQEG93yo",
+      "rightsBasis": "licensed",
+      "rightsApproval": "Prior explicit human approval: Duyệt, a có giấy phép hết; source triple gate applied.",
+      "sourceWidth": 1280,
+      "sourceHeight": 720,
+      "coordinateEvidence": "Exact source camera/region coordinates at 42s. See /Users/admin/Ascended-iPad-Dev/tools/evidence/farming33/colony/VwVxQEG93yo-42.jpg. Region coordinates, not each actor position.",
+      "inventoryEvidence": "Dark jagged nodes on the canyon floor visible during the guided descent; no harvest demonstrated.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "Filmed approach; no guaranteed yield or permanent node count.",
+      "steps": [
+        {
+          "id": "Resource-scorched-west-canyon-obsidian-1",
+          "title": "Terrain & approach",
+          "loop": "Resource-scorched-west-canyon-obsidian-1",
+          "poster": "Resource-scorched-west-canyon-obsidian-1",
+          "startSeconds": 33,
+          "endSeconds": 40,
+          "sourceURL": "https://www.youtube.com/watch?v=VwVxQEG93yo&t=33s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "visualReview": {
+            "method": "Manual encoded contact sheet inspection at 4 fps plus exact-coordinate frame; whole encoded clip decoded using ffmpeg -xerror.",
+            "result": "Continuous source gameplay with visible resource/terrain proof; no M map or inventory overlay in selected interval.",
+            "reviewedAt": "2026-10-08",
+            "samplingLimit": "4 fps visual samples, full decode all frames."
+          },
+          "sha256": "923781a1ba40a66d843d4f5eac08ce942c687c747ea0101bb9569b2125ccc8eb"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved existing local source media",
+      "spotID": "scorched-midriver-silica",
+      "map": "scorched-earth",
+      "sourcePlane": "scorched-earth filmed region",
+      "sourceCoordinateScope": "Filmed region / source camera position, not every resource actor.",
+      "videoID": "fR3h_YWlKhU",
+      "sourceURL": "https://www.youtube.com/watch?v=fR3h_YWlKhU",
+      "rightsBasis": "licensed",
+      "rightsApproval": "Prior explicit human approval: Duyệt, a có giấy phép hết; source triple gate applied.",
+      "sourceWidth": 1280,
+      "sourceHeight": 720,
+      "coordinateEvidence": "Exact source camera/region coordinates at 15s. See /Users/admin/Ascended-iPad-Dev/tools/evidence/farming33/colony/fR3h_YWlKhU-15.jpg. Region coordinates, not each actor position.",
+      "inventoryEvidence": "Green clam picked from riverbed with pearl icon and +41 HUD pickup visible.",
+      "harvestDemonstrated": true,
+      "evidenceLimitations": "Filmed approach; no guaranteed yield or permanent node count.",
+      "steps": [
+        {
+          "id": "Resource-scorched-midriver-silica-1",
+          "title": "Terrain & approach",
+          "loop": "Resource-scorched-midriver-silica-1",
+          "poster": "Resource-scorched-midriver-silica-1",
+          "startSeconds": 38,
+          "endSeconds": 46,
+          "sourceURL": "https://www.youtube.com/watch?v=fR3h_YWlKhU&t=38s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "visualReview": {
+            "method": "Manual encoded contact sheet inspection at 4 fps plus exact-coordinate frame; whole encoded clip decoded using ffmpeg -xerror.",
+            "result": "Continuous source gameplay with visible resource/terrain proof; no M map or inventory overlay in selected interval.",
+            "reviewedAt": "2026-10-08",
+            "samplingLimit": "4 fps visual samples, full decode all frames."
+          },
+          "sha256": "a07df2964e8f1942d04a5c698ea2ab96d5af170a6120baf478f41ac0432bc15a"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved existing local source media",
+      "spotID": "scorched-northeast-oil-vein",
+      "map": "scorched-earth",
+      "sourcePlane": "scorched-earth filmed region",
+      "sourceCoordinateScope": "Filmed region / source camera position, not every resource actor.",
+      "videoID": "CBRD7uKBcYQ",
+      "sourceURL": "https://www.youtube.com/watch?v=CBRD7uKBcYQ",
+      "rightsBasis": "licensed",
+      "rightsApproval": "Prior explicit human approval: Duyệt, a có giấy phép hết; source triple gate applied.",
+      "sourceWidth": 1280,
+      "sourceHeight": 720,
+      "coordinateEvidence": "Exact source camera/region coordinates at 18s. See /Users/admin/Ascended-iPad-Dev/tools/evidence/farming33/colony/CBRD7uKBcYQ-18.jpg. Region coordinates, not each actor position.",
+      "inventoryEvidence": "Oil vein dark ground pool and pale rock cap visible; subsequent source segment places an oil pump here.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "Filmed approach; no guaranteed yield or permanent node count.",
+      "steps": [
+        {
+          "id": "Resource-scorched-northeast-oil-vein-1",
+          "title": "Terrain & approach",
+          "loop": "Resource-scorched-northeast-oil-vein-1",
+          "poster": "Resource-scorched-northeast-oil-vein-1",
+          "startSeconds": 6,
+          "endSeconds": 15,
+          "sourceURL": "https://www.youtube.com/watch?v=CBRD7uKBcYQ&t=6s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "visualReview": {
+            "method": "Manual encoded contact sheet inspection at 4 fps plus exact-coordinate frame; whole encoded clip decoded using ffmpeg -xerror.",
+            "result": "Continuous source gameplay with visible resource/terrain proof; no M map or inventory overlay in selected interval.",
+            "reviewedAt": "2026-10-08",
+            "samplingLimit": "4 fps visual samples, full decode all frames."
+          },
+          "sha256": "d7058dd07078449e9cf10dd919369c0ce540b97ca0389e5c615a32790a98978f"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved existing local source media",
+      "spotID": "lost-colony-southwest-oil-river",
+      "map": "lost-colony",
+      "sourcePlane": "lost-colony filmed region",
+      "sourceCoordinateScope": "Filmed region / source camera position, not every resource actor.",
+      "videoID": "A5IFFrpjBww",
+      "sourceURL": "https://www.youtube.com/watch?v=A5IFFrpjBww",
+      "rightsBasis": "licensed",
+      "rightsApproval": "Prior explicit human approval: Duyệt, a có giấy phép hết; source triple gate applied.",
+      "sourceWidth": 1280,
+      "sourceHeight": 720,
+      "coordinateEvidence": "Exact source camera/region coordinates at 30s. See /Users/admin/Ascended-iPad-Dev/tools/evidence/farming33/colony/A5IFFrpjBww-30.jpg. Region coordinates, not each actor position.",
+      "inventoryEvidence": "Black gold-streaked oil rock beside river shown in dedicated oil guide; no harvest demonstrated in selected clip.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "Filmed approach; no guaranteed yield or permanent node count.",
+      "steps": [
+        {
+          "id": "Resource-lost-colony-southwest-oil-river-1",
+          "title": "Terrain & approach",
+          "loop": "Resource-lost-colony-southwest-oil-river-1",
+          "poster": "Resource-lost-colony-southwest-oil-river-1",
+          "startSeconds": 21.5,
+          "endSeconds": 27.5,
+          "sourceURL": "https://www.youtube.com/watch?v=A5IFFrpjBww&t=21.5s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "visualReview": {
+            "method": "Manual encoded contact sheet inspection at 4 fps plus exact-coordinate frame; whole encoded clip decoded using ffmpeg -xerror.",
+            "result": "Continuous source gameplay with visible resource/terrain proof; no M map or inventory overlay in selected interval.",
+            "reviewedAt": "2026-10-08",
+            "samplingLimit": "4 fps visual samples, full decode all frames."
+          },
+          "sha256": "0b2a78498dd652393be1d3fd8764783f2bddf0a5bb6a38cef332f2e41d74f31c"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved existing local source media",
+      "spotID": "aberration-blue-polymer-488-509",
+      "map": "aberration",
+      "sourcePlane": "aberration filmed blue zone polymer region",
+      "sourceCoordinateScope": "Creator GPS-caption filmed region; not every resource actor or guaranteed spawn.",
+      "videoID": "nmdvm9d5Scc",
+      "sourceURL": "https://www.youtube.com/watch?v=nmdvm9d5Scc",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1280,
+      "sourceHeight": 720,
+      "coordinateEvidence": "Creator GPS caption LAT48.8 LONG50.9 at18s identifies the immediately adjacent filmed purple bulb patch; caption persists through24s. Coordinates are creator asserted filmed region, not every bulb actor.",
+      "inventoryEvidence": "Hand gathering at25.8s produces +3x Organic Polymer icon at left; same pink bulb patch shown in selected interval.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "Filmed approach; no guaranteed yield or permanent node count.",
+      "steps": [
+        {
+          "id": "Resource-aberration-blue-polymer-488-509-1",
+          "title": "Terrain & approach",
+          "loop": "Resource-aberration-blue-polymer-488-509-1",
+          "poster": "Resource-aberration-blue-polymer-488-509-1",
+          "startSeconds": 8.5,
+          "endSeconds": 15.5,
+          "sourceURL": "https://www.youtube.com/watch?v=nmdvm9d5Scc&t=8.5s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "visualReview": {
+            "method": "Manual source contact review at1fps; encoded interval at4fps; full encoded decode with -xerror",
+            "result": "Seven seconds of continuous actual bulb patch terrain; no map/inventory overlay, no cross-location edit",
+            "contextSheet": "tools/evidence/farming33/story/nmdvm9d5Scc-0-detail.jpg",
+            "reviewSheet": "tools/evidence/farming33/story/aberration-blue-polymer-488-509-review.jpg",
+            "coordinateFrame": "tools/evidence/farming33/story/nmdvm9d5Scc-coordinate.jpg",
+            "resourceFrame": "tools/evidence/farming33/story/nmdvm9d5Scc-resource.jpg",
+            "reviewedAt": "2026-10-08",
+            "samplingLimit": "4fps visual sampling; every encoded frame decoded cleanly."
+          },
+          "sha256": "85c2fb2bcc5a42fecd9c9cb207746a6024e4dd52e707d8c04a9f5b4cdc9ad334"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Licensed partial opening acquired before403; no retry after denial",
+      "spotID": "valguero-waterfall-metal-60-40",
+      "map": "valguero",
+      "sourcePlane": "valguero ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-labelled farming region",
+      "videoID": "GmVkxFGsUCg",
+      "sourceURL": "https://www.youtube.com/watch?v=GmVkxFGsUCg",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1280,
+      "sourceHeight": 720,
+      "coordinateEvidence": "Creator caption LOCATION1 LAT60.9 LON40.2 in the dedicated ASA Top10 Metal guide and the filmed first deposit chapter.",
+      "inventoryEvidence": "Creator identifies this ridge as the first metal deposit in the dedicated metal guide; no measured yield claim.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "Filmed regional waypoint; no permanent node count or guaranteed yield. Only licensed cached media acquired before source denial was used.",
+      "steps": [
+        {
+          "id": "Resource-valguero-waterfall-metal-60-40-1",
+          "title": "Terrain & approach",
+          "loop": "Resource-valguero-waterfall-metal-60-40-1",
+          "poster": "Resource-valguero-waterfall-metal-60-40-1",
+          "startSeconds": 30,
+          "endSeconds": 38,
+          "sourceURL": "https://www.youtube.com/watch?v=GmVkxFGsUCg&t=30s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "visualReview": {
+            "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming33/root/valguero-waterfall-metal-60-40-contact.jpg",
+            "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming33/root/GmVkxFGsUCg-coordinate.jpg",
+            "fullEncodedDecode": true,
+            "sampleRateFPS": 4,
+            "continuousShot": true,
+            "reviewed": true,
+            "result": "32 chronological encoded frames manually reviewed: continuous terrain, no M-map/inventory."
+          },
+          "sha256": "fc06be5b47cbda4d0949c8e512f3616da71b08fb69de4313795d1cf8ee8f2916"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Licensed partial opening acquired before403; no retry after denial",
+      "spotID": "astraeos-korinthos-pearl-shallows-40-26",
+      "map": "astraeos",
+      "sourcePlane": "astraeos ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-labelled farming region",
+      "videoID": "kiURwc3JrEI",
+      "sourceURL": "https://www.youtube.com/watch?v=kiURwc3JrEI",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1280,
+      "sourceHeight": 720,
+      "coordinateEvidence": "Creator explicitly labels pearl location40.4 LAT26.3 LONG at source49s, agreeing with the map latitude/longitude readout.",
+      "inventoryEvidence": "Pearl shells visible in the shallow underwater bed; no guaranteed yield claim.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "Filmed regional waypoint; no permanent node count or guaranteed yield. Only licensed cached media acquired before source denial was used.",
+      "steps": [
+        {
+          "id": "Resource-astraeos-korinthos-pearl-shallows-40-26-1",
+          "title": "Terrain & approach",
+          "loop": "Resource-astraeos-korinthos-pearl-shallows-40-26-1",
+          "poster": "Resource-astraeos-korinthos-pearl-shallows-40-26-1",
+          "startSeconds": 22,
+          "endSeconds": 30,
+          "sourceURL": "https://www.youtube.com/watch?v=kiURwc3JrEI&t=22s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "visualReview": {
+            "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming33/root/astraeos-korinthos-pearl-shallows-40-26-contact.jpg",
+            "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming33/root/kiURwc3JrEI-coordinate.jpg",
+            "fullEncodedDecode": true,
+            "sampleRateFPS": 4,
+            "continuousShot": true,
+            "reviewed": true,
+            "result": "32 chronological encoded frames manually reviewed: continuous terrain, no M-map/inventory."
+          },
+          "sha256": "9310c581cd3c67857eea9dd48e2d2e1598cd2eff867995b48a30e30c9fe2e6e7"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved existing local source media",
+      "spotID": "aberration-tek-pond-pearls-628-507",
+      "map": "aberration",
+      "sourcePlane": "aberration purple Tek pond resource region",
+      "sourceCoordinateScope": "Creator caption resource-region coordinates; not exact aerial camera or each shell actor.",
+      "videoID": "hOK63lfZe8I",
+      "sourceURL": "https://www.youtube.com/watch?v=hOK63lfZe8I",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1280,
+      "sourceHeight": 720,
+      "coordinateEvidence": "Creator caption LAT62.8 LONG50.7 at17–21s identifies the immediately adjacent close view of the same purple Tek pond. Initial wide shot overlooks this pond and matching Tek walls; coordinates identify the creator resource region, not the precise aerial camera.",
+      "inventoryEvidence": "Black pearl shell clusters visible in pond close view at16s; dedicated source identifies this as its first black pearl region. No harvest or inventory proof in retained opening.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "Filmed approach; no guaranteed yield or permanent node count.",
+      "steps": [
+        {
+          "id": "Resource-aberration-tek-pond-pearls-628-507-1",
+          "title": "Terrain & approach",
+          "loop": "Resource-aberration-tek-pond-pearls-628-507-1",
+          "poster": "Resource-aberration-tek-pond-pearls-628-507-1",
+          "startSeconds": 7,
+          "endSeconds": 14,
+          "sourceURL": "https://www.youtube.com/watch?v=hOK63lfZe8I&t=7s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "visualReview": {
+            "method": "Manual source context at1fps, encoded shot at4fps, full encoded decode with -xerror",
+            "result": "Seven-second continuous moving wide terrain shot of the pond; no map or inventory overlay or cross-location edit.",
+            "contextSheet": "tools/evidence/farming33/story/hOK63lfZe8I-0-detail.jpg",
+            "reviewSheet": "tools/evidence/farming33/story/aberration-tek-pond-pearls-628-507-review.jpg",
+            "coordinateFrame": "tools/evidence/farming33/story/hOK63lfZe8I-coordinate.jpg",
+            "resourceFrame": "tools/evidence/farming33/story/hOK63lfZe8I-resource.jpg",
+            "reviewedAt": "2026-10-08",
+            "samplingLimit": "4fps manual sampling; every encoded frame decoded cleanly."
+          },
+          "sha256": "ab50c9bd4bc8b25f73b28601ea2bc890fdd9d5ae37737028c8adb53ace926b39"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved existing local source media",
+      "spotID": "genesis-ocean-pearl-island-38-66",
+      "map": "genesis-part-1-ocean",
+      "sourcePlane": "Genesis Part 1 ASA Ocean coordinate plane",
+      "sourceCoordinateScope": "Creator-labelled filmed farming region",
+      "videoID": "tAwMBQDx4NI",
+      "sourceURL": "https://www.youtube.com/watch?v=tAwMBQDx4NI",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 960,
+      "sourceHeight": 540,
+      "coordinateEvidence": "Creator caption at 40s explicitly reads 38.4 LAT 66.7 LONG adjoining same island aerial shot.",
+      "inventoryEvidence": "Dedicated ASA Genesis silica guide identifies this filmed island as its first pearl location. Preview documents the island terrain; harvest yield not shown.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "Source title explicitly identifies Ark Ascended Genesis 1",
+      "steps": [
+        {
+          "id": "Resource-genesis-ocean-pearl-island-38-66-1",
+          "title": "Terrain & approach",
+          "loop": "Resource-genesis-ocean-pearl-island-38-66-1",
+          "poster": "Resource-genesis-ocean-pearl-island-38-66-1",
+          "startSeconds": 24,
+          "endSeconds": 32,
+          "sourceURL": "https://www.youtube.com/watch?v=tAwMBQDx4NI&t=24s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "visualReview": {
+            "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming33/genesis/genesis-ocean-pearl-island-38-66-contact.jpg",
+            "continuousShot": true,
+            "fullEncodedDecode": true,
+            "decodedEveryFrame": true,
+            "mapOverlayVisible": false,
+            "inventoryOverlayVisible": false,
+            "reviewed": true,
+            "reviewNotes": "Nine frames reviewed across entire encoded clip: continuous terrain shot, no map or inventory overlays. Standard gameplay HUD remains visible. Separate coordinates frame verified. Small creator caption appears at 25–27s."
+          },
+          "sha256": "c558f155bd61031a13aebb5a914df54377220468704ed8ed74f3fe03a9e47cd0"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved existing local source media",
+      "spotID": "genesis-ocean-coral-pearl-basin-57-56",
+      "map": "genesis-part-1-ocean",
+      "sourcePlane": "Genesis Part 1 ASA Ocean coordinate plane",
+      "sourceCoordinateScope": "Creator-labelled filmed farming region",
+      "videoID": "EPEUyHqQSqY",
+      "sourceURL": "https://www.youtube.com/watch?v=EPEUyHqQSqY",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 960,
+      "sourceHeight": 540,
+      "coordinateEvidence": "Actual underwater GPS at 53s and 58s reads 57.60 / 56.62. The earlier surface map at 40s is excluded because a teleport separates it from this underwater basin.",
+      "inventoryEvidence": "Dedicated ASA Genesis silica guide shows coral basin pearl farming terrain; nearby clam-like clusters appear around 60s. Harvest yield not shown; no resources beyond Silica Pearls claimed.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "Source title explicitly identifies Ark Ascended Genesis 1",
+      "steps": [
+        {
+          "id": "Resource-genesis-ocean-coral-pearl-basin-57-56-1",
+          "title": "Terrain & approach",
+          "loop": "Resource-genesis-ocean-coral-pearl-basin-57-56-1",
+          "poster": "Resource-genesis-ocean-coral-pearl-basin-57-56-1",
+          "startSeconds": 52,
+          "endSeconds": 58,
+          "sourceURL": "https://www.youtube.com/watch?v=EPEUyHqQSqY&t=52s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "visualReview": {
+            "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming33/genesis/genesis-ocean-coral-pearl-basin-57-56-contact.jpg",
+            "continuousShot": true,
+            "fullEncodedDecode": true,
+            "decodedEveryFrame": true,
+            "mapOverlayVisible": false,
+            "inventoryOverlayVisible": false,
+            "reviewed": true,
+            "reviewNotes": "Nine frames reviewed across entire encoded clip: continuous terrain shot, no map or inventory overlays. Standard gameplay HUD remains visible. Separate coordinates frame verified. Camera pans rapidly between 52–54s; actual underwater GPS remains 57.60/56.62. Earlier map coordinates excluded."
+          },
+          "sha256": "30a22497cfad9c26dde0fd6b901fb6b321a207cbd835f289e62151601f5dda93"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved existing local source media",
+      "spotID": "genesis-ocean-southwest-shore-oil-89-15",
+      "map": "genesis-part-1-ocean",
+      "sourcePlane": "Genesis Part 1 ASA Ocean coordinate plane",
+      "sourceCoordinateScope": "Creator-labelled filmed farming region",
+      "videoID": "VeNGgP2eFj4",
+      "sourceURL": "https://www.youtube.com/watch?v=VeNGgP2eFj4",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 960,
+      "sourceHeight": 540,
+      "coordinateEvidence": "In-game Ocean map at 30s reads LATITUDE 89 LONGITUDE 15.4 then closes to the same shoreline oil rocks.",
+      "inventoryEvidence": "Dedicated ASA Genesis Oil guide shows dark oil rocks scattered across shore and cliff. Terrain preview documents the resource rocks; harvest yield not shown.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "Source title explicitly identifies Ark Ascended Genesis 1",
+      "steps": [
+        {
+          "id": "Resource-genesis-ocean-southwest-shore-oil-89-15-1",
+          "title": "Terrain & approach",
+          "loop": "Resource-genesis-ocean-southwest-shore-oil-89-15-1",
+          "poster": "Resource-genesis-ocean-southwest-shore-oil-89-15-1",
+          "startSeconds": 35,
+          "endSeconds": 43,
+          "sourceURL": "https://www.youtube.com/watch?v=VeNGgP2eFj4&t=35s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "visualReview": {
+            "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming33/genesis/genesis-ocean-southwest-shore-oil-89-15-contact.jpg",
+            "continuousShot": true,
+            "fullEncodedDecode": true,
+            "decodedEveryFrame": true,
+            "mapOverlayVisible": false,
+            "inventoryOverlayVisible": false,
+            "reviewed": true,
+            "reviewNotes": "Nine frames reviewed across entire encoded clip: continuous terrain shot, no map or inventory overlays. Standard gameplay HUD remains visible. Separate coordinates frame verified."
+          },
+          "sha256": "0eeb261315b8d6e5536565f5f03ae4dce633ad4805bcd32972f69c958d1d8632"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved existing local source media",
+      "spotID": "lost-colony-east-river-black-pearls",
+      "map": "lost-colony",
+      "sourcePlane": "lost-colony filmed surface region",
+      "sourceCoordinateScope": "Source camera/filmed region, not each resource actor.",
+      "videoID": "SnKuzUWu6nk",
+      "sourceURL": "https://www.youtube.com/watch?v=SnKuzUWu6nk",
+      "rightsBasis": "licensed",
+      "rightsApproval": "Prior explicit human approval: Duyệt, a có giấy phép hết; --apply --approval VIDEOID --rights licensed.",
+      "sourceWidth": 1280,
+      "sourceHeight": 720,
+      "coordinateEvidence": "Exact source M-map camera coordinates at 46s, see /Users/admin/Ascended-iPad-Dev/tools/evidence/farming33/colony/SnKuzUWu6nk-46.jpg; filmed region not each actor position. Bottom coordinates remain30.4/85.1 during map zoom/pan43–54s while player arrow stays fixed; represents shore camera region adjacent to filmed underwater clams.",
+      "inventoryEvidence": "Glossy black clams on underwater rocky riverbed, hand pickup shown. Same uninterrupted source returns to shore and shows exact GPS.",
+      "harvestDemonstrated": true,
+      "evidenceLimitations": "Filmed approach; no guaranteed yield or permanent node count.",
+      "steps": [
+        {
+          "id": "Resource-lost-colony-east-river-black-pearls-1",
+          "title": "Terrain & approach",
+          "loop": "Resource-lost-colony-east-river-black-pearls-1",
+          "poster": "Resource-lost-colony-east-river-black-pearls-1",
+          "startSeconds": 25,
+          "endSeconds": 33,
+          "sourceURL": "https://www.youtube.com/watch?v=SnKuzUWu6nk&t=25s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "visualReview": {
+            "method": "Manual encoded 4fps contact sheet, exact source GPS full-resolution frame, full ffmpeg all-frame decode",
+            "result": "Continuous gameplay with visible black pearl clams and hand harvest; no map/inventory overlay",
+            "reviewedAt": "2026-10-08",
+            "samplingLimit": "4fps image review; every encoded frame decoded for integrity"
+          },
+          "sha256": "8faadc18752898a866f469e721e38e9e47a6374325baa4e257f88d8be6b7fc86"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Licensed partial opening acquired before403; no retry after denial",
+      "spotID": "astraeos-waterfall-pearl-pool-25-15",
+      "map": "astraeos",
+      "sourcePlane": "astraeos ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-labelled farming region",
+      "videoID": "ERDJ3CUcuD8",
+      "sourceURL": "https://www.youtube.com/watch?v=ERDJ3CUcuD8",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1280,
+      "sourceHeight": 720,
+      "coordinateEvidence": "Creator caption CORDS25.0/15.6 at37.5s beside the waterfall pearl shallows in dedicated ASA pearl guide.",
+      "inventoryEvidence": "Shallow pearl shells visible while the character crosses and swims along the waterfall pool; no measured yield claim.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "Filmed regional waypoint; no permanent node count or guaranteed yield. Only licensed cached media acquired before source denial was used.",
+      "steps": [
+        {
+          "id": "Resource-astraeos-waterfall-pearl-pool-25-15-1",
+          "title": "Terrain & approach",
+          "loop": "Resource-astraeos-waterfall-pearl-pool-25-15-1",
+          "poster": "Resource-astraeos-waterfall-pearl-pool-25-15-1",
+          "startSeconds": 20,
+          "endSeconds": 28,
+          "sourceURL": "https://www.youtube.com/watch?v=ERDJ3CUcuD8&t=20s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "visualReview": {
+            "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming33/root/astraeos-waterfall-pearl-pool-25-15-contact.jpg",
+            "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming33/root/ERDJ3CUcuD8-coordinate.jpg",
+            "fullEncodedDecode": true,
+            "sampleRateFPS": 4,
+            "continuousShot": true,
+            "reviewed": true,
+            "result": "32 chronological frames manually reviewed: continuous crossing and swimming at pearl shallows. No M-map or inventory."
+          },
+          "sha256": "65b64cb59ac3b484618963439f3aca450ebd96198d50d7fd63480048a170ab07"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved existing local source media",
+      "spotID": "lost-colony-southeast-crash-black-pearls",
+      "map": "lost-colony",
+      "sourcePlane": "lost-colony filmed surface region",
+      "sourceCoordinateScope": "Source camera/filmed region, not each resource actor.",
+      "videoID": "daxNfefr8E8",
+      "sourceURL": "https://www.youtube.com/watch?v=daxNfefr8E8",
+      "rightsBasis": "licensed",
+      "rightsApproval": "Prior explicit human approval: Duyệt, a có giấy phép hết; --apply --approval VIDEOID --rights licensed.",
+      "sourceWidth": 1280,
+      "sourceHeight": 720,
+      "coordinateEvidence": "Exact source M-map camera coordinates at 24s, see /Users/admin/Ascended-iPad-Dev/tools/evidence/farming33/colony/daxNfefr8E8-24.jpg; filmed region not each actor position.",
+      "inventoryEvidence": "Glossy black clams visible at end of continuous approach; hand pickup and black pearl HUD icon plus4 visible.",
+      "harvestDemonstrated": true,
+      "evidenceLimitations": "Filmed approach; no guaranteed yield or permanent node count.",
+      "steps": [
+        {
+          "id": "Resource-lost-colony-southeast-crash-black-pearls-1",
+          "title": "Terrain & approach",
+          "loop": "Resource-lost-colony-southeast-crash-black-pearls-1",
+          "poster": "Resource-lost-colony-southeast-crash-black-pearls-1",
+          "startSeconds": 43.8,
+          "endSeconds": 50.2,
+          "sourceURL": "https://www.youtube.com/watch?v=daxNfefr8E8&t=43.8s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "visualReview": {
+            "method": "Manual encoded 4fps contact sheet, exact source GPS full-resolution frame, full ffmpeg all-frame decode",
+            "result": "Continuous gameplay with visible black pearl clams and hand harvest; no map/inventory overlay",
+            "reviewedAt": "2026-10-08",
+            "samplingLimit": "4fps image review; every encoded frame decoded for integrity"
+          },
+          "sha256": "176643cdfc397f1d270295327eb1f9bdaeb4c00e17f9e27448212b62dce42140"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved existing local source media",
+      "spotID": "lost-colony-east-snow-obsidian",
+      "map": "lost-colony",
+      "sourcePlane": "lost-colony filmed surface cliff region",
+      "sourceCoordinateScope": "Source camera / filmed cliff region; not every node actor.",
+      "videoID": "jV_DihpbI5E",
+      "sourceURL": "https://www.youtube.com/watch?v=jV_DihpbI5E",
+      "rightsBasis": "licensed",
+      "rightsApproval": "Prior explicit human approval: Duyệt, a có giấy phép hết; source triple gate applied.",
+      "sourceWidth": 1280,
+      "sourceHeight": 720,
+      "coordinateEvidence": "Exact source M-map camera GPS LAT54 LONG71.3 at46s, see /Users/admin/Ascended-iPad-Dev/tools/evidence/farming33/colony/jV_DihpbI5E-46.jpg. GPS is source camera filmed region, not every resource actor.",
+      "inventoryEvidence": "Black jagged glossy obsidian nodes mined using pick in snowy cliff alcove; dedicated obsidian source.",
+      "harvestDemonstrated": true,
+      "evidenceLimitations": "Filmed approach; no guaranteed yield or permanent node count.",
+      "steps": [
+        {
+          "id": "Resource-lost-colony-east-snow-obsidian-1",
+          "title": "Terrain & approach",
+          "loop": "Resource-lost-colony-east-snow-obsidian-1",
+          "poster": "Resource-lost-colony-east-snow-obsidian-1",
+          "startSeconds": 22,
+          "endSeconds": 30,
+          "sourceURL": "https://www.youtube.com/watch?v=jV_DihpbI5E&t=22s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "visualReview": {
+            "method": "Manual encoded4fps contact sheet and full-resolution sourceGPS; all encoded frames decoded with ffmpeg",
+            "result": "Continuous actual resource terrain; no M-map, inventory or scope overlay in selected clip",
+            "reviewedAt": "2026-10-08",
+            "samplingLimit": "4fps visual samples plus every-frame decode"
+          },
+          "sha256": "2918de96308940ded164bef0d8bcf63304fdb3168b381c42ad4ac73e7de0cad8"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved existing local source media",
+      "spotID": "lost-colony-east-cliff-honey",
+      "map": "lost-colony",
+      "sourcePlane": "lost-colony filmed surface cliff region",
+      "sourceCoordinateScope": "Source camera / filmed cliff region; not every node actor.",
+      "videoID": "tOIerVP_HAM",
+      "sourceURL": "https://www.youtube.com/watch?v=tOIerVP_HAM",
+      "rightsBasis": "licensed",
+      "rightsApproval": "Prior explicit human approval: Duyệt, a có giấy phép hết; source triple gate applied.",
+      "sourceWidth": 1280,
+      "sourceHeight": 720,
+      "coordinateEvidence": "Exact source M-map camera GPS LAT51.6 LONG69.8 at46s, see /Users/admin/Ascended-iPad-Dev/tools/evidence/farming33/colony/tOIerVP_HAM-46.jpg. GPS is source camera filmed region, not every resource actor.",
+      "inventoryEvidence": "Wild Bee Hive honeycomb and Bee Hive health5000/5000 label clearly visible on cliff face; no completed harvest in selected clip.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "Filmed approach; no guaranteed yield or permanent node count.",
+      "steps": [
+        {
+          "id": "Resource-lost-colony-east-cliff-honey-1",
+          "title": "Terrain & approach",
+          "loop": "Resource-lost-colony-east-cliff-honey-1",
+          "poster": "Resource-lost-colony-east-cliff-honey-1",
+          "startSeconds": 34,
+          "endSeconds": 42,
+          "sourceURL": "https://www.youtube.com/watch?v=tOIerVP_HAM&t=34s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "visualReview": {
+            "method": "Manual encoded4fps contact sheet and full-resolution sourceGPS; all encoded frames decoded with ffmpeg",
+            "result": "Continuous actual resource terrain; no M-map, inventory or scope overlay in selected clip",
+            "reviewedAt": "2026-10-08",
+            "samplingLimit": "4fps visual samples plus every-frame decode"
+          },
+          "sha256": "7dc26632bbac62731a45ac13c76b2028284176c552f352af97388f3b2d572544"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved existing local source media",
+      "spotID": "lost-colony-north-city-lamp-crystal",
+      "map": "lost-colony",
+      "sourcePlane": "lost-colony filmed city street region",
+      "sourceCoordinateScope": "Source camera cityblockregion, not each destructible lamppost actor.",
+      "videoID": "rPvOB6L0YnE",
+      "sourceURL": "https://www.youtube.com/watch?v=rPvOB6L0YnE",
+      "rightsBasis": "licensed",
+      "rightsApproval": "Prior explicit human approval: Duyệt, a có giấy phép hết; source triple gate applied.",
+      "sourceWidth": 1280,
+      "sourceHeight": 720,
+      "coordinateEvidence": "Exact source M-map camera GPS LAT28 LONG60.8 at48s, see /Users/admin/Ascended-iPad-Dev/tools/evidence/farming33/colony/rPvOB6L0YnE-48.jpg; camera has walked along same city lamppost street. Region GPS, not each actor. Camera arrow centered atGPS28/60.8; bottomGPS unchanged acrossdifferent mapzoom/pan at44,48,51s. Cyan Player marker is distinct from sourcecamera, so scope remains filmedcamera cityregion, not physicalpawn.",
+      "inventoryEvidence": "Doedicurus strikes citylamppost and source30s HUDwhiteCrystalicon +86x appears; see /Users/admin/Ascended-iPad-Dev/tools/evidence/farming33/colony/rPvOB6L0YnE-30.jpg. Otherlooticons notclassified.",
+      "harvestDemonstrated": true,
+      "evidenceLimitations": "Filmed approach; no guaranteed yield or permanent node count.",
+      "steps": [
+        {
+          "id": "Resource-lost-colony-north-city-lamp-crystal-1",
+          "title": "Terrain & approach",
+          "loop": "Resource-lost-colony-north-city-lamp-crystal-1",
+          "poster": "Resource-lost-colony-north-city-lamp-crystal-1",
+          "startSeconds": 24,
+          "endSeconds": 32,
+          "sourceURL": "https://www.youtube.com/watch?v=rPvOB6L0YnE&t=24s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "visualReview": {
+            "method": "Manual encoded4fps contact sheet; exactGPS at44,48,51s; source30s fullresolutionharvestHUD; allframe ffmpegdecode",
+            "result": "Continuous realDoedharvest and Crystal+86pickup; no M-map/inventory overlay",
+            "reviewedAt": "2026-10-08",
+            "samplingLimit": "4fpsvisualsamples plus everyframe integritydecode"
+          },
+          "sha256": "409e4646d73d4d1f6a926a7cf5dd090976a49e7c4875f219bcb92f4cb9ef0e63"
+        }
+      ]
+    },
+    {
+      "sourceAcquisition": "Approved existing local source media",
+      "spotID": "extinction-city-cliff-crystal-549-404",
+      "map": "extinction",
+      "sourcePlane": "extinction city cliff resource patch",
+      "sourceCoordinateScope": "Creator caption resource-region coordinate; not exact aerial camera or every actor.",
+      "videoID": "85xkdr_UYAo",
+      "sourceURL": "https://www.youtube.com/watch?v=85xkdr_UYAo",
+      "rightsBasis": "licensed",
+      "rightsApproval": "User confirmed licenses for all source videos",
+      "sourceWidth": 1280,
+      "sourceHeight": 720,
+      "coordinateEvidence": "Creator LARGE caption54.9 LAT40.4 LONG at9s identifies same uninterrupted opening crystal cliff patch. This is creator asserted resource-region coordinate, not the high aerial camera.",
+      "inventoryEvidence": "Distinct white pointed crystal clusters clearly visible at0s and throughout selected aerial cliff shot. No harvest/inventory retained; visual node proof only.",
+      "harvestDemonstrated": false,
+      "evidenceLimitations": "Filmed approach; no guaranteed yield or permanent node count.",
+      "steps": [
+        {
+          "id": "Resource-extinction-city-cliff-crystal-549-404-1",
+          "title": "Terrain & approach",
+          "loop": "Resource-extinction-city-cliff-crystal-549-404-1",
+          "poster": "Resource-extinction-city-cliff-crystal-549-404-1",
+          "startSeconds": 0.5,
+          "endSeconds": 7.5,
+          "sourceURL": "https://www.youtube.com/watch?v=85xkdr_UYAo&t=0.5s",
+          "mapOverlayVisible": false,
+          "inventoryOverlayVisible": false,
+          "visualReview": {
+            "method": "Source contact1fps, encoded contact4fps and full clean encoded decode -xerror",
+            "result": "Seven seconds continuous moving aerial crystal patch; no map/inventory overlay or scene change.",
+            "contextSheet": "tools/evidence/farming33/story/85xkdr_UYAo-0-detail.jpg",
+            "reviewSheet": "tools/evidence/farming33/story/extinction-city-cliff-crystal-549-404-review.jpg",
+            "coordinateFrame": "tools/evidence/farming33/story/85xkdr_UYAo-9-full.jpg",
+            "resourceFrame": "tools/evidence/farming33/story/85xkdr_UYAo-0-full.jpg",
+            "reviewedAt": "2026-10-08",
+            "samplingLimit": "4fps manual review; full encoded frame decode clean."
+          },
+          "sha256": "30f086fcdd243b7576d30f5815b4753b8fc3d3943c7d5af67f80c46548683c08"
+        }
+      ]
     }
   ],
   "coverage": [
@@ -4947,49 +5933,49 @@
     },
     {
       "map": "scorched-earth",
-      "verifiedRegions": 3,
+      "verifiedRegions": 6,
       "status": "source-verified",
       "reason": "Filmed GPS regions reviewed against source footage; individual actors and respawns vary."
     },
     {
       "map": "aberration",
-      "verifiedRegions": 2,
+      "verifiedRegions": 4,
       "status": "source-verified",
       "reason": "Filmed GPS regions reviewed against source footage; individual actors and respawns vary."
     },
     {
       "map": "extinction",
-      "verifiedRegions": 1,
+      "verifiedRegions": 2,
       "status": "source-verified",
       "reason": "Filmed GPS regions reviewed against source footage; individual actors and respawns vary."
     },
     {
       "map": "valguero",
-      "verifiedRegions": 2,
+      "verifiedRegions": 3,
       "status": "source-verified",
       "reason": "Filmed GPS regions reviewed against source footage; individual actors and respawns vary."
     },
     {
       "map": "astraeos",
-      "verifiedRegions": 2,
+      "verifiedRegions": 4,
       "status": "source-verified",
       "reason": "Filmed GPS regions reviewed against source footage; individual actors and respawns vary."
     },
     {
       "map": "lost-colony",
-      "verifiedRegions": 2,
+      "verifiedRegions": 8,
       "status": "source-verified",
       "reason": "Filmed GPS regions reviewed against source footage; individual actors and respawns vary."
     },
     {
       "map": "genesis-part-1",
-      "verifiedRegions": 1,
+      "verifiedRegions": 4,
       "status": "source-verified",
       "reason": "Filmed GPS regions reviewed against source footage; individual actors and respawns vary."
     },
     {
       "map": "genesis-part-1-ocean",
-      "verifiedRegions": 1,
+      "verifiedRegions": 8,
       "status": "source-verified",
       "reason": "Filmed GPS regions reviewed against source footage; individual actors and respawns vary."
     }

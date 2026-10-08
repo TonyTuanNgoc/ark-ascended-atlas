@@ -1,0 +1,20 @@
+{
+  "status": "failed",
+  "videoId": "6QM_aMBLf-0",
+  "errorType": "YouTubeIntelligenceError",
+  "diagnostics": [
+    {
+      "processExitCode": 1,
+      "httpStatusCodes": [
+        "403"
+      ],
+      "ffmpegExitCodes": [],
+      "forbiddenMentioned": false,
+      "signedURLsLogged": false,
+      "restrictionMentioned": true,
+      "safeErrorClasses": [
+        "HTTP Error 403"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+[
+  {
+    "id": "aberration-blue-polymer-488-509",
+    "map": "aberration",
+    "name": "Blue zone polymer bulbs",
+    "resources": [
+      "Organic Polymer"
+    ],
+    "lat": 48.8,
+    "lon": 50.9,
+    "videoID": "nmdvm9d5Scc",
+    "sourceURL": "https://www.youtube.com/watch?v=nmdvm9d5Scc",
+    "startSeconds": 8.5,
+    "endSeconds": 15.5,
+    "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming33/story/aberration-blue-polymer-488-509.mp4",
+    "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming33/story/aberration-blue-polymer-488-509.jpg",
+    "coordinateEvidence": "Creator GPS caption LAT48.8 LONG50.9 at18s identifies the immediately adjacent filmed purple bulb patch; caption persists through24s. Coordinates are creator asserted filmed region, not every bulb actor.",
+    "inventoryEvidence": "Hand gathering at25.8s produces +3x Organic Polymer icon at left; same pink bulb patch shown in selected interval.",
+    "status": "verified-new",
+    "verified": true,
+    "rightsBasis": "licensed",
+    "sourcePlane": "aberration filmed blue zone polymer region",
+    "sourceCoordinateScope": "Creator GPS-caption filmed region; not every resource actor or guaranteed spawn.",
+    "mapOverlayVisible": false,
+    "inventoryOverlayVisible": false,
+    "visualReview": {
+      "method": "Manual source contact review at1fps; encoded interval at4fps; full encoded decode with -xerror",
+      "result": "Seven seconds of continuous actual bulb patch terrain; no map/inventory overlay, no cross-location edit",
+      "contextSheet": "tools/evidence/farming33/story/nmdvm9d5Scc-0-detail.jpg",
+      "reviewSheet": "tools/evidence/farming33/story/aberration-blue-polymer-488-509-review.jpg",
+      "coordinateFrame": "tools/evidence/farming33/story/nmdvm9d5Scc-coordinate.jpg",
+      "resourceFrame": "tools/evidence/farming33/story/nmdvm9d5Scc-resource.jpg",
+      "reviewedAt": "2026-10-08",
+      "samplingLimit": "4fps visual sampling; every encoded frame decoded cleanly."
+    }
+  },
+  {
+    "id": "aberration-tek-pond-pearls-628-507",
+    "map": "aberration",
+    "name": "Tek pond black pearls",
+    "resources": [
+      "Black Pearls"
+    ],
+    "lat": 62.8,
+    "lon": 50.7,
+    "videoID": "hOK63lfZe8I",
+    "sourceURL": "https://www.youtube.com/watch?v=hOK63lfZe8I",
+    "startSeconds": 7,
+    "endSeconds": 14,
+    "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming33/story/aberration-tek-pond-pearls-628-507.mp4",
+    "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming33/story/aberration-tek-pond-pearls-628-507.jpg",
+    "coordinateEvidence": "Creator caption LAT62.8 LONG50.7 at17\u201321s identifies the immediately adjacent close view of the same purple Tek pond. Initial wide shot overlooks this pond and matching Tek walls; coordinates identify the creator resource region, not the precise aerial camera.",
+    "inventoryEvidence": "Black pearl shell clusters visible in pond close view at16s; dedicated source identifies this as its first black pearl region. No harvest or inventory proof in retained opening.",
+    "status": "verified-new",
+    "verified": true,
+    "rightsBasis": "licensed",
+    "sourcePlane": "aberration purple Tek pond resource region",
+    "sourceCoordinateScope": "Creator caption resource-region coordinates; not exact aerial camera or each shell actor.",
+    "mapOverlayVisible": false,
+    "inventoryOverlayVisible": false,
+    "visualReview": {
+      "method": "Manual source context at1fps, encoded shot at4fps, full encoded decode with -xerror",
+      "result": "Seven-second continuous moving wide terrain shot of the pond; no map or inventory overlay or cross-location edit.",
+      "contextSheet": "tools/evidence/farming33/story/hOK63lfZe8I-0-detail.jpg",
+      "reviewSheet": "tools/evidence/farming33/story/aberration-tek-pond-pearls-628-507-review.jpg",
+      "coordinateFrame": "tools/evidence/farming33/story/hOK63lfZe8I-coordinate.jpg",
+      "resourceFrame": "tools/evidence/farming33/story/hOK63lfZe8I-resource.jpg",
+      "reviewedAt": "2026-10-08",
+      "samplingLimit": "4fps manual sampling; every encoded frame decoded cleanly."
+    }
+  },
+  {
+    "id": "extinction-city-cliff-crystal-549-404",
+    "map": "extinction",
+    "name": "City cliff crystal patch",
+    "resources": [
+      "Crystal"
+    ],
+    "lat": 54.9,
+    "lon": 40.4,
+    "videoID": "85xkdr_UYAo",
+    "sourceURL": "https://www.youtube.com/watch?v=85xkdr_UYAo",
+    "startSeconds": 0.5,
+    "endSeconds": 7.5,
+    "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming33/story/extinction-city-cliff-crystal-549-404.mp4",
+    "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming33/story/extinction-city-cliff-crystal-549-404.jpg",
+    "coordinateEvidence": "Creator LARGE caption54.9 LAT40.4 LONG at9s identifies same uninterrupted opening crystal cliff patch. This is creator asserted resource-region coordinate, not the high aerial camera.",
+    "inventoryEvidence": "Distinct white pointed crystal clusters clearly visible at0s and throughout selected aerial cliff shot. No harvest/inventory retained; visual node proof only.",
+    "status": "verified-new",
+    "verified": true,
+    "rightsBasis": "licensed",
+    "sourcePlane": "extinction city cliff resource patch",
+    "sourceCoordinateScope": "Creator caption resource-region coordinate; not exact aerial camera or every actor.",
+    "mapOverlayVisible": false,
+    "inventoryOverlayVisible": false,
+    "visualReview": {
+      "method": "Source contact1fps, encoded contact4fps and full clean encoded decode -xerror",
+      "result": "Seven seconds continuous moving aerial crystal patch; no map/inventory overlay or scene change.",
+      "contextSheet": "tools/evidence/farming33/story/85xkdr_UYAo-0-detail.jpg",
+      "reviewSheet": "tools/evidence/farming33/story/extinction-city-cliff-crystal-549-404-review.jpg",
+      "coordinateFrame": "tools/evidence/farming33/story/85xkdr_UYAo-9-full.jpg",
+      "resourceFrame": "tools/evidence/farming33/story/85xkdr_UYAo-0-full.jpg",
+      "reviewedAt": "2026-10-08",
+      "samplingLimit": "4fps manual review; full encoded frame decode clean."
+    }
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "status": "failed",
+  "videoId": "CwLGCUlr4D8",
+  "errorType": "YouTubeIntelligenceError",
+  "diagnostics": [
+    {
+      "processExitCode": 1,
+      "httpStatusCodes": [
+        "403"
+      ],
+      "ffmpegExitCodes": [],
+      "forbiddenMentioned": false,
+      "signedURLsLogged": false,
+      "restrictionMentioned": true,
+      "safeErrorClasses": [
+        "HTTP Error 403"
+      ]
+    }
+  ]
+}

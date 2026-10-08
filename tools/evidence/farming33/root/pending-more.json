@@ -1,0 +1,36 @@
+{
+  "candidates": [
+    {
+      "id": "astraeos-waterfall-pearl-pool-25-15",
+      "map": "astraeos",
+      "name": "Waterfall pearl pool",
+      "resources": [
+        "Silica Pearls"
+      ],
+      "lat": 25.0,
+      "lon": 15.6,
+      "videoID": "ERDJ3CUcuD8",
+      "startSeconds": 20,
+      "endSeconds": 28,
+      "coordinateEvidence": "Creator caption CORDS25.0/15.6 at37.5s beside the waterfall pearl shallows in dedicated ASA pearl guide.",
+      "inventoryEvidence": "Shallow pearl shells visible while the character crosses and swims along the waterfall pool; no measured yield claim.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming33/root/astraeos-waterfall-pearl-pool-25-15.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming33/root/astraeos-waterfall-pearl-pool-25-15.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=ERDJ3CUcuD8",
+      "sourcePlane": "astraeos ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-labelled farming region",
+      "mapOverlayVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "Licensed partial opening acquired before403; no retry after denial",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming33/root/astraeos-waterfall-pearl-pool-25-15-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming33/root/ERDJ3CUcuD8-coordinate.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true
+      },
+      "evidenceLimitations": "Filmed regional waypoint; no permanent node count or guaranteed yield. Only licensed cached media acquired before source denial was used."
+    }
+  ]
+}
