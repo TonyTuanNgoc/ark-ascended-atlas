@@ -1,0 +1,446 @@
+{
+  "dryRun": true,
+  "videoId": "k73mk3nz0wI",
+  "formats": [
+    {
+      "formatId": "sb3",
+      "ext": "mhtml",
+      "height": 27,
+      "filesize": null,
+      "video": false,
+      "audio": false
+    },
+    {
+      "formatId": "sb2",
+      "ext": "mhtml",
+      "height": 45,
+      "filesize": null,
+      "video": false,
+      "audio": false
+    },
+    {
+      "formatId": "sb1",
+      "ext": "mhtml",
+      "height": 90,
+      "filesize": null,
+      "video": false,
+      "audio": false
+    },
+    {
+      "formatId": "sb0",
+      "ext": "mhtml",
+      "height": 180,
+      "filesize": null,
+      "video": false,
+      "audio": false
+    },
+    {
+      "formatId": "139",
+      "ext": "m4a",
+      "height": null,
+      "filesize": 3095834,
+      "video": false,
+      "audio": true
+    },
+    {
+      "formatId": "140",
+      "ext": "m4a",
+      "height": null,
+      "filesize": 8213008,
+      "video": false,
+      "audio": true
+    },
+    {
+      "formatId": "251",
+      "ext": "webm",
+      "height": null,
+      "filesize": 7337373,
+      "video": false,
+      "audio": true
+    },
+    {
+      "formatId": "160",
+      "ext": "mp4",
+      "height": 144,
+      "filesize": 7294211,
+      "video": true,
+      "audio": false
+    },
+    {
+      "formatId": "134",
+      "ext": "mp4",
+      "height": 360,
+      "filesize": 35331472,
+      "video": true,
+      "audio": false
+    },
+    {
+      "formatId": "18",
+      "ext": "mp4",
+      "height": 360,
+      "filesize": 43476617,
+      "video": true,
+      "audio": true
+    },
+    {
+      "formatId": "298",
+      "ext": "mp4",
+      "height": 720,
+      "filesize": 206645589,
+      "video": true,
+      "audio": false
+    },
+    {
+      "formatId": "299",
+      "ext": "mp4",
+      "height": 1080,
+      "filesize": 358729489,
+      "video": true,
+      "audio": false
+    }
+  ],
+  "subtitles": [
+    "aa",
+    "ab",
+    "af",
+    "ak",
+    "am",
+    "ar",
+    "as",
+    "ay",
+    "az",
+    "ba",
+    "be",
+    "bg",
+    "bho",
+    "bn",
+    "bn-orig",
+    "bo",
+    "br",
+    "bs",
+    "ca",
+    "ceb",
+    "co",
+    "crs",
+    "cs",
+    "cy",
+    "da",
+    "de",
+    "de-DE",
+    "de-DE-orig",
+    "dv",
+    "dz",
+    "ee",
+    "el",
+    "en",
+    "en-orig",
+    "eo",
+    "es",
+    "es-US",
+    "es-US-orig",
+    "et",
+    "eu",
+    "fa",
+    "fi",
+    "fil",
+    "fj",
+    "fo",
+    "fr",
+    "fr-FR",
+    "fr-FR-orig",
+    "fy",
+    "ga",
+    "gaa",
+    "gd",
+    "gl",
+    "gn",
+    "gu",
+    "gv",
+    "ha",
+    "haw",
+    "hi",
+    "hi-orig",
+    "hmn",
+    "hr",
+    "ht",
+    "hu",
+    "hy",
+    "id",
+    "id-orig",
+    "ig",
+    "is",
+    "it",
+    "it-orig",
+    "iu",
+    "iw",
+    "iw-orig",
+    "ja",
+    "ja-orig",
+    "jv",
+    "ka",
+    "kha",
+    "kk",
+    "kl",
+    "km",
+    "kn",
+    "ko",
+    "ko-orig",
+    "kri",
+    "ku",
+    "ky",
+    "la",
+    "lb",
+    "lg",
+    "ln",
+    "lo",
+    "lt",
+    "lua",
+    "luo",
+    "lv",
+    "mfe",
+    "mg",
+    "mi",
+    "mk",
+    "ml",
+    "ml-orig",
+    "mn",
+    "mr",
+    "ms",
+    "mt",
+    "my",
+    "ne",
+    "new",
+    "nl",
+    "nl-NL",
+    "nl-NL-orig",
+    "no",
+    "nso",
+    "ny",
+    "oc",
+    "om",
+    "or",
+    "os",
+    "pa",
+    "pa-orig",
+    "pam",
+    "pl",
+    "pl-orig",
+    "ps",
+    "pt",
+    "pt-BR",
+    "pt-BR-orig",
+    "pt-PT",
+    "qu",
+    "rn",
+    "ro",
+    "ru",
+    "ru-orig",
+    "rw",
+    "sa",
+    "sd",
+    "sg",
+    "si",
+    "sk",
+    "sl",
+    "sm",
+    "sn",
+    "so",
+    "sq",
+    "sr",
+    "ss",
+    "st",
+    "su",
+    "sv",
+    "sw",
+    "ta",
+    "te",
+    "te-orig",
+    "tg",
+    "th",
+    "ti",
+    "tk",
+    "tn",
+    "to",
+    "tr",
+    "ts",
+    "tt",
+    "tum",
+    "ug",
+    "uk",
+    "uk-orig",
+    "ur",
+    "uz",
+    "ve",
+    "vi",
+    "war",
+    "wo",
+    "xh",
+    "yi",
+    "yo",
+    "zh-Hans",
+    "zh-Hant",
+    "zu"
+  ],
+  "chapters": [
+    {
+      "title": "Intro.",
+      "start": 0,
+      "end": 11
+    },
+    {
+      "title": "Location 1.",
+      "start": 11,
+      "end": 21
+    },
+    {
+      "title": "Location 2.",
+      "start": 21,
+      "end": 28
+    },
+    {
+      "title": "Location 3.",
+      "start": 28,
+      "end": 39
+    },
+    {
+      "title": "Location 4.",
+      "start": 39,
+      "end": 58
+    },
+    {
+      "title": "Location 5.",
+      "start": 58,
+      "end": 66
+    },
+    {
+      "title": "Location 6.",
+      "start": 66,
+      "end": 73
+    },
+    {
+      "title": "Location 7.",
+      "start": 73,
+      "end": 79
+    },
+    {
+      "title": "Location 8.",
+      "start": 79,
+      "end": 86
+    },
+    {
+      "title": "Location 9.",
+      "start": 86,
+      "end": 96
+    },
+    {
+      "title": "Location 10.",
+      "start": 96,
+      "end": 107
+    },
+    {
+      "title": "Location 11.",
+      "start": 107,
+      "end": 124
+    },
+    {
+      "title": "Location 12.",
+      "start": 124,
+      "end": 136
+    },
+    {
+      "title": "Location 13.",
+      "start": 136,
+      "end": 144
+    },
+    {
+      "title": "Location 14.",
+      "start": 144,
+      "end": 162
+    },
+    {
+      "title": "Location 15.",
+      "start": 162,
+      "end": 175
+    },
+    {
+      "title": "Location 16.",
+      "start": 175,
+      "end": 192
+    },
+    {
+      "title": "Location 17.",
+      "start": 192,
+      "end": 204
+    },
+    {
+      "title": "Location 18.",
+      "start": 204,
+      "end": 225
+    },
+    {
+      "title": "Location 19.",
+      "start": 225,
+      "end": 238
+    },
+    {
+      "title": "Location 20.",
+      "start": 238,
+      "end": 254
+    },
+    {
+      "title": "Location 21.",
+      "start": 254,
+      "end": 264
+    },
+    {
+      "title": "Location 22.",
+      "start": 264,
+      "end": 285
+    },
+    {
+      "title": "Location 23.",
+      "start": 285,
+      "end": 292
+    },
+    {
+      "title": "Location 24.",
+      "start": 292,
+      "end": 297
+    },
+    {
+      "title": "Location 25.",
+      "start": 297,
+      "end": 324
+    },
+    {
+      "title": "Location 26.",
+      "start": 324,
+      "end": 337
+    },
+    {
+      "title": "Location 27.",
+      "start": 337,
+      "end": 407
+    },
+    {
+      "title": "Location 28.5:56",
+      "start": 407,
+      "end": 424
+    },
+    {
+      "title": "Location 34.",
+      "start": 424,
+      "end": 436
+    },
+    {
+      "title": "Misc Resources.8:28",
+      "start": 436,
+      "end": 507
+    }
+  ],
+  "estimatedDownloadBytes": 358729489,
+  "selectedQuality": "best video <=1080p plus best audio",
+  "output": "/Volumes/TONY SSD/TONY_WORKSPACE/CODE/TonyOS_Workspace/tools/youtube-intelligence/data/downloads/k73mk3nz0wI.mp4",
+  "rightsRequired": true,
+  "mediaWrites": 0
+}

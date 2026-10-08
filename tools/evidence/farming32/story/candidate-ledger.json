@@ -1,0 +1,1802 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-08",
+  "scope": [
+    "scorched-earth",
+    "aberration",
+    "extinction",
+    "lost-colony"
+  ],
+  "curatedResources": [
+    "Black Pearls",
+    "Cementing Paste",
+    "Chitin",
+    "Crystal",
+    "Giant Bee Honey",
+    "Metal",
+    "Obsidian",
+    "Oil",
+    "Organic Polymer",
+    "Rare Flowers",
+    "Rare Mushrooms",
+    "Rich Metal",
+    "Sap",
+    "Silica Pearls"
+  ],
+  "existingCount": 6,
+  "newCandidateCount": 5,
+  "newSuccessfulDownloads": 0,
+  "newRenderedClipsFromAuthorizedCache": 5,
+  "entries": [
+    {
+      "id": "scorched-eastern-metal",
+      "map": "scorched-earth",
+      "name": "Eastern ridge metal",
+      "lat": 53.8,
+      "lon": 78.7,
+      "resources": [
+        "Metal"
+      ],
+      "imageAsset": "FarmPhoto-scorched-eastern-metal",
+      "videoID": "k9IOWvnWMdg",
+      "seconds": 23,
+      "direction": "Follow the filmed landmarks and approach shown in the clips.",
+      "method": "Use a suitable harvesting tool or creature for this resource; the footage establishes the region and visible resource.",
+      "kit": [],
+      "risks": [
+        "Hostile creatures",
+        "Terrain hazards"
+      ],
+      "verified": true,
+      "sourceURL": "https://www.youtube.com/watch?v=k9IOWvnWMdg",
+      "photoSHA256": "a0e60c2fdeb12dd75abe787650c4927b6754391cd7c708537d14bf75bc074aa3",
+      "coordinateEvidence": "In-game map reads latitude 53.8, longitude 78.7 at 25s. This is a filmed region, not every individual resource actor.",
+      "inventoryEvidence": "Metal rocks and pick strikes are visible in the metal chapter.",
+      "sourcePlane": "scorched-earth filmed region",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 30,
+      "photoMapOverlayVisible": false,
+      "startSeconds": 30,
+      "endSeconds": 36,
+      "clipPath": "/Users/admin/Ascended-iPad-Dev/native/Ascended/Resources/ResourceClips/Resource-scorched-eastern-metal-1.mp4",
+      "status": "existing-verified",
+      "license": "User-asserted licensed; metadata license null",
+      "visualReview": {
+        "method": "Manual source context review at 1 fps; encoded interval review at 4 fps",
+        "sourceFrameSeconds": [
+          30.0,
+          30.25,
+          30.5,
+          30.75,
+          31.0,
+          31.25,
+          31.5,
+          31.75,
+          32.0,
+          32.25,
+          32.5,
+          32.75,
+          33.0,
+          33.25,
+          33.5,
+          33.75,
+          34.0,
+          34.25,
+          34.5,
+          34.75,
+          35.0,
+          35.25,
+          35.5,
+          35.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Clean terrain/resource/approach; no map or inventory obstruction",
+        "samplingLimit": "Sampled review at 0.25-second intervals, not every-frame certification.",
+        "contextSheet": "tools/evidence/resource-media26/41-scorched-eastern-metal-context.jpg"
+      }
+    },
+    {
+      "id": "scorched-central-metal",
+      "map": "scorched-earth",
+      "name": "Central ridge metal",
+      "lat": 48.2,
+      "lon": 63.0,
+      "resources": [
+        "Metal"
+      ],
+      "imageAsset": "FarmPhoto-scorched-central-metal",
+      "videoID": "k9IOWvnWMdg",
+      "seconds": 43,
+      "direction": "Follow the filmed landmarks and approach shown in the clips.",
+      "method": "Use a suitable harvesting tool or creature for this resource; the footage establishes the region and visible resource.",
+      "kit": [],
+      "risks": [
+        "Hostile creatures",
+        "Terrain hazards"
+      ],
+      "verified": true,
+      "sourceURL": "https://www.youtube.com/watch?v=k9IOWvnWMdg",
+      "photoSHA256": "069ea3a9afab4d6e3ea689600532f4b49ce45e94e2f08abacc89b8ddb28d6c8a",
+      "coordinateEvidence": "In-game map reads latitude 48.2, longitude 63.0 at 45s. This is a filmed region, not every individual resource actor.",
+      "inventoryEvidence": "The source shows a large metal ore rock and the surrounding ridge; these clips do not demonstrate a completed harvest.",
+      "sourcePlane": "scorched-earth filmed region",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 49,
+      "photoMapOverlayVisible": false,
+      "startSeconds": 49,
+      "endSeconds": 55.5,
+      "clipPath": "/Users/admin/Ascended-iPad-Dev/native/Ascended/Resources/ResourceClips/Resource-scorched-central-metal-1.mp4",
+      "status": "existing-verified",
+      "license": "User-asserted licensed; metadata license null",
+      "visualReview": {
+        "method": "Manual source context review at 1 fps; encoded interval review at 4 fps",
+        "sourceFrameSeconds": [
+          49.0,
+          49.25,
+          49.5,
+          49.75,
+          50.0,
+          50.25,
+          50.5,
+          50.75,
+          51.0,
+          51.25,
+          51.5,
+          51.75,
+          52.0,
+          52.25,
+          52.5,
+          52.75,
+          53.0,
+          53.25,
+          53.5,
+          53.75,
+          54.0,
+          54.25,
+          54.5,
+          54.75,
+          55.0,
+          55.25
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Clean terrain/resource/approach; no map or inventory obstruction",
+        "samplingLimit": "Sampled review at 0.25-second intervals, not every-frame certification.",
+        "contextSheet": "tools/evidence/resource-media26/42-scorched-central-metal-context.jpg"
+      }
+    },
+    {
+      "id": "extinction-oil-lake",
+      "map": "extinction",
+      "name": "Northern oil lake",
+      "lat": 16.5,
+      "lon": 66.6,
+      "resources": [
+        "Oil"
+      ],
+      "imageAsset": "FarmPhoto-extinction-oil-lake",
+      "videoID": "85xkdr_UYAo",
+      "seconds": 21,
+      "direction": "Follow the filmed landmarks and approach shown in the clips.",
+      "method": "Use a suitable harvesting tool or creature for this resource; the footage establishes the region and visible resource.",
+      "kit": [],
+      "risks": [
+        "Hostile creatures",
+        "Terrain hazards"
+      ],
+      "verified": true,
+      "sourceURL": "https://www.youtube.com/watch?v=85xkdr_UYAo",
+      "photoSHA256": "d106d1fba7622fa5a264b9253111de290ea3fd9e245522c5066af9e2604d6c27",
+      "coordinateEvidence": "In-game map and creator GPS overlay both read latitude 16.5, longitude 66.6 at 22s. This is a filmed region, not every individual resource actor.",
+      "inventoryEvidence": "Oil chapter shows the lake and resource beds; harvesting is not demonstrated.",
+      "sourcePlane": "extinction filmed region",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 16,
+      "photoMapOverlayVisible": false,
+      "startSeconds": 16,
+      "endSeconds": 20.75,
+      "clipPath": "/Users/admin/Ascended-iPad-Dev/native/Ascended/Resources/ResourceClips/Resource-extinction-oil-lake-1.mp4",
+      "status": "existing-verified",
+      "license": "User-asserted licensed; metadata license null",
+      "visualReview": {
+        "method": "Manual source context review at 1 fps; encoded interval review at 4 fps",
+        "sourceFrameSeconds": [
+          16.0,
+          16.25,
+          16.5,
+          16.75,
+          17.0,
+          17.25,
+          17.5,
+          17.75,
+          18.0,
+          18.25,
+          18.5,
+          18.75,
+          19.0,
+          19.25,
+          19.5,
+          19.75,
+          20.0,
+          20.25,
+          20.5
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Clean terrain/resource/approach; no map or inventory obstruction",
+        "samplingLimit": "Sampled review at 0.25-second intervals, not every-frame certification.",
+        "contextSheet": "tools/evidence/resource-media26/43-extinction-oil-lake-context.jpg"
+      }
+    },
+    {
+      "id": "lost-colony-north-metal",
+      "map": "lost-colony",
+      "name": "Northern mountain metal",
+      "lat": 3.7,
+      "lon": 14.1,
+      "resources": [
+        "Metal"
+      ],
+      "imageAsset": "FarmPhoto-lost-colony-north-metal",
+      "videoID": "WKNYEAeuSDA",
+      "seconds": 53,
+      "direction": "Follow the filmed landmarks and approach shown in the clips.",
+      "method": "Use a suitable harvesting tool or creature for this resource; the footage establishes the region and visible resource.",
+      "kit": [],
+      "risks": [
+        "Hostile creatures",
+        "Terrain hazards"
+      ],
+      "verified": true,
+      "sourceURL": "https://www.youtube.com/watch?v=WKNYEAeuSDA",
+      "photoSHA256": "4c080b44892a2f583c7debb9c74fc11e7986befb0a246fad39f47031d899a1a0",
+      "coordinateEvidence": "The source edits a waypoint named Metal to latitude 3.7, longitude 14.1 at 55s. Camera map coordinates nearby are 3.8,14.7. Pin follows the explicit resource waypoint. This is a filmed region, not every individual resource actor.",
+      "inventoryEvidence": "Metal ore rocks are shown on the mountainside in the same resource chapter. Harvesting is not demonstrated.",
+      "sourcePlane": "lost-colony filmed region",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 20,
+      "photoMapOverlayVisible": false,
+      "startSeconds": 20,
+      "endSeconds": 28,
+      "clipPath": "/Users/admin/Ascended-iPad-Dev/native/Ascended/Resources/ResourceClips/Resource-lost-colony-north-metal-1.mp4",
+      "status": "existing-verified",
+      "license": "User-asserted licensed; metadata license null",
+      "visualReview": {
+        "method": "Manual source context review at 1 fps; encoded interval review at 4 fps",
+        "sourceFrameSeconds": [
+          20.0,
+          20.25,
+          20.5,
+          20.75,
+          21.0,
+          21.25,
+          21.5,
+          21.75,
+          22.0,
+          22.25,
+          22.5,
+          22.75,
+          23.0,
+          23.25,
+          23.5,
+          23.75,
+          24.0,
+          24.25,
+          24.5,
+          24.75,
+          25.0,
+          25.25,
+          25.5,
+          25.75,
+          26.0,
+          26.25,
+          26.5,
+          26.75,
+          27.0,
+          27.25,
+          27.5,
+          27.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Clean terrain/resource/approach; no map or inventory obstruction",
+        "samplingLimit": "Sampled review at 0.25-second intervals, not every-frame certification.",
+        "contextSheet": "tools/evidence/resource-media26/44-lost-colony-north-metal-context.jpg"
+      }
+    },
+    {
+      "id": "aberration-green-metal",
+      "map": "aberration",
+      "name": "Green zone metal ridge",
+      "lat": 33.6,
+      "lon": 62.0,
+      "resources": [
+        "Metal"
+      ],
+      "imageAsset": "FarmPhoto-aberration-green-metal",
+      "videoID": "BZVk5xrksxk",
+      "seconds": 28,
+      "direction": "Follow the filmed landmarks and approach shown in the clips.",
+      "method": "Use a suitable harvesting tool or creature for this resource; the footage establishes the region and visible resource.",
+      "kit": [],
+      "risks": [
+        "Hostile creatures",
+        "Terrain hazards"
+      ],
+      "verified": true,
+      "sourceURL": "https://www.youtube.com/watch?v=BZVk5xrksxk",
+      "photoSHA256": "2dc773eae7cdc21e6d652a440bef5942c8277ebf817874d3dfafd5559ae1085c",
+      "coordinateEvidence": "In-game map reads latitude 33.6, longitude 62.0 at 30s. This is a filmed region, not every individual resource actor.",
+      "inventoryEvidence": "The green-zone metal guide shows ore rocks and the approach. Harvesting is not demonstrated.",
+      "sourcePlane": "Aberration: green/blue-zone filmed region",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 17,
+      "photoMapOverlayVisible": false,
+      "startSeconds": 17,
+      "endSeconds": 25,
+      "clipPath": "/Users/admin/Ascended-iPad-Dev/native/Ascended/Resources/ResourceClips/Resource-aberration-green-metal-1.mp4",
+      "status": "existing-verified",
+      "license": "User-asserted licensed; metadata license null",
+      "visualReview": {
+        "method": "Manual source context review at 1 fps; encoded interval review at 4 fps",
+        "sourceFrameSeconds": [
+          17.0,
+          17.25,
+          17.5,
+          17.75,
+          18.0,
+          18.25,
+          18.5,
+          18.75,
+          19.0,
+          19.25,
+          19.5,
+          19.75,
+          20.0,
+          20.25,
+          20.5,
+          20.75,
+          21.0,
+          21.25,
+          21.5,
+          21.75,
+          22.0,
+          22.25,
+          22.5,
+          22.75,
+          23.0,
+          23.25,
+          23.5,
+          23.75,
+          24.0,
+          24.25,
+          24.5,
+          24.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Clean terrain/resource/approach; no map or inventory obstruction",
+        "samplingLimit": "Sampled review at 0.25-second intervals, not every-frame certification.",
+        "contextSheet": "tools/evidence/resource-media26/47-aberration-green-metal-context.jpg"
+      }
+    },
+    {
+      "id": "aberration-blue-metal",
+      "map": "aberration",
+      "name": "Blue zone metal ledge",
+      "lat": 59.3,
+      "lon": 72.0,
+      "resources": [
+        "Metal"
+      ],
+      "imageAsset": "FarmPhoto-aberration-blue-metal",
+      "videoID": "a_Os1QOHqkE",
+      "seconds": 19,
+      "direction": "Follow the filmed landmarks and approach shown in the clips.",
+      "method": "Use a suitable harvesting tool or creature for this resource; the footage establishes the region and visible resource.",
+      "kit": [],
+      "risks": [
+        "Hostile creatures",
+        "Terrain hazards"
+      ],
+      "verified": true,
+      "sourceURL": "https://www.youtube.com/watch?v=a_Os1QOHqkE",
+      "photoSHA256": "a6ae096c754bea330c7810b07036e3481854ea2223fb3d55542a42b8f40b7c7a",
+      "coordinateEvidence": "In-game map reads latitude 59.3, longitude 72.0 at 20s and 25s. This is a filmed region, not every individual resource actor.",
+      "inventoryEvidence": "Blue-zone metallic rocks are visible beside the player. Harvesting is not demonstrated.",
+      "sourcePlane": "Aberration: green/blue-zone filmed region",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 11,
+      "photoMapOverlayVisible": false,
+      "startSeconds": 8,
+      "endSeconds": 16,
+      "clipPath": "/Users/admin/Ascended-iPad-Dev/native/Ascended/Resources/ResourceClips/Resource-aberration-blue-metal-1.mp4",
+      "status": "existing-verified",
+      "license": "User-asserted licensed; metadata license null",
+      "visualReview": {
+        "method": "Manual source context review at 1 fps; encoded interval review at 4 fps",
+        "sourceFrameSeconds": [
+          8.0,
+          8.25,
+          8.5,
+          8.75,
+          9.0,
+          9.25,
+          9.5,
+          9.75,
+          10.0,
+          10.25,
+          10.5,
+          10.75,
+          11.0,
+          11.25,
+          11.5,
+          11.75,
+          12.0,
+          12.25,
+          12.5,
+          12.75,
+          13.0,
+          13.25,
+          13.5,
+          13.75,
+          14.0,
+          14.25,
+          14.5,
+          14.75,
+          15.0,
+          15.25,
+          15.5,
+          15.75
+        ],
+        "reviewedAt": "2026-10-07",
+        "result": "Clean terrain/resource/approach; no map or inventory obstruction",
+        "samplingLimit": "Sampled review at 0.25-second intervals, not every-frame certification.",
+        "contextSheet": "tools/evidence/resource-media26/48-aberration-blue-metal-context.jpg"
+      }
+    },
+    {
+      "id": "scorched-northeast-cliff-metal",
+      "map": "scorched-earth",
+      "name": "Northeastern metal cliff",
+      "resources": [
+        "Metal"
+      ],
+      "lat": 36.8,
+      "lon": 68.8,
+      "videoID": "k9IOWvnWMdg",
+      "startSeconds": 56.375,
+      "endSeconds": 57.375,
+      "coordinateEvidence": "In-game camera coordinates visible at 60s in k9IOWvnWMdg-60.jpg; region/camera position, not every individual actor.",
+      "license": "User-asserted licensed; platform metadata license null",
+      "rightsBasis": "Root recovered prior explicit user approval: Duy\u1ec7t, a c\u00f3 gi\u1ea5y ph\u00e9p h\u1ebft; persists for this task.",
+      "sourcePath": "/Volumes/TONY SSD/TONY_WORKSPACE/CODE/TonyOS_Workspace/tools/youtube-intelligence/data/downloads/k9IOWvnWMdg.f137.mp4.part",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming32/story/scorched-northeast-cliff-metal.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming32/story/scorched-northeast-cliff-metal.jpg",
+      "clipSHA256": "d68659322a48a5351713abc1ea4f4928acc58927c4a94e836585e52dd3aac81c",
+      "actualDuration": 1.0,
+      "decodeExitCode": 0,
+      "decodeErrors": "",
+      "renderErrors": "",
+      "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming32/story/scorched-northeast-cliff-metal-selected.jpg",
+      "visualReview": {
+        "method": "Manual encoded contact sheet inspection at 8 fps after boundary repairs; fully decoded with ffmpeg -xerror",
+        "result": "Clean continuous terrain/approach with no M map or inventory/menu obstruction; normal gameplay HUD and creator coordinate text may remain",
+        "reviewedAt": "2026-10-08",
+        "samplingLimit": "8 fps samples, not every frame"
+      },
+      "harvestDemonstrated": false,
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "sourceURL": "https://www.youtube.com/watch?v=k9IOWvnWMdg",
+      "status": "new-candidate-verified-camera-region",
+      "inventoryEvidence": "No completed harvest demonstrated. Visible resource/approach belongs to source resource segment.",
+      "direction": "Use coordinates as the filmed region, then match the visible terrain and approach.",
+      "method": "Use an appropriate harvesting tool or tame for this resource; resource yield is not measured by this preview.",
+      "kit": [],
+      "risks": [
+        "Hostile creatures",
+        "Terrain hazards"
+      ],
+      "sourcePlane": "scorched-earth filmed region",
+      "limitations": "Only1s clean view of third metal cliff approach; intact partial ends during subsequent map; ore harvest not visible. User specified maximum10s, no minimum, but parent may reject as too short for useful instruction."
+    },
+    {
+      "id": "aberration-northwest-metal-cave",
+      "map": "aberration",
+      "name": "Northwestern green metal cave approach",
+      "resources": [
+        "Metal"
+      ],
+      "lat": 19.5,
+      "lon": 27.7,
+      "videoID": "BZVk5xrksxk",
+      "startSeconds": 39.625,
+      "endSeconds": 44.5,
+      "coordinateEvidence": "In-game camera coordinates visible at 46s in BZVk5xrksxk-46.jpg; region/camera position, not every individual actor.",
+      "license": "User-asserted licensed; platform metadata license null",
+      "rightsBasis": "Root recovered prior explicit user approval: Duy\u1ec7t, a c\u00f3 gi\u1ea5y ph\u00e9p h\u1ebft; persists for this task.",
+      "sourcePath": "/Volumes/TONY SSD/TONY_WORKSPACE/CODE/TonyOS_Workspace/tools/youtube-intelligence/data/downloads/BZVk5xrksxk.f399.mp4.part",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming32/story/aberration-northwest-metal-cave.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming32/story/aberration-northwest-metal-cave.jpg",
+      "clipSHA256": "017e7effa3df2ae56a06dad8678e38b63343af0263ce91e10820589a70ed8c6c",
+      "actualDuration": 4.875,
+      "decodeExitCode": 0,
+      "decodeErrors": "",
+      "renderErrors": "",
+      "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming32/story/aberration-northwest-metal-cave-selected.jpg",
+      "visualReview": {
+        "method": "Manual encoded contact sheet inspection at 8 fps after boundary repairs; fully decoded with ffmpeg -xerror",
+        "result": "Clean continuous terrain/approach with no M map or inventory/menu obstruction; normal gameplay HUD and creator coordinate text may remain",
+        "reviewedAt": "2026-10-08",
+        "samplingLimit": "8 fps samples, not every frame"
+      },
+      "harvestDemonstrated": false,
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "sourceURL": "https://www.youtube.com/watch?v=BZVk5xrksxk",
+      "status": "new-candidate-verified-camera-region",
+      "inventoryEvidence": "No completed harvest demonstrated. Visible resource/approach belongs to source resource segment.",
+      "direction": "Use coordinates as the filmed region, then match the visible terrain and approach.",
+      "method": "Use an appropriate harvesting tool or tame for this resource; resource yield is not measured by this preview.",
+      "kit": [],
+      "risks": [
+        "Hostile creatures",
+        "Terrain hazards"
+      ],
+      "sourcePlane": "aberration filmed region",
+      "limitations": "Clip establishes green-zone cave entrance approach within Metal guide; no completed ore harvest demonstrated."
+    },
+    {
+      "id": "lost-colony-northwest-metal",
+      "map": "lost-colony",
+      "name": "Northwestern snowy metal mountain",
+      "resources": [
+        "Metal"
+      ],
+      "lat": 3.0,
+      "lon": 5.8,
+      "videoID": "WKNYEAeuSDA",
+      "startSeconds": 61.25,
+      "endSeconds": 67.5,
+      "coordinateEvidence": "In-game camera coordinates visible at 69s in WKNYEAeuSDA-69.jpg; region/camera position, not every individual actor.",
+      "license": "User-asserted licensed; platform metadata license null",
+      "rightsBasis": "Root recovered prior explicit user approval: Duy\u1ec7t, a c\u00f3 gi\u1ea5y ph\u00e9p h\u1ebft; persists for this task.",
+      "sourcePath": "/Volumes/TONY SSD/TONY_WORKSPACE/CODE/TonyOS_Workspace/tools/youtube-intelligence/data/downloads/WKNYEAeuSDA.f399.mp4.part",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming32/story/lost-colony-northwest-metal.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming32/story/lost-colony-northwest-metal.jpg",
+      "clipSHA256": "e353134b9715f4ffd2fef61e514e84796bf90d3f6800d199519a541c3f60d3ee",
+      "actualDuration": 6.25,
+      "decodeExitCode": 0,
+      "decodeErrors": "",
+      "renderErrors": "",
+      "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming32/story/lost-colony-northwest-metal-selected.jpg",
+      "visualReview": {
+        "method": "Manual encoded contact sheet inspection at 8 fps after boundary repairs; fully decoded with ffmpeg -xerror",
+        "result": "Clean continuous terrain/approach with no M map or inventory/menu obstruction; normal gameplay HUD and creator coordinate text may remain",
+        "reviewedAt": "2026-10-08",
+        "samplingLimit": "8 fps samples, not every frame"
+      },
+      "harvestDemonstrated": false,
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "sourceURL": "https://www.youtube.com/watch?v=WKNYEAeuSDA",
+      "status": "new-candidate-verified-camera-region",
+      "inventoryEvidence": "No completed harvest demonstrated. Visible resource/approach belongs to source resource segment.",
+      "direction": "Use coordinates as the filmed region, then match the visible terrain and approach.",
+      "method": "Use an appropriate harvesting tool or tame for this resource; resource yield is not measured by this preview.",
+      "kit": [],
+      "risks": [
+        "Hostile creatures",
+        "Terrain hazards"
+      ],
+      "sourcePlane": "lost-colony filmed region",
+      "limitations": "Pin uses camera/map coordinates visible at69s (3.0/5.8), not an edited exact metal waypoint. Video shows the same northwestern snowy metal area continuously; camera moves during map zoom."
+    },
+    {
+      "id": "extinction-south-oil-pool",
+      "map": "extinction",
+      "name": "Southern oil pool",
+      "resources": [
+        "Oil"
+      ],
+      "lat": 82.9,
+      "lon": 42.7,
+      "videoID": "85xkdr_UYAo",
+      "startSeconds": 24.1,
+      "endSeconds": 26.5,
+      "coordinateEvidence": "In-game camera coordinates visible at 28s in 85xkdr_UYAo-28.jpg; region/camera position, not every individual actor.",
+      "license": "User-asserted licensed; platform metadata license null",
+      "rightsBasis": "Root recovered prior explicit user approval: Duy\u1ec7t, a c\u00f3 gi\u1ea5y ph\u00e9p h\u1ebft; persists for this task.",
+      "sourcePath": "/Volumes/TONY SSD/TONY_WORKSPACE/CODE/TonyOS_Workspace/tools/youtube-intelligence/data/downloads/85xkdr_UYAo.f299.mp4.part",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming32/story/extinction-south-oil-pool.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming32/story/extinction-south-oil-pool.jpg",
+      "clipSHA256": "ad06e3169782081fb5c44af6b007475c0222763989a92a42f2cdc81a0c358c2b",
+      "actualDuration": 2.416667,
+      "decodeExitCode": 0,
+      "decodeErrors": "",
+      "renderErrors": "",
+      "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming32/story/extinction-south-oil-pool-selected.jpg",
+      "visualReview": {
+        "method": "Manual encoded contact sheet inspection at 8 fps after boundary repairs; fully decoded with ffmpeg -xerror",
+        "result": "Clean continuous terrain/approach with no M map or inventory/menu obstruction; normal gameplay HUD and creator coordinate text may remain",
+        "reviewedAt": "2026-10-08",
+        "samplingLimit": "8 fps samples, not every frame"
+      },
+      "harvestDemonstrated": false,
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "sourceURL": "https://www.youtube.com/watch?v=85xkdr_UYAo",
+      "status": "new-candidate-verified-camera-region",
+      "inventoryEvidence": "No completed harvest demonstrated. Visible resource/approach belongs to source resource segment.",
+      "direction": "Use coordinates as the filmed region, then match the visible terrain and approach.",
+      "method": "Use an appropriate harvesting tool or tame for this resource; resource yield is not measured by this preview.",
+      "kit": [],
+      "risks": [
+        "Hostile creatures",
+        "Terrain hazards"
+      ],
+      "sourcePlane": "extinction filmed region",
+      "limitations": "Very short clean pool terrain view; source coordinates are explicit camera and creator overlays. No harvest demonstrated."
+    },
+    {
+      "id": "extinction-southwest-oil-pool",
+      "map": "extinction",
+      "name": "Southwestern oil pool",
+      "resources": [
+        "Oil"
+      ],
+      "lat": 87.7,
+      "lon": 33.6,
+      "videoID": "85xkdr_UYAo",
+      "startSeconds": 29.5,
+      "endSeconds": 30.6,
+      "coordinateEvidence": "In-game camera coordinates visible at 32s in 85xkdr_UYAo-32.jpg; region/camera position, not every individual actor.",
+      "license": "User-asserted licensed; platform metadata license null",
+      "rightsBasis": "Root recovered prior explicit user approval: Duy\u1ec7t, a c\u00f3 gi\u1ea5y ph\u00e9p h\u1ebft; persists for this task.",
+      "sourcePath": "/Volumes/TONY SSD/TONY_WORKSPACE/CODE/TonyOS_Workspace/tools/youtube-intelligence/data/downloads/85xkdr_UYAo.f299.mp4.part",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming32/story/extinction-southwest-oil-pool.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming32/story/extinction-southwest-oil-pool.jpg",
+      "clipSHA256": "8836668403d05a448d63d5776b05f03e385b0251ad8f0eb247486fea13b85c37",
+      "actualDuration": 1.083008,
+      "decodeExitCode": 0,
+      "decodeErrors": "",
+      "renderErrors": "",
+      "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming32/story/extinction-southwest-oil-pool-selected.jpg",
+      "visualReview": {
+        "method": "Manual encoded contact sheet inspection at 8 fps after boundary repairs; fully decoded with ffmpeg -xerror",
+        "result": "Clean continuous terrain/approach with no M map or inventory/menu obstruction; normal gameplay HUD and creator coordinate text may remain",
+        "reviewedAt": "2026-10-08",
+        "samplingLimit": "8 fps samples, not every frame"
+      },
+      "harvestDemonstrated": false,
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "sourceURL": "https://www.youtube.com/watch?v=85xkdr_UYAo",
+      "status": "new-candidate-verified-camera-region",
+      "inventoryEvidence": "No completed harvest demonstrated. Visible resource/approach belongs to source resource segment.",
+      "direction": "Use coordinates as the filmed region, then match the visible terrain and approach.",
+      "method": "Use an appropriate harvesting tool or tame for this resource; resource yield is not measured by this preview.",
+      "kit": [],
+      "risks": [
+        "Hostile creatures",
+        "Terrain hazards"
+      ],
+      "sourcePlane": "extinction filmed region",
+      "limitations": "Very short clean pool terrain view; source coordinates are explicit camera and creator overlays. No harvest demonstrated."
+    }
+  ],
+  "coverage": [
+    {
+      "map": "scorched-earth",
+      "resource": "Black Pearls",
+      "existingStatus": "unverified",
+      "existingReason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
+      "verifiedCandidateCount": 0,
+      "spotIDs": [],
+      "meetsThreeLocations": false,
+      "rawLayerCount": 0,
+      "gap": 3,
+      "status": "incomplete-source-evidence",
+      "note": "Raw data count is context only; missing raw layer is not proof resource cannot be acquired. Existing absent/crafting/unverified status is preserved; no arbitrary locations were generated."
+    },
+    {
+      "map": "scorched-earth",
+      "resource": "Cementing Paste",
+      "existingStatus": "crafting",
+      "existingReason": "Combine 4 Chitin or Keratin + 8 Stone in a Mortar and Pestle. Beaver-dam loot and Achatina production are additional sources, requiring separate local verification.",
+      "verifiedCandidateCount": 0,
+      "spotIDs": [],
+      "meetsThreeLocations": false,
+      "rawLayerCount": 0,
+      "gap": 3,
+      "status": "incomplete-source-evidence",
+      "note": "Raw data count is context only; missing raw layer is not proof resource cannot be acquired. Existing absent/crafting/unverified status is preserved; no arbitrary locations were generated."
+    },
+    {
+      "map": "scorched-earth",
+      "resource": "Chitin",
+      "existingStatus": "unverified",
+      "existingReason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
+      "verifiedCandidateCount": 0,
+      "spotIDs": [],
+      "meetsThreeLocations": false,
+      "rawLayerCount": 0,
+      "gap": 3,
+      "status": "incomplete-source-evidence",
+      "note": "Raw data count is context only; missing raw layer is not proof resource cannot be acquired. Existing absent/crafting/unverified status is preserved; no arbitrary locations were generated."
+    },
+    {
+      "map": "scorched-earth",
+      "resource": "Crystal",
+      "existingStatus": "unverified",
+      "existingReason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
+      "verifiedCandidateCount": 0,
+      "spotIDs": [],
+      "meetsThreeLocations": false,
+      "rawLayerCount": 415,
+      "gap": 3,
+      "status": "incomplete-source-evidence",
+      "note": "Raw data count is context only; missing raw layer is not proof resource cannot be acquired. Existing absent/crafting/unverified status is preserved; no arbitrary locations were generated."
+    },
+    {
+      "map": "scorched-earth",
+      "resource": "Giant Bee Honey",
+      "existingStatus": "not-in-existing-coverage",
+      "existingReason": null,
+      "verifiedCandidateCount": 0,
+      "spotIDs": [],
+      "meetsThreeLocations": false,
+      "rawLayerCount": 18,
+      "gap": 3,
+      "status": "incomplete-source-evidence",
+      "note": "Raw data count is context only; missing raw layer is not proof resource cannot be acquired. Existing absent/crafting/unverified status is preserved; no arbitrary locations were generated."
+    },
+    {
+      "map": "scorched-earth",
+      "resource": "Metal",
+      "existingStatus": "verified",
+      "existingReason": "Source-video GPS region reviewed; open a region card for the actual filmed evidence.",
+      "verifiedCandidateCount": 3,
+      "spotIDs": [
+        "scorched-eastern-metal",
+        "scorched-central-metal",
+        "scorched-northeast-cliff-metal"
+      ],
+      "meetsThreeLocations": true,
+      "rawLayerCount": 558,
+      "gap": 0,
+      "status": "candidate-target-met",
+      "note": "Raw data count is context only; missing raw layer is not proof resource cannot be acquired. Existing absent/crafting/unverified status is preserved; no arbitrary locations were generated."
+    },
+    {
+      "map": "scorched-earth",
+      "resource": "Obsidian",
+      "existingStatus": "unverified",
+      "existingReason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
+      "verifiedCandidateCount": 0,
+      "spotIDs": [],
+      "meetsThreeLocations": false,
+      "rawLayerCount": 472,
+      "gap": 3,
+      "status": "incomplete-source-evidence",
+      "note": "Raw data count is context only; missing raw layer is not proof resource cannot be acquired. Existing absent/crafting/unverified status is preserved; no arbitrary locations were generated."
+    },
+    {
+      "map": "scorched-earth",
+      "resource": "Oil",
+      "existingStatus": "unverified",
+      "existingReason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
+      "verifiedCandidateCount": 0,
+      "spotIDs": [],
+      "meetsThreeLocations": false,
+      "rawLayerCount": 0,
+      "gap": 3,
+      "status": "incomplete-source-evidence",
+      "note": "Raw data count is context only; missing raw layer is not proof resource cannot be acquired. Existing absent/crafting/unverified status is preserved; no arbitrary locations were generated."
+    },
+    {
+      "map": "scorched-earth",
+      "resource": "Organic Polymer",
+      "existingStatus": "unverified",
+      "existingReason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
+      "verifiedCandidateCount": 0,
+      "spotIDs": [],
+      "meetsThreeLocations": false,
+      "rawLayerCount": 0,
+      "gap": 3,
+      "status": "incomplete-source-evidence",
+      "note": "Raw data count is context only; missing raw layer is not proof resource cannot be acquired. Existing absent/crafting/unverified status is preserved; no arbitrary locations were generated."
+    },
+    {
+      "map": "scorched-earth",
+      "resource": "Rare Flowers",
+      "existingStatus": "unverified",
+      "existingReason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
+      "verifiedCandidateCount": 0,
+      "spotIDs": [],
+      "meetsThreeLocations": false,
+      "rawLayerCount": 25,
+      "gap": 3,
+      "status": "incomplete-source-evidence",
+      "note": "Raw data count is context only; missing raw layer is not proof resource cannot be acquired. Existing absent/crafting/unverified status is preserved; no arbitrary locations were generated."
+    },
+    {
+      "map": "scorched-earth",
+      "resource": "Rare Mushrooms",
+      "existingStatus": "unverified",
+      "existingReason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
+      "verifiedCandidateCount": 0,
+      "spotIDs": [],
+      "meetsThreeLocations": false,
+      "rawLayerCount": 0,
+      "gap": 3,
+      "status": "incomplete-source-evidence",
+      "note": "Raw data count is context only; missing raw layer is not proof resource cannot be acquired. Existing absent/crafting/unverified status is preserved; no arbitrary locations were generated."
+    },
+    {
+      "map": "scorched-earth",
+      "resource": "Rich Metal",
+      "existingStatus": "unverified",
+      "existingReason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
+      "verifiedCandidateCount": 0,
+      "spotIDs": [],
+      "meetsThreeLocations": false,
+      "rawLayerCount": 570,
+      "gap": 3,
+      "status": "incomplete-source-evidence",
+      "note": "Raw data count is context only; missing raw layer is not proof resource cannot be acquired. Existing absent/crafting/unverified status is preserved; no arbitrary locations were generated."
+    },
+    {
+      "map": "scorched-earth",
+      "resource": "Sap",
+      "existingStatus": "processing",
+      "existingReason": "Use a Tree Sap Tap on a supported tree; Scorched Earth and Extinction also have Joshua-tree harvesting, Valguero has stump harvesting, and Genesis has the Hexagon Exchange. Verify the method appropriate to this map in the source reference.",
+      "verifiedCandidateCount": 0,
+      "spotIDs": [],
+      "meetsThreeLocations": false,
+      "rawLayerCount": 0,
+      "gap": 3,
+      "status": "incomplete-source-evidence",
+      "note": "Raw data count is context only; missing raw layer is not proof resource cannot be acquired. Existing absent/crafting/unverified status is preserved; no arbitrary locations were generated."
+    },
+    {
+      "map": "scorched-earth",
+      "resource": "Silica Pearls",
+      "existingStatus": "unverified",
+      "existingReason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
+      "verifiedCandidateCount": 0,
+      "spotIDs": [],
+      "meetsThreeLocations": false,
+      "rawLayerCount": 207,
+      "gap": 3,
+      "status": "incomplete-source-evidence",
+      "note": "Raw data count is context only; missing raw layer is not proof resource cannot be acquired. Existing absent/crafting/unverified status is preserved; no arbitrary locations were generated."
+    },
+    {
+      "map": "aberration",
+      "resource": "Black Pearls",
+      "existingStatus": "unverified",
+      "existingReason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
+      "verifiedCandidateCount": 0,
+      "spotIDs": [],
+      "meetsThreeLocations": false,
+      "rawLayerCount": 173,
+      "gap": 3,
+      "status": "incomplete-source-evidence",
+      "note": "Raw data count is context only; missing raw layer is not proof resource cannot be acquired. Existing absent/crafting/unverified status is preserved; no arbitrary locations were generated."
+    },
+    {
+      "map": "aberration",
+      "resource": "Cementing Paste",
+      "existingStatus": "crafting",
+      "existingReason": "Combine 4 Chitin or Keratin + 8 Stone in a Mortar and Pestle. Beaver-dam loot and Achatina production are additional sources, requiring separate local verification.",
+      "verifiedCandidateCount": 0,
+      "spotIDs": [],
+      "meetsThreeLocations": false,
+      "rawLayerCount": 0,
+      "gap": 3,
+      "status": "incomplete-source-evidence",
+      "note": "Raw data count is context only; missing raw layer is not proof resource cannot be acquired. Existing absent/crafting/unverified status is preserved; no arbitrary locations were generated."
+    },
+    {
+      "map": "aberration",
+      "resource": "Chitin",
+      "existingStatus": "unverified",
+      "existingReason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
+      "verifiedCandidateCount": 0,
+      "spotIDs": [],
+      "meetsThreeLocations": false,
+      "rawLayerCount": 0,
+      "gap": 3,
+      "status": "incomplete-source-evidence",
+      "note": "Raw data count is context only; missing raw layer is not proof resource cannot be acquired. Existing absent/crafting/unverified status is preserved; no arbitrary locations were generated."
+    },
+    {
+      "map": "aberration",
+      "resource": "Crystal",
+      "existingStatus": "unverified",
+      "existingReason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
+      "verifiedCandidateCount": 0,
+      "spotIDs": [],
+      "meetsThreeLocations": false,
+      "rawLayerCount": 1767,
+      "gap": 3,
+      "status": "incomplete-source-evidence",
+      "note": "Raw data count is context only; missing raw layer is not proof resource cannot be acquired. Existing absent/crafting/unverified status is preserved; no arbitrary locations were generated."
+    },
+    {
+      "map": "aberration",
+      "resource": "Giant Bee Honey",
+      "existingStatus": "not-in-existing-coverage",
+      "existingReason": null,
+      "verifiedCandidateCount": 0,
+      "spotIDs": [],
+      "meetsThreeLocations": false,
+      "rawLayerCount": 0,
+      "gap": 3,
+      "status": "incomplete-source-evidence",
+      "note": "Raw data count is context only; missing raw layer is not proof resource cannot be acquired. Existing absent/crafting/unverified status is preserved; no arbitrary locations were generated."
+    },
+    {
+      "map": "aberration",
+      "resource": "Metal",
+      "existingStatus": "verified",
+      "existingReason": "Source-video GPS region reviewed; open a region card for the actual filmed evidence.",
+      "verifiedCandidateCount": 3,
+      "spotIDs": [
+        "aberration-green-metal",
+        "aberration-blue-metal",
+        "aberration-northwest-metal-cave"
+      ],
+      "meetsThreeLocations": true,
+      "rawLayerCount": 20464,
+      "gap": 0,
+      "status": "candidate-target-met",
+      "note": "Raw data count is context only; missing raw layer is not proof resource cannot be acquired. Existing absent/crafting/unverified status is preserved; no arbitrary locations were generated."
+    },
+    {
+      "map": "aberration",
+      "resource": "Obsidian",
+      "existingStatus": "unverified",
+      "existingReason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
+      "verifiedCandidateCount": 0,
+      "spotIDs": [],
+      "meetsThreeLocations": false,
+      "rawLayerCount": 942,
+      "gap": 3,
+      "status": "incomplete-source-evidence",
+      "note": "Raw data count is context only; missing raw layer is not proof resource cannot be acquired. Existing absent/crafting/unverified status is preserved; no arbitrary locations were generated."
+    },
+    {
+      "map": "aberration",
+      "resource": "Oil",
+      "existingStatus": "unverified",
+      "existingReason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
+      "verifiedCandidateCount": 0,
+      "spotIDs": [],
+      "meetsThreeLocations": false,
+      "rawLayerCount": 741,
+      "gap": 3,
+      "status": "incomplete-source-evidence",
+      "note": "Raw data count is context only; missing raw layer is not proof resource cannot be acquired. Existing absent/crafting/unverified status is preserved; no arbitrary locations were generated."
+    },
+    {
+      "map": "aberration",
+      "resource": "Organic Polymer",
+      "existingStatus": "unverified",
+      "existingReason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
+      "verifiedCandidateCount": 0,
+      "spotIDs": [],
+      "meetsThreeLocations": false,
+      "rawLayerCount": 8296,
+      "gap": 3,
+      "status": "incomplete-source-evidence",
+      "note": "Raw data count is context only; missing raw layer is not proof resource cannot be acquired. Existing absent/crafting/unverified status is preserved; no arbitrary locations were generated."
+    },
+    {
+      "map": "aberration",
+      "resource": "Rare Flowers",
+      "existingStatus": "unverified",
+      "existingReason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
+      "verifiedCandidateCount": 0,
+      "spotIDs": [],
+      "meetsThreeLocations": false,
+      "rawLayerCount": 87,
+      "gap": 3,
+      "status": "incomplete-source-evidence",
+      "note": "Raw data count is context only; missing raw layer is not proof resource cannot be acquired. Existing absent/crafting/unverified status is preserved; no arbitrary locations were generated."
+    },
+    {
+      "map": "aberration",
+      "resource": "Rare Mushrooms",
+      "existingStatus": "unverified",
+      "existingReason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
+      "verifiedCandidateCount": 0,
+      "spotIDs": [],
+      "meetsThreeLocations": false,
+      "rawLayerCount": 162,
+      "gap": 3,
+      "status": "incomplete-source-evidence",
+      "note": "Raw data count is context only; missing raw layer is not proof resource cannot be acquired. Existing absent/crafting/unverified status is preserved; no arbitrary locations were generated."
+    },
+    {
+      "map": "aberration",
+      "resource": "Rich Metal",
+      "existingStatus": "unverified",
+      "existingReason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
+      "verifiedCandidateCount": 0,
+      "spotIDs": [],
+      "meetsThreeLocations": false,
+      "rawLayerCount": 506,
+      "gap": 3,
+      "status": "incomplete-source-evidence",
+      "note": "Raw data count is context only; missing raw layer is not proof resource cannot be acquired. Existing absent/crafting/unverified status is preserved; no arbitrary locations were generated."
+    },
+    {
+      "map": "aberration",
+      "resource": "Sap",
+      "existingStatus": "processing",
+      "existingReason": "Use a Tree Sap Tap on a supported tree; Scorched Earth and Extinction also have Joshua-tree harvesting, Valguero has stump harvesting, and Genesis has the Hexagon Exchange. Verify the method appropriate to this map in the source reference.",
+      "verifiedCandidateCount": 0,
+      "spotIDs": [],
+      "meetsThreeLocations": false,
+      "rawLayerCount": 0,
+      "gap": 3,
+      "status": "incomplete-source-evidence",
+      "note": "Raw data count is context only; missing raw layer is not proof resource cannot be acquired. Existing absent/crafting/unverified status is preserved; no arbitrary locations were generated."
+    },
+    {
+      "map": "aberration",
+      "resource": "Silica Pearls",
+      "existingStatus": "unverified",
+      "existingReason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
+      "verifiedCandidateCount": 0,
+      "spotIDs": [],
+      "meetsThreeLocations": false,
+      "rawLayerCount": 177,
+      "gap": 3,
+      "status": "incomplete-source-evidence",
+      "note": "Raw data count is context only; missing raw layer is not proof resource cannot be acquired. Existing absent/crafting/unverified status is preserved; no arbitrary locations were generated."
+    },
+    {
+      "map": "extinction",
+      "resource": "Black Pearls",
+      "existingStatus": "unverified",
+      "existingReason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
+      "verifiedCandidateCount": 0,
+      "spotIDs": [],
+      "meetsThreeLocations": false,
+      "rawLayerCount": 0,
+      "gap": 3,
+      "status": "incomplete-source-evidence",
+      "note": "Raw data count is context only; missing raw layer is not proof resource cannot be acquired. Existing absent/crafting/unverified status is preserved; no arbitrary locations were generated."
+    },
+    {
+      "map": "extinction",
+      "resource": "Cementing Paste",
+      "existingStatus": "crafting",
+      "existingReason": "Combine 4 Chitin or Keratin + 8 Stone in a Mortar and Pestle. Beaver-dam loot and Achatina production are additional sources, requiring separate local verification.",
+      "verifiedCandidateCount": 0,
+      "spotIDs": [],
+      "meetsThreeLocations": false,
+      "rawLayerCount": 15,
+      "gap": 3,
+      "status": "incomplete-source-evidence",
+      "note": "Raw data count is context only; missing raw layer is not proof resource cannot be acquired. Existing absent/crafting/unverified status is preserved; no arbitrary locations were generated."
+    },
+    {
+      "map": "extinction",
+      "resource": "Chitin",
+      "existingStatus": "unverified",
+      "existingReason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
+      "verifiedCandidateCount": 0,
+      "spotIDs": [],
+      "meetsThreeLocations": false,
+      "rawLayerCount": 0,
+      "gap": 3,
+      "status": "incomplete-source-evidence",
+      "note": "Raw data count is context only; missing raw layer is not proof resource cannot be acquired. Existing absent/crafting/unverified status is preserved; no arbitrary locations were generated."
+    },
+    {
+      "map": "extinction",
+      "resource": "Crystal",
+      "existingStatus": "unverified",
+      "existingReason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
+      "verifiedCandidateCount": 0,
+      "spotIDs": [],
+      "meetsThreeLocations": false,
+      "rawLayerCount": 702,
+      "gap": 3,
+      "status": "incomplete-source-evidence",
+      "note": "Raw data count is context only; missing raw layer is not proof resource cannot be acquired. Existing absent/crafting/unverified status is preserved; no arbitrary locations were generated."
+    },
+    {
+      "map": "extinction",
+      "resource": "Giant Bee Honey",
+      "existingStatus": "not-in-existing-coverage",
+      "existingReason": null,
+      "verifiedCandidateCount": 0,
+      "spotIDs": [],
+      "meetsThreeLocations": false,
+      "rawLayerCount": 12,
+      "gap": 3,
+      "status": "incomplete-source-evidence",
+      "note": "Raw data count is context only; missing raw layer is not proof resource cannot be acquired. Existing absent/crafting/unverified status is preserved; no arbitrary locations were generated."
+    },
+    {
+      "map": "extinction",
+      "resource": "Metal",
+      "existingStatus": "unverified",
+      "existingReason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
+      "verifiedCandidateCount": 0,
+      "spotIDs": [],
+      "meetsThreeLocations": false,
+      "rawLayerCount": 840,
+      "gap": 3,
+      "status": "incomplete-source-evidence",
+      "note": "Raw data count is context only; missing raw layer is not proof resource cannot be acquired. Existing absent/crafting/unverified status is preserved; no arbitrary locations were generated."
+    },
+    {
+      "map": "extinction",
+      "resource": "Obsidian",
+      "existingStatus": "unverified",
+      "existingReason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
+      "verifiedCandidateCount": 0,
+      "spotIDs": [],
+      "meetsThreeLocations": false,
+      "rawLayerCount": 666,
+      "gap": 3,
+      "status": "incomplete-source-evidence",
+      "note": "Raw data count is context only; missing raw layer is not proof resource cannot be acquired. Existing absent/crafting/unverified status is preserved; no arbitrary locations were generated."
+    },
+    {
+      "map": "extinction",
+      "resource": "Oil",
+      "existingStatus": "verified",
+      "existingReason": "Source-video GPS region reviewed; open a region card for the actual filmed evidence.",
+      "verifiedCandidateCount": 3,
+      "spotIDs": [
+        "extinction-oil-lake",
+        "extinction-south-oil-pool",
+        "extinction-southwest-oil-pool"
+      ],
+      "meetsThreeLocations": true,
+      "rawLayerCount": 446,
+      "gap": 0,
+      "status": "candidate-target-met",
+      "note": "Raw data count is context only; missing raw layer is not proof resource cannot be acquired. Existing absent/crafting/unverified status is preserved; no arbitrary locations were generated."
+    },
+    {
+      "map": "extinction",
+      "resource": "Organic Polymer",
+      "existingStatus": "unverified",
+      "existingReason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
+      "verifiedCandidateCount": 0,
+      "spotIDs": [],
+      "meetsThreeLocations": false,
+      "rawLayerCount": 0,
+      "gap": 3,
+      "status": "incomplete-source-evidence",
+      "note": "Raw data count is context only; missing raw layer is not proof resource cannot be acquired. Existing absent/crafting/unverified status is preserved; no arbitrary locations were generated."
+    },
+    {
+      "map": "extinction",
+      "resource": "Rare Flowers",
+      "existingStatus": "unverified",
+      "existingReason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
+      "verifiedCandidateCount": 0,
+      "spotIDs": [],
+      "meetsThreeLocations": false,
+      "rawLayerCount": 232,
+      "gap": 3,
+      "status": "incomplete-source-evidence",
+      "note": "Raw data count is context only; missing raw layer is not proof resource cannot be acquired. Existing absent/crafting/unverified status is preserved; no arbitrary locations were generated."
+    },
+    {
+      "map": "extinction",
+      "resource": "Rare Mushrooms",
+      "existingStatus": "unverified",
+      "existingReason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
+      "verifiedCandidateCount": 0,
+      "spotIDs": [],
+      "meetsThreeLocations": false,
+      "rawLayerCount": 0,
+      "gap": 3,
+      "status": "incomplete-source-evidence",
+      "note": "Raw data count is context only; missing raw layer is not proof resource cannot be acquired. Existing absent/crafting/unverified status is preserved; no arbitrary locations were generated."
+    },
+    {
+      "map": "extinction",
+      "resource": "Rich Metal",
+      "existingStatus": "unverified",
+      "existingReason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
+      "verifiedCandidateCount": 0,
+      "spotIDs": [],
+      "meetsThreeLocations": false,
+      "rawLayerCount": 1013,
+      "gap": 3,
+      "status": "incomplete-source-evidence",
+      "note": "Raw data count is context only; missing raw layer is not proof resource cannot be acquired. Existing absent/crafting/unverified status is preserved; no arbitrary locations were generated."
+    },
+    {
+      "map": "extinction",
+      "resource": "Sap",
+      "existingStatus": "processing",
+      "existingReason": "Use a Tree Sap Tap on a supported tree; Scorched Earth and Extinction also have Joshua-tree harvesting, Valguero has stump harvesting, and Genesis has the Hexagon Exchange. Verify the method appropriate to this map in the source reference.",
+      "verifiedCandidateCount": 0,
+      "spotIDs": [],
+      "meetsThreeLocations": false,
+      "rawLayerCount": 0,
+      "gap": 3,
+      "status": "incomplete-source-evidence",
+      "note": "Raw data count is context only; missing raw layer is not proof resource cannot be acquired. Existing absent/crafting/unverified status is preserved; no arbitrary locations were generated."
+    },
+    {
+      "map": "extinction",
+      "resource": "Silica Pearls",
+      "existingStatus": "unverified",
+      "existingReason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
+      "verifiedCandidateCount": 0,
+      "spotIDs": [],
+      "meetsThreeLocations": false,
+      "rawLayerCount": 45,
+      "gap": 3,
+      "status": "incomplete-source-evidence",
+      "note": "Raw data count is context only; missing raw layer is not proof resource cannot be acquired. Existing absent/crafting/unverified status is preserved; no arbitrary locations were generated."
+    },
+    {
+      "map": "lost-colony",
+      "resource": "Black Pearls",
+      "existingStatus": "unverified",
+      "existingReason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
+      "verifiedCandidateCount": 0,
+      "spotIDs": [],
+      "meetsThreeLocations": false,
+      "rawLayerCount": 129,
+      "gap": 3,
+      "status": "incomplete-source-evidence",
+      "note": "Raw data count is context only; missing raw layer is not proof resource cannot be acquired. Existing absent/crafting/unverified status is preserved; no arbitrary locations were generated."
+    },
+    {
+      "map": "lost-colony",
+      "resource": "Cementing Paste",
+      "existingStatus": "crafting",
+      "existingReason": "Combine 4 Chitin or Keratin + 8 Stone in a Mortar and Pestle. Beaver-dam loot and Achatina production are additional sources, requiring separate local verification.",
+      "verifiedCandidateCount": 0,
+      "spotIDs": [],
+      "meetsThreeLocations": false,
+      "rawLayerCount": 1,
+      "gap": 3,
+      "status": "incomplete-source-evidence",
+      "note": "Raw data count is context only; missing raw layer is not proof resource cannot be acquired. Existing absent/crafting/unverified status is preserved; no arbitrary locations were generated."
+    },
+    {
+      "map": "lost-colony",
+      "resource": "Chitin",
+      "existingStatus": "unverified",
+      "existingReason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
+      "verifiedCandidateCount": 0,
+      "spotIDs": [],
+      "meetsThreeLocations": false,
+      "rawLayerCount": 0,
+      "gap": 3,
+      "status": "incomplete-source-evidence",
+      "note": "Raw data count is context only; missing raw layer is not proof resource cannot be acquired. Existing absent/crafting/unverified status is preserved; no arbitrary locations were generated."
+    },
+    {
+      "map": "lost-colony",
+      "resource": "Crystal",
+      "existingStatus": "unverified",
+      "existingReason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
+      "verifiedCandidateCount": 0,
+      "spotIDs": [],
+      "meetsThreeLocations": false,
+      "rawLayerCount": 4064,
+      "gap": 3,
+      "status": "incomplete-source-evidence",
+      "note": "Raw data count is context only; missing raw layer is not proof resource cannot be acquired. Existing absent/crafting/unverified status is preserved; no arbitrary locations were generated."
+    },
+    {
+      "map": "lost-colony",
+      "resource": "Giant Bee Honey",
+      "existingStatus": "not-in-existing-coverage",
+      "existingReason": null,
+      "verifiedCandidateCount": 0,
+      "spotIDs": [],
+      "meetsThreeLocations": false,
+      "rawLayerCount": 78,
+      "gap": 3,
+      "status": "incomplete-source-evidence",
+      "note": "Raw data count is context only; missing raw layer is not proof resource cannot be acquired. Existing absent/crafting/unverified status is preserved; no arbitrary locations were generated."
+    },
+    {
+      "map": "lost-colony",
+      "resource": "Metal",
+      "existingStatus": "verified",
+      "existingReason": "Source-video GPS region reviewed; open a region card for the actual filmed evidence.",
+      "verifiedCandidateCount": 2,
+      "spotIDs": [
+        "lost-colony-north-metal",
+        "lost-colony-northwest-metal"
+      ],
+      "meetsThreeLocations": false,
+      "rawLayerCount": 1488,
+      "gap": 1,
+      "status": "incomplete-source-evidence",
+      "note": "Raw data count is context only; missing raw layer is not proof resource cannot be acquired. Existing absent/crafting/unverified status is preserved; no arbitrary locations were generated."
+    },
+    {
+      "map": "lost-colony",
+      "resource": "Obsidian",
+      "existingStatus": "unverified",
+      "existingReason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
+      "verifiedCandidateCount": 0,
+      "spotIDs": [],
+      "meetsThreeLocations": false,
+      "rawLayerCount": 986,
+      "gap": 3,
+      "status": "incomplete-source-evidence",
+      "note": "Raw data count is context only; missing raw layer is not proof resource cannot be acquired. Existing absent/crafting/unverified status is preserved; no arbitrary locations were generated."
+    },
+    {
+      "map": "lost-colony",
+      "resource": "Oil",
+      "existingStatus": "unverified",
+      "existingReason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
+      "verifiedCandidateCount": 0,
+      "spotIDs": [],
+      "meetsThreeLocations": false,
+      "rawLayerCount": 691,
+      "gap": 3,
+      "status": "incomplete-source-evidence",
+      "note": "Raw data count is context only; missing raw layer is not proof resource cannot be acquired. Existing absent/crafting/unverified status is preserved; no arbitrary locations were generated."
+    },
+    {
+      "map": "lost-colony",
+      "resource": "Organic Polymer",
+      "existingStatus": "unverified",
+      "existingReason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
+      "verifiedCandidateCount": 0,
+      "spotIDs": [],
+      "meetsThreeLocations": false,
+      "rawLayerCount": 2299,
+      "gap": 3,
+      "status": "incomplete-source-evidence",
+      "note": "Raw data count is context only; missing raw layer is not proof resource cannot be acquired. Existing absent/crafting/unverified status is preserved; no arbitrary locations were generated."
+    },
+    {
+      "map": "lost-colony",
+      "resource": "Rare Flowers",
+      "existingStatus": "unverified",
+      "existingReason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
+      "verifiedCandidateCount": 0,
+      "spotIDs": [],
+      "meetsThreeLocations": false,
+      "rawLayerCount": 1824,
+      "gap": 3,
+      "status": "incomplete-source-evidence",
+      "note": "Raw data count is context only; missing raw layer is not proof resource cannot be acquired. Existing absent/crafting/unverified status is preserved; no arbitrary locations were generated."
+    },
+    {
+      "map": "lost-colony",
+      "resource": "Rare Mushrooms",
+      "existingStatus": "unverified",
+      "existingReason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
+      "verifiedCandidateCount": 0,
+      "spotIDs": [],
+      "meetsThreeLocations": false,
+      "rawLayerCount": 0,
+      "gap": 3,
+      "status": "incomplete-source-evidence",
+      "note": "Raw data count is context only; missing raw layer is not proof resource cannot be acquired. Existing absent/crafting/unverified status is preserved; no arbitrary locations were generated."
+    },
+    {
+      "map": "lost-colony",
+      "resource": "Rich Metal",
+      "existingStatus": "unverified",
+      "existingReason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
+      "verifiedCandidateCount": 0,
+      "spotIDs": [],
+      "meetsThreeLocations": false,
+      "rawLayerCount": 1741,
+      "gap": 3,
+      "status": "incomplete-source-evidence",
+      "note": "Raw data count is context only; missing raw layer is not proof resource cannot be acquired. Existing absent/crafting/unverified status is preserved; no arbitrary locations were generated."
+    },
+    {
+      "map": "lost-colony",
+      "resource": "Sap",
+      "existingStatus": "unverified",
+      "existingReason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
+      "verifiedCandidateCount": 0,
+      "spotIDs": [],
+      "meetsThreeLocations": false,
+      "rawLayerCount": 0,
+      "gap": 3,
+      "status": "incomplete-source-evidence",
+      "note": "Raw data count is context only; missing raw layer is not proof resource cannot be acquired. Existing absent/crafting/unverified status is preserved; no arbitrary locations were generated."
+    },
+    {
+      "map": "lost-colony",
+      "resource": "Silica Pearls",
+      "existingStatus": "unverified",
+      "existingReason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
+      "verifiedCandidateCount": 0,
+      "spotIDs": [],
+      "meetsThreeLocations": false,
+      "rawLayerCount": 745,
+      "gap": 3,
+      "status": "incomplete-source-evidence",
+      "note": "Raw data count is context only; missing raw layer is not proof resource cannot be acquired. Existing absent/crafting/unverified status is preserved; no arbitrary locations were generated."
+    }
+  ],
+  "watchlist": [
+    {
+      "videoID": "k9IOWvnWMdg",
+      "map": "scorched-earth",
+      "title": "MEJORES UBICACIONES de RECURSOS en SCORCHED EARTH // CONSEGUIR METAL, PERLAS, SEDA, CRISTAL, ACEITE",
+      "channel": "Masokark",
+      "description": "00:00:18 D\u00f3nde conseguir Metal en Scorched Earth\n00:02:02 D\u00f3nde conseguir Sal en Scorched Earth\n00:03:12 D\u00f3nde conseguir Perlas Blancas en Scorched Earth\n00:04:25 D\u00f3nde conseguir Sulfuro en Scorched Earth\n00:06:18 D\u00f3nde conseguir Seda en Scorched Earth\n00:07:22 D\u00f3nde conseguir Obsidiana y Cristal en Scorched Earth\n00:08:59 D\u00f3nde conseguir Aceite en Scorched Earth\n00:10:12 Mejor Ubicaci\u00f3n para recolectar recursos en Scorched Earth\n\nVideo explicativo de las mejores Ubicaciones para conseguir y recolectar los recursos m\u00e1s valiosos de Scorched Earth; el nuevo mapa de Ark Survival Ascended.\n\n#arkascended #arkscorchedearth #arkespa\u00f1ol",
+      "chapters": [
+        {
+          "title": "<Untitled Chapter 1>",
+          "start": 0,
+          "end": 18
+        },
+        {
+          "title": "D\u00f3nde conseguir Metal en Scorched Earth",
+          "start": 18,
+          "end": 122
+        },
+        {
+          "title": "D\u00f3nde conseguir Sal en Scorched Earth",
+          "start": 122,
+          "end": 192
+        },
+        {
+          "title": "D\u00f3nde conseguir Perlas Blancas en Scorched Earth",
+          "start": 192,
+          "end": 265
+        },
+        {
+          "title": "D\u00f3nde conseguir Sulfuro en Scorched Earth",
+          "start": 265,
+          "end": 378
+        },
+        {
+          "title": "D\u00f3nde conseguir Seda en Scorched Earth",
+          "start": 378,
+          "end": 442
+        },
+        {
+          "title": "D\u00f3nde conseguir Obsidiana y Cristal en Scorched Earth",
+          "start": 442,
+          "end": 539
+        },
+        {
+          "title": "D\u00f3nde conseguir Aceite en Scorched Earth",
+          "start": 539,
+          "end": 612
+        },
+        {
+          "title": "Mejor Ubicaci\u00f3n para recolectar recursos en Scorched Earth",
+          "start": 612,
+          "end": 654
+        }
+      ],
+      "license": null,
+      "status": "metadata-only-beyond-intact-cached-ranges",
+      "coordinates": null
+    },
+    {
+      "videoID": "85xkdr_UYAo",
+      "map": "extinction",
+      "title": "Extinction Resource Guide, Best Resource Locations, Ark Survival Ascended",
+      "channel": "Chaos Bear Gaming",
+      "description": "Resources are the cornerstone of survival in every Ark. In this guide, I\u2019ll show you the best locations for every crucial resource you\u2019ll need to thrive on Extinction. Whether you\u2019re looking for basics like stone and flint, or rare materials like black pearls and corrupted wood, this video has got you covered!\n\nResources Covered in This Guide:\n0:00-0:14 Intro\n0:15-0:32 Oil\n0:33-0:54 Organic Polymer/Polymer/Corrupted Nodules\n0:53: 1:10 Honey\n1:11-1:39 Cementing Paste & Bio Toxin\n1:40-1:54 Rare Mushrooms/Rare Flowers & Silk\n1:55-2:13 Sap     \n2:14-2:46 Obsidian & Black Pearls\n2:47-3:05 Condensed Gas/Sulfur\n3:06-3:26 Green Gems/Crystalized Sap\n3:27-3:42 Silicate & Silicia Pearls\n3:43-4:06 Metal & Scrap Metal\n4:07-4:26: Crystal\n4:27-4:48: Element & Element Dust: \n4:49-5:58: Basic Resources &Final Great Locations\n\nSpecial Note: Most resources can be passively produced by Gachas, but some (like Honey, Rare Flowers, Rare Mushrooms, Cementing Paste, and Chitin) require manual collection.\n\nEvery map brings new challenges, and Extinction is no exception. Which resource has given you the most trouble on this map? Let me know in the comments! Or, if you have a tip, share it to help your fellow survivors.\n\nIf you enjoyed this guide, don\u2019t forget to like, comment, and subscribe for more in-depth ARK content.\n\n#ark #arksurvival #arksurvivalascended",
+      "chapters": [
+        {
+          "title": "Intro",
+          "start": 0,
+          "end": 15
+        },
+        {
+          "title": "Oil",
+          "start": 15,
+          "end": 33
+        },
+        {
+          "title": "Organic Polymer/Polymer/Corrupted Nodules",
+          "start": 33,
+          "end": 71
+        },
+        {
+          "title": "Cementing Paste & Bio Toxin",
+          "start": 71,
+          "end": 100
+        },
+        {
+          "title": "Rare Mushrooms/Rare Flowers & Silk",
+          "start": 100,
+          "end": 115
+        },
+        {
+          "title": "Sap",
+          "start": 115,
+          "end": 134
+        },
+        {
+          "title": "Obsidian & Black Pearls",
+          "start": 134,
+          "end": 167
+        },
+        {
+          "title": "Condensed Gas/Sulfur",
+          "start": 167,
+          "end": 186
+        },
+        {
+          "title": "Green Gems/Crystalized Sap",
+          "start": 186,
+          "end": 207
+        },
+        {
+          "title": "Silicate & Silicia Pearls",
+          "start": 207,
+          "end": 223
+        },
+        {
+          "title": "Metal & Scrap Metal",
+          "start": 223,
+          "end": 247
+        },
+        {
+          "title": "4:26: Crystal",
+          "start": 247,
+          "end": 267
+        },
+        {
+          "title": "4:48: Element & Element Dust",
+          "start": 267,
+          "end": 289
+        },
+        {
+          "title": "5:58: Basic Resources &Final Great Locations",
+          "start": 289,
+          "end": 358
+        }
+      ],
+      "license": null,
+      "status": "metadata-only-beyond-intact-cached-ranges",
+      "coordinates": null
+    },
+    {
+      "videoID": "WKNYEAeuSDA",
+      "map": "lost-colony",
+      "title": "Resource Map Locations to get you Started \u25ba Ark Lost Colony",
+      "channel": "ConCon",
+      "description": "This is a video guide on the locations of various resources on the new expansion map; Lost Colony for Ark Survival Ascended.\n\n\ud83d\udd17 Useful Links: \nArk Settings: https://youtu.be/xXIg2CtdYbw\nHow to get Element & Red Element: https://youtu.be/8W3x9DLxO6g\n\n\u23f1\ufe0f Timestamps:\n0:00 Starting Zones\n0:17 Metal\n2:14 Crystal\n3:24 Meat Plants\n4:28 Silica Pearls\n5:53 Oil\n6:56 Beaver Dams Potentially\n7:30 Organic Polymer\n8:05 Sulfur & Obsidian\n9:16 Bio Toxin\n11:06 Rare Flowers\n12:00 Black Pearls\n13:40 Sap\n14:22 Red Element\n\n\u27a4 More Content: \nArk Lost Colony Videos: https://www.youtube.com/playlist?list=PLEFmHCQRBf0Dos_pUHiBLyYPmPf7fefVF\nAll Other Games: https://www.youtube.com/c/ConCon/playlists\nLatest Videos: https://www.youtube.com/c/ConCon/videos\n\n\ud83d\udc4b  Connect with the community:\nDiscord: https://discord.gg/6F8qqzZ\n\nDon't forget to like, subscribe, and hit the notification bell for more guides.\n\n#arksurvivalascended #LostColony #ArkLostColony",
+      "chapters": [
+        {
+          "title": "Starting Zones",
+          "start": 0,
+          "end": 17
+        },
+        {
+          "title": "Metal",
+          "start": 17,
+          "end": 134
+        },
+        {
+          "title": "Crystal",
+          "start": 134,
+          "end": 204
+        },
+        {
+          "title": "Meat Plants",
+          "start": 204,
+          "end": 268
+        },
+        {
+          "title": "Silica Pearls",
+          "start": 268,
+          "end": 353
+        },
+        {
+          "title": "Oil",
+          "start": 353,
+          "end": 416
+        },
+        {
+          "title": "Beaver Dams Potentially",
+          "start": 416,
+          "end": 450
+        },
+        {
+          "title": "Organic Polymer",
+          "start": 450,
+          "end": 485
+        },
+        {
+          "title": "Sulfur & Obsidian",
+          "start": 485,
+          "end": 556
+        },
+        {
+          "title": "Bio Toxin",
+          "start": 556,
+          "end": 666
+        },
+        {
+          "title": "Rare Flowers",
+          "start": 666,
+          "end": 720
+        },
+        {
+          "title": "Black Pearls",
+          "start": 720,
+          "end": 820
+        },
+        {
+          "title": "Sap",
+          "start": 820,
+          "end": 862
+        },
+        {
+          "title": "Red Element",
+          "start": 862,
+          "end": 913
+        }
+      ],
+      "license": null,
+      "status": "metadata-only-beyond-intact-cached-ranges",
+      "coordinates": null
+    },
+    {
+      "videoID": "TUoB8ouWPYk",
+      "map": "aberration",
+      "title": "The Ultimate Aberration Resource Guide, 50+ Tips/Locations, Ark Survival Ascended",
+      "channel": "Chaos Bear Gaming",
+      "description": "Welcome to this comprehensive Ark: Survival Ascended Aberration Resource Location guide! In this walkthrough, we will cover everything you need to know to progress in this challenging environment of ASA Aberration. I will be showing you how to find resources on Aberration. We will be looking at: \n\nMetal locations, Crystal locations, gem locations, obsidian locations, element ore locations, cementing paste location, silica pearl locations, oil locations, rare flower locations, rare mushroom locations, bio toxin locations, mushrooms locations, giant bee honey locations and more. \n\nIf you enjoyed this guide or found it helpful then I would really appreciate it if you considered subscribing if you are not already, leaving a like, and leaving a comment down below letting me know what you enjoyed about the video or if you learned something new.\n\nChapters Section: \nIntro: 0:00-0:22\nMetal: 0:23-4:39\nObsidian: 4:40-5:25\nSilica Pearls: 5:26-8:45\nGems/Crystal: 8:46-11:04\nBlack Pearls: 11:05-11:16\nBio Toxin: 11:17-12:37\nRare Mushrooms & Rare Flowers: 12:38-13:39 \nCementing paste: 13:40-15:11\nChitin/Keratin: 15:12-15:46\nOrganic Polymer: 15:47-16:41\nOil: 16:42-17:49\nCongealed Gas Balls 17:50-18:38\nElement Ore: 18:39-19:01\nPlant Species Z seed: 19:02-20:06\nGiant Bee Honey: 20:07-22:00\n\nEarthquake Drops: https://ark.fandom.com/wiki/Earthquake_(Aberration)\n\nBecome A Member: https://www.youtube.com/channel/UChNE0dyDoDPfnbQFrw6e99A/join\n\nOutro: Xenogenesis by TheFatRat\n\n#ark #arksurvival #arksurvivalevolved #arksurvivalascended",
+      "chapters": [
+        {
+          "title": "Intro.",
+          "start": 0,
+          "end": 23
+        },
+        {
+          "title": "Metal.",
+          "start": 23,
+          "end": 280
+        },
+        {
+          "title": "Obsidian.",
+          "start": 280,
+          "end": 326
+        },
+        {
+          "title": "Silica Pearls.",
+          "start": 326,
+          "end": 526
+        },
+        {
+          "title": "Gems/Crystal.",
+          "start": 526,
+          "end": 665
+        },
+        {
+          "title": "Black Pearls.",
+          "start": 665,
+          "end": 677
+        },
+        {
+          "title": "Bio Toxin.",
+          "start": 677,
+          "end": 758
+        },
+        {
+          "title": "Rare Mushrooms & Rare Flowers.",
+          "start": 758,
+          "end": 820
+        },
+        {
+          "title": "Cementing paste.",
+          "start": 820,
+          "end": 912
+        },
+        {
+          "title": "Chitin/Keratin.",
+          "start": 912,
+          "end": 947
+        },
+        {
+          "title": "Organic Polymer.",
+          "start": 947,
+          "end": 1002
+        },
+        {
+          "title": "Oil.",
+          "start": 1002,
+          "end": 1070
+        },
+        {
+          "title": "Congealed Gas Balls.",
+          "start": 1070,
+          "end": 1119
+        },
+        {
+          "title": "Element Ore.",
+          "start": 1119,
+          "end": 1142
+        },
+        {
+          "title": "Plant Species Z seed.",
+          "start": 1142,
+          "end": 1207
+        },
+        {
+          "title": "Giant Bee Honey.22:00",
+          "start": 1207,
+          "end": 1319
+        }
+      ],
+      "license": null,
+      "status": "metadata-only-beyond-intact-cached-ranges",
+      "coordinates": null
+    },
+    {
+      "videoID": "KIWzuHPxWaE",
+      "map": "aberration",
+      "title": "A Complete Top Resource Spawns Guide - Ark Aberration Ascended",
+      "channel": "MR BreadPSN",
+      "description": "Like n Sub for more",
+      "chapters": [],
+      "license": null,
+      "status": "metadata-only-beyond-intact-cached-ranges",
+      "coordinates": null
+    }
+  ],
+  "blockers": [
+    {
+      "action": "CC filtered compilation search",
+      "map": "scorched-earth",
+      "status": "failed",
+      "error": "YouTube Data API rejected the request parameters or API key"
+    },
+    {
+      "action": "CC filtered compilation search",
+      "map": "aberration",
+      "status": "failed",
+      "error": "YouTube Data API rejected the request parameters or API key"
+    },
+    {
+      "action": "CC filtered compilation search",
+      "map": "extinction",
+      "status": "failed",
+      "error": "YouTube Data API rejected the request parameters or API key"
+    },
+    {
+      "action": "CC filtered compilation search",
+      "map": "lost-colony",
+      "status": "failed",
+      "error": "YouTube Data API rejected the request parameters or API key"
+    },
+    {
+      "action": "licensed triple-gated section acquisition",
+      "videoID": "k9IOWvnWMdg",
+      "status": "failed",
+      "error": "{\"status\": \"error\", \"error\": \"ERROR: ffmpeg exited with code 8\"}"
+    },
+    {
+      "action": "licensed triple-gated section acquisition",
+      "videoID": "85xkdr_UYAo",
+      "status": "failed",
+      "error": "{\"status\": \"error\", \"error\": \"ERROR: ffmpeg exited with code 8\"}"
+    },
+    {
+      "action": "licensed triple-gated section acquisition",
+      "videoID": "WKNYEAeuSDA",
+      "status": "failed",
+      "error": "{\"status\": \"error\", \"error\": \"ERROR: ffmpeg exited with code 8\"}"
+    },
+    {
+      "action": "licensed triple-gated section acquisition",
+      "videoID": "TUoB8ouWPYk",
+      "status": "failed",
+      "error": "{\"status\": \"error\", \"error\": \"ERROR: ffmpeg exited with code 8\"}"
+    }
+  ],
+  "rightsBasis": "Root recovered direct prior user statement Duy\u1ec7t, a c\u00f3 gi\u1ea5y ph\u00e9p h\u1ebft. Source metadata license null does not prove CC; all footage uses user-asserted licensed basis. No restriction bypass performed."
+}

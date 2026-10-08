@@ -1,0 +1,18 @@
+{
+  "checkedAt": "2026-10-08",
+  "device": "Ascended iPad QA",
+  "udid": "20C9346D-B0E6-4239-8152-1D85ADD57BA6",
+  "bundleID": "com.tonytuanngoc.ascended",
+  "version": "0.31.0",
+  "build": "32",
+  "installedPath": "/Volumes/TONY SSD/APP_DATA/Xcode/CoreSimulator/Devices/20C9346D-B0E6-4239-8152-1D85ADD57BA6/data/Containers/Bundle/Application/3BAFA610-2280-495F-81DA-35DE860B4D70/Ascended.app",
+  "verifiedFarmSpots": 79,
+  "farmGuides": 79,
+  "newLocations": 16,
+  "guideSHA256": "8389d284c441a28e7d544e44141a9ed6e4c763445e6901c16359155724f9aa6b",
+  "freshLaunchPID": 17618,
+  "unitTestsPassed": 7,
+  "uiTestsPassed": 3,
+  "physicalDeviceVerified": false,
+  "webDomain": null
+}

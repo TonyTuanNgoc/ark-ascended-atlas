@@ -1,0 +1,38 @@
+{
+  "entries": [
+    {
+      "id": "scorched-southeast-metal-ridge",
+      "map": "scorched-earth",
+      "name": "Southeastern metal ridge",
+      "resources": [
+        "Metal"
+      ],
+      "lat": 68.9,
+      "lon": 66.0,
+      "videoID": "4GieC-G-9Nw",
+      "sourceURL": "https://www.youtube.com/watch?v=4GieC-G-9Nw",
+      "startSeconds": 48.5,
+      "endSeconds": 55.0,
+      "durationSeconds": 6.5,
+      "sourcePath": "/Volumes/TONY SSD/TONY_WORKSPACE/CODE/TonyOS_Workspace/tools/youtube-intelligence/data/downloads/4GieC-G-9Nw.f299.mp4.part",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming32/expansion/scorched-southeast-metal-ridge.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming32/expansion/scorched-southeast-metal-ridge.jpg",
+      "coordinateEvidence": "In-game camera coordinate HUD E 68.90 66.01 visible at50.0s; framed metal1 waypoint11m away and surrounding metal nodes. Pin denotes camera/filmed region, not exact waypoint or each node.",
+      "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming32/expansion/4GieC-G-9Nw-50.jpg",
+      "coordinateAuthority": "Visible in-game camera HUD",
+      "sourcePlane": "Scorched Earth ASA",
+      "rightsBasis": "licensed",
+      "rightsEvidence": "Root confirmed persistent human approval Duy\u1ec7t, a c\u00f3 gi\u1ea5y ph\u00e9p h\u1ebft.",
+      "newDownload": true,
+      "acquisitionStatus": "Normal full acquisition interrupted byHTTP403; licensed locally acquired opening fragment used; denied source never retried.",
+      "sha256": "5c952a65e197fba1446772560b0291b7e1930da6fdf022ea4a1d48a1d763981a",
+      "fullDecodePassed": true,
+      "renderExitCode": 0,
+      "reviewFPS": 8,
+      "reviewSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming32/expansion/scorched-southeast-metal-ridge-selected.jpg",
+      "visualReview": "pending",
+      "inventoryEvidence": "Metallic ore nodes directly visible; creator waypoint metal1; no completed harvesting shown.",
+      "harvestDemonstrated": false
+    }
+  ]
+}

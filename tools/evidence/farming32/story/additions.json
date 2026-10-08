@@ -1,0 +1,229 @@
+{
+  "entries": [
+    {
+      "id": "scorched-northeast-cliff-metal",
+      "map": "scorched-earth",
+      "name": "Northeastern metal cliff",
+      "resources": [
+        "Metal"
+      ],
+      "lat": 36.8,
+      "lon": 68.8,
+      "videoID": "k9IOWvnWMdg",
+      "startSeconds": 56.375,
+      "endSeconds": 57.375,
+      "coordinateEvidence": "In-game camera coordinates visible at 60s in k9IOWvnWMdg-60.jpg; region/camera position, not every individual actor.",
+      "license": "User-asserted licensed; platform metadata license null",
+      "rightsBasis": "Root recovered prior explicit user approval: Duy\u1ec7t, a c\u00f3 gi\u1ea5y ph\u00e9p h\u1ebft; persists for this task.",
+      "sourcePath": "/Volumes/TONY SSD/TONY_WORKSPACE/CODE/TonyOS_Workspace/tools/youtube-intelligence/data/downloads/k9IOWvnWMdg.f137.mp4.part",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming32/story/scorched-northeast-cliff-metal.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming32/story/scorched-northeast-cliff-metal.jpg",
+      "clipSHA256": "d68659322a48a5351713abc1ea4f4928acc58927c4a94e836585e52dd3aac81c",
+      "actualDuration": 1.0,
+      "decodeExitCode": 0,
+      "decodeErrors": "",
+      "renderErrors": "",
+      "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming32/story/scorched-northeast-cliff-metal-selected.jpg",
+      "visualReview": {
+        "method": "Manual encoded contact sheet inspection at 8 fps after boundary repairs; fully decoded with ffmpeg -xerror",
+        "result": "Clean continuous terrain/approach with no M map or inventory/menu obstruction; normal gameplay HUD and creator coordinate text may remain",
+        "reviewedAt": "2026-10-08",
+        "samplingLimit": "8 fps samples, not every frame"
+      },
+      "harvestDemonstrated": false,
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "sourceURL": "https://www.youtube.com/watch?v=k9IOWvnWMdg",
+      "status": "new-candidate-verified-camera-region",
+      "inventoryEvidence": "No completed harvest demonstrated. Visible resource/approach belongs to source resource segment.",
+      "direction": "Use coordinates as the filmed region, then match the visible terrain and approach.",
+      "method": "Use an appropriate harvesting tool or tame for this resource; resource yield is not measured by this preview.",
+      "kit": [],
+      "risks": [
+        "Hostile creatures",
+        "Terrain hazards"
+      ],
+      "sourcePlane": "scorched-earth filmed region",
+      "limitations": "Only1s clean view of third metal cliff approach; intact partial ends during subsequent map; ore harvest not visible. User specified maximum10s, no minimum, but parent may reject as too short for useful instruction."
+    },
+    {
+      "id": "aberration-northwest-metal-cave",
+      "map": "aberration",
+      "name": "Northwestern green metal cave approach",
+      "resources": [
+        "Metal"
+      ],
+      "lat": 19.5,
+      "lon": 27.7,
+      "videoID": "BZVk5xrksxk",
+      "startSeconds": 39.625,
+      "endSeconds": 44.5,
+      "coordinateEvidence": "In-game camera coordinates visible at 46s in BZVk5xrksxk-46.jpg; region/camera position, not every individual actor.",
+      "license": "User-asserted licensed; platform metadata license null",
+      "rightsBasis": "Root recovered prior explicit user approval: Duy\u1ec7t, a c\u00f3 gi\u1ea5y ph\u00e9p h\u1ebft; persists for this task.",
+      "sourcePath": "/Volumes/TONY SSD/TONY_WORKSPACE/CODE/TonyOS_Workspace/tools/youtube-intelligence/data/downloads/BZVk5xrksxk.f399.mp4.part",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming32/story/aberration-northwest-metal-cave.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming32/story/aberration-northwest-metal-cave.jpg",
+      "clipSHA256": "017e7effa3df2ae56a06dad8678e38b63343af0263ce91e10820589a70ed8c6c",
+      "actualDuration": 4.875,
+      "decodeExitCode": 0,
+      "decodeErrors": "",
+      "renderErrors": "",
+      "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming32/story/aberration-northwest-metal-cave-selected.jpg",
+      "visualReview": {
+        "method": "Manual encoded contact sheet inspection at 8 fps after boundary repairs; fully decoded with ffmpeg -xerror",
+        "result": "Clean continuous terrain/approach with no M map or inventory/menu obstruction; normal gameplay HUD and creator coordinate text may remain",
+        "reviewedAt": "2026-10-08",
+        "samplingLimit": "8 fps samples, not every frame"
+      },
+      "harvestDemonstrated": false,
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "sourceURL": "https://www.youtube.com/watch?v=BZVk5xrksxk",
+      "status": "new-candidate-verified-camera-region",
+      "inventoryEvidence": "No completed harvest demonstrated. Visible resource/approach belongs to source resource segment.",
+      "direction": "Use coordinates as the filmed region, then match the visible terrain and approach.",
+      "method": "Use an appropriate harvesting tool or tame for this resource; resource yield is not measured by this preview.",
+      "kit": [],
+      "risks": [
+        "Hostile creatures",
+        "Terrain hazards"
+      ],
+      "sourcePlane": "aberration filmed region",
+      "limitations": "Clip establishes green-zone cave entrance approach within Metal guide; no completed ore harvest demonstrated."
+    },
+    {
+      "id": "lost-colony-northwest-metal",
+      "map": "lost-colony",
+      "name": "Northwestern snowy metal mountain",
+      "resources": [
+        "Metal"
+      ],
+      "lat": 3.0,
+      "lon": 5.8,
+      "videoID": "WKNYEAeuSDA",
+      "startSeconds": 61.25,
+      "endSeconds": 67.5,
+      "coordinateEvidence": "In-game camera coordinates visible at 69s in WKNYEAeuSDA-69.jpg; region/camera position, not every individual actor.",
+      "license": "User-asserted licensed; platform metadata license null",
+      "rightsBasis": "Root recovered prior explicit user approval: Duy\u1ec7t, a c\u00f3 gi\u1ea5y ph\u00e9p h\u1ebft; persists for this task.",
+      "sourcePath": "/Volumes/TONY SSD/TONY_WORKSPACE/CODE/TonyOS_Workspace/tools/youtube-intelligence/data/downloads/WKNYEAeuSDA.f399.mp4.part",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming32/story/lost-colony-northwest-metal.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming32/story/lost-colony-northwest-metal.jpg",
+      "clipSHA256": "e353134b9715f4ffd2fef61e514e84796bf90d3f6800d199519a541c3f60d3ee",
+      "actualDuration": 6.25,
+      "decodeExitCode": 0,
+      "decodeErrors": "",
+      "renderErrors": "",
+      "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming32/story/lost-colony-northwest-metal-selected.jpg",
+      "visualReview": {
+        "method": "Manual encoded contact sheet inspection at 8 fps after boundary repairs; fully decoded with ffmpeg -xerror",
+        "result": "Clean continuous terrain/approach with no M map or inventory/menu obstruction; normal gameplay HUD and creator coordinate text may remain",
+        "reviewedAt": "2026-10-08",
+        "samplingLimit": "8 fps samples, not every frame"
+      },
+      "harvestDemonstrated": false,
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "sourceURL": "https://www.youtube.com/watch?v=WKNYEAeuSDA",
+      "status": "new-candidate-verified-camera-region",
+      "inventoryEvidence": "No completed harvest demonstrated. Visible resource/approach belongs to source resource segment.",
+      "direction": "Use coordinates as the filmed region, then match the visible terrain and approach.",
+      "method": "Use an appropriate harvesting tool or tame for this resource; resource yield is not measured by this preview.",
+      "kit": [],
+      "risks": [
+        "Hostile creatures",
+        "Terrain hazards"
+      ],
+      "sourcePlane": "lost-colony filmed region",
+      "limitations": "Pin uses camera/map coordinates visible at69s (3.0/5.8), not an edited exact metal waypoint. Video shows the same northwestern snowy metal area continuously; camera moves during map zoom."
+    },
+    {
+      "id": "extinction-south-oil-pool",
+      "map": "extinction",
+      "name": "Southern oil pool",
+      "resources": [
+        "Oil"
+      ],
+      "lat": 82.9,
+      "lon": 42.7,
+      "videoID": "85xkdr_UYAo",
+      "startSeconds": 24.1,
+      "endSeconds": 26.5,
+      "coordinateEvidence": "In-game camera coordinates visible at 28s in 85xkdr_UYAo-28.jpg; region/camera position, not every individual actor.",
+      "license": "User-asserted licensed; platform metadata license null",
+      "rightsBasis": "Root recovered prior explicit user approval: Duy\u1ec7t, a c\u00f3 gi\u1ea5y ph\u00e9p h\u1ebft; persists for this task.",
+      "sourcePath": "/Volumes/TONY SSD/TONY_WORKSPACE/CODE/TonyOS_Workspace/tools/youtube-intelligence/data/downloads/85xkdr_UYAo.f299.mp4.part",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming32/story/extinction-south-oil-pool.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming32/story/extinction-south-oil-pool.jpg",
+      "clipSHA256": "ad06e3169782081fb5c44af6b007475c0222763989a92a42f2cdc81a0c358c2b",
+      "actualDuration": 2.416667,
+      "decodeExitCode": 0,
+      "decodeErrors": "",
+      "renderErrors": "",
+      "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming32/story/extinction-south-oil-pool-selected.jpg",
+      "visualReview": {
+        "method": "Manual encoded contact sheet inspection at 8 fps after boundary repairs; fully decoded with ffmpeg -xerror",
+        "result": "Clean continuous terrain/approach with no M map or inventory/menu obstruction; normal gameplay HUD and creator coordinate text may remain",
+        "reviewedAt": "2026-10-08",
+        "samplingLimit": "8 fps samples, not every frame"
+      },
+      "harvestDemonstrated": false,
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "sourceURL": "https://www.youtube.com/watch?v=85xkdr_UYAo",
+      "status": "new-candidate-verified-camera-region",
+      "inventoryEvidence": "No completed harvest demonstrated. Visible resource/approach belongs to source resource segment.",
+      "direction": "Use coordinates as the filmed region, then match the visible terrain and approach.",
+      "method": "Use an appropriate harvesting tool or tame for this resource; resource yield is not measured by this preview.",
+      "kit": [],
+      "risks": [
+        "Hostile creatures",
+        "Terrain hazards"
+      ],
+      "sourcePlane": "extinction filmed region",
+      "limitations": "Very short clean pool terrain view; source coordinates are explicit camera and creator overlays. No harvest demonstrated."
+    },
+    {
+      "id": "extinction-southwest-oil-pool",
+      "map": "extinction",
+      "name": "Southwestern oil pool",
+      "resources": [
+        "Oil"
+      ],
+      "lat": 87.7,
+      "lon": 33.6,
+      "videoID": "85xkdr_UYAo",
+      "startSeconds": 29.5,
+      "endSeconds": 30.6,
+      "coordinateEvidence": "In-game camera coordinates visible at 32s in 85xkdr_UYAo-32.jpg; region/camera position, not every individual actor.",
+      "license": "User-asserted licensed; platform metadata license null",
+      "rightsBasis": "Root recovered prior explicit user approval: Duy\u1ec7t, a c\u00f3 gi\u1ea5y ph\u00e9p h\u1ebft; persists for this task.",
+      "sourcePath": "/Volumes/TONY SSD/TONY_WORKSPACE/CODE/TonyOS_Workspace/tools/youtube-intelligence/data/downloads/85xkdr_UYAo.f299.mp4.part",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming32/story/extinction-southwest-oil-pool.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming32/story/extinction-southwest-oil-pool.jpg",
+      "clipSHA256": "8836668403d05a448d63d5776b05f03e385b0251ad8f0eb247486fea13b85c37",
+      "actualDuration": 1.083008,
+      "decodeExitCode": 0,
+      "decodeErrors": "",
+      "renderErrors": "",
+      "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming32/story/extinction-southwest-oil-pool-selected.jpg",
+      "visualReview": {
+        "method": "Manual encoded contact sheet inspection at 8 fps after boundary repairs; fully decoded with ffmpeg -xerror",
+        "result": "Clean continuous terrain/approach with no M map or inventory/menu obstruction; normal gameplay HUD and creator coordinate text may remain",
+        "reviewedAt": "2026-10-08",
+        "samplingLimit": "8 fps samples, not every frame"
+      },
+      "harvestDemonstrated": false,
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "sourceURL": "https://www.youtube.com/watch?v=85xkdr_UYAo",
+      "status": "new-candidate-verified-camera-region",
+      "inventoryEvidence": "No completed harvest demonstrated. Visible resource/approach belongs to source resource segment.",
+      "direction": "Use coordinates as the filmed region, then match the visible terrain and approach.",
+      "method": "Use an appropriate harvesting tool or tame for this resource; resource yield is not measured by this preview.",
+      "kit": [],
+      "risks": [
+        "Hostile creatures",
+        "Terrain hazards"
+      ],
+      "sourcePlane": "extinction filmed region",
+      "limitations": "Very short clean pool terrain view; source coordinates are explicit camera and creator overlays. No harvest demonstrated."
+    }
+  ]
+}

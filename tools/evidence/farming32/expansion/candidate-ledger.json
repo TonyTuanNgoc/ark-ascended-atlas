@@ -1,0 +1,477 @@
+{
+  "schemaVersion": 1,
+  "scope": [
+    "genesis-part-1",
+    "genesis-part-1-ocean",
+    "astraeos"
+  ],
+  "candidates": [
+    {
+      "id": "astraeos-cliff-crystal-27-46",
+      "map": "astraeos",
+      "resources": [
+        "Crystal"
+      ],
+      "name": "Eastern cliff crystal cluster",
+      "lat": 27.6,
+      "lon": 46.5,
+      "videoID": "k73mk3nz0wI",
+      "sourceURL": "https://www.youtube.com/watch?v=k73mk3nz0wI",
+      "startSeconds": 20.5,
+      "endSeconds": 24,
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming32/expansion/astraeos-cliff-crystal-27-46.mp4",
+      "coordinateEvidence": "Creator location label LAT 27.6, LONG 46.5 visible at 25s in adjoining same-location map shot.",
+      "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming32/expansion/astraeos-cliff-crystal-27-46-coordinate.jpg",
+      "coordinateAuthority": "Creator labelled filmed region; not raw GPS or individual node actors",
+      "sourcePlane": "Astraeos February 2025 revision",
+      "asaCompatibility": "Source title identifies Ark Survival Ascended. Unchanged position on October 2026 revision not independently reverified.",
+      "inventoryEvidence": "Purple crystal formations visible throughout clip; harvesting not shown.",
+      "rightsBasis": "licensed",
+      "rightsEvidence": "Trusted original user turn confirmed by root: originalsession JSONL line2578: Duy\u1ec7t, a c\u00f3 gi\u1ea5y ph\u00e9p h\u1ebft. Existing resource-acquisition-ledger.json records licensed basis. No CC claim.",
+      "status": "verified-creator-coordinate-clean-clip-source-revision-caveat",
+      "newDownload": false,
+      "cleanMapOverlayVisible": false,
+      "reviewFPS": 4,
+      "fullDecodePassed": true,
+      "durationSeconds": 3.5,
+      "sha256": "55e177e17b46c4e194e5dd5f55e6d872f8f20889434557461e89e4755cee7ce6",
+      "reviewSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming32/expansion/astraeos-cliff-crystal-27-46-selected.jpg"
+    },
+    {
+      "id": "astraeos-coast-crystal-34-45",
+      "map": "astraeos",
+      "resources": [
+        "Crystal"
+      ],
+      "name": "Coastal terrace crystal cluster",
+      "lat": 34.5,
+      "lon": 45.6,
+      "videoID": "k73mk3nz0wI",
+      "sourceURL": "https://www.youtube.com/watch?v=k73mk3nz0wI",
+      "startSeconds": 28,
+      "endSeconds": 34.5,
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming32/expansion/astraeos-coast-crystal-34-45.mp4",
+      "coordinateEvidence": "Creator location label LAT 34.5, LONG 45.6 visible at 36s in adjoining same-location map shot.",
+      "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming32/expansion/astraeos-coast-crystal-34-45-coordinate.jpg",
+      "coordinateAuthority": "Creator labelled filmed region; not raw GPS or individual node actors",
+      "sourcePlane": "Astraeos February 2025 revision",
+      "asaCompatibility": "Source title identifies Ark Survival Ascended. Unchanged position on October 2026 revision not independently reverified.",
+      "inventoryEvidence": "Purple crystal formations visible throughout clip; harvesting not shown.",
+      "rightsBasis": "licensed",
+      "rightsEvidence": "Trusted original user turn confirmed by root: originalsession JSONL line2578: Duy\u1ec7t, a c\u00f3 gi\u1ea5y ph\u00e9p h\u1ebft. Existing resource-acquisition-ledger.json records licensed basis. No CC claim.",
+      "status": "verified-creator-coordinate-clean-clip-source-revision-caveat",
+      "newDownload": false,
+      "cleanMapOverlayVisible": false,
+      "reviewFPS": 4,
+      "fullDecodePassed": true,
+      "durationSeconds": 6.5,
+      "sha256": "0847607d7e76e829691b05ab65b99a1ca97b62edee9fef035b9a81aa95723102",
+      "reviewSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming32/expansion/astraeos-coast-crystal-34-45-selected.jpg"
+    }
+  ],
+  "blockers": [
+    "CC compilation search API rejected parameters/key twice",
+    "Captions request HTTP429",
+    "Existing licensed caches only contain first approximately59s Astraeos,84s Ocean,47s Arctic; all other chapters unavailable",
+    "2025 Astraeos source revision not reverified against current terrain",
+    "No resource unavailability exceptions asserted without ASA-specific evidence",
+    "New licensed triple-gated Astraeos58\u2013175 and Genesis169\u2013228 section requests failed: ffmpeg exited code8; no restriction bypass attempted"
+  ],
+  "newDownloadCount": 0,
+  "curatedResources": [
+    "Black Pearls",
+    "Cementing Paste",
+    "Chitin",
+    "Crystal",
+    "Giant Bee Honey",
+    "Metal",
+    "Obsidian",
+    "Oil",
+    "Organic Polymer",
+    "Rare Flowers",
+    "Rare Mushrooms",
+    "Rich Metal",
+    "Sap",
+    "Silica Pearls"
+  ],
+  "existingSpots": [
+    {
+      "id": "astraeos-phokintos-crystal",
+      "map": "astraeos",
+      "resources": [
+        "Crystal"
+      ],
+      "name": "Phokintos crystal field",
+      "lat": 16.8,
+      "lon": 28.3,
+      "videoID": "k73mk3nz0wI",
+      "coordinateEvidence": "Creator location 1 overlay reads latitude 16.8, longitude 28.3 at 20s; in-game map places this region in Phokintos. This is a filmed region, not every individual resource actor.",
+      "sourcePlane": "Astraeos: Phokintos region in the source revision"
+    },
+    {
+      "id": "genesis-ocean-waterfall-cave",
+      "map": "genesis-part-1-ocean",
+      "resources": [
+        "Crystal",
+        "Metal"
+      ],
+      "name": "Ocean waterfall resource cave",
+      "lat": 50.7,
+      "lon": 65.6,
+      "videoID": "YTpXmtVTGNs",
+      "coordinateEvidence": "In-game map has Ocean selected; cursor coincides with the green player arrow at latitude 50.7, longitude 65.6 at 60s. Pin identifies the filmed cave approach. This is a filmed region, not every individual resource actor.",
+      "sourcePlane": "Genesis Part 1: Ocean biome, selected in the creator in-game map"
+    },
+    {
+      "id": "genesis-arctic-metal-field",
+      "map": "genesis-part-1",
+      "resources": [
+        "Metal"
+      ],
+      "name": "Arctic metal field",
+      "lat": 76.2,
+      "lon": 27.6,
+      "videoID": "-A6rpnfcqtw",
+      "coordinateEvidence": "In-game map reads latitude 76.2, longitude 27.6 at 45s in the snow-biome chapter. Pin identifies the filmed region, not every individual resource actor.",
+      "sourcePlane": "Genesis Part 1: filmed Arctic biome; coordinates belong to the creator in-game map"
+    }
+  ],
+  "coverage": [
+    {
+      "map": "genesis-part-1",
+      "resource": "Black Pearls",
+      "existingDistinctLocations": 0,
+      "proposedAdditionalLocations": 0,
+      "requiredMinimum": 3,
+      "availability": "not enough ASA evidence to classify as unavailable"
+    },
+    {
+      "map": "genesis-part-1",
+      "resource": "Cementing Paste",
+      "existingDistinctLocations": 0,
+      "proposedAdditionalLocations": 0,
+      "requiredMinimum": 3,
+      "availability": "not enough ASA evidence to classify as unavailable"
+    },
+    {
+      "map": "genesis-part-1",
+      "resource": "Chitin",
+      "existingDistinctLocations": 0,
+      "proposedAdditionalLocations": 0,
+      "requiredMinimum": 3,
+      "availability": "not enough ASA evidence to classify as unavailable"
+    },
+    {
+      "map": "genesis-part-1",
+      "resource": "Crystal",
+      "existingDistinctLocations": 0,
+      "proposedAdditionalLocations": 0,
+      "requiredMinimum": 3,
+      "availability": "not enough ASA evidence to classify as unavailable"
+    },
+    {
+      "map": "genesis-part-1",
+      "resource": "Giant Bee Honey",
+      "existingDistinctLocations": 0,
+      "proposedAdditionalLocations": 0,
+      "requiredMinimum": 3,
+      "availability": "not enough ASA evidence to classify as unavailable"
+    },
+    {
+      "map": "genesis-part-1",
+      "resource": "Metal",
+      "existingDistinctLocations": 1,
+      "proposedAdditionalLocations": 0,
+      "requiredMinimum": 3,
+      "availability": "not enough ASA evidence to classify as unavailable"
+    },
+    {
+      "map": "genesis-part-1",
+      "resource": "Obsidian",
+      "existingDistinctLocations": 0,
+      "proposedAdditionalLocations": 0,
+      "requiredMinimum": 3,
+      "availability": "not enough ASA evidence to classify as unavailable"
+    },
+    {
+      "map": "genesis-part-1",
+      "resource": "Oil",
+      "existingDistinctLocations": 0,
+      "proposedAdditionalLocations": 0,
+      "requiredMinimum": 3,
+      "availability": "not enough ASA evidence to classify as unavailable"
+    },
+    {
+      "map": "genesis-part-1",
+      "resource": "Organic Polymer",
+      "existingDistinctLocations": 0,
+      "proposedAdditionalLocations": 0,
+      "requiredMinimum": 3,
+      "availability": "not enough ASA evidence to classify as unavailable"
+    },
+    {
+      "map": "genesis-part-1",
+      "resource": "Rare Flowers",
+      "existingDistinctLocations": 0,
+      "proposedAdditionalLocations": 0,
+      "requiredMinimum": 3,
+      "availability": "not enough ASA evidence to classify as unavailable"
+    },
+    {
+      "map": "genesis-part-1",
+      "resource": "Rare Mushrooms",
+      "existingDistinctLocations": 0,
+      "proposedAdditionalLocations": 0,
+      "requiredMinimum": 3,
+      "availability": "not enough ASA evidence to classify as unavailable"
+    },
+    {
+      "map": "genesis-part-1",
+      "resource": "Rich Metal",
+      "existingDistinctLocations": 0,
+      "proposedAdditionalLocations": 0,
+      "requiredMinimum": 3,
+      "availability": "not enough ASA evidence to classify as unavailable"
+    },
+    {
+      "map": "genesis-part-1",
+      "resource": "Sap",
+      "existingDistinctLocations": 0,
+      "proposedAdditionalLocations": 0,
+      "requiredMinimum": 3,
+      "availability": "not enough ASA evidence to classify as unavailable"
+    },
+    {
+      "map": "genesis-part-1",
+      "resource": "Silica Pearls",
+      "existingDistinctLocations": 0,
+      "proposedAdditionalLocations": 0,
+      "requiredMinimum": 3,
+      "availability": "not enough ASA evidence to classify as unavailable"
+    },
+    {
+      "map": "genesis-part-1-ocean",
+      "resource": "Black Pearls",
+      "existingDistinctLocations": 0,
+      "proposedAdditionalLocations": 0,
+      "requiredMinimum": 3,
+      "availability": "not enough ASA evidence to classify as unavailable"
+    },
+    {
+      "map": "genesis-part-1-ocean",
+      "resource": "Cementing Paste",
+      "existingDistinctLocations": 0,
+      "proposedAdditionalLocations": 0,
+      "requiredMinimum": 3,
+      "availability": "not enough ASA evidence to classify as unavailable"
+    },
+    {
+      "map": "genesis-part-1-ocean",
+      "resource": "Chitin",
+      "existingDistinctLocations": 0,
+      "proposedAdditionalLocations": 0,
+      "requiredMinimum": 3,
+      "availability": "not enough ASA evidence to classify as unavailable"
+    },
+    {
+      "map": "genesis-part-1-ocean",
+      "resource": "Crystal",
+      "existingDistinctLocations": 1,
+      "proposedAdditionalLocations": 0,
+      "requiredMinimum": 3,
+      "availability": "not enough ASA evidence to classify as unavailable"
+    },
+    {
+      "map": "genesis-part-1-ocean",
+      "resource": "Giant Bee Honey",
+      "existingDistinctLocations": 0,
+      "proposedAdditionalLocations": 0,
+      "requiredMinimum": 3,
+      "availability": "not enough ASA evidence to classify as unavailable"
+    },
+    {
+      "map": "genesis-part-1-ocean",
+      "resource": "Metal",
+      "existingDistinctLocations": 1,
+      "proposedAdditionalLocations": 0,
+      "requiredMinimum": 3,
+      "availability": "not enough ASA evidence to classify as unavailable"
+    },
+    {
+      "map": "genesis-part-1-ocean",
+      "resource": "Obsidian",
+      "existingDistinctLocations": 0,
+      "proposedAdditionalLocations": 0,
+      "requiredMinimum": 3,
+      "availability": "not enough ASA evidence to classify as unavailable"
+    },
+    {
+      "map": "genesis-part-1-ocean",
+      "resource": "Oil",
+      "existingDistinctLocations": 0,
+      "proposedAdditionalLocations": 0,
+      "requiredMinimum": 3,
+      "availability": "not enough ASA evidence to classify as unavailable"
+    },
+    {
+      "map": "genesis-part-1-ocean",
+      "resource": "Organic Polymer",
+      "existingDistinctLocations": 0,
+      "proposedAdditionalLocations": 0,
+      "requiredMinimum": 3,
+      "availability": "not enough ASA evidence to classify as unavailable"
+    },
+    {
+      "map": "genesis-part-1-ocean",
+      "resource": "Rare Flowers",
+      "existingDistinctLocations": 0,
+      "proposedAdditionalLocations": 0,
+      "requiredMinimum": 3,
+      "availability": "not enough ASA evidence to classify as unavailable"
+    },
+    {
+      "map": "genesis-part-1-ocean",
+      "resource": "Rare Mushrooms",
+      "existingDistinctLocations": 0,
+      "proposedAdditionalLocations": 0,
+      "requiredMinimum": 3,
+      "availability": "not enough ASA evidence to classify as unavailable"
+    },
+    {
+      "map": "genesis-part-1-ocean",
+      "resource": "Rich Metal",
+      "existingDistinctLocations": 0,
+      "proposedAdditionalLocations": 0,
+      "requiredMinimum": 3,
+      "availability": "not enough ASA evidence to classify as unavailable"
+    },
+    {
+      "map": "genesis-part-1-ocean",
+      "resource": "Sap",
+      "existingDistinctLocations": 0,
+      "proposedAdditionalLocations": 0,
+      "requiredMinimum": 3,
+      "availability": "not enough ASA evidence to classify as unavailable"
+    },
+    {
+      "map": "genesis-part-1-ocean",
+      "resource": "Silica Pearls",
+      "existingDistinctLocations": 0,
+      "proposedAdditionalLocations": 0,
+      "requiredMinimum": 3,
+      "availability": "not enough ASA evidence to classify as unavailable"
+    },
+    {
+      "map": "astraeos",
+      "resource": "Black Pearls",
+      "existingDistinctLocations": 0,
+      "proposedAdditionalLocations": 0,
+      "requiredMinimum": 3,
+      "availability": "not enough ASA evidence to classify as unavailable"
+    },
+    {
+      "map": "astraeos",
+      "resource": "Cementing Paste",
+      "existingDistinctLocations": 0,
+      "proposedAdditionalLocations": 0,
+      "requiredMinimum": 3,
+      "availability": "not enough ASA evidence to classify as unavailable"
+    },
+    {
+      "map": "astraeos",
+      "resource": "Chitin",
+      "existingDistinctLocations": 0,
+      "proposedAdditionalLocations": 0,
+      "requiredMinimum": 3,
+      "availability": "not enough ASA evidence to classify as unavailable"
+    },
+    {
+      "map": "astraeos",
+      "resource": "Crystal",
+      "existingDistinctLocations": 1,
+      "proposedAdditionalLocations": 2,
+      "requiredMinimum": 3,
+      "availability": "not enough ASA evidence to classify as unavailable"
+    },
+    {
+      "map": "astraeos",
+      "resource": "Giant Bee Honey",
+      "existingDistinctLocations": 0,
+      "proposedAdditionalLocations": 0,
+      "requiredMinimum": 3,
+      "availability": "not enough ASA evidence to classify as unavailable"
+    },
+    {
+      "map": "astraeos",
+      "resource": "Metal",
+      "existingDistinctLocations": 0,
+      "proposedAdditionalLocations": 0,
+      "requiredMinimum": 3,
+      "availability": "not enough ASA evidence to classify as unavailable"
+    },
+    {
+      "map": "astraeos",
+      "resource": "Obsidian",
+      "existingDistinctLocations": 0,
+      "proposedAdditionalLocations": 0,
+      "requiredMinimum": 3,
+      "availability": "not enough ASA evidence to classify as unavailable"
+    },
+    {
+      "map": "astraeos",
+      "resource": "Oil",
+      "existingDistinctLocations": 0,
+      "proposedAdditionalLocations": 0,
+      "requiredMinimum": 3,
+      "availability": "not enough ASA evidence to classify as unavailable"
+    },
+    {
+      "map": "astraeos",
+      "resource": "Organic Polymer",
+      "existingDistinctLocations": 0,
+      "proposedAdditionalLocations": 0,
+      "requiredMinimum": 3,
+      "availability": "not enough ASA evidence to classify as unavailable"
+    },
+    {
+      "map": "astraeos",
+      "resource": "Rare Flowers",
+      "existingDistinctLocations": 0,
+      "proposedAdditionalLocations": 0,
+      "requiredMinimum": 3,
+      "availability": "not enough ASA evidence to classify as unavailable"
+    },
+    {
+      "map": "astraeos",
+      "resource": "Rare Mushrooms",
+      "existingDistinctLocations": 0,
+      "proposedAdditionalLocations": 0,
+      "requiredMinimum": 3,
+      "availability": "not enough ASA evidence to classify as unavailable"
+    },
+    {
+      "map": "astraeos",
+      "resource": "Rich Metal",
+      "existingDistinctLocations": 0,
+      "proposedAdditionalLocations": 0,
+      "requiredMinimum": 3,
+      "availability": "not enough ASA evidence to classify as unavailable"
+    },
+    {
+      "map": "astraeos",
+      "resource": "Sap",
+      "existingDistinctLocations": 0,
+      "proposedAdditionalLocations": 0,
+      "requiredMinimum": 3,
+      "availability": "not enough ASA evidence to classify as unavailable"
+    },
+    {
+      "map": "astraeos",
+      "resource": "Silica Pearls",
+      "existingDistinctLocations": 0,
+      "proposedAdditionalLocations": 0,
+      "requiredMinimum": 3,
+      "availability": "not enough ASA evidence to classify as unavailable"
+    }
+  ]
+}

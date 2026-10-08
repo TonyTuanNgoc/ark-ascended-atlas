@@ -2077,6 +2077,425 @@
       "photoSHA256": "95e838b748e45c4aa43dda6891a34d420de72f9669d02373d3be9a2136447beb",
       "photoSourceSeconds": 321,
       "photoMapOverlayVisible": false
+    },
+    {
+      "id": "island-north-central-pearls",
+      "map": "the-island",
+      "name": "North central snow pond",
+      "lat": 27.5,
+      "lon": 29.9,
+      "resources": [
+        "Silica Pearls"
+      ],
+      "imageAsset": "FarmPhoto-island-north-central-pearls",
+      "videoID": "0JqFIlmuq9o",
+      "seconds": 51,
+      "direction": "Match the source-filmed terrain at this waypoint.",
+      "method": "Harvest the resource visible in the source region.",
+      "kit": [],
+      "risks": [],
+      "verified": true,
+      "sourceURL": "https://www.youtube.com/watch?v=0JqFIlmuq9o",
+      "photoSHA256": "1fbfc907d5bcbf211216cf8fba960af524e08ce6952a3bcfdf3385bfaa98e043",
+      "coordinateEvidence": "Creator coordinate overlay in North Central Pond segment",
+      "inventoryEvidence": "Source explicitly labels this Silica Pearl farming region and shows pearl bed underwater in selected segment.",
+      "sourcePlane": "the-island filmed region",
+      "sourceCoordinateScope": "Creator-labelled farming region",
+      "photoSourceSeconds": 51,
+      "photoMapOverlayVisible": false
+    },
+    {
+      "id": "island-north-coast-pearls",
+      "map": "the-island",
+      "name": "North coast pearl beach",
+      "lat": 9.1,
+      "lon": 30.7,
+      "resources": [
+        "Silica Pearls"
+      ],
+      "imageAsset": "FarmPhoto-island-north-coast-pearls",
+      "videoID": "0JqFIlmuq9o",
+      "seconds": 92,
+      "direction": "Match the source-filmed terrain at this waypoint.",
+      "method": "Harvest the resource visible in the source region.",
+      "kit": [],
+      "risks": [],
+      "verified": true,
+      "sourceURL": "https://www.youtube.com/watch?v=0JqFIlmuq9o",
+      "photoSHA256": "630ba710479721623af5a438066c8b53eb43b496cb2a9296df90a1f168821de8",
+      "coordinateEvidence": "Creator coordinate overlay in North Coast Beach segment",
+      "inventoryEvidence": "Source explicitly labels this Silica Pearl farming region and shows pearl bed underwater in selected segment.",
+      "sourcePlane": "the-island filmed region",
+      "sourceCoordinateScope": "Creator-labelled farming region",
+      "photoSourceSeconds": 92,
+      "photoMapOverlayVisible": false
+    },
+    {
+      "id": "island-north-peninsula-pearls",
+      "map": "the-island",
+      "name": "North coast peninsula",
+      "lat": 9.4,
+      "lon": 39.7,
+      "resources": [
+        "Silica Pearls"
+      ],
+      "imageAsset": "FarmPhoto-island-north-peninsula-pearls",
+      "videoID": "0JqFIlmuq9o",
+      "seconds": 122,
+      "direction": "Match the source-filmed terrain at this waypoint.",
+      "method": "Harvest the resource visible in the source region.",
+      "kit": [],
+      "risks": [],
+      "verified": true,
+      "sourceURL": "https://www.youtube.com/watch?v=0JqFIlmuq9o",
+      "photoSHA256": "f14ce40366044e30cb8f60b8d9d3d3d5a1abb3535d07d91dee30be4a166352a9",
+      "coordinateEvidence": "Creator coordinate overlay in North Coast Peninsula segment",
+      "inventoryEvidence": "Source explicitly labels this Silica Pearl farming region and shows pearl bed underwater in selected segment.",
+      "sourcePlane": "the-island filmed region",
+      "sourceCoordinateScope": "Creator-labelled farming region",
+      "photoSourceSeconds": 122,
+      "photoMapOverlayVisible": false
+    },
+    {
+      "id": "island-west-lake-flowers",
+      "map": "the-island",
+      "name": "Western lake Rare Flowers",
+      "lat": 79.8,
+      "lon": 17.1,
+      "resources": [
+        "Rare Flowers"
+      ],
+      "imageAsset": "FarmPhoto-island-west-lake-flowers",
+      "videoID": "6d_iRk7tFBk",
+      "seconds": 52,
+      "direction": "Match the source-filmed terrain at this waypoint.",
+      "method": "Harvest the resource visible in the source region.",
+      "kit": [],
+      "risks": [],
+      "verified": true,
+      "sourceURL": "https://www.youtube.com/watch?v=6d_iRk7tFBk",
+      "photoSHA256": "76678aadd6c70d067b4feefccaff5660abbcb6afced2910bf175b418cd5ebb68",
+      "coordinateEvidence": "In-game map GPS visible at 90s",
+      "inventoryEvidence": "Rare flower plants visibly clustered 52–60s; collection and Rare Flowers inventory shown later around75–85s.",
+      "sourcePlane": "the-island filmed region",
+      "sourceCoordinateScope": "In-game camera GPS at route viewpoint, not exact individual plant coordinates",
+      "photoSourceSeconds": 52,
+      "photoMapOverlayVisible": false
+    },
+    {
+      "id": "island-east-canyon-flowers",
+      "map": "the-island",
+      "name": "Eastern canyon flower route",
+      "lat": 44.1,
+      "lon": 76.3,
+      "resources": [
+        "Rare Flowers"
+      ],
+      "imageAsset": "FarmPhoto-island-east-canyon-flowers",
+      "videoID": "6d_iRk7tFBk",
+      "seconds": 111,
+      "direction": "Match the source-filmed terrain at this waypoint.",
+      "method": "Harvest the resource visible in the source region.",
+      "kit": [],
+      "risks": [],
+      "verified": true,
+      "sourceURL": "https://www.youtube.com/watch?v=6d_iRk7tFBk",
+      "photoSHA256": "0e869841ad2f2663830bd7e19743b329fdeac186fdafbf5ffd524d55a8c11f0b",
+      "coordinateEvidence": "In-game map GPS visible at 107s; camera overlooks river route followed to flower plants",
+      "inventoryEvidence": "Source 120–128s shows rare-flower plants on the river bank approached in preview; resource and GPS context from same source segment.",
+      "sourcePlane": "the-island filmed region",
+      "sourceCoordinateScope": "In-game camera GPS at route viewpoint, not exact individual plant coordinates",
+      "photoSourceSeconds": 111,
+      "photoMapOverlayVisible": false
+    },
+    {
+      "id": "island-east-swamp-flowers",
+      "map": "the-island",
+      "name": "Eastern swamp flower route",
+      "lat": 54.8,
+      "lon": 85.1,
+      "resources": [
+        "Rare Flowers"
+      ],
+      "imageAsset": "FarmPhoto-island-east-swamp-flowers",
+      "videoID": "6d_iRk7tFBk",
+      "seconds": 157,
+      "direction": "Match the source-filmed terrain at this waypoint.",
+      "method": "Harvest the resource visible in the source region.",
+      "kit": [],
+      "risks": [],
+      "verified": true,
+      "sourceURL": "https://www.youtube.com/watch?v=6d_iRk7tFBk",
+      "photoSHA256": "c874bdfeda6f51473ca38e265e121a3a06e7b12c2739304b0885fea0849538f3",
+      "coordinateEvidence": "In-game map GPS visible at 150s; camera overlooks swamp route followed in clip",
+      "inventoryEvidence": "ASA Rare Flowers guide shows swamp vegetation harvesting in this region; preview shows approach and Therizinosaurus harvesting, not measured yield.",
+      "sourcePlane": "the-island filmed region",
+      "sourceCoordinateScope": "In-game camera GPS at route viewpoint, not exact individual plant coordinates",
+      "photoSourceSeconds": 157,
+      "photoMapOverlayVisible": false
+    },
+    {
+      "id": "rag-northwest-blue-black",
+      "map": "ragnarok",
+      "name": "Northwestern blue cavern",
+      "lat": 8.2,
+      "lon": 14.5,
+      "resources": [
+        "Black Pearls"
+      ],
+      "imageAsset": "FarmPhoto-rag-northwest-blue-black",
+      "videoID": "0i0-XEV85m8",
+      "seconds": 157.5,
+      "direction": "Match the source-filmed terrain at this waypoint.",
+      "method": "Harvest the resource visible in the source region.",
+      "kit": [],
+      "risks": [],
+      "verified": true,
+      "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8",
+      "photoSHA256": "7e11caa2d482028f9b3b67d603c40abeef0f7b99bfec44061c83db7c30209829",
+      "coordinateEvidence": "Creator coordinate caption over filmed location immediately before clean terrain segment",
+      "inventoryEvidence": "Source Black Pearls chapter shows the filmed cavern bed; creator labels coordinates 8.2/14.5 at152s. Resource attribution follows creator chapter, not measured collection yield.",
+      "sourcePlane": "ragnarok filmed region",
+      "sourceCoordinateScope": "Creator-labelled filmed farming region, not individual node GPS",
+      "photoSourceSeconds": 157.5,
+      "photoMapOverlayVisible": false
+    },
+    {
+      "id": "rag-ice-water-crystal",
+      "map": "ragnarok",
+      "name": "Ice-water crystal cavern",
+      "lat": 31.1,
+      "lon": 33.7,
+      "resources": [
+        "Crystal"
+      ],
+      "imageAsset": "FarmPhoto-rag-ice-water-crystal",
+      "videoID": "0i0-XEV85m8",
+      "seconds": 360,
+      "direction": "Match the source-filmed terrain at this waypoint.",
+      "method": "Harvest the resource visible in the source region.",
+      "kit": [],
+      "risks": [],
+      "verified": true,
+      "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8",
+      "photoSHA256": "13daafe8d844051307e4d57676098686b5028b02e02c751aac2ff07f0ad6036d",
+      "coordinateEvidence": "Creator coordinate caption over filmed location immediately before clean terrain segment",
+      "inventoryEvidence": "Creator resource chapter shows nodes or resource bed in this filmed region.",
+      "sourcePlane": "ragnarok filmed region",
+      "sourceCoordinateScope": "Creator-labelled filmed farming region, not individual node GPS",
+      "photoSourceSeconds": 360,
+      "photoMapOverlayVisible": false
+    },
+    {
+      "id": "rag-northeast-metal",
+      "map": "ragnarok",
+      "name": "Northeastern metal plateau",
+      "lat": 7.1,
+      "lon": 86.3,
+      "resources": [
+        "Metal"
+      ],
+      "imageAsset": "FarmPhoto-rag-northeast-metal",
+      "videoID": "0i0-XEV85m8",
+      "seconds": 455.75,
+      "direction": "Match the source-filmed terrain at this waypoint.",
+      "method": "Harvest the resource visible in the source region.",
+      "kit": [],
+      "risks": [],
+      "verified": true,
+      "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8",
+      "photoSHA256": "7883e410921577fe854f2d970c55bc6963e25fface90462c3bf7a530dab6c599",
+      "coordinateEvidence": "Creator coordinate caption over filmed location immediately before clean terrain segment",
+      "inventoryEvidence": "Creator resource chapter shows nodes or resource bed in this filmed region.",
+      "sourcePlane": "ragnarok filmed region",
+      "sourceCoordinateScope": "Creator-labelled filmed farming region, not individual node GPS",
+      "photoSourceSeconds": 455.75,
+      "photoMapOverlayVisible": false
+    },
+    {
+      "id": "rag-southeast-seafloor-oil",
+      "map": "ragnarok",
+      "name": "Southeastern seafloor oil bed",
+      "lat": 79,
+      "lon": 71.1,
+      "resources": [
+        "Oil"
+      ],
+      "imageAsset": "FarmPhoto-rag-southeast-seafloor-oil",
+      "videoID": "0i0-XEV85m8",
+      "seconds": 670,
+      "direction": "Match the source-filmed terrain at this waypoint.",
+      "method": "Harvest the resource visible in the source region.",
+      "kit": [],
+      "risks": [],
+      "verified": true,
+      "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8",
+      "photoSHA256": "50b8630bc5fa3a7050c750e12d9ca6b7666927e984d06153c5b1adeda06c3886",
+      "coordinateEvidence": "Creator coordinate caption over filmed location immediately before clean terrain segment",
+      "inventoryEvidence": "Creator resource chapter shows nodes or resource bed in this filmed region.",
+      "sourcePlane": "ragnarok filmed region",
+      "sourceCoordinateScope": "Creator-labelled filmed farming region, not individual node GPS",
+      "photoSourceSeconds": 670,
+      "photoMapOverlayVisible": false
+    },
+    {
+      "id": "rag-northeast-polymer",
+      "map": "ragnarok",
+      "name": "Northeastern water cave polymer",
+      "lat": 22.6,
+      "lon": 85.4,
+      "resources": [
+        "Organic Polymer"
+      ],
+      "imageAsset": "FarmPhoto-rag-northeast-polymer",
+      "videoID": "0i0-XEV85m8",
+      "seconds": 763,
+      "direction": "Match the source-filmed terrain at this waypoint.",
+      "method": "Harvest the resource visible in the source region.",
+      "kit": [],
+      "risks": [],
+      "verified": true,
+      "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8",
+      "photoSHA256": "4e91b224b079454e631a88c61d530b97315b5a31871724cd1d31123b5b452114",
+      "coordinateEvidence": "Creator coordinate caption over filmed location immediately before clean terrain segment",
+      "inventoryEvidence": "Pink polymer plants visible on the water cave bank, in the creator Organic Polymer chapter.",
+      "sourcePlane": "ragnarok filmed region",
+      "sourceCoordinateScope": "Creator-labelled filmed farming region, not individual node GPS",
+      "photoSourceSeconds": 763,
+      "photoMapOverlayVisible": false
+    },
+    {
+      "id": "rag-canyon-polymer",
+      "map": "ragnarok",
+      "name": "Canyon cave organic polymer",
+      "lat": 67.4,
+      "lon": 42.4,
+      "resources": [
+        "Organic Polymer"
+      ],
+      "imageAsset": "FarmPhoto-rag-canyon-polymer",
+      "videoID": "0i0-XEV85m8",
+      "seconds": 781,
+      "direction": "Match the source-filmed terrain at this waypoint.",
+      "method": "Harvest the resource visible in the source region.",
+      "kit": [],
+      "risks": [],
+      "verified": true,
+      "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8",
+      "photoSHA256": "a889f25460766e85f447ce8f0b31dd2af85f968fd21c2741916a656f777ac034",
+      "coordinateEvidence": "Creator coordinate caption over filmed location immediately before clean terrain segment",
+      "inventoryEvidence": "Pink harvestable polymer plants visibly clustered inside creator-labelled organic-polymer cave, shown throughout clean preview.",
+      "sourcePlane": "ragnarok filmed region",
+      "sourceCoordinateScope": "Creator-labelled filmed farming region, not individual node GPS",
+      "photoSourceSeconds": 781,
+      "photoMapOverlayVisible": false
+    },
+    {
+      "id": "rag-west-seafloor-silica",
+      "map": "ragnarok",
+      "name": "Western seafloor Silica Pearls",
+      "lat": 74.2,
+      "lon": 31.2,
+      "resources": [
+        "Silica Pearls"
+      ],
+      "imageAsset": "FarmPhoto-rag-west-seafloor-silica",
+      "videoID": "0i0-XEV85m8",
+      "seconds": 1043,
+      "direction": "Match the source-filmed terrain at this waypoint.",
+      "method": "Harvest the resource visible in the source region.",
+      "kit": [],
+      "risks": [],
+      "verified": true,
+      "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8",
+      "photoSHA256": "f310fc607516db3a561b8a32530eca526d844ef63d28f18857ceeb8bdb843270",
+      "coordinateEvidence": "Creator coordinate caption over filmed location immediately before clean terrain segment",
+      "inventoryEvidence": "Creator resource chapter shows nodes or resource bed in this filmed region.",
+      "sourcePlane": "ragnarok filmed region",
+      "sourceCoordinateScope": "Creator-labelled filmed farming region, not individual node GPS",
+      "photoSourceSeconds": 1043,
+      "photoMapOverlayVisible": false
+    },
+    {
+      "id": "scorched-southeast-metal-ridge",
+      "map": "scorched-earth",
+      "name": "Southeastern metal ridge",
+      "lat": 68.9,
+      "lon": 66.0,
+      "resources": [
+        "Metal"
+      ],
+      "imageAsset": "FarmPhoto-scorched-southeast-metal-ridge",
+      "videoID": "4GieC-G-9Nw",
+      "seconds": 48.5,
+      "direction": "Match the source-filmed terrain at this waypoint.",
+      "method": "Harvest the resource visible in the source region.",
+      "kit": [],
+      "risks": [],
+      "verified": true,
+      "sourceURL": "https://www.youtube.com/watch?v=4GieC-G-9Nw",
+      "photoSHA256": "585bfe502f30dc8ea78989b4d4c7570ecefe65fbef1e454a4cc2fbf0c1aa156f",
+      "coordinateEvidence": "In-game camera coordinate HUD E 68.90 66.01 visible at50.0s; framed metal1 waypoint11m away and surrounding metal nodes. Pin denotes camera/filmed region, not exact waypoint or each node.",
+      "inventoryEvidence": "Metallic ore nodes directly visible; creator waypoint metal1; no completed harvesting shown.",
+      "sourcePlane": "Scorched Earth ASA",
+      "sourceCoordinateScope": "Visible in-game camera HUD",
+      "photoSourceSeconds": 48.5,
+      "photoMapOverlayVisible": false
+    },
+    {
+      "id": "lost-colony-northwest-metal",
+      "map": "lost-colony",
+      "name": "Northwestern snowy metal mountain",
+      "lat": 3.0,
+      "lon": 5.8,
+      "resources": [
+        "Metal"
+      ],
+      "imageAsset": "FarmPhoto-lost-colony-northwest-metal",
+      "videoID": "WKNYEAeuSDA",
+      "seconds": 61.25,
+      "direction": "Use coordinates as the filmed region, then match the visible terrain and approach.",
+      "method": "Use an appropriate harvesting tool or tame for this resource; resource yield is not measured by this preview.",
+      "kit": [],
+      "risks": [
+        "Hostile creatures",
+        "Terrain hazards"
+      ],
+      "verified": true,
+      "sourceURL": "https://www.youtube.com/watch?v=WKNYEAeuSDA",
+      "photoSHA256": "4420251789c69fcf1a3ad0b2eb20732288ce6f08c523b5952c24283a1f3ae1fb",
+      "coordinateEvidence": "In-game camera coordinates visible at 69s in WKNYEAeuSDA-69.jpg; region/camera position, not every individual actor.",
+      "inventoryEvidence": "No completed harvest demonstrated. Visible resource/approach belongs to source resource segment.",
+      "sourcePlane": "lost-colony filmed region",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "photoSourceSeconds": 61.25,
+      "photoMapOverlayVisible": false
+    },
+    {
+      "id": "astraeos-coast-crystal-34-45",
+      "map": "astraeos",
+      "name": "Coastal terrace crystal cluster",
+      "lat": 34.5,
+      "lon": 45.6,
+      "resources": [
+        "Crystal"
+      ],
+      "imageAsset": "FarmPhoto-astraeos-coast-crystal-34-45",
+      "videoID": "k73mk3nz0wI",
+      "seconds": 28,
+      "direction": "Match the source-filmed terrain at this waypoint.",
+      "method": "Harvest the resource visible in the source region.",
+      "kit": [],
+      "risks": [],
+      "verified": true,
+      "sourceURL": "https://www.youtube.com/watch?v=k73mk3nz0wI",
+      "photoSHA256": "f6c734b364c386a521bd0f277a18a6054a8e8551bd1c834f9b37ebf81aa1b01d",
+      "coordinateEvidence": "Creator location label LAT 34.5, LONG 45.6 visible at 36s in adjoining same-location map shot.",
+      "inventoryEvidence": "Purple crystal formations visible throughout clip; harvesting not shown.",
+      "sourcePlane": "Astraeos February 2025 revision",
+      "sourceCoordinateScope": "Creator labelled filmed region; not raw GPS or each crystal node",
+      "photoSourceSeconds": 28,
+      "photoMapOverlayVisible": false
     }
   ],
   "coverage": [
@@ -2712,7 +3131,8 @@
       "resource": "Crystal",
       "status": "verified",
       "spotIDs": [
-        "astraeos-phokintos-crystal"
+        "astraeos-phokintos-crystal",
+        "astraeos-coast-crystal-34-45"
       ],
       "reason": "Source-video GPS region reviewed; open a region card for the actual filmed evidence.",
       "evidenceState": "filmed-region-verified",
@@ -4979,7 +5399,8 @@
       "resource": "Metal",
       "status": "verified",
       "spotIDs": [
-        "lost-colony-north-metal"
+        "lost-colony-north-metal",
+        "lost-colony-northwest-metal"
       ],
       "reason": "Source-video GPS region reviewed; open a region card for the actual filmed evidence.",
       "evidenceState": "filmed-region-verified",
@@ -5395,7 +5816,8 @@
       "resource": "Black Pearls",
       "status": "verified",
       "spotIDs": [
-        "rag-black-pearl-bed"
+        "rag-black-pearl-bed",
+        "rag-northwest-blue-black"
       ],
       "reason": "Source-video GPS region reviewed; open a region card for the actual filmed evidence.",
       "evidenceState": "filmed-region-verified",
@@ -5519,7 +5941,8 @@
       "status": "verified",
       "spotIDs": [
         "rag-crystal-highland",
-        "rag-blue-gem-cavern"
+        "rag-blue-gem-cavern",
+        "rag-ice-water-crystal"
       ],
       "reason": "Source-video GPS region reviewed; open a region card for the actual filmed evidence.",
       "evidenceState": "filmed-region-verified",
@@ -5658,7 +6081,8 @@
       "status": "verified",
       "spotIDs": [
         "rag-underwater-metal",
-        "rag-cave-metal-obsidian"
+        "rag-cave-metal-obsidian",
+        "rag-northeast-metal"
       ],
       "reason": "Source-video GPS region reviewed; open a region card for the actual filmed evidence.",
       "evidenceState": "filmed-region-verified",
@@ -5713,7 +6137,8 @@
       "status": "verified",
       "spotIDs": [
         "rag-oil-north-shore",
-        "rag-south-seabed-oil"
+        "rag-south-seabed-oil",
+        "rag-southeast-seafloor-oil"
       ],
       "reason": "Source-video GPS region reviewed; open a region card for the actual filmed evidence.",
       "evidenceState": "filmed-region-verified",
@@ -5728,7 +6153,9 @@
       "resource": "Organic Polymer",
       "status": "verified",
       "spotIDs": [
-        "rag-polymer-plants"
+        "rag-polymer-plants",
+        "rag-northeast-polymer",
+        "rag-canyon-polymer"
       ],
       "reason": "Source-video GPS region reviewed; open a region card for the actual filmed evidence.",
       "evidenceState": "filmed-region-verified",
@@ -5915,7 +6342,8 @@
       "status": "verified",
       "spotIDs": [
         "rag-dam-lakes",
-        "rag-pearls-cave"
+        "rag-pearls-cave",
+        "rag-west-seafloor-silica"
       ],
       "reason": "Source-video GPS region reviewed; open a region card for the actual filmed evidence.",
       "evidenceState": "filmed-region-verified",
@@ -6220,7 +6648,8 @@
       "status": "verified",
       "spotIDs": [
         "scorched-eastern-metal",
-        "scorched-central-metal"
+        "scorched-central-metal",
+        "scorched-southeast-metal-ridge"
       ],
       "reason": "Source-video GPS region reviewed; open a region card for the actual filmed evidence.",
       "evidenceState": "filmed-region-verified",
@@ -7425,7 +7854,10 @@
       "resource": "Rare Flowers",
       "status": "verified",
       "spotIDs": [
-        "island-east-dam-rares"
+        "island-east-dam-rares",
+        "island-west-lake-flowers",
+        "island-east-canyon-flowers",
+        "island-east-swamp-flowers"
       ],
       "reason": "Source-video GPS region reviewed; open a region card for the actual filmed evidence.",
       "evidenceState": "filmed-region-verified",
@@ -7508,7 +7940,10 @@
       "status": "verified",
       "spotIDs": [
         "island-surface-pearls",
-        "island-east-dam-rares"
+        "island-east-dam-rares",
+        "island-north-central-pearls",
+        "island-north-coast-pearls",
+        "island-north-peninsula-pearls"
       ],
       "reason": "Source-video GPS region reviewed; open a region card for the actual filmed evidence.",
       "evidenceState": "filmed-region-verified",
