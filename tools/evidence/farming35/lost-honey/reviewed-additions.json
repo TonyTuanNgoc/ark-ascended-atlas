@@ -1,0 +1,176 @@
+{
+  "candidates": [
+    {
+      "id": "lost-colony-cliff-arch-honey-231-199",
+      "map": "lost-colony",
+      "name": "Snowy cliff arch wild hive",
+      "resources": [
+        "Giant Bee Honey"
+      ],
+      "lat": 23.1,
+      "lon": 19.9,
+      "videoID": "1jxA9B4l3nw",
+      "startSeconds": 1393.303515,
+      "endSeconds": 1399.303515,
+      "coordinateEvidence": "Creator typed Coordinates: 23.1 - 19.9 on this filmed Honey region; spoken at source23:16 (arch) or23:21 (stacked). Full caption frame retained; no M-map cursor inference.",
+      "inventoryEvidence": "Explicit Where to Find Honey chapter plus visible wild hive under snowy cliff rock; creator identifies this exact hive region. No pickup or yield is claimed.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming35/lost-honey/arch/clip.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming35/lost-honey/arch/poster.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=1jxA9B4l3nw",
+      "sourceTimestampURL": "https://www.youtube.com/watch?v=1jxA9B4l3nw&t=1393s",
+      "sourcePlane": "Lost Colony ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-typed regional coordinates for the filmed wild hive; no exact actor/live GPS claim",
+      "mapOverlayVisible": false,
+      "creatorInsetVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "User-authorized licensed public Chrome playback captured in isolated native window; no denied download or authentication bypass",
+      "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/1jxA9B4l3nw-bounded-honey-2x.mp4",
+      "sourceSHA256": "c828559bd92c0a2da8461395abc9716286ec431621bd2da98305cb9372eea7aa",
+      "sourceCapture": {
+        "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/1jxA9B4l3nw-bounded-honey-2x.mp4",
+        "sourceSHA256": "c828559bd92c0a2da8461395abc9716286ec431621bd2da98305cb9372eea7aa",
+        "sourceDimensions": [
+          1184,
+          666
+        ],
+        "captureFirstFrameUTC": "2026-10-08T07:29:24.559Z",
+        "sourceAnchor": {
+          "sourceSeconds": 1319.191515,
+          "UTC": "2026-10-08T07:29:34.103Z"
+        },
+        "formula": "movieSeconds = 9.544 + (sourceSeconds - 1319.191515) / 2",
+        "captureDurationSeconds": 75.2846337,
+        "frames": 2196,
+        "parentAcquisitionProof": "Parent confirmed completed licensed isolated native Chrome window Honey capture; no child acquisition.",
+        "fullCaptureDecode": {
+          "completed": true,
+          "exitCode": 0,
+          "diagnostics": "[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 463 >= 463\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 465 >= 465\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 666 >= 666\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 668 >= 668\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 673 >= 673\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 685 >= 685\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 687 >= 687\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 798 >= 798\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 801 >= 801\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 803 >= 803\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 806 >= 806\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 812 >= 812\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1364 >= 1364\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1551 >= 1551\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1553 >= 1553\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1558 >= 1558\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1564 >= 1564\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1571 >= 1571\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1764 >= 1764\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1767 >= 1767\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1770 >= 1770\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1958 >= 1958\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1967 >= 1967\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1983 >= 1983\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1989 >= 1989\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1996 >= 1996\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2000 >= 2000\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2169 >= 2169\n"
+        },
+        "clipConversion": "Continuous capture cut restored to natural 1x with setpts=2; no loop or interpolation."
+      },
+      "clipSHA256": "4d3cc7c511db05f67b0b6a5da8ad563e5a6058e03255675417eebfda41b25a15",
+      "posterSHA256": "9ed83fcf51f9ecc8322ed738cf62272f6a082a9ccf24c9bdc9f377c8b8c7bca8",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming35/lost-honey/arch-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming35/lost-honey/proof-48.jpg",
+        "resourceFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming35/lost-honey/proof-49.6.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true,
+        "reviewed": true,
+        "result": "All 24 chronological 4fps samples and boundary frames reviewed. Continuous hive/terrain shot, no map, inventory, transition, creator heading/caption/logo or browser controls. Full decode exit0, no diagnostics."
+      },
+      "evidenceLimitations": "Creator caption and narration establish regional hive location. Nominal source times are derived from capture UTC/playback anchor; precision is bookkeeping, not measured GPS or exact media seek proof. Harvest yield not demonstrated. Wild hives are not counted as separate regions when stacked together.",
+      "visualReviewStatus": "verified",
+      "sourceCrop": {
+        "x": 0,
+        "y": 80,
+        "width": 1100,
+        "height": 500,
+        "sourceWidth": 1184,
+        "sourceHeight": 666,
+        "reason": "Exclude creator title, coordinate caption and bottom-right logo; preserve visible hive and surrounding terrain. Uncropped proof retained."
+      },
+      "captureCut": {
+        "sourceStartSeconds": 1393.303515,
+        "sourceDurationSeconds": 6,
+        "captureStartSeconds": 46.6,
+        "captureDurationSeconds": 3,
+        "encodedDurationSeconds": 6.0,
+        "naturalSpeedRestorationFactor": 2
+      },
+      "sourceTitle": "50 Tips & Tricks you NEED To Know For Lost Colony Ascended",
+      "sourceCreator": "BEYPlaysGames",
+      "harvestDemonstrated": false,
+      "deduplication": "Distinct from existing Lost Colony Honey51.6/69.8 and from the other accepted region; wider and close views of36/42.1 count once."
+    },
+    {
+      "id": "lost-colony-stacked-cliff-honey-36-421",
+      "map": "lost-colony",
+      "name": "Snowy cliff stacked wild hives",
+      "resources": [
+        "Giant Bee Honey"
+      ],
+      "lat": 36,
+      "lon": 42.1,
+      "videoID": "1jxA9B4l3nw",
+      "startSeconds": 1406.103515,
+      "endSeconds": 1414.103515,
+      "coordinateEvidence": "Creator typed Coordinates: 36 - 42.1 on this filmed Honey region; spoken at source23:16 (arch) or23:21 (stacked). Full caption frame retained; no M-map cursor inference.",
+      "inventoryEvidence": "Explicit Where to Find Honey chapter plus visible wild hive under snowy cliff rock; creator identifies this exact hive region. No pickup or yield is claimed.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming35/lost-honey/stacked/clip.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming35/lost-honey/stacked/poster.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=1jxA9B4l3nw",
+      "sourceTimestampURL": "https://www.youtube.com/watch?v=1jxA9B4l3nw&t=1406s",
+      "sourcePlane": "Lost Colony ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-typed regional coordinates for the filmed wild hive; no exact actor/live GPS claim",
+      "mapOverlayVisible": false,
+      "creatorInsetVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "User-authorized licensed public Chrome playback captured in isolated native window; no denied download or authentication bypass",
+      "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/1jxA9B4l3nw-bounded-honey-2x.mp4",
+      "sourceSHA256": "c828559bd92c0a2da8461395abc9716286ec431621bd2da98305cb9372eea7aa",
+      "sourceCapture": {
+        "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/1jxA9B4l3nw-bounded-honey-2x.mp4",
+        "sourceSHA256": "c828559bd92c0a2da8461395abc9716286ec431621bd2da98305cb9372eea7aa",
+        "sourceDimensions": [
+          1184,
+          666
+        ],
+        "captureFirstFrameUTC": "2026-10-08T07:29:24.559Z",
+        "sourceAnchor": {
+          "sourceSeconds": 1319.191515,
+          "UTC": "2026-10-08T07:29:34.103Z"
+        },
+        "formula": "movieSeconds = 9.544 + (sourceSeconds - 1319.191515) / 2",
+        "captureDurationSeconds": 75.2846337,
+        "frames": 2196,
+        "parentAcquisitionProof": "Parent confirmed completed licensed isolated native Chrome window Honey capture; no child acquisition.",
+        "fullCaptureDecode": {
+          "completed": true,
+          "exitCode": 0,
+          "diagnostics": "[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 463 >= 463\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 465 >= 465\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 666 >= 666\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 668 >= 668\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 673 >= 673\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 685 >= 685\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 687 >= 687\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 798 >= 798\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 801 >= 801\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 803 >= 803\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 806 >= 806\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 812 >= 812\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1364 >= 1364\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1551 >= 1551\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1553 >= 1553\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1558 >= 1558\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1564 >= 1564\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1571 >= 1571\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1764 >= 1764\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1767 >= 1767\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1770 >= 1770\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1958 >= 1958\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1967 >= 1967\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1983 >= 1983\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1989 >= 1989\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1996 >= 1996\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2000 >= 2000\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2169 >= 2169\n"
+        },
+        "clipConversion": "Continuous capture cut restored to natural 1x with setpts=2; no loop or interpolation."
+      },
+      "clipSHA256": "07eb9978fa78123675b05d51f387b68d0c9f55192e67b37e0a0cfe8cd161cd6b",
+      "posterSHA256": "1caa505fce9a7da9779594a607cb1e8509f43dbaba64a7c3eb532c01bd92ff2e",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming35/lost-honey/stacked-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming35/lost-honey/proof-50.5.jpg",
+        "resourceFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming35/lost-honey/proof-55.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true,
+        "reviewed": true,
+        "result": "All 32 chronological 4fps samples and boundary frames reviewed. Continuous hive/terrain shot, no map, inventory, transition, creator heading/caption/logo or browser controls. Full decode exit0, no diagnostics."
+      },
+      "evidenceLimitations": "Creator caption and narration establish regional hive location. Nominal source times are derived from capture UTC/playback anchor; precision is bookkeeping, not measured GPS or exact media seek proof. Harvest yield not demonstrated. Wild hives are not counted as separate regions when stacked together.",
+      "visualReviewStatus": "verified",
+      "sourceCrop": {
+        "x": 0,
+        "y": 80,
+        "width": 1100,
+        "height": 500,
+        "sourceWidth": 1184,
+        "sourceHeight": 666,
+        "reason": "Exclude creator title, coordinate caption and bottom-right logo; preserve visible hive and surrounding terrain. Uncropped proof retained."
+      },
+      "captureCut": {
+        "sourceStartSeconds": 1406.103515,
+        "sourceDurationSeconds": 8,
+        "captureStartSeconds": 53,
+        "captureDurationSeconds": 4,
+        "encodedDurationSeconds": 8.0,
+        "naturalSpeedRestorationFactor": 2
+      },
+      "sourceTitle": "50 Tips & Tricks you NEED To Know For Lost Colony Ascended",
+      "sourceCreator": "BEYPlaysGames",
+      "harvestDemonstrated": false,
+      "deduplication": "Distinct from existing Lost Colony Honey51.6/69.8 and from the other accepted region; wider and close views of36/42.1 count once."
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "candidates": [
+    {
+      "id": "lost-colony-south-city-gargoyles-561-611",
+      "map": "lost-colony",
+      "name": "Southern city bridge gargoyle statues",
+      "resources": [
+        "Crystal",
+        "Obsidian",
+        "Metal"
+      ],
+      "lat": 56.1,
+      "lon": 61.1,
+      "videoID": "1jxA9B4l3nw",
+      "startSeconds": 984.809496,
+      "endSeconds": 990.809496,
+      "coordinateEvidence": "Creator explicitly names around56.1 latitude,61.1 longitude at16:03\u201316:05; source map corroborates green player position/readout. Primary authority is approximate creator-spoken regional location, not cursor or measured GPS.",
+      "inventoryEvidence": "Same region filmed first harvesting gargoyle statue with pickaxe. Actual white Crystal clusters, dark Obsidian lump and Raw Metal chunk pickups visible on left at capture45.25s; Harvest500RawMetal progress corroborates Metal. Narration16:17\u201316:23 also identifies Obsidian,Crystal,Metal. Gems are excluded from curated14.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming35/lost-botanicals/gargoyle-city-reviewed/clip.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming35/lost-botanicals/gargoyle-city-reviewed/poster.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=1jxA9B4l3nw",
+      "sourceTimestampURL": "https://www.youtube.com/watch?v=1jxA9B4l3nw&t=984s",
+      "sourcePlane": "Lost Colony ASA coordinate plane",
+      "sourceCoordinateScope": "Approximate creator-spoken regional coordinate reference for gargoyle harvest site; not exact node/playerGPS",
+      "mapOverlayVisible": false,
+      "creatorInsetVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "Parent-operated licensed normal public Chrome playback, isolated native window capture",
+      "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/1jxA9B4l3nw-bounded-botanicals-2x-v3.mp4",
+      "sourceSHA256": "6c2093eba6b313afbf6463e97b1c652c9bc78416e6dfead0316db2bfe2ad51a4",
+      "sourceCapture": {
+        "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/1jxA9B4l3nw-bounded-botanicals-2x-v3.mp4",
+        "sourceSHA256": "6c2093eba6b313afbf6463e97b1c652c9bc78416e6dfead0316db2bfe2ad51a4",
+        "sourceDimensions": [
+          1184,
+          666
+        ],
+        "captureFirstFrameUTC": "2026-10-08T07:18:06.668Z",
+        "sourceAnchor": {
+          "sourceSeconds": 910.375496,
+          "UTC": "2026-10-08T07:18:18.051Z",
+          "rate": 2
+        },
+        "formula": "movieSeconds = 11.383 + (sourceSeconds - 910.375496) / 2",
+        "captureDurationSeconds": 140.29,
+        "captureBytes": 210493510,
+        "captureSampleSpanSeconds": 140.258853,
+        "frames": 4088,
+        "checkpoint": {
+          "sourceSeconds": 1184.487928,
+          "UTC": "2026-10-08T07:20:35.179Z",
+          "playbackClockDriftSeconds": -0.144,
+          "limitation": "Small drift means source timestamp is nominal; cuts visually checked with transition margins."
+        },
+        "parentAcquisitionProof": "Parent confirmed licensed normally visible public ASA Lost Colony playback, exact native URL/title, completed serial bounded selected-Chrome-window V3 capture; no agent acquisition.",
+        "fullCaptureDecode": {
+          "completed": true,
+          "exitCode": 0,
+          "diagnostics": "none; passthrough frame timing/demux time base"
+        },
+        "clipConversion": "Actual continuous4s capture cut restored to natural1x with setpts2; no loop/interpolation."
+      },
+      "clipSHA256": "c7ca4f19fa0adbb1d42dc1b44a2b7e6117edad7d47a2fe6031867a7072862b3c",
+      "posterSHA256": "67b70334d83ec627250c298596a4903184c412de4756859c1f5a15871bccaa3a",
+      "visualReview": {
+        "contactSheet": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming35/lost-botanicals/gargoyle-city-reviewed/contact.jpg",
+        "groundTruthContactSheets": [
+          "/Volumes/TONY SSD/ASCENDED_MEDIA/farming35/lost-botanicals/gargoyle-groundtruth-42-49.jpg",
+          "/Volumes/TONY SSD/ASCENDED_MEDIA/farming35/lost-botanicals/gargoyle-groundtruth-49-55.jpg"
+        ],
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming35/lost-botanicals/gargoyle-map-corroboration.jpg",
+        "resourceFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming35/lost-botanicals/gargoyle-pickups.jpg",
+        "pickupDetail": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming35/lost-botanicals/gargoyle-pickup-detail.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true,
+        "reviewed": true,
+        "result": "All24 delivery samples and uncropped chronological4fps samples checked. Same arch, statue, floor, snow piles and nearby bodies stay spatially consistent during walk/turn. Ordinary first-to-third camera mode change occurs near start; no location jump, map/inventory or editorial dissolve in selected interval. Small companion/creature labels and pickup icons remain, unobstructive. Later source jump to mounted aerial view around51.7\u201351.75s capture excluded. Full decode0/empty diagnostics."
+      },
+      "visualReviewStatus": "verified",
+      "evidenceLimitations": "Approximate creator region only. Statue/gargoyle harvest, not wild mineral node and no permanence/renewability/yield asserted. Ordinary camera mode/creature labels allowed under clarified parent criteria. No obstruction from map/inventory. Nominal source timeline drift0.144s disclosed.",
+      "sourceCrop": {
+        "x": 0,
+        "y": 90,
+        "width": 1100,
+        "height": 500,
+        "sourceWidth": 1184,
+        "sourceHeight": 666,
+        "reason": "Broad view retains statue, bodies, architecture and region approach; remove source heading, hotbar, right healthbar and logo. Small ordinary in-game labels remain."
+      },
+      "captureCut": {
+        "sourceStartSeconds": 984.809496,
+        "sourceDurationSeconds": 6,
+        "captureStartSeconds": 48.6,
+        "captureDurationSeconds": 3,
+        "encodedDurationSeconds": 6.0,
+        "naturalSpeedRestorationFactor": 2
+      },
+      "sourceTitle": "50 Tips & Tricks you NEED To Know For Lost Colony Ascended",
+      "sourceCreator": "BEYPlaysGames",
+      "deduplication": "Existing Lost Colony north-city lamp Crystal28/60.8 and east snow Obsidian54/71.3/north Metal pins are different regions and sources. One new regional spot contributes three actually harvested resources; no multiple-angle pin count.",
+      "harvestDemonstrated": true
+    }
+  ],
+  "supersedesHeldEntry": "City gargoyles56.1/61.1 in reviewed-additions.json; parent clarified ordinary camera mode/labels are acceptable, map/inventory or editorial shot transitions are not.",
+  "reviewCorrection": "Earlier hold was too strict about ordinary labels and camera mode. Rechecked uncropped4fps ground truth. Broader crop used to preserve region context.",
+  "held": []
+}

@@ -4523,6 +4523,425 @@
       "sourceCoordinateScope": "Creator-labelled farming region",
       "photoSourceSeconds": 425,
       "photoMapOverlayVisible": false
+    },
+    {
+      "id": "valguero-nw-snow-crystal-243-12",
+      "map": "valguero",
+      "name": "Northwestern snow cliff crystals",
+      "lat": 24.3,
+      "lon": 12,
+      "resources": [
+        "Crystal"
+      ],
+      "imageAsset": "FarmPhoto-valguero-nw-snow-crystal-243-12",
+      "videoID": "bbPcUcWjWZ8",
+      "seconds": 2016.1637130000001,
+      "direction": "Match the source-filmed terrain at this waypoint.",
+      "method": "Harvest the resource visible in the source region.",
+      "kit": [],
+      "risks": [],
+      "verified": true,
+      "sourceURL": "https://www.youtube.com/watch?v=bbPcUcWjWZ8",
+      "photoSHA256": "f40881c6fa173c283bd061981a5c17ee21230c29294552866caf1b802d0456e9",
+      "coordinateEvidence": "Explicit creator-typed Coords: 24.3 - 12 on the same filmed region at source 2017.164s. This is a creator regional caption, not a GPS device or cursor-dependent map readout.",
+      "inventoryEvidence": "Visible blue crystal clusters on the filmed cliff; creator Crystal Locations chapter and exact regional coordinate caption.",
+      "sourcePlane": "Valguero ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-typed regional coordinates for the filmed farming location; no claim of exact actor or live player GPS",
+      "photoSourceSeconds": 2016.1637130000001,
+      "photoMapOverlayVisible": false
+    },
+    {
+      "id": "valguero-south-red-cliff-crystal-842-396",
+      "map": "valguero",
+      "name": "Southern red cliff crystals",
+      "lat": 84.2,
+      "lon": 39.6,
+      "resources": [
+        "Crystal"
+      ],
+      "imageAsset": "FarmPhoto-valguero-south-red-cliff-crystal-842-396",
+      "videoID": "bbPcUcWjWZ8",
+      "seconds": 2036.363713,
+      "direction": "Match the source-filmed terrain at this waypoint.",
+      "method": "Harvest the resource visible in the source region.",
+      "kit": [],
+      "risks": [],
+      "verified": true,
+      "sourceURL": "https://www.youtube.com/watch?v=bbPcUcWjWZ8",
+      "photoSHA256": "7a0b45be3993f15204e9c20d8d49d95fc69576768cd9fd1254e2c7cd929f993e",
+      "coordinateEvidence": "Explicit creator-typed Coords: 84.2 - 39.6 on the same filmed region at source 2037.364s. This is a creator regional caption, not a GPS device or cursor-dependent map readout.",
+      "inventoryEvidence": "Visible blue crystal clusters on the filmed cliff; creator Crystal Locations chapter and exact regional coordinate caption.",
+      "sourcePlane": "Valguero ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-typed regional coordinates for the filmed farming location; no claim of exact actor or live player GPS",
+      "photoSourceSeconds": 2036.363713,
+      "photoMapOverlayVisible": false
+    },
+    {
+      "id": "valguero-ne-ice-pearls-181-885",
+      "map": "valguero",
+      "name": "Northeastern ice lake pearl bed",
+      "lat": 18.1,
+      "lon": 88.5,
+      "resources": [
+        "Silica Pearls"
+      ],
+      "imageAsset": "FarmPhoto-valguero-ne-ice-pearls-181-885",
+      "videoID": "bbPcUcWjWZ8",
+      "seconds": 2086.863713,
+      "direction": "Match the source-filmed terrain at this waypoint.",
+      "method": "Harvest the resource visible in the source region.",
+      "kit": [],
+      "risks": [],
+      "verified": true,
+      "sourceURL": "https://www.youtube.com/watch?v=bbPcUcWjWZ8",
+      "photoSHA256": "c788424c8ee07c53978d4faab11ddf0c4264a2816cf756bb3878da30364f657e",
+      "coordinateEvidence": "Explicit creator-typed Coords: 18.1 - 88.5 on the same filmed region at source 2087.864s. This is a creator regional caption, not a GPS device or cursor-dependent map readout.",
+      "inventoryEvidence": "Visible luminous pearl clusters scattered across underwater lake floor; creator Silica Pearl Locations chapter and exact regional coordinate caption.",
+      "sourcePlane": "Valguero ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-typed regional coordinates for the filmed farming location; no claim of exact actor or live player GPS",
+      "photoSourceSeconds": 2086.863713,
+      "photoMapOverlayVisible": false
+    },
+    {
+      "id": "valguero-nw-ice-pearls-301-178",
+      "map": "valguero",
+      "name": "Northwestern ice lake pearl bed",
+      "lat": 30.1,
+      "lon": 17.8,
+      "resources": [
+        "Silica Pearls"
+      ],
+      "imageAsset": "FarmPhoto-valguero-nw-ice-pearls-301-178",
+      "videoID": "bbPcUcWjWZ8",
+      "seconds": 2100.463713,
+      "direction": "Match the source-filmed terrain at this waypoint.",
+      "method": "Harvest the resource visible in the source region.",
+      "kit": [],
+      "risks": [],
+      "verified": true,
+      "sourceURL": "https://www.youtube.com/watch?v=bbPcUcWjWZ8",
+      "photoSHA256": "eb9f56e5d992562685cfff1b72a706d8775573876811aa6889f577be9c526eb8",
+      "coordinateEvidence": "Explicit creator-typed Coords: 30.1 - 17.8 on the same filmed region at source 2101.464s. This is a creator regional caption, not a GPS device or cursor-dependent map readout.",
+      "inventoryEvidence": "Visible luminous pearl clusters scattered across underwater lake floor; creator Silica Pearl Locations chapter and exact regional coordinate caption.",
+      "sourcePlane": "Valguero ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-typed regional coordinates for the filmed farming location; no claim of exact actor or live player GPS",
+      "photoSourceSeconds": 2100.463713,
+      "photoMapOverlayVisible": false
+    },
+    {
+      "id": "valguero-lava-cave-chitin-342-514",
+      "map": "valguero",
+      "name": "Lava cave bug harvest",
+      "lat": 34.2,
+      "lon": 51.4,
+      "resources": [
+        "Chitin"
+      ],
+      "imageAsset": "FarmPhoto-valguero-lava-cave-chitin-342-514",
+      "videoID": "bbPcUcWjWZ8",
+      "seconds": 1180.052708,
+      "direction": "Match the source-filmed terrain at this waypoint.",
+      "method": "Harvest the resource visible in the source region.",
+      "kit": [],
+      "risks": [],
+      "verified": true,
+      "sourceURL": "https://www.youtube.com/watch?v=bbPcUcWjWZ8",
+      "photoSHA256": "66eed8fe28bc7bbccd0fe3e987ebe5641f1b884f4114137c4d2cb540c1a111e7",
+      "coordinateEvidence": "Creator explicitly narrates cave entrance latitude 34.2 longitude 51.4 at 1116–1118s, and types 34.2 - 51.4 on cave approach. At 1179–1188s the creator identifies the same lava cave as Chitin farm and shows Megatherium killing its bugs. Pin denotes cave entrance for the filmed interior route, not exact creature position.",
+      "inventoryEvidence": "Megatherium visibly kills Araneo and Arthropluera in cave, then explicit Chitin inventory is shown at source1190s. No harvest amount or guaranteed creature spawn claimed.",
+      "sourcePlane": "Valguero ASA coordinate plane",
+      "sourceCoordinateScope": "Creator cave-entrance regional coordinate for filmed interior route",
+      "photoSourceSeconds": 1180.052708,
+      "photoMapOverlayVisible": false
+    },
+    {
+      "id": "valguero-ab-red-cap-mushrooms-312-863",
+      "map": "valguero",
+      "name": "Aberration zone red-cap mushroom patch",
+      "lat": 31.2,
+      "lon": 86.3,
+      "resources": [
+        "Rare Mushrooms"
+      ],
+      "imageAsset": "FarmPhoto-valguero-ab-red-cap-mushrooms-312-863",
+      "videoID": "bbPcUcWjWZ8",
+      "seconds": 1326.052708,
+      "direction": "Match the source-filmed terrain at this waypoint.",
+      "method": "Harvest the resource visible in the source region.",
+      "kit": [],
+      "risks": [],
+      "verified": true,
+      "sourceURL": "https://www.youtube.com/watch?v=bbPcUcWjWZ8",
+      "photoSHA256": "4de5f9e1639516468ef7d9003a808ba4e64f194dc585e65a43e76a65b56a686f",
+      "coordinateEvidence": "Creator explicitly narrates latitude 31.2 longitude 86.3 at 1314–1317s for the red-cap mushroom patch, with same-locale map shown around 1318s. Coordinate authority is the explicit spoken regional pair; map bottom is only supporting context, not assumed player GPS.",
+      "inventoryEvidence": "Iguanodon harvests red-cap patch; source1326s pickup shows brown/red Rare Mushroom icon +100, distinct from the blue/yellow aberrant mushroom icons shown in the following different-harvester example. Creator chapter explicitly identifies both Rare and Aberrant Mushrooms. No guaranteed yield claimed.",
+      "sourcePlane": "Valguero ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-spoken filmed mushroom patch regional coordinates",
+      "photoSourceSeconds": 1326.052708,
+      "photoMapOverlayVisible": false
+    },
+    {
+      "id": "extinction-obsidian-desert-775-382",
+      "map": "extinction",
+      "name": "Desert rock cleft obsidian",
+      "lat": 77.5,
+      "lon": 38.2,
+      "resources": [
+        "Obsidian"
+      ],
+      "imageAsset": "FarmPhoto-extinction-obsidian-desert-775-382",
+      "videoID": "aiWzwkiW5No",
+      "seconds": 2223.0609919999997,
+      "direction": "Match the source-filmed terrain at this waypoint.",
+      "method": "Harvest the resource visible in the source region.",
+      "kit": [],
+      "risks": [],
+      "verified": true,
+      "sourceURL": "https://www.youtube.com/watch?v=aiWzwkiW5No",
+      "photoSHA256": "d140433c8730e63f2f518310db35e1d1f482dcfb4bbdedd4d01a0a3cee2fab0e",
+      "coordinateEvidence": "Explicit creator-typed Coords: 77.5 - 38.2 caption within the same filmed farming region. Not a map cursor or handheld GPS measurement.",
+      "inventoryEvidence": "Creator chapter labels Obsidian and matching resource nodes visible in the filmed region. No harvest yield claimed.",
+      "sourcePlane": "Extinction ASA coordinate plane",
+      "sourceCoordinateScope": "Creator regional caption coordinates; no exact actor/player position claimed",
+      "photoSourceSeconds": 2223.0609919999997,
+      "photoMapOverlayVisible": false
+    },
+    {
+      "id": "extinction-metal-forest-154-257",
+      "map": "extinction",
+      "name": "Sunken Forest metal outcrop",
+      "lat": 15.4,
+      "lon": 25.7,
+      "resources": [
+        "Metal"
+      ],
+      "imageAsset": "FarmPhoto-extinction-metal-forest-154-257",
+      "videoID": "aiWzwkiW5No",
+      "seconds": 2233.5409919999997,
+      "direction": "Match the source-filmed terrain at this waypoint.",
+      "method": "Harvest the resource visible in the source region.",
+      "kit": [],
+      "risks": [],
+      "verified": true,
+      "sourceURL": "https://www.youtube.com/watch?v=aiWzwkiW5No",
+      "photoSHA256": "74bbcdfd1547f216e020b1afd94023c818d9435c1d5f72db847d7c2868731803",
+      "coordinateEvidence": "Explicit creator-typed Coords: 15.4 - 25.7 caption within the same filmed farming region. Not a map cursor or handheld GPS measurement.",
+      "inventoryEvidence": "Creator chapter labels Metal and matching resource nodes visible in the filmed region. No harvest yield claimed.",
+      "sourcePlane": "Extinction ASA coordinate plane",
+      "sourceCoordinateScope": "Creator regional caption coordinates; no exact actor/player position claimed",
+      "photoSourceSeconds": 2233.5409919999997,
+      "photoMapOverlayVisible": false
+    },
+    {
+      "id": "extinction-desert-lakes-purple-bushes-863-839",
+      "map": "extinction",
+      "name": "Desert dome lakeside purple bushes",
+      "lat": 86.3,
+      "lon": 83.9,
+      "resources": [
+        "Rare Mushrooms",
+        "Rare Flowers"
+      ],
+      "imageAsset": "FarmPhoto-extinction-desert-lakes-purple-bushes-863-839",
+      "videoID": "aiWzwkiW5No",
+      "seconds": 1346.296353,
+      "direction": "Match the source-filmed terrain at this waypoint.",
+      "method": "Harvest the resource visible in the source region.",
+      "kit": [],
+      "risks": [],
+      "verified": true,
+      "sourceURL": "https://www.youtube.com/watch?v=aiWzwkiW5No",
+      "photoSHA256": "764fa494e2f83331ed3a1edcfd8c028e08592f2309e6328cb6fdc15e06b9f77d",
+      "coordinateEvidence": "Creator says this is the best desert lakeside mushroom farm and opens native map at source~1343s in the same locale. Uncropped proof reads latitude86.3 longitude83.9. Green player marker aligns the desert lake position, while white cross cursor lies far above/right in the blank map area; numeric pair is not inferred from cursor location. Pair denotes the filmed bush region.",
+      "inventoryEvidence": "Source~1350s actual harvest pickup shows distinct blue Rare Flower icon +11 and brown Rare Mushroom icon +11 from purple bushes. Narrator identifies Rare Mushrooms and explicitly says these bushes also yield Rare Flowers. Pickup-detail crop retained. Quantities are proof only, not a promised yield.",
+      "sourcePlane": "Extinction ASA coordinate plane",
+      "sourceCoordinateScope": "Native numeric map pair in creator-identified filmed farming region, green player position corroborated independently of white cursor",
+      "photoSourceSeconds": 1346.296353,
+      "photoMapOverlayVisible": false
+    },
+    {
+      "id": "lost-colony-south-sap-trees-875-346",
+      "map": "lost-colony",
+      "name": "Southern mountain sap trees",
+      "lat": 87.5,
+      "lon": 34.6,
+      "resources": [
+        "Sap"
+      ],
+      "imageAsset": "FarmPhoto-lost-colony-south-sap-trees-875-346",
+      "videoID": "1jxA9B4l3nw",
+      "seconds": 1015.809496,
+      "direction": "Match the source-filmed terrain at this waypoint.",
+      "method": "Harvest the resource visible in the source region.",
+      "kit": [],
+      "risks": [],
+      "verified": true,
+      "sourceURL": "https://www.youtube.com/watch?v=1jxA9B4l3nw",
+      "photoSHA256": "688ffa4883d6bddd557e79e244d97ba989c2553eb7503111522fcd5f63c32519",
+      "coordinateEvidence": "Creator explicitly says around87.5 latitude,34.6 longitude at16:47–16:51. This is approximate creator regional scope, not measured GPS or an exact node. Map readout and player arrow corroborate the region but are not primary coordinate authority.",
+      "inventoryEvidence": "Creator Sap chapter and narration explain harvestable sap trees; filmed pickaxe harvest yields yellow Sap pickup icon at capture65.5s alongside wood/thatch. Separate uncropped pickup proof retained.",
+      "sourcePlane": "Lost Colony ASA coordinate plane",
+      "sourceCoordinateScope": "Approximate creator-spoken regional coordinate reference; not exact player GPS/node coordinates",
+      "photoSourceSeconds": 1015.809496,
+      "photoMapOverlayVisible": false
+    },
+    {
+      "id": "lost-colony-south-city-gargoyles-561-611",
+      "map": "lost-colony",
+      "name": "Southern city bridge gargoyle statues",
+      "lat": 56.1,
+      "lon": 61.1,
+      "resources": [
+        "Crystal",
+        "Obsidian",
+        "Metal"
+      ],
+      "imageAsset": "FarmPhoto-lost-colony-south-city-gargoyles-561-611",
+      "videoID": "1jxA9B4l3nw",
+      "seconds": 984.809496,
+      "direction": "Match the source-filmed terrain at this waypoint.",
+      "method": "Harvest the resource visible in the source region.",
+      "kit": [],
+      "risks": [],
+      "verified": true,
+      "sourceURL": "https://www.youtube.com/watch?v=1jxA9B4l3nw",
+      "photoSHA256": "67b70334d83ec627250c298596a4903184c412de4756859c1f5a15871bccaa3a",
+      "coordinateEvidence": "Creator explicitly names around56.1 latitude,61.1 longitude at16:03–16:05; source map corroborates green player position/readout. Primary authority is approximate creator-spoken regional location, not cursor or measured GPS.",
+      "inventoryEvidence": "Same region filmed first harvesting gargoyle statue with pickaxe. Actual white Crystal clusters, dark Obsidian lump and Raw Metal chunk pickups visible on left at capture45.25s; Harvest500RawMetal progress corroborates Metal. Narration16:17–16:23 also identifies Obsidian,Crystal,Metal. Gems are excluded from curated14.",
+      "sourcePlane": "Lost Colony ASA coordinate plane",
+      "sourceCoordinateScope": "Approximate creator-spoken regional coordinate reference for gargoyle harvest site; not exact node/playerGPS",
+      "photoSourceSeconds": 984.809496,
+      "photoMapOverlayVisible": false
+    },
+    {
+      "id": "lost-colony-blue-ice-cave-oil-687-463",
+      "map": "lost-colony",
+      "name": "Mountain blue ice cave oil rocks",
+      "lat": 68.7,
+      "lon": 46.3,
+      "resources": [
+        "Oil"
+      ],
+      "imageAsset": "FarmPhoto-lost-colony-blue-ice-cave-oil-687-463",
+      "videoID": "1jxA9B4l3nw",
+      "seconds": 523.000506,
+      "direction": "Match the source-filmed terrain at this waypoint.",
+      "method": "Harvest the resource visible in the source region.",
+      "kit": [],
+      "risks": [],
+      "verified": true,
+      "sourceURL": "https://www.youtube.com/watch?v=1jxA9B4l3nw",
+      "photoSHA256": "d1a4dcd4e6f64c57b39bb523936240db1b60c852cfd13bf1f9371934ff0558de",
+      "coordinateEvidence": "Creator explicitly narrates around68.7 latitude46.3 longitude at source516–518s, with typed68.7 -46.3 on mountain entrance. Approximate cave entrance regional pair, not exact oilactor position.",
+      "inventoryEvidence": "Striped/wrinkled black Oil rocks filmed in shallow blue-lit icy cave pool. Creator explicitly identifies this cave as Oil source. No pickup, yield or permanent spawn count claimed.",
+      "sourcePlane": "Lost Colony ASA coordinate plane",
+      "sourceCoordinateScope": "Creator explicitly spoken approximate regional coordinates; cave entrance anchors filmed interior route",
+      "photoSourceSeconds": 523.000506,
+      "photoMapOverlayVisible": false
+    },
+    {
+      "id": "lost-colony-arch-river-oil-585-561",
+      "map": "lost-colony",
+      "name": "Central canyon arch river oil bed",
+      "lat": 58.5,
+      "lon": 56.1,
+      "resources": [
+        "Oil"
+      ],
+      "imageAsset": "FarmPhoto-lost-colony-arch-river-oil-585-561",
+      "videoID": "1jxA9B4l3nw",
+      "seconds": 553.000506,
+      "direction": "Match the source-filmed terrain at this waypoint.",
+      "method": "Harvest the resource visible in the source region.",
+      "kit": [],
+      "risks": [],
+      "verified": true,
+      "sourceURL": "https://www.youtube.com/watch?v=1jxA9B4l3nw",
+      "photoSHA256": "cf6b3dddc63632915a78e682152e0d866969c5314ed7c0681f51f21e1b85fd4e",
+      "coordinateEvidence": "Creator explicitly narrates around58.5 latitude56.1 longitude at source535–539s. Native map in same river locale shows58.5/56.1 at source535s. Authority is approximate creator-spoken region, not assumed exact player/device GPS.",
+      "inventoryEvidence": "Many characteristic wrinkled Oil rocks filmed across shallow river under red-lit stone arches, matching creator identification. No measured yield claimed.",
+      "sourcePlane": "Lost Colony ASA coordinate plane",
+      "sourceCoordinateScope": "Creator explicitly spoken approximate river farming region",
+      "photoSourceSeconds": 553.000506,
+      "photoMapOverlayVisible": false
+    },
+    {
+      "id": "lost-colony-north-cave-chitin-28-30",
+      "map": "lost-colony",
+      "name": "Far northern cave bug harvest",
+      "lat": 2.8,
+      "lon": 30,
+      "resources": [
+        "Chitin"
+      ],
+      "imageAsset": "FarmPhoto-lost-colony-north-cave-chitin-28-30",
+      "videoID": "1jxA9B4l3nw",
+      "seconds": 685.000506,
+      "direction": "Match the source-filmed terrain at this waypoint.",
+      "method": "Harvest the resource visible in the source region.",
+      "kit": [],
+      "risks": [],
+      "verified": true,
+      "sourceURL": "https://www.youtube.com/watch?v=1jxA9B4l3nw",
+      "photoSHA256": "61ff597e2f3e502a07cb37aeacd57214e4b2ff5663c34e48dc89cf21d8e94e87",
+      "coordinateEvidence": "Creator explicitly narrates north cave around2.8 latitude30 longitude at source667–670s, with same-locale native map shown. Pair locates cave entrance for the filmed interior bug route, not an exact bug spawn position.",
+      "inventoryEvidence": "Megatherium kills cave bugs; uncropped source683/689s shows explicit brown Chitin pickup icon (+432 and +923 respectively). Creator identifies Chitin farm. Numbers serve as evidence only, not promised yield.",
+      "sourcePlane": "Lost Colony ASA coordinate plane",
+      "sourceCoordinateScope": "Creator explicitly spoken approximate regional coordinates; cave entrance anchors filmed interior route",
+      "photoSourceSeconds": 685.000506,
+      "photoMapOverlayVisible": false
+    },
+    {
+      "id": "lost-colony-cliff-arch-honey-231-199",
+      "map": "lost-colony",
+      "name": "Snowy cliff arch wild hive",
+      "lat": 23.1,
+      "lon": 19.9,
+      "resources": [
+        "Giant Bee Honey"
+      ],
+      "imageAsset": "FarmPhoto-lost-colony-cliff-arch-honey-231-199",
+      "videoID": "1jxA9B4l3nw",
+      "seconds": 1393.303515,
+      "direction": "Match the source-filmed terrain at this waypoint.",
+      "method": "Harvest the resource visible in the source region.",
+      "kit": [],
+      "risks": [],
+      "verified": true,
+      "sourceURL": "https://www.youtube.com/watch?v=1jxA9B4l3nw",
+      "photoSHA256": "9ed83fcf51f9ecc8322ed738cf62272f6a082a9ccf24c9bdc9f377c8b8c7bca8",
+      "coordinateEvidence": "Creator typed Coordinates: 23.1 - 19.9 on this filmed Honey region; spoken at source23:16 (arch) or23:21 (stacked). Full caption frame retained; no M-map cursor inference.",
+      "inventoryEvidence": "Explicit Where to Find Honey chapter plus visible wild hive under snowy cliff rock; creator identifies this exact hive region. No pickup or yield is claimed.",
+      "sourcePlane": "Lost Colony ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-typed regional coordinates for the filmed wild hive; no exact actor/live GPS claim",
+      "photoSourceSeconds": 1393.303515,
+      "photoMapOverlayVisible": false
+    },
+    {
+      "id": "lost-colony-stacked-cliff-honey-36-421",
+      "map": "lost-colony",
+      "name": "Snowy cliff stacked wild hives",
+      "lat": 36,
+      "lon": 42.1,
+      "resources": [
+        "Giant Bee Honey"
+      ],
+      "imageAsset": "FarmPhoto-lost-colony-stacked-cliff-honey-36-421",
+      "videoID": "1jxA9B4l3nw",
+      "seconds": 1406.103515,
+      "direction": "Match the source-filmed terrain at this waypoint.",
+      "method": "Harvest the resource visible in the source region.",
+      "kit": [],
+      "risks": [],
+      "verified": true,
+      "sourceURL": "https://www.youtube.com/watch?v=1jxA9B4l3nw",
+      "photoSHA256": "1caa505fce9a7da9779594a607cb1e8509f43dbaba64a7c3eb532c01bd92ff2e",
+      "coordinateEvidence": "Creator typed Coordinates: 36 - 42.1 on this filmed Honey region; spoken at source23:16 (arch) or23:21 (stacked). Full caption frame retained; no M-map cursor inference.",
+      "inventoryEvidence": "Explicit Where to Find Honey chapter plus visible wild hive under snowy cliff rock; creator identifies this exact hive region. No pickup or yield is claimed.",
+      "sourcePlane": "Lost Colony ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-typed regional coordinates for the filmed wild hive; no exact actor/live GPS claim",
+      "photoSourceSeconds": 1406.103515,
+      "photoMapOverlayVisible": false
     }
   ],
   "coverage": [
@@ -5927,10 +6346,12 @@
     {
       "map": "extinction",
       "resource": "Metal",
-      "spotIDs": [],
-      "status": "unverified",
+      "spotIDs": [
+        "extinction-metal-forest-154-257"
+      ],
+      "status": "verified",
       "reason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
-      "evidenceState": "needs-source-verification",
+      "evidenceState": "filmed-region-verified",
       "acquisitionClass": "region-harvest",
       "harvestDemonstrated": false,
       "limitations": "No GPS, availability, yield or harvesting footage is inferred from raw node labels.",
@@ -5961,10 +6382,12 @@
     {
       "map": "extinction",
       "resource": "Obsidian",
-      "spotIDs": [],
-      "status": "unverified",
+      "spotIDs": [
+        "extinction-obsidian-desert-775-382"
+      ],
+      "status": "verified",
       "reason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
-      "evidenceState": "needs-source-verification",
+      "evidenceState": "filmed-region-verified",
       "acquisitionClass": "region-harvest",
       "harvestDemonstrated": false,
       "limitations": "No GPS, availability, yield or harvesting footage is inferred from raw node labels.",
@@ -6031,10 +6454,12 @@
     {
       "map": "extinction",
       "resource": "Rare Flowers",
-      "spotIDs": [],
-      "status": "unverified",
+      "spotIDs": [
+        "extinction-desert-lakes-purple-bushes-863-839"
+      ],
+      "status": "verified",
       "reason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
-      "evidenceState": "needs-source-verification",
+      "evidenceState": "filmed-region-verified",
       "acquisitionClass": "region-harvest",
       "harvestDemonstrated": false,
       "limitations": "No GPS, availability, yield or harvesting footage is inferred from raw node labels.",
@@ -6052,10 +6477,12 @@
     {
       "map": "extinction",
       "resource": "Rare Mushrooms",
-      "spotIDs": [],
-      "status": "unverified",
+      "spotIDs": [
+        "extinction-desert-lakes-purple-bushes-863-839"
+      ],
+      "status": "verified",
       "reason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
-      "evidenceState": "needs-source-verification",
+      "evidenceState": "filmed-region-verified",
       "acquisitionClass": "region-harvest",
       "harvestDemonstrated": false,
       "limitations": "No GPS, availability, yield or harvesting footage is inferred from raw node labels.",
@@ -7265,10 +7692,12 @@
     {
       "map": "lost-colony",
       "resource": "Chitin",
-      "spotIDs": [],
-      "status": "unverified",
+      "spotIDs": [
+        "lost-colony-north-cave-chitin-28-30"
+      ],
+      "status": "verified",
       "reason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
-      "evidenceState": "needs-source-verification",
+      "evidenceState": "filmed-region-verified",
       "acquisitionClass": "creature-drop",
       "harvestDemonstrated": false,
       "limitations": "No GPS, availability, yield or harvesting footage is inferred from raw node labels."
@@ -7310,7 +7739,8 @@
       "map": "lost-colony",
       "resource": "Crystal",
       "spotIDs": [
-        "lost-colony-north-city-lamp-crystal"
+        "lost-colony-north-city-lamp-crystal",
+        "lost-colony-south-city-gargoyles-561-611"
       ],
       "status": "verified",
       "reason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
@@ -7472,7 +7902,8 @@
       "status": "verified",
       "spotIDs": [
         "lost-colony-north-metal",
-        "lost-colony-northwest-metal"
+        "lost-colony-northwest-metal",
+        "lost-colony-south-city-gargoyles-561-611"
       ],
       "reason": "Source-video GPS region reviewed; open a region card for the actual filmed evidence.",
       "evidenceState": "filmed-region-verified",
@@ -7510,7 +7941,8 @@
       "map": "lost-colony",
       "resource": "Obsidian",
       "spotIDs": [
-        "lost-colony-east-snow-obsidian"
+        "lost-colony-east-snow-obsidian",
+        "lost-colony-south-city-gargoyles-561-611"
       ],
       "status": "verified",
       "reason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
@@ -7535,7 +7967,9 @@
       "spotIDs": [
         "lost-colony-southwest-oil-river",
         "lost-colony-safe-cave-oil-656-483",
-        "lost-colony-central-river-oil-595-586"
+        "lost-colony-central-river-oil-595-586",
+        "lost-colony-blue-ice-cave-oil-687-463",
+        "lost-colony-arch-river-oil-585-561"
       ],
       "status": "verified",
       "reason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
@@ -7742,10 +8176,12 @@
     {
       "map": "lost-colony",
       "resource": "Sap",
-      "spotIDs": [],
-      "status": "unverified",
+      "spotIDs": [
+        "lost-colony-south-sap-trees-875-346"
+      ],
+      "status": "verified",
       "reason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
-      "evidenceState": "needs-source-verification",
+      "evidenceState": "filmed-region-verified",
       "acquisitionClass": "region-harvest",
       "harvestDemonstrated": false,
       "limitations": "No GPS, availability, yield or harvesting footage is inferred from raw node labels.",
@@ -10237,10 +10673,12 @@
     {
       "map": "valguero",
       "resource": "Chitin",
-      "spotIDs": [],
-      "status": "unverified",
+      "spotIDs": [
+        "valguero-lava-cave-chitin-342-514"
+      ],
+      "status": "verified",
       "reason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
-      "evidenceState": "needs-source-verification",
+      "evidenceState": "filmed-region-verified",
       "acquisitionClass": "creature-drop",
       "harvestDemonstrated": false,
       "limitations": "No GPS, availability, yield or harvesting footage is inferred from raw node labels."
@@ -10271,10 +10709,13 @@
     {
       "map": "valguero",
       "resource": "Crystal",
-      "spotIDs": [],
-      "status": "unverified",
+      "spotIDs": [
+        "valguero-nw-snow-crystal-243-12",
+        "valguero-south-red-cliff-crystal-842-396"
+      ],
+      "status": "verified",
       "reason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
-      "evidenceState": "needs-source-verification",
+      "evidenceState": "filmed-region-verified",
       "acquisitionClass": "region-harvest",
       "harvestDemonstrated": false,
       "limitations": "No GPS, availability, yield or harvesting footage is inferred from raw node labels.",
@@ -10552,10 +10993,12 @@
     {
       "map": "valguero",
       "resource": "Rare Mushrooms",
-      "spotIDs": [],
-      "status": "unverified",
+      "spotIDs": [
+        "valguero-ab-red-cap-mushrooms-312-863"
+      ],
+      "status": "verified",
       "reason": "A source-backed acquisition walkthrough for this map/category has not yet been verified.",
-      "evidenceState": "needs-source-verification",
+      "evidenceState": "filmed-region-verified",
       "acquisitionClass": "region-harvest",
       "harvestDemonstrated": false,
       "limitations": "No GPS, availability, yield or harvesting footage is inferred from raw node labels."
@@ -10656,7 +11099,9 @@
       "status": "verified",
       "spotIDs": [
         "valguero-nw-pearl-lake",
-        "valguero-west-pearl-bed"
+        "valguero-west-pearl-bed",
+        "valguero-ne-ice-pearls-181-885",
+        "valguero-nw-ice-pearls-301-178"
       ],
       "reason": "Source-video GPS region reviewed; open a region card for the actual filmed evidence.",
       "evidenceState": "filmed-region-verified",

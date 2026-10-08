@@ -1,0 +1,90 @@
+{
+  "uniqueScopedCasesPassed": 11,
+  "mapFieldCases": 9,
+  "sharedResourceClipUICases": 1,
+  "all16NewRegionUICases": 1,
+  "initialRun": {
+    "devicesAndConfigurations": [
+      {
+        "device": {
+          "architecture": "arm64",
+          "deviceId": "20C9346D-B0E6-4239-8152-1D85ADD57BA6",
+          "deviceName": "Ascended iPad QA",
+          "modelName": "iPad (A16)",
+          "osBuildNumber": "23F77",
+          "osVersion": "26.5",
+          "platform": "iOS Simulator"
+        },
+        "expectedFailures": 0,
+        "failedTests": 1,
+        "passedTests": 10,
+        "skippedTests": 0,
+        "testPlanConfiguration": {
+          "configurationId": "1",
+          "configurationName": "Test Scheme Action"
+        }
+      }
+    ],
+    "environmentDescription": "Ascended \u00b7 Built with macOS 27.0.1",
+    "expectedFailures": 0,
+    "failedTests": 1,
+    "finishTime": 1791445469.861,
+    "passedTests": 10,
+    "result": "Failed",
+    "skippedTests": 0,
+    "startTime": 1791445275.809,
+    "statistics": [],
+    "testFailures": [
+      {
+        "failureText": "XCTAssertTrue failed",
+        "targetName": "AscendedUITests",
+        "testIdentifier": 11,
+        "testIdentifierString": "Farming35UITests/testNewValgueroAndExtinctionRegionsHaveMapScopedSingleClips()",
+        "testIdentifierURL": "test://com.apple.xcode/Ascended/AscendedUITests/Farming35UITests/testNewValgueroAndExtinctionRegionsHaveMapScopedSingleClips",
+        "testName": "testNewValgueroAndExtinctionRegionsHaveMapScopedSingleClips()"
+      }
+    ],
+    "title": "Test - Ascended",
+    "topInsights": [],
+    "totalTestCount": 11
+  },
+  "correctedUITestRun": {
+    "devicesAndConfigurations": [
+      {
+        "device": {
+          "architecture": "arm64",
+          "deviceId": "20C9346D-B0E6-4239-8152-1D85ADD57BA6",
+          "deviceName": "Ascended iPad QA",
+          "modelName": "iPad (A16)",
+          "osBuildNumber": "23F77",
+          "osVersion": "26.5",
+          "platform": "iOS Simulator"
+        },
+        "expectedFailures": 0,
+        "failedTests": 0,
+        "passedTests": 1,
+        "skippedTests": 0,
+        "testPlanConfiguration": {
+          "configurationId": "1",
+          "configurationName": "Test Scheme Action"
+        }
+      }
+    ],
+    "environmentDescription": "Ascended \u00b7 Built with macOS 27.0.1",
+    "expectedFailures": 0,
+    "failedTests": 0,
+    "finishTime": 1791445784.541,
+    "passedTests": 1,
+    "result": "Passed",
+    "skippedTests": 0,
+    "startTime": 1791445663.6,
+    "statistics": [],
+    "testFailures": [],
+    "title": "Test - Ascended",
+    "topInsights": [],
+    "totalTestCount": 1
+  },
+  "initialFailureReason": "Test attempted a hidden member of a close-location marker cluster. Test now zooms to separate nearby markers before selecting; native filtering/data were already correct.",
+  "nativeCodeUnchangedBetweenFinalRuns": true,
+  "resourceMediaValidation": "allPassed"
+}

@@ -1,0 +1,23 @@
+{
+  "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/1jxA9B4l3nw-bounded-honey-2x.mp4",
+  "sourceSHA256": "c828559bd92c0a2da8461395abc9716286ec431621bd2da98305cb9372eea7aa",
+  "sourceDimensions": [
+    1184,
+    666
+  ],
+  "captureFirstFrameUTC": "2026-10-08T07:29:24.559Z",
+  "sourceAnchor": {
+    "sourceSeconds": 1319.191515,
+    "UTC": "2026-10-08T07:29:34.103Z"
+  },
+  "formula": "movieSeconds = 9.544 + (sourceSeconds - 1319.191515) / 2",
+  "captureDurationSeconds": 75.2846337,
+  "frames": 2196,
+  "parentAcquisitionProof": "Parent confirmed completed licensed isolated native Chrome window Honey capture; no child acquisition.",
+  "fullCaptureDecode": {
+    "completed": true,
+    "exitCode": 0,
+    "diagnostics": "[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 463 >= 463\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 465 >= 465\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 666 >= 666\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 668 >= 668\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 673 >= 673\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 685 >= 685\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 687 >= 687\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 798 >= 798\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 801 >= 801\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 803 >= 803\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 806 >= 806\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 812 >= 812\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1364 >= 1364\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1551 >= 1551\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1553 >= 1553\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1558 >= 1558\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1564 >= 1564\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1571 >= 1571\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1764 >= 1764\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1767 >= 1767\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1770 >= 1770\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1958 >= 1958\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1967 >= 1967\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1983 >= 1983\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1989 >= 1989\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1996 >= 1996\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2000 >= 2000\n[null @ 0x77dec18500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2169 >= 2169\n"
+  },
+  "clipConversion": "Continuous capture cut restored to natural 1x with setpts=2; no loop or interpolation."
+}

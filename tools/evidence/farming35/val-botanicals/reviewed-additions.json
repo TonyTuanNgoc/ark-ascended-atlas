@@ -1,0 +1,246 @@
+{
+  "candidates": [
+    {
+      "id": "valguero-lava-cave-chitin-342-514",
+      "map": "valguero",
+      "name": "Lava cave bug harvest",
+      "resources": [
+        "Chitin"
+      ],
+      "lat": 34.2,
+      "lon": 51.4,
+      "videoID": "bbPcUcWjWZ8",
+      "startSeconds": 1180.052708,
+      "endSeconds": 1187.052708,
+      "coordinateEvidence": "Creator explicitly narrates cave entrance latitude 34.2 longitude 51.4 at 1116\u20131118s, and types 34.2 - 51.4 on cave approach. At 1179\u20131188s the creator identifies the same lava cave as Chitin farm and shows Megatherium killing its bugs. Pin denotes cave entrance for the filmed interior route, not exact creature position.",
+      "inventoryEvidence": "Megatherium visibly kills Araneo and Arthropluera in cave, then explicit Chitin inventory is shown at source1190s. No harvest amount or guaranteed creature spawn claimed.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming35/val-botanicals/valguero-lava-cave-chitin-342-514/clip.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming35/val-botanicals/valguero-lava-cave-chitin-342-514/poster.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=bbPcUcWjWZ8",
+      "sourceTimestampURL": "https://www.youtube.com/watch?v=bbPcUcWjWZ8&t=1180s",
+      "sourcePlane": "Valguero ASA coordinate plane",
+      "sourceCoordinateScope": "Creator cave-entrance regional coordinate for filmed interior route",
+      "mapOverlayVisible": false,
+      "creatorInsetVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "User-authorized licensed public Chrome playback captured in isolated native window; no denied download or authentication bypass",
+      "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/bbPcUcWjWZ8-bounded-botanicals-2x.mp4",
+      "sourceSHA256": "b910a39c9a6f405349fe7b045c376d46447811804b1a73b66c6620e8033c7657",
+      "sourceCapture": {
+        "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/bbPcUcWjWZ8-bounded-botanicals-2x.mp4",
+        "sourceSHA256": "b910a39c9a6f405349fe7b045c376d46447811804b1a73b66c6620e8033c7657",
+        "sourceDimensions": [
+          1184,
+          666
+        ],
+        "captureFirstFrameUTC": "2026-10-08T06:58:02.962Z",
+        "sourceAnchor": {
+          "sourceSeconds": 1099.400708,
+          "UTC": "2026-10-08T06:58:19.636Z"
+        },
+        "formula": "movieSeconds = 16.674 + (sourceSeconds - 1099.400708) / 2",
+        "captureDurationSeconds": 170.365,
+        "clockCheck": {
+          "sourceSeconds": 1466.701659,
+          "UTC": "2026-10-08T07:01:23.286Z",
+          "sourceDriftSeconds": 0.000951
+        },
+        "parentAcquisitionProof": "Serial native Chrome capture completed with 4971 frames, full crop confirmed. Whole resource section manually verified aligned.",
+        "fullCaptureDecode": {
+          "completed": true,
+          "exitCode": 0,
+          "diagnostics": "[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 131 >= 131\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 137 >= 137\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 263 >= 263\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 267 >= 267\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 269 >= 269\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 275 >= 275\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 283 >= 283\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 285 >= 285\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 314 >= 314\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 322 >= 322\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 673 >= 673\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 675 >= 675\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 677 >= 677\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 681 >= 681\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 688 >= 688\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 694 >= 694\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 696 >= 696\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 704 >= 704\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 712 >= 712\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 718 >= 718\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 725 >= 725\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 729 >= 729\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 731 >= 731\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 733 >= 733\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 766 >= 766\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 770 >= 770\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 790 >= 790\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 917 >= 917\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 922 >= 922\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 924 >= 924\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 930 >= 930\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 936 >= 936\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 940 >= 940\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1039 >= 1039\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1043 >= 1043\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1053 >= 1053\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1272 >= 1272\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1275 >= 1275\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1479 >= 1479\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1495 >= 1495\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1498 >= 1498\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1502 >= 1502\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1511 >= 1511\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1659 >= 1659\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1669 >= 1669\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1671 >= 1671\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1676 >= 1676\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1687 >= 1687\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1860 >= 1860\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2184 >= 2184\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2186 >= 2186\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2408 >= 2408\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2413 >= 2413\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2432 >= 2432\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2439 >= 2439\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2443 >= 2443\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2445 >= 2445\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2447 >= 2447\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2455 >= 2455\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2459 >= 2459\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2461 >= 2461\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2525 >= 2525\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2548 >= 2548\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2551 >= 2551\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2556 >= 2556\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2709 >= 2709\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2712 >= 2712\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3036 >= 3036\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3054 >= 3054\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3056 >= 3056\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3095 >= 3095\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3097 >= 3097\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3102 >= 3102\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3520 >= 3520\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3777 >= 3777\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3794 >= 3794\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3797 >= 3797\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3830 >= 3830\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3832 >= 3832\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3836 >= 3836\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3840 >= 3840\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3896 >= 3896\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 4483 >= 4483\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 4485 >= 4485\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 4692 >= 4692\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 4698 >= 4698\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 4700 >= 4700\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 4707 >= 4707\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 4709 >= 4709\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 4715 >= 4715\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 4717 >= 4717\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 4725 >= 4725\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 4735 >= 4735\n"
+        },
+        "clipConversion": "Cut actual capture seconds and setpts=2 restores natural 1x motion; no looping or extension."
+      },
+      "clipSHA256": "0c5d1ff76988e49efe84f42f57503cb0a9c1252f16b8baab09f4284cc4d8762d",
+      "posterSHA256": "66eed8fe28bc7bbccd0fe3e987ebe5641f1b884f4114137c4d2cb540c1a111e7",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming35/val-botanicals/valguero-lava-cave-chitin-342-514-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming35/val-botanicals/valguero-lava-cave-chitin-342-514-coordinate.jpg",
+        "resourceFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming35/val-botanicals/valguero-lava-cave-chitin-342-514-resource.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true,
+        "reviewed": true,
+        "result": "All 28 chronological 4 fps samples reviewed; continuous harvesting footage, no map, inventory, inset, edit or perspective change. Full decode exits 0 with no diagnostics."
+      },
+      "evidenceLimitations": "Pin is cave entrance, with interior bug harvest footage; no exact bug spawn position claimed.",
+      "visualReviewStatus": "verified",
+      "sourceCrop": {
+        "x": 100,
+        "y": 90,
+        "width": 1000,
+        "height": 500,
+        "sourceWidth": 1184,
+        "sourceHeight": 666,
+        "reason": "Remove creator heading, pickup list, right HUD and bottom logo/hotbar while retaining harvest action; uncropped proofs retained."
+      },
+      "captureCut": {
+        "sourceStartSeconds": 1180.052708,
+        "sourceDurationSeconds": 7.0,
+        "captureStartSeconds": 57,
+        "captureDurationSeconds": 3.5,
+        "encodedDurationSeconds": 7.0,
+        "naturalSpeedRestorationFactor": 2
+      },
+      "sourcePublishedDate": "2025-10-19",
+      "sourceTitle": "50 Tips & Tricks You NEED To Know For VALGUERO | ARK: Survival Ascended",
+      "sourceCreator": "BEYPlaysGames",
+      "harvestDemonstrated": true
+    },
+    {
+      "id": "valguero-ab-red-cap-mushrooms-312-863",
+      "map": "valguero",
+      "name": "Aberration zone red-cap mushroom patch",
+      "resources": [
+        "Rare Mushrooms"
+      ],
+      "lat": 31.2,
+      "lon": 86.3,
+      "videoID": "bbPcUcWjWZ8",
+      "startSeconds": 1326.052708,
+      "endSeconds": 1334.052708,
+      "coordinateEvidence": "Creator explicitly narrates latitude 31.2 longitude 86.3 at 1314\u20131317s for the red-cap mushroom patch, with same-locale map shown around 1318s. Coordinate authority is the explicit spoken regional pair; map bottom is only supporting context, not assumed player GPS.",
+      "inventoryEvidence": "Iguanodon harvests red-cap patch; source1326s pickup shows brown/red Rare Mushroom icon +100, distinct from the blue/yellow aberrant mushroom icons shown in the following different-harvester example. Creator chapter explicitly identifies both Rare and Aberrant Mushrooms. No guaranteed yield claimed.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming35/val-botanicals/valguero-ab-red-cap-mushrooms-312-863/clip.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming35/val-botanicals/valguero-ab-red-cap-mushrooms-312-863/poster.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=bbPcUcWjWZ8",
+      "sourceTimestampURL": "https://www.youtube.com/watch?v=bbPcUcWjWZ8&t=1326s",
+      "sourcePlane": "Valguero ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-spoken filmed mushroom patch regional coordinates",
+      "mapOverlayVisible": false,
+      "creatorInsetVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "User-authorized licensed public Chrome playback captured in isolated native window; no denied download or authentication bypass",
+      "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/bbPcUcWjWZ8-bounded-botanicals-2x.mp4",
+      "sourceSHA256": "b910a39c9a6f405349fe7b045c376d46447811804b1a73b66c6620e8033c7657",
+      "sourceCapture": {
+        "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/bbPcUcWjWZ8-bounded-botanicals-2x.mp4",
+        "sourceSHA256": "b910a39c9a6f405349fe7b045c376d46447811804b1a73b66c6620e8033c7657",
+        "sourceDimensions": [
+          1184,
+          666
+        ],
+        "captureFirstFrameUTC": "2026-10-08T06:58:02.962Z",
+        "sourceAnchor": {
+          "sourceSeconds": 1099.400708,
+          "UTC": "2026-10-08T06:58:19.636Z"
+        },
+        "formula": "movieSeconds = 16.674 + (sourceSeconds - 1099.400708) / 2",
+        "captureDurationSeconds": 170.365,
+        "clockCheck": {
+          "sourceSeconds": 1466.701659,
+          "UTC": "2026-10-08T07:01:23.286Z",
+          "sourceDriftSeconds": 0.000951
+        },
+        "parentAcquisitionProof": "Serial native Chrome capture completed with 4971 frames, full crop confirmed. Whole resource section manually verified aligned.",
+        "fullCaptureDecode": {
+          "completed": true,
+          "exitCode": 0,
+          "diagnostics": "[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 131 >= 131\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 137 >= 137\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 263 >= 263\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 267 >= 267\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 269 >= 269\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 275 >= 275\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 283 >= 283\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 285 >= 285\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 314 >= 314\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 322 >= 322\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 673 >= 673\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 675 >= 675\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 677 >= 677\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 681 >= 681\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 688 >= 688\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 694 >= 694\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 696 >= 696\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 704 >= 704\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 712 >= 712\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 718 >= 718\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 725 >= 725\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 729 >= 729\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 731 >= 731\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 733 >= 733\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 766 >= 766\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 770 >= 770\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 790 >= 790\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 917 >= 917\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 922 >= 922\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 924 >= 924\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 930 >= 930\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 936 >= 936\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 940 >= 940\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1039 >= 1039\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1043 >= 1043\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1053 >= 1053\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1272 >= 1272\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1275 >= 1275\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1479 >= 1479\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1495 >= 1495\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1498 >= 1498\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1502 >= 1502\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1511 >= 1511\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1659 >= 1659\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1669 >= 1669\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1671 >= 1671\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1676 >= 1676\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1687 >= 1687\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1860 >= 1860\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2184 >= 2184\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2186 >= 2186\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2408 >= 2408\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2413 >= 2413\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2432 >= 2432\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2439 >= 2439\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2443 >= 2443\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2445 >= 2445\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2447 >= 2447\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2455 >= 2455\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2459 >= 2459\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2461 >= 2461\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2525 >= 2525\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2548 >= 2548\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2551 >= 2551\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2556 >= 2556\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2709 >= 2709\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2712 >= 2712\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3036 >= 3036\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3054 >= 3054\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3056 >= 3056\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3095 >= 3095\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3097 >= 3097\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3102 >= 3102\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3520 >= 3520\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3777 >= 3777\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3794 >= 3794\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3797 >= 3797\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3830 >= 3830\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3832 >= 3832\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3836 >= 3836\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3840 >= 3840\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3896 >= 3896\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 4483 >= 4483\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 4485 >= 4485\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 4692 >= 4692\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 4698 >= 4698\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 4700 >= 4700\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 4707 >= 4707\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 4709 >= 4709\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 4715 >= 4715\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 4717 >= 4717\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 4725 >= 4725\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 4735 >= 4735\n"
+        },
+        "clipConversion": "Cut actual capture seconds and setpts=2 restores natural 1x motion; no looping or extension."
+      },
+      "clipSHA256": "6a343eb0689342c2e662848fcd99b9f52a39dc83bce8e7a14638de1621cf3b14",
+      "posterSHA256": "4de5f9e1639516468ef7d9003a808ba4e64f194dc585e65a43e76a65b56a686f",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming35/val-botanicals/valguero-ab-red-cap-mushrooms-312-863-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming35/val-botanicals/valguero-ab-red-cap-mushrooms-312-863-coordinate.jpg",
+        "resourceFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming35/val-botanicals/valguero-ab-red-cap-mushrooms-312-863-resource.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true,
+        "reviewed": true,
+        "result": "All 32 chronological 4 fps samples reviewed; continuous harvesting footage, no map, inventory, inset, edit or perspective change. Full decode exits 0 with no diagnostics."
+      },
+      "evidenceLimitations": "Rare Mushroom pickup demonstrated with Iguanodon; other harvesters can yield aberrant types. Regional pin is creator spoken patch location.",
+      "visualReviewStatus": "verified",
+      "sourceCrop": {
+        "x": 100,
+        "y": 90,
+        "width": 1000,
+        "height": 500,
+        "sourceWidth": 1184,
+        "sourceHeight": 666,
+        "reason": "Remove creator heading, pickup list, right HUD and bottom logo/hotbar while retaining harvest action; uncropped proofs retained."
+      },
+      "captureCut": {
+        "sourceStartSeconds": 1326.052708,
+        "sourceDurationSeconds": 8.0,
+        "captureStartSeconds": 130,
+        "captureDurationSeconds": 4,
+        "encodedDurationSeconds": 8.0,
+        "naturalSpeedRestorationFactor": 2
+      },
+      "sourcePublishedDate": "2025-10-19",
+      "sourceTitle": "50 Tips & Tricks You NEED To Know For VALGUERO | ARK: Survival Ascended",
+      "sourceCreator": "BEYPlaysGames",
+      "harvestDemonstrated": true
+    }
+  ],
+  "heldCandidates": [
+    {
+      "resources": [
+        "GiantBeeHoney"
+      ],
+      "coordinates": [
+        43.6,
+        37.9
+      ],
+      "reason": "Queen bee taming only; no honey harvest or hive output shown."
+    },
+    {
+      "resources": [
+        "RareFlowers",
+        "RareMushrooms"
+      ],
+      "region": "Swamp",
+      "reason": "Harvest shown but no exact numeric location established."
+    },
+    {
+      "resources": [
+        "RareMushrooms"
+      ],
+      "coordinates": [
+        35.7,
+        65.2
+      ],
+      "reason": "Rare Mushroom inventory proven, but spoken pair describes red-zone entrance and exact harvest locale relationship remains unresolved."
+    }
+  ],
+  "captureClockEvidence": {
+    "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/bbPcUcWjWZ8-bounded-botanicals-2x.mp4",
+    "sourceSHA256": "b910a39c9a6f405349fe7b045c376d46447811804b1a73b66c6620e8033c7657",
+    "sourceDimensions": [
+      1184,
+      666
+    ],
+    "captureFirstFrameUTC": "2026-10-08T06:58:02.962Z",
+    "sourceAnchor": {
+      "sourceSeconds": 1099.400708,
+      "UTC": "2026-10-08T06:58:19.636Z"
+    },
+    "formula": "movieSeconds = 16.674 + (sourceSeconds - 1099.400708) / 2",
+    "captureDurationSeconds": 170.365,
+    "clockCheck": {
+      "sourceSeconds": 1466.701659,
+      "UTC": "2026-10-08T07:01:23.286Z",
+      "sourceDriftSeconds": 0.000951
+    },
+    "parentAcquisitionProof": "Serial native Chrome capture completed with 4971 frames, full crop confirmed. Whole resource section manually verified aligned.",
+    "fullCaptureDecode": {
+      "completed": true,
+      "exitCode": 0,
+      "diagnostics": "[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 131 >= 131\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 137 >= 137\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 263 >= 263\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 267 >= 267\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 269 >= 269\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 275 >= 275\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 283 >= 283\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 285 >= 285\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 314 >= 314\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 322 >= 322\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 673 >= 673\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 675 >= 675\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 677 >= 677\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 681 >= 681\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 688 >= 688\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 694 >= 694\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 696 >= 696\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 704 >= 704\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 712 >= 712\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 718 >= 718\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 725 >= 725\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 729 >= 729\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 731 >= 731\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 733 >= 733\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 766 >= 766\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 770 >= 770\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 790 >= 790\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 917 >= 917\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 922 >= 922\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 924 >= 924\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 930 >= 930\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 936 >= 936\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 940 >= 940\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1039 >= 1039\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1043 >= 1043\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1053 >= 1053\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1272 >= 1272\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1275 >= 1275\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1479 >= 1479\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1495 >= 1495\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1498 >= 1498\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1502 >= 1502\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1511 >= 1511\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1659 >= 1659\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1669 >= 1669\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1671 >= 1671\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1676 >= 1676\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1687 >= 1687\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1860 >= 1860\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2184 >= 2184\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2186 >= 2186\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2408 >= 2408\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2413 >= 2413\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2432 >= 2432\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2439 >= 2439\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2443 >= 2443\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2445 >= 2445\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2447 >= 2447\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2455 >= 2455\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2459 >= 2459\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2461 >= 2461\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2525 >= 2525\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2548 >= 2548\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2551 >= 2551\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2556 >= 2556\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2709 >= 2709\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2712 >= 2712\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3036 >= 3036\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3054 >= 3054\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3056 >= 3056\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3095 >= 3095\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3097 >= 3097\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3102 >= 3102\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3520 >= 3520\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3777 >= 3777\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3794 >= 3794\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3797 >= 3797\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3830 >= 3830\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3832 >= 3832\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3836 >= 3836\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3840 >= 3840\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3896 >= 3896\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 4483 >= 4483\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 4485 >= 4485\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 4692 >= 4692\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 4698 >= 4698\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 4700 >= 4700\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 4707 >= 4707\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 4709 >= 4709\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 4715 >= 4715\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 4717 >= 4717\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 4725 >= 4725\n[null @ 0x7581024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 4735 >= 4735\n"
+    },
+    "clipConversion": "Cut actual capture seconds and setpts=2 restores natural 1x motion; no looping or extension."
+  },
+  "reviewedSourceRangeSeconds": [
+    1099,
+    1406
+  ],
+  "reviewerNote": "Two qualified regions with 7 and 8 second clean natural-speed harvest footage; honey and unlocated botanical regions held. No app/browser/acquisition changes."
+}

@@ -39,7 +39,11 @@ struct VerifiedResourceSpot: Decodable, Identifiable {
     let verified: Bool
     let sourceCoordinateScope: String?
     var coordinateHint: String {
-        (sourceCoordinateScope ?? "").localizedCaseInsensitiveContains("interior") ? "Cave chamber · not the entrance" : "Filmed area · nearby nodes can vary"
+        let scope = sourceCoordinateScope ?? ""
+        if scope.localizedCaseInsensitiveContains("cave-entrance") || scope.localizedCaseInsensitiveContains("cave entrance") {
+            return "Cave entrance · follow the filmed route inside"
+        }
+        return scope.localizedCaseInsensitiveContains("interior") ? "Cave chamber · not the entrance" : "Filmed area · nearby nodes can vary"
     }
     var videoURL: URL? { URL(string: "https://www.youtube.com/watch?v=\(videoID)&t=\(Int(seconds))s") }
     var point: MapLocation { MapLocation(id: "farm-" + id, name: name, lat: lat, lon: lon, layer: .resource, note: direction, routeID: nil, artifactID: nil, imageAsset: imageAsset, farmID: id, resourceNames: resources) }

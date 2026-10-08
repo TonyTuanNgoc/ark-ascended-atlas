@@ -1,0 +1,19 @@
+{
+  "version": "0.34.0",
+  "build": "35",
+  "device": "Ascended iPad QA",
+  "udid": "20C9346D-B0E6-4239-8152-1D85ADD57BA6",
+  "pid": 45257,
+  "bundlePath": "/Volumes/TONY SSD/APP_DATA/Xcode/CoreSimulator/Devices/20C9346D-B0E6-4239-8152-1D85ADD57BA6/data/Containers/Bundle/Application/67ED0094-4793-40D3-B58B-A2BCB77DBADA/Ascended.app",
+  "catalogueHashes": {
+    "resource-guides.json": "656e3a35f9413d79600d061071082823edd5034f4223eb7bbd7a200dbc49ed3a",
+    "verified-resource-spots.json": "72afbb99b04a26ce4bdc8c08de9ba4038ba6fcbb293865228cbdb0eaeeeee6a3"
+  },
+  "installed": true,
+  "freshLaunch": true,
+  "physicalDevice": false,
+  "testFlight": false,
+  "webDomain": null,
+  "foregroundVerified": true,
+  "orientation": "landscape"
+}

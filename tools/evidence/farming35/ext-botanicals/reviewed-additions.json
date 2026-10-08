@@ -1,0 +1,177 @@
+{
+  "candidates": [
+    {
+      "id": "extinction-desert-lakes-purple-bushes-863-839",
+      "map": "extinction",
+      "name": "Desert dome lakeside purple bushes",
+      "resources": [
+        "Rare Mushrooms",
+        "Rare Flowers"
+      ],
+      "lat": 86.3,
+      "lon": 83.9,
+      "videoID": "aiWzwkiW5No",
+      "startSeconds": 1346.296353,
+      "endSeconds": 1354.296353,
+      "coordinateEvidence": "Creator says this is the best desert lakeside mushroom farm and opens native map at source~1343s in the same locale. Uncropped proof reads latitude86.3 longitude83.9. Green player marker aligns the desert lake position, while white cross cursor lies far above/right in the blank map area; numeric pair is not inferred from cursor location. Pair denotes the filmed bush region.",
+      "inventoryEvidence": "Source~1350s actual harvest pickup shows distinct blue Rare Flower icon +11 and brown Rare Mushroom icon +11 from purple bushes. Narrator identifies Rare Mushrooms and explicitly says these bushes also yield Rare Flowers. Pickup-detail crop retained. Quantities are proof only, not a promised yield.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming35/ext-botanicals/mushrooms/clip.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming35/ext-botanicals/mushrooms/poster.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=aiWzwkiW5No",
+      "sourceTimestampURL": "https://www.youtube.com/watch?v=aiWzwkiW5No&t=1346s",
+      "sourcePlane": "Extinction ASA coordinate plane",
+      "sourceCoordinateScope": "Native numeric map pair in creator-identified filmed farming region, green player position corroborated independently of white cursor",
+      "mapOverlayVisible": false,
+      "creatorInsetVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "User-authorized licensed public Chrome playback captured in isolated native window; no denied download or authentication bypass",
+      "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/aiWzwkiW5No-bounded-botanicals-2x.mp4",
+      "sourceSHA256": "8f9ce25fd5b9006d0925dcdd8e5bd317b340b2373908b8f0b9136b9cf863a0d0",
+      "sourceCapture": {
+        "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/aiWzwkiW5No-bounded-botanicals-2x.mp4",
+        "sourceSHA256": "8f9ce25fd5b9006d0925dcdd8e5bd317b340b2373908b8f0b9136b9cf863a0d0",
+        "sourceDimensions": [
+          1184,
+          666
+        ],
+        "captureFirstFrameUTC": "2026-10-08T07:09:00.404Z",
+        "sourceAnchor": {
+          "sourceSeconds": 1263.062353,
+          "UTC": "2026-10-08T07:09:17.787Z"
+        },
+        "formula": "movieSeconds = 17.383 + (sourceSeconds - 1263.062353) / 2",
+        "captureDurationSeconds": 140.321635541,
+        "parentAcquisitionProof": "Completed serial licensed native Chrome capture, 4081 frames and full 1184x666 crop. Agent reviewed entire botanical section framing.",
+        "fullCaptureDecode": {
+          "completed": true,
+          "exitCode": 0,
+          "diagnostics": "[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 333 >= 333\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 642 >= 642\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 703 >= 703\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1697 >= 1697\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1703 >= 1703\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1709 >= 1709\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1714 >= 1714\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1716 >= 1716\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1720 >= 1720\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1724 >= 1724\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1728 >= 1728\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1731 >= 1731\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1735 >= 1735\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1739 >= 1739\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1741 >= 1741\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1747 >= 1747\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1796 >= 1796\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1798 >= 1798\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1805 >= 1805\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1819 >= 1819\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1824 >= 1824\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1826 >= 1826\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1829 >= 1829\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1836 >= 1836\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1843 >= 1843\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1854 >= 1854\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1862 >= 1862\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2073 >= 2073\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2085 >= 2085\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2093 >= 2093\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2098 >= 2098\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2239 >= 2239\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2246 >= 2246\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2249 >= 2249\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2263 >= 2263\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2289 >= 2289\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2293 >= 2293\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2301 >= 2301\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2305 >= 2305\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2313 >= 2313\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2318 >= 2318\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2320 >= 2320\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2322 >= 2322\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2329 >= 2329\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2332 >= 2332\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2337 >= 2337\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2377 >= 2377\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2379 >= 2379\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2384 >= 2384\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2386 >= 2386\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2854 >= 2854\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2856 >= 2856\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2894 >= 2894\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3092 >= 3092\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3097 >= 3097\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3222 >= 3222\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3225 >= 3225\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3229 >= 3229\n"
+        },
+        "clipConversion": "Cut actual capture seconds and setpts=2 restores natural 1x source motion; no looping or extension."
+      },
+      "clipSHA256": "4124e7e15ccbf19fbbfe0717644cad56936a85599bc80052b856012d69f74d4e",
+      "posterSHA256": "764fa494e2f83331ed3a1edcfd8c028e08592f2309e6328cb6fdc15e06b9f77d",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming35/ext-botanicals/extinction-desert-lakes-purple-bushes-863-839-contactSheet.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming35/ext-botanicals/extinction-desert-lakes-purple-bushes-863-839-coordinateFrame.jpg",
+        "resourceFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming35/ext-botanicals/extinction-desert-lakes-purple-bushes-863-839-resourceFrame.jpg",
+        "resourceDetail": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming35/ext-botanicals/extinction-desert-lakes-purple-bushes-863-839-resourceDetail.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true,
+        "reviewed": true,
+        "result": "All 32 chronological samples reviewed. Continuous Therizino harvesting of purple flower bushes, no map, inventory, inset, perspective edit or creator caption. Full encoded decode exit 0; diagnostics: none."
+      },
+      "evidenceLimitations": "One distinct region yields both curated resources; not two geographical sites. Pickup quantities depend on harvester/server settings and are not a yield guarantee.",
+      "visualReviewStatus": "verified",
+      "sourceCrop": {
+        "x": 100,
+        "y": 90,
+        "width": 1000,
+        "height": 500,
+        "sourceWidth": 1184,
+        "sourceHeight": 666,
+        "reason": "Remove creator heading, pickup list, right HUD, hotbar and logo; retain harvesting and purple bushes. Uncropped proofs retained."
+      },
+      "captureCut": {
+        "sourceStartSeconds": 1346.296353,
+        "sourceDurationSeconds": 8,
+        "captureStartSeconds": 59,
+        "captureDurationSeconds": 4,
+        "encodedDurationSeconds": 8.066016,
+        "naturalSpeedRestorationFactor": 2
+      },
+      "sourcePublishedDate": "2025-01-23",
+      "sourceTitle": "50 Tips & Tricks you NEED To Know For Extinction Ascended",
+      "sourceCreator": "BEYPlaysGames",
+      "harvestDemonstrated": true
+    }
+  ],
+  "heldCandidates": [
+    {
+      "resources": [
+        "Rare Flowers"
+      ],
+      "coordinates": [
+        49.2,
+        42.6
+      ],
+      "reason": "Sanctuary map position established but separate bush/harvest shots below6 seconds; no concatenation used."
+    },
+    {
+      "resources": [
+        "Rare Flowers"
+      ],
+      "region": "Snow dome",
+      "reason": "Harvest filmed but no numerical coordinate proof for the snow locale."
+    },
+    {
+      "resources": [
+        "Sap"
+      ],
+      "coordinates": [
+        75.2,
+        80.7
+      ],
+      "coordinateAuthority": "Creator intentional numeric map zoom; green player marker aligns pair independently of distant white cross cursor.",
+      "resourceEvidence": "Amber Sap pickup and Sap-labelled inventory after Joshua-tree harvest.",
+      "reason": "Harvest segments interrupted by inventory, then monkey attack. Only short clean harvest footage; 8-second trial includes combat and an end transition, so held."
+    },
+    {
+      "resources": [
+        "Giant Bee Honey"
+      ],
+      "region": "Sanctuary and sunken forest",
+      "reason": "Queen bee and hive filmed, but no exact numeric farming coordinate or actual Honey pickup/output."
+    }
+  ],
+  "captureClockEvidence": {
+    "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/aiWzwkiW5No-bounded-botanicals-2x.mp4",
+    "sourceSHA256": "8f9ce25fd5b9006d0925dcdd8e5bd317b340b2373908b8f0b9136b9cf863a0d0",
+    "sourceDimensions": [
+      1184,
+      666
+    ],
+    "captureFirstFrameUTC": "2026-10-08T07:09:00.404Z",
+    "sourceAnchor": {
+      "sourceSeconds": 1263.062353,
+      "UTC": "2026-10-08T07:09:17.787Z"
+    },
+    "formula": "movieSeconds = 17.383 + (sourceSeconds - 1263.062353) / 2",
+    "captureDurationSeconds": 140.321635541,
+    "parentAcquisitionProof": "Completed serial licensed native Chrome capture, 4081 frames and full 1184x666 crop. Agent reviewed entire botanical section framing.",
+    "fullCaptureDecode": {
+      "completed": true,
+      "exitCode": 0,
+      "diagnostics": "[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 333 >= 333\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 642 >= 642\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 703 >= 703\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1697 >= 1697\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1703 >= 1703\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1709 >= 1709\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1714 >= 1714\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1716 >= 1716\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1720 >= 1720\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1724 >= 1724\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1728 >= 1728\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1731 >= 1731\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1735 >= 1735\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1739 >= 1739\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1741 >= 1741\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1747 >= 1747\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1796 >= 1796\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1798 >= 1798\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1805 >= 1805\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1819 >= 1819\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1824 >= 1824\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1826 >= 1826\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1829 >= 1829\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1836 >= 1836\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1843 >= 1843\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1854 >= 1854\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1862 >= 1862\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2073 >= 2073\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2085 >= 2085\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2093 >= 2093\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2098 >= 2098\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2239 >= 2239\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2246 >= 2246\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2249 >= 2249\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2263 >= 2263\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2289 >= 2289\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2293 >= 2293\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2301 >= 2301\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2305 >= 2305\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2313 >= 2313\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2318 >= 2318\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2320 >= 2320\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2322 >= 2322\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2329 >= 2329\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2332 >= 2332\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2337 >= 2337\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2377 >= 2377\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2379 >= 2379\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2384 >= 2384\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2386 >= 2386\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2854 >= 2854\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2856 >= 2856\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2894 >= 2894\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3092 >= 3092\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3097 >= 3097\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3222 >= 3222\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3225 >= 3225\n[null @ 0x7481024500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3229 >= 3229\n"
+    },
+    "clipConversion": "Cut actual capture seconds and setpts=2 restores natural 1x source motion; no looping or extension."
+  },
+  "reviewedSourceRangeSeconds": [
+    1263,
+    1450
+  ],
+  "duplicateAudit": {
+    "existingExtCoordinates": [
+      [
+        32.9,
+        44.1
+      ],
+      [
+        29.5,
+        55
+      ],
+      [
+        77.5,
+        38.2
+      ],
+      [
+        15.4,
+        25.7
+      ]
+    ],
+    "result": "Desert purple-bush region86.3/83.9 distinct from existing/pending Metal, Oil and Obsidian regions."
+  },
+  "reviewerNote": "One new geographical region with two canonical curated resource names. Whole capture and encoded clip decode completed. No app, browser, acquisition or network changes."
+}

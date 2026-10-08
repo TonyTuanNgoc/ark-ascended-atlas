@@ -1,0 +1,32 @@
+{
+  "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/1jxA9B4l3nw-bounded-botanicals-2x-v3.mp4",
+  "sourceSHA256": "6c2093eba6b313afbf6463e97b1c652c9bc78416e6dfead0316db2bfe2ad51a4",
+  "sourceDimensions": [
+    1184,
+    666
+  ],
+  "captureFirstFrameUTC": "2026-10-08T07:18:06.668Z",
+  "sourceAnchor": {
+    "sourceSeconds": 910.375496,
+    "UTC": "2026-10-08T07:18:18.051Z",
+    "rate": 2
+  },
+  "formula": "movieSeconds = 11.383 + (sourceSeconds - 910.375496) / 2",
+  "captureDurationSeconds": 140.29,
+  "captureBytes": 210493510,
+  "captureSampleSpanSeconds": 140.258853,
+  "frames": 4088,
+  "checkpoint": {
+    "sourceSeconds": 1184.487928,
+    "UTC": "2026-10-08T07:20:35.179Z",
+    "playbackClockDriftSeconds": -0.144,
+    "limitation": "Small drift means source timestamp is nominal; cuts visually checked with transition margins."
+  },
+  "parentAcquisitionProof": "Parent confirmed licensed normally visible public ASA Lost Colony playback, exact native URL/title, completed serial bounded selected-Chrome-window V3 capture; no agent acquisition.",
+  "fullCaptureDecode": {
+    "completed": true,
+    "exitCode": 0,
+    "diagnostics": "none; passthrough frame timing/demux time base"
+  },
+  "clipConversion": "Actual continuous4s capture cut restored to natural1x with setpts2; no loop/interpolation."
+}

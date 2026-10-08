@@ -1,0 +1,25 @@
+{
+  "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/aiWzwkiW5No-bounded-late-2x.mp4",
+  "sourceSHA256": "43b8ad40eafefdc35bc3a3196a3b9b7ef15b17e565ad0ce5789e2599fc1e4533",
+  "sourceDimensions": [
+    1184,
+    666
+  ],
+  "captureFirstFrameUTC": "2026-10-08T07:03:59.758Z",
+  "sourceAnchor": {
+    "sourceSeconds": 2182.782992,
+    "UTC": "2026-10-08T07:04:14.139Z",
+    "rate": 2
+  },
+  "formula": "movieSeconds = 14.381 + (sourceSeconds - 2182.782992) / 2",
+  "captureDurationSeconds": 75.276667,
+  "captureSampleSpanSeconds": 75.244112,
+  "frames": 2185,
+  "parentAcquisitionProof": "Parent confirmed completed serial bounded licensed public Chrome native-window capture exit0. Agent performed no acquisition.",
+  "fullCaptureDecode": {
+    "completed": true,
+    "exitCode": 0,
+    "diagnostics": "none; passthrough frame timing and demux time base used"
+  },
+  "clipConversion": "Actual continuous capture cut, setpts=2 restores natural1x; no looping or interpolation."
+}

@@ -103,6 +103,12 @@ final class MapFieldTests:XCTestCase {
             XCTAssertEqual(step.mapOverlayVisible, false)
         }
     }
+    func testCaveEntranceAnchorIsNotPresentedAsAnInteriorCoordinate() throws {
+        let spot = try XCTUnwrap(ResourceFarmCatalog.shared.spots.first { $0.id == "valguero-lava-cave-chitin-342-514" })
+        XCTAssertEqual(spot.coordinateHint, "Cave entrance · follow the filmed route inside")
+        let interior = try XCTUnwrap(ResourceFarmCatalog.shared.spots.first { $0.id == "island-cave-black-pearls" })
+        XCTAssertEqual(interior.coordinateHint, "Cave chamber · not the entrance")
+    }
 }
 
 private struct FarmIconTestRows: Decodable { let assets: [String: String] }

@@ -1,0 +1,446 @@
+{
+  "candidates": [
+    {
+      "id": "valguero-nw-snow-crystal-243-12",
+      "map": "valguero",
+      "name": "Northwestern snow cliff crystals",
+      "resources": [
+        "Crystal"
+      ],
+      "lat": 24.3,
+      "lon": 12,
+      "videoID": "bbPcUcWjWZ8",
+      "startSeconds": 2016.1637130000001,
+      "endSeconds": 2022.863713,
+      "coordinateEvidence": "Explicit creator-typed Coords: 24.3 - 12 on the same filmed region at source 2017.164s. This is a creator regional caption, not a GPS device or cursor-dependent map readout.",
+      "inventoryEvidence": "Visible blue crystal clusters on the filmed cliff; creator Crystal Locations chapter and exact regional coordinate caption.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming35/val-late/crystal-snow/clip.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming35/val-late/crystal-snow/poster.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=bbPcUcWjWZ8",
+      "sourceTimestampURL": "https://www.youtube.com/watch?v=bbPcUcWjWZ8&t=2016s",
+      "sourcePlane": "Valguero ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-typed regional coordinates for the filmed farming location; no claim of exact actor or live player GPS",
+      "mapOverlayVisible": false,
+      "creatorInsetVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "User-authorized licensed public Chrome playback captured in isolated native window; no denied download or authentication bypass",
+      "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/bbPcUcWjWZ8-bounded-late-2x.mp4",
+      "sourceSHA256": "46c7e540519d1bc4bda6c5e3579b708bf71481f96b39bc50045625eb54e46c96",
+      "sourceCapture": {
+        "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/bbPcUcWjWZ8-bounded-late-2x.mp4",
+        "sourceSHA256": "46c7e540519d1bc4bda6c5e3579b708bf71481f96b39bc50045625eb54e46c96",
+        "sourceDimensions": [
+          1184,
+          666
+        ],
+        "captureFirstFrameUTC": "2026-10-08T06:48:51.961Z",
+        "sourceAnchor": {
+          "sourceSeconds": 1978.167713,
+          "UTC": "2026-10-08T06:49:09.813Z"
+        },
+        "formula": "movieSeconds = 17.852 + (sourceSeconds - 1978.167713) / 2",
+        "captureDurationSeconds": 100.184,
+        "parentAcquisitionProof": "Parent confirmed recovered full native Chrome window; serial bounded capture completed with 2918 frames. Entire montage manually reviewed and correct framing verified despite later DOM rectangle anomaly.",
+        "fullCaptureDecode": {
+          "completed": true,
+          "exitCode": 0,
+          "diagnostics": "[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 256 >= 256\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 259 >= 259\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 845 >= 845\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 915 >= 915\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 929 >= 929\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 943 >= 943\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 950 >= 950\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 957 >= 957\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1607 >= 1607\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2142 >= 2142\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2147 >= 2147\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2305 >= 2305\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2310 >= 2310\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2312 >= 2312\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2319 >= 2319\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2710 >= 2710\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2728 >= 2728\n"
+        },
+        "clipConversion": "Actual capture cut, then setpts=2 restores natural 1x motion; no looping or interpolation."
+      },
+      "clipSHA256": "62b7729c1f0f65bc41c68e5a3f5403822662d7f163842cd077b772d257aacf54",
+      "posterSHA256": "f40881c6fa173c283bd061981a5c17ee21230c29294552866caf1b802d0456e9",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming35/val-late/valguero-nw-snow-crystal-243-12-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming35/val-late/valguero-nw-snow-crystal-243-12-coordinate.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true,
+        "reviewed": true,
+        "result": "All 27 chronological samples reviewed. Continuous terrain and node motion, no map, inventory, transition or creator inset. Encoded decode exit 0; diagnostics: none."
+      },
+      "evidenceLimitations": "Creator typed coordinates establish regional scope. No live handheld GPS or measured harvest yield is claimed. Distinct lake/cliff regions only, not multiple angles counted separately.",
+      "visualReviewStatus": "verified",
+      "sourceCrop": {
+        "x": 0,
+        "y": 90,
+        "width": 1100,
+        "height": 500,
+        "sourceWidth": 1184,
+        "sourceHeight": 666,
+        "reason": "Remove creator heading, coordinate text and bottom-right logo; preserve nodes and terrain. Uncropped coordinate proof retained."
+      },
+      "captureCut": {
+        "sourceStartSeconds": 2016.1637130000001,
+        "sourceDurationSeconds": 6.699999999999818,
+        "captureStartSeconds": 36.85,
+        "captureDurationSeconds": 3.3500000000000014,
+        "encodedDurationSeconds": 6.766667,
+        "naturalSpeedRestorationFactor": 2
+      },
+      "sourcePublishedDate": "2025-10-19",
+      "sourceTitle": "50 Tips & Tricks You NEED To Know For VALGUERO | ARK: Survival Ascended",
+      "sourceCreator": "BEYPlaysGames"
+    },
+    {
+      "id": "valguero-south-red-cliff-crystal-842-396",
+      "map": "valguero",
+      "name": "Southern red cliff crystals",
+      "resources": [
+        "Crystal"
+      ],
+      "lat": 84.2,
+      "lon": 39.6,
+      "videoID": "bbPcUcWjWZ8",
+      "startSeconds": 2036.363713,
+      "endSeconds": 2042.463713,
+      "coordinateEvidence": "Explicit creator-typed Coords: 84.2 - 39.6 on the same filmed region at source 2037.364s. This is a creator regional caption, not a GPS device or cursor-dependent map readout.",
+      "inventoryEvidence": "Visible blue crystal clusters on the filmed cliff; creator Crystal Locations chapter and exact regional coordinate caption.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming35/val-late/crystal-red/clip.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming35/val-late/crystal-red/poster.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=bbPcUcWjWZ8",
+      "sourceTimestampURL": "https://www.youtube.com/watch?v=bbPcUcWjWZ8&t=2036s",
+      "sourcePlane": "Valguero ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-typed regional coordinates for the filmed farming location; no claim of exact actor or live player GPS",
+      "mapOverlayVisible": false,
+      "creatorInsetVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "User-authorized licensed public Chrome playback captured in isolated native window; no denied download or authentication bypass",
+      "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/bbPcUcWjWZ8-bounded-late-2x.mp4",
+      "sourceSHA256": "46c7e540519d1bc4bda6c5e3579b708bf71481f96b39bc50045625eb54e46c96",
+      "sourceCapture": {
+        "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/bbPcUcWjWZ8-bounded-late-2x.mp4",
+        "sourceSHA256": "46c7e540519d1bc4bda6c5e3579b708bf71481f96b39bc50045625eb54e46c96",
+        "sourceDimensions": [
+          1184,
+          666
+        ],
+        "captureFirstFrameUTC": "2026-10-08T06:48:51.961Z",
+        "sourceAnchor": {
+          "sourceSeconds": 1978.167713,
+          "UTC": "2026-10-08T06:49:09.813Z"
+        },
+        "formula": "movieSeconds = 17.852 + (sourceSeconds - 1978.167713) / 2",
+        "captureDurationSeconds": 100.184,
+        "parentAcquisitionProof": "Parent confirmed recovered full native Chrome window; serial bounded capture completed with 2918 frames. Entire montage manually reviewed and correct framing verified despite later DOM rectangle anomaly.",
+        "fullCaptureDecode": {
+          "completed": true,
+          "exitCode": 0,
+          "diagnostics": "[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 256 >= 256\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 259 >= 259\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 845 >= 845\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 915 >= 915\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 929 >= 929\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 943 >= 943\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 950 >= 950\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 957 >= 957\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1607 >= 1607\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2142 >= 2142\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2147 >= 2147\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2305 >= 2305\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2310 >= 2310\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2312 >= 2312\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2319 >= 2319\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2710 >= 2710\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2728 >= 2728\n"
+        },
+        "clipConversion": "Actual capture cut, then setpts=2 restores natural 1x motion; no looping or interpolation."
+      },
+      "clipSHA256": "3e8dc5325a91ac921109be9ab4822f4cf71b357f5bb6f5aa50888b65299b622d",
+      "posterSHA256": "7a0b45be3993f15204e9c20d8d49d95fc69576768cd9fd1254e2c7cd929f993e",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming35/val-late/valguero-south-red-cliff-crystal-842-396-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming35/val-late/valguero-south-red-cliff-crystal-842-396-coordinate.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true,
+        "reviewed": true,
+        "result": "All 25 chronological samples reviewed. Continuous terrain and node motion, no map, inventory, transition or creator inset. Encoded decode exit 0; diagnostics: none."
+      },
+      "evidenceLimitations": "Creator typed coordinates establish regional scope. No live handheld GPS or measured harvest yield is claimed. Distinct lake/cliff regions only, not multiple angles counted separately.",
+      "visualReviewStatus": "verified",
+      "sourceCrop": {
+        "x": 0,
+        "y": 90,
+        "width": 1100,
+        "height": 500,
+        "sourceWidth": 1184,
+        "sourceHeight": 666,
+        "reason": "Remove creator heading, coordinate text and bottom-right logo; preserve nodes and terrain. Uncropped coordinate proof retained."
+      },
+      "captureCut": {
+        "sourceStartSeconds": 2036.363713,
+        "sourceDurationSeconds": 6.100000000000136,
+        "captureStartSeconds": 46.95,
+        "captureDurationSeconds": 3.049999999999997,
+        "encodedDurationSeconds": 6.133333,
+        "naturalSpeedRestorationFactor": 2
+      },
+      "sourcePublishedDate": "2025-10-19",
+      "sourceTitle": "50 Tips & Tricks You NEED To Know For VALGUERO | ARK: Survival Ascended",
+      "sourceCreator": "BEYPlaysGames"
+    },
+    {
+      "id": "valguero-ne-ice-pearls-181-885",
+      "map": "valguero",
+      "name": "Northeastern ice lake pearl bed",
+      "resources": [
+        "Silica Pearls"
+      ],
+      "lat": 18.1,
+      "lon": 88.5,
+      "videoID": "bbPcUcWjWZ8",
+      "startSeconds": 2086.863713,
+      "endSeconds": 2092.963713,
+      "coordinateEvidence": "Explicit creator-typed Coords: 18.1 - 88.5 on the same filmed region at source 2087.864s. This is a creator regional caption, not a GPS device or cursor-dependent map readout.",
+      "inventoryEvidence": "Visible luminous pearl clusters scattered across underwater lake floor; creator Silica Pearl Locations chapter and exact regional coordinate caption.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming35/val-late/pearls-ne/clip.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming35/val-late/pearls-ne/poster.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=bbPcUcWjWZ8",
+      "sourceTimestampURL": "https://www.youtube.com/watch?v=bbPcUcWjWZ8&t=2086s",
+      "sourcePlane": "Valguero ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-typed regional coordinates for the filmed farming location; no claim of exact actor or live player GPS",
+      "mapOverlayVisible": false,
+      "creatorInsetVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "User-authorized licensed public Chrome playback captured in isolated native window; no denied download or authentication bypass",
+      "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/bbPcUcWjWZ8-bounded-late-2x.mp4",
+      "sourceSHA256": "46c7e540519d1bc4bda6c5e3579b708bf71481f96b39bc50045625eb54e46c96",
+      "sourceCapture": {
+        "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/bbPcUcWjWZ8-bounded-late-2x.mp4",
+        "sourceSHA256": "46c7e540519d1bc4bda6c5e3579b708bf71481f96b39bc50045625eb54e46c96",
+        "sourceDimensions": [
+          1184,
+          666
+        ],
+        "captureFirstFrameUTC": "2026-10-08T06:48:51.961Z",
+        "sourceAnchor": {
+          "sourceSeconds": 1978.167713,
+          "UTC": "2026-10-08T06:49:09.813Z"
+        },
+        "formula": "movieSeconds = 17.852 + (sourceSeconds - 1978.167713) / 2",
+        "captureDurationSeconds": 100.184,
+        "parentAcquisitionProof": "Parent confirmed recovered full native Chrome window; serial bounded capture completed with 2918 frames. Entire montage manually reviewed and correct framing verified despite later DOM rectangle anomaly.",
+        "fullCaptureDecode": {
+          "completed": true,
+          "exitCode": 0,
+          "diagnostics": "[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 256 >= 256\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 259 >= 259\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 845 >= 845\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 915 >= 915\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 929 >= 929\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 943 >= 943\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 950 >= 950\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 957 >= 957\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1607 >= 1607\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2142 >= 2142\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2147 >= 2147\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2305 >= 2305\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2310 >= 2310\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2312 >= 2312\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2319 >= 2319\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2710 >= 2710\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2728 >= 2728\n"
+        },
+        "clipConversion": "Actual capture cut, then setpts=2 restores natural 1x motion; no looping or interpolation."
+      },
+      "clipSHA256": "06b99ff7d3449a474dc566d32e2c42d50b3854859e65822bfd5dc4a7b838e658",
+      "posterSHA256": "c788424c8ee07c53978d4faab11ddf0c4264a2816cf756bb3878da30364f657e",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming35/val-late/valguero-ne-ice-pearls-181-885-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming35/val-late/valguero-ne-ice-pearls-181-885-coordinate.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true,
+        "reviewed": true,
+        "result": "All 25 chronological samples reviewed. Continuous terrain and node motion, no map, inventory, transition or creator inset. Encoded decode exit 0; diagnostics: none."
+      },
+      "evidenceLimitations": "Creator typed coordinates establish regional scope. No live handheld GPS or measured harvest yield is claimed. Distinct lake/cliff regions only, not multiple angles counted separately.",
+      "visualReviewStatus": "verified",
+      "sourceCrop": {
+        "x": 0,
+        "y": 90,
+        "width": 1100,
+        "height": 500,
+        "sourceWidth": 1184,
+        "sourceHeight": 666,
+        "reason": "Remove creator heading, coordinate text and bottom-right logo; preserve nodes and terrain. Uncropped coordinate proof retained."
+      },
+      "captureCut": {
+        "sourceStartSeconds": 2086.863713,
+        "sourceDurationSeconds": 6.099999999999909,
+        "captureStartSeconds": 72.2,
+        "captureDurationSeconds": 3.049999999999997,
+        "encodedDurationSeconds": 6.133008,
+        "naturalSpeedRestorationFactor": 2
+      },
+      "sourcePublishedDate": "2025-10-19",
+      "sourceTitle": "50 Tips & Tricks You NEED To Know For VALGUERO | ARK: Survival Ascended",
+      "sourceCreator": "BEYPlaysGames"
+    },
+    {
+      "id": "valguero-nw-ice-pearls-301-178",
+      "map": "valguero",
+      "name": "Northwestern ice lake pearl bed",
+      "resources": [
+        "Silica Pearls"
+      ],
+      "lat": 30.1,
+      "lon": 17.8,
+      "videoID": "bbPcUcWjWZ8",
+      "startSeconds": 2100.463713,
+      "endSeconds": 2108.463713,
+      "coordinateEvidence": "Explicit creator-typed Coords: 30.1 - 17.8 on the same filmed region at source 2101.464s. This is a creator regional caption, not a GPS device or cursor-dependent map readout.",
+      "inventoryEvidence": "Visible luminous pearl clusters scattered across underwater lake floor; creator Silica Pearl Locations chapter and exact regional coordinate caption.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming35/val-late/pearls-nw/clip.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming35/val-late/pearls-nw/poster.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=bbPcUcWjWZ8",
+      "sourceTimestampURL": "https://www.youtube.com/watch?v=bbPcUcWjWZ8&t=2100s",
+      "sourcePlane": "Valguero ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-typed regional coordinates for the filmed farming location; no claim of exact actor or live player GPS",
+      "mapOverlayVisible": false,
+      "creatorInsetVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "User-authorized licensed public Chrome playback captured in isolated native window; no denied download or authentication bypass",
+      "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/bbPcUcWjWZ8-bounded-late-2x.mp4",
+      "sourceSHA256": "46c7e540519d1bc4bda6c5e3579b708bf71481f96b39bc50045625eb54e46c96",
+      "sourceCapture": {
+        "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/bbPcUcWjWZ8-bounded-late-2x.mp4",
+        "sourceSHA256": "46c7e540519d1bc4bda6c5e3579b708bf71481f96b39bc50045625eb54e46c96",
+        "sourceDimensions": [
+          1184,
+          666
+        ],
+        "captureFirstFrameUTC": "2026-10-08T06:48:51.961Z",
+        "sourceAnchor": {
+          "sourceSeconds": 1978.167713,
+          "UTC": "2026-10-08T06:49:09.813Z"
+        },
+        "formula": "movieSeconds = 17.852 + (sourceSeconds - 1978.167713) / 2",
+        "captureDurationSeconds": 100.184,
+        "parentAcquisitionProof": "Parent confirmed recovered full native Chrome window; serial bounded capture completed with 2918 frames. Entire montage manually reviewed and correct framing verified despite later DOM rectangle anomaly.",
+        "fullCaptureDecode": {
+          "completed": true,
+          "exitCode": 0,
+          "diagnostics": "[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 256 >= 256\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 259 >= 259\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 845 >= 845\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 915 >= 915\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 929 >= 929\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 943 >= 943\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 950 >= 950\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 957 >= 957\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1607 >= 1607\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2142 >= 2142\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2147 >= 2147\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2305 >= 2305\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2310 >= 2310\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2312 >= 2312\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2319 >= 2319\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2710 >= 2710\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2728 >= 2728\n"
+        },
+        "clipConversion": "Actual capture cut, then setpts=2 restores natural 1x motion; no looping or interpolation."
+      },
+      "clipSHA256": "8e15fdfd73fe23b61c9bea2b48d3526cde12fa0f3bbe1be8d104aecbafc3eab6",
+      "posterSHA256": "eb9f56e5d992562685cfff1b72a706d8775573876811aa6889f577be9c526eb8",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming35/val-late/valguero-nw-ice-pearls-301-178-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming35/val-late/valguero-nw-ice-pearls-301-178-coordinate.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true,
+        "reviewed": true,
+        "result": "All 32 chronological samples reviewed. Continuous terrain and node motion, no map, inventory, transition or creator inset. Encoded decode exit 0; diagnostics: none."
+      },
+      "evidenceLimitations": "Creator typed coordinates establish regional scope. No live handheld GPS or measured harvest yield is claimed. Distinct lake/cliff regions only, not multiple angles counted separately.",
+      "visualReviewStatus": "verified",
+      "sourceCrop": {
+        "x": 0,
+        "y": 90,
+        "width": 1100,
+        "height": 500,
+        "sourceWidth": 1184,
+        "sourceHeight": 666,
+        "reason": "Remove creator heading, coordinate text and bottom-right logo; preserve nodes and terrain. Uncropped coordinate proof retained."
+      },
+      "captureCut": {
+        "sourceStartSeconds": 2100.463713,
+        "sourceDurationSeconds": 8.0,
+        "captureStartSeconds": 79,
+        "captureDurationSeconds": 4,
+        "encodedDurationSeconds": 8.033008,
+        "naturalSpeedRestorationFactor": 2
+      },
+      "sourcePublishedDate": "2025-10-19",
+      "sourceTitle": "50 Tips & Tricks You NEED To Know For VALGUERO | ARK: Survival Ascended",
+      "sourceCreator": "BEYPlaysGames"
+    }
+  ],
+  "heldCandidates": [
+    {
+      "resource": "Metal",
+      "coordinates": [
+        [
+          5,
+          36.8
+        ],
+        [
+          27,
+          80.7
+        ],
+        [
+          78.9,
+          72.2
+        ]
+      ],
+      "reason": "Continuous terrain shot below 6 seconds after map zooms excluded."
+    },
+    {
+      "resource": "Crystal",
+      "coordinates": [
+        [
+          47.1,
+          68.2
+        ]
+      ],
+      "reason": "Continuous terrain shot below 6 seconds after map zoom excluded."
+    },
+    {
+      "resource": "Obsidian",
+      "coordinates": [
+        [
+          44.2,
+          93.5
+        ],
+        [
+          13,
+          83.3
+        ]
+      ],
+      "reason": "First shot prominently shows crystals and exact black-node identity not established; second shot below 6 seconds."
+    },
+    {
+      "resource": "Oil",
+      "coordinates": [
+        [
+          10.7,
+          62.4
+        ],
+        [
+          11.2,
+          49.4
+        ],
+        [
+          27.1,
+          70.3
+        ],
+        [
+          86.8,
+          39.3
+        ]
+      ],
+      "reason": "Rock/vein shots too short after map transitions; avoid combining perspective edits or extending source motion."
+    }
+  ],
+  "reviewedSourceRangeSeconds": [
+    1988,
+    2136
+  ],
+  "duplicateAudit": {
+    "existingValgueroCoordinates": [
+      [
+        43.9,
+        22.5
+      ],
+      [
+        44.4,
+        30.4
+      ],
+      [
+        60.9,
+        40.2
+      ]
+    ],
+    "result": "Four selected crystal/lake regions distinct from existing two pearl regions and metal region."
+  },
+  "captureClockEvidence": {
+    "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/bbPcUcWjWZ8-bounded-late-2x.mp4",
+    "sourceSHA256": "46c7e540519d1bc4bda6c5e3579b708bf71481f96b39bc50045625eb54e46c96",
+    "sourceDimensions": [
+      1184,
+      666
+    ],
+    "captureFirstFrameUTC": "2026-10-08T06:48:51.961Z",
+    "sourceAnchor": {
+      "sourceSeconds": 1978.167713,
+      "UTC": "2026-10-08T06:49:09.813Z"
+    },
+    "formula": "movieSeconds = 17.852 + (sourceSeconds - 1978.167713) / 2",
+    "captureDurationSeconds": 100.184,
+    "parentAcquisitionProof": "Parent confirmed recovered full native Chrome window; serial bounded capture completed with 2918 frames. Entire montage manually reviewed and correct framing verified despite later DOM rectangle anomaly.",
+    "fullCaptureDecode": {
+      "completed": true,
+      "exitCode": 0,
+      "diagnostics": "[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 256 >= 256\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 259 >= 259\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 845 >= 845\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 915 >= 915\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 929 >= 929\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 943 >= 943\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 950 >= 950\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 957 >= 957\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1607 >= 1607\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2142 >= 2142\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2147 >= 2147\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2305 >= 2305\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2310 >= 2310\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2312 >= 2312\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2319 >= 2319\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2710 >= 2710\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2728 >= 2728\n"
+    },
+    "clipConversion": "Actual capture cut, then setpts=2 restores natural 1x motion; no looping or interpolation."
+  },
+  "reviewerNote": "Four Valguero regions with continuous 6.1\u20138.0 second source motion, creator-typed coordinate proof and complete 4 fps/decode review. Farming34 was committed before this new evidence batch was written. No app changes."
+}

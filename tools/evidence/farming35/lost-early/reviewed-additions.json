@@ -1,0 +1,344 @@
+{
+  "candidates": [
+    {
+      "id": "lost-colony-blue-ice-cave-oil-687-463",
+      "map": "lost-colony",
+      "name": "Mountain blue ice cave oil rocks",
+      "resources": [
+        "Oil"
+      ],
+      "lat": 68.7,
+      "lon": 46.3,
+      "videoID": "1jxA9B4l3nw",
+      "startSeconds": 523.000506,
+      "endSeconds": 531.000506,
+      "coordinateEvidence": "Creator explicitly narrates around68.7 latitude46.3 longitude at source516\u2013518s, with typed68.7 -46.3 on mountain entrance. Approximate cave entrance regional pair, not exact oilactor position.",
+      "inventoryEvidence": "Striped/wrinkled black Oil rocks filmed in shallow blue-lit icy cave pool. Creator explicitly identifies this cave as Oil source. No pickup, yield or permanent spawn count claimed.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming35/lost-early/lost-colony-blue-ice-cave-oil-687-463/clip.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming35/lost-early/lost-colony-blue-ice-cave-oil-687-463/poster.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=1jxA9B4l3nw",
+      "sourceTimestampURL": "https://www.youtube.com/watch?v=1jxA9B4l3nw&t=523s",
+      "sourcePlane": "Lost Colony ASA coordinate plane",
+      "sourceCoordinateScope": "Creator explicitly spoken approximate regional coordinates; cave entrance anchors filmed interior route",
+      "mapOverlayVisible": false,
+      "creatorInsetVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "User-authorized licensed public Chrome playback captured in isolated native window; no denied download or authentication bypass",
+      "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/1jxA9B4l3nw-bounded-oil-paste-chitin-2x.mp4",
+      "sourceSHA256": "a8b03c2422d69da3e644739501b8e8d9fcccc40edee5a86a7e1f667828d6719d",
+      "sourceCapture": {
+        "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/1jxA9B4l3nw-bounded-oil-paste-chitin-2x.mp4",
+        "sourceSHA256": "a8b03c2422d69da3e644739501b8e8d9fcccc40edee5a86a7e1f667828d6719d",
+        "sourceDimensions": [
+          1184,
+          666
+        ],
+        "captureFirstFrameUTC": "2026-10-08T07:22:14.533Z",
+        "sourceAnchor": {
+          "sourceSeconds": 492.316506,
+          "UTC": "2026-10-08T07:22:25.191Z"
+        },
+        "formula": "movieSeconds = 10.658 + (sourceSeconds - 492.316506) / 2",
+        "captureDurationSeconds": 130.184822,
+        "parentAcquisitionProof": "Completed serial licensed native Chrome capture, 3789 frames. Parent confirms main footage vanilla ASA; sponsor segment is separate content, excluded.",
+        "fullCaptureDecode": {
+          "completed": true,
+          "exitCode": 0,
+          "diagnostics": "[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 186 >= 186\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 191 >= 191\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 193 >= 193\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 198 >= 198\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 200 >= 200\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 215 >= 215\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 222 >= 222\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 228 >= 228\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 233 >= 233\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 235 >= 235\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 238 >= 238\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 242 >= 242\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 249 >= 249\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 252 >= 252\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 254 >= 254\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 256 >= 256\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 261 >= 261\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 264 >= 264\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 270 >= 270\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 299 >= 299\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 301 >= 301\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 307 >= 307\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 335 >= 335\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 656 >= 656\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 663 >= 663\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 989 >= 989\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 991 >= 991\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 994 >= 994\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1437 >= 1437\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1769 >= 1769\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1775 >= 1775\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2016 >= 2016\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2037 >= 2037\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2039 >= 2039\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2630 >= 2630\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2633 >= 2633\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2635 >= 2635\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2959 >= 2959\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3080 >= 3080\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3101 >= 3101\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3336 >= 3336\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3344 >= 3344\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3348 >= 3348\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3350 >= 3350\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3364 >= 3364\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3366 >= 3366\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3369 >= 3369\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3376 >= 3376\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3378 >= 3378\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3380 >= 3380\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3383 >= 3383\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3392 >= 3392\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3407 >= 3407\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3411 >= 3411\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3413 >= 3413\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3463 >= 3463\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3474 >= 3474\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3476 >= 3476\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3578 >= 3578\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3582 >= 3582\n"
+        },
+        "clipConversion": "Actual capture cut with setpts=2 restoring natural 1x motion; no extension or looping."
+      },
+      "clipSHA256": "ffbf602f857feca7b7b0327705dc371e16a1a37fd1357d083a1640e7ae1c81bd",
+      "posterSHA256": "d1a4dcd4e6f64c57b39bb523936240db1b60c852cfd13bf1f9371934ff0558de",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming35/lost-early/lost-colony-blue-ice-cave-oil-687-463-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming35/lost-early/lost-colony-blue-ice-cave-oil-687-463-coordinate.jpg",
+        "resourceFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming35/lost-early/lost-colony-blue-ice-cave-oil-687-463-resource.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true,
+        "reviewed": true,
+        "result": "All 32 chronological samples reviewed. Continuous location footage after recutting away creator edits/crossfades; no map, inventory, inset or caption. Encoded decode exit0 with no diagnostics."
+      },
+      "evidenceLimitations": "Coordinates are approximate creator regional guidance. No actor-exact position, yield or guaranteed spawn. Main guide footage is separate from excluded sponsor segment.",
+      "visualReviewStatus": "verified",
+      "sourceCrop": {
+        "x": 100,
+        "y": 90,
+        "width": 1000,
+        "height": 500,
+        "sourceWidth": 1184,
+        "sourceHeight": 666,
+        "reason": "Remove heading, pickup list, right HUD, hotbar and logo; retain resource terrain/action; uncropped proofs retained."
+      },
+      "captureCut": {
+        "sourceStartSeconds": 523.000506,
+        "sourceDurationSeconds": 8.0,
+        "captureStartSeconds": 26,
+        "captureDurationSeconds": 4,
+        "encodedDurationSeconds": 8.033333,
+        "naturalSpeedRestorationFactor": 2
+      },
+      "sourcePublishedDate": "2026-01-10",
+      "sourceTitle": "50 Tips & Tricks You NEED To Know For LOST COLONY | ARK: Survival Ascended",
+      "sourceCreator": "BEYPlaysGames"
+    },
+    {
+      "id": "lost-colony-arch-river-oil-585-561",
+      "map": "lost-colony",
+      "name": "Central canyon arch river oil bed",
+      "resources": [
+        "Oil"
+      ],
+      "lat": 58.5,
+      "lon": 56.1,
+      "videoID": "1jxA9B4l3nw",
+      "startSeconds": 553.000506,
+      "endSeconds": 559.400506,
+      "coordinateEvidence": "Creator explicitly narrates around58.5 latitude56.1 longitude at source535\u2013539s. Native map in same river locale shows58.5/56.1 at source535s. Authority is approximate creator-spoken region, not assumed exact player/device GPS.",
+      "inventoryEvidence": "Many characteristic wrinkled Oil rocks filmed across shallow river under red-lit stone arches, matching creator identification. No measured yield claimed.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming35/lost-early/lost-colony-arch-river-oil-585-561/clip.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming35/lost-early/lost-colony-arch-river-oil-585-561/poster.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=1jxA9B4l3nw",
+      "sourceTimestampURL": "https://www.youtube.com/watch?v=1jxA9B4l3nw&t=553s",
+      "sourcePlane": "Lost Colony ASA coordinate plane",
+      "sourceCoordinateScope": "Creator explicitly spoken approximate river farming region",
+      "mapOverlayVisible": false,
+      "creatorInsetVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "User-authorized licensed public Chrome playback captured in isolated native window; no denied download or authentication bypass",
+      "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/1jxA9B4l3nw-bounded-oil-paste-chitin-2x.mp4",
+      "sourceSHA256": "a8b03c2422d69da3e644739501b8e8d9fcccc40edee5a86a7e1f667828d6719d",
+      "sourceCapture": {
+        "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/1jxA9B4l3nw-bounded-oil-paste-chitin-2x.mp4",
+        "sourceSHA256": "a8b03c2422d69da3e644739501b8e8d9fcccc40edee5a86a7e1f667828d6719d",
+        "sourceDimensions": [
+          1184,
+          666
+        ],
+        "captureFirstFrameUTC": "2026-10-08T07:22:14.533Z",
+        "sourceAnchor": {
+          "sourceSeconds": 492.316506,
+          "UTC": "2026-10-08T07:22:25.191Z"
+        },
+        "formula": "movieSeconds = 10.658 + (sourceSeconds - 492.316506) / 2",
+        "captureDurationSeconds": 130.184822,
+        "parentAcquisitionProof": "Completed serial licensed native Chrome capture, 3789 frames. Parent confirms main footage vanilla ASA; sponsor segment is separate content, excluded.",
+        "fullCaptureDecode": {
+          "completed": true,
+          "exitCode": 0,
+          "diagnostics": "[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 186 >= 186\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 191 >= 191\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 193 >= 193\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 198 >= 198\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 200 >= 200\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 215 >= 215\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 222 >= 222\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 228 >= 228\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 233 >= 233\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 235 >= 235\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 238 >= 238\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 242 >= 242\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 249 >= 249\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 252 >= 252\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 254 >= 254\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 256 >= 256\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 261 >= 261\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 264 >= 264\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 270 >= 270\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 299 >= 299\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 301 >= 301\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 307 >= 307\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 335 >= 335\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 656 >= 656\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 663 >= 663\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 989 >= 989\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 991 >= 991\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 994 >= 994\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1437 >= 1437\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1769 >= 1769\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1775 >= 1775\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2016 >= 2016\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2037 >= 2037\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2039 >= 2039\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2630 >= 2630\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2633 >= 2633\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2635 >= 2635\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2959 >= 2959\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3080 >= 3080\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3101 >= 3101\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3336 >= 3336\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3344 >= 3344\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3348 >= 3348\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3350 >= 3350\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3364 >= 3364\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3366 >= 3366\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3369 >= 3369\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3376 >= 3376\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3378 >= 3378\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3380 >= 3380\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3383 >= 3383\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3392 >= 3392\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3407 >= 3407\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3411 >= 3411\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3413 >= 3413\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3463 >= 3463\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3474 >= 3474\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3476 >= 3476\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3578 >= 3578\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3582 >= 3582\n"
+        },
+        "clipConversion": "Actual capture cut with setpts=2 restoring natural 1x motion; no extension or looping."
+      },
+      "clipSHA256": "f5d27d3aa1592626c3ea99dc593656ad269797e8dda406a4ae855b38f20f9d81",
+      "posterSHA256": "cf6b3dddc63632915a78e682152e0d866969c5314ed7c0681f51f21e1b85fd4e",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming35/lost-early/lost-colony-arch-river-oil-585-561-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming35/lost-early/lost-colony-arch-river-oil-585-561-coordinate.jpg",
+        "resourceFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming35/lost-early/lost-colony-arch-river-oil-585-561-resource.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true,
+        "reviewed": true,
+        "result": "All 26 chronological samples reviewed. Continuous location footage after recutting away creator edits/crossfades; no map, inventory, inset or caption. Encoded decode exit0 with no diagnostics."
+      },
+      "evidenceLimitations": "Coordinates are approximate creator regional guidance. No actor-exact position, yield or guaranteed spawn. Main guide footage is separate from excluded sponsor segment.",
+      "visualReviewStatus": "verified",
+      "sourceCrop": {
+        "x": 100,
+        "y": 90,
+        "width": 1000,
+        "height": 500,
+        "sourceWidth": 1184,
+        "sourceHeight": 666,
+        "reason": "Remove heading, pickup list, right HUD, hotbar and logo; retain resource terrain/action; uncropped proofs retained."
+      },
+      "captureCut": {
+        "sourceStartSeconds": 553.000506,
+        "sourceDurationSeconds": 6.399999999999977,
+        "captureStartSeconds": 41,
+        "captureDurationSeconds": 3.200000000000003,
+        "encodedDurationSeconds": 6.466667,
+        "naturalSpeedRestorationFactor": 2
+      },
+      "sourcePublishedDate": "2026-01-10",
+      "sourceTitle": "50 Tips & Tricks You NEED To Know For LOST COLONY | ARK: Survival Ascended",
+      "sourceCreator": "BEYPlaysGames"
+    },
+    {
+      "id": "lost-colony-north-cave-chitin-28-30",
+      "map": "lost-colony",
+      "name": "Far northern cave bug harvest",
+      "resources": [
+        "Chitin"
+      ],
+      "lat": 2.8,
+      "lon": 30,
+      "videoID": "1jxA9B4l3nw",
+      "startSeconds": 685.000506,
+      "endSeconds": 692.300506,
+      "coordinateEvidence": "Creator explicitly narrates north cave around2.8 latitude30 longitude at source667\u2013670s, with same-locale native map shown. Pair locates cave entrance for the filmed interior bug route, not an exact bug spawn position.",
+      "inventoryEvidence": "Megatherium kills cave bugs; uncropped source683/689s shows explicit brown Chitin pickup icon (+432 and +923 respectively). Creator identifies Chitin farm. Numbers serve as evidence only, not promised yield.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming35/lost-early/lost-colony-north-cave-chitin-28-30/clip.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming35/lost-early/lost-colony-north-cave-chitin-28-30/poster.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=1jxA9B4l3nw",
+      "sourceTimestampURL": "https://www.youtube.com/watch?v=1jxA9B4l3nw&t=685s",
+      "sourcePlane": "Lost Colony ASA coordinate plane",
+      "sourceCoordinateScope": "Creator explicitly spoken approximate regional coordinates; cave entrance anchors filmed interior route",
+      "mapOverlayVisible": false,
+      "creatorInsetVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "User-authorized licensed public Chrome playback captured in isolated native window; no denied download or authentication bypass",
+      "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/1jxA9B4l3nw-bounded-oil-paste-chitin-2x.mp4",
+      "sourceSHA256": "a8b03c2422d69da3e644739501b8e8d9fcccc40edee5a86a7e1f667828d6719d",
+      "sourceCapture": {
+        "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/1jxA9B4l3nw-bounded-oil-paste-chitin-2x.mp4",
+        "sourceSHA256": "a8b03c2422d69da3e644739501b8e8d9fcccc40edee5a86a7e1f667828d6719d",
+        "sourceDimensions": [
+          1184,
+          666
+        ],
+        "captureFirstFrameUTC": "2026-10-08T07:22:14.533Z",
+        "sourceAnchor": {
+          "sourceSeconds": 492.316506,
+          "UTC": "2026-10-08T07:22:25.191Z"
+        },
+        "formula": "movieSeconds = 10.658 + (sourceSeconds - 492.316506) / 2",
+        "captureDurationSeconds": 130.184822,
+        "parentAcquisitionProof": "Completed serial licensed native Chrome capture, 3789 frames. Parent confirms main footage vanilla ASA; sponsor segment is separate content, excluded.",
+        "fullCaptureDecode": {
+          "completed": true,
+          "exitCode": 0,
+          "diagnostics": "[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 186 >= 186\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 191 >= 191\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 193 >= 193\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 198 >= 198\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 200 >= 200\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 215 >= 215\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 222 >= 222\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 228 >= 228\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 233 >= 233\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 235 >= 235\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 238 >= 238\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 242 >= 242\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 249 >= 249\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 252 >= 252\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 254 >= 254\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 256 >= 256\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 261 >= 261\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 264 >= 264\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 270 >= 270\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 299 >= 299\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 301 >= 301\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 307 >= 307\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 335 >= 335\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 656 >= 656\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 663 >= 663\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 989 >= 989\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 991 >= 991\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 994 >= 994\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1437 >= 1437\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1769 >= 1769\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1775 >= 1775\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2016 >= 2016\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2037 >= 2037\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2039 >= 2039\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2630 >= 2630\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2633 >= 2633\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2635 >= 2635\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2959 >= 2959\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3080 >= 3080\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3101 >= 3101\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3336 >= 3336\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3344 >= 3344\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3348 >= 3348\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3350 >= 3350\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3364 >= 3364\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3366 >= 3366\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3369 >= 3369\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3376 >= 3376\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3378 >= 3378\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3380 >= 3380\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3383 >= 3383\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3392 >= 3392\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3407 >= 3407\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3411 >= 3411\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3413 >= 3413\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3463 >= 3463\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3474 >= 3474\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3476 >= 3476\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3578 >= 3578\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3582 >= 3582\n"
+        },
+        "clipConversion": "Actual capture cut with setpts=2 restoring natural 1x motion; no extension or looping."
+      },
+      "clipSHA256": "40afe8e77476ff05951e3435157bcabf1c306655b450cc441587cdc685b0c33e",
+      "posterSHA256": "61ff597e2f3e502a07cb37aeacd57214e4b2ff5663c34e48dc89cf21d8e94e87",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming35/lost-early/lost-colony-north-cave-chitin-28-30-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming35/lost-early/lost-colony-north-cave-chitin-28-30-coordinate.jpg",
+        "resourceFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming35/lost-early/lost-colony-north-cave-chitin-28-30-resource.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true,
+        "reviewed": true,
+        "result": "All 29 chronological samples reviewed. Continuous location footage after recutting away creator edits/crossfades; no map, inventory, inset or caption. Encoded decode exit0 with no diagnostics."
+      },
+      "evidenceLimitations": "Coordinates are approximate creator regional guidance. No actor-exact position, yield or guaranteed spawn. Main guide footage is separate from excluded sponsor segment.",
+      "visualReviewStatus": "verified",
+      "sourceCrop": {
+        "x": 100,
+        "y": 90,
+        "width": 1000,
+        "height": 500,
+        "sourceWidth": 1184,
+        "sourceHeight": 666,
+        "reason": "Remove heading, pickup list, right HUD, hotbar and logo; retain resource terrain/action; uncropped proofs retained."
+      },
+      "captureCut": {
+        "sourceStartSeconds": 685.000506,
+        "sourceDurationSeconds": 7.300000000000068,
+        "captureStartSeconds": 107,
+        "captureDurationSeconds": 3.6500000000000057,
+        "encodedDurationSeconds": 7.366667,
+        "naturalSpeedRestorationFactor": 2
+      },
+      "sourcePublishedDate": "2026-01-10",
+      "sourceTitle": "50 Tips & Tricks You NEED To Know For LOST COLONY | ARK: Survival Ascended",
+      "sourceCreator": "BEYPlaysGames"
+    }
+  ],
+  "heldCandidates": [
+    {
+      "resources": [
+        "Silica Pearls"
+      ],
+      "coordinates": [
+        [
+          68.7,
+          46.3
+        ],
+        [
+          58.5,
+          56.1
+        ]
+      ],
+      "reason": "Creator mentions pearls, but selected footage does not clearly demonstrate pearl-node identity or collection; no extra resource assignment."
+    },
+    {
+      "resources": [
+        "Cementing Paste"
+      ],
+      "coordinates": [
+        63.3,
+        53.2
+      ],
+      "reason": "Achatina spawn shown, but no Paste output/collection; creature production substitute not assumed."
+    },
+    {
+      "resources": [
+        "Cementing Paste",
+        "Silica Pearls",
+        "Rare Flowers",
+        "Rare Mushrooms"
+      ],
+      "region": "Central canyon beavers",
+      "reason": "No explicit numerical dam pin or actual dam loot. Creator states dams almost never spawn at source publication."
+    },
+    {
+      "resources": [
+        "Cementing Paste"
+      ],
+      "coordinates": [
+        2.8,
+        30
+      ],
+      "reason": "Chitin farming and craft recommendation shown; no natural Paste output or completed craft. Chitin region approved without treating craft as a separate Paste farm."
+    }
+  ],
+  "captureClockEvidence": {
+    "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/1jxA9B4l3nw-bounded-oil-paste-chitin-2x.mp4",
+    "sourceSHA256": "a8b03c2422d69da3e644739501b8e8d9fcccc40edee5a86a7e1f667828d6719d",
+    "sourceDimensions": [
+      1184,
+      666
+    ],
+    "captureFirstFrameUTC": "2026-10-08T07:22:14.533Z",
+    "sourceAnchor": {
+      "sourceSeconds": 492.316506,
+      "UTC": "2026-10-08T07:22:25.191Z"
+    },
+    "formula": "movieSeconds = 10.658 + (sourceSeconds - 492.316506) / 2",
+    "captureDurationSeconds": 130.184822,
+    "parentAcquisitionProof": "Completed serial licensed native Chrome capture, 3789 frames. Parent confirms main footage vanilla ASA; sponsor segment is separate content, excluded.",
+    "fullCaptureDecode": {
+      "completed": true,
+      "exitCode": 0,
+      "diagnostics": "[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 186 >= 186\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 191 >= 191\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 193 >= 193\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 198 >= 198\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 200 >= 200\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 215 >= 215\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 222 >= 222\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 228 >= 228\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 233 >= 233\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 235 >= 235\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 238 >= 238\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 242 >= 242\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 249 >= 249\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 252 >= 252\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 254 >= 254\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 256 >= 256\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 261 >= 261\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 264 >= 264\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 270 >= 270\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 299 >= 299\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 301 >= 301\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 307 >= 307\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 335 >= 335\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 656 >= 656\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 663 >= 663\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 989 >= 989\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 991 >= 991\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 994 >= 994\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1437 >= 1437\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1769 >= 1769\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1775 >= 1775\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2016 >= 2016\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2037 >= 2037\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2039 >= 2039\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2630 >= 2630\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2633 >= 2633\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2635 >= 2635\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2959 >= 2959\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3080 >= 3080\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3101 >= 3101\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3336 >= 3336\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3344 >= 3344\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3348 >= 3348\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3350 >= 3350\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3364 >= 3364\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3366 >= 3366\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3369 >= 3369\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3376 >= 3376\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3378 >= 3378\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3380 >= 3380\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3383 >= 3383\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3392 >= 3392\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3407 >= 3407\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3411 >= 3411\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3413 >= 3413\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3463 >= 3463\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3474 >= 3474\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3476 >= 3476\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3578 >= 3578\n[null @ 0x79b7020500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 3582 >= 3582\n"
+    },
+    "clipConversion": "Actual capture cut with setpts=2 restoring natural 1x motion; no extension or looping."
+  },
+  "duplicateAudit": {
+    "existingLostOilCoordinates": [
+      [
+        91.7,
+        20.8
+      ],
+      [
+        65.6,
+        48.3
+      ],
+      [
+        59.5,
+        58.6
+      ]
+    ],
+    "result": "New blue-lit68.7/46.3 ice cave has distinctive blue ceiling and dense icy pool different from pale65.6/48.3 cave. New58.5/56.1 wide bed under red-lit arches differs visually from narrow vegetated rock-bank Ankylo harvest59.5/58.6; no duplicate exclusion merely by broad canyon label. North cave2.8/30 is new Chitin region."
+  },
+  "reviewerNote": "Three verified regions; Oil visuals accepted as resource approach footage without requiring yield. All creator cuts removed from delivered clips. Sponsor segment excluded and no custom source inference made."
+}

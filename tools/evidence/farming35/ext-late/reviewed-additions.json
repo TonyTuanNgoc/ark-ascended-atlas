@@ -1,0 +1,234 @@
+{
+  "candidates": [
+    {
+      "id": "extinction-obsidian-desert-775-382",
+      "map": "extinction",
+      "name": "Desert rock cleft obsidian",
+      "resources": [
+        "Obsidian"
+      ],
+      "lat": 77.5,
+      "lon": 38.2,
+      "videoID": "aiWzwkiW5No",
+      "startSeconds": 2223.0609919999997,
+      "endSeconds": 2229.0609919999997,
+      "coordinateEvidence": "Explicit creator-typed Coords: 77.5 - 38.2 caption within the same filmed farming region. Not a map cursor or handheld GPS measurement.",
+      "inventoryEvidence": "Creator chapter labels Obsidian and matching resource nodes visible in the filmed region. No harvest yield claimed.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming35/ext-late/obsidian-desert/clip.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming35/ext-late/obsidian-desert/poster.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=aiWzwkiW5No",
+      "sourceTimestampURL": "https://www.youtube.com/watch?v=aiWzwkiW5No&t=2223s",
+      "sourcePlane": "Extinction ASA coordinate plane",
+      "sourceCoordinateScope": "Creator regional caption coordinates; no exact actor/player position claimed",
+      "mapOverlayVisible": false,
+      "creatorInsetVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "Licensed normally visible public Chrome playback recorded by parent in isolated selected window",
+      "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/aiWzwkiW5No-bounded-late-2x.mp4",
+      "sourceSHA256": "43b8ad40eafefdc35bc3a3196a3b9b7ef15b17e565ad0ce5789e2599fc1e4533",
+      "sourceCapture": {
+        "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/aiWzwkiW5No-bounded-late-2x.mp4",
+        "sourceSHA256": "43b8ad40eafefdc35bc3a3196a3b9b7ef15b17e565ad0ce5789e2599fc1e4533",
+        "sourceDimensions": [
+          1184,
+          666
+        ],
+        "captureFirstFrameUTC": "2026-10-08T07:03:59.758Z",
+        "sourceAnchor": {
+          "sourceSeconds": 2182.782992,
+          "UTC": "2026-10-08T07:04:14.139Z",
+          "rate": 2
+        },
+        "formula": "movieSeconds = 14.381 + (sourceSeconds - 2182.782992) / 2",
+        "captureDurationSeconds": 75.276667,
+        "captureSampleSpanSeconds": 75.244112,
+        "frames": 2185,
+        "parentAcquisitionProof": "Parent confirmed completed serial bounded licensed public Chrome native-window capture exit0. Agent performed no acquisition.",
+        "fullCaptureDecode": {
+          "completed": true,
+          "exitCode": 0,
+          "diagnostics": "none; passthrough frame timing and demux time base used"
+        },
+        "clipConversion": "Actual continuous capture cut, setpts=2 restores natural1x; no looping or interpolation."
+      },
+      "clipSHA256": "499483ccac55f66800f303c13a5629508afca1c09360646b5bb56a38ca82647d",
+      "posterSHA256": "d140433c8730e63f2f518310db35e1d1f482dcfb4bbdedd4d01a0a3cee2fab0e",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming35/ext-late/obsidian-desert-delivery-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming35/ext-late/obsidian-desert-coordinate.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true,
+        "reviewed": true,
+        "result": "All24 chronological samples reviewed; continuous resource and terrain motion, no map, inventory, creator inset, title/caption fragments or shot transition. Full clip decode exit0, empty diagnostics."
+      },
+      "evidenceLimitations": "Creator regional scope, not handheld GPS. Metal is generic Metal; Rich Metal is not asserted. Existing Extinction Metal32.9/44.1 and Oil29.5/55 remain untouched.",
+      "visualReviewStatus": "verified",
+      "sourceCrop": {
+        "x": 0,
+        "y": 80,
+        "width": 1100,
+        "height": 500,
+        "sourceWidth": 1184,
+        "sourceHeight": 666,
+        "reason": "Remove creator heading, coordinate text, lower explanatory caption and bottom-right logo; uncropped coordinate proof retained."
+      },
+      "captureCut": {
+        "sourceStartSeconds": 2223.0609919999997,
+        "sourceDurationSeconds": 6,
+        "captureStartSeconds": 34.52,
+        "captureDurationSeconds": 3,
+        "encodedDurationSeconds": 6.0,
+        "naturalSpeedRestorationFactor": 2
+      },
+      "sourcePublishedDate": "2025-01-23",
+      "sourceTitle": "50 Tips & Tricks you NEED To Know For Extinction Ascended",
+      "sourceCreator": "BEYPlaysGames"
+    },
+    {
+      "id": "extinction-metal-forest-154-257",
+      "map": "extinction",
+      "name": "Sunken Forest metal outcrop",
+      "resources": [
+        "Metal"
+      ],
+      "lat": 15.4,
+      "lon": 25.7,
+      "videoID": "aiWzwkiW5No",
+      "startSeconds": 2233.5409919999997,
+      "endSeconds": 2239.5409919999997,
+      "coordinateEvidence": "Explicit creator-typed Coords: 15.4 - 25.7 caption within the same filmed farming region. Not a map cursor or handheld GPS measurement.",
+      "inventoryEvidence": "Creator chapter labels Metal and matching resource nodes visible in the filmed region. No harvest yield claimed.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming35/ext-late/metal-forest/clip.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming35/ext-late/metal-forest/poster.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=aiWzwkiW5No",
+      "sourceTimestampURL": "https://www.youtube.com/watch?v=aiWzwkiW5No&t=2233s",
+      "sourcePlane": "Extinction ASA coordinate plane",
+      "sourceCoordinateScope": "Creator regional caption coordinates; no exact actor/player position claimed",
+      "mapOverlayVisible": false,
+      "creatorInsetVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "Licensed normally visible public Chrome playback recorded by parent in isolated selected window",
+      "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/aiWzwkiW5No-bounded-late-2x.mp4",
+      "sourceSHA256": "43b8ad40eafefdc35bc3a3196a3b9b7ef15b17e565ad0ce5789e2599fc1e4533",
+      "sourceCapture": {
+        "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/aiWzwkiW5No-bounded-late-2x.mp4",
+        "sourceSHA256": "43b8ad40eafefdc35bc3a3196a3b9b7ef15b17e565ad0ce5789e2599fc1e4533",
+        "sourceDimensions": [
+          1184,
+          666
+        ],
+        "captureFirstFrameUTC": "2026-10-08T07:03:59.758Z",
+        "sourceAnchor": {
+          "sourceSeconds": 2182.782992,
+          "UTC": "2026-10-08T07:04:14.139Z",
+          "rate": 2
+        },
+        "formula": "movieSeconds = 14.381 + (sourceSeconds - 2182.782992) / 2",
+        "captureDurationSeconds": 75.276667,
+        "captureSampleSpanSeconds": 75.244112,
+        "frames": 2185,
+        "parentAcquisitionProof": "Parent confirmed completed serial bounded licensed public Chrome native-window capture exit0. Agent performed no acquisition.",
+        "fullCaptureDecode": {
+          "completed": true,
+          "exitCode": 0,
+          "diagnostics": "none; passthrough frame timing and demux time base used"
+        },
+        "clipConversion": "Actual continuous capture cut, setpts=2 restores natural1x; no looping or interpolation."
+      },
+      "clipSHA256": "e1400204233dc5f641857722729111097cc19799c9c98614767508b1a07e6635",
+      "posterSHA256": "74bbcdfd1547f216e020b1afd94023c818d9435c1d5f72db847d7c2868731803",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming35/ext-late/metal-forest-delivery-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming35/ext-late/metal-forest-coordinate.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true,
+        "reviewed": true,
+        "result": "All24 chronological samples reviewed; continuous resource and terrain motion, no map, inventory, creator inset, title/caption fragments or shot transition. Full clip decode exit0, empty diagnostics."
+      },
+      "evidenceLimitations": "Creator regional scope, not handheld GPS. Metal is generic Metal; Rich Metal is not asserted. Existing Extinction Metal32.9/44.1 and Oil29.5/55 remain untouched.",
+      "visualReviewStatus": "verified",
+      "sourceCrop": {
+        "x": 0,
+        "y": 80,
+        "width": 1100,
+        "height": 470,
+        "sourceWidth": 1184,
+        "sourceHeight": 666,
+        "reason": "Remove creator heading, coordinate text, lower explanatory caption and bottom-right logo; uncropped coordinate proof retained."
+      },
+      "captureCut": {
+        "sourceStartSeconds": 2233.5409919999997,
+        "sourceDurationSeconds": 6,
+        "captureStartSeconds": 39.76,
+        "captureDurationSeconds": 3,
+        "encodedDurationSeconds": 6.033333,
+        "naturalSpeedRestorationFactor": 2
+      },
+      "sourcePublishedDate": "2025-01-23",
+      "sourceTitle": "50 Tips & Tricks you NEED To Know For Extinction Ascended",
+      "sourceCreator": "BEYPlaysGames"
+    }
+  ],
+  "held": [
+    {
+      "resources": [
+        "Oil"
+      ],
+      "lat": 2.7,
+      "lon": 70.2,
+      "reason": "Clean snowy oil shot shorter than6seconds at restored natural speed; attempted6s cut intrudes map transition and is rejected.",
+      "rejectedClip": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming35/ext-late/oil-snow/rejected-map-intrusion.mp4"
+    },
+    {
+      "resources": [
+        "Oil"
+      ],
+      "lat": 94.1,
+      "lon": 15.7,
+      "reason": "Clean wasteland oil montage shot under6s at restored natural speed; no looping or artificial slow motion permitted."
+    },
+    {
+      "resources": [
+        "Obsidian"
+      ],
+      "lat": 26.2,
+      "lon": 75.7,
+      "reason": "Clean icy hollow montage shot under6s at restored natural speed."
+    },
+    {
+      "resources": [
+        "Sulfur"
+      ],
+      "reason": "Chapter shows resource-map overlays and harvesting methods but no qualifying exact creator location caption/GPS for a clean6\u201310s location clip. Condensed Gas is outside canonical14."
+    }
+  ],
+  "capture": {
+    "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/aiWzwkiW5No-bounded-late-2x.mp4",
+    "sourceSHA256": "43b8ad40eafefdc35bc3a3196a3b9b7ef15b17e565ad0ce5789e2599fc1e4533",
+    "sourceDimensions": [
+      1184,
+      666
+    ],
+    "captureFirstFrameUTC": "2026-10-08T07:03:59.758Z",
+    "sourceAnchor": {
+      "sourceSeconds": 2182.782992,
+      "UTC": "2026-10-08T07:04:14.139Z",
+      "rate": 2
+    },
+    "formula": "movieSeconds = 14.381 + (sourceSeconds - 2182.782992) / 2",
+    "captureDurationSeconds": 75.276667,
+    "captureSampleSpanSeconds": 75.244112,
+    "frames": 2185,
+    "parentAcquisitionProof": "Parent confirmed completed serial bounded licensed public Chrome native-window capture exit0. Agent performed no acquisition.",
+    "fullCaptureDecode": {
+      "completed": true,
+      "exitCode": 0,
+      "diagnostics": "none; passthrough frame timing and demux time base used"
+    },
+    "clipConversion": "Actual continuous capture cut, setpts=2 restores natural1x; no looping or interpolation."
+  }
+}

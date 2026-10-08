@@ -1,0 +1,31 @@
+{
+  "status": "research-stopped-by-user",
+  "userInstruction": "Stop finding missing Farming regions; keep reviewed work for later user-requested additions.",
+  "researchActive": false,
+  "additionalResearchScheduled": false,
+  "releaseBuild": 35,
+  "releaseVersion": "0.34.0",
+  "newVerifiedRegions": 16,
+  "verifiedCatalogueRegions": 172,
+  "curatedVisibleRegions": 162,
+  "simulatorDelivery": "installed, fresh-launched and visibly foreground in landscape",
+  "newRegionIDs": [
+    "valguero-nw-snow-crystal-243-12",
+    "valguero-south-red-cliff-crystal-842-396",
+    "valguero-ne-ice-pearls-181-885",
+    "valguero-nw-ice-pearls-301-178",
+    "valguero-lava-cave-chitin-342-514",
+    "valguero-ab-red-cap-mushrooms-312-863",
+    "extinction-obsidian-desert-775-382",
+    "extinction-metal-forest-154-257",
+    "extinction-desert-lakes-purple-bushes-863-839",
+    "lost-colony-south-sap-trees-875-346",
+    "lost-colony-south-city-gargoyles-561-611",
+    "lost-colony-blue-ice-cave-oil-687-463",
+    "lost-colony-arch-river-oil-585-561",
+    "lost-colony-north-cave-chitin-28-30",
+    "lost-colony-cliff-arch-honey-231-199",
+    "lost-colony-stacked-cliff-honey-36-421"
+  ],
+  "testsPassed": 11
+}

@@ -1,0 +1,22 @@
+{
+  "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/bbPcUcWjWZ8-bounded-late-2x.mp4",
+  "sourceSHA256": "46c7e540519d1bc4bda6c5e3579b708bf71481f96b39bc50045625eb54e46c96",
+  "sourceDimensions": [
+    1184,
+    666
+  ],
+  "captureFirstFrameUTC": "2026-10-08T06:48:51.961Z",
+  "sourceAnchor": {
+    "sourceSeconds": 1978.167713,
+    "UTC": "2026-10-08T06:49:09.813Z"
+  },
+  "formula": "movieSeconds = 17.852 + (sourceSeconds - 1978.167713) / 2",
+  "captureDurationSeconds": 100.184,
+  "parentAcquisitionProof": "Parent confirmed recovered full native Chrome window; serial bounded capture completed with 2918 frames. Entire montage manually reviewed and correct framing verified despite later DOM rectangle anomaly.",
+  "fullCaptureDecode": {
+    "completed": true,
+    "exitCode": 0,
+    "diagnostics": "[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 256 >= 256\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 259 >= 259\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 845 >= 845\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 915 >= 915\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 929 >= 929\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 943 >= 943\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 950 >= 950\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 957 >= 957\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 1607 >= 1607\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2142 >= 2142\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2147 >= 2147\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2305 >= 2305\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2310 >= 2310\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2312 >= 2312\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2319 >= 2319\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2710 >= 2710\n[null @ 0x7cd6c14500] Application provided invalid, non monotonically increasing dts to muxer in stream 0: 2728 >= 2728\n"
+  },
+  "clipConversion": "Actual capture cut, then setpts=2 restores natural 1x motion; no looping or interpolation."
+}

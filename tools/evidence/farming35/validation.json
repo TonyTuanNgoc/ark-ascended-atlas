@@ -1,0 +1,1217 @@
+{
+  "maps": 11,
+  "mapResourceEntries": 959,
+  "resourceFamilies": 137,
+  "iconMappings": 137,
+  "verifiedRegions": 172,
+  "curatedVisibleRegions": 162,
+  "clips": 172,
+  "resourceSpecificVariants": 5,
+  "allPassed": true,
+  "clipResults": [
+    {
+      "spotID": "center-blue-metal",
+      "duration": 8.0,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "8e91ee62919cbc12b997f293c0afbeb66178501dbb93ae86d8fcb19c218a8a79"
+    },
+    {
+      "spotID": "center-spire-obsidian",
+      "duration": 8.0,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "255c026e9042a5d1e03f2225e4409805d62bfef9fd546647ab8a0e1b958af2cd"
+    },
+    {
+      "spotID": "center-lava-metal",
+      "duration": 8.0,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "124a18e394ede72519cd0e2f3112548fdae064430a06aa3f03613a255907666f"
+    },
+    {
+      "spotID": "center-snow-crystal",
+      "duration": 8.0,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "d8164537de31f722231a5b62b3fa7995a9ab0670f4758beebc0167bdd3c97339"
+    },
+    {
+      "spotID": "center-beaver-pond",
+      "duration": 9.0,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "60493428eb8f418e5c5da477005ca2cb08fcc47f2f30559fcee26e6eeb9dad4d"
+    },
+    {
+      "spotID": "center-ring-pearls",
+      "duration": 8.0,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "d5e222be246576382f980172bfce7ff4a256c26b3b6ef743d86749edf4c93893"
+    },
+    {
+      "spotID": "center-ice-polymer",
+      "duration": 7.5,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "759874fa91ba385f6ac855210a8c3d09db611a61df7b6ba78ba4273448ff829c"
+    },
+    {
+      "spotID": "rag-underwater-metal",
+      "duration": 8.0,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "0785303c4e58eedbf59a6b073f23d5676e667258d4c96f42a161ba1edc54f1c9"
+    },
+    {
+      "spotID": "rag-dam-lakes",
+      "duration": 6.0,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "92854244f12182221a7ff49d6d98ae0fdb78746f7ac264a8610be09630bdc5f2"
+    },
+    {
+      "spotID": "rag-cactus-route",
+      "duration": 3.5,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "d7c1ca3cd3528ded0946e28b67b86150967ad8e3cefc79111693b80193cdce19"
+    },
+    {
+      "spotID": "rag-coast-flowers",
+      "duration": 8.0,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "e3687b57853796e12a847ca3d19d94cc2132ac75247a99414f81f9c6c7c83af1"
+    },
+    {
+      "spotID": "island-volcano-ore",
+      "duration": 8.0,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "6e91ad655abb9a81b696bb8c3bd9754a0333b596d33728f00a086dcc440f2ed7"
+    },
+    {
+      "spotID": "island-west-black-pearls",
+      "duration": 8.0,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "b85f3c0241482184c2c2f984146d8953814cebbf5d4474954c39ec7af2f63101"
+    },
+    {
+      "spotID": "island-redwood-fiber",
+      "duration": 2.25,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "7fc2d789392dbe5cb4c1af18d8901d661ebabc217e0018cb27b8a295229cb946"
+    },
+    {
+      "spotID": "island-west-starter",
+      "duration": 8.0,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "ad59a1d3e263eb3b840904b3a1cc3423d497830d5b7f752e2002a741dc3c10b5"
+    },
+    {
+      "spotID": "island-carno-crystal",
+      "duration": 8.0,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "3ec4adbeb315674aaec32cd4a9a0010a88eb98ab749e743ea561214230f9945d"
+    },
+    {
+      "spotID": "island-redwood-paste",
+      "duration": 8.0,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "82bd2a9030cfb6abc057f72998c942a04fbfff92d4a1c5fa3b8ef904658b0bdd"
+    },
+    {
+      "spotID": "island-nw-oil",
+      "duration": 8.0,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "ee5157948866e4b8aaaccc716b7788c5f5bac60c2443d257d006c8979ae5572a"
+    },
+    {
+      "spotID": "rag-black-pearl-bed",
+      "duration": 6.0,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "678977daeb48e25eae224d2e4a953006d605435ba94668ed5c25879011838d7d"
+    },
+    {
+      "spotID": "rag-crystal-highland",
+      "duration": 7.0,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "1bc93f64c74f8ee04ddbf65d38ff1c793a4254452f7350d169540d445aa5125c"
+    },
+    {
+      "spotID": "rag-cave-metal-obsidian",
+      "duration": 8.0,
+      "width": 960,
+      "height": 668,
+      "sha256": "40b963a83b9224c66ab24ef0670b8da59c2a3d6a265aa4f04a4b3f63ddcd5ccb"
+    },
+    {
+      "spotID": "rag-oil-north-shore",
+      "duration": 6.0,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "01b841903693351f9a2e33c0f53fd718fbf0e34831914fd81fa205758f721b25"
+    },
+    {
+      "spotID": "rag-polymer-plants",
+      "duration": 6.0,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "2cb3b873a550ff5e592b1418e00510a45ec6a297b7b0b372b7ee1e350e030d7e"
+    },
+    {
+      "spotID": "rag-flowers-nw",
+      "duration": 6.5,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "e756774ff59c5eb49c0610a6eefc7eb03311ed85f47ef1ffb8ada32fcbf0eedd"
+    },
+    {
+      "spotID": "rag-pearls-cave",
+      "duration": 8.0,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "232544f6bedcf30100526b6c98c3eea7c99cb237eba795b98047c8f0d69b2346"
+    },
+    {
+      "spotID": "rag-silk-fields",
+      "duration": 5.0,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "da0162b6a591a0264dfb66837d5241ce3ec5e31d7d61dcd07985d39e37c44caf"
+    },
+    {
+      "spotID": "rag-sulfur-rocks",
+      "duration": 7.0,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "cc9e3576d0b1f482e54709162847df6ffd24e9c08ed33a0e346fd94018f2de50"
+    },
+    {
+      "spotID": "rag-salt-columns",
+      "duration": 6.5,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "1008a2413a9bad583589ffe883787c0d8753ea0a65a014b5a5ca66592e24b814"
+    },
+    {
+      "spotID": "island-ice-polymer",
+      "duration": 8.0,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "be43faea426797b31af8d75df6423568694b918825b94073ba9056f579ee854a"
+    },
+    {
+      "spotID": "rag-lake-basic-hub",
+      "duration": 7.5,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "0c2625fb7fb42ee9bcc1530b7cc762fac9068718c2b8bd7e4a9964f8e34d8c1c"
+    },
+    {
+      "spotID": "island-surface-pearls",
+      "duration": 8.0,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "a2ff03d9ad242124b845ea96bea341c7c388d5aa6341f524b0fbdf1dc76675d5"
+    },
+    {
+      "spotID": "rag-whale-keratin",
+      "duration": 8.0,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "dbcf6c01288ac5d8446ab22b6e8b72ed319eb7c8eca9bb2ef1a65a46b0e2cab1"
+    },
+    {
+      "spotID": "honey-center-redwoods",
+      "duration": 8.0,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "5475afcafb30001a8b1ac16bf567c2d7eb26ad0acc864b5939e2004edbafe5a1"
+    },
+    {
+      "spotID": "honey-island-redwoods",
+      "duration": 6.0,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "db506193d443b204b104e5d58162ac9e539ac312adb96a8fce82ea6d5898b4f3"
+    },
+    {
+      "spotID": "honey-ragnarok-queen-region",
+      "duration": 7.0,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "613f7ac806ddd9ba9beee6c8a69ae52dd4c2b0171b02396aa37c0070740850b8"
+    },
+    {
+      "spotID": "rag-shore-sand",
+      "duration": 8.0,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "15ee70d5713e28341bacd2c18db04a68bc3bea20cfe59dcf3510f6aeac05bb8f"
+    },
+    {
+      "spotID": "island-swamp-mushrooms",
+      "duration": 8.0,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "644d258b32a45f6bcd5799b542ed9f17c2e2b3e79829719e09196f4c1edd85f3"
+    },
+    {
+      "spotID": "center-extra-swamp-mushrooms",
+      "duration": 8.0,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "72b5c137cce26e383233e1c78eb37311d4bd5b4c5afa8e5e4cf6a6aec4809c1e"
+    },
+    {
+      "spotID": "island-east-dam-rares",
+      "duration": 7.5,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "42f48f49d39aedbb91f08664103510a91a23c18e461bc9f58dbdc61a37e1e75a"
+    },
+    {
+      "spotID": "center-extra-lava-chitin",
+      "duration": 8.0,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "08315a164c16a39e287324b14b7f0632fb48b4e82ae9ee0dc5514cc31826ce11"
+    },
+    {
+      "spotID": "center-extra-blue-basics",
+      "duration": 8.0,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "8e91ee62919cbc12b997f293c0afbeb66178501dbb93ae86d8fcb19c218a8a79"
+    },
+    {
+      "spotID": "scorched-eastern-metal",
+      "duration": 5.958333,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "d779dd0698d868402f83953a27c61ad538f49efd1f9d787e5f46232321d370a8"
+    },
+    {
+      "spotID": "scorched-central-metal",
+      "duration": 7.007,
+      "width": 960,
+      "height": 540,
+      "sha256": "5bfd5e4fcfc7cc4d945239eb28bbf1f968ddaff0ced5df3081f484fc2a62adbf"
+    },
+    {
+      "spotID": "extinction-oil-lake",
+      "duration": 4.75,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "f2cc138b005266362cfbe6f2d32019837d68274acf8badc57f90e319f886c179"
+    },
+    {
+      "spotID": "lost-colony-north-metal",
+      "duration": 8.0,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "c16aa2d6b8f013fe27690571af84b1a44c3b076f9086cbc8f5c8738d5c6be446"
+    },
+    {
+      "spotID": "valguero-nw-pearl-lake",
+      "duration": 8.0,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "75918246f8c56cb50081792cb42c03996eb9766603da7ec594b759e7cc48c845"
+    },
+    {
+      "spotID": "astraeos-phokintos-crystal",
+      "duration": 6.25,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "86b7e8a0656809a66da7668a20b70060d718327d648a79d33e216c441d3dce23"
+    },
+    {
+      "spotID": "aberration-green-metal",
+      "duration": 8.0,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "e14b30370459092a91e2df9cb0c74965df9fc5c28585be09a4af863e4e64b9df"
+    },
+    {
+      "spotID": "aberration-blue-metal",
+      "duration": 8.0,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "43f2ad47f90855f7430bd4d5233a8dfa77657af1ad495fdbba5de36c36d03381"
+    },
+    {
+      "spotID": "genesis-ocean-waterfall-cave",
+      "duration": 8.0,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "f0ad5ea7f286c6f93889efeea90247d3b5620219cf36a8101bf1d426f70dd15f"
+    },
+    {
+      "spotID": "genesis-arctic-metal-field",
+      "duration": 7.0,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "3bc0fb433b785e30d7b7143ad524ece46b6664c6ae09113c5a6f044df534243d"
+    },
+    {
+      "spotID": "rag-river-sap-tap",
+      "duration": 6.5,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "8d24c85ef1ac0657921989cbc29a1363b8a97934b715945e11a8926372236727"
+    },
+    {
+      "spotID": "rag-blue-gem-cavern",
+      "duration": 4.5,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "1e862fefe811873c828b97ca786d368cbf7399413176542c0ae49f2aa49010fc"
+    },
+    {
+      "spotID": "rag-highland-wild-vegetables",
+      "duration": 8.0,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "f95967873cc6dc3e14e29bbe6f8646e9693ae3e6a02627d0d3964cf47fd950fd"
+    },
+    {
+      "spotID": "center-waterfall-cavern",
+      "duration": 6.0,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "00101b352da52bb9d9da50d2326fa4e1c8e447407ed560c838de9749207f5854"
+    },
+    {
+      "spotID": "center-north-pond-west",
+      "duration": 8.0,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "d8311dea51f89786d10ef81173c5e8c4f4e1a427bac038e23b17ff954aeddf8d"
+    },
+    {
+      "spotID": "center-north-pond-east",
+      "duration": 8.0,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "a964eb335c7eca938ea43bb9f3017a114b846be2eb3c47ab4dceb8501e80fb21"
+    },
+    {
+      "spotID": "center-middle-pond",
+      "duration": 8.0,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "19ebb9862a0d73f16b24a780f270e90c9a46f94b6012c44feadfb6ff2a479d99"
+    },
+    {
+      "spotID": "center-south-east-pond",
+      "duration": 8.0,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "fdfd77057e4d0de5b806a1abe1830366dbcf3007b5ea80e967e2b1286ce69f9c"
+    },
+    {
+      "spotID": "center-south-west-pond",
+      "duration": 8.0,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "70630bf06064b5f69b2112f5a819bfc2830cea3ee350389002bed30680aa8aaa"
+    },
+    {
+      "spotID": "valguero-west-pearl-bed",
+      "duration": 6.0,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "6cc72a2c73499f9d6f563e9ad28de04c2053ba0683a3ea4caadec4e049e9591f"
+    },
+    {
+      "spotID": "rag-south-seabed-oil",
+      "duration": 8.0,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "1665e55b4915b491be29490f7d8377900b2cddf32b99a5a9e0ad19a664407522"
+    },
+    {
+      "spotID": "island-cave-black-pearls",
+      "duration": 8.0,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "1948366b75b72472f4127b2716c112264b3943ee02fcb954a8f880ea6ad8aa82"
+    },
+    {
+      "spotID": "island-north-central-pearls",
+      "duration": 8.0,
+      "width": 1280,
+      "height": 720,
+      "sha256": "cb757b978a7b49a0d843c03eca6b0037162d0387396f5b25b6ecafc447bff0c8"
+    },
+    {
+      "spotID": "island-north-coast-pearls",
+      "duration": 8.0,
+      "width": 1280,
+      "height": 720,
+      "sha256": "aa6f963f397e27761f5e871d2c3d93034dcd80622cb66c37c546bbe812ed31b1"
+    },
+    {
+      "spotID": "island-north-peninsula-pearls",
+      "duration": 8.0,
+      "width": 1280,
+      "height": 720,
+      "sha256": "a736993008266a6b73fc36c102f826dfe94b174283619a8734f0c15702f57c2d"
+    },
+    {
+      "spotID": "island-west-lake-flowers",
+      "duration": 8.0,
+      "width": 1280,
+      "height": 720,
+      "sha256": "4ed6cb4bdd428c849519c437aaded6ddbd57dbe5387c5e2fb0eb6667ce9150b5"
+    },
+    {
+      "spotID": "island-east-canyon-flowers",
+      "duration": 8.0,
+      "width": 1280,
+      "height": 720,
+      "sha256": "fd72baf5393cbc0a4b5e1b16c810e3ca6a4accd8ac9bee8729eee6a35f5cccb7"
+    },
+    {
+      "spotID": "island-east-swamp-flowers",
+      "duration": 8.0,
+      "width": 1280,
+      "height": 720,
+      "sha256": "0b2ec8d08bc12df483535d1c81cd0e6fcb886cd189f9b8819c5548a4281f37a8"
+    },
+    {
+      "spotID": "rag-northwest-blue-black",
+      "duration": 8.0,
+      "width": 1280,
+      "height": 720,
+      "sha256": "9b9a32dea59119f93ec64386c52d378982d0bc96bc1a52ed7877b8ce6972bd22"
+    },
+    {
+      "spotID": "rag-ice-water-crystal",
+      "duration": 8.0,
+      "width": 1280,
+      "height": 720,
+      "sha256": "fbafe29e052b1c4d863df70404511693479443203f0dbf1401c7bcbc57151322"
+    },
+    {
+      "spotID": "rag-northeast-metal",
+      "duration": 6.0,
+      "width": 1280,
+      "height": 720,
+      "sha256": "d121974827ad87fc23fbab0996e389479854cdcf22b2ab1924aa52835d3d692c"
+    },
+    {
+      "spotID": "rag-southeast-seafloor-oil",
+      "duration": 8.0,
+      "width": 1280,
+      "height": 720,
+      "sha256": "831e028c9b381f069f5941b2f7d18ed8bc8a8b062079e83601508169d2d694ee"
+    },
+    {
+      "spotID": "rag-northeast-polymer",
+      "duration": 6.0,
+      "width": 1280,
+      "height": 720,
+      "sha256": "fdf1f111564192d7e1224e9804965a60dc7ec3a0cf88322b612d2bef58731353"
+    },
+    {
+      "spotID": "rag-canyon-polymer",
+      "duration": 8.0,
+      "width": 1280,
+      "height": 720,
+      "sha256": "c5b97066b56b33ba1c974a34357906fe42d2be32e500ebe34acd235e75a91146"
+    },
+    {
+      "spotID": "rag-west-seafloor-silica",
+      "duration": 6.0,
+      "width": 1280,
+      "height": 720,
+      "sha256": "af8b0b7de36b1d922082b6801e46754916e2acbf61a5f8e8b75b56773a6bcaad"
+    },
+    {
+      "spotID": "scorched-southeast-metal-ridge",
+      "duration": 6.5,
+      "width": 1280,
+      "height": 720,
+      "sha256": "5c952a65e197fba1446772560b0291b7e1930da6fdf022ea4a1d48a1d763981a"
+    },
+    {
+      "spotID": "lost-colony-northwest-metal",
+      "duration": 6.25,
+      "width": 1280,
+      "height": 720,
+      "sha256": "e353134b9715f4ffd2fef61e514e84796bf90d3f6800d199519a541c3f60d3ee"
+    },
+    {
+      "spotID": "astraeos-coast-crystal-34-45",
+      "duration": 6.5,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "0847607d7e76e829691b05ab65b99a1ca97b62edee9fef035b9a81aa95723102"
+    },
+    {
+      "spotID": "genesis-ocean-safe-beach-silica-90-15",
+      "duration": 6.5,
+      "width": 960,
+      "height": 540,
+      "sha256": "2bbb25bbf6082fa3df49800958aee44c6385ba60f05df36156afc90351ea3980"
+    },
+    {
+      "spotID": "genesis-ocean-dragon-bones-metal-5-94",
+      "duration": 6.0,
+      "width": 960,
+      "height": 540,
+      "sha256": "8b24773245db85eb4fc8e664e255728a4a5a0ccc428d2ee81bbc47576510f3a9"
+    },
+    {
+      "spotID": "genesis-ocean-central-island-oil-45-63",
+      "duration": 8.0,
+      "width": 960,
+      "height": 540,
+      "sha256": "0fce205c79ca5dfe0cbd456a1f2bf27accec11757b264b017a7a6265ce44d1ea"
+    },
+    {
+      "spotID": "genesis-arctic-crystal-76-26",
+      "duration": 8.0,
+      "width": 960,
+      "height": 540,
+      "sha256": "5db7161032d63a5ef1d62e53a5a1a6430a0090905c043cfc4ce448889e180c08"
+    },
+    {
+      "spotID": "genesis-arctic-obsidian-77-26",
+      "duration": 8.0,
+      "width": 960,
+      "height": 540,
+      "sha256": "65787ee9a3a0c0e0e98798d6f290fe49aa1a1bddaf80b840a6e612e45fbdd7f2"
+    },
+    {
+      "spotID": "genesis-arctic-frozen-lake-polymer-74-14",
+      "duration": 8.0,
+      "width": 960,
+      "height": 540,
+      "sha256": "b71020286365b3655c251298eacf3a5550c91a769e4028134ac32b84c82dceb3"
+    },
+    {
+      "spotID": "genesis-ocean-west-island-chitin-40-19",
+      "duration": 8.0,
+      "width": 960,
+      "height": 540,
+      "sha256": "a7f60ad77083ce65bfa039db45ed6651875372626bcba99959744e3dd168f8c1"
+    },
+    {
+      "spotID": "scorched-west-canyon-obsidian",
+      "duration": 7.0,
+      "width": 1280,
+      "height": 720,
+      "sha256": "923781a1ba40a66d843d4f5eac08ce942c687c747ea0101bb9569b2125ccc8eb"
+    },
+    {
+      "spotID": "scorched-midriver-silica",
+      "duration": 8.0,
+      "width": 1280,
+      "height": 720,
+      "sha256": "a07df2964e8f1942d04a5c698ea2ab96d5af170a6120baf478f41ac0432bc15a"
+    },
+    {
+      "spotID": "scorched-northeast-oil-vein",
+      "duration": 9.0,
+      "width": 1280,
+      "height": 720,
+      "sha256": "d7058dd07078449e9cf10dd919369c0ce540b97ca0389e5c615a32790a98978f"
+    },
+    {
+      "spotID": "lost-colony-southwest-oil-river",
+      "duration": 6.0,
+      "width": 1280,
+      "height": 720,
+      "sha256": "0b2a78498dd652393be1d3fd8764783f2bddf0a5bb6a38cef332f2e41d74f31c"
+    },
+    {
+      "spotID": "aberration-blue-polymer-488-509",
+      "duration": 7.0,
+      "width": 1280,
+      "height": 720,
+      "sha256": "85c2fb2bcc5a42fecd9c9cb207746a6024e4dd52e707d8c04a9f5b4cdc9ad334"
+    },
+    {
+      "spotID": "valguero-waterfall-metal-60-40",
+      "duration": 8.0,
+      "width": 1280,
+      "height": 720,
+      "sha256": "fc06be5b47cbda4d0949c8e512f3616da71b08fb69de4313795d1cf8ee8f2916"
+    },
+    {
+      "spotID": "astraeos-korinthos-pearl-shallows-40-26",
+      "duration": 8.0,
+      "width": 1280,
+      "height": 720,
+      "sha256": "9310c581cd3c67857eea9dd48e2d2e1598cd2eff867995b48a30e30c9fe2e6e7"
+    },
+    {
+      "spotID": "aberration-tek-pond-pearls-628-507",
+      "duration": 7.0,
+      "width": 1280,
+      "height": 720,
+      "sha256": "ab50c9bd4bc8b25f73b28601ea2bc890fdd9d5ae37737028c8adb53ace926b39"
+    },
+    {
+      "spotID": "genesis-ocean-pearl-island-38-66",
+      "duration": 8.0,
+      "width": 960,
+      "height": 540,
+      "sha256": "c558f155bd61031a13aebb5a914df54377220468704ed8ed74f3fe03a9e47cd0"
+    },
+    {
+      "spotID": "genesis-ocean-coral-pearl-basin-57-56",
+      "duration": 6.0,
+      "width": 960,
+      "height": 540,
+      "sha256": "30a22497cfad9c26dde0fd6b901fb6b321a207cbd835f289e62151601f5dda93"
+    },
+    {
+      "spotID": "genesis-ocean-southwest-shore-oil-89-15",
+      "duration": 8.0,
+      "width": 960,
+      "height": 540,
+      "sha256": "0eeb261315b8d6e5536565f5f03ae4dce633ad4805bcd32972f69c958d1d8632"
+    },
+    {
+      "spotID": "lost-colony-east-river-black-pearls",
+      "duration": 8.0,
+      "width": 1280,
+      "height": 720,
+      "sha256": "8faadc18752898a866f469e721e38e9e47a6374325baa4e257f88d8be6b7fc86"
+    },
+    {
+      "spotID": "astraeos-waterfall-pearl-pool-25-15",
+      "duration": 8.0,
+      "width": 1280,
+      "height": 720,
+      "sha256": "65b64cb59ac3b484618963439f3aca450ebd96198d50d7fd63480048a170ab07"
+    },
+    {
+      "spotID": "lost-colony-southeast-crash-black-pearls",
+      "duration": 6.389717,
+      "width": 1280,
+      "height": 720,
+      "sha256": "176643cdfc397f1d270295327eb1f9bdaeb4c00e17f9e27448212b62dce42140"
+    },
+    {
+      "spotID": "lost-colony-east-snow-obsidian",
+      "duration": 8.0,
+      "width": 1280,
+      "height": 720,
+      "sha256": "2918de96308940ded164bef0d8bcf63304fdb3168b381c42ad4ac73e7de0cad8"
+    },
+    {
+      "spotID": "lost-colony-east-cliff-honey",
+      "duration": 8.0,
+      "width": 1280,
+      "height": 720,
+      "sha256": "7dc26632bbac62731a45ac13c76b2028284176c552f352af97388f3b2d572544"
+    },
+    {
+      "spotID": "lost-colony-north-city-lamp-crystal",
+      "duration": 8.0,
+      "width": 1280,
+      "height": 720,
+      "sha256": "409e4646d73d4d1f6a926a7cf5dd090976a49e7c4875f219bcb92f4cb9ef0e63"
+    },
+    {
+      "spotID": "extinction-city-cliff-crystal-549-404",
+      "duration": 7.0,
+      "width": 1280,
+      "height": 720,
+      "sha256": "30f086fcdd243b7576d30f5815b4753b8fc3d3943c7d5af67f80c46548683c08"
+    },
+    {
+      "spotID": "rag-volcanic-obsidian-23-62",
+      "duration": 7.0,
+      "width": 960,
+      "height": 668,
+      "sha256": "aa0b45b172e99baba0a4c319d8575cec0efa07a737e5577322b7c4f8a01c514a"
+    },
+    {
+      "spotID": "rag-forest-obsidian-48-71",
+      "duration": 6.0,
+      "width": 960,
+      "height": 668,
+      "sha256": "908ce0353c2f19a1607fbf3a7199e3a7d88a47f283069ec4ecf795b178d487aa"
+    },
+    {
+      "spotID": "rag-coastal-obsidian-64-16",
+      "duration": 7.0,
+      "width": 960,
+      "height": 668,
+      "sha256": "37de124ce1d28ccc5e53e35225bb290c0e264e5d4b954440bc97acbe984719d0"
+    },
+    {
+      "spotID": "rag-north-seafloor-silica-3-68",
+      "duration": 7.0,
+      "width": 960,
+      "height": 668,
+      "sha256": "53372321b03a6af90cf69cade0c65b6cfe3a73c9b47528fca8bce95cbc675ff4"
+    },
+    {
+      "spotID": "rag-southwest-metal-78-21",
+      "duration": 6.0,
+      "width": 960,
+      "height": 668,
+      "sha256": "957cb59e52c4d8cc4ef8ba819921d62d78a40a752e3442cc9b05152ecac4d325"
+    },
+    {
+      "spotID": "rag-southeast-metal-80-62",
+      "duration": 7.0,
+      "width": 960,
+      "height": 668,
+      "sha256": "ed258c0fbf6be03ab9d78d1d15d60f17140f0861dc5cb9e7b2b245977944e3f5"
+    },
+    {
+      "spotID": "rag-south-crystal-81-39",
+      "duration": 6.0,
+      "width": 960,
+      "height": 668,
+      "sha256": "24539380f6058f430528e05e31919f8d85602bcc8161eed5421b5b14f5714e2a"
+    },
+    {
+      "spotID": "rag-west-seafloor-black-70-21",
+      "duration": 6.0,
+      "width": 960,
+      "height": 668,
+      "sha256": "33e702b75e875a609912efad41b3e0eeafc24cc548474ea9652efd4b251fb077"
+    },
+    {
+      "spotID": "aberration-trench-black-676-52",
+      "duration": 7.133008,
+      "width": 1184,
+      "height": 666,
+      "sha256": "5441f9697b7a4bcdc6dd70ef9c6c124f88dd71479983a4861314ec55acf94bcd"
+    },
+    {
+      "spotID": "aberration-blue-crystal-487-786",
+      "duration": 8.033333,
+      "width": 1184,
+      "height": 666,
+      "sha256": "0ea1bdc0020b43dbe5ac51ead1e79ab524f88a962c8337b3afa966292562579a"
+    },
+    {
+      "spotID": "aberration-red-crystal-45-367",
+      "duration": 8.0,
+      "width": 1184,
+      "height": 666,
+      "sha256": "373aac32514269818f37fa3374838bbad35c035cb3c7d6d9f50949fa9bc665a4"
+    },
+    {
+      "spotID": "aberration-honey-441-31",
+      "duration": 7.466016,
+      "width": 1184,
+      "height": 666,
+      "sha256": "c24f9e654515ac3296a0d43e59700a78057f580a4d3fb6627e59f0ed32d9c86c"
+    },
+    {
+      "spotID": "ab-portal-metal-438-293",
+      "duration": 6.0,
+      "width": 960,
+      "height": 426,
+      "sha256": "81c2b1daa1b19ae18e48e4031be5bdf383f892c7a5e9969de1bd62fa7528ff21"
+    },
+    {
+      "spotID": "ab-portal-plateau-metal-418-345",
+      "duration": 7.066667,
+      "width": 960,
+      "height": 426,
+      "sha256": "df4b5d2e62512e7cd97165fefc235c172b1717e9a38934ec1c8b71af65d6f2ef"
+    },
+    {
+      "spotID": "ab-surface-cave-metal-195-282",
+      "duration": 8.033008,
+      "width": 960,
+      "height": 426,
+      "sha256": "89219f922e4203e8ad8dbdcfe86933c4f3f685ae26364784de3b2af2657a6c56"
+    },
+    {
+      "spotID": "ab-blue-slope-metal-414-604",
+      "duration": 8.066667,
+      "width": 960,
+      "height": 426,
+      "sha256": "e6af3f15dd6878798c10315f476a00dacda8ad56de3a74bd3ef63fd512042b54"
+    },
+    {
+      "spotID": "ab-blue-cavern-metal-503-755",
+      "duration": 8.0,
+      "width": 960,
+      "height": 426,
+      "sha256": "e148f540f7cd9dc43fb86d33b44d7796fa9c37335f656f9cc0cde36ef36480f9"
+    },
+    {
+      "spotID": "ab-element-obsidian-574-505",
+      "duration": 8.033333,
+      "width": 960,
+      "height": 426,
+      "sha256": "35d8fd9294aa480db239114e3b8ea3a265fedb9a8b4b197867c1b3d4c3ef50ee"
+    },
+    {
+      "spotID": "ab-fertile-pearls-205-363",
+      "duration": 6.433333,
+      "width": 960,
+      "height": 426,
+      "sha256": "5b39dce99c420cf65dca3d47744fbeba007a1e02ed1bee288170f4f76394f704"
+    },
+    {
+      "spotID": "ab-fertile-pearls-129-461",
+      "duration": 8.0,
+      "width": 960,
+      "height": 426,
+      "sha256": "33a23940c08f754aa1a6d2d8dc8e7e4463c6cc017c0b8456ffdc6a1de6649369"
+    },
+    {
+      "spotID": "ab-luminous-pearls-439-614",
+      "duration": 8.0,
+      "width": 960,
+      "height": 426,
+      "sha256": "ea0fa148e9b9a4a4aefba09a5339f7444dc79ad5088156470a34d9b66eea10d3"
+    },
+    {
+      "spotID": "rag-southwest-oil-793-368",
+      "duration": 7.0,
+      "width": 960,
+      "height": 668,
+      "sha256": "344ad49ed281fcaf4aea7af3c50b436605bd58d3ab1d0ed58e129c02e0464232"
+    },
+    {
+      "spotID": "rag-south-polymer-936-489",
+      "duration": 7.0,
+      "width": 960,
+      "height": 668,
+      "sha256": "d9dea2f55e248762e27270ac03ac6a71c36ebf96965d0344b2f2f3e47506a156"
+    },
+    {
+      "spotID": "rag-highland-flowers-221-776",
+      "duration": 6.0,
+      "width": 960,
+      "height": 668,
+      "sha256": "b4df88be1c08191bb31ff3272e6001dbb58f9e45057c7561c5450e2820a54078"
+    },
+    {
+      "spotID": "rag-desert-flowers-611-553",
+      "duration": 8.0,
+      "width": 960,
+      "height": 668,
+      "sha256": "3db5adaf54307ab0a4cbe26906871e2a049e712ed4192b81d9ebba6a2f02ccab"
+    },
+    {
+      "spotID": "rag-southeast-silica-874-730",
+      "duration": 7.0,
+      "width": 960,
+      "height": 668,
+      "sha256": "b0419069a8a6e7bd00d539864bfe514367bccf87e4adcd19a48157acda9d301d"
+    },
+    {
+      "spotID": "rag-southeast-black-944-917",
+      "duration": 6.0,
+      "width": 960,
+      "height": 668,
+      "sha256": "fe04f2147ed9af8e8ba8e5583bf35dc6679b4407b14c81e8f215903148e093ff"
+    },
+    {
+      "spotID": "lost-colony-safe-cave-oil-656-483",
+      "duration": 8.0,
+      "width": 1100,
+      "height": 520,
+      "sha256": "d86727ed8c6c349ebf62b705eecf1b6635e682ce74bb4dacae28a6f68ade9333"
+    },
+    {
+      "spotID": "lost-colony-central-river-oil-595-586",
+      "duration": 6.033333,
+      "width": 1100,
+      "height": 520,
+      "sha256": "44d5a2b903063e1feffb2059a4fa67bc1c0a58834ec605f6644a4d5df78185ce"
+    },
+    {
+      "spotID": "center-cache-metal-41-32",
+      "duration": 6.0,
+      "width": 960,
+      "height": 762,
+      "sha256": "65a082d9c98f232246c23fd5247dc7e8ce90f2baf6b0daecef25e4a5309544c1"
+    },
+    {
+      "spotID": "center-cache-metal-15-503",
+      "duration": 6.0,
+      "width": 960,
+      "height": 762,
+      "sha256": "762f053eb0af295f1662360a2a38aa70b2cb7a2afd82579c9585998f6f617a6e"
+    },
+    {
+      "spotID": "center-cache-metal-28-856",
+      "duration": 6.0,
+      "width": 960,
+      "height": 762,
+      "sha256": "e1aefc01272fdb32b07162d6dd0b9869af86b9a7abf42a3880d2c58c3dbbc27c"
+    },
+    {
+      "spotID": "center-cache-metal-843-89",
+      "duration": 8.0,
+      "width": 960,
+      "height": 762,
+      "sha256": "24ce79777fef4950ec00c66d84cfd006bf7b501c607046c74e824707e4c25dda"
+    },
+    {
+      "spotID": "center-cache-metal-89-477",
+      "duration": 6.0,
+      "width": 960,
+      "height": 762,
+      "sha256": "3e5c5140f5df665e4b0c940dba56a176152c603101443c693155d851a579bce7"
+    },
+    {
+      "spotID": "center-cache-metal-88-322",
+      "duration": 6.0,
+      "width": 960,
+      "height": 762,
+      "sha256": "4e422c5cf21e23ac642e1eb9af356f527af09d82295824f90f7baa9c2dc6887e"
+    },
+    {
+      "spotID": "center-cache-metal-527-42",
+      "duration": 6.0,
+      "width": 960,
+      "height": 762,
+      "sha256": "6679605feacd271b3ce2abfbca3b96717e08f75a498ca5a55ee4023ce56f96f0"
+    },
+    {
+      "spotID": "center-cache-metal-525-692",
+      "duration": 6.0,
+      "width": 960,
+      "height": 762,
+      "sha256": "4e494c215c74b3b6e0c73b2c0364dcc25bf6459dc7e4218acad1b0239fed181a"
+    },
+    {
+      "spotID": "center-cache-metal-413-61",
+      "duration": 6.0,
+      "width": 960,
+      "height": 762,
+      "sha256": "27dc0bc3bfede1e6f28dcd812b95d8414f17d2c62cb73fcbec302398df23c49b"
+    },
+    {
+      "spotID": "center-cache-metal-696-89",
+      "duration": 8.0,
+      "width": 960,
+      "height": 762,
+      "sha256": "6e706afc5533c0aeba4223adf923283a5dfefbb776a10bbe8d79607f252138bc"
+    },
+    {
+      "spotID": "center-cache-obsidian-64-687",
+      "duration": 8.0,
+      "width": 960,
+      "height": 762,
+      "sha256": "9cf0d3d14c0c341141003cd5d7a28d57d6496f459ecd2aaafc2d9fda17de083a"
+    },
+    {
+      "spotID": "center-cache-obsidian-40-912",
+      "duration": 6.0,
+      "width": 960,
+      "height": 762,
+      "sha256": "2088bfd91fa4d5047fb2f7736ed3220eb50da79d0929966ca8f4f318486b568c"
+    },
+    {
+      "spotID": "center-cache-crystal-69-963",
+      "duration": 6.0,
+      "width": 960,
+      "height": 762,
+      "sha256": "d0f3c09c653009a8ffc49e828a19cad9800a07abea6153bc70d9bdb4eb2f0074"
+    },
+    {
+      "spotID": "center-cache-crystal-66-737",
+      "duration": 6.0,
+      "width": 960,
+      "height": 762,
+      "sha256": "68d9265b82fdbc0ca302bac0fc409188df2d73a1b416afc62339b23e2716e74b"
+    },
+    {
+      "spotID": "center-cache-oil-415-32",
+      "duration": 6.0,
+      "width": 960,
+      "height": 762,
+      "sha256": "092c26dc2e873fca96889e687dd5897285055301ab9dce36bf09b558995751f2"
+    },
+    {
+      "spotID": "center-cache-oil-365-60",
+      "duration": 6.0,
+      "width": 960,
+      "height": 762,
+      "sha256": "9a9215e89fba20e5177a561613960d0cf396575a4b86f9f836b6e5c6af85ae02"
+    },
+    {
+      "spotID": "center-cache-silica-pearls-446-64",
+      "duration": 6.0,
+      "width": 960,
+      "height": 762,
+      "sha256": "67eb00de50aa8d7bfb2bb6311155142e3b30a0c11673c08fb86479b79c4f1c67"
+    },
+    {
+      "spotID": "center-cache-silica-pearls-20-498",
+      "duration": 8.0,
+      "width": 960,
+      "height": 762,
+      "sha256": "25444df372fee9f0436381b979852d16c0980cf20fbfd5c73b7c6f1083c294e1"
+    },
+    {
+      "spotID": "center-cache-silica-pearls-648-92",
+      "duration": 6.0,
+      "width": 960,
+      "height": 762,
+      "sha256": "9d025fde90bc5b51fc45e243362f751288065430ede9d176b5a87c2427b7245b"
+    },
+    {
+      "spotID": "center-cache-silica-pearls-437-32",
+      "duration": 6.0,
+      "width": 960,
+      "height": 762,
+      "sha256": "e5594d96d8c693040c9a5fd395c845184614d7917a6bf1b2f1816f3870293784"
+    },
+    {
+      "spotID": "center-cache-silica-pearls-451-99",
+      "duration": 6.0,
+      "width": 960,
+      "height": 762,
+      "sha256": "ab2efe97ffd8117e1d576de60e740da789f08fb9c284edd7a6783f5bc90facf7"
+    },
+    {
+      "spotID": "center-cache-oil-568-246",
+      "duration": 6.0,
+      "width": 960,
+      "height": 762,
+      "sha256": "933a1d640ffc5ad35392982a0f4ea775c90f422cde9847f50525f76c01fd3c48"
+    },
+    {
+      "spotID": "center-cache-silica-pearls-51-121",
+      "duration": 6.0,
+      "width": 960,
+      "height": 762,
+      "sha256": "efbd7d6aa9472dfa88b28c3cd3cbba0c6e2cb6506f810dafbf9dc1298eb6a718"
+    },
+    {
+      "spotID": "valguero-nw-snow-crystal-243-12",
+      "duration": 6.766667,
+      "width": 1100,
+      "height": 500,
+      "sha256": "62b7729c1f0f65bc41c68e5a3f5403822662d7f163842cd077b772d257aacf54"
+    },
+    {
+      "spotID": "valguero-south-red-cliff-crystal-842-396",
+      "duration": 6.133333,
+      "width": 1100,
+      "height": 500,
+      "sha256": "3e8dc5325a91ac921109be9ab4822f4cf71b357f5bb6f5aa50888b65299b622d"
+    },
+    {
+      "spotID": "valguero-ne-ice-pearls-181-885",
+      "duration": 6.133008,
+      "width": 1100,
+      "height": 500,
+      "sha256": "06b99ff7d3449a474dc566d32e2c42d50b3854859e65822bfd5dc4a7b838e658"
+    },
+    {
+      "spotID": "valguero-nw-ice-pearls-301-178",
+      "duration": 8.033008,
+      "width": 1100,
+      "height": 500,
+      "sha256": "8e15fdfd73fe23b61c9bea2b48d3526cde12fa0f3bbe1be8d104aecbafc3eab6"
+    },
+    {
+      "spotID": "valguero-lava-cave-chitin-342-514",
+      "duration": 7.0,
+      "width": 1000,
+      "height": 500,
+      "sha256": "0c5d1ff76988e49efe84f42f57503cb0a9c1252f16b8baab09f4284cc4d8762d"
+    },
+    {
+      "spotID": "valguero-ab-red-cap-mushrooms-312-863",
+      "duration": 8.0,
+      "width": 1000,
+      "height": 500,
+      "sha256": "6a343eb0689342c2e662848fcd99b9f52a39dc83bce8e7a14638de1621cf3b14"
+    },
+    {
+      "spotID": "extinction-obsidian-desert-775-382",
+      "duration": 6.0,
+      "width": 1100,
+      "height": 500,
+      "sha256": "499483ccac55f66800f303c13a5629508afca1c09360646b5bb56a38ca82647d"
+    },
+    {
+      "spotID": "extinction-metal-forest-154-257",
+      "duration": 6.033333,
+      "width": 1100,
+      "height": 470,
+      "sha256": "e1400204233dc5f641857722729111097cc19799c9c98614767508b1a07e6635"
+    },
+    {
+      "spotID": "extinction-desert-lakes-purple-bushes-863-839",
+      "duration": 8.066016,
+      "width": 1000,
+      "height": 500,
+      "sha256": "4124e7e15ccbf19fbbfe0717644cad56936a85599bc80052b856012d69f74d4e"
+    },
+    {
+      "spotID": "lost-colony-south-sap-trees-875-346",
+      "duration": 8.033333,
+      "width": 800,
+      "height": 470,
+      "sha256": "bf9f7e8e65801b826e7aaaf24ba48d004b3e86af0ba63bc0e6fd64bd12d5a516"
+    },
+    {
+      "spotID": "lost-colony-south-city-gargoyles-561-611",
+      "duration": 6.0,
+      "width": 1100,
+      "height": 500,
+      "sha256": "c7ca4f19fa0adbb1d42dc1b44a2b7e6117edad7d47a2fe6031867a7072862b3c"
+    },
+    {
+      "spotID": "lost-colony-blue-ice-cave-oil-687-463",
+      "duration": 8.033333,
+      "width": 1000,
+      "height": 500,
+      "sha256": "ffbf602f857feca7b7b0327705dc371e16a1a37fd1357d083a1640e7ae1c81bd"
+    },
+    {
+      "spotID": "lost-colony-arch-river-oil-585-561",
+      "duration": 6.466667,
+      "width": 1000,
+      "height": 500,
+      "sha256": "f5d27d3aa1592626c3ea99dc593656ad269797e8dda406a4ae855b38f20f9d81"
+    },
+    {
+      "spotID": "lost-colony-north-cave-chitin-28-30",
+      "duration": 7.366667,
+      "width": 1000,
+      "height": 500,
+      "sha256": "40afe8e77476ff05951e3435157bcabf1c306655b450cc441587cdc685b0c33e"
+    },
+    {
+      "spotID": "lost-colony-cliff-arch-honey-231-199",
+      "duration": 6.0,
+      "width": 960,
+      "height": 436,
+      "sha256": "4d3cc7c511db05f67b0b6a5da8ad563e5a6058e03255675417eebfda41b25a15"
+    },
+    {
+      "spotID": "lost-colony-stacked-cliff-honey-36-421",
+      "duration": 8.0,
+      "width": 960,
+      "height": 436,
+      "sha256": "07eb9978fa78123675b05d51f387b68d0c9f55192e67b37e0a0cfe8cd161cd6b"
+    }
+  ]
+}
