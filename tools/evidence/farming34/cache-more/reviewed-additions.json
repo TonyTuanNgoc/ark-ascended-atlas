@@ -1,0 +1,1595 @@
+{
+  "candidates": [
+    {
+      "id": "center-cache-metal-41-32",
+      "map": "the-center",
+      "name": "Center metal region 41/32",
+      "resources": [
+        "Metal"
+      ],
+      "lat": 41,
+      "lon": 32,
+      "videoID": "d3d4cAzEpr0",
+      "startSeconds": 41.5,
+      "endSeconds": 47.5,
+      "coordinateEvidence": "Creator explicitly captions 41 Lat, 32 Lon over this filmed Metal region at source 43.5s. Creator numerical caption used; no M-map cursor inference.",
+      "inventoryEvidence": "Visible Metal deposits in explicitly titled Metal segment; no guaranteed yield.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/cache-more/center-cache-metal-41-32.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/cache-more/center-cache-metal-41-32.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=d3d4cAzEpr0",
+      "sourcePlane": "The Center ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-labelled farming region",
+      "mapOverlayVisible": false,
+      "creatorInsetVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "Previously approved complete licensed local source; no network acquisition in farming34",
+      "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/resource-sources/d3d4cAzEpr0.mp4",
+      "sourceSHA256": "7e14c0c412f3dd8b346bcb89e7b71bd3262fc42de17cb4b7f79932271fc5fbb7",
+      "clipSHA256": "65a082d9c98f232246c23fd5247dc7e8ce90f2baf6b0daecef25e4a5309544c1",
+      "posterSHA256": "31746cf26eef4113c1dccff45c58e9d845a5ae377f95a22b4cd534715bb98bb7",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/cache-more/center-cache-metal-41-32-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/cache-more/center-cache-metal-41-32-coordinate.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true,
+        "reviewed": true,
+        "result": "Final encoded chronological4fps frames manually reviewed: continuous clean resource/terrain shot, no map/inventory/creator inset/edit cut. Full uncropped GPS proof retained separately; complete encoded decode passed."
+      },
+      "evidenceLimitations": "Creator-labelled regional waypoint; no permanent node count or guaranteed availability. Creator inset removed from delivered video; uncropped source GPS proof retained.",
+      "visualReviewStatus": "verified",
+      "sourceCrop": {
+        "x": 560,
+        "y": 0,
+        "width": 1360,
+        "height": 1080,
+        "sourceWidth": 1920,
+        "sourceHeight": 1080,
+        "reason": "Remove creator map and resource/GPS inset."
+      },
+      "encodedDurationSeconds": 6.0,
+      "nearestExistingRegions": [
+        {
+          "id": "center-ring-pearls",
+          "lat": 36.7,
+          "lon": 35.5,
+          "coordinateDistance": 5.54
+        },
+        {
+          "id": "center-extra-swamp-mushrooms",
+          "lat": 49.4,
+          "lon": 37.4,
+          "coordinateDistance": 9.99
+        }
+      ]
+    },
+    {
+      "id": "center-cache-metal-15-503",
+      "map": "the-center",
+      "name": "Center metal region 15/50.3",
+      "resources": [
+        "Metal"
+      ],
+      "lat": 15,
+      "lon": 50.3,
+      "videoID": "d3d4cAzEpr0",
+      "startSeconds": 50,
+      "endSeconds": 56,
+      "coordinateEvidence": "Creator explicitly captions 15 Lat, 50.3 Lon over this filmed Metal region at source 52s. Creator numerical caption used; no M-map cursor inference.",
+      "inventoryEvidence": "Visible Metal deposits in explicitly titled Metal segment; no guaranteed yield.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/cache-more/center-cache-metal-15-503.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/cache-more/center-cache-metal-15-503.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=d3d4cAzEpr0",
+      "sourcePlane": "The Center ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-labelled farming region",
+      "mapOverlayVisible": false,
+      "creatorInsetVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "Previously approved complete licensed local source; no network acquisition in farming34",
+      "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/resource-sources/d3d4cAzEpr0.mp4",
+      "sourceSHA256": "7e14c0c412f3dd8b346bcb89e7b71bd3262fc42de17cb4b7f79932271fc5fbb7",
+      "clipSHA256": "762f053eb0af295f1662360a2a38aa70b2cb7a2afd82579c9585998f6f617a6e",
+      "posterSHA256": "9cb016326ad30139815fc7ee1b2e66cbc89627a3445d452c8cb8258e6d23ccb4",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/cache-more/center-cache-metal-15-503-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/cache-more/center-cache-metal-15-503-coordinate.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true,
+        "reviewed": true,
+        "result": "Final encoded chronological4fps frames manually reviewed: continuous clean resource/terrain shot, no map/inventory/creator inset/edit cut. Full uncropped GPS proof retained separately; complete encoded decode passed."
+      },
+      "evidenceLimitations": "Creator-labelled regional waypoint; no permanent node count or guaranteed availability. Creator inset removed from delivered video; uncropped source GPS proof retained.",
+      "visualReviewStatus": "verified",
+      "sourceCrop": {
+        "x": 560,
+        "y": 0,
+        "width": 1360,
+        "height": 1080,
+        "sourceWidth": 1920,
+        "sourceHeight": 1080,
+        "reason": "Remove creator map and resource/GPS inset."
+      },
+      "encodedDurationSeconds": 6,
+      "regionalDedupeGroup": "center-volcano-shelf-15-503",
+      "integrationNote": "Same one region15/50.3 for Metal and Obsidian. Merge these into one spot with resource-specific clips; do not count two spatial locations.",
+      "nearestExistingRegions": [
+        {
+          "id": "center-extra-lava-chitin",
+          "lat": 19.36,
+          "lon": 47.68,
+          "coordinateDistance": 5.09
+        },
+        {
+          "id": "center-lava-metal",
+          "lat": 16.5,
+          "lon": 60.9,
+          "coordinateDistance": 10.71
+        }
+      ]
+    },
+    {
+      "id": "center-cache-metal-28-856",
+      "map": "the-center",
+      "name": "Center metal region 28/85.6",
+      "resources": [
+        "Metal"
+      ],
+      "lat": 28,
+      "lon": 85.6,
+      "videoID": "d3d4cAzEpr0",
+      "startSeconds": 65,
+      "endSeconds": 71,
+      "coordinateEvidence": "Creator explicitly captions 28 Lat, 85.6 Lon over this filmed Metal region at source 67s. Creator numerical caption used; no M-map cursor inference.",
+      "inventoryEvidence": "Visible Metal deposits in explicitly titled Metal segment; no guaranteed yield.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/cache-more/center-cache-metal-28-856.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/cache-more/center-cache-metal-28-856.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=d3d4cAzEpr0",
+      "sourcePlane": "The Center ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-labelled farming region",
+      "mapOverlayVisible": false,
+      "creatorInsetVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "Previously approved complete licensed local source; no network acquisition in farming34",
+      "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/resource-sources/d3d4cAzEpr0.mp4",
+      "sourceSHA256": "7e14c0c412f3dd8b346bcb89e7b71bd3262fc42de17cb4b7f79932271fc5fbb7",
+      "clipSHA256": "e1aefc01272fdb32b07162d6dd0b9869af86b9a7abf42a3880d2c58c3dbbc27c",
+      "posterSHA256": "0f7531a29732be3b345dba73908e4aef9d0f301a42788ec5adfd73fe4025d1e9",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/cache-more/center-cache-metal-28-856-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/cache-more/center-cache-metal-28-856-coordinate.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true,
+        "reviewed": true,
+        "result": "Final encoded chronological4fps frames manually reviewed: continuous clean resource/terrain shot, no map/inventory/creator inset/edit cut. Full uncropped GPS proof retained separately; complete encoded decode passed."
+      },
+      "evidenceLimitations": "Creator-labelled regional waypoint; no permanent node count or guaranteed availability. Creator inset removed from delivered video; uncropped source GPS proof retained.",
+      "visualReviewStatus": "verified",
+      "sourceCrop": {
+        "x": 560,
+        "y": 0,
+        "width": 1360,
+        "height": 1080,
+        "sourceWidth": 1920,
+        "sourceHeight": 1080,
+        "reason": "Remove creator map and resource/GPS inset."
+      },
+      "encodedDurationSeconds": 6,
+      "nearestExistingRegions": [
+        {
+          "id": "center-blue-metal",
+          "lat": 52.3,
+          "lon": 78.2,
+          "coordinateDistance": 25.4
+        },
+        {
+          "id": "center-extra-blue-basics",
+          "lat": 52.3,
+          "lon": 78.2,
+          "coordinateDistance": 25.4
+        }
+      ]
+    },
+    {
+      "id": "center-cache-metal-843-89",
+      "map": "the-center",
+      "name": "Center metal region 84.3/89",
+      "resources": [
+        "Metal"
+      ],
+      "lat": 84.3,
+      "lon": 89,
+      "videoID": "d3d4cAzEpr0",
+      "startSeconds": 75,
+      "endSeconds": 83,
+      "coordinateEvidence": "Creator explicitly captions 84.3 Lat, 89 Lon over this filmed Metal region at source 77s. Creator numerical caption used; no M-map cursor inference.",
+      "inventoryEvidence": "Visible Metal deposits in explicitly titled Metal segment; no guaranteed yield.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/cache-more/center-cache-metal-843-89.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/cache-more/center-cache-metal-843-89.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=d3d4cAzEpr0",
+      "sourcePlane": "The Center ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-labelled farming region",
+      "mapOverlayVisible": false,
+      "creatorInsetVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "Previously approved complete licensed local source; no network acquisition in farming34",
+      "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/resource-sources/d3d4cAzEpr0.mp4",
+      "sourceSHA256": "7e14c0c412f3dd8b346bcb89e7b71bd3262fc42de17cb4b7f79932271fc5fbb7",
+      "clipSHA256": "24ce79777fef4950ec00c66d84cfd006bf7b501c607046c74e824707e4c25dda",
+      "posterSHA256": "c37b6a4088862633bd07579e4b421797bf917b456d6e2d67a11586b3349af47d",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/cache-more/center-cache-metal-843-89-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/cache-more/center-cache-metal-843-89-coordinate.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true,
+        "reviewed": true,
+        "result": "Final encoded chronological4fps frames manually reviewed: continuous clean resource/terrain shot, no map/inventory/creator inset/edit cut. Full uncropped GPS proof retained separately; complete encoded decode passed."
+      },
+      "evidenceLimitations": "Creator-labelled regional waypoint; no permanent node count or guaranteed availability. Creator inset removed from delivered video; uncropped source GPS proof retained.",
+      "visualReviewStatus": "verified",
+      "sourceCrop": {
+        "x": 560,
+        "y": 0,
+        "width": 1360,
+        "height": 1080,
+        "sourceWidth": 1920,
+        "sourceHeight": 1080,
+        "reason": "Remove creator map and resource/GPS inset."
+      },
+      "encodedDurationSeconds": 8,
+      "nearestExistingRegions": [
+        {
+          "id": "honey-center-redwoods",
+          "lat": 77.1,
+          "lon": 65.3,
+          "coordinateDistance": 24.77
+        },
+        {
+          "id": "center-waterfall-cavern",
+          "lat": 88.8,
+          "lon": 63.2,
+          "coordinateDistance": 26.19
+        }
+      ]
+    },
+    {
+      "id": "center-cache-metal-89-477",
+      "map": "the-center",
+      "name": "Center metal region 89/47.7",
+      "resources": [
+        "Metal"
+      ],
+      "lat": 89,
+      "lon": 47.7,
+      "videoID": "d3d4cAzEpr0",
+      "startSeconds": 92,
+      "endSeconds": 98,
+      "coordinateEvidence": "Creator explicitly captions 89 Lat, 47.7 Lon over this filmed Metal region at source 94s. Creator numerical caption used; no M-map cursor inference.",
+      "inventoryEvidence": "Visible Metal deposits in explicitly titled Metal segment; no guaranteed yield.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/cache-more/center-cache-metal-89-477.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/cache-more/center-cache-metal-89-477.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=d3d4cAzEpr0",
+      "sourcePlane": "The Center ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-labelled farming region",
+      "mapOverlayVisible": false,
+      "creatorInsetVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "Previously approved complete licensed local source; no network acquisition in farming34",
+      "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/resource-sources/d3d4cAzEpr0.mp4",
+      "sourceSHA256": "7e14c0c412f3dd8b346bcb89e7b71bd3262fc42de17cb4b7f79932271fc5fbb7",
+      "clipSHA256": "3e5c5140f5df665e4b0c940dba56a176152c603101443c693155d851a579bce7",
+      "posterSHA256": "6191c419537ec6afa28a9b37cd49d7079b13da1627001ba3a8fa8c03e26b67b5",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/cache-more/center-cache-metal-89-477-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/cache-more/center-cache-metal-89-477-coordinate.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true,
+        "reviewed": true,
+        "result": "Final encoded chronological4fps frames manually reviewed: continuous clean resource/terrain shot, no map/inventory/creator inset/edit cut. Full uncropped GPS proof retained separately; complete encoded decode passed."
+      },
+      "evidenceLimitations": "Creator-labelled regional waypoint; no permanent node count or guaranteed availability. Creator inset removed from delivered video; uncropped source GPS proof retained.",
+      "visualReviewStatus": "verified",
+      "sourceCrop": {
+        "x": 560,
+        "y": 0,
+        "width": 1360,
+        "height": 1080,
+        "sourceWidth": 1920,
+        "sourceHeight": 1080,
+        "reason": "Remove creator map and resource/GPS inset."
+      },
+      "encodedDurationSeconds": 6,
+      "nearestExistingRegions": [
+        {
+          "id": "center-waterfall-cavern",
+          "lat": 88.8,
+          "lon": 63.2,
+          "coordinateDistance": 15.5
+        },
+        {
+          "id": "honey-center-redwoods",
+          "lat": 77.1,
+          "lon": 65.3,
+          "coordinateDistance": 21.25
+        }
+      ]
+    },
+    {
+      "id": "center-cache-metal-88-322",
+      "map": "the-center",
+      "name": "Center metal region 88/32.2",
+      "resources": [
+        "Metal"
+      ],
+      "lat": 88,
+      "lon": 32.2,
+      "videoID": "d3d4cAzEpr0",
+      "startSeconds": 99,
+      "endSeconds": 105,
+      "coordinateEvidence": "Creator explicitly captions 88 Lat, 32.2 Lon over this filmed Metal region at source 101s. Creator numerical caption used; no M-map cursor inference.",
+      "inventoryEvidence": "Visible Metal deposits in explicitly titled Metal segment; no guaranteed yield.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/cache-more/center-cache-metal-88-322.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/cache-more/center-cache-metal-88-322.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=d3d4cAzEpr0",
+      "sourcePlane": "The Center ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-labelled farming region",
+      "mapOverlayVisible": false,
+      "creatorInsetVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "Previously approved complete licensed local source; no network acquisition in farming34",
+      "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/resource-sources/d3d4cAzEpr0.mp4",
+      "sourceSHA256": "7e14c0c412f3dd8b346bcb89e7b71bd3262fc42de17cb4b7f79932271fc5fbb7",
+      "clipSHA256": "4e422c5cf21e23ac642e1eb9af356f527af09d82295824f90f7baa9c2dc6887e",
+      "posterSHA256": "6507a9eb57bc0fc842366e7b4dab05869c790de623631959b9f03094d75b56dc",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/cache-more/center-cache-metal-88-322-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/cache-more/center-cache-metal-88-322-coordinate.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true,
+        "reviewed": true,
+        "result": "Final encoded chronological4fps frames manually reviewed: continuous clean resource/terrain shot, no map/inventory/creator inset/edit cut. Full uncropped GPS proof retained separately; complete encoded decode passed."
+      },
+      "evidenceLimitations": "Creator-labelled regional waypoint; no permanent node count or guaranteed availability. Creator inset removed from delivered video; uncropped source GPS proof retained.",
+      "visualReviewStatus": "verified",
+      "sourceCrop": {
+        "x": 560,
+        "y": 0,
+        "width": 1360,
+        "height": 1080,
+        "sourceWidth": 1920,
+        "sourceHeight": 1080,
+        "reason": "Remove creator map and resource/GPS inset."
+      },
+      "encodedDurationSeconds": 6,
+      "nearestExistingRegions": [
+        {
+          "id": "center-waterfall-cavern",
+          "lat": 88.8,
+          "lon": 63.2,
+          "coordinateDistance": 31.01
+        },
+        {
+          "id": "center-snow-crystal",
+          "lat": 58.0,
+          "lon": 18.5,
+          "coordinateDistance": 32.98
+        }
+      ]
+    },
+    {
+      "id": "center-cache-metal-527-42",
+      "map": "the-center",
+      "name": "Center metal region 52.7/42",
+      "resources": [
+        "Metal"
+      ],
+      "lat": 52.7,
+      "lon": 42,
+      "videoID": "d3d4cAzEpr0",
+      "startSeconds": 106.5,
+      "endSeconds": 112.5,
+      "coordinateEvidence": "Creator explicitly captions 52.7 Lat, 42 Lon over this filmed Metal region at source 108.5s. Creator numerical caption used; no M-map cursor inference.",
+      "inventoryEvidence": "Visible Metal deposits in explicitly titled Metal segment; no guaranteed yield.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/cache-more/center-cache-metal-527-42.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/cache-more/center-cache-metal-527-42.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=d3d4cAzEpr0",
+      "sourcePlane": "The Center ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-labelled farming region",
+      "mapOverlayVisible": false,
+      "creatorInsetVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "Previously approved complete licensed local source; no network acquisition in farming34",
+      "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/resource-sources/d3d4cAzEpr0.mp4",
+      "sourceSHA256": "7e14c0c412f3dd8b346bcb89e7b71bd3262fc42de17cb4b7f79932271fc5fbb7",
+      "clipSHA256": "6679605feacd271b3ce2abfbca3b96717e08f75a498ca5a55ee4023ce56f96f0",
+      "posterSHA256": "30d3cffcf5182dd3e17c6d55979206d84b7bf3f766542009a5a81c9d667f4d98",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/cache-more/center-cache-metal-527-42-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/cache-more/center-cache-metal-527-42-coordinate.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true,
+        "reviewed": true,
+        "result": "Final encoded chronological4fps frames manually reviewed: continuous clean resource/terrain shot, no map/inventory/creator inset/edit cut. Full uncropped GPS proof retained separately; complete encoded decode passed."
+      },
+      "evidenceLimitations": "Creator-labelled regional waypoint; no permanent node count or guaranteed availability. Creator inset removed from delivered video; uncropped source GPS proof retained.",
+      "visualReviewStatus": "verified",
+      "sourceCrop": {
+        "x": 560,
+        "y": 0,
+        "width": 1360,
+        "height": 1080,
+        "sourceWidth": 1920,
+        "sourceHeight": 1080,
+        "reason": "Remove creator map and resource/GPS inset."
+      },
+      "encodedDurationSeconds": 6.0,
+      "nearestExistingRegions": [
+        {
+          "id": "center-extra-swamp-mushrooms",
+          "lat": 49.4,
+          "lon": 37.4,
+          "coordinateDistance": 5.66
+        },
+        {
+          "id": "center-south-west-pond",
+          "lat": 53.1,
+          "lon": 51.0,
+          "coordinateDistance": 9.01
+        }
+      ]
+    },
+    {
+      "id": "center-cache-metal-525-692",
+      "map": "the-center",
+      "name": "Center metal region 52.5/69.2",
+      "resources": [
+        "Metal"
+      ],
+      "lat": 52.5,
+      "lon": 69.2,
+      "videoID": "d3d4cAzEpr0",
+      "startSeconds": 120,
+      "endSeconds": 126,
+      "coordinateEvidence": "Creator explicitly captions 52.5 Lat, 69.2 Lon over this filmed Metal region at source 122s. Creator numerical caption used; no M-map cursor inference.",
+      "inventoryEvidence": "Visible Metal deposits in explicitly titled Metal segment; no guaranteed yield.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/cache-more/center-cache-metal-523-692.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/cache-more/center-cache-metal-523-692.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=d3d4cAzEpr0",
+      "sourcePlane": "The Center ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-labelled farming region",
+      "mapOverlayVisible": false,
+      "creatorInsetVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "Previously approved complete licensed local source; no network acquisition in farming34",
+      "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/resource-sources/d3d4cAzEpr0.mp4",
+      "sourceSHA256": "7e14c0c412f3dd8b346bcb89e7b71bd3262fc42de17cb4b7f79932271fc5fbb7",
+      "clipSHA256": "4e494c215c74b3b6e0c73b2c0364dcc25bf6459dc7e4218acad1b0239fed181a",
+      "posterSHA256": "082136b5dd2dbc7c39f84afd04ddf9581c7feec2dd5500f3d59a9106a1dad220",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/cache-more/center-cache-metal-523-692-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/cache-more/center-cache-metal-523-692-coordinate.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true,
+        "reviewed": true,
+        "result": "Final encoded chronological4fps frames manually reviewed: continuous clean resource/terrain shot, no map/inventory/creator inset/edit cut. Full uncropped GPS proof retained separately; complete encoded decode passed."
+      },
+      "evidenceLimitations": "Creator-labelled regional waypoint; no permanent node count or guaranteed availability. Creator inset removed from delivered video; uncropped source GPS proof retained.",
+      "visualReviewStatus": "verified",
+      "sourceCrop": {
+        "x": 560,
+        "y": 0,
+        "width": 1360,
+        "height": 1080,
+        "sourceWidth": 1920,
+        "sourceHeight": 1080,
+        "reason": "Remove creator map and resource/GPS inset."
+      },
+      "encodedDurationSeconds": 6,
+      "nearestExistingRegions": [
+        {
+          "id": "center-south-east-pond",
+          "lat": 51.7,
+          "lon": 60.8,
+          "coordinateDistance": 8.44
+        },
+        {
+          "id": "center-blue-metal",
+          "lat": 52.3,
+          "lon": 78.2,
+          "coordinateDistance": 9.0
+        }
+      ]
+    },
+    {
+      "id": "center-cache-metal-413-61",
+      "map": "the-center",
+      "name": "Center metal region 41.3/61",
+      "resources": [
+        "Metal"
+      ],
+      "lat": 41.3,
+      "lon": 61,
+      "videoID": "d3d4cAzEpr0",
+      "startSeconds": 129,
+      "endSeconds": 135,
+      "coordinateEvidence": "Creator explicitly captions 41.3 Lat, 61 Lon over this filmed Metal region at source 131s. Creator numerical caption used; no M-map cursor inference.",
+      "inventoryEvidence": "Visible Metal deposits in explicitly titled Metal segment; no guaranteed yield.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/cache-more/center-cache-metal-413-61.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/cache-more/center-cache-metal-413-61.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=d3d4cAzEpr0",
+      "sourcePlane": "The Center ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-labelled farming region",
+      "mapOverlayVisible": false,
+      "creatorInsetVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "Previously approved complete licensed local source; no network acquisition in farming34",
+      "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/resource-sources/d3d4cAzEpr0.mp4",
+      "sourceSHA256": "7e14c0c412f3dd8b346bcb89e7b71bd3262fc42de17cb4b7f79932271fc5fbb7",
+      "clipSHA256": "27dc0bc3bfede1e6f28dcd812b95d8414f17d2c62cb73fcbec302398df23c49b",
+      "posterSHA256": "a75286e88dd2d53e5479e550985bc6115f6e439c2e1c1cea034393ee326694f4",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/cache-more/center-cache-metal-413-61-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/cache-more/center-cache-metal-413-61-coordinate.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true,
+        "reviewed": true,
+        "result": "Final encoded chronological4fps frames manually reviewed: continuous clean resource/terrain shot, no map/inventory/creator inset/edit cut. Full uncropped GPS proof retained separately; complete encoded decode passed."
+      },
+      "evidenceLimitations": "Creator-labelled regional waypoint; no permanent node count or guaranteed availability. Creator inset removed from delivered video; uncropped source GPS proof retained.",
+      "visualReviewStatus": "verified",
+      "sourceCrop": {
+        "x": 560,
+        "y": 0,
+        "width": 1360,
+        "height": 1080,
+        "sourceWidth": 1920,
+        "sourceHeight": 1080,
+        "reason": "Remove creator map and resource/GPS inset."
+      },
+      "encodedDurationSeconds": 6,
+      "nearestExistingRegions": [
+        {
+          "id": "center-middle-pond",
+          "lat": 42.5,
+          "lon": 60.3,
+          "coordinateDistance": 1.39
+        },
+        {
+          "id": "center-south-east-pond",
+          "lat": 51.7,
+          "lon": 60.8,
+          "coordinateDistance": 10.4
+        }
+      ]
+    },
+    {
+      "id": "center-cache-metal-696-89",
+      "map": "the-center",
+      "name": "Center metal region 69.6/89",
+      "resources": [
+        "Metal"
+      ],
+      "lat": 69.6,
+      "lon": 89,
+      "videoID": "d3d4cAzEpr0",
+      "startSeconds": 155,
+      "endSeconds": 163,
+      "coordinateEvidence": "Creator explicitly captions 69.6 Lat, 89 Lon over this filmed Metal region at source 157s. Creator numerical caption used; no M-map cursor inference.",
+      "inventoryEvidence": "Visible Metal deposits in explicitly titled Metal segment; no guaranteed yield.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/cache-more/center-cache-metal-696-89.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/cache-more/center-cache-metal-696-89.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=d3d4cAzEpr0",
+      "sourcePlane": "The Center ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-labelled farming region",
+      "mapOverlayVisible": false,
+      "creatorInsetVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "Previously approved complete licensed local source; no network acquisition in farming34",
+      "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/resource-sources/d3d4cAzEpr0.mp4",
+      "sourceSHA256": "7e14c0c412f3dd8b346bcb89e7b71bd3262fc42de17cb4b7f79932271fc5fbb7",
+      "clipSHA256": "6e706afc5533c0aeba4223adf923283a5dfefbb776a10bbe8d79607f252138bc",
+      "posterSHA256": "5ed0ee49ff0e4eb806d9deb5125b5a080be8f1232c4c661208b47496be675911",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/cache-more/center-cache-metal-696-89-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/cache-more/center-cache-metal-696-89-coordinate.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true,
+        "reviewed": true,
+        "result": "Final encoded chronological4fps frames manually reviewed: continuous clean resource/terrain shot, no map/inventory/creator inset/edit cut. Full uncropped GPS proof retained separately; complete encoded decode passed."
+      },
+      "evidenceLimitations": "Creator-labelled regional waypoint; no permanent node count or guaranteed availability. Creator inset removed from delivered video; uncropped source GPS proof retained.",
+      "visualReviewStatus": "verified",
+      "sourceCrop": {
+        "x": 560,
+        "y": 0,
+        "width": 1360,
+        "height": 1080,
+        "sourceWidth": 1920,
+        "sourceHeight": 1080,
+        "reason": "Remove creator map and resource/GPS inset."
+      },
+      "encodedDurationSeconds": 8,
+      "nearestExistingRegions": [
+        {
+          "id": "center-blue-metal",
+          "lat": 52.3,
+          "lon": 78.2,
+          "coordinateDistance": 20.39
+        },
+        {
+          "id": "center-extra-blue-basics",
+          "lat": 52.3,
+          "lon": 78.2,
+          "coordinateDistance": 20.39
+        }
+      ]
+    },
+    {
+      "id": "center-cache-obsidian-64-687",
+      "map": "the-center",
+      "name": "Center obsidian region 64/68.7",
+      "resources": [
+        "Obsidian"
+      ],
+      "lat": 64,
+      "lon": 68.7,
+      "videoID": "d3d4cAzEpr0",
+      "startSeconds": 178,
+      "endSeconds": 186,
+      "coordinateEvidence": "Creator explicitly captions 64 Lat, 68.7 Lon over this filmed Obsidian region at source 180s. Creator numerical caption used; no M-map cursor inference.",
+      "inventoryEvidence": "Visible Obsidian deposits in explicitly titled Obsidian segment; no guaranteed yield.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/cache-more/center-cache-obsidian-64-687.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/cache-more/center-cache-obsidian-64-687.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=d3d4cAzEpr0",
+      "sourcePlane": "The Center ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-labelled farming region",
+      "mapOverlayVisible": false,
+      "creatorInsetVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "Previously approved complete licensed local source; no network acquisition in farming34",
+      "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/resource-sources/d3d4cAzEpr0.mp4",
+      "sourceSHA256": "7e14c0c412f3dd8b346bcb89e7b71bd3262fc42de17cb4b7f79932271fc5fbb7",
+      "clipSHA256": "9cf0d3d14c0c341141003cd5d7a28d57d6496f459ecd2aaafc2d9fda17de083a",
+      "posterSHA256": "162d3268de933f16c9901e8b3047f282eb8ebebb3287bdc03b98e1dd8cf9dac2",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/cache-more/center-cache-obsidian-64-687-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/cache-more/center-cache-obsidian-64-687-coordinate.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true,
+        "reviewed": true,
+        "result": "Final encoded chronological4fps frames manually reviewed: continuous clean resource/terrain shot, no map/inventory/creator inset/edit cut. Full uncropped GPS proof retained separately; complete encoded decode passed."
+      },
+      "evidenceLimitations": "Creator-labelled regional waypoint; no permanent node count or guaranteed availability. Creator inset removed from delivered video; uncropped source GPS proof retained.",
+      "visualReviewStatus": "verified",
+      "sourceCrop": {
+        "x": 560,
+        "y": 0,
+        "width": 1360,
+        "height": 1080,
+        "sourceWidth": 1920,
+        "sourceHeight": 1080,
+        "reason": "Remove creator map and resource/GPS inset."
+      },
+      "encodedDurationSeconds": 8,
+      "nearestExistingRegions": [
+        {
+          "id": "center-spire-obsidian",
+          "lat": 63.0,
+          "lon": 60.3,
+          "coordinateDistance": 8.46
+        },
+        {
+          "id": "honey-center-redwoods",
+          "lat": 77.1,
+          "lon": 65.3,
+          "coordinateDistance": 13.53
+        }
+      ]
+    },
+    {
+      "id": "center-cache-obsidian-15-503",
+      "map": "the-center",
+      "name": "Center obsidian region 15/50.3",
+      "resources": [
+        "Obsidian"
+      ],
+      "lat": 15,
+      "lon": 50.3,
+      "videoID": "d3d4cAzEpr0",
+      "startSeconds": 191,
+      "endSeconds": 197,
+      "coordinateEvidence": "Creator explicitly captions 15 Lat, 50.3 Lon over this filmed Obsidian region at source 193s. Creator numerical caption used; no M-map cursor inference.",
+      "inventoryEvidence": "Visible Obsidian deposits in explicitly titled Obsidian segment; no guaranteed yield.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/cache-more/center-cache-obsidian-15-503.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/cache-more/center-cache-obsidian-15-503.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=d3d4cAzEpr0",
+      "sourcePlane": "The Center ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-labelled farming region",
+      "mapOverlayVisible": false,
+      "creatorInsetVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "Previously approved complete licensed local source; no network acquisition in farming34",
+      "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/resource-sources/d3d4cAzEpr0.mp4",
+      "sourceSHA256": "7e14c0c412f3dd8b346bcb89e7b71bd3262fc42de17cb4b7f79932271fc5fbb7",
+      "clipSHA256": "4591c3c344067c1f65676a00ae3791203129b97b5a1ec4d41ea935966480686b",
+      "posterSHA256": "3cc8c92cebd71146dfa11b71755cd424dfdede6733aba797826d227967cb886f",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/cache-more/center-cache-obsidian-15-503-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/cache-more/center-cache-obsidian-15-503-coordinate.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true,
+        "reviewed": true,
+        "result": "Final encoded chronological4fps frames manually reviewed: continuous clean resource/terrain shot, no map/inventory/creator inset/edit cut. Full uncropped GPS proof retained separately; complete encoded decode passed."
+      },
+      "evidenceLimitations": "Creator-labelled regional waypoint; no permanent node count or guaranteed availability. Creator inset removed from delivered video; uncropped source GPS proof retained.",
+      "visualReviewStatus": "verified",
+      "sourceCrop": {
+        "x": 560,
+        "y": 0,
+        "width": 1360,
+        "height": 1080,
+        "sourceWidth": 1920,
+        "sourceHeight": 1080,
+        "reason": "Remove creator map and resource/GPS inset."
+      },
+      "encodedDurationSeconds": 6,
+      "regionalDedupeGroup": "center-volcano-shelf-15-503",
+      "integrationNote": "Same one region15/50.3 for Metal and Obsidian. Merge these into one spot with resource-specific clips; do not count two spatial locations.",
+      "nearestExistingRegions": [
+        {
+          "id": "center-extra-lava-chitin",
+          "lat": 19.36,
+          "lon": 47.68,
+          "coordinateDistance": 5.09
+        },
+        {
+          "id": "center-lava-metal",
+          "lat": 16.5,
+          "lon": 60.9,
+          "coordinateDistance": 10.71
+        }
+      ]
+    },
+    {
+      "id": "center-cache-obsidian-40-912",
+      "map": "the-center",
+      "name": "Center obsidian region 40/91.2",
+      "resources": [
+        "Obsidian"
+      ],
+      "lat": 40,
+      "lon": 91.2,
+      "videoID": "d3d4cAzEpr0",
+      "startSeconds": 212,
+      "endSeconds": 218,
+      "coordinateEvidence": "Creator explicitly captions 40 Lat, 91.2 Lon over this filmed Obsidian region at source 214s. Creator numerical caption used; no M-map cursor inference.",
+      "inventoryEvidence": "Visible Obsidian deposits in explicitly titled Obsidian segment; no guaranteed yield.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/cache-more/center-cache-obsidian-40-912.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/cache-more/center-cache-obsidian-40-912.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=d3d4cAzEpr0",
+      "sourcePlane": "The Center ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-labelled farming region",
+      "mapOverlayVisible": false,
+      "creatorInsetVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "Previously approved complete licensed local source; no network acquisition in farming34",
+      "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/resource-sources/d3d4cAzEpr0.mp4",
+      "sourceSHA256": "7e14c0c412f3dd8b346bcb89e7b71bd3262fc42de17cb4b7f79932271fc5fbb7",
+      "clipSHA256": "2088bfd91fa4d5047fb2f7736ed3220eb50da79d0929966ca8f4f318486b568c",
+      "posterSHA256": "464bffbc8fd9fb08ceae7bd33ea9a3b4ff79d360f55cbaa36fd8817504e4c1e4",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/cache-more/center-cache-obsidian-40-912-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/cache-more/center-cache-obsidian-40-912-coordinate.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true,
+        "reviewed": true,
+        "result": "Final encoded chronological4fps frames manually reviewed: continuous clean resource/terrain shot, no map/inventory/creator inset/edit cut. Full uncropped GPS proof retained separately; complete encoded decode passed."
+      },
+      "evidenceLimitations": "Creator-labelled regional waypoint; no permanent node count or guaranteed availability. Creator inset removed from delivered video; uncropped source GPS proof retained.",
+      "visualReviewStatus": "verified",
+      "sourceCrop": {
+        "x": 560,
+        "y": 0,
+        "width": 1360,
+        "height": 1080,
+        "sourceWidth": 1920,
+        "sourceHeight": 1080,
+        "reason": "Remove creator map and resource/GPS inset."
+      },
+      "encodedDurationSeconds": 6,
+      "nearestExistingRegions": [
+        {
+          "id": "center-blue-metal",
+          "lat": 52.3,
+          "lon": 78.2,
+          "coordinateDistance": 17.9
+        },
+        {
+          "id": "center-extra-blue-basics",
+          "lat": 52.3,
+          "lon": 78.2,
+          "coordinateDistance": 17.9
+        }
+      ]
+    },
+    {
+      "id": "center-cache-crystal-69-963",
+      "map": "the-center",
+      "name": "Center crystal region 69/96.3",
+      "resources": [
+        "Crystal"
+      ],
+      "lat": 69,
+      "lon": 96.3,
+      "videoID": "d3d4cAzEpr0",
+      "startSeconds": 254,
+      "endSeconds": 260,
+      "coordinateEvidence": "Creator explicitly captions 69 Lat, 96.3 Lon over this filmed Crystal region at source 256s. Creator numerical caption used; no M-map cursor inference.",
+      "inventoryEvidence": "Visible Crystal deposits in explicitly titled Crystal segment; no guaranteed yield.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/cache-more/center-cache-crystal-69-963.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/cache-more/center-cache-crystal-69-963.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=d3d4cAzEpr0",
+      "sourcePlane": "The Center ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-labelled farming region",
+      "mapOverlayVisible": false,
+      "creatorInsetVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "Previously approved complete licensed local source; no network acquisition in farming34",
+      "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/resource-sources/d3d4cAzEpr0.mp4",
+      "sourceSHA256": "7e14c0c412f3dd8b346bcb89e7b71bd3262fc42de17cb4b7f79932271fc5fbb7",
+      "clipSHA256": "d0f3c09c653009a8ffc49e828a19cad9800a07abea6153bc70d9bdb4eb2f0074",
+      "posterSHA256": "9e458dc5f32e61dd8574df3cc95271f43b3fe1a51e726288c81f939eb0674eef",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/cache-more/center-cache-crystal-69-963-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/cache-more/center-cache-crystal-69-963-coordinate.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true,
+        "reviewed": true,
+        "result": "Final encoded chronological4fps frames manually reviewed: continuous clean resource/terrain shot, no map/inventory/creator inset/edit cut. Full uncropped GPS proof retained separately; complete encoded decode passed."
+      },
+      "evidenceLimitations": "Creator-labelled regional waypoint; no permanent node count or guaranteed availability. Creator inset removed from delivered video; uncropped source GPS proof retained.",
+      "visualReviewStatus": "verified",
+      "sourceCrop": {
+        "x": 560,
+        "y": 0,
+        "width": 1360,
+        "height": 1080,
+        "sourceWidth": 1920,
+        "sourceHeight": 1080,
+        "reason": "Remove creator map and resource/GPS inset."
+      },
+      "encodedDurationSeconds": 6,
+      "nearestExistingRegions": [
+        {
+          "id": "center-blue-metal",
+          "lat": 52.3,
+          "lon": 78.2,
+          "coordinateDistance": 24.63
+        },
+        {
+          "id": "center-extra-blue-basics",
+          "lat": 52.3,
+          "lon": 78.2,
+          "coordinateDistance": 24.63
+        }
+      ]
+    },
+    {
+      "id": "center-cache-crystal-66-737",
+      "map": "the-center",
+      "name": "Center crystal region 66/73.7",
+      "resources": [
+        "Crystal"
+      ],
+      "lat": 66,
+      "lon": 73.7,
+      "videoID": "d3d4cAzEpr0",
+      "startSeconds": 294,
+      "endSeconds": 300,
+      "coordinateEvidence": "Creator explicitly captions 66 Lat, 73.7 Lon over this filmed Crystal region at source 296s. Creator numerical caption used; no M-map cursor inference.",
+      "inventoryEvidence": "Visible Crystal deposits in explicitly titled Crystal segment; no guaranteed yield.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/cache-more/center-cache-crystal-66-737.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/cache-more/center-cache-crystal-66-737.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=d3d4cAzEpr0",
+      "sourcePlane": "The Center ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-labelled farming region",
+      "mapOverlayVisible": false,
+      "creatorInsetVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "Previously approved complete licensed local source; no network acquisition in farming34",
+      "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/resource-sources/d3d4cAzEpr0.mp4",
+      "sourceSHA256": "7e14c0c412f3dd8b346bcb89e7b71bd3262fc42de17cb4b7f79932271fc5fbb7",
+      "clipSHA256": "68d9265b82fdbc0ca302bac0fc409188df2d73a1b416afc62339b23e2716e74b",
+      "posterSHA256": "d233704f37a921ad5729aa1e3ff433cc291543566b1b4ca1b9e20ac781c33bc7",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/cache-more/center-cache-crystal-66-737-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/cache-more/center-cache-crystal-66-737-coordinate.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true,
+        "reviewed": true,
+        "result": "Final encoded chronological4fps frames manually reviewed: continuous clean resource/terrain shot, no map/inventory/creator inset/edit cut. Full uncropped GPS proof retained separately; complete encoded decode passed."
+      },
+      "evidenceLimitations": "Creator-labelled regional waypoint; no permanent node count or guaranteed availability. Creator inset removed from delivered video; uncropped source GPS proof retained.",
+      "visualReviewStatus": "verified",
+      "sourceCrop": {
+        "x": 560,
+        "y": 0,
+        "width": 1360,
+        "height": 1080,
+        "sourceWidth": 1920,
+        "sourceHeight": 1080,
+        "reason": "Remove creator map and resource/GPS inset."
+      },
+      "encodedDurationSeconds": 6,
+      "nearestExistingRegions": [
+        {
+          "id": "center-spire-obsidian",
+          "lat": 63.0,
+          "lon": 60.3,
+          "coordinateDistance": 13.73
+        },
+        {
+          "id": "honey-center-redwoods",
+          "lat": 77.1,
+          "lon": 65.3,
+          "coordinateDistance": 13.92
+        }
+      ]
+    },
+    {
+      "id": "center-cache-oil-415-32",
+      "map": "the-center",
+      "name": "Center oil region 41.5/32",
+      "resources": [
+        "Oil"
+      ],
+      "lat": 41.5,
+      "lon": 32,
+      "videoID": "d3d4cAzEpr0",
+      "startSeconds": 322,
+      "endSeconds": 328,
+      "coordinateEvidence": "Creator explicitly captions 41.5 Lat, 32 Lon over this filmed Oil region at source 324s. Creator numerical caption used; no M-map cursor inference.",
+      "inventoryEvidence": "Visible Oil deposits in explicitly titled Oil segment; no guaranteed yield.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/cache-more/center-cache-oil-415-32.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/cache-more/center-cache-oil-415-32.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=d3d4cAzEpr0",
+      "sourcePlane": "The Center ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-labelled farming region",
+      "mapOverlayVisible": false,
+      "creatorInsetVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "Previously approved complete licensed local source; no network acquisition in farming34",
+      "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/resource-sources/d3d4cAzEpr0.mp4",
+      "sourceSHA256": "7e14c0c412f3dd8b346bcb89e7b71bd3262fc42de17cb4b7f79932271fc5fbb7",
+      "clipSHA256": "092c26dc2e873fca96889e687dd5897285055301ab9dce36bf09b558995751f2",
+      "posterSHA256": "16d08d66e4e0aeb20f2ac144e756da6bcf337b1f229e9a6ff60199cfdc785de2",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/cache-more/center-cache-oil-415-32-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/cache-more/center-cache-oil-415-32-coordinate.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true,
+        "reviewed": true,
+        "result": "Final encoded chronological4fps frames manually reviewed: continuous clean resource/terrain shot, no map/inventory/creator inset/edit cut. Full uncropped GPS proof retained separately; complete encoded decode passed."
+      },
+      "evidenceLimitations": "Creator-labelled regional waypoint; no permanent node count or guaranteed availability. Creator inset removed from delivered video; uncropped source GPS proof retained.",
+      "visualReviewStatus": "verified",
+      "sourceCrop": {
+        "x": 560,
+        "y": 0,
+        "width": 1360,
+        "height": 1080,
+        "sourceWidth": 1920,
+        "sourceHeight": 1080,
+        "reason": "Remove creator map and resource/GPS inset."
+      },
+      "encodedDurationSeconds": 6,
+      "nearestExistingRegions": [
+        {
+          "id": "center-ring-pearls",
+          "lat": 36.7,
+          "lon": 35.5,
+          "coordinateDistance": 5.94
+        },
+        {
+          "id": "center-extra-swamp-mushrooms",
+          "lat": 49.4,
+          "lon": 37.4,
+          "coordinateDistance": 9.57
+        }
+      ]
+    },
+    {
+      "id": "center-cache-oil-365-60",
+      "map": "the-center",
+      "name": "Center oil region 36.5/60",
+      "resources": [
+        "Oil"
+      ],
+      "lat": 36.5,
+      "lon": 60,
+      "videoID": "d3d4cAzEpr0",
+      "startSeconds": 337,
+      "endSeconds": 343,
+      "coordinateEvidence": "Creator explicitly captions 36.5 Lat, 60 Lon over this filmed Oil region at source 339s. Creator numerical caption used; no M-map cursor inference.",
+      "inventoryEvidence": "Visible Oil deposits in explicitly titled Oil segment; no guaranteed yield.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/cache-more/center-cache-oil-365-60.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/cache-more/center-cache-oil-365-60.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=d3d4cAzEpr0",
+      "sourcePlane": "The Center ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-labelled farming region",
+      "mapOverlayVisible": false,
+      "creatorInsetVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "Previously approved complete licensed local source; no network acquisition in farming34",
+      "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/resource-sources/d3d4cAzEpr0.mp4",
+      "sourceSHA256": "7e14c0c412f3dd8b346bcb89e7b71bd3262fc42de17cb4b7f79932271fc5fbb7",
+      "clipSHA256": "9a9215e89fba20e5177a561613960d0cf396575a4b86f9f836b6e5c6af85ae02",
+      "posterSHA256": "9d3ae967ae3f794cf943e1eb97c7883036ebbca993d87c9315bde072bb97a0d3",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/cache-more/center-cache-oil-365-60-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/cache-more/center-cache-oil-365-60-coordinate.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true,
+        "reviewed": true,
+        "result": "Final encoded chronological4fps frames manually reviewed: continuous clean resource/terrain shot, no map/inventory/creator inset/edit cut. Full uncropped GPS proof retained separately; complete encoded decode passed."
+      },
+      "evidenceLimitations": "Creator-labelled regional waypoint; no permanent node count or guaranteed availability. Creator inset removed from delivered video; uncropped source GPS proof retained.",
+      "visualReviewStatus": "verified",
+      "sourceCrop": {
+        "x": 560,
+        "y": 0,
+        "width": 1360,
+        "height": 1080,
+        "sourceWidth": 1920,
+        "sourceHeight": 1080,
+        "reason": "Remove creator map and resource/GPS inset."
+      },
+      "encodedDurationSeconds": 6,
+      "nearestExistingRegions": [
+        {
+          "id": "center-north-pond-east",
+          "lat": 31.1,
+          "lon": 57.6,
+          "coordinateDistance": 5.91
+        },
+        {
+          "id": "center-middle-pond",
+          "lat": 42.5,
+          "lon": 60.3,
+          "coordinateDistance": 6.01
+        }
+      ]
+    },
+    {
+      "id": "center-cache-silica-pearls-446-64",
+      "map": "the-center",
+      "name": "Center silica pearls region 44.6/64",
+      "resources": [
+        "Silica Pearls"
+      ],
+      "lat": 44.6,
+      "lon": 64,
+      "videoID": "d3d4cAzEpr0",
+      "startSeconds": 375,
+      "endSeconds": 381,
+      "coordinateEvidence": "Creator explicitly captions 44.6 Lat, 64 Lon over this filmed Silica Pearls region at source 377s. Creator numerical caption used; no M-map cursor inference.",
+      "inventoryEvidence": "Visible Silica Pearls deposits in explicitly titled Silica Pearls segment; no guaranteed yield.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/cache-more/center-cache-silica-pearls-446-64.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/cache-more/center-cache-silica-pearls-446-64.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=d3d4cAzEpr0",
+      "sourcePlane": "The Center ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-labelled farming region",
+      "mapOverlayVisible": false,
+      "creatorInsetVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "Previously approved complete licensed local source; no network acquisition in farming34",
+      "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/resource-sources/d3d4cAzEpr0.mp4",
+      "sourceSHA256": "7e14c0c412f3dd8b346bcb89e7b71bd3262fc42de17cb4b7f79932271fc5fbb7",
+      "clipSHA256": "67eb00de50aa8d7bfb2bb6311155142e3b30a0c11673c08fb86479b79c4f1c67",
+      "posterSHA256": "ae389005f7634b6255a2973ee4bbfb0995bc72050551a8bf29890ab6e504c756",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/cache-more/center-cache-silica-pearls-446-64-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/cache-more/center-cache-silica-pearls-446-64-coordinate.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true,
+        "reviewed": true,
+        "result": "Final encoded chronological4fps frames manually reviewed: continuous clean resource/terrain shot, no map/inventory/creator inset/edit cut. Full uncropped GPS proof retained separately; complete encoded decode passed."
+      },
+      "evidenceLimitations": "Creator-labelled regional waypoint; no permanent node count or guaranteed availability. Creator inset removed from delivered video; uncropped source GPS proof retained.",
+      "visualReviewStatus": "verified",
+      "sourceCrop": {
+        "x": 560,
+        "y": 0,
+        "width": 1360,
+        "height": 1080,
+        "sourceWidth": 1920,
+        "sourceHeight": 1080,
+        "reason": "Remove creator map and resource/GPS inset."
+      },
+      "encodedDurationSeconds": 6,
+      "nearestExistingRegions": [
+        {
+          "id": "center-middle-pond",
+          "lat": 42.5,
+          "lon": 60.3,
+          "coordinateDistance": 4.25
+        },
+        {
+          "id": "center-south-east-pond",
+          "lat": 51.7,
+          "lon": 60.8,
+          "coordinateDistance": 7.79
+        }
+      ]
+    },
+    {
+      "id": "center-cache-silica-pearls-20-498",
+      "map": "the-center",
+      "name": "Center silica pearls region 20/49.8",
+      "resources": [
+        "Silica Pearls"
+      ],
+      "lat": 20,
+      "lon": 49.8,
+      "videoID": "d3d4cAzEpr0",
+      "startSeconds": 383,
+      "endSeconds": 391,
+      "coordinateEvidence": "Creator explicitly captions 20 Lat, 49.8 Lon over this filmed Silica Pearls region at source 385s. Creator numerical caption used; no M-map cursor inference.",
+      "inventoryEvidence": "Visible Silica Pearls deposits in explicitly titled Silica Pearls segment; no guaranteed yield.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/cache-more/center-cache-silica-pearls-20-498.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/cache-more/center-cache-silica-pearls-20-498.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=d3d4cAzEpr0",
+      "sourcePlane": "The Center ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-labelled farming region",
+      "mapOverlayVisible": false,
+      "creatorInsetVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "Previously approved complete licensed local source; no network acquisition in farming34",
+      "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/resource-sources/d3d4cAzEpr0.mp4",
+      "sourceSHA256": "7e14c0c412f3dd8b346bcb89e7b71bd3262fc42de17cb4b7f79932271fc5fbb7",
+      "clipSHA256": "25444df372fee9f0436381b979852d16c0980cf20fbfd5c73b7c6f1083c294e1",
+      "posterSHA256": "23cb2bac8d4b4f3258054c92908609be007b03100c5ef8bae5b1eff23d56b3c1",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/cache-more/center-cache-silica-pearls-20-498-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/cache-more/center-cache-silica-pearls-20-498-coordinate.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true,
+        "reviewed": true,
+        "result": "Final encoded chronological4fps frames manually reviewed: continuous clean resource/terrain shot, no map/inventory/creator inset/edit cut. Full uncropped GPS proof retained separately; complete encoded decode passed."
+      },
+      "evidenceLimitations": "Creator-labelled regional waypoint; no permanent node count or guaranteed availability. Creator inset removed from delivered video; uncropped source GPS proof retained.",
+      "visualReviewStatus": "verified",
+      "sourceCrop": {
+        "x": 560,
+        "y": 0,
+        "width": 1360,
+        "height": 1080,
+        "sourceWidth": 1920,
+        "sourceHeight": 1080,
+        "reason": "Remove creator map and resource/GPS inset."
+      },
+      "encodedDurationSeconds": 8,
+      "nearestExistingRegions": [
+        {
+          "id": "center-extra-lava-chitin",
+          "lat": 19.36,
+          "lon": 47.68,
+          "coordinateDistance": 2.21
+        },
+        {
+          "id": "center-north-pond-west",
+          "lat": 30.9,
+          "lon": 52.5,
+          "coordinateDistance": 11.23
+        }
+      ]
+    },
+    {
+      "id": "center-cache-silica-pearls-648-92",
+      "map": "the-center",
+      "name": "Center silica pearls region 64.8/92",
+      "resources": [
+        "Silica Pearls"
+      ],
+      "lat": 64.8,
+      "lon": 92,
+      "videoID": "d3d4cAzEpr0",
+      "startSeconds": 393,
+      "endSeconds": 399,
+      "coordinateEvidence": "Creator explicitly captions 64.8 Lat, 92 Lon over this filmed Silica Pearls region at source 395s. Creator numerical caption used; no M-map cursor inference.",
+      "inventoryEvidence": "Visible Silica Pearls deposits in explicitly titled Silica Pearls segment; no guaranteed yield.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/cache-more/center-cache-silica-pearls-648-92.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/cache-more/center-cache-silica-pearls-648-92.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=d3d4cAzEpr0",
+      "sourcePlane": "The Center ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-labelled farming region",
+      "mapOverlayVisible": false,
+      "creatorInsetVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "Previously approved complete licensed local source; no network acquisition in farming34",
+      "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/resource-sources/d3d4cAzEpr0.mp4",
+      "sourceSHA256": "7e14c0c412f3dd8b346bcb89e7b71bd3262fc42de17cb4b7f79932271fc5fbb7",
+      "clipSHA256": "9d025fde90bc5b51fc45e243362f751288065430ede9d176b5a87c2427b7245b",
+      "posterSHA256": "5fb7bf268ff48ccc511fe1158e2a9eafdd561113b7f43490c45fdba47213eccf",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/cache-more/center-cache-silica-pearls-648-92-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/cache-more/center-cache-silica-pearls-648-92-coordinate.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true,
+        "reviewed": true,
+        "result": "Final encoded chronological4fps frames manually reviewed: continuous clean resource/terrain shot, no map/inventory/creator inset/edit cut. Full uncropped GPS proof retained separately; complete encoded decode passed."
+      },
+      "evidenceLimitations": "Creator-labelled regional waypoint; no permanent node count or guaranteed availability. Creator inset removed from delivered video; uncropped source GPS proof retained.",
+      "visualReviewStatus": "verified",
+      "sourceCrop": {
+        "x": 560,
+        "y": 0,
+        "width": 1360,
+        "height": 1080,
+        "sourceWidth": 1920,
+        "sourceHeight": 1080,
+        "reason": "Remove creator map and resource/GPS inset."
+      },
+      "encodedDurationSeconds": 6,
+      "nearestExistingRegions": [
+        {
+          "id": "center-blue-metal",
+          "lat": 52.3,
+          "lon": 78.2,
+          "coordinateDistance": 18.62
+        },
+        {
+          "id": "center-extra-blue-basics",
+          "lat": 52.3,
+          "lon": 78.2,
+          "coordinateDistance": 18.62
+        }
+      ]
+    },
+    {
+      "id": "center-cache-silica-pearls-437-32",
+      "map": "the-center",
+      "name": "Center silica pearls region 43.7/32",
+      "resources": [
+        "Silica Pearls"
+      ],
+      "lat": 43.7,
+      "lon": 32,
+      "videoID": "d3d4cAzEpr0",
+      "startSeconds": 401,
+      "endSeconds": 407,
+      "coordinateEvidence": "Creator explicitly captions 43.7 Lat, 32 Lon over this filmed Silica Pearls region at source 403s. Creator numerical caption used; no M-map cursor inference.",
+      "inventoryEvidence": "Visible Silica Pearls deposits in explicitly titled Silica Pearls segment; no guaranteed yield.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/cache-more/center-cache-silica-pearls-437-32.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/cache-more/center-cache-silica-pearls-437-32.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=d3d4cAzEpr0",
+      "sourcePlane": "The Center ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-labelled farming region",
+      "mapOverlayVisible": false,
+      "creatorInsetVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "Previously approved complete licensed local source; no network acquisition in farming34",
+      "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/resource-sources/d3d4cAzEpr0.mp4",
+      "sourceSHA256": "7e14c0c412f3dd8b346bcb89e7b71bd3262fc42de17cb4b7f79932271fc5fbb7",
+      "clipSHA256": "e5594d96d8c693040c9a5fd395c845184614d7917a6bf1b2f1816f3870293784",
+      "posterSHA256": "94ba0e06544568585f2ca281ebc3c8ef02c25b3eeabc6e368034cf270e5b38b7",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/cache-more/center-cache-silica-pearls-437-32-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/cache-more/center-cache-silica-pearls-437-32-coordinate.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true,
+        "reviewed": true,
+        "result": "Final encoded chronological4fps frames manually reviewed: continuous clean resource/terrain shot, no map/inventory/creator inset/edit cut. Full uncropped GPS proof retained separately; complete encoded decode passed."
+      },
+      "evidenceLimitations": "Creator-labelled regional waypoint; no permanent node count or guaranteed availability. Creator inset removed from delivered video; uncropped source GPS proof retained.",
+      "visualReviewStatus": "verified",
+      "sourceCrop": {
+        "x": 560,
+        "y": 0,
+        "width": 1360,
+        "height": 1080,
+        "sourceWidth": 1920,
+        "sourceHeight": 1080,
+        "reason": "Remove creator map and resource/GPS inset."
+      },
+      "encodedDurationSeconds": 6,
+      "nearestExistingRegions": [
+        {
+          "id": "center-ring-pearls",
+          "lat": 36.7,
+          "lon": 35.5,
+          "coordinateDistance": 7.83
+        },
+        {
+          "id": "center-extra-swamp-mushrooms",
+          "lat": 49.4,
+          "lon": 37.4,
+          "coordinateDistance": 7.85
+        }
+      ]
+    },
+    {
+      "id": "center-cache-silica-pearls-451-99",
+      "map": "the-center",
+      "name": "Center silica pearls region 45.1/99",
+      "resources": [
+        "Silica Pearls"
+      ],
+      "lat": 45.1,
+      "lon": 99,
+      "videoID": "d3d4cAzEpr0",
+      "startSeconds": 411,
+      "endSeconds": 417,
+      "coordinateEvidence": "Creator explicitly captions 45.1 Lat, 99 Lon over this filmed Silica Pearls region at source 413s. Creator numerical caption used; no M-map cursor inference.",
+      "inventoryEvidence": "Visible Silica Pearls deposits in explicitly titled Silica Pearls segment; no guaranteed yield.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/cache-more/center-cache-silica-pearls-451-99.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/cache-more/center-cache-silica-pearls-451-99.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=d3d4cAzEpr0",
+      "sourcePlane": "The Center ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-labelled farming region",
+      "mapOverlayVisible": false,
+      "creatorInsetVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "Previously approved complete licensed local source; no network acquisition in farming34",
+      "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/resource-sources/d3d4cAzEpr0.mp4",
+      "sourceSHA256": "7e14c0c412f3dd8b346bcb89e7b71bd3262fc42de17cb4b7f79932271fc5fbb7",
+      "clipSHA256": "ab2efe97ffd8117e1d576de60e740da789f08fb9c284edd7a6783f5bc90facf7",
+      "posterSHA256": "60bb5791447921227d734c14987ad34e7a574e04783acd96cfc9587d5b6b553b",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/cache-more/center-cache-silica-pearls-451-99-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/cache-more/center-cache-silica-pearls-451-99-coordinate.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true,
+        "reviewed": true,
+        "result": "Final encoded chronological4fps frames manually reviewed: continuous clean resource/terrain shot, no map/inventory/creator inset/edit cut. Full uncropped GPS proof retained separately; complete encoded decode passed."
+      },
+      "evidenceLimitations": "Creator-labelled regional waypoint; no permanent node count or guaranteed availability. Creator inset removed from delivered video; uncropped source GPS proof retained.",
+      "visualReviewStatus": "verified",
+      "sourceCrop": {
+        "x": 560,
+        "y": 0,
+        "width": 1360,
+        "height": 1080,
+        "sourceWidth": 1920,
+        "sourceHeight": 1080,
+        "reason": "Remove creator map and resource/GPS inset."
+      },
+      "encodedDurationSeconds": 6,
+      "nearestExistingRegions": [
+        {
+          "id": "center-blue-metal",
+          "lat": 52.3,
+          "lon": 78.2,
+          "coordinateDistance": 22.01
+        },
+        {
+          "id": "center-extra-blue-basics",
+          "lat": 52.3,
+          "lon": 78.2,
+          "coordinateDistance": 22.01
+        }
+      ]
+    },
+    {
+      "id": "center-cache-oil-568-246",
+      "map": "the-center",
+      "name": "Center oil region 56.8/24.6",
+      "resources": [
+        "Oil"
+      ],
+      "lat": 56.8,
+      "lon": 24.6,
+      "videoID": "d3d4cAzEpr0",
+      "startSeconds": 329,
+      "endSeconds": 335,
+      "coordinateEvidence": "Creator explicitly captions 56.8 Lat, 24.6 Lon over this filmed Oil region at source 331s. Creator numerical caption used; no M-map cursor inference.",
+      "inventoryEvidence": "Visible Oil deposits in explicitly titled Oil segment; no guaranteed yield.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/cache-more/center-cache-oil-568-246.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/cache-more/center-cache-oil-568-246.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=d3d4cAzEpr0",
+      "sourcePlane": "The Center ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-labelled farming region",
+      "mapOverlayVisible": false,
+      "creatorInsetVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "Previously approved complete licensed local source; no network acquisition in farming34",
+      "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/resource-sources/d3d4cAzEpr0.mp4",
+      "sourceSHA256": "7e14c0c412f3dd8b346bcb89e7b71bd3262fc42de17cb4b7f79932271fc5fbb7",
+      "clipSHA256": "933a1d640ffc5ad35392982a0f4ea775c90f422cde9847f50525f76c01fd3c48",
+      "posterSHA256": "022ec18ac58701978f80beb1715038d3a21cefd966e76b4cffc82369d09da8c6",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/cache-more/center-cache-oil-568-246-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/cache-more/center-cache-oil-568-246-coordinate.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true,
+        "reviewed": true,
+        "result": "Final encoded chronological4fps frames manually reviewed: continuous clean resource/terrain shot, no map/inventory/creator inset/edit cut. Full uncropped GPS proof retained separately; complete encoded decode passed."
+      },
+      "evidenceLimitations": "Creator-labelled regional waypoint; no permanent node count or guaranteed availability. Creator inset removed from delivered video; uncropped source GPS proof retained.",
+      "visualReviewStatus": "verified",
+      "sourceCrop": {
+        "x": 560,
+        "y": 0,
+        "width": 1360,
+        "height": 1080,
+        "sourceWidth": 1920,
+        "sourceHeight": 1080,
+        "reason": "Remove creator map and resource/GPS inset."
+      },
+      "encodedDurationSeconds": 6,
+      "nearestExistingRegions": [
+        {
+          "id": "center-snow-crystal",
+          "lat": 58.0,
+          "lon": 18.5,
+          "coordinateDistance": 6.22
+        },
+        {
+          "id": "center-extra-swamp-mushrooms",
+          "lat": 49.4,
+          "lon": 37.4,
+          "coordinateDistance": 14.79
+        }
+      ]
+    },
+    {
+      "id": "center-cache-silica-pearls-51-121",
+      "map": "the-center",
+      "name": "Center silica pearls region 51/12.1",
+      "resources": [
+        "Silica Pearls"
+      ],
+      "lat": 51,
+      "lon": 12.1,
+      "videoID": "d3d4cAzEpr0",
+      "startSeconds": 425,
+      "endSeconds": 431,
+      "coordinateEvidence": "Creator explicitly captions 51 Lat, 12.1 Lon over this filmed Silica Pearls region at source 427s. Creator numerical caption used; no M-map cursor inference.",
+      "inventoryEvidence": "Visible Silica Pearls deposits in explicitly titled Silica Pearls segment; no guaranteed yield.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/cache-more/center-cache-silica-pearls-51-121.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/cache-more/center-cache-silica-pearls-51-121.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=d3d4cAzEpr0",
+      "sourcePlane": "The Center ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-labelled farming region",
+      "mapOverlayVisible": false,
+      "creatorInsetVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "Previously approved complete licensed local source; no network acquisition in farming34",
+      "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/resource-sources/d3d4cAzEpr0.mp4",
+      "sourceSHA256": "7e14c0c412f3dd8b346bcb89e7b71bd3262fc42de17cb4b7f79932271fc5fbb7",
+      "clipSHA256": "efbd7d6aa9472dfa88b28c3cd3cbba0c6e2cb6506f810dafbf9dc1298eb6a718",
+      "posterSHA256": "c794f4a8de79419abf99e8e89e7c2d28d6aa8510960b1e4a68ef40a91eb9b3e2",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/cache-more/center-cache-silica-pearls-51-121-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/cache-more/center-cache-silica-pearls-51-121-coordinate.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true,
+        "reviewed": true,
+        "result": "Final encoded chronological4fps frames manually reviewed: continuous clean resource/terrain shot, no map/inventory/creator inset/edit cut. Full uncropped GPS proof retained separately; complete encoded decode passed."
+      },
+      "evidenceLimitations": "Creator-labelled regional waypoint; no permanent node count or guaranteed availability. Creator inset removed from delivered video; uncropped source GPS proof retained.",
+      "visualReviewStatus": "verified",
+      "sourceCrop": {
+        "x": 560,
+        "y": 0,
+        "width": 1360,
+        "height": 1080,
+        "sourceWidth": 1920,
+        "sourceHeight": 1080,
+        "reason": "Remove creator map and resource/GPS inset."
+      },
+      "encodedDurationSeconds": 6,
+      "nearestExistingRegions": [
+        {
+          "id": "center-snow-crystal",
+          "lat": 58.0,
+          "lon": 18.5,
+          "coordinateDistance": 9.48
+        },
+        {
+          "id": "center-ice-polymer",
+          "lat": 37.0,
+          "lon": 9.9,
+          "coordinateDistance": 14.17
+        }
+      ]
+    }
+  ],
+  "distinctRegions": 23,
+  "reviewedClipCount": 24,
+  "integrationNotes": [
+    "Merge Metal15/50.3 and Obsidian15/50.3 into one location with resource-specific clips.",
+    "Oil36.5/60 source337\u2013343 repaired and correctly relabelled; Oil56.8/24.6 separate source329\u2013335.",
+    "No Rich Metal inferred from generic Metal."
+  ],
+  "rejectedCuts": [
+    {
+      "id": "center-cache-metal-95-696",
+      "reason": "Attempted interval crosses creator edit/dissolve; excluded rather than under-six-second delivery.",
+      "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/cache-more/center-cache-metal-95-696-contact.jpg"
+    },
+    {
+      "id": "center-cache-crystal-856-379",
+      "reason": "Attempted interval crosses creator edit/dissolve; excluded rather than under-six-second delivery.",
+      "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/cache-more/center-cache-crystal-856-379-contact.jpg"
+    },
+    {
+      "id": "center-cache-crystal-193-857",
+      "reason": "Attempted interval crosses creator edit/dissolve; excluded rather than under-six-second delivery.",
+      "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/cache-more/center-cache-crystal-193-857-contact.jpg"
+    },
+    {
+      "id": "center-cache-crystal-15-503",
+      "reason": "Attempted interval crosses creator edit/dissolve; excluded rather than under-six-second delivery.",
+      "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/cache-more/center-cache-crystal-15-503-contact.jpg"
+    },
+    {
+      "id": "center-cache-crystal-291-539",
+      "reason": "Attempted interval crosses creator edit/dissolve; excluded rather than under-six-second delivery.",
+      "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/cache-more/center-cache-crystal-291-539-contact.jpg"
+    },
+    {
+      "id": "center-cache-oil-492-98",
+      "reason": "Attempted interval crosses creator edit/dissolve; excluded rather than under-six-second delivery.",
+      "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/cache-more/center-cache-oil-492-98-contact.jpg"
+    },
+    {
+      "id": "center-oil-7.2-91.2",
+      "reason": "Attempted343-349s interval starts with preceding36.5/60 shot; no accepted clean6s."
+    }
+  ],
+  "otherCacheAudit": {
+    "island": "Prior approved guide sites repeat existing manifest or lack numerical GPS for filmed harvest. No accepted additional site.",
+    "scorched-earth": "Available approved openings have central/eastern Metal already integrated; no additional verified coordinates in reviewed received segments.",
+    "genesis-part-1": "Volcanic BlackPearls9qoIySzkzxU and OilN5YixYyZOHA now scope-eligible land, but reviewed local openings only provide M-map cursor readout. Rejected no reliable numeric player/creator GPS. YTpXmtVTGNs opening is intro/teleport; no accepted new filmed GPS region.",
+    "genesis-part-1-ocean": "uDDmWwwuEIs35/27.7 is spawn caption; received segment shows map/approach and no clean resource/creature proof six seconds.",
+    "center-other": "bAqRvM-080g repeats covered regions; xICSZyohfQs/BA3NhdQjzQo Honey/Sap/Mushroom harvesting lacks numerical GPS. d3d4cAzEpr0 Honey/Sap/Paste chapters have general map icons only, no numerical GPS. Kitty51.3/77Crystal/Mushroom possible region requires separate review and nearby Blue Metal dedupe; not accepted in this package."
+  },
+  "noNetworkAcquisition": true
+}

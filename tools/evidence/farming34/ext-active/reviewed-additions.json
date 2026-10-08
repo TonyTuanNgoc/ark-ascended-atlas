@@ -1,0 +1,277 @@
+{
+  "candidates": [],
+  "heldCandidates": [],
+  "reviewedSourceRangeSeconds": [
+    0,
+    974
+  ],
+  "source": {
+    "videoID": "NE4q4JEhcGQ",
+    "title": "All BEST ALPHA Farming Methods On Extinction | Ark Survival Ascended",
+    "creator": "Frodo the Dodo",
+    "publishedDate": "2024-12-27",
+    "rightsBasis": "licensed",
+    "path": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/NE4q4JEhcGQ-active-2x.mp4",
+    "sha256": "da7a0dd1f93f64f71bd8d3820afc4624f4dfcff10d8cddeadad2680140609cc4",
+    "sourceCapture": {
+      "videoID": "NE4q4JEhcGQ",
+      "sourceURL": "https://www.youtube.com/watch?v=NE4q4JEhcGQ",
+      "capturePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/NE4q4JEhcGQ-active-2x.mp4",
+      "captureFirstSampleUTC": "2026-10-08T05:34:36.790Z",
+      "sourcePlayAnchorUTC": "2026-10-08T05:34:46.780Z",
+      "sourcePlayAnchorSeconds": 0.035568,
+      "playbackRate": 2,
+      "captureLeadSeconds": 9.99,
+      "sourceTimeToMovieTimeFormula": "movieTimeSeconds = 9.990 + (sourceTimeSeconds - 0.035568) / 2",
+      "reverseFormula": "sourceTimeSeconds = 0.035568 + (movieTimeSeconds - 9.990) * 2",
+      "anchorCheck": {
+        "UTC": "2026-10-08T05:41:57.322Z",
+        "observedSourceSeconds": 861.104967,
+        "predictedSourceSeconds": 861.119568,
+        "differenceSourceSeconds": -0.014600999999970554,
+        "within0_02SourceSeconds": true
+      },
+      "rights": "licensed",
+      "expectedTitle": "All BEST ALPHA Farming",
+      "expectedTitleMatched": true,
+      "encodedWindowCapture": {
+        "width": 1184,
+        "height": 666,
+        "codec": "h264",
+        "frames": 15208,
+        "duration": 520.328333,
+        "bytes": 743751570,
+        "sha256": "da7a0dd1f93f64f71bd8d3820afc4624f4dfcff10d8cddeadad2680140609cc4"
+      },
+      "nativeYouTubeResolutionClaim": false,
+      "wholeDecode": {
+        "exitCode": 0,
+        "stderrBytes": 0,
+        "method": "ffmpeg -v error -fps_mode passthrough -enc_time_base demux -f null -"
+      },
+      "motionReview": {
+        "averageMeanPixelDifference": 10.404332731185518,
+        "comparedFrames": 15207,
+        "maximumStagnationSeconds": 22.79141402244568,
+        "stagnationWarning": false,
+        "thresholdMeanPixelLevels": 0.1,
+        "thresholdNormalized": 0.0003921568627450981,
+        "warningOnly": true
+      },
+      "sourceDurationSeconds": 974,
+      "visualOverview": "../ext-active/overview-01.jpg through overview-07.jpg",
+      "limitations": [
+        "Initial9.990secondlead and endedtail are notsourceplayback.",
+        "Capture2x requires setpts=2*(PTS-STARTPTS) when restoring source motion.",
+        "Native map bottom coordinates are not automatically player GPS; source map/crosshair and player arrow disagree.",
+        "Method footage/illustrated region pins do not supply exact camera-region coordinates.",
+        "Source published2024-12-27; current2026resourcecompatibility remains unverified."
+      ]
+    }
+  },
+  "curatedResourceAudit": [
+    {
+      "resource": "Black Pearls",
+      "status": "no-addition",
+      "sourceRangeSeconds": [
+        802,
+        820
+      ],
+      "reason": "Creator describes corrupted-creature/OSD drops and illustrated multiple broad spawn regions; no numerical camera GPS or labelled region coordinate. Cannot anchor a new independent spot.",
+      "absenceClaim": false
+    },
+    {
+      "resource": "Cementing Paste",
+      "status": "no-addition",
+      "sourceRangeSeconds": [
+        512,
+        544
+      ],
+      "reason": "Beaver-dam approach and inventory footage plus multiple broad illustrated region pins; no exact source GPS. Do not derive coordinates from chart icon pixels.",
+      "absenceClaim": false
+    },
+    {
+      "resource": "Chitin",
+      "status": "no-addition",
+      "sourceRangeSeconds": [
+        446,
+        512
+      ],
+      "reason": "Desert cave entrance/mantis/scorpion/Araneo farming method; cave map insert has marker position but no explicit numeric region LAT/LON. No approximate grid pin.",
+      "absenceClaim": false
+    },
+    {
+      "resource": "Crystal",
+      "status": "no-addition",
+      "sourceRangeSeconds": [
+        840,
+        852
+      ],
+      "reason": "Crystal cluster and harvest context shown; no numerical site GPS. Cannot establish a distinct new region relative to existing54.9/40.4 from scene resemblance.",
+      "absenceClaim": false
+    },
+    {
+      "resource": "Giant Bee Honey",
+      "status": "no-addition",
+      "sourceRangeSeconds": [
+        654,
+        678
+      ],
+      "reason": "Queen bee/hive context in sanctuary/sunken forest and broad illustrated regional markers; no numeric coordinates for the filmed hive site.",
+      "absenceClaim": false
+    },
+    {
+      "resource": "Metal",
+      "status": "no-addition",
+      "sourceRangeSeconds": [
+        30,
+        80
+      ],
+      "reason": "Sanctuary lamp/enforcer/defenseunit harvesting described primarily as scrapmetal/elementdust/electronics source; separate319-410method chapter still lacks numeric site GPS. No relabelling scrapmetal as a demonstrated rawMetal node.",
+      "absenceClaim": false
+    },
+    {
+      "resource": "Obsidian",
+      "status": "no-addition",
+      "sourceRangeSeconds": [
+        270,
+        319
+      ],
+      "reason": "JointSilicate/Obsidian chapter and region illustration; numeric mapreadout at movie154 refers map/crosshair, not a verified target/actor location. No explicit author LAT/LON caption.",
+      "absenceClaim": false
+    },
+    {
+      "resource": "Oil",
+      "status": "no-addition",
+      "sourceRangeSeconds": [
+        820,
+        840
+      ],
+      "reason": "Sulfurfields chapter groups sulfur/condensedgas/oil. Detailed map movie426 has bottom78.4/16.4 detached from green player arrow around70/27. No use of cursor as site GPS; oil-specific exact node also not established.",
+      "absenceClaim": false
+    },
+    {
+      "resource": "Organic Polymer",
+      "status": "no-addition",
+      "sourceRangeSeconds": [
+        446,
+        512
+      ],
+      "reason": "CorruptedNodule410-446is a distinct substitute and is excluded. Mantis/organicpolymer method446-512has no numeric location authority.",
+      "absenceClaim": false
+    },
+    {
+      "resource": "Rare Flowers",
+      "status": "no-addition",
+      "sourceRangeSeconds": [
+        705,
+        721
+      ],
+      "reason": "Lake near greenobelisk harvesting method and plants visible; no exact numeric site. Broad illustrated position cannot become invented GPS.",
+      "absenceClaim": false
+    },
+    {
+      "resource": "Rare Mushrooms",
+      "status": "no-addition",
+      "sourceRangeSeconds": [],
+      "reason": "No dedicated numerical RareMushrooms farming site or harvest demonstration. Fungalwood/bluegem tree narration is not RareMushrooms evidence.",
+      "absenceClaim": false
+    },
+    {
+      "resource": "Rich Metal",
+      "status": "no-addition",
+      "sourceRangeSeconds": [
+        319,
+        410
+      ],
+      "reason": "No explicit RichMetal node identification/harvest GPS. Scrapmetal and ordinaryMetal method does not establish this canonical category.",
+      "absenceClaim": false
+    },
+    {
+      "resource": "Sap",
+      "status": "no-addition",
+      "sourceRangeSeconds": [
+        678,
+        705
+      ],
+      "reason": "Cactus chainsaw farming method in desert shown; no numeric site GPS. Cannot transfer location from another edited desert segment.",
+      "absenceClaim": false
+    },
+    {
+      "resource": "Silica Pearls",
+      "status": "no-addition",
+      "sourceRangeSeconds": [
+        270,
+        319
+      ],
+      "reason": "Source explicitly farms Silicate, a substitute; no actual canonicalSilicaPearls harvest site. Excluded regardless of chapter description title.",
+      "absenceClaim": false
+    }
+  ],
+  "coordinateReadoutRejections": [
+    {
+      "frame": "silicate-map-native.jpg",
+      "captureSeconds": 154,
+      "sourceSeconds": 288.055568,
+      "visibleReadout": "Latitude12.7 Longitude42.5",
+      "reason": "Readout/crosshair not independently tied to filmed resource actor; green player arrow differs. No explicit creator region-coordinate caption."
+    },
+    {
+      "frame": "sulfur-map-native.jpg",
+      "captureSeconds": 426,
+      "sourceSeconds": 832.055568,
+      "visibleReadout": "Latitude78.4 Longitude16.4",
+      "reason": "Crosshair location differs from green player arrow aroundLAT70/LON27; exact hovered coordinates cannot anchor scene."
+    },
+    {
+      "frame": "desert-map-native.jpg",
+      "captureSeconds": 382,
+      "sourceSeconds": 744.055568,
+      "reason": "Zoomed map/pin has no exact numerical source-coordinate pair. No chart interpolation."
+    }
+  ],
+  "duplicateAudit": {
+    "existingSpots": [
+      {
+        "id": "extinction-oil-lake",
+        "lat": 16.5,
+        "lon": 66.6,
+        "resources": [
+          "Oil"
+        ]
+      },
+      {
+        "id": "extinction-city-cliff-crystal-549-404",
+        "lat": 54.9,
+        "lon": 40.4,
+        "resources": [
+          "Crystal"
+        ]
+      }
+    ],
+    "result": "No new numerical candidates; no duplicated or nearby scene assigned a speculative coordinate."
+  },
+  "visualReview": {
+    "wholeEncodedDecode": true,
+    "overviewContactSheets": [
+      "overview-01.jpg",
+      "overview-02.jpg",
+      "overview-03.jpg",
+      "overview-04.jpg",
+      "overview-05.jpg",
+      "overview-06.jpg",
+      "overview-07.jpg"
+    ],
+    "overviewSampleIntervalCaptureSeconds": 5,
+    "reviewed": true,
+    "detailedNativeMapFrames": [
+      "silicate-map-native.jpg",
+      "river-map-native.jpg",
+      "desert-map-native.jpg",
+      "sulfur-map-native.jpg",
+      "element-map-native.jpg"
+    ],
+    "method": "Whole-source chronological overview and transcript review; detailed 1second probes around map inserts. No every-frame cleanclip claim because no GPS-qualified delivery candidate."
+  },
+  "reviewerNote": "No candidate passed exact source coordinate authority plus canonicalresource requirements. Capture is useful method reference, not approved resource-pin evidence; no resource/map absence claimed."
+}

@@ -1,0 +1,1800 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-08",
+  "target": "At least 3 independently located source-filmed farming spots for every user-curated resource on every applicable map",
+  "maps": 11,
+  "resources": 14,
+  "mapResourcePairs": 154,
+  "targetMet": 22,
+  "verifiedSpots": 156,
+  "curatedVisibleSpots": 146,
+  "remainingSpots": 334,
+  "rows": [
+    {
+      "map": "ragnarok",
+      "resource": "Black Pearls",
+      "target": 3,
+      "verifiedDistinctSpots": 5,
+      "spotIDs": [
+        "rag-black-pearl-bed",
+        "rag-cave-metal-obsidian",
+        "rag-northwest-blue-black",
+        "rag-west-seafloor-black-70-21",
+        "rag-southeast-black-944-917"
+      ],
+      "missingToTarget": 0,
+      "status": "target-met",
+      "absenceClaim": false
+    },
+    {
+      "map": "ragnarok",
+      "resource": "Cementing Paste",
+      "target": 3,
+      "verifiedDistinctSpots": 1,
+      "spotIDs": [
+        "rag-dam-lakes"
+      ],
+      "missingToTarget": 2,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "ragnarok",
+      "resource": "Chitin",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "ragnarok",
+      "resource": "Crystal",
+      "target": 3,
+      "verifiedDistinctSpots": 4,
+      "spotIDs": [
+        "rag-crystal-highland",
+        "rag-blue-gem-cavern",
+        "rag-ice-water-crystal",
+        "rag-south-crystal-81-39"
+      ],
+      "missingToTarget": 0,
+      "status": "target-met",
+      "absenceClaim": false
+    },
+    {
+      "map": "ragnarok",
+      "resource": "Giant Bee Honey",
+      "target": 3,
+      "verifiedDistinctSpots": 1,
+      "spotIDs": [
+        "honey-ragnarok-queen-region"
+      ],
+      "missingToTarget": 2,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "ragnarok",
+      "resource": "Metal",
+      "target": 3,
+      "verifiedDistinctSpots": 5,
+      "spotIDs": [
+        "rag-underwater-metal",
+        "rag-cave-metal-obsidian",
+        "rag-northeast-metal",
+        "rag-southwest-metal-78-21",
+        "rag-southeast-metal-80-62"
+      ],
+      "missingToTarget": 0,
+      "status": "target-met",
+      "absenceClaim": false
+    },
+    {
+      "map": "ragnarok",
+      "resource": "Obsidian",
+      "target": 3,
+      "verifiedDistinctSpots": 4,
+      "spotIDs": [
+        "rag-cave-metal-obsidian",
+        "rag-volcanic-obsidian-23-62",
+        "rag-forest-obsidian-48-71",
+        "rag-coastal-obsidian-64-16"
+      ],
+      "missingToTarget": 0,
+      "status": "target-met",
+      "absenceClaim": false
+    },
+    {
+      "map": "ragnarok",
+      "resource": "Oil",
+      "target": 3,
+      "verifiedDistinctSpots": 4,
+      "spotIDs": [
+        "rag-oil-north-shore",
+        "rag-south-seabed-oil",
+        "rag-southeast-seafloor-oil",
+        "rag-southwest-oil-793-368"
+      ],
+      "missingToTarget": 0,
+      "status": "target-met",
+      "absenceClaim": false
+    },
+    {
+      "map": "ragnarok",
+      "resource": "Organic Polymer",
+      "target": 3,
+      "verifiedDistinctSpots": 4,
+      "spotIDs": [
+        "rag-polymer-plants",
+        "rag-northeast-polymer",
+        "rag-canyon-polymer",
+        "rag-south-polymer-936-489"
+      ],
+      "missingToTarget": 0,
+      "status": "target-met",
+      "absenceClaim": false
+    },
+    {
+      "map": "ragnarok",
+      "resource": "Rare Flowers",
+      "target": 3,
+      "verifiedDistinctSpots": 5,
+      "spotIDs": [
+        "rag-dam-lakes",
+        "rag-coast-flowers",
+        "rag-flowers-nw",
+        "rag-highland-flowers-221-776",
+        "rag-desert-flowers-611-553"
+      ],
+      "missingToTarget": 0,
+      "status": "target-met",
+      "absenceClaim": false
+    },
+    {
+      "map": "ragnarok",
+      "resource": "Rare Mushrooms",
+      "target": 3,
+      "verifiedDistinctSpots": 1,
+      "spotIDs": [
+        "rag-dam-lakes"
+      ],
+      "missingToTarget": 2,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "ragnarok",
+      "resource": "Rich Metal",
+      "target": 3,
+      "verifiedDistinctSpots": 1,
+      "spotIDs": [
+        "rag-cave-metal-obsidian"
+      ],
+      "missingToTarget": 2,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "ragnarok",
+      "resource": "Sap",
+      "target": 3,
+      "verifiedDistinctSpots": 1,
+      "spotIDs": [
+        "rag-river-sap-tap"
+      ],
+      "missingToTarget": 2,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "ragnarok",
+      "resource": "Silica Pearls",
+      "target": 3,
+      "verifiedDistinctSpots": 5,
+      "spotIDs": [
+        "rag-dam-lakes",
+        "rag-pearls-cave",
+        "rag-west-seafloor-silica",
+        "rag-north-seafloor-silica-3-68",
+        "rag-southeast-silica-874-730"
+      ],
+      "missingToTarget": 0,
+      "status": "target-met",
+      "absenceClaim": false
+    },
+    {
+      "map": "the-island",
+      "resource": "Black Pearls",
+      "target": 3,
+      "verifiedDistinctSpots": 2,
+      "spotIDs": [
+        "island-west-black-pearls",
+        "island-cave-black-pearls"
+      ],
+      "missingToTarget": 1,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "the-island",
+      "resource": "Cementing Paste",
+      "target": 3,
+      "verifiedDistinctSpots": 2,
+      "spotIDs": [
+        "island-redwood-paste",
+        "island-east-dam-rares"
+      ],
+      "missingToTarget": 1,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "the-island",
+      "resource": "Chitin",
+      "target": 3,
+      "verifiedDistinctSpots": 1,
+      "spotIDs": [
+        "island-west-starter"
+      ],
+      "missingToTarget": 2,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "the-island",
+      "resource": "Crystal",
+      "target": 3,
+      "verifiedDistinctSpots": 2,
+      "spotIDs": [
+        "island-volcano-ore",
+        "island-carno-crystal"
+      ],
+      "missingToTarget": 1,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "the-island",
+      "resource": "Giant Bee Honey",
+      "target": 3,
+      "verifiedDistinctSpots": 1,
+      "spotIDs": [
+        "honey-island-redwoods"
+      ],
+      "missingToTarget": 2,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "the-island",
+      "resource": "Metal",
+      "target": 3,
+      "verifiedDistinctSpots": 1,
+      "spotIDs": [
+        "island-volcano-ore"
+      ],
+      "missingToTarget": 2,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "the-island",
+      "resource": "Obsidian",
+      "target": 3,
+      "verifiedDistinctSpots": 1,
+      "spotIDs": [
+        "island-volcano-ore"
+      ],
+      "missingToTarget": 2,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "the-island",
+      "resource": "Oil",
+      "target": 3,
+      "verifiedDistinctSpots": 1,
+      "spotIDs": [
+        "island-nw-oil"
+      ],
+      "missingToTarget": 2,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "the-island",
+      "resource": "Organic Polymer",
+      "target": 3,
+      "verifiedDistinctSpots": 1,
+      "spotIDs": [
+        "island-ice-polymer"
+      ],
+      "missingToTarget": 2,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "the-island",
+      "resource": "Rare Flowers",
+      "target": 3,
+      "verifiedDistinctSpots": 4,
+      "spotIDs": [
+        "island-east-dam-rares",
+        "island-west-lake-flowers",
+        "island-east-canyon-flowers",
+        "island-east-swamp-flowers"
+      ],
+      "missingToTarget": 0,
+      "status": "target-met",
+      "absenceClaim": false
+    },
+    {
+      "map": "the-island",
+      "resource": "Rare Mushrooms",
+      "target": 3,
+      "verifiedDistinctSpots": 2,
+      "spotIDs": [
+        "island-swamp-mushrooms",
+        "island-east-dam-rares"
+      ],
+      "missingToTarget": 1,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "the-island",
+      "resource": "Rich Metal",
+      "target": 3,
+      "verifiedDistinctSpots": 1,
+      "spotIDs": [
+        "island-volcano-ore"
+      ],
+      "missingToTarget": 2,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "the-island",
+      "resource": "Sap",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "the-island",
+      "resource": "Silica Pearls",
+      "target": 3,
+      "verifiedDistinctSpots": 5,
+      "spotIDs": [
+        "island-surface-pearls",
+        "island-east-dam-rares",
+        "island-north-central-pearls",
+        "island-north-coast-pearls",
+        "island-north-peninsula-pearls"
+      ],
+      "missingToTarget": 0,
+      "status": "target-met",
+      "absenceClaim": false
+    },
+    {
+      "map": "the-center",
+      "resource": "Black Pearls",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "the-center",
+      "resource": "Cementing Paste",
+      "target": 3,
+      "verifiedDistinctSpots": 6,
+      "spotIDs": [
+        "center-beaver-pond",
+        "center-north-pond-west",
+        "center-north-pond-east",
+        "center-middle-pond",
+        "center-south-east-pond",
+        "center-south-west-pond"
+      ],
+      "missingToTarget": 0,
+      "status": "target-met",
+      "absenceClaim": false
+    },
+    {
+      "map": "the-center",
+      "resource": "Chitin",
+      "target": 3,
+      "verifiedDistinctSpots": 1,
+      "spotIDs": [
+        "center-extra-lava-chitin"
+      ],
+      "missingToTarget": 2,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "the-center",
+      "resource": "Crystal",
+      "target": 3,
+      "verifiedDistinctSpots": 4,
+      "spotIDs": [
+        "center-snow-crystal",
+        "center-waterfall-cavern",
+        "center-cache-crystal-69-963",
+        "center-cache-crystal-66-737"
+      ],
+      "missingToTarget": 0,
+      "status": "target-met",
+      "absenceClaim": false
+    },
+    {
+      "map": "the-center",
+      "resource": "Giant Bee Honey",
+      "target": 3,
+      "verifiedDistinctSpots": 1,
+      "spotIDs": [
+        "honey-center-redwoods"
+      ],
+      "missingToTarget": 2,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "the-center",
+      "resource": "Metal",
+      "target": 3,
+      "verifiedDistinctSpots": 14,
+      "spotIDs": [
+        "center-blue-metal",
+        "center-lava-metal",
+        "center-snow-crystal",
+        "center-waterfall-cavern",
+        "center-cache-metal-41-32",
+        "center-cache-metal-15-503",
+        "center-cache-metal-28-856",
+        "center-cache-metal-843-89",
+        "center-cache-metal-89-477",
+        "center-cache-metal-88-322",
+        "center-cache-metal-527-42",
+        "center-cache-metal-525-692",
+        "center-cache-metal-413-61",
+        "center-cache-metal-696-89"
+      ],
+      "missingToTarget": 0,
+      "status": "target-met",
+      "absenceClaim": false
+    },
+    {
+      "map": "the-center",
+      "resource": "Obsidian",
+      "target": 3,
+      "verifiedDistinctSpots": 4,
+      "spotIDs": [
+        "center-spire-obsidian",
+        "center-cache-metal-15-503",
+        "center-cache-obsidian-64-687",
+        "center-cache-obsidian-40-912"
+      ],
+      "missingToTarget": 0,
+      "status": "target-met",
+      "absenceClaim": false
+    },
+    {
+      "map": "the-center",
+      "resource": "Oil",
+      "target": 3,
+      "verifiedDistinctSpots": 4,
+      "spotIDs": [
+        "center-ring-pearls",
+        "center-cache-oil-415-32",
+        "center-cache-oil-365-60",
+        "center-cache-oil-568-246"
+      ],
+      "missingToTarget": 0,
+      "status": "target-met",
+      "absenceClaim": false
+    },
+    {
+      "map": "the-center",
+      "resource": "Organic Polymer",
+      "target": 3,
+      "verifiedDistinctSpots": 1,
+      "spotIDs": [
+        "center-ice-polymer"
+      ],
+      "missingToTarget": 2,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "the-center",
+      "resource": "Rare Flowers",
+      "target": 3,
+      "verifiedDistinctSpots": 3,
+      "spotIDs": [
+        "center-beaver-pond",
+        "center-north-pond-east",
+        "center-south-west-pond"
+      ],
+      "missingToTarget": 0,
+      "status": "target-met",
+      "absenceClaim": false
+    },
+    {
+      "map": "the-center",
+      "resource": "Rare Mushrooms",
+      "target": 3,
+      "verifiedDistinctSpots": 1,
+      "spotIDs": [
+        "center-extra-swamp-mushrooms"
+      ],
+      "missingToTarget": 2,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "the-center",
+      "resource": "Rich Metal",
+      "target": 3,
+      "verifiedDistinctSpots": 2,
+      "spotIDs": [
+        "center-blue-metal",
+        "center-lava-metal"
+      ],
+      "missingToTarget": 1,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "the-center",
+      "resource": "Sap",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "the-center",
+      "resource": "Silica Pearls",
+      "target": 3,
+      "verifiedDistinctSpots": 10,
+      "spotIDs": [
+        "center-beaver-pond",
+        "center-ring-pearls",
+        "center-north-pond-east",
+        "center-south-west-pond",
+        "center-cache-silica-pearls-446-64",
+        "center-cache-silica-pearls-20-498",
+        "center-cache-silica-pearls-648-92",
+        "center-cache-silica-pearls-437-32",
+        "center-cache-silica-pearls-451-99",
+        "center-cache-silica-pearls-51-121"
+      ],
+      "missingToTarget": 0,
+      "status": "target-met",
+      "absenceClaim": false
+    },
+    {
+      "map": "scorched-earth",
+      "resource": "Black Pearls",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "scorched-earth",
+      "resource": "Cementing Paste",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "scorched-earth",
+      "resource": "Chitin",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "scorched-earth",
+      "resource": "Crystal",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "scorched-earth",
+      "resource": "Giant Bee Honey",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "scorched-earth",
+      "resource": "Metal",
+      "target": 3,
+      "verifiedDistinctSpots": 3,
+      "spotIDs": [
+        "scorched-eastern-metal",
+        "scorched-central-metal",
+        "scorched-southeast-metal-ridge"
+      ],
+      "missingToTarget": 0,
+      "status": "target-met",
+      "absenceClaim": false
+    },
+    {
+      "map": "scorched-earth",
+      "resource": "Obsidian",
+      "target": 3,
+      "verifiedDistinctSpots": 1,
+      "spotIDs": [
+        "scorched-west-canyon-obsidian"
+      ],
+      "missingToTarget": 2,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "scorched-earth",
+      "resource": "Oil",
+      "target": 3,
+      "verifiedDistinctSpots": 1,
+      "spotIDs": [
+        "scorched-northeast-oil-vein"
+      ],
+      "missingToTarget": 2,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "scorched-earth",
+      "resource": "Organic Polymer",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "scorched-earth",
+      "resource": "Rare Flowers",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "scorched-earth",
+      "resource": "Rare Mushrooms",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "scorched-earth",
+      "resource": "Rich Metal",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "scorched-earth",
+      "resource": "Sap",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "scorched-earth",
+      "resource": "Silica Pearls",
+      "target": 3,
+      "verifiedDistinctSpots": 1,
+      "spotIDs": [
+        "scorched-midriver-silica"
+      ],
+      "missingToTarget": 2,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "aberration",
+      "resource": "Black Pearls",
+      "target": 3,
+      "verifiedDistinctSpots": 2,
+      "spotIDs": [
+        "aberration-tek-pond-pearls-628-507",
+        "aberration-trench-black-676-52"
+      ],
+      "missingToTarget": 1,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "aberration",
+      "resource": "Cementing Paste",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "aberration",
+      "resource": "Chitin",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "aberration",
+      "resource": "Crystal",
+      "target": 3,
+      "verifiedDistinctSpots": 2,
+      "spotIDs": [
+        "aberration-blue-crystal-487-786",
+        "aberration-red-crystal-45-367"
+      ],
+      "missingToTarget": 1,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "aberration",
+      "resource": "Giant Bee Honey",
+      "target": 3,
+      "verifiedDistinctSpots": 1,
+      "spotIDs": [
+        "aberration-honey-441-31"
+      ],
+      "missingToTarget": 2,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "aberration",
+      "resource": "Metal",
+      "target": 3,
+      "verifiedDistinctSpots": 7,
+      "spotIDs": [
+        "aberration-green-metal",
+        "aberration-blue-metal",
+        "ab-portal-metal-438-293",
+        "ab-portal-plateau-metal-418-345",
+        "ab-surface-cave-metal-195-282",
+        "ab-blue-slope-metal-414-604",
+        "ab-blue-cavern-metal-503-755"
+      ],
+      "missingToTarget": 0,
+      "status": "target-met",
+      "absenceClaim": false
+    },
+    {
+      "map": "aberration",
+      "resource": "Obsidian",
+      "target": 3,
+      "verifiedDistinctSpots": 1,
+      "spotIDs": [
+        "ab-element-obsidian-574-505"
+      ],
+      "missingToTarget": 2,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "aberration",
+      "resource": "Oil",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "aberration",
+      "resource": "Organic Polymer",
+      "target": 3,
+      "verifiedDistinctSpots": 1,
+      "spotIDs": [
+        "aberration-blue-polymer-488-509"
+      ],
+      "missingToTarget": 2,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "aberration",
+      "resource": "Rare Flowers",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "aberration",
+      "resource": "Rare Mushrooms",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "aberration",
+      "resource": "Rich Metal",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "aberration",
+      "resource": "Sap",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "aberration",
+      "resource": "Silica Pearls",
+      "target": 3,
+      "verifiedDistinctSpots": 3,
+      "spotIDs": [
+        "ab-fertile-pearls-205-363",
+        "ab-fertile-pearls-129-461",
+        "ab-luminous-pearls-439-614"
+      ],
+      "missingToTarget": 0,
+      "status": "target-met",
+      "absenceClaim": false
+    },
+    {
+      "map": "extinction",
+      "resource": "Black Pearls",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "extinction",
+      "resource": "Cementing Paste",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "extinction",
+      "resource": "Chitin",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "extinction",
+      "resource": "Crystal",
+      "target": 3,
+      "verifiedDistinctSpots": 1,
+      "spotIDs": [
+        "extinction-city-cliff-crystal-549-404"
+      ],
+      "missingToTarget": 2,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "extinction",
+      "resource": "Giant Bee Honey",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "extinction",
+      "resource": "Metal",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "extinction",
+      "resource": "Obsidian",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "extinction",
+      "resource": "Oil",
+      "target": 3,
+      "verifiedDistinctSpots": 1,
+      "spotIDs": [
+        "extinction-oil-lake"
+      ],
+      "missingToTarget": 2,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "extinction",
+      "resource": "Organic Polymer",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "extinction",
+      "resource": "Rare Flowers",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "extinction",
+      "resource": "Rare Mushrooms",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "extinction",
+      "resource": "Rich Metal",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "extinction",
+      "resource": "Sap",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "extinction",
+      "resource": "Silica Pearls",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "lost-colony",
+      "resource": "Black Pearls",
+      "target": 3,
+      "verifiedDistinctSpots": 2,
+      "spotIDs": [
+        "lost-colony-east-river-black-pearls",
+        "lost-colony-southeast-crash-black-pearls"
+      ],
+      "missingToTarget": 1,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "lost-colony",
+      "resource": "Cementing Paste",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "lost-colony",
+      "resource": "Chitin",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "lost-colony",
+      "resource": "Crystal",
+      "target": 3,
+      "verifiedDistinctSpots": 1,
+      "spotIDs": [
+        "lost-colony-north-city-lamp-crystal"
+      ],
+      "missingToTarget": 2,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "lost-colony",
+      "resource": "Giant Bee Honey",
+      "target": 3,
+      "verifiedDistinctSpots": 1,
+      "spotIDs": [
+        "lost-colony-east-cliff-honey"
+      ],
+      "missingToTarget": 2,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "lost-colony",
+      "resource": "Metal",
+      "target": 3,
+      "verifiedDistinctSpots": 2,
+      "spotIDs": [
+        "lost-colony-north-metal",
+        "lost-colony-northwest-metal"
+      ],
+      "missingToTarget": 1,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "lost-colony",
+      "resource": "Obsidian",
+      "target": 3,
+      "verifiedDistinctSpots": 1,
+      "spotIDs": [
+        "lost-colony-east-snow-obsidian"
+      ],
+      "missingToTarget": 2,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "lost-colony",
+      "resource": "Oil",
+      "target": 3,
+      "verifiedDistinctSpots": 3,
+      "spotIDs": [
+        "lost-colony-southwest-oil-river",
+        "lost-colony-safe-cave-oil-656-483",
+        "lost-colony-central-river-oil-595-586"
+      ],
+      "missingToTarget": 0,
+      "status": "target-met",
+      "absenceClaim": false
+    },
+    {
+      "map": "lost-colony",
+      "resource": "Organic Polymer",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "lost-colony",
+      "resource": "Rare Flowers",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "lost-colony",
+      "resource": "Rare Mushrooms",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "lost-colony",
+      "resource": "Rich Metal",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "lost-colony",
+      "resource": "Sap",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "lost-colony",
+      "resource": "Silica Pearls",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "genesis-part-1",
+      "resource": "Black Pearls",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "genesis-part-1",
+      "resource": "Cementing Paste",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "genesis-part-1",
+      "resource": "Chitin",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "genesis-part-1",
+      "resource": "Crystal",
+      "target": 3,
+      "verifiedDistinctSpots": 1,
+      "spotIDs": [
+        "genesis-arctic-crystal-76-26"
+      ],
+      "missingToTarget": 2,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "genesis-part-1",
+      "resource": "Giant Bee Honey",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "genesis-part-1",
+      "resource": "Metal",
+      "target": 3,
+      "verifiedDistinctSpots": 1,
+      "spotIDs": [
+        "genesis-arctic-metal-field"
+      ],
+      "missingToTarget": 2,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "genesis-part-1",
+      "resource": "Obsidian",
+      "target": 3,
+      "verifiedDistinctSpots": 1,
+      "spotIDs": [
+        "genesis-arctic-obsidian-77-26"
+      ],
+      "missingToTarget": 2,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "genesis-part-1",
+      "resource": "Oil",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "genesis-part-1",
+      "resource": "Organic Polymer",
+      "target": 3,
+      "verifiedDistinctSpots": 1,
+      "spotIDs": [
+        "genesis-arctic-frozen-lake-polymer-74-14"
+      ],
+      "missingToTarget": 2,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "genesis-part-1",
+      "resource": "Rare Flowers",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "genesis-part-1",
+      "resource": "Rare Mushrooms",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "genesis-part-1",
+      "resource": "Rich Metal",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "genesis-part-1",
+      "resource": "Sap",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "genesis-part-1",
+      "resource": "Silica Pearls",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "genesis-part-1-ocean",
+      "resource": "Black Pearls",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "genesis-part-1-ocean",
+      "resource": "Cementing Paste",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "genesis-part-1-ocean",
+      "resource": "Chitin",
+      "target": 3,
+      "verifiedDistinctSpots": 1,
+      "spotIDs": [
+        "genesis-ocean-west-island-chitin-40-19"
+      ],
+      "missingToTarget": 2,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "genesis-part-1-ocean",
+      "resource": "Crystal",
+      "target": 3,
+      "verifiedDistinctSpots": 1,
+      "spotIDs": [
+        "genesis-ocean-waterfall-cave"
+      ],
+      "missingToTarget": 2,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "genesis-part-1-ocean",
+      "resource": "Giant Bee Honey",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "genesis-part-1-ocean",
+      "resource": "Metal",
+      "target": 3,
+      "verifiedDistinctSpots": 2,
+      "spotIDs": [
+        "genesis-ocean-waterfall-cave",
+        "genesis-ocean-dragon-bones-metal-5-94"
+      ],
+      "missingToTarget": 1,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "genesis-part-1-ocean",
+      "resource": "Obsidian",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "genesis-part-1-ocean",
+      "resource": "Oil",
+      "target": 3,
+      "verifiedDistinctSpots": 2,
+      "spotIDs": [
+        "genesis-ocean-central-island-oil-45-63",
+        "genesis-ocean-southwest-shore-oil-89-15"
+      ],
+      "missingToTarget": 1,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "genesis-part-1-ocean",
+      "resource": "Organic Polymer",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "genesis-part-1-ocean",
+      "resource": "Rare Flowers",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "genesis-part-1-ocean",
+      "resource": "Rare Mushrooms",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "genesis-part-1-ocean",
+      "resource": "Rich Metal",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "genesis-part-1-ocean",
+      "resource": "Sap",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "genesis-part-1-ocean",
+      "resource": "Silica Pearls",
+      "target": 3,
+      "verifiedDistinctSpots": 3,
+      "spotIDs": [
+        "genesis-ocean-safe-beach-silica-90-15",
+        "genesis-ocean-pearl-island-38-66",
+        "genesis-ocean-coral-pearl-basin-57-56"
+      ],
+      "missingToTarget": 0,
+      "status": "target-met",
+      "absenceClaim": false
+    },
+    {
+      "map": "valguero",
+      "resource": "Black Pearls",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "valguero",
+      "resource": "Cementing Paste",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "valguero",
+      "resource": "Chitin",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "valguero",
+      "resource": "Crystal",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "valguero",
+      "resource": "Giant Bee Honey",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "valguero",
+      "resource": "Metal",
+      "target": 3,
+      "verifiedDistinctSpots": 1,
+      "spotIDs": [
+        "valguero-waterfall-metal-60-40"
+      ],
+      "missingToTarget": 2,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "valguero",
+      "resource": "Obsidian",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "valguero",
+      "resource": "Oil",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "valguero",
+      "resource": "Organic Polymer",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "valguero",
+      "resource": "Rare Flowers",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "valguero",
+      "resource": "Rare Mushrooms",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "valguero",
+      "resource": "Rich Metal",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "valguero",
+      "resource": "Sap",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "valguero",
+      "resource": "Silica Pearls",
+      "target": 3,
+      "verifiedDistinctSpots": 2,
+      "spotIDs": [
+        "valguero-nw-pearl-lake",
+        "valguero-west-pearl-bed"
+      ],
+      "missingToTarget": 1,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "astraeos",
+      "resource": "Black Pearls",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "astraeos",
+      "resource": "Cementing Paste",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "astraeos",
+      "resource": "Chitin",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "astraeos",
+      "resource": "Crystal",
+      "target": 3,
+      "verifiedDistinctSpots": 2,
+      "spotIDs": [
+        "astraeos-phokintos-crystal",
+        "astraeos-coast-crystal-34-45"
+      ],
+      "missingToTarget": 1,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "astraeos",
+      "resource": "Giant Bee Honey",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "astraeos",
+      "resource": "Metal",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "astraeos",
+      "resource": "Obsidian",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "astraeos",
+      "resource": "Oil",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "astraeos",
+      "resource": "Organic Polymer",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "astraeos",
+      "resource": "Rare Flowers",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "astraeos",
+      "resource": "Rare Mushrooms",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "astraeos",
+      "resource": "Rich Metal",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "astraeos",
+      "resource": "Sap",
+      "target": 3,
+      "verifiedDistinctSpots": 0,
+      "spotIDs": [],
+      "missingToTarget": 3,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    },
+    {
+      "map": "astraeos",
+      "resource": "Silica Pearls",
+      "target": 3,
+      "verifiedDistinctSpots": 2,
+      "spotIDs": [
+        "astraeos-korinthos-pearl-shallows-40-26",
+        "astraeos-waterfall-pearl-pool-25-15"
+      ],
+      "missingToTarget": 1,
+      "status": "needs-source-footage",
+      "absenceClaim": false
+    }
+  ],
+  "limitations": [
+    "A zero count means no verified bundled footage, not proven absence of this resource on this map.",
+    "Source film waypoints identify farming regions, not permanent individual actors.",
+    "Creature drops and tame production need actual acquisition evidence; nearby mineral footage cannot establish them."
+  ]
+}

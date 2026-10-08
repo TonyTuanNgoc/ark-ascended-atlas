@@ -1,0 +1,55 @@
+{
+  "videoID": "NE4q4JEhcGQ",
+  "sourceURL": "https://www.youtube.com/watch?v=NE4q4JEhcGQ",
+  "capturePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/NE4q4JEhcGQ-active-2x.mp4",
+  "captureFirstSampleUTC": "2026-10-08T05:34:36.790Z",
+  "sourcePlayAnchorUTC": "2026-10-08T05:34:46.780Z",
+  "sourcePlayAnchorSeconds": 0.035568,
+  "playbackRate": 2,
+  "captureLeadSeconds": 9.99,
+  "sourceTimeToMovieTimeFormula": "movieTimeSeconds = 9.990 + (sourceTimeSeconds - 0.035568) / 2",
+  "reverseFormula": "sourceTimeSeconds = 0.035568 + (movieTimeSeconds - 9.990) * 2",
+  "anchorCheck": {
+    "UTC": "2026-10-08T05:41:57.322Z",
+    "observedSourceSeconds": 861.104967,
+    "predictedSourceSeconds": 861.119568,
+    "differenceSourceSeconds": -0.014600999999970554,
+    "within0_02SourceSeconds": true
+  },
+  "rights": "licensed",
+  "expectedTitle": "All BEST ALPHA Farming",
+  "expectedTitleMatched": true,
+  "encodedWindowCapture": {
+    "width": 1184,
+    "height": 666,
+    "codec": "h264",
+    "frames": 15208,
+    "duration": 520.328333,
+    "bytes": 743751570,
+    "sha256": "da7a0dd1f93f64f71bd8d3820afc4624f4dfcff10d8cddeadad2680140609cc4"
+  },
+  "nativeYouTubeResolutionClaim": false,
+  "wholeDecode": {
+    "exitCode": 0,
+    "stderrBytes": 0,
+    "method": "ffmpeg -v error -fps_mode passthrough -enc_time_base demux -f null -"
+  },
+  "motionReview": {
+    "averageMeanPixelDifference": 10.404332731185518,
+    "comparedFrames": 15207,
+    "maximumStagnationSeconds": 22.79141402244568,
+    "stagnationWarning": false,
+    "thresholdMeanPixelLevels": 0.1,
+    "thresholdNormalized": 0.0003921568627450981,
+    "warningOnly": true
+  },
+  "sourceDurationSeconds": 974,
+  "visualOverview": "../ext-active/overview-01.jpg through overview-07.jpg",
+  "limitations": [
+    "Initial9.990secondlead and endedtail are notsourceplayback.",
+    "Capture2x requires setpts=2*(PTS-STARTPTS) when restoring source motion.",
+    "Native map bottom coordinates are not automatically player GPS; source map/crosshair and player arrow disagree.",
+    "Method footage/illustrated region pins do not supply exact camera-region coordinates.",
+    "Source published2024-12-27; current2026resourcecompatibility remains unverified."
+  ]
+}

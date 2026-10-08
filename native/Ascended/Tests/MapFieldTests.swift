@@ -91,6 +91,18 @@ final class MapFieldTests:XCTestCase {
         let coverage = ResourceFarmCatalog.shared.coverage ?? []
         for map in ArkMap.allCases { XCTAssertFalse(coverage.filter { $0.map == map.rawValue }.isEmpty, "Missing acquisition coverage: " + map.rawValue) }
     }
+    func testSharedFarmRegionSelectsMediaForEachResource() throws {
+        let guide = try XCTUnwrap(ResourceClipCatalog.guide(for: "rag-cave-metal-obsidian"))
+        XCTAssertEqual(guide.step(for: "Black Pearls")?.loop, "Resource-rag-cave-metal-obsidian-black-pearls-1")
+        XCTAssertEqual(guide.step(for: "Metal")?.loop, "Resource-rag-cave-metal-obsidian-metal-1")
+        XCTAssertEqual(guide.step(for: "Obsidian")?.loop, "Resource-rag-cave-metal-obsidian-1")
+        XCTAssertEqual(guide.step(for: nil)?.loop, guide.steps.first?.loop)
+        for (resource, step) in guide.resourceSteps ?? [:] {
+            XCTAssertNotNil(step.url, resource)
+            XCTAssertNotNil(step.caveStep.posterImage, resource)
+            XCTAssertEqual(step.mapOverlayVisible, false)
+        }
+    }
 }
 
 private struct FarmIconTestRows: Decodable { let assets: [String: String] }

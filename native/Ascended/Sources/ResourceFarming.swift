@@ -218,7 +218,7 @@ struct ResourceFarmingScreen: View {
             } else if let spot = selectedSpot {
                 VStack(alignment: .leading, spacing: 10) {
                     if let guide = ResourceClipCatalog.guide(for: spot.id) {
-                        ResourceClipWalkthrough(guide: guide).id(spot.id)
+                        ResourceClipWalkthrough(guide: guide, resource: resource).id(spot.id + ":" + resource)
                     }
                     Text(spot.name).font(.subheadline.bold()).fixedSize(horizontal: false, vertical: true)
                     GPSBadge(coordinates: spot.point.coordinates).font(.caption)
@@ -290,6 +290,11 @@ struct ResourceClipGuide: Decodable {
     let spotID, sourceURL, evidenceLimitations: String
     let harvestDemonstrated: Bool
     let steps: [ResourceClipStep]
+    let resourceSteps: [String: ResourceClipStep]?
+    func step(for resource: String?) -> ResourceClipStep? {
+        if let resource, let match = resourceSteps?[resource] { return match }
+        return steps.first
+    }
 }
 struct ResourceClipStep: Decodable, Identifiable {
     let id, title, loop, poster, sourceURL: String
@@ -306,10 +311,11 @@ struct ResourceClipStep: Decodable, Identifiable {
 }
 private struct ResourceClipWalkthrough: View {
     let guide: ResourceClipGuide
+    var resource: String? = nil
     @Environment(\.scenePhase) private var scenePhase
     @State private var visible = false
     var body: some View {
-        if let step = guide.steps.first {
+        if let step = guide.step(for: resource) {
             ZStack(alignment: .bottomTrailing) {
                 ZStack {
                     Color.black

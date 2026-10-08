@@ -1,0 +1,560 @@
+{
+  "candidates": [
+    {
+      "id": "aberration-trench-black-676-52",
+      "map": "aberration",
+      "name": "Rock Drake trench black pearl clusters",
+      "resources": [
+        "Black Pearls"
+      ],
+      "lat": 67.6,
+      "lon": 52,
+      "videoID": "TUoB8ouWPYk",
+      "startSeconds": 667,
+      "endSeconds": 675,
+      "coordinateEvidence": "Creator explicitly types 67.6 LAT / 52 LONG over filmed farming locale in retained uncropped coordinate frame. Authority is creator-labelled farming region. Native map-bottom numbers are not relied on as actual player GPS; mouse cursor/player distinction unverified.",
+      "inventoryEvidence": "Black pearl clusters clearly filmed on purple ground; dedicated Black Pearls chapter narration source665\u2013674s identifies trench/element-river clusters.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/ab-active-second/aberration-trench-black-676-52.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/ab-active-second/aberration-trench-black-676-52.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=TUoB8ouWPYk",
+      "sourcePlane": "Aberration ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-labelled filmed farming region; not actual native player GPS or exact node coordinates",
+      "mapOverlayVisible": false,
+      "creatorInsetVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "User-authorized licensed public Chrome playback captured in isolated native window; no denied download or authentication bypass",
+      "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/TUoB8ouWPYk-active-2x.mp4",
+      "sourceSHA256": "89a04de9154c7f08156eb348694337bc53468c3b46a4d69df0fd7dc270614757",
+      "clipSHA256": "5441f9697b7a4bcdc6dd70ef9c6c124f88dd71479983a4861314ec55acf94bcd",
+      "posterSHA256": "b8791d7cdb2edd426dfad03d17e8f5665c28fb622ba9688279a71a259e3c205e",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/ab-active-second/aberration-trench-black-676-52-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/ab-active-second/aberration-trench-black-676-52-coordinate.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true,
+        "reviewed": true,
+        "result": "All 29 chronological 4fps samples manually reviewed: continuous clean resource/terrain shot; no M-map, inventory, creator inset, captions or shot cuts. Full encoded file decoded without errors."
+      },
+      "evidenceLimitations": "Filmed 2024 ASA source, region waypoint rather than every exact node; no permanent spawn/node count or guaranteed yield. Clean shot is shorter than8 seconds because nearby hard cuts/map overlays were excluded.  Native map-bottom readout authority not established; explicit typed creator LAT/LONG labels are sole coordinate authority.",
+      "visualReviewStatus": "verified",
+      "sourceCrop": {
+        "x": 0,
+        "y": 0,
+        "width": 1184,
+        "height": 666,
+        "sourceWidth": 1184,
+        "sourceHeight": 666,
+        "reason": "No spatial crop; clean source segment selected."
+      },
+      "captureCut": {
+        "sourceStartSeconds": 667.8,
+        "sourceDurationSeconds": 7.1,
+        "captureStartSeconds": 346.11652949999996,
+        "captureDurationSeconds": 3.55,
+        "encodedDurationSeconds": 7.133008,
+        "naturalSpeedRestorationFactor": 2
+      },
+      "sourcePublishedDate": "2024-09-10",
+      "sourceTitle": "The Ultimate Aberration Resource Guide, 50+ Tips/Locations, Ark Survival Ascended",
+      "sourceCreator": "Chaos Bear Gaming",
+      "sourceCapture": {
+        "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/TUoB8ouWPYk-active-2x.mp4",
+        "sourceSHA256": "89a04de9154c7f08156eb348694337bc53468c3b46a4d69df0fd7dc270614757",
+        "sourceDimensions": [
+          1184,
+          666
+        ],
+        "captureFirstFrameUTC": "2026-10-08T05:12:34.963Z",
+        "sourceAnchor": {
+          "sourceSeconds": 0.068941,
+          "UTC": "2026-10-08T05:12:47.214Z"
+        },
+        "formula": "movieSeconds = 12.251 + (sourceSeconds - 0.068941) / 2",
+        "independentProgressCheck": {
+          "sourceSeconds": 896.438464,
+          "UTC": "2026-10-08T05:20:15.396Z"
+        },
+        "acquisitionProof": "Parent confirmed native active Chrome source/address, moving preflight, and independent source-time check; valid active capture only. No rejected frozen part1/part2 used.",
+        "clipConversion": "Cut actual capture seconds, setpts=2 restoring natural 1x source motion; silent H264 clips; no interpolation, looping or fabricated location."
+      },
+      "sourceTimestampURL": "https://www.youtube.com/watch?v=TUoB8ouWPYk&t=667s"
+    },
+    {
+      "id": "aberration-blue-crystal-487-786",
+      "map": "aberration",
+      "name": "Dense Blue Zone crystal and gem field",
+      "resources": [
+        "Crystal"
+      ],
+      "lat": 48.7,
+      "lon": 78.6,
+      "videoID": "TUoB8ouWPYk",
+      "startSeconds": 569,
+      "endSeconds": 577,
+      "coordinateEvidence": "Creator explicitly types 48.7 LAT / 78.6 LONG over filmed farming locale in retained uncropped coordinate frame. Authority is creator-labelled farming region. Native map-bottom numbers are not relied on as actual player GPS; mouse cursor/player distinction unverified.",
+      "inventoryEvidence": "Dense blue gem/crystal nodes clearly filmed. Primary official community wiki confirms Aberration colored gem patches yield Crystal: https://ark.wiki.gg/wiki/Crystals. No measured yield claimed.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/ab-active-second/aberration-blue-crystal-487-786.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/ab-active-second/aberration-blue-crystal-487-786.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=TUoB8ouWPYk",
+      "sourcePlane": "Aberration ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-labelled filmed farming region; not actual native player GPS or exact node coordinates",
+      "mapOverlayVisible": false,
+      "creatorInsetVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "User-authorized licensed public Chrome playback captured in isolated native window; no denied download or authentication bypass",
+      "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/TUoB8ouWPYk-active-2x.mp4",
+      "sourceSHA256": "89a04de9154c7f08156eb348694337bc53468c3b46a4d69df0fd7dc270614757",
+      "clipSHA256": "0ea1bdc0020b43dbe5ac51ead1e79ab524f88a962c8337b3afa966292562579a",
+      "posterSHA256": "160f0bef19cd2f38ddcf41d5ffc437b1a120439c9330dbfd101e857398db0168",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/ab-active-second/aberration-blue-crystal-487-786-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/ab-active-second/aberration-blue-crystal-487-786-coordinate.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true,
+        "reviewed": true,
+        "result": "All 33 chronological 4fps samples manually reviewed: continuous clean resource/terrain shot; no M-map, inventory, creator inset, captions or shot cuts. Full encoded file decoded without errors."
+      },
+      "evidenceLimitations": "Filmed 2024 ASA source, region waypoint rather than every exact node; no permanent spawn/node count or guaranteed yield.  Native map-bottom readout authority not established; explicit typed creator LAT/LONG labels are sole coordinate authority.",
+      "visualReviewStatus": "verified",
+      "sourceCrop": {
+        "x": 0,
+        "y": 0,
+        "width": 1184,
+        "height": 666,
+        "sourceWidth": 1184,
+        "sourceHeight": 666,
+        "reason": "No spatial crop; clean source segment selected."
+      },
+      "captureCut": {
+        "sourceStartSeconds": 569,
+        "sourceDurationSeconds": 8,
+        "captureStartSeconds": 296.7165295,
+        "captureDurationSeconds": 4.0,
+        "encodedDurationSeconds": 8.033333,
+        "naturalSpeedRestorationFactor": 2
+      },
+      "sourcePublishedDate": "2024-09-10",
+      "sourceTitle": "The Ultimate Aberration Resource Guide, 50+ Tips/Locations, Ark Survival Ascended",
+      "sourceCreator": "Chaos Bear Gaming",
+      "sourceCapture": {
+        "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/TUoB8ouWPYk-active-2x.mp4",
+        "sourceSHA256": "89a04de9154c7f08156eb348694337bc53468c3b46a4d69df0fd7dc270614757",
+        "sourceDimensions": [
+          1184,
+          666
+        ],
+        "captureFirstFrameUTC": "2026-10-08T05:12:34.963Z",
+        "sourceAnchor": {
+          "sourceSeconds": 0.068941,
+          "UTC": "2026-10-08T05:12:47.214Z"
+        },
+        "formula": "movieSeconds = 12.251 + (sourceSeconds - 0.068941) / 2",
+        "independentProgressCheck": {
+          "sourceSeconds": 896.438464,
+          "UTC": "2026-10-08T05:20:15.396Z"
+        },
+        "acquisitionProof": "Parent confirmed native active Chrome source/address, moving preflight, and independent source-time check; valid active capture only. No rejected frozen part1/part2 used.",
+        "clipConversion": "Cut actual capture seconds, setpts=2 restoring natural 1x source motion; silent H264 clips; no interpolation, looping or fabricated location."
+      },
+      "sourceTimestampURL": "https://www.youtube.com/watch?v=TUoB8ouWPYk&t=569s"
+    },
+    {
+      "id": "aberration-red-crystal-45-367",
+      "map": "aberration",
+      "name": "Accessible red gem crystal field",
+      "resources": [
+        "Crystal"
+      ],
+      "lat": 45,
+      "lon": 36.7,
+      "videoID": "TUoB8ouWPYk",
+      "startSeconds": 601,
+      "endSeconds": 609,
+      "coordinateEvidence": "Creator explicitly types 45 LAT / 36.7 LONG over filmed farming locale in retained uncropped coordinate frame. Authority is creator-labelled farming region. Native map-bottom numbers are not relied on as actual player GPS; mouse cursor/player distinction unverified.",
+      "inventoryEvidence": "Purple crystalline nodes visibly filmed in creator-labelled accessible red gem field. Primary official community wiki confirms Aberration colored gem patches yield Crystal: https://ark.wiki.gg/wiki/Crystals.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/ab-active-second/aberration-red-crystal-45-367.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/ab-active-second/aberration-red-crystal-45-367.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=TUoB8ouWPYk",
+      "sourcePlane": "Aberration ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-labelled filmed farming region; not actual native player GPS or exact node coordinates",
+      "mapOverlayVisible": false,
+      "creatorInsetVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "User-authorized licensed public Chrome playback captured in isolated native window; no denied download or authentication bypass",
+      "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/TUoB8ouWPYk-active-2x.mp4",
+      "sourceSHA256": "89a04de9154c7f08156eb348694337bc53468c3b46a4d69df0fd7dc270614757",
+      "clipSHA256": "373aac32514269818f37fa3374838bbad35c035cb3c7d6d9f50949fa9bc665a4",
+      "posterSHA256": "a06597b2a7ac5008932ceada1abf78b512e295d881cb0bb7fe99626b06d8c66a",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/ab-active-second/aberration-red-crystal-45-367-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/ab-active-second/aberration-red-crystal-45-367-coordinate.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true,
+        "reviewed": true,
+        "result": "All 32 chronological 4fps samples manually reviewed: continuous clean resource/terrain shot; no M-map, inventory, creator inset, captions or shot cuts. Full encoded file decoded without errors."
+      },
+      "evidenceLimitations": "Filmed 2024 ASA source, region waypoint rather than every exact node; no permanent spawn/node count or guaranteed yield.  Native map-bottom readout authority not established; explicit typed creator LAT/LONG labels are sole coordinate authority.",
+      "visualReviewStatus": "verified",
+      "sourceCrop": {
+        "x": 0,
+        "y": 0,
+        "width": 1184,
+        "height": 666,
+        "sourceWidth": 1184,
+        "sourceHeight": 666,
+        "reason": "No spatial crop; clean source segment selected."
+      },
+      "captureCut": {
+        "sourceStartSeconds": 601,
+        "sourceDurationSeconds": 8,
+        "captureStartSeconds": 312.7165295,
+        "captureDurationSeconds": 4.0,
+        "encodedDurationSeconds": 8.0,
+        "naturalSpeedRestorationFactor": 2
+      },
+      "sourcePublishedDate": "2024-09-10",
+      "sourceTitle": "The Ultimate Aberration Resource Guide, 50+ Tips/Locations, Ark Survival Ascended",
+      "sourceCreator": "Chaos Bear Gaming",
+      "sourceCapture": {
+        "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/TUoB8ouWPYk-active-2x.mp4",
+        "sourceSHA256": "89a04de9154c7f08156eb348694337bc53468c3b46a4d69df0fd7dc270614757",
+        "sourceDimensions": [
+          1184,
+          666
+        ],
+        "captureFirstFrameUTC": "2026-10-08T05:12:34.963Z",
+        "sourceAnchor": {
+          "sourceSeconds": 0.068941,
+          "UTC": "2026-10-08T05:12:47.214Z"
+        },
+        "formula": "movieSeconds = 12.251 + (sourceSeconds - 0.068941) / 2",
+        "independentProgressCheck": {
+          "sourceSeconds": 896.438464,
+          "UTC": "2026-10-08T05:20:15.396Z"
+        },
+        "acquisitionProof": "Parent confirmed native active Chrome source/address, moving preflight, and independent source-time check; valid active capture only. No rejected frozen part1/part2 used.",
+        "clipConversion": "Cut actual capture seconds, setpts=2 restoring natural 1x source motion; silent H264 clips; no interpolation, looping or fabricated location."
+      },
+      "sourceTimestampURL": "https://www.youtube.com/watch?v=TUoB8ouWPYk&t=601s"
+    },
+    {
+      "id": "aberration-honey-441-31",
+      "map": "aberration",
+      "name": "River redwood honey hive",
+      "resources": [
+        "Giant Bee Honey"
+      ],
+      "lat": 44.1,
+      "lon": 31,
+      "videoID": "TUoB8ouWPYk",
+      "startSeconds": 1250,
+      "endSeconds": 1258,
+      "coordinateEvidence": "Creator explicitly types 44.1 LAT / 31 LONG over filmed farming locale in retained uncropped coordinate frame. Authority is creator-labelled farming region. Native map-bottom numbers are not relied on as actual player GPS; mouse cursor/player distinction unverified.",
+      "inventoryEvidence": "Hive visibly attached to redwood tree approached continuously. Creator Giant Bee Honey chapter identifies this as one of two found hives; spawn is conditional, not guaranteed.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/ab-active-second/aberration-honey-441-31.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/ab-active-second/aberration-honey-441-31.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=TUoB8ouWPYk",
+      "sourcePlane": "Aberration ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-labelled filmed farming region; not actual native player GPS or exact node coordinates",
+      "mapOverlayVisible": false,
+      "creatorInsetVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "User-authorized licensed public Chrome playback captured in isolated native window; no denied download or authentication bypass",
+      "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/TUoB8ouWPYk-active-2x.mp4",
+      "sourceSHA256": "89a04de9154c7f08156eb348694337bc53468c3b46a4d69df0fd7dc270614757",
+      "clipSHA256": "c24f9e654515ac3296a0d43e59700a78057f580a4d3fb6627e59f0ed32d9c86c",
+      "posterSHA256": "3030209cb8a2bc8360eebe8626c428a929fdadb2fe66bb682270d41722334bfd",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/ab-active-second/aberration-honey-441-31-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/ab-active-second/aberration-honey-441-31-coordinate.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true,
+        "reviewed": true,
+        "result": "All 30 chronological 4fps samples manually reviewed: continuous clean resource/terrain shot; no M-map, inventory, creator inset, captions or shot cuts. Full encoded file decoded without errors."
+      },
+      "evidenceLimitations": "Filmed 2024 ASA source, region waypoint rather than every exact node; no permanent spawn/node count or guaranteed yield. Clean shot is shorter than8 seconds because nearby hard cuts/map overlays were excluded. Hive only, no queen/harvest inventory shown; creator discusses difficulty and empty hives. Native map-bottom readout authority not established; explicit typed creator LAT/LONG labels are sole coordinate authority.",
+      "visualReviewStatus": "verified",
+      "sourceCrop": {
+        "x": 0,
+        "y": 0,
+        "width": 1184,
+        "height": 666,
+        "sourceWidth": 1184,
+        "sourceHeight": 666,
+        "reason": "No spatial crop; clean source segment selected."
+      },
+      "captureCut": {
+        "sourceStartSeconds": 1250.5,
+        "sourceDurationSeconds": 7.4,
+        "captureStartSeconds": 637.4665295,
+        "captureDurationSeconds": 3.7,
+        "encodedDurationSeconds": 7.466016,
+        "naturalSpeedRestorationFactor": 2
+      },
+      "sourcePublishedDate": "2024-09-10",
+      "sourceTitle": "The Ultimate Aberration Resource Guide, 50+ Tips/Locations, Ark Survival Ascended",
+      "sourceCreator": "Chaos Bear Gaming",
+      "sourceCapture": {
+        "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/TUoB8ouWPYk-active-2x.mp4",
+        "sourceSHA256": "89a04de9154c7f08156eb348694337bc53468c3b46a4d69df0fd7dc270614757",
+        "sourceDimensions": [
+          1184,
+          666
+        ],
+        "captureFirstFrameUTC": "2026-10-08T05:12:34.963Z",
+        "sourceAnchor": {
+          "sourceSeconds": 0.068941,
+          "UTC": "2026-10-08T05:12:47.214Z"
+        },
+        "formula": "movieSeconds = 12.251 + (sourceSeconds - 0.068941) / 2",
+        "independentProgressCheck": {
+          "sourceSeconds": 896.438464,
+          "UTC": "2026-10-08T05:20:15.396Z"
+        },
+        "acquisitionProof": "Parent confirmed native active Chrome source/address, moving preflight, and independent source-time check; valid active capture only. No rejected frozen part1/part2 used.",
+        "clipConversion": "Cut actual capture seconds, setpts=2 restoring natural 1x source motion; silent H264 clips; no interpolation, looping or fabricated location."
+      },
+      "sourceTimestampURL": "https://www.youtube.com/watch?v=TUoB8ouWPYk&t=1250s"
+    }
+  ],
+  "reviewedSourceRangeSeconds": [
+    530,
+    1319
+  ],
+  "captureClockEvidence": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/ab-active-second/capture-clock-evidence.json",
+  "duplicateAudit": {
+    "nativeManifest": "native/Ascended/Resources/verified-resource-spots.json",
+    "existingAberrationIDs": [
+      "aberration-green-metal",
+      "aberration-blue-metal",
+      "aberration-blue-polymer-488-509",
+      "aberration-tek-pond-pearls-628-507"
+    ],
+    "result": "All6 candidate waypoints materially distinct from existing same-resource accepted waypoints; no second angle counted."
+  },
+  "rejectedUnlocatedMethods": [
+    {
+      "resource": "Rare Flowers / Rare Mushrooms",
+      "sourceRange": [
+        720,
+        817
+      ],
+      "reason": "Clear Blue Zone mushroom footage but no numerical GPS for these sites; descriptive whole-biome map overlay cannot invent waypoint."
+    },
+    {
+      "resource": "Oil",
+      "sourceRange": [
+        1001,
+        1068
+      ],
+      "reason": "Clear oil nodes/creature methods but no numerical GPS to establish additional site."
+    },
+    {
+      "resource": "Cementing Paste",
+      "sourceRange": [
+        820,
+        911
+      ],
+      "reason": "Generic frog/Achatina/crafting method footage; no numerical GPS; repeated methods are not distinct farm sites."
+    },
+    {
+      "resource": "Chitin",
+      "sourceRange": [
+        912,
+        946
+      ],
+      "reason": "Creature/bone method shots have no numerical GPS in this half. Keratin bone source is not Chitin."
+    },
+    {
+      "resource": "Crystal, green Portal patches",
+      "sourceRange": [
+        530,
+        562
+      ],
+      "reason": "Crystal yield is explicitly narrated541\u2013560s, but numerical GPS lies outside second-half assignment; parent may establish it from first half."
+    }
+  ],
+  "reviewerNote": "Four6\u201310s deliverables supported by explicit typed creator LAT/LONG regional captions; two shorter held sites. Earlier native player-position wording corrected: map-bottom authority unverified and not relied on.",
+  "heldCandidates": [
+    {
+      "id": "aberration-polymer-617-729",
+      "map": "aberration",
+      "name": "Blue and red border polymer plants",
+      "resources": [
+        "Organic Polymer"
+      ],
+      "lat": 61.7,
+      "lon": 72.9,
+      "videoID": "TUoB8ouWPYk",
+      "startSeconds": 958,
+      "endSeconds": 963,
+      "coordinateEvidence": "Creator explicitly types 61.7 LAT / 72.9 LONG over filmed farming locale in retained uncropped coordinate frame. Authority is creator-labelled farming region. Native map-bottom numbers are not relied on as actual player GPS; mouse cursor/player distinction unverified.",
+      "inventoryEvidence": "Distinct spotted organic polymer plants clearly filmed in Organic Polymer chapter. Narration source947\u2013963s identifies plant harvesting; no inventory/yield proof.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/ab-active-second/aberration-polymer-617-729.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/ab-active-second/aberration-polymer-617-729.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=TUoB8ouWPYk",
+      "sourcePlane": "Aberration ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-labelled filmed farming region; not actual native player GPS or exact node coordinates",
+      "mapOverlayVisible": false,
+      "creatorInsetVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "User-authorized licensed public Chrome playback captured in isolated native window; no denied download or authentication bypass",
+      "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/TUoB8ouWPYk-active-2x.mp4",
+      "sourceSHA256": "89a04de9154c7f08156eb348694337bc53468c3b46a4d69df0fd7dc270614757",
+      "clipSHA256": "61d503bb4230f2a1e07704e7f7fe6a2a4eec17570d773bb38019ddcf99eccb3c",
+      "posterSHA256": "10a477928f7dcffc44807250e9f55020254b1629f6eddd2717693f8b19d0eb84",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/ab-active-second/aberration-polymer-617-729-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/ab-active-second/aberration-polymer-617-729-coordinate.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true,
+        "reviewed": true,
+        "result": "All 20 chronological 4fps samples manually reviewed: continuous clean resource/terrain shot; no M-map, inventory, creator inset, captions or shot cuts. Full encoded file decoded without errors."
+      },
+      "evidenceLimitations": "Filmed 2024 ASA source, region waypoint rather than every exact node; no permanent spawn/node count or guaranteed yield. Clean shot is shorter than8 seconds because nearby hard cuts/map overlays were excluded.  Native map-bottom readout authority not established; explicit typed creator LAT/LONG labels are sole coordinate authority.",
+      "visualReviewStatus": "verified",
+      "sourceCrop": {
+        "x": 0,
+        "y": 0,
+        "width": 1184,
+        "height": 666,
+        "sourceWidth": 1184,
+        "sourceHeight": 666,
+        "reason": "No spatial crop; clean source segment selected."
+      },
+      "captureCut": {
+        "sourceStartSeconds": 958,
+        "sourceDurationSeconds": 4.9,
+        "captureStartSeconds": 491.2165295,
+        "captureDurationSeconds": 2.45,
+        "encodedDurationSeconds": 4.933008,
+        "naturalSpeedRestorationFactor": 2
+      },
+      "sourcePublishedDate": "2024-09-10",
+      "sourceTitle": "The Ultimate Aberration Resource Guide, 50+ Tips/Locations, Ark Survival Ascended",
+      "sourceCreator": "Chaos Bear Gaming",
+      "sourceCapture": {
+        "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/TUoB8ouWPYk-active-2x.mp4",
+        "sourceSHA256": "89a04de9154c7f08156eb348694337bc53468c3b46a4d69df0fd7dc270614757",
+        "sourceDimensions": [
+          1184,
+          666
+        ],
+        "captureFirstFrameUTC": "2026-10-08T05:12:34.963Z",
+        "sourceAnchor": {
+          "sourceSeconds": 0.068941,
+          "UTC": "2026-10-08T05:12:47.214Z"
+        },
+        "formula": "movieSeconds = 12.251 + (sourceSeconds - 0.068941) / 2",
+        "independentProgressCheck": {
+          "sourceSeconds": 896.438464,
+          "UTC": "2026-10-08T05:20:15.396Z"
+        },
+        "acquisitionProof": "Parent confirmed native active Chrome source/address, moving preflight, and independent source-time check; valid active capture only. No rejected frozen part1/part2 used.",
+        "clipConversion": "Cut actual capture seconds, setpts=2 restoring natural 1x source motion; silent H264 clips; no interpolation, looping or fabricated location."
+      },
+      "sourceTimestampURL": "https://www.youtube.com/watch?v=TUoB8ouWPYk&t=958s",
+      "integrationState": "hold",
+      "holdReason": "Clean source shot under6 seconds; preserve location/GPS proof pending longer legitimate source shot"
+    },
+    {
+      "id": "aberration-honey-382-39",
+      "map": "aberration",
+      "name": "Portal-side redwood honey hive",
+      "resources": [
+        "Giant Bee Honey"
+      ],
+      "lat": 38.2,
+      "lon": 39,
+      "videoID": "TUoB8ouWPYk",
+      "startSeconds": 1263,
+      "endSeconds": 1268,
+      "coordinateEvidence": "Creator explicitly types 38.2 LAT / 39 LONG over filmed farming locale in retained uncropped coordinate frame. Authority is creator-labelled farming region. Native map-bottom numbers are not relied on as actual player GPS; mouse cursor/player distinction unverified.",
+      "inventoryEvidence": "Second hive visibly attached to redwood tree in separate continuously filmed site. Creator identifies two hives; spawn is conditional, not guaranteed.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/ab-active-second/aberration-honey-382-39.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/ab-active-second/aberration-honey-382-39.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=TUoB8ouWPYk",
+      "sourcePlane": "Aberration ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-labelled filmed farming region; not actual native player GPS or exact node coordinates",
+      "mapOverlayVisible": false,
+      "creatorInsetVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "User-authorized licensed public Chrome playback captured in isolated native window; no denied download or authentication bypass",
+      "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/TUoB8ouWPYk-active-2x.mp4",
+      "sourceSHA256": "89a04de9154c7f08156eb348694337bc53468c3b46a4d69df0fd7dc270614757",
+      "clipSHA256": "6134dd12f584f25d249bcfac39c21060a05399e6604d12062abc9ea79ec26419",
+      "posterSHA256": "af31f214fde4447687578718c3d2a284b0178ce1766c78738707a23b79c2a15d",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/ab-active-second/aberration-honey-382-39-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/ab-active-second/aberration-honey-382-39-coordinate.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true,
+        "reviewed": true,
+        "result": "All 19 chronological 4fps samples manually reviewed: continuous clean resource/terrain shot; no M-map, inventory, creator inset, captions or shot cuts. Full encoded file decoded without errors."
+      },
+      "evidenceLimitations": "Filmed 2024 ASA source, region waypoint rather than every exact node; no permanent spawn/node count or guaranteed yield. Clean shot is shorter than8 seconds because nearby hard cuts/map overlays were excluded. Hive only, no queen/harvest inventory shown; creator discusses difficulty and empty hives. Native map-bottom readout authority not established; explicit typed creator LAT/LONG labels are sole coordinate authority.",
+      "visualReviewStatus": "verified",
+      "sourceCrop": {
+        "x": 0,
+        "y": 0,
+        "width": 1184,
+        "height": 666,
+        "sourceWidth": 1184,
+        "sourceHeight": 666,
+        "reason": "No spatial crop; clean source segment selected."
+      },
+      "captureCut": {
+        "sourceStartSeconds": 1263,
+        "sourceDurationSeconds": 4.5,
+        "captureStartSeconds": 643.7165295,
+        "captureDurationSeconds": 2.25,
+        "encodedDurationSeconds": 4.6,
+        "naturalSpeedRestorationFactor": 2
+      },
+      "sourcePublishedDate": "2024-09-10",
+      "sourceTitle": "The Ultimate Aberration Resource Guide, 50+ Tips/Locations, Ark Survival Ascended",
+      "sourceCreator": "Chaos Bear Gaming",
+      "sourceCapture": {
+        "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/TUoB8ouWPYk-active-2x.mp4",
+        "sourceSHA256": "89a04de9154c7f08156eb348694337bc53468c3b46a4d69df0fd7dc270614757",
+        "sourceDimensions": [
+          1184,
+          666
+        ],
+        "captureFirstFrameUTC": "2026-10-08T05:12:34.963Z",
+        "sourceAnchor": {
+          "sourceSeconds": 0.068941,
+          "UTC": "2026-10-08T05:12:47.214Z"
+        },
+        "formula": "movieSeconds = 12.251 + (sourceSeconds - 0.068941) / 2",
+        "independentProgressCheck": {
+          "sourceSeconds": 896.438464,
+          "UTC": "2026-10-08T05:20:15.396Z"
+        },
+        "acquisitionProof": "Parent confirmed native active Chrome source/address, moving preflight, and independent source-time check; valid active capture only. No rejected frozen part1/part2 used.",
+        "clipConversion": "Cut actual capture seconds, setpts=2 restoring natural 1x source motion; silent H264 clips; no interpolation, looping or fabricated location."
+      },
+      "sourceTimestampURL": "https://www.youtube.com/watch?v=TUoB8ouWPYk&t=1263s",
+      "integrationState": "hold",
+      "holdReason": "Clean source shot under6 seconds; preserve location/GPS proof pending longer legitimate source shot"
+    }
+  ],
+  "coordinateAuthorityAudit": {
+    "state": "corrected",
+    "strongEvidence": "All6 regional coordinate pairs appear as explicit large typed creator LAT/LONG labels, independent of cursor-sensitive map-bottom readout",
+    "removedClaim": "Matching native map player-position readout",
+    "nativeGPSClaim": false
+  }
+}

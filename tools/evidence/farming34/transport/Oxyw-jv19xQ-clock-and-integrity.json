@@ -1,0 +1,49 @@
+{
+  "videoID": "Oxyw-jv19xQ",
+  "sourceURL": "https://www.youtube.com/watch?v=Oxyw-jv19xQ",
+  "capturePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/Oxyw-jv19xQ-active-2x.mp4",
+  "captureFirstSampleUTC": "2026-10-08T05:25:56.702Z",
+  "sourcePlayAnchorUTC": "2026-10-08T05:26:05.445Z",
+  "sourcePlayAnchorSeconds": 0.046994,
+  "playbackRate": 2,
+  "captureLeadSeconds": 8.743,
+  "sourceTimeToMovieTimeFormula": "movieTimeSeconds = 8.743 + (sourceTimeSeconds - 0.046994) / 2",
+  "reverseFormula": "sourceTimeSeconds = 0.046994 + (movieTimeSeconds - 8.743) * 2",
+  "anchorEvidence": "Initial play/UTC/rate measured by root; no independent mid-video drift checkpoint supplied for this source",
+  "rights": "licensed",
+  "expectedTitle": "ALLE RESSOURCEN",
+  "expectedTitleMatched": true,
+  "encodedWindowCapture": {
+    "width": 1184,
+    "height": 666,
+    "codec": "h264",
+    "frames": 9672,
+    "duration": 330.501667,
+    "bytes": 465363430,
+    "sha256": "7840598a437094947a86240c910dce4cb6f71dab8d2a738bd910012fff1a4b37"
+  },
+  "nativeYouTubeResolutionClaim": false,
+  "wholeDecode": {
+    "exitCode": 0,
+    "stderrBytes": 0,
+    "method": "ffmpeg -v error -fps_mode passthrough -enc_time_base demux -f null -"
+  },
+  "motionReview": {
+    "averageMeanPixelDifference": 14.75128658349912,
+    "comparedFrames": 9671,
+    "maximumStagnationSeconds": 23.6130850315094,
+    "stagnationWarning": false,
+    "thresholdMeanPixelLevels": 0.1,
+    "thresholdNormalized": 0.0003921568627450981,
+    "warningOnly": true
+  },
+  "visualOverview": "Oxyw-jv19xQ-full-overview.jpg",
+  "visualAssessment": "Distinct moving source gameplay; Chrome toolbar absent in sampled overview; source HUD/menus/promotional overlays and end recommendations are present",
+  "sourceCompatibilityCaveat": "Creator promotes PVP/PVE cluster with custom caves/systems/items, and skill-tree/harvest HUD appears. This does not establish vanilla resource coordinates. Source review agents must verify current map/resource compatibility before approving native pins.",
+  "limitations": [
+    "Exclude initial8.743secondlead and endrecommendationtail.",
+    "Normal6-10seconddeliveryplayback requires restoration from2xcapture.",
+    "Wholedecode/motion/title match is acquisition proof only; GPS/resource/currentmapcompatibility/cleanclipQA remain separate.",
+    "Sampled overview does not establish every-frame delivery cleanliness."
+  ]
+}

@@ -1,0 +1,384 @@
+{
+  "candidates": [],
+  "heldCandidates": [
+    {
+      "id": "lost-colony-river-metal-crystal-474-761",
+      "map": "lost-colony",
+      "name": "Eastern river metal and crystal deposits",
+      "resources": [
+        "Metal",
+        "Crystal"
+      ],
+      "lat": 47.4,
+      "lon": 76.1,
+      "videoID": "Oxyw-jv19xQ",
+      "startSeconds": 39,
+      "endSeconds": 47,
+      "coordinateEvidence": "Native bottom playerGPS at source35s. Longitude76.1 clear; latitude appears47.4 but tree/snow partly obscures translucent map. HOLD until exact independent read, no coordinate invented. CORRECTION: Map-bottom numbers may follow white cursor rather than green player marker. Actual playerGPS authority is unverified. Remains held; no geographic site approved.",
+      "inventoryEvidence": "Metal rock pick harvest and white crystal clusters visible in continuous same locale. No RichMetal classification inferred from goldveins.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/lost-active/lost-colony-river-metal-crystal-474-761.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/lost-active/lost-colony-river-metal-crystal-474-761.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=Oxyw-jv19xQ",
+      "sourceTimestampURL": "https://www.youtube.com/watch?v=Oxyw-jv19xQ&t=39s",
+      "sourcePlane": "Lost Colony ASA coordinate plane",
+      "sourceCoordinateScope": "Map-bottom cursor/player authority unverified; coordinate hold",
+      "mapOverlayVisible": false,
+      "creatorInsetVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "User-authorized licensed public Chrome playback captured in isolated native window; no denied download or authentication bypass",
+      "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/Oxyw-jv19xQ-active-2x.mp4",
+      "sourceSHA256": "7840598a437094947a86240c910dce4cb6f71dab8d2a738bd910012fff1a4b37",
+      "sourceCapture": {
+        "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/Oxyw-jv19xQ-active-2x.mp4",
+        "sourceSHA256": "7840598a437094947a86240c910dce4cb6f71dab8d2a738bd910012fff1a4b37",
+        "sourceDimensions": [
+          1184,
+          666
+        ],
+        "captureFirstFrameUTC": "2026-10-08T05:25:56.702Z",
+        "sourceAnchor": {
+          "sourceSeconds": 0.046994,
+          "UTC": "2026-10-08T05:26:05.445Z"
+        },
+        "formula": "movieSeconds = 8.743 + (sourceSeconds - 0.046994) / 2",
+        "sourceDurationSeconds": 594.261,
+        "parentAcquisitionProof": "Normal Chrome actual active address/native screenshot verified; expected-title v2 matched ALLE RESSOURCEN every15sec; moving capture averageMAD14.75; maxstatic23.6 at ended tail.",
+        "clipConversion": "Cut actual capture seconds and setpts=2 restores natural1x source motion; no looping/interpolation."
+      },
+      "clipSHA256": "00f1ded18b820103dbd9e09b8ded63ab8e4e5dd85df331c2d41c3abd9c7f6956",
+      "posterSHA256": "701f5813baa71afcbeaabfe6e7ade9f68e2992803760c1bea48c646f58039250",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/lost-active/lost-colony-river-metal-crystal-474-761-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/lost-active/lost-colony-river-metal-crystal-474-761-coordinate.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true,
+        "reviewed": true,
+        "result": "32 chronological4fps encoded frames manually reviewed: continuous terrain/resource shot, no map/inventory/caption/creator inset/cut. Entire encoded file decoded without errors."
+      },
+      "evidenceLimitations": "Source published12Jan2026; no permanent node count, guaranteed yield or exact actor coordinates. ",
+      "visualReviewStatus": "coordinate-authority-and-compatibility-pending",
+      "sourceCrop": {
+        "x": 0,
+        "y": 76,
+        "width": 1184,
+        "height": 514,
+        "sourceWidth": 1184,
+        "sourceHeight": 666,
+        "reason": "Remove YouTube recommendation banners at top and hotbar/creator logo at bottom; uncropped numeric coordinate proof separately retained."
+      },
+      "captureCut": {
+        "sourceStartSeconds": 39,
+        "sourceDurationSeconds": 8,
+        "captureStartSeconds": 28.219503000000003,
+        "captureDurationSeconds": 4.0,
+        "encodedDurationSeconds": 8.066016,
+        "naturalSpeedRestorationFactor": 2
+      },
+      "sourcePublishedDate": "2026-01-12",
+      "sourceTitle": "ALLE RESSOURCEN | FARMGUIDE | So FARMST du richtig auf Lost Colony | ASA",
+      "sourceCreator": "RtRFinch",
+      "integrationState": "hold",
+      "holdReason": "Latitude partly obscured; exact independent read required"
+    },
+    {
+      "id": "lost-colony-river-metal-crystal-859-313",
+      "map": "lost-colony",
+      "name": "Southern river metal and crystal deposits",
+      "resources": [
+        "Metal",
+        "Crystal"
+      ],
+      "lat": 85.9,
+      "lon": 31.3,
+      "videoID": "Oxyw-jv19xQ",
+      "startSeconds": 59,
+      "endSeconds": 67,
+      "coordinateEvidence": "Native bottom playerGPS LATITUDE85.9 LONGITUDE31.3 clear at source56s, directly before uninterrupted river mining region shot. Cursor position not used. CORRECTION: Map-bottom numbers may follow white cursor rather than green player marker. Actual playerGPS authority is unverified. Remains held; no geographic site approved.",
+      "inventoryEvidence": "Gold metal-bearing rocks and white crystal clusters visible throughout river flythrough; metal pick harvest follows in same river segment source68\u201372s. No inventory/yield claim.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/lost-active/lost-colony-river-metal-crystal-859-313.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/lost-active/lost-colony-river-metal-crystal-859-313.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=Oxyw-jv19xQ",
+      "sourceTimestampURL": "https://www.youtube.com/watch?v=Oxyw-jv19xQ&t=59s",
+      "sourcePlane": "Lost Colony ASA coordinate plane",
+      "sourceCoordinateScope": "Map-bottom cursor/player authority unverified; coordinate hold",
+      "mapOverlayVisible": false,
+      "creatorInsetVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "User-authorized licensed public Chrome playback captured in isolated native window; no denied download or authentication bypass",
+      "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/Oxyw-jv19xQ-active-2x.mp4",
+      "sourceSHA256": "7840598a437094947a86240c910dce4cb6f71dab8d2a738bd910012fff1a4b37",
+      "sourceCapture": {
+        "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/Oxyw-jv19xQ-active-2x.mp4",
+        "sourceSHA256": "7840598a437094947a86240c910dce4cb6f71dab8d2a738bd910012fff1a4b37",
+        "sourceDimensions": [
+          1184,
+          666
+        ],
+        "captureFirstFrameUTC": "2026-10-08T05:25:56.702Z",
+        "sourceAnchor": {
+          "sourceSeconds": 0.046994,
+          "UTC": "2026-10-08T05:26:05.445Z"
+        },
+        "formula": "movieSeconds = 8.743 + (sourceSeconds - 0.046994) / 2",
+        "sourceDurationSeconds": 594.261,
+        "parentAcquisitionProof": "Normal Chrome actual active address/native screenshot verified; expected-title v2 matched ALLE RESSOURCEN every15sec; moving capture averageMAD14.75; maxstatic23.6 at ended tail.",
+        "clipConversion": "Cut actual capture seconds and setpts=2 restores natural1x source motion; no looping/interpolation."
+      },
+      "clipSHA256": "c9333d1b3a76db113dc6056824316795fa892869816772d769cbb6ca4ad4efcb",
+      "posterSHA256": "d7580fe3e8e3c731db76a0fe7bf84e782dcd788a8cddf2ce3822fc85dfb54049",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/lost-active/lost-colony-river-metal-crystal-859-313-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/lost-active/lost-colony-river-metal-crystal-859-313-coordinate.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true,
+        "reviewed": true,
+        "result": "32 chronological4fps encoded frames manually reviewed: continuous terrain/resource shot, no map/inventory/caption/creator inset/cut. Entire encoded file decoded without errors."
+      },
+      "evidenceLimitations": "Source published12Jan2026; no permanent node count, guaranteed yield or exact actor coordinates. ",
+      "visualReviewStatus": "coordinate-authority-and-compatibility-pending",
+      "sourceCrop": {
+        "x": 0,
+        "y": 76,
+        "width": 1184,
+        "height": 514,
+        "sourceWidth": 1184,
+        "sourceHeight": 666,
+        "reason": "Remove YouTube recommendation banners at top and hotbar/creator logo at bottom; uncropped numeric coordinate proof separately retained."
+      },
+      "captureCut": {
+        "sourceStartSeconds": 59,
+        "sourceDurationSeconds": 8,
+        "captureStartSeconds": 38.219503,
+        "captureDurationSeconds": 4.0,
+        "encodedDurationSeconds": 8.0,
+        "naturalSpeedRestorationFactor": 2
+      },
+      "sourcePublishedDate": "2026-01-12",
+      "sourceTitle": "ALLE RESSOURCEN | FARMGUIDE | So FARMST du richtig auf Lost Colony | ASA",
+      "sourceCreator": "RtRFinch",
+      "integrationState": "hold",
+      "holdReason": "Creator advertises server Sophisticated Systems / Custom Caves; exact vanilla ASA node compatibility requires independent standard ASA footage or primary map proof."
+    },
+    {
+      "id": "lost-colony-oil-cave-69-464",
+      "map": "lost-colony",
+      "name": "Icy cave oil rocks",
+      "resources": [
+        "Oil"
+      ],
+      "lat": 69,
+      "lon": 46.4,
+      "videoID": "Oxyw-jv19xQ",
+      "startSeconds": 564,
+      "endSeconds": 572,
+      "coordinateEvidence": "Creator displays numeric pair69 &46.4 at source83s over this icy cave in dedicated Oil chapter. Pair interpreted in conventional latitude/longitude order; no separate nativeGPS axis readout shown. Same distinctive ice pillars and black rocks in longer outro flythrough.",
+      "inventoryEvidence": "Black irregular oil rocks visibly situated among cave ice pillars; creator Oil narration source78\u201383s identifies this cave as oil site. Outro reuses same identifiable cave flythrough with longer continuous shot. No measured yield.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/lost-active/lost-colony-oil-cave-69-464.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/lost-active/lost-colony-oil-cave-69-464.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=Oxyw-jv19xQ",
+      "sourceTimestampURL": "https://www.youtube.com/watch?v=Oxyw-jv19xQ&t=564s",
+      "sourcePlane": "Lost Colony ASA coordinate plane",
+      "sourceCoordinateScope": "Creator/source camera filmed region, not exact individual resource actors",
+      "mapOverlayVisible": false,
+      "creatorInsetVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "User-authorized licensed public Chrome playback captured in isolated native window; no denied download or authentication bypass",
+      "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/Oxyw-jv19xQ-active-2x.mp4",
+      "sourceSHA256": "7840598a437094947a86240c910dce4cb6f71dab8d2a738bd910012fff1a4b37",
+      "sourceCapture": {
+        "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/Oxyw-jv19xQ-active-2x.mp4",
+        "sourceSHA256": "7840598a437094947a86240c910dce4cb6f71dab8d2a738bd910012fff1a4b37",
+        "sourceDimensions": [
+          1184,
+          666
+        ],
+        "captureFirstFrameUTC": "2026-10-08T05:25:56.702Z",
+        "sourceAnchor": {
+          "sourceSeconds": 0.046994,
+          "UTC": "2026-10-08T05:26:05.445Z"
+        },
+        "formula": "movieSeconds = 8.743 + (sourceSeconds - 0.046994) / 2",
+        "sourceDurationSeconds": 594.261,
+        "parentAcquisitionProof": "Normal Chrome actual active address/native screenshot verified; expected-title v2 matched ALLE RESSOURCEN every15sec; moving capture averageMAD14.75; maxstatic23.6 at ended tail.",
+        "clipConversion": "Cut actual capture seconds and setpts=2 restores natural1x source motion; no looping/interpolation."
+      },
+      "clipSHA256": "78cffff387657e9810672085f08fa2f37a309ea3df26c20ee004b5e00c9225ce",
+      "posterSHA256": "4e1717dd02a46aa6a6435654d522086907fad5746d795e08bc12dca95d178769",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/lost-active/lost-colony-oil-cave-69-464-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/lost-active/lost-colony-oil-cave-69-464-coordinate.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true,
+        "reviewed": true,
+        "result": "32 chronological4fps encoded frames manually reviewed: continuous terrain/resource shot, no map/inventory/caption/creator inset/cut. Entire encoded file decoded without errors."
+      },
+      "evidenceLimitations": "Source published12Jan2026; no permanent node count, guaranteed yield or exact actor coordinates. Oil pair has no explicit LAT/LON axes; conventional order interpreted, exact creator pair retained.",
+      "visualReviewStatus": "source-compatibility-pending",
+      "sourceCrop": {
+        "x": 0,
+        "y": 76,
+        "width": 1184,
+        "height": 514,
+        "sourceWidth": 1184,
+        "sourceHeight": 666,
+        "reason": "Remove YouTube recommendation banners at top and hotbar/creator logo at bottom; uncropped numeric coordinate proof separately retained."
+      },
+      "captureCut": {
+        "sourceStartSeconds": 564,
+        "sourceDurationSeconds": 8,
+        "captureStartSeconds": 290.719503,
+        "captureDurationSeconds": 4.0,
+        "encodedDurationSeconds": 8.033333,
+        "naturalSpeedRestorationFactor": 2
+      },
+      "sourcePublishedDate": "2026-01-12",
+      "sourceTitle": "ALLE RESSOURCEN | FARMGUIDE | So FARMST du richtig auf Lost Colony | ASA",
+      "sourceCreator": "RtRFinch",
+      "integrationState": "hold",
+      "holdReason": "Creator advertises server Sophisticated Systems / Custom Caves; exact vanilla ASA node compatibility requires independent standard ASA footage or primary map proof."
+    }
+  ],
+  "reviewedSourceRangeSeconds": [
+    0,
+    594.261
+  ],
+  "captureClockEvidence": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/lost-active/capture-clock-evidence.json",
+  "duplicateAudit": {
+    "existingSpots": [
+      {
+        "id": "lost-colony-north-metal",
+        "lat": 3.7,
+        "lon": 14.1,
+        "resources": [
+          "Metal"
+        ]
+      },
+      {
+        "id": "lost-colony-northwest-metal",
+        "lat": 3.0,
+        "lon": 5.8,
+        "resources": [
+          "Metal"
+        ]
+      },
+      {
+        "id": "lost-colony-southwest-oil-river",
+        "lat": 91.7,
+        "lon": 20.8,
+        "resources": [
+          "Oil"
+        ]
+      },
+      {
+        "id": "lost-colony-east-river-black-pearls",
+        "lat": 30.4,
+        "lon": 85.1,
+        "resources": [
+          "Black Pearls"
+        ]
+      },
+      {
+        "id": "lost-colony-southeast-crash-black-pearls",
+        "lat": 81.8,
+        "lon": 51.1,
+        "resources": [
+          "Black Pearls"
+        ]
+      },
+      {
+        "id": "lost-colony-east-snow-obsidian",
+        "lat": 54,
+        "lon": 71.3,
+        "resources": [
+          "Obsidian"
+        ]
+      },
+      {
+        "id": "lost-colony-east-cliff-honey",
+        "lat": 51.6,
+        "lon": 69.8,
+        "resources": [
+          "Giant Bee Honey"
+        ]
+      },
+      {
+        "id": "lost-colony-north-city-lamp-crystal",
+        "lat": 28,
+        "lon": 60.8,
+        "resources": [
+          "Crystal"
+        ]
+      }
+    ],
+    "result": "Confirmed southern river and oilcave different from same-resource existing regions. First eastern region stillcoordinate hold."
+  },
+  "curatedResourceAudit": [
+    {
+      "resource": "Black Pearls",
+      "status": "no-addition",
+      "reason": "Blood-water city harvest demonstration has no numerical siteGPS; two existing native sources already establish other regions."
+    },
+    {
+      "resource": "Silica Pearls",
+      "status": "no-addition",
+      "reason": "Underwater whip/Thrall harvesting footage, no direct numericalGPS for underwater site; adjoining lake may match first region but geographic linkage and latitude require stronger proof."
+    },
+    {
+      "resource": "Cementing Paste",
+      "status": "no-addition",
+      "reason": "Narrator says few beaver dams, cave insects as craft inputs; no geographic GPS or demonstrated direct paste yield. Do not classify ordinary creaturekill as CementingPaste."
+    },
+    {
+      "resource": "Chitin",
+      "status": "no-addition",
+      "reason": "Cave creature farming method with no numerical siteGPS or completed relevant harvest."
+    },
+    {
+      "resource": "Rich Metal",
+      "status": "no-addition",
+      "reason": "Metal chapter gold-bearing rocks visible, source does not label RichMetal; ordinaryMetal yield/appearance alone not enough for this distinction."
+    },
+    {
+      "resource": "Obsidian",
+      "status": "no-addition",
+      "reason": "Dark rock pick footage source50\u201354s too short and first latitude obscured; no full6\u201310s uniquely identified clean obsidian site."
+    },
+    {
+      "resource": "Rare Flowers",
+      "status": "no-addition",
+      "reason": "Rose-like flower harvesting footage372\u2013383s but no numerical siteGPS."
+    },
+    {
+      "resource": "Rare Mushrooms",
+      "status": "no-addition",
+      "reason": "Blue flower/plant method source383\u2013390s but no numerical siteGPS; cannot assign arbitrary corrupted biome coordinates."
+    },
+    {
+      "resource": "Organic Polymer",
+      "status": "no-addition",
+      "reason": "Same blue plants harvested byDireBear, inventory source391\u2013393s; no numerical GPS for location."
+    },
+    {
+      "resource": "Giant Bee Honey",
+      "status": "no-addition",
+      "reason": "Hive footage393\u2013408s, including multiple stacked hives warning, no numerical GPS; unnamed distance marker not coordinates."
+    },
+    {
+      "resource": "Sap",
+      "status": "no-addition",
+      "reason": "Two tree methods408\u2013433s, no numerical siteGPS; no reuse of previous region coordinates for later edited locale."
+    }
+  ],
+  "reviewerNote": "No approved integrations: two coordinate/media-valid sites now held for vanilla/source compatibility; first river remains coordinate hold. Creator server advertising requires exact source context audit.",
+  "sourceCompatibilityAudit": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/lost-active/vanilla-compatibility-audit.json",
+  "coordinateAuthorityAudit": {
+    "state": "held",
+    "reason": "Map-bottom readout may follow white cursor; no source typed LAT/LONG labels for river sites. Greenplayer-marker positions and whitecursor differ. Raw numeric readouts do not establish actual cameraGPS."
+  }
+}

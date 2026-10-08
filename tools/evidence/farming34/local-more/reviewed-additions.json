@@ -1,0 +1,341 @@
+{
+  "candidates": [
+    {
+      "id": "rag-southwest-oil-793-368",
+      "map": "ragnarok",
+      "name": "Southwestern seabed oil shelf",
+      "resources": [
+        "Oil"
+      ],
+      "lat": 79.3,
+      "lon": 36.8,
+      "videoID": "0i0-XEV85m8",
+      "startSeconds": 655,
+      "endSeconds": 662,
+      "coordinateEvidence": "Creator explicitly captions Coordinates 79.3 Latitude 36.8 Longitude over this filmed region at source655s. Numeric creator caption used, not M-map cursor interpretation.",
+      "inventoryEvidence": "Black oil deposits with bubble trails on a stratified underwater rock shelf in the Oil chapter. No guaranteed yield or node availability claim.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/local-more/rag-southwest-oil-793-368.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/local-more/rag-southwest-oil-793-368.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8",
+      "sourcePlane": "ragnarok ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-labelled farming region",
+      "mapOverlayVisible": false,
+      "creatorInsetVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "Previously approved complete licensed local source; no network acquisition in farming34",
+      "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/resource-sources/fynix-avc/0i0-XEV85m8.mp4",
+      "sourceSHA256": "3d627343ce7e96d02326566aa68e2de0824562dbebd6fcab7e50b4feb64a8415",
+      "clipSHA256": "344ad49ed281fcaf4aea7af3c50b436605bd58d3ab1d0ed58e129c02e0464232",
+      "posterSHA256": "a47ee98b441a5a7b7eb790307baa9704f80fac6eaa81cc84807bf1c0541994a0",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/local-more/rag-southwest-oil-793-368-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/local-more/rag-southwest-oil-793-368-coordinate.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true,
+        "reviewed": true,
+        "result": "Final encoded chronological4fps frames manually reviewed: continuous resource/terrain shot, no map, creator caption, inventory or edit cut. Full uncropped GPS proof retained separately."
+      },
+      "evidenceLimitations": "Creator-labelled regional waypoint and filmed nodes; no permanent node count, guaranteed yield or spawn availability. Delivery crops creator coordinate inset/caption; full uncropped source coordinate frame retained separately.",
+      "visualReviewStatus": "verified",
+      "sourceCrop": {
+        "x": 540,
+        "y": 120,
+        "width": 1380,
+        "height": 960,
+        "sourceWidth": 1920,
+        "sourceHeight": 1080,
+        "reason": "Remove creator map inset and coordinate caption; full coordinate proof separately retained."
+      },
+      "encodedDurationSeconds": 7.0
+    },
+    {
+      "id": "rag-south-polymer-936-489",
+      "map": "ragnarok",
+      "name": "Southern flooded cave polymer plants",
+      "resources": [
+        "Organic Polymer"
+      ],
+      "lat": 93.6,
+      "lon": 48.9,
+      "videoID": "0i0-XEV85m8",
+      "startSeconds": 789.5,
+      "endSeconds": 796.5,
+      "coordinateEvidence": "Creator explicitly captions Coordinates 93.6 Latitude 48.9 Longitude over this filmed region at source794s. Numeric creator caption used, not M-map cursor interpretation.",
+      "inventoryEvidence": "Pink organic polymer plants beside the flooded southern cave pool in the Polymer chapter. No guaranteed yield or node availability claim.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/local-more/rag-south-polymer-936-489.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/local-more/rag-south-polymer-936-489.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8",
+      "sourcePlane": "ragnarok ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-labelled farming region",
+      "mapOverlayVisible": false,
+      "creatorInsetVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "Previously approved complete licensed local source; no network acquisition in farming34",
+      "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/resource-sources/fynix-avc/0i0-XEV85m8.mp4",
+      "sourceSHA256": "3d627343ce7e96d02326566aa68e2de0824562dbebd6fcab7e50b4feb64a8415",
+      "clipSHA256": "d9dea2f55e248762e27270ac03ac6a71c36ebf96965d0344b2f2f3e47506a156",
+      "posterSHA256": "9b87ffb1d198554053f9590cabdd7bb48b08b7e2e77684d52181ac7cb14efca3",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/local-more/rag-south-polymer-936-489-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/local-more/rag-south-polymer-936-489-coordinate.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true,
+        "reviewed": true,
+        "result": "Final encoded chronological4fps frames manually reviewed: continuous resource/terrain shot, no map, creator caption, inventory or edit cut. Full uncropped GPS proof retained separately."
+      },
+      "evidenceLimitations": "Creator-labelled regional waypoint and filmed nodes; no permanent node count, guaranteed yield or spawn availability. Delivery crops creator coordinate inset/caption; full uncropped source coordinate frame retained separately.",
+      "visualReviewStatus": "verified",
+      "sourceCrop": {
+        "x": 540,
+        "y": 120,
+        "width": 1380,
+        "height": 960,
+        "sourceWidth": 1920,
+        "sourceHeight": 1080,
+        "reason": "Remove creator map inset and coordinate caption; full coordinate proof separately retained."
+      },
+      "encodedDurationSeconds": 7.0
+    },
+    {
+      "id": "rag-highland-flowers-221-776",
+      "map": "ragnarok",
+      "name": "Highland boulder field rare flowers",
+      "resources": [
+        "Rare Flowers"
+      ],
+      "lat": 22.1,
+      "lon": 77.6,
+      "videoID": "0i0-XEV85m8",
+      "startSeconds": 838,
+      "endSeconds": 844,
+      "coordinateEvidence": "Creator explicitly captions Coordinates 22.1 Latitude 77.6 Longitude over this filmed region at source840s. Numeric creator caption used, not M-map cursor interpretation.",
+      "inventoryEvidence": "Blue rare flower plants between highland boulders in the Rare Flowers chapter. No guaranteed yield or node availability claim.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/local-more/rag-highland-flowers-221-776.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/local-more/rag-highland-flowers-221-776.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8",
+      "sourcePlane": "ragnarok ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-labelled farming region",
+      "mapOverlayVisible": false,
+      "creatorInsetVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "Previously approved complete licensed local source; no network acquisition in farming34",
+      "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/resource-sources/fynix-avc/0i0-XEV85m8.mp4",
+      "sourceSHA256": "3d627343ce7e96d02326566aa68e2de0824562dbebd6fcab7e50b4feb64a8415",
+      "clipSHA256": "b4df88be1c08191bb31ff3272e6001dbb58f9e45057c7561c5450e2820a54078",
+      "posterSHA256": "dbc3a6fd13795ce01e2539c00553b7539882f0f2433be85fafeb53856a6b267c",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/local-more/rag-highland-flowers-221-776-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/local-more/rag-highland-flowers-221-776-coordinate.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true,
+        "reviewed": true,
+        "result": "Final encoded chronological4fps frames manually reviewed: continuous resource/terrain shot, no map, creator caption, inventory or edit cut. Full uncropped GPS proof retained separately."
+      },
+      "evidenceLimitations": "Creator-labelled regional waypoint and filmed nodes; no permanent node count, guaranteed yield or spawn availability. Delivery crops creator coordinate inset/caption; full uncropped source coordinate frame retained separately.",
+      "visualReviewStatus": "verified",
+      "sourceCrop": {
+        "x": 540,
+        "y": 120,
+        "width": 1380,
+        "height": 960,
+        "sourceWidth": 1920,
+        "sourceHeight": 1080,
+        "reason": "Remove creator map inset and coordinate caption; full coordinate proof separately retained."
+      },
+      "encodedDurationSeconds": 6.0
+    },
+    {
+      "id": "rag-desert-flowers-611-553",
+      "map": "ragnarok",
+      "name": "Desert red rock rare flower ledges",
+      "resources": [
+        "Rare Flowers"
+      ],
+      "lat": 61.1,
+      "lon": 55.3,
+      "videoID": "0i0-XEV85m8",
+      "startSeconds": 858,
+      "endSeconds": 866,
+      "coordinateEvidence": "Creator explicitly captions Coordinates 61.1 Latitude 55.3 Longitude over this filmed region at source862s. Numeric creator caption used, not M-map cursor interpretation.",
+      "inventoryEvidence": "Blue flower plants on the red rock ledges in the Rare Flowers chapter. No guaranteed yield or node availability claim.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/local-more/rag-desert-flowers-611-553.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/local-more/rag-desert-flowers-611-553.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8",
+      "sourcePlane": "ragnarok ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-labelled farming region",
+      "mapOverlayVisible": false,
+      "creatorInsetVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "Previously approved complete licensed local source; no network acquisition in farming34",
+      "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/resource-sources/fynix-avc/0i0-XEV85m8.mp4",
+      "sourceSHA256": "3d627343ce7e96d02326566aa68e2de0824562dbebd6fcab7e50b4feb64a8415",
+      "clipSHA256": "3db5adaf54307ab0a4cbe26906871e2a049e712ed4192b81d9ebba6a2f02ccab",
+      "posterSHA256": "ce4177635c66584129906ba032a78640bc28f261fc49d7bbd38548cb305fc198",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/local-more/rag-desert-flowers-611-553-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/local-more/rag-desert-flowers-611-553-coordinate.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true,
+        "reviewed": true,
+        "result": "Final encoded chronological4fps frames manually reviewed: continuous resource/terrain shot, no map, creator caption, inventory or edit cut. Full uncropped GPS proof retained separately."
+      },
+      "evidenceLimitations": "Creator-labelled regional waypoint and filmed nodes; no permanent node count, guaranteed yield or spawn availability. Delivery crops creator coordinate inset/caption; full uncropped source coordinate frame retained separately.",
+      "visualReviewStatus": "verified",
+      "sourceCrop": {
+        "x": 540,
+        "y": 120,
+        "width": 1380,
+        "height": 960,
+        "sourceWidth": 1920,
+        "sourceHeight": 1080,
+        "reason": "Remove creator map inset and coordinate caption; full coordinate proof separately retained."
+      },
+      "encodedDurationSeconds": 8.0
+    },
+    {
+      "id": "rag-southeast-silica-874-730",
+      "map": "ragnarok",
+      "name": "Southeastern seabed silica pearl pocket",
+      "resources": [
+        "Silica Pearls"
+      ],
+      "lat": 87.4,
+      "lon": 73,
+      "videoID": "0i0-XEV85m8",
+      "startSeconds": 1049,
+      "endSeconds": 1056,
+      "coordinateEvidence": "Creator explicitly captions Coordinates 87.4 Latitude 73 Longitude over this filmed region at source1050s. Numeric creator caption used, not M-map cursor interpretation.",
+      "inventoryEvidence": "Bright clam pearl nodes between the seabed rocks in the Silica Pearls chapter. No guaranteed yield or node availability claim.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/local-more/rag-southeast-silica-874-730.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/local-more/rag-southeast-silica-874-730.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8",
+      "sourcePlane": "ragnarok ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-labelled farming region",
+      "mapOverlayVisible": false,
+      "creatorInsetVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "Previously approved complete licensed local source; no network acquisition in farming34",
+      "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/resource-sources/fynix-avc/0i0-XEV85m8.mp4",
+      "sourceSHA256": "3d627343ce7e96d02326566aa68e2de0824562dbebd6fcab7e50b4feb64a8415",
+      "clipSHA256": "b0419069a8a6e7bd00d539864bfe514367bccf87e4adcd19a48157acda9d301d",
+      "posterSHA256": "bb2852b53abbaf38f005f4783ad0c8ebb3587d534be2377a2b8773c167aa59f8",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/local-more/rag-southeast-silica-874-730-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/local-more/rag-southeast-silica-874-730-coordinate.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true,
+        "reviewed": true,
+        "result": "Final encoded chronological4fps frames manually reviewed: continuous resource/terrain shot, no map, creator caption, inventory or edit cut. Full uncropped GPS proof retained separately."
+      },
+      "evidenceLimitations": "Creator-labelled regional waypoint and filmed nodes; no permanent node count, guaranteed yield or spawn availability. Delivery crops creator coordinate inset/caption; full uncropped source coordinate frame retained separately.",
+      "visualReviewStatus": "verified",
+      "sourceCrop": {
+        "x": 540,
+        "y": 120,
+        "width": 1380,
+        "height": 960,
+        "sourceWidth": 1920,
+        "sourceHeight": 1080,
+        "reason": "Remove creator map inset and coordinate caption; full coordinate proof separately retained."
+      },
+      "encodedDurationSeconds": 7.0
+    },
+    {
+      "id": "rag-southeast-black-944-917",
+      "map": "ragnarok",
+      "name": "Southeastern seabed black pearl bed",
+      "resources": [
+        "Black Pearls"
+      ],
+      "lat": 94.4,
+      "lon": 91.7,
+      "videoID": "0i0-XEV85m8",
+      "startSeconds": 221.2,
+      "endSeconds": 227.2,
+      "coordinateEvidence": "Creator explicitly captions Coordinates 94.4 Latitude 91.7 Longitude over this filmed region at source222s. Numeric creator caption used, not M-map cursor interpretation.",
+      "inventoryEvidence": "Dark rounded black pearl nodes on the southeastern seabed in the Black Pearls chapter. No guaranteed yield or node availability claim.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/local-more/rag-southeast-black-944-917.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/local-more/rag-southeast-black-944-917.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8",
+      "sourcePlane": "ragnarok ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-labelled farming region",
+      "mapOverlayVisible": false,
+      "creatorInsetVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "Previously approved complete licensed local source; no network acquisition in farming34",
+      "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/resource-sources/fynix-avc/0i0-XEV85m8.mp4",
+      "sourceSHA256": "3d627343ce7e96d02326566aa68e2de0824562dbebd6fcab7e50b4feb64a8415",
+      "clipSHA256": "fe04f2147ed9af8e8ba8e5583bf35dc6679b4407b14c81e8f215903148e093ff",
+      "posterSHA256": "71af73b9f3bfd426a7b2fd29bfdba8bf6d239b1a3b5a0e72f34ec22b5ca7b656",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/local-more/rag-southeast-black-944-917-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/local-more/rag-southeast-black-944-917-coordinate.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true,
+        "reviewed": true,
+        "result": "Final encoded chronological4fps frames manually reviewed: continuous resource/terrain shot, no map, creator caption, inventory or edit cut. Full uncropped GPS proof retained separately."
+      },
+      "evidenceLimitations": "Creator-labelled regional waypoint and filmed nodes; no permanent node count, guaranteed yield or spawn availability. Delivery crops creator coordinate inset/caption; full uncropped source coordinate frame retained separately.",
+      "visualReviewStatus": "verified",
+      "sourceCrop": {
+        "x": 540,
+        "y": 120,
+        "width": 1380,
+        "height": 960,
+        "sourceWidth": 1920,
+        "sourceHeight": 1080,
+        "reason": "Remove creator map inset and coordinate caption; full coordinate proof separately retained."
+      },
+      "encodedDurationSeconds": 6.0
+    }
+  ],
+  "rejected": [
+    {
+      "resource": "Rare Flowers",
+      "coords": [
+        63.6,
+        44.2
+      ],
+      "reason": "Captioned beehive/exchange structure, followed by brief interior footage; no reviewed6s direct wild resource proof. Not relabelled as Honey."
+    },
+    {
+      "resource": "Rare Mushrooms",
+      "sourceBounds": [
+        871,
+        918
+      ],
+      "reason": "Harvest footage and overview M-map but creator supplies no matching numeric GPS caption; title obscures lower map readout and cursor not accepted."
+    },
+    {
+      "resource": "Sap",
+      "sourceBounds": [
+        924,
+        983
+      ],
+      "reason": "Tapped trees filmed, no numeric creator GPS for new sites; M-map cursor not used."
+    },
+    {
+      "resource": "Giant Bee Honey / Chitin / Cementing Paste",
+      "sourceBounds": [
+        0,
+        1269.78
+      ],
+      "reason": "No additional dedicated GPS-labelled independent sites in this complete guide; beaver dam demonstration around900s has no numeric label and cannot be counted."
+    }
+  ],
+  "reviewedSourceDurationSeconds": 1269.78322,
+  "networkRequests": 0,
+  "newDownloads": 0
+}

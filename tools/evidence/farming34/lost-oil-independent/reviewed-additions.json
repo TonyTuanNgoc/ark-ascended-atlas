@@ -1,0 +1,214 @@
+{
+  "candidates": [
+    {
+      "id": "lost-colony-safe-cave-oil-656-483",
+      "map": "lost-colony",
+      "name": "Mountain ice cave oil rocks",
+      "resources": [
+        "Oil"
+      ],
+      "lat": 65.6,
+      "lon": 48.3,
+      "videoID": "LKOZNBaoCpc",
+      "startSeconds": 65,
+      "endSeconds": 73,
+      "coordinateEvidence": "Creator explicitly narrates latitude65.6 longitude48.3 at source57\u201360s. Source59\u201360s native map shows65.6/48.3, greenplayer aligns mapgrid near65.6/48.3. White hostpointer near68/70 differs, so not mistaken for the displayedposition. Waypoint is creator caveapproach region, not every interior oilrock.",
+      "inventoryEvidence": "Oil rocks clearly filmed on cave floor, Ankylo strikes them through continuous65\u201373s. Source0s closeup establishes striped oilrock appearance; narrator identifies cave oil. No measured yield/count claimed.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/lost-oil-independent/lost-colony-safe-cave-oil-656-483.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/lost-oil-independent/lost-colony-safe-cave-oil-656-483.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=LKOZNBaoCpc",
+      "sourceTimestampURL": "https://www.youtube.com/watch?v=LKOZNBaoCpc&t=65s",
+      "sourcePlane": "Lost Colony ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-spoken filmed farming region; native map/player grid corroboration; not exact oilactor positions",
+      "mapOverlayVisible": false,
+      "creatorInsetVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "User-authorized licensed public Chrome playback captured in isolated native window; no denied download or authentication bypass",
+      "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/LKOZNBaoCpc-active-2x.mp4",
+      "sourceSHA256": "5595e3eb6182af32f17a37b28b0b4ba99e8f2e258cd86344c6a8ac29ec176327",
+      "sourceCapture": {
+        "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/LKOZNBaoCpc-active-2x.mp4",
+        "sourceSHA256": "5595e3eb6182af32f17a37b28b0b4ba99e8f2e258cd86344c6a8ac29ec176327",
+        "sourceDimensions": [
+          1184,
+          666
+        ],
+        "captureFirstFrameUTC": "2026-10-08T05:54:38.486Z",
+        "sourceAnchor": {
+          "sourceSeconds": 0.04244,
+          "UTC": "2026-10-08T05:54:50.869Z"
+        },
+        "formula": "movieSeconds = 12.383 + (sourceSeconds -0.04244) /2",
+        "sourceDurationSeconds": 140,
+        "captureDurationSeconds": 100.286,
+        "parentAcquisitionProof": "Isolated nativeChrome window553; activeURL/title plus video0terrain/Oilrock confirmed; expectedtitle WhereToFindOil matched; avgMAD7.93/no stagnationwarning;2935frames.",
+        "fullCaptureDecode": {
+          "completed": true,
+          "exitCode": 0,
+          "diagnostics": "Screen recording variable timestamps produce nonmonotonicallyincreasingDTS warnings in null muxer; no unreadablevideo packets reported. Delivery clips normalizefps30 and decodewith no diagnostics."
+        },
+        "clipConversion": "Cut actual capture seconds and setpts=2 restores natural1x source motion; no looping/interpolation."
+      },
+      "clipSHA256": "d86727ed8c6c349ebf62b705eecf1b6635e682ce74bb4dacae28a6f68ade9333",
+      "posterSHA256": "ee0d5b682d8608d795eb096cb58bbb12f8a2663eef158cbc350b7737cbc13c1e",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/lost-oil-independent/lost-colony-safe-cave-oil-656-483-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/lost-oil-independent/lost-colony-safe-cave-oil-656-483-coordinate.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true,
+        "reviewed": true,
+        "result": "All32 chronological4fps samples reviewed; continuous oilharvesting scene, no map/inventory/creator inset/caption/edit or perspective jump. Encodedclip fullydecoded exit0 withoutdiagnostics."
+      },
+      "evidenceLimitations": "Independent standard ASA LostColony guide published8Jan2026, no mod/customserver statements observed in public metadata. Coordinates cover filmed region; no guaranteed yield or permanent spawn count. Source auto captions incorrectly say LostIsland in intro/outro; actual LostColony map/terrain, title, description and release date establish edition. ",
+      "visualReviewStatus": "verified",
+      "sourceCrop": {
+        "x": 0,
+        "y": 60,
+        "width": 1100,
+        "height": 520,
+        "sourceWidth": 1184,
+        "sourceHeight": 666,
+        "reason": "Remove hotbar, top statusbar and right HUD/creatorlogo; retain oilnodes and activeharvest. Full uncropped coordinate frames retained."
+      },
+      "captureCut": {
+        "sourceStartSeconds": 65,
+        "sourceDurationSeconds": 8,
+        "captureStartSeconds": 44.861779999999996,
+        "captureDurationSeconds": 4.0,
+        "encodedDurationSeconds": 8.0,
+        "naturalSpeedRestorationFactor": 2
+      },
+      "sourcePublishedDate": "2026-01-08",
+      "sourceTitle": "Where To Find Oil on Lost Colony in ARK Survival Ascended | Secret Oil Cave!",
+      "sourceCreator": "ClickTockClock",
+      "vanillaCompatibility": {
+        "basis": "Fresh independent standardASA resourceguide shows normal LostColony game terrain/oilnodes and Ankylosaurus harvesting, with no customcave/serverpromotion in public metadata. Does not reuse uncertainRtRsourcecoords.",
+        "state": "independent-standard-ASA-footage",
+        "rtRCave69_46_4Compatibility": "Not cleared; distant creator pair not transplanted onto this independently located cave."
+      }
+    },
+    {
+      "id": "lost-colony-central-river-oil-595-586",
+      "map": "lost-colony",
+      "name": "Central canyon river oil rocks",
+      "resources": [
+        "Oil"
+      ],
+      "lat": 59.5,
+      "lon": 58.6,
+      "videoID": "LKOZNBaoCpc",
+      "startSeconds": 104.75,
+      "endSeconds": 110.75,
+      "coordinateEvidence": "Creator explicitly narrates latitude59.5 longitude58.6 at source94\u201398s. Native map96s shows nearby59.5/58.5, greenplayer aligns grid around59.5/58.6, whitehostpointer far away. Pin uses exact spoken regional pair, not falsely relabelled exact native59.5/58.5 readout.",
+      "inventoryEvidence": "Ankylo visibly strikes striped oilrocks in river; narrator identifies these rocks at source100\u2013108s. Recut begins after last first/thirdperson toggle104.75s and ends beforemap111s; no camera mode jump in delivery.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/lost-oil-independent/lost-colony-central-river-oil-595-586.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/lost-oil-independent/lost-colony-central-river-oil-595-586.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=LKOZNBaoCpc",
+      "sourceTimestampURL": "https://www.youtube.com/watch?v=LKOZNBaoCpc&t=104s",
+      "sourcePlane": "Lost Colony ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-spoken filmed farming region; native map/player grid corroboration; not exact oilactor positions",
+      "mapOverlayVisible": false,
+      "creatorInsetVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "User-authorized licensed public Chrome playback captured in isolated native window; no denied download or authentication bypass",
+      "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/LKOZNBaoCpc-active-2x.mp4",
+      "sourceSHA256": "5595e3eb6182af32f17a37b28b0b4ba99e8f2e258cd86344c6a8ac29ec176327",
+      "sourceCapture": {
+        "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/LKOZNBaoCpc-active-2x.mp4",
+        "sourceSHA256": "5595e3eb6182af32f17a37b28b0b4ba99e8f2e258cd86344c6a8ac29ec176327",
+        "sourceDimensions": [
+          1184,
+          666
+        ],
+        "captureFirstFrameUTC": "2026-10-08T05:54:38.486Z",
+        "sourceAnchor": {
+          "sourceSeconds": 0.04244,
+          "UTC": "2026-10-08T05:54:50.869Z"
+        },
+        "formula": "movieSeconds = 12.383 + (sourceSeconds -0.04244) /2",
+        "sourceDurationSeconds": 140,
+        "captureDurationSeconds": 100.286,
+        "parentAcquisitionProof": "Isolated nativeChrome window553; activeURL/title plus video0terrain/Oilrock confirmed; expectedtitle WhereToFindOil matched; avgMAD7.93/no stagnationwarning;2935frames.",
+        "fullCaptureDecode": {
+          "completed": true,
+          "exitCode": 0,
+          "diagnostics": "Screen recording variable timestamps produce nonmonotonicallyincreasingDTS warnings in null muxer; no unreadablevideo packets reported. Delivery clips normalizefps30 and decodewith no diagnostics."
+        },
+        "clipConversion": "Cut actual capture seconds and setpts=2 restores natural1x source motion; no looping/interpolation."
+      },
+      "clipSHA256": "44d5a2b903063e1feffb2059a4fa67bc1c0a58834ec605f6644a4d5df78185ce",
+      "posterSHA256": "1e77005e57a280b5da710e7850fb2d28758b28a401c32e63aa0e9c0d4a9ef677",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/lost-oil-independent/lost-colony-central-river-oil-595-586-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/lost-oil-independent/lost-colony-central-river-oil-595-586-coordinate.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true,
+        "reviewed": true,
+        "result": "All24 chronological4fps samples reviewed; continuous oilharvesting scene, no map/inventory/creator inset/caption/edit or perspective jump. Encodedclip fullydecoded exit0 withoutdiagnostics."
+      },
+      "evidenceLimitations": "Independent standard ASA LostColony guide published8Jan2026, no mod/customserver statements observed in public metadata. Coordinates cover filmed region; no guaranteed yield or permanent spawn count. Source auto captions incorrectly say LostIsland in intro/outro; actual LostColony map/terrain, title, description and release date establish edition. Spoken58.6 differs nearby native58.4\u201358.5 by0.1\u20130.2; retain regional scope.",
+      "visualReviewStatus": "verified",
+      "sourceCrop": {
+        "x": 0,
+        "y": 60,
+        "width": 1100,
+        "height": 520,
+        "sourceWidth": 1184,
+        "sourceHeight": 666,
+        "reason": "Remove hotbar, top statusbar and right HUD/creatorlogo; retain oilnodes and activeharvest. Full uncropped coordinate frames retained."
+      },
+      "captureCut": {
+        "sourceStartSeconds": 104.75,
+        "sourceDurationSeconds": 6,
+        "captureStartSeconds": 64.73678,
+        "captureDurationSeconds": 3.0,
+        "encodedDurationSeconds": 6.033333,
+        "naturalSpeedRestorationFactor": 2
+      },
+      "sourcePublishedDate": "2026-01-08",
+      "sourceTitle": "Where To Find Oil on Lost Colony in ARK Survival Ascended | Secret Oil Cave!",
+      "sourceCreator": "ClickTockClock",
+      "vanillaCompatibility": {
+        "basis": "Fresh independent standardASA resourceguide shows normal LostColony game terrain/oilnodes and Ankylosaurus harvesting, with no customcave/serverpromotion in public metadata. Does not reuse uncertainRtRsourcecoords.",
+        "state": "independent-standard-ASA-footage",
+        "rtRCave69_46_4Compatibility": "Not cleared; distant creator pair not transplanted onto this independently located cave."
+      }
+    }
+  ],
+  "heldCandidates": [],
+  "reviewedSourceRangeSeconds": [
+    0,
+    140
+  ],
+  "captureClockEvidence": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/lost-oil-independent/capture-clock-evidence.json",
+  "duplicateAudit": {
+    "existingLostOilSpots": [
+      {
+        "id": "lost-colony-southwest-oil-river",
+        "lat": 91.7,
+        "lon": 20.8,
+        "resources": [
+          "Oil"
+        ]
+      }
+    ],
+    "result": "Cave65.6/48.3 and centralriver59.5/58.6 are distinct from existing southwest river91.7/20.8. Two new regions, not second angles of same accepted region."
+  },
+  "priorRtRComparison": {
+    "heldCreatorPair": [
+      69,
+      46.4
+    ],
+    "independentCavePair": [
+      65.6,
+      48.3
+    ],
+    "observations": "Both icecave settings, but exact interior landmark match not established from available views; coordinate pairs differ. Do not promote or recount RtR69/46.4. Independent source can stand alone with its own explicit narratedposition and harvesting footage."
+  },
+  "sourceEditionAudit": "Auto-caption LostIsland words conflict with explicit videoASA LostColony title/description and unmistakable nativeLostColony city/biomemap. Source metadata published8Jan2026 after LostColony release19Dec2025. Actual map is authority.",
+  "reviewerNote": "Two new Oil region candidates with6\u20138sec clean natural1x clips. No acquisition/browser/app changes in reviewer. Nativecapturewholedecode completed; nonmonotonic screen timestamps normalized in delivery clips."
+}

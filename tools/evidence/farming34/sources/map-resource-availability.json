@@ -1,0 +1,99 @@
+{
+  "schema": "farming34-primary-availability-v1",
+  "proofLimit": "Wiki and creator metadata establish candidate availability, not three filmed farm regions or confirmed current GPS. Static resource maps omit trees, ordinary rocks, creature drops and beaver dams. Missing marker does not establish resource absence. ASE-derived mechanics require ASA footage corroboration.",
+  "maps": [
+    {
+      "map": "LostColony",
+      "url": "https://ark.wiki.gg/wiki/Resource_Map/Lost_Colony",
+      "primaryNodeMarkers": [
+        "BlackPearls",
+        "Metal",
+        "RichMetal",
+        "OrganicPolymer",
+        "Crystal",
+        "Obsidian",
+        "Oil",
+        "SilicaPearls"
+      ],
+      "sourceKind": "official community wiki map search-index text",
+      "editionCaution": "Lost Colony ASA-only expansion; map data could not load through web tool",
+      "creatorAllResourceEvidence": "Oxyw-jv19xQ; creator chapters Honey6:33 Sap6:48 RareFlower6:12 RareMushroom6:23 Chitin/CementingPaste4:05"
+    },
+    {
+      "map": "Valguero",
+      "url": "https://ark.wiki.gg/wiki/Resource_Map/Valguero",
+      "primaryNodeMarkers": [
+        "BlackPearls",
+        "Crystal",
+        "Metal",
+        "RichMetal",
+        "Obsidian",
+        "Oil",
+        "OrganicPolymer",
+        "RareFlowers",
+        "SilicaPearls"
+      ],
+      "sourceKind": "official community wiki map search-index text",
+      "editionCaution": "Map offers ASA/ASE selector, exact node-layer revision unconfirmed; creator ASA2025 footage required",
+      "additionalMechanics": {
+        "Sap": "Official wiki Sap page describes harvesting tree stumps/small-island broken trees as well as taps",
+        "source": "https://ark.wiki.gg/wiki/Sap"
+      }
+    },
+    {
+      "map": "Extinction",
+      "url": "https://ark.wiki.gg/wiki/Resource_Map/Extinction",
+      "primaryNodeMarkers": [
+        "Crystal",
+        "Metal",
+        "RichMetal",
+        "Obsidian",
+        "Oil"
+      ],
+      "sourceKind": "official community wiki map search-index text",
+      "editionCaution": "ASA/ASE selector and data-load error; static node layer does not establish no pearls",
+      "additionalMechanics": {
+        "Sap": "Official wiki Sap page describes Desert biome Joshua trees near Desert Titan Cave and Gacha production",
+        "BlackPearls": "Official wiki Black Pearl page mentions Gacha production and corrupted creature drops; ASA footage corroboration needed",
+        "sources": [
+          "https://ark.wiki.gg/wiki/Sap",
+          "https://ark.wiki.gg/wiki/Black_Pearl"
+        ]
+      },
+      "creatorAllResourceEvidence": "NE4q4JEhcGQ ASA Dec27 2024 chapters explicitly honey, sap, silica/silicate, black pearls, organic polymer/corrupted nodules; substitutes must remain labelled"
+    },
+    {
+      "map": "Aberration",
+      "url": "https://ark.wiki.gg/wiki/Black_Pearl",
+      "additionalMechanics": {
+        "BlackPearls": "Official wiki identifies harvestable black clams at Graves of the Lost",
+        "Sap": "Official wiki Sap describes redwood sap taps",
+        "OrganicPolymer": "Official wiki Dire Bear describes polymer plants on route toward Rock Drake nests",
+        "sources": [
+          "https://ark.wiki.gg/wiki/Black_Pearl",
+          "https://ark.wiki.gg/wiki/Sap",
+          "https://ark.wiki.gg/wiki/Dire_Bear"
+        ]
+      },
+      "editionCaution": "Mechanics prose includes ASE origins; confirm ASA creator footage before import",
+      "creatorMultiRegionEvidence": "NvNWqxnWrcA ASA Sep12 2024 creator chapters 0:30 Portal;1:52 green creek;3:38 FertileLake;7:10 DeepLake silica pearls"
+    },
+    {
+      "map": "Astraeos",
+      "url": "https://ark.wiki.gg/wiki/Astraeos",
+      "sourceKind": "official community wiki paid ASA map entry; explorer-map marker list",
+      "additionalEvidence": {
+        "BeaverDams": "https://ark.wiki.gg/wiki/Explorer_Map/Astraeos lists Beaver Dam marker; not direct farm GPS",
+        "SilicaPearls": "https://ark.wiki.gg/wiki/Land_of_the_Giants_(Astraeos) lists silica pearls"
+      },
+      "editionCaution": "ASA-only but launch/mod/Pyranthos revision distinction essential; early2025 guides need current region consistency proof",
+      "creatorEvidence": [
+        "j0jU5sigiMA March7 2026 organic polymer cave",
+        "4egH7mrg7eA June5 2025 cementing paste",
+        "EfLBgAbyUQo Feb17 2025 rare flowers",
+        "3zy7ph1VL_M Feb17 2025 rare mushroom",
+        "Yx7qTHpA3x4 Feb18 2025 bee cave honey/polymer"
+      ]
+    }
+  ]
+}

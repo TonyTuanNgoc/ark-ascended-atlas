@@ -1,0 +1,110 @@
+{
+  "objective": "At least three distinct source-filmed farming locations per applicable curated resource per map",
+  "status": "in-progress",
+  "deliveredBuild": 34,
+  "pendingNativeAdditions": 0,
+  "acquisition": "Normal Chrome public-video playback can be recorded in an isolated licensed window; command-line sign-in/403 restrictions were not bypassed.",
+  "currentCapture": {
+    "videoID": "bbPcUcWjWZ8",
+    "sourceMap": "valguero",
+    "status": "bounded-reference-capture-complete-awaiting-coordinate-and-crop-review",
+    "recorderVersion": 3,
+    "durationSeconds": 100.184,
+    "sourceStartSeconds": 1978.167713,
+    "playAnchorUTC": "2026-10-08T06:49:09.813Z",
+    "firstSampleUTC": "2026-10-08T06:48:51.961Z",
+    "playbackRate": 2,
+    "path": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/bbPcUcWjWZ8-bounded-late-2x.mp4"
+  },
+  "holds": [
+    {
+      "videoID": "4egH7mrg7eA",
+      "reason": "Astraeos 2025 GPS requires compatibility check against February/August 2026 expansion before integration."
+    }
+  ],
+  "remaining": "coverage.json and sources/map-resource-applicability-154.json remain authoritative; 22/154 raw pairs meet target; no unverified absence exclusions.",
+  "validAcquisitions": [
+    {
+      "videoID": "TUoB8ouWPYk",
+      "sourceMap": "aberration",
+      "status": "whole-decode-and-motion-overview-verified-reference-source",
+      "path": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/TUoB8ouWPYk-active-2x.mp4",
+      "clockManifest": "transport/TUoB8ouWPYk-clock-and-integrity.json",
+      "encodedWidth": 1184,
+      "encodedHeight": 666,
+      "duration": 695.336667,
+      "sha256": "89a04de9154c7f08156eb348694337bc53468c3b46a4d69df0fd7dc270614757",
+      "nativeYouTubeResolutionClaim": false,
+      "deliveryEligible": false,
+      "requires": "Source-time mapping, resource/GPS evidence and clean6-10secondclipQA"
+    },
+    {
+      "videoID": "Oxyw-jv19xQ",
+      "sourceMap": "lost-colony",
+      "status": "whole-decode-and-motion-overview-verified-reference-source",
+      "path": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/Oxyw-jv19xQ-active-2x.mp4",
+      "clockManifest": "transport/Oxyw-jv19xQ-clock-and-integrity.json",
+      "encodedWidth": 1184,
+      "encodedHeight": 666,
+      "duration": 330.501667,
+      "sha256": "7840598a437094947a86240c910dce4cb6f71dab8d2a738bd910012fff1a4b37",
+      "nativeYouTubeResolutionClaim": false,
+      "deliveryEligible": false,
+      "requires": "Source-time mapping, vanilla/current-map compatibility, resource/GPS evidence and clean6-10secondclipQA"
+    },
+    {
+      "videoID": "NE4q4JEhcGQ",
+      "sourceMap": "extinction",
+      "status": "whole-decode-and-method-review-verified-reference-source",
+      "path": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/NE4q4JEhcGQ-active-2x.mp4",
+      "clockManifest": "transport/NE4q4JEhcGQ-clock-and-integrity.json",
+      "encodedWidth": 1184,
+      "encodedHeight": 666,
+      "duration": 520.328333,
+      "sha256": "da7a0dd1f93f64f71bd8d3820afc4624f4dfcff10d8cddeadad2680140609cc4",
+      "nativeYouTubeResolutionClaim": false,
+      "deliveryEligible": false,
+      "approvedNewPins": 0,
+      "reviewManifest": "ext-active/reviewed-additions.json",
+      "requires": "Explicit numerical region GPS and canonical resource identity; no cursor readout or approximate chart pins"
+    }
+  ],
+  "rejectedAcquisitions": [
+    {
+      "videoID": "TUoB8ouWPYk",
+      "path": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/TUoB8ouWPYk-part1.mp4",
+      "status": "rejected-preserved",
+      "reason": "Wrong active tab; frozen4egsource cannot support Aberration reference claims."
+    },
+    {
+      "videoID": "TUoB8ouWPYk",
+      "path": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/TUoB8ouWPYk-part2.mp4",
+      "status": "rejected-preserved",
+      "reason": "Truncated prior capture; not valid full reference source."
+    }
+  ],
+  "sourceCompatibilityHolds": [
+    {
+      "videoID": "Oxyw-jv19xQ",
+      "reason": "Creator promotes PVP/PVE cluster with custom caves/systems/items, and skill-tree/harvest HUD appears. This does not establish vanilla resource coordinates. Source review agents must verify current map/resource compatibility before approving native pins.",
+      "scope": "Acquisition valid; native resource-pin authority pending independent source review."
+    }
+  ],
+  "integratedNewRegions": 52,
+  "curatedVisibleRegions": 146,
+  "totalVerifiedRegions": 156,
+  "coverage": {
+    "targetMet": 22,
+    "rawMapResourcePairs": 154,
+    "rawMissingDistinctRegions": 334,
+    "zeroCountsAreAbsenceClaims": false
+  },
+  "workspaceStorage": {
+    "logicalPath": "/Users/admin/Ascended-iPad-Dev",
+    "physicalPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/workspaces/Ascended-iPad-Dev",
+    "copyVerifiedFiles": 6529,
+    "method": "Every regular-file SHA256 and size; all paths and symlink targets matched before original-path symlink handoff",
+    "internalAvailableAfter": "11Gi",
+    "otherProjectsChanged": false
+  }
+}

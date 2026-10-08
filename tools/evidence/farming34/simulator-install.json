@@ -1,0 +1,13 @@
+{
+  "device": "20C9346D-B0E6-4239-8152-1D85ADD57BA6",
+  "bundleVersion": "34",
+  "marketingVersion": "0.33.0",
+  "launchPID": 27702,
+  "readbackAt": "2026-10-08T06:52:47.560543+00:00",
+  "deployment": "Dedicated Simulator only",
+  "appContainer": "/Volumes/TONY SSD/APP_DATA/Xcode/CoreSimulator/Devices/20C9346D-B0E6-4239-8152-1D85ADD57BA6/data/Containers/Bundle/Application/1599309C-1888-49DD-9CA6-D78419B320DE/Ascended.app",
+  "files": {
+    "resource-guides.json": "dec46ed3b3e65f7da19b33d00b1ac3ddf2647bd048fd5a8728c53d06bcf72a7c",
+    "verified-resource-spots.json": "81ee4378ca9e5011826cbd84dc627ad823d6e55fc0902c809a22b7b6c10b6575"
+  }
+}

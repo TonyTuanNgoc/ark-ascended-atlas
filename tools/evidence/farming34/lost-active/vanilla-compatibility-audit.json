@@ -1,0 +1,87 @@
+{
+  "reviewedDate": "2026-10-08",
+  "state": "source-compatibility-pending",
+  "reason": "RtRFinch source advertises Sophisticated Systems and Custom Caves in cluster promotion; this does not prove all filmed nodes modded, but exact vanilla compatibility of selected2sites is unverified.",
+  "sourcePromotionFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/lost-active/source-311.jpg",
+  "sites": [
+    {
+      "id": "lost-colony-oil-cave-69-464",
+      "creatorPair": [
+        69,
+        46.4
+      ],
+      "status": "hold",
+      "corroboration": [
+        {
+          "url": "https://www.gameshedge.com/ark-lost-colony-oil-farming-guide/",
+          "type": "secondary public guide",
+          "publishedDate": "2026-01-06",
+          "retrieval": "successful web open primary page body of secondary article",
+          "location": [
+            68.8,
+            46.3
+          ],
+          "claim": "Mountain interior cave-like area with flat oilrocks and nearbysilicapearls.",
+          "limitation": "No independent filmed matching cave/node shape observed; nearby coordinates support plausibility only, not vanilla proof."
+        },
+        {
+          "url": "https://www.layehmarket.com/blog/lost-colony-tips-and-tricks-asa",
+          "type": "secondary public guide indexed text",
+          "location": [
+            68.7,
+            46.3
+          ],
+          "claim": "Mountain cave hasoil,crystal,metal.",
+          "limitation": "No exact-site primary vanilla proof."
+        }
+      ],
+      "priorityIndependentSource": {
+        "videoID": "LKOZNBaoCpc",
+        "url": "https://www.youtube.com/watch?v=LKOZNBaoCpc",
+        "title": "Where To Find Oil on Lost Colony in ARK Survival Ascended | Secret Oil Cave!",
+        "creator": "ClickTockClock",
+        "publishedDate": "2026-01-08",
+        "durationSeconds": 141,
+        "chapterRangeSeconds": [
+          0,
+          83.119003
+        ],
+        "metadataStatus": "Public watch text inspected; no mediarequest; no custommod claim in description. Actual footage/GPS/vanilla still unobserved."
+      },
+      "backupIndependentSource": {
+        "videoID": "Cp1u_hmAIkU",
+        "url": "https://www.youtube.com/watch?v=Cp1u_hmAIkU",
+        "creator": "Teachers Game Too",
+        "publishedDate": "2025-12-20",
+        "durationSeconds": 288,
+        "chapterRangeSeconds": [
+          115.439,
+          184.89999
+        ],
+        "metadataStatus": "Public watch text only; title ASA and LostColony; generic legacyASEdescription cannot override actualASAmaprelease/title."
+      }
+    },
+    {
+      "id": "lost-colony-river-metal-crystal-859-313",
+      "creatorPair": [
+        85.9,
+        31.3
+      ],
+      "status": "hold",
+      "corroboration": [],
+      "limitation": "No exact-site independent standard ASA footage or extracted official node data verified."
+    }
+  ],
+  "priorLocalIndependentSource": {
+    "videoID": "A5IFFrpjBww",
+    "path": "/Users/admin/TonyOS_Workspace/tools/youtube-intelligence/data/downloads/A5IFFrpjBww.f399.mp4.part",
+    "containerAdvertisedDurationSeconds": 202.95,
+    "actualDecodeStatus": "Partial/truncated: firstframes10\u201340 extracted, at50s invalid AV1 OBU length fails. No later cave observation possible; containerduration mustnotbe interpreted ascompletedacquisition."
+  },
+  "gameMapAttempt": {
+    "url": "https://gamesomg.com/ark-survival-ascended-lost-colony-map/",
+    "status": "Web readable page claims game-extracted map; direct normalHTML403 stopped withoutretry",
+    "limitation": "Public page text doesnot expose exact selected resource node coordinates, cannot clearvanilla proof."
+  },
+  "conclusion": "All Lost candidates held. Do not integrate under vanilla labels until actual independentGPS/terrain/node comparison clears site."
+}

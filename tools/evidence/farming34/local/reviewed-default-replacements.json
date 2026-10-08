@@ -1,0 +1,48 @@
+{
+  "candidates": [
+    {
+      "id": "scorched-central-metal",
+      "map": "scorched-earth",
+      "name": "Central ridge metal",
+      "resources": [
+        "Metal"
+      ],
+      "lat": 48.2,
+      "lon": 63.0,
+      "videoID": "k9IOWvnWMdg",
+      "startSeconds": 48.5,
+      "endSeconds": 55.5,
+      "coordinateEvidence": "In-game map reads latitude 48.2, longitude 63.0 at 45s. This is a filmed region, not every individual resource actor.",
+      "inventoryEvidence": "The source shows a large metal ore rock and the surrounding ridge; these clips do not demonstrate a completed harvest.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/local/scorched-central-metal-replacement.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/local/scorched-central-metal-replacement.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=k9IOWvnWMdg",
+      "sourcePlane": "scorched-earth filmed region",
+      "sourceCoordinateScope": "Filmed camera/waypoint region; not every actor or permanent spawn.",
+      "mapOverlayVisible": false,
+      "creatorInsetVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "Previously approved licensed local source cache; no network acquisition",
+      "sourcePath": "/Volumes/TONY SSD/TONY_WORKSPACE/CODE/TonyOS_Workspace/tools/youtube-intelligence/data/downloads/k9IOWvnWMdg.f137.mp4.part",
+      "sourceSHA256": "d9fe63cbdf69db570b380a8ef283feb3317f89e549320ca4b1f56eaa3a09c4c8",
+      "clipSHA256": "5bfd5e4fcfc7cc4d945239eb28bbf1f968ddaff0ced5df3081f484fc2a62adbf",
+      "posterSHA256": "90317a2086800fd902afe08a69bddaa34baacd48aa4c4627904f5943b6e49ffe",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/local/scorched-central-metal-replacement-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/local/scorched-central-metal-replacement-coordinate.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true,
+        "reviewed": true,
+        "result": "Chronological4fps delivery reviewed: continuous approach and visible metallic ore; no maps, captions, inventory UI or edit cuts. Full decode passed."
+      },
+      "evidenceLimitations": "Replacement scene for existing filmed region. No permanent node count or guaranteed yield.",
+      "visualReviewStatus": "verified",
+      "sourceCrop": {
+        "filter": "scale=960:-2"
+      },
+      "existingSpotID": "scorched-central-metal"
+    }
+  ]
+}

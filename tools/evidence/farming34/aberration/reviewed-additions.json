@@ -1,0 +1,28 @@
+{
+  "additions": [],
+  "rejectedSources": [
+    {
+      "sourceFile": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/TUoB8ouWPYk-part1.mp4",
+      "sourceSHA256": "766facb2b91bbaf2e17a8699e5a44691accbeef8a56a13bd6a04a8683776e9bc",
+      "sourceURL": "https://www.youtube.com/watch?v=TUoB8ouWPYk",
+      "reason": "Captured image is frozen at yellow dragon intro. Movie30,150,300,500 show identical terrain and character pose. Pixel differences are compression noise only. No resource or GPS footage available.",
+      "sampleMovieSeconds": [
+        30,
+        150,
+        300,
+        500
+      ],
+      "meanAbsoluteChannelDifferenceTo30": [
+        0.01316857397938479,
+        0.005959929524118713,
+        0.013884238968698429
+      ],
+      "maximumChannelDifference": 4,
+      "survey": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/aberration/part1-survey.jpg",
+      "fullFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/aberration/frozen-300.jpg",
+      "captureMetadata": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/TUoB8ouWPYk-part1.mp4.capture.json",
+      "claimedTimingOffsetSeconds": 8.779933,
+      "timingVerified": false
+    }
+  ]
+}

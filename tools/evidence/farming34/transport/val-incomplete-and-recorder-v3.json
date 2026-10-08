@@ -1,0 +1,31 @@
+{
+  "status": "rejected_incomplete_capture",
+  "usableMedia": false,
+  "deliveryEligible": false,
+  "path": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/bbPcUcWjWZ8-active-2x.mp4",
+  "bytes": 995435513,
+  "ffprobeExitCode": 1,
+  "reason": "moov atom not found",
+  "observedFailure": {
+    "captureRequestedSeconds": 1130,
+    "approximateElapsedSeconds": 651,
+    "rootReportedConcurrentCaptureEnded": true,
+    "causalConclusion": "undetermined"
+  },
+  "version3Validation": {
+    "swiftCompileExitCode": 0,
+    "noCapturePerformed": true,
+    "NSErrorRedactionFixture": {
+      "code": -3811,
+      "domain": "SCStreamErrorDomain",
+      "underlying": {
+        "code": 7,
+        "domain": "UnderlyingFixture"
+      }
+    },
+    "wrongTitleDryrunExitCode": 1,
+    "sourceReviewFragmentDryrunExitCode": 0
+  },
+  "preserved": true,
+  "recordedUTC": "2026-10-08T06:15:25.767818+00:00"
+}

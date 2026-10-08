@@ -1,0 +1,52 @@
+{
+  "reviewedAt": "2026-10-08",
+  "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/resource-sources/fynix-avc/0i0-XEV85m8.mp4",
+  "sourceSHA256": "3d627343ce7e96d02326566aa68e2de0824562dbebd6fcab7e50b4feb64a8415",
+  "rightsBasis": "User-asserted licensed from approved cached source catalog",
+  "networkRequests": 0,
+  "newMediaDownloads": 0,
+  "candidates": 8,
+  "rejections": [
+    {
+      "source": "IOCye6IYUCM",
+      "reason": "Additional locations discussed on M-map without distinct filmed terrain; existing volcano/cave/oil scenes already counted."
+    },
+    {
+      "source": "5IhlD3yzqjU",
+      "reason": "Later Obsidian M-map readouts demonstrably cursor coordinates, not player; no explicit matching coordinate caption."
+    },
+    {
+      "source": "NUUaDMOqIYQ",
+      "reason": "Uncounted pearl/oil/organic-polymer terrain lacks explicit trusted GPS caption; no invented GPS."
+    },
+    {
+      "source": "0i0-XEV85m8",
+      "chapter": "Rare Mushrooms",
+      "reason": "Swamp filmed/harvested, but numeric coordinate readout obscured by title and M-map cursor not accepted."
+    },
+    {
+      "source": "0i0-XEV85m8",
+      "chapter": "Sap",
+      "reason": "Additional redwood tap filmed but no explicit numeric coordinates supplied for that separate site."
+    },
+    {
+      "source": "biZPGe9eD5Y,DgvNoRqz4EE,u_c-yTvCLek",
+      "reason": "Hive region already represented; extra nearby trees are not independent locations."
+    },
+    {
+      "source": "0i0-XEV85m8",
+      "region": "85.2/52.2 Crystal",
+      "reason": "Filmed/GPS valid but no safely isolated 6-second continuous shot after manual review; delivery rejected."
+    },
+    {
+      "source": "0i0-XEV85m8",
+      "region": "94.4/91.7 Black Pearls",
+      "reason": "Surface-to-bed edit inside tested6s approach; delivery rejected."
+    },
+    {
+      "source": "3oUZ_AoRLmg",
+      "reason": "Island Rare Mushrooms guide includes several harvest scenes, but no explicit numeric GPS for independent regions; overview map alone not accepted."
+    }
+  ],
+  "enrichments": 1
+}

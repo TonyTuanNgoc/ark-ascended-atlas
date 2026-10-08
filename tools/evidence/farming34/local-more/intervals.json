@@ -1,0 +1,56 @@
+[
+  [
+    "rag-southwest-oil-793-368",
+    "Oil",
+    79.3,
+    36.8,
+    655,
+    662,
+    655
+  ],
+  [
+    "rag-south-polymer-936-489",
+    "Organic Polymer",
+    93.6,
+    48.9,
+    789.5,
+    796.5,
+    794
+  ],
+  [
+    "rag-highland-flowers-221-776",
+    "Rare Flowers",
+    22.1,
+    77.6,
+    838,
+    844,
+    840
+  ],
+  [
+    "rag-desert-flowers-611-553",
+    "Rare Flowers",
+    61.1,
+    55.3,
+    858,
+    866,
+    862
+  ],
+  [
+    "rag-southeast-silica-874-730",
+    "Silica Pearls",
+    87.4,
+    73,
+    1049,
+    1056,
+    1050
+  ],
+  [
+    "rag-southeast-black-944-917",
+    "Black Pearls",
+    94.4,
+    91.7,
+    221.2,
+    227.2,
+    222
+  ]
+]

@@ -1,0 +1,12 @@
+{
+  "regionID": "center-cache-metal-15-503",
+  "mergedClipID": "center-cache-obsidian-15-503",
+  "lat": 15,
+  "lon": 50.3,
+  "resources": [
+    "Metal",
+    "Obsidian"
+  ],
+  "distinctNewRegions": 23,
+  "clips": 24
+}

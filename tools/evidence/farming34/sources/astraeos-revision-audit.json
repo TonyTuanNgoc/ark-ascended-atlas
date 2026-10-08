@@ -1,0 +1,1520 @@
+{
+  "schema": "farming34-astraeos-revision-audit-v1",
+  "checkedAt": "2026-10-08",
+  "coordinateCompatibilityConclusion": "UNVERIFIED. Neither official update announcement specifies a GPS coordinate transform or promises old coordinates remain stable. Lack of such a statement is not confirmation of compatibility.",
+  "specific2025Source": {
+    "videoId": "4egH7mrg7eA",
+    "publishedDate": "2025-06-05",
+    "rootFilmedGps": {
+      "lat": 42.0,
+      "lon": 75.3
+    },
+    "resource": "CementingPaste",
+    "sourceEvidence": "Parent normal-playback review; research agent did not inspect footage",
+    "currentGpsCompatibility": "not proven",
+    "recommendedStatus": "retain old-version provenance; do not promote as current until current filmed GPS or current official-partner node/landmark correspondence verified"
+  },
+  "officialRevisions": [
+    {
+      "date": "2025-02-14",
+      "revision": "Official Partner DLC launch, previously premium/mod development",
+      "source": "https://survivetheark.com/index.php?/forums/topic/771425-astraeos-and-love-ascended-are-live/",
+      "supportedFacts": [
+        "Astraeos launches as fully integrated DLC",
+        "Ever-expanding map described as264square-km"
+      ],
+      "coordinateStabilityStatement": null
+    },
+    {
+      "date": "2026-02-25",
+      "revision": "Pyranthos Mega Update",
+      "source": "https://survivetheark.com/index.php?/forums/topic/773697-astraeos-mega-update-is-now-live/",
+      "supportedFacts": [
+        "Pyranthos new desert landmass",
+        "Five new artifact caves plus Rhyniognatha drone nest",
+        "New ocean spawn entries",
+        "Bee cave materials fixed; lighting and landscape changes"
+      ],
+      "coordinateStabilityStatement": null
+    },
+    {
+      "date": "2026-08-27",
+      "revision": "Heaven & Abyss / Astraeos1.0 narrative; patch label Official Release v0.1.4",
+      "source": "https://survivetheark.com/index.php?/forums/topic/774170-astraeos-heaven-abyss-update-is-now-live/",
+      "supportedFacts": [
+        "Helianthos new island",
+        "Abyssanthos new deep sea air-pocket region",
+        "New ocean wave physics",
+        "New spawners and mesh fixes"
+      ],
+      "coordinateStabilityStatement": null
+    }
+  ],
+  "officialPartnerCurrentResourceLayer": {
+    "source": "https://server.nitrado.net/en-GB/ark-survival-ascended-wiki/map/astraeos",
+    "observedLabels": [
+      "SilicaPearls",
+      "Metal",
+      "RichMetal",
+      "Crystal",
+      "Oil",
+      "Obsidian",
+      "CementingPaste",
+      "RareFlowers",
+      "RareMushrooms",
+      "Honey",
+      "BlackPearls",
+      "Polymer",
+      "BeaverDam"
+    ],
+    "coordinateReadback": "Page text shows Lat/Lon placeholder only, interactive dataset not exposed in web text; direct ordinary HTML fetch403, no alternate identity/bypass attempted",
+    "limits": [
+      "Label availability does not prove specific node coordinates",
+      "Polymer label requires verifying organic vs crafted type",
+      "Sap and Chitin not listed does not imply absence"
+    ]
+  },
+  "postFebruary2026Evidence": [
+    {
+      "videoId": "j0jU5sigiMA",
+      "title": "The BEST NEW Organic Polymer Farm Cave in ASTRAEOS | ARK Survival Ascended",
+      "publishedDate": "2026-03-07",
+      "duration": 199,
+      "resourceMentions": [
+        "OrganicPolymer"
+      ],
+      "gpsInCreatorDescription": [],
+      "chapters": []
+    },
+    {
+      "videoId": "7-TpuLb1KNI",
+      "title": "Astraeos OVERPOWERED Obsidian and Crystal Farm in ARK Survival Ascended",
+      "publishedDate": "2026-04-17",
+      "duration": 211,
+      "resourceMentions": [
+        "Crystal",
+        "Obsidian"
+      ],
+      "gpsInCreatorDescription": [],
+      "chapters": []
+    },
+    {
+      "videoId": "9GhzctIGY7g",
+      "title": "Ubicaci\u00f3n de NUEVOS DINOS y recursos en ASTRAEOS | ARK Ascended",
+      "publishedDate": "2026-02-27",
+      "duration": 420,
+      "resourceMentions": [
+        "Metal"
+      ],
+      "gpsInCreatorDescription": [],
+      "chapters": [
+        {
+          "title": "Introducci\u00f3n",
+          "timeDescription": "0:00",
+          "startSeconds": 0,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [],
+          "endSeconds": 18
+        },
+        {
+          "title": "Cueva de Rhyniognathas y Pol\u00edmero",
+          "timeDescription": "0:18",
+          "startSeconds": 18,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [],
+          "endSeconds": 120
+        },
+        {
+          "title": "Rock Drake, Metal y Gema Azul",
+          "timeDescription": "2:00",
+          "startSeconds": 120,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Metal"
+          ],
+          "endSeconds": 205
+        },
+        {
+          "title": "Pulmonoscorpius King y Queen, y Veneno",
+          "timeDescription": "3:25",
+          "startSeconds": 205,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [],
+          "endSeconds": 248
+        },
+        {
+          "title": "Dragones",
+          "timeDescription": "4:08",
+          "startSeconds": 248,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [],
+          "endSeconds": 268
+        },
+        {
+          "title": "Desmodus Cueva1",
+          "timeDescription": "4:28",
+          "startSeconds": 268,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [],
+          "endSeconds": 293
+        },
+        {
+          "title": "Desmodus Cueva2",
+          "timeDescription": "4:53",
+          "startSeconds": 293,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [],
+          "endSeconds": 316
+        },
+        {
+          "title": "Desmodus Cueva3",
+          "timeDescription": "5:16",
+          "startSeconds": 316,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [],
+          "endSeconds": 329
+        },
+        {
+          "title": "Oasisaurio",
+          "timeDescription": "5:29",
+          "startSeconds": 329,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [],
+          "endSeconds": 338
+        },
+        {
+          "title": "F\u00e9nix",
+          "timeDescription": "5:38",
+          "startSeconds": 338,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [],
+          "endSeconds": 344
+        },
+        {
+          "title": "Grand Tortugar",
+          "timeDescription": "5:44",
+          "startSeconds": 344,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [],
+          "endSeconds": 372
+        },
+        {
+          "title": "Despedida",
+          "timeDescription": "6:12",
+          "startSeconds": 372,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [],
+          "endSeconds": 376
+        },
+        {
+          "title": "Bonus",
+          "timeDescription": "6:16",
+          "startSeconds": 376,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [],
+          "endSeconds": 420
+        }
+      ]
+    },
+    {
+      "videoId": "CVq9atQWVU4",
+      "title": "Astraeos Pyranthos Walkthrough Explained \u2013 Everything You Need to Know | Ark Survival Ascended",
+      "publishedDate": "2026-02-26",
+      "duration": 541,
+      "resourceMentions": [],
+      "gpsInCreatorDescription": [],
+      "chapters": [
+        {
+          "title": "Starting areas and shores",
+          "timeDescription": "0:00",
+          "startSeconds": 0,
+          "provenance": "YouTube chapter metadata; may be auto-generated",
+          "candidateResources": [],
+          "endSeconds": 73.966003
+        },
+        {
+          "title": "Red obelisk features",
+          "timeDescription": "1:13",
+          "startSeconds": 73.966003,
+          "provenance": "YouTube chapter metadata; may be auto-generated",
+          "candidateResources": [],
+          "endSeconds": 108.3
+        },
+        {
+          "title": "Server promotion and details",
+          "timeDescription": "1:48",
+          "startSeconds": 108.3,
+          "provenance": "YouTube chapter metadata; may be auto-generated",
+          "candidateResources": [],
+          "endSeconds": 180.26601
+        },
+        {
+          "title": "The oasis",
+          "timeDescription": "3:00",
+          "startSeconds": 180.26601,
+          "provenance": "YouTube chapter metadata; may be auto-generated",
+          "candidateResources": [],
+          "endSeconds": 222.666
+        },
+        {
+          "title": "Shallow desert exploration",
+          "timeDescription": "3:42",
+          "startSeconds": 222.666,
+          "provenance": "YouTube chapter metadata; may be auto-generated",
+          "candidateResources": [],
+          "endSeconds": 279.70001
+        },
+        {
+          "title": "The city of Minas Tirith",
+          "timeDescription": "4:39",
+          "startSeconds": 279.70001,
+          "provenance": "YouTube chapter metadata; may be auto-generated",
+          "candidateResources": [],
+          "endSeconds": 313.039
+        },
+        {
+          "title": "Mountain ranges",
+          "timeDescription": "5:13",
+          "startSeconds": 313.039,
+          "provenance": "YouTube chapter metadata; may be auto-generated",
+          "candidateResources": [],
+          "endSeconds": 355.79999
+        },
+        {
+          "title": "Sulfur fields",
+          "timeDescription": "5:55",
+          "startSeconds": 355.79999,
+          "provenance": "YouTube chapter metadata; may be auto-generated",
+          "candidateResources": [],
+          "endSeconds": 397.10001
+        },
+        {
+          "title": "Wyvern trench",
+          "timeDescription": "6:37",
+          "startSeconds": 397.10001,
+          "provenance": "YouTube chapter metadata; may be auto-generated",
+          "candidateResources": [],
+          "endSeconds": 436.83301
+        },
+        {
+          "title": "Minotaurus labyrinth",
+          "timeDescription": "7:16",
+          "startSeconds": 436.83301,
+          "provenance": "YouTube chapter metadata; may be auto-generated",
+          "candidateResources": [],
+          "endSeconds": 472.83301
+        },
+        {
+          "title": "The canyon",
+          "timeDescription": "7:52",
+          "startSeconds": 472.83301,
+          "provenance": "YouTube chapter metadata; may be auto-generated",
+          "candidateResources": [],
+          "endSeconds": 497.16599
+        },
+        {
+          "title": "Deep desert and conclusion",
+          "timeDescription": "8:17",
+          "startSeconds": 497.16599,
+          "provenance": "YouTube chapter metadata; may be auto-generated",
+          "candidateResources": [],
+          "endSeconds": 541
+        }
+      ]
+    },
+    {
+      "videoId": "surbuXTdTEU",
+      "title": "FULL Pyranthos, Astraeos MEGA Update, Everything You Need To Know | Ark Survival Ascended",
+      "publishedDate": "2026-03-01",
+      "duration": 997,
+      "resourceMentions": [
+        "BlackPearls",
+        "CementingPaste",
+        "Chitin",
+        "Metal",
+        "Oil",
+        "OrganicPolymer",
+        "RareFlowers",
+        "SilicaPearls"
+      ],
+      "gpsInCreatorDescription": [],
+      "chapters": [
+        {
+          "title": "Intro",
+          "timeDescription": "0:00",
+          "startSeconds": 0,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [],
+          "endSeconds": 51
+        },
+        {
+          "title": "Bioms",
+          "timeDescription": "0:51",
+          "startSeconds": 51,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [],
+          "endSeconds": 300
+        },
+        {
+          "title": "Resources",
+          "timeDescription": "5:00",
+          "startSeconds": 300,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [],
+          "endSeconds": 319
+        },
+        {
+          "title": "Metal",
+          "timeDescription": "5:19",
+          "startSeconds": 319,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Metal"
+          ],
+          "endSeconds": 344
+        },
+        {
+          "title": "Organic Polymer / Chitin",
+          "timeDescription": "5:44",
+          "startSeconds": 344,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Chitin",
+            "OrganicPolymer"
+          ],
+          "endSeconds": 401
+        },
+        {
+          "title": "Silica Pearls / Black Pearls / Cementing Paste",
+          "timeDescription": "6:41",
+          "startSeconds": 401,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "BlackPearls",
+            "CementingPaste",
+            "SilicaPearls"
+          ],
+          "endSeconds": 447
+        },
+        {
+          "title": "Sulfur",
+          "timeDescription": "7:27",
+          "startSeconds": 447,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [],
+          "endSeconds": 470
+        },
+        {
+          "title": "Rare Flowers",
+          "timeDescription": "7:50",
+          "startSeconds": 470,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "RareFlowers"
+          ],
+          "endSeconds": 490
+        },
+        {
+          "title": "Oil / Hide / Spoiled Meat",
+          "timeDescription": "8:10",
+          "startSeconds": 490,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Oil"
+          ],
+          "endSeconds": 504
+        },
+        {
+          "title": "Creatures",
+          "timeDescription": "8:24",
+          "startSeconds": 504,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [],
+          "endSeconds": 514
+        },
+        {
+          "title": "Desmodus",
+          "timeDescription": "8:34",
+          "startSeconds": 514,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [],
+          "endSeconds": 524
+        },
+        {
+          "title": "Rock Drakes",
+          "timeDescription": "8:44",
+          "startSeconds": 524,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [],
+          "endSeconds": 540
+        },
+        {
+          "title": "Grand Tortuga",
+          "timeDescription": "9:00",
+          "startSeconds": 540,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [],
+          "endSeconds": 569
+        },
+        {
+          "title": "Oasisaurus",
+          "timeDescription": "9:29",
+          "startSeconds": 569,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [],
+          "endSeconds": 588
+        },
+        {
+          "title": "Fire-, Poison-, Lightning Wyvern (also Pyromanes)",
+          "timeDescription": "9:48",
+          "startSeconds": 588,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [],
+          "endSeconds": 605
+        },
+        {
+          "title": "Phoenix",
+          "timeDescription": "10:05",
+          "startSeconds": 605,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [],
+          "endSeconds": 622
+        },
+        {
+          "title": "Rock Elemental",
+          "timeDescription": "10:22",
+          "startSeconds": 622,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [],
+          "endSeconds": 634
+        },
+        {
+          "title": "Scorpion King & Queen",
+          "timeDescription": "10:34",
+          "startSeconds": 634,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [],
+          "endSeconds": 652
+        },
+        {
+          "title": "Loot",
+          "timeDescription": "10:52",
+          "startSeconds": 652,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [],
+          "endSeconds": 664
+        },
+        {
+          "title": "Astral Scorpion King & Queen",
+          "timeDescription": "11:04",
+          "startSeconds": 664,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [],
+          "endSeconds": 695
+        },
+        {
+          "title": "Red Desert Drops / Desert Beacons Locations",
+          "timeDescription": "11:35",
+          "startSeconds": 695,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [],
+          "endSeconds": 736
+        },
+        {
+          "title": "Artifacts",
+          "timeDescription": "12:16",
+          "startSeconds": 736,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [],
+          "endSeconds": 753
+        },
+        {
+          "title": "Artifact of the Crag & Gatekeeper",
+          "timeDescription": "12:33",
+          "startSeconds": 753,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [],
+          "endSeconds": 763
+        },
+        {
+          "title": "Artifact of the Destroyer",
+          "timeDescription": "12:43",
+          "startSeconds": 763,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [],
+          "endSeconds": 866
+        },
+        {
+          "title": "Artifact of the Strong / Minotaur",
+          "timeDescription": "14:26",
+          "startSeconds": 866,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [],
+          "endSeconds": 997
+        }
+      ]
+    },
+    {
+      "videoId": "vtgZLVyfAIY",
+      "title": "Where to Find EVERY Oil Vein on Astraeos | Ark Survival Ascended",
+      "publishedDate": "2026-04-10",
+      "duration": 1481,
+      "resourceMentions": [
+        "Oil"
+      ],
+      "gpsInCreatorDescription": [
+        {
+          "latitude": 97.5,
+          "longitude": 44.8,
+          "line": "00:00 Pyranthos Oil Vein 1 Lat 97.5 Lon 44.8"
+        },
+        {
+          "latitude": 99.6,
+          "longitude": 45.7,
+          "line": "0:27 Pyranthos Oil Vein 2 Lat 99.6 Lon 45.7"
+        },
+        {
+          "latitude": 97.5,
+          "longitude": 50.4,
+          "line": "0:56 Pyranthos Oil Vein 3 & 4 Lat 97.5 Lon 50.4"
+        },
+        {
+          "latitude": 93.2,
+          "longitude": 47.2,
+          "line": "1:39 Pyranthos Oil Vein 5 Lat 93.2 Lon 47.2"
+        },
+        {
+          "latitude": 94.0,
+          "longitude": 64.1,
+          "line": "2:11 Pyranthos Oil Vein 6 Lat 94 Lon 64.1"
+        },
+        {
+          "latitude": 92.9,
+          "longitude": 64.2,
+          "line": "2:54 Pyranthos Oil Vein 7 & 8 Lat 92.9 Lon 64.2"
+        },
+        {
+          "latitude": 89.5,
+          "longitude": 67.2,
+          "line": "3:29 Pyranthos Oil Vein 9 Lat 89.5 Lon 67.2"
+        },
+        {
+          "latitude": 89.2,
+          "longitude": 68.3,
+          "line": "4:06 Pyranthos Oil Vein 10 Lat 89.2 Lon 68.3"
+        },
+        {
+          "latitude": 100.6,
+          "longitude": 75.1,
+          "line": "4:30 Pyranthos Oil Vein 11 Lat 100.6 Lon 75.1"
+        },
+        {
+          "latitude": 98.9,
+          "longitude": 77.0,
+          "line": "5:18 Pyranthos Oil Vein 12 & 13 Lat 98.9 Lon 77"
+        },
+        {
+          "latitude": 93.8,
+          "longitude": 96.3,
+          "line": "5:54 Pyranthos Oil Vein 14 & 15 Lat 93.8 Lon 96.3"
+        },
+        {
+          "latitude": 90.9,
+          "longitude": 96.0,
+          "line": "6:40 Pyranthos Oil Vein 16 Lat 90.9 Lon 96"
+        },
+        {
+          "latitude": 91.3,
+          "longitude": 95.7,
+          "line": "7:04 Pyranthos Oil Vein 17 Lat 91.3 Lon 95.7"
+        },
+        {
+          "latitude": 92.5,
+          "longitude": 94.4,
+          "line": "7:22 Pyranthos Oil Vein 18 Lat 92.5 Lon 94.4"
+        },
+        {
+          "latitude": 89.4,
+          "longitude": 93.0,
+          "line": "7:46 Pyranthos Oil Vein 19 Lat 89.4 Lon 93"
+        },
+        {
+          "latitude": 89.6,
+          "longitude": 92.9,
+          "line": "8:14 Pyranthos Oil Vein 20 Lat 89.6 Lon 92.9"
+        },
+        {
+          "latitude": 89.9,
+          "longitude": 91.5,
+          "line": "8:32 Pyranthos Oil Vein 21 Lat 89.9 Lon 91.5"
+        },
+        {
+          "latitude": 90.0,
+          "longitude": 91.6,
+          "line": "8:51 Pyranthos Oil Vein 22 Lat 90 Lon 91.6"
+        },
+        {
+          "latitude": 83.0,
+          "longitude": 90.9,
+          "line": "9:04 Pyranthos Oil Vein 23 Lat 83 Lon 90.9"
+        },
+        {
+          "latitude": 82.9,
+          "longitude": 91.1,
+          "line": "9:26 Pyranthos Oil Vein 24 Lat 82.9 Lon 91.1"
+        },
+        {
+          "latitude": 81.5,
+          "longitude": 90.8,
+          "line": "9:41 Pyranthos Oil Vein 25 Lat 81.5 Lon 90.8"
+        },
+        {
+          "latitude": 81.3,
+          "longitude": 90.9,
+          "line": "10:03 Pyranthos Oil Vein 26 Lat 81.3 Lon 90.9"
+        },
+        {
+          "latitude": 14.8,
+          "longitude": 98.3,
+          "line": "10:18 Lemnokis Oil Vein 27 Lat 14.8 Lon 98.3"
+        },
+        {
+          "latitude": 1.4,
+          "longitude": 101.3,
+          "line": "10:44 Lemnokis Oil Vein 28 Lat 1.4 Lon 101.3"
+        },
+        {
+          "latitude": 1.1,
+          "longitude": 100.9,
+          "line": "11:14 Lemnokis Oil Vein 29 Lat 1.1 Lon 100.9"
+        },
+        {
+          "latitude": 3.7,
+          "longitude": 93.5,
+          "line": "11:34 Lemnokis Oil Vein 30 Lat 3.7 Lon 93.5"
+        },
+        {
+          "latitude": 3.4,
+          "longitude": 93.7,
+          "line": "12:08 Lemnokis Oil Vein 31 Lat 3.4 Lon 93.7"
+        },
+        {
+          "latitude": 1.9,
+          "longitude": 93.3,
+          "line": "12:40 Lemnokis Oil Vein 32 Lat 1.9 Lon 93.3"
+        },
+        {
+          "latitude": 1.1,
+          "longitude": 88.7,
+          "line": "13:03 Lemnokis Oil Vein 33 Lat 1.1 Lon 88.7"
+        },
+        {
+          "latitude": 9.0,
+          "longitude": 73.4,
+          "line": "13:38 Lemnokis Oil Vein 34 Lat 9 Lon 73.4"
+        },
+        {
+          "latitude": 12.4,
+          "longitude": 78.8,
+          "line": "14:10 Lemnokis Oil Vein 35 Lat 12.4 Lon 78.8"
+        },
+        {
+          "latitude": 12.5,
+          "longitude": 78.7,
+          "line": "14:36 Lemnokis Oil Vein 36 Lat 12.5 Lon 78.7"
+        },
+        {
+          "latitude": 12.9,
+          "longitude": 74.8,
+          "line": "14:51 Lemnokis Oil Vein 37 Lat 12.9 Lon 74.8"
+        },
+        {
+          "latitude": 13.7,
+          "longitude": 74.5,
+          "line": "15:15 Lemnokis Oil Vein 38 Lat 13.7 Lon 74.5"
+        },
+        {
+          "latitude": 13.4,
+          "longitude": 63.4,
+          "line": "15:38 Lemnokis Oil Vein 39 Lat 13.4 Lon 63.4"
+        },
+        {
+          "latitude": 12.5,
+          "longitude": 63.6,
+          "line": "16:06 Lemnokis Oil Vein 40 Lat 12.5 Lon 63.6"
+        },
+        {
+          "latitude": 12.5,
+          "longitude": 62.3,
+          "line": "16:24 Lemnokis Oil Vein 41 Lat 12.5 Lon 62.3"
+        },
+        {
+          "latitude": 13.4,
+          "longitude": 63.0,
+          "line": "16:45 Lemnokis Oil Vein 42 Lat 13.4 Lon 63"
+        },
+        {
+          "latitude": 14.5,
+          "longitude": 62.8,
+          "line": "17:06 Lemnokis Oil Vein 43 Lat 14.5 Lon 62.8"
+        },
+        {
+          "latitude": 15.9,
+          "longitude": 63.4,
+          "line": "17:25 Lemnokis Oil Vein 44 Lat 15.9 Lon 63.4"
+        },
+        {
+          "latitude": 0.8,
+          "longitude": 25.0,
+          "line": "17:40 Phokintos Oil Vein 45 Lat 0.8 Lon 25"
+        },
+        {
+          "latitude": 1.9,
+          "longitude": 24.0,
+          "line": "18:02 Phokintos Oil Vein 46 Lat 1.9 Lon 24"
+        },
+        {
+          "latitude": 2.1,
+          "longitude": 23.5,
+          "line": "18:21 Phokintos Oil Vein 47 Lat 2.1 Lon 23.5"
+        },
+        {
+          "latitude": 1.8,
+          "longitude": 14.6,
+          "line": "18:42 Phokintos Oil Vein 48 Lat 1.8 Lon 14.6"
+        },
+        {
+          "latitude": 0.2,
+          "longitude": 1.4,
+          "line": "19:10 Phokintos Oil Vein 49 Lat 0.2 Lon 1.4"
+        },
+        {
+          "latitude": 0.4,
+          "longitude": 0.6,
+          "line": "19:41 Phokintos Oil Vein 50 Lat 0.4 Lon 0.6"
+        },
+        {
+          "latitude": 1.8,
+          "longitude": 0.7,
+          "line": "19:56 Phokintos Oil Vein 51 Lat 1.8 Lon 0.7"
+        },
+        {
+          "latitude": 8.7,
+          "longitude": 2.6,
+          "line": "20:19 Phokintos Oil Vein 52 Lat 8.7 Lon 2.6"
+        },
+        {
+          "latitude": 11.4,
+          "longitude": 7.6,
+          "line": "20:47 Phokintos Oil Vein 53 Lat 11.4 Lon 7.6"
+        },
+        {
+          "latitude": 16.0,
+          "longitude": 2.4,
+          "line": "21:20 Phokintos Oil Vein 54 Lat 16 Lon 2.4"
+        },
+        {
+          "latitude": 16.2,
+          "longitude": 8.7,
+          "line": "21:54 Phokintos Oil Vein 55 Lat 16.2 Lon 8.7"
+        },
+        {
+          "latitude": 16.1,
+          "longitude": 9.9,
+          "line": "22:22 Phokintos Oil Vein 56 Lat 16.1 Lon 9.9"
+        },
+        {
+          "latitude": 13.5,
+          "longitude": 16.5,
+          "line": "22:38 Phokintos Oil Vein 57 Lat 13.5 Lon 16.5"
+        },
+        {
+          "latitude": 15.2,
+          "longitude": 19.1,
+          "line": "23:09 Phokintos Oil Vein 58 Lat 15.2 Lon 19.1"
+        },
+        {
+          "latitude": 15.7,
+          "longitude": 23.1,
+          "line": "23:39 Phokintos Oil Vein 59 & 60 Lat 15.7 Lon 23.1"
+        },
+        {
+          "latitude": 6.6,
+          "longitude": 17.3,
+          "line": "24:03 Phokintos Oil Vein 61 Lat 6.6 Lon 17.3"
+        }
+      ],
+      "chapters": [
+        {
+          "title": "Pyranthos Oil Vein 1 Lat 97.5 Lon 44.8",
+          "timeDescription": "0:00",
+          "startSeconds": 0,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Oil"
+          ],
+          "endSeconds": 27
+        },
+        {
+          "title": "Pyranthos Oil Vein 2 Lat 99.6 Lon 45.7",
+          "timeDescription": "0:27",
+          "startSeconds": 27,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Oil"
+          ],
+          "endSeconds": 56
+        },
+        {
+          "title": "Pyranthos Oil Vein 3 & 4 Lat 97.5 Lon 50.4",
+          "timeDescription": "0:56",
+          "startSeconds": 56,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Oil"
+          ],
+          "endSeconds": 99
+        },
+        {
+          "title": "Pyranthos Oil Vein 5 Lat 93.2 Lon 47.2",
+          "timeDescription": "1:39",
+          "startSeconds": 99,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Oil"
+          ],
+          "endSeconds": 131
+        },
+        {
+          "title": "Pyranthos Oil Vein 6 Lat 94 Lon 64.1",
+          "timeDescription": "2:11",
+          "startSeconds": 131,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Oil"
+          ],
+          "endSeconds": 174
+        },
+        {
+          "title": "Pyranthos Oil Vein 7 & 8 Lat 92.9 Lon 64.2",
+          "timeDescription": "2:54",
+          "startSeconds": 174,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Oil"
+          ],
+          "endSeconds": 209
+        },
+        {
+          "title": "Pyranthos Oil Vein 9 Lat 89.5 Lon 67.2",
+          "timeDescription": "3:29",
+          "startSeconds": 209,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Oil"
+          ],
+          "endSeconds": 246
+        },
+        {
+          "title": "Pyranthos Oil Vein 10 Lat 89.2 Lon 68.3",
+          "timeDescription": "4:06",
+          "startSeconds": 246,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Oil"
+          ],
+          "endSeconds": 270
+        },
+        {
+          "title": "Pyranthos Oil Vein 11 Lat 100.6 Lon 75.1",
+          "timeDescription": "4:30",
+          "startSeconds": 270,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Oil"
+          ],
+          "endSeconds": 318
+        },
+        {
+          "title": "Pyranthos Oil Vein 12 & 13 Lat 98.9 Lon 77",
+          "timeDescription": "5:18",
+          "startSeconds": 318,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Oil"
+          ],
+          "endSeconds": 354
+        },
+        {
+          "title": "Pyranthos Oil Vein 14 & 15 Lat 93.8 Lon 96.3",
+          "timeDescription": "5:54",
+          "startSeconds": 354,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Oil"
+          ],
+          "endSeconds": 400
+        },
+        {
+          "title": "Pyranthos Oil Vein 16 Lat 90.9 Lon 96",
+          "timeDescription": "6:40",
+          "startSeconds": 400,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Oil"
+          ],
+          "endSeconds": 424
+        },
+        {
+          "title": "Pyranthos Oil Vein 17 Lat 91.3 Lon 95.7",
+          "timeDescription": "7:04",
+          "startSeconds": 424,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Oil"
+          ],
+          "endSeconds": 442
+        },
+        {
+          "title": "Pyranthos Oil Vein 18 Lat 92.5 Lon 94.4",
+          "timeDescription": "7:22",
+          "startSeconds": 442,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Oil"
+          ],
+          "endSeconds": 466
+        },
+        {
+          "title": "Pyranthos Oil Vein 19 Lat 89.4 Lon 93",
+          "timeDescription": "7:46",
+          "startSeconds": 466,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Oil"
+          ],
+          "endSeconds": 494
+        },
+        {
+          "title": "Pyranthos Oil Vein 20 Lat 89.6 Lon 92.9",
+          "timeDescription": "8:14",
+          "startSeconds": 494,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Oil"
+          ],
+          "endSeconds": 512
+        },
+        {
+          "title": "Pyranthos Oil Vein 21 Lat 89.9 Lon 91.5",
+          "timeDescription": "8:32",
+          "startSeconds": 512,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Oil"
+          ],
+          "endSeconds": 531
+        },
+        {
+          "title": "Pyranthos Oil Vein 22 Lat 90 Lon 91.6",
+          "timeDescription": "8:51",
+          "startSeconds": 531,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Oil"
+          ],
+          "endSeconds": 544
+        },
+        {
+          "title": "Pyranthos Oil Vein 23 Lat 83 Lon 90.9",
+          "timeDescription": "9:04",
+          "startSeconds": 544,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Oil"
+          ],
+          "endSeconds": 566
+        },
+        {
+          "title": "Pyranthos Oil Vein 24 Lat 82.9 Lon 91.1",
+          "timeDescription": "9:26",
+          "startSeconds": 566,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Oil"
+          ],
+          "endSeconds": 581
+        },
+        {
+          "title": "Pyranthos Oil Vein 25 Lat 81.5 Lon 90.8",
+          "timeDescription": "9:41",
+          "startSeconds": 581,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Oil"
+          ],
+          "endSeconds": 603
+        },
+        {
+          "title": "Pyranthos Oil Vein 26 Lat 81.3 Lon 90.9",
+          "timeDescription": "10:03",
+          "startSeconds": 603,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Oil"
+          ],
+          "endSeconds": 618
+        },
+        {
+          "title": "Lemnokis Oil Vein 27 Lat 14.8 Lon 98.3",
+          "timeDescription": "10:18",
+          "startSeconds": 618,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Oil"
+          ],
+          "endSeconds": 644
+        },
+        {
+          "title": "Lemnokis Oil Vein 28 Lat 1.4 Lon 101.3",
+          "timeDescription": "10:44",
+          "startSeconds": 644,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Oil"
+          ],
+          "endSeconds": 674
+        },
+        {
+          "title": "Lemnokis Oil Vein 29 Lat 1.1 Lon 100.9",
+          "timeDescription": "11:14",
+          "startSeconds": 674,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Oil"
+          ],
+          "endSeconds": 694
+        },
+        {
+          "title": "Lemnokis Oil Vein 30 Lat 3.7 Lon 93.5",
+          "timeDescription": "11:34",
+          "startSeconds": 694,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Oil"
+          ],
+          "endSeconds": 728
+        },
+        {
+          "title": "Lemnokis Oil Vein 31 Lat 3.4 Lon 93.7",
+          "timeDescription": "12:08",
+          "startSeconds": 728,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Oil"
+          ],
+          "endSeconds": 760
+        },
+        {
+          "title": "Lemnokis Oil Vein 32 Lat 1.9 Lon 93.3",
+          "timeDescription": "12:40",
+          "startSeconds": 760,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Oil"
+          ],
+          "endSeconds": 783
+        },
+        {
+          "title": "Lemnokis Oil Vein 33 Lat 1.1 Lon 88.7",
+          "timeDescription": "13:03",
+          "startSeconds": 783,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Oil"
+          ],
+          "endSeconds": 818
+        },
+        {
+          "title": "Lemnokis Oil Vein 34 Lat 9 Lon 73.4",
+          "timeDescription": "13:38",
+          "startSeconds": 818,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Oil"
+          ],
+          "endSeconds": 850
+        },
+        {
+          "title": "Lemnokis Oil Vein 35 Lat 12.4 Lon 78.8",
+          "timeDescription": "14:10",
+          "startSeconds": 850,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Oil"
+          ],
+          "endSeconds": 876
+        },
+        {
+          "title": "Lemnokis Oil Vein 36 Lat 12.5 Lon 78.7",
+          "timeDescription": "14:36",
+          "startSeconds": 876,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Oil"
+          ],
+          "endSeconds": 891
+        },
+        {
+          "title": "Lemnokis Oil Vein 37 Lat 12.9 Lon 74.8",
+          "timeDescription": "14:51",
+          "startSeconds": 891,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Oil"
+          ],
+          "endSeconds": 915
+        },
+        {
+          "title": "Lemnokis Oil Vein 38 Lat 13.7 Lon 74.5",
+          "timeDescription": "15:15",
+          "startSeconds": 915,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Oil"
+          ],
+          "endSeconds": 938
+        },
+        {
+          "title": "Lemnokis Oil Vein 39 Lat 13.4 Lon 63.4",
+          "timeDescription": "15:38",
+          "startSeconds": 938,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Oil"
+          ],
+          "endSeconds": 966
+        },
+        {
+          "title": "Lemnokis Oil Vein 40 Lat 12.5 Lon 63.6",
+          "timeDescription": "16:06",
+          "startSeconds": 966,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Oil"
+          ],
+          "endSeconds": 984
+        },
+        {
+          "title": "Lemnokis Oil Vein 41 Lat 12.5 Lon 62.3",
+          "timeDescription": "16:24",
+          "startSeconds": 984,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Oil"
+          ],
+          "endSeconds": 1005
+        },
+        {
+          "title": "Lemnokis Oil Vein 42 Lat 13.4 Lon 63",
+          "timeDescription": "16:45",
+          "startSeconds": 1005,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Oil"
+          ],
+          "endSeconds": 1026
+        },
+        {
+          "title": "Lemnokis Oil Vein 43 Lat 14.5 Lon 62.8",
+          "timeDescription": "17:06",
+          "startSeconds": 1026,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Oil"
+          ],
+          "endSeconds": 1045
+        },
+        {
+          "title": "Lemnokis Oil Vein 44 Lat 15.9 Lon 63.4",
+          "timeDescription": "17:25",
+          "startSeconds": 1045,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Oil"
+          ],
+          "endSeconds": 1060
+        },
+        {
+          "title": "Phokintos Oil Vein 45 Lat 0.8 Lon 25",
+          "timeDescription": "17:40",
+          "startSeconds": 1060,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Oil"
+          ],
+          "endSeconds": 1082
+        },
+        {
+          "title": "Phokintos Oil Vein 46 Lat 1.9 Lon 24",
+          "timeDescription": "18:02",
+          "startSeconds": 1082,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Oil"
+          ],
+          "endSeconds": 1101
+        },
+        {
+          "title": "Phokintos Oil Vein 47 Lat 2.1 Lon 23.5",
+          "timeDescription": "18:21",
+          "startSeconds": 1101,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Oil"
+          ],
+          "endSeconds": 1122
+        },
+        {
+          "title": "Phokintos Oil Vein 48 Lat 1.8 Lon 14.6",
+          "timeDescription": "18:42",
+          "startSeconds": 1122,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Oil"
+          ],
+          "endSeconds": 1150
+        },
+        {
+          "title": "Phokintos Oil Vein 49 Lat 0.2 Lon 1.4",
+          "timeDescription": "19:10",
+          "startSeconds": 1150,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Oil"
+          ],
+          "endSeconds": 1181
+        },
+        {
+          "title": "Phokintos Oil Vein 50 Lat 0.4 Lon 0.6",
+          "timeDescription": "19:41",
+          "startSeconds": 1181,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Oil"
+          ],
+          "endSeconds": 1196
+        },
+        {
+          "title": "Phokintos Oil Vein 51 Lat 1.8 Lon 0.7",
+          "timeDescription": "19:56",
+          "startSeconds": 1196,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Oil"
+          ],
+          "endSeconds": 1219
+        },
+        {
+          "title": "Phokintos Oil Vein 52 Lat 8.7 Lon 2.6",
+          "timeDescription": "20:19",
+          "startSeconds": 1219,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Oil"
+          ],
+          "endSeconds": 1247
+        },
+        {
+          "title": "Phokintos Oil Vein 53 Lat 11.4 Lon 7.6",
+          "timeDescription": "20:47",
+          "startSeconds": 1247,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Oil"
+          ],
+          "endSeconds": 1280
+        },
+        {
+          "title": "Phokintos Oil Vein 54 Lat 16 Lon 2.4",
+          "timeDescription": "21:20",
+          "startSeconds": 1280,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Oil"
+          ],
+          "endSeconds": 1314
+        },
+        {
+          "title": "Phokintos Oil Vein 55 Lat 16.2 Lon 8.7",
+          "timeDescription": "21:54",
+          "startSeconds": 1314,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Oil"
+          ],
+          "endSeconds": 1342
+        },
+        {
+          "title": "Phokintos Oil Vein 56 Lat 16.1 Lon 9.9",
+          "timeDescription": "22:22",
+          "startSeconds": 1342,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Oil"
+          ],
+          "endSeconds": 1358
+        },
+        {
+          "title": "Phokintos Oil Vein 57 Lat 13.5 Lon 16.5",
+          "timeDescription": "22:38",
+          "startSeconds": 1358,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Oil"
+          ],
+          "endSeconds": 1389
+        },
+        {
+          "title": "Phokintos Oil Vein 58 Lat 15.2 Lon 19.1",
+          "timeDescription": "23:09",
+          "startSeconds": 1389,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Oil"
+          ],
+          "endSeconds": 1419
+        },
+        {
+          "title": "Phokintos Oil Vein 59 & 60 Lat 15.7 Lon 23.1",
+          "timeDescription": "23:39",
+          "startSeconds": 1419,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Oil"
+          ],
+          "endSeconds": 1443
+        },
+        {
+          "title": "Phokintos Oil Vein 61 Lat 6.6 Lon 17.3",
+          "timeDescription": "24:03",
+          "startSeconds": 1443,
+          "provenance": "creator-description timestamp",
+          "candidateResources": [
+            "Oil"
+          ],
+          "endSeconds": 1481
+        }
+      ]
+    },
+    {
+      "videoId": "balRyHvmX1Y",
+      "title": "Astraeos Helianthos & Abyssanthos Walkthrough, Everything You Need to Know! | Ark Survival Ascended",
+      "publishedDate": "2026-08-29",
+      "duration": 446,
+      "resourceMentions": [],
+      "gpsInCreatorDescription": [],
+      "chapters": []
+    },
+    {
+      "videoId": "nA5ZKpH87D0",
+      "title": "Astraeos is a Much Bigger Map Now!",
+      "publishedDate": "2026-08-27",
+      "duration": 868,
+      "resourceMentions": [],
+      "gpsInCreatorDescription": [],
+      "chapters": [
+        {
+          "title": "Exploring the new island",
+          "timeDescription": "0:00",
+          "startSeconds": 0,
+          "provenance": "YouTube chapter metadata; may be auto-generated",
+          "candidateResources": [],
+          "endSeconds": 66
+        },
+        {
+          "title": "Kraken bus and boss portals",
+          "timeDescription": "1:06",
+          "startSeconds": 66,
+          "provenance": "YouTube chapter metadata; may be auto-generated",
+          "candidateResources": [],
+          "endSeconds": 201.733
+        },
+        {
+          "title": "Undersea world of Aquatica",
+          "timeDescription": "3:21",
+          "startSeconds": 201.733,
+          "provenance": "YouTube chapter metadata; may be auto-generated",
+          "candidateResources": [],
+          "endSeconds": 406.966
+        },
+        {
+          "title": "Ocean mechanics and mysteries",
+          "timeDescription": "6:46",
+          "startSeconds": 406.966,
+          "provenance": "YouTube chapter metadata; may be auto-generated",
+          "candidateResources": [],
+          "endSeconds": 556
+        },
+        {
+          "title": "Boss summoning requirements",
+          "timeDescription": "9:16",
+          "startSeconds": 556,
+          "provenance": "YouTube chapter metadata; may be auto-generated",
+          "candidateResources": [],
+          "endSeconds": 735
+        },
+        {
+          "title": "Ocean physics and final overview",
+          "timeDescription": "12:15",
+          "startSeconds": 735,
+          "provenance": "YouTube chapter metadata; may be auto-generated",
+          "candidateResources": [],
+          "endSeconds": 868
+        }
+      ]
+    }
+  ],
+  "lowestPrioritySources": [
+    "483rnalfWas:2024-10-14 preofficial mod revision",
+    "CkxQqpDhsKU:2025-02-26, despite2026search query",
+    "CDyfhWGI4dg:2025-02-22",
+    "FOKRZNiQcqM:2025-06-13"
+  ],
+  "importantCurrentGpsObservation": {
+    "videoId": "vtgZLVyfAIY",
+    "publishedDate": "2026-04-10",
+    "creator": "Ninjakiller",
+    "claim": "61currentlyknownOilVeins acrossPyranthos,Lemnokis,Phokintos",
+    "explicitCreatorDescriptionGpsCount": 56,
+    "outside0to100": [
+      {
+        "lat": 100.6,
+        "lon": 75.1,
+        "startSeconds": 270
+      },
+      {
+        "lat": 1.4,
+        "lon": 101.3,
+        "startSeconds": 644
+      },
+      {
+        "lat": 1.1,
+        "lon": 100.9,
+        "startSeconds": 674
+      }
+    ],
+    "limit": "Creator written coordinates; footage verification still needed. Do not clamp coordinates to0\u2013100."
+  },
+  "current2026OrientationSources": [
+    "balRyHvmX1Y:2026-08-29 ASA Helianthos/Abyssanthos walkthrough446sec",
+    "nA5ZKpH87D0:2026-08-27 ASA finalmap review868sec",
+    "hp37sof-YOE:2026-08-29 ASA20base locations971sec; metadata captured outsidefarm queue"
+  ],
+  "minimumImportProof": [
+    "Read creator footage GPS and resource node at same filmed point",
+    "Record source publication/revision and named map region",
+    "Confirm current official-partner data or contemporary filmed GPS/landmark correspondence before removing older-version qualifier",
+    "Do not infer unchanged coordinate plane from changelog silence; do not clamp GPS to0\u2013100"
+  ]
+}

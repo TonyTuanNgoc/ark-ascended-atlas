@@ -1,0 +1,23 @@
+{
+  "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/LKOZNBaoCpc-active-2x.mp4",
+  "sourceSHA256": "5595e3eb6182af32f17a37b28b0b4ba99e8f2e258cd86344c6a8ac29ec176327",
+  "sourceDimensions": [
+    1184,
+    666
+  ],
+  "captureFirstFrameUTC": "2026-10-08T05:54:38.486Z",
+  "sourceAnchor": {
+    "sourceSeconds": 0.04244,
+    "UTC": "2026-10-08T05:54:50.869Z"
+  },
+  "formula": "movieSeconds = 12.383 + (sourceSeconds -0.04244) /2",
+  "sourceDurationSeconds": 140,
+  "captureDurationSeconds": 100.286,
+  "parentAcquisitionProof": "Isolated nativeChrome window553; activeURL/title plus video0terrain/Oilrock confirmed; expectedtitle WhereToFindOil matched; avgMAD7.93/no stagnationwarning;2935frames.",
+  "fullCaptureDecode": {
+    "completed": true,
+    "exitCode": 0,
+    "diagnostics": "Screen recording variable timestamps produce nonmonotonicallyincreasingDTS warnings in null muxer; no unreadablevideo packets reported. Delivery clips normalizefps30 and decodewith no diagnostics."
+  },
+  "clipConversion": "Cut actual capture seconds and setpts=2 restores natural1x source motion; no looping/interpolation."
+}

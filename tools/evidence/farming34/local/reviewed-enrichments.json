@@ -1,0 +1,54 @@
+{
+  "enrichments": [
+    {
+      "id": "rag-existing-cave-black-21-24",
+      "map": "ragnarok",
+      "name": "Northwest metal cave black pearls",
+      "resources": [
+        "Black Pearls"
+      ],
+      "lat": 21.3,
+      "lon": 24.6,
+      "videoID": "0i0-XEV85m8",
+      "startSeconds": 132,
+      "endSeconds": 139,
+      "coordinateEvidence": "Creator explicitly captions Coordinates 21.3 Latitude 24.6 Longitude for this filmed Black Pearls chapter location at source125s; not an M-map cursor coordinate.",
+      "inventoryEvidence": "Dark pearl clusters with bright colored glints visible on the filmed bed in the dedicated Black Pearls chapter; no measured yield claim.",
+      "clipPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/local/rag-existing-cave-black-21-24.mp4",
+      "posterPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/local/rag-existing-cave-black-21-24.jpg",
+      "sourceURL": "https://www.youtube.com/watch?v=0i0-XEV85m8",
+      "sourcePlane": "ragnarok ASA coordinate plane",
+      "sourceCoordinateScope": "Creator-labelled farming region",
+      "mapOverlayVisible": false,
+      "creatorInsetVisible": false,
+      "inventoryOverlayVisible": false,
+      "rightsBasis": "licensed",
+      "acquisitionState": "Previously approved complete licensed local source; no network acquisition in farming34",
+      "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/resource-sources/fynix-avc/0i0-XEV85m8.mp4",
+      "sourceSHA256": "3d627343ce7e96d02326566aa68e2de0824562dbebd6fcab7e50b4feb64a8415",
+      "clipSHA256": "7bb46b886a1b458e67461150f2720b4ee2a00691a2169806e3e4f3d21420488e",
+      "posterSHA256": "79dabca4499423545848726a60ae506c2469e31d0ad01e65191d0d792cfe9724",
+      "visualReview": {
+        "contactSheet": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/local/rag-existing-cave-black-21-24-contact.jpg",
+        "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/local/rag-existing-cave-black-21-24-coordinate.jpg",
+        "fullEncodedDecode": true,
+        "sampleRateFPS": 4,
+        "continuousShot": true,
+        "reviewed": true,
+        "result": "28 chronological encoded frames manually reviewed after crop: continuous filmed black pearl harvest, no map, caption, inventory or edit cut. Same GPS as existing cave; enrich existing entry rather than count a new location."
+      },
+      "evidenceLimitations": "Creator-labelled regional waypoint and filmed nodes; no permanent node count, guaranteed yield or spawn availability. Delivery crops creator coordinate inset/caption; full uncropped source coordinate frame retained separately.",
+      "visualReviewStatus": "verified",
+      "sourceCrop": {
+        "x": 540,
+        "y": 120,
+        "width": 1380,
+        "height": 960,
+        "sourceWidth": 1920,
+        "sourceHeight": 1080,
+        "reason": "Remove creator map inset and coordinate caption; full coordinate proof separately retained."
+      },
+      "existingSpotID": "rag-cave-metal-obsidian"
+    }
+  ]
+}

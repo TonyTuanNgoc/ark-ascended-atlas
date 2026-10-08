@@ -1,0 +1,17 @@
+{
+  "sourcePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/Oxyw-jv19xQ-active-2x.mp4",
+  "sourceSHA256": "7840598a437094947a86240c910dce4cb6f71dab8d2a738bd910012fff1a4b37",
+  "sourceDimensions": [
+    1184,
+    666
+  ],
+  "captureFirstFrameUTC": "2026-10-08T05:25:56.702Z",
+  "sourceAnchor": {
+    "sourceSeconds": 0.046994,
+    "UTC": "2026-10-08T05:26:05.445Z"
+  },
+  "formula": "movieSeconds = 8.743 + (sourceSeconds - 0.046994) / 2",
+  "sourceDurationSeconds": 594.261,
+  "parentAcquisitionProof": "Normal Chrome actual active address/native screenshot verified; expected-title v2 matched ALLE RESSOURCEN every15sec; moving capture averageMAD14.75; maxstatic23.6 at ended tail.",
+  "clipConversion": "Cut actual capture seconds and setpts=2 restores natural1x source motion; no looping/interpolation."
+}

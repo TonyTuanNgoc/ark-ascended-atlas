@@ -1,0 +1,61 @@
+{
+  "auditDate": "2026-10-08",
+  "correction": "Earlier matching native playerGPS wording overstated evidence. Map-bottom readout may be cursor-sensitive. No actual playerGPS authority claimed.",
+  "rows": [
+    {
+      "id": "aberration-trench-black-676-52",
+      "lat": 67.6,
+      "lon": 52,
+      "authority": "Explicit creator-typed large LAT/LONG caption",
+      "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/ab-active-second/aberration-trench-black-676-52-coordinate.jpg",
+      "sourceCoordinateScope": "Creator-labelled filmed farmregion; not exact actor/player coordinates",
+      "state": "verified-regional-caption"
+    },
+    {
+      "id": "aberration-blue-crystal-487-786",
+      "lat": 48.7,
+      "lon": 78.6,
+      "authority": "Explicit creator-typed large LAT/LONG caption",
+      "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/ab-active-second/aberration-blue-crystal-487-786-coordinate.jpg",
+      "sourceCoordinateScope": "Creator-labelled filmed farmregion; not exact actor/player coordinates",
+      "state": "verified-regional-caption"
+    },
+    {
+      "id": "aberration-red-crystal-45-367",
+      "lat": 45,
+      "lon": 36.7,
+      "authority": "Explicit creator-typed large LAT/LONG caption",
+      "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/ab-active-second/aberration-red-crystal-45-367-coordinate.jpg",
+      "sourceCoordinateScope": "Creator-labelled filmed farmregion; not exact actor/player coordinates",
+      "state": "verified-regional-caption"
+    },
+    {
+      "id": "aberration-honey-441-31",
+      "lat": 44.1,
+      "lon": 31,
+      "authority": "Explicit creator-typed large LAT/LONG caption",
+      "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/ab-active-second/aberration-honey-441-31-coordinate.jpg",
+      "sourceCoordinateScope": "Creator-labelled filmed farmregion; not exact actor/player coordinates",
+      "state": "verified-regional-caption"
+    },
+    {
+      "id": "aberration-polymer-617-729",
+      "lat": 61.7,
+      "lon": 72.9,
+      "authority": "Explicit creator-typed large LAT/LONG caption",
+      "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/ab-active-second/aberration-polymer-617-729-coordinate.jpg",
+      "sourceCoordinateScope": "Creator-labelled filmed farmregion; not exact actor/player coordinates",
+      "state": "held-short-clip"
+    },
+    {
+      "id": "aberration-honey-382-39",
+      "lat": 38.2,
+      "lon": 39,
+      "authority": "Explicit creator-typed large LAT/LONG caption",
+      "coordinateFrame": "/Users/admin/Ascended-iPad-Dev/tools/evidence/farming34/ab-active-second/aberration-honey-382-39-coordinate.jpg",
+      "sourceCoordinateScope": "Creator-labelled filmed farmregion; not exact actor/player coordinates",
+      "state": "held-short-clip"
+    }
+  ],
+  "parentAction": "If native integrated provenance copied former matching-playerGPS clause, correct provenance to sole creator-caption authority; coordinates and clean clips unchanged."
+}

@@ -1,0 +1,54 @@
+{
+  "videoID": "TUoB8ouWPYk",
+  "sourceURL": "https://www.youtube.com/watch?v=TUoB8ouWPYk",
+  "capturePath": "/Volumes/TONY SSD/ASCENDED_MEDIA/farming34/browser-recording/TUoB8ouWPYk-active-2x.mp4",
+  "captureFirstSampleUTC": "2026-10-08T05:12:34.963Z",
+  "sourcePlayAnchorUTC": "2026-10-08T05:12:47.214Z",
+  "sourcePlayAnchorSeconds": 0.068941,
+  "playbackRate": 2,
+  "captureLeadSeconds": 12.251,
+  "sourceTimeToMovieTimeFormula": "movieTimeSeconds = 12.251 + (sourceTimeSeconds - 0.068941) / 2",
+  "reverseFormula": "sourceTimeSeconds = 0.068941 + (movieTimeSeconds - 12.251) * 2",
+  "anchorCheck": {
+    "UTC": "2026-10-08T05:20:15.396Z",
+    "observedSourceSeconds": 896.438464,
+    "predictedSourceSeconds": 896.432941,
+    "differenceSourceSeconds": 0.00552299999992556,
+    "differenceMovieSeconds": 0.00276149999996278,
+    "within0_01SourceSeconds": true
+  },
+  "limitations": [
+    "Source playback anchors were measured by root on normal browser playback; capture PTS alone is not source time.",
+    "Capture begins12.251seconds before playing; exclude prefix.",
+    "Tail contains YouTube recommendations; exclude tail.",
+    "Recorded at2x; restoringnormalplayback requires inverse source speed mapping.",
+    "CreatorGPS/map/menuframes are source research only; proposed6-10secondclips need every-framevisualQA."
+  ],
+  "rights": "licensed",
+  "originalYouTubeResolution": "Not independently established by encoded capture dimensions",
+  "encodedWindowCapture": {
+    "width": 1184,
+    "height": 666,
+    "codec": "h264",
+    "frames": 20304,
+    "duration": 695.336667,
+    "bytes": 1014781306,
+    "sha256": "89a04de9154c7f08156eb348694337bc53468c3b46a4d69df0fd7dc270614757"
+  },
+  "wholeDecode": {
+    "exitCode": 0,
+    "stderrBytes": 0,
+    "method": "ffmpeg -v error -fps_mode passthrough -enc_time_base demux -f null -",
+    "initialNullMuxerWarnings": "Default null timebase rounded VFR timestamps into duplicate DTS; demux timebase run has no diagnostics."
+  },
+  "visualOverview": "TUoB8ouWPYk-full-overview.jpg",
+  "visualAssessment": "Distinct moving Aberration gameplay scenes; no Chrome toolbar visible in overview; source-authoredGPS/map/menuoverlays and YouTubeendcard exist.",
+  "motionSampleEvidence": "TUoB8ouWPYk-motion-sample.json",
+  "motionSampleSummary": {
+    "sampleCount": 35,
+    "distinctFrameHashes": 35,
+    "meanGrayDifference": 39.006855085784316,
+    "minimumGrayDifference": 14.2890625,
+    "samplingEverySeconds": 20
+  }
+}
