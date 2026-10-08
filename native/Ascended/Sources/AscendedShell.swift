@@ -1,11 +1,12 @@
 import SwiftUI
 
 enum Destination: String, CaseIterable, Identifiable {
-    case story = "Cốt truyện ARK", equipment = "Thư viện", expansions = "Map & DLC", farming = "Khai thác", information = "Thông tin map", bases = "Xây base", map = "Bản đồ", dinos = "Dino", bosses = "Boss", exploration = "Artifact & Hang"
-    static let navigationGroups: [[Destination]] = [[.story, .map], [.farming, .equipment, .bases], [.dinos, .exploration, .bosses]]
+    case survival = "Survival Guide", story = "Cốt truyện ARK", equipment = "Thư viện", expansions = "Map & DLC", farming = "Khai thác", information = "Thông tin map", bases = "Xây base", map = "Bản đồ", dinos = "Dino", bosses = "Boss", exploration = "Artifact & Hang"
+    static let navigationGroups: [[Destination]] = [[.story, .survival, .map], [.farming, .equipment, .bases], [.dinos, .exploration, .bosses]]
     var id: String { rawValue }
     var title: String {
         switch self {
+        case .survival: "Survival Guide"
         case .story: "Story"
         case .equipment: "Equipment"
         case .expansions: "Maps & DLC"
@@ -20,6 +21,7 @@ enum Destination: String, CaseIterable, Identifiable {
     }
     var symbol: String {
         switch self {
+        case .survival: "compass.drawing"
         case .story: "book.closed.fill"
         case .equipment: "square.grid.2x2.fill"
         case .expansions: "square.stack.3d.up.fill"
@@ -46,6 +48,7 @@ struct NavigationAvatar: View {
 extension Destination {
     var avatarAsset: String {
         switch self {
+        case .survival: "Nav-information"
         case .story: "Nav-story"
         case .equipment: "Nav-equipment"
         case .expansions: "Nav-maps"
@@ -70,6 +73,7 @@ struct MapSessionShell: View {
             NavigationStack {
                 Group {
                     switch selection {
+                    case .survival: SurvivalGuideScreen(openModule: { selection = $0 })
                     case .story: StoryGuideScreen()
                     case .equipment: EquipmentLibraryScreen()
                     case .expansions: ExpansionCatalogScreen(chooseMap: selectMap)

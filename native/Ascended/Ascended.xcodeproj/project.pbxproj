@@ -30,6 +30,7 @@
 		0215B8DB24147923F43B9B73 /* Resource-aberration-trench-black-676-52-1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AD0DAEF86B1201DD987FFF98 /* Resource-aberration-trench-black-676-52-1.mp4 */; };
 		024511FB61F977763EBE1368 /* gif-the-center-north-ice-clever-03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9E3D361A6D74CB9017F4C52C /* gif-the-center-north-ice-clever-03.jpg */; };
 		026A325DF03AAF0C8F183D7F /* gif-ragnarok-labyrinth-clever-09.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F0D6EB092B79591639203A5C /* gif-ragnarok-labyrinth-clever-09.jpg */; };
+		02705BB32801836835D354D1 /* Survival38UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53D3F6896B8DADC62BAA152 /* Survival38UITests.swift */; };
 		031631B0AD17E9383DDE2880 /* Resource-island-west-starter-1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3211BD0CDE8D0F3800F30A03 /* Resource-island-west-starter-1.mp4 */; };
 		035F6A670B61A8970137E333 /* gif-ragnarok-labyrinth-clever-07.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 59D39908754C90FEA5EF12BC /* gif-ragnarok-labyrinth-clever-07.jpg */; };
 		0388C86B8853AF1A4779CC7F /* Resource-island-west-lake-flowers-1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6CE9DF788D1F47CE76564D7A /* Resource-island-west-lake-flowers-1.mp4 */; };
@@ -893,6 +894,7 @@
 		9559AE2F59CC25054B423F87 /* gif-the-center-jungle-immune-11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0D9431B5887101A4C48EADDC /* gif-the-center-jungle-immune-11.jpg */; };
 		960292BA4F1C8D0DDB126A4C /* Resource-island-rare-flower-red-peak-1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0BF4EEBF5EC4361A1D9784A1 /* Resource-island-rare-flower-red-peak-1.mp4 */; };
 		9615AE38D17343EDCDC8F486 /* gif-the-center-floating-devious-07.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 279F6CF8ED757D3D83A300D1 /* gif-the-center-floating-devious-07.jpg */; };
+		964AD57B979C13A9B7BE9045 /* the-island-survival-guide.json in Resources */ = {isa = PBXBuildFile; fileRef = 572EC84C8860B5AA4EBCF383 /* the-island-survival-guide.json */; };
 		96F198E08927CEAEE1B771AC /* gif-the-center-north-ice-devourer-12.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 98EB169494C71B1230EAA444 /* gif-the-center-north-ice-devourer-12.mp4 */; };
 		970368C456790EEA2DB24199 /* MapLocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC77A3D4453B51810381610 /* MapLocations.swift */; };
 		97774446DA8D4110571FF94F /* gif-the-center-north-ice-clever-02.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9D7E78F5C3D6C4D551D5C12D /* gif-the-center-north-ice-clever-02.mp4 */; };
@@ -1369,6 +1371,7 @@
 		E986443FC0C9F97291BBE290 /* Resource-aberration-honey-441-31-1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AAE5898688D81C95BA52C107 /* Resource-aberration-honey-441-31-1.mp4 */; };
 		E98C998954ACB73A20926783 /* gif-ragnarok-frozen-pack-22.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 32C299E3A77434EBDD1BAA43 /* gif-ragnarok-frozen-pack-22.mp4 */; };
 		E9A5797D4906AD46FE093F7E /* gif-the-island-north-west-skylord-03.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = BF21BD5D81A0EF31431DC0E7 /* gif-the-island-north-west-skylord-03.mp4 */; };
+		EA3CCAB9190A2D26E776C477 /* SurvivalGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63A6DBC561CC39EBA7F17C3 /* SurvivalGuide.swift */; };
 		EA7BAD6D9CB5E8CF7F3B8265 /* gif-the-center-underworld-pack-05.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5322D497442986778D4E7968 /* gif-the-center-underworld-pack-05.mp4 */; };
 		EAD060351078B98487895F63 /* Resource-rag-forest-obsidian-48-71-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA419A54ECB678E066DAC05C /* Resource-rag-forest-obsidian-48-71-1.jpg */; };
 		EAD60F999FFD9837DE40BE01 /* Resource-center-cache-metal-843-89-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F2392E36E86967293C9786C7 /* Resource-center-cache-metal-843-89-1.jpg */; };
@@ -1416,6 +1419,7 @@
 		F1512344B5317F8B01C54480 /* gif-the-center-lava-massive-06.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6010BB17E7388941A323BC09 /* gif-the-center-lava-massive-06.jpg */; };
 		F15910EB8E1D8E08C05CCAC6 /* gif-the-island-swamp-immune-04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 508817F0EC9E2C6FA6C5B055 /* gif-the-island-swamp-immune-04.jpg */; };
 		F20E9883324C0A409BC04BC4 /* gif-ragnarok-ocean-03.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A248DCC546932FEA15ED611A /* gif-ragnarok-ocean-03.mp4 */; };
+		F21A94952859BDF36EDDD9D4 /* Survival38Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D95E39B6ABF9B51504951C /* Survival38Tests.swift */; };
 		F2594DB544E488864278F7C9 /* gif-the-center-lava-oasis-hunter-04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 94653E42D65F6C4EA3547AB6 /* gif-the-center-lava-oasis-hunter-04.jpg */; };
 		F27430CD63DD04CBA904195D /* astraeos-campaign.json in Resources */ = {isa = PBXBuildFile; fileRef = 34AC19EA1C33F2D55A390264 /* astraeos-campaign.json */; };
 		F2B0C6BD776261C4A498D4E7 /* gif-ragnarok-labyrinth-final-06.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3C9EEC46CD8287FD3015931 /* gif-ragnarok-labyrinth-final-06.jpg */; };
@@ -2021,6 +2025,7 @@
 		568FA9EB6FA185A62D3F1897 /* gif-the-center-trench-brute-09.mp4 */ = {isa = PBXFileReference; path = "gif-the-center-trench-brute-09.mp4"; sourceTree = "<group>"; };
 		570B8D87F42EBE7F76B88D83 /* Ascended25UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ascended25UITests.swift; sourceTree = "<group>"; };
 		5717A4E4AEE640B7ADC95B68 /* gif-the-center-north-ice-clever-01.mp4 */ = {isa = PBXFileReference; path = "gif-the-center-north-ice-clever-01.mp4"; sourceTree = "<group>"; };
+		572EC84C8860B5AA4EBCF383 /* the-island-survival-guide.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "the-island-survival-guide.json"; sourceTree = "<group>"; };
 		573947B8863E8CA8FF7C10E1 /* gif-ragnarok-frozen-pack-15.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "gif-ragnarok-frozen-pack-15.jpg"; sourceTree = "<group>"; };
 		575691E3E1744D63E185C844 /* gif-the-center-lava-massive-08.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "gif-the-center-lava-massive-08.jpg"; sourceTree = "<group>"; };
 		5770E8336C6DDEFBDCDA5B8A /* Resource-island-east-canyon-flowers-1.mp4 */ = {isa = PBXFileReference; path = "Resource-island-east-canyon-flowers-1.mp4"; sourceTree = "<group>"; };
@@ -2470,6 +2475,7 @@
 		A49367BBB35EC68E7CD7E5BE /* gif-ragnarok-labyrinth-entry-12.mp4 */ = {isa = PBXFileReference; path = "gif-ragnarok-labyrinth-entry-12.mp4"; sourceTree = "<group>"; };
 		A517452A67B0FC68FA8FEE4A /* Resource-ab-portal-plateau-metal-418-345-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Resource-ab-portal-plateau-metal-418-345-1.jpg"; sourceTree = "<group>"; };
 		A60EA5827CD04EC313A7E565 /* Resource-center-cache-silica-pearls-451-99-1.mp4 */ = {isa = PBXFileReference; path = "Resource-center-cache-silica-pearls-451-99-1.mp4"; sourceTree = "<group>"; };
+		A63A6DBC561CC39EBA7F17C3 /* SurvivalGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurvivalGuide.swift; sourceTree = "<group>"; };
 		A65FAEC3589612A26327D5AD /* Resource-rag-southeast-silica-874-730-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Resource-rag-southeast-silica-874-730-1.jpg"; sourceTree = "<group>"; };
 		A6681103FFCE249F1A0BD159 /* gif-the-center-north-ice-devourer-07.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "gif-the-center-north-ice-devourer-07.jpg"; sourceTree = "<group>"; };
 		A6FE7D76167549E52BB8A783 /* gif-the-island-lost-hope-cunning-01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "gif-the-island-lost-hope-cunning-01.jpg"; sourceTree = "<group>"; };
@@ -2949,6 +2955,7 @@
 		F5262A084575B6DDAECAA583 /* gif-the-center-lava-oasis-hunter-03.mp4 */ = {isa = PBXFileReference; path = "gif-the-center-lava-oasis-hunter-03.mp4"; sourceTree = "<group>"; };
 		F5304CA50A84E1467E61932F /* gif-the-center-floating-devious-07.mp4 */ = {isa = PBXFileReference; path = "gif-the-center-floating-devious-07.mp4"; sourceTree = "<group>"; };
 		F5312C14101B948524572B66 /* Resource-scorched-northeast-oil-vein-1.mp4 */ = {isa = PBXFileReference; path = "Resource-scorched-northeast-oil-vein-1.mp4"; sourceTree = "<group>"; };
+		F53D3F6896B8DADC62BAA152 /* Survival38UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Survival38UITests.swift; sourceTree = "<group>"; };
 		F57F28E13C69E811D5ECF787 /* gif-ragnarok-labyrinth-final-08.mp4 */ = {isa = PBXFileReference; path = "gif-ragnarok-labyrinth-final-08.mp4"; sourceTree = "<group>"; };
 		F5A143A83A2200BBE91A38AB /* gif-ragnarok-labyrinth-finish-01.mp4 */ = {isa = PBXFileReference; path = "gif-ragnarok-labyrinth-finish-01.mp4"; sourceTree = "<group>"; };
 		F5A9470EE168F9D2D8F51A58 /* Resource-lost-colony-south-sap-trees-875-346-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Resource-lost-colony-south-sap-trees-875-346-1.jpg"; sourceTree = "<group>"; };
@@ -2974,6 +2981,7 @@
 		F90FD9873DE18ED0B7FDCB66 /* Resource-genesis-ocean-central-island-oil-45-63-1.mp4 */ = {isa = PBXFileReference; path = "Resource-genesis-ocean-central-island-oil-45-63-1.mp4"; sourceTree = "<group>"; };
 		F97CBFBEA42A86CDEFCF894D /* Resource-ab-blue-slope-metal-414-604-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Resource-ab-blue-slope-metal-414-604-1.jpg"; sourceTree = "<group>"; };
 		F9A8B70B11B1FA23D92BF955 /* Resource-ab-portal-metal-438-293-1.mp4 */ = {isa = PBXFileReference; path = "Resource-ab-portal-metal-438-293-1.mp4"; sourceTree = "<group>"; };
+		F9D95E39B6ABF9B51504951C /* Survival38Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Survival38Tests.swift; sourceTree = "<group>"; };
 		F9EC0DA80489BE5AF2377411 /* PlaySession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySession.swift; sourceTree = "<group>"; };
 		F9EE365517BFD9CE05A2B9A3 /* gif-ragnarok-labyrinth-skylord-12.mp4 */ = {isa = PBXFileReference; path = "gif-ragnarok-labyrinth-skylord-12.mp4"; sourceTree = "<group>"; };
 		FA1CAD9F7D547D9818DD5051 /* gif-ragnarok-labyrinth-clever-14.mp4 */ = {isa = PBXFileReference; path = "gif-ragnarok-labyrinth-clever-14.mp4"; sourceTree = "<group>"; };
@@ -3034,6 +3042,7 @@
 				8DD98664008A76BFE3E533AD /* Farming34UITests.swift */,
 				DA57BC5A9F8AB03CC042202F /* Farming35UITests.swift */,
 				ABC818A20259C34A9DDAC06A /* Farming37UITests.swift */,
+				F53D3F6896B8DADC62BAA152 /* Survival38UITests.swift */,
 			);
 			path = UITests;
 			sourceTree = "<group>";
@@ -3079,6 +3088,7 @@
 				538782DB24DAE1CF96C326B9 /* StoneBuilder.swift */,
 				1F67A19C4D6EC645E03B3952 /* StoneBuilderModels.swift */,
 				594133375DC77ACDB03BEA81 /* StoneBuildScene.swift */,
+				A63A6DBC561CC39EBA7F17C3 /* SurvivalGuide.swift */,
 				C6DE1F4561873BF209DD2314 /* VisualFacts.swift */,
 			);
 			path = Sources;
@@ -4446,6 +4456,7 @@
 				D4AB9A17F38C6F6E6AADB2C1 /* Farming37Tests.swift */,
 				587E24445A3016BD4C624DA6 /* MapFieldTests.swift */,
 				5073E7EFBC780034D8735788 /* MapTerrainTests.swift */,
+				F9D95E39B6ABF9B51504951C /* Survival38Tests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -4553,6 +4564,7 @@
 				7C09734D7FAB4379584B352A /* the-island-exploration.json */,
 				10A247CBA0E7E6AC41179FC0 /* the-island-information.json */,
 				815C040FD2B79A0A9BFB9B43 /* the-island-resources.json */,
+				572EC84C8860B5AA4EBCF383 /* the-island-survival-guide.json */,
 				9E80C46CE9EB3C2B83892299 /* valguero-campaign.json */,
 				2CA524FD422133D59044DCAB /* valguero-creatures.json */,
 				CB40E52E4681FAA95477B459 /* valguero-exploration.json */,
@@ -6087,6 +6099,7 @@
 				9F2F7CA352556AE83BCE99E9 /* the-island-exploration.json in Resources */,
 				A7814766395C658FA0D686F4 /* the-island-information.json in Resources */,
 				597B9EAA123C0F1CD506FF04 /* the-island-resources.json in Resources */,
+				964AD57B979C13A9B7BE9045 /* the-island-survival-guide.json in Resources */,
 				8631F1BF567FEDE88E5F5B63 /* valguero-campaign.json in Resources */,
 				E8854E403914997A158EF394 /* valguero-creatures.json in Resources */,
 				9DC8580290F8F839A1B67102 /* valguero-exploration.json in Resources */,
@@ -6123,6 +6136,7 @@
 				B0A6AA8D32686979F10C67EC /* Farming34UITests.swift in Sources */,
 				2B5E82DAC06FD2F3D7111393 /* Farming35UITests.swift in Sources */,
 				FFEEB2E31149129C833400F4 /* Farming37UITests.swift in Sources */,
+				02705BB32801836835D354D1 /* Survival38UITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -6139,6 +6153,7 @@
 				3CA5B6FE9F1A2C50ADAE38A1 /* Farming37Tests.swift in Sources */,
 				B521AFC287275C77A80E231D /* MapFieldTests.swift in Sources */,
 				2D4848F3F3F901884D50B8C2 /* MapTerrainTests.swift in Sources */,
+				F21A94952859BDF36EDDD9D4 /* Survival38Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -6184,6 +6199,7 @@
 				187320D1E813D3E74F5D66C6 /* StoneBuildScene.swift in Sources */,
 				52CA7D79DB65798AEAD606FF /* StoneBuilder.swift in Sources */,
 				BAE15ED40FA64E0443A30B02 /* StoneBuilderModels.swift in Sources */,
+				EA3CCAB9190A2D26E776C477 /* SurvivalGuide.swift in Sources */,
 				82021019FFCE5084ADBD7C29 /* VisualFacts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -6311,7 +6327,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 37;
+				CURRENT_PROJECT_VERSION = 38;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = HP5W6N9V3N;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -6331,7 +6347,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MARKETING_VERSION = 0.36.0;
+				MARKETING_VERSION = 0.37.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -6398,7 +6414,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 37;
+				CURRENT_PROJECT_VERSION = 38;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = HP5W6N9V3N;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -6412,7 +6428,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MARKETING_VERSION = 0.36.0;
+				MARKETING_VERSION = 0.37.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";

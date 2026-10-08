@@ -1,0 +1,12 @@
+{
+  "simulator": "20C9346D-B0E6-4239-8152-1D85ADD57BA6",
+  "launchPID": 29565,
+  "installed": [
+    {
+      "path": "/Users/admin/Library/Developer/CoreSimulator/Devices/20C9346D-B0E6-4239-8152-1D85ADD57BA6/data/Containers/Bundle/Application/04837B8A-97B8-44B8-B8F1-9196E83F3111/Ascended.app",
+      "version": "0.37.0",
+      "build": "38",
+      "bundle": "com.tonytuanngoc.ascended"
+    }
+  ]
+}

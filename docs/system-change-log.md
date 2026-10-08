@@ -1,5 +1,8 @@
 # System change log
 
+## 2026-10-08 — Ascended 0.37.0 (38): The Island Survival Guide
+Added eight researched visual phases balancing base building, exploration and boss progression, 87 illustrated goals (74 milestones/13 optional) and 17 attributed references with per-goal source links. New manual Island checklist persists separately; other maps do not reuse Island guidance. Current ASA fire/bleed/imprint/tribute caveats cross-checked without guaranteed stat thresholds. Compact landscape cards, horizontal phase selection and relevant module shortcuts. Six player sources plus eleven mechanics references; new YouTube API searches rejected, no fresh video analysis claimed. Scoped QA and Simulator delivery documented in codex-reports/2026-10-08-ascended38-island-survival-guide.md. Standalone native only; no Tony OS/TestFlight/physical-device/web domain release.
+
 ## 2026-10-08 — Ascended 0.32.0 (33): 25 new filmed Farming regions
 Added 25 continuous 6–8-second region previews across Genesis land/Ocean, Scorched Earth, Lost Colony, Aberration, Valguero, Astraeos and Extinction. 104 bundled spots/guides, 94 matching the fourteen displayed resources. Canonical resource-filter names verified. Final media audit and 7 scoped unit tests plus 4 UI flows passed; installed Simulator bundle and manifest hashes match, fresh launch succeeded. Full all-map sourcing remains incomplete: 14/154 audited combinations reach 3 distinct regions; source 403 denials and remaining applicability/media gaps retained without bypass or invented locations. No Tony OS, physical iPad, TestFlight or web domain deployment. Report: codex-reports/2026-10-08-ascended33-farming-expansion.md.
 

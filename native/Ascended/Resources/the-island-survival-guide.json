@@ -1,0 +1,1436 @@
+{
+  "mapID": "the-island",
+  "title": "Survival Guide",
+  "reviewedAt": "2026-10-08",
+  "mode": "PvE · solo / small tribe",
+  "approach": "Explore, build a home, then ascend.",
+  "editorialNote": "A suggested route, not a speedrun or a required tame list. Mark your own progress; no game connection. Creature choices, build layouts and roster quantities are planning recommendations.",
+  "sources": [
+    {
+      "id": "player-start",
+      "title": "Smilloww + PvE players · Island game plan",
+      "url": "https://www.reddit.com/r/ArkSurvivalAscended/comments/1ebsdc8/ark_beginner_guide/",
+      "kind": "Player experience",
+      "note": "Starter shelter, utility tames and travel. Community recommendations; unsafe escape advice and outdated fire-resistance claims excluded.",
+      "reviewedAt": "2026-10-08"
+    },
+    {
+      "id": "player-route",
+      "title": "ASA players · First playthrough advice",
+      "url": "https://www.reddit.com/r/ArkSurvivalAscended/comments/1u7so02/first_time_player_a_bit_of_direction_a_few_tips/",
+      "kind": "Player experience",
+      "note": "Flyer → gatherers → crafting base; Baryonyx/Thylacoleo cave options. Route milestones and quantities are our planning choices.",
+      "reviewedAt": "2026-10-08"
+    },
+    {
+      "id": "player-balance",
+      "title": "Small-tribe players · Exploring while progressing",
+      "url": "https://www.reddit.com/r/ArkSurvivalAscended/comments/1uyvy56/how_to_progress_on_the_island_map_with_a_very/",
+      "kind": "Player experience",
+      "note": "Ocean progression and mixed-purpose tames alongside boss preparation; Therizinos can use cakes.",
+      "reviewedAt": "2026-10-08"
+    },
+    {
+      "id": "player-order",
+      "title": "Solo players · Which boss first?",
+      "url": "https://www.reddit.com/r/ARK/comments/1828e5h/easiest_boss/",
+      "kind": "Player experience",
+      "note": "Megapithecus is often easier in combat; Broodmother can come first when its artifacts and a suitable army are ready. Opinions, not a forced order.",
+      "reviewedAt": "2026-10-08"
+    },
+    {
+      "id": "player-current",
+      "title": "ASA players · Current boss teams",
+      "url": "https://www.reddit.com/r/ARK/comments/1sq9zqq/best_boss_fighters_now/",
+      "kind": "Player experience",
+      "note": "Therizino/Yuty remains a player option; newer teams exist. Recent players warn that old Alpha Dragon advice is insufficient.",
+      "reviewedAt": "2026-10-08"
+    },
+    {
+      "id": "wiki-brood",
+      "title": "ARK Wiki · Broodmother",
+      "url": "https://ark.wiki.gg/wiki/Broodmother_Lysrix",
+      "kind": "Mechanics reference",
+      "note": "Hunter + Clever + Massive; Megatherium insect buff; 20-tame arena limit. Rex/Theri alternatives are possible.",
+      "reviewedAt": "2026-10-08"
+    },
+    {
+      "id": "wiki-monkey",
+      "title": "ARK Wiki · Megapithecus",
+      "url": "https://ark.wiki.gg/wiki/Megapithecus",
+      "kind": "Mechanics reference",
+      "note": "Brute + Devourer + Pack. Keep the fight away from the arena drop-off.",
+      "reviewedAt": "2026-10-08"
+    },
+    {
+      "id": "wiki-dragon",
+      "title": "ARK Wiki · Dragon",
+      "url": "https://ark.wiki.gg/wiki/Dragon",
+      "kind": "Mechanics reference",
+      "note": "Percent-health fire breath affects herbivores too. Protect the rider from minions and avoid assuming saddle armor stops burn damage.",
+      "reviewedAt": "2026-10-08"
+    },
+    {
+      "id": "wiki-breeding",
+      "title": "ARK Wiki · Breeding",
+      "url": "https://ark.wiki.gg/wiki/Breeding",
+      "kind": "Mechanics reference",
+      "note": "Inherit parental natural stats, not player-added levels. Page flags ASA update gaps; no mutation formula or fixed breeding timer imported.",
+      "reviewedAt": "2026-10-08"
+    },
+    {
+      "id": "wiki-imprint",
+      "title": "ARK Wiki · Imprinting",
+      "url": "https://ark.wiki.gg/wiki/Imprinting",
+      "kind": "Mechanics reference",
+      "note": "Raised fighters retain imprint stat bonuses; rider bonus requires the imprinter to ride. No assumption of rider bonus on an entire AI army.",
+      "reviewedAt": "2026-10-08"
+    },
+    {
+      "id": "wiki-tek",
+      "title": "ARK Wiki · Tek Cave",
+      "url": "https://ark.wiki.gg/wiki/Tek_Cave",
+      "kind": "Mechanics reference",
+      "note": "Volcano entry, lava path and time-limited entrance. No reliance on cryopod releases inside the cave.",
+      "reviewedAt": "2026-10-08"
+    },
+    {
+      "id": "wiki-overseer",
+      "title": "ARK Wiki · Overseer",
+      "url": "https://ark.wiki.gg/wiki/Overseer",
+      "kind": "Mechanics reference",
+      "note": "Gamma entry requires the three Gamma guardian trophies or higher-tier equivalents, and level 60. Beta/Alpha require additional tribute.",
+      "reviewedAt": "2026-10-08"
+    },
+    {
+      "id": "wiki-deino",
+      "title": "ARK Wiki · Deinosuchus changes",
+      "url": "https://ark.wiki.gg/wiki/Deinosuchus",
+      "kind": "Patch cross-check",
+      "note": "Patch 73.13 removes boss bleed. Older bleed shortcuts excluded from this route.",
+      "reviewedAt": "2026-10-08"
+    },
+    {
+      "id": "cake-recipe",
+      "title": "Beacon · ASA cake recipe",
+      "url": "https://usebeacon.app/Games/ArkSA/Mods/2399830/PrimalItemConsumable_SweetVeggieCake_C",
+      "kind": "Game-data reference",
+      "note": "Honey, sap, crops, stimulant, fibre and water. Craft in a Cooking Pot or Industrial Cooker; keep a continuing supply.",
+      "reviewedAt": "2026-10-08"
+    },
+    {
+      "id": "wiki-basilo",
+      "title": "ARK Wiki · Basilosaurus",
+      "url": "https://ark.wiki.gg/wiki/Basilosaurus",
+      "kind": "Mechanics reference",
+      "note": "Shock/grab immunity supports ocean runs; pressure damage at depth and cave predators still require preparation.",
+      "reviewedAt": "2026-10-08"
+    },
+    {
+      "id": "player-swamp-video",
+      "title": "BEYPlaysGames · Island paste routes",
+      "url": "https://www.youtube.com/watch?v=ThiYu0M6a_A",
+      "kind": "Reviewed gameplay",
+      "note": "Previously reviewed source footage shows a mounted Beelzebufo harvesting paste in Swamp Cave. Cave access and protection remain essential.",
+      "reviewedAt": "2026-10-08"
+    },
+    {
+      "id": "wiki-caves",
+      "title": "ARK Wiki · Island cave routes",
+      "url": "https://ark.wiki.gg/wiki/Caves",
+      "kind": "Mechanics reference",
+      "note": "Cave/artifact associations and route-specific hazards; ASA entrances differ from ASE, so use the existing Island cave and Atlas records for coordinates.",
+      "reviewedAt": "2026-10-08"
+    }
+  ],
+  "phases": [
+    {
+      "id": "shore",
+      "title": "Beach Home",
+      "subtitle": "Survive · settle · enjoy the coast",
+      "asset": "MapLogo-the-island",
+      "note": "Choose Moschops OR Parasaur. A small starter home is enough.",
+      "groups": [
+        {
+          "id": "creatures",
+          "title": "Creatures",
+          "icon": "creatures",
+          "goals": [
+            {
+              "id": "starter",
+              "title": "Starter companion",
+              "asset": "Dino-moschops",
+              "detail": "Choose one: Moschops for gathering or Parasaur for carrying. Check the requested food before taming Moschops.",
+              "sourceIDs": [
+                "player-start",
+                "player-route"
+              ],
+              "optional": false,
+              "quantity": null
+            },
+            {
+              "id": "parasaur",
+              "title": "Parasaur option",
+              "asset": "Dino-parasaur",
+              "detail": "Alternative starter; not a second required tame.",
+              "sourceIDs": [
+                "player-start"
+              ],
+              "optional": true,
+              "quantity": null
+            }
+          ]
+        },
+        {
+          "id": "base",
+          "title": "Base",
+          "icon": "locations",
+          "goals": [
+            {
+              "id": "shore-home",
+              "title": "Coastal cottage",
+              "asset": "Nav-base",
+              "detail": "Suggested layout: sheltered bed + crafting corner + labelled storage. Pick a southern beach you enjoy.",
+              "sourceIDs": [
+                "player-start",
+                "player-route"
+              ],
+              "optional": false,
+              "quantity": null
+            },
+            {
+              "id": "bed",
+              "title": "Respawn ready",
+              "asset": "Item-simple-bed",
+              "detail": "Place a bed in your shelter before longer trips.",
+              "sourceIDs": [
+                "player-start"
+              ],
+              "optional": false,
+              "quantity": null
+            },
+            {
+              "id": "fire",
+              "title": "Food & light",
+              "asset": "Equipment-campfire",
+              "detail": "Keep cooked food and an accessible light source.",
+              "sourceIDs": [
+                "player-start"
+              ],
+              "optional": false,
+              "quantity": null
+            }
+          ]
+        },
+        {
+          "id": "equipment",
+          "title": "Equipment",
+          "icon": "tools",
+          "goals": [
+            {
+              "id": "starter-tools",
+              "title": "Pick + hatchet",
+              "asset": "Equipment-stone-pick",
+              "detail": "Craft both tools; use pick for flint/thatch and hatchet for stone/wood.",
+              "sourceIDs": [
+                "player-start"
+              ],
+              "optional": false,
+              "quantity": null
+            },
+            {
+              "id": "bola",
+              "title": "Bolas + bow",
+              "asset": "Item-bola",
+              "detail": "Carry bolas and a bow for early taming and small-predator defence.",
+              "sourceIDs": [
+                "player-start"
+              ],
+              "optional": false,
+              "quantity": null
+            }
+          ]
+        },
+        {
+          "id": "adventure",
+          "title": "Adventure",
+          "icon": "spawn",
+          "goals": [
+            {
+              "id": "coast-scout",
+              "title": "Explore your coast",
+              "asset": "Nav-map",
+              "detail": "Scout nearby water and a first metal route; skip the swamp until prepared.",
+              "sourceIDs": [
+                "player-start",
+                "player-route"
+              ],
+              "optional": false,
+              "quantity": null
+            },
+            {
+              "id": "pretty-camp",
+              "title": "Make it yours",
+              "asset": "Item-storage-box",
+              "detail": "Optional: porch, storage labels or a favourite tame. A leisure milestone, not a game unlock.",
+              "sourceIDs": [
+                "player-balance"
+              ],
+              "optional": true,
+              "quantity": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "flight",
+      "title": "First Flight",
+      "subtitle": "Mobility · metal · gathering team",
+      "asset": "Dino-argentavis",
+      "note": "Saddles and carrying rules matter. Argentavis carrying depends on PvE settings.",
+      "groups": [
+        {
+          "id": "creatures",
+          "title": "Creatures",
+          "icon": "creatures",
+          "goals": [
+            {
+              "id": "ptera",
+              "title": "Pteranodon",
+              "asset": "Dino-pteranodon",
+              "detail": "First scouting flyer; stamina and safe landing matter.",
+              "sourceIDs": [
+                "player-route"
+              ],
+              "optional": false,
+              "quantity": null
+            },
+            {
+              "id": "argy",
+              "title": "Argentavis",
+              "asset": "Dino-argentavis",
+              "detail": "Cargo flyer for the next base and resource trips.",
+              "sourceIDs": [
+                "player-start",
+                "player-route"
+              ],
+              "optional": false,
+              "quantity": null
+            },
+            {
+              "id": "anky",
+              "title": "Ankylosaurus",
+              "asset": "Dino-ankylosaurus",
+              "detail": "Metal gatherer; pair with Argentavis when carrying is allowed.",
+              "sourceIDs": [
+                "player-start",
+                "player-route"
+              ],
+              "optional": false,
+              "quantity": null
+            },
+            {
+              "id": "doed",
+              "title": "Doedicurus",
+              "asset": "Dino-doedicurus",
+              "detail": "Stone supply for the permanent home.",
+              "sourceIDs": [
+                "player-route"
+              ],
+              "optional": false,
+              "quantity": null
+            }
+          ]
+        },
+        {
+          "id": "base",
+          "title": "Base",
+          "icon": "locations",
+          "goals": [
+            {
+              "id": "workshop",
+              "title": "Stone workshop",
+              "asset": "Item-refining-forge",
+              "detail": "Upgrade the vulnerable starter shell and leave room for forges and a smithy.",
+              "sourceIDs": [
+                "player-start"
+              ],
+              "optional": false,
+              "quantity": null
+            },
+            {
+              "id": "smithy",
+              "title": "Crafting corner",
+              "asset": "Item-smithy",
+              "detail": "Store metal near the forge/smithy; this layout is a convenience plan.",
+              "sourceIDs": [
+                "player-route"
+              ],
+              "optional": false,
+              "quantity": null
+            }
+          ]
+        },
+        {
+          "id": "equipment",
+          "title": "Equipment",
+          "icon": "tools",
+          "goals": [
+            {
+              "id": "metal-tools",
+              "title": "Metal tools",
+              "asset": "Item-metal-pick",
+              "detail": "Craft a Metal Pick and Metal Hatchet before repeated mining trips.",
+              "sourceIDs": [
+                "player-start"
+              ],
+              "optional": false,
+              "quantity": null
+            },
+            {
+              "id": "taming-kit",
+              "title": "Crossbow + tranqs",
+              "asset": "Item-crossbow",
+              "detail": "Carry tranq arrows, narcotics, food and the appropriate saddle for your tame.",
+              "sourceIDs": [
+                "player-start",
+                "player-route"
+              ],
+              "optional": false,
+              "quantity": null
+            },
+            {
+              "id": "spyglass",
+              "title": "Scout levels",
+              "asset": "Equipment-spyglass",
+              "detail": "Check a target before committing resources; tame level alone does not prove good breeding stats.",
+              "sourceIDs": [
+                "player-route",
+                "wiki-breeding"
+              ],
+              "optional": false,
+              "quantity": null
+            }
+          ]
+        },
+        {
+          "id": "adventure",
+          "title": "Adventure",
+          "icon": "spawn",
+          "goals": [
+            {
+              "id": "metal-run",
+              "title": "First metal loop",
+              "asset": "Nav-farming",
+              "detail": "Choose a filmed Island Metal location in Farming and complete one return trip.",
+              "sourceIDs": [
+                "player-route"
+              ],
+              "optional": false,
+              "quantity": null
+            },
+            {
+              "id": "flight-home",
+              "title": "Return alive",
+              "asset": "Nav-map",
+              "detail": "Learn a safe flyer route between your home and a resource region.",
+              "sourceIDs": [
+                "player-route"
+              ],
+              "optional": false,
+              "quantity": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "home",
+      "title": "A Base to Keep",
+      "subtitle": "Beautiful home · production · nursery",
+      "asset": "Nav-base",
+      "note": "Suggested build: home + workshop + tame yard + greenhouse. No giant mansion required.",
+      "groups": [
+        {
+          "id": "creatures",
+          "title": "Creatures",
+          "icon": "creatures",
+          "goals": [
+            {
+              "id": "wood-gatherer",
+              "title": "Wood gatherer",
+              "asset": "Dino-castoroides",
+              "detail": "Optional wood specialist; a Therizinosaur can cover several jobs later.",
+              "sourceIDs": [
+                "player-start",
+                "player-balance"
+              ],
+              "optional": true,
+              "quantity": null
+            },
+            {
+              "id": "theri-parents",
+              "title": "Therizino parents",
+              "asset": "Dino-therizinosaur",
+              "detail": "Find a male/female pair with useful health and melee. Keep this pair safe.",
+              "sourceIDs": [
+                "player-balance",
+                "player-current",
+                "wiki-breeding"
+              ],
+              "optional": false,
+              "quantity": "1 pair"
+            }
+          ]
+        },
+        {
+          "id": "base",
+          "title": "Base",
+          "icon": "locations",
+          "goals": [
+            {
+              "id": "main-home",
+              "title": "Home + tame yard",
+              "asset": "Nav-base",
+              "detail": "Build a stone home you like with room for useful tames; browse Base Locations for a site.",
+              "sourceIDs": [
+                "player-route",
+                "player-balance"
+              ],
+              "optional": false,
+              "quantity": null
+            },
+            {
+              "id": "fabricator",
+              "title": "Powered workshop",
+              "asset": "Equipment-fabricator",
+              "detail": "Fabricator, powered generator and refrigerator; make a reliable fuel supply.",
+              "sourceIDs": [
+                "player-route"
+              ],
+              "optional": false,
+              "quantity": null
+            },
+            {
+              "id": "greenhouse",
+              "title": "Crop corner",
+              "asset": "Equipment-large-crop-plot",
+              "detail": "Plant cake crops and narcoberries; greenhouse styling is optional.",
+              "sourceIDs": [
+                "player-balance",
+                "cake-recipe"
+              ],
+              "optional": false,
+              "quantity": null
+            },
+            {
+              "id": "nursery",
+              "title": "Nursery + trough",
+              "asset": "Equipment-feeding-trough",
+              "detail": "Separate breeding and raising space from your fighting animals.",
+              "sourceIDs": [
+                "wiki-breeding"
+              ],
+              "optional": false,
+              "quantity": null
+            }
+          ]
+        },
+        {
+          "id": "equipment",
+          "title": "Equipment",
+          "icon": "tools",
+          "goals": [
+            {
+              "id": "hatch",
+              "title": "Incubation setup",
+              "asset": "Equipment-air-conditioner",
+              "detail": "Match temperature to the egg; several AC units may be needed, depending on placement and climate.",
+              "sourceIDs": [
+                "wiki-breeding"
+              ],
+              "optional": false,
+              "quantity": null
+            },
+            {
+              "id": "cake-supply",
+              "title": "Honey + sap",
+              "asset": "Item-bee-hive",
+              "detail": "Establish honey, sap and cake crops; keep a Cooking Pot or Industrial Cooker, stimulant, fibre and water.",
+              "sourceIDs": [
+                "player-balance",
+                "cake-recipe"
+              ],
+              "optional": false,
+              "quantity": null
+            },
+            {
+              "id": "big-forge",
+              "title": "Industrial Forge",
+              "asset": "Item-industrial-forge",
+              "detail": "Optional major upgrade once metal demand grows; not required to start caves.",
+              "sourceIDs": [
+                "player-route"
+              ],
+              "optional": true,
+              "quantity": null
+            }
+          ]
+        },
+        {
+          "id": "adventure",
+          "title": "Adventure",
+          "icon": "spawn",
+          "goals": [
+            {
+              "id": "resource-tour",
+              "title": "Resource tour",
+              "asset": "Nav-farming",
+              "detail": "Visit crystal, oil and paste regions while collecting supplies for your new home.",
+              "sourceIDs": [
+                "player-route",
+                "player-balance"
+              ],
+              "optional": false,
+              "quantity": null
+            },
+            {
+              "id": "home-style",
+              "title": "A favourite corner",
+              "asset": "Nav-base",
+              "detail": "Optional: balcony, greenhouse entrance or a scenic landing pad.",
+              "sourceIDs": [
+                "player-balance"
+              ],
+              "optional": true,
+              "quantity": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "explore",
+      "title": "Caves & Ocean",
+      "subtitle": "Artifacts · blueprints · new biomes",
+      "asset": "Nav-caves",
+      "note": "Prepare per cave. A Baryonyx does not fit or solve every cave.",
+      "groups": [
+        {
+          "id": "creatures",
+          "title": "Creatures",
+          "icon": "creatures",
+          "goals": [
+            {
+              "id": "bary",
+              "title": "Baryonyx",
+              "asset": "Dino-baryonyx",
+              "detail": "Breed or tame a dependable cave mount for routes it can enter.",
+              "sourceIDs": [
+                "player-route"
+              ],
+              "optional": false,
+              "quantity": null
+            },
+            {
+              "id": "basilo",
+              "title": "Basilosaurus",
+              "asset": "Dino-basilosaurus",
+              "detail": "Prepare an ocean mount for underwater artifact routes; depth and dangerous spawns still matter.",
+              "sourceIDs": [
+                "player-balance",
+                "wiki-basilo"
+              ],
+              "optional": false,
+              "quantity": null
+            },
+            {
+              "id": "frog",
+              "title": "Swamp farmer",
+              "asset": "Dino-beelzebufo",
+              "detail": "Optional: Beelzebufo paste farming; Megatherium is another chitin option. Check cave access first.",
+              "sourceIDs": [
+                "player-swamp-video",
+                "wiki-brood",
+                "wiki-caves"
+              ],
+              "optional": true,
+              "quantity": null
+            }
+          ]
+        },
+        {
+          "id": "base",
+          "title": "Base",
+          "icon": "locations",
+          "goals": [
+            {
+              "id": "outpost",
+              "title": "Cave staging kit",
+              "asset": "Equipment-hide-sleeping-bag",
+              "detail": "Keep a spare kit and a safe respawn point outside your chosen route.",
+              "sourceIDs": [
+                "player-route"
+              ],
+              "optional": false,
+              "quantity": null
+            },
+            {
+              "id": "loot-store",
+              "title": "Blueprint storage",
+              "asset": "Item-storage-box",
+              "detail": "Protect useful saddle and weapon blueprints for army crafting.",
+              "sourceIDs": [
+                "player-current"
+              ],
+              "optional": false,
+              "quantity": null
+            }
+          ]
+        },
+        {
+          "id": "equipment",
+          "title": "Equipment",
+          "icon": "tools",
+          "goals": [
+            {
+              "id": "cave-kit",
+              "title": "Armour + recovery",
+              "asset": "Item-medical-brew",
+              "detail": "Pack spare armour, healing, ammunition and route-specific protection.",
+              "sourceIDs": [
+                "wiki-dragon"
+              ],
+              "optional": false,
+              "quantity": null
+            },
+            {
+              "id": "gas-mask",
+              "title": "Swamp protection",
+              "asset": "Item-gas-mask",
+              "detail": "Prepare poison protection before Swamp Cave; do not enter in ordinary armour alone.",
+              "sourceIDs": [
+                "wiki-caves"
+              ],
+              "optional": false,
+              "quantity": null
+            },
+            {
+              "id": "scuba",
+              "title": "Ocean kit",
+              "asset": "Item-scuba-tank",
+              "detail": "Prepare oxygen gear and a way to recover if the mount is lost.",
+              "sourceIDs": [
+                "player-balance"
+              ],
+              "optional": false,
+              "quantity": null
+            },
+            {
+              "id": "fur",
+              "title": "Snow kit",
+              "asset": "Item-fur-chestpiece",
+              "detail": "Use cold protection for northern exploration and snow-cave preparation.",
+              "sourceIDs": [
+                "player-route"
+              ],
+              "optional": false,
+              "quantity": null
+            }
+          ]
+        },
+        {
+          "id": "adventure",
+          "title": "Adventure",
+          "icon": "spawn",
+          "goals": [
+            {
+              "id": "first-cave",
+              "title": "First cave route",
+              "asset": "Artifact-hunter",
+              "detail": "Complete Lower South Cave for Artifact of the Hunter; use the existing cave walkthrough.",
+              "sourceIDs": [
+                "wiki-brood"
+              ],
+              "optional": false,
+              "quantity": null
+            },
+            {
+              "id": "ocean-run",
+              "title": "First ocean route",
+              "asset": "Artifact-brute",
+              "detail": "Work toward Artifact of the Brute in Caverns of Lost Faith; do not rush the underwater caves.",
+              "sourceIDs": [
+                "wiki-monkey"
+              ],
+              "optional": false,
+              "quantity": null
+            },
+            {
+              "id": "loot-run",
+              "title": "Blueprint trips",
+              "asset": "Nav-equipment",
+              "detail": "Run suitable cave/drop routes repeatedly until you can craft better saddles.",
+              "sourceIDs": [
+                "player-current"
+              ],
+              "optional": false,
+              "quantity": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "army",
+      "title": "Raise Your Army",
+      "subtitle": "Good parents · imprints · equipment",
+      "asset": "Dino-therizinosaur",
+      "note": "Suggested shared team: 19 Therizinos + 1 ridden Yuty. Preserve parents; use raised offspring.",
+      "groups": [
+        {
+          "id": "creatures",
+          "title": "Creatures",
+          "icon": "creatures",
+          "goals": [
+            {
+              "id": "theri-army",
+              "title": "Raised Therizinos",
+              "asset": "Dino-therizinosaur",
+              "detail": "Build a shared fighter line with useful health/melee; imprint and level the battle offspring. 19 is a planning roster, not a minimum-win guarantee.",
+              "sourceIDs": [
+                "player-balance",
+                "player-current",
+                "wiki-breeding",
+                "wiki-imprint"
+              ],
+              "optional": false,
+              "quantity": "19"
+            },
+            {
+              "id": "yuty",
+              "title": "Yutyrannus",
+              "asset": "Dino-yutyrannus",
+              "detail": "Ride for courage roar and whistles; level useful health/stamina.",
+              "sourceIDs": [
+                "wiki-brood"
+              ],
+              "optional": false,
+              "quantity": "1"
+            },
+            {
+              "id": "mega-option",
+              "title": "Broodmother option",
+              "asset": "Dino-megatherium",
+              "detail": "Optional specialist army. Replace Therizinos rather than adding beyond the arena cap.",
+              "sourceIDs": [
+                "wiki-brood"
+              ],
+              "optional": true,
+              "quantity": null
+            },
+            {
+              "id": "pig-option",
+              "title": "Healing option",
+              "asset": "Dino-daeodon",
+              "detail": "Optional healer replaces one fighter: 18 + Yuty + Daeodon. Pack food and assess the DPS trade-off.",
+              "sourceIDs": [
+                "player-current"
+              ],
+              "optional": true,
+              "quantity": null
+            }
+          ]
+        },
+        {
+          "id": "base",
+          "title": "Base",
+          "icon": "locations",
+          "goals": [
+            {
+              "id": "safe-parents",
+              "title": "Safe breeders",
+              "asset": "Nav-base",
+              "detail": "Keep original breeding parents and spare offspring at home.",
+              "sourceIDs": [
+                "wiki-breeding"
+              ],
+              "optional": false,
+              "quantity": null
+            },
+            {
+              "id": "army-yard",
+              "title": "Army staging yard",
+              "asset": "Equipment-feeding-trough",
+              "detail": "Enough space to saddle, heal and organise every fighter before departure.",
+              "sourceIDs": [
+                "wiki-breeding"
+              ],
+              "optional": false,
+              "quantity": null
+            }
+          ]
+        },
+        {
+          "id": "equipment",
+          "title": "Equipment",
+          "icon": "tools",
+          "goals": [
+            {
+              "id": "saddles",
+              "title": "Saddle each fighter",
+              "asset": "Nav-equipment",
+              "detail": "Craft quality saddles from your blueprints; verify the actual armour stat.",
+              "sourceIDs": [
+                "player-current",
+                "wiki-brood"
+              ],
+              "optional": false,
+              "quantity": null
+            },
+            {
+              "id": "cakes",
+              "title": "Cake production",
+              "asset": "Item-sweet-vegetable-cake",
+              "detail": "Carry cakes on Therizinos. They heal eligible herbivores; they do not cancel Dragon burn.",
+              "sourceIDs": [
+                "player-balance",
+                "wiki-dragon",
+                "cake-recipe"
+              ],
+              "optional": false,
+              "quantity": null
+            },
+            {
+              "id": "backup-gun",
+              "title": "Backup shotgun",
+              "asset": "Item-pump-action-shotgun",
+              "detail": "Carry a usable firearm, ammunition, armour and Medical Brews for rider emergencies.",
+              "sourceIDs": [
+                "wiki-dragon"
+              ],
+              "optional": false,
+              "quantity": null
+            }
+          ]
+        },
+        {
+          "id": "adventure",
+          "title": "Practice",
+          "icon": "stats",
+          "goals": [
+            {
+              "id": "whistles",
+              "title": "Whistle rehearsal",
+              "asset": "Dino-yutyrannus",
+              "detail": "Practise follow groups, stop, attack and courage roar before teleporting.",
+              "sourceIDs": [
+                "wiki-brood"
+              ],
+              "optional": false,
+              "quantity": null
+            },
+            {
+              "id": "team-check",
+              "title": "Roster check",
+              "asset": "Nav-creatures",
+              "detail": "Check saddles, health, food and position inside the teleport radius; ordinary arenas cap the team at 20.",
+              "sourceIDs": [
+                "wiki-brood"
+              ],
+              "optional": false,
+              "quantity": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "guardians",
+      "title": "First Guardians",
+      "subtitle": "Gamma · learn · recover",
+      "asset": "Cutout-Boss-megapithecus",
+      "note": "Suggested order: Megapithecus → Broodmother. Swap them if the spider set and army are ready first.",
+      "groups": [
+        {
+          "id": "creatures",
+          "title": "Army",
+          "icon": "creatures",
+          "goals": [
+            {
+              "id": "healthy-team",
+              "title": "Healed battle team",
+              "asset": "Dino-therizinosaur",
+              "detail": "Use your raised/saddled team; keep the Yuty rider clear of the front line.",
+              "sourceIDs": [
+                "wiki-brood",
+                "wiki-monkey"
+              ],
+              "optional": false,
+              "quantity": null
+            },
+            {
+              "id": "after-fight",
+              "title": "Recover between fights",
+              "asset": "Equipment-feeding-trough",
+              "detail": "Heal survivors and replace losses before another summon.",
+              "sourceIDs": [
+                "player-current"
+              ],
+              "optional": false,
+              "quantity": null
+            }
+          ]
+        },
+        {
+          "id": "base",
+          "title": "Base",
+          "icon": "locations",
+          "goals": [
+            {
+              "id": "boss-storage",
+              "title": "Tribute locker",
+              "asset": "Item-storage-box",
+              "detail": "Keep separate labelled boxes for each boss set and protect the trophies after victory.",
+              "sourceIDs": [
+                "wiki-brood",
+                "wiki-monkey",
+                "wiki-overseer"
+              ],
+              "optional": false,
+              "quantity": null
+            },
+            {
+              "id": "trophy-room",
+              "title": "Trophy corner",
+              "asset": "Nav-base",
+              "detail": "Optional: build a display for the guardians you defeat.",
+              "sourceIDs": [
+                "player-balance"
+              ],
+              "optional": true,
+              "quantity": null
+            }
+          ]
+        },
+        {
+          "id": "equipment",
+          "title": "Artifact sets",
+          "icon": "loot",
+          "goals": [
+            {
+              "id": "brute",
+              "title": "Artifact of the Brute",
+              "asset": "Artifact-brute",
+              "detail": "Megapithecus tribute.",
+              "sourceIDs": [
+                "wiki-monkey"
+              ],
+              "optional": false,
+              "quantity": null
+            },
+            {
+              "id": "devourer",
+              "title": "Artifact of the Devourer",
+              "asset": "Artifact-devourer",
+              "detail": "Megapithecus tribute.",
+              "sourceIDs": [
+                "wiki-monkey"
+              ],
+              "optional": false,
+              "quantity": null
+            },
+            {
+              "id": "pack",
+              "title": "Artifact of the Pack",
+              "asset": "Artifact-pack",
+              "detail": "Megapithecus tribute.",
+              "sourceIDs": [
+                "wiki-monkey"
+              ],
+              "optional": false,
+              "quantity": null
+            },
+            {
+              "id": "hunter",
+              "title": "Artifact of the Hunter",
+              "asset": "Artifact-hunter",
+              "detail": "Broodmother tribute.",
+              "sourceIDs": [
+                "wiki-brood"
+              ],
+              "optional": false,
+              "quantity": null
+            },
+            {
+              "id": "clever",
+              "title": "Artifact of the Clever",
+              "asset": "Artifact-clever",
+              "detail": "Broodmother tribute.",
+              "sourceIDs": [
+                "wiki-brood"
+              ],
+              "optional": false,
+              "quantity": null
+            },
+            {
+              "id": "massive",
+              "title": "Artifact of the Massive",
+              "asset": "Artifact-massive",
+              "detail": "Broodmother tribute.",
+              "sourceIDs": [
+                "wiki-brood"
+              ],
+              "optional": false,
+              "quantity": null
+            }
+          ]
+        },
+        {
+          "id": "adventure",
+          "title": "Boss goals",
+          "icon": "stats",
+          "goals": [
+            {
+              "id": "monkey-gamma",
+              "title": "Gamma Megapithecus",
+              "asset": "Cutout-Boss-megapithecus",
+              "detail": "Bait toward a safe fight position; keep the army away from the drop-off.",
+              "sourceIDs": [
+                "wiki-monkey",
+                "player-order"
+              ],
+              "optional": false,
+              "quantity": null
+            },
+            {
+              "id": "brood-gamma",
+              "title": "Gamma Broodmother",
+              "asset": "Cutout-Boss-broodmother",
+              "detail": "Keep fighters engaged; specialist Megatheriums need their insect buff. Save the trophy.",
+              "sourceIDs": [
+                "wiki-brood"
+              ],
+              "optional": false,
+              "quantity": null
+            },
+            {
+              "id": "harder-guardians",
+              "title": "Beta / Alpha later",
+              "asset": "Nav-bosses",
+              "detail": "Optional after a clean Gamma: review current team, saddle quality and the exact higher-tier tribute.",
+              "sourceIDs": [
+                "player-current",
+                "wiki-brood",
+                "wiki-monkey"
+              ],
+              "optional": true,
+              "quantity": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dragon",
+      "title": "Face the Dragon",
+      "subtitle": "Fire control · rider safety · Gamma",
+      "asset": "Cutout-Boss-dragon",
+      "note": "Cakes are healing, not fire immunity. Gamma success is not proof of Alpha readiness.",
+      "groups": [
+        {
+          "id": "creatures",
+          "title": "Army",
+          "icon": "creatures",
+          "goals": [
+            {
+              "id": "dragon-team",
+              "title": "Therizino team",
+              "asset": "Dino-therizinosaur",
+              "detail": "Recover the shared army, restock cakes and check combat stats. No universal HP/melee number guarantees this fight.",
+              "sourceIDs": [
+                "player-current",
+                "wiki-dragon"
+              ],
+              "optional": false,
+              "quantity": null
+            },
+            {
+              "id": "dragon-yuty",
+              "title": "Support rider",
+              "asset": "Dino-yutyrannus",
+              "detail": "Maintain courage and control positioning; avoid bringing the support mount into the breath cone.",
+              "sourceIDs": [
+                "wiki-dragon"
+              ],
+              "optional": false,
+              "quantity": null
+            }
+          ]
+        },
+        {
+          "id": "base",
+          "title": "Base",
+          "icon": "locations",
+          "goals": [
+            {
+              "id": "restock",
+              "title": "Cake & repair stock",
+              "asset": "Item-sweet-vegetable-cake",
+              "detail": "Maintain the crop/honey/sap loop and a reserve equipment kit.",
+              "sourceIDs": [
+                "player-balance",
+                "wiki-dragon",
+                "cake-recipe"
+              ],
+              "optional": false,
+              "quantity": null
+            },
+            {
+              "id": "keep-home",
+              "title": "Keep your home safe",
+              "asset": "Nav-base",
+              "detail": "Leave parents and useful gathering tames behind.",
+              "sourceIDs": [
+                "wiki-breeding"
+              ],
+              "optional": false,
+              "quantity": null
+            }
+          ]
+        },
+        {
+          "id": "equipment",
+          "title": "Artifact set",
+          "icon": "loot",
+          "goals": [
+            {
+              "id": "cunning",
+              "title": "Artifact of the Cunning",
+              "asset": "Artifact-cunning",
+              "detail": "Dragon tribute; underwater cave preparation matters.",
+              "sourceIDs": [
+                "wiki-dragon"
+              ],
+              "optional": false,
+              "quantity": null
+            },
+            {
+              "id": "immune",
+              "title": "Artifact of the Immune",
+              "asset": "Artifact-immune",
+              "detail": "Dragon tribute; prepare Swamp Cave protection.",
+              "sourceIDs": [
+                "wiki-dragon"
+              ],
+              "optional": false,
+              "quantity": null
+            },
+            {
+              "id": "skylord",
+              "title": "Artifact of the Skylord",
+              "asset": "Artifact-skylord",
+              "detail": "Dragon tribute; use its route-specific cave guide.",
+              "sourceIDs": [
+                "wiki-dragon"
+              ],
+              "optional": false,
+              "quantity": null
+            },
+            {
+              "id": "strong",
+              "title": "Artifact of the Strong",
+              "asset": "Artifact-strong",
+              "detail": "Dragon tribute; prepare for the difficult Snow Cave.",
+              "sourceIDs": [
+                "wiki-dragon"
+              ],
+              "optional": false,
+              "quantity": null
+            }
+          ]
+        },
+        {
+          "id": "adventure",
+          "title": "Boss goals",
+          "icon": "stats",
+          "goals": [
+            {
+              "id": "dragon-gamma",
+              "title": "Gamma Dragon",
+              "asset": "Cutout-Boss-dragon",
+              "detail": "Review the fire-breath approach, protect the rider from Dimorphodons and keep the army clear of lava.",
+              "sourceIDs": [
+                "wiki-dragon"
+              ],
+              "optional": false,
+              "quantity": null
+            },
+            {
+              "id": "dragon-higher",
+              "title": "Beta / Alpha later",
+              "asset": "Nav-bosses",
+              "detail": "Optional: inspect the current strategy and tribute before harder tiers. Older boss-bleed shortcuts are no longer valid.",
+              "sourceIDs": [
+                "player-current",
+                "wiki-dragon",
+                "wiki-deino"
+              ],
+              "optional": true,
+              "quantity": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ascend",
+      "title": "The Island Complete",
+      "subtitle": "Tek Cave · Overseer · keep the memories",
+      "asset": "Cutout-Boss-overseer",
+      "note": "Gamma route: 3 guardian trophies + level 60. Prepare the cave separately from the arena.",
+      "groups": [
+        {
+          "id": "creatures",
+          "title": "Army",
+          "icon": "creatures",
+          "goals": [
+            {
+              "id": "tek-line",
+              "title": "Practised convoy",
+              "asset": "Dino-therizinosaur",
+              "detail": "Use follow groups and manageable spacing through lava paths; plan a ground team that qualifies for the arena.",
+              "sourceIDs": [
+                "wiki-tek"
+              ],
+              "optional": false,
+              "quantity": null
+            },
+            {
+              "id": "tek-spares",
+              "title": "Spare line at home",
+              "asset": "Nav-creatures",
+              "detail": "Keep breeders and replacement fighters safe; do not assume cryopods can deploy inside Tek Cave.",
+              "sourceIDs": [
+                "wiki-breeding",
+                "wiki-tek"
+              ],
+              "optional": false,
+              "quantity": null
+            }
+          ]
+        },
+        {
+          "id": "base",
+          "title": "Base",
+          "icon": "locations",
+          "goals": [
+            {
+              "id": "volcano-stage",
+              "title": "Volcano staging",
+              "asset": "Nav-base",
+              "detail": "Prepare supplies and an organised approach outside the cave without blocking the entry.",
+              "sourceIDs": [
+                "wiki-tek"
+              ],
+              "optional": false,
+              "quantity": null
+            },
+            {
+              "id": "finish-home",
+              "title": "A home worth keeping",
+              "asset": "MapLogo-the-island",
+              "detail": "Optional: take a screenshot of the base and tames you raised along the way.",
+              "sourceIDs": [
+                "player-balance"
+              ],
+              "optional": true,
+              "quantity": null
+            }
+          ]
+        },
+        {
+          "id": "equipment",
+          "title": "Entry & kit",
+          "icon": "loot",
+          "goals": [
+            {
+              "id": "three-trophies",
+              "title": "3 guardian trophies",
+              "asset": "Nav-bosses",
+              "detail": "For Gamma: Broodmother, Megapithecus and Dragon Gamma trophies (or higher equivalents), plus level 60.",
+              "sourceIDs": [
+                "wiki-overseer"
+              ],
+              "optional": false,
+              "quantity": "3"
+            },
+            {
+              "id": "tek-kit",
+              "title": "Heat + cold + repair",
+              "asset": "Item-fur-chestpiece",
+              "detail": "Pack temperature protection, spare armour, healing, a shotgun and enough ammunition for the route.",
+              "sourceIDs": [
+                "wiki-tek"
+              ],
+              "optional": false,
+              "quantity": null
+            },
+            {
+              "id": "tek-ammo",
+              "title": "Backup ammunition",
+              "asset": "Item-simple-shotgun-ammo",
+              "detail": "Set your supply budget from the strategy you actually use; there is no universal minimum.",
+              "sourceIDs": [
+                "wiki-tek"
+              ],
+              "optional": false,
+              "quantity": null
+            }
+          ]
+        },
+        {
+          "id": "adventure",
+          "title": "Final goals",
+          "icon": "stats",
+          "goals": [
+            {
+              "id": "tek-route",
+              "title": "Clear Tek Cave",
+              "asset": "Nav-caves",
+              "detail": "Enter within the opening window, keep fighters off lava and continue through the route to the terminal.",
+              "sourceIDs": [
+                "wiki-tek"
+              ],
+              "optional": false,
+              "quantity": null
+            },
+            {
+              "id": "overseer",
+              "title": "Defeat Overseer",
+              "asset": "Cutout-Boss-overseer",
+              "detail": "Complete Gamma ascension; finish the experience before deciding whether to repeat harder tiers.",
+              "sourceIDs": [
+                "wiki-overseer"
+              ],
+              "optional": false,
+              "quantity": null
+            },
+            {
+              "id": "higher-ascension",
+              "title": "Beta / Alpha goal",
+              "asset": "Nav-bosses",
+              "detail": "Optional: obtain matching higher-tier guardian trophies and additional apex tribute first.",
+              "sourceIDs": [
+                "wiki-overseer"
+              ],
+              "optional": true,
+              "quantity": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

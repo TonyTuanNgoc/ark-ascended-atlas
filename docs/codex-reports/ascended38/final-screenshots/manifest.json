@@ -1,0 +1,26 @@
+[
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "20C9346D-B0E6-4239-8152-1D85ADD57BA6",
+        "deviceName" : "Ascended iPad QA",
+        "exportedFileName" : "9E511F25-359A-41C1-A1E3-3574164810CC.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Survival38-Army_0_71214A50-1E13-4693-9B55-257EB27E5CAF.png",
+        "timestamp" : 1791473341.026
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "20C9346D-B0E6-4239-8152-1D85ADD57BA6",
+        "deviceName" : "Ascended iPad QA",
+        "exportedFileName" : "AFAEEA7F-00CB-42E2-A90F-8C64B674B205.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Survival38-Beach-Home_0_C0F1117C-5001-4A9B-8219-C8226DF814B9.png",
+        "timestamp" : 1791473319.878
+      }
+    ],
+    "testIdentifier" : "Survival38UITests/testVisualGuideProgressPersistsAndOtherMapsDoNotReuseIslandRoute()",
+    "testIdentifierURL" : "test://com.apple.xcode/Ascended/AscendedUITests/Survival38UITests/testVisualGuideProgressPersistsAndOtherMapsDoNotReuseIslandRoute"
+  }
+]
