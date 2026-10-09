@@ -1,5 +1,8 @@
 # System change log
 
+## 2026-10-09 — Ascended0.38.0(39): named Survival Guide kits and choices
+Expanded The Island guide to106 goals (74 preserved milestones/32optional) with124 explicitly named content entries and22 attributed references. Added19 creature/equipment/production alternatives, visible exact item names and full pictured kit details. Horizontal group filters improve portrait/landscape readability; saved87goal keys retain their semantics. Scoped13test QA plus final alignment rerun and Simulator delivery recorded in codex-reports/2026-10-09-ascended39-named-survival-options.md. Standalone native only, no Tony OS/TestFlight/physical-device/web domain release.
+
 ## 2026-10-08 — Ascended 0.37.0 (38): The Island Survival Guide
 Added eight researched visual phases balancing base building, exploration and boss progression, 87 illustrated goals (74 milestones/13 optional) and 17 attributed references with per-goal source links. New manual Island checklist persists separately; other maps do not reuse Island guidance. Current ASA fire/bleed/imprint/tribute caveats cross-checked without guaranteed stat thresholds. Compact landscape cards, horizontal phase selection and relevant module shortcuts. Six player sources plus eleven mechanics references; new YouTube API searches rejected, no fresh video analysis claimed. Scoped QA and Simulator delivery documented in codex-reports/2026-10-08-ascended38-island-survival-guide.md. Standalone native only; no Tony OS/TestFlight/physical-device/web domain release.
 

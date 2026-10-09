@@ -1,0 +1,29 @@
+
+🚀 Build & Run
+
+   Scheme: Ascended
+   Project: native/Ascended/Ascended.xcodeproj
+   Platform: iOS Simulator
+   Simulator: 20C9346D-B0E6-4239-8152-1D85ADD57BA6
+   Derived Data: /Volumes/TONY SSD/ASCENDED_MEDIA/builds/Ascended-0.14.0-Simulator
+
+ℹ️ Resolving app path
+✅ Resolving app path
+ℹ️ Booting simulator
+✅ Booting simulator
+ℹ️ Installing app
+✅ Installing app
+ℹ️ Launching app
+
+✅ Build succeeded. (⏱️ 28.8s)
+✅ Build & Run complete
+  ├ Bundle ID: com.tonytuanngoc.ascended
+  ├ Process ID: 32032
+  └ Files:
+     ├ App Path: /Volumes/TONY SSD/ASCENDED_MEDIA/builds/Ascended-0.14.0-Simulator/Build/Products/Debug-iphonesimulator/Ascended.app
+     ├ Build Logs: ~/Library/Developer/MobileBuildMCP/workspaces/Ascended-iPad-Dev-d94c0fd39dc0/logs/build_run_sim_2026-10-09T11-03-49-567Z_pid31550_fc670bd0.log
+     ├ Runtime Logs: ~/Library/Developer/MobileBuildMCP/workspaces/Ascended-iPad-Dev-d94c0fd39dc0/logs/com.tonytuanngoc.ascended_2026-10-09T11-04-15-292Z_helperpid32017_ownerpid31550_2f984c64.log
+     └ OSLog: ~/Library/Developer/MobileBuildMCP/workspaces/Ascended-iPad-Dev-d94c0fd39dc0/logs/com.tonytuanngoc.ascended_oslog_2026-10-09T11-04-18-390Z_helperpid32077_ownerpid31550_ade23bec.log
+
+Next steps:
+1. Stop app in simulator: mobilebuildmcp simulator stop --simulator-id 20C9346D-B0E6-4239-8152-1D85ADD57BA6 --bundle-id com.tonytuanngoc.ascended

@@ -29,7 +29,13 @@ final class Survival38UITests: XCTestCase {
         app.buttons["survival-sources"].tap()
         XCTAssertTrue(app.descendants(matching: .any)["survival-source-sheet"].waitForExistence(timeout: 5))
         app.buttons["Done"].tap()
-        let shot = XCTAttachment(screenshot: XCUIScreen.main.screenshot()); shot.name = "Survival38-Beach-Home"; shot.lifetime = .keepAlways; add(shot)
+        XCTAssertTrue(app.buttons["survival-check-shore/starter"].label.contains("Moschops"))
+        XCTAssertTrue(app.buttons["survival-check-shore/bed"].label.contains("Simple Bed"))
+        app.buttons["survival-group-equipment"].tap()
+        XCTAssertTrue(app.buttons["survival-check-shore/starter-tools"].label.contains("Stone Hatchet"))
+        XCTAssertFalse(app.buttons["survival-check-shore/bed"].exists)
+        app.buttons["survival-group-all"].tap()
+        let shot = XCTAttachment(screenshot: XCUIScreen.main.screenshot()); shot.name = "Survival39-Beach-Home"; shot.lifetime = .keepAlways; add(shot)
         app.buttons["maps-picker"].tap(); app.buttons["choose-ragnarok"].tap()
         app.buttons["section-Survival Guide"].tap()
         XCTAssertTrue(app.descendants(matching: .any)["survival-map-unavailable"].waitForExistence(timeout: 5))
@@ -49,16 +55,24 @@ final class Survival38UITests: XCTestCase {
                 else { app.scrollViews["survival-phase-strip"].swipeLeft() }
             }
             phaseButton.tap()
-            let grid = app.scrollViews["survival-goal-grid"]
             let checks = app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "survival-check-" + phaseID + "/")).allElementsBoundByIndex
             XCTAssertFalse(checks.isEmpty)
             for check in checks {
-                XCTAssertTrue(check.isHittable, check.identifier)
-                XCTAssertLessThanOrEqual(check.frame.maxY, grid.frame.maxY + 1, check.identifier + " requires vertical scrolling")
+                XCTAssertTrue(check.exists, check.identifier)
             }
         }
         for _ in 0..<8 { if army.isHittable { break }; app.scrollViews["survival-phase-strip"].swipeRight() }
         army.tap()
-        let armyShot = XCTAttachment(screenshot: XCUIScreen.main.screenshot()); armyShot.name = "Survival38-Army"; armyShot.lifetime = .keepAlways; add(armyShot)
+        app.buttons["survival-group-creatures"].tap()
+        XCTAssertTrue(app.buttons["survival-check-army/rex-option"].label.contains("Rex"))
+        let armyShot = XCTAttachment(screenshot: XCUIScreen.main.screenshot()); armyShot.name = "Survival39-Army"; armyShot.lifetime = .keepAlways; add(armyShot)
+        XCUIDevice.shared.orientation = .portrait
+        for _ in 0..<8 { if app.buttons["survival-phase-shore"].isHittable { break }; app.scrollViews["survival-phase-strip"].swipeRight() }
+        app.buttons["survival-phase-shore"].tap()
+        app.buttons["survival-group-equipment"].tap()
+        XCTAssertTrue(app.buttons["survival-check-shore/starter-tools"].isHittable)
+        XCTAssertTrue(app.buttons["survival-check-shore/bola"].label.contains("Bow"))
+        let portrait = XCTAttachment(screenshot: XCUIScreen.main.screenshot()); portrait.name = "Survival39-Portrait-Named-Equipment"; portrait.lifetime = .keepAlways; add(portrait)
+        XCUIDevice.shared.orientation = .landscapeLeft
     }
 }

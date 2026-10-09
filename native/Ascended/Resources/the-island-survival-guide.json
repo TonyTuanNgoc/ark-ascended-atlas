@@ -1,7 +1,7 @@
 {
   "mapID": "the-island",
   "title": "Survival Guide",
-  "reviewedAt": "2026-10-08",
+  "reviewedAt": "2026-10-09",
   "mode": "PvE · solo / small tribe",
   "approach": "Explore, build a home, then ascend.",
   "editorialNote": "A suggested route, not a speedrun or a required tame list. Mark your own progress; no game connection. Creature choices, build layouts and roster quantities are planning recommendations.",
@@ -141,6 +141,46 @@
       "kind": "Mechanics reference",
       "note": "Cave/artifact associations and route-specific hazards; ASA entrances differ from ASE, so use the existing Island cave and Atlas records for coordinates.",
       "reviewedAt": "2026-10-08"
+    },
+    {
+      "id": "wiki-moschops",
+      "title": "ARK Wiki · Moschops",
+      "url": "https://ark.wiki.gg/wiki/Moschops",
+      "kind": "Mechanics reference",
+      "note": "Early versatile gatherer; check its requested passive-tame food.",
+      "reviewedAt": "2026-10-09"
+    },
+    {
+      "id": "wiki-trike",
+      "title": "ARK Wiki · Triceratops",
+      "url": "https://ark.wiki.gg/wiki/Triceratops",
+      "kind": "Mechanics reference",
+      "note": "Early berries/thatch and defence option; not a required second starter.",
+      "reviewedAt": "2026-10-09"
+    },
+    {
+      "id": "wiki-mammoth",
+      "title": "ARK Wiki · Mammoth",
+      "url": "https://ark.wiki.gg/wiki/Mammoth",
+      "kind": "Mechanics reference",
+      "note": "Wood specialist; northern taming requires cold and predator preparation.",
+      "reviewedAt": "2026-10-09"
+    },
+    {
+      "id": "wiki-thyla",
+      "title": "ARK Wiki · Thylacoleo",
+      "url": "https://ark.wiki.gg/wiki/Thylacoleo",
+      "kind": "Mechanics reference",
+      "note": "Climbing ground explorer. Cave entrances restrict access; not an Island arena fighter.",
+      "reviewedAt": "2026-10-09"
+    },
+    {
+      "id": "wiki-rex",
+      "title": "ARK Wiki · Rex",
+      "url": "https://ark.wiki.gg/wiki/Rex",
+      "kind": "Mechanics reference",
+      "note": "Guardian army alternative. A Rex team is not automatically a Dragon-ready replacement.",
+      "reviewedAt": "2026-10-09"
     }
   ],
   "phases": [
@@ -166,7 +206,17 @@
                 "player-route"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Moschops",
+                  "asset": "Dino-moschops"
+                },
+                {
+                  "name": "Parasaur",
+                  "asset": "Dino-parasaur"
+                }
+              ]
             },
             {
               "id": "parasaur",
@@ -177,7 +227,31 @@
                 "player-start"
               ],
               "optional": true,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Parasaur",
+                  "asset": "Dino-parasaur"
+                }
+              ]
+            },
+            {
+              "id": "trike-option",
+              "title": "Berry gatherer",
+              "asset": "Dino-triceratops",
+              "detail": "Triceratops: berries, thatch and early defence. A later starter alternative; do not risk an unprepared knockout just to finish this phase.",
+              "sourceIDs": [
+                "wiki-trike",
+                "player-start"
+              ],
+              "optional": true,
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Triceratops",
+                  "asset": "Dino-triceratops"
+                }
+              ]
             }
           ]
         },
@@ -196,7 +270,17 @@
                 "player-route"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Wooden Foundation",
+                  "asset": "Equipment-wooden-foundation"
+                },
+                {
+                  "name": "Storage Box",
+                  "asset": "Item-storage-box"
+                }
+              ]
             },
             {
               "id": "bed",
@@ -207,7 +291,13 @@
                 "player-start"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Simple Bed",
+                  "asset": "Item-simple-bed"
+                }
+              ]
             },
             {
               "id": "fire",
@@ -218,7 +308,13 @@
                 "player-start"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Campfire",
+                  "asset": "Equipment-campfire"
+                }
+              ]
             }
           ]
         },
@@ -236,7 +332,17 @@
                 "player-start"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Stone Pick",
+                  "asset": "Equipment-stone-pick"
+                },
+                {
+                  "name": "Stone Hatchet",
+                  "asset": "Equipment-stone-hatchet"
+                }
+              ]
             },
             {
               "id": "bola",
@@ -247,7 +353,51 @@
                 "player-start"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Bola",
+                  "asset": "Item-bola"
+                },
+                {
+                  "name": "Bow",
+                  "asset": "Equipment-bow"
+                }
+              ]
+            },
+            {
+              "id": "cloth-kit",
+              "title": "Light armour",
+              "asset": "Equipment-cloth-shirt",
+              "detail": "Cloth Shirt: an inexpensive early clothing option. Add matching pieces as materials allow.",
+              "sourceIDs": [
+                "player-start"
+              ],
+              "optional": true,
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Cloth Shirt",
+                  "asset": "Equipment-cloth-shirt"
+                }
+              ]
+            },
+            {
+              "id": "torch-kit",
+              "title": "Night trips",
+              "asset": "Item-torch",
+              "detail": "Torch: light for the coast and your starter shelter. Keep food and an escape path ready.",
+              "sourceIDs": [
+                "player-start"
+              ],
+              "optional": true,
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Torch",
+                  "asset": "Item-torch"
+                }
+              ]
             }
           ]
         },
@@ -266,7 +416,8 @@
                 "player-route"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": []
             },
             {
               "id": "pretty-camp",
@@ -277,7 +428,13 @@
                 "player-balance"
               ],
               "optional": true,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Storage Box",
+                  "asset": "Item-storage-box"
+                }
+              ]
             }
           ]
         }
@@ -304,7 +461,13 @@
                 "player-route"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Pteranodon",
+                  "asset": "Dino-pteranodon"
+                }
+              ]
             },
             {
               "id": "argy",
@@ -316,7 +479,13 @@
                 "player-route"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Argentavis",
+                  "asset": "Dino-argentavis"
+                }
+              ]
             },
             {
               "id": "anky",
@@ -328,7 +497,13 @@
                 "player-route"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Ankylosaurus",
+                  "asset": "Dino-ankylosaurus"
+                }
+              ]
             },
             {
               "id": "doed",
@@ -339,7 +514,30 @@
                 "player-route"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Doedicurus",
+                  "asset": "Dino-doedicurus"
+                }
+              ]
+            },
+            {
+              "id": "trike-upgrade",
+              "title": "Berry supply",
+              "asset": "Dino-triceratops",
+              "detail": "Triceratops can keep supplying berries while your flyers and mineral gatherers come online.",
+              "sourceIDs": [
+                "wiki-trike"
+              ],
+              "optional": true,
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Triceratops",
+                  "asset": "Dino-triceratops"
+                }
+              ]
             }
           ]
         },
@@ -357,7 +555,17 @@
                 "player-start"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Stone Foundation",
+                  "asset": "Equipment-stone-foundation"
+                },
+                {
+                  "name": "Refining Forge",
+                  "asset": "Item-refining-forge"
+                }
+              ]
             },
             {
               "id": "smithy",
@@ -368,7 +576,30 @@
                 "player-route"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Smithy",
+                  "asset": "Item-smithy"
+                }
+              ]
+            },
+            {
+              "id": "preserving",
+              "title": "Food storage",
+              "asset": "Equipment-preserving-bin",
+              "detail": "Preserving Bin: an intermediate storage option before reliable generator power and a refrigerator.",
+              "sourceIDs": [
+                "player-route"
+              ],
+              "optional": true,
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Preserving Bin",
+                  "asset": "Equipment-preserving-bin"
+                }
+              ]
             }
           ]
         },
@@ -386,7 +617,17 @@
                 "player-start"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Metal Pick",
+                  "asset": "Item-metal-pick"
+                },
+                {
+                  "name": "Metal Hatchet",
+                  "asset": "Item-metal-hatchet"
+                }
+              ]
             },
             {
               "id": "taming-kit",
@@ -398,7 +639,21 @@
                 "player-route"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Crossbow",
+                  "asset": "Item-crossbow"
+                },
+                {
+                  "name": "Tranq Arrow",
+                  "asset": "Equipment-tranq-arrow"
+                },
+                {
+                  "name": "Narcotic",
+                  "asset": "Item-narcotic"
+                }
+              ]
             },
             {
               "id": "spyglass",
@@ -410,7 +665,34 @@
                 "wiki-breeding"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Spyglass",
+                  "asset": "Equipment-spyglass"
+                }
+              ]
+            },
+            {
+              "id": "rifle-kit",
+              "title": "Later taming upgrade",
+              "asset": "Item-longneck-rifle",
+              "detail": "Longneck Rifle + Tranquilizer Dart: a later alternative to the Crossbow. Check target health and its suitable knockout method.",
+              "sourceIDs": [
+                "player-route"
+              ],
+              "optional": true,
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Longneck Rifle",
+                  "asset": "Item-longneck-rifle"
+                },
+                {
+                  "name": "Tranquilizer Dart",
+                  "asset": "Item-tranquilizer-dart"
+                }
+              ]
             }
           ]
         },
@@ -428,7 +710,8 @@
                 "player-route"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": []
             },
             {
               "id": "flight-home",
@@ -439,7 +722,8 @@
                 "player-route"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": []
             }
           ]
         }
@@ -467,7 +751,13 @@
                 "player-balance"
               ],
               "optional": true,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Castoroides",
+                  "asset": "Dino-castoroides"
+                }
+              ]
             },
             {
               "id": "theri-parents",
@@ -480,7 +770,48 @@
                 "wiki-breeding"
               ],
               "optional": false,
-              "quantity": "1 pair"
+              "quantity": "1 pair",
+              "contents": [
+                {
+                  "name": "Therizinosaur",
+                  "asset": "Dino-therizinosaur"
+                }
+              ]
+            },
+            {
+              "id": "mammoth-option",
+              "title": "Wood alternative",
+              "asset": "Dino-mammoth",
+              "detail": "Mammoth: wood specialist instead of Castoroides. Prepare for the northern climate; choose based on your own base route.",
+              "sourceIDs": [
+                "wiki-mammoth"
+              ],
+              "optional": true,
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Mammoth",
+                  "asset": "Dino-mammoth"
+                }
+              ]
+            },
+            {
+              "id": "theri-gatherer",
+              "title": "Multi-resource alternative",
+              "asset": "Dino-therizinosaur",
+              "detail": "Therizinosaur: a versatile gatherer if you prefer one multi-purpose animal to another specialist. Keep breeding parents safe.",
+              "sourceIDs": [
+                "player-balance",
+                "wiki-breeding"
+              ],
+              "optional": true,
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Therizinosaur",
+                  "asset": "Dino-therizinosaur"
+                }
+              ]
             }
           ]
         },
@@ -499,7 +830,17 @@
                 "player-balance"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Stone Foundation",
+                  "asset": "Equipment-stone-foundation"
+                },
+                {
+                  "name": "Storage Box",
+                  "asset": "Item-storage-box"
+                }
+              ]
             },
             {
               "id": "fabricator",
@@ -510,7 +851,21 @@
                 "player-route"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Fabricator",
+                  "asset": "Equipment-fabricator"
+                },
+                {
+                  "name": "Power Generator",
+                  "asset": "Equipment-power-generator"
+                },
+                {
+                  "name": "Refrigerator",
+                  "asset": "Equipment-refrigerator"
+                }
+              ]
             },
             {
               "id": "greenhouse",
@@ -522,7 +877,25 @@
                 "cake-recipe"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Large Crop Plot",
+                  "asset": "Equipment-large-crop-plot"
+                },
+                {
+                  "name": "Rockarrot",
+                  "asset": "Item-rockarrot"
+                },
+                {
+                  "name": "Savoroot",
+                  "asset": "FarmResource-savoroot"
+                },
+                {
+                  "name": "Longrass",
+                  "asset": "FarmResource-longrass"
+                }
+              ]
             },
             {
               "id": "nursery",
@@ -533,7 +906,30 @@
                 "wiki-breeding"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Feeding Trough",
+                  "asset": "Equipment-feeding-trough"
+                }
+              ]
+            },
+            {
+              "id": "cooker-option",
+              "title": "Cooking upgrade",
+              "asset": "Equipment-industrial-cooker",
+              "detail": "Industrial Cooker is an optional production upgrade. A Cooking Pot can make cakes before you build a larger kitchen.",
+              "sourceIDs": [
+                "cake-recipe"
+              ],
+              "optional": true,
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Industrial Cooker",
+                  "asset": "Equipment-industrial-cooker"
+                }
+              ]
             }
           ]
         },
@@ -551,7 +947,13 @@
                 "wiki-breeding"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Air Conditioner",
+                  "asset": "Equipment-air-conditioner"
+                }
+              ]
             },
             {
               "id": "cake-supply",
@@ -563,7 +965,25 @@
                 "cake-recipe"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Giant Bee Honey",
+                  "asset": "Item-giant-bee-honey"
+                },
+                {
+                  "name": "Sap",
+                  "asset": "Equipment-sap"
+                },
+                {
+                  "name": "Cooking Pot",
+                  "asset": "Equipment-cooking-pot"
+                },
+                {
+                  "name": "Stimulant",
+                  "asset": "Item-stimulant"
+                }
+              ]
             },
             {
               "id": "big-forge",
@@ -574,7 +994,30 @@
                 "player-route"
               ],
               "optional": true,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Industrial Forge",
+                  "asset": "Item-industrial-forge"
+                }
+              ]
+            },
+            {
+              "id": "sap-kit",
+              "title": "Sap setup",
+              "asset": "Equipment-tree-sap-tap",
+              "detail": "Tree Sap Tap: build a safe collection route to your taps. Add honey and crops to the supply loop for cakes.",
+              "sourceIDs": [
+                "cake-recipe"
+              ],
+              "optional": true,
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Tree Sap Tap",
+                  "asset": "Equipment-tree-sap-tap"
+                }
+              ]
             }
           ]
         },
@@ -593,7 +1036,8 @@
                 "player-balance"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": []
             },
             {
               "id": "home-style",
@@ -604,7 +1048,8 @@
                 "player-balance"
               ],
               "optional": true,
-              "quantity": null
+              "quantity": null,
+              "contents": []
             }
           ]
         }
@@ -631,7 +1076,13 @@
                 "player-route"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Baryonyx",
+                  "asset": "Dino-baryonyx"
+                }
+              ]
             },
             {
               "id": "basilo",
@@ -643,7 +1094,13 @@
                 "wiki-basilo"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Basilosaurus",
+                  "asset": "Dino-basilosaurus"
+                }
+              ]
             },
             {
               "id": "frog",
@@ -656,7 +1113,48 @@
                 "wiki-caves"
               ],
               "optional": true,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Beelzebufo",
+                  "asset": "Dino-beelzebufo"
+                }
+              ]
+            },
+            {
+              "id": "thyla-option",
+              "title": "Ground explorer",
+              "asset": "Dino-thylacoleo",
+              "detail": "Thylacoleo: climbing and ground travel. Check the exact cave entrance; do not assume cryopod deployment or arena eligibility.",
+              "sourceIDs": [
+                "wiki-thyla"
+              ],
+              "optional": true,
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Thylacoleo",
+                  "asset": "Dino-thylacoleo"
+                }
+              ]
+            },
+            {
+              "id": "mega-chitin",
+              "title": "Chitin farmer",
+              "asset": "Dino-megatherium",
+              "detail": "Megatherium: an insect/chitin alternative to the frog paste route. Check access for the cave you plan to use.",
+              "sourceIDs": [
+                "wiki-brood",
+                "wiki-caves"
+              ],
+              "optional": true,
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Megatherium",
+                  "asset": "Dino-megatherium"
+                }
+              ]
             }
           ]
         },
@@ -674,7 +1172,17 @@
                 "player-route"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Hide Sleeping Bag",
+                  "asset": "Equipment-hide-sleeping-bag"
+                },
+                {
+                  "name": "Storage Box",
+                  "asset": "Item-storage-box"
+                }
+              ]
             },
             {
               "id": "loot-store",
@@ -685,7 +1193,13 @@
                 "player-current"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Storage Box",
+                  "asset": "Item-storage-box"
+                }
+              ]
             }
           ]
         },
@@ -703,7 +1217,21 @@
                 "wiki-dragon"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Flak Chestpiece",
+                  "asset": "Item-flak-chestpiece"
+                },
+                {
+                  "name": "Medical Brew",
+                  "asset": "Item-medical-brew"
+                },
+                {
+                  "name": "Simple Shotgun Ammo",
+                  "asset": "Item-simple-shotgun-ammo"
+                }
+              ]
             },
             {
               "id": "gas-mask",
@@ -714,7 +1242,13 @@
                 "wiki-caves"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Gas Mask",
+                  "asset": "Item-gas-mask"
+                }
+              ]
             },
             {
               "id": "scuba",
@@ -725,7 +1259,17 @@
                 "player-balance"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "SCUBA Tank",
+                  "asset": "Item-scuba-tank"
+                },
+                {
+                  "name": "SCUBA Flippers",
+                  "asset": "Equipment-scuba-flippers"
+                }
+              ]
             },
             {
               "id": "fur",
@@ -736,7 +1280,38 @@
                 "player-route"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Fur Chestpiece",
+                  "asset": "Item-fur-chestpiece"
+                }
+              ]
+            },
+            {
+              "id": "grapple-kit",
+              "title": "Route recovery",
+              "asset": "Item-grappling-hook",
+              "detail": "Grappling Hook + Crossbow + Parachute: optional movement/recovery kit where the route permits it. Test the route before relying on this escape.",
+              "sourceIDs": [
+                "wiki-caves"
+              ],
+              "optional": true,
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Grappling Hook",
+                  "asset": "Item-grappling-hook"
+                },
+                {
+                  "name": "Crossbow",
+                  "asset": "Item-crossbow"
+                },
+                {
+                  "name": "Parachute",
+                  "asset": "Item-parachute"
+                }
+              ]
             }
           ]
         },
@@ -754,7 +1329,13 @@
                 "wiki-brood"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Artifact of the Hunter",
+                  "asset": "Artifact-hunter"
+                }
+              ]
             },
             {
               "id": "ocean-run",
@@ -765,7 +1346,13 @@
                 "wiki-monkey"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Artifact of the Brute",
+                  "asset": "Artifact-brute"
+                }
+              ]
             },
             {
               "id": "loot-run",
@@ -776,7 +1363,8 @@
                 "player-current"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": []
             }
           ]
         }
@@ -806,7 +1394,13 @@
                 "wiki-imprint"
               ],
               "optional": false,
-              "quantity": "19"
+              "quantity": "19",
+              "contents": [
+                {
+                  "name": "Therizinosaur",
+                  "asset": "Dino-therizinosaur"
+                }
+              ]
             },
             {
               "id": "yuty",
@@ -817,7 +1411,13 @@
                 "wiki-brood"
               ],
               "optional": false,
-              "quantity": "1"
+              "quantity": "1",
+              "contents": [
+                {
+                  "name": "Yutyrannus",
+                  "asset": "Dino-yutyrannus"
+                }
+              ]
             },
             {
               "id": "mega-option",
@@ -828,7 +1428,13 @@
                 "wiki-brood"
               ],
               "optional": true,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Megatherium",
+                  "asset": "Dino-megatherium"
+                }
+              ]
             },
             {
               "id": "pig-option",
@@ -839,7 +1445,31 @@
                 "player-current"
               ],
               "optional": true,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Daeodon",
+                  "asset": "Dino-daeodon"
+                }
+              ]
+            },
+            {
+              "id": "rex-option",
+              "title": "Guardian army alternative",
+              "asset": "Dino-rex",
+              "detail": "Rex: breed a separate guardian line if you enjoy Rexes. Choose a suitable team rather than adding a second army to every required task. Not a blanket Dragon recommendation.",
+              "sourceIDs": [
+                "wiki-rex",
+                "wiki-monkey"
+              ],
+              "optional": true,
+              "quantity": "19 + 1 Yuty",
+              "contents": [
+                {
+                  "name": "Rex",
+                  "asset": "Dino-rex"
+                }
+              ]
             }
           ]
         },
@@ -857,7 +1487,8 @@
                 "wiki-breeding"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": []
             },
             {
               "id": "army-yard",
@@ -868,7 +1499,13 @@
                 "wiki-breeding"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Feeding Trough",
+                  "asset": "Equipment-feeding-trough"
+                }
+              ]
             }
           ]
         },
@@ -881,13 +1518,23 @@
               "id": "saddles",
               "title": "Saddle each fighter",
               "asset": "Nav-equipment",
-              "detail": "Craft quality saddles from your blueprints; verify the actual armour stat.",
+              "detail": "Craft quality saddles from your blueprints; verify the actual armour stat. Saddle artwork is a generic reference; the names identify the required matching saddles.",
               "sourceIDs": [
                 "player-current",
                 "wiki-brood"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Therizinosaurus Saddle",
+                  "asset": "Item-saddle"
+                },
+                {
+                  "name": "Yutyrannus Saddle",
+                  "asset": "Item-saddle"
+                }
+              ]
             },
             {
               "id": "cakes",
@@ -900,7 +1547,13 @@
                 "cake-recipe"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Sweet Vegetable Cake",
+                  "asset": "Item-sweet-vegetable-cake"
+                }
+              ]
             },
             {
               "id": "backup-gun",
@@ -911,7 +1564,38 @@
                 "wiki-dragon"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Pump-Action Shotgun",
+                  "asset": "Item-pump-action-shotgun"
+                },
+                {
+                  "name": "Simple Shotgun Ammo",
+                  "asset": "Item-simple-shotgun-ammo"
+                },
+                {
+                  "name": "Medical Brew",
+                  "asset": "Item-medical-brew"
+                }
+              ]
+            },
+            {
+              "id": "rex-saddles",
+              "title": "Rex team kit",
+              "asset": "Item-saddle",
+              "detail": "Rex Saddle: use only with your Rex alternative. Each fighter needs its matching saddle; the illustration is the generic saddle reference. Saddle artwork is a generic reference; the names identify the required matching saddles.",
+              "sourceIDs": [
+                "wiki-rex"
+              ],
+              "optional": true,
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Rex Saddle",
+                  "asset": "Item-saddle"
+                }
+              ]
             }
           ]
         },
@@ -929,7 +1613,13 @@
                 "wiki-brood"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Yutyrannus",
+                  "asset": "Dino-yutyrannus"
+                }
+              ]
             },
             {
               "id": "team-check",
@@ -940,7 +1630,8 @@
                 "wiki-brood"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": []
             }
           ]
         }
@@ -968,7 +1659,13 @@
                 "wiki-monkey"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Therizinosaur",
+                  "asset": "Dino-therizinosaur"
+                }
+              ]
             },
             {
               "id": "after-fight",
@@ -979,7 +1676,30 @@
                 "player-current"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Feeding Trough",
+                  "asset": "Equipment-feeding-trough"
+                }
+              ]
+            },
+            {
+              "id": "mega-specialist",
+              "title": "Spider specialist",
+              "asset": "Dino-megatherium",
+              "detail": "Megatherium: an alternative Broodmother roster with insect buff. Use matching saddles and a Yuty; stay within the ordinary 20-tame arena cap.",
+              "sourceIDs": [
+                "wiki-brood"
+              ],
+              "optional": true,
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Megatherium",
+                  "asset": "Dino-megatherium"
+                }
+              ]
             }
           ]
         },
@@ -999,7 +1719,13 @@
                 "wiki-overseer"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Storage Box",
+                  "asset": "Item-storage-box"
+                }
+              ]
             },
             {
               "id": "trophy-room",
@@ -1010,7 +1736,8 @@
                 "player-balance"
               ],
               "optional": true,
-              "quantity": null
+              "quantity": null,
+              "contents": []
             }
           ]
         },
@@ -1028,7 +1755,13 @@
                 "wiki-monkey"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Artifact of the Brute",
+                  "asset": "Artifact-brute"
+                }
+              ]
             },
             {
               "id": "devourer",
@@ -1039,7 +1772,13 @@
                 "wiki-monkey"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Artifact of the Devourer",
+                  "asset": "Artifact-devourer"
+                }
+              ]
             },
             {
               "id": "pack",
@@ -1050,7 +1789,13 @@
                 "wiki-monkey"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Artifact of the Pack",
+                  "asset": "Artifact-pack"
+                }
+              ]
             },
             {
               "id": "hunter",
@@ -1061,7 +1806,13 @@
                 "wiki-brood"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Artifact of the Hunter",
+                  "asset": "Artifact-hunter"
+                }
+              ]
             },
             {
               "id": "clever",
@@ -1072,7 +1823,13 @@
                 "wiki-brood"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Artifact of the Clever",
+                  "asset": "Artifact-clever"
+                }
+              ]
             },
             {
               "id": "massive",
@@ -1083,7 +1840,30 @@
                 "wiki-brood"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Artifact of the Massive",
+                  "asset": "Artifact-massive"
+                }
+              ]
+            },
+            {
+              "id": "monkey-fur",
+              "title": "Cold protection",
+              "asset": "Item-fur-chestpiece",
+              "detail": "Fur Chestpiece: a rider clothing option for the Megapithecus arena. Plan protection for the actual weather and equipment quality.",
+              "sourceIDs": [
+                "wiki-monkey"
+              ],
+              "optional": true,
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Fur Chestpiece",
+                  "asset": "Item-fur-chestpiece"
+                }
+              ]
             }
           ]
         },
@@ -1102,7 +1882,13 @@
                 "player-order"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Gamma Megapithecus",
+                  "asset": "Cutout-Boss-megapithecus"
+                }
+              ]
             },
             {
               "id": "brood-gamma",
@@ -1113,7 +1899,13 @@
                 "wiki-brood"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Gamma Broodmother",
+                  "asset": "Cutout-Boss-broodmother"
+                }
+              ]
             },
             {
               "id": "harder-guardians",
@@ -1126,7 +1918,8 @@
                 "wiki-monkey"
               ],
               "optional": true,
-              "quantity": null
+              "quantity": null,
+              "contents": []
             }
           ]
         }
@@ -1154,7 +1947,13 @@
                 "wiki-dragon"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Therizinosaur",
+                  "asset": "Dino-therizinosaur"
+                }
+              ]
             },
             {
               "id": "dragon-yuty",
@@ -1165,7 +1964,13 @@
                 "wiki-dragon"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Yutyrannus",
+                  "asset": "Dino-yutyrannus"
+                }
+              ]
             }
           ]
         },
@@ -1185,7 +1990,17 @@
                 "cake-recipe"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Sweet Vegetable Cake",
+                  "asset": "Item-sweet-vegetable-cake"
+                },
+                {
+                  "name": "Medical Brew",
+                  "asset": "Item-medical-brew"
+                }
+              ]
             },
             {
               "id": "keep-home",
@@ -1196,7 +2011,8 @@
                 "wiki-breeding"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": []
             }
           ]
         },
@@ -1214,7 +2030,13 @@
                 "wiki-dragon"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Artifact of the Cunning",
+                  "asset": "Artifact-cunning"
+                }
+              ]
             },
             {
               "id": "immune",
@@ -1225,7 +2047,13 @@
                 "wiki-dragon"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Artifact of the Immune",
+                  "asset": "Artifact-immune"
+                }
+              ]
             },
             {
               "id": "skylord",
@@ -1236,7 +2064,13 @@
                 "wiki-dragon"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Artifact of the Skylord",
+                  "asset": "Artifact-skylord"
+                }
+              ]
             },
             {
               "id": "strong",
@@ -1247,7 +2081,38 @@
                 "wiki-dragon"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Artifact of the Strong",
+                  "asset": "Artifact-strong"
+                }
+              ]
+            },
+            {
+              "id": "rider-backup",
+              "title": "Rider supplies",
+              "asset": "Item-medical-brew",
+              "detail": "Medical Brew + Pump-Action Shotgun + Simple Shotgun Ammo: rider emergency supplies, kept separate from cakes on the Therizinos.",
+              "sourceIDs": [
+                "wiki-dragon"
+              ],
+              "optional": true,
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Medical Brew",
+                  "asset": "Item-medical-brew"
+                },
+                {
+                  "name": "Pump-Action Shotgun",
+                  "asset": "Item-pump-action-shotgun"
+                },
+                {
+                  "name": "Simple Shotgun Ammo",
+                  "asset": "Item-simple-shotgun-ammo"
+                }
+              ]
             }
           ]
         },
@@ -1265,7 +2130,13 @@
                 "wiki-dragon"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Gamma Dragon",
+                  "asset": "Cutout-Boss-dragon"
+                }
+              ]
             },
             {
               "id": "dragon-higher",
@@ -1278,7 +2149,8 @@
                 "wiki-deino"
               ],
               "optional": true,
-              "quantity": null
+              "quantity": null,
+              "contents": []
             }
           ]
         }
@@ -1305,7 +2177,13 @@
                 "wiki-tek"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Therizinosaur",
+                  "asset": "Dino-therizinosaur"
+                }
+              ]
             },
             {
               "id": "tek-spares",
@@ -1317,7 +2195,8 @@
                 "wiki-tek"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": []
             }
           ]
         },
@@ -1335,7 +2214,8 @@
                 "wiki-tek"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": []
             },
             {
               "id": "finish-home",
@@ -1346,7 +2226,8 @@
                 "player-balance"
               ],
               "optional": true,
-              "quantity": null
+              "quantity": null,
+              "contents": []
             }
           ]
         },
@@ -1364,7 +2245,21 @@
                 "wiki-overseer"
               ],
               "optional": false,
-              "quantity": "3"
+              "quantity": "3",
+              "contents": [
+                {
+                  "name": "Gamma Broodmother Trophy",
+                  "asset": "Item-gamma-broodmother-trophy"
+                },
+                {
+                  "name": "Gamma Megapithecus Trophy",
+                  "asset": "Item-gamma-megapithecus-trophy"
+                },
+                {
+                  "name": "Gamma Dragon Trophy",
+                  "asset": "Item-gamma-dragon-trophy"
+                }
+              ]
             },
             {
               "id": "tek-kit",
@@ -1375,7 +2270,21 @@
                 "wiki-tek"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Fur Chestpiece",
+                  "asset": "Item-fur-chestpiece"
+                },
+                {
+                  "name": "Medical Brew",
+                  "asset": "Item-medical-brew"
+                },
+                {
+                  "name": "Pump-Action Shotgun",
+                  "asset": "Item-pump-action-shotgun"
+                }
+              ]
             },
             {
               "id": "tek-ammo",
@@ -1386,7 +2295,34 @@
                 "wiki-tek"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Simple Shotgun Ammo",
+                  "asset": "Item-simple-shotgun-ammo"
+                }
+              ]
+            },
+            {
+              "id": "spare-armour",
+              "title": "Spare armour kit",
+              "asset": "Item-flak-chestpiece",
+              "detail": "Flak Chestpiece + Medical Brew: spare protection and recovery for the route. Temperature protection remains a separate requirement.",
+              "sourceIDs": [
+                "wiki-tek"
+              ],
+              "optional": true,
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Flak Chestpiece",
+                  "asset": "Item-flak-chestpiece"
+                },
+                {
+                  "name": "Medical Brew",
+                  "asset": "Item-medical-brew"
+                }
+              ]
             }
           ]
         },
@@ -1404,7 +2340,8 @@
                 "wiki-tek"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": []
             },
             {
               "id": "overseer",
@@ -1415,7 +2352,13 @@
                 "wiki-overseer"
               ],
               "optional": false,
-              "quantity": null
+              "quantity": null,
+              "contents": [
+                {
+                  "name": "Overseer",
+                  "asset": "Cutout-Boss-overseer"
+                }
+              ]
             },
             {
               "id": "higher-ascension",
@@ -1426,7 +2369,8 @@
                 "wiki-overseer"
               ],
               "optional": true,
-              "quantity": null
+              "quantity": null,
+              "contents": []
             }
           ]
         }

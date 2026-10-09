@@ -1,0 +1,35 @@
+[
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "20C9346D-B0E6-4239-8152-1D85ADD57BA6",
+        "deviceName" : "Ascended iPad QA",
+        "exportedFileName" : "AFB92DC9-CD39-4114-B1B6-BCC0019D6F6D.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Survival39-Portrait-Named-Equipment_0_3C37F003-F1D6-4065-9182-4B1A064F4C20.png",
+        "timestamp" : 1791543637.329
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "20C9346D-B0E6-4239-8152-1D85ADD57BA6",
+        "deviceName" : "Ascended iPad QA",
+        "exportedFileName" : "A9B03A51-2D18-4CF5-87CC-827C9BD76045.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Survival39-Army_0_46C5F78D-55E5-4BBE-A2B6-8D73C008D83F.png",
+        "timestamp" : 1791543634.477
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "20C9346D-B0E6-4239-8152-1D85ADD57BA6",
+        "deviceName" : "Ascended iPad QA",
+        "exportedFileName" : "68E6D153-7FA2-45B0-87F3-062CCBB8B722.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Survival39-Beach-Home_0_B6F60364-6370-4166-A234-9A141D1C27B4.png",
+        "timestamp" : 1791543615.462
+      }
+    ],
+    "testIdentifier" : "Survival38UITests/testVisualGuideProgressPersistsAndOtherMapsDoNotReuseIslandRoute()",
+    "testIdentifierURL" : "test://com.apple.xcode/Ascended/AscendedUITests/Survival38UITests/testVisualGuideProgressPersistsAndOtherMapsDoNotReuseIslandRoute"
+  }
+]

@@ -1,0 +1,17 @@
+
+🧪 Test
+
+   Scheme: Ascended
+   Project: native/Ascended/Ascended.xcodeproj
+   Platform: iOS Simulator
+   Simulator: 20C9346D-B0E6-4239-8152-1D85ADD57BA6
+   Derived Data: /Volumes/TONY SSD/ASCENDED_MEDIA/builds/Ascended-0.14.0-Simulator
+   Selective Testing:
+     AscendedUITests/Survival38UITests
+Running tests (1 completed, 0 failures, 0 skipped)
+
+✅ 1 test passed, 0 failed, 0 skipped (⏱️ 103.1s)
+  └ Files:
+     ├ Result Bundle: docs/codex-reports/ascended39/aligned.xcresult
+     ├ Build Logs: ~/Library/Developer/MobileBuildMCP/workspaces/Ascended-iPad-Dev-d94c0fd39dc0/logs/test_sim_2026-10-09T10-58-56-193Z_pid29464_fd1b83f7.log
+     └ Test Products: ~/Library/Developer/MobileBuildMCP/workspaces/Ascended-iPad-Dev-d94c0fd39dc0/test-products/test_sim_2026-10-09T10-58-56-194Z_pid29464_a0770d13.xctestproducts

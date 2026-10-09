@@ -3,10 +3,14 @@ import SwiftUI
 struct SurvivalSource: Decodable, Identifiable {
     let id, title, url, kind, note, reviewedAt: String
 }
+struct SurvivalKitItem: Decodable, Hashable {
+    let name, asset: String
+}
 struct SurvivalGoal: Decodable, Identifiable {
     let id, title, asset, detail: String
     let sourceIDs: [String]
     let optional: Bool
+    let contents: [SurvivalKitItem]
     let quantity: String?
 }
 struct SurvivalGroup: Decodable, Identifiable {
@@ -53,6 +57,10 @@ struct SurvivalGuideScreen: View {
     @State private var phaseIndex = 0
     @State private var presentedGoal: SurvivalGoal?
     @State private var showSources = false
+    @State private var groupFilter: String?
+    private func visibleGroups(_ phase: SurvivalPhase) -> [SurvivalGroup] {
+        phase.groups.filter { groupFilter == nil || $0.id == groupFilter }
+    }
     private var done: Set<String> { SurvivalProgress.decode(storedProgress) }
     var body: some View {
         if let guide = SurvivalGuide.load(for: map) {
@@ -74,12 +82,13 @@ struct SurvivalGuideScreen: View {
                         Button { showSources = true } label: { Image(systemName: "books.vertical").font(.title3).padding(12).background(.white.opacity(0.06), in: RoundedRectangle(cornerRadius: 12)) }
                             .accessibilityLabel("Sources and route notes").accessibilityIdentifier("survival-sources")
                     }.padding(.horizontal, 6)
+                    groupStrip(phase)
                     ScrollView {
-                        LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 12, alignment: .topLeading), count: geometry.size.width > 950 ? 4 : 2), alignment: .leading, spacing: 12) {
-                            ForEach(phase.groups) { group in
+                        LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 12, alignment: .topLeading), count: groupFilter == nil ? (geometry.size.width > 950 ? 4 : 2) : 1), alignment: .leading, spacing: 12) {
+                            ForEach(visibleGroups(phase)) { group in
                                 VStack(alignment: .leading, spacing: 10) {
                                     HStack(spacing: 8) { GuideIcon(name: group.icon, size: 28); Text(group.title).font(.system(size: 17, weight: .bold, design: .rounded)) }
-                                    LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 8), count: group.goals.count > 4 ? 3 : 2), spacing: 8) {
+                                    LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 8, alignment: .topLeading), count: groupFilter == nil ? 2 : (geometry.size.width > 950 ? 4 : 3)), spacing: 8) {
                                         ForEach(group.goals) { goal in goalTile(goal, phase: phase) }
                                     }
                                 }.padding(12).frame(maxWidth: .infinity, alignment: .topLeading)
@@ -111,6 +120,20 @@ struct SurvivalGuideScreen: View {
                 Text("The Island comes first").font(.title2.bold())
                 Text("Choose The Island to open its researched Survival Guide.").foregroundStyle(.secondary)
             }.frame(maxWidth: .infinity, maxHeight: .infinity).accessibilityIdentifier("survival-map-unavailable")
+        }
+    }
+    private func groupStrip(_ phase: SurvivalPhase) -> some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing: 8) {
+                Button { groupFilter = nil } label: { Text("All").font(.subheadline.bold()).padding(.horizontal, 16).padding(.vertical, 8).background(groupFilter == nil ? Color.cyan.opacity(0.18) : .white.opacity(0.05), in: Capsule()) }
+                    .buttonStyle(.plain).accessibilityIdentifier("survival-group-all")
+                ForEach(phase.groups) { group in
+                    Button { groupFilter = group.id } label: {
+                        HStack(spacing: 6) { GuideIcon(name: group.icon, size: 20); Text(group.title).font(.subheadline.bold()); Text(String(group.goals.count)).font(.caption).foregroundStyle(.secondary) }
+                            .padding(.horizontal, 12).padding(.vertical, 8).background(groupFilter == group.id ? Color.cyan.opacity(0.18) : .white.opacity(0.05), in: Capsule())
+                    }.buttonStyle(.plain).accessibilityIdentifier("survival-group-" + group.id)
+                }
+            }
         }
     }
     private func phaseStrip(_ guide: SurvivalGuide) -> some View {
@@ -150,13 +173,23 @@ struct SurvivalGuideScreen: View {
                 storedProgress = SurvivalProgress.encode(SurvivalProgress.toggled(phase.key(goal), in: done))
             } label: {
                 VStack(spacing: 4) {
-                    ZStack(alignment: .bottomTrailing) {
-                        SurvivalArtwork(asset: goal.asset).frame(height: 40).frame(maxWidth: .infinity)
+                    HStack(alignment: .top) {
+                        Text(goal.title).font(.system(size: 12, weight: .semibold)).multilineTextAlignment(.leading).fixedSize(horizontal: false, vertical: true)
+                        Spacer(minLength: 2)
                         Image(systemName: selected ? "checkmark.circle.fill" : "circle").font(.system(size: 19, weight: .semibold)).foregroundStyle(selected ? .mint : .white.opacity(0.4))
                     }
-                    Text(goal.title).font(.system(size: 11, weight: .semibold)).multilineTextAlignment(.center).lineLimit(4).frame(height: 42, alignment: .top)
+                    if goal.contents.isEmpty {
+                        SurvivalArtwork(asset: goal.asset).frame(height: 46).frame(maxWidth: .infinity)
+                    } else {
+                        ForEach(goal.contents, id: \.self) { item in
+                            HStack(spacing: 6) {
+                                SurvivalArtwork(asset: item.asset).frame(width: 32, height: 32)
+                                Text(item.name).font(.system(size: 11, weight: .medium)).multilineTextAlignment(.leading).fixedSize(horizontal: false, vertical: true).frame(maxWidth: .infinity, alignment: .leading)
+                            }
+                        }
+                    }
                 }.contentShape(Rectangle())
-            }.buttonStyle(.plain).accessibilityIdentifier("survival-check-" + phase.key(goal)).accessibilityLabel(goal.title).accessibilityValue(selected ? "Completed" : "Not completed")
+            }.buttonStyle(.plain).accessibilityIdentifier("survival-check-" + phase.key(goal)).accessibilityLabel(([goal.title] + goal.contents.map(\.name)).joined(separator: ", ")).accessibilityValue(selected ? "Completed" : "Not completed")
         }.padding(6).background(selected ? Color.mint.opacity(0.085) : .white.opacity(0.035), in: RoundedRectangle(cornerRadius: 12))
     }
 }
@@ -178,6 +211,13 @@ private struct SurvivalGoalDetail: View {
                     HStack(spacing: 20) {
                         SurvivalArtwork(asset: goal.asset).frame(width: 100, height: 100)
                         VStack(alignment: .leading, spacing: 6) { Text(goal.title).font(.title2.bold()); if let quantity = goal.quantity { Text("Suggested: " + quantity).foregroundStyle(.cyan) } }
+                    }
+                    if !goal.contents.isEmpty {
+                        LazyVGrid(columns: [GridItem(.adaptive(minimum: 120))], spacing: 12) {
+                            ForEach(goal.contents, id: \.self) { item in
+                                VStack(spacing: 8) { SurvivalArtwork(asset: item.asset).frame(height: 64); Text(item.name).font(.subheadline.bold()).multilineTextAlignment(.center) }.padding(12).frame(maxWidth: .infinity).background(.white.opacity(0.045), in: RoundedRectangle(cornerRadius: 12))
+                            }
+                        }
                     }
                     Text(goal.detail).font(.body)
                     Text("Source references").font(.headline)
