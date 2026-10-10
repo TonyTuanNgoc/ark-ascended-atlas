@@ -1,5 +1,9 @@
 # System change log
 
+## 2026-10-10 — Ascended 0.38.0 (39): cable development install
+
+User replaced TestFlight request with physical iPad development delivery. Debug device build and strict signing verification passed; cable install succeeded and app launched as process 3033. Device inventory independently reports 0.38.0 (39). Existing media and user data preserved; no TestFlight upload, product-code change, Tony OS deployment or web domain. Report: codex-reports/2026-10-10-ascended39-device-delivery.md.
+
 ## 2026-10-09 — Ascended0.38.0(39): named Survival Guide kits and choices
 Expanded The Island guide to106 goals (74 preserved milestones/32optional) with124 explicitly named content entries and22 attributed references. Added19 creature/equipment/production alternatives, visible exact item names and full pictured kit details. Horizontal group filters improve portrait/landscape readability; saved87goal keys retain their semantics. Scoped13test QA plus final alignment rerun and Simulator delivery recorded in codex-reports/2026-10-09-ascended39-named-survival-options.md. Standalone native only, no Tony OS/TestFlight/physical-device/web domain release.
 

@@ -1,0 +1,72 @@
+{
+  "build": {
+    "schema": "mobilebuildmcp.output.build-result",
+    "schemaVersion": "3",
+    "didError": false,
+    "error": null,
+    "data": {
+      "summary": {
+        "status": "SUCCEEDED",
+        "durationMs": 108214,
+        "target": "device"
+      },
+      "artifacts": {
+        "buildLogPath": "~/Library/Developer/MobileBuildMCP/workspaces/MobileBuildMCP-299891991710/logs/build_device_2026-10-10T14-15-48-929Z_pid99615_f3e2b62f.log"
+      },
+      "diagnostics": {
+        "warnings": [
+          {
+            "message": "'contentEdgeInsets' was deprecated in iOS 15.0: This property is ignored when using UIButtonConfiguration",
+            "location": "/Volumes/TONY SSD/ASCENDED_MEDIA/workspaces/Ascended-iPad-Dev/native/Ascended/Sources/MapScreen.swift:335"
+          }
+        ],
+        "errors": []
+      }
+    },
+    "nextSteps": [
+      "Get built device app path: get_device_app_path({ scheme: \"Ascended\", derivedDataPath: \"/Volumes/TONY SSD/ASCENDED_MEDIA/builds/Ascended-0.14.0-Device\", platform: \"iOS\" })"
+    ]
+  },
+  "install": {
+    "schema": "mobilebuildmcp.output.install-result",
+    "schemaVersion": "2",
+    "didError": false,
+    "error": null,
+    "data": {
+      "summary": {
+        "status": "SUCCEEDED"
+      },
+      "artifacts": {
+        "deviceId": "8FA117DA-854A-5EEB-AEFC-EE54036237A9",
+        "appPath": "/Volumes/TONY SSD/ASCENDED_MEDIA/builds/Ascended-0.14.0-Device/Build/Products/Debug-iphoneos/Ascended.app"
+      },
+      "diagnostics": {
+        "warnings": [],
+        "errors": []
+      }
+    }
+  },
+  "launch": {
+    "schema": "mobilebuildmcp.output.launch-result",
+    "schemaVersion": "2",
+    "didError": false,
+    "error": null,
+    "data": {
+      "summary": {
+        "status": "SUCCEEDED"
+      },
+      "artifacts": {
+        "deviceId": "8FA117DA-854A-5EEB-AEFC-EE54036237A9",
+        "bundleId": "com.tonytuanngoc.ascended",
+        "processId": 3033
+      },
+      "diagnostics": {
+        "warnings": [],
+        "errors": []
+      }
+    },
+    "nextSteps": [
+      "Stop the app: stop_app_device({ deviceId: \"8FA117DA-854A-5EEB-AEFC-EE54036237A9\", processId: 3033 })"
+    ]
+  }
+}
