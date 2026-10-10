@@ -41,8 +41,12 @@ struct BossGalleryScreen: View {
                 }
             }.padding(20)
             .overlay { if ids.isEmpty { Text("Boss encounters are not verified for this map yet.").foregroundStyle(.secondary) } }
-        }.sheet(item: Binding(get:{selected.map { BossSelection(id:$0) }},set:{selected=$0?.id})) { boss in
-            BossGalleryDetail(bossID:boss.id).environment(\.arkMap,map)
+        }.fullScreenCover(item: Binding(get:{selected.map { BossSelection(id:$0) }},set:{selected=$0?.id})) { boss in
+            if let guide = BossBattleGuide.find(map: map, bossID: boss.id) {
+                BossBattleScreen(guide: guide).environment(\.arkMap,map)
+            } else {
+                BossGalleryDetail(bossID:boss.id).environment(\.arkMap,map)
+            }
         }.onChange(of:map) { _,_ in selected=nil }
     }
 }

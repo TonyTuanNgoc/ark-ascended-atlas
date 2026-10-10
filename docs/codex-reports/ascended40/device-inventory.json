@@ -1,0 +1,46 @@
+{
+  "info" : {
+    "arguments" : [
+      "devicectl",
+      "device",
+      "info",
+      "apps",
+      "--device",
+      "8FA117DA-854A-5EEB-AEFC-EE54036237A9",
+      "--bundle-id",
+      "com.tonytuanngoc.ascended",
+      "--json-output",
+      "docs/codex-reports/ascended40/device-inventory.json"
+    ],
+    "commandType" : "devicectl.device.info.apps",
+    "environment" : {
+      "TERM" : "dumb"
+    },
+    "jsonVersion" : 3,
+    "outcome" : "success",
+    "version" : "518.31"
+  },
+  "result" : {
+    "apps" : [
+      {
+        "appClip" : false,
+        "builtByDeveloper" : true,
+        "bundleIdentifier" : "com.tonytuanngoc.ascended",
+        "bundleVersion" : "40",
+        "defaultApp" : false,
+        "hidden" : false,
+        "internalApp" : false,
+        "name" : "Ascended",
+        "removable" : true,
+        "url" : "file:///private/var/containers/Bundle/Application/04F6F4D2-4137-4856-B8E9-B3D68F8AC325/Ascended.app/",
+        "version" : "0.39.0"
+      }
+    ],
+    "defaultAppsIncluded" : false,
+    "deviceIdentifier" : "8FA117DA-854A-5EEB-AEFC-EE54036237A9",
+    "hiddenAppsIncluded" : false,
+    "internalAppsIncluded" : false,
+    "matchingBundleIdentifier" : "com.tonytuanngoc.ascended",
+    "removableAppsIncluded" : true
+  }
+}

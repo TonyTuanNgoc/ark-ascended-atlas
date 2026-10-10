@@ -1,0 +1,1567 @@
+[
+  {
+    "mapID": "ragnarok",
+    "bossID": "iceworm-queen",
+    "encounter": "Frozen Dungeon",
+    "entry": "Reach the waterfall arena on foot. Keep distance from the Queen, then continue to Artifact of the Pack.",
+    "armies": [
+      {
+        "id": "foot",
+        "title": "On foot \u00b7 shotgun",
+        "members": [
+          {
+            "name": "Survivor",
+            "quantity": "1",
+            "role": "Shooter",
+            "kind": "survivor"
+          }
+        ],
+        "note": "No large army required. Travel mounts do not replace the ranged loadout.",
+        "targetOptionID": null
+      },
+      {
+        "id": "bary",
+        "title": "Baryonyx pair",
+        "members": [
+          {
+            "name": "Baryonyx",
+            "quantity": "2",
+            "role": "Opposite sexes \u00b7 mate boost",
+            "kind": "tame"
+          }
+        ],
+        "note": "Conditional mount plan: check cave release and arena access in your current save. Do not assume cryopods work here.",
+        "targetOptionID": "bary"
+      }
+    ],
+    "kit": [
+      {
+        "name": "Pump-Action Shotgun",
+        "quantity": "1",
+        "role": "Main weapon",
+        "kind": "item"
+      },
+      {
+        "name": "Simple Shotgun Ammo",
+        "quantity": "200+",
+        "role": "Planning reserve",
+        "kind": "item"
+      },
+      {
+        "name": "Fur Chestpiece",
+        "quantity": "2",
+        "role": "Cold protection + spare",
+        "kind": "item"
+      },
+      {
+        "name": "Fria Curry",
+        "quantity": "5",
+        "role": "Cold protection",
+        "kind": "item"
+      },
+      {
+        "name": "Medical Brew",
+        "quantity": "40",
+        "role": "Healing reserve",
+        "kind": "item"
+      },
+      {
+        "name": "Metal Shield",
+        "quantity": "1",
+        "role": "Backup",
+        "kind": "item"
+      },
+      {
+        "name": "Grappling Hook",
+        "quantity": "15",
+        "role": "Route kit",
+        "kind": "item"
+      }
+    ],
+    "combat": [
+      {
+        "title": "Find the ice cave",
+        "action": "Follow the Frozen Dungeon route; restore health before the waterfall.",
+        "symbol": "map.fill"
+      },
+      {
+        "title": "Trigger on foot",
+        "action": "Dismount for the arena descent. Keep an escape lane clear.",
+        "symbol": "figure.walk"
+      },
+      {
+        "title": "Range & movement",
+        "action": "Fire the shotgun while keeping distance. Avoid the Queen\u2019s large melee reach.",
+        "symbol": "scope"
+      },
+      {
+        "title": "Finish the route",
+        "action": "Collect the trophy/loot and continue to Artifact of the Pack, then exit.",
+        "symbol": "diamond.fill"
+      }
+    ],
+    "videos": [
+      {
+        "videoID": "XpFRSG1BOvU",
+        "title": "How To Beat The ICE WORM QUEEN in ARK: Ragnarok Ascended [ASA]",
+        "channel": "SANYXS",
+        "tier": "Dungeon",
+        "duration": 585,
+        "note": "ASA walkthrough. Excerpts follow published preparation, arena and fight chapters; 120 source seconds / 60 seconds at 2\u00d7. Footage is streamed from YouTube, not a local download.",
+        "segments": [
+          {
+            "title": "Gear",
+            "start": 0,
+            "end": 24
+          },
+          {
+            "title": "Arena",
+            "start": 374,
+            "end": 414
+          },
+          {
+            "title": "Fight & exit",
+            "start": 480,
+            "end": 536
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wiki \u00b7 Iceworm Queen",
+        "url": "https://ark.wiki.gg/wiki/Iceworm_Queen",
+        "note": "Ranged combat and a Bary pair are described; the Ascended section says Queen is faster."
+      },
+      {
+        "title": "Reddit \u00b7 Carcha trong hang ASA \u00b7 07/2025",
+        "url": "https://www.reddit.com/r/ARK/comments/1lzpga7/",
+        "note": "Someone reported using Carcha; HP/saddle/route details are insufficient to define a minimum."
+      },
+      {
+        "title": "SANYXS \u00b7 Dungeon",
+        "url": "https://www.youtube.com/watch?v=XpFRSG1BOvU",
+        "note": "ASA walkthrough. Excerpts follow published preparation, arena and fight chapters; 120 source seconds / 60 seconds at 2\u00d7. Footage is streamed from YouTube, not a local download."
+      }
+    ]
+  },
+  {
+    "mapID": "ragnarok",
+    "bossID": "lava-elemental",
+    "encounter": "Jungle Dungeon",
+    "entry": "An optional loot fight after the Jungle Dungeon. Collect Hunter first; prepare firing ledges and an escape route above the lava.",
+    "armies": [
+      {
+        "id": "rockets",
+        "title": "On foot \u00b7 rockets",
+        "members": [
+          {
+            "name": "Survivor",
+            "quantity": "1",
+            "role": "Elevated firing position",
+            "kind": "survivor"
+          }
+        ],
+        "note": "No arena army needed. Bring spare launchers and grapples; ordinary bullets and melee are heavily resisted.",
+        "targetOptionID": "rockets"
+      },
+      {
+        "id": "tek",
+        "title": "Tek Rifle option",
+        "members": [
+          {
+            "name": "Tek Rifle",
+            "quantity": "1",
+            "role": "Unlocked Tekgram required",
+            "kind": "item"
+          }
+        ],
+        "note": "Use only after unlocking the rifle and packing Element. This is an advanced alternative, not early progression.",
+        "targetOptionID": "tech"
+      }
+    ],
+    "kit": [
+      {
+        "name": "Rocket Launcher",
+        "quantity": "3",
+        "role": "Main + replacements",
+        "kind": "item"
+      },
+      {
+        "name": "Rocket Propelled Grenade",
+        "quantity": "60",
+        "role": "Planning reserve",
+        "kind": "item"
+      },
+      {
+        "name": "Grappling Hook",
+        "quantity": "30",
+        "role": "Reach and change ledges",
+        "kind": "item"
+      },
+      {
+        "name": "Crossbow",
+        "quantity": "2",
+        "role": "Grapples + backup",
+        "kind": "item"
+      },
+      {
+        "name": "Medical Brew",
+        "quantity": "40",
+        "role": "Healing reserve",
+        "kind": "item"
+      },
+      {
+        "name": "Flak Chestpiece",
+        "quantity": "2",
+        "role": "Main + spare armor",
+        "kind": "item"
+      }
+    ],
+    "combat": [
+      {
+        "title": "Secure the ledge",
+        "action": "Scout a high firing position and a second escape ledge before engaging.",
+        "symbol": "mountain.2.fill"
+      },
+      {
+        "title": "Explosive damage",
+        "action": "Use rockets; ordinary firearms and tame melee are poor default choices.",
+        "symbol": "flame.fill"
+      },
+      {
+        "title": "Hands & arms",
+        "action": "Aim at exposed hands/arms; move away from thrown lava rocks.",
+        "symbol": "scope"
+      },
+      {
+        "title": "Avoid the lava",
+        "action": "Stay away from edges. Grapple to reposition; keep splash damage away from yourself.",
+        "symbol": "figure.run"
+      },
+      {
+        "title": "Loot after the kill",
+        "action": "Collect the encounter loot, then follow the Jungle Dungeon exit.",
+        "symbol": "shippingbox.fill"
+      }
+    ],
+    "videos": [
+      {
+        "videoID": "I4H6pX8uvcs",
+        "title": "RAGNAROK Lava Golem EASY and SOLO fight in ARK Survival Ascended",
+        "channel": "Jonna-X",
+        "tier": "Dungeon",
+        "duration": 672,
+        "note": "Jonna-X ASA solo guide, over 100,000 views at inspection. No published chapters or successful full visual review were available; these are evenly separated source excerpts, not verified start/kill timestamps. Open the full guide for the continuous fight.",
+        "segments": [
+          {
+            "title": "Opening",
+            "start": 0,
+            "end": 40
+          },
+          {
+            "title": "Guide excerpt",
+            "start": 300,
+            "end": 340
+          },
+          {
+            "title": "Closing",
+            "start": 620,
+            "end": 660
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wiki \u00b7 Lava Elemental",
+        "url": "https://ark.wiki.gg/wiki/Lava_Elemental",
+        "note": "Resists regular damage; prioritize ranged explosives/Tek."
+      },
+      {
+        "title": "Reddit \u00b7 Lava rocket / Velo \u00b7 ASE2023",
+        "url": "https://www.reddit.com/r/ARK/comments/13tplgp/",
+        "note": "Historical ASE experience; rocket counts are not ASA minimums."
+      },
+      {
+        "title": "Jonna-X \u00b7 Dungeon",
+        "url": "https://www.youtube.com/watch?v=I4H6pX8uvcs",
+        "note": "Jonna-X ASA solo guide, over 100,000 views at inspection. No published chapters or successful full visual review were available; these are evenly separated source excerpts, not verified start/kill timestamps. Open the full guide for the continuous fight."
+      }
+    ]
+  },
+  {
+    "mapID": "ragnarok",
+    "bossID": "spirit-dire-bear",
+    "encounter": "Life\u2019s Labyrinth \u00b7 shared waves",
+    "entry": "Complete the labyrinth mechanics, then fight the Spirit Bear and Spirit Wolf waves together at the Oasis.",
+    "armies": [
+      {
+        "id": "foot",
+        "title": "On foot \u00b7 shotgun",
+        "members": [
+          {
+            "name": "Survivor",
+            "quantity": "1",
+            "role": "Shooter",
+            "kind": "survivor"
+          }
+        ],
+        "note": "No 20-tame boss army. The sacrificial Dodo is for the route, not a combat teammate.",
+        "targetOptionID": null
+      },
+      {
+        "id": "support",
+        "title": "Small route mount",
+        "members": [
+          {
+            "name": "Baryonyx",
+            "quantity": "1",
+            "role": "Conditional cave support",
+            "kind": "tame"
+          }
+        ],
+        "note": "Optional travel support only if current cave rules permit it. Do not rely on releasing a mount in the final room.",
+        "targetOptionID": "mount"
+      }
+    ],
+    "kit": [
+      {
+        "name": "Pump-Action Shotgun",
+        "quantity": "2",
+        "role": "Main + spare",
+        "kind": "item"
+      },
+      {
+        "name": "Simple Shotgun Ammo",
+        "quantity": "300+",
+        "role": "Planning reserve",
+        "kind": "item"
+      },
+      {
+        "name": "Medical Brew",
+        "quantity": "50",
+        "role": "Planning reserve",
+        "kind": "item"
+      },
+      {
+        "name": "Metal Shield",
+        "quantity": "2",
+        "role": "Main + spare",
+        "kind": "item"
+      },
+      {
+        "name": "SCUBA Tank",
+        "quantity": "1",
+        "role": "Water sections",
+        "kind": "item"
+      },
+      {
+        "name": "Parachute",
+        "quantity": "10",
+        "role": "Jumping sections",
+        "kind": "item"
+      },
+      {
+        "name": "Torch",
+        "quantity": "2",
+        "role": "Light",
+        "kind": "item"
+      },
+      {
+        "name": "Dodo",
+        "quantity": "1",
+        "role": "Sacrifice-room route item",
+        "kind": "tame"
+      }
+    ],
+    "combat": [
+      {
+        "title": "Solve the labyrinth",
+        "action": "Complete the button, fire, water and jumping sections. Bring the route kit.",
+        "symbol": "puzzlepiece.fill"
+      },
+      {
+        "title": "Sacrifice-room trigger",
+        "action": "Plan a disposable tame for the route. Do not take a valued breeding creature.",
+        "symbol": "door.left.hand.open"
+      },
+      {
+        "title": "Oasis encounter",
+        "action": "Bear and wolf are the same wave encounter, not two independent summon fights.",
+        "symbol": "pawprint.fill"
+      },
+      {
+        "title": "Keep moving",
+        "action": "Use ranged damage and manage later waves; avoid being pinned at close range.",
+        "symbol": "scope"
+      },
+      {
+        "title": "Claim the artifacts",
+        "action": "Wait for the encounter to calm and the route to open, then collect artifacts.",
+        "symbol": "diamond.fill"
+      }
+    ],
+    "videos": [
+      {
+        "videoID": "dB3V_7-s92s",
+        "title": "Life's Labyrinth Solo Guide And ALL Ragnarok Artefact Locations | Ark Survival Ascended",
+        "channel": "Frodo the Dodo",
+        "tier": "Shared dungeon fight",
+        "duration": 1388,
+        "note": "Both spirit creatures belong to the same encounter. Published Sacrifice Room and Oasis chapters anchor the excerpts; the last excerpt is the final route, not a separately verified kill shot.",
+        "segments": [
+          {
+            "title": "Sacrifice room",
+            "start": 1255,
+            "end": 1295
+          },
+          {
+            "title": "Oasis encounter",
+            "start": 1310,
+            "end": 1350
+          },
+          {
+            "title": "Final route",
+            "start": 1350,
+            "end": 1388
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wiki \u00b7 Spirit encounter",
+        "url": "https://ark.wiki.gg/wiki/Spirit_Direwolf_%26_Spirit_Dire_Bear",
+        "note": "Puzzles/Spirit waves and route requirements."
+      },
+      {
+        "title": "Reddit \u00b7 Cave bosses \u00b7 ASE2022",
+        "url": "https://www.reddit.com/r/ARK/comments/v3mxv2/",
+        "note": "Suggested mounts use dino-storage; this is not proof for vanilla ASA."
+      },
+      {
+        "title": "Frodo the Dodo \u00b7 Shared dungeon fight",
+        "url": "https://www.youtube.com/watch?v=dB3V_7-s92s",
+        "note": "Both spirit creatures belong to the same encounter. Published Sacrifice Room and Oasis chapters anchor the excerpts; the last excerpt is the final route, not a separately verified kill shot."
+      }
+    ]
+  },
+  {
+    "mapID": "ragnarok",
+    "bossID": "spirit-direwolf",
+    "encounter": "Life\u2019s Labyrinth \u00b7 shared waves",
+    "entry": "Complete the labyrinth mechanics, then fight the Spirit Bear and Spirit Wolf waves together at the Oasis.",
+    "armies": [
+      {
+        "id": "foot",
+        "title": "On foot \u00b7 shotgun",
+        "members": [
+          {
+            "name": "Survivor",
+            "quantity": "1",
+            "role": "Shooter",
+            "kind": "survivor"
+          }
+        ],
+        "note": "No 20-tame boss army. The sacrificial Dodo is for the route, not a combat teammate.",
+        "targetOptionID": null
+      },
+      {
+        "id": "support",
+        "title": "Small route mount",
+        "members": [
+          {
+            "name": "Baryonyx",
+            "quantity": "1",
+            "role": "Conditional cave support",
+            "kind": "tame"
+          }
+        ],
+        "note": "Optional travel support only if current cave rules permit it. Do not rely on releasing a mount in the final room.",
+        "targetOptionID": "mount"
+      }
+    ],
+    "kit": [
+      {
+        "name": "Pump-Action Shotgun",
+        "quantity": "2",
+        "role": "Main + spare",
+        "kind": "item"
+      },
+      {
+        "name": "Simple Shotgun Ammo",
+        "quantity": "300+",
+        "role": "Planning reserve",
+        "kind": "item"
+      },
+      {
+        "name": "Medical Brew",
+        "quantity": "50",
+        "role": "Planning reserve",
+        "kind": "item"
+      },
+      {
+        "name": "Metal Shield",
+        "quantity": "2",
+        "role": "Main + spare",
+        "kind": "item"
+      },
+      {
+        "name": "SCUBA Tank",
+        "quantity": "1",
+        "role": "Water sections",
+        "kind": "item"
+      },
+      {
+        "name": "Parachute",
+        "quantity": "10",
+        "role": "Jumping sections",
+        "kind": "item"
+      },
+      {
+        "name": "Torch",
+        "quantity": "2",
+        "role": "Light",
+        "kind": "item"
+      },
+      {
+        "name": "Dodo",
+        "quantity": "1",
+        "role": "Sacrifice-room route item",
+        "kind": "tame"
+      }
+    ],
+    "combat": [
+      {
+        "title": "Solve the labyrinth",
+        "action": "Complete the button, fire, water and jumping sections. Bring the route kit.",
+        "symbol": "puzzlepiece.fill"
+      },
+      {
+        "title": "Sacrifice-room trigger",
+        "action": "Plan a disposable tame for the route. Do not take a valued breeding creature.",
+        "symbol": "door.left.hand.open"
+      },
+      {
+        "title": "Oasis encounter",
+        "action": "Bear and wolf are the same wave encounter, not two independent summon fights.",
+        "symbol": "pawprint.fill"
+      },
+      {
+        "title": "Keep moving",
+        "action": "Use ranged damage and manage later waves; avoid being pinned at close range.",
+        "symbol": "scope"
+      },
+      {
+        "title": "Claim the artifacts",
+        "action": "Wait for the encounter to calm and the route to open, then collect artifacts.",
+        "symbol": "diamond.fill"
+      }
+    ],
+    "videos": [
+      {
+        "videoID": "dB3V_7-s92s",
+        "title": "Life's Labyrinth Solo Guide And ALL Ragnarok Artefact Locations | Ark Survival Ascended",
+        "channel": "Frodo the Dodo",
+        "tier": "Shared dungeon fight",
+        "duration": 1388,
+        "note": "Both spirit creatures belong to the same encounter. Published Sacrifice Room and Oasis chapters anchor the excerpts; the last excerpt is the final route, not a separately verified kill shot.",
+        "segments": [
+          {
+            "title": "Sacrifice room",
+            "start": 1255,
+            "end": 1295
+          },
+          {
+            "title": "Oasis encounter",
+            "start": 1310,
+            "end": 1350
+          },
+          {
+            "title": "Final route",
+            "start": 1350,
+            "end": 1388
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Wiki \u00b7 Spirit encounter",
+        "url": "https://ark.wiki.gg/wiki/Spirit_Direwolf_%26_Spirit_Dire_Bear",
+        "note": "Shared fight; do not use normal wolf stats."
+      },
+      {
+        "title": "Frodo the Dodo \u00b7 Shared dungeon fight",
+        "url": "https://www.youtube.com/watch?v=dB3V_7-s92s",
+        "note": "Both spirit creatures belong to the same encounter. Published Sacrifice Room and Oasis chapters anchor the excerpts; the last excerpt is the final route, not a separately verified kill shot."
+      }
+    ]
+  },
+  {
+    "mapID": "ragnarok",
+    "bossID": "nunatak",
+    "encounter": "Main guardian",
+    "entry": "Prepare the selected tribute at an Obelisk. Bring a strong ground army and a shotgun for the flight phase.",
+    "armies": [
+      {
+        "id": "rex",
+        "title": "Rex + Yuty",
+        "members": [
+          {
+            "name": "Rex",
+            "quantity": "19",
+            "role": "Main damage",
+            "kind": "tame"
+          },
+          {
+            "name": "Yutyrannus",
+            "quantity": "1",
+            "role": "Ride \u00b7 courage roar",
+            "kind": "tame"
+          }
+        ],
+        "note": "Suggested 20-tame plan, not a minimum or a claim about the featured video. Fully heal, imprint and saddle the team; ride the Yutyrannus.",
+        "targetOptionID": "rex"
+      },
+      {
+        "id": "theri",
+        "title": "Therizino + Yuty",
+        "members": [
+          {
+            "name": "Therizinosaurus",
+            "quantity": "19",
+            "role": "Main damage",
+            "kind": "tame"
+          },
+          {
+            "name": "Yutyrannus",
+            "quantity": "1",
+            "role": "Ride \u00b7 courage roar",
+            "kind": "tame"
+          }
+        ],
+        "note": "Put Sweet Vegetable Cake in every Therizino. This is a suggested 20-tame plan; keep the Yuty behind the damage line.",
+        "targetOptionID": "theri"
+      },
+      {
+        "id": "healer",
+        "title": "18 attackers + healer",
+        "members": [
+          {
+            "name": "Rex",
+            "quantity": "18",
+            "role": "Main damage",
+            "kind": "tame"
+          },
+          {
+            "name": "Yutyrannus",
+            "quantity": "1",
+            "role": "Ride \u00b7 courage roar",
+            "kind": "tame"
+          },
+          {
+            "name": "Daeodon",
+            "quantity": "1",
+            "role": "Healing \u00b7 pack food",
+            "kind": "tame"
+          }
+        ],
+        "note": "One Daeodon replaces one Rex; it does not increase the 20-tame budget. Healing drains Food rapidly; pack cooked meat.",
+        "targetOptionID": "heal"
+      }
+    ],
+    "kit": [
+      {
+        "name": "Pump-Action Shotgun",
+        "quantity": "1",
+        "role": "Quality backup weapon",
+        "kind": "item"
+      },
+      {
+        "name": "Simple Shotgun Ammo",
+        "quantity": "200+",
+        "role": "Planning reserve",
+        "kind": "item"
+      },
+      {
+        "name": "Medical Brew",
+        "quantity": "40",
+        "role": "Planning reserve",
+        "kind": "item"
+      },
+      {
+        "name": "Flak Chestpiece",
+        "quantity": "2",
+        "role": "Main + spare armor",
+        "kind": "item"
+      },
+      {
+        "name": "Cooked Meat",
+        "quantity": "40",
+        "role": "Survivor food",
+        "kind": "item"
+      },
+      {
+        "name": "Canteen",
+        "quantity": "1",
+        "role": "Filled before entry",
+        "kind": "item"
+      },
+      {
+        "name": "Fur Chestpiece",
+        "quantity": "1",
+        "role": "Cold-weather spare",
+        "kind": "item"
+      },
+      {
+        "name": "Fria Curry",
+        "quantity": "5",
+        "role": "Cold protection",
+        "kind": "item"
+      },
+      {
+        "name": "Sweet Vegetable Cake",
+        "quantity": "20\u201330 / Theri",
+        "role": "Therizino plan only",
+        "kind": "item"
+      }
+    ],
+    "combat": [
+      {
+        "title": "Summon & regroup",
+        "action": "Stand the full team inside the portal. Keep your Yuty behind the main line.",
+        "symbol": "map.fill"
+      },
+      {
+        "title": "Maintain courage",
+        "action": "Ride the Yuty and keep courage roar active across the damage team.",
+        "symbol": "pawprint.fill"
+      },
+      {
+        "title": "Flight phase",
+        "action": "Keep the army together; use the shotgun and handle Iceworm minions.",
+        "symbol": "scope"
+      },
+      {
+        "title": "Landing phase",
+        "action": "Focus attacks on Nunatak without scattering the team over the arena.",
+        "symbol": "bolt.fill"
+      },
+      {
+        "title": "Cold & survival",
+        "action": "Watch health, stamina, cold and the arena timer; pack replacement armor.",
+        "symbol": "snowflake"
+      }
+    ],
+    "videos": [
+      {
+        "videoID": "JIhMSpsojWA",
+        "title": "\u30c6\u30ec\u30dd\u30fc\u30c8\u3067\u304d\u308b\u300e\u4e0d\u6b7b\u8eab\u306e\u30ad\u30c4\u30cd\u300f\u304c\u767b\u5834\uff01\u30a2\u30eb\u30d5\u30a1\u30dc\u30b9\u300e\u30cc\u30ca\u30bf\u30af\u300f\u3092\u5012\u305b\uff01\u3010\u30a2\u30fc\u30af/ASA\u3011#34",
+        "channel": "\u308c\u3058\u3047\u304f\u3093",
+        "tier": "Alpha",
+        "duration": 3115,
+        "note": "ASA creator chapter VS Alpha Nunatak begins at 46:06. Three excerpts total 120 source seconds; they are chapter-based samples, not individually visually verified kill milestones. The video\u2019s creature setup may differ from the proposed Rex team.",
+        "segments": [
+          {
+            "title": "Battle opening",
+            "start": 2766,
+            "end": 2806
+          },
+          {
+            "title": "Battle excerpt",
+            "start": 2915,
+            "end": 2955
+          },
+          {
+            "title": "Final excerpt",
+            "start": 3070,
+            "end": 3110
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Reddit \u00b7 Alpha Nunatak solo \u00b7 03/2026",
+        "url": "https://www.reddit.com/r/ArkSurvivalAscended/comments/1rq4cqc/",
+        "note": "A player confirmed solo cluster success: Rex 35\u201340k HP, ~800%, saddle100+ and Yuty; bring a shotgun for flight phases. The OP was only preparing, so their post is not a win report."
+      },
+      {
+        "title": "Wiki \u00b7 Nunatak",
+        "url": "https://ark.wiki.gg/wiki/Nunatak",
+        "note": "Recommends Rex / Theri, Yuty, Daeodon; no flyers. High HP, ranged attacks during flight, and temperature preparation."
+      },
+      {
+        "title": "Wiki \u00b7 Deinosuchus patch 73.13",
+        "url": "https://ark.wiki.gg/wiki/Deinosuchus",
+        "note": "Deinosuchus 's Bleed no longer applies to bosses. Don't use the old croc bleed trick as your default option."
+      },
+      {
+        "title": "\u308c\u3058\u3047\u304f\u3093 \u00b7 Alpha",
+        "url": "https://www.youtube.com/watch?v=JIhMSpsojWA",
+        "note": "ASA creator chapter VS Alpha Nunatak begins at 46:06. Three excerpts total 120 source seconds; they are chapter-based samples, not individually visually verified kill milestones. The video\u2019s creature setup may differ from the proposed Rex team."
+      }
+    ]
+  },
+  {
+    "mapID": "the-island",
+    "bossID": "megapithecus",
+    "encounter": "Guardian \u00b7 first fight",
+    "entry": "Single Player: use the Blue Obelisk. Pull the boss toward safe ground; keep the team away from the cliff and bridge.",
+    "armies": [
+      {
+        "id": "rex",
+        "title": "Rex + Yuty",
+        "members": [
+          {
+            "name": "Rex",
+            "quantity": "19",
+            "role": "Main damage",
+            "kind": "tame"
+          },
+          {
+            "name": "Yutyrannus",
+            "quantity": "1",
+            "role": "Ride \u00b7 courage roar",
+            "kind": "tame"
+          }
+        ],
+        "note": "Suggested 20-tame plan, not a minimum or a claim about the featured video. Fully heal, imprint and saddle the team; ride the Yutyrannus.",
+        "targetOptionID": "rex"
+      },
+      {
+        "id": "theri",
+        "title": "Therizino + Yuty",
+        "members": [
+          {
+            "name": "Therizinosaurus",
+            "quantity": "19",
+            "role": "Main damage",
+            "kind": "tame"
+          },
+          {
+            "name": "Yutyrannus",
+            "quantity": "1",
+            "role": "Ride \u00b7 courage roar",
+            "kind": "tame"
+          }
+        ],
+        "note": "Put Sweet Vegetable Cake in every Therizino. This is a suggested 20-tame plan; keep the Yuty behind the damage line.",
+        "targetOptionID": "theri"
+      }
+    ],
+    "kit": [
+      {
+        "name": "Pump-Action Shotgun",
+        "quantity": "1",
+        "role": "Quality backup weapon",
+        "kind": "item"
+      },
+      {
+        "name": "Simple Shotgun Ammo",
+        "quantity": "200+",
+        "role": "Planning reserve",
+        "kind": "item"
+      },
+      {
+        "name": "Medical Brew",
+        "quantity": "40",
+        "role": "Planning reserve",
+        "kind": "item"
+      },
+      {
+        "name": "Flak Chestpiece",
+        "quantity": "2",
+        "role": "Main + spare armor",
+        "kind": "item"
+      },
+      {
+        "name": "Cooked Meat",
+        "quantity": "40",
+        "role": "Survivor food",
+        "kind": "item"
+      },
+      {
+        "name": "Canteen",
+        "quantity": "1",
+        "role": "Filled before entry",
+        "kind": "item"
+      }
+    ],
+    "combat": [
+      {
+        "title": "Hold safe ground",
+        "action": "Do not rush the whole army over the narrow bridge or toward the pit.",
+        "symbol": "map.fill"
+      },
+      {
+        "title": "Pull the boss",
+        "action": "Bring Megapithecus toward the entry side, then focus the Rex line on it.",
+        "symbol": "scope"
+      },
+      {
+        "title": "Roar & formation",
+        "action": "Ride the Yuty behind the team and maintain courage.",
+        "symbol": "pawprint.fill"
+      },
+      {
+        "title": "Survive the rocks",
+        "action": "Start at full health; watch rock attacks and keep survivors protected.",
+        "symbol": "shield.fill"
+      },
+      {
+        "title": "Collect progression",
+        "action": "Collect Element and trophy; keep the trophy for Tek Cave progression.",
+        "symbol": "diamond.fill"
+      }
+    ],
+    "videos": [
+      {
+        "videoID": "hIzWNphErsM",
+        "title": "BEST Element SOLO Farm Method in ARK: Survival Ascended",
+        "channel": "BEYPlaysGames",
+        "tier": "Solo methods",
+        "duration": 481,
+        "note": "ASA solo guide with creator-published method chapters. The video methods are alternatives; the 19 Rex + 1 Yuty army below is a separate conservative planning option, not an asserted video roster.",
+        "segments": [
+          {
+            "title": "Tribute",
+            "start": 118,
+            "end": 148
+          },
+          {
+            "title": "Method 1",
+            "start": 165,
+            "end": 210
+          },
+          {
+            "title": "Method 2",
+            "start": 270,
+            "end": 315
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Reddit \u00b7 ASA army comparison \u00b7 06/2024",
+        "url": "https://www.reddit.com/r/ARK/comments/1dedy9s/",
+        "note": "Gamma monkey report: 12 Rex with 15\u201320k HP, 400\u2013550%, and 95+ saddles. Use this example to distinguish Gamma from Alpha."
+      },
+      {
+        "title": "Reddit \u00b7 Broodmother \u00b7 08/2026",
+        "url": "https://www.reddit.com/r/ARK/comments/1vxfbkh/",
+        "note": "A comment reported an Alpha win with Rex at 30k HP, 800%, and 80 saddles + Yuty; this is experience, not a minimum."
+      },
+      {
+        "title": "Wiki \u00b7 settings & mechanics",
+        "url": "https://ark.wiki.gg/wiki/Server_configuration",
+        "note": "Single Player Settings change tame multipliers; compare actual inventory stats before the fight."
+      },
+      {
+        "title": "BEYPlaysGames \u00b7 Solo methods",
+        "url": "https://www.youtube.com/watch?v=hIzWNphErsM",
+        "note": "ASA solo guide with creator-published method chapters. The video methods are alternatives; the 19 Rex + 1 Yuty army below is a separate conservative planning option, not an asserted video roster."
+      },
+      {
+        "title": "Quietly Ascended \u00b7 measured Rex fight",
+        "url": "https://quietlyascended.com/guides/bosses/megapithecus-the-island/",
+        "note": "Player-reported 19 Rex + Yuty plan; beta and alpha at about 33,370 HP, 632% melee and 80 armor. These are that cluster\u2019s outcomes, not universal minimums."
+      }
+    ]
+  },
+  {
+    "mapID": "the-island",
+    "bossID": "broodmother",
+    "encounter": "Guardian \u00b7 insect encounter",
+    "entry": "Single Player: use the Green Obelisk. Megatherium benefits from killing spider minions; spread the attackers so they can reach the fight.",
+    "armies": [
+      {
+        "id": "mega",
+        "title": "Megatherium + Yuty",
+        "members": [
+          {
+            "name": "Megatherium",
+            "quantity": "19",
+            "role": "Main damage",
+            "kind": "tame"
+          },
+          {
+            "name": "Yutyrannus",
+            "quantity": "1",
+            "role": "Ride \u00b7 courage roar",
+            "kind": "tame"
+          }
+        ],
+        "note": "Suggested 20-tame plan, not a minimum or a claim about the featured video. Fully heal, imprint and saddle the team; ride the Yutyrannus. Do not give Sweet Vegetable Cake to Megatherium as a healing plan.",
+        "targetOptionID": "mega"
+      },
+      {
+        "id": "rex",
+        "title": "Rex + Yuty",
+        "members": [
+          {
+            "name": "Rex",
+            "quantity": "19",
+            "role": "Main damage",
+            "kind": "tame"
+          },
+          {
+            "name": "Yutyrannus",
+            "quantity": "1",
+            "role": "Ride \u00b7 courage roar",
+            "kind": "tame"
+          }
+        ],
+        "note": "Suggested 20-tame plan, not a minimum or a claim about the featured video. Fully heal, imprint and saddle the team; ride the Yutyrannus.",
+        "targetOptionID": "rex"
+      },
+      {
+        "id": "video-solo",
+        "title": "Video example \u00b7 1 Mega",
+        "members": [
+          {
+            "name": "Megatherium",
+            "quantity": "1",
+            "role": "Ridden specialist",
+            "kind": "tame"
+          }
+        ],
+        "note": "The linked creator reports a single-Megatherium Alpha run. Exact build and current-patch repeatability have not been reverified; this is an advanced example, not the first-attempt recommendation.",
+        "targetOptionID": null
+      }
+    ],
+    "kit": [
+      {
+        "name": "Pump-Action Shotgun",
+        "quantity": "1",
+        "role": "Quality backup weapon",
+        "kind": "item"
+      },
+      {
+        "name": "Simple Shotgun Ammo",
+        "quantity": "200+",
+        "role": "Planning reserve",
+        "kind": "item"
+      },
+      {
+        "name": "Medical Brew",
+        "quantity": "40",
+        "role": "Planning reserve",
+        "kind": "item"
+      },
+      {
+        "name": "Flak Chestpiece",
+        "quantity": "2",
+        "role": "Main + spare armor",
+        "kind": "item"
+      },
+      {
+        "name": "Cooked Meat",
+        "quantity": "40",
+        "role": "Survivor food",
+        "kind": "item"
+      },
+      {
+        "name": "Canteen",
+        "quantity": "1",
+        "role": "Filled before entry",
+        "kind": "item"
+      }
+    ],
+    "combat": [
+      {
+        "title": "Enter fully prepared",
+        "action": "Bring the Hunter, Clever and Massive artifacts plus tier-specific tribute.",
+        "symbol": "diamond.fill"
+      },
+      {
+        "title": "Spread the attackers",
+        "action": "Avoid one crowded block. Give multiple Megatheriums access to minions.",
+        "symbol": "pawprint.fill"
+      },
+      {
+        "title": "Keep insect buffs",
+        "action": "Minion kills are important to Megatherium damage and survival.",
+        "symbol": "bolt.fill"
+      },
+      {
+        "title": "Support from behind",
+        "action": "Maintain Yuty courage; protect yourself from webs and minions.",
+        "symbol": "shield.fill"
+      },
+      {
+        "title": "Save the trophy",
+        "action": "Collect Element and the correct tier trophy for Tek Cave.",
+        "symbol": "shippingbox.fill"
+      }
+    ],
+    "videos": [
+      {
+        "videoID": "Q8fQTrS8u6g",
+        "title": "ARK Ascended Island - SOLO ALPHA BROODMOTHER vs 1x Megatherium - S3E26",
+        "channel": "Arindam Gaming",
+        "tier": "Alpha \u00b7 specialized solo",
+        "duration": 452,
+        "note": "The creator explicitly reports 1 Megatherium on Official Server Difficulty in this 2024-recorded ASA run. This is a specialized historical example, not proof that any single Megatherium can defeat current Alpha Broodmother.",
+        "segments": [
+          {
+            "title": "Setup",
+            "start": 0,
+            "end": 24
+          },
+          {
+            "title": "Fight opening",
+            "start": 32,
+            "end": 80
+          },
+          {
+            "title": "Late fight",
+            "start": 290,
+            "end": 338
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Reddit \u00b7 Alpha Broodmother ASA \u00b7 06/2025",
+        "url": "https://www.reddit.com/r/ARK/comments/1ljplad/",
+        "note": "A player reported 30k HP, 800% melee, saddle BP 84, and one Mega lost; results depend on settings and encirclement."
+      },
+      {
+        "title": "Reddit \u00b7 Broodmother \u00b7 08/2026",
+        "url": "https://www.reddit.com/r/ARK/comments/1vxfbkh/",
+        "note": "A comment reported an Alpha win with Rex at 30k HP, 800%, and 80 saddles + Yuty; this is experience, not a minimum."
+      },
+      {
+        "title": "Wiki \u00b7 settings & mechanics",
+        "url": "https://ark.wiki.gg/wiki/Server_configuration",
+        "note": "Single Player Settings change tame multipliers; compare actual inventory stats before the fight."
+      },
+      {
+        "title": "Arindam Gaming \u00b7 Alpha \u00b7 specialized solo",
+        "url": "https://www.youtube.com/watch?v=Q8fQTrS8u6g",
+        "note": "The creator explicitly reports 1 Megatherium on Official Server Difficulty in this 2024-recorded ASA run. This is a specialized historical example, not proof that any single Megatherium can defeat current Alpha Broodmother."
+      }
+    ]
+  },
+  {
+    "mapID": "the-island",
+    "bossID": "dragon",
+    "encounter": "Guardian \u00b7 fire encounter",
+    "entry": "Single Player: use the Red Obelisk. Prepare Therizinos with cakes; fire breath and lava demand positioning, not just more HP.",
+    "armies": [
+      {
+        "id": "theri",
+        "title": "Therizino + Yuty",
+        "members": [
+          {
+            "name": "Therizinosaurus",
+            "quantity": "19",
+            "role": "Main damage",
+            "kind": "tame"
+          },
+          {
+            "name": "Yutyrannus",
+            "quantity": "1",
+            "role": "Ride \u00b7 courage roar",
+            "kind": "tame"
+          }
+        ],
+        "note": "Put Sweet Vegetable Cake in every Therizino. This is a suggested 20-tame plan; keep the Yuty behind the damage line.",
+        "targetOptionID": "theri"
+      },
+      {
+        "id": "healer",
+        "title": "18 Theri + healer",
+        "members": [
+          {
+            "name": "Therizinosaurus",
+            "quantity": "18",
+            "role": "Main damage",
+            "kind": "tame"
+          },
+          {
+            "name": "Yutyrannus",
+            "quantity": "1",
+            "role": "Ride \u00b7 courage roar",
+            "kind": "tame"
+          },
+          {
+            "name": "Daeodon",
+            "quantity": "1",
+            "role": "Healing \u00b7 pack food",
+            "kind": "tame"
+          }
+        ],
+        "note": "A Daeodon replaces one attacker. Pack food for healing and cakes in every Theri; current Alpha requires a carefully tested team.",
+        "targetOptionID": "theri"
+      }
+    ],
+    "kit": [
+      {
+        "name": "Pump-Action Shotgun",
+        "quantity": "1",
+        "role": "Quality backup weapon",
+        "kind": "item"
+      },
+      {
+        "name": "Simple Shotgun Ammo",
+        "quantity": "200+",
+        "role": "Planning reserve",
+        "kind": "item"
+      },
+      {
+        "name": "Medical Brew",
+        "quantity": "40",
+        "role": "Planning reserve",
+        "kind": "item"
+      },
+      {
+        "name": "Flak Chestpiece",
+        "quantity": "2",
+        "role": "Main + spare armor",
+        "kind": "item"
+      },
+      {
+        "name": "Cooked Meat",
+        "quantity": "40",
+        "role": "Survivor food",
+        "kind": "item"
+      },
+      {
+        "name": "Canteen",
+        "quantity": "1",
+        "role": "Filled before entry",
+        "kind": "item"
+      },
+      {
+        "name": "Sweet Vegetable Cake",
+        "quantity": "20\u201330 / Theri",
+        "role": "Planning reserve",
+        "kind": "item"
+      }
+    ],
+    "combat": [
+      {
+        "title": "Avoid the lava",
+        "action": "Keep the entire team on safe ground; do not follow the boss across lava.",
+        "symbol": "flame.fill"
+      },
+      {
+        "title": "During flight",
+        "action": "Protect the survivor and handle minions while waiting for the next landing.",
+        "symbol": "scope"
+      },
+      {
+        "title": "Attack on landing",
+        "action": "Commit the damage team when the Dragon lands; keep Yuty support in range.",
+        "symbol": "pawprint.fill"
+      },
+      {
+        "title": "Manage fire breath",
+        "action": "Fire removes a portion of maximum HP; high HP alone does not solve this fight.",
+        "symbol": "shield.fill"
+      },
+      {
+        "title": "Cakes & recovery",
+        "action": "Cakes belong in Therizino inventories. Watch food, healing and current-patch damage.",
+        "symbol": "heart.fill"
+      },
+      {
+        "title": "Keep the trophy",
+        "action": "The matching Broodmother, Megapithecus and Dragon trophies unlock Tek Cave.",
+        "symbol": "diamond.fill"
+      }
+    ],
+    "videos": [
+      {
+        "videoID": "oeZ086v9uDE",
+        "title": "How To Easily Beat The DRAGON on Ark Survival Ascended!!! Solo or Small Tribes!!!",
+        "channel": "Teachers Game Too",
+        "tier": "Official PvE \u00b7 multi-boss",
+        "duration": 887,
+        "note": "ASA Dragon strategy. Chapter-selected excerpts; army targets are planning recommendations, not a claim about the filmed roster.",
+        "segments": [
+          {
+            "title": "Preparation",
+            "start": 20,
+            "end": 60
+          },
+          {
+            "title": "Opening",
+            "start": 164,
+            "end": 204
+          },
+          {
+            "title": "Final phase",
+            "start": 750,
+            "end": 790
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Reddit \u00b7 Dragon and fire spam \u00b7 09/2026",
+        "url": "https://www.reddit.com/r/ARK/comments/1wc2h4n/",
+        "note": "A failure was reported with Theri at 21k HP, 1000%, and few cakes; replies recommend 15\u201320+ cakes and fire-breath management. High saddles alone do not guarantee a win."
+      },
+      {
+        "title": "Reddit \u00b7 Alpha Dragon ASA official \u00b7 01/2024",
+        "url": "https://www.reddit.com/r/playark/comments/19eei4w/",
+        "note": "Reported Theri at 21k HP and 1300% after leveling; an older post that needs comparison with the current patch."
+      },
+      {
+        "title": "Steam \u00b7 Island boss stats \u00b7 12/2025",
+        "url": "https://steamcommunity.com/app/2399830/discussions/0/684113723162439898/",
+        "note": "An Alpha Dragon report used 14 crocs at 29k HP, 1000% after the bleed nerf, with multiple supports. The questioner's imprint scale was 3; do not copy those settings."
+      },
+      {
+        "title": "Wiki \u00b7 Deinosuchus patch 73.13",
+        "url": "https://ark.wiki.gg/wiki/Deinosuchus",
+        "note": "Deinosuchus 's Bleed no longer applies to bosses. Don't use the old croc bleed trick as your default option."
+      },
+      {
+        "title": "Teachers Game Too \u00b7 ASA Dragon strategy",
+        "url": "https://www.youtube.com/watch?v=oeZ086v9uDE",
+        "note": "ASA Dragon strategy. Chapter-selected excerpts; army targets are planning recommendations, not a claim about the filmed roster."
+      }
+    ]
+  },
+  {
+    "mapID": "the-island",
+    "bossID": "overseer",
+    "encounter": "Ascension \u00b7 Tek Cave",
+    "entry": "Start at the Volcano\u2019s Tek Cave. Bring the matching guardian trophies, move the team safely through lava bends, then teleport to Overseer.",
+    "armies": [
+      {
+        "id": "theri",
+        "title": "19 Theri + 1 Yuty",
+        "members": [
+          {
+            "name": "Therizinosaurus",
+            "quantity": "19",
+            "role": "Main damage",
+            "kind": "tame"
+          },
+          {
+            "name": "Yutyrannus",
+            "quantity": "1",
+            "role": "Ride \u00b7 courage roar",
+            "kind": "tame"
+          }
+        ],
+        "note": "This exact arena composition is reported in the linked Alpha and Beta videos. A separate Carcha clears the cave and stays out of the boss teleport.",
+        "targetOptionID": "theri"
+      },
+      {
+        "id": "tek",
+        "title": "Tek suit + shotgun",
+        "members": [
+          {
+            "name": "Survivor",
+            "quantity": "1",
+            "role": "Arena shooter",
+            "kind": "survivor"
+          },
+          {
+            "name": "Tek Chestpiece",
+            "quantity": "1",
+            "role": "Unlocked \u00b7 Element fuel",
+            "kind": "item"
+          }
+        ],
+        "note": "Creator-reported Gamma alternative. Current difficulty, weapon damage and timer still matter; cave-clearing tames are separate.",
+        "targetOptionID": "tek"
+      }
+    ],
+    "kit": [
+      {
+        "name": "Pump-Action Shotgun",
+        "quantity": "1",
+        "role": "Quality backup weapon",
+        "kind": "item"
+      },
+      {
+        "name": "Simple Shotgun Ammo",
+        "quantity": "200+",
+        "role": "Planning reserve",
+        "kind": "item"
+      },
+      {
+        "name": "Medical Brew",
+        "quantity": "40",
+        "role": "Planning reserve",
+        "kind": "item"
+      },
+      {
+        "name": "Flak Chestpiece",
+        "quantity": "2",
+        "role": "Main + spare armor",
+        "kind": "item"
+      },
+      {
+        "name": "Cooked Meat",
+        "quantity": "40",
+        "role": "Survivor food",
+        "kind": "item"
+      },
+      {
+        "name": "Canteen",
+        "quantity": "1",
+        "role": "Filled before entry",
+        "kind": "item"
+      },
+      {
+        "name": "Sweet Vegetable Cake",
+        "quantity": "20\u201330 / Theri",
+        "role": "Planning reserve",
+        "kind": "item"
+      },
+      {
+        "name": "Tek Chestpiece",
+        "quantity": "2",
+        "role": "Optional mobility + spare",
+        "kind": "item"
+      },
+      {
+        "name": "Element",
+        "quantity": "Spare stack",
+        "role": "Tek fuel",
+        "kind": "item"
+      },
+      {
+        "name": "Fur Chestpiece",
+        "quantity": "1",
+        "role": "Cold section",
+        "kind": "item"
+      },
+      {
+        "name": "Lazarus Chowder",
+        "quantity": "5",
+        "role": "Planning reserve",
+        "kind": "item"
+      }
+    ],
+    "combat": [
+      {
+        "title": "Unlock the entrance",
+        "action": "Bring matching-tier guardian trophies and the required Alpha drops for Beta/Alpha.",
+        "symbol": "diamond.fill"
+      },
+      {
+        "title": "Move through Tek Cave",
+        "action": "Lead small whistle groups around bends. Do not let followers fall into lava.",
+        "symbol": "map.fill"
+      },
+      {
+        "title": "Separate cave support",
+        "action": "Carcha can clear the route but does not join the arena teleport.",
+        "symbol": "pawprint.fill"
+      },
+      {
+        "title": "Prepare at the terminal",
+        "action": "Regroup, heal and count the arena team before teleporting.",
+        "symbol": "checkmark.seal.fill"
+      },
+      {
+        "title": "Forms & drones",
+        "action": "Keep moving through guardian forms. Shoot drones and support the army.",
+        "symbol": "scope"
+      },
+      {
+        "title": "Ascend safely",
+        "action": "Collect and check your equipment and survivor after the transition.",
+        "symbol": "sparkles"
+      }
+    ],
+    "videos": [
+      {
+        "videoID": "psh6IeTSde4",
+        "title": "ARK Ascended Island - SOLO ALPHA TEK CAVE & ALPHA OVERSEER (1x Carcha, 19x Theri, 1x Yuty) - S3E35",
+        "channel": "Arindam Gaming",
+        "tier": "Alpha \u00b7 19 Theri + 1 Yuty",
+        "duration": 4498,
+        "note": "Creator explicitly records 1 Carcha for the cave and 19 Therizinos + 1 Yutyrannus for Alpha Overseer. Chapter-based excerpts total 120 source seconds; Carcha is not an Overseer arena tame.",
+        "segments": [
+          {
+            "title": "Gear & team",
+            "start": 120,
+            "end": 160
+          },
+          {
+            "title": "Boss battle",
+            "start": 2429,
+            "end": 2469
+          },
+          {
+            "title": "Conclusion",
+            "start": 3537,
+            "end": 3577
+          }
+        ]
+      },
+      {
+        "videoID": "kZqr1m1SOR8",
+        "title": "ARK Ascended Island - SOLO GAMMA TEK CAVE & GAMMA OVERSEER (Carcharo, Shotgun + Teksuit) - S3E33",
+        "channel": "Arindam Gaming",
+        "tier": "Gamma \u00b7 Tek + shotgun",
+        "duration": 3232,
+        "note": "Creator-reported Gamma fight: Carcha clears Tek Cave, then Tek suit + shotgun in the arena. The published Boss Defeated chapter supplies the closing excerpt. Do not extrapolate the Gamma method to every Alpha timer.",
+        "segments": [
+          {
+            "title": "Gear",
+            "start": 120,
+            "end": 160
+          },
+          {
+            "title": "Arena",
+            "start": 610,
+            "end": 650
+          },
+          {
+            "title": "Victory",
+            "start": 2378,
+            "end": 2418
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Reddit \u00b7 Solo Tek Cave / Overseer \u00b7 05/2025",
+        "url": "https://www.reddit.com/r/ARK/comments/1khqcfl/",
+        "note": "Reported 19 Theri + Yuty: Theri at 25k HP/~900%, saddles ~85, 10 cakes; Carcha cleared the route. Lava/pathing risks are separate from DPS."
+      },
+      {
+        "title": "Reddit \u00b7 Alpha Overseer \u00b7 06/2026",
+        "url": "https://www.reddit.com/r/ArkSurvivalAscended/comments/1u7i6a8/",
+        "note": "Reported 17 Theri + Yuty + 2 Daeodon; Tek suit/shotgun options also exist. Solo players must manage support and cave travel themselves."
+      },
+      {
+        "title": "Wiki \u00b7 settings & mechanics",
+        "url": "https://ark.wiki.gg/wiki/Server_configuration",
+        "note": "Single Player Settings change tame multipliers; compare actual inventory stats before the fight."
+      },
+      {
+        "title": "Wiki \u00b7 Tek Cave and teleporter",
+        "url": "https://ark.wiki.gg/wiki/Tek_Cave",
+        "note": "Distinguish 50 in the cave, 20 per teleport trip, and multiple trips before the boss starts; do not treat these numbers as the arena's total limit."
+      },
+      {
+        "title": "Arindam Gaming \u00b7 Alpha \u00b7 19 Theri + 1 Yuty",
+        "url": "https://www.youtube.com/watch?v=psh6IeTSde4",
+        "note": "Creator explicitly records 1 Carcha for the cave and 19 Therizinos + 1 Yutyrannus for Alpha Overseer. Chapter-based excerpts total 120 source seconds; Carcha is not an Overseer arena tame."
+      },
+      {
+        "title": "Arindam Gaming \u00b7 Gamma \u00b7 Tek + shotgun",
+        "url": "https://www.youtube.com/watch?v=kZqr1m1SOR8",
+        "note": "Creator-reported Gamma fight: Carcha clears Tek Cave, then Tek suit + shotgun in the arena. The published Boss Defeated chapter supplies the closing excerpt. Do not extrapolate the Gamma method to every Alpha timer."
+      }
+    ]
+  }
+]
